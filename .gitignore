@@ -1,0 +1,15 @@
+# 内部工作目录（勿提交）
+.uploads/
+.screenshots/
+.trae-html-share-packages/
+__pycache__/
+*.pyc
+
+# 生成器临时输出（保留正式看板 HTML）
+/dash_v*.html
+/dashboard_v*.html
+
+# 系统文件
+.DS_Store
+Thumbs.db
+~$*
