@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- NEV公告数据看板  · Copyright (c) 2026 David YEAH · MIT License -->
+<!-- NEV公告数据看板  · 离线发布版 · Copyright (c) 2026 David YEAH · MIT License -->
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEV公告数据看板</title>
+<title>NEV公告数据看板 · 离线发布版</title>
 <style>
 :root{
   --bg:#14181F; --bg2:#171C25; --card:#1C222D; --card2:#212936;
@@ -229,7 +229,7 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
       </div>
       <div class="h-meta">
         <div>数据源：<b id="hSrc">NEV公告参数汇总表_合并版（341~408批）.xlsx</b> · 共 <b id="hTotal">4,348</b> 条公告记录</div>
-        <div>批次范围：<b id="hBRange">341 ~ 408</b>（<b id="hBCnt">66</b> 个批次）<span class="tag">OFFLINE READY</span></div>
+        <div>批次范围：<b id="hBRange">341 ~ 408</b>（<b id="hBCnt">66</b> 个批次）<span class="tag">OFFLINE READY</span> <span class="tag" style="background:rgba(212,169,78,.14);border-color:rgba(212,169,78,.5);color:#D4A94E;margin-left:6px">RELEASE 离线发布版</span></div>
         <div>生成时间：<b id="hGen">2026-08-21 09:01</b> · 筛选联动全部图表</div>
       </div>
     </div>
@@ -359,33 +359,13 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
   </div>
 </section>
 
-<!-- ============ 数据质量（页面底部） ============ -->
-<section class="quality-sec" id="qualitySec">
-  <div class="q-head open" id="qHead">
-    <div class="q-ic">◈</div>
-    <div>
-      <div class="q-t">数据质量检查</div>
-      <div class="q-d" id="qDesc">字段填报完整度 · 数据来源构成 · 批次×字段热力 · 点击折叠/展开</div>
-    </div>
-    <span class="q-arrow">▾</span>
-  </div>
-  <div class="q-body open" id="qBody">
-    <div class="insight" style="margin-top:14px"><div class="ic">§</div><div class="tx" id="insight5Tx"></div></div>
-    <div class="grid">
-      <div class="card c-s7"><div class="c-h"><div class="c-t">字段填报完整度</div><div class="c-s">非空率 %（当前筛选范围）</div></div><div class="chart tall" id="chFill"></div></div>
-      <div class="card c-s5"><div class="c-h"><div class="c-t">数据来源构成</div><div class="c-s">合并来源批次</div></div><div class="chart" id="chSrc"></div></div>
-      <div class="card c-s12"><div class="c-h"><div class="c-t">批次 × 字段 填报热力</div><div class="c-s">绿=完整 红=缺失</div></div><div class="chart tall" id="chHeat"></div></div>
-    </div>
-  </div>
-</section>
-
 <footer>
   <div>
     <b>数据刷新方法</b>：① 页面内导入——"数据管理"页拖入最新Excel，全局实时刷新；<br>
     ② 脚本重生成——更新Excel后运行 <code>python3 generate_dashboard.py</code>；亦可指定文件 <code>python3 generate_dashboard.py 新数据.xlsx 看板.html</code>
   </div>
   <div style="text-align:right">
-    <b>NEV 公告数据看板</b> · 自包含离线HTML · 内嵌 ECharts 5 + SheetJS<br>
+    <b>NEV 公告数据看板 · 离线发布版</b> · 自包含离线HTML · 内嵌 ECharts 5 + SheetJS<br>
     生成于 <span id="ftGen">2026-08-21 09:01</span> · 数据截止批次 <span id="ftBMax">408</span><br>
     <span style="font-size:12px;color:var(--dim)">Copyright (c) 2026 David YEAH · 保留所有权利</span>
   </div>

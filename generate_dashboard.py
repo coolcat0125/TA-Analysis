@@ -27,12 +27,14 @@ v2 功能：
 用法：
   python3 generate_dashboard.py                          # 使用默认文件名（同目录）
   python3 generate_dashboard.py <输入.xlsx> <输出.html>  # 指定输入输出
+  python3 generate_dashboard.py --release                # 离线发布版（隐藏数据质量区块，含版权页脚）
 
 依赖：openpyxl（pip install openpyxl）、同目录下 echarts.min.js 与 xlsx.full.min.js
 """
 import openpyxl
 import json
 import os
+import re
 import sys
 import datetime
 
@@ -42,6 +44,8 @@ import datetime
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_IN = os.path.join(HERE, 'NEV公告参数汇总表_合并版（341~408批）.xlsx')
 DEFAULT_OUT = os.path.join(HERE, 'NEV公告数据看板.html')
+DEFAULT_RELEASE_OUT = os.path.join(HERE, 'NEV公告数据看板_离线发布版.html')
+COPYRIGHT = 'Copyright (c) 2026 David YEAH'
 ECHARTS_PATH = os.path.join(HERE, 'echarts.min.js')
 XLSXLIB_PATH = os.path.join(HERE, 'xlsx.full.min.js')
 SHEET_NAME = 'NEV公告参数汇总'
@@ -221,11 +225,12 @@ def build_meta(records, src_name):
 
 
 HTML_HEAD = r'''<!DOCTYPE html>
+<!-- NEV公告数据看板 __REL_NAME__ · __COPYRIGHT__ · MIT License -->
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEV公告数据看板</title>
+<title>NEV公告数据看板__TITLE_SUFFIX__</title>
 <style>
 :root{
   --bg:#14181F; --bg2:#171C25; --card:#1C222D; --card2:#212936;
@@ -450,7 +455,7 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
       </div>
       <div class="h-meta">
         <div>数据源：<b id="hSrc">__SRC_FILE__</b> · 共 <b id="hTotal">__TOTAL__</b> 条公告记录</div>
-        <div>批次范围：<b id="hBRange">__BMIN__ ~ __BMAX__</b>（<b id="hBCnt">__BCNT__</b> 个批次）<span class="tag">OFFLINE READY</span></div>
+        <div>批次范围：<b id="hBRange">__BMIN__ ~ __BMAX__</b>（<b id="hBCnt">__BCNT__</b> 个批次）<span class="tag">OFFLINE READY</span>__REL_TAG__</div>
         <div>生成时间：<b id="hGen">__GEN_AT__</b> · 筛选联动全部图表</div>
       </div>
     </div>
@@ -606,8 +611,9 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
     ② 脚本重生成——更新Excel后运行 <code>python3 generate_dashboard.py</code>；亦可指定文件 <code>python3 generate_dashboard.py 新数据.xlsx 看板.html</code>
   </div>
   <div style="text-align:right">
-    <b>NEV 公告数据看板</b> · 自包含离线HTML · 内嵌 ECharts 5 + SheetJS<br>
-    生成于 <span id="ftGen">__GEN_AT__</span> · 数据截止批次 <span id="ftBMax">__BMAX__</span>
+    <b>NEV 公告数据看板__REL_NAME__</b> · 自包含离线HTML · 内嵌 ECharts 5 + SheetJS<br>
+    生成于 <span id="ftGen">__GEN_AT__</span> · 数据截止批次 <span id="ftBMax">__BMAX__</span><br>
+    <span style="font-size:12px;color:var(--dim)">__COPYRIGHT__ · 保留所有权利</span>
   </div>
 </footer>
 
@@ -1233,6 +1239,7 @@ function insight4(rows){
 
 /* ==================== 数据质量（底部） ==================== */
 function chFill(rows){
+  if(!document.getElementById('chFill'))return;
   const entries = COL_NAMES.map((n,i)=>{
     const filled = rows.filter(r=>r[i]!=null&&r[i]!=='').length;
     return [n, filled];
@@ -1250,6 +1257,7 @@ function chFill(rows){
   },true);
 }
 function chSrc(rows){
+  if(!document.getElementById('chSrc'))return;
   const es = groupCount(rows,I.src);
   const total = es.reduce((a,b)=>a+b[1],0);
   const simp = s => s.replace(/梳理补充_/g,'');
@@ -1270,6 +1278,7 @@ function chSrc(rows){
   },true);
 }
 function chHeat(rows){
+  if(!document.getElementById('chHeat'))return;
   const bs = byBatch(rows).filter((x,i)=>i%2===0);
   const labels = bs.map(x=>String(x[0]));
   const checkIdx = [I.s,I.w,I.r,I.c,I.bt,I.ed,I.ec,I.pp,I.tp,I.ms,I.tq,I.fo,I.dv,I.ep,I.es];
@@ -1296,6 +1305,7 @@ function chHeat(rows){
   },true);
 }
 function insight5(rows){
+  if(!document.getElementById('insight5Tx'))return;
   const fields = COL_NAMES.map((n,i)=>({n,i,f:rows.filter(r=>r[i]!=null&&r[i]!=='').length}));
   const worst = fields.filter(f=>f.f/rows.length<0.6).sort((a,b)=>a.f-b.f).slice(0,3);
   document.getElementById('insight5Tx').innerHTML =
@@ -1611,6 +1621,7 @@ function initTabs(){
 }
 function initQuality(){
   const head=document.getElementById('qHead'), body=document.getElementById('qBody');
+  if(!head||!body)return;
   head.onclick = ()=>{
     head.classList.toggle('open');
     body.classList.toggle('open');
@@ -1639,8 +1650,10 @@ updateAll();
 
 
 def main():
-    in_path = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_IN
-    out_path = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_OUT
+    pos_args = [a for a in sys.argv[1:] if not a.startswith('--')]
+    release = '--release' in sys.argv
+    in_path = pos_args[0] if len(pos_args) > 0 else DEFAULT_IN
+    out_path = pos_args[1] if len(pos_args) > 1 else (DEFAULT_RELEASE_OUT if release else DEFAULT_OUT)
 
     for p, tip in [(in_path, '输入文件'), (ECHARTS_PATH, 'echarts.min.js'), (XLSXLIB_PATH, 'xlsx.full.min.js')]:
         if not os.path.exists(p):
@@ -1666,6 +1679,9 @@ def main():
 
     print('[3/4] 生成看板HTML...')
     html = HTML_HEAD
+    if release:
+        # 离线发布版：整体移除【数据质量检查】区块（独立 <section>，无导航入口）
+        html = re.sub(r'<!-- ============ 数据质量（页面底部） ============ -->.*?</section>\n\n', '', html, flags=re.S)
     html = html.replace('__ECHARTS_LIB__', echarts_lib)
     html = html.replace('__XLSX_LIB__', xlsx_lib)
     html = html.replace('__META_JSON__', json.dumps(meta, ensure_ascii=False, separators=(',', ':')))
@@ -1676,6 +1692,12 @@ def main():
     html = html.replace('__BMAX__', str(meta['batchMax']))
     html = html.replace('__BCNT__', str(meta['batchCount']))
     html = html.replace('__GEN_AT__', meta['generatedAt'])
+    html = html.replace('__COPYRIGHT__', COPYRIGHT)
+    html = html.replace('__REL_NAME__', ' · 离线发布版' if release else '')
+    html = html.replace('__TITLE_SUFFIX__', ' · 离线发布版' if release else '')
+    rel_tag = (' <span class="tag" style="background:rgba(212,169,78,.14);'
+               'border-color:rgba(212,169,78,.5);color:#D4A94E;margin-left:6px">RELEASE 离线发布版</span>') if release else ''
+    html = html.replace('__REL_TAG__', rel_tag)
 
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(html)
@@ -1683,6 +1705,8 @@ def main():
     size_mb = os.path.getsize(out_path) / 1024 / 1024
     print(f'\n✓ 看板已生成: {out_path}（{size_mb:.1f} MB）')
     print(f'  批次范围: {meta["batchMin"]}~{meta["batchMax"]} · 动力类型: {"/".join(meta["types"])}')
+    if release:
+        print('  离线发布版：隐藏【数据质量检查】区块 · 其余功能全部保留（筛选/导出/导入/主题）')
     print('  v3：PHEV/EREV 展示名统一 / 拟合线→趋势线(分参数分列) / 细分市场"/"不显示')
     print('       电池类型归一化按已有数据占比核算 / 散点图 BEV·PHEV/EREV 分列趋势线')
     print('          数据质量底部化 / 导出Excel·CSV / 页内导入刷新 / 白天黑夜模式')
