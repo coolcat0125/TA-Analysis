@@ -1,0 +1,2 @@
+product_model,field,value,unit,evidence_tier,evidence_type,review_status,method,source_id,source_title,source_url,published_date,location,confidence,notes
+# OCR records require review_status=verified before A/B evidence can be written. Example: XMA7001MBEVR7,电机最大扭矩,320,Nm,A,OCR,verified,公告参数图人工OCR,MIIT-409-001,工信部公告参数页,https://www.miit.gov.cn/,2026-08-01,PDF第1页图表,high,请保留原始截图或PDF页码
