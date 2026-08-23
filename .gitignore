@@ -13,3 +13,9 @@ __pycache__/
 .DS_Store
 Thumbs.db
 ~$*
+
+# OCR 协作过程文件（勿提交）
+_*.py
+_*.log
+ocr_imgs/
+_ocr_texts/

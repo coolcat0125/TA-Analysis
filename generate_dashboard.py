@@ -42,7 +42,7 @@ import datetime
 # 配置
 # ============================================================
 HERE = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_IN = os.path.join(HERE, 'NEV公告参数汇总表_合并版（341~408批）.xlsx')
+DEFAULT_IN = os.path.join(HERE, 'NEV公告参数汇总表_合并版（341~409批）.xlsx')
 DEFAULT_OUT = os.path.join(HERE, 'NEV公告数据看板.html')
 DEFAULT_RELEASE_OUT = os.path.join(HERE, 'NEV公告数据看板_离线发布版.html')
 COPYRIGHT = 'Copyright (c) 2026 David YEAH'
