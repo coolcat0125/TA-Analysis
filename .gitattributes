@@ -1,0 +1,14 @@
+# 统一换行符: 文本文件入库LF, Windows工作区检出CRLF
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.xlsx binary
+*.pptx binary
+*.docx binary
+*.png binary
+*.jpg binary
+*.webp binary
