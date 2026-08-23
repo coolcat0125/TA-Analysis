@@ -1,0 +1,31 @@
+{
+  "copyright": "Copyright © 2026 David YE",
+  "generated_date": "2026-08-23",
+  "version": "v3.4.6-candidate",
+  "source_sha256": "42e2c66fe0f375cc315b56240d022f09cbe2f4dd6122e58d1f9f51f08ccdfdf2",
+  "output_sha256": "68a2976b9a75973d60ce9947f192ef4dd597a1e83dfc63fcc5664666ba085116",
+  "status": "PASS",
+  "metrics": {
+    "records": 4459,
+    "columns": 38,
+    "sheets": 9,
+    "torque_parsed": 1279,
+    "torque_candidate_total": 364,
+    "torque_internal_candidates": 38,
+    "torque_external_candidates": 326,
+    "torque_external_partial_candidates": 32,
+    "torque_unresolved": 2816,
+    "torque_unresolved_without_motor_model_or_internal_candidate": 2093,
+    "audited_consumption_nonblank": 4265,
+    "battery_80kwh_rows": 453,
+    "battery_mass_derived": 424,
+    "battery_supplier_candidate_rows": 5,
+    "external_evidence_rows": 36,
+    "audit_rows": 2820,
+    "formula_errors": 0,
+    "contamination_remaining": 0,
+    "external_evidence_mismatches": 0
+  },
+  "copyright_checks_passed": true,
+  "failures": []
+}
