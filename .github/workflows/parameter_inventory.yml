@@ -1,3 +1,4 @@
+# Copyright © 2026 David YE
 name: Parameter inventory
 on:
   push:

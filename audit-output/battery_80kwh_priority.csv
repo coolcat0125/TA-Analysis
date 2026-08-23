@@ -1,4 +1,5 @@
-﻿excel_row,batch,product_model,capacity_kwh,supplier,chemistry,voltage,pack_length,pack_width,pack_height,pack_mass,system_density
+﻿# Copyright © 2026 David YE
+excel_row,batch,product_model,capacity_kwh,supplier,chemistry,voltage,pack_length,pack_width,pack_height,pack_mass,system_density
 12,341,GAM7000BEVD0L,76.8,,三元锂,,,,,,184
 22,341,SVW6461CEV,83.4,,三元锂,,,,,,175
 23,341,SVW6492BEV,83.4,,三元锂,,,,,,175

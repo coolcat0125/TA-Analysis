@@ -48,7 +48,9 @@ report={"schema_version":"1.0.0","copyright":COPYRIGHT,"generated_at_utc":dt.dat
 (out/"data_inventory.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 for name,data,fields in [("motor_torque_missing.csv",torque_missing,["excel_row","batch","product_model"]),("battery_80kwh_priority.csv",packs80,["excel_row","batch","product_model","capacity_kwh","supplier","chemistry","voltage","pack_length","pack_width","pack_height","pack_mass","system_density"])]:
     with open(out/name,"w",encoding="utf-8-sig",newline="") as f:
+        f.write(f"# {COPYRIGHT}\n")
         w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(data)
 with open(out/"column_coverage.csv","w",encoding="utf-8-sig",newline="") as f:
+    f.write(f"# {COPYRIGHT}\n")
     w=csv.DictWriter(f,fieldnames=["index","header","filled","missing","coverage"]); w.writeheader(); w.writerows(stats)
 print(json.dumps({"records":len(rows),"torque_missing":len(torque_missing),"infer_consumption":infer_consumption,"infer_density":infer_density,"packs80":len(packs80)},ensure_ascii=False))
