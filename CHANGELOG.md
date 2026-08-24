@@ -1,5 +1,14 @@
 # 版本记录
 
+## [3.4.1] - 2026-08-24
+
+### 证据补全管线并入主干 + 本地可复现
+- 合并 `codex/data-quality-version-audit` 与 `codex/evidence-led-parameter-enrichment` 两分支（审计工具 + 证据补全管线 + 候选工作簿 + 外部证据台账）
+- 新增 `vendor/artifact-tool-shim.mjs`：以 exceljs 实现 codex 运行时 `@oai/artifact-tool` 所用 API 子集（含 R1C1 公式翻译与求值缓存），三个管线脚本改用本地 shim 导入，脱离 codex 沙箱即可复跑
+- 新增 `package.json`（devDependency: exceljs）；`.gitignore` 排除 `node_modules/` 与本地复跑输出
+- `build_enriched_workbook.mjs` 预览图渲染改为可选（本地环境无光栅化器时跳过并告警，不影响工作簿产出）
+- 复跑验证：`verify_enriched_workbook.mjs` 对本地产出候选簿 **PASS**（records=4459/columns=38/扭矩解析1279/候选364(内38+外326+局部32)/电耗4265/包质量424/审计行2820/队列3180/80kWh专项453/供应商候选5/证据36条0错配/公式错误0/污染残留0）；`analysis_records.json` 与已提交版本语义一致（研究分组行序受运行环境区域设置影响）
+
 ## [3.4.0] - 2026-08-23
 
 ### 数据质量与版本审计自动化

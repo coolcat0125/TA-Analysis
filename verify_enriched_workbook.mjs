@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 import fs from "node:fs/promises";
-import { FileBlob, SpreadsheetFile } from "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs";
+import { FileBlob, SpreadsheetFile } from "./vendor/artifact-tool-shim.mjs";
 
 const COPYRIGHT = "Copyright © 2026 David YE";
 const file = process.argv[2];

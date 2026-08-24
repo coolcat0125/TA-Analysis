@@ -19,3 +19,7 @@ _*.py
 _*.log
 ocr_imgs/
 _ocr_texts/
+
+# Node 本地依赖与复跑输出
+node_modules/
+/.rerun/

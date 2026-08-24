@@ -5,7 +5,7 @@
  */
 import fs from "node:fs/promises";
 import crypto from "node:crypto";
-import { FileBlob, SpreadsheetFile } from "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs";
+import { FileBlob, SpreadsheetFile } from "./vendor/artifact-tool-shim.mjs";
 
 const COPYRIGHT = "Copyright © 2026 David YE";
 const VERSION = "v3.4.6-candidate";
@@ -578,8 +578,12 @@ copyrightSheet.getRange("B:B").format.columnWidth = 84;
 await fs.mkdir(OUTPUT_DIR, { recursive: true });
 const inspection = await workbook.inspect({ kind: "workbook,sheet,table", maxChars: 12000, tableMaxRows: 3, tableMaxCols: 5, tableMaxCellChars: 80 });
 await fs.writeFile(`${OUTPUT_DIR}/workbook_inspection.ndjson`, `${inspection.ndjson}\n`, "utf8");
-const preview = await workbook.render({ sheetName: "【补全说明】", autoCrop: "all", scale: 1, format: "png" });
-await fs.writeFile(PREVIEW_FILE, new Uint8Array(await preview.arrayBuffer()));
+try {
+  const preview = await workbook.render({ sheetName: "【补全说明】", autoCrop: "all", scale: 1, format: "png" });
+  await fs.writeFile(PREVIEW_FILE, new Uint8Array(await preview.arrayBuffer()));
+} catch (previewError) {
+  console.warn(`[warn] preview skipped: ${previewError.message}`);
+}
 const output = await SpreadsheetFile.exportXlsx(workbook);
 await output.save(OUTPUT_FILE);
 console.log(JSON.stringify({ output: OUTPUT_FILE, preview: PREVIEW_FILE, source_sha256: sourceSha256, audit_rows: auditRows.length, copyright: COPYRIGHT }, null, 2));
