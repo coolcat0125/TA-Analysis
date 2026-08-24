@@ -1,0 +1,183 @@
+﻿excel_row,batch,product_model,field,contaminated_value,recommended_action,copyright
+3434,399, BJ2030V411MSHEV ,产品商标,请提供具体的正文内容，以便我进行产品商标的提取。,clear_and_research,Copyright © 2026 David YE
+3434,399, BJ2030V411MSHEV ,轴距(mm),请提供具体的正文内容，以便我进行轴距信息的提取。,clear_and_research,Copyright © 2026 David YE
+3434,399, BJ2030V411MSHEV ,电池类型,请提供具体的正文内容，以便我进行信息提取。,clear_and_research,Copyright © 2026 David YE
+3434,399, BJ2030V411MSHEV ,电机峰值功率(kW),请提供具体的正文内容，以便我进行信息提取。,clear_and_research,Copyright © 2026 David YE
+3434,399, BJ2030V411MSHEV ,发动机生产企业,请提供具体的正文内容，以便我进行发动机生产企业信息的提取。,clear_and_research,Copyright © 2026 David YE
+3434,399, BJ2030V411MSHEV ,发动机型号,请提供具体的正文内容，以便我提取发动机型号。,clear_and_research,Copyright © 2026 David YE
+3435,399, BJ2030V601MSHEV ,产品商标,请提供具体的正文内容，以便我进行产品商标的提取。,clear_and_research,Copyright © 2026 David YE
+3435,399, BJ2030V601MSHEV ,电池类型,请提供具体的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3435,399, BJ2030V601MSHEV ,电机峰值功率(kW),请提供具体的正文内容，以便我为你提取驱动电机峰值功率数值。,clear_and_research,Copyright © 2026 David YE
+3435,399, BJ2030V601MSHEV ,发动机功率(kW),请提供具体的正文内容，以便我从中提取发动机功率数值。,clear_and_research,Copyright © 2026 David YE
+3435,399, BJ2030V601MSHEV ,发动机生产企业,请提供具体的正文内容，以便我进行发动机生产企业信息的提取。,clear_and_research,Copyright © 2026 David YE
+3435,399, BJ2030V601MSHEV ,发动机型号,请提供具体的正文内容，以便我从中提取发动机型号。,clear_and_research,Copyright © 2026 David YE
+3446,399, CA6492HA6PHEVT ,产品商标,请提供具体的正文内容，以便我提取产品商标。,clear_and_research,Copyright © 2026 David YE
+3446,399, CA6492HA6PHEVT ,轴距(mm),请提供具体的正文内容，以便我从中提取轴距信息。,clear_and_research,Copyright © 2026 David YE
+3446,399, CA6492HA6PHEVT ,电池类型,请提供具体的正文内容，以便我进行储能装置单体种类的提取。,clear_and_research,Copyright © 2026 David YE
+3446,399, CA6492HA6PHEVT ,发动机生产企业,请提供具体的正文内容，以便我进行发动机生产企业信息的提取。,clear_and_research,Copyright © 2026 David YE
+3446,399, CA6492HA6PHEVT ,发动机型号,请提供具体的正文内容，以便我提取发动机型号。,clear_and_research,Copyright © 2026 David YE
+3447,399, CA6492HA6PHEVTA ,产品商标,请提供具体的正文内容，以便我进行产品商标的提取。,clear_and_research,Copyright © 2026 David YE
+3447,399, CA6492HA6PHEVTA ,轴距(mm),请提供具体的正文内容，以便我从中提取轴距信息。,clear_and_research,Copyright © 2026 David YE
+3447,399, CA6492HA6PHEVTA ,电池类型,请提供具体的正文内容，以便我进行储能装置单体种类的提取。,clear_and_research,Copyright © 2026 David YE
+3447,399, CA6492HA6PHEVTA ,发动机生产企业,请提供具体的正文内容，以便我提取发动机生产企业信息。,clear_and_research,Copyright © 2026 David YE
+3447,399, CA6492HA6PHEVTA ,发动机型号,请提供具体的正文内容，以便我提取发动机型号。,clear_and_research,Copyright © 2026 David YE
+3448,399, CA6492HA6PHEVTX ,产品商标,请提供具体的正文内容，以便我进行产品商标的提取。,clear_and_research,Copyright © 2026 David YE
+3448,399, CA6492HA6PHEVTX ,轴距(mm),请提供具体的正文内容，以便我从中提取轴距信息。,clear_and_research,Copyright © 2026 David YE
+3448,399, CA6492HA6PHEVTX ,电池类型,请提供具体的正文内容，以便我进行信息提取。,clear_and_research,Copyright © 2026 David YE
+3448,399, CA6492HA6PHEVTX ,发动机生产企业,请提供具体的正文内容，以便我进行发动机生产企业信息的提取。,clear_and_research,Copyright © 2026 David YE
+3448,399, CA6492HA6PHEVTX ,发动机型号,请提供具体的正文内容，以便我提取发动机型号。,clear_and_research,Copyright © 2026 David YE
+3452,399, DFM6480M5F6PHEV ,电机峰值功率(kW),无有效信息,clear_and_research,Copyright © 2026 David YE
+3454,399, HQ6471DCHEV108 ,电机峰值功率(kW),无有效信息,clear_and_research,Copyright © 2026 David YE
+3464,399, MR6542DREEV100 ,电机峰值功率(kW),无有效信息,clear_and_research,Copyright © 2026 David YE
+3465,399, MR6542DREEV101 ,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3469,399, NEQ6510REEVS5DA ,电机峰值功率(kW),未找到驱动电机峰值功率相关信息,clear_and_research,Copyright © 2026 David YE
+3471,399, NEQ6510REEVS5DC ,电机峰值功率(kW),无有效信息,clear_and_research,Copyright © 2026 David YE
+3473,399, NHQ6530SHEVHA ,产品商标,请提供具体的正文内容，以便我提取产品商标。,clear_and_research,Copyright © 2026 David YE
+3473,399, NHQ6530SHEVHA ,发动机生产企业,请提供具体的正文内容，以便我进行发动机生产企业信息的提取。,clear_and_research,Copyright © 2026 David YE
+3473,399, NHQ6530SHEVHA ,发动机型号,请提供具体的正文内容，以便我提取发动机型号。,clear_and_research,Copyright © 2026 David YE
+3481,399, SQR6483CHEVT1J ,电机峰值功率(kW),未提取到驱动电机峰值功率相关信息,clear_and_research,Copyright © 2026 David YE
+3481,399, SQR6483CHEVT1J ,发动机生产企业,无有效信息可提取,clear_and_research,Copyright © 2026 David YE
+3482,399, SQR7150CHEVE012 ,轴距(mm),未提取到轴距信息,clear_and_research,Copyright © 2026 David YE
+3482,399, SQR7150CHEVE012 ,电机峰值功率(kW),未找到驱动电机峰值功率相关信息,clear_and_research,Copyright © 2026 David YE
+3484,399, SQR7150REEVE032 ,电机峰值功率(kW),未找到驱动电机峰值功率相关信息,clear_and_research,Copyright © 2026 David YE
+3553,400,SQR6480CHEVT1N1,电机峰值功率(kW),未提供具体数值,clear_and_research,Copyright © 2026 David YE
+3554,400,SQR6484CHEVT1J,电机峰值功率(kW),未提供具体数值,clear_and_research,Copyright © 2026 David YE
+3598,401,NHQ7001BEVLC,电机生产企业,抱歉，我无法从提供的正文中提取出发动机生产企业信息。,clear_and_research,Copyright © 2026 David YE
+3617,401, CC6480BT25MPHEV ,电机峰值功率(kW),未提供具体数据（原文中未提及驱动电机峰值功率）,clear_and_research,Copyright © 2026 David YE
+3633,401, HQ6471DCHEV106M ,轴距(mm),请提供包含轴距信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3639,401, HQ7151DCHEV111 ,电池类型,未提供具体信息,clear_and_research,Copyright © 2026 David YE
+3653,401, NEQ6510REEVS5DD ,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3668,401, SQR6484CHEVT1J ,产品商标,请提供包含产品商标信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3735,402, AHC6500SHEVH0C ,电机峰值功率(kW),未提供具体数值,clear_and_research,Copyright © 2026 David YE
+3737,402,BAW6514MB6SHEV,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3737,402,BAW6514MB6SHEV,电机峰值功率(kW),未提供,clear_and_research,Copyright © 2026 David YE
+3737,402,BAW6514MB6SHEV,发动机生产企业,未提供,clear_and_research,Copyright © 2026 David YE
+3737,402,BAW6514MB6SHEV,发动机型号,未提供,clear_and_research,Copyright © 2026 David YE
+3739,402, BJ2030V414MSHEV ,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3744,402,BJ7150K711RSHEV,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3745,402,BJ7150K712RSHEV,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3745,402,BJ7150K712RSHEV,发动机生产企业,未提供,clear_and_research,Copyright © 2026 David YE
+3746,402,BJ7150K713RSHEV,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3747,402,BJ7150K72RSHEV,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3747,402,BJ7150K72RSHEV,发动机生产企业,未提供,clear_and_research,Copyright © 2026 David YE
+3747,402,BJ7150K72RSHEV,发动机型号,未提供,clear_and_research,Copyright © 2026 David YE
+3750,402,CA6475HA6PHEVTB,电机峰值功率(kW),未提供具体数值，但提到配备汽车事件数据记录系统(EDR),clear_and_research,Copyright © 2026 David YE
+3751,402,CA6520HA6PHEVTA,电机峰值功率(kW),未提供具体数值，但型号为CAM220PT20,clear_and_research,Copyright © 2026 David YE
+3752,402,CA6520HA6PHEVTXC,电机峰值功率(kW),未提供具体数值,clear_and_research,Copyright © 2026 David YE
+3756,402,CSA6531LFSHEV1,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3756,402,CSA6531LFSHEV1,发动机生产企业,未提供,clear_and_research,Copyright © 2026 David YE
+3756,402,CSA6531LFSHEV1,发动机型号,未提供,clear_and_research,Copyright © 2026 David YE
+3757,402,CSA6531LFSHEV2,轴距(mm),未提供具体数值,clear_and_research,Copyright © 2026 David YE
+3757,402,CSA6531LFSHEV2,发动机型号,未提供具体型号,clear_and_research,Copyright © 2026 David YE
+3762,402,EQ6497AL5F1SHEV,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3762,402,EQ6497AL5F1SHEV,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3762,402,EQ6497AL5F1SHEV,发动机功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3762,402,EQ6497AL5F1SHEV,发动机生产企业,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3762,402,EQ6497AL5F1SHEV,发动机型号,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3763,402,EQ6497AL5F2SHEV,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3763,402,EQ6497AL5F2SHEV,电机峰值功率(kW),未提供,clear_and_research,Copyright © 2026 David YE
+3763,402,EQ6497AL5F2SHEV,发动机功率(kW),未提供,clear_and_research,Copyright © 2026 David YE
+3763,402,EQ6497AL5F2SHEV,发动机生产企业,未提供,clear_and_research,Copyright © 2026 David YE
+3769,402, HQ7151DCHEV103M ,发动机生产企业,请提供包含发动机生产企业信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3770,402, HQ7151DCHEV106 ,电机峰值功率(kW),抱歉，我无法从提供的正文中提取到驱动电机峰值功率数值。,clear_and_research,Copyright © 2026 David YE
+3770,402, HQ7151DCHEV106 ,发动机功率(kW),抱歉，我无法从提供的正文中提取发动机功率数值。请提供包含相关发动机功率信息的文本内容。,clear_and_research,Copyright © 2026 David YE
+3770,402, HQ7151DCHEV106 ,发动机生产企业,无法从提供的正文中识别出发动机生产企业。,clear_and_research,Copyright © 2026 David YE
+3772,402,HQ7151DCHEV110,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3773,402,HQ7151DCHEV111,轴距(mm),未提供具体数值,clear_and_research,Copyright © 2026 David YE
+3773,402,HQ7151DCHEV111,电池类型,未提供具体信息,clear_and_research,Copyright © 2026 David YE
+3773,402,HQ7151DCHEV111,发动机生产企业,未提供具体信息,clear_and_research,Copyright © 2026 David YE
+3774,402,HQ7151DCHEV112,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3774,402,HQ7151DCHEV112,发动机生产企业,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3774,402,HQ7151DCHEV112,发动机型号,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3775,402,HQ7151DCHEV113,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3775,402,HQ7151DCHEV113,发动机型号,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3779,402, JX6472PG6PHEV ,发动机生产企业,请提供包含发动机生产企业信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3780,402,JX6508PA6SHEV,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3782,402, LZ6520M15B3PHEV ,电机峰值功率(kW),未提供具体数值,clear_and_research,Copyright © 2026 David YE
+3783,402, LZ6520M15B4PHEV ,电池类型,请提供需要提取信息的正文内容。,clear_and_research,Copyright © 2026 David YE
+3783,402, LZ6520M15B4PHEV ,电机峰值功率(kW),请提供包含“驱动电机峰值功率”信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3783,402, LZ6520M15B4PHEV ,发动机功率(kW),请提供包含发动机功率信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3783,402, LZ6520M15B4PHEV ,发动机生产企业,请提供包含发动机生产企业信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3787,402, MR7152DCHEV103 ,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3793,402,NHQ7150SHEVKA,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3793,402,NHQ7150SHEVKA,发动机生产企业,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3794,402,NJL6553HEV1,电机峰值功率(kW),请提供包含驱动电机峰值功率信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3794,402,NJL6553HEV1,发动机功率(kW),请提供包含发动机功率信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3794,402,NJL6553HEV1,发动机型号,请提供包含发动机型号信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3800,402,SC6480AAAB6HEV,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3800,402,SC6480AAAB6HEV,发动机生产企业,未提供,clear_and_research,Copyright © 2026 David YE
+3801,402,SC6520AAAA6HEV,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3801,402,SC6520AAAA6HEV,电池类型,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3801,402,SC6520AAAA6HEV,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3801,402,SC6520AAAA6HEV,发动机功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3801,402,SC6520AAAA6HEV,发动机生产企业,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3801,402,SC6520AAAA6HEV,发动机型号,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3802,402,SC6520AAAB6HEV,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3802,402,SC6520AAAB6HEV,电池类型,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3802,402,SC6520AAAB6HEV,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3802,402,SC6520AAAB6HEV,发动机功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3802,402,SC6520AAAB6HEV,发动机生产企业,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3802,402,SC6520AAAB6HEV,发动机型号,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3803,402,SC6522AAA6HEV,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3803,402,SC6522AAA6HEV,发动机生产企业,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3805,402,SC7150AAAN6HEV,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3805,402,SC7150AAAN6HEV,发动机生产企业,未提供,clear_and_research,Copyright © 2026 David YE
+3805,402,SC7150AAAN6HEV,发动机型号,未提供,clear_and_research,Copyright © 2026 David YE
+3807,402,SC7150AAAU6HEV,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3807,402,SC7150AAAU6HEV,发动机生产企业,未提供,clear_and_research,Copyright © 2026 David YE
+3807,402,SC7150AAAU6HEV,发动机型号,未提供,clear_and_research,Copyright © 2026 David YE
+3809,402,SC7157AAA6HEV,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3810,402,SC7157AAB6HEV,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3810,402,SC7157AAB6HEV,发动机生产企业,未提供,clear_and_research,Copyright © 2026 David YE
+3810,402,SC7157AAB6HEV,发动机型号,未提供,clear_and_research,Copyright © 2026 David YE
+3811,402,SC7157ABA6HEV,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3811,402,SC7157ABA6HEV,发动机型号,未提供,clear_and_research,Copyright © 2026 David YE
+3812,402,SKE6521SSHEVA1S,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3812,402,SKE6521SSHEVA1S,电机峰值功率(kW),未提供,clear_and_research,Copyright © 2026 David YE
+3812,402,SKE6521SSHEVA1S,发动机功率(kW),未提供,clear_and_research,Copyright © 2026 David YE
+3812,402,SKE6521SSHEVA1S,发动机生产企业,未提供,clear_and_research,Copyright © 2026 David YE
+3812,402,SKE6521SSHEVA1S,发动机型号,未提供,clear_and_research,Copyright © 2026 David YE
+3813,402,SKE6521SSHEVA2S,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3813,402,SKE6521SSHEVA2S,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3813,402,SKE6521SSHEVA2S,发动机功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3813,402,SKE6521SSHEVA2S,发动机生产企业,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3814,402,SKE6521SSHEVA3S,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3814,402,SKE6521SSHEVA3S,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3814,402,SKE6521SSHEVA3S,发动机功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3814,402,SKE6521SSHEVA3S,发动机生产企业,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3815,402,SKE6521SSHEVA4S,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3815,402,SKE6521SSHEVA4S,电机峰值功率(kW),未提供,clear_and_research,Copyright © 2026 David YE
+3815,402,SKE6521SSHEVA4S,发动机功率(kW),未提供,clear_and_research,Copyright © 2026 David YE
+3815,402,SKE6521SSHEVA4S,发动机生产企业,未提供,clear_and_research,Copyright © 2026 David YE
+3816,402,SKE6521SSHEVAS,轴距(mm),未提供,clear_and_research,Copyright © 2026 David YE
+3816,402,SKE6521SSHEVAS,电机峰值功率(kW),未提供,clear_and_research,Copyright © 2026 David YE
+3816,402,SKE6521SSHEVAS,发动机功率(kW),未提供,clear_and_research,Copyright © 2026 David YE
+3816,402,SKE6521SSHEVAS,发动机生产企业,未提供,clear_and_research,Copyright © 2026 David YE
+3816,402,SKE6521SSHEVAS,发动机型号,未提供,clear_and_research,Copyright © 2026 David YE
+3817,402,SQR2030CHEVD01,电机峰值功率(kW),未提供具体数值，但提及SQRH4J20发动机最大净功率为145kW,clear_and_research,Copyright © 2026 David YE
+3818,402, SQR2030CHEVD011 ,电机峰值功率(kW),未提供具体数据，但提及SQRH4J20发动机最大净功率为145kW,clear_and_research,Copyright © 2026 David YE
+3820,402, SQR2030CHEVD013 ,电机峰值功率(kW),未提供具体数值，但提及SQRH4J20发动机最大净功率为145kW,clear_and_research,Copyright © 2026 David YE
+3821,402, SQR2040CHEVD011 ,电机峰值功率(kW),请提供包含驱动电机峰值功率信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3821,402, SQR2040CHEVD011 ,发动机功率(kW),请提供包含发动机功率信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3821,402, SQR2040CHEVD011 ,发动机生产企业,请提供包含发动机生产企业信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3821,402, SQR2040CHEVD011 ,发动机型号,抱歉，您没有提供具体的正文内容，我无法从中提取发动机型号。请您提供包含相关信息的正文，以便我按照要求进行提取。,clear_and_research,Copyright © 2026 David YE
+3822,402, SQR2040CHEVD012 ,电机峰值功率(kW),请提供包含“驱动电机峰值功率”信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3822,402, SQR2040CHEVD012 ,发动机功率(kW),请提供包含发动机功率信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3822,402, SQR2040CHEVD012 ,发动机生产企业,请提供包含发动机生产企业信息的正文内容，以便我进行提取。,clear_and_research,Copyright © 2026 David YE
+3822,402, SQR2040CHEVD012 ,发动机型号,抱歉，您提供的“正文”部分为空，无法从中提取发动机型号信息。请您补充包含相关信息的正文内容，以便我为您准确提取。,clear_and_research,Copyright © 2026 David YE
+3825,402,SQR6471CHEVT1N1,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3826,402,SQR6472CHEVT1G,电机峰值功率(kW),未提供具体数值,clear_and_research,Copyright © 2026 David YE
+3827,402,SQR6480CHEVT1L,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3829,402,SQR6480CHEVT1L4,电机峰值功率(kW),未提供具体数据（原文中未提及）,clear_and_research,Copyright © 2026 David YE
+3834,402,SQR6490CHEVT29,电机峰值功率(kW),未提供具体数值,clear_and_research,Copyright © 2026 David YE
+3836,402,SQR6520REEVE022,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3836,402,SQR6520REEVE022,发动机生产企业,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3836,402,SQR6520REEVE022,发动机型号,未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3839,402,SQR7150CHEVM1E8,轴距(mm),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3897,403,CA7159B6SHEVA,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3900,403,CC6510BD23APHEV,电机峰值功率(kW),未直接提供,clear_and_research,Copyright © 2026 David YE
+3907,403,HQ7151DCHEV117,电机峰值功率(kW),未提供具体数值,clear_and_research,Copyright © 2026 David YE
+3918,403,SQR6540REEVEHV,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3919,403,SQR6540REEVEHV1,电机峰值功率(kW),未提供,clear_and_research,Copyright © 2026 David YE
+3920,403,SQR6540REEVEHV2,电机峰值功率(kW),未提供具体数据,clear_and_research,Copyright © 2026 David YE
+3939,404,MR7001BEV126,电机生产企业,未提供具体数据,clear_and_research,Copyright © 2026 David YE
