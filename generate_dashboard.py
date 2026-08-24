@@ -5,6 +5,12 @@ NEV公告数据看板生成器 v3（开箱即用 · 本地离线运行）
 ====================================================
 读取公告参数汇总Excel → 生成自包含HTML交互式看板（内嵌ECharts+SheetJS，双击即可打开）
 
+v3.5 更新：
+  1. 新增【企业与品牌】分析页：头部企业批次演进 / 企业×细分市场矩阵 /
+     各批次新进入企业跟踪 / 品牌 Top 15 / 免购置税占比趋势
+  2. 车型明细查询表：当前筛选内搜索（企业/商标/型号）、列排序、翻页浏览
+  3. 记录字段扩展：产品型号 / 产品商标 / 是否减免购置税（导出同步）
+
 v3 更新：
   1. 全局 PHEV 展示名统一为 PHEV/EREV（含图表、KPI、导出）
   2. 全局"拟合线"更名为"趋势线"；多参数图每参数独立趋势线
@@ -51,7 +57,8 @@ XLSXLIB_PATH = os.path.join(HERE, 'xlsx.full.min.js')
 SHEET_NAME = 'NEV公告参数汇总'
 
 FIELDS = ['b', 't', 's', 'e', 'w', 'r', 'c', 'bt', 'ed', 'ec',
-          'pp', 'tp', 'ms', 'tq', 'fo', 'dv', 'ep', 'es', 'src']
+          'pp', 'tp', 'ms', 'tq', 'fo', 'dv', 'ep', 'es', 'src',
+          'm', 'bd', 'tx']
 
 
 def clean_num(v):
@@ -120,6 +127,14 @@ def norm_bt(v):
     if '锂' in s:
         return '其他锂离子'
     return '其他'
+
+
+def norm_tax(v):
+    """是否减免购置税归一化：仅接受 是/否，其余视为缺失。"""
+    s = clean_str(v)
+    if s in ('是', '否'):
+        return s
+    return None
 
 
 # 物理合理范围：超出视为录入异常，置空（避免离群值污染统计）
@@ -200,6 +215,9 @@ def load_records(path):
             val['tq'], val['fo'], val['dv'], val['ep'],
             clean_str(row[27]),          # es 发动机生产企业
             clean_str(row[29]),          # src 数据来源
+            clean_str(row[1]),           # m 产品型号
+            clean_str(row[2]),           # bd 产品商标
+            norm_tax(row[10]),           # tx 是否减免购置税
         ]
         records.append(rec)
     wb.close()
@@ -423,6 +441,27 @@ select:hover,select:focus{border-color:var(--clay)}
 .dm-stat .v{font-family:var(--mono);font-size:24px;font-weight:600;color:var(--clay)}
 .dm-stat .l{color:var(--faint);font-size:11.5px;margin-top:2px}
 
+/* ---------- 明细查询表 ---------- */
+.tbl-bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.tbl-bar input{flex:1;min-width:220px;background:var(--card2);color:var(--text);border:1px solid var(--border2);
+  border-radius:8px;padding:8px 14px;font-size:13px;font-family:var(--sans);outline:none;transition:border-color .2s}
+.tbl-bar input:focus{border-color:var(--clay)}
+#tblInfo{color:var(--dim);font-size:12.5px;white-space:nowrap}
+#tblInfo b{color:var(--clay);font-family:var(--mono)}
+.pg-btn{background:var(--card2);border:1px solid var(--border2);color:var(--dim);border-radius:7px;
+  padding:6px 14px;font-size:12.5px;cursor:pointer;transition:all .18s;font-family:var(--sans)}
+.pg-btn:hover:not(:disabled){color:var(--clay);border-color:var(--clay)}
+.pg-btn:disabled{opacity:.35;cursor:not-allowed}
+.tbl-wrap{overflow:auto;max-height:520px;border:1px solid var(--border);border-radius:10px}
+#tblDetail{width:100%;border-collapse:collapse;font-size:12.5px;white-space:nowrap}
+#tblDetail th{position:sticky;top:0;z-index:2;background:var(--card2);color:var(--dim);font-weight:600;
+  padding:9px 12px;text-align:left;cursor:pointer;border-bottom:1px solid var(--border2);user-select:none;white-space:nowrap}
+#tblDetail th:hover{color:var(--clay)}
+#tblDetail th.on{color:var(--clay)}
+#tblDetail td{padding:7px 12px;border-bottom:1px solid var(--border);color:var(--text);max-width:260px;overflow:hidden;text-overflow:ellipsis}
+#tblDetail tbody tr:hover td{background:var(--card2)}
+#tblDetail td.na{color:var(--faint)}
+
 /* ---------- Footer ---------- */
 footer{margin-top:44px;border-top:1px solid var(--border);padding-top:20px;color:var(--faint);
   font-size:12.5px;line-height:2;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
@@ -504,7 +543,8 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
   <button class="tab" data-p="p2">电机系统<i>Motor</i></button>
   <button class="tab" data-p="p3">发动机系统<i>Engine</i></button>
   <button class="tab" data-p="p4">电池系统<i>Battery</i></button>
-  <button class="tab" data-p="p5">数据管理<i>Export / Import</i></button>
+  <button class="tab" data-p="p5">企业与品牌<i>Enterprise / Brand</i></button>
+  <button class="tab" data-p="p6">数据管理<i>Export / Import</i></button>
 </nav>
 
 <!-- ============ Panel 1 总览 ============ -->
@@ -557,8 +597,20 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
   </div>
 </section>
 
-<!-- ============ Panel 5 数据管理 ============ -->
+<!-- ============ Panel 5 企业与品牌 ============ -->
 <section class="panel" id="p5">
+  <div class="insight"><div class="ic">§</div><div class="tx" id="insightEntTx"></div></div>
+  <div class="grid">
+    <div class="card c-s12"><div class="c-h"><div class="c-t">Top 8 企业公告量 · 批次演进</div><div class="c-s">堆叠面积图 · 跟踪头部企业公告格局变化</div></div><div class="chart tall" id="chEntTrend"></div></div>
+    <div class="card c-s7"><div class="c-h"><div class="c-t">企业 × 细分市场矩阵</div><div class="c-s">Top 10 企业 × 已填报细分市场 · 公告数量热力</div></div><div class="chart tall" id="chEntSeg"></div></div>
+    <div class="card c-s5"><div class="c-h"><div class="c-t">各批次新进入企业数</div><div class="c-s">首次出现公告的企业数与累计在营企业 · 跟踪新玩家入场节奏</div></div><div class="chart tall" id="chNewEnt"></div></div>
+    <div class="card c-s6"><div class="c-h"><div class="c-t">品牌 Top 15</div><div class="c-s">产品商标口径 · 按公告车型数</div></div><div class="chart" id="chBrandTop"></div></div>
+    <div class="card c-s6"><div class="c-h"><div class="c-t">免购置税车型占比趋势</div><div class="c-s">按批次 · 已填报口径 · 虚线为全范围均值</div></div><div class="chart" id="chTaxTrend"></div></div>
+  </div>
+</section>
+
+<!-- ============ Panel 6 数据管理 ============ -->
+<section class="panel" id="p6">
   <div class="insight"><div class="ic">⇅</div><div class="tx">导出当前筛选数据供进一步细化分析；导入最新公告数据表后，<b>全局数据与图表将实时刷新</b>（无需重新运行生成脚本）。</div></div>
   <div class="dm-grid">
     <div class="card c-s7">
@@ -581,6 +633,18 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
       </div>
       <input type="file" id="fileInput" accept=".xlsx,.xls" style="display:none">
       <p class="dm-note" id="importStatus" style="margin-top:12px;color:var(--faint)"></p>
+    </div>
+    <div class="card c-s12">
+      <div class="c-h"><div class="c-t">车型明细查询</div><div class="c-s">当前筛选范围内检索 · 点击列头排序 · 缺失值以 – 呈现</div></div>
+      <div class="tbl-bar">
+        <input id="tblSearch" placeholder="搜索企业 / 商标 / 产品型号…" autocomplete="off">
+        <span id="tblInfo"></span>
+        <button class="pg-btn" id="tblPrev">← 上一页</button>
+        <button class="pg-btn" id="tblNext">下一页 →</button>
+      </div>
+      <div class="tbl-wrap">
+        <table id="tblDetail"><thead><tr></tr></thead><tbody></tbody></table>
+      </div>
     </div>
   </div>
 </section>
@@ -629,10 +693,12 @@ const RAW_INIT = __DATA_JSON__;
 <script>
 'use strict';
 /* ==================== 索引与全局 ==================== */
-const I = {b:0,t:1,s:2,e:3,w:4,r:5,c:6,bt:7,ed:8,ec:9,pp:10,tp:11,ms:12,tq:13,fo:14,dv:15,ep:16,es:17,src:18};
+const I = {b:0,t:1,s:2,e:3,w:4,r:5,c:6,bt:7,ed:8,ec:9,pp:10,tp:11,ms:12,tq:13,fo:14,dv:15,ep:16,es:17,src:18,
+  m:19,bd:20,tx:21};
 const COL_NAMES = ['批次','动力类型','细分市场','企业名称','整备质量(kg)','纯电续航(km)','电池容量(kWh)','电池类型',
   '能量密度(Wh/kg)','百公里电耗(kWh/100km)','电机峰值功率(kW)','电机总功率(kW)','电机生产企业','峰值扭矩(Nm)',
-  '综合油耗(L/100km)','发动机排量(mL)','发动机功率(kW)','发动机生产企业','数据来源'];
+  '综合油耗(L/100km)','发动机排量(mL)','发动机功率(kW)','发动机生产企业','数据来源',
+  '产品型号','产品商标','是否减免购置税'];
 let RAW = RAW_INIT;
 let META_CUR = META;
 
@@ -1314,6 +1380,184 @@ function insight5(rows){
     `。热力图按批次展开，可定位数据缺失集中的批次区间。业务图表统计均为已填报口径，缺失值不参与计算与百分比。`;
 }
 
+/* ==================== Panel 5 企业与品牌 ==================== */
+function chEntTrend(rows){
+  if(!document.getElementById('chEntTrend'))return;
+  const bs = byBatch(rows);
+  const labels = bs.map(x=>String(x[0]));
+  const top = groupCount(rows,I.e,8).map(e=>e[0]);
+  const colors=['#D97757','#6B9BD1','#7FA97F','#D4A94E','#A97FA9','#5BAFAF','#C97B7B','#B08968'];
+  const series = top.map((ent,si)=>({
+    name:ent, type:'line', stack:'total', smooth:true, symbol:'circle', symbolSize:4,
+    areaStyle:{opacity:.26}, lineStyle:{width:1.4}, emphasis:{focus:'series'},
+    itemStyle:{color:colors[si%colors.length]},
+    data: bs.map(x=>x[1].filter(r=>r[I.e]===ent).length)
+  }));
+  chart('chEntTrend').setOption({
+    tooltip:Object.assign({trigger:'axis'},TT),
+    legend:LG({type:'scroll',pageIconColor:TC().axis}),
+    grid:GRID({bottom:64,top:46}),
+    xAxis:Object.assign({type:'category',data:labels,boundaryGap:false},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
+    yAxis:Object.assign({type:'value',name:'款数',nameTextStyle:{color:TC().axis}},AXS()),
+    series},true);
+}
+function chEntSeg(rows){
+  if(!document.getElementById('chEntSeg'))return;
+  const ents = groupCount(rows,I.e,10).map(e=>e[0]);
+  const segs = groupCount(rows.filter(r=>ents.includes(r[I.e])),I.s,8).map(e=>e[0]);
+  if(!ents.length||!segs.length){chart('chEntSeg').clear();return;}
+  const data=[]; let vmax=0;
+  ents.forEach((e,yi)=>segs.forEach((s,xi)=>{
+    const c=rows.filter(r=>r[I.e]===e&&r[I.s]===s).length;
+    if(c>0)data.push([xi,yi,c]); if(c>vmax)vmax=c;
+  }));
+  chart('chEntSeg').setOption({
+    tooltip:Object.assign({position:'top',
+      formatter:p=>`<b>${ents[p.value[1]]}</b> × ${segs[p.value[0]]}<br>公告车型：<b>${p.value[2]}</b> 款`},TT),
+    grid:Object.assign({},GRID({left:10,right:20,top:10,bottom:70}),{containLabel:true}),
+    xAxis:Object.assign({type:'category',data:segs,axisLabel:{color:TC().axis,fontSize:10,rotate:35}},AXS({splitLine:{show:false}})),
+    yAxis:Object.assign({type:'category',data:ents,axisLabel:{color:TC().lbl,fontSize:10,width:96,overflow:'truncate'}},AXS({splitLine:{show:false}})),
+    visualMap:{min:0,max:vmax,calculable:false,orient:'horizontal',left:'center',bottom:0,
+      textStyle:{color:TC().axis,fontSize:10},
+      inRange:{color:['#EFE7DB','#C9973F','#B3613C']}},
+    series:[{type:'heatmap',data,label:{show:true,formatter:p=>p.value[2]>=2?p.value[2]:'',color:'#FFF6EC',fontSize:9},
+      itemStyle:{borderColor:TC().pieBd,borderWidth:1}}]
+  },true);
+}
+function chNewEnt(rows){
+  if(!document.getElementById('chNewEnt'))return;
+  const bs = byBatch(rows);
+  const labels = bs.map(x=>String(x[0]));
+  const firstMap = new Map();
+  bs.forEach((x,i)=>{ x[1].forEach(r=>{ const e=r[I.e]; if(e&&!firstMap.has(e)) firstMap.set(e,i); }); });
+  const newArr = labels.map(()=>0);
+  firstMap.forEach(i=>{ newArr[i]++; });
+  let acc=0; const cumArr = newArr.map(v=>(acc+=v));
+  chart('chNewEnt').setOption({
+    tooltip:Object.assign({trigger:'axis',formatter(ps){
+      const i=ps[0].dataIndex;
+      return `<b>第 ${labels[i]} 批</b><br>新进入企业：<b>${newArr[i]}</b> 家<br>累计在营企业：<b>${cumArr[i]}</b> 家`;}},TT),
+    legend:LG({data:['新进入企业数','累计在营企业数']}),
+    grid:GRID({bottom:64,top:46}),
+    xAxis:Object.assign({type:'category',data:labels},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
+    yAxis:[
+      Object.assign({type:'value',name:'新进入（家）',nameTextStyle:{color:TC().axis}},AXS()),
+      Object.assign({type:'value',name:'累计（家）',nameTextStyle:{color:TC().axis}},AXS({splitLine:{show:false}}))],
+    series:[
+      {name:'新进入企业数',type:'bar',data:newArr,itemStyle:{color:'#5BAFAF'},barMaxWidth:16},
+      {name:'累计在营企业数',type:'line',yAxisIndex:1,data:cumArr,smooth:true,symbol:'none',
+        lineStyle:{color:'#D4A94E',width:2}}
+    ]},true);
+}
+function chBrandTop(rows){
+  if(!document.getElementById('chBrandTop'))return;
+  hbar('chBrandTop', groupCount(rows,I.bd,15), '#B08968');
+}
+function chTaxTrend(rows){
+  if(!document.getElementById('chTaxTrend'))return;
+  const bs = byBatch(rows);
+  const labels = bs.map(x=>String(x[0]));
+  const pctArr=[], cntArr=[];
+  bs.forEach(x=>{
+    const sub = x[1].filter(r=>r[I.tx]!=null);
+    cntArr.push(sub.length);
+    pctArr.push(sub.length? +(sub.filter(r=>r[I.tx]==='是').length/sub.length*100).toFixed(1):null);
+  });
+  const filled = pctArr.filter(v=>v!=null);
+  const overall = filled.length? +(filled.reduce((a,b)=>a+b,0)/filled.length).toFixed(1):null;
+  const sample = rows.filter(r=>r[I.tx]!=null).length;
+  chart('chTaxTrend').setOption({
+    tooltip:Object.assign({trigger:'axis',formatter(ps){
+      const i=ps[0].dataIndex;
+      return `<b>第 ${labels[i]} 批</b><br>免购置税占比：<b>${pctArr[i]==null?'未填报':pctArr[i]+'%'}</b><br>已填报样本：${cntArr[i]} 条`;}},TT),
+    grid:GRID({bottom:64,top:30}),
+    xAxis:Object.assign({type:'category',data:labels,boundaryGap:false},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
+    yAxis:Object.assign({type:'value',name:'%',max:100,nameTextStyle:{color:TC().axis}},AXS()),
+    series:[{name:'免购置税占比',type:'line',data:pctArr,connectNulls:true,smooth:true,
+      symbol:'circle',symbolSize:5,lineStyle:{color:'#7FA97F',width:2.2},itemStyle:{color:'#7FA97F'},
+      markLine:(overall!=null&&sample>=10)?{silent:true,symbol:'none',
+        lineStyle:{color:'#D4A94E',type:'dashed'},
+        label:{color:'#D4A94E',fontSize:10,formatter:'全范围均值 '+overall+'%'},
+        data:[{yAxis:overall}]}:undefined}]
+  },true);
+}
+function insightEnt(rows){
+  const el=document.getElementById('insightEntTx'); if(!el)return;
+  const ents=[...new Set(rows.map(r=>r[I.e]).filter(Boolean))];
+  const brands=[...new Set(rows.map(r=>r[I.bd]).filter(Boolean))];
+  const top=groupCount(rows,I.e,1)[0];
+  const bs=byBatch(rows); const last=bs[bs.length-1];
+  let newLast=null;
+  if(last&&bs.length>1){
+    const prev=new Set(); bs.slice(0,-1).forEach(x=>x[1].forEach(r=>{if(r[I.e])prev.add(r[I.e]);}));
+    newLast=[...new Set(last[1].map(r=>r[I.e]).filter(Boolean))].filter(e=>!prev.has(e)).length;
+  }
+  const taxSub=rows.filter(r=>r[I.tx]!=null);
+  const taxYes=taxSub.filter(r=>r[I.tx]==='是').length;
+  el.innerHTML =
+    `当前筛选覆盖 <em>${ents.length}</em> 家企业、<em>${brands.length}</em> 个品牌。`+
+    (top?`头部企业 <em>${top[0]}</em> 公告 <em>${top[1]}</em> 款（占 <em>${rows.length?pct(top[1],rows.length).toFixed(1):0}%</em>）。`:'')+
+    (newLast!=null?`最新批次（第 <em>${last[0]}</em> 批）新进入企业 <em>${newLast}</em> 家。`:'')+
+    (taxSub.length?`免购置税字段已填报 <em>${taxSub.length}</em> 条，其中"是" <em>${taxYes}</em> 条（<em>${pct(taxYes,taxSub.length).toFixed(1)}%</em>），未填报不计入分母。`:'' );
+}
+
+/* ==================== 车型明细查询表 ==================== */
+const TBL_COLS = [
+  {n:'批次',i:I.b},{n:'企业名称',i:I.e},{n:'商标',i:I.bd},{n:'产品型号',i:I.m},
+  {n:'动力类型',i:I.t},{n:'细分市场',i:I.s},{n:'续航km',i:I.r},{n:'容量kWh',i:I.c},
+  {n:'电池类型',i:I.bt},{n:'总功率kW',i:I.tp},{n:'免购置税',i:I.tx}
+];
+const tblState={q:'',k:I.b,d:-1,page:0,per:20};
+const escH=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+function tblData(){
+  const q=tblState.q.trim().toLowerCase();
+  let rs=q?filtered().filter(r=>[I.e,I.bd,I.m].some(i=>r[i]&&String(r[i]).toLowerCase().includes(q))):filtered();
+  rs=[...rs].sort((a,b)=>{
+    const va=a[tblState.k],vb=b[tblState.k];
+    if(va==null&&vb==null)return 0;
+    if(va==null)return 1; if(vb==null)return -1;
+    if(typeof va==='number'&&typeof vb==='number')return(va-vb)*tblState.d;
+    return String(va).localeCompare(String(vb),'zh-Hans-CN')*tblState.d;
+  });
+  return rs;
+}
+function renderTable(resetPage){
+  const body=document.querySelector('#tblDetail tbody'), head=document.querySelector('#tblDetail thead tr');
+  if(!body||!head)return;
+  head.innerHTML=TBL_COLS.map(c=>
+    `<th data-i="${c.i}" class="${c.i===tblState.k?'on':''}">${c.n}${c.i===tblState.k?(tblState.d<0?' ↓':' ↑'):''}</th>`).join('');
+  head.querySelectorAll('th').forEach(th=>th.onclick=()=>{
+    const k=+th.dataset.i;
+    if(tblState.k===k)tblState.d=-tblState.d; else{tblState.k=k;tblState.d=-1;}
+    renderTable(true);
+  });
+  const rs=tblData();
+  const pages=Math.max(1,Math.ceil(rs.length/tblState.per));
+  if(resetPage||tblState.page>=pages)tblState.page=0;
+  const pg=Math.min(tblState.page,pages-1);
+  const slice=rs.slice(pg*tblState.per,(pg+1)*tblState.per);
+  body.innerHTML=slice.length?slice.map(r=>'<tr>'+TBL_COLS.map(c=>{
+      let v=r[c.i];
+      if(c.i===I.t&&v==='PHEV')v='PHEV/EREV';   // 展示层统一 PHEV/EREV
+      if(v==null)return '<td class="na">–</td>';
+      if(typeof v==='number')return '<td>'+v.toLocaleString('zh-CN')+'</td>';
+      return '<td title="'+escH(v)+'">'+escH(v)+'</td>';
+    }).join('')+'</tr>').join('')
+    :`<tr><td class="na" colspan="${TBL_COLS.length}">无匹配记录</td></tr>`;
+  document.getElementById('tblInfo').innerHTML=
+    `命中 <b>${rs.length.toLocaleString('zh-CN')}</b> 条 · 第 ${pg+1} / ${pages} 页`;
+  document.getElementById('tblPrev').disabled=pg<=0;
+  document.getElementById('tblNext').disabled=pg>=pages-1;
+}
+function initTable(){
+  const inp=document.getElementById('tblSearch');
+  if(!inp)return;
+  let tm=null;
+  inp.oninput=()=>{clearTimeout(tm);tm=setTimeout(()=>{tblState.q=inp.value;renderTable(true);},200);};
+  document.getElementById('tblPrev').onclick=()=>{tblState.page--;renderTable(false);};
+  document.getElementById('tblNext').onclick=()=>{tblState.page++;renderTable(false);};
+}
+
 /* ==================== 数据管理：导出 ==================== */
 const EXPORT_FIELDS = COL_NAMES.map((n,i)=>({name:n,idx:i,on:true}));
 function initExportUI(){
@@ -1396,6 +1640,11 @@ function jsTorque(v){
   if(!s.includes('/')) return null;
   return jsCleanNum(s.split('/').pop());
 }
+/* 是否减免购置税：仅接受 是/否（与生成脚本 norm_tax 同口径） */
+function jsNormTax(v){
+  const s=jsCleanStr(v);
+  return (s==='是'||s==='否')?s:null;
+}
 /* 细分市场：'/'占位符视为未填报 */
 function jsCleanSeg(v){
   const s=jsCleanStr(v);
@@ -1442,7 +1691,8 @@ function parseImportedSheet(aoa, fname){
       val[k]=s;
     }
     records.push([batch,ptype,jsCleanSeg(row[8]),jsCleanStr(row[3]),val.w,val.r,val.c,jsNormBt(row[15]),
-      val.ed,val.ec,val.pp,val.tp,jsCleanStr(row[20]),val.tq,val.fo,val.dv,val.ep,jsCleanStr(row[27]),jsCleanStr(row[29])]);
+      val.ed,val.ec,val.pp,val.tp,jsCleanStr(row[20]),val.tq,val.fo,val.dv,val.ep,jsCleanStr(row[27]),jsCleanStr(row[29]),
+      jsCleanStr(row[1]),jsCleanStr(row[2]),jsNormTax(row[10])]);
   }
   return {records,cleaned};
 }
@@ -1502,10 +1752,10 @@ function initImport(){
   document.getElementById('btnImport').onclick = ()=>{
     document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
     document.querySelectorAll('.panel').forEach(p=>p.classList.remove('on'));
-    document.querySelector('[data-p="p5"]').classList.add('on');
-    document.getElementById('p5').classList.add('on');
+    document.querySelector('[data-p="p6"]').classList.add('on');
+    document.getElementById('p6').classList.add('on');
     setTimeout(()=>{Object.values(CHARTS).forEach(c=>{try{c.resize();}catch(e){}});},60);
-    document.getElementById('p5').scrollIntoView({behavior:'smooth',block:'start'});
+    document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'});
   };
 }
 
@@ -1518,8 +1768,9 @@ function updateAll(){
   insight2(rows); chPwDist(rows); chMsTop(rows); chPtq(rows); chPwTrend(rows); chPwr(rows);
   insight3(rows); chDv(rows); chDvEp(rows); chEsTop(rows); chFo(rows); chDvTrend(rows);
   insight4(rows); chRgB(rows); chRgP(rows); chCr(rows); chBtTrend(rows); chEd(rows); chEcTrend(rows); chEc(rows);
+  insightEnt(rows); chEntTrend(rows); chEntSeg(rows); chNewEnt(rows); chBrandTop(rows); chTaxTrend(rows);
   insight5(rows); chFill(rows); chSrc(rows); chHeat(rows);
-  updateDmStat();
+  updateDmStat(); renderTable(false);
 }
 
 /* ==================== 筛选器 ==================== */
@@ -1642,6 +1893,7 @@ initQuality();
 initExportUI();
 initImport();
 initToTop();
+initTable();
 document.getElementById('btnTheme').onclick = toggleTheme;
 updateAll();
 </script>
@@ -1707,9 +1959,10 @@ def main():
     print(f'  批次范围: {meta["batchMin"]}~{meta["batchMax"]} · 动力类型: {"/".join(meta["types"])}')
     if release:
         print('  离线发布版：隐藏【数据质量检查】区块 · 其余功能全部保留（筛选/导出/导入/主题）')
-    print('  v3：PHEV/EREV 展示名统一 / 拟合线→趋势线(分参数分列) / 细分市场"/"不显示')
-    print('       电池类型归一化按已有数据占比核算 / 散点图 BEV·PHEV/EREV 分列趋势线')
-    print('          数据质量底部化 / 导出Excel·CSV / 页内导入刷新 / 白天黑夜模式')
+    print('  v3.5：企业与品牌分析页（企业演进/企业×细分市场/新进入企业/品牌Top/免购置税趋势）')
+    print('        车型明细查询表（搜索/排序/翻页）· 记录扩展 产品型号/商标/免购置税 字段')
+    print('  v3：PHEV/EREV 展示名统一 / 细分市场"/"不显示 / 电池类型归一化 / 数据质量底部化')
+    print('          导出Excel·CSV / 页内导入刷新 / 白天黑夜模式')
     print('  双击HTML文件即可在浏览器中离线打开使用')
 
 
