@@ -70,3 +70,16 @@ Copyright (c) 2026 David YEAH · 采用 [MIT License](LICENSE) 授权，数据�
 
 - 页内导入要求表结构与源汇总表一致（首列批次、第 10 列动力类型等固定列位）
 - 扭矩字段解析自"功率/扭矩"复合格式，纯数值单元格不计入
+
+
+## 数据质量与版本审计
+
+运行 `audit_data.py` 可对当前公告源表生成 SHA-256 可追溯的 JSON/Markdown 审计报告，检查字段覆盖率、物理范围、批次分布和质量门禁：
+
+```bash
+python3 audit_data.py --gates quality_gates.json --strict
+```
+
+详见 [AUDIT.md](AUDIT.md)。新增公告批次后，应一并提交源表、看板产物与 `audit-output/` 下的审计报告。
+
+Copyright © 2026 David YE
