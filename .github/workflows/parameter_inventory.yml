@@ -1,0 +1,32 @@
+# Copyright © 2026 David YE
+name: Parameter inventory
+on:
+  push:
+    branches: [main]
+    paths:
+      - inventory_nev_data.py
+      - 'NEV公告参数汇总表_合并版*.xlsx'
+      - '.github/workflows/parameter_inventory.yml'
+  pull_request:
+    paths:
+      - inventory_nev_data.py
+      - 'NEV公告参数汇总表_合并版*.xlsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inventory:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install openpyxl
+      - run: python inventory_nev_data.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: parameter-inventory
+          path: audit-output/
+          retention-days: 14
