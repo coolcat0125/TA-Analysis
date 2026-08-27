@@ -49,6 +49,11 @@ v3.7.1 更新：
   2. 细分市场下拉按 Car/SUV/MPV 分组、字母级别→数字级别→未分级排序（Python/JS 双侧同键）
   3. 全部图表卡片新增「一句话核心要点」行（.ci），随全局筛选实时联动
 
+v3.7.2 更新：
+  1. 所有散点图悬浮窗补上车型【通用名称】（记录新增 gn 字段，页内导入同步）
+  2. 车型明细查询表新增【通用名称】列；导出字段同步
+  3. 坐标轴标签完整显示：网格自适应留白（containLabel），取消类目标签截断
+
 依赖：openpyxl（pip install openpyxl）、同目录下 echarts.min.js 与 xlsx.full.min.js
 """
 import openpyxl
@@ -72,7 +77,7 @@ SHEET_NAME = 'NEV公告参数汇总'
 
 FIELDS = ['b', 't', 's', 'e', 'w', 'r', 'c', 'bt', 'ed', 'ec',
           'pp', 'tp', 'ms', 'tq', 'fo', 'dv', 'ep', 'es', 'src',
-          'm', 'bd', 'tx', 'ab', 'lg']
+          'm', 'bd', 'tx', 'ab', 'lg', 'gn']
 
 
 def clean_num(v):
@@ -237,6 +242,7 @@ def load_records(path):
             norm_tax(row[10]),           # tx 是否减免购置税
             val['ab'],                   # ab 轴距mm（分布格局 Length 视角现用口径）
             clean_num(row[30]) if len(row) > 30 else None,  # lg 车长mm（占位列）
+            clean_str(row[6]),           # gn 通用名称（散点悬浮/明细表展示）
         ]
         records.append(rec)
     wb.close()
@@ -748,12 +754,12 @@ const RAW_INIT = __DATA_JSON__;
 'use strict';
 /* ==================== 索引与全局 ==================== */
 const I = {b:0,t:1,s:2,e:3,w:4,r:5,c:6,bt:7,ed:8,ec:9,pp:10,tp:11,ms:12,tq:13,fo:14,dv:15,ep:16,es:17,src:18,
-  m:19,bd:20,tx:21,ab:22,lg:23};
+  m:19,bd:20,tx:21,ab:22,lg:23,gn:24};
 const TX_IDX = I.tx;   // 免征购置税：数据层保留，展示层全量隐藏（v3.7口径）
 const COL_NAMES = ['批次','动力类型','细分市场','企业名称','整备质量(kg)','纯电续航(km)','电池容量(kWh)','电池类型',
   '能量密度(Wh/kg)','百公里电耗(kWh/100km)','电机峰值功率(kW)','电机总功率(kW)','电机生产企业','峰值扭矩(Nm)',
   '综合油耗(L/100km)','发动机排量(mL)','发动机功率(kW)','发动机生产企业','数据来源',
-  '产品型号','产品商标','是否减免购置税','轴距(mm)','车长(mm)'];
+  '产品型号','产品商标','是否减免购置税','轴距(mm)','车长(mm)','通用名称'];
 let RAW = RAW_INIT;
 let META_CUR = META;
 
@@ -790,7 +796,7 @@ const AXS = (extra)=>Object.assign({
   splitLine:{lineStyle:{color:TC().split}}
 },extra||{});
 const LG = (extra)=>Object.assign({textStyle:{color:TC().axis,fontSize:12},itemWidth:14,itemHeight:9,top:0},extra||{});
-const GRID = (extra)=>Object.assign({left:56,right:40,top:42,bottom:56,containLabel:false},extra||{});
+const GRID = (extra)=>Object.assign({left:56,right:40,top:42,bottom:56,containLabel:true},extra||{});
 const fmt = n => n==null?'-':n.toLocaleString('zh-CN');
 const pct = (a,b)=> b>0 ? (a/b*100) : 0;
 const p1 = (a,b)=> pct(a,b).toFixed(1);
@@ -1061,7 +1067,7 @@ function hbar(id, entries, color, unit, catName){
       formatter:ps=>`${ps[0].name}<br>数量：<b>${ps[0].value}</b> ${unit||'款'}<br>占比（已填报口径）：<b>${total?pct(ps[0].value,total).toFixed(1):0}%</b>`},TT),
     grid:Object.assign({},GRID({left:10,right:70,top:24,bottom:8}),{containLabel:true}),
     xAxis:Object.assign({type:'value',name:`${catName?'车型数':'数量'}（${unit||'款'}）`,nameTextStyle:{color:TC().axis}},AXS({splitLine:{show:true}})),
-    yAxis:Object.assign({type:'category',data:names,name:catName||undefined,nameTextStyle:{color:TC().axis}},AXS({axisLabel:{color:TC().lbl,fontSize:11.5,width:110,overflow:'truncate'}})),
+    yAxis:Object.assign({type:'category',data:names,name:catName||undefined,nameTextStyle:{color:TC().axis}},AXS({axisLabel:{color:TC().lbl,fontSize:11.5}})),
     series:[{type:'bar',data:vals,itemStyle:{color:color,borderRadius:[0,4,4,0]},barMaxWidth:16,
       label:{show:true,position:'right',color:TC().axis,fontSize:11,fontFamily:'Consolas,monospace',
         formatter:p=>`${p.value} · ${total?pct(p.value,total).toFixed(1):0}%`}}]
@@ -1149,10 +1155,10 @@ function chPtq(rows){
   const bevP=[],phevP=[];
   for(const r of rows){
     const tp=r[I.tp], tq=r[I.tq];
-    if(tp&&tq){ (r[I.t]==='BEV'?bevP:phevP).push([tp,tq]); }
+    if(tp&&tq){ (r[I.t]==='BEV'?bevP:phevP).push({value:[tp,tq], n:r[I.gn]}); }
   }
-  const trB = trendSeries(bevP,'#D97757','BEV趋势线');
-  const trP = trendSeries(phevP,'#6B9BD1','PHEV/EREV趋势线');
+  const trB = trendSeries(bevP.map(p=>p.value),'#D97757','BEV趋势线');
+  const trP = trendSeries(phevP.map(p=>p.value),'#6B9BD1','PHEV/EREV趋势线');
   const trends = [trB,trP].filter(Boolean);
   setInsight('chPtq', (bevP.length+phevP.length)?`散点样本 <em>${fmt(bevP.length+phevP.length)}</em> 组（BEV <em>${fmt(bevP.length)}</em> / PHEV/EREV <em>${fmt(phevP.length)}</em>）· 虚线为分组线性趋势`:'暂无功率×扭矩匹配样本');
   const fin = [
@@ -1165,7 +1171,7 @@ function chPtq(rows){
       formatter:p=>{
         const t=trends.find(x=>x.name===p.seriesName);
         if(t) return t.tooltip.formatter();
-        return `${p.seriesName} · 总功率 <b>${p.data[0]}</b> kW<br>峰值扭矩 <b>${p.data[1]}</b> Nm`;
+        return `${p.seriesName} · 通用名称：<b>${p.data.n||'–'}</b><br>总功率 <b>${p.data.value[0]}</b> kW<br>峰值扭矩 <b>${p.data.value[1]}</b> Nm`;
       }},TT),
     legend:LG({data:['BEV','PHEV/EREV',...trends.map(t=>t.name)]}),
     grid:GRID(),
@@ -1263,14 +1269,14 @@ function chDv(rows){
   },true);
 }
 function chDvEp(rows){
-  const pts = rows.filter(r=>r[I.dv]!=null&&r[I.ep]!=null).map(r=>[+(r[I.dv]/1000).toFixed(2),r[I.ep]]);
-  const tr = trendSeries(pts,'#D4A94E','PHEV/EREV趋势线');
-  setInsight('chDvEp', pts.length?`样本 <em>${fmt(pts.length)}</em> 组 · 平均排量 <em>${(pts.reduce((a,p)=>a+p[0],0)/pts.length).toFixed(2)} L</em> · 平均功率 <em>${(pts.reduce((a,p)=>a+p[1],0)/pts.length).toFixed(0)} kW</em>`:'暂无排量×功率样本');
+  const pts = rows.filter(r=>r[I.dv]!=null&&r[I.ep]!=null).map(r=>({value:[+(r[I.dv]/1000).toFixed(2),r[I.ep]], n:r[I.gn]}));
+  const tr = trendSeries(pts.map(p=>p.value),'#D4A94E','PHEV/EREV趋势线');
+  setInsight('chDvEp', pts.length?`样本 <em>${fmt(pts.length)}</em> 组 · 平均排量 <em>${(pts.reduce((a,p)=>a+p.value[0],0)/pts.length).toFixed(2)} L</em> · 平均功率 <em>${(pts.reduce((a,p)=>a+p.value[1],0)/pts.length).toFixed(0)} kW</em>`:'暂无排量×功率样本');
   const series=[{type:'scatter',name:'PHEV/EREV',data:pts,symbolSize:7,itemStyle:{color:`rgba(169,127,169,${TC().scatterA})`}}];
   if(tr) series.push(tr);
   chart('chDvEp').setOption({
     tooltip:Object.assign({trigger:'item',
-      formatter:p=>p.seriesName==='PHEV/EREV趋势线'?tr.tooltip.formatter():`排量 <b>${p.data[0]}</b> L · 功率 <b>${p.data[1]}</b> kW`},TT),
+      formatter:p=>p.seriesName==='PHEV/EREV趋势线'?tr.tooltip.formatter():`PHEV/EREV · 通用名称：<b>${p.data.n||'–'}</b><br>排量 <b>${p.data.value[0]}</b> L · 功率 <b>${p.data.value[1]}</b> kW`},TT),
     legend:LG({data:tr?['PHEV/EREV','PHEV/EREV趋势线']:['PHEV/EREV']}),
     grid:GRID(),
     xAxis:Object.assign({type:'value',name:'排量 L',nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis},scale:true},AXS()),
@@ -1373,15 +1379,16 @@ function chRgP(rows){
 function chCr(rows){
   const bevP=[],phevP=[];
   for(const r of rows){
-    if(r[I.c]!=null&&r[I.r]!=null){ (r[I.t]==='BEV'?bevP:phevP).push([r[I.c],r[I.r]]); }
+    if(r[I.c]!=null&&r[I.r]!=null){ (r[I.t]==='BEV'?bevP:phevP).push({value:[r[I.c],r[I.r]], n:r[I.gn]}); }
   }
-  // BEV 与 PHEV/EREV 分别提供趋势线
-  const allN = bevP.length+phevP.length;
-  const meanC = allN? ((bevP.concat(phevP)).reduce((a,p)=>a+p[0],0)/allN).toFixed(1):'-';
-  const meanR = allN? ((bevP.concat(phevP)).reduce((a,p)=>a+p[1],0)/allN).toFixed(0):'-';
+  // BEV 与 PHEV/EREV 分别提供趋势线（散点对象取 value 数组）
+  const allPts = bevP.concat(phevP).map(p=>p.value);
+  const allN = allPts.length;
+  const meanC = allN? (allPts.reduce((a,p)=>a+p[0],0)/allN).toFixed(1):'-';
+  const meanR = allN? (allPts.reduce((a,p)=>a+p[1],0)/allN).toFixed(0):'-';
   setInsight('chCr', allN?`散点样本 <em>${fmt(allN)}</em> 组 · 容量均值 <em>${meanC} kWh</em> · 续航均值 <em>${meanR} km</em> · 容量越大续航越长（分组趋势线）`:'暂无容量×续航样本');
-  const trB = trendSeries(bevP,'#D97757','BEV趋势线');
-  const trP = trendSeries(phevP,'#6B9BD1','PHEV/EREV趋势线');
+  const trB = trendSeries(bevP.map(p=>p.value),'#D97757','BEV趋势线');
+  const trP = trendSeries(phevP.map(p=>p.value),'#6B9BD1','PHEV/EREV趋势线');
   const trends = [trB,trP].filter(Boolean);
   const series = [
     {name:'BEV',type:'scatter',data:bevP,symbolSize:6,itemStyle:{color:`rgba(217,119,87,${TC().scatterA})`},large:true,largeThreshold:800},
@@ -1394,7 +1401,7 @@ function chCr(rows){
       formatter:p=>{
         const t=trends.find(x=>x.name===p.seriesName);
         if(t) return t.tooltip.formatter();
-        return `${p.seriesName} · 容量 <b>${p.data[0]}</b> kWh · 续航 <b>${p.data[1]}</b> km`;
+        return `${p.seriesName} · 通用名称：<b>${p.data.n||'–'}</b><br>容量 <b>${p.data.value[0]}</b> kWh · 续航 <b>${p.data.value[1]}</b> km`;
       }},TT),
     legend:LG({data:lg}),
     grid:GRID(),
@@ -1514,17 +1521,17 @@ function renderDists(rows){
     const bevP=[], phevP=[];
     for(const r of rows){
       const x=r[d.xK], y=r[d.yK];
-      if(x!=null&&y!=null){ (r[I.t]==='BEV'?bevP:phevP).push([x,y]); }
+      if(x!=null&&y!=null){ (r[I.t]==='BEV'?bevP:phevP).push({value:[x,y], n:r[I.gn]}); }
     }
-    const trB=trendSeries(bevP,'#D97757','BEV趋势线');
-    const trP=trendSeries(phevP,'#6B9BD1','PHEV/EREV趋势线');
+    const trB=trendSeries(bevP.map(p=>p.value),'#D97757','BEV趋势线');
+    const trP=trendSeries(phevP.map(p=>p.value),'#6B9BD1','PHEV/EREV趋势线');
     const trends=[trB,trP].filter(Boolean);
     const series=[
       {name:'BEV',type:'scatter',data:bevP,symbolSize:6,itemStyle:{color:`rgba(217,119,87,${TC().scatterA})`},large:true,largeThreshold:800},
       {name:'PHEV/EREV',type:'scatter',data:phevP,symbolSize:6,itemStyle:{color:`rgba(107,155,209,${TC().scatterA})`},large:true,largeThreshold:800}
     ];
     trends.forEach(t=>series.push(t));
-    const all = bevP.concat(phevP);
+    const all = bevP.concat(phevP).map(p=>p.value);
     const cr = pearson(all);
     setInsight(d.id, all.length?`样本 <em>${fmt(all.length)}</em> 组（BEV ${fmt(bevP.length)} / PHEV·EREV ${fmt(phevP.length)}）· 相关系数 r=<em>${cr==null?'-':cr.toFixed(2)}</em>${cr==null?'':(cr>=0?'，正相关':'，负相关')}`:'当前筛选无有效样本');
     chart(d.id).setOption({
@@ -1533,7 +1540,7 @@ function renderDists(rows){
           const t=trends.find(x=>x.name===p.seriesName);
           if(t) return t.tooltip.formatter();
           const [xn,xu]=spl(d.xN), [yn,yu]=spl(d.yN);
-          return `${p.seriesName}<br>${xn}：<b>${p.data[0]} ${xu}</b><br>${yn}：<b>${p.data[1]} ${yu}</b>`;
+          return `${p.seriesName} · 通用名称：<b>${p.data.n||'–'}</b><br>${xn}：<b>${p.data.value[0]} ${xu}</b><br>${yn}：<b>${p.data.value[1]} ${yu}</b>`;
         }},TT),
       legend:LG({data:['BEV','PHEV/EREV',...trends.map(t=>t.name)]}),
       grid:GRID(),
@@ -1681,7 +1688,7 @@ function chEntSeg(rows){
       formatter:p=>`<b>${ents[p.value[1]]}</b> × ${segs[p.value[0]]}<br>公告车型：<b>${p.value[2]}</b> 款`},TT),
     grid:Object.assign({},GRID({left:10,right:20,top:10,bottom:70}),{containLabel:true}),
     xAxis:Object.assign({type:'category',data:segs,axisLabel:{color:TC().axis,fontSize:10,rotate:35}},AXS({splitLine:{show:false}})),
-    yAxis:Object.assign({type:'category',data:ents,axisLabel:{color:TC().lbl,fontSize:10,width:96,overflow:'truncate'}},AXS({splitLine:{show:false}})),
+    yAxis:Object.assign({type:'category',data:ents,axisLabel:{color:TC().lbl,fontSize:10}},AXS({splitLine:{show:false}})),
     visualMap:{min:0,max:vmax,calculable:false,orient:'horizontal',left:'center',bottom:0,
       textStyle:{color:TC().axis,fontSize:10},
       inRange:{color:['#EFE7DB','#C9973F','#B3613C']}},
@@ -1742,7 +1749,7 @@ function insightEnt(rows){
 
 /* ==================== 车型明细查询表 ==================== */
 const TBL_COLS = [
-  {n:'批次',i:I.b},{n:'企业名称',i:I.e},{n:'商标',i:I.bd},{n:'产品型号',i:I.m},
+  {n:'批次',i:I.b},{n:'企业名称',i:I.e},{n:'商标',i:I.bd},{n:'通用名称',i:I.gn},{n:'产品型号',i:I.m},
   {n:'动力类型',i:I.t},{n:'细分市场',i:I.s},{n:'续航km',i:I.r},{n:'容量kWh',i:I.c},
   {n:'电池类型',i:I.bt},{n:'总功率kW',i:I.tp},{n:'轴距mm',i:I.ab}
 ];
@@ -1934,7 +1941,7 @@ function parseImportedSheet(aoa, fname){
     }
     records.push([batch,ptype,jsCleanSeg(row[8]),jsCleanStr(row[3]),val.w,val.r,val.c,jsNormBt(row[15]),
       val.ed,val.ec,val.pp,val.tp,jsCleanStr(row[20]),val.tq,val.fo,val.dv,val.ep,jsCleanStr(row[27]),jsCleanStr(row[29]),
-      jsCleanStr(row[1]),jsCleanStr(row[2]),jsNormTax(row[10]),val.ab,val.lg]);
+      jsCleanStr(row[1]),jsCleanStr(row[2]),jsNormTax(row[10]),val.ab,val.lg,jsCleanStr(row[6])]);
   }
   return {records,cleaned};
 }
