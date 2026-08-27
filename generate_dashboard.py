@@ -5,9 +5,18 @@ NEV公告数据看板生成器 v3（开箱即用 · 本地离线运行）
 ====================================================
 读取公告参数汇总Excel → 生成自包含HTML交互式看板（内嵌ECharts+SheetJS，双击即可打开）
 
+v3.7 更新：
+  1. 新增【分布格局】分析页（配置驱动，后续增减维度只改 DIST_DEFS 数组）：
+     EV Range vs Length / Energy vs EV Range / Energy Consumption vs EV Range /
+     Energy Density vs EV Range / Curb Mass vs Length（散点 + BEV/PHEV 独立趋势线）
+  2. 全部图表纵轴/横轴标注名称与单位
+  3. 看板展示层移除免征购置税相关信息（底层数据表保留该维度）
+  4. 底层表新增「车长(mm)」占位列；Length 视角暂以公告轴距(mm)呈现，
+     车长数据补齐后仅需将 DIST_DEFS 中 xKey 由 ab 换为 lg
+
 v3.5 更新：
   1. 新增【企业与品牌】分析页：头部企业批次演进 / 企业×细分市场矩阵 /
-     各批次新进入企业跟踪 / 品牌 Top 15 / 免购置税占比趋势
+     各批次新进入企业跟踪 / 品牌 Top 15
   2. 车型明细查询表：当前筛选内搜索（企业/商标/型号）、列排序、翻页浏览
   3. 记录字段扩展：产品型号 / 产品商标 / 是否减免购置税（导出同步）
 
@@ -48,7 +57,7 @@ import datetime
 # 配置
 # ============================================================
 HERE = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_IN = os.path.join(HERE, 'NEV公告参数汇总表_合并版（341~409批）.xlsx')
+DEFAULT_IN = os.path.join(HERE, 'NEV公告参数汇总表_合并版（341~410批）.xlsx')
 DEFAULT_OUT = os.path.join(HERE, 'NEV公告数据看板.html')
 DEFAULT_RELEASE_OUT = os.path.join(HERE, 'NEV公告数据看板_离线发布版.html')
 COPYRIGHT = 'Copyright (c) 2026 David YEAH'
@@ -58,7 +67,7 @@ SHEET_NAME = 'NEV公告参数汇总'
 
 FIELDS = ['b', 't', 's', 'e', 'w', 'r', 'c', 'bt', 'ed', 'ec',
           'pp', 'tp', 'ms', 'tq', 'fo', 'dv', 'ep', 'es', 'src',
-          'm', 'bd', 'tx']
+          'm', 'bd', 'tx', 'ab', 'lg']
 
 
 def clean_num(v):
@@ -151,6 +160,8 @@ NUM_RANGES = {
     'fo': (None, (0.1, 20)),             # 综合油耗 L/100km（BEV不适用）
     'dv': (None, (300, 6000)),           # 排量 mL（BEV不适用）
     'ep': (None, (10, 600)),             # 发动机功率 kW（BEV不适用）
+    'ab': ((1800, 4200), (1800, 4200)),  # 轴距 mm（乘用车合理区间）
+    'lg': ((2600, 6600), (2600, 6600)),  # 车长 mm（预留列，补数后启用）
 }
 
 
@@ -187,6 +198,7 @@ def load_records(path):
         ptype = clean_str(row[9]) or '未知'
         raw = {
             'w':  clean_num(row[11]),    # 整备质量kg
+            'ab': clean_num(row[12]),    # 轴距mm
             'r':  clean_num(row[13]),    # 纯电续航km
             'c':  clean_num(row[14]),    # 电池容量kWh
             'ed': clean_num(row[16]),    # 能量密度Wh/kg
@@ -218,6 +230,8 @@ def load_records(path):
             clean_str(row[1]),           # m 产品型号
             clean_str(row[2]),           # bd 产品商标
             norm_tax(row[10]),           # tx 是否减免购置税
+            val['ab'],                   # ab 轴距mm（分布格局 Length 视角现用口径）
+            clean_num(row[30]) if len(row) > 30 else None,  # lg 车长mm（占位列）
         ]
         records.append(rec)
     wb.close()
@@ -543,6 +557,7 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
   <button class="tab" data-p="p2">电机系统<i>Motor</i></button>
   <button class="tab" data-p="p3">发动机系统<i>Engine</i></button>
   <button class="tab" data-p="p4">电池系统<i>Battery</i></button>
+  <button class="tab" data-p="pDist">分布格局<i>Distribution</i></button>
   <button class="tab" data-p="p5">企业与品牌<i>Enterprise / Brand</i></button>
   <button class="tab" data-p="p6">数据管理<i>Export / Import</i></button>
 </nav>
@@ -597,6 +612,12 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
   </div>
 </section>
 
+<!-- ============ Panel D 分布格局 ============ -->
+<section class="panel" id="pDist">
+  <div class="insight"><div class="ic">§</div><div class="tx" id="insightDTx"></div></div>
+  <div class="grid" id="distGrid"></div>
+</section>
+
 <!-- ============ Panel 5 企业与品牌 ============ -->
 <section class="panel" id="p5">
   <div class="insight"><div class="ic">§</div><div class="tx" id="insightEntTx"></div></div>
@@ -605,7 +626,6 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
     <div class="card c-s7"><div class="c-h"><div class="c-t">企业 × 细分市场矩阵</div><div class="c-s">Top 10 企业 × 已填报细分市场 · 公告数量热力</div></div><div class="chart tall" id="chEntSeg"></div></div>
     <div class="card c-s5"><div class="c-h"><div class="c-t">各批次新进入企业数</div><div class="c-s">首次出现公告的企业数与累计在营企业 · 跟踪新玩家入场节奏</div></div><div class="chart tall" id="chNewEnt"></div></div>
     <div class="card c-s6"><div class="c-h"><div class="c-t">品牌 Top 15</div><div class="c-s">产品商标口径 · 按公告车型数</div></div><div class="chart" id="chBrandTop"></div></div>
-    <div class="card c-s6"><div class="c-h"><div class="c-t">免购置税车型占比趋势</div><div class="c-s">按批次 · 已填报口径 · 虚线为全范围均值</div></div><div class="chart" id="chTaxTrend"></div></div>
   </div>
 </section>
 
@@ -694,11 +714,12 @@ const RAW_INIT = __DATA_JSON__;
 'use strict';
 /* ==================== 索引与全局 ==================== */
 const I = {b:0,t:1,s:2,e:3,w:4,r:5,c:6,bt:7,ed:8,ec:9,pp:10,tp:11,ms:12,tq:13,fo:14,dv:15,ep:16,es:17,src:18,
-  m:19,bd:20,tx:21};
+  m:19,bd:20,tx:21,ab:22,lg:23};
+const TX_IDX = I.tx;   // 免征购置税：数据层保留，展示层全量隐藏（v3.7口径）
 const COL_NAMES = ['批次','动力类型','细分市场','企业名称','整备质量(kg)','纯电续航(km)','电池容量(kWh)','电池类型',
   '能量密度(Wh/kg)','百公里电耗(kWh/100km)','电机峰值功率(kW)','电机总功率(kW)','电机生产企业','峰值扭矩(Nm)',
   '综合油耗(L/100km)','发动机排量(mL)','发动机功率(kW)','发动机生产企业','数据来源',
-  '产品型号','产品商标','是否减免购置税'];
+  '产品型号','产品商标','是否减免购置税','轴距(mm)','车长(mm)'];
 let RAW = RAW_INIT;
 let META_CUR = META;
 
@@ -735,7 +756,7 @@ const AXS = (extra)=>Object.assign({
   splitLine:{lineStyle:{color:TC().split}}
 },extra||{});
 const LG = (extra)=>Object.assign({textStyle:{color:TC().axis,fontSize:12},itemWidth:14,itemHeight:9,top:0},extra||{});
-const GRID = (extra)=>Object.assign({left:56,right:26,top:42,bottom:56,containLabel:false},extra||{});
+const GRID = (extra)=>Object.assign({left:56,right:40,top:42,bottom:56,containLabel:false},extra||{});
 const fmt = n => n==null?'-':n.toLocaleString('zh-CN');
 const pct = (a,b)=> b>0 ? (a/b*100) : 0;
 
@@ -918,8 +939,8 @@ function chBatch(rows){
       }},TT),
     legend:LG({data:['BEV','PHEV/EREV']}),
     grid:GRID({bottom:64}),
-    xAxis:Object.assign({type:'category',data:labels},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10,interval:0})})),
-    yAxis:Object.assign({type:'value',name:'款数',nameTextStyle:{color:TC().axis}},AXS()),
+    xAxis:Object.assign({type:'category',data:labels,name:'批次',nameLocation:'middle',nameGap:44,nameTextStyle:{color:TC().axis}},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10,interval:0})})),
+    yAxis:Object.assign({type:'value',name:'车型数（款）',nameTextStyle:{color:TC().axis}},AXS()),
     series:[
       {name:'BEV',type:'bar',stack:'t',data:bev,itemStyle:{color:'#D97757'},barMaxWidth:22},
       {name:'PHEV/EREV',type:'bar',stack:'t',data:phev,itemStyle:{color:'#6B9BD1'},barMaxWidth:22}
@@ -939,24 +960,24 @@ function chType(rows){
       itemStyle:{borderColor:TC().pieBd,borderWidth:2},data}]
   },true);
 }
-/* 横向条形：分母=已填报总数（缺失不计入百分比） */
-function hbar(id, entries, color, unit){
+/* 横向条形：分母=已填报总数（缺失不计入百分比）；带双轴名称标注 */
+function hbar(id, entries, color, unit, catName){
   const total = entries.reduce((a,b)=>a+b[1],0);   // 已填报口径
   const names = entries.map(e=>e[0]).reverse();
   const vals = entries.map(e=>e[1]).reverse();
   chart(id).setOption({
     tooltip:Object.assign({trigger:'axis',axisPointer:{type:'shadow'},
       formatter:ps=>`${ps[0].name}<br>数量：<b>${ps[0].value}</b> ${unit||'款'}<br>占比（已填报口径）：<b>${total?pct(ps[0].value,total).toFixed(1):0}%</b>`},TT),
-    grid:Object.assign({},GRID({left:10,right:70,top:8,bottom:8}),{containLabel:true}),
-    xAxis:Object.assign({type:'value'},AXS({splitLine:{show:false},axisLabel:{show:false},axisLine:{show:false}})),
-    yAxis:Object.assign({type:'category',data:names},AXS({axisLabel:{color:TC().lbl,fontSize:11.5,width:110,overflow:'truncate'}})),
+    grid:Object.assign({},GRID({left:10,right:70,top:24,bottom:8}),{containLabel:true}),
+    xAxis:Object.assign({type:'value',name:`${catName?'车型数':'数量'}（${unit||'款'}）`,nameTextStyle:{color:TC().axis}},AXS({splitLine:{show:true}})),
+    yAxis:Object.assign({type:'category',data:names,name:catName||undefined,nameTextStyle:{color:TC().axis}},AXS({axisLabel:{color:TC().lbl,fontSize:11.5,width:110,overflow:'truncate'}})),
     series:[{type:'bar',data:vals,itemStyle:{color:color,borderRadius:[0,4,4,0]},barMaxWidth:16,
       label:{show:true,position:'right',color:TC().axis,fontSize:11,fontFamily:'Consolas,monospace',
         formatter:p=>`${p.value} · ${total?pct(p.value,total).toFixed(1):0}%`}}]
   },true);
 }
-function chSeg(rows){ hbar('chSeg', groupCount(rows,I.s,10), '#7FA97F'); }
-function chEnt(rows){ hbar('chEnt', groupCount(rows,I.e,12), '#D4A94E'); }
+function chSeg(rows){ hbar('chSeg', groupCount(rows,I.s,10), '#7FA97F', '款', '细分市场'); }
+function chEnt(rows){ hbar('chEnt', groupCount(rows,I.e,12), '#D4A94E', '款', '企业名称'); }
 function chEvo(rows){
   const bs = byBatch(rows);
   const labels = bs.map(x=>String(x[0]));
@@ -975,8 +996,8 @@ function chEvo(rows){
     tooltip:Object.assign({trigger:'axis'},TT),
     legend:LG({data:legendData,selected:(()=>{const s={};defs.forEach(d=>s[d[0]+'趋势线']=false);return s;})()}),
     grid:GRID({bottom:64,top:56}),
-    xAxis:Object.assign({type:'category',data:labels},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
-    yAxis:Object.assign({type:'value'},AXS()),
+    xAxis:Object.assign({type:'category',data:labels,name:'批次',nameLocation:'middle',nameGap:44,nameTextStyle:{color:TC().axis}},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
+    yAxis:Object.assign({type:'value',name:'均值（单位见图例，混合口径）'},AXS()),
     series
   },true);
 }
@@ -1004,14 +1025,14 @@ function chPwDist(rows){
     legend:LG({data:['BEV','PHEV/EREV']}),
     grid:GRID(),
     xAxis:Object.assign({type:'category',data:labels},AXS({name:'kW',nameTextStyle:{color:TC().axis}})),
-    yAxis:Object.assign({type:'value',name:'款数',nameTextStyle:{color:TC().axis}},AXS()),
+    yAxis:Object.assign({type:'value',name:'车型数（款）',nameTextStyle:{color:TC().axis}},AXS()),
     series:[
       {name:'BEV',type:'bar',data:b1,itemStyle:{color:'#D97757'},barMaxWidth:26},
       {name:'PHEV/EREV',type:'bar',data:b2,itemStyle:{color:'#6B9BD1'},barMaxWidth:26}
     ]
   },true);
 }
-function chMsTop(rows){ hbar('chMsTop', groupCount(rows,I.ms,15), '#D97757'); }
+function chMsTop(rows){ hbar('chMsTop', groupCount(rows,I.ms,15), '#D97757', '款', '电机供应商'); }
 function chPtq(rows){
   // 按动力类型拆分散点，各组独立趋势线
   const bevP=[],phevP=[];
@@ -1036,7 +1057,7 @@ function chPtq(rows){
       }},TT),
     legend:LG({data:['BEV','PHEV/EREV',...trends.map(t=>t.name)]}),
     grid:GRID(),
-    xAxis:Object.assign({type:'value',name:'总功率 kW',nameTextStyle:{color:TC().axis},scale:true},AXS()),
+    xAxis:Object.assign({type:'value',name:'总功率 kW',nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis},scale:true},AXS()),
     yAxis:Object.assign({type:'value',name:'扭矩 Nm',nameTextStyle:{color:TC().axis},scale:true},AXS()),
     series:fin
   },true);
@@ -1056,7 +1077,7 @@ function chPwTrend(rows){
     tooltip:Object.assign({trigger:'axis'},TT),
     legend:LG({data:legendData,selected:sel}),
     grid:GRID({bottom:64,top:56}),
-    xAxis:Object.assign({type:'category',data:labels},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
+    xAxis:Object.assign({type:'category',data:labels,name:'批次',nameLocation:'middle',nameGap:44,nameTextStyle:{color:TC().axis}},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
     yAxis:Object.assign({type:'value',name:'kW',nameTextStyle:{color:TC().axis}},AXS()),
     series
   },true);
@@ -1076,8 +1097,8 @@ function chPwr(rows){
     tooltip:Object.assign({trigger:'axis',axisPointer:{type:'shadow'},
       formatter:ps=>`${ps[0].name} kW/t：<b>${ps[0].value}</b> 款（${total?pct(ps[0].value,total).toFixed(1):0}%）`},TT),
     grid:GRID(),
-    xAxis:Object.assign({type:'category',data:labels,name:'kW/t',nameTextStyle:{color:TC().axis}},AXS()),
-    yAxis:Object.assign({type:'value',name:'款数',nameTextStyle:{color:TC().axis}},AXS()),
+    xAxis:Object.assign({type:'category',data:labels,name:'kW/t',nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis}},AXS()),
+    yAxis:Object.assign({type:'value',name:'车型数（款）',nameTextStyle:{color:TC().axis}},AXS()),
     series:[{type:'bar',data:cnt,itemStyle:{color:'#5BAFAF'},barMaxWidth:34,
       label:{show:true,position:'top',color:TC().axis,fontSize:10,fontFamily:'Consolas',formatter:p=>p.value>0?(total?pct(p.value,total).toFixed(1):0)+'%':''}}]
   },true);
@@ -1116,8 +1137,8 @@ function chDv(rows){
     tooltip:Object.assign({trigger:'axis',axisPointer:{type:'shadow'},
       formatter:ps=>`${ps[0].name}：<b>${ps[0].value}</b> 款（${total?pct(ps[0].value,total).toFixed(1):0}%）`},TT),
     grid:GRID(),
-    xAxis:Object.assign({type:'category',data:labels},AXS()),
-    yAxis:Object.assign({type:'value',name:'款数',nameTextStyle:{color:TC().axis}},AXS()),
+    xAxis:Object.assign({type:'category',data:labels,name:'发动机排量（L）',nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis}},AXS()),
+    yAxis:Object.assign({type:'value',name:'车型数（款）',nameTextStyle:{color:TC().axis}},AXS()),
     series:[{type:'bar',data:cnt,itemStyle:{color:'#A97FA9'},barMaxWidth:44,
       label:{show:true,position:'top',color:TC().lbl,fontSize:11,fontFamily:'Consolas',
         formatter:p=>`${p.value}${total&&p.value>0?'\n'+pct(p.value,total).toFixed(1)+'%':''}`}}]
@@ -1133,12 +1154,12 @@ function chDvEp(rows){
       formatter:p=>p.seriesName==='PHEV/EREV趋势线'?tr.tooltip.formatter():`排量 <b>${p.data[0]}</b> L · 功率 <b>${p.data[1]}</b> kW`},TT),
     legend:LG({data:tr?['PHEV/EREV','PHEV/EREV趋势线']:['PHEV/EREV']}),
     grid:GRID(),
-    xAxis:Object.assign({type:'value',name:'排量 L',nameTextStyle:{color:TC().axis},scale:true},AXS()),
+    xAxis:Object.assign({type:'value',name:'排量 L',nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis},scale:true},AXS()),
     yAxis:Object.assign({type:'value',name:'功率 kW',nameTextStyle:{color:TC().axis},scale:true},AXS()),
     series
   },true);
 }
-function chEsTop(rows){ hbar('chEsTop', groupCount(rows,I.es,12), '#C97B7B'); }
+function chEsTop(rows){ hbar('chEsTop', groupCount(rows,I.es,12), '#C97B7B', '款', '发动机供应商'); }
 function chFo(rows){
   const src = rows.filter(r=>r[I.fo]!=null);
   const edges=[1,2,3,4,5,6], labels=['<1','1-2','2-3','3-4','4-5','5-6','≥6'];
@@ -1153,8 +1174,8 @@ function chFo(rows){
     tooltip:Object.assign({trigger:'axis',axisPointer:{type:'shadow'},
       formatter:ps=>`${ps[0].name} L/100km：<b>${ps[0].value}</b> 款（${total?pct(ps[0].value,total).toFixed(1):0}%）`},TT),
     grid:GRID(),
-    xAxis:Object.assign({type:'category',data:labels,name:'L/100km',nameTextStyle:{color:TC().axis}},AXS()),
-    yAxis:Object.assign({type:'value',name:'款数',nameTextStyle:{color:TC().axis}},AXS()),
+    xAxis:Object.assign({type:'category',data:labels,name:'L/100km',nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis}},AXS()),
+    yAxis:Object.assign({type:'value',name:'车型数（款）',nameTextStyle:{color:TC().axis}},AXS()),
     series:[{type:'bar',data:cnt,itemStyle:{color:'#B08968'},barMaxWidth:34,
       label:{show:true,position:'top',color:TC().axis,fontSize:10,fontFamily:'Consolas',formatter:p=>p.value>0?(total?pct(p.value,total).toFixed(1):0)+'%':''}}]
   },true);
@@ -1172,7 +1193,7 @@ function chDvTrend(rows){
     tooltip:Object.assign({trigger:'axis'},TT),
     legend:LG({data:legendData,selected:sel}),
     grid:GRID({bottom:64,top:56}),
-    xAxis:Object.assign({type:'category',data:labels},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
+    xAxis:Object.assign({type:'category',data:labels,name:'批次',nameLocation:'middle',nameGap:44,nameTextStyle:{color:TC().axis}},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
     yAxis:Object.assign({type:'value'},AXS()),
     series
   },true);
@@ -1194,16 +1215,16 @@ function hist(id, rows, idx, edges, labels, color, name){
   const total = cnt.reduce((a,b)=>a+b,0);
   chart(id).setOption({
     tooltip:Object.assign({trigger:'axis',axisPointer:{type:'shadow'},
-      formatter:ps=>`${ps[0].name}${name}：<b>${ps[0].value}</b> 款（${total?pct(ps[0].value,total).toFixed(1):0}%）`},TT),
+      formatter:ps=>`${ps[0].name} ${name}：<b>${ps[0].value}</b> 款（${total?pct(ps[0].value,total).toFixed(1):0}%）`},TT),
     grid:GRID(),
-    xAxis:Object.assign({type:'category',data:labels},AXS({name:name,nameTextStyle:{color:TC().axis}})),
-    yAxis:Object.assign({type:'value',name:'款数',nameTextStyle:{color:TC().axis}},AXS()),
+    xAxis:Object.assign({type:'category',data:labels},AXS({name:name,nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis}})),
+    yAxis:Object.assign({type:'value',name:'车型数（款）',nameTextStyle:{color:TC().axis}},AXS()),
     series:[{type:'bar',data:cnt,itemStyle:{color:color},barMaxWidth:30,
       label:{show:true,position:'top',color:TC().axis,fontSize:10,fontFamily:'Consolas',formatter:p=>p.value>0?(total?pct(p.value,total).toFixed(1):0)+'%':''}}]
   },true);
 }
-function chRgB(rows){ hist('chRgB', rows.filter(r=>r[I.t]==='BEV'), I.r, [300,400,500,600,700,800], ['<300','300-400','400-500','500-600','600-700','700-800','≥800'], '#D97757',' km'); }
-function chRgP(rows){ hist('chRgP', rows.filter(r=>r[I.t]==='PHEV'), I.r, [75,100,125,150,200], ['<75','75-100','100-125','125-150','150-200','≥200'], '#6B9BD1',' km'); }
+function chRgB(rows){ hist('chRgB', rows.filter(r=>r[I.t]==='BEV'), I.r, [300,400,500,600,700,800], ['<300','300-400','400-500','500-600','600-700','700-800','≥800'], '#D97757','纯电续航里程(km)'); }
+function chRgP(rows){ hist('chRgP', rows.filter(r=>r[I.t]==='PHEV'), I.r, [75,100,125,150,200], ['<75','75-100','100-125','125-150','150-200','≥200'], '#6B9BD1','纯电续航里程(km)'); }
 function chCr(rows){
   const bevP=[],phevP=[];
   for(const r of rows){
@@ -1228,7 +1249,7 @@ function chCr(rows){
       }},TT),
     legend:LG({data:lg}),
     grid:GRID(),
-    xAxis:Object.assign({type:'value',name:'容量 kWh',nameTextStyle:{color:TC().axis},scale:true},AXS()),
+    xAxis:Object.assign({type:'value',name:'容量 kWh',nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis},scale:true},AXS()),
     yAxis:Object.assign({type:'value',name:'续航 km',nameTextStyle:{color:TC().axis},scale:true},AXS()),
     series
   },true);
@@ -1267,7 +1288,7 @@ function chEd(rows){
     tooltip:Object.assign({trigger:'axis',valueFormatter:v=>v+' Wh/kg'},TT),
     legend:LG({data:['能量密度','能量密度趋势线'],selected:{'能量密度趋势线':false}}),
     grid:GRID({bottom:64,top:56}),
-    xAxis:Object.assign({type:'category',data:labels},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
+    xAxis:Object.assign({type:'category',data:labels,name:'批次',nameLocation:'middle',nameGap:44,nameTextStyle:{color:TC().axis}},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
     yAxis:Object.assign({type:'value',name:'Wh/kg',nameTextStyle:{color:TC().axis},scale:true},AXS()),
     series:[main,fit]
   },true);
@@ -1285,13 +1306,13 @@ function chEcTrend(rows){
     tooltip:Object.assign({trigger:'axis',valueFormatter:v=>v+' kWh/100km'},TT),
     legend:LG({data:legendData,selected:sel}),
     grid:GRID({bottom:64,top:56}),
-    xAxis:Object.assign({type:'category',data:labels},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
+    xAxis:Object.assign({type:'category',data:labels,name:'批次',nameLocation:'middle',nameGap:44,nameTextStyle:{color:TC().axis}},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
     yAxis:Object.assign({type:'value',name:'kWh/100km',nameTextStyle:{color:TC().axis},scale:true},AXS()),
     series
   },true);
 }
 function chEc(rows){
-  hist('chEc', rows.filter(r=>r[I.ec]!=null), I.ec, [10,12,14,16,18], ['<10','10-12','12-14','14-16','16-18','≥18'], '#6A8FB5',' kWh/100km');
+  hist('chEc', rows.filter(r=>r[I.ec]!=null), I.ec, [10,12,14,16,18], ['<10','10-12','12-14','14-16','16-18','≥18'], '#6A8FB5','百公里电耗(kWh/100km)');
 }
 function insight4(rows){
   const b = rows.filter(r=>r[I.t]==='BEV'), p = rows.filter(r=>r[I.t]==='PHEV');
@@ -1303,21 +1324,83 @@ function insight4(rows){
     `三元锂 <em>${btFilled.length?pct(btFilled.filter(r=>r[I.bt]==='三元锂').length,btFilled.length).toFixed(1):0}%</em>。`;
 }
 
+/* ==================== Panel D 分布格局（配置驱动，增减维度改 DIST_DEFS） ==================== */
+const spl = n => { const m=String(n).match(/^(.*?)\((.*)\)$/); return m?[m[1],m[2]]:[String(n),'']; };
+const DIST_DEFS = [
+  {id:'dRvsLen',  t:'EV Range vs Length',              sub:'纯电续航-尺寸 散点 · BEV/PHEV 分列趋势线', yK:I.r, xK:I.ab, yN:'纯电续航里程(km)', xN:'轴距(mm)',
+   note:'Length 现以公告轴距(mm)呈现；底表已增设车长(mm)列，补数后将 xKey 换为 lg 即可切换'},
+  {id:'dCvsRg',   t:'Energy vs EV Range',              sub:'电池容量-续航 匹配关系散点',               yK:I.c, xK:I.r, yN:'电池容量(kWh)',    xN:'纯电续航里程(km)'},
+  {id:'dEcVsRg',  t:'Energy Consumption vs EV Range',  sub:'百公里电耗-续航 能效散点',                 yK:I.ec,xK:I.r, yN:'百公里电耗(kWh/100km)', xN:'纯电续航里程(km)'},
+  {id:'dEdVsRg',  t:'Energy Density vs EV Range',      sub:'能量密度-续航 技术水平散点',               yK:I.ed,xK:I.r, yN:'电池能量密度(Wh/kg)', xN:'纯电续航里程(km)'},
+  {id:'dMassLen', t:'Curb Mass vs Length',             sub:'整备质量-尺寸 重量分布散点',               yK:I.w, xK:I.ab, yN:'整备质量(kg)',     xN:'轴距(mm)',
+   note:'纵轴为整备质量(Curb Mass)，横轴与 EV Range vs Length 同用轴距口径'}
+];
+function initDist(){
+  const g=document.getElementById('distGrid'); if(!g)return;
+  g.innerHTML = DIST_DEFS.map(d=>
+    `<div class="card c-s6"><div class="c-h"><div class="c-t">${d.t}</div><div class="c-s">${d.sub}</div></div>`+
+    (d.note?`<div style="color:var(--faint);font-size:11px;margin-bottom:2px">${d.note}</div>`:'')+
+    `<div class="chart" id="${d.id}"></div></div>`).join('');
+}
+function renderDists(rows){
+  for(const d of DIST_DEFS){
+    if(!document.getElementById(d.id)) continue;
+    const bevP=[], phevP=[];
+    for(const r of rows){
+      const x=r[d.xK], y=r[d.yK];
+      if(x!=null&&y!=null){ (r[I.t]==='BEV'?bevP:phevP).push([x,y]); }
+    }
+    const trB=trendSeries(bevP,'#D97757','BEV趋势线');
+    const trP=trendSeries(phevP,'#6B9BD1','PHEV/EREV趋势线');
+    const trends=[trB,trP].filter(Boolean);
+    const series=[
+      {name:'BEV',type:'scatter',data:bevP,symbolSize:6,itemStyle:{color:`rgba(217,119,87,${TC().scatterA})`},large:true,largeThreshold:800},
+      {name:'PHEV/EREV',type:'scatter',data:phevP,symbolSize:6,itemStyle:{color:`rgba(107,155,209,${TC().scatterA})`},large:true,largeThreshold:800}
+    ];
+    trends.forEach(t=>series.push(t));
+    chart(d.id).setOption({
+      tooltip:Object.assign({trigger:'item',
+        formatter:p=>{
+          const t=trends.find(x=>x.name===p.seriesName);
+          if(t) return t.tooltip.formatter();
+          const [xn,xu]=spl(d.xN), [yn,yu]=spl(d.yN);
+          return `${p.seriesName}<br>${xn}：<b>${p.data[0]} ${xu}</b><br>${yn}：<b>${p.data[1]} ${yu}</b>`;
+        }},TT),
+      legend:LG({data:['BEV','PHEV/EREV',...trends.map(t=>t.name)]}),
+      grid:GRID(),
+      xAxis:Object.assign({type:'value',name:d.xN,nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis},scale:true},AXS()),
+      yAxis:Object.assign({type:'value',name:d.yN,nameTextStyle:{color:TC().axis},scale:true},AXS()),
+      series
+    },true);
+  }
+}
+function insightD(rows){
+  const el=document.getElementById('insightDTx'); if(!el)return;
+  const nAb=rows.filter(r=>r[I.ab]!=null&&r[I.ab]!=null&&r[I.r]!=null).length;
+  const nCR=rows.filter(r=>r[I.c]!=null&&r[I.r]!=null).length;
+  const nEc=rows.filter(r=>r[I.ec]!=null&&r[I.r]!=null).length;
+  const nEd=rows.filter(r=>r[I.ed]!=null&&r[I.r]!=null).length;
+  document.getElementById('insightDTx').innerHTML =
+    `分布格局从五个角度呈现车型参数的<u>两两关系</u>：续航-尺寸、容量-续航、电耗-续航、密度-续航、质量-尺寸。`+
+    `当前筛选内有效样本：续航×轴距 <em>${nAb}</em>、容量×续航 <em>${nCR}</em>、电耗×续航 <em>${nEc}</em>、密度×续航 <em>${nEd}</em> 款（缺失不计入）。`+
+    `本页由 <b>DIST_DEFS</b> 配置驱动，后续增加或下线分析维度只需增删配置条目。`;
+}
+
 /* ==================== 数据质量（底部） ==================== */
 function chFill(rows){
   if(!document.getElementById('chFill'))return;
-  const entries = COL_NAMES.map((n,i)=>{
-    const filled = rows.filter(r=>r[i]!=null&&r[i]!=='').length;
-    return [n, filled];
-  }).sort((a,b)=>b[1]-a[1]);
+  const entries = COL_NAMES.map((n,i)=>({n,i,f:rows.filter(r=>r[i]!=null&&r[i]!=='').length}))
+    .filter(e=>e.i!==TX_IDX)
+    .map(e=>[e.n,e.f])
+    .sort((a,b)=>b[1]-a[1]);
   const names = entries.map(e=>e[0]).reverse();
   const vals = entries.map(e=>+(pct(e[1],rows.length)).toFixed(1)).reverse();
   chart('chFill').setOption({
     tooltip:Object.assign({trigger:'axis',axisPointer:{type:'shadow'},
       formatter:ps=>`${ps[0].name}：非空 <b>${ps[0].value}%</b>（缺失 ${(100-ps[0].value).toFixed(1)}%）`},TT),
     grid:Object.assign({},GRID({left:10,right:60,top:8,bottom:8}),{containLabel:true}),
-    xAxis:Object.assign({type:'value',max:100,axisLabel:{formatter:'{value}%'}},AXS({splitLine:{show:false},axisLine:{show:false}})),
-    yAxis:Object.assign({type:'category',data:names},AXS({axisLabel:{color:TC().lbl,fontSize:11.5}})),
+    xAxis:Object.assign({type:'value',max:100,name:'非空率（%）',axisLabel:{formatter:'{value}%'}},AXS({splitLine:{show:false},axisLine:{show:false}})),
+    yAxis:Object.assign({type:'category',data:names,name:'字段名称'},AXS({axisLabel:{color:TC().lbl,fontSize:11.5}})),
     series:[{type:'bar',data:vals.map(v=>({value:v,itemStyle:{color:v>90?'#7FA97F':v>70?'#D4A94E':v>40?'#D97757':'#C97B7B'}})),
       barMaxWidth:14,label:{show:true,position:'right',color:TC().axis,fontSize:10.5,fontFamily:'Consolas',formatter:'{c}%'}}]
   },true);
@@ -1360,9 +1443,9 @@ function chHeat(rows){
   chart('chHeat').setOption({
     tooltip:Object.assign({position:'top',
       formatter:p=>`第 ${labels[p.value[1]]} 批 · ${checkNames[p.value[0]]}<br>填报率 <b>${p.value[2]}%</b>`},TT),
-    grid:Object.assign({},GRID({left:10,right:20,top:10,bottom:56}),{containLabel:true}),
-    xAxis:Object.assign({type:'category',data:checkNames,axisLabel:{color:TC().axis,fontSize:10,rotate:40}},AXS({splitLine:{show:false}})),
-    yAxis:Object.assign({type:'category',data:labels},AXS({splitLine:{show:false}})),
+    grid:Object.assign({},GRID({left:10,right:70,top:10,bottom:56}),{containLabel:true}),
+    xAxis:Object.assign({type:'category',data:checkNames,axisLabel:{color:TC().axis,fontSize:10,rotate:40},name:'字段'},AXS({splitLine:{show:false}})),
+    yAxis:Object.assign({type:'category',data:labels,name:'批次'},AXS({splitLine:{show:false}})),
     visualMap:{min:0,max:100,calculable:false,orient:'horizontal',left:'center',bottom:0,
       textStyle:{color:TC().axis,fontSize:10},
       inRange:{color:['#7A2E2E','#B3613C','#C9973F','#6F9E62','#4E8B5F']}},
@@ -1397,8 +1480,8 @@ function chEntTrend(rows){
     tooltip:Object.assign({trigger:'axis'},TT),
     legend:LG({type:'scroll',pageIconColor:TC().axis}),
     grid:GRID({bottom:64,top:46}),
-    xAxis:Object.assign({type:'category',data:labels,boundaryGap:false},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
-    yAxis:Object.assign({type:'value',name:'款数',nameTextStyle:{color:TC().axis}},AXS()),
+    xAxis:Object.assign({type:'category',data:labels,boundaryGap:false,name:'批次',nameLocation:'middle',nameGap:44,nameTextStyle:{color:TC().axis}},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
+    yAxis:Object.assign({type:'value',name:'车型数（款）',nameTextStyle:{color:TC().axis}},AXS()),
     series},true);
 }
 function chEntSeg(rows){
@@ -1439,7 +1522,7 @@ function chNewEnt(rows){
       return `<b>第 ${labels[i]} 批</b><br>新进入企业：<b>${newArr[i]}</b> 家<br>累计在营企业：<b>${cumArr[i]}</b> 家`;}},TT),
     legend:LG({data:['新进入企业数','累计在营企业数']}),
     grid:GRID({bottom:64,top:46}),
-    xAxis:Object.assign({type:'category',data:labels},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
+    xAxis:Object.assign({type:'category',data:labels,name:'批次',nameLocation:'middle',nameGap:44,nameTextStyle:{color:TC().axis}},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
     yAxis:[
       Object.assign({type:'value',name:'新进入（家）',nameTextStyle:{color:TC().axis}},AXS()),
       Object.assign({type:'value',name:'累计（家）',nameTextStyle:{color:TC().axis}},AXS({splitLine:{show:false}}))],
@@ -1451,36 +1534,9 @@ function chNewEnt(rows){
 }
 function chBrandTop(rows){
   if(!document.getElementById('chBrandTop'))return;
-  hbar('chBrandTop', groupCount(rows,I.bd,15), '#B08968');
+  hbar('chBrandTop', groupCount(rows,I.bd,15), '#B08968', '款', '产品商标');
 }
-function chTaxTrend(rows){
-  if(!document.getElementById('chTaxTrend'))return;
-  const bs = byBatch(rows);
-  const labels = bs.map(x=>String(x[0]));
-  const pctArr=[], cntArr=[];
-  bs.forEach(x=>{
-    const sub = x[1].filter(r=>r[I.tx]!=null);
-    cntArr.push(sub.length);
-    pctArr.push(sub.length? +(sub.filter(r=>r[I.tx]==='是').length/sub.length*100).toFixed(1):null);
-  });
-  const filled = pctArr.filter(v=>v!=null);
-  const overall = filled.length? +(filled.reduce((a,b)=>a+b,0)/filled.length).toFixed(1):null;
-  const sample = rows.filter(r=>r[I.tx]!=null).length;
-  chart('chTaxTrend').setOption({
-    tooltip:Object.assign({trigger:'axis',formatter(ps){
-      const i=ps[0].dataIndex;
-      return `<b>第 ${labels[i]} 批</b><br>免购置税占比：<b>${pctArr[i]==null?'未填报':pctArr[i]+'%'}</b><br>已填报样本：${cntArr[i]} 条`;}},TT),
-    grid:GRID({bottom:64,top:30}),
-    xAxis:Object.assign({type:'category',data:labels,boundaryGap:false},AXS({axisLabel:Object.assign({},AXS().axisLabel,{rotate:50,fontSize:10})})),
-    yAxis:Object.assign({type:'value',name:'%',max:100,nameTextStyle:{color:TC().axis}},AXS()),
-    series:[{name:'免购置税占比',type:'line',data:pctArr,connectNulls:true,smooth:true,
-      symbol:'circle',symbolSize:5,lineStyle:{color:'#7FA97F',width:2.2},itemStyle:{color:'#7FA97F'},
-      markLine:(overall!=null&&sample>=10)?{silent:true,symbol:'none',
-        lineStyle:{color:'#D4A94E',type:'dashed'},
-        label:{color:'#D4A94E',fontSize:10,formatter:'全范围均值 '+overall+'%'},
-        data:[{yAxis:overall}]}:undefined}]
-  },true);
-}
+
 function insightEnt(rows){
   const el=document.getElementById('insightEntTx'); if(!el)return;
   const ents=[...new Set(rows.map(r=>r[I.e]).filter(Boolean))];
@@ -1492,20 +1548,17 @@ function insightEnt(rows){
     const prev=new Set(); bs.slice(0,-1).forEach(x=>x[1].forEach(r=>{if(r[I.e])prev.add(r[I.e]);}));
     newLast=[...new Set(last[1].map(r=>r[I.e]).filter(Boolean))].filter(e=>!prev.has(e)).length;
   }
-  const taxSub=rows.filter(r=>r[I.tx]!=null);
-  const taxYes=taxSub.filter(r=>r[I.tx]==='是').length;
   el.innerHTML =
     `当前筛选覆盖 <em>${ents.length}</em> 家企业、<em>${brands.length}</em> 个品牌。`+
     (top?`头部企业 <em>${top[0]}</em> 公告 <em>${top[1]}</em> 款（占 <em>${rows.length?pct(top[1],rows.length).toFixed(1):0}%</em>）。`:'')+
-    (newLast!=null?`最新批次（第 <em>${last[0]}</em> 批）新进入企业 <em>${newLast}</em> 家。`:'')+
-    (taxSub.length?`免购置税字段已填报 <em>${taxSub.length}</em> 条，其中"是" <em>${taxYes}</em> 条（<em>${pct(taxYes,taxSub.length).toFixed(1)}%</em>），未填报不计入分母。`:'' );
+    (newLast!=null?`最新批次（第 <em>${last[0]}</em> 批）新进入企业 <em>${newLast}</em> 家。`:'');
 }
 
 /* ==================== 车型明细查询表 ==================== */
 const TBL_COLS = [
   {n:'批次',i:I.b},{n:'企业名称',i:I.e},{n:'商标',i:I.bd},{n:'产品型号',i:I.m},
   {n:'动力类型',i:I.t},{n:'细分市场',i:I.s},{n:'续航km',i:I.r},{n:'容量kWh',i:I.c},
-  {n:'电池类型',i:I.bt},{n:'总功率kW',i:I.tp},{n:'免购置税',i:I.tx}
+  {n:'电池类型',i:I.bt},{n:'总功率kW',i:I.tp},{n:'轴距mm',i:I.ab}
 ];
 const tblState={q:'',k:I.b,d:-1,page:0,per:20};
 const escH=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
@@ -1559,7 +1612,8 @@ function initTable(){
 }
 
 /* ==================== 数据管理：导出 ==================== */
-const EXPORT_FIELDS = COL_NAMES.map((n,i)=>({name:n,idx:i,on:true}));
+/* 导出字段清单不含「是否减免购置税」（v3.7 展示层口径：底表保留该维度） */
+const EXPORT_FIELDS = COL_NAMES.map((n,i)=>({name:n,idx:i,on:true})).filter(f=>f.idx!==TX_IDX);
 function initExportUI(){
   document.getElementById('fldList').innerHTML = EXPORT_FIELDS.map((f,i)=>
     `<label class="fld-chip${f.on?'':' off'}"><input type="checkbox" data-i="${i}" ${f.on?'checked':''}>${f.name}</label>`).join('');
@@ -1617,7 +1671,8 @@ function exportCsv(){
 const NUM_RANGES_JS = {
   w:[[300,4500],[500,4500]], r:[[50,1500],[20,600]], c:[[2,250],[1,120]],
   ed:[[50,400],[30,400]], ec:[[3,40],[3,40]], pp:[[5,1500],[5,800]], tp:[[5,1500],[5,800]],
-  tq:[[20,30000],[20,30000]], fo:[null,[0.1,20]], dv:[null,[300,6000]], ep:[null,[10,600]]
+  tq:[[20,30000],[20,30000]], fo:[null,[0.1,20]], dv:[null,[300,6000]], ep:[null,[10,600]],
+  ab:[[1800,4200],[1800,4200]], lg:[[2600,6600],[2600,6600]]
 };
 function jsCleanNum(v){
   if(v==null) return null;
@@ -1681,18 +1736,19 @@ function parseImportedSheet(aoa, fname){
     const batch=parseInt(String(row[0]).trim(),10);
     if(!isFinite(batch)) continue;
     const ptype = jsCleanStr(row[9])||'未知';
-    const raw = {w:jsCleanNum(row[11]),r:jsCleanNum(row[13]),c:jsCleanNum(row[14]),ed:jsCleanNum(row[16]),
+    const raw = {w:jsCleanNum(row[11]),ab:jsCleanNum(row[12]),r:jsCleanNum(row[13]),c:jsCleanNum(row[14]),ed:jsCleanNum(row[16]),
       ec:jsCleanNum(row[17]),pp:jsCleanNum(row[18]),tp:jsCleanNum(row[19]),tq:jsTorque(row[21]),
-      fo:jsCleanNum(row[23]),dv:jsCleanNum(row[25]),ep:jsCleanNum(row[26])};
+      fo:jsCleanNum(row[23]),dv:jsCleanNum(row[25]),ep:jsCleanNum(row[26]),
+      lg:(row.length>30?jsCleanNum(row[30]):null)};
     const val={};
     for(const k in raw){
-      const s=jsSanitize(k,raw[k],ptype);
+      const s=(k==='lg')?(raw[k]==null?null:raw[k]):jsSanitize(k,raw[k],ptype);
       if(raw[k]!=null&&s==null) cleaned++;
       val[k]=s;
     }
     records.push([batch,ptype,jsCleanSeg(row[8]),jsCleanStr(row[3]),val.w,val.r,val.c,jsNormBt(row[15]),
       val.ed,val.ec,val.pp,val.tp,jsCleanStr(row[20]),val.tq,val.fo,val.dv,val.ep,jsCleanStr(row[27]),jsCleanStr(row[29]),
-      jsCleanStr(row[1]),jsCleanStr(row[2]),jsNormTax(row[10])]);
+      jsCleanStr(row[1]),jsCleanStr(row[2]),jsNormTax(row[10]),val.ab,val.lg]);
   }
   return {records,cleaned};
 }
@@ -1768,7 +1824,8 @@ function updateAll(){
   insight2(rows); chPwDist(rows); chMsTop(rows); chPtq(rows); chPwTrend(rows); chPwr(rows);
   insight3(rows); chDv(rows); chDvEp(rows); chEsTop(rows); chFo(rows); chDvTrend(rows);
   insight4(rows); chRgB(rows); chRgP(rows); chCr(rows); chBtTrend(rows); chEd(rows); chEcTrend(rows); chEc(rows);
-  insightEnt(rows); chEntTrend(rows); chEntSeg(rows); chNewEnt(rows); chBrandTop(rows); chTaxTrend(rows);
+  insightD(rows); renderDists(rows);
+  insightEnt(rows); chEntTrend(rows); chEntSeg(rows); chNewEnt(rows); chBrandTop(rows);
   insight5(rows); chFill(rows); chSrc(rows); chHeat(rows);
   updateDmStat(); renderTable(false);
 }
@@ -1892,6 +1949,7 @@ initTabs();
 initQuality();
 initExportUI();
 initImport();
+initDist();
 initToTop();
 initTable();
 document.getElementById('btnTheme').onclick = toggleTheme;
@@ -1959,7 +2017,9 @@ def main():
     print(f'  批次范围: {meta["batchMin"]}~{meta["batchMax"]} · 动力类型: {"/".join(meta["types"])}')
     if release:
         print('  离线发布版：隐藏【数据质量检查】区块 · 其余功能全部保留（筛选/导出/导入/主题）')
-    print('  v3.5：企业与品牌分析页（企业演进/企业×细分市场/新进入企业/品牌Top/免购置税趋势）')
+    print('  v3.7：新增【分布格局】页（EV Range vs Length 等五组散点，DIST_DEFS 配置可增删）·')
+    print('        全图表坐标轴标注名称与单位 · 展示层移除免征购置税信息 · 底表新增车长(mm)占位列')
+    print('  v3.5：企业与品牌分析页（企业演进/企业×细分市场/新进入企业/品牌Top）')
     print('        车型明细查询表（搜索/排序/翻页）· 记录扩展 产品型号/商标/免购置税 字段')
     print('  v3：PHEV/EREV 展示名统一 / 细分市场"/"不显示 / 电池类型归一化 / 数据质量底部化')
     print('          导出Excel·CSV / 页内导入刷新 / 白天黑夜模式')
