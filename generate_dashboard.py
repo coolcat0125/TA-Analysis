@@ -54,6 +54,12 @@ v3.7.2 更新：
   2. 车型明细查询表新增【通用名称】列；导出字段同步
   3. 坐标轴标签完整显示：网格自适应留白（containLabel），取消类目标签截断
 
+v3.7.3 更新：
+  1. 分布格局要点改为分燃料类型（BEV / PHEV/EREV）的均值与极值，随全局筛选联动；移除相关系数描述
+  2. 移除分布格局卡片的两条口径注释说明
+  3. 底表补充车长(mm)：以轴距为基准按车身形式系数估算（fill_length_v373.py，浅紫底纹+台账标记，
+     填报率约65%）；完成率不高，看板 Length 分析仍以轴距为基准
+
 依赖：openpyxl（pip install openpyxl）、同目录下 echarts.min.js 与 xlsx.full.min.js
 """
 import openpyxl
@@ -824,14 +830,7 @@ function setInsight(id, html){
   const el=document.getElementById('ci_'+id);
   if(el) el.innerHTML = html;
 }
-/* 皮尔逊相关系数（分布格局要点用） */
-function pearson(pts){
-  const n=pts.length; if(n<3) return null;
-  const mx=pts.reduce((a,p)=>a+p[0],0)/n, my=pts.reduce((a,p)=>a+p[1],0)/n;
-  let sxy=0,sxx=0,syy=0;
-  for(const p of pts){ const dx=p[0]-mx, dy=p[1]-my; sxy+=dx*dy; sxx+=dx*dx; syy+=dy*dy; }
-  return (sxx&&syy)? sxy/Math.sqrt(sxx*syy) : null;
-}
+/* v3.7.3：分布格局要点为分燃料类型均值与极值（原先的 r 值描述已按需求移除） */
 
 /* ==================== 细分市场排序（CAR/SUV/MPV 分组，字母级别→数字级别→未分级） ==================== */
 function segKey(s){
@@ -1500,19 +1499,16 @@ function insight4(rows){
 /* ==================== Panel D 分布格局（配置驱动，增减维度改 DIST_DEFS） ==================== */
 const spl = n => { const m=String(n).match(/^(.*?)\((.*)\)$/); return m?[m[1],m[2]]:[String(n),'']; };
 const DIST_DEFS = [
-  {id:'dRvsLen',  t:'纯电续航 × 尺寸',                 sub:'EV Range vs Length · 散点 · BEV/PHEV 分列趋势线', yK:I.r, xK:I.ab, yN:'纯电续航里程(km)', xN:'轴距(mm)',
-   note:'Length 现以公告轴距(mm)呈现；底表已增设车长(mm)列，补数后将 xKey 换为 lg 即可切换'},
+  {id:'dRvsLen',  t:'纯电续航 × 尺寸',                 sub:'EV Range vs Length · 散点 · BEV/PHEV 分列趋势线', yK:I.r, xK:I.ab, yN:'纯电续航里程(km)', xN:'轴距(mm)'},
   {id:'dCvsRg',   t:'电池容量 × 纯电续航',             sub:'Energy vs EV Range · 容量-续航匹配关系散点',      yK:I.c, xK:I.r, yN:'电池容量(kWh)',    xN:'纯电续航里程(km)'},
   {id:'dEcVsRg',  t:'百公里电耗 × 纯电续航',           sub:'Energy Consumption vs EV Range · 能效水平散点',   yK:I.ec,xK:I.r, yN:'百公里电耗(kWh/100km)', xN:'纯电续航里程(km)'},
   {id:'dEdVsRg',  t:'能量密度 × 纯电续航',             sub:'Energy Density vs EV Range · 技术水平散点',       yK:I.ed,xK:I.r, yN:'电池能量密度(Wh/kg)', xN:'纯电续航里程(km)'},
-  {id:'dMassLen', t:'整备质量 × 尺寸',                 sub:'Curb Mass vs Length · 重量-尺寸分布散点',         yK:I.w, xK:I.ab, yN:'整备质量(kg)',     xN:'轴距(mm)',
-   note:'纵轴为整备质量(Curb Mass)，横轴与「纯电续航 × 尺寸」同用轴距口径'}
+  {id:'dMassLen', t:'整备质量 × 尺寸',                 sub:'Curb Mass vs Length · 重量-尺寸分布散点',         yK:I.w, xK:I.ab, yN:'整备质量(kg)',     xN:'轴距(mm)'}
 ];
 function initDist(){
   const g=document.getElementById('distGrid'); if(!g)return;
   g.innerHTML = DIST_DEFS.map(d=>
     `<div class="card c-s6"><div class="c-h"><div class="c-t">${d.t}</div><div class="c-s">${d.sub}</div></div>`+
-    (d.note?`<div style="color:var(--faint);font-size:11px;margin-bottom:2px">${d.note}</div>`:'')+
     `<div class="chart" id="${d.id}"></div></div>`).join('');
 }
 function renderDists(rows){
@@ -1531,9 +1527,20 @@ function renderDists(rows){
       {name:'PHEV/EREV',type:'scatter',data:phevP,symbolSize:6,itemStyle:{color:`rgba(107,155,209,${TC().scatterA})`},large:true,largeThreshold:800}
     ];
     trends.forEach(t=>series.push(t));
-    const all = bevP.concat(phevP).map(p=>p.value);
-    const cr = pearson(all);
-    setInsight(d.id, all.length?`样本 <em>${fmt(all.length)}</em> 组（BEV ${fmt(bevP.length)} / PHEV·EREV ${fmt(phevP.length)}）· 相关系数 r=<em>${cr==null?'-':cr.toFixed(2)}</em>${cr==null?'':(cr>=0?'，正相关':'，负相关')}`:'当前筛选无有效样本');
+    /* 要点：分燃料类型的均值与极值（随全局筛选联动） */
+    const fv = v => v>=100 ? Math.round(v).toLocaleString('zh-CN') : (+v.toFixed(1));
+    const stat = ps=>{
+      if(!ps.length) return null;
+      let xs=0,ys=0,xmin=Infinity,xmax=-Infinity,ymin=Infinity,ymax=-Infinity;
+      for(const p of ps){const x=p.value[0],y=p.value[1];xs+=x;ys+=y;
+        if(x<xmin)xmin=x;if(x>xmax)xmax=x;if(y<ymin)ymin=y;if(y>ymax)ymax=y;}
+      return {xm:xs/ps.length,xmin,xmax,ym:ys/ps.length,ymin,ymax};
+    };
+    const [xn,xu]=spl(d.xN), [yn,yu]=spl(d.yN);
+    const part=(nm,s)=>s?`${nm}：${xn}均值 <em>${fv(s.xm)}</em>（极值 ${fv(s.xmin)}~${fv(s.xmax)}）${xu} · ${yn}均值 <em>${fv(s.ym)}</em>（极值 ${fv(s.ymin)}~${fv(s.ymax)}）${yu}`:'';
+    const sB=stat(bevP), sP=stat(phevP);
+    const segs=[['BEV',sB],['PHEV/EREV',sP]].filter(x=>x[1]).map(x=>part(x[0],x[1])).join(' ｜ ');
+    setInsight(d.id, segs?`${segs}（样本 <em>${fmt(bevP.length+phevP.length)}</em> 组）`:'当前筛选无有效样本');
     chart(d.id).setOption({
       tooltip:Object.assign({trigger:'item',
         formatter:p=>{
