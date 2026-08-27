@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEV公告数据看板 __VERSION__</title>
+<style>
+:root{
+  --bg:#f7f4f0;--card:#fff;--text:#1a1a1a;--text2:#666;--border:#e5e0d8;
+  --primary:#c96442;--primary-l:#f0e6df;--accent:#2d6a4f;--accent-l:#e8f5ee;
+  --warn:#b8860b;--warn-l:#fef6e0;--shadow:0 1px 3px rgba(0,0,0,.08);
+  --chart-bg:#fff;
+}
+[data-theme="dark"]{
+  --bg:#1a1816;--card:#262420;--text:#e8e4de;--text2:#999;--border:#3a3632;
+  --primary:#e07a5f;--primary-l:#3a2d28;--accent:#52b788;--accent-l:#1e3329;
+  --warn:#e9c46a;--warn-l:#3a3428;--shadow:0 1px 3px rgba(0,0,0,.3);
+  --chart-bg:#262420;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.6}
+.header{background:var(--card);border-bottom:1px solid var(--border);padding:0 24px;display:flex;align-items:center;gap:20px;height:60px;position:sticky;top:0;z-index:100;box-shadow:var(--shadow)}
+.header h1{font-size:18px;font-weight:700;white-space:nowrap}
+.header h1 span{color:var(--primary);font-size:12px;font-weight:400;margin-left:8px}
+.meta{display:flex;gap:16px;font-size:12px;color:var(--text2)}
+.meta b{color:var(--primary)}
+.spacer{flex:1}
+.btn{padding:6px 14px;border:1px solid var(--border);border-radius:6px;background:var(--card);color:var(--text);cursor:pointer;font-size:13px;transition:all .2s}
+.btn:hover{border-color:var(--primary);color:var(--primary)}
+.btn-primary{background:var(--primary);color:#fff;border-color:var(--primary)}
+.btn-primary:hover{opacity:.9;color:#fff}
+.tabs{display:flex;gap:4px;background:var(--card);padding:0 24px;border-bottom:1px solid var(--border);overflow-x:auto}
+.tab{padding:12px 20px;cursor:pointer;border-bottom:2px solid transparent;color:var(--text2);font-size:14px;white-space:nowrap;transition:all .2s}
+.tab:hover{color:var(--primary)}
+.tab.active{color:var(--primary);border-bottom-color:var(--primary);font-weight:600}
+.page{display:none;padding:24px;max-width:1600px;margin:0 auto}
+.page.active{display:block}
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-bottom:20px}
+.kpi{background:var(--card);border-radius:10px;padding:18px;box-shadow:var(--shadow);border:1px solid var(--border))}
+.kpi .label{font-size:12px;color:var(--text2);margin-bottom:4px}
+.kpi .value{font-size:28px;font-weight:700;color:var(--primary)}
+.kpi .sub{font-size:11px;color:var(--text2);margin-top:2px}
+.chart-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:16px}
+.chart-grid.three{grid-template-columns:repeat(3,1fr)}
+.chart-box{background:var(--card);border-radius:10px;padding:16px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.chart-box.full{grid-column:1/-1}
+.chart-box h3{font-size:14px;font-weight:600;margin-bottom:12px;color:var(--text)}
+.chart{width:100%;height:320px}
+.chart.tall{height:400px}
+.filter-bar{background:var(--card);border-radius:10px;padding:14px 16px;margin-bottom:16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:var(--shadow);border:1px solid var(--border)}
+.filter-bar label{font-size:13px;color:var(--text2)}
+.filter-bar select,.filter-bar input{padding:5px 10px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--text);font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
+th{background:var(--primary-l);font-weight:600;position:sticky;top:0;cursor:pointer;user-select:none}
+th:hover{color:var(--primary)}
+tr:hover td{background:var(--primary-l)}
+.table-wrap{background:var(--card);border-radius:10px;overflow:auto;max-height:600px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600}
+.badge-be{background:var(--accent-l);color:var(--accent)}
+.badge-phev{background:var(--warn-l);color:var(--warn)}
+.badge-erev{background:var(--primary-l);color:var(--primary)}
+.cov-bar{height:8px;background:var(--border);border-radius:4px;overflow:hidden;margin-top:4px}
+.cov-fill{height:100%;border-radius:4px;background:var(--accent);transition:width .5s}
+.cov-item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)}
+.cov-item .name{width:100px;font-size:13px}
+.cov-item .pct{width:60px;text-align:right;font-weight:600;font-size:13px}
+.cov-item .bar-wrap{flex:1}
+.note{background:var(--warn-l);border-left:3px solid var(--warn);padding:10px 14px;border-radius:0 6px 6px 0;font-size:12px;color:var(--text2);margin-bottom:16px}
+@media(max-width:900px){.chart-grid,.chart-grid.three{grid-template-columns:1fr}.header{flex-wrap:wrap;height:auto;padding:10px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>NEV公告数据看板<span>__VERSION__ · __TIMESTAMP__</span></h1>
+  <div class="meta" id="metaInfo"></div>
+  <div class="spacer"></div>
+  <input type="file" id="importFile" accept=".xlsx,.xls" style="display:none">
+  <button class="btn" onclick="document.getElementById('importFile').click()">导入Excel</button>
+  <button class="btn btn-primary" onclick="exportExcel()">导出Excel</button>
+  <button class="btn" onclick="toggleTheme()">昼夜</button>
+</div>
+<div class="tabs" id="tabs">
+  <div class="tab active" data-page="overview">总览</div>
+  <div class="tab" data-page="motor">电机系统</div>
+  <div class="tab" data-page="engine">发动机系统</div>
+  <div class="tab" data-page="battery">电池系统</div>
+  <div class="tab" data-page="company">企业与品牌</div>
+  <div class="tab" data-page="data">数据管理</div>
+</div>
+
+<!-- 总览 -->
+<div class="page active" id="page-overview">
+  <div class="kpi-row" id="kpiOverview"></div>
+  <div class="note">410批为工信部公示数据（2026-08-07公示），正式公告预计2026年9月发布，届时以官方附件为准核对。409批为2026-08-13正式公告。</div>
+  <div class="chart-grid">
+    <div class="chart-box full"><h3>各批次车型数量趋势</h3><div class="chart tall" id="chartBatch"></div></div>
+    <div class="chart-box"><h3>动力类型分布</h3><div class="chart" id="chartPowertrain"></div></div>
+    <div class="chart-box"><h3>细分市场分布</h3><div class="chart" id="chartSegment"></div></div>
+    <div class="chart-box full"><h3>企业车型数量 TOP15</h3><div class="chart" id="chartCompany"></div></div>
+  </div>
+</div>
+
+<!-- 电机 -->
+<div class="page" id="page-motor">
+  <div class="kpi-row" id="kpiMotor"></div>
+  <div class="chart-grid">
+    <div class="chart-box full"><h3>电机生产企业 TOP15</h3><div class="chart" id="chartMotorMaker"></div></div>
+    <div class="chart-box"><h3>电机总功率分布</h3><div class="chart" id="chartMotorPower"></div></div>
+    <div class="chart-box"><h3>动力类型占比</h3><div class="chart" id="chartMotorPt"></div></div>
+  </div>
+</div>
+
+<!-- 发动机 -->
+<div class="page" id="page-engine">
+  <div class="kpi-row" id="kpiEngine"></div>
+  <div class="chart-grid">
+    <div class="chart-box full"><h3>发动机生产企业 TOP12</h3><div class="chart" id="chartEngMaker"></div></div>
+    <div class="chart-box"><h3>发动机排量分布(mL)</h3><div class="chart" id="chartEngDispl"></div></div>
+    <div class="chart-box"><h3>发动机功率分布(kW)</h3><div class="chart" id="chartEngPower"></div></div>
+  </div>
+</div>
+
+<!-- 电池 -->
+<div class="page" id="page-battery">
+  <div class="kpi-row" id="kpiBattery"></div>
+  <div class="chart-grid three">
+    <div class="chart-box"><h3>电池类型分布</h3><div class="chart" id="chartBatType"></div></div>
+    <div class="chart-box"><h3>能量密度分布(Wh/kg)</h3><div class="chart" id="chartEdDist"></div></div>
+    <div class="chart-box"><h3>百公里电耗分布(kWh)</h3><div class="chart" id="chartConsDist"></div></div>
+    <div class="chart-box"><h3>BEV续航里程分布(km)</h3><div class="chart" id="chartRangeDist"></div></div>
+    <div class="chart-box"><h3>电池容量分布(kWh)</h3><div class="chart" id="chartCapDist"></div></div>
+    <div class="chart-box"><h3>电池类型趋势</h3><div class="chart" id="chartBatTrend"></div></div>
+  </div>
+</div>
+
+<!-- 企业与品牌 -->
+<div class="page" id="page-company">
+  <div class="filter-bar">
+    <label>搜索:</label><input type="text" id="searchInput" placeholder="企业/品牌/车型..." oninput="filterTable()" style="width:200px">
+    <label>批次:</label><select id="filterBatch" onchange="filterTable()"><option value="">全部</option></select>
+    <label>动力:</label><select id="filterPt" onchange="filterTable()"><option value="">全部</option></select>
+    <span id="tableCount" style="color:var(--text2);font-size:12px"></span>
+  </div>
+  <div class="table-wrap">
+    <table id="dataTable">
+      <thead><tr>
+        <th onclick="sortTable(0)">批次</th><th onclick="sortTable(1)">品牌</th>
+        <th onclick="sortTable(2)">车型</th><th onclick="sortTable(3)">企业</th>
+        <th onclick="sortTable(4)">动力</th><th onclick="sortTable(5)">续航km</th>
+        <th onclick="sortTable(6)">容量kWh</th><th onclick="sortTable(7)">电池</th>
+        <th onclick="sortTable(8)">电耗</th><th onclick="sortTable(9)">电机kW</th>
+      </tr></thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 数据管理 -->
+<div class="page" id="page-data">
+  <div class="kpi-row" id="kpiData"></div>
+  <div class="chart-grid">
+    <div class="chart-box"><h3>字段覆盖率</h3><div id="coverageList"></div></div>
+    <div class="chart-box"><h3>数据来源分布</h3><div class="chart" id="chartSource"></div></div>
+    <div class="chart-box full"><h3>409-410批新增重点车型</h3>
+      <div class="table-wrap" style="max-height:400px">
+        <table><thead><tr><th>批次</th><th>品牌</th><th>车型</th><th>动力</th><th>续航</th><th>容量</th><th>电池</th><th>电机kW</th></tr></thead>
+        <tbody id="recentBody"></tbody></table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>__ECHARTS__</script>
+<script>__XLSX__</script>
+<script>
+const DASHBOARD_DATA = __DATA_JSON__;
+let charts = {}; let currentData = DASHBOARD_DATA; let sortCol = 0, sortAsc = false;
+
+const COLORS = ['#c96442','#2d6a4f','#b8860b','#4a6fa5','#8b5a3c','#6b4c9a','#c44e52','#4f9a94','#dd8452','#55a868','#8172b3','#937860','#da8bc3','#8c8c8c','#ccb974'];
+function isDark(){return document.documentElement.getAttribute('data-theme')==='dark'}
+function chartTextColor(){return isDark()?'#e8e4de':'#1a1a1a'}
+function chartAxisColor(){return isDark()?'#555':'#ccc'}
+
+function initCharts(){
+  Object.values(charts).forEach(c=>c&&c.dispose&&c.dispose()); charts={};
+  const d=currentData;
+  // Overview
+  mkChart('chartBatch',{grid:{left:50,right:20,top:20,bottom:60},xAxis:{type:'category',data:d.batchTrend.labels,axisLabel:{rotate:45,fontSize:10,color:chartTextColor()},axisLine:{lineStyle:{color:chartAxisColor()}}},yAxis:{type:'value',axisLabel:{color:chartTextColor()},splitLine:{lineStyle:{color:chartAxisColor(),type:'dashed'}}},series:[{type:'bar',data:d.batchTrend.values,itemStyle:{color:'#c96442',borderRadius:[3,3,0,0]}}],tooltip:{trigger:'axis'}});
+  pie('chartPowertrain',d.powertrain); pie('chartSegment',d.segment);
+  mkChart('chartCompany',{grid:{left:120,right:20,top:10,bottom:20},xAxis:{type:'value',axisLabel:{color:chartTextColor()},splitLine:{lineStyle:{color:chartAxisColor(),type:'dashed'}}},yAxis:{type:'category',data:d.companyTop.labels.reverse(),axisLabel:{color:chartTextColor(),fontSize:11},axisLine:{lineStyle:{color:chartAxisColor()}}},series:[{type:'bar',data:d.companyTop.values.reverse(),itemStyle:{color:'#2d6a4f',borderRadius:[0,3,3,0]}}],tooltip:{trigger:'axis'}});
+  // Motor
+  mkChart('chartMotorMaker',{grid:{left:160,right:20,top:10,bottom:20},xAxis:{type:'value',axisLabel:{color:chartTextColor()},splitLine:{lineStyle:{color:chartAxisColor(),type:'dashed'}}},yAxis:{type:'category',data:d.motorMaker.labels.reverse(),axisLabel:{color:chartTextColor(),fontSize:11}},series:[{type:'bar',data:d.motorMaker.values.reverse(),itemStyle:{color:'#4a6fa5',borderRadius:[0,3,3,0]}}],tooltip:{trigger:'axis'}});
+  bar('chartMotorPower',d.motorDist); pie('chartMotorPt',d.powertrain);
+  // Engine
+  mkChart('chartEngMaker',{grid:{left:160,right:20,top:10,bottom:20},xAxis:{type:'value',axisLabel:{color:chartTextColor()},splitLine:{lineStyle:{color:chartAxisColor(),type:'dashed'}}},yAxis:{type:'category',data:d.engineMaker.labels.reverse(),axisLabel:{color:chartTextColor(),fontSize:11}},series:[{type:'bar',data:d.engineMaker.values.reverse(),itemStyle:{color:'#8b5a3c',borderRadius:[0,3,3,0]}}],tooltip:{trigger:'axis'}});
+  bar('chartEngDispl',d.engDist);
+  // Engine power custom
+  const epVals=d.records.filter(r=>r.enginePower).map(r=>r.enginePower);
+  const epB=binData(epVals,[0,50,80,100,120,150,200,500]);
+  bar('chartEngPower',epB);
+  // Battery
+  pie('chartBatType',d.batteryType); bar('chartEdDist',d.edDist); bar('chartConsDist',d.consDist);
+  bar('chartRangeDist',d.rangeDist); bar('chartCapDist',d.capDist);
+  // Battery trend (last 10 batches LFP vs NCM)
+  const lastB=d.batchTrend.labels.slice(-12);
+  const lfp=[],ncm=[];
+  lastB.forEach(b=>{let l=0,n=0;d.records.forEach(r=>{if(r.batch===b){if(r.batteryType==='磷酸铁锂')l++;if(r.batteryType==='三元锂')n++}});lfp.push(l);ncm.push(n)});
+  mkChart('chartBatTrend',{legend:{data:['磷酸铁锂','三元锂'],textStyle:{color:chartTextColor()}},grid:{left:40,right:15,top:35,bottom:50},xAxis:{type:'category',data:lastB,axisLabel:{rotate:45,fontSize:10,color:chartTextColor()}},yAxis:{type:'value',axisLabel:{color:chartTextColor()},splitLine:{lineStyle:{color:chartAxisColor(),type:'dashed'}}},series:[{name:'磷酸铁锂',type:'bar',stack:'a',data:lfp,itemStyle:{color:'#2d6a4f'}},{name:'三元锂',type:'bar',stack:'a',data:ncm,itemStyle:{color:'#c96442'}}],tooltip:{trigger:'axis'}});
+  // Data source
+  const srcCnt={};d.records.forEach(r=>{const s=r.source||'未知';srcCnt[s]=(srcCnt[s]||0)+1});
+  const srcE=Object.entries(srcCnt).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  pie('chartSource',{labels:srcE.map(e=>e[0]),values:srcE.map(e=>e[1])});
+}
+function binData(vals,edges){const r=[0]*(edges.length-1);vals.forEach(v=>{for(let i=0;i<edges.length-1;i++){if(v>=edges[i]&&v<edges[i+1]){r[i]++;break}}});return{labels:edges.slice(0,-1).map((e,i)=>e+'-'+edges[i+1]),values:r}}
+function mkChart(id,opt){const el=document.getElementById(id);if(!el)return;const c=echarts.init(el);opt.textStyle={color:chartTextColor()};c.setOption(opt);charts[id]=c}
+function pie(id,data){if(!data||!data.labels.length)return;mkChart(id,{tooltip:{trigger:'item',formatter:'{b}: {c} ({d}%)'},legend:{type:'scroll',bottom:0,textStyle:{color:chartTextColor(),fontSize:10}},series:[{type:'pie',radius:['35%','65%'],center:['50%','45%'],data:data.labels.map((l,i)=>({name:l,value:data.values[i],itemStyle:{color:COLORS[i%COLORS.length]}})),label:{fontSize:10}}]})}
+function bar(id,data){if(!data)return;mkChart(id,{grid:{left:45,right:15,top:15,bottom:55},xAxis:{type:'category',data:data.labels,axisLabel:{rotate:35,fontSize:10,color:chartTextColor()}},yAxis:{type:'value',axisLabel:{color:chartTextColor()},splitLine:{lineStyle:{color:chartAxisColor(),type:'dashed'}}},series:[{type:'bar',data:data.values,itemStyle:{color:'#c96442',borderRadius:[3,3,0,0]}}],tooltip:{trigger:'axis'}})}
+
+function renderKPIs(){
+  const d=currentData;
+  document.getElementById('metaInfo').innerHTML=`批次: <b>${d.batchRange}</b> | 记录: <b>${d.total}</b> | 企业: <b>${d.companyCount}</b> | 品牌: <b>${d.brandCount}</b>`;
+  const bev=d.powertrain.labels.includes('纯电动')?d.powertrain.values[d.powertrain.labels.indexOf('纯电动')]:0;
+  const phev=d.powertrain.labels.filter(l=>l.includes('插')||l.includes('增')).reduce((s,l)=>s+d.powertrain.values[d.powertrain.labels.indexOf(l)],0);
+  document.getElementById('kpiOverview').innerHTML=kpi('总记录数',d.total,'条')+kpi('批次覆盖',d.batchCount,'个批次')+kpi('企业数',d.companyCount,'家')+kpi('品牌数',d.brandCount,'个')+kpi('纯电动',bev,'款')+kpi('插混/增程',phev,'款');
+  const motorFilled=d.records.filter(r=>r.motorTotal).length;
+  document.getElementById('kpiMotor').innerHTML=kpi('电机数据',motorFilled,'条',Math.round(motorFilled/d.total*100)+'%')+kpi('电机企业',d.motorMaker.labels.length,'家')+kpi('电机型号覆盖',Math.round(d.coverage.电机总功率)+'%');
+  const engFilled=d.records.filter(r=>r.engineMaker).length;
+  document.getElementById('kpiEngine').innerHTML=kpi('发动机数据',engFilled,'条')+kpi('发动机企业',d.engineMaker.labels.length,'家')+kpi('PHEV/EREV',phev,'款');
+  document.getElementById('kpiBattery').innerHTML=kpi('容量覆盖',Math.round(d.coverage.电池容量)+'%')+kpi('续航覆盖',Math.round(d.coverage.纯电续航)+'%')+kpi('能量密度',Math.round(d.coverage.能量密度)+'%')+kpi('电耗覆盖',Math.round(d.coverage.百公里电耗)+'%');
+  document.getElementById('kpiData').innerHTML=kpi('总字段',30,'列')+kpi('总记录',d.total,'条')+kpi('数据来源',Object.keys(d.records.reduce((a,r)=>{if(r.source)a[r.source]=1;return a},{})).length,'类');
+  // Coverage list
+  document.getElementById('coverageList').innerHTML=Object.entries(d.coverage).map(([k,v])=>`<div class="cov-item"><span class="name">${k}</span><div class="bar-wrap"><div class="cov-bar"><div class="cov-fill" style="width:${v}%"></div></div></div><span class="pct">${v}%</span></div>`).join('');
+  // Recent
+  document.getElementById('recentBody').innerHTML=d.recent.map(r=>`<tr><td>${r.batch}</td><td>${r.brand||''}</td><td>${r.carName||''}</td><td>${ptBadge(r.powertrain)}</td><td>${r.evRange||''}</td><td>${r.batteryCap||''}</td><td>${r.batteryType||''}</td><td>${r.motorTotal||''}</td></tr>`).join('');
+}
+function kpi(label,value,unit='',sub=''){return`<div class="kpi"><div class="label">${label}</div><div class="value">${value}<span style="font-size:14px;font-weight:400"> ${unit}</span></div>${sub?`<div class="sub">${sub}</div>`:''}</div>`}
+function ptBadge(pt){if(!pt)return'';if(pt.includes('纯'))return'<span class="badge badge-be">BEV</span>';if(pt.includes('增'))return'<span class="badge badge-erev">EREV</span>';return'<span class="badge badge-phev">PHEV</span>'}
+
+// Table
+function initFilters(){
+  const d=currentData;const batches=[...new Set(d.records.map(r=>r.batch))].sort();
+  document.getElementById('filterBatch').innerHTML='<option value="">全部</option>'+batches.map(b=>`<option>${b}</option>`).join('');
+  const pts=[...new Set(d.records.map(r=>r.powertrain).filter(Boolean))];
+  document.getElementById('filterPt').innerHTML='<option value="">全部</option>'+pts.map(p=>`<option>${p}</option>`).join('');
+}
+function filterTable(){
+  const q=document.getElementById('searchInput').value.toLowerCase();
+  const b=document.getElementById('filterBatch').value;
+  const p=document.getElementById('filterPt').value;
+  let rows=currentData.records.filter(r=>{
+    if(b&&r.batch!==b)return false;if(p&&r.powertrain!==p)return false;
+    if(q&&![r.brand,r.carName,r.company,r.model].some(v=>(v||'').toLowerCase().includes(q)))return false;
+    return true});
+  document.getElementById('tableCount').textContent=`共 ${rows.length} 条`;
+  rows.sort((a,b2)=>{const va=[a.batch,a.brand,a.carName,a.company,a.powertrain,a.evRange,a.batteryCap,a.batteryType,a.consumption,a.motorTotal][sortCol];const vb=[b2.batch,b2.brand,b2.carName,b2.company,b2.powertrain,b2.evRange,b2.batteryCap,b2.batteryType,b2.consumption,b2.motorTotal][sortCol];if(va==null)return 1;if(vb==null)return-1;return((''+va).localeCompare(''+vb,'zh'))*(sortAsc?1:-1)});
+  document.getElementById('tableBody').innerHTML=rows.slice(0,500).map(r=>`<tr><td>${r.batch}</td><td>${r.brand||''}</td><td>${r.carName||''}</td><td>${r.company||''}</td><td>${ptBadge(r.powertrain)}</td><td>${r.evRange??''}</td><td>${r.batteryCap??''}</td><td>${r.batteryType||''}</td><td>${r.consumption??''}</td><td>${r.motorTotal??''}</td></tr>`).join('');
+}
+function sortTable(c){if(sortCol===c)sortAsc=!sortAsc;else{sortCol=c;sortAsc=true}filterTable()}
+
+// Export
+function exportExcel(){
+  const data=currentData.records.map(r=>({'批次':r.batch,'产品型号':r.model,'产品商标':r.brand,'企业名称':r.company,'车型名称':r.carName,'细分市场':r.segment,'动力类型':r.powertrain,'是否减免购置税':r.tax,'整备质量kg':r.curbWeight,'纯电续航km':r.evRange,'电池容量kWh':r.batteryCap,'电池类型':r.batteryType,'能量密度Wh/kg':r.energyDensity,'百公里电耗':r.consumption,'电机峰值功率kW':r.motorPeak,'电机总功率kW':r.motorTotal,'电机生产企业':r.motorMaker,'综合油耗':r.fuelConsumption,'发动机排量mL':r.engineDispl,'发动机功率kW':r.enginePower,'发动机生产企业':r.engineMaker,'数据来源':r.source}));
+  const ws=XLSX.utils.json_to_sheet(data);const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'NEV数据');
+  XLSX.writeFile(wb,`NEV公告数据_${currentData.batchRange}.xlsx`);
+}
+// Import
+document.getElementById('importFile').addEventListener('change',async(e)=>{
+  const f=e.target.files[0];if(!f)return;const ab=await f.arrayBuffer();
+  const wb=XLSX.read(ab,{type:'array'});const ws=wb.Sheets[wb.SheetNames[0]];
+  const json=XLSX.utils.sheet_to_json(ws,{header:1});
+  const recs=json.slice(1).filter(r=>r[0]).map(r=>({batch:String(r[0]||''),model:String(r[1]||''),brand:String(r[2]||''),company:String(r[3]||''),carName:String(r[4]||''),segment:String(r[8]||''),powertrain:String(r[9]||''),tax:String(r[10]||''),curbWeight:parseFloat(r[11])||null,evRange:parseFloat(r[13])||null,batteryCap:parseFloat(r[14])||null,batteryType:String(r[15]||'未知'),energyDensity:parseFloat(r[16])||null,consumption:parseFloat(r[17])||null,motorPeak:parseFloat(r[18])||null,motorTotal:parseFloat(r[19])||null,motorMaker:String(r[20]||''),motorSpec:String(r[21]||''),fuelConsumption:parseFloat(r[23])||null,engineDispl:parseFloat(r[25])||null,enginePower:parseFloat(r[26])||null,engineMaker:String(r[27]||''),source:String(r[29]||'')}));
+  // Recompute minimal stats for imported data
+  const cnt=arr=>{const c={};arr.forEach(v=>c[v]=(c[v]||0)+1);return{labels:Object.keys(c),values:Object.values(c)}};
+  currentData={...currentData,total:recs.length,records:recs,powertrain:cnt(recs.map(r=>r.powertrain||'未知')),segment:cnt(recs.map(r=>r.segment||'未知'))};
+  renderKPIs();initCharts();filterTable();alert(`已导入 ${recs.length} 条记录`);
+});
+// Theme
+function toggleTheme(){const e=document.documentElement;const d=isDark();e.setAttribute('data-theme',d?'light':'dark');setTimeout(initCharts,50)}
+// Tabs
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');document.getElementById('page-'+t.dataset.page).classList.add('active');
+  setTimeout(()=>{Object.values(charts).forEach(c=>c&&c.resize())},50);
+}));
+window.addEventListener('resize',()=>Object.values(charts).forEach(c=>c&&c.resize()));
+// Init
+renderKPIs();initFilters();filterTable();initCharts();
+</script>
+</body></html>
