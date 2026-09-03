@@ -87,7 +87,7 @@ FIELDS = ['b', 't', 's', 'e', 'w', 'r', 'c', 'bt', 'ed', 'ec',
 
 
 def clean_num(v):
-    """数值清洗：'不适用(BEV)'、空值、异常文本 → None"""
+    """数值清洗：'不适用(BEV)'、空值、异常文本 → None；多配置'285/302'取首值"""
     if v is None:
         return None
     s = str(v).strip()
@@ -95,6 +95,8 @@ def clean_num(v):
         return None
     if '不适用' in s or s in ('-', '—', '/', 'None', 'nan'):
         return None
+    if '/' in s:
+        s = s.split('/')[0].strip()  # 多配置/区间值取首值（如 285/302 → 285）
     try:
         return float(s)
     except (ValueError, TypeError):
