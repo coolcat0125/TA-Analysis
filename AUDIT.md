@@ -15,7 +15,7 @@ python3 audit_data.py --gates quality_gates.json --strict
 
 ```bash
 python3 audit_data.py \
-  --input 'NEV公告参数汇总表_合并版（341~409批）.xlsx' \
+  --input 'NEV公告参数汇总表_合并版（341~410批）.xlsx' \
   --gates quality_gates.json \
   --output-dir audit-output \
   --strict

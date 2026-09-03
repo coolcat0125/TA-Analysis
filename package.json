@@ -1,1 +1,0 @@
-{"name":"ta-analysis","version":"1.0.0","private":true,"description":"NEV announcement data pipeline tooling","license":"MIT","type":"module","devDependencies":{"exceljs":"^4.4.0"}}

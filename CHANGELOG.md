@@ -1,5 +1,13 @@
 # 版本记录
 
+## [3.10.0] - 2026-09-03
+
+### 仓库精简（GitHub 最新版同步）
+- 移除已被 v3.9.0 管线替代的候选补全管线（`analyze_source.mjs` / `build_enriched_workbook.mjs` / `verify_enriched_workbook.mjs` / `vendor/` / `package*.json`）、中间产物（`analysis-output/`、`deliverables/`）、旧版档案（`archive/`）与一次性脚本（`fill_length_v373.py`、`refresh_workbook_v37.py`、`enrich_nev_parameters.py` 等）；追溯件仅保留在项目本地历史归档，不再进入 GitHub
+- 质量门禁与当前底表对齐：`expected_min_records` 4459 → **4414**（341~410 批，68 个有数据批次）
+- `audit-output/` 基于当前底表重新生成（`inventory_nev_data.py` + `audit_data.py`，记录数 4414）
+- 根 `README.md` 结构表同步为当前核心文件（一版一源）
+
 ## [3.9.0] - 2026-09-03
 
 ### 底表信息大补全（约 4,315 格，只补空、不覆盖已有值，逐格记入变更记录）
