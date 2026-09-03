@@ -42,7 +42,7 @@ v2 功能：
 用法：
   python3 generate_dashboard.py                          # 使用默认文件名（同目录）
   python3 generate_dashboard.py <输入.xlsx> <输出.html>  # 指定输入输出
-  python3 generate_dashboard.py --release                # 离线发布版（隐藏数据质量区块，含版权页脚）
+  python3 generate_dashboard.py --release                # 发布版（隐藏数据质量区块，仅保留版权页脚）
 
 v3.7.1 更新：
   1. 分布格局五图标题中文化（英文名保留为副标题注记）
@@ -75,7 +75,7 @@ import datetime
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_IN = os.path.join(HERE, 'NEV公告参数汇总表_合并版（341~410批）.xlsx')
 DEFAULT_OUT = os.path.join(HERE, 'NEV公告数据看板.html')
-DEFAULT_RELEASE_OUT = os.path.join(HERE, 'NEV公告数据看板_离线发布版.html')
+DEFAULT_RELEASE_OUT = os.path.join(HERE, 'NEV公告数据看板_发布版.html')
 COPYRIGHT = 'Copyright (c) 2026 David YEAH'
 ECHARTS_PATH = os.path.join(HERE, 'echarts.min.js')
 XLSXLIB_PATH = os.path.join(HERE, 'xlsx.full.min.js')
@@ -533,6 +533,21 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
   box-shadow:var(--shadow);display:none;transition:color .2s}
 #toTop:hover{color:var(--clay)}
 #toTop.show{display:block}
+
+/* ---------- 批次断档图表：默认收起，可开关 ---------- */
+.card.gap-hidden{display:none}
+body.show-gaps .card.gap-hidden{display:block}
+.card.gap-hidden-note{display:none;text-align:center;color:var(--faint);font-size:12.5px;padding:16px}
+body.show-gaps .card.gap-hidden-note{display:none}
+#btnGap.on{color:var(--clay);border-color:var(--clay)}
+
+/* ---------- 趋势线公式 Toast ---------- */
+#formulaToast{position:fixed;left:50%;bottom:38px;transform:translateX(-50%) translateY(18px);
+  background:rgba(24,29,39,.96);color:#ECE8E1;border:1px solid var(--border2);border-radius:10px;
+  padding:10px 20px;font-family:var(--mono);font-size:13px;z-index:120;opacity:0;pointer-events:none;
+  transition:.25s;box-shadow:var(--shadow);max-width:82vw;text-align:center;line-height:1.6}
+#formulaToast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
 ::-webkit-scrollbar{width:9px;height:9px}
 ::-webkit-scrollbar-thumb{background:var(--border2);border-radius:5px}
 ::-webkit-scrollbar-track{background:var(--bg2)}
@@ -553,9 +568,9 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
         <button class="tool-btn icon" id="btnTheme" title="切换白天/黑夜模式">☀</button>
       </div>
       <div class="h-meta">
-        <div>数据源：<b id="hSrc">__SRC_FILE__</b> · 共 <b id="hTotal">__TOTAL__</b> 条公告记录</div>
-        <div>批次范围：<b id="hBRange">__BMIN__ ~ __BMAX__</b>（<b id="hBCnt">__BCNT__</b> 个批次）<span class="tag">OFFLINE READY</span>__REL_TAG__</div>
-        <div>生成时间：<b id="hGen">__GEN_AT__</b> · 筛选联动全部图表</div>
+        <div>数据源：<b id="hSrc">__SRC_FILE__</b></div>
+        <div>批次：<b id="hBRange">__BMIN__ ~ __BMAX__</b>（<b id="hBCnt">__BCNT__</b> 批）__REL_TAG__</div>
+        <div>生成日期：<b id="hGen">__GEN_AT__</b></div>
       </div>
     </div>
   </div>
@@ -582,6 +597,7 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
       <button data-t="PHEV">PHEV/EREV</button>
     </div>
   </div>
+  <button class="tool-btn" id="btnGap" title="显示/隐藏存在批次断档（源数据缺失）的图表">◇ 缺口图表 <span id="gapBtnLabel">0</span></button>
   <div class="f-group">
     <span class="f-label">细分市场</span>
     <div class="mselect" id="segSelect">
@@ -736,13 +752,7 @@ footer code{background:var(--card2);border:1px solid var(--border);border-radius
 </section>
 
 <footer>
-  <div>
-    <b>数据刷新方法</b>：① 页面内导入——"数据管理"页拖入最新Excel，全局实时刷新；<br>
-    ② 脚本重生成——更新Excel后运行 <code>python3 generate_dashboard.py</code>；亦可指定文件 <code>python3 generate_dashboard.py 新数据.xlsx 看板.html</code>
-  </div>
-  <div style="text-align:right">
-    <b>NEV 公告数据看板__REL_NAME__</b> · 自包含离线HTML · 内嵌 ECharts 5 + SheetJS<br>
-    生成于 <span id="ftGen">__GEN_AT__</span> · 数据截止批次 <span id="ftBMax">__BMAX__</span><br>
+  <div style="text-align:center;width:100%">
     <span style="font-size:12px;color:var(--dim)">__COPYRIGHT__ · 保留所有权利</span>
   </div>
 </footer>
@@ -949,9 +959,10 @@ function trendSeries(pts, color, name){
   const slope=(n*sxy-sx*sy)/den, icept=(sy-slope*sx)/n;
   const xs=pts.map(p=>p[0]);
   const x1=Math.min(...xs), x2=Math.max(...xs);
+  const formula=`${name||'趋势线'} · 线性趋势：y = ${slope.toFixed(3)}x + ${icept.toFixed(1)}`;
   return {name:name||'趋势线',type:'line',data:[[x1,+(slope*x1+icept).toFixed(1)],[x2,+(slope*x2+icept).toFixed(1)]],
     showSymbol:false,smooth:false,lineStyle:{color,width:2,type:'dashed',opacity:.65},
-    itemStyle:{color},tooltip:{formatter:()=>`${name||'趋势线'} · 线性趋势：y = ${slope.toFixed(3)}x + ${icept.toFixed(1)}`},z:9};
+    itemStyle:{color},tooltip:{formatter:()=>formula},__formula:formula,z:9};
 }
 
 /* ==================== 图表实例池 ==================== */
@@ -964,6 +975,52 @@ function chart(id){
   return CHARTS[id];
 }
 window.addEventListener('resize',()=>{Object.values(CHARTS).forEach(c=>{try{c.resize();}catch(e){}});});
+
+/* ==================== 批次断档检测（源数据缺失致图表不连续） ==================== */
+const GAP_CANDIDATES = ['chEvo','chPwTrend','chDvTrend','chEd','chEcTrend'];
+const GAP_IDS = new Set();
+function resetGap(){
+  GAP_IDS.clear();
+  GAP_CANDIDATES.forEach(id=>{ const el=document.getElementById(id); if(el&&el.closest('.card')) el.closest('.card').classList.remove('gap-hidden'); });
+}
+/* 判定：批次轴上任意相邻两个已出现批次间隔 ≥3（即整段批次源数据缺失），视为断档 */
+function batchGapped(labels){
+  const nums=[...new Set(labels.map(Number))].sort((a,b)=>a-b);
+  for(let i=1;i<nums.length;i++){ if(nums[i]-nums[i-1]>=3) return true; }
+  return false;
+}
+function markGap(id, labels){
+  if(!batchGapped(labels)) return;
+  GAP_IDS.add(id);
+  const el=document.getElementById(id); if(el&&el.closest('.card')) el.closest('.card').classList.add('gap-hidden');
+}
+function updateGapBtn(){
+  const lab=document.getElementById('gapBtnLabel'); if(lab) lab.textContent=`缺口图表 (${GAP_IDS.size})`;
+  const gb=document.getElementById('btnGap'); if(gb) gb.classList.toggle('on', document.body.classList.contains('show-gaps'));
+}
+function initGapBtn(){
+  const gb=document.getElementById('btnGap'); if(!gb) return;
+  gb.onclick=()=>{ document.body.classList.toggle('show-gaps'); updateGapBtn(); };
+}
+
+/* ==================== 趋势线公式 Toast ==================== */
+const TREND_REGS = {};   // chartId -> {seriesName: 公式文本}
+let _toastEl=null, _toastT;
+function showToast(msg){
+  if(!_toastEl){ _toastEl=document.createElement('div'); _toastEl.id='formulaToast'; document.body.appendChild(_toastEl); }
+  _toastEl.innerHTML=msg; _toastEl.classList.add('show');
+  clearTimeout(_toastT); _toastT=setTimeout(()=>_toastEl.classList.remove('show'),4200);
+}
+/* 为散点图绑定「点击趋势线显示公式」（幂等，仅绑一次） */
+function bindTrendClick(chartId){
+  const inst=chart(chartId); if(!inst||inst.__tc) return; inst.__tc=true;
+  inst.on('click', p=>{
+    const m=TREND_REGS[chartId]; if(!m) return;
+    const f=m[p.seriesName]; if(f) showToast(f);
+  });
+}
+/* 散点 tooltip 车型名：产品商标 + 通用名称 */
+const brandName = p => { const b=p.data.b, g=p.data.n; return [b,g].filter(x=>x&&x!=='-').join(' · ') || '–'; };
 
 /* ==================== KPI ==================== */
 function animNum(el,to,dec){
@@ -1086,6 +1143,7 @@ function chEnt(rows){
 function chEvo(rows){
   const bs = byBatch(rows);
   const labels = bs.map(x=>String(x[0]));
+  markGap('chEvo', labels);
   const mk = idx => bs.map(x=>{const v=avg(x[1],idx);return v?+v.toFixed(1):null;});
   const defs = [
     ['电机总功率kW', mk(I.tp), '#D97757', {}],
@@ -1154,11 +1212,12 @@ function chPtq(rows){
   const bevP=[],phevP=[];
   for(const r of rows){
     const tp=r[I.tp], tq=r[I.tq];
-    if(tp&&tq){ (r[I.t]==='BEV'?bevP:phevP).push({value:[tp,tq], n:r[I.gn]}); }
+    if(tp&&tq){ (r[I.t]==='BEV'?bevP:phevP).push({value:[tp,tq], n:r[I.gn], b:r[I.bd]}); }
   }
   const trB = trendSeries(bevP.map(p=>p.value),'#D97757','BEV趋势线');
   const trP = trendSeries(phevP.map(p=>p.value),'#6B9BD1','PHEV/EREV趋势线');
   const trends = [trB,trP].filter(Boolean);
+  TREND_REGS['chPtq'] = Object.fromEntries(trends.map(t=>[t.name,t.__formula]));
   setInsight('chPtq', (bevP.length+phevP.length)?`散点样本 <em>${fmt(bevP.length+phevP.length)}</em> 组（BEV <em>${fmt(bevP.length)}</em> / PHEV/EREV <em>${fmt(phevP.length)}</em>）· 虚线为分组线性趋势`:'暂无功率×扭矩匹配样本');
   const fin = [
     {name:'BEV',type:'scatter',data:bevP,symbolSize:6,itemStyle:{color:`rgba(217,119,87,${TC().scatterA})`},large:true,largeThreshold:800},
@@ -1170,7 +1229,7 @@ function chPtq(rows){
       formatter:p=>{
         const t=trends.find(x=>x.name===p.seriesName);
         if(t) return t.tooltip.formatter();
-        return `${p.seriesName} · 通用名称：<b>${p.data.n||'–'}</b><br>总功率 <b>${p.data.value[0]}</b> kW<br>峰值扭矩 <b>${p.data.value[1]}</b> Nm`;
+        return `${p.seriesName} · 品牌车型：<b>${brandName(p)}</b><br>总功率 <b>${p.data.value[0]}</b> kW<br>峰值扭矩 <b>${p.data.value[1]}</b> Nm`;
       }},TT),
     legend:LG({data:['BEV','PHEV/EREV',...trends.map(t=>t.name)]}),
     grid:GRID(),
@@ -1182,6 +1241,7 @@ function chPtq(rows){
 function chPwTrend(rows){
   const bs = byBatch(rows);
   const labels = bs.map(x=>String(x[0]));
+  markGap('chPwTrend', labels);
   const defs = [
     ['BEV平均总功率', bs.map(x=>{const v=avg(x[1].filter(r=>r[I.t]==='BEV'),I.tp);return v?+v.toFixed(0):null;}), '#D97757'],
     ['PHEV/EREV平均总功率', bs.map(x=>{const v=avg(x[1].filter(r=>r[I.t]==='PHEV'),I.tp);return v?+v.toFixed(0):null;}), '#6B9BD1'],
@@ -1268,14 +1328,15 @@ function chDv(rows){
   },true);
 }
 function chDvEp(rows){
-  const pts = rows.filter(r=>r[I.dv]!=null&&r[I.ep]!=null).map(r=>({value:[+(r[I.dv]/1000).toFixed(2),r[I.ep]], n:r[I.gn]}));
+  const pts = rows.filter(r=>r[I.dv]!=null&&r[I.ep]!=null).map(r=>({value:[+(r[I.dv]/1000).toFixed(2),r[I.ep]], n:r[I.gn], b:r[I.bd]}));
   const tr = trendSeries(pts.map(p=>p.value),'#D4A94E','PHEV/EREV趋势线');
+  TREND_REGS['chDvEp'] = tr?{[tr.name]:tr.__formula}:{};
   setInsight('chDvEp', pts.length?`样本 <em>${fmt(pts.length)}</em> 组 · 平均排量 <em>${(pts.reduce((a,p)=>a+p.value[0],0)/pts.length).toFixed(2)} L</em> · 平均功率 <em>${(pts.reduce((a,p)=>a+p.value[1],0)/pts.length).toFixed(0)} kW</em>`:'暂无排量×功率样本');
   const series=[{type:'scatter',name:'PHEV/EREV',data:pts,symbolSize:7,itemStyle:{color:`rgba(169,127,169,${TC().scatterA})`}}];
   if(tr) series.push(tr);
   chart('chDvEp').setOption({
     tooltip:Object.assign({trigger:'item',
-      formatter:p=>p.seriesName==='PHEV/EREV趋势线'?tr.tooltip.formatter():`PHEV/EREV · 通用名称：<b>${p.data.n||'–'}</b><br>排量 <b>${p.data.value[0]}</b> L · 功率 <b>${p.data.value[1]}</b> kW`},TT),
+      formatter:p=>p.seriesName==='PHEV/EREV趋势线'?tr.tooltip.formatter():`PHEV/EREV · 品牌车型：<b>${brandName(p)}</b><br>排量 <b>${p.data.value[0]}</b> L · 功率 <b>${p.data.value[1]}</b> kW`},TT),
     legend:LG({data:tr?['PHEV/EREV','PHEV/EREV趋势线']:['PHEV/EREV']}),
     grid:GRID(),
     xAxis:Object.assign({type:'value',name:'排量 L',nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis},scale:true},AXS()),
@@ -1315,6 +1376,7 @@ function chFo(rows){
 function chDvTrend(rows){
   const bs = byBatch(rows.filter(r=>r[I.dv]!=null||r[I.ep]!=null));
   const labels = bs.map(x=>String(x[0]));
+  markGap('chDvTrend', labels);
   const defs = [
     ['平均排量 L(×10)', bs.map(x=>{const v=avg(x[1],I.dv);return v?+(v/100).toFixed(2):null;}), '#A97FA9'],
     ['平均功率 kW', bs.map(x=>{const v=avg(x[1],I.ep);return v?+v.toFixed(0):null;}), '#C97B7B']
@@ -1378,7 +1440,7 @@ function chRgP(rows){
 function chCr(rows){
   const bevP=[],phevP=[];
   for(const r of rows){
-    if(r[I.c]!=null&&r[I.r]!=null){ (r[I.t]==='BEV'?bevP:phevP).push({value:[r[I.c],r[I.r]], n:r[I.gn]}); }
+    if(r[I.c]!=null&&r[I.r]!=null){ (r[I.t]==='BEV'?bevP:phevP).push({value:[r[I.c],r[I.r]], n:r[I.gn], b:r[I.bd]}); }
   }
   // BEV 与 PHEV/EREV 分别提供趋势线（散点对象取 value 数组）
   const allPts = bevP.concat(phevP).map(p=>p.value);
@@ -1389,6 +1451,7 @@ function chCr(rows){
   const trB = trendSeries(bevP.map(p=>p.value),'#D97757','BEV趋势线');
   const trP = trendSeries(phevP.map(p=>p.value),'#6B9BD1','PHEV/EREV趋势线');
   const trends = [trB,trP].filter(Boolean);
+  TREND_REGS['chCr'] = Object.fromEntries(trends.map(t=>[t.name,t.__formula]));
   const series = [
     {name:'BEV',type:'scatter',data:bevP,symbolSize:6,itemStyle:{color:`rgba(217,119,87,${TC().scatterA})`},large:true,largeThreshold:800},
     {name:'PHEV/EREV',type:'scatter',data:phevP,symbolSize:6,itemStyle:{color:`rgba(107,155,209,${TC().scatterA})`},large:true,largeThreshold:800}
@@ -1400,7 +1463,7 @@ function chCr(rows){
       formatter:p=>{
         const t=trends.find(x=>x.name===p.seriesName);
         if(t) return t.tooltip.formatter();
-        return `${p.seriesName} · 通用名称：<b>${p.data.n||'–'}</b><br>容量 <b>${p.data.value[0]}</b> kWh · 续航 <b>${p.data.value[1]}</b> km`;
+        return `${p.seriesName} · 品牌车型：<b>${brandName(p)}</b><br>容量 <b>${p.data.value[0]}</b> kWh · 续航 <b>${p.data.value[1]}</b> km`;
       }},TT),
     legend:LG({data:lg}),
     grid:GRID(),
@@ -1443,6 +1506,7 @@ function chBtTrend(rows){
 function chEd(rows){
   const bs = byBatch(rows.filter(r=>r[I.t]==='BEV'));
   const labels = bs.map(x=>String(x[0]));
+  markGap('chEd', labels);
   const vals = bs.map(x=>{const v=avg(x[1],I.ed);return v?+v.toFixed(0):null;});
   const edV = vals.filter(v=>v!=null);
   setInsight('chEd', edV.length>1?`BEV能量密度批次均值首末 <em>${edV[0]}</em>→<em>${edV[edV.length-1]}</em> Wh/kg（${edV[edV.length-1]>=edV[0]?'上行':'下行'}）`:'区间样本不足');
@@ -1460,6 +1524,7 @@ function chEd(rows){
 function chEcTrend(rows){
   const bs = byBatch(rows);
   const labels = bs.map(x=>String(x[0]));
+  markGap('chEcTrend', labels);
   const defs = [
     ['BEV平均电耗', bs.map(x=>{const v=avg(x[1].filter(r=>r[I.t]==='BEV'),I.ec);return v?+v.toFixed(1):null;}), '#D97757'],
     ['PHEV/EREV平均电耗', bs.map(x=>{const v=avg(x[1].filter(r=>r[I.t]==='PHEV'),I.ec);return v?+v.toFixed(1):null;}), '#6B9BD1']
@@ -1517,11 +1582,12 @@ function renderDists(rows){
     const bevP=[], phevP=[];
     for(const r of rows){
       const x=r[d.xK], y=r[d.yK];
-      if(x!=null&&y!=null){ (r[I.t]==='BEV'?bevP:phevP).push({value:[x,y], n:r[I.gn]}); }
+      if(x!=null&&y!=null){ (r[I.t]==='BEV'?bevP:phevP).push({value:[x,y], n:r[I.gn], b:r[I.bd]}); }
     }
     const trB=trendSeries(bevP.map(p=>p.value),'#D97757','BEV趋势线');
     const trP=trendSeries(phevP.map(p=>p.value),'#6B9BD1','PHEV/EREV趋势线');
     const trends=[trB,trP].filter(Boolean);
+    TREND_REGS[d.id]=Object.fromEntries(trends.map(t=>[t.name,t.__formula]));
     const series=[
       {name:'BEV',type:'scatter',data:bevP,symbolSize:6,itemStyle:{color:`rgba(217,119,87,${TC().scatterA})`},large:true,largeThreshold:800},
       {name:'PHEV/EREV',type:'scatter',data:phevP,symbolSize:6,itemStyle:{color:`rgba(107,155,209,${TC().scatterA})`},large:true,largeThreshold:800}
@@ -1547,7 +1613,7 @@ function renderDists(rows){
           const t=trends.find(x=>x.name===p.seriesName);
           if(t) return t.tooltip.formatter();
           const [xn,xu]=spl(d.xN), [yn,yu]=spl(d.yN);
-          return `${p.seriesName} · 通用名称：<b>${p.data.n||'–'}</b><br>${xn}：<b>${p.data.value[0]} ${xu}</b><br>${yn}：<b>${p.data.value[1]} ${yu}</b>`;
+          return `${p.seriesName} · 品牌车型：<b>${brandName(p)}</b><br>${xn}：<b>${p.data.value[0]} ${xu}</b><br>${yn}：<b>${p.data.value[1]} ${yu}</b>`;
         }},TT),
       legend:LG({data:['BEV','PHEV/EREV',...trends.map(t=>t.name)]}),
       grid:GRID(),
@@ -1555,6 +1621,7 @@ function renderDists(rows){
       yAxis:Object.assign({type:'value',name:d.yN,nameTextStyle:{color:TC().axis},scale:true},AXS()),
       series
     },true);
+    bindTrendClick(d.id);
   }
 }
 function insightD(rows){
@@ -1965,14 +2032,11 @@ function applyNewData(records,fname){
     types:[...new Set(records.map(r=>r[1]))].sort(),
     generatedAt:new Date().toLocaleString('zh-CN'), sourceFile:fname
   };
-  // 刷新页头/页脚
+  // 刷新页头
   document.getElementById('hSrc').textContent = fname;
-  document.getElementById('hTotal').textContent = records.length.toLocaleString('zh-CN');
   document.getElementById('hBRange').textContent = `${META_CUR.batchMin} ~ ${META_CUR.batchMax}`;
   document.getElementById('hBCnt').textContent = META_CUR.batchCount;
   document.getElementById('hGen').textContent = META_CUR.generatedAt;
-  document.getElementById('ftGen').textContent = META_CUR.generatedAt;
-  document.getElementById('ftBMax').textContent = META_CUR.batchMax;
   // 重置筛选并重建选项
   state.bFrom=META_CUR.batchMin; state.bTo=META_CUR.batchMax; state.type='ALL'; state.segs.clear();
   initFilters();
@@ -2020,6 +2084,7 @@ function initImport(){
 
 /* ==================== 刷新 ==================== */
 function updateAll(){
+  resetGap();
   const rows = filtered();
   document.getElementById('fCount').innerHTML = `已选 <b>${rows.length.toLocaleString('zh-CN')}</b> / ${META_CUR.total.toLocaleString('zh-CN')} 条`;
   updateKPIs(rows);
@@ -2031,6 +2096,8 @@ function updateAll(){
   insightEnt(rows); chEntTrend(rows); chEntSeg(rows); chNewEnt(rows); chBrandTop(rows);
   insight5(rows); chFill(rows); chSrc(rows); chHeat(rows);
   updateDmStat(); renderTable(false);
+  ['chPtq','chDvEp','chCr'].forEach(bindTrendClick);
+  updateGapBtn();
 }
 
 /* ==================== 筛选器 ==================== */
@@ -2160,6 +2227,7 @@ initExportUI();
 initImport();
 initDist();
 initCardInsights();
+initGapBtn();
 initToTop();
 initTable();
 document.getElementById('btnTheme').onclick = toggleTheme;
@@ -2200,7 +2268,7 @@ def main():
     print('[3/4] 生成看板HTML...')
     html = HTML_HEAD
     if release:
-        # 离线发布版：整体移除【数据质量检查】区块（独立 <section>，无导航入口）
+        # 发布版：整体移除【数据质量检查】区块（独立 <section>，无导航入口）
         html = re.sub(r'<!-- ============ 数据质量（页面底部） ============ -->.*?</section>\n\n', '', html, flags=re.S)
     html = html.replace('__ECHARTS_LIB__', echarts_lib)
     html = html.replace('__XLSX_LIB__', xlsx_lib)
@@ -2213,10 +2281,10 @@ def main():
     html = html.replace('__BCNT__', str(meta['batchCount']))
     html = html.replace('__GEN_AT__', meta['generatedAt'])
     html = html.replace('__COPYRIGHT__', COPYRIGHT)
-    html = html.replace('__REL_NAME__', ' · 离线发布版' if release else '')
-    html = html.replace('__TITLE_SUFFIX__', ' · 离线发布版' if release else '')
+    html = html.replace('__REL_NAME__', ' · 发布版' if release else '')
+    html = html.replace('__TITLE_SUFFIX__', ' · 发布版' if release else '')
     rel_tag = (' <span class="tag" style="background:rgba(212,169,78,.14);'
-               'border-color:rgba(212,169,78,.5);color:#D4A94E;margin-left:6px">RELEASE 离线发布版</span>') if release else ''
+               'border-color:rgba(212,169,78,.5);color:#D4A94E;margin-left:6px">RELEASE 发布版</span>') if release else ''
     html = html.replace('__REL_TAG__', rel_tag)
 
     with open(out_path, 'w', encoding='utf-8') as f:
@@ -2226,7 +2294,7 @@ def main():
     print(f'\n✓ 看板已生成: {out_path}（{size_mb:.1f} MB）')
     print(f'  批次范围: {meta["batchMin"]}~{meta["batchMax"]} · 动力类型: {"/".join(meta["types"])}')
     if release:
-        print('  离线发布版：隐藏【数据质量检查】区块 · 其余功能全部保留（筛选/导出/导入/主题）')
+        print('  发布版：隐藏【数据质量检查】区块 · 其余功能全部保留（筛选/导出/导入/主题）')
     print('  v3.7：新增【分布格局】页（EV Range vs Length 等五组散点，DIST_DEFS 配置可增删）·')
     print('        全图表坐标轴标注名称与单位 · 展示层移除免征购置税信息 · 底表新增车长(mm)占位列')
     print('  v3.5：企业与品牌分析页（企业演进/企业×细分市场/新进入企业/品牌Top）')
