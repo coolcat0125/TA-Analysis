@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-03T15:37:24+00:00",
+  "generated_at_utc": "2026-09-03T16:05:07+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "b2c71c8dd131058d217686b05dca3e776c8f6d9f233511e92607b51a3d43df05",
+    "sha256": "313d041ad2aca29748c5537ff9629a6327bca28e09f2a2cec73e8af1a3d990dc",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
-    "records": 4414,
-    "columns": 31,
+    "records": 4494,
+    "columns": 34,
     "headers": [
       "批次",
       "产品型号",
@@ -41,7 +41,10 @@
       "发动机生产企业",
       "发动机型号",
       "数据来源",
-      "车长(mm)"
+      "车长(mm)",
+      "电芯供应商",
+      "电池包供应商",
+      "官方参数页URL"
     ],
     "batches": {
       "341": 27,
@@ -110,52 +113,52 @@
       "406": 83,
       "407": 102,
       "408": 95,
-      "409": 31,
+      "409": 111,
       "410": 35
     }
   },
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 4251,
-      "coverage": 0.963072,
-      "missing": 163
+      "populated": 4357,
+      "coverage": 0.969515,
+      "missing": 137
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
-      "populated": 4290,
-      "coverage": 0.971908,
-      "missing": 124
+      "populated": 4393,
+      "coverage": 0.977526,
+      "missing": 101
     },
     "电池容量": {
       "header": "电池容量(kWh)",
-      "populated": 4298,
-      "coverage": 0.97372,
-      "missing": 116
+      "populated": 4393,
+      "coverage": 0.977526,
+      "missing": 101
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
-      "populated": 3868,
-      "coverage": 0.876303,
-      "missing": 546
+      "populated": 3864,
+      "coverage": 0.859813,
+      "missing": 630
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
-      "populated": 4288,
-      "coverage": 0.971454,
-      "missing": 126
+      "populated": 4389,
+      "coverage": 0.976636,
+      "missing": 105
     },
     "电机总功率": {
       "header": "电机总功率(kW)",
-      "populated": 2970,
-      "coverage": 0.672859,
-      "missing": 1444
+      "populated": 3046,
+      "coverage": 0.677793,
+      "missing": 1448
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
-      "populated": 4159,
-      "coverage": 0.942229,
-      "missing": 255
+      "populated": 4165,
+      "coverage": 0.926791,
+      "missing": 329
     }
   },
   "range_checks": {
@@ -164,8 +167,8 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 4251,
-      "outliers": 29,
+      "numeric_values": 4357,
+      "outliers": 55,
       "sample_outliers": [
         {
           "excel_row": 39,
@@ -224,7 +227,7 @@
         5.0,
         2000.0
       ],
-      "numeric_values": 4290,
+      "numeric_values": 4393,
       "outliers": 8,
       "sample_outliers": [
         {
@@ -274,7 +277,7 @@
         1.0,
         300.0
       ],
-      "numeric_values": 4298,
+      "numeric_values": 4393,
       "outliers": 1,
       "sample_outliers": [
         {
@@ -289,8 +292,8 @@
         30.0,
         400.0
       ],
-      "numeric_values": 3868,
-      "outliers": 4,
+      "numeric_values": 3864,
+      "outliers": 3,
       "sample_outliers": [
         {
           "excel_row": 320,
@@ -299,11 +302,6 @@
         },
         {
           "excel_row": 2721,
-          "value": 0,
-          "parsed": 0.0
-        },
-        {
-          "excel_row": 2747,
           "value": 0,
           "parsed": 0.0
         },
@@ -319,7 +317,7 @@
         3.0,
         40.0
       ],
-      "numeric_values": 4287,
+      "numeric_values": 4388,
       "outliers": 2,
       "sample_outliers": [
         {
@@ -339,7 +337,7 @@
         1.0,
         1500.0
       ],
-      "numeric_values": 2970,
+      "numeric_values": 3046,
       "outliers": 1,
       "sample_outliers": [
         {
@@ -354,8 +352,8 @@
         0.3,
         8.0
       ],
-      "numeric_values": 1415,
-      "outliers": 1415,
+      "numeric_values": 1440,
+      "outliers": 1440,
       "sample_outliers": [
         {
           "excel_row": 73,
@@ -414,7 +412,7 @@
     "passed": true,
     "failures": [],
     "configuration": {
-      "expected_min_records": 4414,
+      "expected_min_records": 4494,
       "required_headers": [
         "批次",
         "产品型号",
