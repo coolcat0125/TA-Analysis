@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-03T16:05:05+00:00",
+  "generated_at_utc": "2026-09-05T00:37:23+00:00",
   "source": {
     "file": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "313d041ad2aca29748c5537ff9629a6327bca28e09f2a2cec73e8af1a3d990dc",
+    "sha256": "01367c0196ff3c2345ed43297833d88b591460a54a4a828db45f29ea5e00a74e",
     "sheet": "NEV公告参数汇总"
   },
   "records": 4494,
@@ -42,7 +42,8 @@
     "车长(mm)",
     "电芯供应商",
     "电池包供应商",
-    "官方参数页URL"
+    "官方参数页URL",
+    "媒体校验来源"
   ],
   "column_statistics": [
     {
@@ -76,9 +77,9 @@
     {
       "index": 5,
       "header": "车型名称",
-      "filled": 3151,
-      "missing": 1343,
-      "coverage": 0.701157
+      "filled": 3791,
+      "missing": 703,
+      "coverage": 0.843569
     },
     {
       "index": 6,
@@ -125,37 +126,37 @@
     {
       "index": 12,
       "header": "整备质量(kg)",
-      "filled": 4357,
-      "missing": 137,
-      "coverage": 0.969515
+      "filled": 4364,
+      "missing": 130,
+      "coverage": 0.971073
     },
     {
       "index": 13,
       "header": "轴距(mm)",
-      "filled": 3083,
-      "missing": 1411,
-      "coverage": 0.686026
+      "filled": 3723,
+      "missing": 771,
+      "coverage": 0.828438
     },
     {
       "index": 14,
       "header": "纯电续航里程(km)",
-      "filled": 4393,
-      "missing": 101,
-      "coverage": 0.977526
+      "filled": 4399,
+      "missing": 95,
+      "coverage": 0.978861
     },
     {
       "index": 15,
       "header": "电池容量(kWh)",
-      "filled": 4393,
-      "missing": 101,
-      "coverage": 0.977526
+      "filled": 4406,
+      "missing": 88,
+      "coverage": 0.980418
     },
     {
       "index": 16,
       "header": "电池类型",
-      "filled": 4187,
-      "missing": 307,
-      "coverage": 0.931687
+      "filled": 4304,
+      "missing": 190,
+      "coverage": 0.957721
     },
     {
       "index": 17,
@@ -174,16 +175,16 @@
     {
       "index": 19,
       "header": "电机峰值功率(kW)",
-      "filled": 3217,
-      "missing": 1277,
-      "coverage": 0.715843
+      "filled": 3461,
+      "missing": 1033,
+      "coverage": 0.770138
     },
     {
       "index": 20,
       "header": "电机总功率(kW)",
-      "filled": 3046,
-      "missing": 1448,
-      "coverage": 0.677793
+      "filled": 3245,
+      "missing": 1249,
+      "coverage": 0.722074
     },
     {
       "index": 21,
@@ -195,9 +196,9 @@
     {
       "index": 22,
       "header": "电机功率/扭矩",
-      "filled": 2822,
-      "missing": 1672,
-      "coverage": 0.627948
+      "filled": 2911,
+      "missing": 1583,
+      "coverage": 0.647753
     },
     {
       "index": 23,
@@ -209,23 +210,23 @@
     {
       "index": 24,
       "header": "综合油耗(L/100km)",
-      "filled": 3742,
-      "missing": 752,
-      "coverage": 0.832666
+      "filled": 3813,
+      "missing": 681,
+      "coverage": 0.848465
     },
     {
       "index": 25,
       "header": "B状态油耗(L/100km)",
-      "filled": 3686,
-      "missing": 808,
-      "coverage": 0.820205
+      "filled": 3762,
+      "missing": 732,
+      "coverage": 0.837116
     },
     {
       "index": 26,
       "header": "发动机排量(mL)",
-      "filled": 4165,
-      "missing": 329,
-      "coverage": 0.926791
+      "filled": 4189,
+      "missing": 305,
+      "coverage": 0.932132
     },
     {
       "index": 27,
@@ -244,9 +245,9 @@
     {
       "index": 29,
       "header": "发动机型号",
-      "filled": 3880,
-      "missing": 614,
-      "coverage": 0.863373
+      "filled": 4060,
+      "missing": 434,
+      "coverage": 0.903427
     },
     {
       "index": 30,
@@ -258,16 +259,16 @@
     {
       "index": 31,
       "header": "车长(mm)",
-      "filled": 3063,
-      "missing": 1431,
-      "coverage": 0.681575
+      "filled": 3529,
+      "missing": 965,
+      "coverage": 0.785269
     },
     {
       "index": 32,
       "header": "电芯供应商",
-      "filled": 107,
-      "missing": 4387,
-      "coverage": 0.02381
+      "filled": 1223,
+      "missing": 3271,
+      "coverage": 0.272141
     },
     {
       "index": 33,
@@ -282,6 +283,13 @@
       "filled": 111,
       "missing": 4383,
       "coverage": 0.0247
+    },
+    {
+      "index": 35,
+      "header": "媒体校验来源",
+      "filled": 1749,
+      "missing": 2745,
+      "coverage": 0.389186
     }
   ],
   "resolved_columns": {
@@ -302,7 +310,7 @@
     "height": null
   },
   "inferable": {
-    "consumption": 5,
+    "consumption": 10,
     "energy_density": 0
   },
   "motor_torque_missing_count": 0,

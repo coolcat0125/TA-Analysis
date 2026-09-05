@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-03T16:05:07+00:00",
+  "generated_at_utc": "2026-09-05T00:38:41+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "313d041ad2aca29748c5537ff9629a6327bca28e09f2a2cec73e8af1a3d990dc",
+    "sha256": "01367c0196ff3c2345ed43297833d88b591460a54a4a828db45f29ea5e00a74e",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
     "records": 4494,
-    "columns": 34,
+    "columns": 35,
     "headers": [
       "批次",
       "产品型号",
@@ -44,7 +44,8 @@
       "车长(mm)",
       "电芯供应商",
       "电池包供应商",
-      "官方参数页URL"
+      "官方参数页URL",
+      "媒体校验来源"
     ],
     "batches": {
       "341": 27,
@@ -120,21 +121,21 @@
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 4357,
-      "coverage": 0.969515,
-      "missing": 137
+      "populated": 4364,
+      "coverage": 0.971073,
+      "missing": 130
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
-      "populated": 4393,
-      "coverage": 0.977526,
-      "missing": 101
+      "populated": 4399,
+      "coverage": 0.978861,
+      "missing": 95
     },
     "电池容量": {
       "header": "电池容量(kWh)",
-      "populated": 4393,
-      "coverage": 0.977526,
-      "missing": 101
+      "populated": 4406,
+      "coverage": 0.980418,
+      "missing": 88
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
@@ -150,15 +151,15 @@
     },
     "电机总功率": {
       "header": "电机总功率(kW)",
-      "populated": 3046,
-      "coverage": 0.677793,
-      "missing": 1448
+      "populated": 3245,
+      "coverage": 0.722074,
+      "missing": 1249
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
-      "populated": 4165,
-      "coverage": 0.926791,
-      "missing": 329
+      "populated": 4189,
+      "coverage": 0.932132,
+      "missing": 305
     }
   },
   "range_checks": {
@@ -167,7 +168,7 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 4357,
+      "numeric_values": 4364,
       "outliers": 55,
       "sample_outliers": [
         {
@@ -227,7 +228,7 @@
         5.0,
         2000.0
       ],
-      "numeric_values": 4393,
+      "numeric_values": 4399,
       "outliers": 8,
       "sample_outliers": [
         {
@@ -277,7 +278,7 @@
         1.0,
         300.0
       ],
-      "numeric_values": 4393,
+      "numeric_values": 4406,
       "outliers": 1,
       "sample_outliers": [
         {
@@ -337,7 +338,7 @@
         1.0,
         1500.0
       ],
-      "numeric_values": 3046,
+      "numeric_values": 3245,
       "outliers": 1,
       "sample_outliers": [
         {
@@ -352,8 +353,8 @@
         0.3,
         8.0
       ],
-      "numeric_values": 1440,
-      "outliers": 1440,
+      "numeric_values": 1464,
+      "outliers": 1464,
       "sample_outliers": [
         {
           "excel_row": 73,
