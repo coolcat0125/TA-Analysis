@@ -28,6 +28,7 @@ API = f"https://api.github.com/repos/{REPO}"
 TARGETS = [
     "NEV公告参数汇总表_合并版（341~410批）.xlsx",
     "check_new_batch.py",
+    "media_fill.py",
     "NEV公告数据看板.html",
     "NEV公告数据看板_发布版.html",
     "generate_dashboard.py",
