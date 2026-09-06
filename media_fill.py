@@ -31,6 +31,11 @@ from openpyxl.styles import PatternFill
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
 CTX = ssl.create_default_context()
+# 本机失效代理会劫持 HTTPS（getaddrinfo failed），强制直连
+for _k in ("HTTPS_PROXY", "HTTP_PROXY", "https_proxy", "http_proxy", "all_proxy"):
+    os.environ.pop(_k, None)
+OPENER = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+urllib.request.install_opener(OPENER)
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 FILL_MEDIA = PatternFill("solid", fgColor="F8CBAD")   # 媒体补空（浅橙）
@@ -217,6 +222,10 @@ def main():
     ap.add_argument("--scope", default="409-410", help="409-410 | older | all | batch list like '341,342'")
     ap.add_argument("--delay", type=float, default=0.25)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--max-specs", type=int, default=12,
+                    help="每车系最多采样配置数（0=不限）；唯一共识判定只需抽样，控制网络量")
+    ap.add_argument("--only-missing", action="store_true",
+                    help="只遍历 FIELD_MAP 目标字段仍存在缺口的行")
     args = ap.parse_args()
 
     wb_path = args.workbook or sorted(glob.glob(os.path.join(HERE, "NEV公告参数汇总表_合并版*.xlsx")))[-1]
@@ -251,6 +260,14 @@ def main():
         sel = [(i, r) for i, r in enumerate(rows, start=2)
                if str(r[hi["批次"]]).strip() in batches]
     print(f"scope={args.scope} selected={len(sel)}")
+
+    if args.only_missing:
+        targets = list(FIELD_MAP.values()) + ["电机峰值功率(kW)", "电机功率/扭矩", "发动机排量(mL)", "电芯供应商"]
+        before = len(sel)
+        sel = [(i, r) for i, r in sel
+               if any(r[hi[w]] is None or str(r[hi[w]]).strip() in MISSING
+                      for w in targets if w in hi)]
+        print(f"only-missing: {before} -> {len(sel)}")
 
     cache = {}
     sugg_cache = {}
@@ -296,7 +313,11 @@ def main():
                 continue
             time.sleep(args.delay)
             series_vals = []
-            for sp in ls["specs"]:
+            specs = ls["specs"]
+            if args.max_specs and len(specs) > args.max_specs:
+                step = len(specs) / args.max_specs
+                specs = [specs[int(k * step)] for k in range(args.max_specs)]
+            for sp in specs:
                 try:
                     pv = param_conf(cand["wordid"], sp["id"])
                 except Exception:
