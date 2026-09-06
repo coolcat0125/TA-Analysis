@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-05T17:29:03+00:00",
+  "generated_at_utc": "2026-09-06T14:36:48+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "5b21b8ddf2eacb764e88e8e58deb16ca34f43cca122d0e1d75ae7a146d28033f",
+    "sha256": "05fbe84ef46aa6067b0adca568767a6c9d01bb9175094a639a0f3b465b2ac293",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
@@ -121,15 +121,15 @@
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 4372,
-      "coverage": 0.972853,
-      "missing": 122
+      "populated": 4335,
+      "coverage": 0.964619,
+      "missing": 159
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
-      "populated": 4408,
-      "coverage": 0.980863,
-      "missing": 86
+      "populated": 4404,
+      "coverage": 0.979973,
+      "missing": 90
     },
     "电池容量": {
       "header": "电池容量(kWh)",
@@ -139,27 +139,27 @@
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
-      "populated": 3939,
-      "coverage": 0.876502,
-      "missing": 555
+      "populated": 3977,
+      "coverage": 0.884958,
+      "missing": 517
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
-      "populated": 4398,
-      "coverage": 0.978638,
-      "missing": 96
+      "populated": 4399,
+      "coverage": 0.978861,
+      "missing": 95
     },
     "电机总功率": {
       "header": "电机总功率(kW)",
-      "populated": 3438,
-      "coverage": 0.76502,
-      "missing": 1056
+      "populated": 4237,
+      "coverage": 0.942813,
+      "missing": 257
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
-      "populated": 4190,
-      "coverage": 0.932354,
-      "missing": 304
+      "populated": 4195,
+      "coverage": 0.933467,
+      "missing": 299
     }
   },
   "range_checks": {
@@ -168,110 +168,18 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 4372,
-      "outliers": 55,
-      "sample_outliers": [
-        {
-          "excel_row": 39,
-          "value": 5,
-          "parsed": 5.0
-        },
-        {
-          "excel_row": 1207,
-          "value": "1685,1750",
-          "parsed": 16851750.0
-        },
-        {
-          "excel_row": 1208,
-          "value": "1685,1750",
-          "parsed": 16851750.0
-        },
-        {
-          "excel_row": 1209,
-          "value": "1685,1750",
-          "parsed": 16851750.0
-        },
-        {
-          "excel_row": 1210,
-          "value": "1755,1680",
-          "parsed": 17551680.0
-        },
-        {
-          "excel_row": 1211,
-          "value": "1755,1680",
-          "parsed": 17551680.0
-        },
-        {
-          "excel_row": 1212,
-          "value": "1635,1700",
-          "parsed": 16351700.0
-        },
-        {
-          "excel_row": 1213,
-          "value": "1730,1750",
-          "parsed": 17301750.0
-        },
-        {
-          "excel_row": 1214,
-          "value": "1630,1645,1650,1665",
-          "parsed": 1630164516501665.0
-        },
-        {
-          "excel_row": 1215,
-          "value": "2353,2336,2333,2316,2306",
-          "parsed": 2.3532336233323164e+19
-        }
-      ]
+      "numeric_values": 4335,
+      "outliers": 0,
+      "sample_outliers": []
     },
     "纯电续航": {
       "expected_range": [
         5.0,
         2000.0
       ],
-      "numeric_values": 4408,
-      "outliers": 8,
-      "sample_outliers": [
-        {
-          "excel_row": 3631,
-          "value": 164169,
-          "parsed": 164169.0
-        },
-        {
-          "excel_row": 3644,
-          "value": 285302,
-          "parsed": 285302.0
-        },
-        {
-          "excel_row": 3645,
-          "value": 230220,
-          "parsed": 230220.0
-        },
-        {
-          "excel_row": 3646,
-          "value": 230220,
-          "parsed": 230220.0
-        },
-        {
-          "excel_row": 3977,
-          "value": 191188,
-          "parsed": 191188.0
-        },
-        {
-          "excel_row": 3989,
-          "value": 340332,
-          "parsed": 340332.0
-        },
-        {
-          "excel_row": 4313,
-          "value": 308285312,
-          "parsed": 308285312.0
-        },
-        {
-          "excel_row": 4317,
-          "value": 201195,
-          "parsed": 201195.0
-        }
-      ]
+      "numeric_values": 4404,
+      "outliers": 0,
+      "sample_outliers": []
     },
     "电池容量": {
       "expected_range": [
@@ -279,61 +187,33 @@
         300.0
       ],
       "numeric_values": 4414,
-      "outliers": 1,
-      "sample_outliers": [
-        {
-          "excel_row": 397,
-          "value": 0,
-          "parsed": 0.0
-        }
-      ]
+      "outliers": 0,
+      "sample_outliers": []
     },
     "电池能量密度": {
       "expected_range": [
         30.0,
         400.0
       ],
-      "numeric_values": 3939,
-      "outliers": 2,
-      "sample_outliers": [
-        {
-          "excel_row": 320,
-          "value": 11.35,
-          "parsed": 11.35
-        },
-        {
-          "excel_row": 3078,
-          "value": 0,
-          "parsed": 0.0
-        }
-      ]
+      "numeric_values": 3977,
+      "outliers": 0,
+      "sample_outliers": []
     },
     "百公里电耗": {
       "expected_range": [
         3.0,
         40.0
       ],
-      "numeric_values": 4397,
-      "outliers": 2,
-      "sample_outliers": [
-        {
-          "excel_row": 83,
-          "value": 61.5,
-          "parsed": 61.5
-        },
-        {
-          "excel_row": 724,
-          "value": 136.6,
-          "parsed": 136.6
-        }
-      ]
+      "numeric_values": 4398,
+      "outliers": 0,
+      "sample_outliers": []
     },
     "电机总功率": {
       "expected_range": [
         1.0,
         1500.0
       ],
-      "numeric_values": 3438,
+      "numeric_values": 4237,
       "outliers": 1,
       "sample_outliers": [
         {
@@ -345,63 +225,12 @@
     },
     "发动机排量": {
       "expected_range": [
-        0.3,
-        8.0
+        300.0,
+        8000.0
       ],
-      "numeric_values": 1465,
-      "outliers": 1465,
-      "sample_outliers": [
-        {
-          "excel_row": 73,
-          "value": 1199,
-          "parsed": 1199.0
-        },
-        {
-          "excel_row": 74,
-          "value": 1199,
-          "parsed": 1199.0
-        },
-        {
-          "excel_row": 75,
-          "value": 1498,
-          "parsed": 1498.0
-        },
-        {
-          "excel_row": 76,
-          "value": 1395,
-          "parsed": 1395.0
-        },
-        {
-          "excel_row": 77,
-          "value": 1395,
-          "parsed": 1395.0
-        },
-        {
-          "excel_row": 129,
-          "value": 1498,
-          "parsed": 1498.0
-        },
-        {
-          "excel_row": 130,
-          "value": 1498,
-          "parsed": 1498.0
-        },
-        {
-          "excel_row": 131,
-          "value": 1199,
-          "parsed": 1199.0
-        },
-        {
-          "excel_row": 132,
-          "value": 1199,
-          "parsed": 1199.0
-        },
-        {
-          "excel_row": 133,
-          "value": 1199,
-          "parsed": 1199.0
-        }
-      ]
+      "numeric_values": 1470,
+      "outliers": 0,
+      "sample_outliers": []
     }
   },
   "quality_gates": {
