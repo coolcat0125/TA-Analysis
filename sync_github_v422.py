@@ -27,6 +27,7 @@ API = f"https://api.github.com/repos/{REPO}"
 # 待同步文件（相对本目录；目录文件自动展开一层）
 TARGETS = [
     "NEV公告参数汇总表_合并版（341~410批）.xlsx",
+    "check_new_batch.py",
     "NEV公告数据看板.html",
     "NEV公告数据看板_发布版.html",
     "generate_dashboard.py",
