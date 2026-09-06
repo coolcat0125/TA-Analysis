@@ -2272,6 +2272,13 @@ def main():
     if release:
         # 发布版：整体移除【数据质量检查】区块（独立 <section>，无导航入口）
         html = re.sub(r'<!-- ============ 数据质量（页面底部） ============ -->.*?</section>\n\n', '', html, flags=re.S)
+        # 发布版：取消【导出当前筛选数据】与【导入最新数据表】（含工具栏导入按钮），保留车型明细查询。
+        # 用 CSS 隐藏而非删除 DOM，数据管理页的 JS 绑定无需判空。
+        html = html.replace(
+            '<div class="tx">导出当前筛选数据供进一步细化分析；导入最新公告数据表后，<b>全局数据与图表将实时刷新</b>（无需重新运行生成脚本）。</div>',
+            '<div class="tx">车型明细查询支持在当前筛选范围内检索、排序与翻页。</div>')
+        html = html.replace('</head>',
+                            '<style>#p6 .dm-grid .card.c-s7,#p6 .dm-grid .card.c-s5,#btnImport{display:none!important}</style></head>')
     html = html.replace('__ECHARTS_LIB__', echarts_lib)
     html = html.replace('__XLSX_LIB__', xlsx_lib)
     html = html.replace('__META_JSON__', json.dumps(meta, ensure_ascii=False, separators=(',', ':')))
@@ -2296,7 +2303,7 @@ def main():
     print(f'\n✓ 看板已生成: {out_path}（{size_mb:.1f} MB）')
     print(f'  批次范围: {meta["batchMin"]}~{meta["batchMax"]} · 动力类型: {"/".join(meta["types"])}')
     if release:
-        print('  发布版：隐藏【数据质量检查】区块 · 其余功能全部保留（筛选/导出/导入/主题）')
+        print('  发布版：隐藏【数据质量检查】区块 · 取消导出/导入功能（保留车型明细查询）')
     print('  v3.7：新增【分布格局】页（EV Range vs Length 等五组散点，DIST_DEFS 配置可增删）·')
     print('        全图表坐标轴标注名称与单位 · 展示层移除免征购置税信息 · 底表新增车长(mm)占位列')
     print('  v3.5：企业与品牌分析页（企业演进/企业×细分市场/新进入企业/品牌Top）')
