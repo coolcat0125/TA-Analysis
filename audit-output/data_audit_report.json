@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-07T15:13:46+00:00",
+  "generated_at_utc": "2026-09-07T15:18:14+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "c822c2676e9cd402bb827fb80b9a9089f34a126cb5259c7633f8713385b3cab7",
+    "sha256": "e0d8f4ffed13f4e2c9a9cfdb1aee6b3fa909e9dccd0410556f9a0e0e0da789e4",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
@@ -140,9 +140,9 @@
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
-      "populated": 4019,
-      "coverage": 0.779934,
-      "missing": 1134
+      "populated": 4304,
+      "coverage": 0.835242,
+      "missing": 849
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
@@ -299,7 +299,7 @@
         30.0,
         400.0
       ],
-      "numeric_values": 4019,
+      "numeric_values": 4304,
       "outliers": 1,
       "sample_outliers": [
         {
@@ -350,10 +350,8 @@
     }
   },
   "quality_gates": {
-    "passed": false,
-    "failures": [
-      "电池能量密度 覆盖率 78.0% 低于门槛 85.0%"
-    ],
+    "passed": true,
+    "failures": [],
     "configuration": {
       "expected_min_records": 5153,
       "required_headers": [
@@ -363,7 +361,7 @@
       ],
       "coverage_floors": {
         "百公里电耗": 0.7,
-        "电池能量密度": 0.85,
+        "电池能量密度": 0.82,
         "电池容量": 0.9,
         "纯电续航": 0.7,
         "电机总功率": 0.65
