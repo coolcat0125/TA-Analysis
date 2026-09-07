@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-07T13:37:05+00:00",
+  "generated_at_utc": "2026-09-07T15:13:46+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "4ca6be485ff8abc24950aede17677a5699f7a0599830fba0ef8b07d66e195897",
+    "sha256": "c822c2676e9cd402bb827fb80b9a9089f34a126cb5259c7633f8713385b3cab7",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
-    "records": 4493,
+    "records": 5153,
     "columns": 35,
     "headers": [
       "批次",
@@ -103,6 +103,7 @@
       "394": 48,
       "395": 93,
       "396": 78,
+      "397": 660,
       "398": 99,
       "399": 91,
       "400": 74,
@@ -121,45 +122,45 @@
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 4338,
-      "coverage": 0.965502,
-      "missing": 155
+      "populated": 4372,
+      "coverage": 0.848438,
+      "missing": 781
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
-      "populated": 4403,
-      "coverage": 0.979969,
-      "missing": 90
+      "populated": 5068,
+      "coverage": 0.983505,
+      "missing": 85
     },
     "电池容量": {
       "header": "电池容量(kWh)",
-      "populated": 4413,
-      "coverage": 0.982195,
-      "missing": 80
+      "populated": 5076,
+      "coverage": 0.985057,
+      "missing": 77
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
-      "populated": 3977,
-      "coverage": 0.885155,
-      "missing": 516
+      "populated": 4019,
+      "coverage": 0.779934,
+      "missing": 1134
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
-      "populated": 4398,
-      "coverage": 0.978856,
-      "missing": 95
+      "populated": 4816,
+      "coverage": 0.934601,
+      "missing": 337
     },
     "电机总功率": {
       "header": "电机总功率(kW)",
-      "populated": 4243,
-      "coverage": 0.944358,
-      "missing": 250
+      "populated": 4317,
+      "coverage": 0.837764,
+      "missing": 836
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
-      "populated": 4196,
-      "coverage": 0.933897,
-      "missing": 297
+      "populated": 4272,
+      "coverage": 0.829032,
+      "missing": 881
     }
   },
   "range_checks": {
@@ -168,52 +169,167 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 4338,
-      "outliers": 0,
-      "sample_outliers": []
+      "numeric_values": 4372,
+      "outliers": 5,
+      "sample_outliers": [
+        {
+          "excel_row": 39,
+          "value": 5,
+          "parsed": 5.0
+        },
+        {
+          "excel_row": 3782,
+          "value": 23902415,
+          "parsed": 23902415.0
+        },
+        {
+          "excel_row": 3783,
+          "value": 23902415,
+          "parsed": 23902415.0
+        },
+        {
+          "excel_row": 3976,
+          "value": 21952280,
+          "parsed": 21952280.0
+        },
+        {
+          "excel_row": 3981,
+          "value": 21622190,
+          "parsed": 21622190.0
+        }
+      ]
     },
     "纯电续航": {
       "expected_range": [
         5.0,
         2000.0
       ],
-      "numeric_values": 4403,
-      "outliers": 0,
-      "sample_outliers": []
+      "numeric_values": 5068,
+      "outliers": 5,
+      "sample_outliers": [
+        {
+          "excel_row": 3631,
+          "value": 164169,
+          "parsed": 164169.0
+        },
+        {
+          "excel_row": 3976,
+          "value": 191188,
+          "parsed": 191188.0
+        },
+        {
+          "excel_row": 3988,
+          "value": 340332,
+          "parsed": 340332.0
+        },
+        {
+          "excel_row": 4316,
+          "value": 201195,
+          "parsed": 201195.0
+        },
+        {
+          "excel_row": 4594,
+          "value": "3.0",
+          "parsed": 3.0
+        }
+      ]
     },
     "电池容量": {
       "expected_range": [
         1.0,
         300.0
       ],
-      "numeric_values": 4413,
-      "outliers": 0,
-      "sample_outliers": []
+      "numeric_values": 5076,
+      "outliers": 93,
+      "sample_outliers": [
+        {
+          "excel_row": 4495,
+          "value": "350.0784",
+          "parsed": 350.0784
+        },
+        {
+          "excel_row": 4497,
+          "value": "352.08",
+          "parsed": 352.08
+        },
+        {
+          "excel_row": 4498,
+          "value": "400.61",
+          "parsed": 400.61
+        },
+        {
+          "excel_row": 4499,
+          "value": "600.92",
+          "parsed": 600.92
+        },
+        {
+          "excel_row": 4536,
+          "value": "422.08",
+          "parsed": 422.08
+        },
+        {
+          "excel_row": 4537,
+          "value": "400.61",
+          "parsed": 400.61
+        },
+        {
+          "excel_row": 4538,
+          "value": "400.61",
+          "parsed": 400.61
+        },
+        {
+          "excel_row": 4555,
+          "value": "310.66",
+          "parsed": 310.66
+        },
+        {
+          "excel_row": 4556,
+          "value": "400.619",
+          "parsed": 400.619
+        },
+        {
+          "excel_row": 4557,
+          "value": "400.619",
+          "parsed": 400.619
+        }
+      ]
     },
     "电池能量密度": {
       "expected_range": [
         30.0,
         400.0
       ],
-      "numeric_values": 3977,
-      "outliers": 0,
-      "sample_outliers": []
+      "numeric_values": 4019,
+      "outliers": 1,
+      "sample_outliers": [
+        {
+          "excel_row": 320,
+          "value": 11.35,
+          "parsed": 11.35
+        }
+      ]
     },
     "百公里电耗": {
       "expected_range": [
         3.0,
         40.0
       ],
-      "numeric_values": 4397,
-      "outliers": 0,
-      "sample_outliers": []
+      "numeric_values": 4816,
+      "outliers": 1,
+      "sample_outliers": [
+        {
+          "excel_row": 83,
+          "value": 61.5,
+          "parsed": 61.5
+        }
+      ]
     },
     "电机总功率": {
       "expected_range": [
         1.0,
         1500.0
       ],
-      "numeric_values": 4243,
+      "numeric_values": 4317,
       "outliers": 1,
       "sample_outliers": [
         {
@@ -228,16 +344,18 @@
         300.0,
         8000.0
       ],
-      "numeric_values": 1471,
+      "numeric_values": 1547,
       "outliers": 0,
       "sample_outliers": []
     }
   },
   "quality_gates": {
-    "passed": true,
-    "failures": [],
+    "passed": false,
+    "failures": [
+      "电池能量密度 覆盖率 78.0% 低于门槛 85.0%"
+    ],
     "configuration": {
-      "expected_min_records": 4493,
+      "expected_min_records": 5153,
       "required_headers": [
         "批次",
         "产品型号",
