@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-07T15:18:14+00:00",
+  "generated_at_utc": "2026-09-07T15:29:27+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "e0d8f4ffed13f4e2c9a9cfdb1aee6b3fa909e9dccd0410556f9a0e0e0da789e4",
+    "sha256": "d7a5872b1e431093f650b24c118c3199380a8910e57fc6ba60e3dc39e8e9e45f",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
-    "records": 5153,
+    "records": 5159,
     "columns": 35,
     "headers": [
       "批次",
@@ -65,6 +65,7 @@
       "355": 65,
       "356": 44,
       "357": 57,
+      "358": 6,
       "359": 52,
       "360": 42,
       "361": 7,
@@ -122,45 +123,45 @@
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 4372,
-      "coverage": 0.848438,
-      "missing": 781
+      "populated": 4382,
+      "coverage": 0.849389,
+      "missing": 777
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
-      "populated": 5068,
-      "coverage": 0.983505,
+      "populated": 5074,
+      "coverage": 0.983524,
       "missing": 85
     },
     "电池容量": {
       "header": "电池容量(kWh)",
-      "populated": 5076,
-      "coverage": 0.985057,
-      "missing": 77
+      "populated": 5081,
+      "coverage": 0.984881,
+      "missing": 78
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
       "populated": 4304,
-      "coverage": 0.835242,
-      "missing": 849
+      "coverage": 0.83427,
+      "missing": 855
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
       "populated": 4816,
-      "coverage": 0.934601,
-      "missing": 337
+      "coverage": 0.933514,
+      "missing": 343
     },
     "电机总功率": {
       "header": "电机总功率(kW)",
-      "populated": 4317,
-      "coverage": 0.837764,
-      "missing": 836
+      "populated": 4324,
+      "coverage": 0.838147,
+      "missing": 835
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
-      "populated": 4272,
-      "coverage": 0.829032,
-      "missing": 881
+      "populated": 4279,
+      "coverage": 0.829424,
+      "missing": 880
     }
   },
   "range_checks": {
@@ -169,8 +170,8 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 4372,
-      "outliers": 5,
+      "numeric_values": 4382,
+      "outliers": 10,
       "sample_outliers": [
         {
           "excel_row": 39,
@@ -196,6 +197,31 @@
           "excel_row": 3981,
           "value": 21622190,
           "parsed": 21622190.0
+        },
+        {
+          "excel_row": 5156,
+          "value": 16300,
+          "parsed": 16300.0
+        },
+        {
+          "excel_row": 5157,
+          "value": 17200,
+          "parsed": 17200.0
+        },
+        {
+          "excel_row": 5158,
+          "value": 12000,
+          "parsed": 12000.0
+        },
+        {
+          "excel_row": 5159,
+          "value": 12300,
+          "parsed": 12300.0
+        },
+        {
+          "excel_row": 5160,
+          "value": 13000,
+          "parsed": 13000.0
         }
       ]
     },
@@ -204,7 +230,7 @@
         5.0,
         2000.0
       ],
-      "numeric_values": 5068,
+      "numeric_values": 5074,
       "outliers": 5,
       "sample_outliers": [
         {
@@ -239,8 +265,8 @@
         1.0,
         300.0
       ],
-      "numeric_values": 5076,
-      "outliers": 93,
+      "numeric_values": 5081,
+      "outliers": 96,
       "sample_outliers": [
         {
           "excel_row": 4495,
@@ -329,7 +355,7 @@
         1.0,
         1500.0
       ],
-      "numeric_values": 4317,
+      "numeric_values": 4324,
       "outliers": 1,
       "sample_outliers": [
         {
@@ -344,7 +370,7 @@
         300.0,
         8000.0
       ],
-      "numeric_values": 1547,
+      "numeric_values": 1554,
       "outliers": 0,
       "sample_outliers": []
     }
@@ -353,7 +379,7 @@
     "passed": true,
     "failures": [],
     "configuration": {
-      "expected_min_records": 5153,
+      "expected_min_records": 5159,
       "required_headers": [
         "批次",
         "产品型号",
