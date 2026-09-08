@@ -31,6 +31,7 @@ TARGETS = [
     "media_fill.py",
     "migrate_motor_v430.py",
     "clean_motor_v440.py",
+    "reconcile_motor_v440.py",
     "NEV公告车型行业分析_数据底表.xlsx",
     "NEV公告车型行业分析_演示文稿.pptx",
     "NEV公告车型行业分析报告.docx",
