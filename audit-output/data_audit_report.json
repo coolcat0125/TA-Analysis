@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-07T15:29:27+00:00",
+  "generated_at_utc": "2026-09-08T08:39:44+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "d7a5872b1e431093f650b24c118c3199380a8910e57fc6ba60e3dc39e8e9e45f",
+    "sha256": "336d2da57f9244c6e4bc95ceb429fc3e01804288c6007a96cfd99692df040c9c",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
-    "records": 5159,
+    "records": 4613,
     "columns": 35,
     "headers": [
       "批次",
@@ -29,10 +29,10 @@
       "电池类型",
       "电池能量密度(Wh/kg)",
       "百公里电耗(kWh/100km)",
-      "电机峰值功率(kW)",
-      "电机总功率(kW)",
+      "前电机功率/扭矩",
+      "电机总功率/扭矩",
+      "后电机功率/扭矩",
       "电机生产企业",
-      "电机功率/扭矩",
       "电机型号",
       "综合油耗(L/100km)",
       "B状态油耗(L/100km)",
@@ -65,14 +65,13 @@
       "355": 65,
       "356": 44,
       "357": 57,
-      "358": 6,
       "359": 52,
       "360": 42,
-      "361": 7,
+      "361": 16,
       "362": 60,
-      "363": 46,
+      "363": 40,
       "364": 7,
-      "365": 87,
+      "365": 78,
       "366": 51,
       "367": 64,
       "368": 44,
@@ -104,7 +103,7 @@
       "394": 48,
       "395": 93,
       "396": 78,
-      "397": 660,
+      "397": 126,
       "398": 99,
       "399": 91,
       "400": 74,
@@ -123,45 +122,57 @@
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 4382,
-      "coverage": 0.849389,
-      "missing": 777
+      "populated": 4365,
+      "coverage": 0.946239,
+      "missing": 248
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
-      "populated": 5074,
-      "coverage": 0.983524,
-      "missing": 85
+      "populated": 4525,
+      "coverage": 0.980923,
+      "missing": 88
     },
     "电池容量": {
       "header": "电池容量(kWh)",
-      "populated": 5081,
-      "coverage": 0.984881,
-      "missing": 78
+      "populated": 4537,
+      "coverage": 0.983525,
+      "missing": 76
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
-      "populated": 4304,
-      "coverage": 0.83427,
-      "missing": 855
+      "populated": 4074,
+      "coverage": 0.883156,
+      "missing": 539
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
-      "populated": 4816,
-      "coverage": 0.933514,
-      "missing": 343
+      "populated": 4520,
+      "coverage": 0.97984,
+      "missing": 93
+    },
+    "前电机功率": {
+      "header": "前电机功率/扭矩",
+      "populated": 4044,
+      "coverage": 0.876653,
+      "missing": 569
     },
     "电机总功率": {
-      "header": "电机总功率(kW)",
-      "populated": 4324,
-      "coverage": 0.838147,
-      "missing": 835
+      "header": "电机总功率/扭矩",
+      "populated": 4238,
+      "coverage": 0.918708,
+      "missing": 375
+    },
+    "后电机功率": {
+      "header": "后电机功率/扭矩",
+      "populated": 295,
+      "coverage": 0.06395,
+      "missing": 4318
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
-      "populated": 4279,
-      "coverage": 0.829424,
-      "missing": 880
+      "populated": 4247,
+      "coverage": 0.920659,
+      "missing": 366
     }
   },
   "range_checks": {
@@ -170,207 +181,85 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 4382,
-      "outliers": 10,
-      "sample_outliers": [
-        {
-          "excel_row": 39,
-          "value": 5,
-          "parsed": 5.0
-        },
-        {
-          "excel_row": 3782,
-          "value": 23902415,
-          "parsed": 23902415.0
-        },
-        {
-          "excel_row": 3783,
-          "value": 23902415,
-          "parsed": 23902415.0
-        },
-        {
-          "excel_row": 3976,
-          "value": 21952280,
-          "parsed": 21952280.0
-        },
-        {
-          "excel_row": 3981,
-          "value": 21622190,
-          "parsed": 21622190.0
-        },
-        {
-          "excel_row": 5156,
-          "value": 16300,
-          "parsed": 16300.0
-        },
-        {
-          "excel_row": 5157,
-          "value": 17200,
-          "parsed": 17200.0
-        },
-        {
-          "excel_row": 5158,
-          "value": 12000,
-          "parsed": 12000.0
-        },
-        {
-          "excel_row": 5159,
-          "value": 12300,
-          "parsed": 12300.0
-        },
-        {
-          "excel_row": 5160,
-          "value": 13000,
-          "parsed": 13000.0
-        }
-      ]
+      "numeric_values": 4365,
+      "outliers": 0,
+      "sample_outliers": []
     },
     "纯电续航": {
       "expected_range": [
         5.0,
         2000.0
       ],
-      "numeric_values": 5074,
-      "outliers": 5,
-      "sample_outliers": [
-        {
-          "excel_row": 3631,
-          "value": 164169,
-          "parsed": 164169.0
-        },
-        {
-          "excel_row": 3976,
-          "value": 191188,
-          "parsed": 191188.0
-        },
-        {
-          "excel_row": 3988,
-          "value": 340332,
-          "parsed": 340332.0
-        },
-        {
-          "excel_row": 4316,
-          "value": 201195,
-          "parsed": 201195.0
-        },
-        {
-          "excel_row": 4594,
-          "value": "3.0",
-          "parsed": 3.0
-        }
-      ]
+      "numeric_values": 4525,
+      "outliers": 0,
+      "sample_outliers": []
     },
     "电池容量": {
       "expected_range": [
         1.0,
         300.0
       ],
-      "numeric_values": 5081,
-      "outliers": 96,
-      "sample_outliers": [
-        {
-          "excel_row": 4495,
-          "value": "350.0784",
-          "parsed": 350.0784
-        },
-        {
-          "excel_row": 4497,
-          "value": "352.08",
-          "parsed": 352.08
-        },
-        {
-          "excel_row": 4498,
-          "value": "400.61",
-          "parsed": 400.61
-        },
-        {
-          "excel_row": 4499,
-          "value": "600.92",
-          "parsed": 600.92
-        },
-        {
-          "excel_row": 4536,
-          "value": "422.08",
-          "parsed": 422.08
-        },
-        {
-          "excel_row": 4537,
-          "value": "400.61",
-          "parsed": 400.61
-        },
-        {
-          "excel_row": 4538,
-          "value": "400.61",
-          "parsed": 400.61
-        },
-        {
-          "excel_row": 4555,
-          "value": "310.66",
-          "parsed": 310.66
-        },
-        {
-          "excel_row": 4556,
-          "value": "400.619",
-          "parsed": 400.619
-        },
-        {
-          "excel_row": 4557,
-          "value": "400.619",
-          "parsed": 400.619
-        }
-      ]
+      "numeric_values": 4537,
+      "outliers": 0,
+      "sample_outliers": []
     },
     "电池能量密度": {
       "expected_range": [
         30.0,
         400.0
       ],
-      "numeric_values": 4304,
-      "outliers": 1,
-      "sample_outliers": [
-        {
-          "excel_row": 320,
-          "value": 11.35,
-          "parsed": 11.35
-        }
-      ]
+      "numeric_values": 4074,
+      "outliers": 0,
+      "sample_outliers": []
     },
     "百公里电耗": {
       "expected_range": [
         3.0,
         40.0
       ],
-      "numeric_values": 4816,
-      "outliers": 1,
-      "sample_outliers": [
-        {
-          "excel_row": 83,
-          "value": 61.5,
-          "parsed": 61.5
-        }
-      ]
+      "numeric_values": 4520,
+      "outliers": 0,
+      "sample_outliers": []
+    },
+    "前电机功率": {
+      "expected_range": [
+        5.0,
+        1500.0
+      ],
+      "numeric_values": 4044,
+      "outliers": 0,
+      "sample_outliers": []
     },
     "电机总功率": {
       "expected_range": [
-        1.0,
+        5.0,
         1500.0
       ],
-      "numeric_values": 4324,
+      "numeric_values": 4238,
       "outliers": 1,
       "sample_outliers": [
         {
-          "excel_row": 3331,
-          "value": 2220,
+          "excel_row": 3325,
+          "value": "2220",
           "parsed": 2220.0
         }
       ]
+    },
+    "后电机功率": {
+      "expected_range": [
+        5.0,
+        1500.0
+      ],
+      "numeric_values": 295,
+      "outliers": 0,
+      "sample_outliers": []
     },
     "发动机排量": {
       "expected_range": [
         300.0,
         8000.0
       ],
-      "numeric_values": 1554,
+      "numeric_values": 1528,
       "outliers": 0,
       "sample_outliers": []
     }
@@ -379,7 +268,7 @@
     "passed": true,
     "failures": [],
     "configuration": {
-      "expected_min_records": 5159,
+      "expected_min_records": 4613,
       "required_headers": [
         "批次",
         "产品型号",
