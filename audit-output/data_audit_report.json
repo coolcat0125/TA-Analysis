@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-08T08:39:44+00:00",
+  "generated_at_utc": "2026-09-08T13:49:19+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "336d2da57f9244c6e4bc95ceb429fc3e01804288c6007a96cfd99692df040c9c",
+    "sha256": "d1c268b875ca04bcb7c4fe67664f741eb13580c5eaff85e3c116da3acfe314f4",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
@@ -122,9 +122,9 @@
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 4365,
-      "coverage": 0.946239,
-      "missing": 248
+      "populated": 4366,
+      "coverage": 0.946456,
+      "missing": 247
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
@@ -140,33 +140,33 @@
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
-      "populated": 4074,
-      "coverage": 0.883156,
-      "missing": 539
+      "populated": 4085,
+      "coverage": 0.885541,
+      "missing": 528
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
-      "populated": 4520,
-      "coverage": 0.97984,
-      "missing": 93
+      "populated": 4522,
+      "coverage": 0.980273,
+      "missing": 91
     },
     "前电机功率": {
       "header": "前电机功率/扭矩",
-      "populated": 4044,
-      "coverage": 0.876653,
-      "missing": 569
+      "populated": 4165,
+      "coverage": 0.902883,
+      "missing": 448
     },
     "电机总功率": {
       "header": "电机总功率/扭矩",
-      "populated": 4238,
-      "coverage": 0.918708,
-      "missing": 375
+      "populated": 4287,
+      "coverage": 0.92933,
+      "missing": 326
     },
     "后电机功率": {
       "header": "后电机功率/扭矩",
-      "populated": 295,
-      "coverage": 0.06395,
-      "missing": 4318
+      "populated": 985,
+      "coverage": 0.213527,
+      "missing": 3628
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
@@ -181,7 +181,7 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 4365,
+      "numeric_values": 4366,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -208,7 +208,7 @@
         30.0,
         400.0
       ],
-      "numeric_values": 4074,
+      "numeric_values": 4085,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -217,7 +217,7 @@
         3.0,
         40.0
       ],
-      "numeric_values": 4520,
+      "numeric_values": 4522,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -226,7 +226,7 @@
         5.0,
         1500.0
       ],
-      "numeric_values": 4044,
+      "numeric_values": 4165,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -235,7 +235,7 @@
         5.0,
         1500.0
       ],
-      "numeric_values": 4238,
+      "numeric_values": 4287,
       "outliers": 1,
       "sample_outliers": [
         {
@@ -250,7 +250,7 @@
         5.0,
         1500.0
       ],
-      "numeric_values": 295,
+      "numeric_values": 985,
       "outliers": 0,
       "sample_outliers": []
     },
