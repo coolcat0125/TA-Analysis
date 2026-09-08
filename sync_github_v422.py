@@ -41,6 +41,8 @@ TARGETS = [
     "clean_outliers_v421.py",
     "fill_batch_dates_v421.py",
     "fill_logic_v422.py",
+    "fill_consensus_v5.py",
+    "Update/批次监控日志.md",
     "sync_github_v422.py",
     "CHANGELOG.md",
     "PROJECT_STATUS.md",
@@ -51,6 +53,7 @@ TARGETS = [
     "audit-output/data_inventory.json",
     "audit-output/battery_80kwh_priority.csv",
     "audit-output/motor_torque_missing.csv",
+    "audit-output/consistency_report.json",
 ]
 COMMIT_MSG = "v4.2.2 表内逻辑推理补全+1,883格；发布版取消导出/导入；v4.2.1 数据清洗+批次时间表官方日期"
 
