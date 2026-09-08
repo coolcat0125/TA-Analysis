@@ -84,6 +84,19 @@ def main() -> int:
         print('  PowerShell:  $env:GITHUB_TOKEN="ghp_xxxx"; python sync_github_v422.py')
         return 2
     updated, skipped, failed = [], [], []
+    # 一次性拉取远程文件树（仅 SHA，不含内容；contents API 对较大文件会断流）
+    tree_sha = {}
+    try:
+        req = urllib.request.Request(
+            f"{API}/git/trees/{BRANCH}?recursive=1",
+            headers={"Authorization": f"token {TOKEN}",
+                     "Accept": "application/vnd.github.v3+json",
+                     "User-Agent": "ta-analysis-sync"})
+        with OPENER.open(req, timeout=60) as r:
+            tree = json.loads(r.read().decode())
+        tree_sha = {b["path"]: b["sha"] for b in tree.get("tree", []) if b.get("type") == "blob"}
+    except Exception as e:
+        print(f"WARN: 树接口失败（将逐文件 GET 兜底）: {e}")
     for rel in TARGETS:
         p = HERE / rel
         if not p.exists():
@@ -91,14 +104,15 @@ def main() -> int:
             continue
         data = p.read_bytes()
         local_sha = git_blob_sha(data)
-        remote_sha = None
-        try:
-            meta = api("GET", f"/contents/{urllib.parse.quote(rel)}?ref={BRANCH}")
-            remote_sha = meta.get("sha")
-        except Exception as e:
-            if "404" not in str(e):
-                failed.append((rel, f"GET 失败: {e}"))
-                continue
+        remote_sha = tree_sha.get(rel)
+        if remote_sha is None:
+            try:
+                meta = api("GET", f"/contents/{urllib.parse.quote(rel)}?ref={BRANCH}")
+                remote_sha = meta.get("sha")
+            except Exception as e:
+                if "404" not in str(e):
+                    failed.append((rel, f"GET 失败: {e}"))
+                    continue
         if remote_sha and remote_sha == local_sha:
             skipped.append(rel)
             print(f"  = 无变化，跳过: {rel}")
