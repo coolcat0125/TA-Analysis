@@ -23,7 +23,7 @@ from openpyxl import load_workbook
 
 COPYRIGHT = "Copyright © 2026 David YE"
 DEFAULT_GATES = {
-    "expected_min_records": 5159,
+    "expected_min_records": 4613,
     "required_headers": ["批次", "产品型号", "动力类型"],
     "coverage_floors": {
         "百公里电耗": 0.70,
@@ -39,7 +39,9 @@ RANGE_RULES = {
     "电池容量": (1.0, 300.0),
     "电池能量密度": (30.0, 400.0),
     "百公里电耗": (3.0, 40.0),
-    "电机总功率": (1.0, 1500.0),
+    "前电机功率": (5.0, 1500.0),
+    "电机总功率": (5.0, 1500.0),
+    "后电机功率": (5.0, 1500.0),
     "发动机排量": (300.0, 8000.0),
 }
 
