@@ -20,7 +20,7 @@
 | `NEV公告数据看板.html` / `_发布版.html` | 随 v4.3.6 底表重生成（total 4,613） | 完整版 + 发布版（发布版已取消导出/导入区块，esprima 校验沿用模板） |
 | 补全管线 | `fill_consensus_v5.py`（通用名称/企业车系共识）/ `enrich_v5.py`（官方主链+同型号+企业车型+公式+车长）/ `fill_logic_v422.py`（企业名称推理+功率解析+细分市场分级+垃圾清洗）/ `media_fill.py`（汽车之家通道）/ `align_official.py`（官方批次对齐）/ `fill_from_official_doc3.py` / `add_batch_time_v4.py` / `fill_consensus_v4.py` / `backfill_seriesname.py` | 均只补空、唯一共识、逐格台账、推断标注 |
 | 质量体系 | `audit_data.py --strict` PASS + `quality_gates.json` + `audit-output/` 六件 + `AUDIT.md` | 发布前必跑 |
-| 批次监控 | `check_new_batch.py`（410正式/411公示，日志落 `Update/批次监控日志.md`；每日 23:00 定时任务自动执行） | 截至 09-06 06:00 均未发布，预计 410 正式 09-08~09-15 |
+| 夜间任务（每日23:00） | 阶段一 `check_new_batch.py` 批次监控；阶段二循环补全（media_fill→fill_logic→fill_consensus→reconcile v2，收敛<25格/轮或06:00止，台账+底纹自动标记，日志 `Update/夜间补全日志.md`；不改 CHANGELOG/不推送，版本登记留主线） | 截至 09-06 06:00 均未发布，预计 410 正式 09-08~09-15 |
 | 下游交付 | `NEV公告车型行业分析_数据底表.xlsx`（45 表）· `_演示文稿.pptx`（67 页 41 图表，v4.3.6 数据核实修订+字体合规）· `_报告.docx`（仍为 v4.1 旧口径待刷新） | 生成器 `_scripts/build_deliverables_v435.py` 可复跑 |
 
 **v4.3.3 关键覆盖率**：通用名称 98.6% / 电池容量 98.3% / 纯电续航 98.2% / 电耗 98.0% / 细分市场 96.0% / 电池类型 96.8% / 整备质量 94.7% / 电机总功率 93.6% / 车长·轴距 84.9% / 综合油耗 86.8% / 能量密度 87.7%｜薄弱：电池包供应商 2.4%、官方参数页URL 2.5%、媒体校验来源 38.9%、电机型号 41.6%、电机功率/扭矩 69.2%、电机生产企业 72.2%、企业名称 91.0%（v4.2.5 置空的 585 格回填中，见 S4）
