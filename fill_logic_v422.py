@@ -6,7 +6,7 @@
   J. 企业名称推理 —— 商标/通用名称/型号代号 → 唯一企业（浅橙 FCE4D6，类型=企业名称推理）
   B. 同型号共识再跑 —— (产品型号,动力类型) 唯一非空共识（黄 FFF2CC，类型=同车型共识，沿用 v3.6）
   C. 企业+车型共识再跑 —— (企业,车型名称,动力类型) 唯一非空共识（绿 C6EFCE，类型=共识补全，沿用 v4.0）
-  L. 电机功率解析 —— 「电机功率/扭矩」解析：单电机→总功率；前/后双电机→总功率=前+后、峰值=max（蓝 BDD7EE，类型=功率解析）
+  L. 电机总功率求和 —— 前+后=总（v4.4.0 口径，只补空总列；蓝 BDD7EE，类型=功率解析）
   K. 细分市场推理 —— K1 同通用名称/车型名称唯一细分市场回填（浅黄绿 E2EFDA，类型=通用名称共识）；
                       K2 轴距分级（车型级别定义表阈值，蓝 BDD7EE，类型=轴距分级）
 
@@ -33,9 +33,10 @@ YELLOWGREEN = openpyxl.styles.PatternFill('solid', fgColor='E2EFDA')
 
 NUM_RANGES = {'整备质量(kg)': (300, 4500), '轴距(mm)': (1800, 4200), '纯电续航里程(km)': (20, 1500),
               '电池容量(kWh)': (1, 250), '电池能量密度(Wh/kg)': (30, 400), '百公里电耗(kWh/100km)': (3, 40),
-              '电机峰值功率(kW)': (5, 1500), '电机总功率(kW)': (5, 1500), '综合油耗(L/100km)': (0.1, 20),
+              '综合油耗(L/100km)': (0.1, 20),
               'B状态油耗(L/100km)': (0.1, 20), '发动机排量(mL)': (300, 6000), '发动机功率(kW)': (10, 600),
               '车长(mm)': (1800, 6500)}
+# v4.4.0：电机功率三列（前/后/总，"P/T" 文本）不在 NUM_RANGES —— consensus_pass 中按文本字段写入完整 "P/T"
 EMPTY_PLACEHOLDER = {'', '/', '-', '—', '0', '未填报', '无', '无信息', '待查', '待核实',
                      '待确认', '未知', '？', '?', 'N/A', 'NA', 'None', '未提供'}
 SEMANTIC_PLACEHOLDER = {'不适用', '不适用(BEV)', '不适用(PHEV)', '不适用(HEV)', '不适用(EREV)'}
@@ -130,18 +131,6 @@ def classify_seg(wb_val, pname, gname):
     return None
 
 
-def parse_motor_pt(v):
-    """解析电机功率/扭矩：返回 ('dual', 前/主功率, 后/次功率) 或 ('single', 功率, None)。"""
-    s = str(v).strip()
-    m = re.search(r'F\s*[:：]\s*(\d+(?:\.\d+)?)\s*/\s*\d+(?:\.\d+)?\s+[Rr]\s*[:：]\s*(\d+(?:\.\d+)?)\s*/\s*\d+(?:\.\d+)?', s)
-    if m:
-        return ('dual', float(m.group(1)), float(m.group(2)))
-    m = re.match(r'^\s*(\d+(?:\.\d+)?)\s*k?W?\s*/\s*(\d+(?:\.\d+)?)\s*k?W?\s*$', s, re.I)
-    if m and 'kW' in s.upper():
-        return ('dual', float(m.group(1)), float(m.group(2)))
-    m = re.match(r'^\s*(\d+(?:\.\d+)?)\s*(?:k?W)?\s*(?:/\s*\d+(?:\.\d+)?)?\s*/?\s*$', s)
-    if m:
-        return ('single', float(m.group(1)), None)
     return None
 
 
@@ -274,7 +263,8 @@ def main():
                                '电池能量密度(Wh/kg)', '百公里电耗(kWh/100km)', '综合油耗(L/100km)',
                                'B状态油耗(L/100km)', '发动机排量(mL)', '发动机功率(kW)'}
     txt_f = ['企业名称', '车型名称', '产品名称', '通用名称', '产品类型', '细分市场', '电池类型',
-             '电机生产企业', '电机功率/扭矩', '电机型号', '发动机生产企业', '发动机型号']
+             '电机生产企业', '电机型号', '发动机生产企业', '发动机型号',
+             '前电机功率/扭矩', '电机总功率/扭矩', '后电机功率/扭矩']
     fields_bc = [f for f in txt_f if f in fi] + [f for f in num_f if f in fi]
     b_ledger = []
     n = consensus_pass(ws, fi, rows, ('产品型号', '动力类型'), fields_bc, num_f, YELLOW,
@@ -289,38 +279,42 @@ def main():
     print(f'      补 {n} 格')
     ledgers.append((c_ledger, '共识补全'))
 
-    # ---- 阶段L 电机功率解析 ----
-    print('[L] 电机功率/扭矩 解析（单电机→总功率；前/后双电机→总=和、峰值=max）…')
+    # ---- 阶段L 电机总功率/扭矩 求和（v4.4.0：总 = 前 + 后，只补空总列）----
+    print('[L] 电机总功率/扭矩 求和（前+后=总，只补空）…')
     l_ledger = []
-
-    def fill_num(r, rec, field, val, note):
-        lo, hi = NUM_RANGES[field]
-        if not (lo <= val <= hi):
-            return False
-        cell = ws.cell(r, fi[field] + 1)
-        cell.value = int(val) if float(val).is_integer() else val
-        cell.fill = BLUE
-        rec[field] = cell.value
-        stats[field] += 1
-        l_ledger.append([rec['批次'], rec['产品型号'], str(rec['产品类型'] or ''), field,
-                         '功率解析', '(空)', cell.value, note])
-        return True
     for r, rec in rows:
-        pt = norm(rec.get('电机功率/扭矩'))
-        if not pt:
+        if not fillable(rec.get('电机总功率/扭矩')):
             continue
-        parsed = parse_motor_pt(pt)
-        if not parsed:
+        fp = norm(rec.get('前电机功率/扭矩'))
+        rp = norm(rec.get('后电机功率/扭矩'))
+        if not fp:
             continue
-        kind, a, b = parsed
-        if kind == 'single':
-            if fillable(rec.get('电机总功率(kW)')):
-                fill_num(r, rec, '电机总功率(kW)', a, f'解析自「电机功率/扭矩」{pt}（单电机总功率=该电机功率，蓝底纹）')
-        else:
-            if fillable(rec.get('电机总功率(kW)')):
-                fill_num(r, rec, '电机总功率(kW)', a + b, f'解析自「电机功率/扭矩」前{int(a)}+后{int(b)}kW 求和（蓝底纹）')
-            if fillable(rec.get('电机峰值功率(kW)')):
-                fill_num(r, rec, '电机峰值功率(kW)', max(a, b), f'解析自「电机功率/扭矩」前{int(a)}/后{int(b)}kW 取大（蓝底纹）')
+        try:
+            fpp, fpt = (float(x) for x in fp.split('/')[:2]) if '/' in fp else (float(fp), None)
+        except (ValueError, TypeError):
+            continue
+        rpp = rpt = None
+        if rp:
+            try:
+                parts = [float(x) for x in rp.split('/')[:2]]
+                rpp = parts[0]
+                rpt = parts[1] if len(parts) > 1 else None
+            except (ValueError, TypeError):
+                continue
+        tp = fpp + (rpp or 0)
+        tt = None
+        if fpt is not None and (rpt is not None or not rp):
+            tt = fpt + (rpt or 0)
+        if not (5 <= tp <= 1500):
+            continue
+        cell = ws.cell(r, fi['电机总功率/扭矩'] + 1)
+        val = f"{int(tp) if float(tp).is_integer() else tp}" + (f"/{int(tt) if float(tt).is_integer() else tt}" if tt is not None else "")
+        cell.value = val
+        cell.fill = BLUE
+        rec['电机总功率/扭矩'] = val
+        stats['电机总功率/扭矩'] += 1
+        l_ledger.append([rec['批次'], rec['产品型号'], str(rec['产品类型'] or ''), '电机总功率/扭矩',
+                         '功率解析', '(空)', val, f'前{fp}+后{rp or "无"}=总（v4.4.0 口径，蓝底纹）'])
     print(f'      补 {len(l_ledger)} 格')
     ledgers.append((l_ledger, '功率解析'))
 
@@ -393,7 +387,7 @@ def main():
             ('浅橙底纹', '企业名称推理',
              '产品商标/通用名称/型号代号在全表唯一对应一家企业时补空企业名称。推断依据：品牌注册与车系归属（非官方文件，详见变更记录）。'),
             ('蓝色底纹', '功率解析',
-             '「电机功率/扭矩」列解析：单电机取该值作总功率；前/后双电机求和作总功率、取大作峰值功率（详见变更记录）。'),
+             '电机总功率/扭矩 = 前电机功率/扭矩 + 后电机功率/扭矩（v4.4.0 口径，前+后=总；详见变更记录）。'),
             ('蓝色底纹', '轴距分级',
              '按「车型级别定义」表轴距阈值+产品名称车身形式分级补细分市场（详见变更记录）。')):
         if ctype not in have:
