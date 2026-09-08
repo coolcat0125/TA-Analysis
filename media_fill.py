@@ -55,7 +55,7 @@ FIELD_MAP = {
     "CLTC纯电续航里程(km)": "纯电续航里程(km)",
     "WLTC纯电续航里程(km)": "纯电续航里程(km)",
     "电池能量(kWh)": "电池容量(kWh)",
-    "电动机总功率(kW)": "电机总功率(kW)",
+    "电动机总功率(kW)": "电机总功率/扭矩",
     "电芯品牌": "电芯供应商",
     "电池类型": "电池类型",
     "发动机型号": "发动机型号",
@@ -174,16 +174,12 @@ def extract_spec_values(vals):
         m = re.search(r"(\d+\.?\d*)\s*L", str(eng))
         if m:
             out.setdefault("发动机排量(mL)", str(int(float(m.group(1)) * 1000)))
-    # 纯电车型：单电机时峰值功率=总功率；功率/扭矩合并列由总功率+最大扭矩推导
-    ptxt = str(vals.get("能源类型") or "")
-    drive = str(vals.get("驱动电机数") or "")
-    total = out.get("电机总功率(kW)")
-    if total and "单电机" in drive:
-        out.setdefault("电机峰值功率(kW)", total)
-    if "纯电" in ptxt and total:
+    # v4.4.0：电机总功率列升级为「电机总功率/扭矩」(P/T)；有扭矩则合并，否则仅功率
+    total = out.get("电机总功率/扭矩")
+    if total:
         tq = vals.get("最大扭矩(N·m)")
         if tq and not is_missing(tq) and str(tq) != "-":
-            out.setdefault("电机功率/扭矩", f"{total}/{tq}")
+            out["电机总功率/扭矩"] = f"{total}/{tq}"
     return out
 
 
@@ -262,7 +258,7 @@ def main():
     print(f"scope={args.scope} selected={len(sel)}")
 
     if args.only_missing:
-        targets = list(FIELD_MAP.values()) + ["电机峰值功率(kW)", "电机功率/扭矩", "发动机排量(mL)", "电芯供应商"]
+        targets = list(FIELD_MAP.values()) + ["后电机功率/扭矩", "发动机排量(mL)", "电芯供应商"]
         before = len(sel)
         sel = [(i, r) for i, r in sel
                if any(r[hi[w]] is None or str(r[hi[w]]).strip() in MISSING
