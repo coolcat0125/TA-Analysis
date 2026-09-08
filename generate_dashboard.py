@@ -82,8 +82,8 @@ XLSXLIB_PATH = os.path.join(HERE, 'xlsx.full.min.js')
 SHEET_NAME = 'NEV公告参数汇总'
 
 FIELDS = ['b', 't', 's', 'e', 'w', 'r', 'c', 'bt', 'ed', 'ec',
-          'pp', 'tp', 'ms', 'tq', 'fo', 'dv', 'ep', 'es', 'src',
-          'm', 'bd', 'tx', 'ab', 'lg', 'gn']
+          'fp', 'tp', 'ms', 'tq', 'fo', 'dv', 'ep', 'es', 'src',
+          'm', 'bd', 'tx', 'ab', 'lg', 'gn', 'rt', 'rp', 'drive']
 
 
 def clean_num(v):
@@ -124,6 +124,25 @@ def parse_torque(v):
         return float(part)
     except (ValueError, TypeError):
         return None
+
+
+def parse_pt(v):
+    """v4.4.0：解析 'P/T' 文本（如 '230/472'、'130'）→ (功率, 扭矩)，缺失段为 None"""
+    if v is None:
+        return None, None
+    s = str(v).strip()
+    if not s or '不适用' in s:
+        return None, None
+    parts = s.split('/')
+    try:
+        p = float(parts[0]) if parts[0].strip() else None
+    except (ValueError, TypeError):
+        p = None
+    try:
+        t = float(parts[1]) if len(parts) > 1 and parts[1].strip() else None
+    except (ValueError, TypeError):
+        t = None
+    return p, t
 
 
 def clean_seg(v):
@@ -172,9 +191,11 @@ NUM_RANGES = {
     'c':  ((2, 250), (1, 120)),          # 电池容量 kWh
     'ed': ((50, 400), (30, 400)),        # 能量密度 Wh/kg
     'ec': ((3, 40), (3, 40)),            # 百公里电耗
-    'pp': ((5, 1500), (5, 800)),         # 电机峰值功率 kW
-    'tp': ((5, 1500), (5, 800)),         # 电机总功率 kW
-    'tq': ((20, 30000), (20, 30000)),    # 扭矩 Nm
+    'fp': ((5, 1500), (5, 800)),         # 前电机功率 kW（v4.4.0，原峰值口径）
+    'tp': ((5, 1500), (5, 800)),         # 电机总功率 kW（前+后）
+    'ft': ((20, 30000), (20, 30000)),    # 前电机扭矩 Nm
+    'rt': ((20, 30000), (20, 30000)),    # 后电机扭矩 Nm
+    'tq': ((20, 30000), (20, 30000)),    # 扭矩 Nm（兼容保留）
     'fo': (None, (0.1, 20)),             # 综合油耗 L/100km（BEV不适用）
     'dv': (None, (300, 6000)),           # 排量 mL（BEV不适用）
     'ep': (None, (10, 600)),             # 发动机功率 kW（BEV不适用）
@@ -199,13 +220,20 @@ def sanitize(field, val, ptype):
 
 
 def load_records(path):
-    """读取Excel并转为紧凑记录数组"""
+    """读取Excel并转为紧凑记录数组（v4.4.0：按表头名索引，电机三列 P/T 文本）"""
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
     ws = wb[SHEET_NAME]
     records = []
     skipped = 0
     cleaned = 0
-    for row in ws.iter_rows(min_row=2, values_only=True):
+    it = ws.iter_rows(min_row=1, values_only=True)
+    hdr = [str(c).strip() if c is not None else '' for c in next(it)]
+    hi = {h: i for i, h in enumerate(hdr)}
+
+    def cell(row, name):
+        i = hi.get(name)
+        return row[i] if i is not None and i < len(row) else None
+    for row in it:
         if not row or row[0] is None:
             continue
         try:
@@ -214,43 +242,55 @@ def load_records(path):
             skipped += 1
             continue
         ptype = clean_str(row[9]) or '未知'
+        fp, ft = parse_pt(cell(row, '前电机功率/扭矩'))
+        rp, rt = parse_pt(cell(row, '后电机功率/扭矩'))
+        tp, tq = parse_pt(cell(row, '电机总功率/扭矩'))
         raw = {
-            'w':  clean_num(row[11]),    # 整备质量kg
-            'ab': clean_num(row[12]),    # 轴距mm
-            'r':  clean_num(row[13]),    # 纯电续航km
-            'c':  clean_num(row[14]),    # 电池容量kWh
-            'ed': clean_num(row[16]),    # 能量密度Wh/kg
-            'ec': clean_num(row[17]),    # 百公里电耗
-            'pp': clean_num(row[18]),    # 电机峰值功率kW
-            'tp': clean_num(row[19]),    # 电机总功率kW
-            'tq': parse_torque(row[21]), # 扭矩Nm
-            'fo': clean_num(row[23]),    # 综合油耗
-            'dv': clean_num(row[25]),    # 排量mL
-            'ep': clean_num(row[26]),    # 发动机功率kW
+            'w':  clean_num(cell(row, '整备质量(kg)')),
+            'ab': clean_num(cell(row, '轴距(mm)')),
+            'r':  clean_num(cell(row, '纯电续航里程(km)')),
+            'c':  clean_num(cell(row, '电池容量(kWh)')),
+            'ed': clean_num(cell(row, '电池能量密度(Wh/kg)')),
+            'ec': clean_num(cell(row, '百公里电耗(kWh/100km)')),
+            'fp': fp,                              # 前电机功率kW
+            'tp': tp,                              # 电机总功率kW（前+后）
+            'ft': ft, 'rt': rt,                    # 前/后电机扭矩 Nm
+            'fo': clean_num(cell(row, '综合油耗(L/100km)')),
+            'dv': clean_num(cell(row, '发动机排量(mL)')),
+            'ep': clean_num(cell(row, '发动机功率(kW)')),
         }
+        # 兼容：旧口径扭矩列缺失时退回总功率/扭矩第二段
+        if raw['ft'] is None and tq is not None and not cell(row, '后电机功率/扭矩'):
+            raw['ft'] = tq
         val = {}
         for k, v in raw.items():
             s = sanitize(k, v, ptype)
             if v is not None and s is None:
                 cleaned += 1
             val[k] = s
+        drive = 1 if (val['fp'] is not None and rp is not None) else (0 if val['fp'] is not None else None)
+        # 系统扭矩：四驱=前+后，两驱=前（后置空时沿用总功率/扭矩第二段兜底）
+        tq_sys = val['ft']
+        if drive == 1 and val['rt'] is not None and tq_sys is not None:
+            tq_sys = val['ft'] + val['rt']
         rec = [
             batch, ptype,
             clean_seg(row[8]),          # s 细分市场（'/'占位符视为未填报）
             clean_str(row[3]),           # e 企业名称
             val['w'], val['r'], val['c'],
-            norm_bt(row[15]),            # bt 电池类型（归一化口径）
-            val['ed'], val['ec'], val['pp'], val['tp'],
-            clean_str(row[20]),          # ms 电机生产企业
-            val['tq'], val['fo'], val['dv'], val['ep'],
-            clean_str(row[27]),          # es 发动机生产企业
-            clean_str(row[29]),          # src 数据来源
+            norm_bt(cell(row, '电池类型')),   # bt 电池类型（归一化口径）
+            val['ed'], val['ec'], val['fp'], val['tp'],
+            clean_str(cell(row, '电机生产企业')),  # ms 电机生产企业
+            tq_sys, val['fo'], val['dv'], val['ep'],
+            clean_str(cell(row, '发动机生产企业')),  # es 发动机生产企业
+            clean_str(cell(row, '数据来源')),   # src 数据来源
             clean_str(row[1]),           # m 产品型号
             clean_str(row[2]),           # bd 产品商标
             norm_tax(row[10]),           # tx 是否减免购置税
             val['ab'],                   # ab 轴距mm（分布格局 Length 视角现用口径）
-            clean_num(row[30]) if len(row) > 30 else None,  # lg 车长mm（占位列）
-            clean_str(row[6]),           # gn 通用名称（散点悬浮/明细表展示）
+            clean_num(cell(row, '车长(mm)')),  # lg 车长mm（占位列）
+            clean_str(cell(row, '通用名称')),   # gn 通用名称（散点悬浮/明细表展示）
+            val['rt'], rp, drive,        # rt 后电机扭矩 / rp 后电机功率 / drive 两驱0·四驱1
         ]
         records.append(rec)
     wb.close()
@@ -771,13 +811,13 @@ const RAW_INIT = __DATA_JSON__;
 <script>
 'use strict';
 /* ==================== 索引与全局 ==================== */
-const I = {b:0,t:1,s:2,e:3,w:4,r:5,c:6,bt:7,ed:8,ec:9,pp:10,tp:11,ms:12,tq:13,fo:14,dv:15,ep:16,es:17,src:18,
-  m:19,bd:20,tx:21,ab:22,lg:23,gn:24};
+const I = {b:0,t:1,s:2,e:3,w:4,r:5,c:6,bt:7,ed:8,ec:9,fp:10,tp:11,ms:12,tq:13,fo:14,dv:15,ep:16,es:17,src:18,
+  m:19,bd:20,tx:21,ab:22,lg:23,gn:24,rt:25,rp:26,drive:27};
 const TX_IDX = I.tx;   // 免征购置税：数据层保留，展示层全量隐藏（v3.7口径）
 const COL_NAMES = ['批次','动力类型','细分市场','企业名称','整备质量(kg)','纯电续航(km)','电池容量(kWh)','电池类型',
-  '能量密度(Wh/kg)','百公里电耗(kWh/100km)','电机峰值功率(kW)','电机总功率(kW)','电机生产企业','峰值扭矩(Nm)',
+  '能量密度(Wh/kg)','百公里电耗(kWh/100km)','前电机功率(kW)','电机总功率(kW)','电机生产企业','系统扭矩(Nm)',
   '综合油耗(L/100km)','发动机排量(mL)','发动机功率(kW)','发动机生产企业','数据来源',
-  '产品型号','产品商标','是否减免购置税','轴距(mm)','车长(mm)','通用名称'];
+  '产品型号','产品商标','是否减免购置税','轴距(mm)','车长(mm)','通用名称','后电机扭矩(Nm)','后电机功率(kW)','驱动形式'];
 let RAW = RAW_INIT;
 let META_CUR = META;
 
@@ -1210,20 +1250,28 @@ function chMsTop(rows){
   hbar('chMsTop', es, '#D97757', '款', '电机供应商');
 }
 function chPtq(rows){
-  // 按动力类型拆分散点，各组独立趋势线
-  const bevP=[],phevP=[];
+  // v4.4.0：按驱动形式拆分散点（两驱=前电机功率/扭矩；四驱=系统总功率/总扭矩），各组独立趋势线
+  const grp={
+    two:[],       // 两驱（单电机）
+    four:[]       // 四驱（双电机，总=前+后）
+  };
   for(const r of rows){
-    const tp=r[I.tp], tq=r[I.tq];
-    if(tp&&tq){ (r[I.t]==='BEV'?bevP:phevP).push({value:[tp,tq], n:r[I.gn], b:r[I.bd]}); }
+    if(r[I.drive]==null||!r[I.tq]) continue;
+    if(r[I.drive]===0 && r[I.fp]&&r[I.tq]){
+      grp.two.push({value:[r[I.fp],r[I.tq]], n:r[I.gn], b:r[I.bd]});
+    }else if(r[I.drive]===1 && r[I.tp]){
+      grp.four.push({value:[r[I.tp],r[I.tq]], n:r[I.gn], b:r[I.bd]});
+    }
   }
-  const trB = trendSeries(bevP.map(p=>p.value),'#D97757','BEV趋势线');
-  const trP = trendSeries(phevP.map(p=>p.value),'#6B9BD1','PHEV/EREV趋势线');
-  const trends = [trB,trP].filter(Boolean);
+  const trT = trendSeries(grp.two.map(p=>p.value),'#D97757','两驱趋势线');
+  const trF = trendSeries(grp.four.map(p=>p.value),'#7C5CBF','四驱趋势线');
+  const trends = [trT,trF].filter(Boolean);
   TREND_REGS['chPtq'] = Object.fromEntries(trends.map(t=>[t.name,t.__formula]));
-  setInsight('chPtq', (bevP.length+phevP.length)?`散点样本 <em>${fmt(bevP.length+phevP.length)}</em> 组（BEV <em>${fmt(bevP.length)}</em> / PHEV/EREV <em>${fmt(phevP.length)}</em>）· 虚线为分组线性趋势`:'暂无功率×扭矩匹配样本');
+  const nAll = grp.two.length+grp.four.length;
+  setInsight('chPtq', nAll?`散点样本 <em>${fmt(nAll)}</em> 组（两驱 <em>${fmt(grp.two.length)}</em> / 四驱 <em>${fmt(grp.four.length)}</em>）· 两驱取前电机功率×扭矩，四驱取系统总功率×总扭矩（总=前+后）· 虚线为分组线性趋势`:'暂无功率×扭矩匹配样本');
   const fin = [
-    {name:'BEV',type:'scatter',data:bevP,symbolSize:6,itemStyle:{color:`rgba(217,119,87,${TC().scatterA})`},large:true,largeThreshold:800},
-    {name:'PHEV/EREV',type:'scatter',data:phevP,symbolSize:6,itemStyle:{color:`rgba(107,155,209,${TC().scatterA})`},large:true,largeThreshold:800}
+    {name:'两驱（单电机）',type:'scatter',data:grp.two,symbolSize:6,itemStyle:{color:`rgba(217,119,87,${TC().scatterA})`},large:true,largeThreshold:800},
+    {name:'四驱（双电机）',type:'scatter',data:grp.four,symbolSize:7,symbol:'diamond',itemStyle:{color:`rgba(124,92,191,${TC().scatterA})`},large:true,largeThreshold:800}
   ];
   trends.forEach(t=>fin.push(t));
   chart('chPtq').setOption({
@@ -1231,11 +1279,12 @@ function chPtq(rows){
       formatter:p=>{
         const t=trends.find(x=>x.name===p.seriesName);
         if(t) return t.tooltip.formatter();
-        return `${p.seriesName} · 品牌车型：<b>${brandName(p)}</b><br>总功率 <b>${p.data.value[0]}</b> kW<br>峰值扭矩 <b>${p.data.value[1]}</b> Nm`;
+        const four=p.seriesName.indexOf('四驱')===0;
+        return `${p.seriesName} · 品牌车型：<b>${brandName(p)}</b><br>${four?'系统总功率':'前电机功率'} <b>${p.data.value[0]}</b> kW<br>${four?'系统总扭矩':'前电机扭矩'} <b>${p.data.value[1]}</b> Nm`;
       }},TT),
-    legend:LG({data:['BEV','PHEV/EREV',...trends.map(t=>t.name)]}),
+    legend:LG({data:['两驱（单电机）','四驱（双电机）',...trends.map(t=>t.name)]}),
     grid:GRID(),
-    xAxis:Object.assign({type:'value',name:'总功率 kW',nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis},scale:true},AXS()),
+    xAxis:Object.assign({type:'value',name:'功率 kW',nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis},scale:true},AXS()),
     yAxis:Object.assign({type:'value',name:'扭矩 Nm',nameTextStyle:{color:TC().axis},scale:true},AXS()),
     series:fin
   },true);
@@ -1247,7 +1296,7 @@ function chPwTrend(rows){
   const defs = [
     ['BEV平均总功率', bs.map(x=>{const v=avg(x[1].filter(r=>r[I.t]==='BEV'),I.tp);return v?+v.toFixed(0):null;}), '#D97757'],
     ['PHEV/EREV平均总功率', bs.map(x=>{const v=avg(x[1].filter(r=>r[I.t]==='PHEV'),I.tp);return v?+v.toFixed(0):null;}), '#6B9BD1'],
-    ['BEV平均峰值功率', bs.map(x=>{const v=avg(x[1].filter(r=>r[I.t]==='BEV'),I.pp);return v?+v.toFixed(0):null;}), '#D4A94E', {lineStyle:{width:1.5,type:'dashed'},symbol:'none'}]
+    ['BEV平均前电机功率', bs.map(x=>{const v=avg(x[1].filter(r=>r[I.t]==='BEV'),I.fp);return v?+v.toFixed(0):null;}), '#D4A94E', {lineStyle:{width:1.5,type:'dashed'},symbol:'none'}]
   ];
   const b0 = defs[0][1].filter(v=>v!=null);
   setInsight('chPwTrend', b0.length>1?`BEV总功率批次均值首末 <em>${b0[0]}</em>→<em>${b0[b0.length-1]}</em> kW（${b0[b0.length-1]>=b0[0]?'上行':'下行'}）`:'区间样本不足');
@@ -1685,8 +1734,8 @@ function chHeat(rows){
   if(!document.getElementById('chHeat'))return;
   const bs = byBatch(rows).filter((x,i)=>i%2===0);
   const labels = bs.map(x=>String(x[0]));
-  const checkIdx = [I.s,I.w,I.r,I.c,I.bt,I.ed,I.ec,I.pp,I.tp,I.ms,I.tq,I.fo,I.dv,I.ep,I.es];
-  const checkNames = ['细分市场','整备质量','续航','容量','电池类型','能量密度','电耗','峰值功率','总功率','电机供应商','扭矩','油耗','排量','发动机功率','发动机供应商'];
+  const checkIdx = [I.s,I.w,I.r,I.c,I.bt,I.ed,I.ec,I.fp,I.tp,I.ms,I.tq,I.fo,I.dv,I.ep,I.es];
+  const checkNames = ['细分市场','整备质量','续航','容量','电池类型','能量密度','电耗','前电机功率','总功率','电机供应商','系统扭矩','油耗','排量','发动机功率','发动机供应商'];
   const data=[];
   bs.forEach((x,yi)=>{
     checkIdx.forEach((idx,xi)=>{
@@ -1827,8 +1876,9 @@ function insightEnt(rows){
 const TBL_COLS = [
   {n:'批次',i:I.b},{n:'企业名称',i:I.e},{n:'商标',i:I.bd},{n:'通用名称',i:I.gn},{n:'产品型号',i:I.m},
   {n:'动力类型',i:I.t},{n:'细分市场',i:I.s},{n:'续航km',i:I.r},{n:'容量kWh',i:I.c},
-  {n:'电池类型',i:I.bt},{n:'总功率kW',i:I.tp},{n:'轴距mm',i:I.ab}
+  {n:'电池类型',i:I.bt},{n:'前电机kW',i:I.fp},{n:'后电机kW',i:I.rp},{n:'总功率kW',i:I.tp},{n:'驱动',i:I.drive},{n:'轴距mm',i:I.ab}
 ];
+const DRIVE_TXT = d => d===1?'四驱':(d===0?'两驱':'');
 const tblState={q:'',k:I.b,d:-1,page:0,per:20};
 const escH=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
 function tblData(){
@@ -1861,7 +1911,8 @@ function renderTable(resetPage){
   body.innerHTML=slice.length?slice.map(r=>'<tr>'+TBL_COLS.map(c=>{
       let v=r[c.i];
       if(c.i===I.t&&v==='PHEV')v='PHEV/EREV';   // 展示层统一 PHEV/EREV
-      if(v==null)return '<td class="na">–</td>';
+      if(c.i===I.drive)v=DRIVE_TXT(v);          // 驱动形式 0/1 → 两驱/四驱
+      if(v==null||v==='')return '<td class="na">–</td>';
       if(typeof v==='number')return '<td>'+v.toLocaleString('zh-CN')+'</td>';
       return '<td title="'+escH(v)+'">'+escH(v)+'</td>';
     }).join('')+'</tr>').join('')
@@ -1898,8 +1949,13 @@ function initExportUI(){
 function exportRows(){
   const cols = EXPORT_FIELDS.filter(f=>f.on);
   const header = cols.map(c=>c.name);
-  /* 导出口径：动力类型列展示 PHEV/EREV */
-  const data = filtered().map(r=>cols.map(c=>(c.idx===I.t&&r[c.idx]==='PHEV')?'PHEV/EREV':r[c.idx]));
+  /* 导出口径：动力类型列展示 PHEV/EREV；驱动形式列 0/1 → 两驱/四驱 */
+  const data = filtered().map(r=>cols.map(c=>{
+    let v=r[c.idx];
+    if(c.idx===I.t&&v==='PHEV')v='PHEV/EREV';
+    if(c.idx===I.drive)v=DRIVE_TXT(v)||v;
+    return v;
+  }));
   return {header, data};
 }
 function updateDmStat(){
