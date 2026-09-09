@@ -46,8 +46,12 @@ NAME_NUM = re.compile(r'^[\d\s./()（）：:kKW]+$')
 
 RANGES = {'整备质量(kg)': (300, 10000), '纯电续航里程(km)': (5, 2000),
           '电池容量(kWh)': (1, 300), '电池能量密度(Wh/kg)': (30, 400),
-          '百公里电耗(kWh/100km)': (3, 40), '电机总功率(kW)': (1, 2500),
+          '百公里电耗(kWh/100km)': (3, 40),
           '车长(mm)': (1500, 20000), '轴距(mm)': (1000, 5000)}
+# v4.4.0 电机列重构：前/后电机功率/扭矩 为文本 P/T，电机总功率/扭矩=前+后
+MOTOR_TOTAL_COL = '电机总功率/扭矩'
+MOTOR_PT_COLS = ['前电机功率/扭矩', '后电机功率/扭矩']
+MOTOR_TOTAL_RANGE = (1, 2500)  # 系统总功率 kW（仰望U9X 2220 在界内）
 
 NAME_COLS = ['电机生产企业', '发动机生产企业', '电芯供应商', '电池包供应商',
              '企业名称', '产品商标']
@@ -140,6 +144,15 @@ def main():
                 warn['W1'] += 1
                 if len(det['W1']) < 60:
                     det['W1'].append({'批次': b, '型号': m, '字段': f, '值': val(row, f)})
+
+        # W1b 电机总功率/扭矩（P/T 文本，取总功率首值）
+        mt = val(row, MOTOR_TOTAL_COL)
+        if mt:
+            mp = fnum(mt.split('/')[0])
+            if mp is not None and not (MOTOR_TOTAL_RANGE[0] <= mp <= MOTOR_TOTAL_RANGE[1]):
+                warn['W1'] += 1
+                if len(det['W1']) < 60:
+                    det['W1'].append({'批次': b, '型号': m, '字段': MOTOR_TOTAL_COL, '值': mt[:20]})
 
         # W2 BEV 电耗守恒
         if is_bev:
