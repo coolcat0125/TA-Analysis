@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-05T17:29:24+00:00",
+  "generated_at_utc": "2026-09-09T15:38:15+00:00",
   "source": {
     "file": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "5b21b8ddf2eacb764e88e8e58deb16ca34f43cca122d0e1d75ae7a146d28033f",
+    "sha256": "4c89ed556da299274178e9a5c09dcc17c9d20337ef4e56603d66dffb552716ea",
     "sheet": "NEV公告参数汇总"
   },
-  "records": 4494,
+  "records": 4613,
   "headers": [
     "批次",
     "产品型号",
@@ -27,10 +27,10 @@
     "电池类型",
     "电池能量密度(Wh/kg)",
     "百公里电耗(kWh/100km)",
-    "电机峰值功率(kW)",
-    "电机总功率(kW)",
+    "前电机功率/扭矩",
+    "电机总功率/扭矩",
+    "后电机功率/扭矩",
     "电机生产企业",
-    "电机功率/扭矩",
     "电机型号",
     "综合油耗(L/100km)",
     "B状态油耗(L/100km)",
@@ -49,247 +49,247 @@
     {
       "index": 1,
       "header": "批次",
-      "filled": 4494,
+      "filled": 4613,
       "missing": 0,
       "coverage": 1.0
     },
     {
       "index": 2,
       "header": "产品型号",
-      "filled": 4457,
-      "missing": 37,
-      "coverage": 0.991767
+      "filled": 4582,
+      "missing": 31,
+      "coverage": 0.99328
     },
     {
       "index": 3,
       "header": "产品商标",
-      "filled": 4425,
-      "missing": 69,
-      "coverage": 0.984646
+      "filled": 4470,
+      "missing": 143,
+      "coverage": 0.969001
     },
     {
       "index": 4,
       "header": "企业名称",
-      "filled": 4089,
-      "missing": 405,
-      "coverage": 0.90988
+      "filled": 4446,
+      "missing": 167,
+      "coverage": 0.963798
     },
     {
       "index": 5,
       "header": "车型名称",
-      "filled": 3862,
-      "missing": 632,
-      "coverage": 0.859368
+      "filled": 3993,
+      "missing": 620,
+      "coverage": 0.865597
     },
     {
       "index": 6,
       "header": "产品名称",
-      "filled": 3776,
-      "missing": 718,
-      "coverage": 0.840231
+      "filled": 4008,
+      "missing": 605,
+      "coverage": 0.868849
     },
     {
       "index": 7,
       "header": "通用名称",
-      "filled": 4429,
-      "missing": 65,
-      "coverage": 0.985536
+      "filled": 4566,
+      "missing": 47,
+      "coverage": 0.989811
     },
     {
       "index": 8,
       "header": "产品类型",
-      "filled": 4492,
-      "missing": 2,
-      "coverage": 0.999555
+      "filled": 4610,
+      "missing": 3,
+      "coverage": 0.99935
     },
     {
       "index": 9,
       "header": "细分市场",
-      "filled": 4315,
-      "missing": 179,
-      "coverage": 0.960169
+      "filled": 4486,
+      "missing": 127,
+      "coverage": 0.972469
     },
     {
       "index": 10,
       "header": "动力类型",
-      "filled": 4494,
+      "filled": 4613,
       "missing": 0,
       "coverage": 1.0
     },
     {
       "index": 11,
       "header": "是否减免购置税",
-      "filled": 4157,
-      "missing": 337,
-      "coverage": 0.925011
+      "filled": 4162,
+      "missing": 451,
+      "coverage": 0.902233
     },
     {
       "index": 12,
       "header": "整备质量(kg)",
-      "filled": 4372,
-      "missing": 122,
-      "coverage": 0.972853
+      "filled": 4384,
+      "missing": 229,
+      "coverage": 0.950358
     },
     {
       "index": 13,
       "header": "轴距(mm)",
-      "filled": 3816,
-      "missing": 678,
-      "coverage": 0.849132
+      "filled": 3957,
+      "missing": 656,
+      "coverage": 0.857793
     },
     {
       "index": 14,
       "header": "纯电续航里程(km)",
-      "filled": 4408,
-      "missing": 86,
-      "coverage": 0.980863
+      "filled": 4542,
+      "missing": 71,
+      "coverage": 0.984609
     },
     {
       "index": 15,
       "header": "电池容量(kWh)",
-      "filled": 4414,
-      "missing": 80,
-      "coverage": 0.982198
+      "filled": 4549,
+      "missing": 64,
+      "coverage": 0.986126
     },
     {
       "index": 16,
       "header": "电池类型",
-      "filled": 4348,
-      "missing": 146,
-      "coverage": 0.967512
+      "filled": 4448,
+      "missing": 165,
+      "coverage": 0.964232
     },
     {
       "index": 17,
       "header": "电池能量密度(Wh/kg)",
-      "filled": 3939,
-      "missing": 555,
-      "coverage": 0.876502
+      "filled": 4085,
+      "missing": 528,
+      "coverage": 0.885541
     },
     {
       "index": 18,
       "header": "百公里电耗(kWh/100km)",
-      "filled": 4398,
-      "missing": 96,
-      "coverage": 0.978638
+      "filled": 4523,
+      "missing": 90,
+      "coverage": 0.98049
     },
     {
       "index": 19,
-      "header": "电机峰值功率(kW)",
-      "filled": 3597,
-      "missing": 897,
-      "coverage": 0.800401
+      "header": "前电机功率/扭矩",
+      "filled": 4167,
+      "missing": 446,
+      "coverage": 0.903317
     },
     {
       "index": 20,
-      "header": "电机总功率(kW)",
-      "filled": 3438,
-      "missing": 1056,
-      "coverage": 0.76502
+      "header": "电机总功率/扭矩",
+      "filled": 4308,
+      "missing": 305,
+      "coverage": 0.933883
     },
     {
       "index": 21,
-      "header": "电机生产企业",
-      "filled": 3246,
-      "missing": 1248,
-      "coverage": 0.722296
+      "header": "后电机功率/扭矩",
+      "filled": 1320,
+      "missing": 3293,
+      "coverage": 0.286148
     },
     {
       "index": 22,
-      "header": "电机功率/扭矩",
-      "filled": 3110,
-      "missing": 1384,
-      "coverage": 0.692034
+      "header": "电机生产企业",
+      "filled": 3395,
+      "missing": 1218,
+      "coverage": 0.735964
     },
     {
       "index": 23,
       "header": "电机型号",
-      "filled": 1868,
-      "missing": 2626,
-      "coverage": 0.415665
+      "filled": 2291,
+      "missing": 2322,
+      "coverage": 0.49664
     },
     {
       "index": 24,
       "header": "综合油耗(L/100km)",
-      "filled": 3899,
-      "missing": 595,
-      "coverage": 0.867601
+      "filled": 3959,
+      "missing": 654,
+      "coverage": 0.858227
     },
     {
       "index": 25,
       "header": "B状态油耗(L/100km)",
-      "filled": 3828,
-      "missing": 666,
-      "coverage": 0.851802
+      "filled": 3876,
+      "missing": 737,
+      "coverage": 0.840234
     },
     {
       "index": 26,
       "header": "发动机排量(mL)",
-      "filled": 4190,
-      "missing": 304,
-      "coverage": 0.932354
+      "filled": 4247,
+      "missing": 366,
+      "coverage": 0.920659
     },
     {
       "index": 27,
       "header": "发动机功率(kW)",
-      "filled": 4161,
-      "missing": 333,
-      "coverage": 0.925901
+      "filled": 4195,
+      "missing": 418,
+      "coverage": 0.909387
     },
     {
       "index": 28,
       "header": "发动机生产企业",
-      "filled": 3792,
-      "missing": 702,
-      "coverage": 0.843792
+      "filled": 3838,
+      "missing": 775,
+      "coverage": 0.831997
     },
     {
       "index": 29,
       "header": "发动机型号",
-      "filled": 4101,
-      "missing": 393,
-      "coverage": 0.91255
+      "filled": 4168,
+      "missing": 445,
+      "coverage": 0.903533
     },
     {
       "index": 30,
       "header": "数据来源",
-      "filled": 4494,
+      "filled": 4613,
       "missing": 0,
       "coverage": 1.0
     },
     {
       "index": 31,
       "header": "车长(mm)",
-      "filled": 3816,
-      "missing": 678,
-      "coverage": 0.849132
+      "filled": 3970,
+      "missing": 643,
+      "coverage": 0.860611
     },
     {
       "index": 32,
       "header": "电芯供应商",
-      "filled": 1223,
-      "missing": 3271,
-      "coverage": 0.272141
+      "filled": 1457,
+      "missing": 3156,
+      "coverage": 0.315847
     },
     {
       "index": 33,
       "header": "电池包供应商",
       "filled": 107,
-      "missing": 4387,
-      "coverage": 0.02381
+      "missing": 4506,
+      "coverage": 0.023195
     },
     {
       "index": 34,
       "header": "官方参数页URL",
       "filled": 111,
-      "missing": 4383,
-      "coverage": 0.0247
+      "missing": 4502,
+      "coverage": 0.024062
     },
     {
       "index": 35,
       "header": "媒体校验来源",
-      "filled": 1749,
-      "missing": 2745,
-      "coverage": 0.389186
+      "filled": 1980,
+      "missing": 2633,
+      "coverage": 0.429222
     }
   ],
   "resolved_columns": {
@@ -310,11 +310,11 @@
     "height": null
   },
   "inferable": {
-    "consumption": 8,
+    "consumption": 17,
     "energy_density": 0
   },
   "motor_torque_missing_count": 0,
-  "pack_80kwh_count": 463,
+  "pack_80kwh_count": 471,
   "constraints": [
     "pack dimensions require direct L×W×H evidence",
     "800V is not treated as exact voltage",
