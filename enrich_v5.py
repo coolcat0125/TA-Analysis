@@ -33,11 +33,28 @@ BLUE = openpyxl.styles.PatternFill('solid', fgColor='BDD7EE')    # 公式补全
 PURPLE = openpyxl.styles.PatternFill('solid', fgColor='D9D2E9')  # 轴距(车长)估算
 
 NUMERIC_FIELDS = {'整备质量(kg)', '轴距(mm)', '纯电续航里程(km)', '电池容量(kWh)',
-                  '电池能量密度(Wh/kg)', '百公里电耗(kWh/100km)', '电机峰值功率(kW)',
-                  '电机总功率(kW)', '综合油耗(L/100km)', 'B状态油耗(L/100km)',
+                  '电池能量密度(Wh/kg)', '百公里电耗(kWh/100km)',
+                  '综合油耗(L/100km)', 'B状态油耗(L/100km)',
                   '发动机排量(mL)', '发动机功率(kW)', '车长(mm)'}
+# 物理范围守卫（2026-09-11 教训：A阶段自 master_export_fixed 回灌连写/错误值，
+# 源链必须同步清洗，且抄值前做范围校验）
+NUM_RANGES = {'整备质量(kg)': (300, 10000), '轴距(mm)': (1000, 5000),
+              '纯电续航里程(km)': (5, 2000), '电池容量(kWh)': (1, 300),
+              '电池能量密度(Wh/kg)': (30, 400), '百公里电耗(kWh/100km)': (3, 40),
+              '发动机排量(mL)': (100, 8000), '发动机功率(kW)': (10, 600),
+              '车长(mm)': (1500, 20000)}
+
+def out_of_range(field, s):
+    rg = NUM_RANGES.get(field)
+    if not rg:
+        return False
+    try:
+        x = float(str(s).split('/')[0])
+    except (ValueError, TypeError):
+        return False
+    return not (rg[0] <= x <= rg[1])
 TEXT_FIELDS = {'产品商标', '企业名称', '车型名称', '产品名称', '通用名称', '产品类型',
-               '细分市场', '是否减免购置税', '电池类型', '电机生产企业', '电机功率/扭矩',
+               '细分市场', '是否减免购置税', '电池类型', '电机生产企业', '电机总功率/扭矩',
                '电机型号', '发动机生产企业', '发动机型号'}
 BAD_TEXT = ('请提供', '无法', '无有效', '未找到', '无符合', 'unknown', 'n/a', '需人工',
             '暂缺', '待确认', '待核实', '略', '无信息', '未填写', '不祥')
@@ -178,6 +195,8 @@ def main():
                     continue
                 if f in NUMERIC_FIELDS and not is_clean_numeric(mv_n):
                     continue
+                if f in NUMERIC_FIELDS and out_of_range(f, mv_n):
+                    continue  # 范围外脏值不回灌（2026-09-11 教训）
                 if f in TEXT_FIELDS and not is_clean_text(mv_n):
                     continue
                 cell = ws.cell(r, fi[f] + 1)
@@ -242,7 +261,7 @@ def main():
             continue
         for f in ('细分市场', '产品类型', '通用名称', '产品名称', '产品商标',
                   '是否减免购置税') + tuple(sorted(NUMERIC_FIELDS)) + \
-                ('电池类型', '电机生产企业', '电机功率/扭矩', '电机型号',
+                ('电池类型', '电机生产企业', '电机总功率/扭矩', '电机型号',
                  '发动机生产企业', '发动机型号'):
             if f in ('是否减免购置税', '产品商标'):
                 continue  # 减免状态/商标独立于车型共识，保守跳过
