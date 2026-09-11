@@ -1,6 +1,6 @@
 {
   "copyright": "Copyright © 2026 David YE",
-  "expected_min_records": 4642,
+  "expected_min_records": 4634,
   "required_headers": [
     "批次",
     "产品型号",

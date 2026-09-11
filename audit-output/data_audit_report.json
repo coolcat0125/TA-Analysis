@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-10T21:35:56+00:00",
+  "generated_at_utc": "2026-09-11T15:40:19+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "6e45ec765a7342f31da319da7078f346e307359bfc1b53acdceca3e16ed1b6fb",
+    "sha256": "e180bc704e9797e8cfcb7bcaaa4f82e76e1ef5d0074734db066ac3777ddd5321",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
-    "records": 4642,
+    "records": 4634,
     "columns": 35,
     "headers": [
       "批次",
@@ -117,63 +117,63 @@
       "408": 95,
       "409": 111,
       "410": 35,
-      "411": 29
+      "411": 21
     }
   },
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 4398,
-      "coverage": 0.947436,
-      "missing": 244
+      "populated": 4411,
+      "coverage": 0.951877,
+      "missing": 223
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
-      "populated": 4572,
-      "coverage": 0.98492,
+      "populated": 4564,
+      "coverage": 0.984894,
       "missing": 70
     },
     "电池容量": {
       "header": "电池容量(kWh)",
-      "populated": 4561,
-      "coverage": 0.982551,
-      "missing": 81
+      "populated": 4556,
+      "coverage": 0.983168,
+      "missing": 78
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
-      "populated": 4093,
-      "coverage": 0.881732,
-      "missing": 549
+      "populated": 4092,
+      "coverage": 0.883038,
+      "missing": 542
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
-      "populated": 4550,
-      "coverage": 0.980181,
-      "missing": 92
+      "populated": 4545,
+      "coverage": 0.980794,
+      "missing": 89
     },
     "前电机功率": {
       "header": "前电机功率/扭矩",
-      "populated": 4183,
-      "coverage": 0.90112,
-      "missing": 459
+      "populated": 4179,
+      "coverage": 0.901813,
+      "missing": 455
     },
     "电机总功率": {
       "header": "电机总功率/扭矩",
-      "populated": 4349,
-      "coverage": 0.936881,
-      "missing": 293
+      "populated": 4345,
+      "coverage": 0.937635,
+      "missing": 289
     },
     "后电机功率": {
       "header": "后电机功率/扭矩",
       "populated": 1321,
-      "coverage": 0.284576,
-      "missing": 3321
+      "coverage": 0.285067,
+      "missing": 3313
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
-      "populated": 4277,
-      "coverage": 0.92137,
-      "missing": 365
+      "populated": 4283,
+      "coverage": 0.924256,
+      "missing": 351
     }
   },
   "range_checks": {
@@ -182,7 +182,7 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 4398,
+      "numeric_values": 4411,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -191,7 +191,7 @@
         5.0,
         2000.0
       ],
-      "numeric_values": 4572,
+      "numeric_values": 4564,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -200,7 +200,7 @@
         1.0,
         300.0
       ],
-      "numeric_values": 4561,
+      "numeric_values": 4556,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -209,7 +209,7 @@
         30.0,
         400.0
       ],
-      "numeric_values": 4093,
+      "numeric_values": 4092,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -218,7 +218,7 @@
         3.0,
         40.0
       ],
-      "numeric_values": 4550,
+      "numeric_values": 4545,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -227,7 +227,7 @@
         5.0,
         1500.0
       ],
-      "numeric_values": 4183,
+      "numeric_values": 4179,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -236,7 +236,7 @@
         5.0,
         1500.0
       ],
-      "numeric_values": 4349,
+      "numeric_values": 4345,
       "outliers": 1,
       "sample_outliers": [
         {
@@ -260,7 +260,7 @@
         300.0,
         8000.0
       ],
-      "numeric_values": 1558,
+      "numeric_values": 1564,
       "outliers": 0,
       "sample_outliers": []
     }
@@ -269,7 +269,7 @@
     "passed": true,
     "failures": [],
     "configuration": {
-      "expected_min_records": 4642,
+      "expected_min_records": 4634,
       "required_headers": [
         "批次",
         "产品型号",
