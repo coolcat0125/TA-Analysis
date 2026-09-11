@@ -153,6 +153,172 @@ def clean_seg(v):
     return s
 
 
+# ---------------------------------------------------------------------------
+# 细分市场规范化（v4.6.0）
+#   目标：杜绝「车型名混入细分市场」与「笼统值（Car/SUV/MPV）」，
+#         让每个车型结合尺寸落位到具体细分市场。
+#   分级依据：底表《车型级别定义》工作表——以公告轴距(mm)为唯一分级依据，
+#             车身形式取自公告产品类型/产品名称。
+# ---------------------------------------------------------------------------
+SEG_BODIES = ('Car', 'SUV', 'MPV')
+SEG_LUX_PREFIX = 'Lux '
+
+
+def seg_wheelbase_level(body, mm):
+    """轴距阈值分级（与《车型级别定义》一致）。"""
+    if mm is None or body is None:
+        return None
+    if body == 'Car':
+        return ('Car-A' if mm < 2650 else 'Car-B' if mm < 2740 else
+                'Car-C' if mm < 2850 else 'Car-D' if mm < 3000 else 'Car-E')
+    if body == 'SUV':
+        return ('SUV-B' if mm < 2680 else 'SUV-C' if mm < 2850 else
+                'SUV-D' if mm < 3000 else 'SUV-E')
+    if body == 'MPV':
+        return 'MPV-C' if mm < 3000 else 'MPV-D'
+    return None
+
+
+def seg_body_from_type(product_type):
+    """由公告产品类型推断车身形式；『多用途乘用车』无法区分 SUV/MPV，返回 MPV/SUV。"""
+    t = str(product_type or '')
+    if '轿车' in t:
+        return 'Car'
+    if '运动型' in t or '跑车' in t:
+        return 'Sports'
+    if '多用途乘用车' in t or '客车' in t:
+        return 'MPV/SUV'
+    return None
+
+
+def seg_body_from_label(label):
+    """由细分市场标签取车身形式（去掉 Lux 前缀后取 '-' 前段）。"""
+    if not label:
+        return None
+    b = label[len(SEG_LUX_PREFIX):].strip() if label.startswith(SEG_LUX_PREFIX) else label
+    for cand in SEG_BODIES:
+        if b == cand or b.startswith(cand + '-'):
+            return cand
+    return None
+
+
+def seg_is_specific(label):
+    """是否为「具体」细分市场（可枚举、可展示、可统计）。"""
+    if not label:
+        return False
+    if label == 'Sports':
+        return True
+    if label.startswith(SEG_LUX_PREFIX):
+        return True
+    if '-' not in label:
+        return False
+    body, lvl = label.split('-', 1)
+    if body not in SEG_BODIES:
+        return False
+    return (lvl.isalpha() and len(lvl) == 1) or lvl.isdigit()
+
+
+# 各车身形式的车长合理区间（由已规范行的经验分布得出，仅作兜底校验）
+SEG_LEN_RANGE = {'Car': (2810, 5850), 'SUV': (2830, 5860), 'MPV': (3640, 5970)}
+
+
+def resolve_segment(raw, product_type, generic_name, wheelbase, length, ref):
+    """把原始细分市场值规范为「具体」值。返回 (细分市场, 依据)。
+
+    优先级：已规范 → 同名称他批唯一值 → 本行轴距分级 → 同名称他批轴距
+            → Lux 保留类别 → 车长兜底 → 仅车身形式（未分级）→ 无法落位
+    """
+    g = str(generic_name or '').strip().split(',')[0].strip()
+    r = ref.get(g) or {'seg': set(), 'wb': set(), 'ln': set()}
+    btype = seg_body_from_type(product_type)
+
+    # 1) 已是具体值 → 保持
+    if seg_is_specific(raw):
+        return raw, 'keep'
+
+    # 2) 同名称他批唯一具体值（车身形式需一致，避免跨车身错配）
+    if len(r['seg']) == 1 and btype not in (None, 'MPV/SUV'):
+        cand = next(iter(r['seg']))
+        if seg_body_from_label(cand) == btype:
+            return cand, 'name-history'
+
+    # 3) 本行轴距分级
+    body = seg_body_from_label(raw)
+    if body is None and btype != 'MPV/SUV':
+        body = btype
+    if body in SEG_BODIES and isinstance(wheelbase, (int, float)):
+        s = seg_wheelbase_level(body, wheelbase)
+        if s:
+            return s, 'wheelbase'
+
+    # 4) 同名称他批轴距（取中位数）分级
+    if body in SEG_BODIES and r['wb']:
+        vals = sorted(r['wb'])
+        s = seg_wheelbase_level(body, vals[len(vals) // 2])
+        if s:
+            return s, 'name-wheelbase'
+
+    # 5) Lux 笼统值 → 保留类别（豪华品牌按品牌序列分级，不按轴距）
+    if raw and raw.startswith(SEG_LUX_PREFIX) and seg_body_from_label(raw):
+        return f"{SEG_LUX_PREFIX}{seg_body_from_label(raw)}", 'lux'
+
+    # 6) 车长兜底（落在该车身形式合理区间内）
+    if body in SEG_BODIES and isinstance(length, (int, float)):
+        lo, hi = SEG_LEN_RANGE[body]
+        if lo <= length <= hi:
+            return f'{body}-未分级', 'length'
+
+    # 7) 仅知车身形式 → 显式「未分级」（诚实标注，不用笼统值冒充具体值）
+    if body in SEG_BODIES:
+        return f'{body}-未分级', 'body-only'
+
+    return None, 'unresolved'
+
+
+SEG_IDX = 2          # 记录内 细分市场 位
+PTYPE_IDX = 1        # 记录内 动力类型（非公告产品类型）
+GN_IDX = 24          # 记录内 通用名称
+AB_IDX = 22          # 记录内 轴距(mm)
+LG_IDX = 23          # 记录内 车长(mm)
+
+
+def build_seg_ref_from_records(records):
+    """由记录集建立「通用名称 → 已规范细分市场 / 已知尺寸」参照表。"""
+    ref = {}
+    for rec in records:
+        gn = rec[GN_IDX]
+        g = str(gn or '').strip().split(',')[0].strip()
+        if not g:
+            continue
+        e = ref.setdefault(g, {'seg': set(), 'wb': set(), 'ln': set()})
+        s = rec[SEG_IDX]
+        if s and seg_is_specific(s) and not s.startswith(SEG_LUX_PREFIX):
+            e['seg'].add(s)
+        for key, ix in (('wb', AB_IDX), ('ln', LG_IDX)):
+            v = rec[ix]
+            if isinstance(v, (int, float)):
+                e[key].add(v)
+    return ref
+
+
+def normalize_segments(records, ptype_raw):
+    """就地规范化全部记录的细分市场。ptype_raw: 记录序号 → 公告产品类型。
+
+    返回 (统计字典, 未落位样例列表)
+    """
+    ref = build_seg_ref_from_records(records)
+    stat = {}
+    unresolved = []
+    for i, rec in enumerate(records):
+        raw, how = resolve_segment(rec[SEG_IDX], ptype_raw.get(i), rec[GN_IDX],
+                                   rec[AB_IDX], rec[LG_IDX], ref)
+        rec[SEG_IDX] = raw
+        stat[how] = stat.get(how, 0) + 1
+        if raw is None:
+            unresolved.append((rec[0], rec[GN_IDX], ptype_raw.get(i)))
+    return stat, unresolved
+
+
 def norm_bt(v):
     """电池类型归一化：杂称（磷酸铁锂电池/蓄电池/LFP/储能单体种类…）合并为标准口径；
     '未提供'等视为缺失。核算依据 = 已有数据中的百分比占比。"""
@@ -226,6 +392,7 @@ def load_records(path):
     records = []
     skipped = 0
     cleaned = 0
+    ptype_raw = {}          # 记录序号 → 公告产品类型（细分市场规范化用）
     it = ws.iter_rows(min_row=1, values_only=True)
     hdr = [str(c).strip() if c is not None else '' for c in next(it)]
     hi = {h: i for i, h in enumerate(hdr)}
@@ -292,9 +459,13 @@ def load_records(path):
             clean_str(cell(row, '通用名称')),   # gn 通用名称（散点悬浮/明细表展示）
             val['rt'], rp, drive,        # rt 后电机扭矩 / rp 后电机功率 / drive 两驱0·四驱1
         ]
+        ptype_raw[len(records)] = str(cell(row, '产品类型') or '')
         records.append(rec)
     wb.close()
-    return records, skipped, cleaned
+
+    # v4.6.0：细分市场规范化（消除车型名混入与笼统值，按尺寸落位到具体细分市场）
+    seg_stat, seg_unresolved = normalize_segments(records, ptype_raw)
+    return records, skipped, cleaned, seg_stat, seg_unresolved
 
 
 def seg_key(s):
@@ -491,6 +662,20 @@ select:hover,select:focus{border-color:var(--clay)}
 .chart{width:100%;height:340px}
 .chart.tall{height:400px}
 .chart.short{height:280px}
+/* 自定义分布控制条 */
+.cd-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0 6px;
+  padding:10px 12px;background:var(--card2);border:1px solid var(--border);border-radius:9px}
+.cd-bar select{min-width:150px;max-width:230px}
+.cd-bar .f-label{margin-left:4px}
+.cd-bar .f-label:first-child{margin-left:0}
+.cd-zscale{display:flex;align-items:center;gap:8px;padding-left:10px;border-left:1px solid var(--border)}
+.cd-zscale.hide{display:none}
+.cd-zscale input[type=range]{width:120px;accent-color:var(--clay);cursor:pointer}
+.cd-zval{color:var(--clay);font-family:var(--mono);font-size:11.5px;min-width:42px}
+.cd-btn{background:var(--card);color:var(--dim);border:1px solid var(--border2);border-radius:6px;
+  padding:6px 12px;font-size:12.5px;cursor:pointer;font-family:var(--sans);transition:all .15s}
+.cd-btn:hover{color:var(--clay);border-color:var(--clay)}
+.cd-hint{color:var(--faint);font-size:11.5px;margin-left:auto}
 @media(max-width:1080px){.c-s6,.c-s4,.c-s8,.c-s5,.c-s7,.c-s3{grid-column:span 12}}
 
 /* ---------- Insight strip ---------- */
@@ -720,6 +905,30 @@ body.show-gaps .card.gap-hidden-note{display:none}
 <section class="panel" id="pDist">
   <div class="insight"><div class="ic">§</div><div class="tx" id="insightDTx"></div></div>
   <div class="grid" id="distGrid"></div>
+  <div class="grid" style="margin-top:16px">
+    <div class="card c-s12">
+      <div class="c-h">
+        <div class="c-t">自定义分布</div>
+        <div class="c-s">Custom Distribution · 自由选择纵横维度 · 选定 Z 轴即为泡泡图</div>
+      </div>
+      <div class="cd-bar">
+        <span class="f-label">横坐标 X</span>
+        <select id="cdX"></select>
+        <span class="f-label">纵坐标 Y</span>
+        <select id="cdY"></select>
+        <span class="f-label">泡泡直径 Z</span>
+        <select id="cdZ"></select>
+        <span class="cd-zscale" id="cdZScaleWrap">
+          <span class="f-label">泡泡比例</span>
+          <input type="range" id="cdZScale" min="20" max="260" value="100" step="5">
+          <span class="cd-zval" id="cdZVal">100%</span>
+        </span>
+        <button class="cd-btn" id="cdSwap" title="交换 X / Y">⇄ 交换</button>
+        <button class="cd-btn" id="cdReset" title="恢复默认维度">重置</button>
+      </div>
+      <div class="chart tall" id="chCustom"></div>
+    </div>
+  </div>
 </section>
 
 <!-- ============ Panel 5 企业与品牌 ============ -->
@@ -905,16 +1114,17 @@ function segKey(s){
 }
 
 /* ==================== 状态 ==================== */
-const state = {bFrom:META.batchMin, bTo:META.batchMax, type:'ALL', segs:new Set()};
+/* segs：已勾选（纳入统计）的细分市场集合；segAll=true 表示全选（不过滤） */
+const state = {bFrom:META.batchMin, bTo:META.batchMax, type:'ALL', segs:new Set(), segAll:true};
 
 /* ==================== 数据工具（缺失不计入统计） ==================== */
 function filtered(){
   return RAW.filter(r=>{
     if(r[I.b] < state.bFrom || r[I.b] > state.bTo) return false;
     if(state.type!=='ALL' && r[I.t]!==state.type) return false;
-    if(state.segs.size>0){
+    if(!state.segAll){
       const s = r[I.s];
-      if(s==null || !state.segs.has(s)) return false;   // 未填报细分市场在选择具体市场时排除
+      if(s==null || !state.segs.has(s)) return false;   // 仅有勾选的细分市场纳入统计
     }
     return true;
   });
@@ -1684,8 +1894,141 @@ function insightD(rows){
   document.getElementById('insightDTx').innerHTML =
     `分布格局从五个角度呈现车型参数的<u>两两关系</u>：续航-尺寸、容量-续航、电耗-续航、密度-续航、质量-尺寸。`+
     `当前筛选内有效样本：续航×轴距 <em>${nAb}</em>、容量×续航 <em>${nCR}</em>、电耗×续航 <em>${nEc}</em>、密度×续航 <em>${nEd}</em> 款（缺失不计入）。`+
-    `本页由 <b>DIST_DEFS</b> 配置驱动，后续增加或下线分析维度只需增删配置条目。`;
+    `右侧【自定义分布】可自由选择 X / Y 维度；选定 Z 轴后自动转为<u>泡泡图</u>，泡泡直径按数值等比缩放。`;
 }
+
+/* ==================== 自定义分布（X/Y 散点 · 可选 Z 泡泡） ==================== */
+/* 字段目录：分布格局已用字段优先置顶，其余按语义顺序排列。
+   仅纳入「可量化」字段（数值型），标签类字段不作为 Z 轴备选。 */
+const CD_FIELDS = (()=>{
+  const prio = [];
+  const seen = new Set();
+  // 1) 分布格局已用字段优先
+  for(const d of DIST_DEFS){
+    for(const [k,n] of [[d.xK,d.xN],[d.yK,d.yN]]){
+      if(!seen.has(k)){ seen.add(k); prio.push({k,n,num:true}); }
+    }
+  }
+  // 2) 其余可量化字段，按语义顺序
+  const rest = [
+    [I.w,  '整备质量(kg)',            true],
+    [I.r,  '纯电续航里程(km)',         true],
+    [I.c,  '电池容量(kWh)',           true],
+    [I.ed, '电池能量密度(Wh/kg)',      true],
+    [I.ec, '百公里电耗(kWh/100km)',    true],
+    [I.fp, '前电机功率(kW)',           true],
+    [I.tp, '电机总功率(kW)',           true],
+    [I.tq, '系统扭矩(Nm)',            true],
+    [I.fo, '综合油耗(L/100km)',        true],
+    [I.dv, '发动机排量(mL)',           true],
+    [I.ep, '发动机功率(kW)',           true],
+    [I.ab, '轴距(mm)',                true],
+    [I.lg, '车长(mm)',                true],
+    [I.b,  '批次',                    true]
+  ];
+  for(const [k,n,num] of rest){
+    if(!seen.has(k)){ seen.add(k); prio.push({k,n,num}); }
+  }
+  return prio;
+})();
+const CD_LABEL = k => (CD_FIELDS.find(f=>f.k===k)||{n:'—'}).n;
+const CD_DEFAULT = {x:I.ab, y:I.r, z:null};
+let CD_STATE = {x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100};
+
+function cdFillSelect(el, val, allowNone){
+  el.innerHTML = (allowNone?`<option value="">（不使用 · 散点图）</option>`:'') +
+    CD_FIELDS.map(f=>`<option value="${f.k}">${f.n}</option>`).join('');
+  el.value = val==null?'':String(val);
+}
+function cdInitUI(){
+  const sx=document.getElementById('cdX'), sy=document.getElementById('cdY'),
+        sz=document.getElementById('cdZ'), ss=document.getElementById('cdZScale');
+  if(!sx) return;
+  cdFillSelect(sx, CD_STATE.x, false);
+  cdFillSelect(sy, CD_STATE.y, false);
+  cdFillSelect(sz, CD_STATE.z==null?'':CD_STATE.z, true);
+  const sync=()=>{ ss.parentElement.classList.toggle('hide', !sz.value); };
+  sx.onchange=()=>{ CD_STATE.x=+sx.value; renderCustom(filtered()); };
+  sy.onchange=()=>{ CD_STATE.y=+sy.value; renderCustom(filtered()); };
+  sz.onchange=()=>{ CD_STATE.z = sz.value===''?null:+sz.value; sync(); renderCustom(filtered()); };
+  ss.oninput =()=>{ CD_STATE.zScale=+ss.value;
+    document.getElementById('cdZVal').textContent = ss.value+'%'; renderCustom(filtered()); };
+  document.getElementById('cdSwap').onclick=()=>{
+    const t=CD_STATE.x; CD_STATE.x=CD_STATE.y; CD_STATE.y=t;
+    sx.value=String(CD_STATE.x); sy.value=String(CD_STATE.y); renderCustom(filtered());
+  };
+  document.getElementById('cdReset').onclick=()=>{
+    CD_STATE={x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100};
+    sx.value=String(CD_STATE.x); sy.value=String(CD_STATE.y); sz.value='';
+    ss.value=100; document.getElementById('cdZVal').textContent='100%'; sync();
+    renderCustom(filtered());
+  };
+  document.getElementById('cdZVal').textContent = CD_STATE.zScale+'%';
+  sync();
+}
+function cdBubbleSize(z, zmin, zmax){
+  /* 泡泡直径：按数值在 [zmin,zmax] 内线性映射到直径区间，再乘用户比例系数。
+     面积与数值近似成正比（直径取平方根），避免大值视觉失真。 */
+  const LO=10, HI=52;                       // 基础直径像素区间
+  const span=(zmax-zmin)||1;
+  const t=Math.max(0,Math.min(1,(z-zmin)/span));
+  const r=Math.sqrt(t);                     // 面积∝数值 → 直径∝√数值
+  return (LO+(HI-LO)*r) * (CD_STATE.zScale/100);
+}
+function renderCustom(rows){
+  const el=document.getElementById('chCustom'); if(!el) return;
+  const xK=CD_STATE.x, yK=CD_STATE.y, zK=CD_STATE.z;
+  const hasZ = zK!=null;
+  const bev=[], phev=[];
+  let zmin=Infinity, zmax=-Infinity;
+  for(const r of rows){
+    const x=r[xK], y=r[yK];
+    if(x==null||y==null) continue;
+    let z=null;
+    if(hasZ){ z=r[zK]; if(z==null||!isFinite(z)) continue; if(z<zmin)zmin=z; if(z>zmax)zmax=z; }
+    const pt={value: hasZ?[x,y,z]:[x,y], n:r[I.gn], b:r[I.bd]};
+    (r[I.t]==='BEV'?bev:phev).push(pt);
+  }
+  const xN=CD_LABEL(xK), yN=CD_LABEL(yK), zN=hasZ?CD_LABEL(zK):'';
+  const sz = hasZ ? (p=>cdBubbleSize(p.value[2],zmin,zmax)) : 7;
+  const trB=trendSeries(bev.map(p=>p.value),'#D97757','BEV趋势线');
+  const trP=trendSeries(phev.map(p=>p.value),'#6B9BD1','PHEV/EREV趋势线');
+  const trends=[trB,trP].filter(Boolean);
+  TREND_REGS['chCustom']=Object.fromEntries(trends.map(t=>[t.name,t.__formula]));
+  const mk=(nm,ps,color)=>hasZ
+    ? {name:nm,type:'scatter',data:ps,symbolSize:sz,itemStyle:{color:`rgba(${color},.45)`,
+        borderColor:`rgba(${color},.85)`,borderWidth:1},emphasis:{focus:'series'}}
+    : {name:nm,type:'scatter',data:ps,symbolSize:sz,itemStyle:{color:`rgba(${color},${TC().scatterA})`},
+        large:true,largeThreshold:800};
+  const series=[ mk('BEV',bev,'217,119,87'), mk('PHEV/EREV',phev,'107,155,209') ];
+  trends.forEach(t=>series.push(t));
+  const total=bev.length+phev.length;
+  const zs = hasZ ? ` · Z 轴 <em>${zN}</em>（${fmt(Math.round(zmin))}~${fmt(Math.round(zmax))}，泡泡直径 <em>${CD_STATE.zScale}%</em>）` : '';
+  setInsight('chCustom',
+    `${hasZ?'泡泡图':'散点图'}：X <em>${xN}</em> × Y <em>${yN}</em>${zs} · 有效样本 <em>${fmt(total)}</em> 组`+
+    `（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`+
+    (hasZ?' ｜ 泡泡面积与 Z 值成正比，可用「泡泡比例」调整整体观感。':' ｜ 选择 Z 轴即可切换为泡泡图。'));
+  chart('chCustom').setOption({
+    tooltip:Object.assign({trigger:'item',
+      formatter:p=>{
+        const t=trends.find(x=>x.name===p.seriesName);
+        if(t) return t.tooltip.formatter();
+        const v=p.data.value;
+        return `${p.seriesName} · 品牌车型：<b>${brandName(p)}</b><br>`+
+          `${xN}：<b>${v[0]} ${xuOf(xN)}</b><br>${yN}：<b>${v[1]} ${xuOf(yN)}</b>`+
+          (hasZ?`<br>${zN}：<b>${v[2]} ${xuOf(zN)}</b>`:'');
+      }},TT),
+    legend:LG({data:['BEV','PHEV/EREV',...trends.map(t=>t.name)]}),
+    grid:GRID(),
+    xAxis:Object.assign({type:'value',name:xN,nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis},scale:true},AXS()),
+    yAxis:Object.assign({type:'value',name:yN,nameTextStyle:{color:TC().axis},scale:true},AXS()),
+    series
+  },true);
+  bindTrendClick('chCustom');
+}
+/* 从「名称(单位)」中取单位 */
+function xuOf(name){ const m=String(name).match(/\(([^)]*)\)\s*$/); return m?m[1]:''; }
+function initCustomDist(){ cdInitUI(); }
 
 /* ==================== 数据质量（底部） ==================== */
 function chFill(rows){
@@ -2095,8 +2438,8 @@ function applyNewData(records,fname){
   document.getElementById('hBRange').textContent = `${META_CUR.batchMin} ~ ${META_CUR.batchMax}`;
   document.getElementById('hBCnt').textContent = META_CUR.batchCount;
   document.getElementById('hGen').textContent = META_CUR.generatedAt;
-  // 重置筛选并重建选项
-  state.bFrom=META_CUR.batchMin; state.bTo=META_CUR.batchMax; state.type='ALL'; state.segs.clear();
+  // 重置筛选并重建选项（initFilters 内会按新数据重建细分市场并全选）
+  state.bFrom=META_CUR.batchMin; state.bTo=META_CUR.batchMax; state.type='ALL';
   initFilters();
   updateAll();
 }
@@ -2150,7 +2493,7 @@ function updateAll(){
   insight2(rows); chPwDist(rows); chMsTop(rows); chPtq(rows); chPwTrend(rows); chPwr(rows);
   insight3(rows); chDv(rows); chDvEp(rows); chEsTop(rows); chFo(rows); chDvTrend(rows);
   insight4(rows); chRgB(rows); chRgP(rows); chCr(rows); chBtTrend(rows); chEd(rows); chEcTrend(rows); chEc(rows);
-  insightD(rows); renderDists(rows);
+  insightD(rows); renderDists(rows); renderCustom(rows);
   insightEnt(rows); chEntTrend(rows); chEntSeg(rows); chNewEnt(rows); chBrandTop(rows);
   insight5(rows); chFill(rows); chSrc(rows); chHeat(rows);
   updateDmStat(); renderTable(false);
@@ -2161,7 +2504,7 @@ function updateAll(){
 /* ==================== 筛选器 ==================== */
 function rebuildSegPanel(){
   const segList = document.getElementById('segList');
-  // 各细分市场记录计数
+  // 各细分市场记录计数（只统计已规范的具体值）
   const cnt = new Map();
   for(const r of RAW){ if(r[I.s]!=null) cnt.set(r[I.s],(cnt.get(r[I.s])||0)+1); }
   const items = [...cnt.entries()];
@@ -2171,25 +2514,37 @@ function rebuildSegPanel(){
     if(ka[1]!==kb[1]) return ka[1]-kb[1];
     return b[1]-a[1];
   });
+  // 初始：全部勾选（segAll=true → 不过滤）
+  state.segAll = true; state.segs = new Set(items.map(x=>x[0]));
   segList.innerHTML = items.map(([s,c])=>
     `<label class="ms-item"><input type="checkbox" value="${s}" checked><span>${s}</span><span class="c">${c}</span></label>`).join('');
   segList.querySelectorAll('input').forEach(cb=>{
     cb.onchange = ()=>{
-      if(cb.checked) state.segs.delete(cb.value); else state.segs.add(cb.value);
+      if(cb.checked) state.segs.add(cb.value); else state.segs.delete(cb.value);
+      state.segAll = state.segs.size === items.length;
       syncSegBtn();
       updateAll();
     };
   });
+  syncSegBtn();
+}
+function setAllSegs(on){
+  const segList = document.getElementById('segList');
+  segList.querySelectorAll('input').forEach(cb=>{ cb.checked = on; });
+  state.segs = new Set(on ? [...segList.querySelectorAll('input')].map(cb=>cb.value) : []);
+  state.segAll = on;
+  syncSegBtn();
+  updateAll();
 }
 function syncSegBtn(){
   const segList = document.getElementById('segList');
   const boxes = [...segList.querySelectorAll('input')];
-  const off = boxes.filter(b=>!b.checked).length;
+  const n = state.segs.size, total = boxes.length;
   const btn = document.getElementById('segBtn');
-  if(off===0) btn.innerHTML = `全部细分市场<span class="caret">▾</span>`;
-  else if(off===boxes.length) btn.innerHTML = `细分市场：无<span class="n">(0)</span><span class="caret">▾</span>`;
-  else btn.innerHTML = `细分市场：<span class="n">${boxes.length-off}</span>/${boxes.length}<span class="caret">▾</span>`;
-  // state.segs 语义：存储"排除项"（保持选择具体市场）
+  if(n===0) btn.innerHTML = `细分市场：<span class="n">未选择</span><span class="caret">▾</span>`;
+  else if(state.segAll) btn.innerHTML = `全部细分市场<span class="n">(${total})</span><span class="caret">▾</span>`;
+  else btn.innerHTML = `细分市场：<span class="n">${n}</span>/${total}<span class="caret">▾</span>`;
+  // state.segs 语义：已勾选（纳入统计）的细分市场
 }
 function initFilters(){
   const bF = document.getElementById('bFrom'), bT = document.getElementById('bTo');
@@ -2224,27 +2579,21 @@ function initFilters(){
   });
 
   rebuildSegPanel();
-  state.segs.clear();
-  syncSegBtn();
 
   // 多选下拉开合
   const sBtn=document.getElementById('segBtn'), sPanel=document.getElementById('segPanel');
   sBtn.onclick = e=>{ e.stopPropagation(); sBtn.classList.toggle('open'); sPanel.classList.toggle('open'); };
   sPanel.onclick = e=>e.stopPropagation();
   document.addEventListener('click',()=>{ sBtn.classList.remove('open'); sPanel.classList.remove('open'); });
-  document.getElementById('segSelAll').onclick = ()=>{ state.segs.clear(); sPanel.querySelectorAll('input').forEach(b=>b.checked=true); syncSegBtn(); updateAll(); };
-  document.getElementById('segClrAll').onclick = ()=>{
-    sPanel.querySelectorAll('input').forEach(b=>{ b.checked=false; state.segs.add(b.value); });
-    syncSegBtn(); updateAll();
-  };
+  document.getElementById('segSelAll').onclick = ()=>setAllSegs(true);
+  document.getElementById('segClrAll').onclick = ()=>setAllSegs(false);
 
   document.getElementById('fReset').onclick = ()=>{
     state.bFrom=META_CUR.batches[0]; state.bTo=META_CUR.batches[META_CUR.batches.length-1];
-    state.type='ALL'; state.segs.clear();
+    state.type='ALL';
     bF.value=state.bFrom; bT.value=state.bTo;
     document.querySelectorAll('#typeGroup button').forEach(b=>b.classList.toggle('on',b.dataset.t==='ALL'));
-    sPanel.querySelectorAll('input').forEach(b=>b.checked=true);
-    syncSegBtn(); updateAll();
+    setAllSegs(true);
   };
 }
 
@@ -2284,6 +2633,7 @@ initQuality();
 initExportUI();
 initImport();
 initDist();
+initCustomDist();
 initCardInsights();
 initGapBtn();
 initToTop();
@@ -2307,9 +2657,20 @@ def main():
             sys.exit(1)
 
     print(f'[1/4] 读取数据: {in_path}')
-    records, skipped, cleaned = load_records(in_path)
+    records, skipped, cleaned, seg_stat, seg_unresolved = load_records(in_path)
     print(f'      共 {len(records)} 条记录' + (f'（跳过 {skipped} 条无效行）' if skipped else ''))
     print(f'      剔除物理范围外异常值 {cleaned} 个（已置空，避免污染统计）')
+    # 细分市场规范化结果
+    SEG_STAT_LABEL = {
+        'keep': '已是具体值', 'name-history': '同名称历史', 'wheelbase': '轴距分级',
+        'name-wheelbase': '同名称轴距', 'lux': 'Lux 保留类别', 'length': '车长兜底',
+        'body-only': '仅车身形式(未分级)', 'unresolved': '无法落位(置空)',
+    }
+    print('      细分市场规范化：' + ' · '.join(
+        f'{SEG_STAT_LABEL.get(k, k)} {v}' for k, v in
+        sorted(seg_stat.items(), key=lambda x: -x[1])))
+    if seg_unresolved:
+        print(f'      未能落位 {len(seg_unresolved)} 条（无尺寸且无同名称参照，置空不臆测）')
 
     print('[2/4] 构建数据与元信息...')
     meta = build_meta(records, in_path)
