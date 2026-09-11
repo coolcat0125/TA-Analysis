@@ -154,45 +154,72 @@ def clean_seg(v):
 
 
 # ---------------------------------------------------------------------------
-# 细分市场规范化（v4.6.0）
-#   目标：杜绝「车型名混入细分市场」与「笼统值（Car/SUV/MPV）」，
-#         让每个车型结合尺寸落位到具体细分市场。
-#   分级依据：底表《车型级别定义》工作表——以公告轴距(mm)为唯一分级依据，
-#             车身形式取自公告产品类型/产品名称。
+# 细分市场规范化（v4.7.1）
+#   【用户口径】车身形式以**公告分类**为准（产品名称：轿车/运动型乘用车/
+#   多用途乘用车/越野乘用车），具体级别以**尺寸**为准（《车型级别定义》轴距阈值），
+#   最终整合为「<公告车身>-<尺寸级别>」（如 SUV-C），并确保**每一行都落到具体级别**。
+#
+#   落位优先级：
+#     1. 已是具体级别且车身与公告一致 → 保持
+#     2. 车身 = 公告分类（产品类型/产品名称；「多用途乘用车」借同车型既有标签或型号编码区分 SUV/MPV）
+#     3. 级别 = 轴距按阈值分级；轴距缺失时依次用：同车型众数轴距 → 型号编码推定车身＋车长
+#     4. Lux / Sports 按《车型级别定义》保留各自序列
 # ---------------------------------------------------------------------------
 SEG_BODIES = ('Car', 'SUV', 'MPV')
 SEG_LUX_PREFIX = 'Lux '
 
+# 轴距阈值（与《车型级别定义》完全一致）
+SEG_WB_CAR = (2650, 2740, 2850, 3000)      # A <2650 ≤B <2740 ≤C <2850 ≤D <3000 ≤E
+SEG_WB_SUV = (2680, 2850, 3000)            # B <2680 ≤C <2850 ≤D <3000 ≤E
+SEG_WB_MPV = (3000,)                       # C <3000 ≤D
+
+# 产品型号编码首段数字 → 车身形式（由已规范行实测统计：2→SUV 95%、7→Car 92%、6→SUV 86%）
+# 注：6 为「客车」类编码，既含 SUV 也含 MPV，故仅作辅助，需再借长度/同车型信息
+SEG_CODE_BODY = {'2': 'SUV', '7': 'Car'}
+
+# 各车身形式车长合理区间（兜底校验用）
+SEG_LEN_RANGE = {'Car': (2810, 5850), 'SUV': (2830, 5860), 'MPV': (3640, 5970)}
+
 
 def seg_wheelbase_level(body, mm):
     """轴距阈值分级（与《车型级别定义》一致）。"""
-    if mm is None or body is None:
+    if mm is None or body not in SEG_BODIES:
         return None
     if body == 'Car':
-        return ('Car-A' if mm < 2650 else 'Car-B' if mm < 2740 else
-                'Car-C' if mm < 2850 else 'Car-D' if mm < 3000 else 'Car-E')
+        a, b, c, d = SEG_WB_CAR
+        return ('Car-A' if mm < a else 'Car-B' if mm < b else
+                'Car-C' if mm < c else 'Car-D' if mm < d else 'Car-E')
     if body == 'SUV':
-        return ('SUV-B' if mm < 2680 else 'SUV-C' if mm < 2850 else
-                'SUV-D' if mm < 3000 else 'SUV-E')
+        b, c, d = SEG_WB_SUV
+        return 'SUV-B' if mm < b else 'SUV-C' if mm < c else 'SUV-D' if mm < d else 'SUV-E'
     if body == 'MPV':
-        return 'MPV-C' if mm < 3000 else 'MPV-D'
+        return 'MPV-C' if mm < SEG_WB_MPV[0] else 'MPV-D'
     return None
 
 
-def seg_body_from_type(product_type):
-    """由公告产品类型推断车身形式；『多用途乘用车』无法区分 SUV/MPV，返回 MPV/SUV。"""
-    t = str(product_type or '')
+def seg_body_from_announcement(product_type, product_name):
+    """【公告分类】车身形式。『多用途乘用车』按公告口径同时涵盖 SUV 与 MPV，返回 MPV/SUV 待细化。"""
+    t = f'{product_type or ""} {product_name or ""}'
+    if '越野' in t:
+        return 'SUV'
+    if '运动型' in t:
+        return 'SUV'
     if '轿车' in t:
         return 'Car'
-    if '运动型' in t or '跑车' in t:
-        return 'Sports'
-    if '多用途乘用车' in t or '客车' in t:
+    if '多用途乘用车' in t:
         return 'MPV/SUV'
+    if '客车' in t:
+        return 'MPV'
     return None
+
+
+def seg_body_from_code(model_code):
+    """产品型号编码首段数字 → 车身形式（辅助判据）。"""
+    m = re.search(r'\d', str(model_code or ''))
+    return SEG_CODE_BODY.get(m.group(0)) if m else None
 
 
 def seg_body_from_label(label):
-    """由细分市场标签取车身形式（去掉 Lux 前缀后取 '-' 前段）。"""
     if not label:
         return None
     b = label[len(SEG_LUX_PREFIX):].strip() if label.startswith(SEG_LUX_PREFIX) else label
@@ -206,73 +233,50 @@ def seg_is_specific(label):
     """是否为「具体」细分市场（可枚举、可展示、可统计）。"""
     if not label:
         return False
-    if label == 'Sports':
-        return True
-    if label.startswith(SEG_LUX_PREFIX):
+    if label == 'Sports' or label.startswith(SEG_LUX_PREFIX):
         return True
     if '-' not in label:
         return False
-    body, lvl = label.split('-', 1)
+    body, lv = label.split('-', 1)
     if body not in SEG_BODIES:
         return False
-    return (lvl.isalpha() and len(lvl) == 1) or lvl.isdigit()
+    return (len(lv) == 1 and lv.isalpha()) or lv.isdigit()
 
 
-# 各车身形式的车长合理区间（由已规范行的经验分布得出，仅作兜底校验）
-SEG_LEN_RANGE = {'Car': (2810, 5850), 'SUV': (2830, 5860), 'MPV': (3640, 5970)}
+def build_seg_ref_from_records(records):
+    """建立参照表：通用名称 / 产品型号基码 → 各批次轴距·车长·既有级别。
 
-
-def resolve_segment(raw, product_type, generic_name, wheelbase, length, ref):
-    """把原始细分市场值规范为「具体」值。返回 (细分市场, 依据)。
-
-    优先级：已规范 → 同名称他批唯一值 → 本行轴距分级 → 同名称他批轴距
-            → Lux 保留类别 → 车长兜底 → 仅车身形式（未分级）→ 无法落位
+    两级键：通用名称优先（同车型直接可比）；通用名称无尺寸时退化到产品型号基码
+    （同基码 = 同一车型同一尺寸，可跨批次补全）。
     """
-    g = str(generic_name or '').strip().split(',')[0].strip()
-    r = ref.get(g) or {'seg': set(), 'wb': set(), 'ln': set()}
-    btype = seg_body_from_type(product_type)
+    ref = {}
+    for rec in records:
+        g = str(rec[GN_IDX] or '').strip().split(',')[0].strip()
+        keys = []
+        if g:
+            keys.append('n:' + g)
+        cb = seg_code_base(rec[MODEL_IDX])
+        if cb:
+            keys.append('c:' + cb)
+        s = rec[SEG_IDX]
+        for k in keys:
+            e = ref.setdefault(k, {'wb': {}, 'ln': {}, 'seg': set()})
+            if s and seg_is_specific(s) and not s.startswith(SEG_LUX_PREFIX):
+                e['seg'].add(s)
+            for key, ix in (('wb', AB_IDX), ('ln', LG_IDX)):
+                v = rec[ix]
+                if isinstance(v, (int, float)):
+                    e[key][int(v)] = e[key].get(int(v), 0) + 1
+    return ref
 
-    # 1) 已是具体值 → 保持
-    if seg_is_specific(raw):
-        return raw, 'keep'
 
-    # 2) 同名称他批唯一具体值（车身形式需一致，避免跨车身错配）
-    if len(r['seg']) == 1 and btype not in (None, 'MPV/SUV'):
-        cand = next(iter(r['seg']))
-        if seg_body_from_label(cand) == btype:
-            return cand, 'name-history'
-
-    # 3) 本行轴距分级
-    body = seg_body_from_label(raw)
-    if body is None and btype != 'MPV/SUV':
-        body = btype
-    if body in SEG_BODIES and isinstance(wheelbase, (int, float)):
-        s = seg_wheelbase_level(body, wheelbase)
-        if s:
-            return s, 'wheelbase'
-
-    # 4) 同名称他批轴距（取中位数）分级
-    if body in SEG_BODIES and r['wb']:
-        vals = sorted(r['wb'])
-        s = seg_wheelbase_level(body, vals[len(vals) // 2])
-        if s:
-            return s, 'name-wheelbase'
-
-    # 5) Lux 笼统值 → 保留类别（豪华品牌按品牌序列分级，不按轴距）
-    if raw and raw.startswith(SEG_LUX_PREFIX) and seg_body_from_label(raw):
-        return f"{SEG_LUX_PREFIX}{seg_body_from_label(raw)}", 'lux'
-
-    # 6) 车长兜底（落在该车身形式合理区间内）
-    if body in SEG_BODIES and isinstance(length, (int, float)):
-        lo, hi = SEG_LEN_RANGE[body]
-        if lo <= length <= hi:
-            return f'{body}-未分级', 'length'
-
-    # 7) 仅知车身形式 → 显式「未分级」（诚实标注，不用笼统值冒充具体值）
-    if body in SEG_BODIES:
-        return f'{body}-未分级', 'body-only'
-
-    return None, 'unresolved'
+def seg_code_base(model_code):
+    """产品型号基码：去掉末尾变体配置码，得到「制造商码+车型序号+动力码」。"""
+    s = str(model_code or '').strip()
+    if not s:
+        return None
+    m = re.match(r'^([A-Z0-9]+?)([A-Z]\d?[A-Z]?)$', s)
+    return m.group(1) if m else s
 
 
 SEG_IDX = 2          # 记录内 细分市场 位
@@ -280,42 +284,91 @@ PTYPE_IDX = 1        # 记录内 动力类型（非公告产品类型）
 GN_IDX = 24          # 记录内 通用名称
 AB_IDX = 22          # 记录内 轴距(mm)
 LG_IDX = 23          # 记录内 车长(mm)
+ANNO_BODY_IDX = 28   # 记录内 公告车身形式（新增，供核验与悬浮展示）
+MODEL_IDX = 19       # 记录内 产品型号
 
 
-def build_seg_ref_from_records(records):
-    """由记录集建立「通用名称 → 已规范细分市场 / 已知尺寸」参照表。"""
-    ref = {}
-    for rec in records:
-        gn = rec[GN_IDX]
-        g = str(gn or '').strip().split(',')[0].strip()
-        if not g:
-            continue
-        e = ref.setdefault(g, {'seg': set(), 'wb': set(), 'ln': set()})
-        s = rec[SEG_IDX]
-        if s and seg_is_specific(s) and not s.startswith(SEG_LUX_PREFIX):
-            e['seg'].add(s)
-        for key, ix in (('wb', AB_IDX), ('ln', LG_IDX)):
-            v = rec[ix]
-            if isinstance(v, (int, float)):
-                e[key].add(v)
-    return ref
+def _modal(counter):
+    return max(counter.items(), key=lambda kv: kv[1])[0] if counter else None
 
 
-def normalize_segments(records, ptype_raw):
-    """就地规范化全部记录的细分市场。ptype_raw: 记录序号 → 公告产品类型。
+def resolve_segment(rec, ptype_raw, pname_raw, ref):
+    """把一行规范为具体级别。返回 (细分市场, 依据, 公告车身)。"""
+    raw = str(rec[SEG_IDX] or '').strip()
+    g = str(rec[GN_IDX] or '').strip().split(',')[0].strip()
+    en = ref.get('n:' + g) or {}
+    cb = seg_code_base(rec[MODEL_IDX])
+    ec = ref.get('c:' + cb) if cb else None
+    ann = seg_body_from_announcement(ptype_raw.get(id(rec)), pname_raw.get(id(rec)))
 
-    返回 (统计字典, 未落位样例列表)
+    # 1) Lux / Sports：按《车型级别定义》保留各自序列
+    if raw.startswith(SEG_LUX_PREFIX) and seg_body_from_label(raw):
+        return raw, 'lux', seg_body_from_label(raw)
+    if raw == 'Sports' or ann == 'Sports':
+        return 'Sports', 'sports', 'Sports'
+
+    # 2) 车身形式：公告优先；『多用途乘用车』借既有标签 → 型号编码
+    body = ann if ann in SEG_BODIES else None
+    if body is None:
+        segs = set()
+        for e in (en, ec or {}):
+            segs |= {s.split('-')[0] for s in e.get('seg', set()) if '-' in s and not s.startswith(SEG_LUX_PREFIX)}
+        segs = {s for s in segs if s in SEG_BODIES}
+        if segs:
+            body = max(segs, key=lambda s: sum(1 for e in (en, ec or {}) for x in e.get('seg', set()) if x.startswith(s + '-')))
+        else:
+            body = seg_body_from_code(rec[MODEL_IDX])
+    if body is None and raw and '-' in raw:
+        b0 = raw.split('-')[0]
+        if b0 in SEG_BODIES:
+            body = b0
+
+    # 3) 级别：轴距（本行 → 同车型众数 → 同型号基码众数）
+    wb = rec[AB_IDX]
+    src = '轴距分级'
+    if not isinstance(wb, (int, float)):
+        mw = _modal(en.get('wb', {}))
+        if mw:
+            wb, src = mw, '同车型众数轴距'
+        else:
+            mw = _modal((ec or {}).get('wb', {}))
+            if mw:
+                wb, src = mw, '同型号基码轴距'
+    if body and isinstance(wb, (int, float)):
+        s = seg_wheelbase_level(body, wb)
+        if s:
+            return s, src, body
+
+    # 4) 车长兜底：同类车身长度换算近似轴距（标注依据，不冒充实测）
+    ln = rec[LG_IDX]
+    if body and not isinstance(ln, (int, float)):
+        ln = _modal(en.get('ln', {})) or _modal((ec or {}).get('ln', {}))
+    if body and isinstance(ln, (int, float)):
+        approx = {'Car': ln - 2050, 'SUV': ln - 1900, 'MPV': ln - 1900}.get(body)
+        s = seg_wheelbase_level(body, approx)
+        if s:
+            return s, '车长推定', body
+
+    # 5) 无尺寸：显式标注未分级（车身形式可判，级别不可判）——不臆造级别
+    if body:
+        return f'{body}-未分级', '无尺寸(未分级)', body
+    return None, 'unresolved', None
+
+
+def normalize_segments(records, ptype_raw, pname_raw):
+    """就地规范化全部记录的细分市场，确保每行落到具体级别。
+
+    返回 (统计字典, 未落位样例, 公告车身写入回调数据)
     """
     ref = build_seg_ref_from_records(records)
     stat = {}
     unresolved = []
-    for i, rec in enumerate(records):
-        raw, how = resolve_segment(rec[SEG_IDX], ptype_raw.get(i), rec[GN_IDX],
-                                   rec[AB_IDX], rec[LG_IDX], ref)
-        rec[SEG_IDX] = raw
+    for rec in records:
+        s, how, body = resolve_segment(rec, ptype_raw, pname_raw, ref)
+        rec[SEG_IDX] = s
         stat[how] = stat.get(how, 0) + 1
-        if raw is None:
-            unresolved.append((rec[0], rec[GN_IDX], ptype_raw.get(i)))
+        if s is None:
+            unresolved.append((rec[0], rec[GN_IDX]))
     return stat, unresolved
 
 
@@ -392,7 +445,8 @@ def load_records(path):
     records = []
     skipped = 0
     cleaned = 0
-    ptype_raw = {}          # 记录序号 → 公告产品类型（细分市场规范化用）
+    ptype_raw = {}          # id(rec) → 公告产品类型（细分市场规范化用）
+    pname_raw = {}          # id(rec) → 公告产品名称（车身形式判据）
     it = ws.iter_rows(min_row=1, values_only=True)
     hdr = [str(c).strip() if c is not None else '' for c in next(it)]
     hi = {h: i for i, h in enumerate(hdr)}
@@ -458,13 +512,20 @@ def load_records(path):
             clean_num(cell(row, '车长(mm)')),  # lg 车长mm（占位列）
             clean_str(cell(row, '通用名称')),   # gn 通用名称（散点悬浮/明细表展示）
             val['rt'], rp, drive,        # rt 后电机扭矩 / rp 后电机功率 / drive 两驱0·四驱1
+            str(cell(row, '产品名称') or ''),   # pn 公告产品名称（公告分类口径，供核验展示）
         ]
-        ptype_raw[len(records)] = str(cell(row, '产品类型') or '')
+        ptype_raw[id(rec)] = str(cell(row, '产品类型') or '')
+        pname_raw[id(rec)] = str(cell(row, '产品名称') or '')
         records.append(rec)
     wb.close()
 
-    # v4.6.0：细分市场规范化（消除车型名混入与笼统值，按尺寸落位到具体细分市场）
-    seg_stat, seg_unresolved = normalize_segments(records, ptype_raw)
+    # v4.7.1：细分市场规范化（公告车身 + 尺寸级别 → 具体级别，确保每行落位）
+    seg_stat, seg_unresolved = normalize_segments(records, ptype_raw, pname_raw)
+    # 回填「公告车身形式 | 公告产品名称」到记录 pn 位（供悬浮窗核验公告口径）
+    for rec in records:
+        raw_pn = pname_raw.get(id(rec), '')
+        ann_body = seg_body_from_announcement(ptype_raw.get(id(rec)), raw_pn) or ''
+        rec.append(f'{ann_body}|{raw_pn}')
     return records, skipped, cleaned, seg_stat, seg_unresolved
 
 
@@ -676,6 +737,7 @@ select:hover,select:focus{border-color:var(--clay)}
 .cd-btn{background:var(--card);color:var(--dim);border:1px solid var(--border2);border-radius:6px;
   padding:6px 12px;font-size:12.5px;cursor:pointer;font-family:var(--sans);transition:all .15s}
 .cd-btn:hover{color:var(--clay);border-color:var(--clay)}
+.cd-btn.off{opacity:.5;border-style:dashed}
 .cd-hint{color:var(--faint);font-size:11.5px;margin-left:auto}
 @media(max-width:1080px){.c-s6,.c-s4,.c-s8,.c-s5,.c-s7,.c-s3{grid-column:span 12}}
 
@@ -932,6 +994,7 @@ body.show-gaps .card.gap-hidden-note{display:none}
           <span class="cd-zval" id="cdZVal">100%</span>
         </span>
         <button class="cd-btn" id="cdSwap" title="交换 X / Y">⇄ 交换</button>
+        <button class="cd-btn" id="cdLevels" title="在轴距轴上标注 A/B/C 等级区段">等级区段 ✓</button>
         <button class="cd-btn" id="cdReset" title="恢复默认维度">重置</button>
       </div>
       <div class="chart xl" id="chCustom"></div>
@@ -1029,12 +1092,12 @@ const RAW_INIT = __DATA_JSON__;
 'use strict';
 /* ==================== 索引与全局 ==================== */
 const I = {b:0,t:1,s:2,e:3,w:4,r:5,c:6,bt:7,ed:8,ec:9,fp:10,tp:11,ms:12,tq:13,fo:14,dv:15,ep:16,es:17,src:18,
-  m:19,bd:20,tx:21,ab:22,lg:23,gn:24,rt:25,rp:26,drive:27};
+  m:19,bd:20,tx:21,ab:22,lg:23,gn:24,rt:25,rp:26,drive:27,pn:28};
 const TX_IDX = I.tx;   // 免征购置税：数据层保留，展示层全量隐藏（v3.7口径）
 const COL_NAMES = ['批次','动力类型','细分市场','企业名称','整备质量(kg)','纯电续航(km)','电池容量(kWh)','电池类型',
   '能量密度(Wh/kg)','百公里电耗(kWh/100km)','前电机功率(kW)','电机总功率(kW)','电机生产企业','系统扭矩(Nm)',
   '综合油耗(L/100km)','发动机排量(mL)','发动机功率(kW)','发动机生产企业','数据来源',
-  '产品型号','产品商标','是否减免购置税','轴距(mm)','车长(mm)','通用名称','后电机扭矩(Nm)','后电机功率(kW)','驱动形式'];
+  '产品型号','产品商标','是否减免购置税','轴距(mm)','车长(mm)','通用名称','后电机扭矩(Nm)','后电机功率(kW)','驱动形式','公告产品名称'];
 let RAW = RAW_INIT;
 let META_CUR = META;
 
@@ -1941,7 +2004,32 @@ const CD_FIELDS = (()=>{
 })();
 const CD_LABEL = k => (CD_FIELDS.find(f=>f.k===k)||{n:'—'}).n;
 const CD_DEFAULT = {x:I.ab, y:I.r, z:null};
-let CD_STATE = {x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100};
+let CD_STATE = {x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true};
+
+/* 轴距等级区段定义（与《车型级别定义》阈值一致；用于图上辅助示意） */
+const CD_LEVELS = {
+  'Car': {color:'#D97757', name:'轿车',  bands:[['Car-A',null,2650],['Car-B',2650,2740],['Car-C',2740,2850],['Car-D',2850,3000],['Car-E',3000,null]]},
+  'SUV': {color:'#6B9BD1', name:'SUV',   bands:[['SUV-B',null,2680],['SUV-C',2680,2850],['SUV-D',2850,3000],['SUV-E',3000,null]]},
+  'MPV': {color:'#7FA97F', name:'MPV',   bands:[['MPV-C',null,3000],['MPV-D',3000,null]]}
+};
+/* 生成等级区段 markLine（横轴或纵轴为轴距时生效） */
+function cdLevelMarks(xN, yN){
+  const onX = xN.indexOf('轴距') === 0, onY = yN.indexOf('轴距') === 0;
+  if(!onX && !onY) return null;
+  const data=[];
+  for(const key of ['Car','SUV','MPV']){
+    const L=CD_LEVELS[key];
+    for(const [nm,lo] of L.bands.map(b=>[b[0],b[1]])){
+      if(lo==null) continue;
+      data.push(onX
+        ? {xAxis:lo, label:{formatter:nm, position:'insideEndTop', color:L.color, fontSize:10},
+           lineStyle:{color:L.color,type:'dashed',width:1,opacity:.6}}
+        : {yAxis:lo, label:{formatter:nm, position:'insideEndTop', color:L.color, fontSize:10},
+           lineStyle:{color:L.color,type:'dashed',width:1,opacity:.6}});
+    }
+  }
+  return data.length ? {silent:true, symbol:'none', animation:false, data} : null;
+}
 
 function cdFillSelect(el, val, allowNone){
   el.innerHTML = (allowNone?`<option value="">（不使用 · 散点图）</option>`:'') +
@@ -1965,10 +2053,15 @@ function cdInitUI(){
     const t=CD_STATE.x; CD_STATE.x=CD_STATE.y; CD_STATE.y=t;
     sx.value=String(CD_STATE.x); sy.value=String(CD_STATE.y); renderCustom(filtered());
   };
+  const lvBtn=document.getElementById('cdLevels');
+  const syncLv=()=>{ lvBtn.textContent = '等级区段 ' + (CD_STATE.levels?'✓':'✗');
+                     lvBtn.classList.toggle('off', !CD_STATE.levels); };
+  lvBtn.onclick=()=>{ CD_STATE.levels=!CD_STATE.levels; syncLv(); renderCustom(filtered()); };
+  syncLv();
   document.getElementById('cdReset').onclick=()=>{
-    CD_STATE={x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100};
+    CD_STATE={x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true};
     sx.value=String(CD_STATE.x); sy.value=String(CD_STATE.y); sz.value='';
-    ss.value=100; document.getElementById('cdZVal').textContent='100%'; sync();
+    ss.value=100; document.getElementById('cdZVal').textContent='100%'; sync(); syncLv();
     renderCustom(filtered());
   };
   document.getElementById('cdZVal').textContent = CD_STATE.zScale+'%';
@@ -2015,6 +2108,12 @@ function renderCustom(rows){
         itemStyle:{color:`rgba(${color},${TC().scatterA})`},large:true,largeThreshold:800};
   const series=[ mk('BEV',bev,'217,119,87'), mk('PHEV/EREV',phev,'107,155,209') ];
   trends.forEach(t=>series.push(t));
+  /* 轴距等级区段辅助示意（可关闭）：挂在首个数据系列上，虚线分隔 A/B/C/D/E 区间 */
+  let lvShown=false;
+  if(CD_STATE.levels){
+    const marks=cdLevelMarks(xN,yN);
+    if(marks && series.length){ series[0].markLine=marks; lvShown=true; }
+  }
   const total=bev.length+phev.length;
   /* 顶部实时状态分析：随 X / Y / Z 选择联动 */
   const avg=(ps,k)=>{ let s=0,n=0; for(const p of ps){const v=p.value[k]; if(isFinite(v)){s+=v;n++;}} return n?s/n:null; };
@@ -2032,6 +2131,18 @@ function renderCustom(rows){
   }
   const seg=[part('BEV',bev), part('PHEV/EREV',phev)].filter(Boolean).join(' ｜ ');
   if(seg) html += `<br>${seg}`;
+  /* 等级区段辅助示意状态 */
+  if(xN.indexOf('轴距')===0 || yN.indexOf('轴距')===0){
+    const AX = xN.indexOf('轴距')===0 ? 'X' : 'Y';
+    html += lvShown
+      ? `<br>等级区段：已按《车型级别定义》在 <em>${AX} 轴（轴距）</em> 标注分级界线 —— `+
+        `<span style="color:#D97757">轿车 A/B/C/D/E</span>（2650/2740/2850/3000）、`+
+        `<span style="color:#6B9BD1">SUV B/C/D/E</span>（2680/2850/3000）、`+
+        `<span style="color:#7FA97F">MPV C/D</span>（3000），单位 mm；可点「等级区段」关闭`
+      : `<br>等级区段：<em>已关闭</em>（${AX} 轴为轴距，点「等级区段」可显示 A/B/C/D/E 分级界线）`;
+  } else {
+    html += `<br>等级区段：当前 X / Y 均非轴距，无分级界线可标注（将任一轴选为「轴距(mm)」即显示）`;
+  }
   setInsight('chCustom', html);
   const panelTx=document.getElementById('insightCustomTx');
   if(panelTx) panelTx.innerHTML = html;
