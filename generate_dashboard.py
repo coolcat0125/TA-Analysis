@@ -995,6 +995,8 @@ body.show-gaps .card.gap-hidden-note{display:none}
         </span>
         <button class="cd-btn" id="cdSwap" title="交换 X / Y">⇄ 交换</button>
         <button class="cd-btn" id="cdLevels" title="在轴距轴上标注 A/B/C 等级区段">等级区段 ✓</button>
+        <button class="cd-btn" id="cdAuto" title="随缩放自动调节散点/泡泡显示大小">自动调节 ✓</button>
+        <button class="cd-btn" id="cdZoomReset" title="恢复完整视野（等同双击图表）">复位视窗</button>
         <button class="cd-btn" id="cdReset" title="恢复默认维度">重置</button>
       </div>
       <div class="chart xl" id="chCustom"></div>
@@ -2004,7 +2006,7 @@ const CD_FIELDS = (()=>{
 })();
 const CD_LABEL = k => (CD_FIELDS.find(f=>f.k===k)||{n:'—'}).n;
 const CD_DEFAULT = {x:I.ab, y:I.r, z:null};
-let CD_STATE = {x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true};
+let CD_STATE = {x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true, autoSize:true};
 
 /* 轴距等级区段定义（与《车型级别定义》阈值一致；用于图上辅助示意） */
 const CD_LEVELS = {
@@ -2058,23 +2060,96 @@ function cdInitUI(){
                      lvBtn.classList.toggle('off', !CD_STATE.levels); };
   lvBtn.onclick=()=>{ CD_STATE.levels=!CD_STATE.levels; syncLv(); renderCustom(filtered()); };
   syncLv();
+  /* 自动调节（随视窗缩放调整散点/泡泡大小） */
+  const auBtn=document.getElementById('cdAuto');
+  const syncAu=()=>{ auBtn.textContent = '自动调节 ' + (CD_STATE.autoSize?'✓':'✗');
+                     auBtn.classList.toggle('off', !CD_STATE.autoSize); };
+  auBtn.onclick=()=>{ CD_STATE.autoSize=!CD_STATE.autoSize; syncAu(); renderCustom(filtered()); };
+  syncAu();
+  /* 复位视窗 */
+  document.getElementById('cdZoomReset').onclick=()=>cdResetZoom();
   document.getElementById('cdReset').onclick=()=>{
-    CD_STATE={x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true};
+    CD_STATE={x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true, autoSize:true};
     sx.value=String(CD_STATE.x); sy.value=String(CD_STATE.y); sz.value='';
-    ss.value=100; document.getElementById('cdZVal').textContent='100%'; sync(); syncLv();
-    renderCustom(filtered());
+    ss.value=100; document.getElementById('cdZVal').textContent='100%'; sync(); syncLv(); syncAu();
+    cdResetZoom(true);
   };
-  document.getElementById('cdZVal').textContent = CD_STATE.zScale+'%';
-  sync();
+  /* 监听 dataZoom：更新视窗状态；开启自动调节时按新视窗重算散点大小 */
+  const ch=chart('chCustom');
+  if(ch && !ch.__cdZoomBound){
+    ch.__cdZoomBound = true;
+    ch.on('dataZoom', ()=>{
+      try{
+        const op = ch.getOption();
+        const dz = op.dataZoom || [];
+        for(const d of dz){
+          if(d.xAxisIndex!=null){ CD_ZOOM.xStart=d.start; CD_ZOOM.xEnd=d.end; }
+          if(d.yAxisIndex!=null){ CD_ZOOM.yStart=d.start; CD_ZOOM.yEnd=d.end; }
+        }
+      }catch(e){}
+      if(CD_STATE.autoSize) scheduleCdRender();
+      else updateCdZoomText();
+    });
+    /* 双击图表复位视窗 */
+    const el=document.getElementById('chCustom');
+    if(el) el.addEventListener('dblclick', ()=>cdResetZoom());
+  }
 }
-function cdBubbleSize(z, zmin, zmax){
-  /* 泡泡直径：把 Z 在 [zmin,zmax] 内的位置映射到直径区间，再乘用户比例系数。
-     直径 ∝ √t（t 为归一化位置）→ 面积近似正比于数值，避免大值视觉失真。 */
-  const LO=12, HI=54;                        // 基础直径像素区间
+/* 缩放中的重绘节流：一帧内只重算一次，避免拖动滑块时卡顿 */
+let __cdRaf=null;
+function scheduleCdRender(){
+  if(__cdRaf) return;
+  __cdRaf = requestAnimationFrame(()=>{ __cdRaf=null; renderCustom(filtered()); });
+}
+function cdResetZoom(silent){
+  CD_ZOOM={xStart:0,xEnd:100,yStart:0,yEnd:100};
+  const ch=chart('chCustom');
+  if(ch){
+    try{ ch.dispatchAction({type:'dataZoom', start:0, end:100}); }catch(e){}
+    try{ ch.dispatchAction({type:'dataZoom', yAxisIndex:0, start:0, end:100}); }catch(e){}
+  }
+  if(!silent) renderCustom(filtered());
+}
+function updateCdZoomText(){
+  const t=document.getElementById('ci_chCustom');
+  if(t && t.innerHTML.indexOf('视窗')<0){
+    t.innerHTML += `<br>视窗：X <em>${(CD_ZOOM.xEnd-CD_ZOOM.xStart).toFixed(0)}%</em> · Y <em>${(CD_ZOOM.yEnd-CD_ZOOM.yStart).toFixed(0)}%</em>（拖动滑块或框选可放大；双击图表复位）`;
+  }
+}
+function cdBubbleSize(z, zmin, zmax, scale){
+  /* 泡泡直径：Z 在 [zmin,zmax] 内的位置 → 直径区间；直径 ∝ √t（面积≈正比数值）。
+     scale 为「自动调节」系数（视窗放大时增大），1 = 基准。 */
+  const LO=12, HI=54;
   const span=(zmax-zmin);
-  const t = span>0 ? (z-zmin)/span : 0.5;    // 全部同值时就取中位直径
+  const t = span>0 ? (z-zmin)/span : 0.5;
   const r = Math.sqrt(Math.max(0,Math.min(1,t)));
-  return (LO+(HI-LO)*r) * (CD_STATE.zScale/100);
+  return (LO+(HI-LO)*r) * (CD_STATE.zScale/100) * (scale||1);
+}
+/* 固定坐标系外框：视窗缩放时按可见跨度自动放大散点，保证细节可读（可关闭） */
+/* 视窗缩放状态：dataZoom 的 start/end（%），用于计算可见跨度与自动调节系数 */
+let CD_ZOOM = {xStart:0, xEnd:100, yStart:0, yEnd:100};
+function cdZoomFactor(axis){
+  const s = axis==='x' ? CD_ZOOM.xStart : CD_ZOOM.yStart;
+  const e = axis==='x' ? CD_ZOOM.xEnd   : CD_ZOOM.yEnd;
+  const frac = Math.max(0.02, Math.min(1, (e - s) / 100));   // 可见比例
+  return 1 / frac;                                            // 放大倍数
+}
+const CD_FRAME = {w: 760, h: 420};
+function cdVisibleSpan(rows, xK, yK){
+  let xmin=Infinity,xmax=-Infinity,ymin=Infinity,ymax=-Infinity, n=0;
+  for(const r of rows){
+    const x=r[xK], y=r[yK];
+    if(x==null||y==null) continue;
+    if(x<xmin)xmin=x; if(x>xmax)xmax=x; if(y<ymin)ymin=y; if(y>ymax)ymax=y; n++;
+  }
+  return n ? {x:Math.max(1,xmax-xmin), y:Math.max(1,ymax-ymin), n} : {x:1,y:1,n:0};
+}
+function cdAutoScale(full, vis){
+  if(!CD_STATE.autoSize || !vis.n) return 1;
+  const base = Math.min(CD_FRAME.w/full.x, CD_FRAME.h/full.y);
+  const cur  = Math.min(CD_FRAME.w/vis.x,  CD_FRAME.h/vis.y);
+  if(!isFinite(base) || !isFinite(cur) || cur<=0) return 1;
+  return Math.max(0.6, Math.min(3.2, cur/base));
 }
 function renderCustom(rows){
   const el=document.getElementById('chCustom'); if(!el) return;
@@ -2091,11 +2166,20 @@ function renderCustom(rows){
     (r[I.t]==='BEV'?bev:phev).push(pt);
   }
   const xN=CD_LABEL(xK), yN=CD_LABEL(yK), zN=hasZ?CD_LABEL(zK):'';
-  /* 直径写入每个数据点（实测最稳：不依赖 ECharts 回调求值，缩放/换字段即时生效） */
-  const SCATTER_SIZE=7;
+  /* 固定坐标系外框 + 视窗缩放：按当前 dataZoom 视窗计算「自动调节」系数 */
+  const fullSpan = cdVisibleSpan(rows, xK, yK);
+  const zx = cdZoomFactor('x'), zy = cdZoomFactor('y');
+  const visSpan = {x: fullSpan.x / zx, y: fullSpan.y / zy, n: fullSpan.n};
+  const autoScale = cdAutoScale(fullSpan, visSpan);
+  const SCATTER_SIZE = 7;
+  /* 直径写入每个数据点（实测最稳：不依赖 ECharts 回调求值；缩放/换字段即时生效）
+     Z 相对大小始终保留；「自动调节」开启时按视窗整体放大，保证放大后细节可读 */
   if(hasZ){
-    for(const p of bev)  p.symbolSize = cdBubbleSize(p.value[2], zmin, zmax);
-    for(const p of phev) p.symbolSize = cdBubbleSize(p.value[2], zmin, zmax);
+    for(const p of bev)  p.symbolSize = cdBubbleSize(p.value[2], zmin, zmax, autoScale);
+    for(const p of phev) p.symbolSize = cdBubbleSize(p.value[2], zmin, zmax, autoScale);
+  } else {
+    for(const p of bev)  p.symbolSize = SCATTER_SIZE * autoScale;
+    for(const p of phev) p.symbolSize = SCATTER_SIZE * autoScale;
   }
   const trB=trendSeries(bev.map(p=>p.value),'#D97757','BEV趋势线');
   const trP=trendSeries(phev.map(p=>p.value),'#6B9BD1','PHEV/EREV趋势线');
@@ -2143,6 +2227,14 @@ function renderCustom(rows){
   } else {
     html += `<br>等级区段：当前 X / Y 均非轴距，无分级界线可标注（将任一轴选为「轴距(mm)」即显示）`;
   }
+  /* 放大视窗与自动调节状态 */
+  const zoomPct = `${(CD_ZOOM.xEnd-CD_ZOOM.xStart).toFixed(0)}% × ${(CD_ZOOM.yEnd-CD_ZOOM.yStart).toFixed(0)}%`;
+  const zoomed = (CD_ZOOM.xEnd-CD_ZOOM.xStart) < 99.5 || (CD_ZOOM.yEnd-CD_ZOOM.yStart) < 99.5;
+  html += `<br>放大视窗：视窗 <em>${zoomPct}</em>` +
+    (zoomed ? `（放大 <em>${cdZoomFactor('x').toFixed(1)}×</em>）` : '（完整视野）') +
+    ` · 自动调节 <em>${CD_STATE.autoSize?'开':'关'}</em>` +
+    (CD_STATE.autoSize ? `（当前散点大小系数 <em>${autoScale.toFixed(2)}×</em>）` : '（散点大小固定）') +
+    ` ｜ 拖动滑块/框选放大，双击图表或「复位视窗」还原`;
   setInsight('chCustom', html);
   const panelTx=document.getElementById('insightCustomTx');
   if(panelTx) panelTx.innerHTML = html;
@@ -2157,7 +2249,20 @@ function renderCustom(rows){
           (hasZ?`<br>${zN}：<b>${v[2]} ${xuOf(zN)}</b>`:'');
       }},TT),
     legend:LG({data:['BEV','PHEV/EREV',...trends.map(t=>t.name)]}),
-    grid:GRID(),
+    grid:Object.assign(GRID(), {bottom:74}),
+    /* 放大视窗：坐标系外框尺寸固定（grid 不变），通过 dataZoom 改变可见范围；
+       支持滑块拖动 / 框选，双击图表或「复位视窗」恢复完整视野 */
+    dataZoom:[
+      {type:'inside', xAxisIndex:0, start:CD_ZOOM.xStart, end:CD_ZOOM.xEnd, zoomOnMouseWheel:true, moveOnMouseWheel:false, moveOnMouseMove:true},
+      {type:'inside', yAxisIndex:0, start:CD_ZOOM.yStart, end:CD_ZOOM.yEnd, zoomOnMouseWheel:true, moveOnMouseWheel:false, moveOnMouseMove:true},
+      {type:'slider', xAxisIndex:0, height:16, bottom:30, start:CD_ZOOM.xStart, end:CD_ZOOM.xEnd,
+       borderColor:TC().axisLine, backgroundColor:'transparent', fillerColor:'rgba(217,119,87,.14)',
+       handleStyle:{color:TC().axis}, textStyle:{color:TC().axis, fontSize:10}, labelFormatter:''},
+      {type:'slider', yAxisIndex:0, width:16, right:6, start:CD_ZOOM.yStart, end:CD_ZOOM.yEnd,
+       borderColor:TC().axisLine, backgroundColor:'transparent', fillerColor:'rgba(107,155,209,.14)',
+       handleStyle:{color:TC().axis}, textStyle:{color:TC().axis, fontSize:10}, labelFormatter:''}
+    ],
+    toolbox:{show:false},
     xAxis:Object.assign({type:'value',name:xN,nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis},scale:true},AXS()),
     yAxis:Object.assign({type:'value',name:yN,nameTextStyle:{color:TC().axis},scale:true},AXS()),
     series
