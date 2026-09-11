@@ -661,6 +661,7 @@ select:hover,select:focus{border-color:var(--clay)}
 .ci em{font-style:normal;color:var(--clay);font-family:var(--mono);font-size:11.5px}
 .chart{width:100%;height:340px}
 .chart.tall{height:400px}
+.chart.xl{height:560px}
 .chart.short{height:280px}
 /* 自定义分布控制条 */
 .cd-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0 6px;
@@ -847,6 +848,7 @@ body.show-gaps .card.gap-hidden-note{display:none}
   <button class="tab" data-p="p3">发动机系统<i>Engine</i></button>
   <button class="tab" data-p="p4">电池系统<i>Battery</i></button>
   <button class="tab" data-p="pDist">分布格局<i>Distribution</i></button>
+<button class="tab" data-p="pCustom">自定义分布<i>Custom</i></button>
   <button class="tab" data-p="p5">企业与品牌<i>Enterprise / Brand</i></button>
   <button class="tab" data-p="p6">数据管理<i>Export / Import</i></button>
 </nav>
@@ -905,12 +907,18 @@ body.show-gaps .card.gap-hidden-note{display:none}
 <section class="panel" id="pDist">
   <div class="insight"><div class="ic">§</div><div class="tx" id="insightDTx"></div></div>
   <div class="grid" id="distGrid"></div>
-  <div class="grid" style="margin-top:16px">
+</section>
+
+<!-- ============ Panel Custom 自定义分布 ============ -->
+<section class="panel" id="pCustom">
+  <div class="insight"><div class="ic">◎</div><div class="tx" id="insightCustomTx"></div></div>
+  <div class="grid">
     <div class="card c-s12">
       <div class="c-h">
         <div class="c-t">自定义分布</div>
         <div class="c-s">Custom Distribution · 自由选择纵横维度 · 选定 Z 轴即为泡泡图</div>
       </div>
+      <div class="ci" id="ci_chCustom"></div>
       <div class="cd-bar">
         <span class="f-label">横坐标 X</span>
         <select id="cdX"></select>
@@ -926,7 +934,7 @@ body.show-gaps .card.gap-hidden-note{display:none}
         <button class="cd-btn" id="cdSwap" title="交换 X / Y">⇄ 交换</button>
         <button class="cd-btn" id="cdReset" title="恢复默认维度">重置</button>
       </div>
-      <div class="chart tall" id="chCustom"></div>
+      <div class="chart xl" id="chCustom"></div>
     </div>
   </div>
 </section>
@@ -1074,7 +1082,7 @@ const CHART_INSIGHT_IDS = ['chBatch','chType','chSeg','chEnt','chEvo',
   'chPwDist','chMsTop','chPtq','chPwTrend','chPwr',
   'chDv','chDvEp','chEsTop','chFo','chDvTrend',
   'chRgB','chRgP','chCr','chBtTrend','chEd','chEcTrend','chEc',
-  'dRvsLen','dCvsRg','dEcVsRg','dEdVsRg','dMassLen',
+  'dRvsLen','dCvsRg','dEcVsRg','dEdVsRg','dMassLen','chCustom',
   'chEntTrend','chEntSeg','chNewEnt','chBrandTop',
   'chFill','chSrc','chHeat'];
 function initCardInsights(){
@@ -1967,12 +1975,12 @@ function cdInitUI(){
   sync();
 }
 function cdBubbleSize(z, zmin, zmax){
-  /* 泡泡直径：按数值在 [zmin,zmax] 内线性映射到直径区间，再乘用户比例系数。
-     面积与数值近似成正比（直径取平方根），避免大值视觉失真。 */
-  const LO=10, HI=52;                       // 基础直径像素区间
-  const span=(zmax-zmin)||1;
-  const t=Math.max(0,Math.min(1,(z-zmin)/span));
-  const r=Math.sqrt(t);                     // 面积∝数值 → 直径∝√数值
+  /* 泡泡直径：把 Z 在 [zmin,zmax] 内的位置映射到直径区间，再乘用户比例系数。
+     直径 ∝ √t（t 为归一化位置）→ 面积近似正比于数值，避免大值视觉失真。 */
+  const LO=12, HI=54;                        // 基础直径像素区间
+  const span=(zmax-zmin);
+  const t = span>0 ? (z-zmin)/span : 0.5;    // 全部同值时就取中位直径
+  const r = Math.sqrt(Math.max(0,Math.min(1,t)));
   return (LO+(HI-LO)*r) * (CD_STATE.zScale/100);
 }
 function renderCustom(rows){
@@ -1990,24 +1998,43 @@ function renderCustom(rows){
     (r[I.t]==='BEV'?bev:phev).push(pt);
   }
   const xN=CD_LABEL(xK), yN=CD_LABEL(yK), zN=hasZ?CD_LABEL(zK):'';
-  const sz = hasZ ? (p=>cdBubbleSize(p.value[2],zmin,zmax)) : 7;
+  /* 直径写入每个数据点（实测最稳：不依赖 ECharts 回调求值，缩放/换字段即时生效） */
+  const SCATTER_SIZE=7;
+  if(hasZ){
+    for(const p of bev)  p.symbolSize = cdBubbleSize(p.value[2], zmin, zmax);
+    for(const p of phev) p.symbolSize = cdBubbleSize(p.value[2], zmin, zmax);
+  }
   const trB=trendSeries(bev.map(p=>p.value),'#D97757','BEV趋势线');
   const trP=trendSeries(phev.map(p=>p.value),'#6B9BD1','PHEV/EREV趋势线');
   const trends=[trB,trP].filter(Boolean);
   TREND_REGS['chCustom']=Object.fromEntries(trends.map(t=>[t.name,t.__formula]));
   const mk=(nm,ps,color)=>hasZ
-    ? {name:nm,type:'scatter',data:ps,symbolSize:sz,itemStyle:{color:`rgba(${color},.45)`,
+    ? {name:nm,type:'scatter',data:ps,itemStyle:{color:`rgba(${color},.45)`,
         borderColor:`rgba(${color},.85)`,borderWidth:1},emphasis:{focus:'series'}}
-    : {name:nm,type:'scatter',data:ps,symbolSize:sz,itemStyle:{color:`rgba(${color},${TC().scatterA})`},
-        large:true,largeThreshold:800};
+    : {name:nm,type:'scatter',data:ps,symbolSize:SCATTER_SIZE,
+        itemStyle:{color:`rgba(${color},${TC().scatterA})`},large:true,largeThreshold:800};
   const series=[ mk('BEV',bev,'217,119,87'), mk('PHEV/EREV',phev,'107,155,209') ];
   trends.forEach(t=>series.push(t));
   const total=bev.length+phev.length;
-  const zs = hasZ ? ` · Z 轴 <em>${zN}</em>（${fmt(Math.round(zmin))}~${fmt(Math.round(zmax))}，泡泡直径 <em>${CD_STATE.zScale}%</em>）` : '';
-  setInsight('chCustom',
-    `${hasZ?'泡泡图':'散点图'}：X <em>${xN}</em> × Y <em>${yN}</em>${zs} · 有效样本 <em>${fmt(total)}</em> 组`+
-    `（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`+
-    (hasZ?' ｜ 泡泡面积与 Z 值成正比，可用「泡泡比例」调整整体观感。':' ｜ 选择 Z 轴即可切换为泡泡图。'));
+  /* 顶部实时状态分析：随 X / Y / Z 选择联动 */
+  const avg=(ps,k)=>{ let s=0,n=0; for(const p of ps){const v=p.value[k]; if(isFinite(v)){s+=v;n++;}} return n?s/n:null; };
+  const fv=v=>v==null?'–':(Math.abs(v)>=100?Math.round(v).toLocaleString('zh-CN'):(+v.toFixed(1)));
+  const rng=(ps,k)=>{ let lo=Infinity,hi=-Infinity; for(const p of ps){const v=p.value[k]; if(isFinite(v)){if(v<lo)lo=v;if(v>hi)hi=v;}} return isFinite(lo)?[lo,hi]:null; };
+  const part=(nm,ps)=>ps.length?`${nm} <em>${xN}</em> 均值 <em>${fv(avg(ps,0))}</em>（${fv((rng(ps,0)||[0,0])[0])}~${fv((rng(ps,0)||[0,0])[1])}）· <em>${yN}</em> 均值 <em>${fv(avg(ps,1))}</em>（${fv((rng(ps,1)||[0,0])[0])}~${fv((rng(ps,1)||[0,0])[1])}）`:'';
+  let html = hasZ
+    ? `<b>泡泡图</b>：X <em>${xN}</em> × Y <em>${yN}</em> × 泡泡直径 Z <em>${zN}</em>`
+    : `<b>散点图</b>：X <em>${xN}</em> × Y <em>${yN}</em>（未选 Z 轴 → 等径散点）`;
+  html += ` · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
+  if(hasZ){
+    html += `<br>Z 轴 <em>${zN}</em> 取值范围 <em>${fv(zmin)} ~ ${fv(zmax)}</em>，直径映射 <em>${Math.round(12*CD_STATE.zScale/100)}~${Math.round(54*CD_STATE.zScale/100)} px</em>（直径 ∝ √Z，面积正比于数值，当前比例 <em>${CD_STATE.zScale}%</em>）`;
+  } else {
+    html += ` ｜ 在「泡泡直径 Z」中选择任一可量化字段即可切换为泡泡图`;
+  }
+  const seg=[part('BEV',bev), part('PHEV/EREV',phev)].filter(Boolean).join(' ｜ ');
+  if(seg) html += `<br>${seg}`;
+  setInsight('chCustom', html);
+  const panelTx=document.getElementById('insightCustomTx');
+  if(panelTx) panelTx.innerHTML = html;
   chart('chCustom').setOption({
     tooltip:Object.assign({trigger:'item',
       formatter:p=>{
