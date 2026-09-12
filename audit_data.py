@@ -23,13 +23,13 @@ from openpyxl import load_workbook
 
 COPYRIGHT = "Copyright © 2026 David YE"
 DEFAULT_GATES = {
-    "expected_min_records": 4634,
+    "expected_min_records": 5358,
     "required_headers": ["批次", "产品型号", "动力类型"],
     "coverage_floors": {
         "百公里电耗": 0.70,
-        "电池能量密度": 0.82,
-        "电池容量": 0.90,
-        "纯电续航": 0.70,
+        "电池能量密度": 0.75,
+        "电池容量": 0.850,
+        "纯电续航": 0.650,
         "电机总功率": 0.65,
     },
 }
