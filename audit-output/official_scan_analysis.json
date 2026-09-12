@@ -1,0 +1,2579 @@
+{
+ "missing_by_batch": {
+  "341": [
+   "LZW7004EVA4CAM",
+   "LZW7004EVA4KAK",
+   "LZW7004EVJCAM",
+   "LZW7004EVJDAG",
+   "LZW7004EVJDAK",
+   "LZW7004EVJDAM",
+   "LZW7004EVJDJ",
+   "LZW7004EVPCAK",
+   "LZW7004EVPCAM",
+   "LZW7004EVPDAG",
+   "LZW7004EVPDAK",
+   "LZW7004EVPDBA",
+   "LZW7004EVPDBB",
+   "LZW7004EVPDJ",
+   "LZW7004EVPHAM",
+   "LZW7004EVPKAK",
+   "LZW7004EVPKAM",
+   "LZW7004EVQEAW",
+   "LZW7004EVWEAW",
+   "CSA7001KBEV5",
+   "YQZ7005BEV",
+   "DFM7001G1F1BEV",
+   "DFM7001G1F2BEV",
+   "DFM7001G1F3BEV",
+   "YDE7000BEV1B",
+   "YDE7000BEV1C",
+   "YDE7000BEV1D",
+   "YDE7000BEV1F",
+   "YDE7000BEV1F1",
+   "YDE7000BEV1H",
+   "YDE7000BEV1L",
+   "YDE7000BEV1M",
+   "YDE7000BEV1N",
+   "YDE7000BEV1P",
+   "YDE7000BEV2A",
+   "YDE7000BEV2B",
+   "YDE7000BEV2C",
+   "YDE7000BEV2D",
+   "YDE7000BEV2E",
+   "YDE7000BEV2F",
+   "YDE7000BEV2H",
+   "YDE7000BEV2L",
+   "YDE7000BEV2N",
+   "YDE7000BEV2P",
+   "YDE7000BEV2Q",
+   "BJ7001BPHH-BEV",
+   "BJ7001AUA1-BEV",
+   "BJ7001AUA3-BEV",
+   "BJ7001AUA5-BEV",
+   "BJ7001AUA7-BEV",
+   "BJ7001AUA8-BEV",
+   "BJ7001AUA9-BEV",
+   "BJ7001AUAA-BEV",
+   "TV7001BEV",
+   "HFC7000WEV6",
+   "HFC7000WEV7",
+   "GAH7000BEVN0A",
+   "GAH7000BEVN0B",
+   "GAH7000BEVN0C",
+   "GAM7000BEVA0A",
+   "GAM7000BEVA0B",
+   "GAM7000BEVA0C",
+   "GAM7000BEVA0E",
+   "GAM7000BEVA0F",
+   "GAM7000BEVA0G",
+   "GAM7000BEVA0H",
+   "GAM7000BEVA0J",
+   "GAM7000BEVA0K",
+   "GAM7000BEVA0L",
+   "GAM7000BEVA0M",
+   "GAM7000BEVA0N",
+   "GAM7000BEVA0Q",
+   "GAM7000BEVA0R",
+   "GAM7000BEVA0S",
+   "JWT7001BEV",
+   "BYD7009BEV",
+   "BYD7009BEV1",
+   "BYD7009BEV2",
+   "BYD7009BEV4",
+   "BYD7008BEVA8",
+   "BYD7008BEVA9",
+   "GXE7001BEV1A",
+   "JML7000BEV01",
+   "JML7000BEV02",
+   "JML7000BEV03",
+   "JML7000BEV05",
+   "THZ7000BEVS113",
+   "HMA7001DHBEV",
+   "HMA7000ADBEV",
+   "SC7001ATBEV",
+   "SC7001AAABEV",
+   "SC7001ABABEV",
+   "SVW6461BEV",
+   "LZW6450EVHCAC",
+   "LZW6450EVHEAT",
+   "LZW6450EVHEAU",
+   "CSA6471FBEV2",
+   "CSA6471FBEV3",
+   "YQZ6520BEVHIPHI1A",
+   "YQZ6520BEVHIPHI1B",
+   "YQZ6520BEVHIPHI1C",
+   "YQZ6520BEVHIPHI1D",
+   "GAM6490BEVN0C",
+   "GAM6490BEVN0D",
+   "GAM6460BEVC0A",
+   "GAM6460BEVC0B",
+   "GAM6460BEVC0C",
+   "GAM6460BEVC0D",
+   "GAM6460BEVC0E",
+   "GAM6460BEVC0F",
+   "GAM6460BEVC0G",
+   "GAM6460BEVC0H",
+   "GAM6480BEVB0A",
+   "GAM6480BEVB0B",
+   "GAM6480BEVB0C",
+   "GAM6480BEVB0E",
+   "GAM6480BEVB0F",
+   "GAM6480BEVB0G",
+   "GAM6480BEVB0H",
+   "GAM6480BEVB0J",
+   "GAM6480BEVB0K",
+   "GAM6480BEVB0L",
+   "JML6451BEV01",
+   "JML6451BEV02",
+   "CSA7152SEPHEV3",
+   "YQZ7160GPHEV",
+   "YQZ7160PHEV",
+   "BYD7200YT6HEV",
+   "BYD7152WT6HEVB4",
+   "BYD7152WT6HEVB5",
+   "CA64652XMCHEVE6",
+   "CA64654XGCHEVE6",
+   "GTM6470FFCHEVM",
+   "BYD6470MT6HEV5",
+   "BYD6470MT6HEV6",
+   "BYD6461ST6HEV3",
+   "BYD6461ST6HEV4",
+   "MR6471PHEV10",
+   "MR6463DPHEV01",
+   "MR6463PHEV01",
+   "MR6463PHEV05",
+   "MR6463PHEV07",
+   "MR6463PHEV08",
+   "MR6463PHEV09",
+   "CAF6460A6PHEV",
+   "CAF6461A62PHEV"
+  ],
+  "342": [
+   "FV7004BABEV",
+   "LZW7004EVJDBB",
+   "LZW7004EVJEAM",
+   "LZW7004EVPEAK",
+   "LZW7004EVPHAK",
+   "CSA7001SBEV3",
+   "YQZ7004BEV",
+   "BH7000BEVDBA",
+   "BJ7000C5DEK-BEV",
+   "SC7003AACBEV",
+   "GNE7001AFCAEV",
+   "GNE7001AFCBEV",
+   "GNE7001AFCCEV",
+   "GNE7001AFCDEV",
+   "GNE7001AFCFEV",
+   "JHC7002BEV47",
+   "JHC7002BEV48",
+   "CGC7000BEV2J3",
+   "FDH7000BEV08",
+   "BYD7002BEVA11",
+   "BYD7003BEV8",
+   "HQ7002BEV67",
+   "HQ7002BEV68",
+   "VCC7003F01XBEV",
+   "SC7001ABCBEV",
+   "SC7001ABDBEV",
+   "CA6520H0EVX",
+   "CA6520H0EVXA",
+   "CA6520H0EVXB",
+   "CA6520H0EVXC",
+   "BJ6480LABEV",
+   "BJ6480LABEV1",
+   "BJ6480LABEV2",
+   "BJ6480LABEV3",
+   "SQJ6440C1BEV",
+   "CGC6481BEV2P1",
+   "SC6453BAABEV",
+   "THZ6450BEVS303",
+   "THZ6450BEVS304",
+   "THZ6450BEVS305",
+   "THZ6450BEVS307",
+   "THZ6450BEVS308",
+   "THZ6450BEVS309",
+   "THZ6450BEVS30B",
+   "FJ6440BEVA1",
+   "YZ6460BEV",
+   "YZ6450BEV",
+   "YZ6451BEV",
+   "CGC6371BEV2S1",
+   "VCD7204E44ZPHEV",
+   "GTM6470FWCHEVM",
+   "BYD6490ST6HEV6",
+   "BYD6490ST6HEV7",
+   "BYD6470ST6HEV1",
+   "BYD6470ST6HEV2",
+   "MR6463DPHEV02",
+   "SKE6470SHEVA2S"
+  ],
+  "343": [
+   "LZW7003EVA3EAB",
+   "LZW7003EVGEAB",
+   "LZW7003EVGKAB",
+   "LZW7003EVGMAJ",
+   "LZW7003EVGNAJ",
+   "CSA7002FSEV1",
+   "LZ7005SLAEV",
+   "LZ7006SLAEV",
+   "LZ7008SLAEV",
+   "EQ7000FL2F1BEV",
+   "CA7000H0EV",
+   "CA7000H0EVA",
+   "BJ7000C5DE-BEV",
+   "THZ7000BEVS002",
+   "THZ7000BEVS003",
+   "THZ7000BEVS004",
+   "THZ7000BEVS005",
+   "THZ7000BEVS006",
+   "THZ7000BEVS007",
+   "THZ7000BEVS008",
+   "THZ7000BEVS009",
+   "THZ7000BEVS00A",
+   "THZ7000BEVS00B",
+   "THZ7000BEVS00C",
+   "THZ7000BEVS00D",
+   "THZ7000BEVS00F",
+   "THZ7000BEVS00H",
+   "THZ7000BEVS00J",
+   "THZ7000BEVS111",
+   "THZ7000BEVS112",
+   "THZ7000BEVS114",
+   "THZ7000BEVS115",
+   "THZ7001BEVS001",
+   "THZ7001BEVS004",
+   "THZ7001BEVS005",
+   "THZ7001BEVS008",
+   "THZ7001BEVS009",
+   "THZ7001BEVS00B",
+   "THZ7001BEVS00F",
+   "THZ7001BEVS00H",
+   "THZ7001BEVS00J",
+   "THZ7002BEVS008",
+   "THZ7003BEVS008",
+   "THZ7003BEVS009",
+   "JHC7002BEV25",
+   "JHC7002BEV33",
+   "JHC7002BEV34",
+   "JHC7002BEV44",
+   "JHC7002BEV45",
+   "BYD7002BEVA10",
+   "HXK7000BEVA5",
+   "HXK7000BEVA6",
+   "HQ7002BEV05",
+   "HQ7002BEV35",
+   "HQ7002BEV51",
+   "HQ7002BEV57",
+   "HQ7002BEV63",
+   "HQ7002BEV66",
+   "HQ7002BEV69",
+   "HQ7002BEV70",
+   "HQ7002BEV71",
+   "HQ7002BEV72",
+   "JL7002BEV05",
+   "JL7002BEV06",
+   "DC7002XAAXBEVD",
+   "DC7002XAAXBEVG",
+   "DC7002XAAYBEVJ",
+   "DC7002XABYBEVE",
+   "SC7001BABEV",
+   "SC7003AABBEV",
+   "SC7003ADABEV",
+   "SC7003AEBEV",
+   "CC7001ZM01BBEV",
+   "CC7001ZM02CBEV",
+   "LZ6511MLANEV",
+   "LZ6512MLANEV",
+   "LZ6513MLANEV",
+   "LZ6514MLAEV",
+   "LZ6515MLAEV",
+   "LZ6516MLAEV",
+   "LZ6517MLAEV",
+   "THZ6450BEVS306",
+   "THZ6450BEVS30A",
+   "SC6443PAABEV",
+   "EXH6460A01BEV",
+   "EXH6460A02BEV",
+   "EXH6460A03BEV",
+   "EXH6460A04BEV",
+   "EXH6480A00BEV",
+   "JNQ6270BEV",
+   "BMW7201HMHEV",
+   "VCD7204E41PPHEV",
+   "MR7153PHEV11",
+   "SH6471P1PHEV",
+   "CJL6460AL2HEV",
+   "MR6471PHEV08",
+   "VCC6474E41UPHEV",
+   "CC6450AG02BPHEV",
+   "CC6490AY01APHEV",
+   "CC6490AY21APHEV"
+  ],
+  "344": [
+   "DXK7000KD1BEV",
+   "DXK7000KDBEV",
+   "DFA7000C1A2BEV",
+   "EQ7000FV2F1BEV",
+   "BJ7000C5DF-BEV",
+   "BJ7000C5DH-BEV",
+   "SC7003AGCBEV",
+   "HFC7002MEV7",
+   "JHC7003BEV01",
+   "JHC7003BEV03",
+   "GAH7000BEVH0C",
+   "GAH7000BEVH0D",
+   "GAH7000BEVN0D",
+   "BYD7005BEVA4",
+   "BYD7005BEVA7",
+   "BYD7008BEVA",
+   "BYD7008BEVA1",
+   "BYD7008BEVA4",
+   "JX7001ERCBEV",
+   "MR7002BEV03",
+   "HQ7003BEV01",
+   "HQ7003BEV02",
+   "HQ7003BEV03",
+   "HQ7003BEV04",
+   "CC7000BJ01CBEV",
+   "CC7000BJ02ABEV",
+   "CC7000ZM00CBEV",
+   "CC7000ZM00EBEV",
+   "CC7000ZM05ABEV",
+   "SH6523C1BEV",
+   "LZ6513MLAEV",
+   "SZS6460A56BEV",
+   "QCJ6490SBEV",
+   "QCJ6490SBEV1",
+   "HKL6490BEV1",
+   "JL6471SEV01",
+   "FV7201BAQCHEV",
+   "BJ7205MLHEV",
+   "BMW7201JMHEV",
+   "MR7153PHEV05",
+   "MR7153PHEV08",
+   "MR7153PHEV18",
+   "MR7153PHEV19",
+   "MR7153PHEV23",
+   "MR7153PHEV24",
+   "CSA6463NEPHEV",
+   "CSA6454NEPHEV3",
+   "CSA6454NEPHEV4",
+   "GFA6490CHEV1DA",
+   "QCJ6490ST6HEV",
+   "QCJ6490ST6HEV1",
+   "MR6453PHEV05",
+   "MR6453PHEV10",
+   "MR6463PHEV10",
+   "SKE6470SHEVAS"
+  ],
+  "345": [
+   "BJ7001C5FBEV",
+   "NEQ7000BEVJ72Q",
+   "JHC7003BEV04",
+   "JHC7003BEV06",
+   "HXK7000BEVA1",
+   "JX7001ESLBEV",
+   "HMA7000AEBEV",
+   "SKE7000BEVF3",
+   "SKE7000BEVF4",
+   "SKE7001BEVF",
+   "SKE7002BEVF",
+   "CC7000ZM00BBEV",
+   "CC7000ZM00FBEV",
+   "FV6494AA1BEV",
+   "FV6494AABEV",
+   "SH6551J1BEV-1",
+   "DXK6450EC7BEV",
+   "DXK6450EC8BEV",
+   "DXK6450EC9BEV",
+   "HFC6483ECSEV-W",
+   "HFC6483ECSEV2-W",
+   "HFC6483ECSEV5-W",
+   "HFC6483ECSEV6-W",
+   "HFC6502ECSEV5-W",
+   "HFC6502ECSEV9-W",
+   "JWT6470SEV03",
+   "SKE6470SBEVA1S",
+   "SKE6470SBEVR1",
+   "FV7147FADCHEV",
+   "FV6462LCDCHEV",
+   "LZW6461GK6PHEV",
+   "MR6432DPHEV02",
+   "JL6432PHEV06",
+   "JL6432PHEV12",
+   "SKE6470SHEVR",
+   "SKE6470SSHEVA5S",
+   "SKE7150SHEVF2",
+   "SKE7150SHEVF1"
+  ],
+  "346": [
+   "CSA7001SBEV2",
+   "CSA7002FBEV7",
+   "CSA7002FBEV8",
+   "EQ7000FD2F2BEV",
+   "SC7003AGDBEV",
+   "NEQ7000BEVJ72F",
+   "NEQ7000BEVJ72G",
+   "NEQ7000BEVJ72N",
+   "NEQ7000BEVJ72P",
+   "NEQ7000BEVJ72R",
+   "HFC7002BEV2",
+   "HFC7001AEV6",
+   "SC7003AGABEV",
+   "SC7003AGBBEV",
+   "CC7000ZM02FBEV",
+   "CC7001ZM00ABEV",
+   "CC7001ZM00BBEV",
+   "CC7001ZM01BEV",
+   "TSL6480BEVBA0"
+  ],
+  "347": [
+   "DFM7000G1FABEV",
+   "NEQ7000BEVJ72B",
+   "HDE7001AFCAEV",
+   "HDE7001AFCBEV",
+   "HDE7001AFCCEV",
+   "HDE7001AFCDEV",
+   "HDE7001AFCFEV",
+   "CC7000ZM02DBEV",
+   "BW6471N2BEV",
+   "BW6472N2BEV",
+   "NJL6471BEV400",
+   "NEQ6460BEVS61A",
+   "NEQ6460BEVS61B",
+   "NEQ6460BEVS61D",
+   "SVW7142BPV",
+   "MR7152PHEV13",
+   "SVW6474APV",
+   "MR6490SHEV01"
+  ],
+  "348": [
+   "SVW7003AEV",
+   "SVW7005AEV",
+   "LZW7001EVAHAN",
+   "DFL7000NA62BEV",
+   "DFL7000NA63BEV",
+   "DFL7000NA81BEV",
+   "DFA7000A1F7BEV",
+   "CA7007BEVB",
+   "BJ7000C5DB-BEV",
+   "BH7000BEVCAA",
+   "NEQ7000BEVJ60",
+   "NEQ7000BEVJ60A",
+   "NEQ7000BEVJ60C",
+   "NEQ7000BEVJ72E",
+   "JHC7002BEV38",
+   "JHC7002BEV39",
+   "JHC7002BEV41",
+   "JHC7002BEV46",
+   "GTM7000XBEV",
+   "GHA7000PAN0CBEV",
+   "GHA7000PAN0DBEV",
+   "BYD7005BEVA8",
+   "BYD7005BEVA9",
+   "HQ7002BEV37",
+   "HQ7002BEV74",
+   "TSL7000BEVAR1",
+   "TSL7000BEVBA1",
+   "TSL7000BEVBR0",
+   "CC7000ZM02CBEV",
+   "SVW6451AEV",
+   "BMW6475AAEV",
+   "BMW6475ABEV",
+   "JKC6451FXBEV",
+   "NJL6470BEV400",
+   "NJL6470BEV500",
+   "TSL6480BEVBA1",
+   "SC6478AABBEV",
+   "SC6484AAABEV",
+   "MR7152PHEV14",
+   "SH6484N1PHEV",
+   "BMW6462AEHEV(BMWX1)",
+   "GAC6451CHEVA6",
+   "GHA6470RAC6APHEV",
+   "MR6490DSHEV02",
+   "SKE6480SSHEVAS"
+  ],
+  "349": [
+   "DHW7003DHBEV",
+   "DHW7004DHBEV",
+   "GHA7000NAN0ABEV",
+   "HXK7000BEVX0",
+   "SH6472P1BEV",
+   "SH6485N1BEV",
+   "BJ6480BSA1-BEV",
+   "BJ6480BSA2-BEV",
+   "BJ6480BSA4-BEV",
+   "BJ6480BSA7-BEV",
+   "SQJ6460M7BEV",
+   "JWT6470SEV02",
+   "JX6462P5BEV",
+   "SC6458AHBEV",
+   "TV7186HEV6",
+   "GTM7180LCHEVM",
+   "CSA6468NEPHEV",
+   "DHW6471R7HEV",
+   "SKE6480SSHEVA2S"
+  ],
+  "350": [
+   "SGM7008GCBEV",
+   "SGM7008LHBEV",
+   "SGM7007LABEV",
+   "CSA7001SBEV1",
+   "CSA7002FBEV1",
+   "CSA7002FBEV3",
+   "CSA7002FBEV4",
+   "CSA7002FBEV5",
+   "CSA7002FSEV2",
+   "DN7007HBEVS3",
+   "BJ7000C5D7-BEV",
+   "BJ7000C5DA-BEV",
+   "BJ7000C5DD-BEV",
+   "BJ7000C5FBEV",
+   "BJ7000C5DAK-BEV",
+   "BJ7000C5DBK-BEV",
+   "SQR7000BEVT193",
+   "SQR7000BEVT194",
+   "SQR7000BEVT195",
+   "GTM70022BEV",
+   "BYD7002BEV8",
+   "BYD7002BEV9",
+   "BYD7002BEVA9",
+   "BYD7007BEV",
+   "CH7000BEVFA2BA",
+   "NHQ7000BEVEA",
+   "FV6465BBBEV",
+   "CSA6461FBEV1",
+   "CSA6461FBEV2",
+   "CSA6461FBEV3",
+   "CA6463BEV",
+   "BYD6470MBEV2",
+   "BYD6490SBEV4",
+   "HRQ6351BEV",
+   "DC6431XLAXBEVB",
+   "ZN6530H5PBEV",
+   "CSA6456BEV1",
+   "CSA6456BEV2",
+   "SGM7156LCCHEV",
+   "CSA7152SEPHEV4",
+   "CSA7154SEPHEV3",
+   "CSA7154SEPHEV4",
+   "BH7160PHEVCBAS",
+   "CAP7161HEV6",
+   "DC7168KSABHEVC",
+   "BYD6470MT6HEV2",
+   "BYD6470MT6HEV4",
+   "BYD6461ST6HEV1",
+   "JL6432PHEV13",
+   "DC6456KLBB16HEVA",
+   "DC6456KXBB16HEVA"
+  ],
+  "351": [
+   "FV7002CABEV",
+   "CSA7001UBEV1",
+   "CSA7002FBEV6",
+   "DFM7000G1F8PBEV",
+   "DFM7000G1A3BEV",
+   "BJ7000USD1-BEV",
+   "BAW7000UB42BEV",
+   "BAW7000UB41BEV",
+   "BAW7000UL41BEV",
+   "BAW7000UL4BEV",
+   "ZHT7000KD06EV",
+   "DC7002XAAYBEVE",
+   "NHQ7000BEVEB",
+   "NHQ7000BEVEC",
+   "NHQ7000BEVED",
+   "BAW6420MA41BEV",
+   "BAW6420MA42BEV",
+   "BAW6451MA4BEV",
+   "SQR6480BEVF11",
+   "BYD6490SBEV5",
+   "BYD6490SBEV6",
+   "BYD6470SBEV",
+   "QAC6461BEVAC",
+   "BAW6330CA41BEV",
+   "BAW6330CB42BEV",
+   "BYD7152WT6HEVB",
+   "BYD7152WT6HEVB3",
+   "BYD7152WT6HEVSS",
+   "BYD6490ST6HEV3",
+   "BYD6490ST6HEV4",
+   "BYD6490ST6HEV5",
+   "BYD6461ST6HEV",
+   "LXA6500SHEVM1",
+   "LXA6500SHEVM2",
+   "CC6481AD23CPHEV",
+   "CC6483AD23BPHEV",
+   "CC6483AD23CPHEV",
+   "SKE6480SSHEVA3S",
+   "SKE6480SSHEVA4S",
+   "SKE6480SSHEVR1"
+  ],
+  "352": [
+   "QTE7000BEV02",
+   "BJ7000CTD-BEV",
+   "HFC7002MEV4",
+   "JX7001ESDBEV",
+   "JX7001ESEBEV",
+   "JX7001ESFBEV",
+   "JX7001ESGBEV",
+   "JX7001ESHBEV",
+   "JX7001ESJBEV",
+   "JX7001ESKBEV",
+   "JX7001EUABEV",
+   "JX7001EUBBEV",
+   "JX7001EUCBEV",
+   "JX7001EUDBEV",
+   "JX7002ESABEV",
+   "JX7002ESCBEV",
+   "JX7002ESDBEV",
+   "JX7002ESEBEV",
+   "JX7002ESFBEV",
+   "JX7003ESABEV",
+   "JX7003ESBBEV",
+   "VCC7002F01VBEV",
+   "CC7001CE03BBEV",
+   "BJ6480BSA-BEV",
+   "BJ6480BSA5-BEV",
+   "BJ6480BSA6-BEV",
+   "JX6471UBEV",
+   "JX6473UBEV",
+   "BQ6460NYBEV",
+   "QAC6461BEVAB",
+   "HQ7152PHEV16",
+   "VCC7201E01PPHEV",
+   "HMA7122D184PHEV",
+   "BJ6472U8XDKPHEV",
+   "JL6432PHEV08",
+   "QAC6452SHEVBB6"
+  ],
+  "353": [
+   "CSA7001KBEV2",
+   "CSA7001KBEV1",
+   "EQ7000FR2F1BEV",
+   "EQ7000FR2F2BEV",
+   "HXK7000BEVA0",
+   "HXK7000BEVK0",
+   "HXK7000BEVA2",
+   "HXK7000BEVA3",
+   "LBA7000BABEV",
+   "LBA7000CABEV",
+   "LBA7002AABEV",
+   "CSA6471FBEV1",
+   "NJL6420EV3",
+   "NJL6420EV6",
+   "CGC6371BEV2S2",
+   "CSA7152SEPHEV2",
+   "CSA7154SEPHEV2",
+   "CSA6454NEPHEV1",
+   "CSA6454NEPHEV2"
+  ],
+  "354": [
+   "JHC7002BEV64",
+   "JHC7003BEV02",
+   "JHC7002BEV24",
+   "JHC7002BEV26",
+   "JHC7002BEV27",
+   "JHC7002BEV40",
+   "JHC7002BEV42",
+   "JHC7002BEV43",
+   "JHC7002BEV51",
+   "JHC7002BEV55",
+   "JHC7002BEV60",
+   "JHC7002BEV63",
+   "GAH7000BEVH0A",
+   "GAH7000BEVH0B",
+   "HMC7000NS0BEV",
+   "JNQ6450BEV",
+   "JNQ6451BEV",
+   "JNQ6460BEV3"
+  ],
+  "355": [
+   "JNQ6340BEV1",
+   "SKE6500SSHEVR"
+  ],
+  "356": [
+   "CA7002EV",
+   "CA7002EVA",
+   "BJ7000C5EB-BEV",
+   "SKE6500SSHEVAS"
+  ],
+  "357": [
+   "SKE7000BEVF5",
+   "SKE7000BEVF6",
+   "SKE7000BEVF1",
+   "SKE7000BEVF2",
+   "SKE7003BEVF",
+   "SKE7000BEVF7",
+   "SKE7000BEVF",
+   "LF7002PEV",
+   "LF7002SEV",
+   "LF7002SEV2",
+   "LF6440EV2",
+   "SKE6470SHEVF",
+   "SKE6470SHEVFS",
+   "SKE7150SHEVF3"
+  ],
+  "358": [
+   "YQZ7202GPHEV",
+   "YQZ7202PHEV"
+  ],
+  "362": [
+   "JNJ7000EVB2",
+   "JNQ6340BEV2"
+  ],
+  "364": [
+   "HQ7152PHEV10",
+   "HQ7152PHEV14",
+   "HQ7152PHEV15"
+  ],
+  "365": [
+   "DN7007GBEV4",
+   "DN7007MBEVS3",
+   "DXK6600HTBEV"
+  ],
+  "366": [
+   "HQ7002BEV36",
+   "HQ7002BEV45"
+  ],
+  "368": [
+   "NJL6420EV",
+   "NJL6420EV1",
+   "NJL6420EV2",
+   "NJL6420EV4",
+   "NJL6420EV9",
+   "NJL6450EV"
+  ],
+  "369": [
+   "BH7000BEVSCA",
+   "SC7002BAABEV",
+   "SC7002BACBEV",
+   "SC7003AHBEV",
+   "SC7005AABBEV",
+   "SC7005AACBEV",
+   "SC6458AGBEV",
+   "SC6458AJBEV",
+   "SC6458FAABEV",
+   "SC6458FACBEV",
+   "SC6458FBABEV",
+   "BH7200PHEVRAS",
+   "BH7201PHEVRAS"
+  ],
+  "370": [
+   "DXK7150KDSHEV"
+  ],
+  "372": [
+   "LBA6600AGBEV"
+  ],
+  "373": [
+   "DFL6470NA51BEV"
+  ],
+  "374": [
+   "JX70034BEV",
+   "JX6470UBEV",
+   "JKC6420FXBEV",
+   "JKC6421FXBEV",
+   "JKC6451AXBEV",
+   "JKC6453AXBEV",
+   "JKC6453CXBEV"
+  ],
+  "376": [
+   "DFL6470NA52BEV"
+  ],
+  "377": [
+   "JX6546TF6BEV"
+  ],
+  "379": [
+   "LZW6402EVA1",
+   "ZN6531HCPBEV"
+  ],
+  "380": [
+   "BYD7001BEV",
+   "BYD7001BEV1",
+   "BYD7002BEV",
+   "BYD7002BEV1",
+   "BYD7002BEV2",
+   "BYD7002BEV3",
+   "BYD7002BEV4",
+   "BYD7002BEV5",
+   "BYD7002BEV6",
+   "BYD7002BEV7",
+   "BYD7002BEVA",
+   "BYD7002BEVA1",
+   "BYD7002BEVA2",
+   "BYD7002BEVA3",
+   "BYD7002BEVA5",
+   "BYD7002BEVA6",
+   "BYD7002BEVA7",
+   "BYD7002BEVA8",
+   "BYD7003BEV",
+   "BYD7003BEV1",
+   "BYD7003BEV2",
+   "BYD7003BEV3",
+   "BYD7003BEV4",
+   "BYD7003BEV5",
+   "BYD7003BEV6",
+   "BYD7006BEVG",
+   "BYD7009BEV3",
+   "QCJ7007BEV1",
+   "QCJ7007BEV2",
+   "QCJ7007BEV3",
+   "BYD6450VBEV1",
+   "BYD6450VBEV2",
+   "BYD6470MBEV1",
+   "BYD6490SBEV",
+   "BYD6490SBEV1",
+   "BYD6490SBEV3"
+  ],
+  "384": [
+   "CC7000ZM00ABEV",
+   "CC7000ZM00BEV",
+   "CC7000ZM01BBEV",
+   "CC7000ZM01BEV",
+   "CC7000ZM01CBEV",
+   "CC7000ZM02ABEV",
+   "CC7000ZM03BBEV",
+   "CC7001CE02ABEV",
+   "CC7001CE03ABEV",
+   "CC7001CE03BEV",
+   "CC7001CE04BEV",
+   "CC7001CE05ABEV",
+   "CC7001ZM00CBEV"
+  ],
+  "385": [
+   "BQ6452PBEV"
+  ],
+  "386": [
+   "GAC7000BEVH0A",
+   "GAC6450BEVA0A",
+   "GAM6490BEVN0A",
+   "GAM6490BEVN0B"
+  ],
+  "390": [
+   "YGM7002BEVA2",
+   "YGM7001BEVB",
+   "YGM7001BEVB1",
+   "YGM7001BEVB22",
+   "DFM6473M5F7BEV",
+   "DXK6510AC1BEV",
+   "DXK6510AC4BEV",
+   "YZ6550BEV1",
+   "SQR6452CHEVT1EJ1",
+   "GAC6490CHEVGAB6A",
+   "GAC6490CHEVGAB6B",
+   "GAC6490CHEVGAC6C",
+   "LXA6502SHEVX0A",
+   "LXA6502SHEVX0B",
+   "LXA6502SHEVX0C",
+   "LXA6502SHEVX0D",
+   "LXA6511SHEVX0A",
+   "LXA6511SHEVX0B",
+   "LXA6511SHEVX0C",
+   "LXA6511SHEVX0D",
+   "LXA6520SHEVX06"
+  ],
+  "391": [
+   "JX7001EPABEV",
+   "BJ6492EVAA",
+   "BJ6522EVAA",
+   "BJ6522EVAA2",
+   "JKC6450A0X7BEV",
+   "BYD7152ACHEV3",
+   "BYD6500AJHEV1"
+  ],
+  "392": [
+   "SH6521U1BEV-Z62",
+   "SH6551A2BEV-8",
+   "BJ6491EVAA",
+   "BJ6521EVAA",
+   "BJ6521EVAA1",
+   "BJ6521EVAA2",
+   "BJ6558EVAA1",
+   "WHJ6451BEVK131",
+   "WHJ6451BEVK132",
+   "WHJ6520BEVK131",
+   "WHJ6520BEVK132",
+   "DXK6510AC3BEV",
+   "DXK6510AC5BEV",
+   "DXK6510AC6BEV",
+   "DXK6520AC1BEV",
+   "DXK6520AC3BEV"
+  ],
+  "393": [
+   "SVW7001AEV",
+   "SVW7002AEV",
+   "HFC6525EV1W",
+   "JHC6481BEVR4",
+   "SC6558AAAABEV",
+   "SC6558AAABBEV",
+   "SC6558AAACBEV",
+   "SC6558AAADBEV",
+   "NJL6530PHEV"
+  ],
+  "395": [
+   "LZW6500BEVA3",
+   "JHC6507BEVR2",
+   "AHC6450BEVD2B",
+   "HSE6542BEVM1B",
+   "JL6501BEV106",
+   "SC6519AAAABEV",
+   "SC6519AAABBEV",
+   "SC6519AAACBEV"
+  ],
+  "396": [
+   "JL6521DREEV100M"
+  ],
+  "397": [
+   "AHC7000BEVK0E",
+   "JX6480EUBBEV",
+   "BYD7153WT6HEV5",
+   "HQ6471DCHEV100"
+  ],
+  "398": [
+   "SH6521U1BEV-N50",
+   "SY6535BEVD1GB",
+   "SY6535BEVD1GB1",
+   "NJ6500FBEV512",
+   "WHJ6451BEVK133",
+   "JHC6541BEVR1",
+   "JHC6541BEVR2",
+   "JHC6541BEVR3",
+   "JHC6547BEVR1",
+   "JL6501BEV107",
+   "JL6501BEV108",
+   "JL6551BEV108",
+   "JL6551BEV109",
+   "JL6551BEV110",
+   "DXK6510AC10BEV",
+   "DXK6510AC11BEV",
+   "DXK6510AC14BEV",
+   "DXK6510AC8BEV",
+   "DXK6520AC12BEV",
+   "DXK6520AC13BEV",
+   "DXK6520AC15BEV",
+   "DXK6520AC9BEV",
+   "JKC6463A0X2BEV",
+   "JKC6491A0X5BEV",
+   "JKC6491A0X6BEV",
+   "MR7151DCHEV114"
+  ],
+  "399": [
+   "BJ6492EVAA1",
+   "BJ6522EVAA4",
+   "SY6480BEVD1EB",
+   "NJL6553EV1",
+   "NJL6553EV3",
+   "AFN6490LABBEVB",
+   "AFN6490SABBEVA",
+   "JX6521TB-L6BEV",
+   "JL6551BEV111",
+   "JL6551BEV112",
+   "SC6519AAAEBEV",
+   "SC6519AAAFBEV"
+  ],
+  "400": [
+   "SH6523U1BEV-Z62",
+   "CA6440BEVG",
+   "BAW6521MAM2BEV",
+   "BAW6530MBM8BEV",
+   "BJ6491EVAA2",
+   "BJ6521EVAA4",
+   "BJ6521EVAA5",
+   "BJ6522EVA01",
+   "BJ6522EVAA3",
+   "BJ6552EVAA4",
+   "WHJ6520BEVK134",
+   "SC6468AAABBEV",
+   "SC6488AAAABEV",
+   "SC6488AAABBEV",
+   "SC6508AAABBEV",
+   "SC6508AAAFBEV",
+   "SC6558AAAJBEV",
+   "SC6558AAAKBEV",
+   "SC6558AAALBEV",
+   "SC6558AAAMBEV",
+   "SC6558AAANBEV",
+   "HSE6340BEVM5D",
+   "HSE6544BEVM1B",
+   "HSE6545BEVM1B",
+   "JL6501BEV110",
+   "JL6551BEV114",
+   "HMA6450AEBEV",
+   "SC6519AAAGBEV",
+   "SC6519AAAHBEV",
+   "SC6519AAAJBEV",
+   "JKC6472B0X0BEV",
+   "JKC6472B0X1BEV"
+  ],
+  "401": [
+   "SH6541U1BEV-N83",
+   "LZW6453BEVA1",
+   "LZW6500BEVA7",
+   "LZW6500BEVA8",
+   "LZW6500BEVA9",
+   "LZW6550BEVA2",
+   "LZW6550BEVA4",
+   "NJ6500FBEV712",
+   "NJ6500FBEV713",
+   "NJ6540FBEV812",
+   "NJ6540FBEVA22",
+   "WHJ6451BEVK137",
+   "WHJ6451BEVK138",
+   "WHJ6451BEVK139",
+   "WHJ6520BEVK135",
+   "WHJ6520BEVK136",
+   "JHC6547BEVS1",
+   "JX6491TC-L6BEV",
+   "JX6521TC-L6BEV",
+   "JX6521TD-L6BEV",
+   "SC6468AAACBEV",
+   "DXK6510AC15BEV",
+   "DXK6520AC4BEV",
+   "JKC6450A0E0BEV",
+   "JKC6450A0E1BEV",
+   "JKC6460A0B0BEV",
+   "JKC6472B0X2BEV",
+   "JKC6490A0B0BEV",
+   "JKC6490A0B1BEV",
+   "JKC6490A0B3BEV",
+   "SH6541U1SHEV-N50"
+  ],
+  "402": [
+   "SH6541U1BEV-J64",
+   "SH6541U1BEV-Z62",
+   "SH6554J2BEV-5",
+   "LZW6500BEVA6",
+   "LZW6550BEVA6",
+   "BAW6521MAM7BEV",
+   "NJ6540FBEV75",
+   "NJ6540FBEV85",
+   "NJ6550HBEV6M",
+   "NJL6553EV2",
+   "WHJ6520BEVK137",
+   "JHC6481BEVS5",
+   "JHC6481BEVS6",
+   "JHC6481BEVS7",
+   "JHC6488BEVS1",
+   "JX6491TB-L6BEV",
+   "JX6491TD-L6BEV",
+   "JX6521TE-L6BEV",
+   "HSE6547BEVM1B",
+   "HSE6548BEVM1B",
+   "JL6551BEV116",
+   "JKC6460A0B1BEV",
+   "JKC6470B0C1BEV",
+   "JKC6490A0B2BEV",
+   "SVW715281BPV",
+   "LZW6502KBUPHEVA1",
+   "CA6475HA6PHEVTA",
+   "DFM6500S5F6REEV"
+  ],
+  "403": [
+   "VWA64702BEV4",
+   "JL6501BEV111"
+  ],
+  "404": [
+   "NEQ7000BEVJ72",
+   "NEQ7000BEVJ72A",
+   "NEQ7000BEVJ72C",
+   "NEQ7000BEVJ72D",
+   "NEQ7000BEVJ72H",
+   "NEQ7000BEVJ72J",
+   "NEQ7000BEVJ72K",
+   "NEQ7000BEVJ72L",
+   "NEQ7000BEVJ72M",
+   "HFC7150DREEV11",
+   "SC7150AAAZ6HEV"
+  ],
+  "405": [
+   "EQ6531VLBEVB",
+   "WHJ6451BEVK134",
+   "WHJ6520BEVK138",
+   "JHC6481BEVS8",
+   "JL6481BEV110",
+   "JL6501BEV112",
+   "JL6501BEV113",
+   "JL6501BEV117",
+   "JL6551BEV117"
+  ],
+  "406": [
+   "NJ6500FBEV822",
+   "WHJ6520BEVK139",
+   "JL6481BEV100",
+   "JL6481BEV101",
+   "JL6481BEV102",
+   "JL6481BEV103",
+   "JL6481BEV105",
+   "JL6481BEV106",
+   "JL6481BEV107",
+   "JL6481BEV108",
+   "JL6481BEV109",
+   "JL6481BEV113",
+   "JL6481BEV114",
+   "JL6481BEV116",
+   "JL6501BEV114",
+   "JL6501BEV115",
+   "JL6501BEV116",
+   "JL6501BEV118",
+   "JL6501BEV119",
+   "JL6501BEV120",
+   "JL6541BEV100",
+   "JL6541BEV101",
+   "JL6541BEV102",
+   "JL6541BEV103",
+   "JL6541BEV104",
+   "SC6480AAAPBEV",
+   "YZ6510BEV1"
+  ],
+  "407": [
+   "BH7001BEVDCA",
+   "LZW6510BEVA1",
+   "LZW6550BEVA7",
+   "BAW6530MBM9BEV",
+   "JL6481BEV104",
+   "JL6481BEV111",
+   "JL6481BEV112",
+   "JL6481BEV115",
+   "DXK6520AC5BEV",
+   "DXK6520AC6BEV",
+   "SC6519AAAKBEV",
+   "SY6470BEVD1AL",
+   "LZW6550GTUREEVA1",
+   "DFM6531S5F0REEV",
+   "SC6520AAAS6HEV"
+  ],
+  "408": [
+   "AHC7001BEVA2G",
+   "DC7002XAAYBEVH",
+   "YGM7000BEVBE1",
+   "LZW6551BEVA1",
+   "LZW6551BEVA2",
+   "EQ6530VBEVB",
+   "SQR6500BEVEHX2",
+   "WHJ6540BEVGE011",
+   "AHC6470BEVJ0Y",
+   "AHC6470BEVJ0Z",
+   "SC6558AAAQBEV",
+   "SC6558AAARBEV",
+   "JL6501BEV121",
+   "JL6501BEV122",
+   "JL6501BEV123",
+   "JL6501BEV124",
+   "JL6541BEV105",
+   "JL6541BEV106",
+   "JL6541BEV107",
+   "JL6541BEV108",
+   "JL6541BEV109",
+   "SY6543BEVDEB",
+   "JKC6450A0E2BEV",
+   "JKC6470B0C4BEV",
+   "JKC6490A0B4BEV",
+   "CSA6512LBEV1",
+   "CSA6512LBEV2",
+   "BJ6496VALBEV1",
+   "BJ6540K90BEV",
+   "JKC6480B6C0HEV",
+   "LZW6482KDUREEVA2",
+   "BJ6530K803RREEV",
+   "NJ6550HHEV3M",
+   "SQR6521REEVE023"
+  ]
+ },
+ "mismatch": [
+  {
+   "批次": "342",
+   "型号": "HQ7002BEV78",
+   "官方批次": [
+    "345",
+    "348",
+    "350",
+    "355",
+    "360",
+    "363",
+    "369",
+    "371",
+    "378",
+    "387"
+   ]
+  },
+  {
+   "批次": "342",
+   "型号": "MR7002BEV28",
+   "官方批次": [
+    "345",
+    "350",
+    "361"
+   ]
+  },
+  {
+   "批次": "343",
+   "型号": "HQ7002BEV76",
+   "官方批次": [
+    "345",
+    "350"
+   ]
+  },
+  {
+   "批次": "343",
+   "型号": "VCC7002F02VBEV",
+   "官方批次": [
+    "344",
+    "348"
+   ]
+  },
+  {
+   "批次": "343",
+   "型号": "VCC7002F03VBEV",
+   "官方批次": [
+    "344",
+    "348"
+   ]
+  },
+  {
+   "批次": "343",
+   "型号": "VCC7002F04VBEV",
+   "官方批次": [
+    "344",
+    "348",
+    "354"
+   ]
+  },
+  {
+   "批次": "343",
+   "型号": "VCC7002F05VBEV",
+   "官方批次": [
+    "344",
+    "348",
+    "354"
+   ]
+  },
+  {
+   "批次": "343",
+   "型号": "VCC7002F07VBEV",
+   "官方批次": [
+    "344",
+    "348"
+   ]
+  },
+  {
+   "批次": "343",
+   "型号": "VCC7002F08VBEV",
+   "官方批次": [
+    "344",
+    "348"
+   ]
+  },
+  {
+   "批次": "344",
+   "型号": "BAW7000UL42BEV",
+   "官方批次": [
+    "345",
+    "353"
+   ]
+  },
+  {
+   "批次": "344",
+   "型号": "THZ6451BEVS307",
+   "官方批次": [
+    "345",
+    "371"
+   ]
+  },
+  {
+   "批次": "346",
+   "型号": "SQR6481BEVF11",
+   "官方批次": [
+    "349",
+    "356",
+    "362"
+   ]
+  },
+  {
+   "批次": "347",
+   "型号": "GAM6460BEVM0A",
+   "官方批次": [
+    "349",
+    "351",
+    "354",
+    "386"
+   ]
+  },
+  {
+   "批次": "347",
+   "型号": "GAM6460BEVM0B",
+   "官方批次": [
+    "349",
+    "351",
+    "354",
+    "386"
+   ]
+  },
+  {
+   "批次": "347",
+   "型号": "GAM6460BEVM0E",
+   "官方批次": [
+    "349",
+    "351",
+    "354",
+    "386"
+   ]
+  },
+  {
+   "批次": "347",
+   "型号": "SZS7000A05BEV",
+   "官方批次": [
+    "348",
+    "350",
+    "355"
+   ]
+  },
+  {
+   "批次": "347",
+   "型号": "TSL7000BEVAR4",
+   "官方批次": [
+    "348",
+    "352",
+    "367"
+   ]
+  },
+  {
+   "批次": "349",
+   "型号": "BJ7000C5DFK-BEV",
+   "官方批次": [
+    "350",
+    "363",
+    "374"
+   ]
+  },
+  {
+   "批次": "349",
+   "型号": "BJ7000C5DHK-BEV",
+   "官方批次": [
+    "350",
+    "363",
+    "374"
+   ]
+  },
+  {
+   "批次": "349",
+   "型号": "LZW7004EVA5EBKU",
+   "官方批次": [
+    "350",
+    "357"
+   ]
+  },
+  {
+   "批次": "349",
+   "型号": "LZW7004EVC1DBKU",
+   "官方批次": [
+    "350"
+   ]
+  },
+  {
+   "批次": "349",
+   "型号": "NEQ7000BEVJ72U",
+   "官方批次": [
+    "350",
+    "353",
+    "355",
+    "360",
+    "366",
+    "372",
+    "374",
+    "404"
+   ]
+  },
+  {
+   "批次": "350",
+   "型号": "HDE6470BEVA0F",
+   "官方批次": [
+    "353",
+    "355"
+   ]
+  },
+  {
+   "批次": "350",
+   "型号": "HDE6470BEVA1F",
+   "官方批次": [
+    "353",
+    "355",
+    "357"
+   ]
+  },
+  {
+   "批次": "350",
+   "型号": "THZ6451BEVS30J",
+   "官方批次": [
+    "351",
+    "354",
+    "356",
+    "360",
+    "363",
+    "366",
+    "371",
+    "376"
+   ]
+  },
+  {
+   "批次": "354",
+   "型号": "BJ7204PELHEV",
+   "官方批次": [
+    "355",
+    "377",
+    "383",
+    "387",
+    "396"
+   ]
+  },
+  {
+   "批次": "357",
+   "型号": "NJL6471BEV500",
+   "官方批次": [
+    "359",
+    "363",
+    "368",
+    "370",
+    "372",
+    "375",
+    "380"
+   ]
+  },
+  {
+   "批次": "360",
+   "型号": "HRQ6352BEV",
+   "官方批次": [
+    "362"
+   ]
+  },
+  {
+   "批次": "360",
+   "型号": "JL6482DCHEV02",
+   "官方批次": [
+    "362",
+    "370"
+   ]
+  },
+  {
+   "批次": "360",
+   "型号": "JL6482DCHEV03",
+   "官方批次": [
+    "362",
+    "365"
+   ]
+  },
+  {
+   "批次": "362",
+   "型号": "JNJ7000EVF1",
+   "官方批次": [
+    "364",
+    "367",
+    "370"
+   ]
+  },
+  {
+   "批次": "362",
+   "型号": "JNJ7000EVF3",
+   "官方批次": [
+    "364",
+    "367",
+    "370"
+   ]
+  },
+  {
+   "批次": "363",
+   "型号": "DD7000BEVWRA1",
+   "官方批次": [
+    "365"
+   ]
+  },
+  {
+   "批次": "363",
+   "型号": "SKE6470SBEVA5S",
+   "官方批次": [
+    "365",
+    "368"
+   ]
+  },
+  {
+   "批次": "363",
+   "型号": "SKE6470SBEVR2",
+   "官方批次": [
+    "365",
+    "368"
+   ]
+  },
+  {
+   "批次": "361",
+   "型号": "CC6470AH05FPHEV",
+   "官方批次": [
+    "363",
+    "384"
+   ]
+  },
+  {
+   "批次": "361",
+   "型号": "CC6470CF01APHEV",
+   "官方批次": [
+    "363",
+    "384"
+   ]
+  },
+  {
+   "批次": "361",
+   "型号": "THZ7000BEVS11K",
+   "官方批次": [
+    "365",
+    "370",
+    "371"
+   ]
+  },
+  {
+   "批次": "361",
+   "型号": "CC6470AH05HPHEV",
+   "官方批次": [
+    "365",
+    "384"
+   ]
+  },
+  {
+   "批次": "361",
+   "型号": "CC6470AH05JPHEV",
+   "官方批次": [
+    "365",
+    "384"
+   ]
+  },
+  {
+   "批次": "361",
+   "型号": "CC6470AH05KPHEV",
+   "官方批次": [
+    "365",
+    "384"
+   ]
+  },
+  {
+   "批次": "361",
+   "型号": "CC6470AP02DPHEV",
+   "官方批次": [
+    "365",
+    "367",
+    "384"
+   ]
+  },
+  {
+   "批次": "361",
+   "型号": "CC6470AP22DPHEV",
+   "官方批次": [
+    "365",
+    "367",
+    "384"
+   ]
+  },
+  {
+   "批次": "361",
+   "型号": "CC6470CF01BPHEV",
+   "官方批次": [
+    "365",
+    "372",
+    "384",
+    "391"
+   ]
+  },
+  {
+   "批次": "361",
+   "型号": "CC6470CF01CPHEV",
+   "官方批次": [
+    "365",
+    "371",
+    "384"
+   ]
+  },
+  {
+   "批次": "361",
+   "型号": "CC6470CF01DPHEV",
+   "官方批次": [
+    "365",
+    "371",
+    "384",
+    "391",
+    "396"
+   ]
+  },
+  {
+   "批次": "365",
+   "型号": "SC6479AAA6HEV",
+   "官方批次": [
+    "366",
+    "368"
+   ]
+  },
+  {
+   "批次": "365",
+   "型号": "SC6479AAB6HEV",
+   "官方批次": [
+    "366",
+    "368",
+    "370",
+    "373",
+    "378"
+   ]
+  },
+  {
+   "批次": "366",
+   "型号": "CW7000BH00HABEV",
+   "官方批次": [
+    "368"
+   ]
+  },
+  {
+   "批次": "366",
+   "型号": "CW7000BH00NABEV",
+   "官方批次": [
+    "368"
+   ]
+  },
+  {
+   "批次": "366",
+   "型号": "CW7000BH01NBBEV",
+   "官方批次": [
+    "368"
+   ]
+  },
+  {
+   "批次": "366",
+   "型号": "CW7000BH21NCBEV",
+   "官方批次": [
+    "368"
+   ]
+  },
+  {
+   "批次": "366",
+   "型号": "MR6525BEV06",
+   "官方批次": [
+    "367",
+    "370",
+    "374"
+   ]
+  },
+  {
+   "批次": "372",
+   "型号": "BAW6510MB6SHEV",
+   "官方批次": [
+    "373",
+    "375",
+    "382",
+    "386",
+    "392"
+   ]
+  },
+  {
+   "批次": "372",
+   "型号": "BAW6511MB6SHEV",
+   "官方批次": [
+    "373",
+    "375",
+    "382",
+    "386"
+   ]
+  },
+  {
+   "批次": "372",
+   "型号": "HFC6463E1PHEV3",
+   "官方批次": [
+    "373"
+   ]
+  },
+  {
+   "批次": "375",
+   "型号": "JX6480EUABEV",
+   "官方批次": [
+    "381",
+    "386",
+    "395",
+    "401",
+    "409"
+   ]
+  },
+  {
+   "批次": "375",
+   "型号": "SC6453BBEBEV",
+   "官方批次": [
+    "376",
+    "379",
+    "382",
+    "398"
+   ]
+  },
+  {
+   "批次": "376",
+   "型号": "JX6480EUABEV",
+   "官方批次": [
+    "381",
+    "386",
+    "395",
+    "401",
+    "409"
+   ]
+  },
+  {
+   "批次": "377",
+   "型号": "BJ6480A608BEV",
+   "官方批次": [
+    "378",
+    "382",
+    "387",
+    "390",
+    "396"
+   ]
+  },
+  {
+   "批次": "377",
+   "型号": "BJ6539EVAA4",
+   "官方批次": [
+    "378",
+    "383",
+    "389"
+   ]
+  },
+  {
+   "批次": "379",
+   "型号": "SH6481U1BEV-Z50",
+   "官方批次": [
+    "380",
+    "385",
+    "388",
+    "391",
+    "393",
+    "397",
+    "409"
+   ]
+  },
+  {
+   "批次": "383",
+   "型号": "SQR6460CHEVT1H",
+   "官方批次": [
+    "384",
+    "386",
+    "388",
+    "397"
+   ]
+  },
+  {
+   "批次": "384",
+   "型号": "NJ6540FBEV88",
+   "官方批次": [
+    "385",
+    "397"
+   ]
+  },
+  {
+   "批次": "385",
+   "型号": "AHC7001BEVA1D",
+   "官方批次": [
+    "386"
+   ]
+  },
+  {
+   "批次": "385",
+   "型号": "SC7157BBB6HEV",
+   "官方批次": [
+    "386"
+   ]
+  },
+  {
+   "批次": "385",
+   "型号": "SC7157BBC6HEV",
+   "官方批次": [
+    "386"
+   ]
+  },
+  {
+   "批次": "386",
+   "型号": "BMW7001AXEV",
+   "官方批次": [
+    "387",
+    "391",
+    "394",
+    "398",
+    "402",
+    "406"
+   ]
+  },
+  {
+   "批次": "387",
+   "型号": "HQ6471DCHEV04",
+   "官方批次": [
+    "388",
+    "390",
+    "392",
+    "395"
+   ]
+  },
+  {
+   "批次": "387",
+   "型号": "HQ6471DCHEV05",
+   "官方批次": [
+    "388",
+    "390",
+    "392"
+   ]
+  },
+  {
+   "批次": "389",
+   "型号": "JKC6463A0X1BEV",
+   "官方批次": [
+    "390",
+    "393",
+    "397",
+    "399"
+   ]
+  },
+  {
+   "批次": "389",
+   "型号": "JKC6491A0X1BEV",
+   "官方批次": [
+    "390",
+    "393",
+    "396",
+    "399"
+   ]
+  },
+  {
+   "批次": "389",
+   "型号": "JKC6491A0X4BEV",
+   "官方批次": [
+    "390",
+    "393",
+    "396",
+    "399"
+   ]
+  },
+  {
+   "批次": "390",
+   "型号": "NJL6470PHEV4",
+   "官方批次": [
+    "389",
+    "398",
+    "402",
+    "404"
+   ]
+  },
+  {
+   "批次": "390",
+   "型号": "SH6481N1CHEV",
+   "官方批次": [
+    "389",
+    "409"
+   ]
+  },
+  {
+   "批次": "390",
+   "型号": "SQR6471CHEVT1N",
+   "官方批次": [
+    "389",
+    "391",
+    "394"
+   ]
+  },
+  {
+   "批次": "390",
+   "型号": "SQR6500REEVEHY1",
+   "官方批次": [
+    "389",
+    "392",
+    "393",
+    "397",
+    "399",
+    "404",
+    "407"
+   ]
+  },
+  {
+   "批次": "391",
+   "型号": "BAW7000UBJ1BEV",
+   "官方批次": [
+    "390",
+    "394",
+    "398",
+    "400"
+   ]
+  },
+  {
+   "批次": "391",
+   "型号": "CA6490H0EVC",
+   "官方批次": [
+    "388"
+   ]
+  },
+  {
+   "批次": "391",
+   "型号": "CA6490H0EVXA",
+   "官方批次": [
+    "388"
+   ]
+  },
+  {
+   "批次": "391",
+   "型号": "XMA6500LBEVA1",
+   "官方批次": [
+    "390",
+    "393",
+    "395",
+    "397",
+    "401",
+    "404",
+    "406"
+   ]
+  },
+  {
+   "批次": "391",
+   "型号": "NJL6470PHEV4",
+   "官方批次": [
+    "389",
+    "398",
+    "402",
+    "404"
+   ]
+  },
+  {
+   "批次": "392",
+   "型号": "AHC6510BEVG0D",
+   "官方批次": [
+    "391",
+    "395"
+   ]
+  },
+  {
+   "批次": "392",
+   "型号": "YZ6550BEV2",
+   "官方批次": [
+    "390",
+    "394",
+    "397",
+    "399",
+    "402",
+    "404",
+    "406"
+   ]
+  },
+  {
+   "批次": "393",
+   "型号": "BJ7001A61LBEV",
+   "官方批次": [
+    "391",
+    "395"
+   ]
+  },
+  {
+   "批次": "394",
+   "型号": "BJ6522EVAA1",
+   "官方批次": [
+    "391",
+    "393",
+    "395",
+    "404"
+   ]
+  },
+  {
+   "批次": "394",
+   "型号": "KZ6510BEV0012",
+   "官方批次": [
+    "390"
+   ]
+  },
+  {
+   "批次": "394",
+   "型号": "NEQ6440BEVS56L",
+   "官方批次": [
+    "393"
+   ]
+  },
+  {
+   "批次": "395",
+   "型号": "FV6465BABEV",
+   "官方批次": [
+    "394"
+   ]
+  },
+  {
+   "批次": "395",
+   "型号": "NAL6513BSEVZ1",
+   "官方批次": [
+    "394",
+    "396",
+    "399",
+    "401",
+    "403",
+    "409"
+   ]
+  },
+  {
+   "批次": "395",
+   "型号": "FZ6490SHEVC16F",
+   "官方批次": [
+    "394",
+    "401"
+   ]
+  },
+  {
+   "批次": "395",
+   "型号": "NEQ6450REEVS56A",
+   "官方批次": [
+    "396",
+    "398",
+    "400"
+   ]
+  },
+  {
+   "批次": "395",
+   "型号": "SQR6480CHEVT1N",
+   "官方批次": [
+    "396",
+    "398"
+   ]
+  },
+  {
+   "批次": "395",
+   "型号": "SQR6481CHEVT1N",
+   "官方批次": [
+    "396",
+    "398",
+    "408"
+   ]
+  },
+  {
+   "批次": "396",
+   "型号": "BAW6521MAL1BEV",
+   "官方批次": [
+    "395"
+   ]
+  },
+  {
+   "批次": "396",
+   "型号": "BAW6530MBM3BEV",
+   "官方批次": [
+    "397",
+    "404"
+   ]
+  },
+  {
+   "批次": "396",
+   "型号": "SGM6525UECHEV",
+   "官方批次": [
+    "395"
+   ]
+  },
+  {
+   "批次": "398",
+   "型号": "BJ7008SLBEV",
+   "官方批次": [
+    "396"
+   ]
+  },
+  {
+   "批次": "399",
+   "型号": "CSA6453JBEV5",
+   "官方批次": [
+    "400"
+   ]
+  },
+  {
+   "批次": "399",
+   "型号": "CSA6453JBEV6",
+   "官方批次": [
+    "400"
+   ]
+  },
+  {
+   "批次": "399",
+   "型号": "CA6492HA6PHEVT",
+   "官方批次": [
+    "398",
+    "404",
+    "407"
+   ]
+  },
+  {
+   "批次": "399",
+   "型号": "CA6492HA6PHEVTA",
+   "官方批次": [
+    "398",
+    "404",
+    "407"
+   ]
+  },
+  {
+   "批次": "399",
+   "型号": "CA6492HA6PHEVTX",
+   "官方批次": [
+    "398",
+    "404",
+    "407"
+   ]
+  },
+  {
+   "批次": "399",
+   "型号": "NHQ6530SHEVHA",
+   "官方批次": [
+    "398",
+    "401",
+    "407",
+    "409"
+   ]
+  },
+  {
+   "批次": "400",
+   "型号": "SC7000AAARBEV",
+   "官方批次": [
+    "401"
+   ]
+  },
+  {
+   "批次": "400",
+   "型号": "SQR7000BEVE03A",
+   "官方批次": [
+    "401",
+    "403",
+    "405",
+    "408"
+   ]
+  },
+  {
+   "批次": "400",
+   "型号": "JX6497PD6PHEV",
+   "官方批次": [
+    "401"
+   ]
+  },
+  {
+   "批次": "400",
+   "型号": "JX6508PB6SHEV",
+   "官方批次": [
+    "401",
+    "403"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "CC6470CF26CPHEV",
+   "官方批次": [
+    "400",
+    "404"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "CC6470CF26EPHEV",
+   "官方批次": [
+    "400"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "CC6480BT25NPHEV",
+   "官方批次": [
+    "400",
+    "404"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "CC6480BT25QPHEV",
+   "官方批次": [
+    "400"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "CC6480CW23NPHEV",
+   "官方批次": [
+    "400",
+    "409"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "CSA6501ZFPHEV2",
+   "官方批次": [
+    "400"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "DFM6473M5F4PHEV",
+   "官方批次": [
+    "400"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "DXK6481AS10PHEVH",
+   "官方批次": [
+    "400",
+    "407"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "DXK6481AS11PHEVH45",
+   "官方批次": [
+    "400",
+    "407"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "DXK6481AS9PHEVH",
+   "官方批次": [
+    "400",
+    "407"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "HQ6471DCHEV105M",
+   "官方批次": [
+    "400",
+    "408"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "HQ6471DCHEV106M",
+   "官方批次": [
+    "400",
+    "408"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "HQ7151DCHEV102M",
+   "官方批次": [
+    "400",
+    "406",
+    "408"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "HQ7151DCHEV110",
+   "官方批次": [
+    "400",
+    "402",
+    "404",
+    "406"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "HQ7151DCHEV111",
+   "官方批次": [
+    "400",
+    "402",
+    "404",
+    "406"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "HQ7151DCHEV112",
+   "官方批次": [
+    "400",
+    "402",
+    "404",
+    "406"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "MR6521DCHEV110",
+   "官方批次": [
+    "400",
+    "408"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "MR6521DCHEV111",
+   "官方批次": [
+    "400",
+    "408"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "MR6521DCHEV112",
+   "官方批次": [
+    "400",
+    "408"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "MR6521DCHEV113",
+   "官方批次": [
+    "400",
+    "408"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "NHQ6481SHEVFA",
+   "官方批次": [
+    "400"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "NHQ7150SHEVKA",
+   "官方批次": [
+    "400",
+    "402"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "QCJ7200BTHEV2",
+   "官方批次": [
+    "400"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "SC6470AAAA6HEV",
+   "官方批次": [
+    "400",
+    "402"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "SGM6525UFCHEV",
+   "官方批次": [
+    "400"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "SQR6470CHEVT1L6",
+   "官方批次": [
+    "400"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "SQR6480CHEVT1J1",
+   "官方批次": [
+    "400",
+    "404",
+    "408"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "SQR6480CHEVT1N1",
+   "官方批次": [
+    "400",
+    "408"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "SQR6484CHEVT1J",
+   "官方批次": [
+    "400",
+    "404",
+    "408"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "SQR6485CHEVT1J",
+   "官方批次": [
+    "400",
+    "404",
+    "408"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "SQR6500CHEVT1J1",
+   "官方批次": [
+    "400",
+    "402",
+    "404",
+    "408"
+   ]
+  },
+  {
+   "批次": "401",
+   "型号": "SQR6520REEVE024",
+   "官方批次": [
+    "400"
+   ]
+  },
+  {
+   "批次": "402",
+   "型号": "HQ7151DCHEV103M",
+   "官方批次": [
+    "400",
+    "406",
+    "408"
+   ]
+  },
+  {
+   "批次": "402",
+   "型号": "LZ6520M15B4PHEV",
+   "官方批次": [
+    "401"
+   ]
+  },
+  {
+   "批次": "402",
+   "型号": "NJL6553HEV1",
+   "官方批次": [
+    "401",
+    "404",
+    "406"
+   ]
+  },
+  {
+   "批次": "403",
+   "型号": "BJ6552EVAA2",
+   "官方批次": [
+    "386",
+    "388",
+    "390",
+    "393",
+    "395",
+    "398",
+    "401",
+    "405"
+   ]
+  },
+  {
+   "批次": "403",
+   "型号": "JX6480EUABEV",
+   "官方批次": [
+    "381",
+    "386",
+    "395",
+    "401",
+    "409"
+   ]
+  },
+  {
+   "批次": "404",
+   "型号": "BJ7000T378BEV",
+   "官方批次": [
+    "406",
+    "409"
+   ]
+  },
+  {
+   "批次": "404",
+   "型号": "HQ7151DCHEV120",
+   "官方批次": [
+    "405",
+    "407",
+    "409"
+   ]
+  },
+  {
+   "批次": "404",
+   "型号": "HQ7151DCHEV121",
+   "官方批次": [
+    "405",
+    "407"
+   ]
+  },
+  {
+   "批次": "406",
+   "型号": "FZ6490BEVC16T",
+   "官方批次": [
+    "407"
+   ]
+  },
+  {
+   "批次": "406",
+   "型号": "QCJ6500BG6HEV12",
+   "官方批次": [
+    "407"
+   ]
+  },
+  {
+   "批次": "407",
+   "型号": "LZ6480MME0EV",
+   "官方批次": [
+    "408"
+   ]
+  },
+  {
+   "批次": "407",
+   "型号": "LZ6490MME0EV",
+   "官方批次": [
+    "408"
+   ]
+  },
+  {
+   "批次": "397",
+   "型号": "CA6482H0EVC",
+   "官方批次": [
+    "396",
+    "400"
+   ]
+  },
+  {
+   "批次": "397",
+   "型号": "JX6460EUBBEV",
+   "官方批次": [
+    "399",
+    "401"
+   ]
+  },
+  {
+   "批次": "397",
+   "型号": "JX6460EUCBEV",
+   "官方批次": [
+    "399",
+    "401"
+   ]
+  },
+  {
+   "批次": "397",
+   "型号": "BAW6513MB6SHEV",
+   "官方批次": [
+    "398",
+    "400",
+    "402"
+   ]
+  },
+  {
+   "批次": "397",
+   "型号": "BAW6514MB6SHEV",
+   "官方批次": [
+    "398",
+    "400",
+    "402"
+   ]
+  },
+  {
+   "批次": "397",
+   "型号": "DFM6480M5F0PHEV",
+   "官方批次": [
+    "396"
+   ]
+  },
+  {
+   "批次": "397",
+   "型号": "MR6471DSHEV100",
+   "官方批次": [
+    "396",
+    "398",
+    "404",
+    "409"
+   ]
+  }
+ ]
+}
