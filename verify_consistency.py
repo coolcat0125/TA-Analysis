@@ -18,6 +18,7 @@ verify_consistency.py — 底表逻辑自洽校验（夜间迭代每轮必跑）
     W3 BEV 行带数值型综合油耗（动力类型与发动机字段矛盾或脏值）
     W4 PHEV/EREV 行综合油耗与 B 状态油耗均为空
     W5 车长/轴距比值超出 [1.4, 2.4] 平台合理区间
+    W6 同一产品型号出现在多个批次（跨批重复，疑"目录归批"误植，2026-09-12 教训）
 
 用法：
   python verify_consistency.py [--input 底表.xlsx] [--json 输出.json]
@@ -96,7 +97,7 @@ def main():
     crit = Counter()
     warn = Counter()
     det = {'C1': [], 'C2': [], 'C3': [], 'C4': [], 'C5': [],
-           'W1': [], 'W2': [], 'W3': [], 'W4': [], 'W5': []}
+           'W1': [], 'W2': [], 'W3': [], 'W4': [], 'W5': [], 'W6': []}
     seen_keys = Counter()
 
     for row in ws.iter_rows(min_row=2, values_only=True):
@@ -192,6 +193,17 @@ def main():
                 warn['W5'] += 1
                 if len(det['W5']) < 40:
                     det['W5'].append({'批次': b, '型号': m, '比值': round(L / A, 2)})
+
+    # W6 跨批同码
+    model_batches = {}
+    for (b, m) in seen_keys:
+        if m:
+            model_batches.setdefault(m, set()).add(b)
+    for m, bs in sorted(model_batches.items()):
+        if len(bs) > 1:
+            warn['W6'] += 1
+            if len(det['W6']) < 30:
+                det['W6'].append({'型号': m, '批次': sorted(bs)})
 
     # C3 重复
     for (b, m), n in seen_keys.items():
