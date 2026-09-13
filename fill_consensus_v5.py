@@ -134,9 +134,14 @@ def consensus_fill(ws, rows, fi, key_fields, fields, color, ctype, note_fn, stat
         key = tuple(norm(rec.get(k)) for k in key_fields)
         if None in key or gsize[key] < 2:
             continue
+        _ptg = str(rec.get('动力类型') or '')
+        _bev_guard = ('BEV' in _ptg or '纯电' in _ptg)
         for f in fields:
             if not fillable(rec.get(f)):
                 continue
+            if _bev_guard and f in ('综合油耗(L/100km)', 'B状态油耗(L/100km)',
+                                    '发动机型号', '发动机排量(mL)', '发动机功率(kW)', '发动机生产企业'):
+                continue  # BEV 行禁填油耗/发动机字段（2026-09-13 混系感染教训）
             s = groups[key].get(f)
             if s and len(s) == 1:
                 val = next(iter(s))

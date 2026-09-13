@@ -330,9 +330,14 @@ def main():
         if not info or not info["values"]:
             continue
 
+        pt_now = str(r[hi["动力类型"]] if hi["动力类型"] < len(r) else "")
+        is_bev_now = ("BEV" in pt_now or "纯电" in pt_now)
         for wf in set(x for sv in info["values"] for x in sv):
             if wf not in hi:
                 continue
+            if is_bev_now and wf in ("综合油耗(L/100km)", "B状态油耗(L/100km)",
+                                     "发动机型号", "发动机排量(mL)", "发动机生产企业"):
+                continue  # BEV 行禁填油耗/发动机字段（2026-09-13 混系感染教训）
             i = hi[wf]
             if not is_missing(r[i]):
                 continue
