@@ -244,6 +244,9 @@ def main():
         v = int(round(ab * k / 10.0) * 10)
         if not (1800 <= v <= 6500):
             continue
+        cw_check = cast_num(norm(rec.get('整备质量(kg)')))
+        if cw_check and not (0.18 <= cw_check / v <= 0.70):
+            continue  # 整备/车长比出界→轴距或系数不可信，放弃估算（2026-09-13 教训）
         cell = ws.cell(r, fi['车长(mm)'] + 1)
         cell.value = v
         cell.fill = PURPLE
