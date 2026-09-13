@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-13T13:47:47+00:00",
+  "generated_at_utc": "2026-09-13T13:59:08+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "155c10bd1f5697db5d7dab306fb96e647480b066eb3c05972132320abfc1c698",
+    "sha256": "72b4f006a8b52220071065b43dace31e4819a7342ddba5f311b94b96d6af8e9f",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
