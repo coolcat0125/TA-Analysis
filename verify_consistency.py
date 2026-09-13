@@ -19,6 +19,7 @@ verify_consistency.py — 底表逻辑自洽校验（夜间迭代每轮必跑）
     W4 PHEV/EREV 行综合油耗与 B 状态油耗均为空
     W5 车长/轴距比值超出 [1.4, 2.4] 平台合理区间
     W6 同一产品型号出现在多个批次（跨批重复，疑"目录归批"误植，2026-09-12 教训）
+    W7 整备/车长比值出界 [0.18, 0.65]（微型车被灌入MPV级车长的污染特征，2026-09-13 教训）
 
 用法：
   python verify_consistency.py [--input 底表.xlsx] [--json 输出.json]
@@ -97,7 +98,7 @@ def main():
     crit = Counter()
     warn = Counter()
     det = {'C1': [], 'C2': [], 'C3': [], 'C4': [], 'C5': [],
-           'W1': [], 'W2': [], 'W3': [], 'W4': [], 'W5': [], 'W6': []}
+           'W1': [], 'W2': [], 'W3': [], 'W4': [], 'W5': [], 'W6': [], 'W7': []}
     seen_keys = Counter()
 
     for row in ws.iter_rows(min_row=2, values_only=True):
@@ -180,6 +181,17 @@ def main():
             warn['W4'] += 1
             if len(det['W4']) < 40:
                 det['W4'].append({'批次': b, '型号': m})
+
+        # W7 整备/车长比（车长>2500 时检验）
+        cw7 = fnum(val(row, '整备质量(kg)'))
+        L7 = fnum(val(row, '车长(mm)'))
+        if cw7 and L7 and L7 > 2500:
+            ratio7 = cw7 / L7
+            if not (0.18 <= ratio7 <= 0.65):
+                warn['W7'] += 1
+                if len(det['W7']) < 40:
+                    det['W7'].append({'批次': b, '型号': m, '比值': round(ratio7, 2),
+                                      '整备': cw7, '车长': L7})
 
         # C4/W5 车长轴距
         L = fnum(val(row, '车长(mm)'))

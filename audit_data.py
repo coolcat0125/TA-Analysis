@@ -23,7 +23,7 @@ from openpyxl import load_workbook
 
 COPYRIGHT = "Copyright © 2026 David YE"
 DEFAULT_GATES = {
-    "expected_min_records": 5358,
+    "expected_min_records": 5357,
     "required_headers": ["批次", "产品型号", "动力类型"],
     "coverage_floors": {
         "百公里电耗": 0.70,
