@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-14T14:38:03+00:00",
+  "generated_at_utc": "2026-09-14T15:27:41+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "1b7ef62a213d78ddf8a094667bb3af8ab741a0dc1a5260f845a58dc17bd1c3ba",
+    "sha256": "a8a73bbcaefcc2b874860cb06d50cea45a2c4e3de6784668cdf37d437efacc16",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
@@ -160,9 +160,9 @@
     },
     "电机总功率": {
       "header": "电机总功率/扭矩",
-      "populated": 4583,
-      "coverage": 0.855516,
-      "missing": 774
+      "populated": 4584,
+      "coverage": 0.855703,
+      "missing": 773
     },
     "后电机功率": {
       "header": "后电机功率/扭矩",
@@ -237,7 +237,7 @@
         5.0,
         1500.0
       ],
-      "numeric_values": 4583,
+      "numeric_values": 4584,
       "outliers": 1,
       "sample_outliers": [
         {
