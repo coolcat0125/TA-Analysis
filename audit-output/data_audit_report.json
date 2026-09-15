@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-14T15:27:41+00:00",
+  "generated_at_utc": "2026-09-15T13:46:59+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "a8a73bbcaefcc2b874860cb06d50cea45a2c4e3de6784668cdf37d437efacc16",
+    "sha256": "39128b252c5a039a9f98e9b51021ab561b8f6f0dbd664beb2e49ef6df04d2c80",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
@@ -130,9 +130,9 @@
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
-      "populated": 4812,
-      "coverage": 0.898264,
-      "missing": 545
+      "populated": 5203,
+      "coverage": 0.971253,
+      "missing": 154
     },
     "电池容量": {
       "header": "电池容量(kWh)",
@@ -148,9 +148,9 @@
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
-      "populated": 4730,
-      "coverage": 0.882957,
-      "missing": 627
+      "populated": 5105,
+      "coverage": 0.952959,
+      "missing": 252
     },
     "前电机功率": {
       "header": "前电机功率/扭矩",
@@ -160,9 +160,9 @@
     },
     "电机总功率": {
       "header": "电机总功率/扭矩",
-      "populated": 4584,
-      "coverage": 0.855703,
-      "missing": 773
+      "populated": 5190,
+      "coverage": 0.968826,
+      "missing": 167
     },
     "后电机功率": {
       "header": "后电机功率/扭矩",
@@ -192,7 +192,7 @@
         5.0,
         2000.0
       ],
-      "numeric_values": 4812,
+      "numeric_values": 5203,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -219,9 +219,30 @@
         3.0,
         40.0
       ],
-      "numeric_values": 4730,
-      "outliers": 0,
-      "sample_outliers": []
+      "numeric_values": 5104,
+      "outliers": 4,
+      "sample_outliers": [
+        {
+          "excel_row": 1020,
+          "value": "88",
+          "parsed": 88.0
+        },
+        {
+          "excel_row": 4743,
+          "value": "116",
+          "parsed": 116.0
+        },
+        {
+          "excel_row": 4762,
+          "value": "115",
+          "parsed": 115.0
+        },
+        {
+          "excel_row": 4883,
+          "value": "2.1",
+          "parsed": 2.1
+        }
+      ]
     },
     "前电机功率": {
       "expected_range": [
@@ -237,13 +258,18 @@
         5.0,
         1500.0
       ],
-      "numeric_values": 4584,
-      "outliers": 1,
+      "numeric_values": 5190,
+      "outliers": 2,
       "sample_outliers": [
         {
           "excel_row": 3324,
           "value": "2220",
           "parsed": 2220.0
+        },
+        {
+          "excel_row": 4896,
+          "value": "电机一(2):89;电机二(GM3001):66",
+          "parsed": 2.0
         }
       ]
     },
