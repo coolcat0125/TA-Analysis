@@ -1,0 +1,1129 @@
+{
+ "source": "car.yiche.com/newcar/salesrank/?energy=6",
+ "month": "2026年08月",
+ "scope": "零售量（行业综合销量，每月10日左右更新）",
+ "capturedAt": "2026-09-16T14:26:29.106Z",
+ "count": 160,
+ "items": [
+  {
+   "name": "星愿",
+   "price": "6.48-9.48万",
+   "sales": 39651,
+   "serialId": "11157",
+   "spell": "xingyuan"
+  },
+  {
+   "name": "零跑A10",
+   "price": "6.58-8.68万",
+   "sales": 30652,
+   "serialId": "12077",
+   "spell": "lingpaoa10"
+  },
+  {
+   "name": "Model Y",
+   "price": "26.35-36.90万",
+   "sales": 29260,
+   "serialId": "6224",
+   "spell": "modely-6224"
+  },
+  {
+   "name": "钛7",
+   "price": "17.98-23.98万",
+   "sales": 23471,
+   "serialId": "11523",
+   "spell": "tai7"
+  },
+  {
+   "name": "元UP",
+   "price": "7.48-11.98万",
+   "sales": 22958,
+   "serialId": "10661",
+   "spell": "yuanup"
+  },
+  {
+   "name": "Model 3",
+   "price": "23.55-33.95万",
+   "sales": 20787,
+   "serialId": "5845",
+   "spell": "model3"
+  },
+  {
+   "name": "长安启源Q05",
+   "price": "7.99-11.49万",
+   "sales": 17349,
+   "serialId": "11958",
+   "spell": "changanqiyuanq05-11958"
+  },
+  {
+   "name": "理想i6",
+   "price": "24.98-26.98万",
+   "sales": 16979,
+   "serialId": "11593",
+   "spell": "lixiangi6"
+  },
+  {
+   "name": "海豚",
+   "price": "9.98-12.58万",
+   "sales": 16829,
+   "serialId": "7480",
+   "spell": "biyadiea1"
+  },
+  {
+   "name": "小米SU7",
+   "price": "21.99-30.39万",
+   "sales": 16518,
+   "serialId": "10628",
+   "spell": "xiaomisu7"
+  },
+  {
+   "name": "宋Ultra",
+   "price": "12.99-17.99万",
+   "sales": 15903,
+   "serialId": "12176",
+   "spell": "songultra"
+  },
+  {
+   "name": "缤果Pro",
+   "price": "5.68-7.08万",
+   "sales": 14695,
+   "serialId": "12286",
+   "spell": "wulingbinguopro"
+  },
+  {
+   "name": "宋Pro",
+   "price": "10.28-13.38万",
+   "sales": 13954,
+   "serialId": "5710",
+   "spell": "songproev"
+  },
+  {
+   "name": "海狮06",
+   "price": "12.99-19.98万",
+   "sales": 13887,
+   "serialId": "11393",
+   "spell": "haishi06ev"
+  },
+  {
+   "name": "小米YU7",
+   "price": "23.35-38.99万",
+   "sales": 13635,
+   "serialId": "11108",
+   "spell": "xiaomimx11"
+  },
+  {
+   "name": "MG4",
+   "price": "6.88-10.28万",
+   "sales": 13089,
+   "serialId": "9550",
+   "spell": "mgeh32"
+  },
+  {
+   "name": "奇瑞QQ3EV",
+   "price": "5.89-7.89万",
+   "sales": 12579,
+   "serialId": "11995",
+   "spell": "qiruiqq3-11995"
+  },
+  {
+   "name": "海豹06",
+   "price": "9.68-15.59万",
+   "sales": 12203,
+   "serialId": "10744",
+   "spell": "haibao06"
+  },
+  {
+   "name": "秦PLUS",
+   "price": "7.98-17.98万",
+   "sales": 11117,
+   "serialId": "7219",
+   "spell": "qinplusdm"
+  },
+  {
+   "name": "宏光MINIEV",
+   "price": "3.58-5.58万",
+   "sales": 11033,
+   "serialId": "6580",
+   "spell": "hongguangminiev"
+  },
+  {
+   "name": "AION i60",
+   "price": "10.28-14.28万",
+   "sales": 11027,
+   "serialId": "11963",
+   "spell": "aioni60"
+  },
+  {
+   "name": "蔚来ES8",
+   "price": "38.28-44.68万",
+   "sales": 10991,
+   "serialId": "5033",
+   "spell": "weilaies8"
+  },
+  {
+   "name": "零跑C10",
+   "price": "12.28-14.28万",
+   "sales": 10200,
+   "serialId": "10314",
+   "spell": "lingpaob11"
+  },
+  {
+   "name": "长城H10",
+   "price": "20.98-23.18万",
+   "sales": 10178,
+   "serialId": "12242",
+   "spell": "hafuqijiansuv"
+  },
+  {
+   "name": "海鸥",
+   "price": "6.98-8.59万",
+   "sales": 10103,
+   "serialId": "9539",
+   "spell": "haiou"
+  },
+  {
+   "name": "问界M9",
+   "price": "47.98-65.98万",
+   "sales": 10098,
+   "serialId": "9993",
+   "spell": "wenjiem9"
+  },
+  {
+   "name": "理想L6",
+   "price": "24.98万",
+   "sales": 9918,
+   "serialId": "9806",
+   "spell": "lixiangl6"
+  },
+  {
+   "name": "深蓝S05",
+   "price": "11.99-17.99万",
+   "sales": 9246,
+   "serialId": "10889",
+   "spell": "shenlans05"
+  },
+  {
+   "name": "铂智3X",
+   "price": "10.98-15.98万",
+   "sales": 9216,
+   "serialId": "11217",
+   "spell": "guangqifengtianbozhi3x"
+  },
+  {
+   "name": "零跑B10",
+   "price": "9.98-14.98万",
+   "sales": 8831,
+   "serialId": "11247",
+   "spell": "lingpaob10"
+  },
+  {
+   "name": "长安Lumin",
+   "price": "4.49-6.19万",
+   "sales": 8637,
+   "serialId": "8903",
+   "spell": "nuoyumi"
+  },
+  {
+   "name": "小鹏MONA L03",
+   "price": "12.38-15.68万",
+   "sales": 8424,
+   "serialId": "12149",
+   "spell": "xiaopengmonasuv"
+  },
+  {
+   "name": "小鹏MONA M03",
+   "price": "11.98-15.18万",
+   "sales": 8374,
+   "serialId": "10903",
+   "spell": "xiaopengmona"
+  },
+  {
+   "name": "零跑A05",
+   "price": "6.39-9.09万",
+   "sales": 8340,
+   "serialId": "12268",
+   "spell": "lingpaoa05"
+  },
+  {
+   "name": "智界V9",
+   "price": "38.98-51.98万",
+   "sales": 8312,
+   "serialId": "11957",
+   "spell": "zhijiezhongdaxingmpv"
+  },
+  {
+   "name": "海狮05DM-i",
+   "price": "9.79-12.79万",
+   "sales": 8185,
+   "serialId": "11161",
+   "spell": "haishi05"
+  },
+  {
+   "name": "问界M6",
+   "price": "22.98-29.98万",
+   "sales": 7907,
+   "serialId": "12154",
+   "spell": "wenjiem6"
+  },
+  {
+   "name": "大唐",
+   "price": "23.99-30.99万",
+   "sales": 7796,
+   "serialId": "11567",
+   "spell": "wangchaodjisuv"
+  },
+  {
+   "name": "华境S",
+   "price": "15.98-20.68万",
+   "sales": 7306,
+   "serialId": "12006",
+   "spell": "baojunhuajings"
+  },
+  {
+   "name": "海狮05EV",
+   "price": "11.78-16.38万",
+   "sales": 7252,
+   "serialId": "11384",
+   "spell": "haishi05ev"
+  },
+  {
+   "name": "小鹏GX",
+   "price": "27.98-35.98万",
+   "sales": 7002,
+   "serialId": "11398",
+   "spell": "xiaopengg01"
+  },
+  {
+   "name": "元PLUS",
+   "price": "11.58-14.99万",
+   "sales": 6816,
+   "serialId": "7596",
+   "spell": "yuanplus"
+  },
+  {
+   "name": "星光L",
+   "price": "11.28-13.58万",
+   "sales": 6553,
+   "serialId": "12136",
+   "spell": "wulingxingguangl"
+  },
+  {
+   "name": "蔚来ES9",
+   "price": "49.80-62.80万",
+   "sales": 6474,
+   "serialId": "12082",
+   "spell": "weilaies9"
+  },
+  {
+   "name": "缤果S",
+   "price": "6.68-8.98万",
+   "sales": 6314,
+   "serialId": "11653",
+   "spell": "wulingbinguos"
+  },
+  {
+   "name": "理想L8",
+   "price": "36.98-42.98万",
+   "sales": 6297,
+   "serialId": "8894",
+   "spell": "lixiangl7"
+  },
+  {
+   "name": "领克07GT",
+   "price": "15.78-17.78万",
+   "sales": 6056,
+   "serialId": "12281",
+   "spell": "lingke07gt"
+  },
+  {
+   "name": "海豹08",
+   "price": "19.69-23.99万",
+   "sales": 6038,
+   "serialId": "12151",
+   "spell": "haibao08"
+  },
+  {
+   "name": "零跑D19",
+   "price": "21.98-26.98万",
+   "sales": 6034,
+   "serialId": "12022",
+   "spell": "lingpaod19"
+  },
+  {
+   "name": "坦克300新能源",
+   "price": "24.98-25.98万",
+   "sales": 6025,
+   "serialId": "10223",
+   "spell": "tanke300xinnengyuan"
+  },
+  {
+   "name": "ZEEKR 007GT",
+   "price": "20.39-24.39万",
+   "sales": 5865,
+   "serialId": "11415",
+   "spell": "zeekr007gt"
+  },
+  {
+   "name": "风云A9",
+   "price": "10.99-12.99万",
+   "sales": 5859,
+   "serialId": "11216",
+   "spell": "fengyune05"
+  },
+  {
+   "name": "海豹05DM-i",
+   "price": "7.98-11.58万",
+   "sales": 5796,
+   "serialId": "11180",
+   "spell": "haibao05"
+  },
+  {
+   "name": "零跑C16",
+   "price": "14.58-18.18万",
+   "sales": 5784,
+   "serialId": "10609",
+   "spell": "lingpaoc16"
+  },
+  {
+   "name": "岚图梦想家",
+   "price": "32.99-70.99万",
+   "sales": 5769,
+   "serialId": "9231",
+   "spell": "mengxiangjiazengchengban"
+  },
+  {
+   "name": "firefly萤火虫",
+   "price": "11.98-13.58万",
+   "sales": 5718,
+   "serialId": "11362",
+   "spell": "yinghuochong-11362"
+  },
+  {
+   "name": "银河星舰7",
+   "price": "10.18-12.98万",
+   "sales": 5645,
+   "serialId": "11238",
+   "spell": "xingjian7"
+  },
+  {
+   "name": "腾势D9",
+   "price": "30.98-60.06万",
+   "sales": 5532,
+   "serialId": "8380",
+   "spell": "tengshimpv"
+  },
+  {
+   "name": "极狐 贝塔S3",
+   "price": "8.48-12.58万",
+   "sales": 5484,
+   "serialId": "11843",
+   "spell": "jihus3-11843"
+  },
+  {
+   "name": "钛3",
+   "price": "14.38-16.98万",
+   "sales": 5471,
+   "serialId": "10439",
+   "spell": "bao3"
+  },
+  {
+   "name": "秦L",
+   "price": "9.68-15.58万",
+   "sales": 5431,
+   "serialId": "10691",
+   "spell": "qinl"
+  },
+  {
+   "name": "长安启源A06",
+   "price": "10.99-14.99万",
+   "sales": 5351,
+   "serialId": "11604",
+   "spell": "changanqiyuanc390"
+  },
+  {
+   "name": "极狐 贝塔T1",
+   "price": "6.28-13.08万",
+   "sales": 5253,
+   "serialId": "11537",
+   "spell": "jihut1"
+  },
+  {
+   "name": "奔腾小马",
+   "price": "3.49-4.59万",
+   "sales": 5180,
+   "serialId": "10228",
+   "spell": "bentenge131"
+  },
+  {
+   "name": "银河M7",
+   "price": "11.98-14.78万",
+   "sales": 5145,
+   "serialId": "12135",
+   "spell": "yinhem7"
+  },
+  {
+   "name": "零跑B01",
+   "price": "8.98-14.97万",
+   "sales": 5009,
+   "serialId": "11408",
+   "spell": "lingpaob01"
+  },
+  {
+   "name": "ZEEKR 7X",
+   "price": "22.98-26.98万",
+   "sales": 4887,
+   "serialId": "10686",
+   "spell": "cx1e"
+  },
+  {
+   "name": "别克至境E7",
+   "price": "15.99-19.99万",
+   "sales": 4863,
+   "serialId": "12175",
+   "spell": "biekee7"
+  },
+  {
+   "name": "深蓝L06",
+   "price": "12.59-17.99万",
+   "sales": 4792,
+   "serialId": "11947",
+   "spell": "shenlanl06"
+  },
+  {
+   "name": "魏牌高山",
+   "price": "27.28-35.38万",
+   "sales": 4652,
+   "serialId": "9991",
+   "spell": "weizhongdaxingmpv"
+  },
+  {
+   "name": "银河E5",
+   "price": "10.98-17.98万",
+   "sales": 4617,
+   "serialId": "10794",
+   "spell": "yinhee5"
+  },
+  {
+   "name": "尚界Z7",
+   "price": "21.98-29.98万",
+   "sales": 4580,
+   "serialId": "12173",
+   "spell": "shangjiez7"
+  },
+  {
+   "name": "腾势N8L",
+   "price": "29.98-34.98万",
+   "sales": 4567,
+   "serialId": "11625",
+   "spell": "tengshin8l"
+  },
+  {
+   "name": "马自达EZ-60",
+   "price": "11.99-16.69万",
+   "sales": 4532,
+   "serialId": "11504",
+   "spell": "mazidaez60"
+  },
+  {
+   "name": "零跑C11",
+   "price": "14.38-16.58万",
+   "sales": 4260,
+   "serialId": "5696",
+   "spell": "lingpaocmore"
+  },
+  {
+   "name": "海豹06GT",
+   "price": "12.89-16.99万",
+   "sales": 4216,
+   "serialId": "10888",
+   "spell": "haibaox"
+  },
+  {
+   "name": "领克10",
+   "price": "17.58-24.99万",
+   "sales": 4072,
+   "serialId": "11615",
+   "spell": "lingke10emp"
+  },
+  {
+   "name": "MG 4X",
+   "price": "9.98-11.68万",
+   "sales": 4028,
+   "serialId": "12261",
+   "spell": "mg4x"
+  },
+  {
+   "name": "哈弗猛龙PHEV",
+   "price": "17.38-20.88万",
+   "sales": 4016,
+   "serialId": "10330",
+   "spell": "hafub26"
+  },
+  {
+   "name": "别克GL8 插电混动",
+   "price": "22.99-39.99万",
+   "sales": 3987,
+   "serialId": "10768",
+   "spell": "biekegl8chadianhundong"
+  },
+  {
+   "name": "风云T9L",
+   "price": "12.99-18.69万",
+   "sales": 3942,
+   "serialId": "12102",
+   "spell": "fengyunt9l"
+  },
+  {
+   "name": "AION RT",
+   "price": "9.98-12.88万",
+   "sales": 3877,
+   "serialId": "11235",
+   "spell": "aionrt"
+  },
+  {
+   "name": "极狐 阿尔法S5",
+   "price": "10.48-17.78万",
+   "sales": 3865,
+   "serialId": "9932",
+   "spell": "n51ab"
+  },
+  {
+   "name": "北京越野BJ40增程",
+   "price": "17.98-27.98万",
+   "sales": 3817,
+   "serialId": "10559",
+   "spell": "bj40xinnengyuan"
+  },
+  {
+   "name": "熊猫",
+   "price": "4.69-5.09万",
+   "sales": 3783,
+   "serialId": "9782",
+   "spell": "jihem2"
+  },
+  {
+   "name": "银河星耀7",
+   "price": "10.88-13.98万",
+   "sales": 3740,
+   "serialId": "12034",
+   "spell": "yinhexingyao7"
+  },
+  {
+   "name": "腾势Z9GT",
+   "price": "26.98-36.98万",
+   "sales": 3691,
+   "serialId": "10806",
+   "spell": "tengshiz9"
+  },
+  {
+   "name": "AION N60",
+   "price": "10.98-12.98万",
+   "sales": 3482,
+   "serialId": "12131",
+   "spell": "aionn60"
+  },
+  {
+   "name": "乐道L60",
+   "price": "19.28-25.59万",
+   "sales": 3462,
+   "serialId": "10720",
+   "spell": "aerbeisisuv"
+  },
+  {
+   "name": "智己LS6",
+   "price": "22.99-26.49万",
+   "sales": 3454,
+   "serialId": "10346",
+   "spell": "zhijils6"
+  },
+  {
+   "name": "豹5",
+   "price": "23.98-32.98万",
+   "sales": 3250,
+   "serialId": "10166",
+   "spell": "biyadifsuv"
+  },
+  {
+   "name": "乐道L80",
+   "price": "24.28-27.98万",
+   "sales": 3139,
+   "serialId": "11569",
+   "spell": "ledaol80-11569"
+  },
+  {
+   "name": "银河星耀6",
+   "price": "7.48-12.08万",
+   "sales": 3087,
+   "serialId": "11911",
+   "spell": "yinhexingyao6"
+  },
+  {
+   "name": "ZEEKR 009",
+   "price": "43.90-89.90万",
+   "sales": 3048,
+   "serialId": "8897",
+   "spell": "jikempv"
+  },
+  {
+   "name": "问界M7",
+   "price": "27.98-38.98万",
+   "sales": 3010,
+   "serialId": "8278",
+   "spell": "wenjiem7"
+  },
+  {
+   "name": "零跑Lafa5",
+   "price": "9.78-12.98万",
+   "sales": 3010,
+   "serialId": "11877",
+   "spell": "lingpaob05"
+  },
+  {
+   "name": "汉",
+   "price": "16.88-22.58万",
+   "sales": 2997,
+   "serialId": "6157",
+   "spell": "han"
+  },
+  {
+   "name": "星光730新能源",
+   "price": "10.38-11.78万",
+   "sales": 2909,
+   "serialId": "11779",
+   "spell": "wulingxinnengyuanmpv"
+  },
+  {
+   "name": "ZEEKR 9X",
+   "price": "46.59-59.99万",
+   "sales": 2887,
+   "serialId": "11396",
+   "spell": "zeekrex1h"
+  },
+  {
+   "name": "秦MAX",
+   "price": "9.99-14.688万",
+   "sales": 2787,
+   "serialId": "12130",
+   "spell": "qinmax"
+  },
+  {
+   "name": "山海L7 PLUS",
+   "price": "11.99-17.59万",
+   "sales": 2752,
+   "serialId": "11558",
+   "spell": "shanhail7plus"
+  },
+  {
+   "name": "零跑D99",
+   "price": "24.98-33.98万",
+   "sales": 2751,
+   "serialId": "11491",
+   "spell": "dxiliempv"
+  },
+  {
+   "name": "宋L DM-i",
+   "price": "13.98-15.68万",
+   "sales": 2644,
+   "serialId": "11183",
+   "spell": "songldmi"
+  },
+  {
+   "name": "银河A7 EM",
+   "price": "8.98-13.18万",
+   "sales": 2625,
+   "serialId": "11640",
+   "spell": "yinhea7"
+  },
+  {
+   "name": "长安启源Q07",
+   "price": "12.98-17.98万",
+   "sales": 2605,
+   "serialId": "11374",
+   "spell": "changanqiyuanc798"
+  },
+  {
+   "name": "日产NX8",
+   "price": "15.99-20.99万",
+   "sales": 2498,
+   "serialId": "12134",
+   "spell": "richannx8"
+  },
+  {
+   "name": "iCAR超级V23",
+   "price": "10.98-17.48万",
+   "sales": 2488,
+   "serialId": "10799",
+   "spell": "icarv23"
+  },
+  {
+   "name": "小鹏P7+",
+   "price": "18.68-19.88万",
+   "sales": 2431,
+   "serialId": "11155",
+   "spell": "xiaopengp7"
+  },
+  {
+   "name": "银河M9",
+   "price": "18.38-26.98万",
+   "sales": 2422,
+   "serialId": "10155",
+   "spell": "yinhel9"
+  },
+  {
+   "name": "丰田bZ3",
+   "price": "10.98-15.98万",
+   "sales": 2413,
+   "serialId": "9762",
+   "spell": "yiqifengtianbz3"
+  },
+  {
+   "name": "传祺E8 PHEV",
+   "price": "18.98-21.98万",
+   "sales": 2407,
+   "serialId": "10386",
+   "spell": "chuanqie8"
+  },
+  {
+   "name": "银河A7 EV",
+   "price": "11.28-15.08万",
+   "sales": 2402,
+   "serialId": "12361",
+   "spell": "yinhea7ev"
+  },
+  {
+   "name": "ZEEKR 8X",
+   "price": "35.68-50.08万",
+   "sales": 2376,
+   "serialId": "11397",
+   "spell": "zeekrdx1h"
+  },
+  {
+   "name": "阿维塔07L",
+   "price": "22.99-27.99万",
+   "sales": 2352,
+   "serialId": "12372",
+   "spell": "aweita07l"
+  },
+  {
+   "name": "理想L9",
+   "price": "45.98-50.98万",
+   "sales": 2236,
+   "serialId": "8105",
+   "spell": "lixiangx01"
+  },
+  {
+   "name": "乐道L90",
+   "price": "26.58-29.98万",
+   "sales": 2201,
+   "serialId": "11447",
+   "spell": "ledaol80"
+  },
+  {
+   "name": "铂智7",
+   "price": "16.98-22.98万",
+   "sales": 2190,
+   "serialId": "11355",
+   "spell": "guangqifengtianbozhi7gainianche"
+  },
+  {
+   "name": "银河星耀8",
+   "price": "13.58-17.28万",
+   "sales": 2190,
+   "serialId": "11451",
+   "spell": "yinhexingyaoemp"
+  },
+  {
+   "name": "五菱宏光新能源",
+   "price": "6.88-7.98万",
+   "sales": 2012,
+   "serialId": "11101",
+   "spell": "wulinghongguangev"
+  },
+  {
+   "name": "比亚迪e5",
+   "price": "22.065-23.065万",
+   "sales": 2009,
+   "serialId": "4501",
+   "spell": "biyadie5"
+  },
+  {
+   "name": "北京EU5",
+   "price": "15.19-15.39万",
+   "sales": 1920,
+   "serialId": "5927",
+   "spell": "beiqixinnengyuaneu5"
+  },
+  {
+   "name": "悦意03",
+   "price": "7.98-14.99万",
+   "sales": 1908,
+   "serialId": "11301",
+   "spell": "yueguan03"
+  },
+  {
+   "name": "长安启源A07",
+   "price": "13.99-16.59万",
+   "sales": 1883,
+   "serialId": "10227",
+   "spell": "changanqiyuana07chundiandong"
+  },
+  {
+   "name": "东风风神L7",
+   "price": "9.49-21.38万",
+   "sales": 1879,
+   "serialId": "10244",
+   "spell": "haohanphev"
+  },
+  {
+   "name": "极狐 阿尔法T5",
+   "price": "11.38-15.88万",
+   "sales": 1867,
+   "serialId": "9728",
+   "spell": "jihun50ab"
+  },
+  {
+   "name": "红旗HS3 PHEV",
+   "price": "15.98-16.18万",
+   "sales": 1865,
+   "serialId": "11233",
+   "spell": "hongqihs3xinnengyuan"
+  },
+  {
+   "name": "五菱之光新能源",
+   "price": "4.78-5.78万",
+   "sales": 1861,
+   "serialId": "11300",
+   "spell": "wulingzhiguangxinnengyuan"
+  },
+  {
+   "name": "比亚迪e7",
+   "price": "12.98-13.98万",
+   "sales": 1858,
+   "serialId": "11419",
+   "spell": "biyadie7"
+  },
+  {
+   "name": "奥迪E7X",
+   "price": "26.98-35.98万",
+   "sales": 1808,
+   "serialId": "12113",
+   "spell": "aodiesuvgainianche"
+  },
+  {
+   "name": "领克08 EM-P",
+   "price": "17.58-22.88万",
+   "sales": 1803,
+   "serialId": "10099",
+   "spell": "lingkedx11"
+  },
+  {
+   "name": "岚图追光S",
+   "price": "22.99-27.99万",
+   "sales": 1803,
+   "serialId": "12366",
+   "spell": "lantuzhuiguangs"
+  },
+  {
+   "name": "传祺向往S7",
+   "price": "14.98-22.98万",
+   "sales": 1785,
+   "serialId": "11345",
+   "spell": "chuanqis7"
+  },
+  {
+   "name": "五菱荣光纯电版",
+   "price": "6.98万",
+   "sales": 1780,
+   "serialId": "6595",
+   "spell": "wulingrongguangev-6595"
+  },
+  {
+   "name": "风云A9L",
+   "price": "14.99-23.69万",
+   "sales": 1774,
+   "serialId": "10255",
+   "spell": "arrizostar"
+  },
+  {
+   "name": "奕派M8",
+   "price": "17.98-21.98万",
+   "sales": 1708,
+   "serialId": "12348",
+   "spell": "em8"
+  },
+  {
+   "name": "尚界Z7T",
+   "price": "22.98-30.98万",
+   "sales": 1691,
+   "serialId": "12260",
+   "spell": "shangjiez7t"
+  },
+  {
+   "name": "奔驰GLC新能源",
+   "price": "33.98-51.80万",
+   "sales": 1668,
+   "serialId": "10109",
+   "spell": "benchiglcchadianhundong"
+  },
+  {
+   "name": "红旗HS6 PHEV",
+   "price": "17.88-22.88万",
+   "sales": 1637,
+   "serialId": "11433",
+   "spell": "hongqip301"
+  },
+  {
+   "name": "蔚来ET5T",
+   "price": "29.80-31.30万",
+   "sales": 1628,
+   "serialId": "10355",
+   "spell": "weilaiet5touring"
+  },
+  {
+   "name": "尚界H5",
+   "price": "15.98-19.98万",
+   "sales": 1617,
+   "serialId": "11536",
+   "spell": "shangjiees39"
+  },
+  {
+   "name": "iCAR V27",
+   "price": "16.98-19.68万",
+   "sales": 1609,
+   "serialId": "11616",
+   "spell": "icarv23-11616"
+  },
+  {
+   "name": "江豚",
+   "price": "暂无",
+   "sales": 1598,
+   "serialId": "9533",
+   "spell": "jiangtunev"
+  },
+  {
+   "name": "理想i8",
+   "price": "30.98-33.98万",
+   "sales": 1576,
+   "serialId": "11459",
+   "spell": "lixiangi8"
+  },
+  {
+   "name": "AION S",
+   "price": "13.68-15.68万",
+   "sales": 1574,
+   "serialId": "5536",
+   "spell": "guangqixinnengyuanaions"
+  },
+  {
+   "name": "小鹏P7",
+   "price": "20.38-30.18万",
+   "sales": 1563,
+   "serialId": "5694",
+   "spell": "xiaopengqichep7"
+  },
+  {
+   "name": "深蓝S07",
+   "price": "15.69-17.69万",
+   "sales": 1554,
+   "serialId": "9977",
+   "spell": "changanshenlans7"
+  },
+  {
+   "name": "坦克700新能源",
+   "price": "42.80-50.80万",
+   "sales": 1543,
+   "serialId": "10405",
+   "spell": "tanke700xinnengyuan"
+  },
+  {
+   "name": "唐",
+   "price": "17.98-19.98万",
+   "sales": 1542,
+   "serialId": "5521",
+   "spell": "tangev"
+  },
+  {
+   "name": "ZEEKR 001",
+   "price": "26.98-36.50万",
+   "sales": 1500,
+   "serialId": "7440",
+   "spell": "jike001"
+  },
+  {
+   "name": "荣威D6",
+   "price": "9.98-13.98万",
+   "sales": 1500,
+   "serialId": "11381",
+   "spell": "rongweid6"
+  },
+  {
+   "name": "ID.ERA 5S",
+   "price": "11.99-14.99万",
+   "sales": 1485,
+   "serialId": "12359",
+   "spell": "idera5s"
+  },
+  {
+   "name": "AION UT",
+   "price": "6.98-10.18万",
+   "sales": 1466,
+   "serialId": "11332",
+   "spell": "aionay2"
+  },
+  {
+   "name": "问界M8",
+   "price": "35.98-45.98万",
+   "sales": 1435,
+   "serialId": "11311",
+   "spell": "wenjiem8"
+  },
+  {
+   "name": "AION Y",
+   "price": "9.98-14.68万",
+   "sales": 1392,
+   "serialId": "7229",
+   "spell": "aianaiony"
+  },
+  {
+   "name": "坦克400新能源",
+   "price": "28.58-31.98万",
+   "sales": 1380,
+   "serialId": "10263",
+   "spell": "tanke400xinnengyuan"
+  },
+  {
+   "name": "岚图知音",
+   "price": "19.69-24.29万",
+   "sales": 1380,
+   "serialId": "10890",
+   "spell": "lantuzhiyin"
+  },
+  {
+   "name": "小象EV",
+   "price": "15.28-18.78万",
+   "sales": 1355,
+   "serialId": "10033",
+   "spell": "xiaoxiangev"
+  },
+  {
+   "name": "沃尔沃XC70",
+   "price": "41.19-49.69万",
+   "sales": 1352,
+   "serialId": "11600",
+   "spell": "woerwoxc70chadianhundong"
+  },
+  {
+   "name": "风云T11",
+   "price": "18.99-25.99万",
+   "sales": 1350,
+   "serialId": "10520",
+   "spell": "fengyunt11"
+  },
+  {
+   "name": "长城欧拉5SUV纯电版",
+   "price": "9.98-13.38万",
+   "sales": 1343,
+   "serialId": "12019",
+   "spell": "oulamao"
+  }
+ ]
+}

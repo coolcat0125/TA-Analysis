@@ -513,6 +513,7 @@ def load_records(path):
             clean_str(cell(row, '通用名称')),   # gn 通用名称（散点悬浮/明细表展示）
             val['rt'], rp, drive,        # rt 后电机扭矩 / rp 后电机功率 / drive 两驱0·四驱1
             str(cell(row, '产品名称') or ''),   # pn 公告产品名称（公告分类口径，供核验展示）
+            clean_num(cell(row, '月销量(辆)')),  # sn 月销量(参考项,易车车系零售口径)
         ]
         ptype_raw[id(rec)] = str(cell(row, '产品类型') or '')
         pname_raw[id(rec)] = str(cell(row, '产品名称') or '')
@@ -887,6 +888,17 @@ body.show-gaps .card.gap-hidden-note{display:none}
       <button data-t="PHEV">PHEV/EREV</button>
     </div>
   </div>
+  <div class="f-group">
+    <span class="f-label">月销量(参考)</span>
+    <select id="salesF">
+      <option value="ALL">全部</option>
+      <option value="s5w">≥5万辆</option>
+      <option value="s1w">1万~5万</option>
+      <option value="s3k">3千~1万</option>
+      <option value="lt3k">&lt;3千</option>
+      <option value="na">未填报</option>
+    </select>
+  </div>
   <button class="tool-btn" id="btnGap" title="显示/隐藏存在批次断档（源数据缺失）的图表">◇ 缺口图表 <span id="gapBtnLabel">0</span></button>
   <div class="f-group">
     <span class="f-label">细分市场</span>
@@ -1094,12 +1106,12 @@ const RAW_INIT = __DATA_JSON__;
 'use strict';
 /* ==================== 索引与全局 ==================== */
 const I = {b:0,t:1,s:2,e:3,w:4,r:5,c:6,bt:7,ed:8,ec:9,fp:10,tp:11,ms:12,tq:13,fo:14,dv:15,ep:16,es:17,src:18,
-  m:19,bd:20,tx:21,ab:22,lg:23,gn:24,rt:25,rp:26,drive:27,pn:28};
+  m:19,bd:20,tx:21,ab:22,lg:23,gn:24,rt:25,rp:26,drive:27,pn:28,sn:29};
 const TX_IDX = I.tx;   // 免征购置税：数据层保留，展示层全量隐藏（v3.7口径）
 const COL_NAMES = ['批次','动力类型','细分市场','企业名称','整备质量(kg)','纯电续航(km)','电池容量(kWh)','电池类型',
   '能量密度(Wh/kg)','百公里电耗(kWh/100km)','前电机功率(kW)','电机总功率(kW)','电机生产企业','系统扭矩(Nm)',
   '综合油耗(L/100km)','发动机排量(mL)','发动机功率(kW)','发动机生产企业','数据来源',
-  '产品型号','产品商标','是否减免购置税','轴距(mm)','车长(mm)','通用名称','后电机扭矩(Nm)','后电机功率(kW)','驱动形式','公告产品名称'];
+  '产品型号','产品商标','是否减免购置税','轴距(mm)','车长(mm)','通用名称','后电机扭矩(Nm)','后电机功率(kW)','驱动形式','公告产品名称','月销量(辆)'];
 let RAW = RAW_INIT;
 let META_CUR = META;
 
@@ -1188,7 +1200,7 @@ function segKey(s){
 
 /* ==================== 状态 ==================== */
 /* segs：已勾选（纳入统计）的细分市场集合；segAll=true 表示全选（不过滤） */
-const state = {bFrom:META.batchMin, bTo:META.batchMax, type:'ALL', segs:new Set(), segAll:true};
+const state = {bFrom:META.batchMin, bTo:META.batchMax, type:'ALL', segs:new Set(), segAll:true, sales:'ALL'};
 
 /* ==================== 数据工具（缺失不计入统计） ==================== */
 function filtered(){
@@ -1198,6 +1210,17 @@ function filtered(){
     if(!state.segAll){
       const s = r[I.s];
       if(s==null || !state.segs.has(s)) return false;   // 仅有勾选的细分市场纳入统计
+    }
+    if(state.sales!=='ALL'){
+      const v = r[I.sn];
+      if(state.sales==='na'){ if(v!=null && v!=='') return false; }
+      else {
+        if(v==null || v==='') return false;
+        if(state.sales==='s5w' && v<50000) return false;
+        if(state.sales==='s1w' && (v<10000 || v>=50000)) return false;
+        if(state.sales==='s3k' && (v<3000 || v>=10000)) return false;
+        if(state.sales==='lt3k' && v>=3000) return false;
+      }
     }
     return true;
   });
@@ -2831,10 +2854,14 @@ function initFilters(){
   document.getElementById('segSelAll').onclick = ()=>setAllSegs(true);
   document.getElementById('segClrAll').onclick = ()=>setAllSegs(false);
 
+  const sF = document.getElementById('salesF');
+  sF.value = state.sales;
+  sF.onchange = ()=>{ state.sales = sF.value; updateAll(); };
+
   document.getElementById('fReset').onclick = ()=>{
     state.bFrom=META_CUR.batches[0]; state.bTo=META_CUR.batches[META_CUR.batches.length-1];
-    state.type='ALL';
-    bF.value=state.bFrom; bT.value=state.bTo;
+    state.type='ALL'; state.sales='ALL';
+    bF.value=state.bFrom; bT.value=state.bTo; sF.value='ALL';
     document.querySelectorAll('#typeGroup button').forEach(b=>b.classList.toggle('on',b.dataset.t==='ALL'));
     setAllSegs(true);
   };
