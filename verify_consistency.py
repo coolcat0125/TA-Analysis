@@ -20,6 +20,7 @@ verify_consistency.py — 底表逻辑自洽校验（夜间迭代每轮必跑）
     W5 车长/轴距比值超出 [1.4, 2.4] 平台合理区间
     W6 同一产品型号出现在多个批次（跨批重复，疑"目录归批"误植，2026-09-12 教训）
     W7 整备/车长比值出界 [0.18, 0.70]（0.66+ 仅重型越野真实值，2026-09-13 校准）（微型车被灌入MPV级车长的污染特征，2026-09-13 教训）
+    W8 媒体车系品牌冲突（泛化名撞名跨品牌误配特征，2026-09-17；需 audit-output/_media_series_names.json 缓存在位）
 
 用法：
   python verify_consistency.py [--input 底表.xlsx] [--json 输出.json]
@@ -98,8 +99,19 @@ def main():
     crit = Counter()
     warn = Counter()
     det = {'C1': [], 'C2': [], 'C3': [], 'C4': [], 'C5': [],
-           'W1': [], 'W2': [], 'W3': [], 'W4': [], 'W5': [], 'W6': [], 'W7': []}
+           'W1': [], 'W2': [], 'W3': [], 'W4': [], 'W5': [], 'W6': [], 'W7': [], 'W8': []}
     seen_keys = Counter()
+
+    # W8 依赖：品牌词表（media_fill 固化）+ 车系名缓存（audit_brand_v2 产出，可选）
+    SERIES_NAMES = None
+    try:
+        _names_path = os.path.join(HERE, 'audit-output', '_media_series_names.json')
+        if os.path.exists(_names_path):
+            import json as _json
+            SERIES_NAMES = _json.load(open(_names_path, encoding='utf-8'))
+            from media_fill import brand_conflict  # noqa: E402
+    except Exception:
+        SERIES_NAMES = None
 
     for row in ws.iter_rows(min_row=2, values_only=True):
         if not any(v not in (None, '') for v in row):
@@ -192,6 +204,20 @@ def main():
                 if len(det['W7']) < 40:
                     det['W7'].append({'批次': b, '型号': m, '比值': round(ratio7, 2),
                                       '整备': cw7, '车长': L7})
+
+        # W8 媒体车系品牌冲突（泛化名撞名误配特征，2026-09-17 品牌审计教训；
+        # 依赖 audit-output/_media_series_names.json 车系名缓存，缺失则静默跳过）
+        src8 = val(row, '媒体校验来源') or ''
+        sids8 = re.findall(r'series/(\d+)', src8)
+        if sids8 and SERIES_NAMES is not None:
+            brand8 = (val(row, '产品商标') or '').removesuffix('牌')
+            for sid8 in sids8:
+                sn8 = SERIES_NAMES.get(sid8, '')
+                if sn8 and sn8 != 'ERR' and brand_conflict(brand8, sn8):
+                    warn['W8'] += 1
+                    if len(det['W8']) < 40:
+                        det['W8'].append({'批次': b, '型号': m, '车系': sn8, 'sid': sid8})
+                    break
 
         # C4/W5 车长轴距
         L = fnum(val(row, '车长(mm)'))
