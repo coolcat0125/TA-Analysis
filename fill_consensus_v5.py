@@ -113,10 +113,24 @@ def in_range(field, s):
     return lo <= f <= hi
 
 
+# 占位符通用名称 = 动力类型/产品类型泄漏值（如'纯电动轿车'）充当家族键会把几百款
+# 异构车型并成假家族跨模型扩散（2026-09-16 实证 438 格污染，已回退）。此类行不参与共识。
+PLACEHOLDER_GENERIC_RE = re.compile(
+    r'^(纯电动|插电式|插电混动|增程式|增程|混合动力|燃料电池|混动|纯|双层)?'
+    r'(轿车|SUV|SUV车|MPV|MPV车|多用途乘用车|乘用车|运动型乘用车|客车|货车|卡车|底盘|用车)$')
+
+
+def is_placeholder_generic(g):
+    s = str(g or '').strip()
+    return bool(s) and bool(PLACEHOLDER_GENERIC_RE.match(s))
+
+
 def consensus_fill(ws, rows, fi, key_fields, fields, color, ctype, note_fn, stats, ledger):
     groups = defaultdict(lambda: defaultdict(set))
     gsize = defaultdict(int)
     for _, rec in rows:
+        if '通用名称' in key_fields and is_placeholder_generic(rec.get('通用名称')):
+            continue
         key = tuple(norm(rec.get(k)) for k in key_fields)
         if None in key:
             continue
@@ -131,6 +145,8 @@ def consensus_fill(ws, rows, fi, key_fields, fields, color, ctype, note_fn, stat
                 continue
             groups[key][f].add(v)
     for r, rec in rows:
+        if '通用名称' in key_fields and is_placeholder_generic(rec.get('通用名称')):
+            continue
         key = tuple(norm(rec.get(k)) for k in key_fields)
         if None in key or gsize[key] < 2:
             continue
