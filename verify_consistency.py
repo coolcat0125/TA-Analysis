@@ -14,7 +14,8 @@ verify_consistency.py — 底表逻辑自洽校验（夜间迭代每轮必跑）
 
   WARN（逐条列出，供甄别；不阻断）：
     W1 八字段物理范围越界（真实值需外部佐证后才可修，参考仰望 U9X 2220kW 案例）
-    W2 BEV 电耗守恒：|电耗 − 容量×100÷续航| > 33%（多配置口径混合或需核实）
+    W2 BEV 电耗守恒：|电耗 − 容量×100÷续航| > 33%（多配置口径混合或需核实）；
+       官方能耗源逐项确证的伪警（期望侧容量/续航推导不适用）按白名单抑制单列 W2sup，不计入 WARN 合计
     W3 BEV 行带数值型综合油耗（动力类型与发动机字段矛盾或脏值）
     W4 PHEV/EREV 行综合油耗与 B 状态油耗均为空
     W5 车长/轴距比值超出 [1.4, 2.4] 平台合理区间
@@ -99,8 +100,22 @@ def main():
     crit = Counter()
     warn = Counter()
     det = {'C1': [], 'C2': [], 'C3': [], 'C4': [], 'C5': [],
-           'W1': [], 'W2': [], 'W3': [], 'W4': [], 'W5': [], 'W6': [], 'W7': [], 'W8': []}
+           'W1': [], 'W2': [], 'W2sup': [], 'W3': [], 'W4': [], 'W5': [], 'W6': [], 'W7': [], 'W8': []}
     seen_keys = Counter()
+
+    # W2 官方确证白名单（w2w4_arbitration_20260917.json 中带"确证"标记项：
+    # 含"现值确证"（官方与现值一致→期望侧伪警）与"官方源确证…更正现值"（更正后即官方值）
+    # 两类；"未收录，维持留档"项不含"确证"、继续正常告警。缺失文件时白名单为空、行为不变）
+    W2_CONFIRMED = set()
+    try:
+        _arb_path = os.path.join(HERE, 'audit-output', 'w2w4_arbitration_20260917.json')
+        if os.path.exists(_arb_path):
+            _plan = json.load(open(_arb_path, encoding='utf-8')).get('plan') or []
+            for _item in _plan:
+                if len(_item) >= 6 and '确证' in str(_item[5]):
+                    W2_CONFIRMED.add(tuple(_item[0]))
+    except Exception:
+        W2_CONFIRMED = set()
 
     # W8 依赖：品牌词表（media_fill 固化）+ 车系名缓存（audit_brand_v2 产出，可选）
     SERIES_NAMES = None
@@ -168,7 +183,8 @@ def main():
                 if len(det['W1']) < 60:
                     det['W1'].append({'批次': b, '型号': m, '字段': MOTOR_TOTAL_COL, '值': mt[:20]})
 
-        # W2 BEV 电耗守恒
+        # W2 BEV 电耗守恒（官方确证白名单抑制，2026-09-17 D2 判据校准：
+        # 矛盾根源=期望侧容量/续航推导对多配置口径不适用；白名单=官方能耗源逐项确证记录）
         if is_bev:
             cap = fnum(val(row, '电池容量(kWh)'))
             rng = fnum(val(row, '纯电续航里程(km)'))
@@ -176,10 +192,16 @@ def main():
             if cap and rng and cons:
                 exp = cap * 100 / rng
                 if not (0.75 * exp <= cons <= 1.33 * exp):
-                    warn['W2'] += 1
-                    if len(det['W2']) < 60:
-                        det['W2'].append({'批次': b, '型号': m,
-                                          '说明': f'电耗{cons} vs 期望{exp:.1f}'})
+                    if (b, m) in W2_CONFIRMED:
+                        warn['W2sup'] += 1
+                        if len(det['W2sup']) < 60:
+                            det['W2sup'].append({'批次': b, '型号': m,
+                                                 '说明': f'电耗{cons} vs 期望{exp:.1f}（官方确证，期望侧伪警）'})
+                    else:
+                        warn['W2'] += 1
+                        if len(det['W2']) < 60:
+                            det['W2'].append({'批次': b, '型号': m,
+                                              '说明': f'电耗{cons} vs 期望{exp:.1f}'})
 
         # W3 BEV 带数值油耗
         oil = val(row, '综合油耗(L/100km)')
@@ -250,6 +272,10 @@ def main():
             if len(det['C3']) < 30:
                 det['C3'].append({'批次': b, '型号': m, '重复次数': n})
 
+    # W2sup（官方确证伪警）不计入 WARN 合计，单独披露
+    sup_n = warn.pop('W2sup', 0)
+    sup_det = det.pop('W2sup', [])
+
     report = {
         'generatedAt': datetime.now(timezone.utc).isoformat(),
         'input': os.path.basename(path),
@@ -258,6 +284,8 @@ def main():
         'warn': dict(warn),
         'criticalTotal': sum(crit.values()),
         'warnTotal': sum(warn.values()),
+        'w2ConfirmedSuppressed': sup_n,
+        'w2SuppressedDetail': sup_det,
         'detail': det,
         'pass': sum(crit.values()) == 0,
     }
@@ -268,7 +296,8 @@ def main():
 
     print(f'== verify_consistency ==  记录={total}')
     print(f"CRITICAL: {dict(crit) or '无'}  合计={report['criticalTotal']}")
-    print(f"WARN:     {dict(warn) or '无'}  合计={report['warnTotal']}")
+    print(f"WARN:     {dict(warn) or '无'}  合计={report['warnTotal']}"
+          + (f"（另 W2 官方确证伪警抑制 {sup_n} 条，不计入）" if sup_n else ''))
     print(f"结论: {'PASS' if report['pass'] else 'FAIL（存在必须修复项）'}")
     sys.exit(0 if report['pass'] else 1)
 
