@@ -2288,6 +2288,7 @@ function renderCustom3D(ch, bev, phev, m, avg, rng, fv){
   };
   try{
     ch.setOption(opt, !!ch.__cd3dFirst);
+    if(ch.__cd3dFirst) ch.resize();   // 面板首建时 GL 层画布可能沿用隐藏期尺寸，强制对齐
     ch.__cd3dFirst = false;
     TREND_REGS['chCustom']={};
     return true;
