@@ -1,0 +1,49 @@
+﻿批次,产品型号,通用名称,车长当前mm,车长候选值mm,轴距当前→候选,状态(candidate/legal/unknown),证据等级,来源,source_url,检索日期,摘录/备注
+342,CC7000ZM02GBEV,"欧拉R1,欧拉黑猫",4560,3495,2650→2475,candidate,B,汽车之家问答/CCMO参数库,https://www.autohome.com.cn/ask/1357479.html,欧拉黑猫 3495×1660×1530mm，轴距2475mm（多源一致）,2026-09-18
+347,CC7000ZM00GBEV,"欧拉R1,欧拉黑猫",4560,3495,2650→2475,candidate,B,汽车之家问答/CCMO参数库,https://www.autohome.com.cn/ask/1357479.html,同上（全系尺寸一致）,2026-09-18
+350,CC7000ZM00KBEV,"欧拉R1,欧拉黑猫",4560,3495,2650→2475,candidate,B,汽车之家问答/CCMO参数库,https://www.autohome.com.cn/ask/1357479.html,同上,2026-09-18
+352,CC7000ZM02HBEV,"欧拉R1,欧拉黑猫",4560,3495,2650→2475,candidate,B,汽车之家问答/CCMO参数库,https://www.autohome.com.cn/ask/1357479.html,同上,2026-09-18
+341,CC7001ZM00EBEV,"欧拉R2,欧拉白猫",4560,3625,2650→2490,candidate,B,汽车之家问答+车质网试驾,https://www.autohome.com.cn/ask/5859750.html,欧拉白猫 3625×1660×1530mm，轴距2490mm,2026-09-18
+347,CC7001ZM02ABEV,"欧拉R2,欧拉白猫",4560,3625,2650→2490,candidate,B,汽车之家问答+车质网试驾,https://www.autohome.com.cn/ask/5859750.html,同上,2026-09-18
+351,CC7001ZM00FBEV,"欧拉R2,欧拉白猫",4560,3625,2650→2490,candidate,B,汽车之家问答+车质网试驾,https://www.autohome.com.cn/ask/5859750.html,同上,2026-09-18
+367,FZ7000BEV15,T03,4820,3620,2800→2400,candidate,B,太平洋汽车参数库,https://price.pcauto.com.cn/sg25653/config.html,零跑T03 3620×1652×1605mm，轴距2400mm（全版本一致）,2026-09-18
+380,FZ7000BEV16,T03,4820,3620,2800→2400,candidate,B,太平洋汽车参数库,https://price.pcauto.com.cn/sg25653/config.html,同上,2026-09-18
+348,LZW7003EVB3EAB,KiWi EV,4470,2894,2600→2020,candidate,B,搜狐汽车参数库+第一电动申报图,https://db.auto.sohu.com/model_6523,KiWi EV 2894×1655(1660)×1595(1600)mm，轴距2020mm,2026-09-18
+348,LZW7003EVB3KAB,KiWi EV,4470,2894,2600→2020,candidate,B,搜狐汽车参数库+第一电动申报图,https://db.auto.sohu.com/model_6523,同上,2026-09-18
+348,LZW7003EVGMAB,KiWi EV,4470,2894,2600→2020,candidate,B,搜狐汽车参数库+第一电动申报图,https://db.auto.sohu.com/model_6523,同上,2026-09-18
+360,LZW7003EVB3MAB,KiWi EV,4470,2894,2600→2020,candidate,B,搜狐汽车参数库+第一电动申报图,https://db.auto.sohu.com/model_6523,同上,2026-09-18
+341,HFC7000WEV9,E·10X,4680,3650,2720→2390,candidate,B,17vin公告参数库(江汽集团),https://www.17vin.com/model/zapxf.html,思皓E10X/花仙子 3650×1670×1540mm，轴距2390mm（2022~2023多款一致）,2026-09-18
+354,HFC7000WEV13,E·10X,4680,3650,2720→2390,candidate,B,17vin公告参数库(江汽集团),https://www.17vin.com/model/wfd9c.html,同上,2026-09-18
+362,HFC7000WEV14,花仙子,4680,3650,2720→2390,candidate,B,17vin公告参数库(江汽集团),https://www.17vin.com/model/zapxf.html,同上,2026-09-18
+362,HFC7000WEV15,花仙子,4680,3650,2720→2390,candidate,B,17vin公告参数库(江汽集团),https://www.17vin.com/model/zapxf.html,同上,2026-09-18
+373,HFC7000WEV17,"E·10X,花仙子",4680,3650,2720→2390,candidate,B,17vin公告参数库(江汽集团),https://www.17vin.com/model/djrj0.html,同上,2026-09-18
+373,HFC7000WEV18,"E·10X,花仙子",4680,3650,2720→2390,candidate,B,17vin公告参数库(江汽集团),https://www.17vin.com/model/djrj0.html,同上,2026-09-18
+347,CSA7001KBEV6,科莱威EV360,4820,3140,2800→2000,candidate,B,搜狐/新浪参数库+网通社,https://db.auto.sohu.com/model_6177/,科莱威CLEVER 3140×1648×1531mm，轴距2000mm,2026-09-18
+377,JX7001ESNBEV,易至EV3,4110,3720,2390(已合法),candidate,B,搜狐参数库/网易汽车,https://db.m.auto.sohu.com/model_5778/config,易至EV3 3720×1640×1494mm，轴距2390mm（底表轴距一致）,2026-09-18
+389,JX7001ESQBEV,纯电动轿车(易至EV3族),4110,3720,2390(已合法),candidate,B,搜狐参数库/网易汽车,https://db.m.auto.sohu.com/model_5778/config,型号前缀JX7001+轴距2390与EV3一致；通用名称兜底建议以公告原文终核,2026-09-18
+394,LZW7001BEVE2,五菱之光EV,4470,3685,2600(已合法),candidate,B,搜狐汽车/汽车之家问答/百度百科,https://db.m.auto.sohu.com/model_1108/a/859782042_605783,之光EV 3685×1530×1765(1750)mm，轴距2600mm（轴距合法仅车长污染）,2026-09-18
+397,LZW7001BEVE4,五菱之光EV,4470,3685,2600(已合法),candidate,B,搜狐汽车/汽车之家问答/百度百科,https://www.autohome.com.cn/ask/24425154.html,同上,2026-09-18
+398,LZW7001BEVE7,五菱之光EV,4470,3685,2600(已合法),candidate,B,搜狐汽车/汽车之家问答/百度百科,https://www.autohome.com.cn/ask/24425154.html,同上,2026-09-18
+388,LZW7001EVE1,纯电动轿车(之光EV族推断),4470,3685,2600(已合法),candidate,B,搜狐汽车/汽车之家问答+族推断,https://db.m.auto.sohu.com/model_1108/a/859782042_605783,LZW7001EV*前缀+轴距2600与之光EV一致(族推断)，身份建议公告原文终核,2026-09-18
+395,WHJ7000BEVHH122,拾月Mate,4330,3720,2520(已合法),candidate,B,网易/搜狐db(凯翼拾月Mate),https://www.163.com/dy/article/K2DONCKE05279SQR.html,拾月Mate 3720×1700×1608(1610)mm，轴距2520mm,2026-09-18
+406,WHJ7000BEVHH128,拾月max,4330,3725,2520(已合法),candidate,B,爱卡汽车(拾月max预售),https://aikahao.xcar.com.cn/item/3753455.html,拾月max 车长3725mm、车宽1700mm,2026-09-18
+407,WHJ7000BEVHH129,拾月max,4330,3725,2520(已合法),candidate,B,爱卡汽车(拾月max预售),https://aikahao.xcar.com.cn/item/3753455.html,同上,2026-09-18
+363,EQ7000FD2F3BEV,EX1,4660,3732,2710→?,candidate,B,卡车之家公告参数转载(369批佐证),https://zc.cn-truck.com/jiaoche/show_2031_195422.html,公告369批：东风牌EQ7000FD2F3BEV 最大长度3732mm，电机33kW；建议MIIT原文终核升A,2026-09-18
+388,SC7000AAAABEV,纯电动轿车,4640,3270,2700→1980,candidate,B,17vin公告页+车贸网(388批),https://www.17vin.com/gonggao/442768/SC7000AAAABEV.html,公告388批：3270×1700×1545mm，轴距1980mm，整备840（=糯玉米尺寸族）,2026-09-18
+388,SC7000AAABBEV,纯电动轿车,4640,3270,2700→1980(族推断),candidate,B,17vin公告页+同族推断,https://www.17vin.com/gonggao/442768/SC7000AAAABEV.html,AAABBEV未单独取证，按AAAA同族推断，建议公告原文终核,2026-09-18
+378,LZW7007EVA4,五菱缤果,4470,3950,2600→?,candidate,B(族复用),PR#5 EVID-VL-001/002(五菱官网A级+多源),candidate/v4.9/vehicle_length/evidence_ledger.csv,缤果3950全源全版本一致；EVA4为同车系378批行，底表轴距2600与真值2560待核,2026-09-18
+389,HXK7000BEVA18,纯电动轿车(凌宝BOX族),4220,3460~3584,2455(已合法),candidate,B(族复用),PR#5 EVID-VL-004~006(汽车之家/易车/凌宝官网),candidate/v4.9/vehicle_length/evidence_ledger.csv,凌宝BOX轴距2455全版本一致；A18/A19为同族389批行,2026-09-18
+389,HXK7000BEVA19,纯电动轿车(凌宝BOX族),4220,3460~3584,2455(已合法),candidate,B(族复用),PR#5 EVID-VL-004~006,candidate/v4.9/vehicle_length/evidence_ledger.csv,同上,2026-09-18
+374,JL7007BEV05,熊猫mini,4640,3065~3150,2700→2015,candidate,B(复用PR#5 A2),PR#5 CAND-A2-005~012,candidate/v4.9/issue4_a2_a5/candidate_A2_A5.csv,A2候选已覆盖JL7007BEV05~08(374批)，本表仅登记交叉引用,2026-09-18
+374,JL7007BEV06,熊猫mini,4640,3065~3150,2700→2015,candidate,B(复用PR#5 A2),PR#5 CAND-A2-005~012,candidate/v4.9/issue4_a2_a5/candidate_A2_A5.csv,同上,2026-09-18
+374,JL7007BEV07,熊猫mini,4640,3065~3150,2700→2015,candidate,B(复用PR#5 A2),PR#5 CAND-A2-005~012,candidate/v4.9/issue4_a2_a5/candidate_A2_A5.csv,同上,2026-09-18
+374,JL7007BEV08,熊猫mini,4640,3065~3150,2700→2015,candidate,B(复用PR#5 A2),PR#5 CAND-A2-005~012,candidate/v4.9/issue4_a2_a5/candidate_A2_A5.csv,同上,2026-09-18
+373,THZ7000BEVS11W,哪吒AYA,4070,4070(合法),2420(合法),legal(A级),A,哪吒汽车官网+百科+新出行,https://hozonauto.com/aya-set.html,官网配置表 4070×1690×1540mm 轴距2420mm——底表值即真值，Issue#4误列,2026-09-18
+362,JNJ7000EVF3,U2,3840,3840(合法),2521(合法),legal(B级),B,爱卡/太平洋/汽车之家车家号,https://info.xcar.com.cn/202302/news_2071176_1.html,江南U2 3840×1742×1545mm 轴距2521mm 多源一致——底表值即真值，Issue#4误列,2026-09-18
+364,JNJ7000EVF3,U2,3840,3840(合法),2521(合法),legal(B级),B,同上,https://www.pcauto.com.cn/hq/173895.html,同上,2026-09-18
+366,JNJ7000EVF2,U2,3840,3840(合法),2521(合法),legal(B级),B,同上,https://chejiahao.autohome.com.cn/info/12218812,同上,2026-09-18
+366,JNJ7000EVF4,U2,3840,3840(合法),2521(合法),legal(B级),B,同上,https://info.xcar.com.cn/202302/news_2071176_1.html,同上（整备928为低配合理值）,2026-09-18
+371,THZ7000BEVS11V,哪吒 Aya,4680,,2770→?,unknown,,,,4680=2770×1.69估算特征；但哪吒AYA全系轴距2420与2770矛盾，S11V身份未定（或通用名称误标）——不臆测，待公告原文,2026-09-18
+385,YGM7000BEVBD2,纯电动轿车,5330,,3100→?,unknown,,,,身份未命中（YGM/远程检索无此轿车型号）；5330=3100×1.72估算特征；v4.8.1曾列为荒谬值实证——留档待公告原文,2026-09-18
+385,YGM7000BEVBD3,纯电动轿车,4630,,2720→?,unknown,,,,同上；4630≈2720×1.70估算特征,2026-09-18
+395,JX7004ESCBEV,EV2,4110,3720(若为EV3系)/3500(若为EV2 PLUS),2390(与EV3一致)vs2340(EV2 PLUS),conflicted,B(双源冲突),搜狐参数库(IT之家转)/网易,https://db.m.auto.sohu.com/model_6937,2026-09-18,身份歧义：轴距2390与易至EV3(3720)一致、通用名称却为EV2；EV2 PLUS=3500×1646×1460/轴距2340。不臆测，待公告原文裁定后定值
