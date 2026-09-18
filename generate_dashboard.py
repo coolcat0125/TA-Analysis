@@ -78,6 +78,7 @@ DEFAULT_OUT = os.path.join(HERE, 'NEV公告数据看板.html')
 DEFAULT_RELEASE_OUT = os.path.join(HERE, 'NEV公告数据看板_发布版.html')
 COPYRIGHT = 'Copyright (c) 2026 David YEAH'
 ECHARTS_PATH = os.path.join(HERE, 'echarts.min.js')
+ECHARTSGL_PATH = os.path.join(HERE, 'echarts-gl.min.js')   # 三维展示（scatter3D/grid3D）
 XLSXLIB_PATH = os.path.join(HERE, 'xlsx.full.min.js')
 SHEET_NAME = 'NEV公告参数汇总'
 
@@ -739,6 +740,8 @@ select:hover,select:focus{border-color:var(--clay)}
   padding:6px 12px;font-size:12.5px;cursor:pointer;font-family:var(--sans);transition:all .15s}
 .cd-btn:hover{color:var(--clay);border-color:var(--clay)}
 .cd-btn.off{opacity:.5;border-style:dashed}
+.cd-btn.dis{opacity:.45;cursor:not-allowed}
+.cd-bar .hide{display:none!important}
 .cd-hint{color:var(--faint);font-size:11.5px;margin-left:auto}
 @media(max-width:1080px){.c-s6,.c-s4,.c-s8,.c-s5,.c-s7,.c-s3{grid-column:span 12}}
 
@@ -990,7 +993,7 @@ body.show-gaps .card.gap-hidden-note{display:none}
     <div class="card c-s12">
       <div class="c-h">
         <div class="c-t">自定义分布</div>
-        <div class="c-s">Custom Distribution · 自由选择纵横维度 · 选定 Z 轴即为泡泡图</div>
+        <div class="c-s">Custom Distribution · 自由选择纵横维度 · 选定 Z 轴即为泡泡图 · 可切换三维展示（Z 转垂直高度）</div>
       </div>
       <div class="ci" id="ci_chCustom"></div>
       <div class="cd-bar">
@@ -1005,10 +1008,17 @@ body.show-gaps .card.gap-hidden-note{display:none}
           <input type="range" id="cdZScale" min="20" max="260" value="100" step="5">
           <span class="cd-zval" id="cdZVal">100%</span>
         </span>
+        <button class="cd-btn" id="cd3d" title="三维展示：保留 X / Y 轴，Z 轴由泡泡直径改为垂直高度；左键旋转 · 滚轮缩放 · 右键平移（需先选定「泡泡直径 Z」）">三维展示 ✗</button>
+        <span id="cd3dOnly" class="hide" style="display:contents">
+          <button class="cd-btn" id="cdViewReset" title="恢复默认视角（等轴测，等同双击图表）">视角复位</button>
+          <button class="cd-btn" id="cdViewTop" title="切换为俯视视角（正对 X-Y 平面，等同原二维布局）">俯视 X-Y</button>
+        </span>
         <button class="cd-btn" id="cdSwap" title="交换 X / Y">⇄ 交换</button>
-        <button class="cd-btn" id="cdLevels" title="在轴距轴上标注 A/B/C 等级区段">等级区段 ✓</button>
-        <button class="cd-btn" id="cdAuto" title="随缩放自动调节散点/泡泡显示大小">自动调节 ✓</button>
-        <button class="cd-btn" id="cdZoomReset" title="恢复完整视野（等同双击图表）">复位视窗</button>
+        <span id="cd2dOnly" style="display:contents">
+          <button class="cd-btn" id="cdLevels" title="在轴距轴上标注 A/B/C 等级区段">等级区段 ✓</button>
+          <button class="cd-btn" id="cdAuto" title="随缩放自动调节散点/泡泡显示大小">自动调节 ✓</button>
+          <button class="cd-btn" id="cdZoomReset" title="恢复完整视野（等同双击图表）">复位视窗</button>
+        </span>
         <button class="cd-btn" id="cdReset" title="恢复默认维度">重置</button>
       </div>
       <div class="chart xl" id="chCustom"></div>
@@ -1097,6 +1107,7 @@ body.show-gaps .card.gap-hidden-note{display:none}
 <button id="toTop" title="返回顶部">↑</button>
 
 <script>__ECHARTS_LIB__</script>
+<script>__ECHARTSGL_LIB__</script>
 <script>__XLSX_LIB__</script>
 <script>
 const META = __META_JSON__;
@@ -2029,7 +2040,7 @@ const CD_FIELDS = (()=>{
 })();
 const CD_LABEL = k => (CD_FIELDS.find(f=>f.k===k)||{n:'—'}).n;
 const CD_DEFAULT = {x:I.ab, y:I.r, z:null};
-let CD_STATE = {x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true, autoSize:true};
+let CD_STATE = {x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true, autoSize:true, d3:false, view:null};
 
 /* 轴距等级区段定义（与《车型级别定义》阈值一致；用于图上辅助示意） */
 const CD_LEVELS = {
@@ -2071,7 +2082,9 @@ function cdInitUI(){
   const sync=()=>{ ss.parentElement.classList.toggle('hide', !sz.value); };
   sx.onchange=()=>{ CD_STATE.x=+sx.value; renderCustom(filtered()); };
   sy.onchange=()=>{ CD_STATE.y=+sy.value; renderCustom(filtered()); };
-  sz.onchange=()=>{ CD_STATE.z = sz.value===''?null:+sz.value; sync(); renderCustom(filtered()); };
+  sz.onchange=()=>{ CD_STATE.z = sz.value===''?null:+sz.value;
+    if(CD_STATE.z==null && CD_STATE.d3) CD_STATE.d3=false;   // 清空 Z → 自动回退二维
+    sync(); cd3dUI(); renderCustom(filtered()); };
   ss.oninput =()=>{ CD_STATE.zScale=+ss.value;
     document.getElementById('cdZVal').textContent = ss.value+'%'; renderCustom(filtered()); };
   document.getElementById('cdSwap').onclick=()=>{
@@ -2089,13 +2102,28 @@ function cdInitUI(){
                      auBtn.classList.toggle('off', !CD_STATE.autoSize); };
   auBtn.onclick=()=>{ CD_STATE.autoSize=!CD_STATE.autoSize; syncAu(); renderCustom(filtered()); };
   syncAu();
+  /* 三维展示切换：保留 X/Y，Z 轴由泡泡直径改为垂直高度 */
+  const d3Btn=document.getElementById('cd3d');
+  d3Btn.onclick=()=>{
+    if(!CD_STATE.d3 && CD_STATE.z==null){
+      showToast('三维展示需先在「泡泡直径 Z」选定字段：Z 值将映射为垂直高度');
+      return;
+    }
+    CD_STATE.d3=!CD_STATE.d3; cd3dUI(); renderCustom(filtered());
+  };
+  document.getElementById('cdViewReset').onclick=()=>cdSetView(CD_VIEW);
+  document.getElementById('cdViewTop').onclick=()=>cdSetView({alpha:88, beta:0,
+    distance:(CD_STATE.view&&CD_STATE.view.distance)||CD_VIEW.distance});
+  cd3dUI();
   /* 复位视窗 */
   document.getElementById('cdZoomReset').onclick=()=>cdResetZoom();
   document.getElementById('cdReset').onclick=()=>{
-    CD_STATE={x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true, autoSize:true};
+    const was3d = CD_STATE.d3;
+    CD_STATE={x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true, autoSize:true, d3:false, view:null};
     sx.value=String(CD_STATE.x); sy.value=String(CD_STATE.y); sz.value='';
-    ss.value=100; document.getElementById('cdZVal').textContent='100%'; sync(); syncLv(); syncAu();
+    ss.value=100; document.getElementById('cdZVal').textContent='100%'; sync(); syncLv(); syncAu(); cd3dUI();
     cdResetZoom(true);
+    if(was3d) renderCustom(filtered());   // 三维退出后立即回二维渲染（数据缩放事件在三维图上不触发）
   };
   /* 监听 dataZoom：更新视窗状态；开启自动调节时按新视窗重算散点大小 */
   const ch=chart('chCustom');
@@ -2125,6 +2153,7 @@ function scheduleCdRender(){
   __cdRaf = requestAnimationFrame(()=>{ __cdRaf=null; renderCustom(filtered()); });
 }
 function cdResetZoom(silent){
+  if(CD_STATE.d3){ cdSetView(CD_VIEW); return; }   // 三维模式下双击 = 视角复位
   CD_ZOOM={xStart:0,xEnd:100,yStart:0,yEnd:100};
   const ch=chart('chCustom');
   if(ch){
@@ -2147,6 +2176,108 @@ function cdBubbleSize(z, zmin, zmax, scale){
   const t = span>0 ? (z-zmin)/span : 0.5;
   const r = Math.sqrt(Math.max(0,Math.min(1,t)));
   return (LO+(HI-LO)*r) * (CD_STATE.zScale/100) * (scale||1);
+}
+
+/* ==================== 三维展示（X/Y 保留 · Z 由泡泡直径改为垂直高度） ==================== */
+/* 视角预设与三维箱体尺寸；「视角复位」回等轴测，「俯视 X-Y」正对平面（等同原二维布局） */
+const CD_VIEW = {alpha:32, beta:-48, distance:340};
+const CD_BOX = {w:170, d:170, h:120};
+/* 视角切换/复位：gl 的 ViewControl 有 _notFirst 守卫——仅首次渲染应用 option 的
+   viewControl，之后相机归控制器所有、merge 更新不再生效。因此先 merge 写入模型，
+   再调控制器的 setFromViewControlModel 强制应用（绕过首渲守卫，公开方法、无重建）。 */
+function cdSetView(v){
+  CD_STATE.view = {alpha:v.alpha, beta:v.beta, distance:v.distance||CD_VIEW.distance};
+  const ch=chart('chCustom');
+  if(!ch || !ch.__cdDim3d) return;
+  try{
+    ch.setOption({grid3D:{viewControl:Object.assign({target:[0,0,0]}, CD_STATE.view)}}, false);
+    const g3=(ch._componentsViews||[]).find(x=>x && x.type==='grid3D');
+    const ctrl=g3 && g3._control;
+    if(ctrl && ctrl.setFromViewControlModel){
+      const m=ch.getModel().getComponent('grid3D', 0).getModel('viewControl');
+      if(ctrl.stopAllAnimation) ctrl.stopAllAnimation();
+      ctrl.setFromViewControlModel(m);
+    }
+  }catch(e){}
+}
+function cd3dUI(){
+  const b=document.getElementById('cd3d'); if(!b) return;
+  b.textContent = '三维展示 ' + (CD_STATE.d3?'✓':'✗');
+  b.classList.toggle('off', !CD_STATE.d3);
+  const noZ = CD_STATE.z==null;
+  b.classList.toggle('dis', !CD_STATE.d3 && noZ);
+  b.title = noZ && !CD_STATE.d3
+    ? '三维展示需先在「泡泡直径 Z」选定字段：Z 值将映射为垂直高度'
+    : '三维展示：保留 X / Y 轴，Z 轴由泡泡直径改为垂直高度；左键旋转 · 滚轮缩放 · 右键平移';
+  document.getElementById('cd3dOnly').classList.toggle('hide', !CD_STATE.d3);
+  document.getElementById('cd2dOnly').classList.toggle('hide', CD_STATE.d3);
+  document.getElementById('cdZScaleWrap').classList.toggle('hide', CD_STATE.d3 || noZ);
+}
+function cdExtent(ps,k){
+  let lo=Infinity,hi=-Infinity;
+  for(const p of ps){ const v=p.value[k]; if(isFinite(v)){ if(v<lo)lo=v; if(v>hi)hi=v; } }
+  return isFinite(lo)?[lo,hi]:[0,1];
+}
+function cdPadded(e){
+  /* 轴两端留 6% 边距避免点贴箱壁；极差为零（单值）时按 10% 绝对幅度展开防退化坐标轴 */
+  if(e[1]-e[0] > 1e-9){ const m=(e[1]-e[0])*0.06; return [e[0]-m, e[1]+m]; }
+  const m=Math.max(1, Math.abs(e[0])*0.1); return [e[0]-m, e[1]+m];
+}
+/* 三维渲染：返回 true=成功；false=WebGL 初始化失败（调用方回退二维）。
+   首次渲染 notMerge 全量构建（含 viewControl 默认视角）；后续合并更新——
+   不重复下发 viewControl，用户旋转/缩放后的相机状态在数据/字段刷新时得以保留。 */
+function renderCustom3D(ch, bev, phev, m, avg, rng, fv){
+  const xN=m.xN, yN=m.yN, zN=m.zN;
+  const mk3=(nm,ps,color)=>({name:nm,type:'scatter3D',data:ps,symbolSize:8,
+    itemStyle:{color:`rgba(${color},.55)`},
+    emphasis:{itemStyle:{color:`rgba(${color},.95)`}}});
+  const AX3=(name,ext)=>({type:'value',name,min:ext[0],max:ext[1],nameGap:18,
+    nameTextStyle:{color:TC().axis,fontSize:12},
+    axisLabel:{color:TC().axis,fontSize:10,textStyle:{color:TC().axis,fontSize:10},
+      /* 抑制 gl 坐标轴 padding 引出的浮点尾数（如 7.8209999…）；千位分隔；隐藏两端 padding 标签避免与刻度重叠 */
+      formatter:v=>{ if(v===ext[0]||v===ext[1]) return '';
+        const r=Math.round(v*10)/10;return Math.abs(r)>=1000?Math.round(r).toLocaleString('zh-CN'):String(r);}},
+    axisLine:{lineStyle:{color:TC().axisLine}},
+    splitLine:{lineStyle:{color:TC().split}}});
+  const all=bev.concat(phev);
+  const total=all.length;
+  let html=`<b>三维泡泡图</b>：X <em>${xN}</em> × Y <em>${yN}</em> × 高度 Z <em>${zN}</em>（Z 轴已由泡泡直径改为<u>垂直高度</u>）`;
+  html += ` · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
+  html += `<br>Z 轴 <em>${zN}</em> 取值范围 <em>${fv(m.zmin)} ~ ${fv(m.zmax)}</em> → 垂直高度线性映射（泡泡大小恒定，不再编码 Z）`;
+  const part3=(nm,ps)=>ps.length?`${nm}：<em>${xN}</em> 均值 <em>${fv(avg(ps,0))}</em> · <em>${yN}</em> 均值 <em>${fv(avg(ps,1))}</em> · <em>${zN}</em> 均值 <em>${fv(avg(ps,2))}</em>`:'';
+  const seg=[part3('BEV',bev),part3('PHEV/EREV',phev)].filter(Boolean).join(' ｜ ');
+  if(seg) html += `<br>${seg}`;
+  html += `<br>视角操作：<b>左键拖动=旋转</b> · <b>滚轮=缩放</b> · <b>右键拖动=平移</b> · 双击图表或「视角复位」=复位（等轴测）·「俯视 X-Y」=正对平面`;
+  setInsight('chCustom', html);
+  const panelTx=document.getElementById('insightCustomTx');
+  if(panelTx) panelTx.innerHTML = html;
+  const g3={boxWidth:CD_BOX.w, boxDepth:CD_BOX.d, boxHeight:CD_BOX.h,
+    light:{main:{intensity:1.4,shadow:false},ambient:{intensity:.55}},
+    axisLine:{lineStyle:{color:TC().axisLine}},
+    splitLine:{lineStyle:{color:TC().split}},
+    axisPointer:{show:false}};
+  /* 首次构建（含视角切换后的重建）下发 viewControl；数据刷新走 merge 不下发，保留用户相机 */
+  if(ch.__cd3dFirst) g3.viewControl=Object.assign({}, CD_STATE.view||CD_VIEW,
+    {target:[0,0,0],minDistance:60,maxDistance:1000,rotateSensitivity:1,zoomSensitivity:1,panSensitivity:1,autoRotate:false});
+  const opt={
+    tooltip:Object.assign({trigger:'item',
+      formatter:p=>{ const v=p.data.value;
+        return `${p.seriesName} · 品牌车型：<b>${brandName(p)}</b><br>`+
+          `${xN}：<b>${fv(v[0])} ${xuOf(xN)}</b><br>${yN}：<b>${fv(v[1])} ${xuOf(yN)}</b>`+
+          `<br>${zN}：<b>${fv(v[2])} ${xuOf(zN)}</b>（高度）`; }},TT),
+    legend:LG({data:['BEV','PHEV/EREV']}),
+    grid3D:g3,
+    xAxis3D:AX3(xN,cdPadded(cdExtent(all,0))),
+    yAxis3D:AX3(yN,cdPadded(cdExtent(all,1))),
+    zAxis3D:AX3(zN,cdPadded([m.zmin,m.zmax])),
+    series:[mk3('BEV',bev,'217,119,87'), mk3('PHEV/EREV',phev,'107,155,209')]
+  };
+  try{
+    ch.setOption(opt, !!ch.__cd3dFirst);
+    ch.__cd3dFirst = false;
+    TREND_REGS['chCustom']={};
+    return true;
+  }catch(e){ return false; }
 }
 /* 固定坐标系外框：视窗缩放时按可见跨度自动放大散点，保证细节可读（可关闭） */
 /* 视窗缩放状态：dataZoom 的 start/end（%），用于计算可见跨度与自动调节系数 */
@@ -2189,6 +2320,22 @@ function renderCustom(rows){
     (r[I.t]==='BEV'?bev:phev).push(pt);
   }
   const xN=CD_LABEL(xK), yN=CD_LABEL(yK), zN=hasZ?CD_LABEL(zK):'';
+  const ch3=chart('chCustom');
+  if(!ch3) return;
+  const is3d = CD_STATE.d3 && hasZ;
+  /* 二维 ⇄ 三维切换：坐标系统不同，clear 后全量重建（GL 层随 clear 释放） */
+  if(ch3.__cdDim3d !== is3d){ ch3.clear(); ch3.__cdDim3d = is3d; ch3.__cd3dFirst = true; }
+  /* 顶部实时状态分析共用工具（2D/3D 共用） */
+  const avg=(ps,k)=>{ let s=0,n=0; for(const p of ps){const v=p.value[k]; if(isFinite(v)){s+=v;n++;}} return n?s/n:null; };
+  const fv=v=>v==null?'–':(Math.abs(v)>=100?Math.round(v).toLocaleString('zh-CN'):(+v.toFixed(1)));
+  const rng=(ps,k)=>{ let lo=Infinity,hi=-Infinity; for(const p of ps){const v=p.value[k]; if(isFinite(v)){if(v<lo)lo=v;if(v>hi)hi=v;}} return isFinite(lo)?[lo,hi]:null; };
+  if(is3d){
+    if(renderCustom3D(ch3, bev, phev, {xN,yN,zN,zmin,zmax}, avg, rng, fv)) return;
+    /* WebGL 初始化失败 → 回退二维泡泡图 */
+    CD_STATE.d3=false; cd3dUI();
+    ch3.__cdDim3d=false; ch3.clear(); ch3.__cd3dFirst=true;
+    showToast('三维展示初始化失败（当前环境可能不支持 WebGL），已回退二维泡泡图');
+  }
   /* 固定坐标系外框 + 视窗缩放：按当前 dataZoom 视窗计算「自动调节」系数 */
   const fullSpan = cdVisibleSpan(rows, xK, yK);
   const zx = cdZoomFactor('x'), zy = cdZoomFactor('y');
@@ -2222,10 +2369,6 @@ function renderCustom(rows){
     if(marks && series.length){ series[0].markLine=marks; lvShown=true; }
   }
   const total=bev.length+phev.length;
-  /* 顶部实时状态分析：随 X / Y / Z 选择联动 */
-  const avg=(ps,k)=>{ let s=0,n=0; for(const p of ps){const v=p.value[k]; if(isFinite(v)){s+=v;n++;}} return n?s/n:null; };
-  const fv=v=>v==null?'–':(Math.abs(v)>=100?Math.round(v).toLocaleString('zh-CN'):(+v.toFixed(1)));
-  const rng=(ps,k)=>{ let lo=Infinity,hi=-Infinity; for(const p of ps){const v=p.value[k]; if(isFinite(v)){if(v<lo)lo=v;if(v>hi)hi=v;}} return isFinite(lo)?[lo,hi]:null; };
   const part=(nm,ps)=>ps.length?`${nm} <em>${xN}</em> 均值 <em>${fv(avg(ps,0))}</em>（${fv((rng(ps,0)||[0,0])[0])}~${fv((rng(ps,0)||[0,0])[1])}）· <em>${yN}</em> 均值 <em>${fv(avg(ps,1))}</em>（${fv((rng(ps,1)||[0,0])[0])}~${fv((rng(ps,1)||[0,0])[1])}）`:'';
   let html = hasZ
     ? `<b>泡泡图</b>：X <em>${xN}</em> × Y <em>${yN}</em> × 泡泡直径 Z <em>${zN}</em>`
@@ -2921,7 +3064,8 @@ def main():
     in_path = pos_args[0] if len(pos_args) > 0 else DEFAULT_IN
     out_path = pos_args[1] if len(pos_args) > 1 else (DEFAULT_RELEASE_OUT if release else DEFAULT_OUT)
 
-    for p, tip in [(in_path, '输入文件'), (ECHARTS_PATH, 'echarts.min.js'), (XLSXLIB_PATH, 'xlsx.full.min.js')]:
+    for p, tip in [(in_path, '输入文件'), (ECHARTS_PATH, 'echarts.min.js'),
+                   (ECHARTSGL_PATH, 'echarts-gl.min.js'), (XLSXLIB_PATH, 'xlsx.full.min.js')]:
         if not os.path.exists(p):
             print(f'[错误] 找不到{tip}: {p}')
             sys.exit(1)
@@ -2951,7 +3095,10 @@ def main():
         xlsx_lib = f.read()
     for lib in (echarts_lib, xlsx_lib):
         pass
+    with open(ECHARTSGL_PATH, 'r', encoding='utf-8') as f:
+        gl_lib = f.read()
     echarts_lib = echarts_lib.replace('</script', '<\\/script')
+    gl_lib = gl_lib.replace('</script', '<\\/script')
     xlsx_lib = xlsx_lib.replace('</script', '<\\/script')
 
     print('[3/4] 生成看板HTML...')
@@ -2967,6 +3114,7 @@ def main():
         html = html.replace('</head>',
                             '<style>#p6 .dm-grid .card.c-s7,#p6 .dm-grid .card.c-s5,#btnImport{display:none!important}</style></head>')
     html = html.replace('__ECHARTS_LIB__', echarts_lib)
+    html = html.replace('__ECHARTSGL_LIB__', gl_lib)
     html = html.replace('__XLSX_LIB__', xlsx_lib)
     html = html.replace('__META_JSON__', json.dumps(meta, ensure_ascii=False, separators=(',', ':')))
     html = html.replace('__DATA_JSON__', data_json)
