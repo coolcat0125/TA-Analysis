@@ -317,6 +317,7 @@ def main():
     cache = {}
     sugg_cache = {}
     record_rows = []
+    ledger_rows = []       # v4.8.8 台账合规：《变更记录》9 列待写缓冲（批次,型号,动力类型,字段,值,URL）
     stats = defaultdict(int)
     filled_cells = []      # (excel_row, col_idx0, value)
     src_updates = {}       # excel_row -> set(url)
@@ -402,6 +403,9 @@ def main():
                                     str(r[hi["企业名称"]]).strip(), name,
                                     str(r[hi["通用名称"]] or "").strip(),
                                     f"{wf}={val}（汽车之家唯一共识）", info["url"]])
+                # v4.8.8 台账合规（2026-09-18 监管轮）：媒体补空逐格同步《变更记录》9 列规范
+                ledger_rows.append([str(r[hi["批次"]]).strip(), model,
+                                    str(r[hi["动力类型"]] or "").strip(), wf, val, info["url"]])
 
     if not args.dry_run:
         for excel_row, col, val in filled_cells:
@@ -421,6 +425,19 @@ def main():
             rs = wb[RECORD_SHEET]
         for line in record_rows:
             rs.append(line)
+        # v4.8.8 台账合规（2026-09-18 监管轮）：媒体补空逐格写入《变更记录》9 列规范
+        if ledger_rows:
+            cr = wb["变更记录"]
+            last_seq = 0
+            for lrow in cr.iter_rows(min_row=2, max_row=cr.max_row, values_only=True):
+                try:
+                    last_seq = max(last_seq, int(str(lrow[0])))
+                except (ValueError, TypeError):
+                    pass
+            for lb, lm, lpt, lfield, lval, lurl in ledger_rows:
+                last_seq += 1
+                cr.append([str(last_seq), lb, lm, lpt, lfield, "媒体补空", "(空)", str(lval),
+                           f"汽车之家唯一共识 · {lurl} · media_fill"])
         wb.save(wb_path)
         print(f"saved. filled_cells={len(filled_cells)} record_rows={len(record_rows)} series_used={series_count}")
 
