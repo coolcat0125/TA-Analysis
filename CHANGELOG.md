@@ -1,5 +1,13 @@
 # 版本记录
 
+## [Unreleased] - 2026-09-18
+
+### 夜班→白班协同编排增量同步（无 canonical 数据变更）
+
+- 将 Issue #7 的 2026-09-18 22:40 SGT 增量编排作为本轮权威入口，覆盖 N1–N5、06:00 handoff 与次日白班 06:30/08:00/10:00/12:00–17:00/17:00 接力。
+- 协同看板更新至 `main=5e03e8e`，明确 v4.8.7 canonical 基线仍为 `3ca3377`；未合并 PR #3/#5，未修改 canonical 数据。
+- 固化硬门禁：A4 BYD 380 批保持 `unknown`，candidate 不得转写为 verified，所有 Agent 必须报告 HEAD、分支、变更、证据、QA、阻塞与下一任务。
+
 ## [4.8.7] - 2026-09-18
 
 ### verify_consistency W2 判据校准（分派 D2，工具轮）

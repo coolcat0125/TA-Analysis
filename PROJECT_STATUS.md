@@ -8,6 +8,15 @@
 **历史归档**：`_archive/`（v3.3.0 / v3.5.0 / v3.7.3）· 迁移前旧工作目录 `14 TA Scan & Analysis` 与 `C:\00 AI\01 Project\14 TA Analysis`（另一终端 zcode 的路径，本机已不存在）均已冻结，勿再迭代
 **最后更新**：2026-09-17
 
+## 当前云端协同快照（2026-09-18 22:40 SGT）
+
+- **权威入口**：今晚→明早的编排以 [Issue #7](https://github.com/coolcat0125/TA-Analysis/issues/7) 的最新增量评论为准；`协同看板_状态与计划.html` 是同一安排的可视化镜像，不另立任务真相。
+- **基线**：`main=5e03e8e`（本次仅更新协同看板/状态；上一权威 v4.8.7 数据与监管收口为 `3ca3377`）。canonical 数据未在本轮修改。
+- **开放分支/PR**：PR #3（P0 governance）和 PR #5（A08 candidate）仍未合并，均基于旧 `fbfdf975`；旧 PR #5 禁止直接合入当前 main。`arena/01a0b2dd-ta-analysis` 的 T2–T4 产出仍是候选/演练证据，不等于 verified 或 canonical。
+- **夜班接力**：23:30 N1 基线复测 → 01:30 N2 A08 重建 → 03:30 N3 历史链 → 05:30 N4/N5 侦察与 QA → 06:00 handoff；白班 06:30 晨检、08:00 独立复核、10:00 Orchestrator 裁决、12:00–17:00 只读接力、17:00 下一轮任务包。
+- **硬门禁**：不强推、不覆盖其他 agent 分支、不修改 canonical 数据；A4 BYD 380 批保持 `unknown`；candidate 不得冒充 verified；所有 Agent 必须交付 Input HEAD / Output HEAD / Branch / Changed Files / evidence / QA / blocker / next task。
+- **启动顺序**：新 Agent 先读取 `SYNC.md`、本文件、Issue #7、协同看板，再检查远端 `main` 与自己的输入 HEAD；工作结束只提交自己分支并留下 handoff。
+
 ## 1. 项目定位
 
 工信部《道路机动车辆生产企业及产品公告》新能源乘用车参数库（第 341~410 批）的分析工具集：权威底表 + 交互看板（完整版/发布版）+ 审计工具 + 补全管线，每月随新批次公告滚动更新。
