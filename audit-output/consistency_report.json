@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-09-17T21:26:24.168652+00:00",
+ "generatedAt": "2026-09-18T15:24:00.350856+00:00",
  "input": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
- "records": 5357,
+ "records": 5392,
  "critical": {},
  "warn": {
   "W2": 1,
   "W4": 21,
-  "W6": 155
+  "W6": 159
  },
  "criticalTotal": 0,
- "warnTotal": 177,
+ "warnTotal": 181,
  "w2ConfirmedSuppressed": 15,
  "w2SuppressedDetail": [
   {
@@ -134,15 +134,15 @@
    },
    {
     "批次": "410",
-    "型号": null
+    "型号": "BYD7152BX6HEV2"
    },
    {
     "批次": "410",
-    "型号": null
+    "型号": "CC6481DE00HBBEV"
    },
    {
     "批次": "410",
-    "型号": null
+    "型号": "NEQ6510REEVS5DL"
    },
    {
     "批次": "357",

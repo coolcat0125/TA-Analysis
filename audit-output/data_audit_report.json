@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-17T21:26:26+00:00",
+  "generated_at_utc": "2026-09-18T15:23:57+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "dab0406967d3ff8433844daed37325ec4c740fd783b2c822b0be4f48f9091fca",
+    "sha256": "64ad8bb4adaba03c71bee764b3011e78dc3aaca695b30e5a0ad1e6705982a843",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
-    "records": 5357,
+    "records": 5392,
     "columns": 38,
     "headers": [
       "批次",
@@ -120,64 +120,64 @@
       "407": 112,
       "408": 108,
       "409": 111,
-      "410": 35,
+      "410": 70,
       "411": 21
     }
   },
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 4764,
-      "coverage": 0.889304,
-      "missing": 593
+      "populated": 4800,
+      "coverage": 0.890208,
+      "missing": 592
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
-      "populated": 5213,
-      "coverage": 0.973119,
-      "missing": 144
+      "populated": 5249,
+      "coverage": 0.973479,
+      "missing": 143
     },
     "电池容量": {
       "header": "电池容量(kWh)",
-      "populated": 4825,
-      "coverage": 0.900691,
-      "missing": 532
+      "populated": 4863,
+      "coverage": 0.901892,
+      "missing": 529
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
       "populated": 4214,
-      "coverage": 0.786634,
-      "missing": 1143
+      "coverage": 0.781528,
+      "missing": 1178
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
       "populated": 5107,
-      "coverage": 0.953332,
-      "missing": 250
+      "coverage": 0.947144,
+      "missing": 285
     },
     "前电机功率": {
       "header": "前电机功率/扭矩",
       "populated": 4398,
-      "coverage": 0.820982,
-      "missing": 959
+      "coverage": 0.815653,
+      "missing": 994
     },
     "电机总功率": {
       "header": "电机总功率/扭矩",
       "populated": 5209,
-      "coverage": 0.972373,
-      "missing": 148
+      "coverage": 0.966061,
+      "missing": 183
     },
     "后电机功率": {
       "header": "后电机功率/扭矩",
       "populated": 1683,
-      "coverage": 0.314168,
-      "missing": 3674
+      "coverage": 0.312129,
+      "missing": 3709
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
-      "populated": 4948,
-      "coverage": 0.923651,
-      "missing": 409
+      "populated": 4956,
+      "coverage": 0.919139,
+      "missing": 436
     }
   },
   "range_checks": {
@@ -186,7 +186,7 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 4764,
+      "numeric_values": 4800,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -195,7 +195,7 @@
         5.0,
         2000.0
       ],
-      "numeric_values": 5213,
+      "numeric_values": 5249,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -204,7 +204,7 @@
         1.0,
         300.0
       ],
-      "numeric_values": 4825,
+      "numeric_values": 4863,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -269,7 +269,7 @@
         300.0,
         8000.0
       ],
-      "numeric_values": 2230,
+      "numeric_values": 2238,
       "outliers": 0,
       "sample_outliers": []
     }
