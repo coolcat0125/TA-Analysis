@@ -271,10 +271,10 @@ h1{font-size:19px;line-height:1.25;margin:1px 0 3px;letter-spacing:-.01em;font-w
       </div>
     </div>
     <div class="topright">
-      <div class="pill-live" id="livePill"><span class="dot"></span><span id="liveText">Source · main @3ca3377</span></div>
+      <div class="pill-live" id="livePill"><span class="dot"></span><span id="liveText">Source · main @5e03e8e</span></div>
       <div class="tagrow">
         <span class="tag">当前版本<span class="mono">v4.8.7</span></span>
-        <span class="tag">更新于<span class="mono">2026-09-17</span></span>
+        <span class="tag">更新于<span class="mono">2026-09-18 22:40 SGT</span></span>
         <span class="tag">角色<span class="mono">5</span></span>
       </div>
     </div>
@@ -285,7 +285,7 @@ h1{font-size:19px;line-height:1.25;margin:1px 0 3px;letter-spacing:-.01em;font-w
     <div class="kpi accent">
       <div class="label">当前版本</div>
       <div class="value">v4.8.7</div>
-      <div class="sub">HEAD <span class="mono">3ca3377</span> · 4 小时前提交</div>
+      <div class="sub">HEAD <span class="mono">5e03e8e</span> · 协同看板提交；canonical v4.8.7 基线仍为 <span class="mono">3ca3377</span></div>
     </div>
     <div class="kpi">
       <div class="label">权威底表规模</div>
@@ -432,8 +432,8 @@ h1{font-size:19px;line-height:1.25;margin:1px 0 3px;letter-spacing:-.01em;font-w
     <section class="panel">
       <div class="panel-h">
         <div>
-          <div class="t">后续待更新计划</div>
-          <div class="d">来源：分派单 v2（夜间监管轮 06:10 定稿）</div>
+          <div class="t">夜班 → 白班接力计划</div>
+          <div class="d">来源：Issue #7 增量编排（2026-09-18 22:40 SGT）</div>
         </div>
       </div>
       <div style="padding:11px 16px 11px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;border-bottom:1px solid var(--line-2)">
@@ -477,44 +477,67 @@ h1{font-size:19px;line-height:1.25;margin:1px 0 3px;letter-spacing:-.01em;font-w
       <div class="panel-h">
         <div>
           <div class="t">24 小时协同时间轴</div>
-          <div class="d">夜间 23:00–06:00 生产 + 监管，06:10 出白天分派</div>
+          <div class="d">夜间 23:30–06:00 生产 + 监管，06:30 起白班接力</div>
         </div>
         <div class="hint">UTC+8 · 每日循环</div>
       </div>
       <div class="clock">
         <div class="track" id="track">
           <div class="dayband" style="left:50%;width:50%"></div>
-          <div class="band" style="left:0%;width:25%" title="夜间 23:00–06:00"></div>
-          <div class="band"><span class="bl">夜间窗口 23:00 → 06:00</span></div>
-          <div class="cp" style="left:0%"><span class="cpl">23:00</span></div>
-          <div class="cp" style="left:12.5%"><span class="cpl">02:25</span></div>
-          <div class="cp" style="left:22%"><span class="cpl">05:26</span></div>
+          <div class="band" style="left:0%;width:25%" title="夜间 23:30–06:00"></div>
+          <div class="band"><span class="bl">夜间窗口 23:30 → 06:00</span></div>
+          <div class="cp" style="left:2%"><span class="cpl">23:30</span></div>
+          <div class="cp" style="left:9%"><span class="cpl">01:30</span></div>
+          <div class="cp" style="left:17%"><span class="cpl">03:30</span></div>
+          <div class="cp" style="left:23%"><span class="cpl">05:30</span></div>
           <div class="cp" style="left:25%"><span class="cpl">06:00</span></div>
-          <div class="cp" style="left:30%"><span class="cpl">06:10</span></div>
-          <div class="cp" style="left:75%"><span class="cpl">18:00</span></div>
+          <div class="cp" style="left:27%"><span class="cpl">06:30</span></div>
+          <div class="cp" style="left:33%"><span class="cpl">08:00</span></div>
+          <div class="cp" style="left:42%"><span class="cpl">10:00</span></div>
+          <div class="cp" style="left:71%"><span class="cpl">17:00</span></div>
         </div>
-        <div class="marks"><span>23:00</span><span>06:00</span><span>12:00</span><span>18:00</span></div>
+        <div class="marks"><span>23:30</span><span>06:00</span><span>12:00</span><span>18:00</span></div>
 
         <div class="tl-rows">
           <div class="tl-row">
-            <div class="tl-time">23:00</div>
-            <div class="tl-badge night">夜间自动轮</div>
-            <div class="tl-desc">批次监控 <b>check_new_batch</b> → 循环补全（media_fill → fill_logic → fill_consensus → reconcile）。收敛条件：每轮新增 <b>&lt; 25 格</b>或到 06:00 止；<b>不改 CHANGELOG、不推送</b>。</div>
+            <div class="tl-time">23:30</div>
+            <div class="tl-badge night">N1 · 基线复测</div>
+            <div class="tl-desc"><b>Data Engineer + QA</b> 从 main <span class="mono">5e03e8e</span> 复跑 baseline / integrity / regression；确认看板为展示层，v4.8.7 canonical 不回退。</div>
           </div>
           <div class="tl-row">
-            <div class="tl-time">23:00 → 06:10</div>
-            <div class="tl-badge super">夜间监管轮</div>
-            <div class="tl-desc">独立监管角色值守，跑 <b>8 个检查点</b>，全程 <b>零底表接触、监管写库 0 次</b>；02:25 与 05:26 做双源独立 <b>verify 快照互证</b>，06:00 总复盘收尾。</div>
+            <div class="tl-time">01:30</div>
+            <div class="tl-badge super">N2 · A08 重建</div>
+            <div class="tl-desc"><b>Evidence Auditor + QA</b> 从当前 main 重建 candidate package；吸收旧 PR #5 的证据台账，但不直接合并，保留 candidate / unknown / conflicted。</div>
           </div>
           <div class="tl-row">
-            <div class="tl-time">06:10</div>
-            <div class="tl-badge day">白天分派</div>
-            <div class="tl-desc">监管轮定稿《<span class="mono">Update/夜间分派_YYYYMMDD.md</span>》，把夜间发现拆成 <b>D1–D4</b>，每项固定五要素：<b>任务 / 目标 / 验收 / 禁区 / 依赖</b>。</div>
+            <div class="tl-time">03:30</div>
+            <div class="tl-badge super">N3 · 历史链</div>
+            <div class="tl-desc"><b>Research Scout + Evidence Auditor</b> 定位车长污染的具体提交/文件/管线；77 行逐条 disposition，无证据项保持 unknown。</div>
           </div>
           <div class="tl-row">
-            <div class="tl-time">白天</div>
-            <div class="tl-badge day">主力终端承接</div>
-            <div class="tl-desc">执行需真实浏览器通道或人工审批的尾巴（如 <b>411×13 电芯回填</b>、公示查询列交互）；当晚再回流给夜间轮做批量执行。</div>
+            <div class="tl-time">05:30</div>
+            <div class="tl-badge night">N4/N5 · 侦察 + QA</div>
+            <div class="tl-desc">A03/A05/A06/A07 只写 candidate/evidence ledger；QA/Red Team 跑字段映射、电机不变量、跨车型传播、证据完整性和状态转换门禁。</div>
+          </div>
+          <div class="tl-row">
+            <div class="tl-time">06:00</div>
+            <div class="tl-badge super">Handoff</div>
+            <div class="tl-desc">夜班交接必须包含 <b>Input HEAD / Output HEAD / Branch / Changed Files / candidate·verified·rejected / evidence / QA / blocker / next task</b>。</div>
+          </div>
+          <div class="tl-row">
+            <div class="tl-time">06:30 → 10:00</div>
+            <div class="tl-badge day">白班晨检 + 独立复核</div>
+            <div class="tl-desc">06:30 检查 main、夜班 output、PR、candidate、QA、blocker；08:00 独立 Evidence Auditor 复核；10:00 Orchestrator 决定 VERIFIED / CANDIDATE / CONFLICTED / UNKNOWN 与可申请 PR 范围。</div>
+          </div>
+          <div class="tl-row">
+            <div class="tl-time">12:00 → 17:00</div>
+            <div class="tl-badge day">白班只读接力</div>
+            <div class="tl-desc">只做质量检查、报告/交付物制作、必要候选侦察和证据补充；不覆盖夜班 canonical 写入链，不把 candidate 当 verified。</div>
+          </div>
+          <div class="tl-row">
+            <div class="tl-time">17:00</div>
+            <div class="tl-badge day">下一轮任务包</div>
+            <div class="tl-desc">形成下一夜班包，回写 Issue #7 增量评论；保留未闭环 blocker 与证据缺口，不用“无变化”替代不可见或未核验状态。</div>
           </div>
         </div>
       </div>
@@ -567,7 +590,7 @@ h1{font-size:19px;line-height:1.25;margin:1px 0 3px;letter-spacing:-.01em;font-w
   <div class="callout">
     <div class="em">i</div>
     <div class="ct">
-      <b>同频协作要点。</b>所有角色共享同一事实源 <span class="mono">GitHub main</span>；本看板的计划状态可点标签切换并<b>导出 JSON</b>，建议贴回 <span class="mono">Update/</span> 交接；跨会话长任务开工前先看远端 HEAD 是否被他人推进。当前最高价值触发器为 <b>410 正式公告发布</b>与 <b>v4.9 车长候选合并</b>。
+      <b>同频协作要点。</b>Issue #7 是本轮夜班→白班编排的权威入口；所有角色共享同一事实源 <span class="mono">GitHub main</span>。本看板的计划状态可点标签切换并<b>导出 JSON</b>；跨会话长任务开工前先看远端 HEAD 是否被他人推进。当前硬门禁为 <b>不直合旧 PR #5、不改 canonical、不把 candidate 当 verified</b>。
     </div>
   </div>
 
@@ -576,7 +599,8 @@ h1{font-size:19px;line-height:1.25;margin:1px 0 3px;letter-spacing:-.01em;font-w
     <a href="https://github.com/coolcat0125/TA-Analysis">仓库主页</a> ·
     <a href="https://github.com/coolcat0125/TA-Analysis/blob/main/SYNC.md">SYNC.md</a> ·
     <a href="https://github.com/coolcat0125/TA-Analysis/blob/main/PROJECT_STATUS.md">PROJECT_STATUS.md</a> ·
-    <a href="https://github.com/coolcat0125/TA-Analysis/tree/main/Update">Update/</a>）。快照时间 2026-09-18，版本 v4.8.7，HEAD <span class="mono">3ca3377</span>。图内计划为仓库当前分派单状态的离线镜像，实际以仓库文件为准。
+    <a href="https://github.com/coolcat0125/TA-Analysis/tree/main/Update">Update/</a> ·
+    <a href="https://github.com/coolcat0125/TA-Analysis/issues/7">Issue #7</a>）。快照时间 2026-09-18 22:40 SGT，版本 v4.8.7，main HEAD <span class="mono">5e03e8e</span>（看板提交；canonical 数据基线 <span class="mono">3ca3377</span>）。图内计划为协同记录的离线镜像，实际以 Issue #7 与仓库文件为准。
   </div>
 
 </div>
@@ -589,25 +613,45 @@ h1{font-size:19px;line-height:1.25;margin:1px 0 3px;letter-spacing:-.01em;font-w
   var LABELS = {todo:"待办", progress:"进行中", review:"复核中", done:"已完成", blocked:"阻塞"};
 
   var PLANS = [
-    {id:"D1", p0:true, owner:"Orchestrator", status:"todo",
-     title:"v4.9 车长证据候选合并审批配合",
-     desc:"主力终端 v4.9 A08 车长证据候选 55 行（A/B 级）走审批合并流程。",
-     meta:[["最高优先","acc"],["依赖 DATA_CONTRACT","warn"],["22 行未取证不得入库","risk"]]},
-    {id:"D2", p0:false, owner:"夜间监管轮", status:"done",
-     title:"W2 判据校准",
-     desc:"verify W2 官方确证白名单（W2sup 单列，WARN 192→177），剩 1 条官方源未收录留档。",
-     meta:[["v4.8.7 已完成","acc"],["无剩余动作"]]},
-    {id:"D3", p0:false, owner:"白天主力终端", status:"progress",
-     title:"电芯缺口回填 · 后半段（浏览器通道）",
-     desc:"411×13 电芯供应商回填，需真实浏览器经公示查询列通道；查询用型号填入 + 回车。",
-     meta:[["盘点半完成","acc"],["回填需浏览器","warn"],["410 空型号不查不补","risk"]]},
-    {id:"D4", p0:false, owner:"自动轮 · 常设", status:"progress",
-     title:"常规监测",
-     desc:"410 正式公告监测（check_new_batch.py）；命中即 S1 最高优先。结果写 Update/批次监控日志.md。",
-     meta:[["常设","default"],["累计第 8 轮未发布","warn"]]}
+    {id:"N1", p0:true, owner:"Data Engineer + QA", status:"todo",
+     title:"主线最新状态确认",
+     desc:"从 main 5e03e8e 复跑 baseline / integrity / regression；确认协同看板仅为展示层，v4.8.7 canonical 不回退。",
+     meta:[["23:30","acc"],["不改底表","risk"],["不强更旧分支","risk"]]},
+    {id:"N2", p0:true, owner:"Evidence Auditor + QA", status:"todo",
+     title:"A08 candidate 重建",
+     desc:"从当前 main 重建 A08；吸收旧 PR #5 的有效证据台账，保留 candidate / unknown / conflicted 语义。",
+     meta:[["01:30","acc"],["不直合 PR #5","risk"],["A4 380 批=unknown","risk"]]},
+    {id:"N3", p0:true, owner:"Research Scout + Evidence Auditor", status:"todo",
+     title:"车长污染历史链追溯",
+     desc:"定位具体 commit / 文件 / pipeline；77 行逐条 disposition，先形成 candidate patch，不写 canonical。",
+     meta:[["03:30","acc"],["不批量替换","risk"],["无证据=unknown","warn"]]},
+    {id:"N4", p0:false, owner:"A03 / A05 / A06 / A07", status:"todo",
+     title:"电池 / 电驱小批量侦察",
+     desc:"优先 800V、高压、约80kWh 与头部 OEM；只进入 candidate/evidence ledger，不做 master fill。",
+     meta:[["05:30","acc"],["source/date/level","warn"],["候选层","default"]]},
+    {id:"N5", p0:false, owner:"QA / Red Team + Data Engineer", status:"todo",
+     title:"自动化质量门",
+     desc:"补跑 gap_heatmap 映射、电机前+后=总、跨车型传播、evidence completeness、candidate→verified 审计。",
+     meta:[["05:30","acc"],["阻断未闭环项","warn"],["不改 canonical","risk"]]},
+    {id:"H0", p0:true, owner:"All agents", status:"todo",
+     title:"夜班 handoff",
+     desc:"06:00 交接 Input/Output HEAD、Branch、Changed Files、candidate/verified/rejected、evidence、QA、blocker、next task。",
+     meta:[["06:00","acc"],["必须可接力","warn"],["Issue #7 留痕","default"]]},
+    {id:"B1", p0:false, owner:"Day Evidence Auditor", status:"todo",
+     title:"白班晨检与独立复核",
+     desc:"06:30 检查 main/output/PR/candidate/QA/blocker；08:00 独立复核，发现者不得单独完成最终裁决。",
+     meta:[["06:30 / 08:00","acc"],["独立复核","warn"]]},
+    {id:"B2", p0:true, owner:"Orchestrator", status:"todo",
+     title:"10:00 状态与集成裁决",
+     desc:"决定 VERIFIED / CANDIDATE / CONFLICTED / UNKNOWN 及可申请 PR 范围；未过门禁的保留 blocker。",
+     meta:[["10:00","acc"],["不扩大授权","risk"],["保留未知","warn"]]},
+    {id:"B3", p0:false, owner:"Day shift", status:"todo",
+     title:"12:00–17:00 只读接力 + 下一轮任务包",
+     desc:"质检、报告/交付物、候选侦察与证据补充；17:00 形成下一夜班包，回写 Issue #7 增量评论。",
+     meta:[["白班","default"],["不覆盖 canonical","risk"],["17:00 handoff","acc"]]}
   ];
 
-  var STORE_KEY = "ta_analysis_plan_v1";
+  var STORE_KEY = "ta_analysis_plan_v2_20260918";
 
   function safeGet(){
     try{ return window.localStorage.getItem(STORE_KEY); }catch(e){ return null; }
@@ -751,9 +795,9 @@ h1{font-size:19px;line-height:1.25;margin:1px 0 3px;letter-spacing:-.01em;font-w
     var payload = {
       repo: "coolcat0125/TA-Analysis",
       snapshot_version: "v4.8.7",
-      head: "3ca3377",
+      head: "5e03e8e",
       generated_at: new Date().toISOString().slice(0,19).replace("T"," "),
-      source: "Update/夜间分派_20260918.md",
+      source: "Issue #7 + 协同看板_状态与计划.html",
       summary: {total: PLANS.length, done: c.done, in_progress: c.progress, in_review: c.review, blocked: c.blocked, todo: c.todo},
       items: PLANS.map(function(p){
         return {
@@ -791,7 +835,7 @@ h1{font-size:19px;line-height:1.25;margin:1px 0 3px;letter-spacing:-.01em;font-w
 
   renderBoard();
 
-  liveText.textContent = "Source · main @3ca3377";
+  liveText.textContent = "Source · main @5e03e8e";
 })();
 </script>
 </body>
