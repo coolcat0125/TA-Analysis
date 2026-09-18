@@ -57,7 +57,7 @@
 ## 五、能力边界实测（本终端可为 / 不可为）
 
 **可为（在线支持）**：
-- git / GitHub 全量操作：fetch、分支、PR 审查评论、Issue checkpoint、API 历史追溯（含 CHANGELOG/PROJECT_STATUS 按路径回溯，可支撑 T2 污染传播追溯）
+- git / GitHub 操作：fetch、分支、PR 评论、API 历史追溯（**Issue 评论写入 403 受限**）（含 CHANGELOG/PROJECT_STATUS 按路径回溯，可支撑 T2 污染传播追溯）
 - python 管线独立复跑：audit / verify / generate_dashboard（openpyxl 已装）——可作夜间监管轮之外的**第三个独立复跑源**（双源互证 → 三源互证）
 - 公网抓取：GitHub、汽车之家/易车等可达（需遵守品牌守卫与限速协议）
 
@@ -68,7 +68,7 @@
 
 - 本报告：`audit-output/arena_terminal_scan_20260918.md`（本文件）
 - 分支：`arena/01a0b2dd-ta-analysis`（自 main `5e03e8e` 切出，随版推送）
-- 协同回帖：PR #5 复核评论（抽查+QA 发现）、Issue #7 T0 checkpoint
+- 协同回帖：PR #5 复核评论已发（issuecomment-5725383354）；**Issue #7 回帖被沙箱集成权限拒绝（403）**——检查点内容以 PR#5 评论与本报告为准，待权限放开或有 ISSUE 写权限的终端代为转贴
 - 铁律遵守：零数据改动、不代合并、push 前已 fetch 校验
 
 ---
