@@ -2112,8 +2112,7 @@ function cdInitUI(){
     CD_STATE.d3=!CD_STATE.d3; cd3dUI(); renderCustom(filtered());
   };
   document.getElementById('cdViewReset').onclick=()=>cdSetView(CD_VIEW);
-  document.getElementById('cdViewTop').onclick=()=>cdSetView({alpha:88, beta:0,
-    distance:(CD_STATE.view&&CD_STATE.view.distance)||CD_VIEW.distance});
+  document.getElementById('cdViewTop').onclick=()=>cdSetView({alpha:88, beta:0, distance:640});
   cd3dUI();
   /* 复位视窗 */
   document.getElementById('cdZoomReset').onclick=()=>cdResetZoom();
@@ -2182,6 +2181,11 @@ function cdBubbleSize(z, zmin, zmax, scale){
 /* 视角预设与三维箱体尺寸；「视角复位」回等轴测，「俯视 X-Y」正对平面（等同原二维布局） */
 const CD_VIEW = {alpha:32, beta:-48, distance:340};
 const CD_BOX = {w:170, d:170, h:120};
+/* 海拔梯度色带：同色系 浅→深（Z 越大颜色越深），用于柱体 visualMap 与右侧梯度刻度 */
+const CD_RAMP = {
+  bev: ['#F6D8CB','#EFB39A','#E29067','#D97757','#A94F30'],
+  phev:['#D4E2F4','#AECBEC','#8AB2DF','#6B9BD1','#45699C']
+};
 /* 视角切换/复位：gl 的 ViewControl 有 _notFirst 守卫——仅首次渲染应用 option 的
    viewControl，之后相机归控制器所有、merge 更新不再生效。因此先 merge 写入模型，
    再调控制器的 setFromViewControlModel 强制应用（绕过首渲守卫，公开方法、无重建）。 */
@@ -2228,22 +2232,23 @@ function cdPadded(e){
    不重复下发 viewControl，用户旋转/缩放后的相机状态在数据/字段刷新时得以保留。 */
 function renderCustom3D(ch, bev, phev, m, avg, rng, fv){
   const xN=m.xN, yN=m.yN, zN=m.zN;
-  const mk3=(nm,ps,color)=>({name:nm,type:'scatter3D',data:ps,symbolSize:8,
-    itemStyle:{color:`rgba(${color},.55)`},
-    emphasis:{itemStyle:{color:`rgba(${color},.95)`}}});
-  const AX3=(name,ext)=>({type:'value',name,min:ext[0],max:ext[1],nameGap:18,
+  /* 柱高=Z（自主底面 0 起算 → 海拔感）；柱体颜色由 visualMap 按高度梯度着色（浅→深） */
+  const mkBar=(nm,ps,color)=>({name:nm,type:'bar3D',data:ps,barSize:[1.5,1.5],
+    shading:'color',itemStyle:{color:`rgba(${color},.92)`},
+    emphasis:{itemStyle:{opacity:1}}});
+  const AX3=(name,ext,zMin0)=>({type:'value',name,min:zMin0?0:ext[0],max:ext[1],nameGap:18,
     nameTextStyle:{color:TC().axis,fontSize:12},
     axisLabel:{color:TC().axis,fontSize:10,textStyle:{color:TC().axis,fontSize:10},
       /* 抑制 gl 坐标轴 padding 引出的浮点尾数（如 7.8209999…）；千位分隔；隐藏两端 padding 标签避免与刻度重叠 */
-      formatter:v=>{ if(v===ext[0]||v===ext[1]) return '';
+      formatter:v=>{ if(zMin0&&v===0) return '0'; if(v===ext[0]||v===ext[1]) return '';
         const r=Math.round(v*10)/10;return Math.abs(r)>=1000?Math.round(r).toLocaleString('zh-CN'):String(r);}},
     axisLine:{lineStyle:{color:TC().axisLine}},
     splitLine:{lineStyle:{color:TC().split}}});
   const all=bev.concat(phev);
   const total=all.length;
-  let html=`<b>三维泡泡图</b>：X <em>${xN}</em> × Y <em>${yN}</em> × 高度 Z <em>${zN}</em>（Z 轴已由泡泡直径改为<u>垂直高度</u>）`;
+  let html=`<b>三维柱状图</b>：X <em>${xN}</em> × Y <em>${yN}</em> × 柱高 Z <em>${zN}</em>（每款车型一根立柱，柱高=Z 值、自主底面起算 · 海拔梯度）`;
   html += ` · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
-  html += `<br>Z 轴 <em>${zN}</em> 取值范围 <em>${fv(m.zmin)} ~ ${fv(m.zmax)}</em> → 垂直高度线性映射（泡泡大小恒定，不再编码 Z）`;
+  html += `<br>颜色深度=海拔：<em>${zN}</em> 取值范围 <em>${fv(m.zmin)} ~ ${fv(m.zmax)}</em>，同色系内 Z 越大颜色越深，右侧色带即梯度刻度`;
   const part3=(nm,ps)=>ps.length?`${nm}：<em>${xN}</em> 均值 <em>${fv(avg(ps,0))}</em> · <em>${yN}</em> 均值 <em>${fv(avg(ps,1))}</em> · <em>${zN}</em> 均值 <em>${fv(avg(ps,2))}</em>`:'';
   const seg=[part3('BEV',bev),part3('PHEV/EREV',phev)].filter(Boolean).join(' ｜ ');
   if(seg) html += `<br>${seg}`;
@@ -2264,13 +2269,22 @@ function renderCustom3D(ch, bev, phev, m, avg, rng, fv){
       formatter:p=>{ const v=p.data.value;
         return `${p.seriesName} · 品牌车型：<b>${brandName(p)}</b><br>`+
           `${xN}：<b>${fv(v[0])} ${xuOf(xN)}</b><br>${yN}：<b>${fv(v[1])} ${xuOf(yN)}</b>`+
-          `<br>${zN}：<b>${fv(v[2])} ${xuOf(zN)}</b>（高度）`; }},TT),
+          `<br>${zN}：<b>${fv(v[2])} ${xuOf(zN)}</b>（柱高）`; }},TT),
     legend:LG({data:['BEV','PHEV/EREV']}),
+    /* 梯度刻度：两系列各一条 continuous visualMap（浅→深），右侧纵排色带+数值标注 */
+    visualMap:[
+      {type:'continuous',seriesIndex:0,dimension:2,min:m.zmin,max:m.zmax,calculable:false,show:true,
+       orient:'vertical',right:8,top:'middle',itemWidth:13,itemHeight:110,hoverLink:false,
+       text:[`BEV ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:TC().axis,fontSize:10},inRange:{color:CD_RAMP.bev}},
+      {type:'continuous',seriesIndex:1,dimension:2,min:m.zmin,max:m.zmax,calculable:false,show:true,
+       orient:'vertical',right:66,top:'middle',itemWidth:13,itemHeight:110,hoverLink:false,
+       text:[`PHEV/EREV ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:TC().axis,fontSize:10},inRange:{color:CD_RAMP.phev}}
+    ],
     grid3D:g3,
     xAxis3D:AX3(xN,cdPadded(cdExtent(all,0))),
     yAxis3D:AX3(yN,cdPadded(cdExtent(all,1))),
-    zAxis3D:AX3(zN,cdPadded([m.zmin,m.zmax])),
-    series:[mk3('BEV',bev,'217,119,87'), mk3('PHEV/EREV',phev,'107,155,209')]
+    zAxis3D:AX3(zN,[0,(m.zmax*1.06)||1],true),
+    series:[mkBar('BEV',bev,'217,119,87'), mkBar('PHEV/EREV',phev,'107,155,209')]
   };
   try{
     ch.setOption(opt, !!ch.__cd3dFirst);
@@ -3112,7 +3126,11 @@ def main():
             '<div class="tx">导出当前筛选数据供进一步细化分析；导入最新公告数据表后，<b>全局数据与图表将实时刷新</b>（无需重新运行生成脚本）。</div>',
             '<div class="tx">车型明细查询支持在当前筛选范围内检索、排序与翻页。</div>')
         html = html.replace('</head>',
-                            '<style>#p6 .dm-grid .card.c-s7,#p6 .dm-grid .card.c-s5,#btnImport{display:none!important}</style></head>')
+                            '<style>#p6 .dm-grid .card.c-s7,#p6 .dm-grid .card.c-s5,#btnImport,#cd3d,#cd3dOnly{display:none!important}</style></head>')
+        # 发布版不含三维展示（v4.9.6）：三维按钮/视角按钮隐藏 + 副标题回退，功能面保持 2D 泡泡图
+        html = html.replace(
+            '自由选择纵横维度 · 选定 Z 轴即为泡泡图 · 可切换三维展示（Z 转垂直高度）',
+            '自由选择纵横维度 · 选定 Z 轴即为泡泡图')
     html = html.replace('__ECHARTS_LIB__', echarts_lib)
     html = html.replace('__ECHARTSGL_LIB__', gl_lib)
     html = html.replace('__XLSX_LIB__', xlsx_lib)
