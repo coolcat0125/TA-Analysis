@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TA-Analysis · 仓库状态结构与协同计划看板</title>
+<style>
+:root{
+  --ink:#14181b;--ink-2:#5b6672;--ink-3:#8a939c;
+  --bg:#ffffff;--bg-soft:#f4f6f5;--bg-sink:#eceeed;
+  --line:rgba(18,24,27,.11);--line-2:rgba(18,24,27,.06);
+  --accent:#0f8a6a;--accent-ink:#0b6e54;--accent-soft:rgba(15,138,106,.10);
+  --amber:#b8791f;--amber-bg:#fdecc8;--amber-ink:#976d23;
+  --red:#b13b2c;--red-bg:#ffe2dd;
+  --blue:#1f5b78;--blue-bg:#d3e5ef;
+  --done-bg:#dbeddb;--done-ink:#2b593f;
+  --todo-bg:#e9e5e3;--todo-ink:#5a534f;
+  --radius:12px;--radius-sm:9px;
+  --shadow:0 1px 2px rgba(18,24,27,.05),0 8px 24px rgba(18,24,27,.05);
+  --font-body:"Manrope","PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"JetBrains Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --maxw:1280px;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--bg-soft);color:var(--ink);font-family:var(--font-body);
+  font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased;
+  font-synthesis:none;line-break:strict;overflow-wrap:break-word;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:24px 20px 56px}
+.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums}
+a{color:var(--accent-ink);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.topbar{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:16px;
+  padding:4px 2px 18px;flex-wrap:wrap;
+}
+.ident{display:flex;gap:13px;align-items:flex-start;min-width:0}
+.mark{
+  width:42px;height:42px;border-radius:11px;flex:0 0 auto;
+  background:linear-gradient(150deg,#0f8a6a,#0b5f4a);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 16px rgba(15,138,106,.28);
+}
+.mark svg{width:23px;height:23px}
+h1{font-size:19px;line-height:1.25;margin:1px 0 3px;letter-spacing:-.01em;font-weight:700}
+.slug{font-size:12.5px;color:var(--ink-2)}
+.slug .mono{color:var(--ink-3)}
+.topright{display:flex;flex-direction:column;align-items:flex-end;gap:9px}
+.pill-live{
+  display:inline-flex;align-items:center;gap:7px;height:30px;padding:0 12px;
+  border-radius:999px;background:var(--bg);border:1px solid var(--line);
+  font-size:12px;font-weight:600;color:var(--ink-2);white-space:nowrap;
+}
+.pill-live .dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.tagrow{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.tag{
+  display:inline-flex;align-items:center;height:24px;padding:0 10px;border-radius:999px;
+  background:var(--bg);border:1px solid var(--line);font-size:11.5px;color:var(--ink-2);font-weight:600;
+}
+.tag .mono{color:var(--ink);margin-left:5px}
+
+.section-label{
+  font-size:11px;font-weight:800;letter-spacing:.10em;text-transform:uppercase;
+  color:var(--ink-3);margin:26px 2px 11px;display:flex;align-items:center;gap:9px;
+}
+.section-label::after{content:"";height:1px;flex:1;background:var(--line)}
+
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.kpi{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 15px;min-width:0;
+}
+.kpi .label{font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--ink-3);text-transform:uppercase}
+.kpi .value{
+  font-size:27px;font-weight:700;letter-spacing:-.02em;margin-top:5px;line-height:1.05;
+  font-variant-numeric:tabular-nums;
+}
+.kpi .value small{font-size:13px;font-weight:600;color:var(--ink-2);margin-left:3px}
+.kpi .sub{font-size:11.5px;color:var(--ink-2);margin-top:6px}
+.kpi .sub b{color:var(--ink);font-weight:700}
+.kpi.accent .value{color:var(--accent)}
+.kpi.accent{border-color:rgba(15,138,106,.30);background:linear-gradient(180deg,var(--accent-soft),transparent 68%),var(--bg)}
+
+.grid-main{display:grid;grid-template-columns:minmax(0,1.32fr) minmax(0,1fr);gap:16px;align-items:start}
+
+.panel{background:var(--bg);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.panel-h{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:14px 16px 12px;border-bottom:1px solid var(--line-2);
+}
+.panel-h .t{font-size:14px;font-weight:700;letter-spacing:-.01em}
+.panel-h .d{font-size:11.5px;color:var(--ink-2)}
+.panel-body{padding:6px 16px 14px}
+
+.layer{padding:13px 0 12px;border-bottom:1px solid var(--line-2)}
+.layer:last-child{border-bottom:0;padding-bottom:4px}
+.layer-head{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+.layer-ico{
+  width:26px;height:26px;border-radius:8px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;
+  background:var(--bg-sink);color:var(--ink-2);
+}
+.layer-ico svg{width:15px;height:15px}
+.layer-name{font-size:13.5px;font-weight:700}
+.layer-meta{font-size:11px;color:var(--ink-3);font-weight:600}
+.mods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.mod{
+  border:1px solid var(--line-2);border-radius:var(--radius-sm);padding:9px 10px;
+  background:linear-gradient(180deg,var(--bg),var(--bg-soft));min-width:0;
+}
+.mod .m-t{font-size:12.5px;font-weight:700;display:flex;align-items:center;gap:7px}
+.mod .m-t .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:0 0 auto}
+.mod .m-t .dot.amber{background:var(--amber)}
+.mod .m-t .dot.blue{background:var(--blue)}
+.mod .m-d{font-size:11px;color:var(--ink-2);margin-top:4px;line-height:1.5}
+.mod .m-p{font-size:10.5px;color:var(--ink-3);margin-top:5px;word-break:break-all}
+
+.seg{display:inline-flex;background:var(--bg-sink);border-radius:999px;padding:3px;gap:2px}
+.seg button{
+  border:0;background:transparent;font-family:inherit;font-size:11.5px;font-weight:700;color:var(--ink-2);
+  padding:5px 11px;border-radius:999px;cursor:pointer;transition:background .15s,color .15s;white-space:nowrap;
+}
+.seg button.on{background:var(--bg);color:var(--ink);box-shadow:0 1px 2px rgba(18,24,27,.10)}
+.seg button:hover:not(.on){color:var(--ink)}
+
+.progress{margin:2px 16px 12px;height:8px;border-radius:999px;background:var(--bg-sink);overflow:hidden;display:flex}
+.progress i{display:block;height:100%;transition:width .2s}
+
+.board{padding:8px 16px 4px}
+.b-row{
+  display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:11px;align-items:start;
+  padding:11px 10px;border-radius:var(--radius-sm);border:1px solid var(--line-2);
+  margin-bottom:8px;background:var(--bg);transition:background .15s,border-color .15s;
+}
+.b-row:hover{background:var(--bg-soft)}
+.b-row[hidden]{display:none}
+.b-id{
+  width:30px;height:30px;border-radius:9px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;
+  font-size:12.5px;font-weight:800;background:var(--bg-sink);color:var(--ink-2);
+}
+.b-row.p0 .b-id{background:var(--accent);color:#fff}
+.b-main{min-width:0}
+.b-title{font-size:13px;font-weight:700;line-height:1.4}
+.b-desc{font-size:11.5px;color:var(--ink-2);margin-top:3px;line-height:1.5}
+.b-meta{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.mini{
+  font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--bg-sink);color:var(--ink-2);
+  display:inline-flex;align-items:center;gap:5px;
+}
+.mini.acc{background:var(--accent-soft);color:var(--accent-ink)}
+.mini.warn{background:var(--amber-bg);color:var(--amber-ink)}
+.mini.risk{background:var(--red-bg);color:var(--red)}
+.b-act{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+.pill{
+  font-size:11px;font-weight:800;padding:4px 10px;border-radius:999px;cursor:pointer;border:1px solid transparent;
+  white-space:nowrap;user-select:none;transition:filter .15s,transform .1s;
+}
+.pill:hover{filter:brightness(.96)}
+.pill:active{transform:translateY(1px)}
+.pill.done{background:var(--done-bg);color:var(--done-ink)}
+.pill.progress{background:var(--amber-bg);color:var(--amber-ink)}
+.pill.blocked{background:var(--red-bg);color:var(--red)}
+.pill.review{background:var(--blue-bg);color:var(--blue)}
+.pill.todo{background:var(--todo-bg);color:var(--todo-ink)}
+.b-owner{font-size:10.5px;color:var(--ink-3);font-weight:600;white-space:nowrap}
+.board-foot{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
+  padding:11px 16px 14px;border-top:1px solid var(--line-2);
+}
+.btn{
+  font-family:inherit;font-size:12px;font-weight:700;border-radius:9px;padding:8px 13px;cursor:pointer;
+  border:1px solid var(--line);background:var(--bg);color:var(--ink);transition:background .15s,border-color .15s;
+}
+.btn:hover{background:var(--bg-soft)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn.primary:hover{background:var(--accent-ink)}
+.hint{font-size:11px;color:var(--ink-3)}
+
+.export{margin:0 16px 16px;border:1px dashed var(--line);border-radius:var(--radius-sm);padding:11px 12px;background:var(--bg-soft)}
+.export[hidden]{display:none}
+.export .e-h{font-size:11.5px;font-weight:700;color:var(--ink-2);display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:7px}
+.export pre{
+  margin:0;background:#12181b;color:#d7e0dd;border-radius:8px;padding:11px 12px;font-family:var(--font-mono);
+  font-size:11px;line-height:1.55;overflow:auto;max-height:230px;white-space:pre-wrap;word-break:break-word;
+}
+
+.clockgrid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px;align-items:start}
+.clock{padding:16px}
+.track{position:relative;height:64px;margin:22px 4px 8px;border-radius:10px;background:var(--bg-soft);border:1px solid var(--line-2);overflow:hidden}
+.band{position:absolute;top:0;bottom:0;background:var(--accent-soft);border-left:1px solid rgba(15,138,106,.5);border-right:1px solid rgba(15,138,106,.5)}
+.band .bl{position:absolute;top:5px;left:7px;font-size:10px;font-weight:800;color:var(--accent-ink);white-space:nowrap}
+.dayband{position:absolute;top:0;bottom:0;background:rgba(31,91,120,.06)}
+.cp{position:absolute;top:0;bottom:0;width:1px;background:var(--line)}
+.cp .cpl{position:absolute;bottom:5px;left:5px;font-size:9.5px;color:var(--ink-3);font-weight:700;white-space:nowrap;transform:translateX(-2px)}
+.marks{display:flex;justify-content:space-between;font-size:10px;color:var(--ink-3);font-weight:700;margin:0 4px}
+.tl-rows{margin-top:16px;border-top:1px solid var(--line-2)}
+.tl-row{display:grid;grid-template-columns:96px 78px minmax(0,1fr);gap:12px;padding:11px 2px;border-bottom:1px solid var(--line-2);align-items:start}
+.tl-row:last-child{border-bottom:0}
+.tl-time{font-size:12px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--ink)}
+.tl-badge{font-size:10.5px;font-weight:800;padding:3px 8px;border-radius:999px;justify-self:start;white-space:nowrap}
+.tl-badge.night{background:var(--accent-soft);color:var(--accent-ink)}
+.tl-badge.super{background:var(--blue-bg);color:var(--blue)}
+.tl-badge.day{background:var(--amber-bg);color:var(--amber-ink)}
+.tl-desc{font-size:12px;color:var(--ink-2);line-height:1.5}
+.tl-desc b{color:var(--ink);font-weight:700}
+
+.proto{padding:6px 16px 16px}
+.proto-group{margin-top:12px}
+.proto-group:first-child{margin-top:8px}
+.pg-h{font-size:11.5px;font-weight:800;letter-spacing:.03em;color:var(--ink-3);text-transform:uppercase;margin-bottom:8px}
+.steps{display:flex;flex-direction:column;gap:6px}
+.step{display:grid;grid-template-columns:20px minmax(0,1fr);gap:9px;align-items:start}
+.step .n{
+  width:20px;height:20px;border-radius:50%;background:var(--accent-soft);color:var(--accent-ink);
+  font-size:10.5px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:1px;
+}
+.step .s-t{font-size:12.5px;font-weight:700}
+.step .s-d{font-size:11.5px;color:var(--ink-2);line-height:1.5;margin-top:1px}
+.roles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:2px}
+.role{border:1px solid var(--line-2);border-radius:var(--radius-sm);padding:9px 10px;background:var(--bg-soft)}
+.role .r-n{font-size:12px;font-weight:700;display:flex;align-items:center;gap:7px}
+.role .r-n .d{width:7px;height:7px;border-radius:50%;flex:0 0 auto}
+.role .r-d{font-size:11px;color:var(--ink-2);margin-top:4px;line-height:1.45}
+
+.callout{
+  display:flex;gap:11px;background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:10px;padding:13px 15px;margin-top:22px;
+}
+.callout .em{width:22px;height:22px;border-radius:50%;background:var(--accent-soft);color:var(--accent-ink);
+  font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;margin-top:1px}
+.callout .ct{font-size:12px;color:var(--ink-2);line-height:1.6}
+.callout .ct b{color:var(--ink)}
+.callout .ct .mono{color:var(--ink);font-weight:700}
+.footnote{font-size:11px;color:var(--ink-3);margin-top:18px;line-height:1.7}
+.footnote b{color:var(--ink-2)}
+
+@media (max-width:1020px){
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid-main{grid-template-columns:minmax(0,1fr)}
+  .clockgrid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:620px){
+  .wrap{padding:16px 13px 44px}
+  .mods{grid-template-columns:minmax(0,1fr)}
+  .roles{grid-template-columns:minmax(0,1fr)}
+  .tl-row{grid-template-columns:78px minmax(0,1fr);gap:8px}
+  .tl-badge{grid-column:2;justify-self:start;margin-top:-4px}
+  .topright{align-items:flex-start}
+  .tagrow{justify-content:flex-start}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="topbar">
+    <div class="ident">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"></path>
+        </svg>
+      </div>
+      <div>
+        <h1>TA-Analysis · 仓库状态结构与协同计划看板</h1>
+        <div class="slug">
+          <span class="mono">coolcat0125/TA-Analysis</span> · 新能源汽车公告数据分析（看板生成器 + 行业分析报告 / 演示 / 底表）
+        </div>
+      </div>
+    </div>
+    <div class="topright">
+      <div class="pill-live" id="livePill"><span class="dot"></span><span id="liveText">Source · main @3ca3377</span></div>
+      <div class="tagrow">
+        <span class="tag">当前版本<span class="mono">v4.8.7</span></span>
+        <span class="tag">更新于<span class="mono">2026-09-17</span></span>
+        <span class="tag">角色<span class="mono">5</span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="section-label">现状快照 · Snapshot</div>
+  <section class="kpis">
+    <div class="kpi accent">
+      <div class="label">当前版本</div>
+      <div class="value">v4.8.7</div>
+      <div class="sub">HEAD <span class="mono">3ca3377</span> · 4 小时前提交</div>
+    </div>
+    <div class="kpi">
+      <div class="label">权威底表规模</div>
+      <div class="value">5,357<small>× 38 列</small></div>
+      <div class="sub">夜间整轮 <b>零数据改动</b>（mtime 恒 21:21）</div>
+    </div>
+    <div class="kpi">
+      <div class="label">质量门禁</div>
+      <div class="value">0<small>CRITICAL</small></div>
+      <div class="sub">WARN <b>177</b>（W2 1+抑制 15 · W4 21 · W6 155）</div>
+    </div>
+    <div class="kpi">
+      <div class="label">最高价值触发器</div>
+      <div class="value">410</div>
+      <div class="sub">正式公告未发布 <b>累计第 8 轮</b>一致</div>
+    </div>
+  </section>
+
+  <div class="section-label">协同计划 · Plan Board（可交互）</div>
+  <div class="grid-main">
+
+    <section class="panel">
+      <div class="panel-h">
+        <div>
+          <div class="t">仓库状态结构</div>
+          <div class="d">按数据流分层 · 每层含模块、路径与值守角色</div>
+        </div>
+      </div>
+      <div class="panel-body">
+
+        <div class="layer">
+          <div class="layer-head">
+            <div class="layer-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></div>
+            <div>
+              <div class="layer-name">① 数据底座</div>
+              <div class="layer-meta">Nightly · 只补空，夜间零写入</div>
+            </div>
+          </div>
+          <div class="mods">
+            <div class="mod">
+              <div class="m-t"><span class="dot"></span>底表（单一事实源）</div>
+              <div class="m-d">5,357 行 × 38 列，全部入 git</div>
+              <div class="m-p mono">NEV公告车型行业分析_数据底表.xlsx</div>
+            </div>
+            <div class="mod">
+              <div class="m-t"><span class="dot amber"></span>官方能耗数据</div>
+              <div class="m-d">工信部来源，回填补口已核证</div>
+              <div class="m-p mono">工信部新能源车型能耗数据20260915.xlsx</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="layer">
+          <div class="layer-head">
+            <div class="layer-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M8 13v5M12 9v9M16 11v7"></path></svg></div>
+            <div>
+              <div class="layer-name">② 看板与报告层</div>
+              <div class="layer-meta">Generated · 收工三件套之一</div>
+            </div>
+          </div>
+          <div class="mods">
+            <div class="mod">
+              <div class="m-t"><span class="dot"></span>交互看板（完整 + 发布版）</div>
+              <div class="m-d">ECharts 生成，收工必刷新</div>
+              <div class="m-p mono">NEV公告数据看板.html / _发布版.html</div>
+            </div>
+            <div class="mod">
+              <div class="m-t"><span class="dot"></span>报告 / 演示 / 参数汇总</div>
+              <div class="m-d">docx + pptx + 341~410 批合并表</div>
+              <div class="m-p mono">行业分析报告.docx · 演示文稿.pptx</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="layer">
+          <div class="layer-head">
+            <div class="layer-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"></path></svg></div>
+            <div>
+              <div class="layer-name">③ 管线与工具层</div>
+              <div class="layer-meta">Nightly 自动轮执行序列</div>
+            </div>
+          </div>
+          <div class="mods">
+            <div class="mod">
+              <div class="m-t"><span class="dot"></span>批次监控 → 补全链</div>
+              <div class="m-d">check_new_batch → media_fill → fill_logic → fill_consensus → reconcile</div>
+              <div class="m-p mono">check_new_batch.py · fill_chain.sh</div>
+            </div>
+            <div class="mod">
+              <div class="m-t"><span class="dot blue"></span>校验与审计</div>
+              <div class="m-d">verify W1–W8 门禁 + 对账分析</div>
+              <div class="m-p mono">verify_consistency.py · analyze_official_scan.py</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="layer">
+          <div class="layer-head">
+            <div class="layer-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5-9-5Z"></path><path d="M3 16l9 5 9-5M3 12l9 5 9-5"></path></svg></div>
+            <div>
+              <div class="layer-name">④ 治理与协同层</div>
+              <div class="layer-meta">多 Agent / 人类共同遵守</div>
+            </div>
+          </div>
+          <div class="mods">
+            <div class="mod">
+              <div class="m-t"><span class="dot"></span>同步协议 + 状态入口</div>
+              <div class="m-d">main 唯一事实源 · 迭代记录追加不改写</div>
+              <div class="m-p mono">SYNC.md · PROJECT_STATUS.md</div>
+            </div>
+            <div class="mod">
+              <div class="m-t"><span class="dot blue"></span>变更台账 + 门禁清单</div>
+              <div class="m-d">版本号只增不减 · 审计记录</div>
+              <div class="m-p mono">CHANGELOG.md · AUDIT.md · quality_gates.json</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="layer">
+          <div class="layer-head">
+            <div class="layer-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg></div>
+            <div>
+              <div class="layer-name">⑤ 自动化与交接层</div>
+              <div class="layer-meta">23:00 定时 + 白天分派</div>
+            </div>
+          </div>
+          <div class="mods">
+            <div class="mod">
+              <div class="m-t"><span class="dot"></span>定时任务</div>
+              <div class="m-d">每日 23:00 自动轮照常启动</div>
+              <div class="m-p mono">.github/workflows/parameter_inventory.yml</div>
+            </div>
+            <div class="mod">
+              <div class="m-t"><span class="dot blue"></span>夜间三件套 + 派单</div>
+              <div class="m-d">补全日志 / 监管日志 / 白天分派单</div>
+              <div class="m-p mono">Update/夜间补全日志.md · 夜间分派_*.md</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-h">
+        <div>
+          <div class="t">后续待更新计划</div>
+          <div class="d">来源：分派单 v2（夜间监管轮 06:10 定稿）</div>
+        </div>
+      </div>
+      <div style="padding:11px 16px 11px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;border-bottom:1px solid var(--line-2)">
+        <div class="seg" id="filterSeg">
+          <button data-f="all" class="on">全部</button>
+          <button data-f="progress">进行中</button>
+          <button data-f="review">复核中</button>
+          <button data-f="done">已完成</button>
+          <button data-f="blocked">阻塞</button>
+        </div>
+        <div class="hint"><span id="countText">4 / 4 项</span></div>
+      </div>
+      <div class="progress" aria-hidden="true">
+        <i id="barDone" style="background:var(--accent);width:0%"></i>
+        <i id="barProg" style="background:var(--amber);width:0%"></i>
+        <i id="barBlock" style="background:var(--red);width:0%"></i>
+      </div>
+
+      <div class="board" id="board"></div>
+
+      <div class="board-foot">
+        <div class="hint">点状态标签循环切换 · 进度实时汇总</div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn" id="resetBtn">重置</button>
+          <button class="btn primary" id="exportBtn">导出计划 JSON</button>
+        </div>
+      </div>
+
+      <div class="export" id="exportBox" hidden>
+        <div class="e-h"><span>计划状态快照 · 可贴入 <span class="mono">Update/</span> 交接</span><span class="hint" id="copyState"></span></div>
+        <pre id="exportPre"></pre>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="section-label">昼夜协同 · Day / Night Rhythm</div>
+  <section class="clockgrid">
+
+    <div class="panel">
+      <div class="panel-h">
+        <div>
+          <div class="t">24 小时协同时间轴</div>
+          <div class="d">夜间 23:00–06:00 生产 + 监管，06:10 出白天分派</div>
+        </div>
+        <div class="hint">UTC+8 · 每日循环</div>
+      </div>
+      <div class="clock">
+        <div class="track" id="track">
+          <div class="dayband" style="left:50%;width:50%"></div>
+          <div class="band" style="left:0%;width:25%" title="夜间 23:00–06:00"></div>
+          <div class="band"><span class="bl">夜间窗口 23:00 → 06:00</span></div>
+          <div class="cp" style="left:0%"><span class="cpl">23:00</span></div>
+          <div class="cp" style="left:12.5%"><span class="cpl">02:25</span></div>
+          <div class="cp" style="left:22%"><span class="cpl">05:26</span></div>
+          <div class="cp" style="left:25%"><span class="cpl">06:00</span></div>
+          <div class="cp" style="left:30%"><span class="cpl">06:10</span></div>
+          <div class="cp" style="left:75%"><span class="cpl">18:00</span></div>
+        </div>
+        <div class="marks"><span>23:00</span><span>06:00</span><span>12:00</span><span>18:00</span></div>
+
+        <div class="tl-rows">
+          <div class="tl-row">
+            <div class="tl-time">23:00</div>
+            <div class="tl-badge night">夜间自动轮</div>
+            <div class="tl-desc">批次监控 <b>check_new_batch</b> → 循环补全（media_fill → fill_logic → fill_consensus → reconcile）。收敛条件：每轮新增 <b>&lt; 25 格</b>或到 06:00 止；<b>不改 CHANGELOG、不推送</b>。</div>
+          </div>
+          <div class="tl-row">
+            <div class="tl-time">23:00 → 06:10</div>
+            <div class="tl-badge super">夜间监管轮</div>
+            <div class="tl-desc">独立监管角色值守，跑 <b>8 个检查点</b>，全程 <b>零底表接触、监管写库 0 次</b>；02:25 与 05:26 做双源独立 <b>verify 快照互证</b>，06:00 总复盘收尾。</div>
+          </div>
+          <div class="tl-row">
+            <div class="tl-time">06:10</div>
+            <div class="tl-badge day">白天分派</div>
+            <div class="tl-desc">监管轮定稿《<span class="mono">Update/夜间分派_YYYYMMDD.md</span>》，把夜间发现拆成 <b>D1–D4</b>，每项固定五要素：<b>任务 / 目标 / 验收 / 禁区 / 依赖</b>。</div>
+          </div>
+          <div class="tl-row">
+            <div class="tl-time">白天</div>
+            <div class="tl-badge day">主力终端承接</div>
+            <div class="tl-desc">执行需真实浏览器通道或人工审批的尾巴（如 <b>411×13 电芯回填</b>、公示查询列交互）；当晚再回流给夜间轮做批量执行。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-h">
+        <div>
+          <div class="t">协同协议 · Protocol</div>
+          <div class="d">多终端 / 多会话务必遵守</div>
+        </div>
+      </div>
+      <div class="proto">
+
+        <div class="proto-group">
+          <div class="pg-h">工作循环（SYNC.md）</div>
+          <div class="steps">
+            <div class="step"><span class="n">1</span><div><div class="s-t">开工同步</div><div class="s-d">跑 sync.ps1 只快进，确保基线最新</div></div></div>
+            <div class="step"><span class="n">2</span><div><div class="s-t">干活</div><div class="s-d">只补空、唯一共识、逐格台账、版本递增</div></div></div>
+            <div class="step"><span class="n">3</span><div><div class="s-t">收工三件套</div><div class="s-d">底表 / 两版看板 / audit-output 刷新 + CHANGELOG 登记</div></div></div>
+            <div class="step"><span class="n">4</span><div><div class="s-t">冲突预防</div><div class="s-d">push 前必 pull --rebase；长任务先看远端 HEAD</div></div></div>
+          </div>
+        </div>
+
+        <div class="proto-group">
+          <div class="pg-h">四条协同约定（PROJECT_STATUS §3）</div>
+          <div class="steps">
+            <div class="step"><span class="n">A</span><div><div class="s-t">上传防冲突</div><div class="s-d">PUT 前 GET 远程 SHA，核查对方改动再动手</div></div></div>
+            <div class="step"><span class="n">B</span><div><div class="s-t">只补空原则</div><div class="s-d">不覆盖已有值；"不适用(BEV)" 占位不可补</div></div></div>
+            <div class="step"><span class="n">C</span><div><div class="s-t">版本登记</div><div class="s-d">改动进 CHANGELOG 取下一版本号；版本号只增不减</div></div></div>
+            <div class="step"><span class="n">D</span><div><div class="s-t">历史教训</div><div class="s-d">同名版本曾互覆盖 → 以对方底表为基座无损合并</div></div></div>
+          </div>
+        </div>
+
+        <div class="proto-group">
+          <div class="pg-h">角色分工 · 5 类</div>
+          <div class="roles">
+            <div class="role"><div class="r-n"><span class="d" style="background:#0f8a6a"></span>授权 / 审批</div><div class="r-d">人类侧，裁决高风险合并与放行</div></div>
+            <div class="role"><div class="r-n"><span class="d" style="background:#1f5b78"></span>Orchestrator 主力终端</div><div class="r-d">分支 agent/v4.9-p1-evidence-audit，纯候选层</div></div>
+            <div class="role"><div class="r-n"><span class="d" style="background:#0f8a6a"></span>夜间自动轮</div><div class="r-d">增量生产与收敛，不推送</div></div>
+            <div class="role"><div class="r-n"><span class="d" style="background:#b8791f"></span>夜间监管轮</div><div class="r-d">审计 / 裁决 / 止损，零写库</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <div class="callout">
+    <div class="em">i</div>
+    <div class="ct">
+      <b>同频协作要点。</b>所有角色共享同一事实源 <span class="mono">GitHub main</span>；本看板的计划状态可点标签切换并<b>导出 JSON</b>，建议贴回 <span class="mono">Update/</span> 交接；跨会话长任务开工前先看远端 HEAD 是否被他人推进。当前最高价值触发器为 <b>410 正式公告发布</b>与 <b>v4.9 车长候选合并</b>。
+    </div>
+  </div>
+
+  <div class="footnote">
+    <b>来源：</b>TA-Analysis 仓库 main 分支（
+    <a href="https://github.com/coolcat0125/TA-Analysis">仓库主页</a> ·
+    <a href="https://github.com/coolcat0125/TA-Analysis/blob/main/SYNC.md">SYNC.md</a> ·
+    <a href="https://github.com/coolcat0125/TA-Analysis/blob/main/PROJECT_STATUS.md">PROJECT_STATUS.md</a> ·
+    <a href="https://github.com/coolcat0125/TA-Analysis/tree/main/Update">Update/</a>）。快照时间 2026-09-18，版本 v4.8.7，HEAD <span class="mono">3ca3377</span>。图内计划为仓库当前分派单状态的离线镜像，实际以仓库文件为准。
+  </div>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var TERMS = ["todo","progress","review","done","blocked"];
+  var LABELS = {todo:"待办", progress:"进行中", review:"复核中", done:"已完成", blocked:"阻塞"};
+
+  var PLANS = [
+    {id:"D1", p0:true, owner:"Orchestrator", status:"todo",
+     title:"v4.9 车长证据候选合并审批配合",
+     desc:"主力终端 v4.9 A08 车长证据候选 55 行（A/B 级）走审批合并流程。",
+     meta:[["最高优先","acc"],["依赖 DATA_CONTRACT","warn"],["22 行未取证不得入库","risk"]]},
+    {id:"D2", p0:false, owner:"夜间监管轮", status:"done",
+     title:"W2 判据校准",
+     desc:"verify W2 官方确证白名单（W2sup 单列，WARN 192→177），剩 1 条官方源未收录留档。",
+     meta:[["v4.8.7 已完成","acc"],["无剩余动作"]]},
+    {id:"D3", p0:false, owner:"白天主力终端", status:"progress",
+     title:"电芯缺口回填 · 后半段（浏览器通道）",
+     desc:"411×13 电芯供应商回填，需真实浏览器经公示查询列通道；查询用型号填入 + 回车。",
+     meta:[["盘点半完成","acc"],["回填需浏览器","warn"],["410 空型号不查不补","risk"]]},
+    {id:"D4", p0:false, owner:"自动轮 · 常设", status:"progress",
+     title:"常规监测",
+     desc:"410 正式公告监测（check_new_batch.py）；命中即 S1 最高优先。结果写 Update/批次监控日志.md。",
+     meta:[["常设","default"],["累计第 8 轮未发布","warn"]]}
+  ];
+
+  var STORE_KEY = "ta_analysis_plan_v1";
+
+  function safeGet(){
+    try{ return window.localStorage.getItem(STORE_KEY); }catch(e){ return null; }
+  }
+  function safeSet(v){
+    try{ window.localStorage.setItem(STORE_KEY, v); }catch(e){ /* storage unavailable */ }
+  }
+  function safeClear(){
+    try{ window.localStorage.removeItem(STORE_KEY); }catch(e){ /* storage unavailable */ }
+  }
+
+  function loadState(){
+    var raw = safeGet();
+    if(!raw) return PLANS.map(function(p){ return {id:p.id, status:p.status}; });
+    try{
+      var parsed = JSON.parse(raw);
+      if(!parsed || !parsed.length) throw new Error("empty");
+      var map = {};
+      parsed.forEach(function(s){ map[s.id]=s.status; });
+      return PLANS.map(function(p){
+        var st = map[p.id];
+        return {id:p.id, status: TERMS.indexOf(st)>=0 ? st : p.status};
+      });
+    }catch(e){ return PLANS.map(function(p){ return {id:p.id, status:p.status}; }); }
+  }
+
+  var state = loadState();
+  var filter = "all";
+
+  var board = document.getElementById("board");
+  var filterSeg = document.getElementById("filterSeg");
+  var countText = document.getElementById("countText");
+  var barDone = document.getElementById("barDone");
+  var barProg = document.getElementById("barProg");
+  var barBlock = document.getElementById("barBlock");
+  var exportBox = document.getElementById("exportBox");
+  var exportPre = document.getElementById("exportPre");
+  var copyState = document.getElementById("copyState");
+  var liveText = document.getElementById("liveText");
+
+  function statusOf(id){
+    for(var i=0;i<state.length;i++){ if(state[i].id===id) return state[i].status; }
+    return "todo";
+  }
+
+  function renderBoard(){
+    var html = "";
+    PLANS.forEach(function(p){
+      var st = statusOf(p.id);
+      var meta = p.meta.map(function(m){
+        var cls = (m[1]==="acc") ? "acc" : (m[1]==="warn") ? "warn" : (m[1]==="risk") ? "risk" : "";
+        return '<span class="mini ' + cls + '">' + m[0] + '</span>';
+      }).join("");
+      html += '<div class="b-row' + (p.p0 ? " p0" : "") + '" data-id="' + p.id + '" data-status="' + st + '">'
+        + '<div class="b-id">' + p.id + '</div>'
+        + '<div class="b-main">'
+        +   '<div class="b-title">' + p.title + '</div>'
+        +   '<div class="b-desc">' + p.desc + '</div>'
+        +   '<div class="b-meta">' + meta + '</div>'
+        + '</div>'
+        + '<div class="b-act">'
+        +   '<span class="pill ' + st + '" data-act="cycle">' + LABELS[st] + '</span>'
+        +   '<span class="b-owner">' + p.owner + '</span>'
+        + '</div>'
+        + '</div>';
+    });
+    board.innerHTML = html;
+    applyFilter();
+  }
+
+  function counts(){
+    var c = {todo:0, progress:0, review:0, done:0, blocked:0};
+    state.forEach(function(s){ c[s.status]++; });
+    return c;
+  }
+
+  function applyFilter(){
+    var rows = board.querySelectorAll(".b-row");
+    var visible = 0;
+    for(var i=0;i<rows.length;i++){
+      var st = rows[i].getAttribute("data-status");
+      var show = (filter==="all") || (st===filter);
+      rows[i].hidden = !show;
+      if(show) visible++;
+    }
+    countText.textContent = visible + " / " + PLANS.length + " 项";
+
+    var c = counts();
+    var n = PLANS.length;
+    barDone.style.width = (c.done/n*100) + "%";
+    barProg.style.width = ((c.progress+c.review)/n*100) + "%";
+    barBlock.style.width = (c.blocked/n*100) + "%";
+  }
+
+  function cycle(id){
+    for(var i=0;i<state.length;i++){
+      if(state[i].id===id){
+        var idx = TERMS.indexOf(state[i].status);
+        state[i].status = TERMS[(idx+1) % TERMS.length];
+        break;
+      }
+    }
+    safeSet(JSON.stringify(state));
+    renderBoard();
+    flash(id);
+  }
+
+  function flash(id){
+    var row = board.querySelector('.b-row[data-id="'+id+'"]');
+    if(!row) return;
+    row.style.background = "var(--accent-soft)";
+    window.setTimeout(function(){ row.style.background = ""; }, 650);
+  }
+
+  board.addEventListener("click", function(e){
+    var pill = e.target.closest('[data-act="cycle"]');
+    if(!pill) return;
+    var row = pill.closest(".b-row");
+    if(!row) return;
+    cycle(row.getAttribute("data-id"));
+  });
+
+  filterSeg.addEventListener("click", function(e){
+    var btn = e.target.closest("button[data-f]");
+    if(!btn) return;
+    filter = btn.getAttribute("data-f");
+    var all = filterSeg.querySelectorAll("button");
+    for(var i=0;i<all.length;i++){ all[i].classList.toggle("on", all[i]===btn); }
+    applyFilter();
+  });
+
+  document.getElementById("resetBtn").addEventListener("click", function(){
+    safeClear();
+    state = PLANS.map(function(p){ return {id:p.id, status:p.status}; });
+    renderBoard();
+    exportBox.hidden = true;
+  });
+
+  document.getElementById("exportBtn").addEventListener("click", function(){
+    var c = counts();
+    var payload = {
+      repo: "coolcat0125/TA-Analysis",
+      snapshot_version: "v4.8.7",
+      head: "3ca3377",
+      generated_at: new Date().toISOString().slice(0,19).replace("T"," "),
+      source: "Update/夜间分派_20260918.md",
+      summary: {total: PLANS.length, done: c.done, in_progress: c.progress, in_review: c.review, blocked: c.blocked, todo: c.todo},
+      items: PLANS.map(function(p){
+        return {
+          id: p.id,
+          title: p.title,
+          owner: p.owner,
+          priority: p.p0 ? "P0" : "normal",
+          status: statusOf(p.id),
+          status_label: LABELS[statusOf(p.id)]
+        };
+      })
+    };
+    var text = JSON.stringify(payload, null, 2);
+    exportPre.textContent = text;
+    exportBox.hidden = false;
+    copyText(text);
+  });
+
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        setCopyState("已复制到剪贴板");
+      }, function(){
+        setCopyState("请手动选取复制");
+      });
+    }else{
+      setCopyState("请手动选取复制");
+    }
+  }
+
+  function setCopyState(msg){
+    copyState.textContent = msg;
+    window.setTimeout(function(){ if(copyState.textContent===msg) copyState.textContent=""; }, 2200);
+  }
+
+  renderBoard();
+
+  liveText.textContent = "Source · main @3ca3377";
+})();
+</script>
+</body>
+</html>
