@@ -1,0 +1,55 @@
+{
+ "checks": [
+  {
+   "check": "ledger 行数=55",
+   "pass": true,
+   "detail": "actual=55"
+  },
+  {
+   "check": "分级=A13/B41/C1",
+   "pass": true,
+   "detail": "{'B': 41, 'A': 13, 'C': 1}"
+  },
+  {
+   "check": "candidate 行数=55 且全 candidate",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "findings.audit_scope=77/55/22",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "结论行已修正 55/B41/22",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "人群包含 77⊂103 已记录",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "A4 BYD380 不在候选（维持 unknown）",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "rebuild 溯源=f7d4064",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "A2_A5 三件与 PR#5 原子级一致",
+   "pass": true,
+   "detail": "git diff 98ab8a8 -- candidate/v4.9/issue4_a2_a5/ 为空"
+  },
+  {
+   "check": "canonical 未触碰",
+   "pass": true,
+   "detail": "变更仅 candidate/ 层"
+  }
+ ],
+ "pass": true
+}
