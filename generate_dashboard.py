@@ -2171,7 +2171,12 @@ function cdInitUI(){
   cv.onchange=()=>{ let v=cv.value;
     if(v!=='d2' && CD_STATE.z==null){ v='d2'; cv.value='d2'; showToast('三维柱状 / 二维热力需先在「泡泡直径 Z」选定字段'); }
     CD_STATE.view=v; cdModeUI(); renderCustom(filtered()); };
-  cs.onchange=()=>{ CD_STATE.style=cs.value; renderCustom(filtered()); };
+  cs.onchange=()=>{ CD_STATE.style=cs.value;
+    /* 风格切换必须 clear+全量重建：各风格梯度色带长度不同（4/5 色），
+       merge 会残留旧风格色阶条目→插值出彩虹乱色（实证：切到学术极简显示红黄紫乱色，多次切换后自愈） */
+    const ch=chart('chCustom');
+    if(ch){ const cam=cdCaptureCam(); if(cam) CD_CAM=cam; ch.clear(); ch.__cd3dFirst=true; }
+    renderCustom(filtered()); };
   ss.oninput =()=>{ CD_STATE.zScale=+ss.value;
     document.getElementById('cdZVal').textContent = ss.value+'%'; renderCustom(filtered()); };
   document.getElementById('cdSwap').onclick=()=>{
