@@ -724,7 +724,7 @@ select:hover,select:focus{border-color:var(--clay)}
 .ci em{font-style:normal;color:var(--clay);font-family:var(--mono);font-size:11.5px}
 .chart{width:100%;height:340px}
 .chart.tall{height:400px}
-.chart.xl{height:560px}
+.chart.xl{height:640px}
 .chart.short{height:280px}
 /* 自定义分布控制条 */
 .cd-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0 6px;
@@ -993,7 +993,7 @@ body.show-gaps .card.gap-hidden-note{display:none}
     <div class="card c-s12">
       <div class="c-h">
         <div class="c-t">自定义分布</div>
-        <div class="c-s">Custom Distribution · 自由选择纵横维度 · 选定 Z 轴即为泡泡图 · 可切换三维展示（Z 转垂直高度）</div>
+        <div class="c-s">Custom Distribution · 自由选择纵横维度 · 视图：二维泡泡 / 三维柱状 / 二维热力 · 风格 8 款 · 全屏</div>
       </div>
       <div class="ci" id="ci_chCustom"></div>
       <div class="cd-bar">
@@ -1003,15 +1003,30 @@ body.show-gaps .card.gap-hidden-note{display:none}
         <select id="cdY"></select>
         <span class="f-label">泡泡直径 Z</span>
         <select id="cdZ"></select>
-        <span class="cd-zscale" id="cdZScaleWrap">
+        <span class="f-label">视图</span>
+        <select id="cdView" title="展示模式：二维散点/泡泡 · 三维柱状 · 二维热力（后两者需先选定 Z 字段）">
+          <option value="d2">二维散点/泡泡</option>
+          <option value="d3">三维柱状</option>
+          <option value="heat">二维热力</option>
+        </select>
+        <span id="cdStyleWrap" style="display:contents">
+          <span class="f-label">风格</span>
+          <select id="cdStyle" title="三维/热力视觉风格（8 款按需切换）"></select>
+        </span>
+        <span class="cd-zscale hide" id="cdZScaleWrap">
           <span class="f-label">泡泡比例</span>
           <input type="range" id="cdZScale" min="20" max="260" value="100" step="5">
           <span class="cd-zval" id="cdZVal">100%</span>
         </span>
-        <button class="cd-btn" id="cd3d" title="三维展示：保留 X / Y 轴，Z 轴由泡泡直径改为垂直高度；左键旋转 · 滚轮缩放 · 右键平移（需先选定「泡泡直径 Z」）">三维展示 ✗</button>
         <span id="cd3dOnly" class="hide" style="display:contents">
           <button class="cd-btn" id="cdViewReset" title="恢复默认视角（等轴测，等同双击图表）">视角复位</button>
-          <button class="cd-btn" id="cdViewTop" title="切换为俯视视角（正对 X-Y 平面，等同原二维布局）">俯视 X-Y</button>
+          <button class="cd-btn" id="cdViewTop" title="切换为俯视视角（正对 X-Y 平面，透视距离已拉远）">俯视 X-Y</button>
+        </span>
+        <span id="cdAxisGrp" style="display:contents">
+          <span class="f-label">反向</span>
+          <button class="cd-btn" id="cdInvX" title="X 轴排序方向反转">X↓</button>
+          <button class="cd-btn" id="cdInvY" title="Y 轴排序方向反转">Y↓</button>
+          <button class="cd-btn" id="cdInvZ" title="Z 梯度方向反转（三维/热力）">Z↓</button>
         </span>
         <button class="cd-btn" id="cdSwap" title="交换 X / Y">⇄ 交换</button>
         <span id="cd2dOnly" style="display:contents">
@@ -1019,7 +1034,8 @@ body.show-gaps .card.gap-hidden-note{display:none}
           <button class="cd-btn" id="cdAuto" title="随缩放自动调节散点/泡泡显示大小">自动调节 ✓</button>
           <button class="cd-btn" id="cdZoomReset" title="恢复完整视野（等同双击图表）">复位视窗</button>
         </span>
-        <button class="cd-btn" id="cdReset" title="恢复默认维度">重置</button>
+        <button class="cd-btn" id="cdFull" title="全屏展示（Esc 退出）">⛶ 全屏</button>
+        <button class="cd-btn" id="cdReset" title="恢复默认维度与视图">重置</button>
       </div>
       <div class="chart xl" id="chCustom"></div>
     </div>
@@ -2001,10 +2017,10 @@ function insightD(rows){
   document.getElementById('insightDTx').innerHTML =
     `分布格局从五个角度呈现车型参数的<u>两两关系</u>：续航-尺寸、容量-续航、电耗-续航、密度-续航、质量-尺寸。`+
     `当前筛选内有效样本：续航×轴距 <em>${nAb}</em>、容量×续航 <em>${nCR}</em>、电耗×续航 <em>${nEc}</em>、密度×续航 <em>${nEd}</em> 款（缺失不计入）。`+
-    `右侧【自定义分布】可自由选择 X / Y 维度；选定 Z 轴后自动转为<u>泡泡图</u>，泡泡直径按数值等比缩放。`;
+    `右侧【自定义分布】可自由选择 X / Y / Z 维度与视图模式（二维泡泡 / 三维柱状 / 二维热力），风格 8 款按需切换。`;
 }
 
-/* ==================== 自定义分布（X/Y 散点 · 可选 Z 泡泡） ==================== */
+/* ==================== 自定义分布（X/Y · 2D 泡泡 / 3D 柱状 / 2D 热力 · 风格化） ==================== */
 /* 字段目录：分布格局已用字段优先置顶，其余按语义顺序排列。
    仅纳入「可量化」字段（数值型），标签类字段不作为 Z 轴备选。 */
 const CD_FIELDS = (()=>{
@@ -2040,7 +2056,60 @@ const CD_FIELDS = (()=>{
 })();
 const CD_LABEL = k => (CD_FIELDS.find(f=>f.k===k)||{n:'—'}).n;
 const CD_DEFAULT = {x:I.ab, y:I.r, z:null};
-let CD_STATE = {x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true, autoSize:true, d3:false, view:null};
+/* 视觉风格库（出处：ECharts GL 官方 bar3D 示例 bevel 倒角 / Plotly Viridis·Magma·Turbo 色标 / GitHub Contributions 绿阶）
+   bg=场景底色 ramps=BEV/PHEV 双色系浅→深梯度 bevel=[size,smoothness]=柱体倒角 split/axisLine/label=网格与文字 */
+const CD_STYLES = {
+  A: { name:'学术极简', bg:'', barSize:[1.5,1.5], shading:'color',
+    bevRamp:['#F6D8CB','#EFB39A','#E29067','#D97757','#A94F30'],
+    phevRamp:['#D4E2F4','#AECBEC','#8AB2DF','#6B9BD1','#45699C'],
+    bevBase:'rgba(217,119,87,.92)', phevBase:'rgba(107,155,209,.92)',
+    border:null, bw:0, opacity:.95, ambient:.55, main:1.4,
+    split:TC().split, axisLine:TC().axisLine, label:TC().axis, bevel:null },
+  B: { name:'深空大屏', bg:'radial-gradient(1100px 620px at 62% 38%, #122A45 0%, #060B15 72%)', barSize:[1.8,1.8], shading:'lambert',
+    bevRamp:['#FFE4CC','#FFB37E','#FF8A3D','#FF6A2B','#C2410C'],
+    phevRamp:['#D6ECFF','#8FC2FF','#4D9AFF','#2E7CFF','#1D4ED8'],
+    bevBase:'rgba(255,138,61,.95)', phevBase:'rgba(77,154,255,.95)',
+    border:f=>f==='bev'?'rgba(255,179,126,.8)':'rgba(126,184,255,.8)', bw:1, opacity:.96, ambient:.75, main:1.5,
+    split:'rgba(86,156,255,.22)', axisLine:'rgba(120,170,235,.6)', label:'#A8C6F0', bevel:null },
+  C: { name:'柔和白模', bg:'#F4EFE7', barSize:[1.6,1.6], shading:'lambert',
+    bevRamp:['#F7DBC6','#EFAF8C','#E18F63','#C96A4A','#9E4E32'],
+    phevRamp:['#DEE9F6','#B3CBE8','#87ACD6','#5C85B8','#3E6390'],
+    bevBase:'rgba(201,106,74,.95)', phevBase:'rgba(92,133,184,.95)',
+    border:null, bw:0, opacity:.97, ambient:.95, main:.8,
+    split:'#DFD7C9', axisLine:'#C9BFB0', label:'#5A5248', bevel:null },
+  D: { name:'玻璃塔楼', bg:'radial-gradient(1100px 620px at 55% 40%, #0E1526 0%, #05080F 75%)', barSize:[2,2], shading:'color',
+    bevRamp:['rgba(240,150,100,.3)','rgba(235,130,80,.46)','rgba(225,110,60,.62)','rgba(217,90,40,.8)','rgba(170,60,25,.92)'],
+    phevRamp:['rgba(120,170,230,.3)','rgba(100,150,215,.46)','rgba(80,130,200,.62)','rgba(60,110,185,.8)','rgba(35,80,150,.92)'],
+    bevBase:'rgba(240,150,100,.5)', phevBase:'rgba(110,155,215,.5)',
+    border:f=>f==='bev'?'rgba(255,190,140,.8)':'rgba(150,195,245,.8)', bw:1.1, opacity:1, ambient:.6, main:1.2,
+    split:'rgba(140,165,195,.16)', axisLine:'rgba(150,175,205,.5)', label:'#93A4BD', bevel:null },
+  E: { name:'Viridis/Magma 科研渐变', bg:'#101216', barSize:[1.4,1.4], shading:'color',
+    bevRamp:['#1D1147','#51127C','#B63679','#E65164','#FB8861'],
+    phevRamp:['#414487','#2A788E','#22A884','#7AD151'],
+    bevBase:'rgba(182,54,121,.92)', phevBase:'rgba(42,120,142,.92)',
+    border:null, bw:0, opacity:.95, ambient:.8, main:.7,
+    split:'#23262E', axisLine:'#3A3F4B', label:'#B9C0CE', bevel:[.2,2] },
+  F: { name:'Turbo 地形热力', bg:'#0B1220', barSize:[1.9,1.9], shading:'lambert',
+    bevRamp:['#F5C93A','#F5872E','#E14B1F','#A31507'],
+    phevRamp:['#30123B','#2050C8','#1FA7D6','#2AE0B8'],
+    bevBase:'rgba(241,110,45,.94)', phevBase:'rgba(32,110,190,.94)',
+    border:null, bw:0, opacity:.96, ambient:.55, main:1.4,
+    split:'rgba(90,140,200,.18)', axisLine:'rgba(140,180,230,.5)', label:'#C7D3E4', bevel:[.3,3] },
+  G: { name:'单色深空', bg:'radial-gradient(1100px 620px at 55% 38%, #0A1526 0%, #04070D 75%)', barSize:[1.5,1.5], shading:'color',
+    bevRamp:['#0E3A52','#155E80','#1F8FB4','#35C4E8','#8FE8FF'],
+    phevRamp:['#1B2A5E','#28407E','#3A5CA8','#5B82D4','#8FB2F0'],
+    bevBase:'rgba(31,143,180,.92)', phevBase:'rgba(58,92,168,.92)',
+    border:null, bw:0, opacity:.92, ambient:.65, main:1.1,
+    split:'rgba(70,110,170,.14)', axisLine:'rgba(120,160,210,.4)', label:'#8FA6C4', bevel:[.2,2] },
+  H: { name:'GitHub 天际线', bg:'#0D1117', barSize:[2.6,2.6], shading:'lambert',
+    bevRamp:['#0E4429','#006D32','#26A641','#39D353'],
+    phevRamp:['#134E4A','#0F766E','#14B8A6','#5EEAD4'],
+    bevBase:'rgba(38,166,65,.94)', phevBase:'rgba(20,118,110,.94)',
+    border:null, bw:0, opacity:.96, ambient:.7, main:.9,
+    split:'#21262D', axisLine:'#30363D', label:'#8B949E', bevel:[.35,4] }
+};
+let CD_STATE = {x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true, autoSize:true,
+  view:'d2', style:'A', invX:false, invY:false, invZ:false, insightFull:false};
 
 /* 轴距等级区段定义（与《车型级别定义》阈值一致；用于图上辅助示意） */
 const CD_LEVELS = {
@@ -2072,19 +2141,31 @@ function cdFillSelect(el, val, allowNone){
     CD_FIELDS.map(f=>`<option value="${f.k}">${f.n}</option>`).join('');
   el.value = val==null?'':String(val);
 }
+/* 说明折叠：核心一行 + 展开开关；detail 仅展开态渲染 */
+function cdToggleInsight(){ CD_STATE.insightFull=!CD_STATE.insightFull; renderCustom(filtered()); }
+function cdInsightWrap(core, detail){
+  const tg=`<a href="javascript:void(0)" onclick="cdToggleInsight()" style="color:#D97757;opacity:.85;font-size:11px;margin-left:8px;cursor:pointer;white-space:nowrap">${CD_STATE.insightFull?'▴ 收起说明':'▾ 展开说明'}</a>`;
+  return core + tg + (CD_STATE.insightFull ? `<br>${detail}` : '');
+}
 function cdInitUI(){
   const sx=document.getElementById('cdX'), sy=document.getElementById('cdY'),
-        sz=document.getElementById('cdZ'), ss=document.getElementById('cdZScale');
+        sz=document.getElementById('cdZ'), ss=document.getElementById('cdZScale'),
+        cv=document.getElementById('cdView'), cs=document.getElementById('cdStyle');
   if(!sx) return;
   cdFillSelect(sx, CD_STATE.x, false);
   cdFillSelect(sy, CD_STATE.y, false);
   cdFillSelect(sz, CD_STATE.z==null?'':CD_STATE.z, true);
-  const sync=()=>{ ss.parentElement.classList.toggle('hide', !sz.value); };
+  cs.innerHTML = Object.keys(CD_STYLES).map(k=>`<option value="${k}">${CD_STYLES[k].name}</option>`).join('');
+  cs.value = CD_STATE.style;
   sx.onchange=()=>{ CD_STATE.x=+sx.value; renderCustom(filtered()); };
   sy.onchange=()=>{ CD_STATE.y=+sy.value; renderCustom(filtered()); };
   sz.onchange=()=>{ CD_STATE.z = sz.value===''?null:+sz.value;
-    if(CD_STATE.z==null && CD_STATE.d3) CD_STATE.d3=false;   // 清空 Z → 自动回退二维
-    sync(); cd3dUI(); renderCustom(filtered()); };
+    if(CD_STATE.z==null && CD_STATE.view!=='d2') CD_STATE.view='d2';   // 清空 Z → 回二维
+    cdModeUI(); renderCustom(filtered()); };
+  cv.onchange=()=>{ let v=cv.value;
+    if(v!=='d2' && CD_STATE.z==null){ v='d2'; cv.value='d2'; showToast('三维柱状 / 二维热力需先在「泡泡直径 Z」选定字段'); }
+    CD_STATE.view=v; cdModeUI(); renderCustom(filtered()); };
+  cs.onchange=()=>{ CD_STATE.style=cs.value; renderCustom(filtered()); };
   ss.oninput =()=>{ CD_STATE.zScale=+ss.value;
     document.getElementById('cdZVal').textContent = ss.value+'%'; renderCustom(filtered()); };
   document.getElementById('cdSwap').onclick=()=>{
@@ -2102,29 +2183,28 @@ function cdInitUI(){
                      auBtn.classList.toggle('off', !CD_STATE.autoSize); };
   auBtn.onclick=()=>{ CD_STATE.autoSize=!CD_STATE.autoSize; syncAu(); renderCustom(filtered()); };
   syncAu();
-  /* 三维展示切换：保留 X/Y，Z 轴由泡泡直径改为垂直高度 */
-  const d3Btn=document.getElementById('cd3d');
-  d3Btn.onclick=()=>{
-    if(!CD_STATE.d3 && CD_STATE.z==null){
-      showToast('三维展示需先在「泡泡直径 Z」选定字段：Z 值将映射为垂直高度');
-      return;
-    }
-    CD_STATE.d3=!CD_STATE.d3; cd3dUI(); renderCustom(filtered());
-  };
+  /* 坐标排序方向（X/Y=轴反向 · Z=梯度方向反转） */
+  const invBtns=[['cdInvX','invX'],['cdInvY','invY'],['cdInvZ','invZ']];
+  for(const [id,key] of invBtns){
+    document.getElementById(id).onclick=()=>{ CD_STATE[key]=!CD_STATE[key]; cdAxisUI(); renderCustom(filtered()); };
+  }
+  /* 视角复位 / 俯视（三维） */
   document.getElementById('cdViewReset').onclick=()=>cdSetView(CD_VIEW);
   document.getElementById('cdViewTop').onclick=()=>cdSetView({alpha:88, beta:0, distance:640});
-  cd3dUI();
-  /* 复位视窗 */
-  document.getElementById('cdZoomReset').onclick=()=>cdResetZoom();
-  document.getElementById('cdReset').onclick=()=>{
-    const was3d = CD_STATE.d3;
-    CD_STATE={x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true, autoSize:true, d3:false, view:null};
-    sx.value=String(CD_STATE.x); sy.value=String(CD_STATE.y); sz.value='';
-    ss.value=100; document.getElementById('cdZVal').textContent='100%'; sync(); syncLv(); syncAu(); cd3dUI();
-    cdResetZoom(true);
-    if(was3d) renderCustom(filtered());   // 三维退出后立即回二维渲染（数据缩放事件在三维图上不触发）
+  /* 全屏展示 */
+  const card=document.getElementById('chCustom').closest('.card');
+  document.getElementById('cdFull').onclick=()=>{
+    if(!document.fullscreenElement){ if(card.requestFullscreen) card.requestFullscreen().catch(()=>showToast('当前环境不允许全屏')); }
+    else document.exitFullscreen();
   };
-  /* 监听 dataZoom：更新视窗状态；开启自动调节时按新视窗重算散点大小 */
+  document.addEventListener('fullscreenchange', ()=>{
+    const fs=!!document.fullscreenElement;
+    card.classList.toggle('cd-fs', fs);
+    document.getElementById('cdFull').textContent = fs?'✕ 退出全屏':'⛶ 全屏';
+    const c=chart('chCustom'); if(c) c.resize();
+  });
+  cdModeUI();
+  /* 监听 dataZoom：更新视窗状态；开启自动调节时按新视窗重算散点大小（2D 专用） */
   const ch=chart('chCustom');
   if(ch && !ch.__cdZoomBound){
     ch.__cdZoomBound = true;
@@ -2140,9 +2220,29 @@ function cdInitUI(){
       if(CD_STATE.autoSize) scheduleCdRender();
       else updateCdZoomText();
     });
-    /* 双击图表复位视窗 */
+    /* 双击图表：三维=视角复位 / 二维=复位视窗 */
     const el=document.getElementById('chCustom');
     if(el) el.addEventListener('dblclick', ()=>cdResetZoom());
+  }
+}
+/* 视图模式显隐联动：风格下拉仅 3D/热力；3D 按钮组/2D 按钮组/泡泡比例按需出现 */
+function cdModeUI(){
+  const m=CD_STATE.view, noZ=CD_STATE.z==null, d3=m==='d3';
+  const cv=document.getElementById('cdView');
+  if(cv){ cv.value=m; [...cv.options].forEach(o=>{ o.disabled = o.value!=='d2' && noZ; }); }
+  document.getElementById('cdStyleWrap').classList.toggle('hide', m==='d2');
+  document.getElementById('cd3dOnly').classList.toggle('hide', !d3);
+  document.getElementById('cd2dOnly').classList.toggle('hide', m!=='d2');
+  document.getElementById('cdZScaleWrap').classList.toggle('hide', m!=='d2' || noZ);
+  const zi=document.getElementById('cdInvZ');
+  if(zi) zi.classList.toggle('hide', m==='d2');
+  cdAxisUI();
+}
+function cdAxisUI(){
+  for(const [id,key] of [['cdInvX','invX'],['cdInvY','invY'],['cdInvZ','invZ']]){
+    const b=document.getElementById(id); if(!b) continue;
+    b.textContent = key.slice(-1).toUpperCase() + (CD_STATE[key]?'↑':'↓');
+    b.classList.toggle('on', CD_STATE[key]);
   }
 }
 /* 缩放中的重绘节流：一帧内只重算一次，避免拖动滑块时卡顿 */
@@ -2152,7 +2252,8 @@ function scheduleCdRender(){
   __cdRaf = requestAnimationFrame(()=>{ __cdRaf=null; renderCustom(filtered()); });
 }
 function cdResetZoom(silent){
-  if(CD_STATE.d3){ cdSetView(CD_VIEW); return; }   // 三维模式下双击 = 视角复位
+  if(CD_STATE.view==='d3'){ cdSetView(CD_VIEW); return; }   // 三维模式下双击 = 视角复位
+  if(CD_STATE.view==='heat') return;
   CD_ZOOM={xStart:0,xEnd:100,yStart:0,yEnd:100};
   const ch=chart('chCustom');
   if(ch){
@@ -2177,24 +2278,20 @@ function cdBubbleSize(z, zmin, zmax, scale){
   return (LO+(HI-LO)*r) * (CD_STATE.zScale/100) * (scale||1);
 }
 
-/* ==================== 三维展示（X/Y 保留 · Z 由泡泡直径改为垂直高度） ==================== */
+/* ==================== 三维柱状（风格化 · 梯度区间选取 · 轴反向） ==================== */
 /* 视角预设与三维箱体尺寸；「视角复位」回等轴测，「俯视 X-Y」正对平面（等同原二维布局） */
 const CD_VIEW = {alpha:32, beta:-48, distance:340};
 const CD_BOX = {w:170, d:170, h:120};
-/* 海拔梯度色带：同色系 浅→深（Z 越大颜色越深），用于柱体 visualMap 与右侧梯度刻度 */
-const CD_RAMP = {
-  bev: ['#F6D8CB','#EFB39A','#E29067','#D97757','#A94F30'],
-  phev:['#D4E2F4','#AECBEC','#8AB2DF','#6B9BD1','#45699C']
-};
+let CD_CAM = null;   // 用户最近一次设置的视角（重建时恢复）
 /* 视角切换/复位：gl 的 ViewControl 有 _notFirst 守卫——仅首次渲染应用 option 的
    viewControl，之后相机归控制器所有、merge 更新不再生效。因此先 merge 写入模型，
-   再调控制器的 setFromViewControlModel 强制应用（绕过首渲守卫，公开方法、无重建）。 */
+   再调控制器的 setFromViewControlModel 强制应用（公开方法、无重建）。 */
 function cdSetView(v){
-  CD_STATE.view = {alpha:v.alpha, beta:v.beta, distance:v.distance||CD_VIEW.distance};
+  CD_CAM = {alpha:v.alpha, beta:v.beta, distance:v.distance||CD_VIEW.distance};
   const ch=chart('chCustom');
-  if(!ch || !ch.__cdDim3d) return;
+  if(!ch || ch.__cdKind!=='d3') return;
   try{
-    ch.setOption({grid3D:{viewControl:Object.assign({target:[0,0,0]}, CD_STATE.view)}}, false);
+    ch.setOption({grid3D:{viewControl:Object.assign({target:[0,0,0]}, CD_CAM)}}, false);
     const g3=(ch._componentsViews||[]).find(x=>x && x.type==='grid3D');
     const ctrl=g3 && g3._control;
     if(ctrl && ctrl.setFromViewControlModel){
@@ -2203,19 +2300,6 @@ function cdSetView(v){
       ctrl.setFromViewControlModel(m);
     }
   }catch(e){}
-}
-function cd3dUI(){
-  const b=document.getElementById('cd3d'); if(!b) return;
-  b.textContent = '三维展示 ' + (CD_STATE.d3?'✓':'✗');
-  b.classList.toggle('off', !CD_STATE.d3);
-  const noZ = CD_STATE.z==null;
-  b.classList.toggle('dis', !CD_STATE.d3 && noZ);
-  b.title = noZ && !CD_STATE.d3
-    ? '三维展示需先在「泡泡直径 Z」选定字段：Z 值将映射为垂直高度'
-    : '三维展示：保留 X / Y 轴，Z 轴由泡泡直径改为垂直高度；左键旋转 · 滚轮缩放 · 右键平移';
-  document.getElementById('cd3dOnly').classList.toggle('hide', !CD_STATE.d3);
-  document.getElementById('cd2dOnly').classList.toggle('hide', CD_STATE.d3);
-  document.getElementById('cdZScaleWrap').classList.toggle('hide', CD_STATE.d3 || noZ);
 }
 function cdExtent(ps,k){
   let lo=Infinity,hi=-Infinity;
@@ -2228,41 +2312,50 @@ function cdPadded(e){
   const m=Math.max(1, Math.abs(e[0])*0.1); return [e[0]-m, e[1]+m];
 }
 /* 三维渲染：返回 true=成功；false=WebGL 初始化失败（调用方回退二维）。
-   首次渲染 notMerge 全量构建（含 viewControl 默认视角）；后续合并更新——
-   不重复下发 viewControl，用户旋转/缩放后的相机状态在数据/字段刷新时得以保留。 */
+   首次渲染 notMerge 全量构建（含 viewControl 默认视角）+ resize 校正 GL 画布；
+   后续合并更新——不下发 viewControl，用户旋转/缩放后的相机状态得以保留。 */
 function renderCustom3D(ch, bev, phev, m, avg, rng, fv){
+  const S=CD_STYLES[CD_STATE.style] || CD_STYLES.A;
   const xN=m.xN, yN=m.yN, zN=m.zN;
-  /* 柱高=Z（自主底面 0 起算 → 海拔感）；柱体颜色由 visualMap 按高度梯度着色（浅→深） */
-  const mkBar=(nm,ps,color)=>({name:nm,type:'bar3D',data:ps,barSize:[1.5,1.5],
-    shading:'color',itemStyle:{color:`rgba(${color},.92)`},
+  const el=document.getElementById('chCustom');
+  if(el) el.style.background=S.bg;
+  /* Z 梯度方向反转 = 色带反转（轴系不动，柱色浅深互换） */
+  const brB=CD_STATE.invZ?[...S.bevRamp].reverse():S.bevRamp;
+  const brP=CD_STATE.invZ?[...S.phevRamp].reverse():S.phevRamp;
+  const mkBar=(nm,ps,base,fam)=>({name:nm,type:'bar3D',data:ps,barSize:S.barSize,
+    shading:S.shading,
+    itemStyle:Object.assign({color:base,opacity:S.opacity},
+      S.border?{borderColor:S.border(fam),borderWidth:S.bw}:{},
+      S.bevel?{bevelSize:S.bevel[0],bevelSmoothness:S.bevel[1]}:{}),
     emphasis:{itemStyle:{opacity:1}}});
-  const AX3=(name,ext,zMin0)=>({type:'value',name,min:zMin0?0:ext[0],max:ext[1],nameGap:18,
-    nameTextStyle:{color:TC().axis,fontSize:12},
-    axisLabel:{color:TC().axis,fontSize:10,textStyle:{color:TC().axis,fontSize:10},
+  const AX3=(name,ext,z0,inv)=>({type:'value',name,
+    min:inv?ext[1]:(z0?0:ext[0]), max:inv?(z0?0:ext[0]):ext[1], nameGap:18,
+    nameTextStyle:{color:S.label,fontSize:12},
+    axisLabel:{color:S.label,fontSize:10,textStyle:{color:S.label,fontSize:10},
       /* 抑制 gl 坐标轴 padding 引出的浮点尾数（如 7.8209999…）；千位分隔；隐藏两端 padding 标签避免与刻度重叠 */
-      formatter:v=>{ if(zMin0&&v===0) return '0'; if(v===ext[0]||v===ext[1]) return '';
+      formatter:v=>{ if(z0&&v===0&&!inv) return '0'; if(v===ext[0]||v===ext[1]) return '';
         const r=Math.round(v*10)/10;return Math.abs(r)>=1000?Math.round(r).toLocaleString('zh-CN'):String(r);}},
-    axisLine:{lineStyle:{color:TC().axisLine}},
-    splitLine:{lineStyle:{color:TC().split}}});
+    axisLine:{lineStyle:{color:S.axisLine}},
+    splitLine:{lineStyle:{color:S.split}}});
   const all=bev.concat(phev);
   const total=all.length;
-  let html=`<b>三维柱状图</b>：X <em>${xN}</em> × Y <em>${yN}</em> × 柱高 Z <em>${zN}</em>（每款车型一根立柱，柱高=Z 值、自主底面起算 · 海拔梯度）`;
-  html += ` · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
-  html += `<br>颜色深度=海拔：<em>${zN}</em> 取值范围 <em>${fv(m.zmin)} ~ ${fv(m.zmax)}</em>，同色系内 Z 越大颜色越深，右侧色带即梯度刻度`;
+  let core=`<b>三维柱状图</b>：X <em>${xN}</em> × Y <em>${yN}</em> × 柱高 Z <em>${zN}</em> · 风格 <em>${S.name}</em> · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
+  let detail=`颜色深度=海拔：<em>${zN}</em> 取值范围 <em>${fv(m.zmin)} ~ ${fv(m.zmax)}</em>，同色系内 Z 越大颜色越深${CD_STATE.invZ?'（梯度已反向）':''}；<b>拖动右侧色带两端手柄选取数值区间</b>，区间外柱体自动置灰，即高亮目标区域`;
   const part3=(nm,ps)=>ps.length?`${nm}：<em>${xN}</em> 均值 <em>${fv(avg(ps,0))}</em> · <em>${yN}</em> 均值 <em>${fv(avg(ps,1))}</em> · <em>${zN}</em> 均值 <em>${fv(avg(ps,2))}</em>`:'';
   const seg=[part3('BEV',bev),part3('PHEV/EREV',phev)].filter(Boolean).join(' ｜ ');
-  if(seg) html += `<br>${seg}`;
-  html += `<br>视角操作：<b>左键拖动=旋转</b> · <b>滚轮=缩放</b> · <b>右键拖动=平移</b> · 双击图表或「视角复位」=复位（等轴测）·「俯视 X-Y」=正对平面`;
+  if(seg) detail += `<br>${seg}`;
+  detail += `<br>视角操作：<b>左键拖动=旋转</b> · <b>滚轮=缩放</b> · <b>右键拖动=平移</b> · 双击图表或「视角复位」=复位（等轴测）·「俯视 X-Y」=正对平面`;
+  const html=cdInsightWrap(core,detail);
   setInsight('chCustom', html);
   const panelTx=document.getElementById('insightCustomTx');
   if(panelTx) panelTx.innerHTML = html;
   const g3={boxWidth:CD_BOX.w, boxDepth:CD_BOX.d, boxHeight:CD_BOX.h,
-    light:{main:{intensity:1.4,shadow:false},ambient:{intensity:.55}},
-    axisLine:{lineStyle:{color:TC().axisLine}},
-    splitLine:{lineStyle:{color:TC().split}},
+    light:{main:{intensity:S.main,shadow:false},ambient:{intensity:S.ambient}},
+    axisLine:{lineStyle:{color:S.axisLine}},
+    splitLine:{lineStyle:{color:S.split}},
     axisPointer:{show:false}};
   /* 首次构建（含视角切换后的重建）下发 viewControl；数据刷新走 merge 不下发，保留用户相机 */
-  if(ch.__cd3dFirst) g3.viewControl=Object.assign({}, CD_STATE.view||CD_VIEW,
+  if(ch.__cd3dFirst) g3.viewControl=Object.assign({}, CD_CAM||CD_VIEW,
     {target:[0,0,0],minDistance:60,maxDistance:1000,rotateSensitivity:1,zoomSensitivity:1,panSensitivity:1,autoRotate:false});
   const opt={
     tooltip:Object.assign({trigger:'item',
@@ -2271,20 +2364,22 @@ function renderCustom3D(ch, bev, phev, m, avg, rng, fv){
           `${xN}：<b>${fv(v[0])} ${xuOf(xN)}</b><br>${yN}：<b>${fv(v[1])} ${xuOf(yN)}</b>`+
           `<br>${zN}：<b>${fv(v[2])} ${xuOf(zN)}</b>（柱高）`; }},TT),
     legend:LG({data:['BEV','PHEV/EREV']}),
-    /* 梯度刻度：两系列各一条 continuous visualMap（浅→深），右侧纵排色带+数值标注 */
+    /* 梯度刻度=区间选择器：calculable 手柄拖动选取区间，区间外柱体置灰（outOfRange） */
     visualMap:[
-      {type:'continuous',seriesIndex:0,dimension:2,min:m.zmin,max:m.zmax,calculable:false,show:true,
-       orient:'vertical',right:8,top:'middle',itemWidth:13,itemHeight:110,hoverLink:false,
-       text:[`BEV ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:TC().axis,fontSize:10},inRange:{color:CD_RAMP.bev}},
-      {type:'continuous',seriesIndex:1,dimension:2,min:m.zmin,max:m.zmax,calculable:false,show:true,
-       orient:'vertical',right:66,top:'middle',itemWidth:13,itemHeight:110,hoverLink:false,
-       text:[`PHEV/EREV ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:TC().axis,fontSize:10},inRange:{color:CD_RAMP.phev}}
+      {type:'continuous',seriesIndex:0,dimension:2,min:m.zmin,max:m.zmax,calculable:true,show:true,
+       orient:'vertical',right:8,top:'middle',itemWidth:13,itemHeight:110,hoverLink:true,
+       text:[`BEV ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:S.label,fontSize:10},
+       inRange:{color:brB}, outOfRange:{color:'rgba(132,140,152,.12)'}},
+      {type:'continuous',seriesIndex:1,dimension:2,min:m.zmin,max:m.zmax,calculable:true,show:true,
+       orient:'vertical',right:66,top:'middle',itemWidth:13,itemHeight:110,hoverLink:true,
+       text:[`PHEV/EREV ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:S.label,fontSize:10},
+       inRange:{color:brP}, outOfRange:{color:'rgba(132,140,152,.12)'}}
     ],
     grid3D:g3,
-    xAxis3D:AX3(xN,cdPadded(cdExtent(all,0))),
-    yAxis3D:AX3(yN,cdPadded(cdExtent(all,1))),
-    zAxis3D:AX3(zN,[0,(m.zmax*1.06)||1],true),
-    series:[mkBar('BEV',bev,'217,119,87'), mkBar('PHEV/EREV',phev,'107,155,209')]
+    xAxis3D:AX3(xN,cdPadded(cdExtent(all,0)),false,CD_STATE.invX),
+    yAxis3D:AX3(yN,cdPadded(cdExtent(all,1)),false,CD_STATE.invY),
+    zAxis3D:AX3(zN,[0,(m.zmax*1.06)||1],true,false),
+    series:[mkBar('BEV',bev,S.bevBase,'bev'), mkBar('PHEV/EREV',phev,S.phevBase,'phev')]
   };
   try{
     ch.setOption(opt, !!ch.__cd3dFirst);
@@ -2293,6 +2388,63 @@ function renderCustom3D(ch, bev, phev, m, avg, rng, fv){
     TREND_REGS['chCustom']={};
     return true;
   }catch(e){ return false; }
+}
+/* 二维热力：X/Y 网格聚合，颜色=格内 Z 均值；色带同样支持区间选取高亮 */
+function renderHeat(ch, bev, phev, m, avg, rng, fv){
+  const S=CD_STYLES[CD_STATE.style] || CD_STYLES.A;
+  const el=document.getElementById('chCustom');
+  if(el) el.style.background=S.bg;
+  const xN=m.xN, yN=m.yN, zN=m.zN;
+  const all=bev.concat(phev);
+  const ex=cdPadded(cdExtent(all,0)), ey=cdPadded(cdExtent(all,1));
+  const NX=44, NY=30;
+  const cw=(ex[1]-ex[0])/NX || 1, chh=(ey[1]-ey[0])/NY || 1;
+  const cells=new Map();
+  for(const p of all){
+    const xi=Math.min(NX-1,Math.max(0,Math.floor((p.value[0]-ex[0])/cw)));
+    const yi=Math.min(NY-1,Math.max(0,Math.floor((p.value[1]-ey[0])/chh)));
+    const k=xi*NY+yi; const c=cells.get(k)||{s:0,n:0}; c.s+=p.value[2]; c.n++; cells.set(k,c);
+  }
+  const data=[]; let dmin=Infinity,dmax=-Infinity;
+  for(const [k,c] of cells){
+    const xi=Math.floor(k/NY), yi=k%NY; const v=+(c.s/c.n).toFixed(1);
+    if(v<dmin)dmin=v; if(v>dmax)dmax=v;
+    data.push({value:[xi,yi,v], n:c.n,
+      x0:Math.round(ex[0]+xi*cw), x1:Math.round(ex[0]+(xi+1)*cw),
+      y0:Math.round(ey[0]+yi*chh), y1:Math.round(ey[0]+(yi+1)*chh)});
+  }
+  const xCats=[...Array(NX)].map((_,i)=>String(Math.round(ex[0]+(i+.5)*cw)));
+  const yCats=[...Array(NY)].map((_,i)=>String(Math.round(ey[0]+(i+.5)*chh)));
+  let core=`<b>二维热力图</b>：X <em>${xN}</em> × Y <em>${yN}</em> 网格聚合（${NX}×${NY} 格）· 颜色=格内 <em>${zN}</em> 均值 · 覆盖 <em>${fmt(data.length)}</em> 格 / <em>${fmt(all.length)}</em> 款`;
+  let detail=`色带即梯度刻度：<b>拖动两端手柄选取均值区间</b>，区间外格子自动置灰；悬浮格子可见该格取值范围、车型数与均值。切「视图 → 三维柱状」可回到逐车型海拔视角。`;
+  const html=cdInsightWrap(core,detail);
+  setInsight('chCustom', html);
+  const panelTx=document.getElementById('insightCustomTx');
+  if(panelTx) panelTx.innerHTML = html;
+  ch.setOption({
+    tooltip:Object.assign({trigger:'item',
+      formatter:p=>{ const d=p.data;
+        return `${xN}：<b>${fmt(d.x0)} ~ ${fmt(d.x1)} ${xuOf(xN)}</b><br>`+
+          `${yN}：<b>${fmt(d.y0)} ~ ${fmt(d.y1)} ${xuOf(yN)}</b><br>`+
+          `${zN} 均值：<b>${fv(d.value[2])} ${xuOf(zN)}</b> · 车型数 <b>${d.n}</b>`; }},TT),
+    visualMap:{type:'continuous',min:dmin,max:dmax,calculable:true,show:true,
+      orient:'vertical',right:8,top:'middle',itemWidth:13,itemHeight:120,hoverLink:true,
+      text:[`${zN} ${fv(dmax)}`,fv(dmin)],textStyle:{color:S.label,fontSize:10},
+      inRange:{color:S.bevRamp}, outOfRange:{color:'rgba(132,140,152,.12)'}},
+    grid:Object.assign(GRID(),{right:92,bottom:60}),
+    xAxis:Object.assign({type:'category',data:xCats,name:xN,nameLocation:'middle',nameGap:26,
+      nameTextStyle:{color:S.label},inverse:CD_STATE.invX,
+      axisLabel:{color:S.label,fontSize:10,interval:Math.max(1,Math.floor(NX/9))-1,formatter:v=>(+v).toLocaleString('zh-CN')},
+      axisLine:{lineStyle:{color:S.axisLine}},axisTick:{show:false},splitLine:{show:false}},{}),
+    yAxis:Object.assign({type:'category',data:yCats,name:yN,nameGap:16,inverse:CD_STATE.invY,
+      nameTextStyle:{color:S.label},
+      axisLabel:{color:S.label,fontSize:10,interval:Math.max(1,Math.floor(NY/8))-1,formatter:v=>(+v).toLocaleString('zh-CN')},
+      axisLine:{lineStyle:{color:S.axisLine}},axisTick:{show:false},splitLine:{show:false}},{}),
+    series:[{name:'全部车型',type:'heatmap',data,
+      itemStyle:{borderColor:S.split,borderWidth:.5},
+      emphasis:{itemStyle:{borderColor:S.label,borderWidth:1}},progressive:5000}]
+  }, true);
+  TREND_REGS['chCustom']={};
 }
 /* 固定坐标系外框：视窗缩放时按可见跨度自动放大散点，保证细节可读（可关闭） */
 /* 视窗缩放状态：dataZoom 的 start/end（%），用于计算可见跨度与自动调节系数 */
@@ -2324,6 +2476,8 @@ function renderCustom(rows){
   const el=document.getElementById('chCustom'); if(!el) return;
   const xK=CD_STATE.x, yK=CD_STATE.y, zK=CD_STATE.z;
   const hasZ = zK!=null;
+  let mode = CD_STATE.view;
+  if(mode!=='d2' && !hasZ) mode='d2';
   const bev=[], phev=[];
   let zmin=Infinity, zmax=-Infinity;
   for(const r of rows){
@@ -2337,20 +2491,21 @@ function renderCustom(rows){
   const xN=CD_LABEL(xK), yN=CD_LABEL(yK), zN=hasZ?CD_LABEL(zK):'';
   const ch3=chart('chCustom');
   if(!ch3) return;
-  const is3d = CD_STATE.d3 && hasZ;
-  /* 二维 ⇄ 三维切换：坐标系统不同，clear 后全量重建（GL 层随 clear 释放） */
-  if(ch3.__cdDim3d !== is3d){ ch3.clear(); ch3.__cdDim3d = is3d; ch3.__cd3dFirst = true; }
-  /* 顶部实时状态分析共用工具（2D/3D 共用） */
+  /* 模式切换（2D ⇄ 3D ⇄ 热力）：坐标系不同，clear 后全量重建（GL 层随 clear 释放） */
+  if(ch3.__cdKind !== mode){ ch3.clear(); ch3.__cdKind = mode; ch3.__cd3dFirst = true; }
+  /* 顶部实时状态分析共用工具（三种模式共用） */
   const avg=(ps,k)=>{ let s=0,n=0; for(const p of ps){const v=p.value[k]; if(isFinite(v)){s+=v;n++;}} return n?s/n:null; };
   const fv=v=>v==null?'–':(Math.abs(v)>=100?Math.round(v).toLocaleString('zh-CN'):(+v.toFixed(1)));
   const rng=(ps,k)=>{ let lo=Infinity,hi=-Infinity; for(const p of ps){const v=p.value[k]; if(isFinite(v)){if(v<lo)lo=v;if(v>hi)hi=v;}} return isFinite(lo)?[lo,hi]:null; };
-  if(is3d){
+  if(mode==='d3'){
     if(renderCustom3D(ch3, bev, phev, {xN,yN,zN,zmin,zmax}, avg, rng, fv)) return;
     /* WebGL 初始化失败 → 回退二维泡泡图 */
-    CD_STATE.d3=false; cd3dUI();
-    ch3.__cdDim3d=false; ch3.clear(); ch3.__cd3dFirst=true;
+    CD_STATE.view='d2'; cdModeUI();
+    ch3.__cdKind='d2'; ch3.clear(); ch3.__cd3dFirst=true;
     showToast('三维展示初始化失败（当前环境可能不支持 WebGL），已回退二维泡泡图');
   }
+  if(mode==='heat'){ renderHeat(ch3, bev, phev, {xN,yN,zN,zmin,zmax}, avg, rng, fv); return; }
+  /* ===== 二维散点/泡泡 ===== */
   /* 固定坐标系外框 + 视窗缩放：按当前 dataZoom 视窗计算「自动调节」系数 */
   const fullSpan = cdVisibleSpan(rows, xK, yK);
   const zx = cdZoomFactor('x'), zy = cdZoomFactor('y');
@@ -2385,41 +2540,37 @@ function renderCustom(rows){
   }
   const total=bev.length+phev.length;
   const part=(nm,ps)=>ps.length?`${nm} <em>${xN}</em> 均值 <em>${fv(avg(ps,0))}</em>（${fv((rng(ps,0)||[0,0])[0])}~${fv((rng(ps,0)||[0,0])[1])}）· <em>${yN}</em> 均值 <em>${fv(avg(ps,1))}</em>（${fv((rng(ps,1)||[0,0])[0])}~${fv((rng(ps,1)||[0,0])[1])}）`:'';
-  let html = hasZ
-    ? `<b>泡泡图</b>：X <em>${xN}</em> × Y <em>${yN}</em> × 泡泡直径 Z <em>${zN}</em>`
-    : `<b>散点图</b>：X <em>${xN}</em> × Y <em>${yN}</em>（未选 Z 轴 → 等径散点）`;
-  html += ` · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
-  if(hasZ){
-    html += `<br>Z 轴 <em>${zN}</em> 取值范围 <em>${fv(zmin)} ~ ${fv(zmax)}</em>，直径映射 <em>${Math.round(12*CD_STATE.zScale/100)}~${Math.round(54*CD_STATE.zScale/100)} px</em>（直径 ∝ √Z，面积正比于数值，当前比例 <em>${CD_STATE.zScale}%</em>）`;
-  } else {
-    html += ` ｜ 在「泡泡直径 Z」中选择任一可量化字段即可切换为泡泡图`;
-  }
+  const core=`<b>${hasZ?'泡泡图':'散点图'}</b>：X <em>${xN}</em> × Y <em>${yN}</em>${hasZ?` × 泡泡直径 Z <em>${zN}</em>`:''} · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
+  let detail= hasZ
+    ? `Z 轴 <em>${zN}</em> 取值范围 <em>${fv(zmin)} ~ ${fv(zmax)}</em>，直径映射 <em>${Math.round(12*CD_STATE.zScale/100)}~${Math.round(54*CD_STATE.zScale/100)} px</em>（直径 ∝ √Z，面积正比于数值，当前比例 <em>${CD_STATE.zScale}%</em>）`
+    : ` ｜ 在「泡泡直径 Z」中选择任一可量化字段即可切换为泡泡图；或用「视图」切换三维柱状 / 二维热力`;
   const seg=[part('BEV',bev), part('PHEV/EREV',phev)].filter(Boolean).join(' ｜ ');
-  if(seg) html += `<br>${seg}`;
+  if(seg) detail += `<br>${seg}`;
   /* 等级区段辅助示意状态 */
   if(xN.indexOf('轴距')===0 || yN.indexOf('轴距')===0){
     const AX = xN.indexOf('轴距')===0 ? 'X' : 'Y';
-    html += lvShown
+    detail += lvShown
       ? `<br>等级区段：已按《车型级别定义》在 <em>${AX} 轴（轴距）</em> 标注分级界线 —— `+
         `<span style="color:#D97757">轿车 A/B/C/D/E</span>（2650/2740/2850/3000）、`+
         `<span style="color:#6B9BD1">SUV B/C/D/E</span>（2680/2850/3000）、`+
         `<span style="color:#7FA97F">MPV C/D</span>（3000），单位 mm；可点「等级区段」关闭`
       : `<br>等级区段：<em>已关闭</em>（${AX} 轴为轴距，点「等级区段」可显示 A/B/C/D/E 分级界线）`;
   } else {
-    html += `<br>等级区段：当前 X / Y 均非轴距，无分级界线可标注（将任一轴选为「轴距(mm)」即显示）`;
+    detail += `<br>等级区段：当前 X / Y 均非轴距，无分级界线可标注（将任一轴选为「轴距(mm)」即显示）`;
   }
   /* 放大视窗与自动调节状态 */
   const zoomPct = `${(CD_ZOOM.xEnd-CD_ZOOM.xStart).toFixed(0)}% × ${(CD_ZOOM.yEnd-CD_ZOOM.yStart).toFixed(0)}%`;
   const zoomed = (CD_ZOOM.xEnd-CD_ZOOM.xStart) < 99.5 || (CD_ZOOM.yEnd-CD_ZOOM.yStart) < 99.5;
-  html += `<br>放大视窗：视窗 <em>${zoomPct}</em>` +
+  detail += `<br>放大视窗：视窗 <em>${zoomPct}</em>` +
     (zoomed ? `（放大 <em>${cdZoomFactor('x').toFixed(1)}×</em>）` : '（完整视野）') +
     ` · 自动调节 <em>${CD_STATE.autoSize?'开':'关'}</em>` +
     (CD_STATE.autoSize ? `（当前散点大小系数 <em>${autoScale.toFixed(2)}×</em>）` : '（散点大小固定）') +
     ` ｜ 拖动滑块/框选放大，双击图表或「复位视窗」还原`;
+  const html=cdInsightWrap(core,detail);
   setInsight('chCustom', html);
   const panelTx=document.getElementById('insightCustomTx');
   if(panelTx) panelTx.innerHTML = html;
-  chart('chCustom').setOption({
+  ch3.setOption({
     tooltip:Object.assign({trigger:'item',
       formatter:p=>{
         const t=trends.find(x=>x.name===p.seriesName);
@@ -2444,8 +2595,8 @@ function renderCustom(rows){
        handleStyle:{color:TC().axis}, textStyle:{color:TC().axis, fontSize:10}, labelFormatter:''}
     ],
     toolbox:{show:false},
-    xAxis:Object.assign({type:'value',name:xN,nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis},scale:true},AXS()),
-    yAxis:Object.assign({type:'value',name:yN,nameTextStyle:{color:TC().axis},scale:true},AXS()),
+    xAxis:Object.assign({type:'value',name:xN,nameLocation:'middle',nameGap:26,nameTextStyle:{color:TC().axis},scale:true,inverse:CD_STATE.invX},AXS()),
+    yAxis:Object.assign({type:'value',name:yN,nameTextStyle:{color:TC().axis},scale:true,inverse:CD_STATE.invY},AXS()),
     series
   },true);
   bindTrendClick('chCustom');
@@ -3127,10 +3278,10 @@ def main():
             '<div class="tx">导出当前筛选数据供进一步细化分析；导入最新公告数据表后，<b>全局数据与图表将实时刷新</b>（无需重新运行生成脚本）。</div>',
             '<div class="tx">车型明细查询支持在当前筛选范围内检索、排序与翻页。</div>')
         html = html.replace('</head>',
-                            '<style>#p6 .dm-grid .card.c-s7,#p6 .dm-grid .card.c-s5,#btnImport,#cd3d,#cd3dOnly{display:none!important}</style></head>')
-        # 发布版不含三维展示（v4.9.6）：三维按钮/视角按钮隐藏 + 副标题回退，功能面保持 2D 泡泡图
+                            '<style>#p6 .dm-grid .card.c-s7,#p6 .dm-grid .card.c-s5,#btnImport,#cdView,#cdStyleWrap,#cd3dOnly{display:none!important}</style></head>')
+        # 发布版不含三维展示/热力/风格切换（v4.9.7）：相关控件隐藏 + 副标题回退，功能面保持 2D 泡泡图
         html = html.replace(
-            '自由选择纵横维度 · 选定 Z 轴即为泡泡图 · 可切换三维展示（Z 转垂直高度）',
+            '自由选择纵横维度 · 视图：二维泡泡 / 三维柱状 / 二维热力 · 风格 8 款 · 全屏',
             '自由选择纵横维度 · 选定 Z 轴即为泡泡图')
     html = html.replace('__ECHARTS_LIB__', echarts_lib)
     html = html.replace('__ECHARTSGL_LIB__', gl_lib)
