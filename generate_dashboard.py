@@ -2346,21 +2346,35 @@ function renderCustom3D(ch, bev, phev, m, avg, rng, fv){
       S.border?{borderColor:S.border(fam),borderWidth:S.bw}:{},
       S.bevel?{bevelSize:S.bevel[0],bevelSmoothness:S.bevel[1]}:{}),
     emphasis:{itemStyle:{opacity:1}}});
-  const AX3=(name,ext,z0,inv)=>({type:'value',name,inverse:!!inv,
-    min:inv?ext[1]:(z0?0:ext[0]), max:inv?(z0?0:ext[0]):ext[1], nameGap:18,
+  const all=bev.concat(phev);
+  const exX=cdPadded(cdExtent(all,0)), exY=cdPadded(cdExtent(all,1));
+  const invX=CD_STATE.invX, invY=CD_STATE.invY;
+  const statB=[avg(bev,0),avg(bev,1),avg(bev,2)], statP=[avg(phev,0),avg(phev,1),avg(phev,2)];
+  /* 轴反向=数据空间镜像：gl 轴不支持 inverse 且 min>max 会被归一化回升序（实证选项变画面不变），
+     故保持轴几何不变，柱体按 (min+max-值) 镜像换位、刻度标签显示镜像值；ox/oy 保留真实值供悬浮 */
+  if(invX||invY){
+    const mx=exX[0]+exX[1], my=exY[0]+exY[1];
+    for(const p of all){
+      if(invX){ p.ox=p.value[0]; p.value[0]=+(mx-p.value[0]).toFixed(4); }
+      if(invY){ p.oy=p.value[1]; p.value[1]=+(my-p.value[1]).toFixed(4); }
+    }
+  }
+  const total=all.length;
+  const AX3=(name,ext,z0,inv)=>({type:'value',name,
+    min:z0?0:ext[0], max:ext[1], nameGap:18,
     nameTextStyle:{color:S.label,fontSize:12},
     axisLabel:{color:S.label,fontSize:10,textStyle:{color:S.label,fontSize:10},
-      /* 抑制 gl 坐标轴 padding 引出的浮点尾数（如 7.8209999…）；千位分隔；隐藏两端 padding 标签避免与刻度重叠 */
-      formatter:v=>{ if(z0&&v===0&&!inv) return '0'; if(v===ext[0]||v===ext[1]) return '';
-        const r=Math.round(v*10)/10;return Math.abs(r)>=1000?Math.round(r).toLocaleString('zh-CN'):String(r);}},
+      /* 抑制 gl 坐标轴 padding 引出的浮点尾数（如 7.8209999…）；千位分隔；隐藏两端 padding 标签；
+         反向时标签显示镜像值（刻度位置不变、数值反读） */
+      formatter:v=>{ if(v===ext[0]||v===ext[1]) return '';
+        let d=v; if(inv) d=(ext[0]+ext[1])-v;
+        const r=Math.round(d*10)/10;return Math.abs(r)>=1000?Math.round(r).toLocaleString('zh-CN'):String(r);}},
     axisLine:{lineStyle:{color:S.axisLine}},
     splitLine:{lineStyle:{color:S.split}}});
-  const all=bev.concat(phev);
-  const total=all.length;
   let core=`<b>三维柱状图</b>：X <em>${xN}</em> × Y <em>${yN}</em> × 柱高 Z <em>${zN}</em> · 风格 <em>${S.name}</em> · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
   let detail=`颜色深度=海拔：<em>${zN}</em> 取值范围 <em>${fv(m.zmin)} ~ ${fv(m.zmax)}</em>，同色系内 Z 越大颜色越深${CD_STATE.invZ?'（梯度已反向）':''}；<b>拖动右侧色带两端手柄选取数值区间</b>，区间外柱体自动置灰，即高亮目标区域`;
-  const part3=(nm,ps)=>ps.length?`${nm}：<em>${xN}</em> 均值 <em>${fv(avg(ps,0))}</em> · <em>${yN}</em> 均值 <em>${fv(avg(ps,1))}</em> · <em>${zN}</em> 均值 <em>${fv(avg(ps,2))}</em>`:'';
-  const seg=[part3('BEV',bev),part3('PHEV/EREV',phev)].filter(Boolean).join(' ｜ ');
+  const part3=(nm,st)=>st.every(v=>v!=null)?`${nm}：<em>${xN}</em> 均值 <em>${fv(st[0])}</em> · <em>${yN}</em> 均值 <em>${fv(st[1])}</em> · <em>${zN}</em> 均值 <em>${fv(st[2])}</em>`:'';
+  const seg=[part3('BEV',statB),part3('PHEV/EREV',statP)].filter(Boolean).join(' ｜ ');
   if(seg) detail += `<br>${seg}`;
   detail += `<br>视角操作：<b>左键拖动=旋转</b> · <b>滚轮=缩放</b> · <b>右键拖动=平移</b> · 双击图表或「视角复位」=复位（等轴测）·「俯视 X-Y」=正对平面`;
   const html=cdInsightWrap(core,detail);
@@ -2377,9 +2391,10 @@ function renderCustom3D(ch, bev, phev, m, avg, rng, fv){
     {target:[0,0,0],minDistance:60,maxDistance:1000,rotateSensitivity:1,zoomSensitivity:1,panSensitivity:1,autoRotate:false});
   const opt={
     tooltip:Object.assign({trigger:'item',
-      formatter:p=>{ const v=p.data.value;
+      formatter:p=>{ const d=p.data, v=d.value;
+        const ox=d.ox!=null?d.ox:v[0], oy=d.oy!=null?d.oy:v[1];
         return `${p.seriesName} · 品牌车型：<b>${brandName(p)}</b><br>`+
-          `${xN}：<b>${fv(v[0])} ${xuOf(xN)}</b><br>${yN}：<b>${fv(v[1])} ${xuOf(yN)}</b>`+
+          `${xN}：<b>${fv(ox)} ${xuOf(xN)}</b><br>${yN}：<b>${fv(oy)} ${xuOf(yN)}</b>`+
           `<br>${zN}：<b>${fv(v[2])} ${xuOf(zN)}</b>（柱高）`; }},TT),
     legend:LG({data:['BEV','PHEV/EREV']}),
     /* 梯度刻度=区间选择器：calculable 手柄拖动选取区间，区间外柱体置灰（outOfRange） */
@@ -2394,9 +2409,9 @@ function renderCustom3D(ch, bev, phev, m, avg, rng, fv){
        inRange:{color:brP}, outOfRange:{color:'rgba(132,140,152,.12)'}}
     ],
     grid3D:g3,
-    xAxis3D:AX3(xN,cdPadded(cdExtent(all,0)),false,CD_STATE.invX),
-    yAxis3D:AX3(yN,cdPadded(cdExtent(all,1)),false,CD_STATE.invY),
-    zAxis3D:AX3(zN,[0,(m.zmax*1.06)||1],true,false),
+    xAxis3D:AX3(xN,exX,false,invX),
+    yAxis3D:AX3(yN,exY,false,invY),
+    zAxis3D:AX3(zN,cdPadded([m.zmin,m.zmax]),true,false),
     series:[mkBar('BEV',bev,S.bevBase,'bev'), mkBar('PHEV/EREV',phev,S.phevBase,'phev')]
   };
   try{
