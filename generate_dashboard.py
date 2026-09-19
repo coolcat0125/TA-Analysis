@@ -2290,7 +2290,17 @@ function cdBubbleSize(z, zmin, zmax, scale){
 /* 视角预设与三维箱体尺寸；「视角复位」回等轴测，「俯视 X-Y」正对平面（等同原二维布局） */
 const CD_VIEW = {alpha:32, beta:-48, distance:340};
 const CD_BOX = {w:170, d:170, h:120};
-let CD_CAM = null;   // 用户最近一次设置的视角（重建时恢复）
+let CD_CAM = null;   // 用户最近一次设置的视角（重建时恢复；轴反向重建前由 cdCaptureCam 刷新）
+/* 从 gl 控制器捕获实时相机（拖动旋转写入控制器而非 CD_CAM） */
+function cdCaptureCam(){
+  try{
+    const ch=chart('chCustom');
+    const g3=(ch._componentsViews||[]).find(x=>x && x.type==='grid3D');
+    const c=g3 && g3._control;
+    if(c) return {alpha:c.getAlpha(), beta:c.getBeta(), distance:(c.getDistance?c.getDistance():null)||CD_VIEW.distance};
+  }catch(e){}
+  return null;
+}
 /* 视角切换/复位：gl 的 ViewControl 有 _notFirst 守卫——仅首次渲染应用 option 的
    viewControl，之后相机归控制器所有、merge 更新不再生效。因此先 merge 写入模型，
    再调控制器的 setFromViewControlModel 强制应用（公开方法、无重建）。 */
@@ -2336,7 +2346,7 @@ function renderCustom3D(ch, bev, phev, m, avg, rng, fv){
       S.border?{borderColor:S.border(fam),borderWidth:S.bw}:{},
       S.bevel?{bevelSize:S.bevel[0],bevelSmoothness:S.bevel[1]}:{}),
     emphasis:{itemStyle:{opacity:1}}});
-  const AX3=(name,ext,z0,inv)=>({type:'value',name,
+  const AX3=(name,ext,z0,inv)=>({type:'value',name,inverse:!!inv,
     min:inv?ext[1]:(z0?0:ext[0]), max:inv?(z0?0:ext[0]):ext[1], nameGap:18,
     nameTextStyle:{color:S.label,fontSize:12},
     axisLabel:{color:S.label,fontSize:10,textStyle:{color:S.label,fontSize:10},
@@ -2499,8 +2509,14 @@ function renderCustom(rows){
   const xN=CD_LABEL(xK), yN=CD_LABEL(yK), zN=hasZ?CD_LABEL(zK):'';
   const ch3=chart('chCustom');
   if(!ch3) return;
-  /* 模式切换（2D ⇄ 3D ⇄ 热力）：坐标系不同，clear 后全量重建（GL 层随 clear 释放） */
-  if(ch3.__cdKind !== mode){ ch3.clear(); ch3.__cdKind = mode; ch3.__cd3dFirst = true; }
+  /* 模式切换（2D ⇄ 3D ⇄ 热力）/ 轴反向：坐标系不同或轴向变化，clear 后全量重建
+     （gl 三维坐标系对 merge 的 min-max/inverse 更新不重排布局——实证选项已变画面不变）；
+     重建前捕获控制器实时相机，重建后经 viewControl 下发以保留用户视角 */
+  const invKey = CD_STATE.invX+','+CD_STATE.invY;
+  if(ch3.__cdKind !== mode || ch3.__cdInvKey !== invKey){
+    if(ch3.__cdKind==='d3'){ const cam=cdCaptureCam(); if(cam) CD_CAM=cam; }
+    ch3.clear(); ch3.__cdKind = mode; ch3.__cdInvKey = invKey; ch3.__cd3dFirst = true;
+  }
   /* 顶部实时状态分析共用工具（三种模式共用） */
   const avg=(ps,k)=>{ let s=0,n=0; for(const p of ps){const v=p.value[k]; if(isFinite(v)){s+=v;n++;}} return n?s/n:null; };
   const fv=v=>v==null?'–':(Math.abs(v)>=100?Math.round(v).toLocaleString('zh-CN'):(+v.toFixed(1)));
