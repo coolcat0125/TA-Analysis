@@ -741,7 +741,13 @@ select:hover,select:focus{border-color:var(--clay)}
 .cd-btn:hover{color:var(--clay);border-color:var(--clay)}
 .cd-btn.off{opacity:.5;border-style:dashed}
 .cd-btn.dis{opacity:.45;cursor:not-allowed}
+.cd-btn.on{color:var(--clay);border-color:var(--clay);opacity:1}
 .cd-bar .hide{display:none!important}
+/* 全屏态：卡片纵向弹性布局，图表吃满剩余空间 */
+.card.cd-fs,.card:fullscreen{display:flex;flex-direction:column;gap:8px;padding:12px 16px;overflow:auto;background:var(--card)}
+.card.cd-fs .c-h,.card:fullscreen .c-h,.card.cd-fs .ci,.card:fullscreen .ci,
+.card.cd-fs .cd-bar,.card:fullscreen .cd-bar{flex:0 0 auto}
+.card.cd-fs .chart.xl,.card:fullscreen .chart.xl{flex:1 1 auto;height:auto;min-height:420px}
 .cd-hint{color:var(--faint);font-size:11.5px;margin-left:auto}
 @media(max-width:1080px){.c-s6,.c-s4,.c-s8,.c-s5,.c-s7,.c-s3{grid-column:span 12}}
 
@@ -2201,7 +2207,9 @@ function cdInitUI(){
     const fs=!!document.fullscreenElement;
     card.classList.toggle('cd-fs', fs);
     document.getElementById('cdFull').textContent = fs?'✕ 退出全屏':'⛶ 全屏';
-    const c=chart('chCustom'); if(c) c.resize();
+    /* 全屏布局重排分多帧完成，GL 画布需多次校正才能铺满 */
+    const rs=()=>{ const c=chart('chCustom'); if(c) c.resize(); };
+    rs(); setTimeout(rs, 90); setTimeout(rs, 260);
   });
   cdModeUI();
   /* 监听 dataZoom：更新视窗状态；开启自动调节时按新视窗重算散点大小（2D 专用） */
