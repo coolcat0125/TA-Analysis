@@ -1,0 +1,497 @@
+[
+ {
+  "row_sheet": 49,
+  "model": "HXK7000BEVA8",
+  "batch": "342",
+  "series": "凌宝BOX",
+  "cur": "4220",
+  "cand": "3460~3584",
+  "level": "B"
+ },
+ {
+  "row_sheet": 96,
+  "model": "HXK7000BEVA10",
+  "batch": "343",
+  "series": "凌宝BOX",
+  "cur": "4220",
+  "cand": "3460~3584",
+  "level": "B"
+ },
+ {
+  "row_sheet": 99,
+  "model": "HXK7000BEVA9",
+  "batch": "343",
+  "series": "凌宝BOX",
+  "cur": "4220",
+  "cand": "3460~3584",
+  "level": "B"
+ },
+ {
+  "row_sheet": 100,
+  "model": "LZW7002EVUHAN",
+  "batch": "343",
+  "series": "Nano EV",
+  "cur": "4470",
+  "cand": "2497",
+  "level": "B"
+ },
+ {
+  "row_sheet": 157,
+  "model": "LZW7002EVA1EAN",
+  "batch": "344",
+  "series": "Nano EV",
+  "cur": "4470",
+  "cand": "2497",
+  "level": "B"
+ },
+ {
+  "row_sheet": 158,
+  "model": "LZW7002EVB1EAN",
+  "batch": "344",
+  "series": "Nano EV",
+  "cur": "4470",
+  "cand": "2497",
+  "level": "B"
+ },
+ {
+  "row_sheet": 159,
+  "model": "LZW7002EVBHANA",
+  "batch": "344",
+  "series": "Nano EV",
+  "cur": "4470",
+  "cand": "2497",
+  "level": "B"
+ },
+ {
+  "row_sheet": 160,
+  "model": "LZW7002EVCHANA",
+  "batch": "344",
+  "series": "Nano EV",
+  "cur": "4470",
+  "cand": "2497",
+  "level": "B"
+ },
+ {
+  "row_sheet": 282,
+  "model": "LZW7002EVB1PAN",
+  "batch": "346",
+  "series": "NanoEV",
+  "cur": "4470",
+  "cand": "2497",
+  "level": "B"
+ },
+ {
+  "row_sheet": 404,
+  "model": "LZW7004EVA5DBK",
+  "batch": "348",
+  "series": "宏光MINIEV",
+  "cur": "4470",
+  "cand": "3061~3268",
+  "level": "A"
+ },
+ {
+  "row_sheet": 405,
+  "model": "LZW7004EVA5EBK",
+  "batch": "348",
+  "series": "宏光MINIEV",
+  "cur": "4470",
+  "cand": "3061~3268",
+  "level": "A"
+ },
+ {
+  "row_sheet": 406,
+  "model": "LZW7004EVC1DBK",
+  "batch": "348",
+  "series": "宏光MINIEV",
+  "cur": "4470",
+  "cand": "3061~3268",
+  "level": "A"
+ },
+ {
+  "row_sheet": 407,
+  "model": "LZW7004EVC1EBK",
+  "batch": "348",
+  "series": "宏光MINIEV",
+  "cur": "4470",
+  "cand": "3061~3268",
+  "level": "A"
+ },
+ {
+  "row_sheet": 460,
+  "model": "LZW7004EVA5EBKU",
+  "batch": "349",
+  "series": "宏光MINIEV",
+  "cur": "4470",
+  "cand": "3061~3268",
+  "level": "A"
+ },
+ {
+  "row_sheet": 461,
+  "model": "LZW7004EVA5HBK",
+  "batch": "349",
+  "series": "宏光MINIEV",
+  "cur": "4470",
+  "cand": "3061~3268",
+  "level": "A"
+ },
+ {
+  "row_sheet": 464,
+  "model": "LZW7004EVC1DBKU",
+  "batch": "349",
+  "series": "宏光MINIEV",
+  "cur": "4470",
+  "cand": "3061~3268",
+  "level": "A"
+ },
+ {
+  "row_sheet": 465,
+  "model": "LZW7004EVC1KBK",
+  "batch": "349",
+  "series": "宏光MINIEV",
+  "cur": "4470",
+  "cand": "3061~3268",
+  "level": "A"
+ },
+ {
+  "row_sheet": 497,
+  "model": "HXK7000BEVA12",
+  "batch": "350",
+  "series": "凌宝BOX",
+  "cur": "4220",
+  "cand": "3460~3584",
+  "level": "B"
+ },
+ {
+  "row_sheet": 460,
+  "model": "LZW7004EVA5EBKU",
+  "batch": "349",
+  "series": "宏光MINIEV",
+  "cur": "4470",
+  "cand": "3061~3268",
+  "level": "A"
+ },
+ {
+  "row_sheet": 464,
+  "model": "LZW7004EVC1DBKU",
+  "batch": "349",
+  "series": "宏光MINIEV",
+  "cur": "4470",
+  "cand": "3061~3268",
+  "level": "A"
+ },
+ {
+  "row_sheet": 539,
+  "model": "LZW7004EVA5EBKC",
+  "batch": "351",
+  "series": "宏光MINIEV",
+  "cur": "4470",
+  "cand": "3061~3268",
+  "level": "A"
+ },
+ {
+  "row_sheet": 655,
+  "model": "SC7001FACBEV",
+  "batch": "354",
+  "series": "糯玉米",
+  "cur": "4640",
+  "cand": "3270~3293",
+  "level": "B"
+ },
+ {
+  "row_sheet": 656,
+  "model": "SC7001FADBEV",
+  "batch": "354",
+  "series": "糯玉米",
+  "cur": "4640",
+  "cand": "3270~3293",
+  "level": "B"
+ },
+ {
+  "row_sheet": 709,
+  "model": "HXK7000BEVA13",
+  "batch": "355",
+  "series": "凌宝BOX",
+  "cur": "4220",
+  "cand": "3460~3584",
+  "level": "B"
+ },
+ {
+  "row_sheet": 713,
+  "model": "LZW7005EVA5DBKA",
+  "batch": "355",
+  "series": "Airev",
+  "cur": "4470",
+  "cand": "2599~2974",
+  "level": "B"
+ },
+ {
+  "row_sheet": 714,
+  "model": "LZW7005EVA5EBK",
+  "batch": "355",
+  "series": "Airev",
+  "cur": "4470",
+  "cand": "2599~2974",
+  "level": "B"
+ },
+ {
+  "row_sheet": 716,
+  "model": "LZW7005EVC1DBKA",
+  "batch": "355",
+  "series": "Airev",
+  "cur": "4470",
+  "cand": "2599~2974",
+  "level": "B"
+ },
+ {
+  "row_sheet": 717,
+  "model": "LZW7005EVC1EBJ",
+  "batch": "355",
+  "series": "Airev",
+  "cur": "4470",
+  "cand": "2599~2974",
+  "level": "B"
+ },
+ {
+  "row_sheet": 718,
+  "model": "LZW7005EVC1HBKA",
+  "batch": "355",
+  "series": "Airev",
+  "cur": "4470",
+  "cand": "2599~2974",
+  "level": "B"
+ },
+ {
+  "row_sheet": 719,
+  "model": "LZW7005EVC2CBM",
+  "batch": "355",
+  "series": "Airev",
+  "cur": "4470",
+  "cand": "2599~2974",
+  "level": "B"
+ },
+ {
+  "row_sheet": 728,
+  "model": "SC7001FAEBEV",
+  "batch": "355",
+  "series": "糯玉米",
+  "cur": "4640",
+  "cand": "3270~3293",
+  "level": "B"
+ },
+ {
+  "row_sheet": 729,
+  "model": "SC7001FAKBEV",
+  "batch": "355",
+  "series": "糯玉米",
+  "cur": "4640",
+  "cand": "3270~3293",
+  "level": "B"
+ },
+ {
+  "row_sheet": 757,
+  "model": "LZW7005EVC2MBM",
+  "batch": "356",
+  "series": "Airev",
+  "cur": "4470",
+  "cand": "2599~2974",
+  "level": "B"
+ },
+ {
+  "row_sheet": 806,
+  "model": "HXK7000BEVA14",
+  "batch": "357",
+  "series": "凌宝BOX",
+  "cur": "4150",
+  "cand": "3460~3584",
+  "level": "B"
+ },
+ {
+  "row_sheet": 852,
+  "model": "HXK7000BEVA15",
+  "batch": "359",
+  "series": "凌宝BOX",
+  "cur": "4220",
+  "cand": "3460~3584",
+  "level": "B"
+ },
+ {
+  "row_sheet": 965,
+  "model": "HXK7000BEVA16",
+  "batch": "362",
+  "series": "凌宝BOX",
+  "cur": "4220",
+  "cand": "3460~3584",
+  "level": "B"
+ },
+ {
+  "row_sheet": 967,
+  "model": "HXK7000BEVD00",
+  "batch": "362",
+  "series": "凌宝BOX",
+  "cur": "4220",
+  "cand": "3460~3584",
+  "level": "B"
+ },
+ {
+  "row_sheet": 1074,
+  "model": "JL7007BEV02",
+  "batch": "365",
+  "series": "熊猫Mini",
+  "cur": "4640",
+  "cand": "3065~3085",
+  "level": "B"
+ },
+ {
+  "row_sheet": 1075,
+  "model": "JL7007BEV04",
+  "batch": "365",
+  "series": "熊猫Mini",
+  "cur": "4640",
+  "cand": "3065~3085",
+  "level": "B"
+ },
+ {
+  "row_sheet": 1081,
+  "model": "LZW7007EVC1KBJ",
+  "batch": "365",
+  "series": "五菱缤果",
+  "cur": "4470",
+  "cand": "3950",
+  "level": "A"
+ },
+ {
+  "row_sheet": 1219,
+  "model": "LZW7007EVC1KBJB",
+  "batch": "367",
+  "series": "五菱缤果",
+  "cur": "4470",
+  "cand": "3950",
+  "level": "A"
+ },
+ {
+  "row_sheet": 1421,
+  "model": "LZW7005EVA1",
+  "batch": "371",
+  "series": "Airev",
+  "cur": "4470",
+  "cand": "2599~2974",
+  "level": "B"
+ },
+ {
+  "row_sheet": 1663,
+  "model": "SC7001FATBEV",
+  "batch": "374",
+  "series": "糯玉米",
+  "cur": "4640",
+  "cand": "3270~3293",
+  "level": "B"
+ },
+ {
+  "row_sheet": 1664,
+  "model": "SC7001FAUBEV",
+  "batch": "374",
+  "series": "糯玉米",
+  "cur": "4640",
+  "cand": "3270~3293",
+  "level": "B"
+ },
+ {
+  "row_sheet": 2281,
+  "model": "HXK7000BEVA17",
+  "batch": "383",
+  "series": "凌宝BOX",
+  "cur": "4220",
+  "cand": "3460~3584",
+  "level": "B"
+ },
+ {
+  "row_sheet": 2880,
+  "model": "BAW7000UBJ1BEV",
+  "batch": "391",
+  "series": "L7H/L6H",
+  "cur": "5850",
+  "cand": "3475",
+  "level": "C"
+ },
+ {
+  "row_sheet": 3160,
+  "model": "SC7000AAAKBEV",
+  "batch": "395",
+  "series": "糯玉米",
+  "cur": "4640",
+  "cand": "3270~3293",
+  "level": "B"
+ },
+ {
+  "row_sheet": 3161,
+  "model": "SC7000AAALBEV",
+  "batch": "395",
+  "series": "糯玉米",
+  "cur": "4640",
+  "cand": "3270~3293",
+  "level": "B"
+ },
+ {
+  "row_sheet": 3250,
+  "model": "SC7000AAASBEV",
+  "batch": "396",
+  "series": "糯玉米",
+  "cur": "4640",
+  "cand": "3270~3293",
+  "level": "B"
+ },
+ {
+  "row_sheet": 3251,
+  "model": "SC7000AAATBEV",
+  "batch": "396",
+  "series": "糯玉米",
+  "cur": "4640",
+  "cand": "3270~3293",
+  "level": "B"
+ },
+ {
+  "row_sheet": 4455,
+  "model": "CA7002B0EVE",
+  "batch": "409",
+  "series": "奔腾小马",
+  "cur": "3810",
+  "cand": "3000~3350",
+  "level": "B"
+ },
+ {
+  "row_sheet": 4456,
+  "model": "CA7002B0EVD",
+  "batch": "409",
+  "series": "奔腾小马",
+  "cur": "3810",
+  "cand": "3000~3350",
+  "level": "B"
+ },
+ {
+  "row_sheet": 4457,
+  "model": "CA7002B0EVC",
+  "batch": "409",
+  "series": "奔腾小马",
+  "cur": "3810",
+  "cand": "3000~3350",
+  "level": "B"
+ },
+ {
+  "row_sheet": 4458,
+  "model": "CA7002B0EVB",
+  "batch": "409",
+  "series": "奔腾小马",
+  "cur": "3810",
+  "cand": "3000~3350",
+  "level": "B"
+ },
+ {
+  "row_sheet": 4459,
+  "model": "CA7002B0EVA",
+  "batch": "409",
+  "series": "奔腾小马",
+  "cur": "3810",
+  "cand": "3000~3350",
+  "level": "B"
+ }
+]
