@@ -2169,7 +2169,11 @@ function cdInitUI(){
     if(CD_STATE.z==null && CD_STATE.view!=='d2') CD_STATE.view='d2';   // 清空 Z → 回二维
     cdModeUI(); renderCustom(filtered()); };
   cv.onchange=()=>{ let v=cv.value;
-    if(v!=='d2' && CD_STATE.z==null){ v='d2'; cv.value='d2'; showToast('三维柱状 / 二维热力需先在「泡泡直径 Z」选定字段'); }
+    if(v!=='d2' && CD_STATE.z==null){
+      /* 未选 Z 直接切三维/热力：自动补默认 Z=电池容量，保持可用 */
+      CD_STATE.z=I.c; sz.value=String(I.c);
+      showToast('已自动选定 Z=电池容量(kWh)，可在「泡泡直径 Z」更换字段');
+    }
     CD_STATE.view=v; cdModeUI(); renderCustom(filtered()); };
   cs.onchange=()=>{ CD_STATE.style=cs.value;
     /* 风格切换必须 clear+全量重建：各风格梯度色带长度不同（4/5 色），
@@ -2242,7 +2246,7 @@ function cdInitUI(){
 function cdModeUI(){
   const m=CD_STATE.view, noZ=CD_STATE.z==null, d3=m==='d3';
   const cv=document.getElementById('cdView');
-  if(cv){ cv.value=m; [...cv.options].forEach(o=>{ o.disabled = o.value!=='d2' && noZ; }); }
+  if(cv) cv.value=m;   // 三维/热力不再禁用：未选 Z 时选择后自动补默认 Z 字段
   document.getElementById('cdStyleWrap').classList.toggle('hide', m==='d2');
   document.getElementById('cd3dOnly').classList.toggle('hide', !d3);
   document.getElementById('cd2dOnly').classList.toggle('hide', m!=='d2');
