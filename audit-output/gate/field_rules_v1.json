@@ -1,0 +1,333 @@
+{
+ "_meta": {
+  "version": "1.0",
+  "built_at": "2026-09-20T22:50:00+0800",
+  "basis": "38列 schema + verify_consistency W1-W8 + enrich/fill NUM_RANGES",
+  "pt_enum": [
+   "BEV",
+   "PHEV"
+  ],
+  "note": "PHEV 列含 EREV（展示名 PHEV/EREV）；动力类型泄漏值（纯电动轿车等）为已知归一化缺口（35 行），分组键使用前必须归一"
+ },
+ "fields": {
+  "电池容量(kWh)": {
+   "type": "number",
+   "unit": "kWh",
+   "required": false,
+   "pt": [
+    "BEV",
+    "PHEV"
+   ],
+   "range": [
+    3,
+    160
+   ],
+   "evidence": "官方目录/官网A级或参数库B级",
+   "missing_ok": "unknown",
+   "relations": [
+    "与续航构成 W2 期望(容量×100÷续航, 容差±33%, 官方确证白名单除外)",
+    "与整备/电池质量正相关",
+    "BEV/PHEV 不可互换口径"
+   ]
+  },
+  "纯电续航里程(km)": {
+   "type": "number",
+   "unit": "km",
+   "required": false,
+   "pt": [
+    "BEV",
+    "PHEV"
+   ],
+   "range": [
+    50,
+    2000
+   ],
+   "evidence": "同上",
+   "missing_ok": "unknown",
+   "relations": [
+    "W2 期望参与量",
+    "PHEV 为纯电续航（亏电油耗另行）"
+   ]
+  },
+  "百公里电耗(kWh/100km)": {
+   "type": "number",
+   "unit": "kWh/100km",
+   "required": false,
+   "pt": [
+    "BEV"
+   ],
+   "range": [
+    5,
+    40
+   ],
+   "evidence": "官方能耗源A级（白名单机制见 w2w4_arbitration）",
+   "missing_ok": "unknown",
+   "relations": [
+    "W2 主体检量",
+    "PHEV/EREV 不适用（not_applicable）"
+   ]
+  },
+  "综合油耗(L/100km)": {
+   "type": "number",
+   "unit": "L/100km",
+   "required": false,
+   "pt": [
+    "PHEV"
+   ],
+   "range": [
+    0.04,
+    12
+   ],
+   "evidence": "官方目录A级",
+   "missing_ok": "unknown",
+   "relations": [
+    "BEV 行禁填（W3/BEV守卫）；增程/插混亏电油耗可低至 0.04（合法）"
+   ]
+  },
+  "B状态油耗(L/100km)": {
+   "type": "number",
+   "unit": "L/100km",
+   "required": false,
+   "pt": [
+    "PHEV"
+   ],
+   "range": [
+    0.04,
+    12
+   ],
+   "evidence": "官方目录A级",
+   "missing_ok": "unknown",
+   "relations": [
+    "与综合油耗同数量级（±30%）"
+   ]
+  },
+  "整备质量(kg)": {
+   "type": "number",
+   "unit": "kg",
+   "required": false,
+   "pt": [
+    "BEV",
+    "PHEV"
+   ],
+   "range": [
+    300,
+    10000
+   ],
+   "evidence": "公告附件A级",
+   "missing_ok": "unknown",
+   "relations": [
+    "W7 整备/车长比 [0.18, 0.70]",
+    "与电池容量正相关（微型车 800~1,080kg 窗口判据）"
+   ]
+  },
+  "车长(mm)": {
+   "type": "number",
+   "unit": "mm",
+   "required": false,
+   "pt": [
+    "BEV",
+    "PHEV"
+   ],
+   "range": [
+    2200,
+    6000
+   ],
+   "evidence": "公告/官网/参数库B级+（跨车型传播高危字段）",
+   "missing_ok": "unknown",
+   "relations": [
+    "W5 车长/轴距 [1.4, 2.4]",
+    "W7",
+    "污染史：凌宝BOX等 9 族被灌 MPV 级车长（A08 域）"
+   ]
+  },
+  "轴距(mm)": {
+   "type": "number",
+   "unit": "mm",
+   "required": false,
+   "pt": [
+    "BEV",
+    "PHEV"
+   ],
+   "range": [
+    1400,
+    3500
+   ],
+   "evidence": "公告/官网/参数库B级+",
+   "missing_ok": "unknown",
+   "relations": [
+    "W5",
+    "v3.7.3 估算系数 Car=1.72 为二次污染根因"
+   ]
+  },
+  "前电机功率(kW)": {
+   "type": "number",
+   "unit": "kW",
+   "required": false,
+   "pt": [
+    "BEV",
+    "PHEV"
+   ],
+   "range": [
+    10,
+    800
+   ],
+   "evidence": "公告/参数库B级",
+   "missing_ok": "unknown",
+   "relations": [
+    "drive=前+后；总=前+后（W-check）"
+   ]
+  },
+  "电机总功率(kW)": {
+   "type": "number",
+   "unit": "kW",
+   "required": false,
+   "pt": [
+    "BEV",
+    "PHEV"
+   ],
+   "range": [
+    10,
+    800
+   ],
+   "evidence": "公告A级",
+   "missing_ok": "unknown",
+   "relations": [
+    "=前+后（单电机=前）"
+   ]
+  },
+  "系统扭矩(Nm)": {
+   "type": "number",
+   "unit": "Nm",
+   "required": false,
+   "pt": [
+    "BEV",
+    "PHEV"
+   ],
+   "range": [
+    30,
+    1600
+   ],
+   "evidence": "公告/参数库B级",
+   "missing_ok": "unknown",
+   "relations": [
+    "四驱=前+后"
+   ]
+  },
+  "发动机排量(mL)": {
+   "type": "number",
+   "unit": "mL",
+   "required": false,
+   "pt": [
+    "PHEV"
+   ],
+   "range": [
+    600,
+    2500
+   ],
+   "evidence": "公告A级",
+   "missing_ok": "not_applicable(BEV)",
+   "relations": [
+    "BEV 行必须为 不适用(BEV)/空"
+   ]
+  },
+  "电池类型": {
+   "type": "enum",
+   "unit": "",
+   "required": false,
+   "pt": [
+    "BEV",
+    "PHEV"
+   ],
+   "enum": [
+    "磷酸铁锂",
+    "三元锂",
+    "钛酸锂",
+    "锰酸锂",
+    "三元/磷酸铁锂复合",
+    "磷酸铁锂电池",
+    "三元锂电池"
+   ],
+   "evidence": "公告A级",
+   "missing_ok": "unknown",
+   "relations": [
+    "与整备/能量密度交叉校验"
+   ]
+  },
+  "电芯供应商": {
+   "type": "string",
+   "unit": "",
+   "required": false,
+   "pt": [
+    "BEV",
+    "PHEV"
+   ],
+   "range": null,
+   "evidence": "公示详情页/公告A级（多供应商逗号并列合法）",
+   "missing_ok": "unknown",
+   "relations": [
+    "禁止同品牌扩散（A08 域教训）"
+   ]
+  },
+  "电池包供应商": {
+   "type": "string",
+   "unit": "",
+   "required": false,
+   "pt": [
+    "BEV",
+    "PHEV"
+   ],
+   "range": null,
+   "evidence": "公示详情页A级",
+   "missing_ok": "unknown",
+   "relations": [
+    "与电芯供应商可不同法人"
+   ]
+  },
+  "动力类型": {
+   "type": "enum",
+   "unit": "",
+   "required": true,
+   "pt": null,
+   "enum": [
+    "BEV",
+    "PHEV"
+   ],
+   "evidence": "公告A级",
+   "missing_ok": "不允许",
+   "relations": [
+    "分组键！泄漏值（纯电动轿车等）须归一后方可入键",
+    "决定所有 pt 适应性字段"
+   ]
+  },
+  "月销量(辆)": {
+   "type": "number",
+   "unit": "辆",
+   "required": false,
+   "pt": [
+    "BEV",
+    "PHEV"
+   ],
+   "range": [
+    0,
+    200000
+   ],
+   "evidence": "易车/乘联B级（零售量口径，固定自然月）",
+   "missing_ok": "unknown",
+   "relations": [
+    "参考项不参与官方口径；同车系各变体共享车系级值"
+   ]
+  }
+ },
+ "status_enum": [
+  "verified",
+  "candidate",
+  "conflicted",
+  "unknown",
+  "not_applicable"
+ ],
+ "priority_map": {
+  "P0": "车型归属/动力类型/批次归属错误",
+  "P1": "容量/续航/功率/油耗等核心分析字段",
+  "P2": "展示性字段（供应商/URL/销量参考）"
+ }
+}

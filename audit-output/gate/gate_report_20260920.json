@@ -1,0 +1,90 @@
+{
+ "_meta": {
+  "role": "夜间质量总检与证据门禁 Agent",
+  "night": "2026-09-20",
+  "base_head": "fd075b5",
+  "branch": "agent/night-gate-20260920"
+ },
+ "field_status_baseline": {
+  "note": "懂车帝 Agent 批次未到达，以下为当前库的字段级状态基线（补缺到达后逐格对照升级）",
+  "verified级(官方A级/W门禁)": [
+   "整备质量",
+   "纯电续航",
+   "电池容量(官方部分)",
+   "综合油耗/排量(官方目录部分)",
+   "动力类型",
+   "电池类型",
+   "公告身份字段"
+  ],
+  "candidate级(参数库B级/参考)": [
+   "车长(部分=55候选)",
+   "轴距",
+   "电机功率/扭矩(部分)",
+   "月销量(易车B级)",
+   "电芯供应商(详情页13行+)",
+   "企业/商标"
+  ],
+  "unknown": [
+   "电池包供应商(98%缺)",
+   "官方参数页URL(97.9%缺)",
+   "电芯供应商 69.8%缺",
+   "电机型号 46.2%缺",
+   "电机生产企业 28.8%缺",
+   "月销量 85.1%缺(参考项)"
+  ],
+  "not_applicable": [
+   "BEV 行的 油耗/排量/发动机四件套（不适用(BEV) 语义占位）",
+   "BEV 行的 B状态油耗"
+  ]
+ },
+ "regression_delta": {
+  "canonical_change_tonight": "零（底表 SHA 恒 766872d2…；懂车帝 Agent 批次未落仓库）",
+  "missing_rate_delta": 0,
+  "verified_candidate_unknown_delta": 0,
+  "dup_keys_delta": 0,
+  "vehicle_total_delta": 0,
+  "bev_phev_delta": 0,
+  "new_anomalies_vs_baseline": "HIGH1/3 为夜间新发现（非新写入所致，系存量显形）",
+  "verify_vs_baseline": "CRITICAL=0 持平；WARN 181 持平（无未解释增减）",
+  "w_rules_triggered": "W2 1 / W4 21 / W6 159 / W7 0 / W8 0——全部既有已档，无新增"
+ },
+ "dashboard_compatibility": {
+  "scope": "v4.9.15（fd075b5）——比任务书 v4.9.14 新 1 commit（发布版恢复三维+下线方案C）",
+  "structure_5392x38": "未变 ✓",
+  "field_mapping": "有效 ✓（d2/bar/bub/heat 四模式全基于真实列）",
+  "bev_phev_layering": "独立系列+独立图例 ✓",
+  "viz_fills_no_canonical_writeback": "确认 ✓（空值行不入图）",
+  "supplier_capacity_power_types": "无类型变化 ✓",
+  "console_errors": "0 ✓",
+  "mode_switching": "d2/bar/bub/heat 全通 ✓",
+  "evidence": "同夜 earlier 回归 night_r3_*.png + night_20260920_regression.md"
+ },
+ "dongchedi_contract": {
+  "required_fields": [
+   "batch_id",
+   "input_head",
+   "branch",
+   "source",
+   "source_url",
+   "captured_at",
+   "model_key",
+   "model_year",
+   "powertrain",
+   "changed_fields",
+   "raw_value",
+   "normalized_value",
+   "evidence_note",
+   "unresolved_items"
+  ],
+  "validator": "audit-output/gate/validate_batch.py（10 项检查：键匹配/年款/串位/单位/类型/URL对应/采集时间/原文证据/增改冲分类/verified影响）",
+  "self_test": "4 合成项全部分类正确（含 BEV 串位拒绝、区间外冲突、未知键拒绝）",
+  "acceptance": "不接受只有已补齐而无字段级来源和车型键的结果"
+ },
+ "deliverables": [
+  "audit-output/gate_baseline_20260920.json",
+  "audit-output/gate/field_rules_v1.json",
+  "audit-output/gate/validate_batch.py",
+  "audit-output/gate/logic_audit_20260920.json",
+  "本报告"
+ ]
+}

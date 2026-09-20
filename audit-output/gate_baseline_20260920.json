@@ -1,0 +1,209 @@
+{
+ "rows": 5392,
+ "cols": 38,
+ "fields": {
+  "批次": {
+   "filled": 5392,
+   "missing": 0,
+   "missing_pct": 0.0
+  },
+  "产品型号": {
+   "filled": 5387,
+   "missing": 5,
+   "missing_pct": 0.1
+  },
+  "产品商标": {
+   "filled": 4490,
+   "missing": 902,
+   "missing_pct": 16.7
+  },
+  "企业名称": {
+   "filled": 5229,
+   "missing": 163,
+   "missing_pct": 3.0
+  },
+  "车型名称": {
+   "filled": 5157,
+   "missing": 235,
+   "missing_pct": 4.4
+  },
+  "产品名称": {
+   "filled": 4795,
+   "missing": 597,
+   "missing_pct": 11.1
+  },
+  "通用名称": {
+   "filled": 5348,
+   "missing": 44,
+   "missing_pct": 0.8
+  },
+  "产品类型": {
+   "filled": 5354,
+   "missing": 38,
+   "missing_pct": 0.7
+  },
+  "细分市场": {
+   "filled": 4796,
+   "missing": 596,
+   "missing_pct": 11.1
+  },
+  "动力类型": {
+   "filled": 5392,
+   "missing": 0,
+   "missing_pct": 0.0
+  },
+  "是否减免购置税": {
+   "filled": 4161,
+   "missing": 1231,
+   "missing_pct": 22.8
+  },
+  "整备质量(kg)": {
+   "filled": 4800,
+   "missing": 592,
+   "missing_pct": 11.0
+  },
+  "轴距(mm)": {
+   "filled": 4375,
+   "missing": 1017,
+   "missing_pct": 18.9
+  },
+  "纯电续航里程(km)": {
+   "filled": 5249,
+   "missing": 143,
+   "missing_pct": 2.7
+  },
+  "电池容量(kWh)": {
+   "filled": 4863,
+   "missing": 529,
+   "missing_pct": 9.8
+  },
+  "电池类型": {
+   "filled": 4899,
+   "missing": 493,
+   "missing_pct": 9.1
+  },
+  "电池能量密度(Wh/kg)": {
+   "filled": 4214,
+   "missing": 1178,
+   "missing_pct": 21.8
+  },
+  "百公里电耗(kWh/100km)": {
+   "filled": 5107,
+   "missing": 285,
+   "missing_pct": 5.3
+  },
+  "前电机功率/扭矩": {
+   "filled": 4398,
+   "missing": 994,
+   "missing_pct": 18.4
+  },
+  "电机总功率/扭矩": {
+   "filled": 5209,
+   "missing": 183,
+   "missing_pct": 3.4
+  },
+  "后电机功率/扭矩": {
+   "filled": 1683,
+   "missing": 3709,
+   "missing_pct": 68.8
+  },
+  "电机生产企业": {
+   "filled": 3841,
+   "missing": 1551,
+   "missing_pct": 28.8
+  },
+  "电机型号": {
+   "filled": 2902,
+   "missing": 2490,
+   "missing_pct": 46.2
+  },
+  "综合油耗(L/100km)": {
+   "filled": 4320,
+   "missing": 1072,
+   "missing_pct": 19.9
+  },
+  "B状态油耗(L/100km)": {
+   "filled": 4511,
+   "missing": 881,
+   "missing_pct": 16.3
+  },
+  "发动机排量(mL)": {
+   "filled": 4956,
+   "missing": 436,
+   "missing_pct": 8.1
+  },
+  "发动机功率(kW)": {
+   "filled": 4253,
+   "missing": 1139,
+   "missing_pct": 21.1
+  },
+  "发动机生产企业": {
+   "filled": 3920,
+   "missing": 1472,
+   "missing_pct": 27.3
+  },
+  "发动机型号": {
+   "filled": 4832,
+   "missing": 560,
+   "missing_pct": 10.4
+  },
+  "数据来源": {
+   "filled": 5392,
+   "missing": 0,
+   "missing_pct": 0.0
+  },
+  "车长(mm)": {
+   "filled": 4361,
+   "missing": 1031,
+   "missing_pct": 19.1
+  },
+  "电芯供应商": {
+   "filled": 1630,
+   "missing": 3762,
+   "missing_pct": 69.8
+  },
+  "电池包供应商": {
+   "filled": 110,
+   "missing": 5282,
+   "missing_pct": 98.0
+  },
+  "官方参数页URL": {
+   "filled": 111,
+   "missing": 5281,
+   "missing_pct": 97.9
+  },
+  "媒体校验来源": {
+   "filled": 2370,
+   "missing": 3022,
+   "missing_pct": 56.0
+  },
+  "月销量(辆)": {
+   "filled": 806,
+   "missing": 4586,
+   "missing_pct": 85.1
+  },
+  "销量数据月份": {
+   "filled": 806,
+   "missing": 4586,
+   "missing_pct": 85.1
+  },
+  "销量更新日期": {
+   "filled": 806,
+   "missing": 4586,
+   "missing_pct": 85.1
+  }
+ },
+ "dup_model_keys": 1,
+ "dup_detail": {
+  "('410', '')": 3
+ },
+ "powertrain": {
+  "BEV": 3675,
+  "PHEV": 1682,
+  "纯电动轿车": 8,
+  "纯电动多用途乘用车": 19,
+  "插电式混合动力多用途乘用车": 7,
+  "插电式混合动力轿车": 1
+ },
+ "workbook_sha16": "766872d2d5c3a3c4"
+}
