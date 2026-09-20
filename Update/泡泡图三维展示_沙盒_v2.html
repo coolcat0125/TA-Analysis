@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEV 看板 · 自定义分布三维展示 · 三方案对比沙盒 v2</title>
+</head>
+<body style="margin:0;background:#f6f4f1">
+<style>
+.nv3d{--accent:#D97722;--ink:rgba(20,16,12,.88);--ink2:rgba(20,16,12,.55);--ink3:rgba(20,16,12,.38);--line:rgba(20,16,12,.10);--soft:rgba(20,16,12,.045);--card:#fff;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);max-width:1080px;margin:0 auto;padding:18px 16px 30px;box-sizing:border-box}
+.nv3d *{box-sizing:border-box}
+.nv3d button,.nv3d select,.nv3d input{font-family:inherit}
+.bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:9px}
+.gl{font-size:11px;color:var(--ink3);margin-right:1px;flex:0 0 auto}
+.sp{flex:1}
+.pill{height:31px;padding:0 12px;border:.5px solid var(--line);border-radius:999px;background:var(--soft);color:var(--ink);font-size:12.5px;cursor:pointer;transition:background .14s,color .14s,border-color .14s,box-shadow .14s}
+.pill:hover{background:rgba(20,16,12,.09)}
+.pill.on{background:rgba(217,119,34,.14);color:var(--accent);border-color:rgba(217,119,34,.32);font-weight:600;box-shadow:inset 0 0 0 1px rgba(217,119,34,.10)}
+.pill.sm{height:28px;padding:0 10px;font-size:11.5px}
+.sel{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;color:var(--ink2);background:var(--soft);border:.5px solid var(--line);border-radius:10px;padding:0 9px;height:33px}
+.sel select{border:0;background:transparent;color:var(--ink);font-size:12.5px;outline:none;max-width:132px;cursor:pointer}
+.sel select:disabled{color:var(--ink3);cursor:not-allowed}
+.ramps{display:flex;gap:7px;flex-wrap:wrap}
+.ramp{height:29px;padding:0 10px;border:.5px solid var(--line);border-radius:9px;background:var(--soft);font-size:11.5px;color:var(--ink2);display:inline-flex;align-items:center;gap:7px;cursor:pointer;transition:background .14s,border-color .14s}
+.ramp:hover{background:rgba(20,16,12,.09)}
+.ramp.on{border-color:rgba(217,119,34,.45);color:var(--accent);font-weight:600}
+.sw{display:block;width:46px;height:9px;border-radius:99px}
+.rng{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;color:var(--ink2);background:var(--soft);border:.5px solid var(--line);border-radius:10px;padding:0 11px;height:33px}
+.rng input[type=range]{width:88px;accent-color:var(--accent);cursor:pointer}
+.rng b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;min-width:34px;text-align:right}
+.hint{font-size:12px;line-height:1.62;color:var(--ink2);background:var(--soft);border-left:3px solid rgba(217,119,34,.55);border-radius:0 10px 10px 0;padding:10px 13px;margin:12px 0}
+.stage{position:relative;width:100%;height:460px;background:radial-gradient(120% 90% at 50% 8%,#ffffff 0%,#f3f0ec 58%,#e9e5df 100%);border:.5px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(20,16,12,.04),0 10px 30px rgba(20,16,12,.05);cursor:grab}
+.stage.drag{cursor:grabbing}
+.stage canvas{display:block;width:100%;height:100%}
+.legend{position:absolute;right:14px;top:50%;transform:translateY(-50%);display:flex;gap:7px;align-items:stretch;pointer-events:none}
+.legbar{width:13px;height:150px;border-radius:8px;border:.5px solid var(--line);box-shadow:0 1px 3px rgba(20,16,12,.10)}
+.leglab{display:flex;flex-direction:column;justify-content:space-between;font-size:10.5px;color:var(--ink2);font-variant-numeric:tabular-nums;line-height:1.1}
+.tip{position:absolute;left:0;top:0;pointer-events:none;background:rgba(28,24,20,.94);color:#fff;font-size:11.5px;line-height:1.55;padding:8px 10px;border-radius:9px;white-space:nowrap;opacity:0;transition:opacity .1s;z-index:5;box-shadow:0 6px 18px rgba(0,0,0,.22)}
+.tip b{color:#F5C98A;font-weight:600}
+.note{position:absolute;left:14px;bottom:12px;font-size:11px;color:var(--ink3);background:rgba(255,255,255,.72);border:.5px solid var(--line);border-radius:8px;padding:4px 9px;pointer-events:none}
+.stats{display:flex;gap:8px 20px;flex-wrap:wrap;font-size:11.5px;color:var(--ink3);margin-top:11px;font-variant-numeric:tabular-nums}
+.stats b{font-weight:600;color:var(--ink2)}
+</style>
+<div class="nv3d">
+  <div class="bar">
+    <span class="gl">方案</span>
+    <button class="pill on" data-mode="A">A · 海拔柱状图</button>
+    <button class="pill" data-mode="B">B · 三维梯度泡泡</button>
+    <button class="pill" data-mode="C">C · 梯度曲面图</button>
+    <span class="sp"></span>
+    <button class="pill" id="btn2D">2D 对照</button>
+    <button class="pill" data-view="reset">复位视角</button>
+    <button class="pill" data-view="top">俯视</button>
+    <button class="pill" data-view="front">正视</button>
+  </div>
+  <div class="bar">
+    <label class="sel"><span>X 轴</span><select id="selX"></select></label>
+    <label class="sel"><span>Y 轴</span><select id="selY"></select></label>
+    <label class="sel"><span>Z 轴</span><select id="selZ"></select></label>
+    <label class="sel"><span>颜色通道</span><select id="selC"></select></label>
+  </div>
+  <div class="bar">
+    <span class="gl">色带</span><div class="ramps" id="ramps"></div>
+  </div>
+  <div class="bar">
+    <span class="gl">梯度</span>
+    <button class="pill sm on" data-grad="c">连续渐变</button>
+    <button class="pill sm" data-grad="p5">5 段离散</button>
+    <button class="pill sm" data-grad="p9">9 段离散</button>
+    <button class="pill sm" id="btnInv">反转色带</button>
+    <span class="sp"></span>
+    <label class="rng"><span>标记尺寸</span><input id="rSize" type="range" min="60" max="200" step="5" value="100"><b id="vSize">100%</b></label>
+    <label class="rng"><span>不透明度</span><input id="rOp" type="range" min="40" max="100" step="4" value="92"><b id="vOp">92%</b></label>
+    <label class="rng"><span>俯角</span><input id="rAlt" type="range" min="2" max="82" step="2" value="28"><b id="vAlt">28°</b></label>
+  </div>
+  <div class="hint" id="hint"></div>
+  <div class="stage" id="stage">
+    <canvas id="cv"></canvas>
+    <div class="legend"><div class="legbar" id="legbar"></div><div class="leglab"><span id="legHi"></span><span id="legLo"></span></div></div>
+    <div class="tip" id="tip"></div>
+    <div class="note" id="note">拖动旋转 · 滚轮缩放</div>
+  </div>
+  <div class="stats" id="stats"></div>
+</div>
+<script>
+(function(){
+var FIELDS=[
+ {k:'mass',n:'整备质量',u:'kg'},{k:'ed',n:'能量密度',u:'Wh/kg'},{k:'bat',n:'申报电量',u:'kWh'},
+ {k:'range',n:'CLTC续航',u:'km'},{k:'power',n:'电机功率',u:'kW'},{k:'vmax',n:'最高车速',u:'km/h'},
+ {k:'consume',n:'百公里电耗',u:'kWh'},{k:'charge',n:'快充时间',u:'min'},{k:'wb',n:'轴距',u:'mm'},
+ {k:'price',n:'指导价',u:'万元'},{k:'iq',n:'智能化得分',u:'分'},{k:'samples',n:'样本量',u:'条'}
+];
+var RAMPS=[
+ {n:'暖橙同色系',c:['#FFF1DE','#F7C57E','#EE9A3F','#D97722','#9C4D0C']},
+ {n:'蓝绿同色系',c:['#E3F4F1','#9BD5C8','#57A7C4','#1E7E8C','#0A4A52']},
+ {n:'冷暖双色',c:['#2F6FA8','#83B7D9','#EEF3F7','#F0A48C','#C94737']},
+ {n:'虹彩梯度',c:['#9B6FB5','#5AA6D6','#6CBF7A','#F2B134','#EE5A72']}
+];
+function hx(h){h=h.replace('#','');return [parseInt(h.substr(0,2),16),parseInt(h.substr(2,2),16),parseInt(h.substr(4,2),16)];}
+for(var ri=0;ri<RAMPS.length;ri++){RAMPS[ri].rgb=RAMPS[ri].c.map(hx);}
+function lcg(s){return function(){s=(s*1103515245+12345)&0x7fffffff;return s/0x7fffffff;};}
+function genData(){
+  var r=lcg(20260919),segs=['轿车','SUV','MPV'],out=[],i;
+  for(i=0;i<96;i++){
+    var t=i%3,L=(t===0?0:(t===1?0.55:1));
+    var mass=Math.round(1520+L*820+(r()-0.5)*260);
+    var ed=+(198-L*34+(r()-0.5)*26).toFixed(1);
+    var bat=+(mass*0.028+16+(r()-0.5)*15).toFixed(1);
+    var range=Math.round(bat*8.1-mass*0.05+55+(r()-0.5)*80);
+    var power=Math.round(135+L*135+r()*185);
+    var vmax=Math.round(175+r()*45+L*10);
+    var consume=+(11+mass/300+(1-(ed-140)/64)*2.1+(r()-0.5)*1.6).toFixed(1);
+    var charge=+(16+bat*0.25+(r()-0.5)*8).toFixed(1);
+    var wb=Math.round(2700+L*255+r()*105);
+    var price=+(15.5+L*13.5+(power-135)/13+(r()-0.5)*8).toFixed(1);
+    var iq=+(6+r()*3.6).toFixed(1);
+    var samples=Math.round(25+r()*760);
+    out.push({code:String.fromCharCode(65+(Math.floor(i/10)%26))+(i%10+1),seg:segs[t],mass:mass,ed:ed,bat:bat,range:range,power:power,vmax:vmax,consume:consume,charge:charge,wb:wb,price:price,iq:iq,samples:samples});
+  }
+  return out;
+}
+var RECS=genData();
+var st={mode:'A',twod:false,x:'mass',y:'price',z:'range',color:'__z',size:'samples',ramp:0,grad:'c',inv:false,sizeK:1,op:0.92,alpha:28,beta:-40,zoom:1};
+function fld(k){for(var i=0;i<FIELDS.length;i++){if(FIELDS[i].k===k)return FIELDS[i];}return {n:k,u:''};}
+var EXT={};
+function extent(k){if(EXT[k])return EXT[k];var mn=1e12,mx=-1e12;for(var i=0;i<RECS.length;i++){var v=RECS[i][k];if(v<mn)mn=v;if(v>mx)mx=v;}EXT[k]={mn:mn,mx:mx};return EXT[k];}
+function colorField(){return st.color==='__z'?st.z:st.color;}
+function rampRGB(t){var cols=RAMPS[st.ramp].rgb;if(st.inv)cols=cols.slice().reverse();t=Math.min(1,Math.max(0,t));if(st.grad!=='c'){var N=(st.grad==='p5'?5:9);t=Math.min(1,Math.floor(t*N)/(N-1));}var seg=cols.length-1,p=t*seg,i=Math.min(seg-1,Math.floor(p)),f=p-i,a=cols[i],b=cols[i+1];return [a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f,a[2]+(b[2]-a[2])*f];}
+function rgba(c,a){return 'rgba('+Math.round(c[0])+','+Math.round(c[1])+','+Math.round(c[2])+','+a+')';}
+function fmt(v){var a=Math.abs(v);return a>=1000?v.toLocaleString('en-US',{maximumFractionDigits:0}):(Math.round(v*10)/10);}
+var cv=document.getElementById('cv'),ctx=cv.getContext('2d'),W=0,H=0,cx=0,cy=0,S=1,M={};
+var anchors=[],hoverI=-1,stage=document.getElementById('stage'),tip=document.getElementById('tip');
+function fit(){var dpr=Math.min(2,window.devicePixelRatio||1);W=stage.clientWidth;H=stage.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);cx=W/2;cy=H/2+16;S=Math.min(W,H)*0.66*st.zoom;}
+function setM(){var a=st.alpha*Math.PI/180,b=st.beta*Math.PI/180;M.ca=Math.cos(a);M.sa=Math.sin(a);M.cb=Math.cos(b);M.sb=Math.sin(b);}
+function proj(x,y,z){var x1=x*M.cb-y*M.sb,y1=x*M.sb+y*M.cb,y2=y1*M.ca-z*M.sa,z2=y1*M.sa+z*M.ca;return [cx+x1*S,cy-z2*S,y2];}
+function nx(v,k){var e=extent(k);return (v-e.mn)/((e.mx-e.mn)||1)-0.5;}
+function nz(v,k){var e=extent(k);return (v-e.mn)/((e.mx-e.mn)||1);}
+function pushQuad(prims,corners,col,shade,depthBias){var pts=[],d=0,i;for(i=0;i<4;i++){var p=proj(corners[i][0],corners[i][1],corners[i][2]);pts.push([p[0],p[1]]);d+=p[2];}d/=4;prims.push({t:'q',pts:pts,col:col,sh:shade,d:d+(depthBias||0)});}
+function render(){
+  setM();
+  ctx.clearRect(0,0,W,H);
+  anchors=[];
+  if(st.twod){draw2D();return;}
+  var prims=[],i;
+  if(st.mode==='A'){
+    var bw=0.0125*st.sizeK,cfm=colorField(),ce=extent(cfm);
+    for(i=0;i<RECS.length;i++){
+      var d=RECS[i],X=nx(d[st.x],st.x),Y=nx(d[st.y],st.y),Z=0.06+nz(d[st.z],st.z)*0.92;
+      var col=rampRGB((d[cfm]-ce.mn)/((ce.mx-ce.mn)||1));
+      var x0=X-bw,x1=X+bw,y0=Y-bw,y1=Y+bw;
+      var c=[[x0,y0,0],[x1,y0,0],[x1,y1,0],[x0,y1,0],[x0,y0,Z],[x1,y0,Z],[x1,y1,Z],[x0,y1,Z]];
+      pushQuad(prims,[c[4],c[5],c[6],c[7]],col,1.0);
+      pushQuad(prims,[c[0],c[1],c[5],c[4]],col,0.60);
+      pushQuad(prims,[c[1],c[2],c[6],c[5]],col,0.47);
+      pushQuad(prims,[c[2],c[3],c[7],c[6]],col,0.68);
+      pushQuad(prims,[c[3],c[0],c[4],c[7]],col,0.80);
+      var pc=proj(X,Y,Z);anchors.push({x:pc[0],y:pc[1],i:i});
+    }
+  } else if(st.mode==='B'){
+    var cfm2=colorField(),ce2=extent(cfm2),se=extent(st.size);
+    for(i=0;i<RECS.length;i++){
+      var d2=RECS[i],X2=nx(d2[st.x],st.x),Y2=nx(d2[st.y],st.y),Z2=0.05+nz(d2[st.z],st.z)*0.9;
+      var col2=rampRGB((d2[cfm2]-ce2.mn)/((ce2.mx-ce2.mn)||1));
+      var sz=(d2[st.size]-se.mn)/((se.mx-se.mn)||1);
+      var wr=(0.0095+0.021*sz)*st.sizeK;
+      var p2=proj(X2,Y2,Z2);
+      prims.push({t:'c',x:p2[0],y:p2[1],r:wr*S,col:col2,d:p2[2],i:i});
+      anchors.push({x:p2[0],y:p2[1],i:i});
+    }
+  } else if(st.mode==='C'){
+    var N=16,xe=extent(st.x),ye=extent(st.y);
+    var grid=[],cnt=[],ii,jj;
+    for(ii=0;ii<N*N;ii++){grid.push(0);cnt.push(0);}
+    for(i=0;i<RECS.length;i++){
+      var d3=RECS[i];
+      var gx=Math.min(N-1,Math.max(0,Math.floor((d3[st.x]-xe.mn)/((xe.mx-xe.mn)||1)*N)));
+      var gy=Math.min(N-1,Math.max(0,Math.floor((d3[st.y]-ye.mn)/((ye.mx-ye.mn)||1)*N)));
+      grid[gy*N+gx]+=d3[st.z];cnt[gy*N+gx]++;
+    }
+    for(ii=0;ii<grid.length;ii++){grid[ii]=cnt[ii]?grid[ii]/cnt[ii]:null;}
+    for(var it=0;it<20;it++){var filled=0;for(jj=0;jj<N;jj++)for(ii=0;ii<N;ii++){var id=jj*N+ii;if(grid[id]!==null)continue;var acc=0,cc=0;var nb=[[1,0],[-1,0],[0,1],[0,-1]];for(var n=0;n<4;n++){var mxx=ii+nb[n][0],myy=jj+nb[n][1];if(mxx<0||myy<0||mxx>=N||myy>=N)continue;var vv=grid[myy*N+mxx];if(vv!==null){acc+=vv;cc++;}}if(cc){grid[id]=acc/cc;filled++;}}if(!filled)break;}
+    var ze=extent(st.z),hOf=function(v){return 0.05+(v-ze.mn)/((ze.mx-ze.mn)||1)*0.9;};
+    var gxOf=function(ii){return -0.5+(ii+0.5)/N;},gyOf=function(jj){return -0.5+(jj+0.5)/N;};
+    for(jj=0;jj<N-1;jj++)for(ii=0;ii<N-1;ii++){
+      var a=grid[jj*N+ii],b=grid[jj*N+ii+1],c2=grid[(jj+1)*N+ii],d4=grid[(jj+1)*N+ii+1];
+      if(a===null||b===null||c2===null||d4===null)continue;
+      var ha=hOf(a),hb=hOf(b),hc=hOf(c2),hd=hOf(d4);
+      var xa=gxOf(ii),xb=gxOf(ii+1),ya=gyOf(jj),yb=gyOf(jj+1);
+      var swx=((hb+hd)/2-(ha+hc)/2)/0.0625,swy=((hc+hd)/2-(ha+hb)/2)/0.0625;
+      var nrm=[-swx*0.06,-swy*0.06,1],nl=Math.sqrt(nrm[0]*nrm[0]+nrm[1]*nrm[1]+1);nrm[0]/=nl;nrm[1]/=nl;nrm[2]/=nl;
+      var br=nrm[0]*-0.4+nrm[1]*-0.55+nrm[2]*0.73;br=Math.max(0.42,Math.min(1.18,0.55+br*0.62));
+      var hv=(ha+hb+hc+hd)/4,t=(hv-0.05)/0.9;
+      pushQuad(prims,[[xa,ya,ha],[xb,ya,hb],[xb,yb,hd],[xa,yb,hc]],rampRGB(t),br);
+    }
+  }
+  prims.sort(function(p,q){return q.d-p.d;});
+  for(i=0;i<prims.length;i++){
+    var pr=prims[i];
+    if(pr.t==='q'){
+      ctx.beginPath();ctx.moveTo(pr.pts[0][0],pr.pts[0][1]);ctx.lineTo(pr.pts[1][0],pr.pts[1][1]);ctx.lineTo(pr.pts[2][0],pr.pts[2][1]);ctx.lineTo(pr.pts[3][0],pr.pts[3][1]);ctx.closePath();
+      ctx.fillStyle=rgba([pr.col[0]*pr.sh,pr.col[1]*pr.sh,pr.col[2]*pr.sh],st.op);ctx.fill();
+      if(st.mode==='C'){ctx.strokeStyle=rgba([pr.col[0]*0.7,pr.col[1]*0.7,pr.col[2]*0.7],0.22);ctx.lineWidth=0.6;ctx.stroke();}
+    } else {
+      var g=ctx.createRadialGradient(pr.x-pr.r*0.33,pr.y-pr.r*0.36,pr.r*0.12,pr.x,pr.y,pr.r);
+      g.addColorStop(0,rgba([Math.min(255,pr.col[0]*1.42+42),Math.min(255,pr.col[1]*1.42+42),Math.min(255,pr.col[2]*1.42+42)],st.op));
+      g.addColorStop(0.62,rgba(pr.col,st.op));
+      g.addColorStop(1,rgba([pr.col[0]*0.62,pr.col[1]*0.62,pr.col[2]*0.62],st.op));
+      ctx.beginPath();ctx.arc(pr.x,pr.y,Math.max(1.4,pr.r),0,6.2832);ctx.fillStyle=g;ctx.fill();
+    }
+  }
+  drawFrame();
+  if(hoverI>=0)drawHover();
+}
+function drawFrame(){
+  var bk=st.mode==='A'?'rgba(20,16,12,.13)':'rgba(20,16,12,.11)';
+  ctx.save();ctx.strokeStyle=bk;ctx.lineWidth=1;ctx.setLineDash([3,4]);
+  var corners=[[-0.5,-0.5,0],[0.5,-0.5,0],[0.5,0.5,0],[-0.5,0.5,0],[-0.5,-0.5,0]];
+  ctx.beginPath();for(var i=0;i<corners.length;i++){var p=proj(corners[i][0],corners[i][1],corners[i][2]);if(i===0)ctx.moveTo(p[0],p[1]);else ctx.lineTo(p[0],p[1]);}ctx.stroke();ctx.restore();
+  ctx.fillStyle='rgba(20,16,12,.62)';ctx.font='600 11.5px ui-sans-serif,system-ui,sans-serif';
+  var lx=proj(0.60,0,0),ly=proj(0,0.60,0),lz=proj(0,0,1.06);
+  ctx.textAlign='center';ctx.textBaseline='middle';
+  ctx.fillText(fld(st.x).n,lx[0],lx[1]);ctx.fillText(fld(st.y).n,ly[0],ly[1]);
+  ctx.textAlign='left';ctx.fillText(fld(st.z).n+'（高度）',lz[0]+6,lz[1]);
+}
+function drawHover(){
+  var a=anchors[hoverI];if(!a)return;var d=RECS[a.i];
+  ctx.beginPath();ctx.arc(a.x,a.y,5.5,0,6.2832);
+  ctx.fillStyle='rgba(255,255,255,.9)';ctx.fill();
+  ctx.lineWidth=2;ctx.strokeStyle='#D97722';ctx.stroke();
+}
+function draw2D(){
+  var cf=colorField(),ex=extent(st.x),ey=extent(st.y),ec=extent(cf),es=extent(st.size);
+  var padL=58,padB=46,padT=24,padR=76,aw=W-padL-padR,ah=H-padT-padB;
+  ctx.strokeStyle='rgba(20,16,12,.10)';ctx.lineWidth=1;
+  for(var g=0;g<=4;g++){var yy=padT+ah*g/4;ctx.beginPath();ctx.moveTo(padL,yy);ctx.lineTo(padL+aw,yy);ctx.stroke();}
+  ctx.fillStyle='rgba(20,16,12,.55)';ctx.font='10.5px ui-sans-serif,system-ui,sans-serif';ctx.textAlign='right';ctx.textBaseline='middle';
+  for(var g2=0;g2<=4;g2++){ctx.fillText(fmt(ey.mx-(ey.mx-ey.mn)*g2/4),padL-8,padT+ah*g2/4);}
+  ctx.textAlign='center';ctx.textBaseline='top';
+  for(var g3=0;g3<=4;g3++){ctx.fillText(fmt(ex.mn+(ex.mx-ex.mn)*g3/4),padL+aw*g3/4,padT+ah+10);}
+  ctx.fillStyle='rgba(20,16,12,.7)';ctx.font='600 11.5px ui-sans-serif,system-ui,sans-serif';
+  ctx.fillText(fld(st.x).n+'（'+fld(st.x).u+'）',padL+aw/2,padT+ah+26);
+  ctx.save();ctx.translate(16,padT+ah/2);ctx.rotate(-Math.PI/2);ctx.textAlign='center';ctx.textBaseline='top';ctx.fillText(fld(st.y).n+'（'+fld(st.y).u+'）',0,0);ctx.restore();
+  for(var i=0;i<RECS.length;i++){
+    var d=RECS[i];
+    var px=padL+(d[st.x]-ex.mn)/((ex.mx-ex.mn)||1)*aw,py=padT+ah-(d[st.y]-ey.mn)/((ey.mx-ey.mn)||1)*ah;
+    var col=rampRGB((d[cf]-ec.mn)/((ec.mx-ec.mn)||1));
+    var t=(d[st.size]-es.mn)/((es.mx-es.mn)||1),r=(3.4+t*9.5)*st.sizeK;
+    var g4=ctx.createRadialGradient(px-r*0.3,py-r*0.3,r*0.15,px,py,r);
+    g4.addColorStop(0,rgba([Math.min(255,col[0]*1.4+40),Math.min(255,col[1]*1.4+40),Math.min(255,col[2]*1.4+40)],st.op));
+    g4.addColorStop(1,rgba([col[0]*0.72,col[1]*0.72,col[2]*0.72],st.op));
+    ctx.beginPath();ctx.arc(px,py,Math.max(1.6,r),0,6.2832);ctx.fillStyle=g4;ctx.fill();
+    anchors.push({x:px,y:py,i:i});
+  }
+}
+function renderLegend(){
+  var cf=(st.mode==='C'&&!st.twod)?st.z:colorField();var e=extent(cf);
+  var cols=(st.mode==='C'&&!st.twod)?RAMPS[st.ramp].c.slice():RAMPS[st.ramp].c.slice();
+  if(st.inv)cols=cols.reverse();
+  document.getElementById('legbar').style.background='linear-gradient(to top,'+cols.join(',')+')';
+  document.getElementById('legHi').textContent=fmt(e.mx)+' '+fld(cf).u;
+  document.getElementById('legLo').textContent=fmt(e.mn)+' '+fld(cf).u;
+}
+var HINTS={
+ A:'X / Y 铺在水平面，Z 决定每根立柱的“海拔”高度，颜色可独立再绑一个字段。看落差、分层、谁明显高出或掉队最快。',
+ B:'三个维度共同决定球体的空间位置，颜色承担第四维，球径可绑第五字段（当前=样本量）。信息密度最高，代价是点会遮挡，需旋转去找。',
+ C:'X / Y 切成 16×16 网格、每格取 Z 的均值生成曲面，颜色跟随高度；空格用邻域均值插值补全。看整体格局与覆盖盲区最直观。'
+};
+function renderStats(){
+  var cf=colorField(),zr=extent(st.z),ce=extent(cf);
+  document.getElementById('stats').innerHTML='<span>数据点 <b>'+RECS.length+'</b></span><span>Z：'+fld(st.z).n+' <b>'+fmt(zr.mn)+' ~ '+fmt(zr.mx)+' '+fld(st.z).u+'</b></span><span>色带 <b>'+RAMPS[st.ramp].n+(st.inv?'（反转）':'')+'</b></span><span>色域 <b>'+fmt(ce.mn)+' ~ '+fmt(ce.mx)+'</b></span><span>渲染 <b>'+(st.twod?'2D Canvas':'3D 自研投影')+'</b></span>';
+}
+function renderHint(){
+  var t=st.twod?'2D 对照：X / Y 两维散点，颜色与大小作附加通道，用于反查 3D 的遮挡关系。':HINTS[st.mode];
+  document.getElementById('hint').textContent=t;
+}
+function refresh(){
+  render();renderLegend();renderStats();renderHint();
+  var bs=document.querySelectorAll('.pill[data-mode]');
+  for(var i=0;i<bs.length;i++)bs[i].classList.toggle('on',bs[i].getAttribute('data-mode')===st.mode&&!st.twod);
+  var gs=document.querySelectorAll('.pill[data-grad]');
+  for(var j=0;j<gs.length;j++)gs[j].classList.toggle('on',gs[j].getAttribute('data-grad')===st.grad);
+  document.getElementById('btnInv').classList.toggle('on',st.inv);
+  var b2=document.getElementById('btn2D');b2.textContent=st.twod?'返回 3D':'2D 对照';b2.classList.toggle('on',st.twod);
+  document.getElementById('selC').disabled=(st.mode==='C'&&!st.twod);
+  document.getElementById('note').textContent=st.twod?'滚轮缩放无效':'拖动旋转 · 滚轮缩放';
+}
+function bind(){
+  var selX=document.getElementById('selX'),selY=document.getElementById('selY'),selZ=document.getElementById('selZ'),selC=document.getElementById('selC');
+  var opts=FIELDS.map(function(f){return '<option value="'+f.k+'">'+f.n+'</option>';}).join('');
+  selX.innerHTML=opts;selY.innerHTML=opts;selZ.innerHTML=opts;
+  selC.innerHTML='<option value="__z">跟随 Z 轴</option>'+opts;
+  selX.value=st.x;selY.value=st.y;selZ.value=st.z;selC.value=st.color;
+  selX.onchange=function(){st.x=selX.value;refresh();};
+  selY.onchange=function(){st.y=selY.value;refresh();};
+  selZ.onchange=function(){st.z=selZ.value;refresh();};
+  selC.onchange=function(){st.color=selC.value;refresh();};
+  var rw=document.getElementById('ramps');
+  RAMPS.forEach(function(r,i){
+    var b=document.createElement('button');b.className='ramp'+(i===0?' on':'');b.setAttribute('data-ramp',String(i));
+    b.innerHTML='<span class="sw" style="background:linear-gradient(90deg,'+r.c.join(',')+')"></span>'+r.n;
+    b.onclick=function(){st.ramp=i;var all=document.querySelectorAll('.ramp');for(var k=0;k<all.length;k++)all[k].classList.toggle('on',Number(all[k].getAttribute('data-ramp'))===i);refresh();};
+    rw.appendChild(b);
+  });
+  var ms=document.querySelectorAll('.pill[data-mode]');
+  for(var i=0;i<ms.length;i++)(function(el){el.onclick=function(){st.mode=el.getAttribute('data-mode');st.twod=false;refresh();};})(ms[i]);
+  var gs=document.querySelectorAll('.pill[data-grad]');
+  for(var j=0;j<gs.length;j++)(function(el){el.onclick=function(){st.grad=el.getAttribute('data-grad');refresh();};})(gs[j]);
+  document.getElementById('btnInv').onclick=function(){st.inv=!st.inv;refresh();};
+  document.getElementById('btn2D').onclick=function(){st.twod=!st.twod;refresh();};
+  var vs=document.querySelectorAll('.pill[data-view]');
+  for(var m=0;m<vs.length;m++)(function(el){el.onclick=function(){
+    var v=el.getAttribute('data-view');
+    if(v==='reset'){st.alpha=28;st.beta=-40;st.zoom=1;}
+    if(v==='top'){st.alpha=80;st.beta=-90;}
+    if(v==='front'){st.alpha=4;st.beta=-6;}
+    document.getElementById('rAlt').value=String(Math.round(st.alpha));document.getElementById('vAlt').textContent=Math.round(st.alpha)+'°';
+    refresh();
+  };})(vs[m]);
+  document.getElementById('rSize').oninput=function(e){st.sizeK=Number(e.target.value)/100;document.getElementById('vSize').textContent=e.target.value+'%';refresh();};
+  document.getElementById('rOp').oninput=function(e){st.op=Number(e.target.value)/100;document.getElementById('vOp').textContent=e.target.value+'%';refresh();};
+  document.getElementById('rAlt').oninput=function(e){st.alpha=Number(e.target.value);document.getElementById('vAlt').textContent=e.target.value+'°';refresh();};
+  var drag=false,px=0,py=0,moved=false;
+  stage.addEventListener('mousedown',function(e){drag=true;moved=false;px=e.clientX;py=e.clientY;stage.classList.add('drag');});
+  window.addEventListener('mousemove',function(e){
+    if(drag){var dx=e.clientX-px,dy=e.clientY-py;if(Math.abs(dx)+Math.abs(dy)>2)moved=true;px=e.clientX;py=e.clientY;st.beta+=dx*0.5;st.alpha=Math.max(2,Math.min(85,st.alpha+dy*0.42));document.getElementById('rAlt').value=String(Math.round(st.alpha));document.getElementById('vAlt').textContent=Math.round(st.alpha)+'°';render();return;}
+    if(st.twod)return;
+    var r=stage.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top,best=-1,bd=196;
+    for(var k=0;k<anchors.length;k++){var a=anchors[k],dd=(a.x-mx)*(a.x-mx)+(a.y-my)*(a.y-my);if(dd<bd){bd=dd;best=k;}}
+    if(best!==hoverI){hoverI=best;if(best>=0){var d=RECS[anchors[best].i];tip.innerHTML='<b>'+d.code+'</b> · '+d.seg+'<br>'+fld(st.x).n+'：'+fmt(d[st.x])+fld(st.x).u+'<br>'+fld(st.y).n+'：'+fmt(d[st.y])+fld(st.y).u+'<br>'+fld(st.z).n+'：'+fmt(d[st.z])+fld(st.z).u+'（高度）<br>色 '+fld(colorField()).n+'：'+fmt(d[colorField()])+fld(colorField()).u;tip.style.opacity='1';}
+      else tip.style.opacity='0';
+      render();}
+    if(hoverI>=0){var a2=anchors[hoverI];tip.style.left=Math.min(W-160,a2.x+14)+'px';tip.style.top=Math.max(4,a2.y-56)+'px';}
+  });
+  window.addEventListener('mouseup',function(){drag=false;stage.classList.remove('drag');});
+  stage.addEventListener('wheel',function(e){e.preventDefault();st.zoom=Math.max(0.5,Math.min(2.6,st.zoom*(e.deltaY>0?0.92:1.08)));render();},{passive:false});
+  stage.addEventListener('mouseleave',function(){hoverI=-1;tip.style.opacity='0';render();});
+  window.addEventListener('resize',function(){fit();refresh();});
+}
+fit();bind();refresh();
+})();
+</script>
+</body>
+</html>
