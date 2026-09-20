@@ -1,0 +1,113 @@
+{
+ "channel": "懂车帝参数页（Tabbit 用户会话，__NEXT_DATA__.props.pageProps.rawData）",
+ "base_input": "main@244af4c+ (底表 5392x38)",
+ "reviewed": [
+  {
+   "kw": "欧拉黑猫",
+   "sid": "2911",
+   "series": "欧拉黑猫",
+   "ok": true
+  },
+  {
+   "kw": "哪吒N01",
+   "sid": "2964",
+   "series": "哪吒N01",
+   "ok": true
+  },
+  {
+   "kw": "宏光MINIEV",
+   "sid": "4499",
+   "series": "五菱宏光MINIEV",
+   "ok": true
+  },
+  {
+   "kw": "北汽EU5",
+   "sid": "4074",
+   "series": "北京EU5",
+   "ok": true
+  },
+  {
+   "kw": "Polestar 2",
+   "sid": "3166",
+   "series": "Polestar 2",
+   "ok": true
+  },
+  {
+   "kw": "菱智M5EV",
+   "sid": "4542",
+   "series": "远志M1",
+   "ok": false,
+   "reason": "品牌不符(远志=吉利商用车)，拒绝"
+  },
+  {
+   "kw": "比亚迪唐",
+   "sid": "2869",
+   "series": "唐",
+   "ok": true
+  },
+  {
+   "kw": "HiPhi X",
+   "sid": "3975",
+   "series": "高合HiPhi X",
+   "ok": true
+  },
+  {
+   "kw": "AION S",
+   "sid": "3101",
+   "series": "AION S",
+   "ok": true
+  },
+  {
+   "kw": "AION V",
+   "sid": "4426",
+   "series": "AION V",
+   "ok": true
+  },
+  {
+   "kw": "哪吒U",
+   "sid": "3275",
+   "series": "哪吒U",
+   "ok": true
+  },
+  {
+   "kw": "比亚迪e3",
+   "sid": "3101",
+   "series": "AION S",
+   "ok": false,
+   "reason": "搜索未中，误回AION S，拒绝"
+  },
+  {
+   "kw": "比亚迪e2",
+   "sid": "3455",
+   "series": "比亚迪e2",
+   "ok": true
+  },
+  {
+   "kw": "AION Y Plus",
+   "sid": "4814",
+   "series": "AION Y",
+   "ok": true,
+   "note": "车系级匹配，car_name 含 Plus"
+  },
+  {
+   "kw": "欧拉好猫",
+   "sid": "4635",
+   "series": "欧拉好猫",
+   "ok": true
+  }
+ ],
+ "field_map": {
+  "车长(mm)": "length",
+  "轴距(mm)": "wheelbase",
+  "整备质量(kg)": "curb_weight",
+  "纯电续航里程(km)": "cltc_recharge_mileage",
+  "百公里电耗(kWh/100km)": "power_consumption",
+  "电池容量(kWh)": "battery_capacity",
+  "电池类型": "battery_type",
+  "电池能量密度(Wh/kg)": "battery_energy_density",
+  "电机总功率/扭矩": "total_electric_power+total_electric_torque",
+  "前电机功率/扭矩": "front_electric_max_power+front_electric_max_torque",
+  "后电机功率/扭矩": "rear_electric_max_power+rear_electric_max_torque"
+ },
+ "note": "DCD 无电芯供应商标准列——该缺口(3706)仍需公示详情页通道；首轮首击命中率 13/15，apply 脚本必须带品牌校验"
+}
