@@ -2444,8 +2444,8 @@ function renderCustom3D(ch, kind, bev, phev, m, avg, rng, fv){
     return true;
   }catch(e){ return false; }
 }
-/* 三维曲面（方案C surface3D 梯度地形）：X/Y 网格聚合（均值），空洞=覆盖盲区；
-   轴反向经聚合坐标镜像实现；色带=当前风格梯度（支持区间选取置灰） */
+/* 三维曲面（方案C surface 梯度地形）：BEV/PHEV-EREV 各聚合一张独立曲面（半透明叠加对比，
+   图例点按可各自关闭）；轴反向经聚合坐标镜像实现；色带=当前风格梯度（支持区间选取置灰） */
 function renderSurf(ch, bev, phev, m, avg, rng, fv){
   const S=CD_STYLES[CD_STATE.style] || CD_STYLES.A;
   const xN=m.xN, yN=m.yN, zN=m.zN;
@@ -2456,25 +2456,35 @@ function renderSurf(ch, bev, phev, m, avg, rng, fv){
   const invX=CD_STATE.invX, invY=CD_STATE.invY;
   const NX=40, NY=30;
   const cw=(exX[1]-exX[0])/NX || 1, chh=(exY[1]-exY[0])/NY || 1;
-  const cells=new Map();
-  for(const p of all){
-    let x=p.value[0], y=p.value[1];
-    if(invX) x=exX[0]+exX[1]-x;
-    if(invY) y=exY[0]+exY[1]-y;
-    const xi=Math.min(NX-1,Math.max(0,Math.floor((x-exX[0])/cw)));
-    const yi=Math.min(NY-1,Math.max(0,Math.floor((y-exY[0])/chh)));
-    const k=xi*NY+yi; const c=cells.get(k)||{s:0,n:0}; c.s+=p.value[2]; c.n++; cells.set(k,c);
-  }
-  const data=[]; let dmin=Infinity, dmax=-Infinity;
-  for(const [k,c] of cells){
-    const xi=Math.floor(k/NY), yi=k%NY;
-    const cx=+(exX[0]+(xi+.5)*cw).toFixed(1), cy=+(exY[0]+(yi+.5)*chh).toFixed(1);
-    const v=+(c.s/c.n).toFixed(1);
-    if(v<dmin)dmin=v; if(v>dmax)dmax=v;
-    data.push({value:[cx,cy,v], n:c.n});
-  }
-  let core=`<b>三维曲面（方案C · 聚合）</b>：X <em>${xN}</em> × Y <em>${yN}</em> 网格聚合（${NX}×${NY} 格）· 曲面高度=格内 <em>${zN}</em> 均值 · 颜色=高度梯度 · 风格 <em>${S.name}</em> · 覆盖 <em>${fmt(data.length)}</em> 格 / <em>${fmt(all.length)}</em> 款`;
-  let detail=`聚合口径=<b>均值</b>（口径不同结论不同；悬浮可见各格车型数）；<b>曲面空洞=覆盖盲区</b>（该参数组合暂无车型）；拖动右侧色带手柄选取均值区间，区间外曲面自动置灰；牺牲个体明细换取整体格局，逐车型读数请切「方案A / 方案B」。`;
+  /* 分系列网格聚合（均值），轴反向在聚合坐标上镜像 */
+  const agg=(ps)=>{
+    const cells=new Map();
+    for(const p of ps){
+      let x=p.value[0], y=p.value[1];
+      if(invX) x=exX[0]+exX[1]-x;
+      if(invY) y=exY[0]+exY[1]-y;
+      const xi=Math.min(NX-1,Math.max(0,Math.floor((x-exX[0])/cw)));
+      const yi=Math.min(NY-1,Math.max(0,Math.floor((y-exY[0])/chh)));
+      const k=xi*NY+yi; const c=cells.get(k)||{s:0,n:0}; c.s+=p.value[2]; c.n++; cells.set(k,c);
+    }
+    const data=[];
+    for(const [k,c] of cells){
+      const xi=Math.floor(k/NY), yi=k%NY;
+      const cx=+(exX[0]+(xi+.5)*cw).toFixed(1), cy=+(exY[0]+(yi+.5)*chh).toFixed(1);
+      data.push({value:[cx,cy,+(c.s/c.n).toFixed(1)], n:c.n});
+    }
+    return data;
+  };
+  const dBev=agg(bev), dPhev=agg(phev);
+  const brB=CD_STATE.invZ?[...S.bevRamp].reverse():S.bevRamp;
+  const brP=CD_STATE.invZ?[...S.phevRamp].reverse():S.phevRamp;
+  const mkSurf=(nm,ps,base)=>({name:nm,type:'surface',data:ps,shading:'color',
+    wireframe:{show:false},
+    itemStyle:{color:base,opacity:Math.min(.9,S.opacity*.9)},
+    emphasis:{itemStyle:{opacity:1}}});
+  let core=`<b>三维曲面（方案C · 聚合）</b>：X <em>${xN}</em> × Y <em>${yN}</em> 网格聚合（${NX}×${NY} 格）· 曲面高度=格内 <em>${zN}</em> 均值 · 颜色=高度梯度 · 风格 <em>${S.name}</em>`;
+  core += ` · 覆盖 BEV <em>${fmt(dBev.length)}</em> 格 / PHEV-EREV <em>${fmt(dPhev.length)}</em> 格（共 <em>${fmt(all.length)}</em> 款）`;
+  let detail=`BEV 与 PHEV/EREV 为<b>两张独立曲面</b>半透明叠加对比，<b>点图例可各自关闭</b>；聚合口径=<b>均值</b>（悬浮可见各格车型数）；曲面空洞=覆盖盲区（该参数组合暂无车型）；拖动右侧色带手柄选取均值区间，区间外曲面自动置灰；逐车型读数请切「方案A / 方案B」。`;
   const html=cdInsightWrap(core,detail);
   setInsight('chCustom', html);
   const panelTx=document.getElementById('insightCustomTx');
@@ -2489,26 +2499,29 @@ function renderSurf(ch, bev, phev, m, avg, rng, fv){
   ch.setOption({
     tooltip:Object.assign({trigger:'item',
       formatter:p=>{ const v=p.value, n=p.data.n!=null?p.data.n:'–';
-        return `${xN} 格心：<b>${fv(v[0])} ${xuOf(xN)}</b><br>${yN} 格心：<b>${fv(v[1])} ${xuOf(yN)}</b><br>`+
+        return `${p.seriesName} · ${xN} 格心：<b>${fv(v[0])} ${xuOf(xN)}</b><br>${yN} 格心：<b>${fv(v[1])} ${xuOf(yN)}</b><br>`+
           `${zN} 均值：<b>${fv(v[2])} ${xuOf(zN)}</b> · 车型数 <b>${n}</b>`; }},TT),
-    legend:LG({data:['Z 均值曲面']}),
-    visualMap:{type:'continuous',min:dmin,max:dmax,calculable:true,show:true,
-      orient:'vertical',right:8,top:'middle',itemWidth:13,itemHeight:110,hoverLink:true,
-      text:[`${zN} ${fv(dmax)}`,fv(dmin)],textStyle:{color:S.label,fontSize:10},
-      inRange:{color:CD_STATE.invZ?[...S.bevRamp].reverse():S.bevRamp},
-      outOfRange:{color:'rgba(132,140,152,.12)'}},
+    legend:LG({data:['BEV','PHEV/EREV']}),
+    visualMap:[
+      {type:'continuous',seriesIndex:0,dimension:2,min:m.zmin,max:m.zmax,calculable:true,show:true,
+       orient:'vertical',right:8,top:'middle',itemWidth:13,itemHeight:110,hoverLink:true,
+       text:[`BEV ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:S.label,fontSize:10},
+       inRange:{color:brB}, outOfRange:{color:'rgba(132,140,152,.12)'}},
+      {type:'continuous',seriesIndex:1,dimension:2,min:m.zmin,max:m.zmax,calculable:true,show:true,
+       orient:'vertical',right:66,top:'middle',itemWidth:13,itemHeight:110,hoverLink:true,
+       text:[`PHEV/EREV ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:S.label,fontSize:10},
+       inRange:{color:brP}, outOfRange:{color:'rgba(132,140,152,.12)'}}
+    ],
     grid3D:g3,
     xAxis3D:cdAX3(S,xN,exX,false,invX),
     yAxis3D:cdAX3(S,yN,exY,false,invY),
-    zAxis3D:cdAX3(S,zN,[0,dmax*1.1||1],true,false),
-    series:[{name:'Z 均值曲面',type:'surface',data,shading:'color',
-      wireframe:{show:false},
-      itemStyle:{opacity:Math.min(1,S.opacity+.1)},
-      emphasis:{itemStyle:{opacity:1}}}]
+    zAxis3D:cdAX3(S,zN,[0,(m.zmax*1.06)||1],true,false),
+    series:[mkSurf('BEV',dBev,S.bevBase), mkSurf('PHEV/EREV',dPhev,S.phevBase)]
   }, true);
   if(ch.__cd3dFirst){ ch.resize(); ch.__cd3dFirst=false; }
   TREND_REGS['chCustom']={};
 }
+
 /* 二维热力：X/Y 网格聚合，颜色=格内 Z 均值；色带同样支持区间选取高亮 */
 function renderHeat(ch, bev, phev, m, avg, rng, fv){
   const S=CD_STYLES[CD_STATE.style] || CD_STYLES.A;
