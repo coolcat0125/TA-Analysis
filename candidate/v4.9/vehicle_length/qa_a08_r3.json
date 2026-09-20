@@ -1,0 +1,50 @@
+{
+ "checks": [
+  {
+   "check": "ledger=55 且 A13/B41/C1",
+   "pass": true,
+   "detail": "{'B': 41, 'A': 13, 'C': 1}"
+  },
+  {
+   "check": "candidate=55 全 candidate 态",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "findings audit_scope 77/55/22",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "结论行口径已修正",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "77⊂103 已记录",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "r2 溯源在案",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "A2_A5 候选=23 条契约项",
+   "pass": true,
+   "detail": "actual=23"
+  },
+  {
+   "check": "A4 BYD380 不在候选（unknown 维持）",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "canonical 零改动",
+   "pass": true,
+   "detail": "底表不在本次变更集"
+  }
+ ],
+ "pass": true
+}

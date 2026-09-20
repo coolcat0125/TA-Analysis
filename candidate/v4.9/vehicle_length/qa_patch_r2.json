@@ -1,0 +1,88 @@
+{
+ "title": "D · 车长污染修复包 r2 重建验证（基于 main@f7d4064）",
+ "verified_at": "2026-09-19T23:05:00+0800",
+ "input_head": "f7d4064",
+ "branch": "agent/a08-evidence-audit-r2",
+ "workbook_sha256_16": "766872d2d5c3a3c4",
+ "patch_file": "candidate/v4.9/vehicle_length/patch_exact_20260918.csv（继承自 Arena T4 9efe72a）",
+ "anchor_check": {
+  "expected": 76,
+  "matched": 76,
+  "mismatch": 0,
+  "note": "零漂移——76 锚点在 f7d4064 全部一致（与 Arena 00:20 值守复验结论一致）"
+ },
+ "dryrun_preview": "输出至 /tmp/patched_preview_f7d4064.xlsx（浅红底纹，未动 canonical）",
+ "patched_copy_verification": {
+  "verify": {
+   "CRITICAL": 0,
+   "WARN": 181,
+   "note": "与 f7d4064 基线（181）完全一致——补丁零新增告警；W5 成对评估无瞬态"
+  },
+  "audit_strict": "PASS"
+ },
+ "evidence_checklist_57": [
+  {
+   "series": "宏光MINIEV",
+   "rows": 11,
+   "range": "3061/3064/3268 按代际分配",
+   "need": "代际/年款-型号映射外部取证"
+  },
+  {
+   "series": "糯玉米",
+   "rows": 10,
+   "range": "3270~3293",
+   "need": "逐型号定值"
+  },
+  {
+   "series": "凌宝BOX",
+   "rows": 12,
+   "range": "3460~3584",
+   "need": "2021早期3460 vs 2022后3584 按批次定值"
+  },
+  {
+   "series": "Airev",
+   "rows": 8,
+   "range": "2599~2974",
+   "need": "逐型号定值"
+  },
+  {
+   "series": "熊猫mini",
+   "rows": 6,
+   "range": "3065~3150",
+   "need": "定值（轴距证据已就绪）"
+  },
+  {
+   "series": "奔腾小马",
+   "rows": 5,
+   "range": "3000~3350",
+   "need": "三门3000/五门3350 按版本定值"
+  },
+  {
+   "series": "EX1/EQ",
+   "rows": 1,
+   "range": null,
+   "need": "待轴距证据（W5 成对铁律）"
+  },
+  {
+   "series": "S11V",
+   "rows": 1,
+   "range": null,
+   "need": "unknown/conflicted 待解"
+  },
+  {
+   "series": "YGM",
+   "rows": 2,
+   "range": null,
+   "need": "unknown/conflicted 待解"
+  },
+  {
+   "series": "EV2",
+   "rows": 1,
+   "range": null,
+   "need": "unknown/conflicted 待解"
+  }
+ ],
+ "checklist_total": 57,
+ "apply_gate": "未申请 apply——按任务 D 约束仅 dry-run；--apply 须 Orchestrator/人工批准",
+ "population_note": "污染窗口（整备≤1100 & 车长≥3800）当前存量 80 行（较 09-17 审计时 77 增 3，二次复发仍在活动）；补丁 76 格覆盖 47 行后窗口将显著收敛，57 行清册为余量"
+}
