@@ -698,13 +698,12 @@ select:hover,select:focus{border-color:var(--clay)}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 
 /* ---------- Tabs ---------- */
-.tabs{display:flex;gap:4px;border-bottom:1px solid var(--border);margin-bottom:24px;flex-wrap:wrap}
-.tab{background:transparent;border:none;color:var(--dim);font-size:14.5px;padding:11px 20px;cursor:pointer;
-  position:relative;transition:color .18s;font-family:var(--sans);letter-spacing:.5px}
+.tabs{display:flex;gap:2px;border-bottom:1px solid var(--border);margin-bottom:24px;flex-wrap:nowrap;overflow-x:auto}
+.tab{background:transparent;border:none;color:var(--dim);font-size:16.5px;padding:12px 22px;cursor:pointer;
+  position:relative;transition:color .18s;font-family:var(--sans);letter-spacing:.5px;white-space:nowrap;flex:0 0 auto}
 .tab:hover{color:var(--text)}
 .tab.on{color:var(--clay);font-weight:600}
 .tab.on::after{content:'';position:absolute;left:14px;right:14px;bottom:-1px;height:2px;background:var(--clay)}
-.tab i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--faint);margin-left:5px}
 
 /* ---------- Panels & cards ---------- */
 .panel{display:none}
@@ -926,14 +925,14 @@ body.show-gaps .card.gap-hidden-note{display:none}
 <div class="kpis" id="kpis"></div>
 
 <nav class="tabs" id="tabs">
-  <button class="tab on" data-p="p1">总览<i>Overview</i></button>
-  <button class="tab" data-p="p2">电机系统<i>Motor</i></button>
-  <button class="tab" data-p="p3">发动机系统<i>Engine</i></button>
-  <button class="tab" data-p="p4">电池系统<i>Battery</i></button>
-  <button class="tab" data-p="pDist">分布格局<i>Distribution</i></button>
-<button class="tab" data-p="pCustom">自定义分布<i>Custom</i></button>
-  <button class="tab" data-p="p5">企业与品牌<i>Enterprise / Brand</i></button>
-  <button class="tab" data-p="p6">数据管理<i>Export / Import</i></button>
+  <button class="tab on" data-p="p1">总览</button>
+  <button class="tab" data-p="p2">电机系统</button>
+  <button class="tab" data-p="p3">发动机系统</button>
+  <button class="tab" data-p="p4">电池系统</button>
+  <button class="tab" data-p="pDist">分布格局</button>
+  <button class="tab" data-p="pCustom">自定义分布</button>
+  <button class="tab" data-p="p5">企业与品牌</button>
+  <button class="tab" data-p="p6">数据管理</button>
 </nav>
 
 <!-- ============ Panel 1 总览 ============ -->
@@ -999,7 +998,7 @@ body.show-gaps .card.gap-hidden-note{display:none}
     <div class="card c-s12">
       <div class="c-h">
         <div class="c-t">自定义分布</div>
-        <div class="c-s">Custom Distribution · 自由选择纵横维度 · 视图：二维泡泡 / 三维柱状 / 二维热力 · 风格 8 款 · 全屏</div>
+        <div class="c-s">Custom Distribution · 自由选择纵横维度 · 视图：二维泡泡 / 三维柱状 / 三维泡泡 / 二维热力 · 风格 8 款 · 全屏</div>
       </div>
       <div class="ci" id="ci_chCustom"></div>
       <div class="cd-bar">
@@ -1010,11 +1009,10 @@ body.show-gaps .card.gap-hidden-note{display:none}
         <span class="f-label">泡泡直径 Z</span>
         <select id="cdZ"></select>
         <span class="f-label">视图</span>
-        <select id="cdView" title="展示模式：二维泡泡 · 三维柱状（方案A 海拔）· 三维泡泡（方案B 梯度）· 三维曲面（方案C 聚合）· 二维热力（三维类需先选定 Z 字段）">
+        <select id="cdView" title="展示模式：二维泡泡 · 三维柱状（方案A 海拔）· 三维泡泡（方案B 梯度）· 二维热力（三维类需先选定 Z 字段）">
           <option value="d2">二维散点/泡泡</option>
           <option value="bar">三维柱状 · 海拔（A）</option>
           <option value="bub">三维泡泡 · 梯度（B）</option>
-          <option value="surf">三维曲面 · 聚合（C）</option>
           <option value="heat">二维热力</option>
         </select>
         <span id="cdStyleWrap" style="display:contents">
@@ -2271,7 +2269,7 @@ function scheduleCdRender(){
   __cdRaf = requestAnimationFrame(()=>{ __cdRaf=null; renderCustom(filtered()); });
 }
 function cdResetZoom(silent){
-  if(['bar','bub','surf'].indexOf(CD_STATE.view)>=0){ cdSetView(CD_VIEW); return; }   // 三维模式下双击 = 视角复位
+  if(['bar','bub'].indexOf(CD_STATE.view)>=0){ cdSetView(CD_VIEW); return; }   // 三维模式下双击 = 视角复位
   if(CD_STATE.view==='heat') return;
   CD_ZOOM={xStart:0,xEnd:100,yStart:0,yEnd:100};
   const ch=chart('chCustom');
@@ -2318,7 +2316,7 @@ function cdCaptureCam(){
 function cdSetView(v){
   CD_CAM = {alpha:v.alpha, beta:v.beta, distance:v.distance||CD_VIEW.distance};
   const ch=chart('chCustom');
-  if(!ch || ['bar','bub','surf'].indexOf(ch.__cdKind)<0) return;
+  if(!ch || ['bar','bub'].indexOf(ch.__cdKind)<0) return;
   try{
     ch.setOption({grid3D:{viewControl:Object.assign({target:[0,0,0]}, CD_CAM)}}, false);
     const g3=(ch._componentsViews||[]).find(x=>x && x.type==='grid3D');
@@ -2444,84 +2442,6 @@ function renderCustom3D(ch, kind, bev, phev, m, avg, rng, fv){
     return true;
   }catch(e){ return false; }
 }
-/* 三维曲面（方案C surface 梯度地形）：BEV/PHEV-EREV 各聚合一张独立曲面（半透明叠加对比，
-   图例点按可各自关闭）；轴反向经聚合坐标镜像实现；色带=当前风格梯度（支持区间选取置灰） */
-function renderSurf(ch, bev, phev, m, avg, rng, fv){
-  const S=CD_STYLES[CD_STATE.style] || CD_STYLES.A;
-  const xN=m.xN, yN=m.yN, zN=m.zN;
-  const el=document.getElementById('chCustom');
-  if(el) el.style.background=S.bg;
-  const all=bev.concat(phev);
-  const exX=cdPadded(cdExtent(all,0)), exY=cdPadded(cdExtent(all,1));
-  const invX=CD_STATE.invX, invY=CD_STATE.invY;
-  const NX=40, NY=30;
-  const cw=(exX[1]-exX[0])/NX || 1, chh=(exY[1]-exY[0])/NY || 1;
-  /* 分系列网格聚合（均值），轴反向在聚合坐标上镜像 */
-  const agg=(ps)=>{
-    const cells=new Map();
-    for(const p of ps){
-      let x=p.value[0], y=p.value[1];
-      if(invX) x=exX[0]+exX[1]-x;
-      if(invY) y=exY[0]+exY[1]-y;
-      const xi=Math.min(NX-1,Math.max(0,Math.floor((x-exX[0])/cw)));
-      const yi=Math.min(NY-1,Math.max(0,Math.floor((y-exY[0])/chh)));
-      const k=xi*NY+yi; const c=cells.get(k)||{s:0,n:0}; c.s+=p.value[2]; c.n++; cells.set(k,c);
-    }
-    const data=[];
-    for(const [k,c] of cells){
-      const xi=Math.floor(k/NY), yi=k%NY;
-      const cx=+(exX[0]+(xi+.5)*cw).toFixed(1), cy=+(exY[0]+(yi+.5)*chh).toFixed(1);
-      data.push({value:[cx,cy,+(c.s/c.n).toFixed(1)], n:c.n});
-    }
-    return data;
-  };
-  const dBev=agg(bev), dPhev=agg(phev);
-  const brB=CD_STATE.invZ?[...S.bevRamp].reverse():S.bevRamp;
-  const brP=CD_STATE.invZ?[...S.phevRamp].reverse():S.phevRamp;
-  const mkSurf=(nm,ps,base)=>({name:nm,type:'surface',data:ps,shading:'color',
-    wireframe:{show:false},
-    itemStyle:{color:base,opacity:Math.min(.9,S.opacity*.9)},
-    emphasis:{itemStyle:{opacity:1}}});
-  let core=`<b>三维曲面（方案C · 聚合）</b>：X <em>${xN}</em> × Y <em>${yN}</em> 网格聚合（${NX}×${NY} 格）· 曲面高度=格内 <em>${zN}</em> 均值 · 颜色=高度梯度 · 风格 <em>${S.name}</em>`;
-  core += ` · 覆盖 BEV <em>${fmt(dBev.length)}</em> 格 / PHEV-EREV <em>${fmt(dPhev.length)}</em> 格（共 <em>${fmt(all.length)}</em> 款）`;
-  let detail=`BEV 与 PHEV/EREV 为<b>两张独立曲面</b>半透明叠加对比，<b>点图例可各自关闭</b>；聚合口径=<b>均值</b>（悬浮可见各格车型数）；曲面空洞=覆盖盲区（该参数组合暂无车型）；拖动右侧色带手柄选取均值区间，区间外曲面自动置灰；逐车型读数请切「方案A / 方案B」。`;
-  const html=cdInsightWrap(core,detail);
-  setInsight('chCustom', html);
-  const panelTx=document.getElementById('insightCustomTx');
-  if(panelTx) panelTx.innerHTML = html;
-  const g3={boxWidth:CD_BOX.w, boxDepth:CD_BOX.d, boxHeight:CD_BOX.h,
-    light:{main:{intensity:S.main,shadow:false},ambient:{intensity:S.ambient}},
-    axisLine:{lineStyle:{color:S.axisLine}},
-    splitLine:{lineStyle:{color:S.split}},
-    axisPointer:{show:false}};
-  if(ch.__cd3dFirst) g3.viewControl=Object.assign({}, CD_CAM||CD_VIEW,
-    {target:[0,0,0],minDistance:60,maxDistance:1000,rotateSensitivity:1,zoomSensitivity:1,panSensitivity:1,autoRotate:false});
-  ch.setOption({
-    tooltip:Object.assign({trigger:'item',
-      formatter:p=>{ const v=p.value, n=p.data.n!=null?p.data.n:'–';
-        return `${p.seriesName} · ${xN} 格心：<b>${fv(v[0])} ${xuOf(xN)}</b><br>${yN} 格心：<b>${fv(v[1])} ${xuOf(yN)}</b><br>`+
-          `${zN} 均值：<b>${fv(v[2])} ${xuOf(zN)}</b> · 车型数 <b>${n}</b>`; }},TT),
-    legend:LG({data:['BEV','PHEV/EREV']}),
-    visualMap:[
-      {type:'continuous',seriesIndex:0,dimension:2,min:m.zmin,max:m.zmax,calculable:true,show:true,
-       orient:'vertical',right:8,top:'middle',itemWidth:13,itemHeight:110,hoverLink:true,
-       text:[`BEV ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:S.label,fontSize:10},
-       inRange:{color:brB}, outOfRange:{color:'rgba(132,140,152,.12)'}},
-      {type:'continuous',seriesIndex:1,dimension:2,min:m.zmin,max:m.zmax,calculable:true,show:true,
-       orient:'vertical',right:66,top:'middle',itemWidth:13,itemHeight:110,hoverLink:true,
-       text:[`PHEV/EREV ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:S.label,fontSize:10},
-       inRange:{color:brP}, outOfRange:{color:'rgba(132,140,152,.12)'}}
-    ],
-    grid3D:g3,
-    xAxis3D:cdAX3(S,xN,exX,false,invX),
-    yAxis3D:cdAX3(S,yN,exY,false,invY),
-    zAxis3D:cdAX3(S,zN,[0,(m.zmax*1.06)||1],true,false),
-    series:[mkSurf('BEV',dBev,S.bevBase), mkSurf('PHEV/EREV',dPhev,S.phevBase)]
-  }, true);
-  if(ch.__cd3dFirst){ ch.resize(); ch.__cd3dFirst=false; }
-  TREND_REGS['chCustom']={};
-}
-
 /* 二维热力：X/Y 网格聚合，颜色=格内 Z 均值；色带同样支持区间选取高亮 */
 function renderHeat(ch, bev, phev, m, avg, rng, fv){
   const S=CD_STYLES[CD_STATE.style] || CD_STYLES.A;
@@ -2628,7 +2548,7 @@ function renderCustom(rows){
      （gl 三维坐标系对 merge 的 min-max/inverse 更新不重排布局——实证选项已变画面不变）；
      重建前捕获控制器实时相机，重建后经 viewControl 下发以保留用户视角 */
   const invKey = CD_STATE.invX+','+CD_STATE.invY;
-  const is3dKind = k => k==='bar'||k==='bub'||k==='surf';
+  const is3dKind = k => k==='bar'||k==='bub';
   if(ch3.__cdKind !== mode || ch3.__cdInvKey !== invKey){
     if(is3dKind(ch3.__cdKind)){ const cam=cdCaptureCam(); if(cam) CD_CAM=cam; }
     ch3.clear(); ch3.__cdKind = mode; ch3.__cdInvKey = invKey; ch3.__cd3dFirst = true;
@@ -2644,7 +2564,6 @@ function renderCustom(rows){
     ch3.__cdKind='d2'; ch3.clear(); ch3.__cd3dFirst=true;
     showToast('三维展示初始化失败（当前环境可能不支持 WebGL），已回退二维泡泡图');
   }
-  if(mode==='surf'){ renderSurf(ch3, bev, phev, {xN,yN,zN,zmin,zmax}, avg, rng, fv); return; }
   if(mode==='heat'){ renderHeat(ch3, bev, phev, {xN,yN,zN,zmin,zmax}, avg, rng, fv); return; }
   /* ===== 二维散点/泡泡 ===== */
   /* 固定坐标系外框 + 视窗缩放：按当前 dataZoom 视窗计算「自动调节」系数 */
@@ -3419,11 +3338,7 @@ def main():
             '<div class="tx">导出当前筛选数据供进一步细化分析；导入最新公告数据表后，<b>全局数据与图表将实时刷新</b>（无需重新运行生成脚本）。</div>',
             '<div class="tx">车型明细查询支持在当前筛选范围内检索、排序与翻页。</div>')
         html = html.replace('</head>',
-                            '<style>#p6 .dm-grid .card.c-s7,#p6 .dm-grid .card.c-s5,#btnImport,#cdView,#cdStyleWrap,#cd3dOnly{display:none!important}</style></head>')
-        # 发布版不含三维展示/热力/风格切换（v4.9.7）：相关控件隐藏 + 副标题回退，功能面保持 2D 泡泡图
-        html = html.replace(
-            '自由选择纵横维度 · 视图：二维泡泡 / 三维柱状 / 二维热力 · 风格 8 款 · 全屏',
-            '自由选择纵横维度 · 选定 Z 轴即为泡泡图')
+                            '<style>#p6 .dm-grid .card.c-s7,#p6 .dm-grid .card.c-s5,#btnImport{display:none!important}</style></head>')
     html = html.replace('__ECHARTS_LIB__', echarts_lib)
     html = html.replace('__ECHARTSGL_LIB__', gl_lib)
     html = html.replace('__XLSX_LIB__', xlsx_lib)
