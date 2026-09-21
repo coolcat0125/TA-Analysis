@@ -1,0 +1,42 @@
+{
+ "batch": "b01",
+ "created": "2026-09-21 23:33:20",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "b01-01",
+   "kw": "V919",
+   "js": "b01-01_V919.js",
+   "series_name": "V919",
+   "gap_rows": 74
+  },
+  {
+   "rid": "b01-02",
+   "kw": "欧拉R1",
+   "js": "b01-02_欧拉R1.js",
+   "series_name": "欧拉R1",
+   "gap_rows": 64
+  },
+  {
+   "rid": "b01-03",
+   "kw": "瑞驰 EC75",
+   "js": "b01-03_瑞驰EC75.js",
+   "series_name": "瑞驰 EC75",
+   "gap_rows": 64
+  },
+  {
+   "rid": "b01-04",
+   "kw": "菱智M5EV",
+   "js": "b01-04_菱智M5EV.js",
+   "series_name": "菱智M5EV",
+   "gap_rows": 52
+  },
+  {
+   "rid": "b01-05",
+   "kw": "比亚迪唐",
+   "js": "b01-05_比亚迪唐.js",
+   "series_name": "比亚迪唐",
+   "gap_rows": 51
+  }
+ ]
+}

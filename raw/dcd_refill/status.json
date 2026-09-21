@@ -1,0 +1,246 @@
+{
+ "updated": "2026-09-21 23:39:35",
+ "workbook_rows": 5392,
+ "dcd_coverage": {
+  "轴距(mm)": 82.9,
+  "前电机功率/扭矩": 81.6,
+  "车长(mm)": 82.6,
+  "纯电续航里程(km)": 97.3,
+  "百公里电耗(kWh/100km)": 94.9,
+  "电池类型": 91.7,
+  "后电机功率/扭矩": 31.2,
+  "电池能量密度(Wh/kg)": 78.7,
+  "电机总功率/扭矩": 96.6,
+  "电池容量(kWh)": 91.2,
+  "整备质量(kg)": 90.2
+ },
+ "dcd_ledger_cells": 745,
+ "batches": [
+  {
+   "id": "b01",
+   "status": "planned",
+   "series": [
+    "V919",
+    "欧拉R1",
+    "瑞驰 EC75",
+    "菱智M5EV",
+    "比亚迪唐"
+   ],
+   "gap_rows": 305,
+   "green": 0
+  },
+  {
+   "id": "b02",
+   "status": "planned",
+   "series": [
+    "ID.UNYX 与众06",
+    "乐福",
+    "Hyper GT",
+    "Hyper HT",
+    "αS5"
+   ],
+   "gap_rows": 207,
+   "green": 0
+  },
+  {
+   "id": "b03",
+   "status": "planned",
+   "series": [
+    "聚星",
+    "哪吒U",
+    "SV",
+    "ID.UNYX 与众07",
+    "eQ5"
+   ],
+   "gap_rows": 168,
+   "green": 0
+  },
+  {
+   "id": "b04",
+   "status": "planned",
+   "series": [
+    "V8",
+    "特斯拉 MODEL Y",
+    "比亚迪e3",
+    "EX90",
+    "ELEXIO"
+   ],
+   "gap_rows": 155,
+   "green": 0
+  },
+  {
+   "id": "b05",
+   "status": "planned",
+   "series": [
+    "方程豹钛7",
+    "eπ008",
+    "欧拉iQ",
+    "EV90",
+    "智界R7"
+   ],
+   "gap_rows": 146,
+   "green": 0
+  },
+  {
+   "id": "b06",
+   "status": "planned",
+   "series": [
+    "锐胜M8",
+    "αT7",
+    "星钽5X",
+    "G3i",
+    "HYCAN Z03"
+   ],
+   "gap_rows": 138,
+   "green": 0
+  },
+  {
+   "id": "b07",
+   "status": "planned",
+   "series": [
+    "LS6",
+    "C16",
+    "哪吒V",
+    "eQ1",
+    "欧拉好猫"
+   ],
+   "gap_rows": 131,
+   "green": 0
+  },
+  {
+   "id": "b08",
+   "status": "planned",
+   "series": [
+    "小虎",
+    "风神E70",
+    "比亚迪海豹06",
+    "AION LX",
+    "QQ冰淇淋"
+   ],
+   "gap_rows": 124,
+   "green": 0
+  }
+ ],
+ "recent_ledger": [
+  {
+   "seq": 46898,
+   "model": "CC7000BJ02ABEV",
+   "field": "电池容量(kWh)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "45.9"
+  },
+  {
+   "seq": 46897,
+   "model": "CC6430BJ00HKBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4480",
+   "new": 4242
+  },
+  {
+   "seq": 46896,
+   "model": "CC6430BJ00NJBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4480",
+   "new": 4242
+  },
+  {
+   "seq": 46895,
+   "model": "CC6430BJ00NHBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4480",
+   "new": 4242
+  },
+  {
+   "seq": 46894,
+   "model": "CC6430BJ00HHBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4480",
+   "new": 4242
+  },
+  {
+   "seq": 46893,
+   "model": "CC6430BJ00NDBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4480",
+   "new": 4242
+  },
+  {
+   "seq": 46892,
+   "model": "CC7000BJ00NGBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4560",
+   "new": 4235
+  },
+  {
+   "seq": 46891,
+   "model": "CC7000BJ00NFBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4560",
+   "new": 4235
+  },
+  {
+   "seq": 46890,
+   "model": "CC7000BJ00HFBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4560",
+   "new": 4242
+  },
+  {
+   "seq": 46889,
+   "model": "CC7000BJ03HABEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4560",
+   "new": 4235
+  },
+  {
+   "seq": 46888,
+   "model": "CC7000BJ02HBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4560",
+   "new": 4242
+  },
+  {
+   "seq": 46887,
+   "model": "CC7000BJ01FBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4560",
+   "new": 4235
+  },
+  {
+   "seq": 46886,
+   "model": "CC7000BJ02DBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4560",
+   "new": 4242
+  },
+  {
+   "seq": 46885,
+   "model": "CC7000BJ01GBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4560",
+   "new": 4235
+  },
+  {
+   "seq": 46884,
+   "model": "CC7000BJ01EBEV",
+   "field": "车长(mm)",
+   "kind": "双源更正",
+   "old": "4560",
+   "new": 4235
+  }
+ ]
+}

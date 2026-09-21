@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DCD 实时监控看板 · 懂车帝补缺进度</title>
+<style>
+:root { color-scheme: light; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; background: #F5F8FC; color: #333; padding: 20px; }
+.wrap { max-width: 1200px; margin: 0 auto; }
+header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+h1 { font-size: 22px; color: #003366; }
+#live { font-size: 12px; color: #F2A900; font-weight: 700; }
+#live.off { color: #808080; }
+.meta { font-size: 12px; color: #808080; margin-bottom: 16px; }
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+.kpi { background: #fff; border: 1px solid #D0D9E5; border-left: 4px solid #0055A5; padding: 14px 16px; }
+.kpi .v { font-size: 24px; font-weight: 700; color: #0055A5; font-family: Consolas, monospace; }
+.kpi .l { font-size: 12px; color: #808080; margin-top: 2px; }
+.kpi.warn { border-left-color: #F2A900; } .kpi.warn .v { color: #F2A900; }
+.kpi.ok { border-left-color: #7FA641; } .kpi.ok .v { color: #7FA641; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.card { background: #fff; border: 1px solid #D0D9E5; padding: 16px; }
+.card h2 { font-size: 14px; color: #003366; margin-bottom: 12px; border-bottom: 2px solid #0055A5; padding-bottom: 6px; }
+.cov-row { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
+.cov-name { width: 64px; font-size: 12px; }
+.cov-bar { flex: 1; height: 12px; background: #EDF1F7; }
+.cov-fill { height: 100%; background: linear-gradient(90deg, #0055A5, #7FA8D9); }
+.cov-num { width: 44px; font-size: 12px; font-family: Consolas, monospace; text-align: right; }
+.cov-gap { width: 52px; font-size: 11px; color: #F2A900; text-align: right; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th { background: #0055A5; color: #fff; padding: 7px 8px; text-align: left; font-weight: 600; }
+td { padding: 6px 8px; border-bottom: 1px solid #EDF1F7; }
+tr:nth-child(even) td { background: #F8FAFD; }
+.mono { font-family: Consolas, monospace; font-size: 11.5px; }
+.badge { color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 2px; }
+.tip { margin-top: 14px; font-size: 12px; color: #808080; background: #FFF9E6; border: 1px solid #F2A900; padding: 10px 12px; }
+.drop { border: 2px dashed #F2A900 !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>DCD 实时监控看板 · 懂车帝补缺进度</h1>
+  <span id="live">● LIVE（3s 自动刷新）</span>
+</header>
+<div class="meta">数据源：status.json · 刷新时间 <span id="ts">2026-09-21 23:39:35</span> · 工作流：dcd_batch_run.py</div>
+
+<div class="kpis">
+  <div class="kpi"><div class="v">5,392</div><div class="l">底表行数（341~410批）</div></div>
+  <div class="kpi ok"><div class="v">745</div><div class="l">DCD 台账累计格数</div></div>
+  <div class="kpi warn"><div class="v">9,765</div><div class="l">DCD 可补缺口（剩余）</div></div>
+  <div class="kpi"><div class="v">8</div><div class="l">计划批次数</div></div>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h2>字段覆盖率（DCD 可映射 11 字段）</h2>
+    
+<div class="cov-row">
+  <span class="cov-name">后电机功率</span>
+  <div class="cov-bar"><div class="cov-fill" style="width:31.2%"></div></div>
+  <span class="cov-num">31.2%</span>
+  <span class="cov-gap">缺3709</span>
+</div>
+<div class="cov-row">
+  <span class="cov-name">能量密度</span>
+  <div class="cov-bar"><div class="cov-fill" style="width:78.7%"></div></div>
+  <span class="cov-num">78.7%</span>
+  <span class="cov-gap">缺1151</span>
+</div>
+<div class="cov-row">
+  <span class="cov-name">前电机功率</span>
+  <div class="cov-bar"><div class="cov-fill" style="width:81.6%"></div></div>
+  <span class="cov-num">81.6%</span>
+  <span class="cov-gap">缺994</span>
+</div>
+<div class="cov-row">
+  <span class="cov-name">车长</span>
+  <div class="cov-bar"><div class="cov-fill" style="width:82.6%"></div></div>
+  <span class="cov-num">82.6%</span>
+  <span class="cov-gap">缺937</span>
+</div>
+<div class="cov-row">
+  <span class="cov-name">轴距</span>
+  <div class="cov-bar"><div class="cov-fill" style="width:82.9%"></div></div>
+  <span class="cov-num">82.9%</span>
+  <span class="cov-gap">缺922</span>
+</div>
+<div class="cov-row">
+  <span class="cov-name">整备质量</span>
+  <div class="cov-bar"><div class="cov-fill" style="width:90.2%"></div></div>
+  <span class="cov-num">90.2%</span>
+  <span class="cov-gap">缺527</span>
+</div>
+<div class="cov-row">
+  <span class="cov-name">电池容量</span>
+  <div class="cov-bar"><div class="cov-fill" style="width:91.2%"></div></div>
+  <span class="cov-num">91.2%</span>
+  <span class="cov-gap">缺474</span>
+</div>
+<div class="cov-row">
+  <span class="cov-name">电池类型</span>
+  <div class="cov-bar"><div class="cov-fill" style="width:91.7%"></div></div>
+  <span class="cov-num">91.7%</span>
+  <span class="cov-gap">缺448</span>
+</div>
+<div class="cov-row">
+  <span class="cov-name">百公里电耗</span>
+  <div class="cov-bar"><div class="cov-fill" style="width:94.9%"></div></div>
+  <span class="cov-num">94.9%</span>
+  <span class="cov-gap">缺277</span>
+</div>
+<div class="cov-row">
+  <span class="cov-name">电机总功率</span>
+  <div class="cov-bar"><div class="cov-fill" style="width:96.6%"></div></div>
+  <span class="cov-num">96.6%</span>
+  <span class="cov-gap">缺183</span>
+</div>
+<div class="cov-row">
+  <span class="cov-name">纯电续航</span>
+  <div class="cov-bar"><div class="cov-fill" style="width:97.3%"></div></div>
+  <span class="cov-num">97.3%</span>
+  <span class="cov-gap">缺143</span>
+</div>
+  </div>
+  <div class="card">
+    <h2>批次进度</h2>
+    <table>
+      <tr><th>批次</th><th>状态</th><th>车系</th><th>缺口</th><th>已填</th></tr>
+      
+<tr>
+  <td class="mono">b01</td>
+  <td><span class="badge" style="background:#8B7E5E">已计划</span></td>
+  <td>V919、欧拉R1、瑞驰 EC75、菱智M5EV、比亚迪唐</td>
+  <td class="mono">305</td>
+  <td class="mono" style="color:#7FA641;font-weight:700">0</td>
+</tr>
+<tr>
+  <td class="mono">b02</td>
+  <td><span class="badge" style="background:#8B7E5E">已计划</span></td>
+  <td>ID.UNYX 与众06、乐福、Hyper GT、Hyper HT、αS5</td>
+  <td class="mono">207</td>
+  <td class="mono" style="color:#7FA641;font-weight:700">0</td>
+</tr>
+<tr>
+  <td class="mono">b03</td>
+  <td><span class="badge" style="background:#8B7E5E">已计划</span></td>
+  <td>聚星、哪吒U、SV、ID.UNYX 与众07、eQ5</td>
+  <td class="mono">168</td>
+  <td class="mono" style="color:#7FA641;font-weight:700">0</td>
+</tr>
+<tr>
+  <td class="mono">b04</td>
+  <td><span class="badge" style="background:#8B7E5E">已计划</span></td>
+  <td>V8、特斯拉 MODEL Y、比亚迪e3、EX90、ELEXIO</td>
+  <td class="mono">155</td>
+  <td class="mono" style="color:#7FA641;font-weight:700">0</td>
+</tr>
+<tr>
+  <td class="mono">b05</td>
+  <td><span class="badge" style="background:#8B7E5E">已计划</span></td>
+  <td>方程豹钛7、eπ008、欧拉iQ、EV90、智界R7</td>
+  <td class="mono">146</td>
+  <td class="mono" style="color:#7FA641;font-weight:700">0</td>
+</tr>
+<tr>
+  <td class="mono">b06</td>
+  <td><span class="badge" style="background:#8B7E5E">已计划</span></td>
+  <td>锐胜M8、αT7、星钽5X、G3i、HYCAN Z03</td>
+  <td class="mono">138</td>
+  <td class="mono" style="color:#7FA641;font-weight:700">0</td>
+</tr>
+<tr>
+  <td class="mono">b07</td>
+  <td><span class="badge" style="background:#8B7E5E">已计划</span></td>
+  <td>LS6、C16、哪吒V、eQ1、欧拉好猫</td>
+  <td class="mono">131</td>
+  <td class="mono" style="color:#7FA641;font-weight:700">0</td>
+</tr>
+<tr>
+  <td class="mono">b08</td>
+  <td><span class="badge" style="background:#8B7E5E">已计划</span></td>
+  <td>小虎、风神E70、比亚迪海豹06、AION LX、QQ冰淇淋</td>
+  <td class="mono">124</td>
+  <td class="mono" style="color:#7FA641;font-weight:700">0</td>
+</tr>
+    </table>
+  </div>
+</div>
+
+<div class="card" style="margin-top:12px">
+  <h2>最近台账流水（懂车帝通道）</h2>
+  <table>
+    <tr><th>Seq</th><th>产品型号</th><th>字段</th><th>类型</th><th>旧值 → 新值</th></tr>
+    
+<tr>
+  <td class="mono">#46898</td>
+  <td class="mono">CC7000BJ02ABEV</td>
+  <td>电池容量(kWh)</td>
+  <td>媒体参数补全</td>
+  <td class="mono">(空) → <b style="color:#7FA641">45.9</b></td>
+</tr>
+<tr>
+  <td class="mono">#46897</td>
+  <td class="mono">CC6430BJ00HKBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4480 → <b style="color:#7FA641">4242</b></td>
+</tr>
+<tr>
+  <td class="mono">#46896</td>
+  <td class="mono">CC6430BJ00NJBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4480 → <b style="color:#7FA641">4242</b></td>
+</tr>
+<tr>
+  <td class="mono">#46895</td>
+  <td class="mono">CC6430BJ00NHBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4480 → <b style="color:#7FA641">4242</b></td>
+</tr>
+<tr>
+  <td class="mono">#46894</td>
+  <td class="mono">CC6430BJ00HHBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4480 → <b style="color:#7FA641">4242</b></td>
+</tr>
+<tr>
+  <td class="mono">#46893</td>
+  <td class="mono">CC6430BJ00NDBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4480 → <b style="color:#7FA641">4242</b></td>
+</tr>
+<tr>
+  <td class="mono">#46892</td>
+  <td class="mono">CC7000BJ00NGBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4560 → <b style="color:#7FA641">4235</b></td>
+</tr>
+<tr>
+  <td class="mono">#46891</td>
+  <td class="mono">CC7000BJ00NFBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4560 → <b style="color:#7FA641">4235</b></td>
+</tr>
+<tr>
+  <td class="mono">#46890</td>
+  <td class="mono">CC7000BJ00HFBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4560 → <b style="color:#7FA641">4242</b></td>
+</tr>
+<tr>
+  <td class="mono">#46889</td>
+  <td class="mono">CC7000BJ03HABEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4560 → <b style="color:#7FA641">4235</b></td>
+</tr>
+<tr>
+  <td class="mono">#46888</td>
+  <td class="mono">CC7000BJ02HBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4560 → <b style="color:#7FA641">4242</b></td>
+</tr>
+<tr>
+  <td class="mono">#46887</td>
+  <td class="mono">CC7000BJ01FBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4560 → <b style="color:#7FA641">4235</b></td>
+</tr>
+<tr>
+  <td class="mono">#46886</td>
+  <td class="mono">CC7000BJ02DBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4560 → <b style="color:#7FA641">4242</b></td>
+</tr>
+<tr>
+  <td class="mono">#46885</td>
+  <td class="mono">CC7000BJ01GBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4560 → <b style="color:#7FA641">4235</b></td>
+</tr>
+<tr>
+  <td class="mono">#46884</td>
+  <td class="mono">CC7000BJ01EBEV</td>
+  <td>车长(mm)</td>
+  <td>双源更正</td>
+  <td class="mono">4560 → <b style="color:#7FA641">4235</b></td>
+</tr>
+  </table>
+</div>
+
+<div class="tip" id="tip">
+  <b>使用方式</b>：① 实时模式——在仓库目录运行 <code>python serve_monitor.py</code> 后访问 <code>http://localhost:8797/DCD监控看板.html</code>，每 3 秒自动刷新；
+  ② 离线模式——双击打开显示当前快照，将最新的 <code>status.json</code> 拖入本页即可刷新。工作流命令：<code>python dcd_batch_run.py plan/jobgen/ingest/apply/status</code>。
+</div>
+</div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+async function poll() {
+  try {
+    const r = await fetch('raw/dcd_refill/status.json?t=' + Date.now());
+    if (!r.ok) throw 0;
+    const d = await r.json();
+    if (d.updated !== $('#ts').textContent) location.reload();
+  } catch (e) {
+    $('#live').textContent = '● 离线快照（拖入 status.json 刷新）';
+    $('#live').classList.add('off');
+  }
+}
+setInterval(poll, 3000);
+document.addEventListener('dragover', e => e.preventDefault());
+document.addEventListener('drop', async e => {
+  e.preventDefault();
+  const f = e.dataTransfer.files[0];
+  if (f && f.name.endsWith('.json')) {
+    const d = JSON.parse(await f.text());
+    document.body.classList.remove('drop');
+    if (d.updated) { $('#ts').textContent = d.updated; location.reload(); }
+  }
+});
+</script>
+</body>
+</html>
