@@ -728,6 +728,9 @@ select:hover,select:focus{border-color:var(--clay)}
 /* 自定义分布控制条 */
 .cd-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0 6px;
   padding:10px 12px;background:var(--card2);border:1px solid var(--border);border-radius:9px}
+/* 控制条分两行：第一行坐标轴与视图，第二行风格/配色/球径/聚合与操作按钮 */
+.cd-line{display:flex;flex-wrap:wrap;align-items:center;gap:8px;width:100%}
+.cd-line2{margin-top:9px;padding-top:9px;border-top:1px solid var(--border)}
 .cd-bar select{min-width:150px;max-width:230px}
 .cd-bar .f-label{margin-left:4px}
 .cd-bar .f-label:first-child{margin-left:0}
@@ -998,68 +1001,71 @@ body.show-gaps .card.gap-hidden-note{display:none}
     <div class="card c-s12">
       <div class="c-h">
         <div class="c-t">自定义分布</div>
-        <div class="c-s">Custom Distribution · 自由选择纵横维度 · 视图：二维泡泡 / 三维柱状(A 海拔) / 三维泡泡(B 梯度·球径可调) / 梯度曲面(C 地形) / 二维热力 · 配色双/单色系 · 风格 8 款 · 全屏</div>
       </div>
       <div class="ci" id="ci_chCustom"></div>
       <div class="cd-bar">
-        <span class="f-label">横坐标 X</span>
-        <select id="cdX"></select>
-        <span class="f-label">纵坐标 Y</span>
-        <select id="cdY"></select>
-        <span class="f-label">泡泡直径 Z</span>
-        <select id="cdZ"></select>
-        <span class="f-label">视图</span>
-        <select id="cdView" title="展示模式：二维泡泡 · 三维柱状（方案A 海拔）· 三维泡泡（方案B 梯度）· 梯度曲面（方案C 地形）· 二维热力（三维类需先选定 Z 字段）">
-          <option value="d2">二维散点/泡泡</option>
-          <option value="bar">三维柱状 · 海拔（A）</option>
-          <option value="bub">三维泡泡 · 梯度（B）</option>
-          <option value="surf">梯度曲面 · 地形（C）</option>
-          <option value="heat">二维热力</option>
-        </select>
-        <span id="cdAggWrap" class="hide"><span class="f-label">聚合</span>
-          <select id="cdAgg" title="曲面高度聚合方式：均值 / 中位数 / 样本计数">
-            <option value="mean">均值</option>
-            <option value="median">中位数</option>
-            <option value="count">样本计数</option>
+        <div class="cd-line">
+          <span class="f-label">横坐标 X</span>
+          <select id="cdX"></select>
+          <span class="f-label">纵坐标 Y</span>
+          <select id="cdY"></select>
+          <span class="f-label">高度坐标 Z</span>
+          <select id="cdZ" title="Z 轴字段：三维=高度/位置，二维=泡泡直径（不选则二维等径散点）"></select>
+          <span class="f-label">视图</span>
+          <select id="cdView" title="展示模式：二维泡泡 · 三维柱状（方案A 海拔）· 三维泡泡（方案B 梯度）· 梯度曲面（方案C 地形）· 二维热力（三维类需先选定 Z 字段）">
+            <option value="d2">二维散点/泡泡</option>
+            <option value="bar">三维柱状 · 海拔（A）</option>
+            <option value="bub">三维泡泡 · 梯度（B）</option>
+            <option value="surf">梯度曲面 · 地形（C）</option>
+            <option value="heat">二维热力</option>
           </select>
-        </span>
-        <span id="cdStyleWrap" style="display:contents">
-          <span class="f-label">风格</span>
-          <select id="cdStyle" title="三维/热力视觉风格（8 款按需切换）"></select>
-        </span>
-        <span id="cdColorWrap" style="display:contents">
-          <span class="f-label">配色</span>
-          <select id="cdColorMode" title="配色模式：动力类型双色系（BEV 暖橙 / PHEV-EREV 冷蓝）或 Z 梯度单色系">
-            <option value="dual">动力类型双色系</option>
-            <option value="z">Z 梯度单色系</option>
-          </select>
-        </span>
-        <span id="cdSizeWrap" class="hide"><span class="f-label">球径</span>
-          <select id="cdSize" title="泡泡直径字段（不选则等大；仅方案B 三维泡泡生效）"></select>
-        </span>
-        <span class="cd-zscale hide" id="cdZScaleWrap">
-          <span class="f-label">泡泡比例</span>
-          <input type="range" id="cdZScale" min="20" max="260" value="100" step="5">
-          <span class="cd-zval" id="cdZVal">100%</span>
-        </span>
-        <span id="cd3dOnly" class="hide" style="display:contents">
-          <button class="cd-btn" id="cdViewReset" title="恢复默认视角（等轴测，等同双击图表）">视角复位</button>
-          <button class="cd-btn" id="cdViewTop" title="切换为俯视视角（正对 X-Y 平面，透视距离已拉远）">俯视 X-Y</button>
-        </span>
-        <span id="cdAxisGrp" style="display:contents">
-          <span class="f-label">反向</span>
-          <button class="cd-btn" id="cdInvX" title="X 轴排序方向反转">X↓</button>
-          <button class="cd-btn" id="cdInvY" title="Y 轴排序方向反转">Y↓</button>
-          <button class="cd-btn" id="cdInvZ" title="Z 梯度方向反转（三维/热力）">Z↓</button>
-        </span>
-        <button class="cd-btn" id="cdSwap" title="交换 X / Y">⇄ 交换</button>
-        <span id="cd2dOnly" style="display:contents">
-          <button class="cd-btn" id="cdLevels" title="在轴距轴上标注 A/B/C 等级区段">等级区段 ✓</button>
-          <button class="cd-btn" id="cdAuto" title="随缩放自动调节散点/泡泡显示大小">自动调节 ✓</button>
-          <button class="cd-btn" id="cdZoomReset" title="恢复完整视野（等同双击图表）">复位视窗</button>
-        </span>
-        <button class="cd-btn" id="cdFull" title="全屏展示（Esc 退出）">⛶ 全屏</button>
-        <button class="cd-btn" id="cdReset" title="恢复默认维度与视图">重置</button>
+        </div>
+        <div class="cd-line cd-line2">
+          <span id="cdAggWrap" class="hide"><span class="f-label">聚合</span>
+            <select id="cdAgg" title="曲面高度聚合方式：均值 / 中位数 / 样本计数">
+              <option value="mean">均值</option>
+              <option value="median">中位数</option>
+              <option value="count">样本计数</option>
+            </select>
+          </span>
+          <span id="cdStyleWrap">
+            <span class="f-label">风格</span>
+            <select id="cdStyle" title="三维/热力视觉风格（8 款按需切换）"></select>
+          </span>
+          <span id="cdColorWrap">
+            <span class="f-label">配色</span>
+            <select id="cdColorMode" title="配色模式：动力类型双色系（BEV 暖橙 / PHEV-EREV 冷蓝）或 Z 梯度单色系">
+              <option value="dual">动力类型双色系</option>
+              <option value="z">Z 梯度单色系</option>
+            </select>
+          </span>
+          <span id="cdSizeWrap" class="hide"><span class="f-label">球径</span>
+            <select id="cdSize" title="泡泡直径字段（不选则等大；仅方案B 三维泡泡生效）"></select>
+          </span>
+          <span class="cd-zscale hide" id="cdZScaleWrap">
+            <span class="f-label">泡泡比例</span>
+            <input type="range" id="cdZScale" min="20" max="260" value="100" step="5">
+            <span class="cd-zval" id="cdZVal">100%</span>
+          </span>
+          <span id="cd3dOnly" class="hide">
+            <button class="cd-btn" id="cdViewReset" title="恢复默认视角（等轴测，等同双击图表）">视角复位</button>
+            <button class="cd-btn" id="cdViewTop" title="切换为俯视视角（正对 X-Y 平面，透视距离已拉远）">俯视 X-Y</button>
+          </span>
+          <span id="cdAxisGrp">
+            <span class="f-label">反向</span>
+            <button class="cd-btn" id="cdInvX" title="X 轴排序方向反转">X↓</button>
+            <button class="cd-btn" id="cdInvY" title="Y 轴排序方向反转">Y↓</button>
+            <button class="cd-btn" id="cdInvZ" title="Z 梯度方向反转（三维/热力）">Z↓</button>
+          </span>
+          <button class="cd-btn" id="cdSwap" title="交换 X / Y">⇄ 交换</button>
+          <span id="cd2dOnly">
+            <button class="cd-btn" id="cdLevels" title="在轴距轴上标注 A/B/C 等级区段">等级区段 ✓</button>
+            <button class="cd-btn" id="cdAuto" title="随缩放自动调节散点/泡泡显示大小">自动调节 ✓</button>
+            <button class="cd-btn" id="cdZoomReset" title="恢复完整视野（等同双击图表）">复位视窗</button>
+          </span>
+          <button class="cd-btn" id="cdFull" title="全屏展示（Esc 退出）">⛶ 全屏</button>
+          <button class="cd-btn" id="cdReset" title="恢复默认维度与视图">重置</button>
+        </div>
       </div>
       <div class="chart xl" id="chCustom"></div>
     </div>
@@ -2191,7 +2197,7 @@ function cdInitUI(){
     if(v!=='d2' && CD_STATE.z==null){
       /* 未选 Z 直接切三维/热力：自动补默认 Z=电池容量，保持可用 */
       CD_STATE.z=I.c; sz.value=String(I.c);
-      showToast('已自动选定 Z=电池容量(kWh)，可在「泡泡直径 Z」更换字段');
+      showToast('已自动选定 Z=电池容量(kWh)，可在「高度坐标 Z」更换字段');
     }
     CD_STATE.view=v; cdModeUI(); renderCustom(filtered()); };
   cs.onchange=()=>{ CD_STATE.style=cs.value;
@@ -2796,10 +2802,10 @@ function renderCustom(rows){
   }
   const total=bev.length+phev.length;
   const part=(nm,ps)=>ps.length?`${nm} <em>${xN}</em> 均值 <em>${fv(avg(ps,0))}</em>（${fv((rng(ps,0)||[0,0])[0])}~${fv((rng(ps,0)||[0,0])[1])}）· <em>${yN}</em> 均值 <em>${fv(avg(ps,1))}</em>（${fv((rng(ps,1)||[0,0])[0])}~${fv((rng(ps,1)||[0,0])[1])}）`:'';
-  const core=`<b>${hasZ?'泡泡图':'散点图'}</b>：X <em>${xN}</em> × Y <em>${yN}</em>${hasZ?` × 泡泡直径 Z <em>${zN}</em>`:''} · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
+  const core=`<b>${hasZ?'泡泡图':'散点图'}</b>：X <em>${xN}</em> × Y <em>${yN}</em>${hasZ?` × 高度坐标 Z <em>${zN}</em>`:''} · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
   let detail= hasZ
     ? `Z 轴 <em>${zN}</em> 取值范围 <em>${fv(zmin)} ~ ${fv(zmax)}</em>，直径映射 <em>${Math.round(12*CD_STATE.zScale/100)}~${Math.round(54*CD_STATE.zScale/100)} px</em>（直径 ∝ √Z，面积正比于数值，当前比例 <em>${CD_STATE.zScale}%</em>）`
-    : ` ｜ 在「泡泡直径 Z」中选择任一可量化字段即可切换为泡泡图；或用「视图」切换三维柱状 / 二维热力`;
+    : ` ｜ 在「高度坐标 Z」中选择任一可量化字段即可切换为泡泡图；或用「视图」切换三维柱状 / 梯度泡泡 / 梯度曲面 / 二维热力`;
   const seg=[part('BEV',bev), part('PHEV/EREV',phev)].filter(Boolean).join(' ｜ ');
   if(seg) detail += `<br>${seg}`;
   /* 等级区段辅助示意状态 */
