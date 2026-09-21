@@ -2583,7 +2583,7 @@ function renderSurface3D(ch, bev, phev, m, avg, rng, fv){
   const gmin=Math.min(gB.zlo,gP.zlo), gmax=Math.max(gB.zhi,gP.zhi);
   const total=all.length, totEmpty=gB.empty+gP.empty;
   const AGGN={mean:'均值',median:'中位数',count:'样本计数'}[CD_STATE.agg]||'均值';
-  const mkSf=(nm,g,fam)=>({name:nm,type:'surface3D',data:g.data,
+  const mkSf=(nm,g,fam)=>({name:nm,type:'surface',data:g.data,
     shading:S.shading,
     itemStyle:Object.assign({opacity:S.opacity},
       S.border?{borderColor:S.border(fam),borderWidth:Math.max(.5,S.bw)}:{},
