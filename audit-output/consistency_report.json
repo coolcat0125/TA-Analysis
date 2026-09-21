@@ -1,17 +1,17 @@
 {
- "generatedAt": "2026-09-21T15:13:51.871700+00:00",
+ "generatedAt": "2026-09-21T18:36:25.771077+00:00",
  "input": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
  "records": 5392,
  "critical": {},
  "warn": {
-  "W2": 2,
+  "W2": 1,
   "W4": 21,
   "W7": 17,
   "W5": 27,
   "W6": 159
  },
  "criticalTotal": 0,
- "warnTotal": 226,
+ "warnTotal": 225,
  "w2ConfirmedSuppressed": 15,
  "w2SuppressedDetail": [
   {
@@ -102,11 +102,6 @@
     "批次": "359",
     "型号": "DD7000BEVWRA",
     "说明": "电耗13.1 vs 期望9.1"
-   },
-   {
-    "批次": "344",
-    "型号": "CC7000BJ02ABEV",
-    "说明": "电耗13.2 vs 期望9.2"
    }
   ],
   "W3": [],

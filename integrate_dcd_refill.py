@@ -79,6 +79,12 @@ def main():
     seq = max((r[0] for r in ledger.iter_rows(min_row=2, values_only=True)
                if isinstance(r[0], int)), default=0)
 
+    # 错配回退跳过集：曾因款型错配被回退的 (批次,型号,字段) 不再重填
+    skip_keys = set()
+    for r in ledger.iter_rows(min_row=2, values_only=True):
+        if isinstance(r[0], int) and r[5] == '错配回退':
+            skip_keys.add((str(r[1] or '').strip(), str(r[2] or '').strip(), str(r[4] or '').strip()))
+
     # 估算底账集（v3.7.3 车长估算等）：台账变更类型/来源含"估算"的 (批次,型号,字段)
     est_keys = set()
     for r in ledger.iter_rows(min_row=2, values_only=True):
@@ -157,6 +163,8 @@ def main():
             for fld, key in FIELD_MAP.items():
                 cell = row[hi[fld]]
                 cur = cell.value
+                if (str(row[hi['批次']].value or '').strip(), code, fld) in skip_keys:
+                    continue
                 if cur not in (None, ''):
                     key4 = (str(row[hi['批次']].value or '').strip(), code, fld.split('(')[0])
                     key_est = (str(row[hi['批次']].value or '').strip(), code, fld)
