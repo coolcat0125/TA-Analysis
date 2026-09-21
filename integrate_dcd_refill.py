@@ -103,13 +103,16 @@ def main():
         dcd = series_files[sid]
         kw = m['kw'].lower().replace(' ', '')
         kw2 = kw.replace('plus', '')
+        # 底表别名（名称不匹配导致 0 命中的已交付车系）
+        ALIAS = {'polestar2': ['极星2', 'polestar2'], '北汽eu5': ['eu5', '北京eu5']}
+        extra = ALIAS.get(kw, [])
         fform = fuel.get(sid, {})
         # 底表行匹配
         for row in rows:
             g = (str(row[hi['通用名称']].value or '') + str(row[hi['车型名称']].value or '')).lower().replace(' ', '')
             pt = str(row[hi['动力类型']].value or '')
             code = str(row[hi['产品型号']].value or '').strip()
-            if kw not in g and kw2 not in g:
+            if kw not in g and kw2 not in g and not any(a in g for a in extra):
                 continue
             if not ('纯电' in pt or '插电' in pt or '增程' in pt or 'BEV' in pt or 'PHEV' in pt):
                 continue
