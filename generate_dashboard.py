@@ -998,7 +998,7 @@ body.show-gaps .card.gap-hidden-note{display:none}
     <div class="card c-s12">
       <div class="c-h">
         <div class="c-t">自定义分布</div>
-        <div class="c-s">Custom Distribution · 自由选择纵横维度 · 视图：二维泡泡 / 三维柱状(A 海拔) / 三维泡泡(B 梯度) / 梯度曲面(C 地形) / 二维热力 · 风格 8 款 · 全屏</div>
+        <div class="c-s">Custom Distribution · 自由选择纵横维度 · 视图：二维泡泡 / 三维柱状(A 海拔) / 三维泡泡(B 梯度·球径可调) / 梯度曲面(C 地形) / 二维热力 · 配色双/单色系 · 风格 8 款 · 全屏</div>
       </div>
       <div class="ci" id="ci_chCustom"></div>
       <div class="cd-bar">
@@ -1026,6 +1026,16 @@ body.show-gaps .card.gap-hidden-note{display:none}
         <span id="cdStyleWrap" style="display:contents">
           <span class="f-label">风格</span>
           <select id="cdStyle" title="三维/热力视觉风格（8 款按需切换）"></select>
+        </span>
+        <span id="cdColorWrap" style="display:contents">
+          <span class="f-label">配色</span>
+          <select id="cdColorMode" title="配色模式：动力类型双色系（BEV 暖橙 / PHEV-EREV 冷蓝）或 Z 梯度单色系">
+            <option value="dual">动力类型双色系</option>
+            <option value="z">Z 梯度单色系</option>
+          </select>
+        </span>
+        <span id="cdSizeWrap" class="hide"><span class="f-label">球径</span>
+          <select id="cdSize" title="泡泡直径字段（不选则等大；仅方案B 三维泡泡生效）"></select>
         </span>
         <span class="cd-zscale hide" id="cdZScaleWrap">
           <span class="f-label">泡泡比例</span>
@@ -2123,7 +2133,8 @@ const CD_STYLES = {
     split:'#21262D', axisLine:'#30363D', label:'#8B949E', bevel:[.35,4] }
 };
 let CD_STATE = {x:CD_DEFAULT.x, y:CD_DEFAULT.y, z:CD_DEFAULT.z, zScale:100, levels:true, autoSize:true,
-  view:'d2', style:'A', invX:false, invY:false, invZ:false, insightFull:false, agg:'mean'};
+  view:'d2', style:'A', invX:false, invY:false, invZ:false, insightFull:false, agg:'mean',
+  colorMode:'dual', sizeField:null};
 
 /* 轴距等级区段定义（与《车型级别定义》阈值一致；用于图上辅助示意） */
 const CD_LEVELS = {
@@ -2217,6 +2228,18 @@ function cdInitUI(){
     ag.value=CD_STATE.agg;
     ag.onchange=()=>{ CD_STATE.agg=ag.value; cdModeUI(); cdRebuild3D(); };
   }
+  /* 配色模式（动力类型双色系 / Z 梯度单色系）：视觉映射改变，clear 后重建 */
+  const cm=document.getElementById('cdColorMode');
+  if(cm){
+    cm.value=CD_STATE.colorMode;
+    cm.onchange=()=>{ CD_STATE.colorMode=cm.value; cdRebuild3D(); };
+  }
+  /* 球径字段（仅方案B 三维泡泡生效）：逐点直径改变，clear 后重建 */
+  const sf=document.getElementById('cdSize');
+  if(sf){
+    cdFillSelect(sf, CD_STATE.sizeField==null?'':CD_STATE.sizeField, true);
+    sf.onchange=()=>{ CD_STATE.sizeField = sf.value===''?null:+sf.value; cdRebuild3D(); };
+  }
   /* 视角复位 / 俯视（三维） */
   document.getElementById('cdViewReset').onclick=()=>cdSetView(CD_VIEW);
   document.getElementById('cdViewTop').onclick=()=>cdSetView({alpha:88, beta:0, distance:640});
@@ -2277,6 +2300,12 @@ function cdModeUI(){
   if(zi) zi.classList.toggle('hide', m==='d2');
   const aw=document.getElementById('cdAggWrap');
   if(aw) aw.classList.toggle('hide', m!=='surf');
+  /* 球径字段仅方案B（三维泡泡）可用 */
+  const sw=document.getElementById('cdSizeWrap');
+  if(sw) sw.classList.toggle('hide', m!=='bub');
+  /* 配色模式对所有三维样式生效（曲面同样支持双/单色系） */
+  const cw=document.getElementById('cdColorWrap');
+  if(cw) cw.classList.toggle('hide', !d3);
   cdAxisUI();
 }
 function cdAxisUI(){
@@ -2388,17 +2417,33 @@ function renderCustom3D(ch, kind, bev, phev, m, avg, rng, fv){
   /* Z 梯度方向反转 = 色带反转（轴系不动，颜色浅深互换） */
   const brB=CD_STATE.invZ?[...S.bevRamp].reverse():S.bevRamp;
   const brP=CD_STATE.invZ?[...S.phevRamp].reverse():S.phevRamp;
+  /* 配色模式：dual=两系列各自色带（BEV 暖橙 / PHEV-EREV 冷蓝）；z=单色带统一着色 */
+  const dual = CD_STATE.colorMode!=='z';
+  const ramp = CD_STATE.invZ?[...S.bevRamp].reverse():S.bevRamp;
+  const all=bev.concat(phev);
   const mkBar=(nm,ps,base,fam)=>({name:nm,type:'bar3D',data:ps,barSize:S.barSize,
     shading:S.shading,
     itemStyle:Object.assign({color:base,opacity:S.opacity},
       S.border?{borderColor:S.border(fam),borderWidth:S.bw}:{},
       S.bevel?{bevelSize:S.bevel[0],bevelSmoothness:S.bevel[1]}:{}),
     emphasis:{itemStyle:{opacity:1}}});
-  const mkBub=(nm,ps,base)=>({name:nm,type:'scatter3D',data:ps,symbolSize:8,
+  /* 球径字段：选定字段时按该字段归一化到 3~20 px（直径∝√数值）；未选则等大 8 */
+  const szK = (kind==='bub') ? CD_STATE.sizeField : null;
+  let szLo=0, szHi=1, szN='';
+  if(szK!=null){
+    szN=CD_LABEL(szK);
+    for(const p of all){ const v=p.sv; if(v!=null&&isFinite(v)){ if(v<szLo)szLo=v; if(v>szHi)szHi=v; } }
+    for(const p of all){
+      const v=p.sv;
+      p.symbolSize = (v!=null&&isFinite(v)&&szHi>szLo)
+        ? +(3+17*Math.max(0,Math.min(1,(v-szLo)/(szHi-szLo)))).toFixed(2) : 8;
+    }
+  }
+  const mkBub=(nm,ps,base)=>({name:nm,type:'scatter3D',data:ps,
+    symbolSize: szK!=null ? undefined : 8,
     shading:S.shading,
     itemStyle:{color:base,opacity:Math.min(1,S.opacity+.05)},
     emphasis:{itemStyle:{opacity:1}}});
-  const all=bev.concat(phev);
   const exX=cdPadded(cdExtent(all,0)), exY=cdPadded(cdExtent(all,1));
   const invX=CD_STATE.invX, invY=CD_STATE.invY;
   const statB=[avg(bev,0),avg(bev,1),avg(bev,2)], statP=[avg(phev,0),avg(phev,1),avg(phev,2)];
@@ -2414,10 +2459,14 @@ function renderCustom3D(ch, kind, bev, phev, m, avg, rng, fv){
   const total=all.length;
   const kindName = kind==='bar' ? '三维柱状图（方案A · 海拔）' : '三维泡泡图（方案B · 梯度）';
   const dimTxt = kind==='bar' ? `× 柱高 Z <em>${zN}</em>` : `× Z 位置 <em>${zN}</em> · 颜色=Z 梯度`;
-  let core=`<b>${kindName}</b>：X <em>${xN}</em> × Y <em>${yN}</em> ${dimTxt} · 风格 <em>${S.name}</em> · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
+  let core=`<b>${kindName}</b>：X <em>${xN}</em> × Y <em>${yN}</em> ${dimTxt}${szK!=null?` × 球径 <em>${szN}</em>`:''} · 风格 <em>${S.name}</em> · 配色 <em>${dual?'动力类型双色系':'Z 梯度单色系'}</em> · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
+  const colorTxt = dual
+    ? 'BEV 暖橙 / PHEV-EREV 冷蓝两套色系，各配一条梯度刻度'
+    : '单色带统一着色，两系列共用一条梯度刻度';
   let detail= kind==='bar'
-    ? `颜色深度=海拔：<em>${zN}</em> 取值范围 <em>${fv(m.zmin)} ~ ${fv(m.zmax)}</em>，同色系内 Z 越大颜色越深${CD_STATE.invZ?'（梯度已反向）':''}；<b>拖动右侧色带两端手柄选取数值区间</b>，区间外柱体自动置灰，即高亮目标区域`
-    : `颜色=Z 梯度：<em>${zN}</em> 取值范围 <em>${fv(m.zmin)} ~ ${fv(m.zmax)}</em>，同色系内 Z 越大颜色越深${CD_STATE.invZ?'（梯度已反向）':''}；<b>拖动右侧色带两端手柄选取数值区间</b>，区间外泡泡自动置灰；切换「方案A」可看逐车型柱高读数`;
+    ? `颜色深度=海拔：<em>${zN}</em> 取值范围 <em>${fv(m.zmin)} ~ ${fv(m.zmax)}</em>，同色系内 Z 越大颜色越深${CD_STATE.invZ?'（梯度已反向）':''}；${colorTxt}；<b>拖动右侧色带两端手柄选取数值区间</b>，区间外柱体自动置灰，即高亮目标区域`
+    : `颜色=Z 梯度：<em>${zN}</em> 取值范围 <em>${fv(m.zmin)} ~ ${fv(m.zmax)}</em>，同色系内 Z 越大颜色越深${CD_STATE.invZ?'（梯度已反向）':''}；${colorTxt}；<b>拖动右侧色带两端手柄选取数值区间</b>，区间外泡泡自动置灰；切换「方案A」可看逐车型柱高读数`;
+  if(szK!=null) detail += `<br>球径字段 <em>${szN}</em> 取值 <em>${fv(szLo)} ~ ${fv(szHi)}</em>，直径按 √数值归一化映射到 3~20 px（面积近似正比于数值）。`;
   const part3=(nm,st)=>st.every(v=>v!=null)?`${nm}：<em>${xN}</em> 均值 <em>${fv(st[0])}</em> · <em>${yN}</em> 均值 <em>${fv(st[1])}</em> · <em>${zN}</em> 均值 <em>${fv(st[2])}</em>`:'';
   const seg=[part3('BEV',statB),part3('PHEV/EREV',statP)].filter(Boolean).join(' ｜ ');
   if(seg) detail += `<br>${seg}`;
@@ -2440,10 +2489,12 @@ function renderCustom3D(ch, kind, bev, phev, m, avg, rng, fv){
         const ox=d.ox!=null?d.ox:v[0], oy=d.oy!=null?d.oy:v[1];
         return `${p.seriesName} · 品牌车型：<b>${brandName(p)}</b><br>`+
           `${xN}：<b>${fv(ox)} ${xuOf(xN)}</b><br>${yN}：<b>${fv(oy)} ${xuOf(yN)}</b>`+
-          `<br>${zN}：<b>${fv(v[2])} ${xuOf(zN)}</b>${kind==='bar'?'（柱高）':'（Z 位置）'}`; }},TT),
+          `<br>${zN}：<b>${fv(v[2])} ${xuOf(zN)}</b>${kind==='bar'?'（柱高）':'（Z 位置）'}`+
+          (szK!=null?`<br>${szN}：<b>${fv(d.sv)} ${xuOf(szN)}</b>（球径）`:''); }},TT),
     legend:LG({data:['BEV','PHEV/EREV']}),
-    /* 梯度刻度=区间选择器：calculable 手柄拖动选取区间，区间外柱体置灰（outOfRange） */
-    visualMap:[
+    /* 梯度刻度=区间选择器：calculable 手柄拖动选取区间，区间外柱体置灰（outOfRange）
+       双色系=两系列各自色带；单色系=共用一条色带 */
+    visualMap: dual ? [
       {type:'continuous',seriesIndex:0,dimension:2,min:m.zmin,max:m.zmax,calculable:true,show:true,
        orient:'vertical',right:8,top:'middle',itemWidth:13,itemHeight:110,hoverLink:true,
        text:[`BEV ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:S.label,fontSize:10},
@@ -2452,6 +2503,12 @@ function renderCustom3D(ch, kind, bev, phev, m, avg, rng, fv){
        orient:'vertical',right:66,top:'middle',itemWidth:13,itemHeight:110,hoverLink:true,
        text:[`PHEV/EREV ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:S.label,fontSize:10},
        inRange:{color:brP}, outOfRange:{color:'rgba(132,140,152,.12)'}}
+    ] : [
+      /* 单色系：不绑定 seriesIndex，两系列共用一条 Z 梯度色带 */
+      {type:'continuous',dimension:2,min:m.zmin,max:m.zmax,calculable:true,show:true,
+       orient:'vertical',right:8,top:'middle',itemWidth:13,itemHeight:110,hoverLink:true,
+       text:[`Z ${fv(m.zmax)}`,fv(m.zmin)],textStyle:{color:S.label,fontSize:10},
+       inRange:{color:ramp}, outOfRange:{color:'rgba(132,140,152,.12)'}}
     ],
     grid3D:g3,
     xAxis3D:cdAX3(S,xN,exX,false,invX),
@@ -2671,7 +2728,12 @@ function renderCustom(rows){
     if(x==null||y==null) continue;
     let z=null;
     if(hasZ){ z=r[zK]; if(z==null||!isFinite(z)) continue; if(z<zmin)zmin=z; if(z>zmax)zmax=z; }
-    const pt={value: hasZ?[x,y,z]:[x,y], n:r[I.gn], b:r[I.bd]};
+    /* 球径字段值（方案B 三维泡泡可选第五通道） */
+    let sv=null;
+    if(mode==='bub' && CD_STATE.sizeField!=null){
+      sv=r[CD_STATE.sizeField]; if(sv==null||!isFinite(sv)) sv=null;
+    }
+    const pt={value: hasZ?[x,y,z]:[x,y], n:r[I.gn], b:r[I.bd], sv:sv};
     (r[I.t]==='BEV'?bev:phev).push(pt);
   }
   const xN=CD_LABEL(xK), yN=CD_LABEL(yK), zN=hasZ?CD_LABEL(zK):'';
@@ -2681,8 +2743,8 @@ function renderCustom(rows){
      （gl 三维坐标系对 merge 的 min-max/inverse 更新不重排布局——实证选项已变画面不变）；
      重建前捕获控制器实时相机，重建后经 viewControl 下发以保留用户视角 */
   const invKey = CD_STATE.invX+','+CD_STATE.invY;
-  /* 曲面聚合方式改变也需 clear 重建（系列数据整体重算） */
-  const subKey = CD_STATE.agg;
+  /* 曲面聚合方式 / 泡泡球径字段 / 配色模式改变也需 clear 重建（系列数据或视觉映射整体重算） */
+  const subKey = CD_STATE.agg+'|'+(CD_STATE.sizeField==null?'-':CD_STATE.sizeField)+'|'+CD_STATE.colorMode;
   if(ch3.__cdKind !== mode || ch3.__cdInvKey !== invKey || ch3.__cdSubKey !== subKey){
     if(is3dKind(ch3.__cdKind)){ const cam=cdCaptureCam(); if(cam) CD_CAM=cam; }
     ch3.clear(); ch3.__cdKind = mode; ch3.__cdInvKey = invKey; ch3.__cdSubKey = subKey; ch3.__cd3dFirst = true;
