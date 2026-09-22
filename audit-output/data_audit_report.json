@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-21T15:13:54+00:00",
+  "generated_at_utc": "2026-09-22T02:45:20+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "7d54713d2ae6ac448a8e52dd46fce4b9dc12d9d1bd6f65cbc0e942fe6eb1dc0f",
+    "sha256": "7f5ebb533285b2c414d4a0bf5206e52ddbe0a59e12f5bfccb8979615096ad94c",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
@@ -139,9 +139,9 @@
     },
     "电池容量": {
       "header": "电池容量(kWh)",
-      "populated": 4918,
-      "coverage": 0.912092,
-      "missing": 474
+      "populated": 4917,
+      "coverage": 0.911907,
+      "missing": 475
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
@@ -151,9 +151,9 @@
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
-      "populated": 5115,
-      "coverage": 0.948628,
-      "missing": 277
+      "populated": 5174,
+      "coverage": 0.95957,
+      "missing": 218
     },
     "前电机功率": {
       "header": "前电机功率/扭矩",
@@ -169,9 +169,9 @@
     },
     "后电机功率": {
       "header": "后电机功率/扭矩",
-      "populated": 1683,
-      "coverage": 0.312129,
-      "missing": 3709
+      "populated": 1604,
+      "coverage": 0.297478,
+      "missing": 3788
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
@@ -204,7 +204,7 @@
         1.0,
         300.0
       ],
-      "numeric_values": 4918,
+      "numeric_values": 4917,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -222,7 +222,7 @@
         3.0,
         40.0
       ],
-      "numeric_values": 5115,
+      "numeric_values": 5174,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -260,7 +260,7 @@
         5.0,
         1500.0
       ],
-      "numeric_values": 1683,
+      "numeric_values": 1604,
       "outliers": 0,
       "sample_outliers": []
     },
