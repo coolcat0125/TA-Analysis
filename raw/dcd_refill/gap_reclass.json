@@ -1,83 +1,83 @@
 {
- "created": "2026-09-22 14:50:29",
+ "created": "2026-09-22 21:25:27",
  "workbook": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
- "rear_empty_total": 3788,
+ "rear_empty_total": 3324,
  "counts": {
-  "single_legal": 2998,
-  "dual_gap": 63,
-  "rear_only": 600,
-  "prerequisite": 127
+  "single_legal": 2691,
+  "dual_gap": 64,
+  "rear_only": 452,
+  "prerequisite": 117
  },
  "by_batch": {
   "single_legal": {
    "341": 36,
    "342": 46,
-   "343": 40,
-   "344": 32,
+   "343": 39,
+   "344": 31,
    "345": 51,
-   "346": 41,
-   "347": 53,
+   "346": 39,
+   "347": 50,
    "348": 35,
    "349": 44,
    "350": 24,
-   "351": 60,
+   "351": 59,
    "352": 17,
    "353": 15,
    "354": 18,
    "355": 32,
    "356": 32,
-   "357": 27,
+   "357": 26,
    "359": 28,
    "360": 36,
    "361": 14,
-   "362": 34,
+   "362": 31,
    "363": 20,
    "365": 32,
    "366": 17,
-   "367": 41,
-   "368": 19,
+   "367": 40,
+   "368": 18,
    "369": 25,
    "370": 43,
-   "371": 36,
-   "372": 37,
-   "373": 55,
-   "374": 75,
-   "375": 46,
-   "376": 32,
-   "377": 42,
-   "378": 47,
-   "379": 59,
-   "380": 50,
-   "381": 38,
-   "382": 63,
-   "383": 69,
-   "384": 72,
-   "385": 42,
-   "386": 39,
-   "387": 27,
-   "388": 31,
-   "389": 26,
-   "390": 44,
-   "391": 59,
+   "371": 31,
+   "372": 33,
+   "373": 47,
+   "374": 73,
+   "375": 43,
+   "376": 31,
+   "377": 37,
+   "378": 45,
+   "379": 53,
+   "380": 48,
+   "381": 34,
+   "382": 53,
+   "383": 61,
+   "384": 57,
+   "385": 37,
+   "386": 38,
+   "387": 25,
+   "388": 29,
+   "389": 20,
+   "390": 43,
+   "391": 52,
    "392": 36,
    "393": 31,
-   "394": 30,
-   "395": 67,
-   "396": 38,
-   "398": 70,
-   "399": 67,
-   "400": 60,
-   "401": 98,
-   "402": 120,
-   "403": 47,
-   "404": 51,
-   "405": 43,
-   "406": 72,
-   "407": 71,
-   "408": 58,
+   "394": 23,
+   "395": 57,
+   "396": 41,
+   "398": 68,
+   "399": 59,
+   "400": 54,
+   "401": 86,
+   "402": 95,
+   "403": 35,
+   "404": 34,
+   "405": 28,
+   "406": 48,
+   "407": 45,
+   "408": 40,
    "410": 29,
-   "409": 35,
-   "397": 70,
+   "409": 26,
+   "397": 64,
    "411": 4
   },
   "prerequisite": {
@@ -90,17 +90,14 @@
    "365": 4,
    "375": 1,
    "394": 1,
-   "398": 1,
-   "402": 2,
+   "402": 1,
    "404": 1,
-   "410": 38,
-   "409": 9,
+   "410": 35,
+   "409": 6,
    "397": 4,
    "411": 14,
    "341": 13,
    "343": 2,
-   "346": 1,
-   "348": 1,
    "351": 2,
    "357": 3,
    "358": 2,
@@ -126,40 +123,40 @@
    "375": 4,
    "377": 3,
    "378": 2,
-   "379": 4,
+   "379": 3,
    "382": 4,
    "383": 3,
    "384": 2,
    "385": 2,
    "386": 1,
-   "387": 4,
+   "387": 2,
    "388": 1,
-   "390": 11,
+   "390": 7,
    "391": 6,
-   "392": 17,
-   "393": 9,
+   "392": 11,
+   "393": 6,
    "394": 4,
-   "395": 8,
-   "396": 22,
-   "398": 15,
-   "399": 16,
-   "400": 21,
-   "401": 15,
-   "402": 20,
-   "403": 21,
-   "404": 18,
-   "405": 11,
-   "406": 8,
-   "407": 23,
-   "408": 36,
-   "410": 3,
-   "409": 60,
-   "397": 36,
+   "395": 7,
+   "396": 15,
+   "398": 11,
+   "399": 11,
+   "400": 11,
+   "401": 13,
+   "402": 14,
+   "403": 10,
+   "404": 4,
+   "405": 5,
+   "406": 5,
+   "407": 6,
+   "408": 21,
+   "410": 4,
+   "409": 43,
+   "397": 29,
    "411": 2,
-   "341": 28,
+   "341": 21,
    "342": 20,
    "343": 17,
-   "344": 9,
+   "344": 8,
    "345": 15,
    "347": 7,
    "348": 9,
@@ -172,19 +169,19 @@
    "380": 4
   },
   "dual_gap": {
-   "398": 5,
+   "392": 2,
+   "398": 7,
    "399": 4,
-   "400": 7,
-   "401": 4,
-   "402": 12,
-   "403": 1,
-   "404": 8,
-   "405": 5,
-   "406": 1,
-   "407": 5,
+   "400": 6,
+   "401": 5,
+   "402": 11,
+   "404": 6,
+   "407": 6,
    "408": 5,
-   "409": 3,
-   "397": 3
+   "409": 6,
+   "397": 3,
+   "341": 2,
+   "344": 1
   }
  },
  "effective_dcd_gap_note": "有效缺口 = 原9766 - single_legal（单电机合法空置不计缺口）",
@@ -776,15 +773,6 @@
   },
   {
    "batch": "343",
-   "model": "NEQ7000BEVJ72S",
-   "generic": "eQ1",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 30.0,
-   "front_p": 30.0
-  },
-  {
-   "batch": "343",
    "model": "SC6450VQ6B1BEV",
    "generic": "跨越星V5EV",
    "power_type": "BEV",
@@ -1133,15 +1121,6 @@
    "verdict": "single_legal",
    "total_p": 100.0,
    "front_p": 100.0
-  },
-  {
-   "batch": "344",
-   "model": "NEQ7000BEVJ72T",
-   "generic": "eQ1",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 55.0,
-   "front_p": 55.0
   },
   {
    "batch": "344",
@@ -1856,24 +1835,6 @@
   },
   {
    "batch": "346",
-   "model": "LZ6514MLANEV",
-   "generic": "菱智M5EV",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 90.0,
-   "front_p": 90.0
-  },
-  {
-   "batch": "346",
-   "model": "LZ6518MLAEV",
-   "generic": "菱智M5EV",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 90.0,
-   "front_p": 90.0
-  },
-  {
-   "batch": "346",
    "model": "LZW7004EVPHBG",
    "generic": "宏光MINIEV",
    "power_type": "BEV",
@@ -2357,33 +2318,6 @@
    "verdict": "single_legal",
    "total_p": 150.0,
    "front_p": 150.0
-  },
-  {
-   "batch": "347",
-   "model": "NEQ7000BEVJH11A",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 20.0,
-   "front_p": 20.0
-  },
-  {
-   "batch": "347",
-   "model": "NEQ7000BEVJH11B",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 20.0,
-   "front_p": 20.0
-  },
-  {
-   "batch": "347",
-   "model": "NEQ7000BEVJH11C",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 20.0,
-   "front_p": 20.0
   },
   {
    "batch": "347",
@@ -3554,15 +3488,6 @@
    "verdict": "single_legal",
    "total_p": 120.0,
    "front_p": 120.0
-  },
-  {
-   "batch": "351",
-   "model": "NEQ7000BEVJ72V",
-   "generic": "eQ1,小蚂蚁,小蚂蚁PRO",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 55.0,
-   "front_p": 55.0
   },
   {
    "batch": "351",
@@ -5015,15 +4940,6 @@
   },
   {
    "batch": "357",
-   "model": "NEQ7000BEVJH11G",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 23.0,
-   "front_p": 23.0
-  },
-  {
-   "batch": "357",
    "model": "NJL6471BEV500",
    "generic": "创维EV6",
    "power_type": "BEV",
@@ -5996,15 +5912,6 @@
   },
   {
    "batch": "362",
-   "model": "NEQ7000BEVJH11H",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 30.0,
-   "front_p": 30.0
-  },
-  {
-   "batch": "362",
    "model": "NEQ7000BEVJH11J",
    "generic": "QQ冰淇淋",
    "power_type": "BEV",
@@ -6015,24 +5922,6 @@
   {
    "batch": "362",
    "model": "NHQ6490BEVGG",
-   "generic": "小鹏G9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 258.0,
-   "front_p": 258.0
-  },
-  {
-   "batch": "362",
-   "model": "NHQ6490BEVGM",
-   "generic": "小鹏G9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 258.0,
-   "front_p": 258.0
-  },
-  {
-   "batch": "362",
-   "model": "NHQ6490BEVGN",
    "generic": "小鹏G9",
    "power_type": "BEV",
    "verdict": "single_legal",
@@ -7364,15 +7253,6 @@
   },
   {
    "batch": "367",
-   "model": "LXA6511SHEVX4",
-   "generic": "理想L8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "367",
    "model": "SC6471DED6HEV",
    "generic": "欧尚Z6",
    "power_type": "PHEV",
@@ -7591,15 +7471,6 @@
    "batch": "368",
    "model": "LXA6502SHEVX2",
    "generic": "理想L7",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "368",
-   "model": "LXA6511SHEVX3",
-   "generic": "理想L8",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 330.0,
@@ -8273,42 +8144,6 @@
   },
   {
    "batch": "371",
-   "model": "GAM7000BEVE0B",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "371",
-   "model": "GAM7000BEVE0D",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
-  },
-  {
-   "batch": "371",
-   "model": "GAM7000BEVE0E",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "371",
-   "model": "GAM7000BEVE0G",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "371",
    "model": "GAM7001BEVA1G",
    "generic": "AION S PIO",
    "power_type": "BEV",
@@ -8378,15 +8213,6 @@
    "verdict": "single_legal",
    "total_p": 60.0,
    "front_p": 60.0
-  },
-  {
-   "batch": "371",
-   "model": "NEQ7000BEVJH11K",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 15.0,
-   "front_p": 15.0
   },
   {
    "batch": "371",
@@ -8624,24 +8450,6 @@
   },
   {
    "batch": "372",
-   "model": "GAM7000BEVE0J",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "372",
-   "model": "GAM7000BEVE0K",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "372",
    "model": "HFC6511RSEV2C7",
    "generic": "瑞风E3",
    "power_type": "BEV",
@@ -8711,15 +8519,6 @@
    "verdict": "single_legal",
    "total_p": 100.0,
    "front_p": 100.0
-  },
-  {
-   "batch": "372",
-   "model": "NEQ7000BEVJH11L",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 23.0,
-   "front_p": 23.0
   },
   {
    "batch": "372",
@@ -8858,15 +8657,6 @@
   },
   {
    "batch": "372",
-   "model": "LXA6511SHEVX5",
-   "generic": "理想L8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "372",
    "model": "SC7154CBA6HEV",
    "generic": "A06",
    "power_type": "PHEV",
@@ -8945,24 +8735,6 @@
    "verdict": "single_legal",
    "total_p": 55.0,
    "front_p": 55.0
-  },
-  {
-   "batch": "373",
-   "model": "CSA6492LBEV3",
-   "generic": "LS6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 231.0,
-   "front_p": 231.0
-  },
-  {
-   "batch": "373",
-   "model": "CSA6492LBEV4",
-   "generic": "LS6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 231.0,
-   "front_p": 231.0
   },
   {
    "batch": "373",
@@ -9076,24 +8848,6 @@
    "batch": "373",
    "model": "LZW7004EVA4",
    "generic": "宏光MINIEV",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 30.0,
-   "front_p": 30.0
-  },
-  {
-   "batch": "373",
-   "model": "NEQ7000BEVJH11M",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 30.0,
-   "front_p": 30.0
-  },
-  {
-   "batch": "373",
-   "model": "NEQ7000BEVJH11N",
-   "generic": "QQ冰淇淋",
    "power_type": "BEV",
    "verdict": "single_legal",
    "total_p": 30.0,
@@ -9362,42 +9116,6 @@
   },
   {
    "batch": "373",
-   "model": "LXA6511SHEVX01",
-   "generic": "理想L8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "373",
-   "model": "LXA6511SHEVX03",
-   "generic": "理想L8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "373",
-   "model": "LXA6511SHEVX04",
-   "generic": "理想L8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "373",
-   "model": "LXA6511SHEVX05",
-   "generic": "理想L8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "373",
    "model": "LXA6520SHEVX01",
    "generic": "理想L9",
    "power_type": "PHEV",
@@ -9569,15 +9287,6 @@
   },
   {
    "batch": "374",
-   "model": "CSA6492LBEV5",
-   "generic": "LS6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
-  },
-  {
-   "batch": "374",
    "model": "EQ6532AL5F2BEV",
    "generic": "岚图梦想家",
    "power_type": "BEV",
@@ -9634,15 +9343,6 @@
    "batch": "374",
    "model": "GAM6460BEVC1G",
    "generic": "AION V",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "374",
-   "model": "GAM7000BEVE0A",
-   "generic": "Hyper GT",
    "power_type": "BEV",
    "verdict": "single_legal",
    "total_p": 180.0,
@@ -10172,15 +9872,6 @@
   },
   {
    "batch": "375",
-   "model": "CSA6492LBEV6",
-   "generic": "LS6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 379.0,
-   "front_p": 379.0
-  },
-  {
-   "batch": "375",
    "model": "DFM7000A2F1BEV",
    "generic": "东风纳米01",
    "power_type": "BEV",
@@ -10223,24 +9914,6 @@
    "verdict": "single_legal",
    "total_p": 160.0,
    "front_p": 160.0
-  },
-  {
-   "batch": "375",
-   "model": "GAM6490BEVH0C",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
-  },
-  {
-   "batch": "375",
-   "model": "GAM7000BEVE0M",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
   },
   {
    "batch": "375",
@@ -10685,15 +10358,6 @@
   },
   {
    "batch": "376",
-   "model": "GAM6490BEVH0L",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
-  },
-  {
-   "batch": "376",
    "model": "HFC7000WEV16",
    "generic": "E·10X,花仙子",
    "power_type": "BEV",
@@ -11018,24 +10682,6 @@
   },
   {
    "batch": "377",
-   "model": "GAM6490BEVH0G",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "377",
-   "model": "GAM6490BEVH0N",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "377",
    "model": "HKL7000BEV",
    "generic": "V5",
    "power_type": "BEV",
@@ -11108,15 +10754,6 @@
   },
   {
    "batch": "377",
-   "model": "LXA6540BEVW01",
-   "generic": "理想MEGA",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 155.0,
-   "front_p": 155.0
-  },
-  {
-   "batch": "377",
    "model": "LZW7004EVA6",
    "generic": "宏光MINIEV",
    "power_type": "BEV",
@@ -11168,15 +10805,6 @@
    "verdict": "single_legal",
    "total_p": 165.0,
    "front_p": 165.0
-  },
-  {
-   "batch": "377",
-   "model": "NEQ7000BEVJH11Q",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 30.0,
-   "front_p": 30.0
   },
   {
    "batch": "377",
@@ -11240,15 +10868,6 @@
    "verdict": "single_legal",
    "total_p": 126.0,
    "front_p": 126.0
-  },
-  {
-   "batch": "377",
-   "model": "FZ6470SHEVC10B",
-   "generic": "C10",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
   },
   {
    "batch": "377",
@@ -11384,24 +11003,6 @@
    "verdict": "single_legal",
    "total_p": 70.0,
    "front_p": 70.0
-  },
-  {
-   "batch": "378",
-   "model": "GAM6490BEVH0Q",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "378",
-   "model": "GAM6490BEVH0R",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
   },
   {
    "batch": "378",
@@ -12116,24 +11717,6 @@
   },
   {
    "batch": "379",
-   "model": "LXA6493SHEVX01",
-   "generic": "理想L6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "379",
-   "model": "LXA6493SHEVX02",
-   "generic": "理想L6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "379",
    "model": "LXA6502SHEVX05",
    "generic": "理想L7",
    "power_type": "PHEV",
@@ -12170,57 +11753,12 @@
   },
   {
    "batch": "379",
-   "model": "LXA6511SHEVX06",
-   "generic": "理想L8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "379",
-   "model": "LXA6511SHEVX07",
-   "generic": "理想L8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "379",
-   "model": "LXA6511SHEVX08",
-   "generic": "理想L8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "379",
-   "model": "LXA6511SHEVX09",
-   "generic": "理想L8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "379",
    "model": "LXA6520SHEVX05",
    "generic": "理想L9",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 330.0,
    "front_p": 330.0
-  },
-  {
-   "batch": "379",
-   "model": "LZ6520M15B0PHEV",
-   "generic": "V9",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 150.0,
-   "front_p": null
   },
   {
    "batch": "379",
@@ -12431,15 +11969,6 @@
   },
   {
    "batch": "380",
-   "model": "MR6525BEV09",
-   "generic": "009光辉",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 270.0,
-   "front_p": 270.0
-  },
-  {
-   "batch": "380",
    "model": "SH6481U1BEV-Z50",
    "generic": "大拿",
    "power_type": "BEV",
@@ -12620,15 +12149,6 @@
   },
   {
    "batch": "380",
-   "model": "FZ6470SHEVC10E",
-   "generic": "C10",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
-  },
-  {
-   "batch": "380",
    "model": "FZ6480SHEV25",
    "generic": "C11",
    "power_type": "PHEV",
@@ -12728,33 +12248,6 @@
   },
   {
    "batch": "381",
-   "model": "BJ7000K713BEV",
-   "generic": "享界S9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "381",
-   "model": "BJ7000K714BEV",
-   "generic": "享界S9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "381",
-   "model": "BJ7000K715BEV",
-   "generic": "享界S9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 158.0,
-   "front_p": 158.0
-  },
-  {
-   "batch": "381",
    "model": "CA7001H0SEVA",
    "generic": "红旗EH7",
    "power_type": "BEV",
@@ -12833,15 +12326,6 @@
    "verdict": "single_legal",
    "total_p": 110.0,
    "front_p": 110.0
-  },
-  {
-   "batch": "381",
-   "model": "LZ7000SQE0EV",
-   "generic": "星海S7,雷霆S3",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 160.0,
-   "front_p": 160.0
   },
   {
    "batch": "381",
@@ -13115,51 +12599,6 @@
   },
   {
    "batch": "382",
-   "model": "CSA6492LBEV7",
-   "generic": "LS6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 216.0,
-   "front_p": 216.0
-  },
-  {
-   "batch": "382",
-   "model": "CSA6492LBEV8",
-   "generic": "LS6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 248.0,
-   "front_p": 248.0
-  },
-  {
-   "batch": "382",
-   "model": "CSA6492LBEV9",
-   "generic": "LS6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 300.0,
-   "front_p": 300.0
-  },
-  {
-   "batch": "382",
-   "model": "CSA6492LBEVA",
-   "generic": "LS6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
-  },
-  {
-   "batch": "382",
-   "model": "CSA6492LBEVB",
-   "generic": "LS6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 200.0,
-   "front_p": 200.0
-  },
-  {
-   "batch": "382",
    "model": "DFL6470NA53BEV",
    "generic": "VX6",
    "power_type": "BEV",
@@ -13175,15 +12614,6 @@
    "verdict": "single_legal",
    "total_p": 215.0,
    "front_p": 215.0
-  },
-  {
-   "batch": "382",
-   "model": "GAM6490BEVH0U",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
   },
   {
    "batch": "382",
@@ -13247,15 +12677,6 @@
    "verdict": "single_legal",
    "total_p": 225.0,
    "front_p": 225.0
-  },
-  {
-   "batch": "382",
-   "model": "LXA6540BEVW02",
-   "generic": "理想MEGA",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 155.0,
-   "front_p": 155.0
   },
   {
    "batch": "382",
@@ -13331,15 +12752,6 @@
   },
   {
    "batch": "382",
-   "model": "NEQ7000BEVJH11T",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 30.0,
-   "front_p": 30.0
-  },
-  {
-   "batch": "382",
    "model": "NJ6540FBEV771",
    "generic": "/",
    "power_type": "BEV",
@@ -13364,15 +12776,6 @@
    "verdict": "single_legal",
    "total_p": 170.0,
    "front_p": 170.0
-  },
-  {
-   "batch": "382",
-   "model": "QCJ7000AEBEV1",
-   "generic": "腾势Z9 GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
   },
   {
    "batch": "382",
@@ -13619,15 +13022,6 @@
   },
   {
    "batch": "382",
-   "model": "FZ6490SHEVC16B",
-   "generic": "C16",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
-  },
-  {
-   "batch": "382",
    "model": "LZ6460X15B0REEV",
    "generic": "雷霆",
    "power_type": "PHEV",
@@ -13673,39 +13067,12 @@
   },
   {
    "batch": "383",
-   "model": "BJ7000K718BEV",
-   "generic": "享界S9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 158.0,
-   "front_p": 158.0
-  },
-  {
-   "batch": "383",
    "model": "BYD7000AGBEV1",
    "generic": "比亚迪海豹05EV,比亚迪海豹06GT,比亚迪海豹MINI,比亚迪海豹X",
    "power_type": "BEV",
    "verdict": "single_legal",
    "total_p": 160.0,
    "front_p": 160.0
-  },
-  {
-   "batch": "383",
-   "model": "BYD7000AGBEV2",
-   "generic": "比亚迪海豹05EV,比亚迪海豹06GT,比亚迪海豹MINI,比亚迪海豹X",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 110.0,
-   "front_p": 110.0
-  },
-  {
-   "batch": "383",
-   "model": "BYD7000AGBEV3",
-   "generic": "比亚迪海豹05EV,比亚迪海豹06GT,比亚迪海豹MINI,比亚迪海豹X",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 165.0,
-   "front_p": 165.0
   },
   {
    "batch": "383",
@@ -13952,15 +13319,6 @@
   },
   {
    "batch": "383",
-   "model": "MR6525BEV13",
-   "generic": "009",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 270.0,
-   "front_p": 270.0
-  },
-  {
-   "batch": "383",
    "model": "MR6525BEV14",
    "generic": 9,
    "power_type": "BEV",
@@ -14021,15 +13379,6 @@
    "verdict": "single_legal",
    "total_p": 165.0,
    "front_p": 165.0
-  },
-  {
-   "batch": "383",
-   "model": "SC7006AASBEV",
-   "generic": "L07",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 185.0,
-   "front_p": 185.0
   },
   {
    "batch": "383",
@@ -14186,15 +13535,6 @@
   },
   {
    "batch": "383",
-   "model": "LXA6493SHEVX03",
-   "generic": "理想L6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 330.0,
-   "front_p": 330.0
-  },
-  {
-   "batch": "383",
    "model": "LXA6502SHEVX09",
    "generic": "理想L7",
    "power_type": "PHEV",
@@ -14228,15 +13568,6 @@
    "verdict": "single_legal",
    "total_p": 150.0,
    "front_p": 150.0
-  },
-  {
-   "batch": "383",
-   "model": "QCJ7200AEHEV1",
-   "generic": "腾势Z9 GT",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
   },
   {
    "batch": "383",
@@ -14291,15 +13622,6 @@
    "verdict": "single_legal",
    "total_p": 175.0,
    "front_p": 175.0
-  },
-  {
-   "batch": "383",
-   "model": "SC7156AAG6HEV",
-   "generic": "L07",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 160.0,
-   "front_p": 160.0
   },
   {
    "batch": "383",
@@ -14363,123 +13685,6 @@
    "verdict": "single_legal",
    "total_p": 165.0,
    "front_p": 165.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC6490BEVH0C",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC6490BEVH0G",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC6490BEVH0L",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC6490BEVH0N",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC6490BEVH0Q",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC6490BEVH0R",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC6490BEVH0U",
-   "generic": "Hyper HT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC7000BEVE0A",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC7000BEVE0B",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC7000BEVE0D",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC7000BEVE0E",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 100.0,
-   "front_p": 100.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC7000BEVE0G",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "384",
-   "model": "AHC7000BEVE0M",
-   "generic": "Hyper GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
   },
   {
    "batch": "384",
@@ -14861,24 +14066,6 @@
   },
   {
    "batch": "384",
-   "model": "BYD7151Y6HEV3",
-   "generic": "比亚迪海豹07,比亚迪海豹",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 160.0,
-   "front_p": 160.0
-  },
-  {
-   "batch": "384",
-   "model": "BYD7151YT6HEV6",
-   "generic": "比亚迪海豹07,比亚迪海豹",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 200.0,
-   "front_p": 200.0
-  },
-  {
-   "batch": "384",
    "model": "CSA7159DFCHEV3",
    "generic": "D7 DMH",
    "power_type": "PHEV",
@@ -15194,42 +14381,6 @@
   },
   {
    "batch": "385",
-   "model": "SQR6500BEVEHY",
-   "generic": "智界R7",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 215.0,
-   "front_p": 215.0
-  },
-  {
-   "batch": "385",
-   "model": "SQR6500BEVEHY1",
-   "generic": "智界R7",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 215.0,
-   "front_p": 215.0
-  },
-  {
-   "batch": "385",
-   "model": "SQR6500BEVEHY2",
-   "generic": "智界R7",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
-  },
-  {
-   "batch": "385",
-   "model": "SQR6500BEVEHY3",
-   "generic": "智界R7",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 215.0,
-   "front_p": 215.0
-  },
-  {
-   "batch": "385",
    "model": "SQR6520BEVK13",
    "generic": "E7",
    "power_type": "BEV",
@@ -15344,15 +14495,6 @@
    "verdict": "single_legal",
    "total_p": 130.0,
    "front_p": 130.0
-  },
-  {
-   "batch": "385",
-   "model": "FZ6490SHEVC16D",
-   "generic": "C16",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
   },
   {
    "batch": "385",
@@ -15707,15 +14849,6 @@
   },
   {
    "batch": "386",
-   "model": "SC7156AAJ6HEV",
-   "generic": "L07",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 190.0,
-   "front_p": 190.0
-  },
-  {
-   "batch": "386",
    "model": "SC7157BBB6HEV",
    "generic": "A05",
    "power_type": "PHEV",
@@ -15860,15 +14993,6 @@
   },
   {
    "batch": "387",
-   "model": "QCJ7000AEBEV3",
-   "generic": "腾势Z9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "387",
    "model": "SAL7000AB02ABEV",
    "generic": "MINI JCW E",
    "power_type": "BEV",
@@ -15897,24 +15021,6 @@
   {
    "batch": "387",
    "model": "SC6503AAABEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
-   "front_p": null
-  },
-  {
-   "batch": "387",
-   "model": "SC6503AABBEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
-   "front_p": null
-  },
-  {
-   "batch": "387",
-   "model": "SC6553AAABEV",
    "generic": "V919",
    "power_type": "BEV",
    "verdict": "rear_only",
@@ -16012,15 +15118,6 @@
    "front_p": 120.0
   },
   {
-   "batch": "387",
-   "model": "QCJ7200AEHEV2",
-   "generic": "腾势Z9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
    "batch": "388",
    "model": "AHC6450BEVD1S",
    "generic": "AION Y",
@@ -16091,15 +15188,6 @@
    "verdict": "single_legal",
    "total_p": 125.0,
    "front_p": 125.0
-  },
-  {
-   "batch": "388",
-   "model": "FZ6490BEVC16C",
-   "generic": "C16",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 215.0,
-   "front_p": 215.0
   },
   {
    "batch": "388",
@@ -16283,15 +15371,6 @@
   },
   {
    "batch": "388",
-   "model": "QCJ6530ABHEV1",
-   "generic": "腾势N9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "388",
    "model": "THZ7150SHEVS407",
    "generic": "哪吒S,S",
    "power_type": "PHEV",
@@ -16312,15 +15391,6 @@
    "batch": "389",
    "model": "EQ6530AL5F1BEV",
    "generic": "岚图梦想家",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 215.0,
-   "front_p": 215.0
-  },
-  {
-   "batch": "389",
-   "model": "FZ6490BEVC16E",
-   "generic": "C16",
    "power_type": "BEV",
    "verdict": "single_legal",
    "total_p": 215.0,
@@ -16406,51 +15476,6 @@
    "verdict": "single_legal",
    "total_p": 150.0,
    "front_p": 150.0
-  },
-  {
-   "batch": "389",
-   "model": "VCC6505F03TBEV",
-   "generic": "EX90",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 173.0,
-   "front_p": 173.0
-  },
-  {
-   "batch": "389",
-   "model": "VCC6505F04TBEV",
-   "generic": "EX90",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 173.0,
-   "front_p": 173.0
-  },
-  {
-   "batch": "389",
-   "model": "VCC6505F05TBEV",
-   "generic": "EX90",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "389",
-   "model": "VCC6505F06TBEV",
-   "generic": "EX90",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "389",
-   "model": "VCC6505F07TBEV",
-   "generic": "EX90",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
   },
   {
    "batch": "389",
@@ -16661,15 +15686,6 @@
   },
   {
    "batch": "390",
-   "model": "NEQ7000BEVJH11U",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 30.0,
-   "front_p": 30.0
-  },
-  {
-   "batch": "390",
    "model": "SC6480V7Q6B4BEV",
    "generic": "跨越星V7EV",
    "power_type": "BEV",
@@ -16745,9 +15761,9 @@
    "model": "BYD7155WT6HEV2",
    "generic": "比亚迪秦PLUS",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 120.0,
-   "front_p": null
+   "front_p": 120.0
   },
   {
    "batch": "390",
@@ -16763,18 +15779,18 @@
    "model": "BYD7155WT6HEV4",
    "generic": "比亚迪秦PLUS",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 120.0,
-   "front_p": null
+   "front_p": 120.0
   },
   {
    "batch": "390",
    "model": "BYD7155WT6HEV5",
    "generic": "比亚迪秦PLUS",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 120.0,
-   "front_p": null
+   "front_p": 120.0
   },
   {
    "batch": "390",
@@ -16859,24 +15875,6 @@
   },
   {
    "batch": "390",
-   "model": "QCJ6530ABHEV2",
-   "generic": "腾势N9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "390",
-   "model": "QCJ7200AEHEV3",
-   "generic": "腾势Z9 GT",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "390",
    "model": "QCJ7200BTHEV1",
    "generic": "仰望U7",
    "power_type": "PHEV",
@@ -16937,24 +15935,6 @@
    "verdict": "single_legal",
    "total_p": 175.0,
    "front_p": 175.0
-  },
-  {
-   "batch": "390",
-   "model": "SC6522AAA6HEV",
-   "generic": "S09",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 231.0,
-   "front_p": 231.0
-  },
-  {
-   "batch": "390",
-   "model": "SC6522AAB6HEV",
-   "generic": "S09",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 231.0,
-   "front_p": 231.0
   },
   {
    "batch": "390",
@@ -17165,42 +16145,6 @@
   },
   {
    "batch": "391",
-   "model": "MR7001BEV100",
-   "generic": "007GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 165.0,
-   "front_p": 165.0
-  },
-  {
-   "batch": "391",
-   "model": "MR7001BEV101",
-   "generic": "007GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 310.0,
-   "front_p": 310.0
-  },
-  {
-   "batch": "391",
-   "model": "MR7001BEV102",
-   "generic": "007GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 310.0,
-   "front_p": 310.0
-  },
-  {
-   "batch": "391",
-   "model": "MR7001BEV103",
-   "generic": "007GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 165.0,
-   "front_p": 165.0
-  },
-  {
-   "batch": "391",
    "model": "NAL7000BSEVY1",
    "generic": "萤火虫",
    "power_type": "BEV",
@@ -17291,24 +16235,6 @@
   },
   {
    "batch": "391",
-   "model": "TSL6480BEVAR5",
-   "generic": "特斯拉 MODEL Y",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 220.0,
-   "front_p": 220.0
-  },
-  {
-   "batch": "391",
-   "model": "TSL6480BEVAR6",
-   "generic": "特斯拉 MODEL Y",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 220.0,
-   "front_p": 220.0
-  },
-  {
-   "batch": "391",
    "model": "TSL6480BEVBA7",
    "generic": "特斯拉 MODEL Y",
    "power_type": "BEV",
@@ -17324,15 +16250,6 @@
    "verdict": "single_legal",
    "total_p": 170.0,
    "front_p": 170.0
-  },
-  {
-   "batch": "391",
-   "model": "XMA6500LBEVR3",
-   "generic": "小米YU7",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 235.0,
-   "front_p": 235.0
   },
   {
    "batch": "391",
@@ -17642,24 +16559,6 @@
   },
   {
    "batch": "392",
-   "model": "HFC7000DEV4",
-   "generic": "尊界S800",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 130.0,
-   "front_p": 130.0
-  },
-  {
-   "batch": "392",
-   "model": "HFC7000DEV5",
-   "generic": "尊界S800",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 160.0,
-   "front_p": 160.0
-  },
-  {
-   "batch": "392",
    "model": "JL6501BEV105",
    "generic": "SV",
    "power_type": "BEV",
@@ -17720,24 +16619,6 @@
    "verdict": "single_legal",
    "total_p": 156.0,
    "front_p": 156.0
-  },
-  {
-   "batch": "392",
-   "model": "BJ7150K711RSHEV",
-   "generic": "享界S9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "392",
-   "model": "BJ7150K71RSHEV",
-   "generic": "享界S9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
   },
   {
    "batch": "392",
@@ -17843,18 +16724,18 @@
    "model": "SKE6520SSHEVA5S",
    "generic": "问界M9",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 165.0,
-   "front_p": null
+   "front_p": 220.0
   },
   {
    "batch": "392",
    "model": "SKE6520SSHEVA6S",
    "generic": "问界M9",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 165.0,
-   "front_p": null
+   "front_p": 220.0
   },
   {
    "batch": "393",
@@ -18299,42 +17180,6 @@
   },
   {
    "batch": "394",
-   "model": "LXA6511BEVW01",
-   "generic": "理想i8",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
-  },
-  {
-   "batch": "394",
-   "model": "LXA6511BEVW04",
-   "generic": "理想i8",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
-  },
-  {
-   "batch": "394",
-   "model": "LXA6511BEVW05",
-   "generic": "理想i8",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
-  },
-  {
-   "batch": "394",
-   "model": "LXA6511BEVW06",
-   "generic": "理想i8",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
-  },
-  {
-   "batch": "394",
    "model": "LZW7001BEVE2",
    "generic": "五菱之光EV",
    "power_type": "BEV",
@@ -18359,15 +17204,6 @@
    "verdict": "single_legal",
    "total_p": 185.0,
    "front_p": 185.0
-  },
-  {
-   "batch": "394",
-   "model": "QCJ6460AHBEV4",
-   "generic": "方程豹钛3",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 160.0,
-   "front_p": 160.0
   },
   {
    "batch": "394",
@@ -18458,24 +17294,6 @@
    "verdict": "single_legal",
    "total_p": 135.0,
    "front_p": 135.0
-  },
-  {
-   "batch": "394",
-   "model": "FZ6490SHEVC16G",
-   "generic": "C16",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
-  },
-  {
-   "batch": "394",
-   "model": "FZ6490SHEVC16H",
-   "generic": "C16",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
   },
   {
    "batch": "394",
@@ -18575,33 +17393,6 @@
    "verdict": "single_legal",
    "total_p": 190.0,
    "front_p": 190.0
-  },
-  {
-   "batch": "395",
-   "model": "CSA6492LBEVC",
-   "generic": "LS6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 245.0,
-   "front_p": 245.0
-  },
-  {
-   "batch": "395",
-   "model": "CSA6492LBEVE",
-   "generic": "LS6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 300.0,
-   "front_p": 300.0
-  },
-  {
-   "batch": "395",
-   "model": "CSA6492LBEVF",
-   "generic": "LS6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 200.0,
-   "front_p": 200.0
   },
   {
    "batch": "395",
@@ -18794,15 +17585,6 @@
   },
   {
    "batch": "395",
-   "model": "SC7000AAAHBEV",
-   "generic": "L07,L07E",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 200.0,
-   "front_p": 200.0
-  },
-  {
-   "batch": "395",
    "model": "SC7002CAABEV",
    "generic": "A06 E",
    "power_type": "BEV",
@@ -18818,15 +17600,6 @@
    "verdict": "single_legal",
    "total_p": 120.0,
    "front_p": 120.0
-  },
-  {
-   "batch": "395",
-   "model": "SQR6500BEVEHY5",
-   "generic": "智界R7",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 215.0,
-   "front_p": 215.0
   },
   {
    "batch": "395",
@@ -18893,15 +17666,6 @@
   },
   {
    "batch": "395",
-   "model": "XMA6500LBEVR6",
-   "generic": "小米YU7",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 235.0,
-   "front_p": 235.0
-  },
-  {
-   "batch": "395",
    "model": "AHC6510SHEVM0A",
    "generic": "HL",
    "power_type": "PHEV",
@@ -18923,9 +17687,9 @@
    "model": "BYD7150ADHEVA1",
    "generic": "比亚迪海豹06",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 160.0,
-   "front_p": null
+   "front_p": 160.0
   },
   {
    "batch": "395",
@@ -18935,24 +17699,6 @@
    "verdict": "single_legal",
    "total_p": 200.0,
    "front_p": 200.0
-  },
-  {
-   "batch": "395",
-   "model": "CSA6492LFSHEV1",
-   "generic": "LS6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 230.0,
-   "front_p": 230.0
-  },
-  {
-   "batch": "395",
-   "model": "CSA6492LFSHEV2",
-   "generic": "LS6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 230.0,
-   "front_p": 230.0
   },
   {
    "batch": "395",
@@ -18998,15 +17744,6 @@
    "verdict": "single_legal",
    "total_p": 200.0,
    "front_p": 200.0
-  },
-  {
-   "batch": "395",
-   "model": "FZ6490SHEVC16F",
-   "generic": "C16",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
   },
   {
    "batch": "395",
@@ -19091,30 +17828,12 @@
   },
   {
    "batch": "395",
-   "model": "SC7150AAAM6HEV",
-   "generic": "L07,L07R",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 200.0,
-   "front_p": 200.0
-  },
-  {
-   "batch": "395",
    "model": "SC7152CAA6HEV",
    "generic": "A06 R",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 120.0,
    "front_p": 120.0
-  },
-  {
-   "batch": "395",
-   "model": "VCC6483G01WPHEV",
-   "generic": "沃尔沃XC70",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 107.0,
-   "front_p": 107.0
   },
   {
    "batch": "395",
@@ -19175,45 +17894,36 @@
    "model": "BH6460BEVMLA",
    "generic": "ELEXIO",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 160.0,
-   "front_p": null
+   "front_p": 160.0
   },
   {
    "batch": "396",
    "model": "BH6461BEVMLA",
    "generic": "ELEXIO",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 160.0,
-   "front_p": null
+   "front_p": 160.0
   },
   {
    "batch": "396",
    "model": "BH6462BEVMLA",
    "generic": "ELEXIO",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 160.0,
-   "front_p": null
+   "front_p": 160.0
   },
   {
    "batch": "396",
    "model": "BH6463BEVMLA",
    "generic": "ELEXIO",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 160.0,
-   "front_p": null
-  },
-  {
-   "batch": "396",
-   "model": "BH6464BEVMLB",
-   "generic": "ELEXIO",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 160.0,
-   "front_p": null
+   "front_p": 160.0
   },
   {
    "batch": "396",
@@ -19451,15 +18161,6 @@
   },
   {
    "batch": "396",
-   "model": "BYD7151YT6HEV8",
-   "generic": "比亚迪海豹07",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 200.0,
-   "front_p": 200.0
-  },
-  {
-   "batch": "396",
    "model": "BYD7156WT6HEV7",
    "generic": "比亚迪海豹05",
    "power_type": "PHEV",
@@ -19565,24 +18266,6 @@
    "verdict": "single_legal",
    "total_p": 150.0,
    "front_p": 150.0
-  },
-  {
-   "batch": "396",
-   "model": "MR7151DCHEV112",
-   "generic": "领克10 EM-P",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 180.0,
-   "front_p": null
-  },
-  {
-   "batch": "396",
-   "model": "MR7151DCHEV113",
-   "generic": "领克10 EM-P",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 180.0,
-   "front_p": null
   },
   {
    "batch": "396",
@@ -19946,15 +18629,6 @@
   },
   {
    "batch": "398",
-   "model": "NEQ7000BEVJH11W",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 30.0,
-   "front_p": 30.0
-  },
-  {
-   "batch": "398",
    "model": "QCJ7000AFBEV3",
    "generic": null,
    "power_type": "BEV",
@@ -20051,15 +18725,6 @@
    "verdict": "single_legal",
    "total_p": 70.0,
    "front_p": 70.0
-  },
-  {
-   "batch": "398",
-   "model": "AHC7150SHEVQ0A",
-   "generic": "昊铂A8,昊铂A08,昊铂A80,昊铂A800",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 115.0,
-   "front_p": 115.0
   },
   {
    "batch": "398",
@@ -20324,15 +18989,6 @@
   },
   {
    "batch": "398",
-   "model": null,
-   "generic": null,
-   "power_type": "PHEV",
-   "verdict": "prerequisite",
-   "total_p": null,
-   "front_p": null
-  },
-  {
-   "batch": "398",
    "model": "QCJ6500BG6HEV5",
    "generic": "方程豹钛7",
    "power_type": "PHEV",
@@ -20366,15 +19022,6 @@
    "verdict": "single_legal",
    "total_p": 252.0,
    "front_p": 252.0
-  },
-  {
-   "batch": "398",
-   "model": "SQR6520REEVE022",
-   "generic": "风云T11",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
   },
   {
    "batch": "399",
@@ -20684,15 +19331,6 @@
   },
   {
    "batch": "399",
-   "model": "NEQ7000BEVJH11X",
-   "generic": "QQ冰淇淋",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 30.0,
-   "front_p": 30.0
-  },
-  {
-   "batch": "399",
    "model": " BJ2030V411MSHEV ",
    "generic": null,
    "power_type": "PHEV",
@@ -20753,15 +19391,6 @@
    "verdict": "single_legal",
    "total_p": 120.0,
    "front_p": 120.0
-  },
-  {
-   "batch": "399",
-   "model": " BYD7151YT6HEV10 ",
-   "generic": "比亚迪海豹07",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 240.0,
-   "front_p": 240.0
   },
   {
    "batch": "399",
@@ -20828,48 +19457,12 @@
   },
   {
    "batch": "399",
-   "model": " CC6490CW23KPHEV ",
-   "generic": "哈弗猛龙V7 PLUS,哈弗猛龙 PLUS",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 70.0,
-   "front_p": null
-  },
-  {
-   "batch": "399",
-   "model": " CC6490CW23LPHEV ",
-   "generic": "哈弗猛龙V7 PLUS,哈弗猛龙 PLUS",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 70.0,
-   "front_p": null
-  },
-  {
-   "batch": "399",
-   "model": " CC6490CW23MPHEV ",
-   "generic": "哈弗猛龙V7 PLUS,哈弗猛龙 PLUS",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 70.0,
-   "front_p": null
-  },
-  {
-   "batch": "399",
    "model": " DFM6480M5F6PHEV ",
    "generic": "风神L8",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 110.0,
    "front_p": 110.0
-  },
-  {
-   "batch": "399",
-   "model": " EQ6520AD5F2PHEV ",
-   "generic": "岚图9L,岚图泰山",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 380.0,
-   "front_p": null
   },
   {
    "batch": "399",
@@ -20963,60 +19556,6 @@
   },
   {
    "batch": "399",
-   "model": " NEQ6490REEVS5DA ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "399",
-   "model": " NEQ6490REEVS5DB ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "399",
-   "model": " NEQ6490REEVS5DC ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "399",
-   "model": " NEQ6510REEVS5DA ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "399",
-   "model": " NEQ6510REEVS5DB ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "399",
-   "model": " NEQ6510REEVS5DC ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "399",
    "model": " NHQ6490SHEVMA ",
    "generic": "小鹏G7",
    "power_type": "PHEV",
@@ -21044,15 +19583,6 @@
   },
   {
    "batch": "399",
-   "model": " QCJ6530ABHEV5 ",
-   "generic": "腾势N9",
-   "power_type": "PHEV",
-   "verdict": "dual_gap",
-   "total_p": 680.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "399",
    "model": "SH6482N1CHEV",
    "generic": "G50 MAX PHEV",
    "power_type": "PHEV",
@@ -21074,9 +19604,9 @@
    "model": " SQR7150CHEVE012 ",
    "generic": "风云A9 L",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 160.0,
-   "front_p": null
+   "front_p": 178.0
   },
   {
    "batch": "399",
@@ -21125,24 +19655,6 @@
   },
   {
    "batch": "400",
-   "model": "BJ7000K719BEV",
-   "generic": "享界S9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "400",
-   "model": "BJ7000K71ABEV",
-   "generic": "享界S9",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 385.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "400",
    "model": "BJ7000T66SEV",
    "generic": "EU8",
    "power_type": "BEV",
@@ -21158,15 +19670,6 @@
    "verdict": "single_legal",
    "total_p": 165.0,
    "front_p": 165.0
-  },
-  {
-   "batch": "400",
-   "model": "BYD6450BZBEV1",
-   "generic": "比亚迪元PLUS",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
   },
   {
    "batch": "400",
@@ -21269,15 +19772,6 @@
   },
   {
    "batch": "400",
-   "model": "TSL6480BEVBR0",
-   "generic": "特斯拉 MODEL Y",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 225.0,
-   "front_p": 225.0
-  },
-  {
-   "batch": "400",
    "model": "VWA70002BEV1",
    "generic": "ID.UNYX 与众07",
    "power_type": "BEV",
@@ -21293,24 +19787,6 @@
    "verdict": "single_legal",
    "total_p": 55.0,
    "front_p": 55.0
-  },
-  {
-   "batch": "400",
-   "model": "BJ7150K712RSHEV",
-   "generic": "享界S9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "400",
-   "model": "BJ7150K713RSHEV",
-   "generic": "享界S9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
   },
   {
    "batch": "400",
@@ -21468,24 +19944,6 @@
   {
    "batch": "400",
    "model": "HQ7151DCHEV110",
-   "generic": "银河星耀7",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 79.0,
-   "front_p": 79.0
-  },
-  {
-   "batch": "400",
-   "model": "HQ7151DCHEV111",
-   "generic": "银河星耀7",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 79.0,
-   "front_p": 79.0
-  },
-  {
-   "batch": "400",
-   "model": "HQ7151DCHEV112",
    "generic": "银河星耀7",
    "power_type": "PHEV",
    "verdict": "single_legal",
@@ -21655,24 +20113,6 @@
    "front_p": 105.0
   },
   {
-   "batch": "400",
-   "model": "SQR6520REEVE023",
-   "generic": "风云T11",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "400",
-   "model": "SQR6520REEVE024",
-   "generic": "风云T11",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
    "batch": "401",
    "model": "AFN6490LACBEVA",
    "generic": "Q6L",
@@ -21788,15 +20228,6 @@
    "verdict": "single_legal",
    "total_p": 340.0,
    "front_p": 340.0
-  },
-  {
-   "batch": "401",
-   "model": "CA7009B0EVA",
-   "generic": "悦意08",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 202.0,
-   "front_p": 202.0
   },
   {
    "batch": "401",
@@ -22304,24 +20735,6 @@
   },
   {
    "batch": "401",
-   "model": " HQ7151DCHEV111 ",
-   "generic": "银河星耀7",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 79.0,
-   "front_p": 79.0
-  },
-  {
-   "batch": "401",
-   "model": " HQ7151DCHEV112 ",
-   "generic": "银河星耀7",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 79.0,
-   "front_p": 79.0
-  },
-  {
-   "batch": "401",
    "model": "JX6497PD6PHEV",
    "generic": "EQUATOR",
    "power_type": "PHEV",
@@ -22396,60 +20809,6 @@
    "batch": "401",
    "model": " NEQ6450REEVS56F ",
    "generic": "X3L",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "401",
-   "model": " NEQ6490REEVS5DD ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "401",
-   "model": " NEQ6490REEVS5DE ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "401",
-   "model": " NEQ6490REEVS5DH ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "401",
-   "model": " NEQ6510REEVS5DD ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "401",
-   "model": "NEQ6510REEVS5DE",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "401",
-   "model": " NEQ6510REEVS5DH ",
-   "generic": "V27",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 105.0,
@@ -22582,33 +20941,6 @@
    "front_p": 480.0
   },
   {
-   "batch": "401",
-   "model": " SQR6520REEVE024 ",
-   "generic": "风云T11",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "401",
-   "model": " SQR6520REEVE025 ",
-   "generic": "风云T11",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "401",
-   "model": " SQR6520REEVE026 ",
-   "generic": "风云T11",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
    "batch": "402",
    "model": "AHC6460BEVJ0X",
    "generic": "R2",
@@ -22691,24 +21023,6 @@
   },
   {
    "batch": "402",
-   "model": "BYD7000AGBEV4",
-   "generic": "比亚迪海豹06GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 75.0,
-   "front_p": 75.0
-  },
-  {
-   "batch": "402",
-   "model": "BYD7000AGBEV5",
-   "generic": "比亚迪海豹06GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 240.0,
-   "front_p": 240.0
-  },
-  {
-   "batch": "402",
    "model": "BYD7000BVBEV3",
    "generic": "比亚迪秦MAX、比亚迪秦Ultra、比亚迪大秦",
    "power_type": "BEV",
@@ -22738,15 +21052,6 @@
    "batch": "402",
    "model": "BYD7000BWBEV4",
    "generic": "比亚迪海豹06、比亚迪海豹06MAX",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 240.0,
-   "front_p": 240.0
-  },
-  {
-   "batch": "402",
-   "model": "BYD7000BXBEV2",
-   "generic": "比亚迪海豹07",
    "power_type": "BEV",
    "verdict": "single_legal",
    "total_p": 240.0,
@@ -22796,24 +21101,6 @@
    "verdict": "single_legal",
    "total_p": 95.0,
    "front_p": 95.0
-  },
-  {
-   "batch": "402",
-   "model": "DFL6490NNJ1BEV",
-   "generic": "东风日产NX8",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 215.0,
-   "front_p": 215.0
-  },
-  {
-   "batch": "402",
-   "model": "DFL6490NNJ2BEV",
-   "generic": "东风日产NX8",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
   },
   {
    "batch": "402",
@@ -22943,42 +21230,6 @@
   },
   {
    "batch": "402",
-   "model": "QCJ6460AHBEV5",
-   "generic": "方程豹钛3",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 240.0,
-   "front_p": 240.0
-  },
-  {
-   "batch": "402",
-   "model": "QCJ6460AHBEV6",
-   "generic": "方程豹钛3",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 240.0,
-   "front_p": 240.0
-  },
-  {
-   "batch": "402",
-   "model": "QCJ6460AHBEV7",
-   "generic": "方程豹钛3",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 155.0,
-   "front_p": null
-  },
-  {
-   "batch": "402",
-   "model": "QCJ6460AHBEV8",
-   "generic": "方程豹钛3",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
-  },
-  {
-   "batch": "402",
    "model": "SAL7000AC00BBEV",
    "generic": "MINI Aceman E",
    "power_type": "BEV",
@@ -23003,15 +21254,6 @@
    "verdict": "single_legal",
    "total_p": 105.0,
    "front_p": 105.0
-  },
-  {
-   "batch": "402",
-   "model": "SC7000AABTBEV",
-   "generic": "L07",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 185.0,
-   "front_p": 185.0
   },
   {
    "batch": "402",
@@ -23150,42 +21392,6 @@
   },
   {
    "batch": "402",
-   "model": "BJ7150K711RSHEV",
-   "generic": "享界S9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "402",
-   "model": "BJ7150K712RSHEV",
-   "generic": "享界S9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "402",
-   "model": "BJ7150K713RSHEV",
-   "generic": "享界S9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "402",
-   "model": "BJ7150K72RSHEV",
-   "generic": "享界S9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "402",
    "model": "BYD6480AMHEV10",
    "generic": "比亚迪海狮06",
    "power_type": "PHEV",
@@ -23258,29 +21464,11 @@
   },
   {
    "batch": "402",
-   "model": "CSA6531LFSHEV1",
-   "generic": "LS9",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 390.0,
-   "front_p": null
-  },
-  {
-   "batch": "402",
    "model": "CSA6531LFSHEV2",
    "generic": "LS9",
    "power_type": "PHEV",
    "verdict": "rear_only",
    "total_p": 380.0,
-   "front_p": null
-  },
-  {
-   "batch": "402",
-   "model": " CSA6531LFSHEV3 ",
-   "generic": "LS9",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 550.0,
    "front_p": null
   },
   {
@@ -23333,18 +21521,9 @@
    "model": "EQ6520AE5F2PHEV",
    "generic": "岚图泰山8,岚图泰山M,岚图泰山E",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 380.0,
-   "front_p": null
-  },
-  {
-   "batch": "402",
-   "model": "EQ6521AE5F2PHEV",
-   "generic": "岚图泰山8,岚图泰山M,岚图泰山E",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 365.0,
-   "front_p": null
+   "front_p": 150.0
   },
   {
    "batch": "402",
@@ -23411,44 +21590,8 @@
   },
   {
    "batch": "402",
-   "model": "HQ7151DCHEV111",
-   "generic": "银河星耀7",
-   "power_type": "PHEV",
-   "verdict": "dual_gap",
-   "total_p": 160.0,
-   "front_p": 79.0
-  },
-  {
-   "batch": "402",
-   "model": "HQ7151DCHEV112",
-   "generic": "银河星耀7",
-   "power_type": "PHEV",
-   "verdict": "dual_gap",
-   "total_p": 160.0,
-   "front_p": 79.0
-  },
-  {
-   "batch": "402",
-   "model": "HQ7151DCHEV113",
-   "generic": "银河星耀7",
-   "power_type": "PHEV",
-   "verdict": "dual_gap",
-   "total_p": 160.0,
-   "front_p": 79.0
-  },
-  {
-   "batch": "402",
    "model": " HQ7151DCHEV114 ",
    "generic": "银河星耀6 EM-i",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 79.0,
-   "front_p": 79.0
-  },
-  {
-   "batch": "402",
-   "model": "HQ7151DCHEV118",
-   "generic": "银河星耀7",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 79.0,
@@ -23528,42 +21671,6 @@
   },
   {
    "batch": "402",
-   "model": " NEQ6490REEVS5DF ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "402",
-   "model": " NEQ6490REEVS5DG ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "402",
-   "model": " NEQ6510REEVS5DF ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "402",
-   "model": " NEQ6510REEVS5DG ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "402",
    "model": "NHQ7150SHEVKA",
    "generic": "小鹏P7+",
    "power_type": "PHEV",
@@ -23574,15 +21681,6 @@
   {
    "batch": "402",
    "model": "NJL6553HEV1",
-   "generic": null,
-   "power_type": "PHEV",
-   "verdict": "prerequisite",
-   "total_p": null,
-   "front_p": null
-  },
-  {
-   "batch": "402",
-   "model": null,
    "generic": null,
    "power_type": "PHEV",
    "verdict": "prerequisite",
@@ -23629,42 +21727,6 @@
    "batch": "402",
    "model": "SC6480AAAB6HEV",
    "generic": "07",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 231.0,
-   "front_p": 231.0
-  },
-  {
-   "batch": "402",
-   "model": "SC6520AAAA6HEV",
-   "generic": "S09",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 231.0,
-   "front_p": 231.0
-  },
-  {
-   "batch": "402",
-   "model": "SC6520AAAB6HEV",
-   "generic": "S09",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 231.0,
-   "front_p": 231.0
-  },
-  {
-   "batch": "402",
-   "model": "SC6522AAA6HEV",
-   "generic": "S09",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 231.0,
-   "front_p": 231.0
-  },
-  {
-   "batch": "402",
-   "model": "SC6522AAB6HEV",
-   "generic": "S09",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 231.0,
@@ -23837,41 +21899,14 @@
    "model": "SQR6490CHEVT29",
    "generic": "风云T9L",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 55.0,
-   "front_p": null
+   "front_p": 260.0
   },
   {
    "batch": "402",
    "model": "SQR6490CHEVT291",
    "generic": "风云T9L",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "402",
-   "model": "SQR6520REEVE022",
-   "generic": "风云T11",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "402",
-   "model": " SQR6521REEVE02 ",
-   "generic": "风云T11",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "402",
-   "model": " SQR6521REEVE022 ",
-   "generic": "风云T11",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 105.0,
@@ -23951,15 +21986,6 @@
   },
   {
    "batch": "403",
-   "model": " BYD7000AGBEV6 ",
-   "generic": "比亚迪海豹06GT",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 240.0,
-   "front_p": null
-  },
-  {
-   "batch": "403",
    "model": " BYD7000BVBEV5 ",
    "generic": "比亚迪秦MAX、比亚迪大秦",
    "power_type": "BEV",
@@ -23975,15 +22001,6 @@
    "verdict": "rear_only",
    "total_p": 240.0,
    "front_p": null
-  },
-  {
-   "batch": "403",
-   "model": " BYD7000BXBEV3 ",
-   "generic": "比亚迪海豹07",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 240.0,
-   "front_p": 240.0
   },
   {
    "batch": "403",
@@ -24008,27 +22025,18 @@
    "model": " FZ6430BEVA10A ",
    "generic": "A10",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 70.0,
-   "front_p": null
+   "front_p": 70.0
   },
   {
    "batch": "403",
    "model": " FZ6430BEVA10B ",
    "generic": "A10",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 90.0,
-   "front_p": null
-  },
-  {
-   "batch": "403",
-   "model": " FZ6530BEVWD19A ",
-   "generic": "D19",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 540.0,
-   "front_p": null
+   "front_p": 90.0
   },
   {
    "batch": "403",
@@ -24046,24 +22054,6 @@
    "power_type": "BEV",
    "verdict": "rear_only",
    "total_p": 134.0,
-   "front_p": null
-  },
-  {
-   "batch": "403",
-   "model": " NEQ7000BEVT12AA ",
-   "generic": "QQ3",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 58.0,
-   "front_p": null
-  },
-  {
-   "batch": "403",
-   "model": " NEQ7000BEVT12AB ",
-   "generic": "QQ3",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 90.0,
    "front_p": null
   },
   {
@@ -24086,93 +22076,30 @@
   },
   {
    "batch": "403",
-   "model": " QCJ6460AHBEV10 ",
-   "generic": "方程豹钛3",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 240.0,
-   "front_p": 240.0
-  },
-  {
-   "batch": "403",
-   "model": " QCJ6460AHBEV9 ",
-   "generic": "方程豹钛3",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 240.0,
-   "front_p": 240.0
-  },
-  {
-   "batch": "403",
-   "model": " QCJ7000AEBEV5 ",
-   "generic": "腾势Z9 GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "403",
-   "model": " QCJ7000AEBEV6 ",
-   "generic": "腾势Z9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "403",
-   "model": " QCJ7000AEBEV7 ",
-   "generic": "腾势Z9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "403",
-   "model": " QCJ7000AEBEV8 ",
-   "generic": "腾势Z9 GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "403",
-   "model": " QCJ7000AEBEV9 ",
-   "generic": "腾势Z9 GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "403",
    "model": " QCJ7000AKBEV1 ",
    "generic": "领汇e7",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 130.0,
-   "front_p": null
+   "front_p": 130.0
   },
   {
    "batch": "403",
    "model": " QCJ7000AKBEV2 ",
    "generic": "领汇e7",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 100.0,
-   "front_p": null
+   "front_p": 100.0
   },
   {
    "batch": "403",
    "model": " QCJ7000AKBEV3 ",
    "generic": "领汇e7",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 100.0,
-   "front_p": null
+   "front_p": 100.0
   },
   {
    "batch": "403",
@@ -24221,15 +22148,6 @@
   },
   {
    "batch": "403",
-   "model": "AHC7150SHEVQ0D",
-   "generic": "昊铂A800",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 115.0,
-   "front_p": 115.0
-  },
-  {
-   "batch": "403",
    "model": "BJ7150A51RSHEV",
    "generic": "αS5",
    "power_type": "PHEV",
@@ -24266,15 +22184,6 @@
   },
   {
    "batch": "403",
-   "model": "CA7159B6SHEVA",
-   "generic": "悦意08",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 202.0,
-   "front_p": 202.0
-  },
-  {
-   "batch": "403",
    "model": "CC6500BD23APHEV",
    "generic": "魏牌高山,魏牌高山MINI,魏牌高山AIR,魏牌高山7",
    "power_type": "PHEV",
@@ -24299,24 +22208,6 @@
    "verdict": "single_legal",
    "total_p": 126.0,
    "front_p": 126.0
-  },
-  {
-   "batch": "403",
-   "model": "CC6510BD23BPHEV",
-   "generic": null,
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 122.0,
-   "front_p": 122.0
-  },
-  {
-   "batch": "403",
-   "model": "CSA6531LFSHEV4",
-   "generic": "LS9",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 550.0,
-   "front_p": null
   },
   {
    "batch": "403",
@@ -24352,15 +22243,6 @@
    "power_type": "PHEV",
    "verdict": "rear_only",
    "total_p": 300.0,
-   "front_p": null
-  },
-  {
-   "batch": "403",
-   "model": "HQ7151DCHEV117",
-   "generic": "银河星耀7",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 160.0,
    "front_p": null
   },
   {
@@ -24401,15 +22283,6 @@
   },
   {
    "batch": "403",
-   "model": "QCJ7200AEHEV4",
-   "generic": "腾势Z9 GT",
-   "power_type": "PHEV",
-   "verdict": "dual_gap",
-   "total_p": 640.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "403",
    "model": "SC7150AABB6HEV",
    "generic": "12",
    "power_type": "PHEV",
@@ -24443,60 +22316,6 @@
    "verdict": "single_legal",
    "total_p": 165.0,
    "front_p": 165.0
-  },
-  {
-   "batch": "403",
-   "model": "SQR6540REEVEHV",
-   "generic": "智界V9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "403",
-   "model": "SQR6540REEVEHV1",
-   "generic": "智界V9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "403",
-   "model": "SQR6540REEVEHV2",
-   "generic": "智界V9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "403",
-   "model": "SVW652183BRV",
-   "generic": "ID.ERA 9X",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 220.0,
-   "front_p": 220.0
-  },
-  {
-   "batch": "403",
-   "model": "SVW652185BRV",
-   "generic": "ID.ERA 9X",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 220.0,
-   "front_p": 220.0
-  },
-  {
-   "batch": "403",
-   "model": "SVW652186BRV",
-   "generic": "ID.ERA 9X",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 220.0,
-   "front_p": 220.0
   },
   {
    "batch": "404",
@@ -24563,15 +22382,6 @@
   },
   {
    "batch": "404",
-   "model": "FZ6530BEVWD19E",
-   "generic": "D19",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 410.0,
-   "front_p": null
-  },
-  {
-   "batch": "404",
    "model": "FZ7000BEVB05F",
    "generic": "Lafa 5",
    "power_type": "BEV",
@@ -24596,42 +22406,6 @@
    "verdict": "single_legal",
    "total_p": 185.0,
    "front_p": 185.0
-  },
-  {
-   "batch": "404",
-   "model": "MR7001BEV124",
-   "generic": "007GT",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 585.0,
-   "front_p": 370.0
-  },
-  {
-   "batch": "404",
-   "model": "MR7001BEV125",
-   "generic": "007GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 370.0,
-   "front_p": 370.0
-  },
-  {
-   "batch": "404",
-   "model": "MR7001BEV126",
-   "generic": "007GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 370.0,
-   "front_p": 370.0
-  },
-  {
-   "batch": "404",
-   "model": "MR7001BEV127",
-   "generic": "007GT",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 585.0,
-   "front_p": 370.0
   },
   {
    "batch": "404",
@@ -24671,33 +22445,6 @@
   },
   {
    "batch": "404",
-   "model": "NHQ6530BEVTA",
-   "generic": "小鹏GX",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 270.0,
-   "front_p": 270.0
-  },
-  {
-   "batch": "404",
-   "model": "NHQ6530BEVTC",
-   "generic": "小鹏GX",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 430.0,
-   "front_p": 270.0
-  },
-  {
-   "batch": "404",
-   "model": "NHQ6530BEVTD",
-   "generic": "小鹏GX",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 430.0,
-   "front_p": 270.0
-  },
-  {
-   "batch": "404",
    "model": "QCJ6500BGBEV1",
    "generic": "方程豹钛7",
    "power_type": "BEV",
@@ -24716,65 +22463,11 @@
   },
   {
    "batch": "404",
-   "model": "QCJ6520MBEV2",
-   "generic": "腾势D9",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 410.0,
-   "front_p": null
-  },
-  {
-   "batch": "404",
-   "model": "QCJ6520MBEV3",
-   "generic": "腾势D9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 340.0,
-   "front_p": 340.0
-  },
-  {
-   "batch": "404",
-   "model": "SC7000AABFBEV",
-   "generic": "06T",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 225.0,
-   "front_p": 225.0
-  },
-  {
-   "batch": "404",
-   "model": "SC7000AABGBEV",
-   "generic": "06T",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 251.0,
-   "front_p": 251.0
-  },
-  {
-   "batch": "404",
-   "model": "SC7000AABHBEV",
-   "generic": "06T",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 712.0,
-   "front_p": null
-  },
-  {
-   "batch": "404",
    "model": "SKE6501DBEVA1F",
    "generic": "问界M6EV",
    "power_type": "BEV",
    "verdict": "dual_gap",
    "total_p": 340.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "404",
-   "model": "SKE6501DBEVR1",
-   "generic": "问界M6EV",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 454.0,
    "front_p": 227.0
   },
   {
@@ -24806,105 +22499,6 @@
   },
   {
    "batch": "404",
-   "model": "VCD6505F14TBEV",
-   "generic": "EX90",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 500.0,
-   "front_p": null
-  },
-  {
-   "batch": "404",
-   "model": "VCD6505F15TBEV",
-   "generic": "EX90",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 330.0,
-   "front_p": null
-  },
-  {
-   "batch": "404",
-   "model": "VCD6505F16TBEV",
-   "generic": "EX90",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 330.0,
-   "front_p": null
-  },
-  {
-   "batch": "404",
-   "model": "VCD6505F17TBEV",
-   "generic": "EX90",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 500.0,
-   "front_p": null
-  },
-  {
-   "batch": "404",
-   "model": "VCD6505F18TBEV",
-   "generic": "EX90",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 500.0,
-   "front_p": null
-  },
-  {
-   "batch": "404",
-   "model": "VCD7005F011BEV",
-   "generic": "ES90",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 245.0,
-   "front_p": 245.0
-  },
-  {
-   "batch": "404",
-   "model": "VCD7005F021BEV",
-   "generic": "ES90",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 245.0,
-   "front_p": 245.0
-  },
-  {
-   "batch": "404",
-   "model": "VCD7005F031BEV",
-   "generic": "ES90",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 500.0,
-   "front_p": null
-  },
-  {
-   "batch": "404",
-   "model": "VCD7005F041BEV",
-   "generic": "ES90",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 240.0,
-   "front_p": 240.0
-  },
-  {
-   "batch": "404",
-   "model": "VCD7005F051BEV",
-   "generic": "ES90",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 500.0,
-   "front_p": null
-  },
-  {
-   "batch": "404",
-   "model": "XMA6500LBEVA9",
-   "generic": null,
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 738.0,
-   "front_p": null
-  },
-  {
-   "batch": "404",
    "model": "CC6480CW25CPHEV",
    "generic": "哈弗猛龙",
    "power_type": "PHEV",
@@ -24923,44 +22517,8 @@
   },
   {
    "batch": "404",
-   "model": "CC6490CW23QPHEV",
-   "generic": "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 126.0,
-   "front_p": 126.0
-  },
-  {
-   "batch": "404",
-   "model": "CC6490CW23RPHEV",
-   "generic": "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 126.0,
-   "front_p": 126.0
-  },
-  {
-   "batch": "404",
    "model": "CC6491CW25APHEV",
    "generic": null,
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 126.0,
-   "front_p": 126.0
-  },
-  {
-   "batch": "404",
-   "model": "CC6491CW25CPHEV",
-   "generic": "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 126.0,
-   "front_p": 126.0
-  },
-  {
-   "batch": "404",
-   "model": "CC6491CW25DPHEV",
-   "generic": "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 126.0,
@@ -25088,27 +22646,27 @@
    "model": "NHQ6530REEVTA",
    "generic": "小鹏GX",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 370.0,
-   "front_p": null
+   "front_p": 160.0
   },
   {
    "batch": "404",
    "model": "NHQ6530REEVTB",
    "generic": "小鹏GX",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 370.0,
-   "front_p": null
+   "front_p": 160.0
   },
   {
    "batch": "404",
    "model": "NHQ6530REEVTC",
    "generic": "小鹏GX",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 370.0,
-   "front_p": null
+   "front_p": 160.0
   },
   {
    "batch": "404",
@@ -25118,42 +22676,6 @@
    "verdict": "single_legal",
    "total_p": 165.0,
    "front_p": 165.0
-  },
-  {
-   "batch": "404",
-   "model": "SKE6501DREEVA1F",
-   "generic": null,
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "404",
-   "model": "SKE6501DREEVA2F",
-   "generic": "问界M6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "404",
-   "model": "SKE6521DREEVR1",
-   "generic": "问界M8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "404",
-   "model": "SQR6490CHEVT292",
-   "generic": "风云T9L",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 55.0,
-   "front_p": 55.0
   },
   {
    "batch": "404",
@@ -25220,138 +22742,12 @@
   },
   {
    "batch": "405",
-   "model": "BYD6470BZBEV1",
-   "generic": "比亚迪元PLUS",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
-  },
-  {
-   "batch": "405",
-   "model": "BYD6470BZBEV2",
-   "generic": "比亚迪元PLUS",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
-  },
-  {
-   "batch": "405",
-   "model": "BYD6470BZBEV3",
-   "generic": "比亚迪元PLUS",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
-  },
-  {
-   "batch": "405",
-   "model": "BYD6470BZBEV4",
-   "generic": "比亚迪元PLUS",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
-  },
-  {
-   "batch": "405",
    "model": "BYD6480CDBEV3",
    "generic": "比亚迪宋Ultra,比亚迪大宋",
    "power_type": "BEV",
    "verdict": "single_legal",
    "total_p": 240.0,
    "front_p": 240.0
-  },
-  {
-   "batch": "405",
-   "model": "CSA6453JBEV7",
-   "generic": "MG 4X",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 125.0,
-   "front_p": 125.0
-  },
-  {
-   "batch": "405",
-   "model": "CSA6453JBEV8",
-   "generic": "MG 4X",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
-  },
-  {
-   "batch": "405",
-   "model": "CSA7008BBEV1",
-   "generic": "尚界 Z7",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 264.0,
-   "front_p": 264.0
-  },
-  {
-   "batch": "405",
-   "model": "CSA7008BBEV2",
-   "generic": "尚界 Z7 ULTRA",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 434.0,
-   "front_p": 264.0
-  },
-  {
-   "batch": "405",
-   "model": "CSA7008BBEV3",
-   "generic": "尚界 Z7 T ULTRA",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 434.0,
-   "front_p": 264.0
-  },
-  {
-   "batch": "405",
-   "model": "CSA7008BBEV4",
-   "generic": "尚界 Z7",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 264.0,
-   "front_p": 264.0
-  },
-  {
-   "batch": "405",
-   "model": "CSA7008BBEV5",
-   "generic": "尚界 Z7 T",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 264.0,
-   "front_p": 264.0
-  },
-  {
-   "batch": "405",
-   "model": "CSA7008BBEV6",
-   "generic": "尚界 Z7 T",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 264.0,
-   "front_p": 264.0
-  },
-  {
-   "batch": "405",
-   "model": "FZ6530BEVWD19B",
-   "generic": "D19",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 540.0,
-   "front_p": null
-  },
-  {
-   "batch": "405",
-   "model": "FZ6530BEVWD99A",
-   "generic": "D99",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 410.0,
-   "front_p": null
   },
   {
    "batch": "405",
@@ -25373,15 +22769,6 @@
   },
   {
    "batch": "405",
-   "model": "MR6521BEV100",
-   "generic": "009",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 680.0,
-   "front_p": 310.0
-  },
-  {
-   "batch": "405",
    "model": "MR6521BEV102",
    "generic": "009",
    "power_type": "BEV",
@@ -25391,48 +22778,12 @@
   },
   {
    "batch": "405",
-   "model": "MR7002BEV106",
-   "generic": "领克10",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 680.0,
-   "front_p": null
-  },
-  {
-   "batch": "405",
-   "model": "MR7002BEV107",
-   "generic": "领克10",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 300.0,
-   "front_p": 300.0
-  },
-  {
-   "batch": "405",
-   "model": "MR7002BEV108",
-   "generic": "领克10",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 370.0,
-   "front_p": 370.0
-  },
-  {
-   "batch": "405",
    "model": "QCJ6500BGBEV3",
    "generic": "方程豹钛7",
    "power_type": "BEV",
    "verdict": "single_legal",
    "total_p": 300.0,
    "front_p": 300.0
-  },
-  {
-   "batch": "405",
-   "model": "SKE6530DBEVA1F",
-   "generic": "问界M9EV",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 160.0,
-   "front_p": 160.0
   },
   {
    "batch": "405",
@@ -25526,24 +22877,6 @@
   },
   {
    "batch": "405",
-   "model": "BYD7150AZ6HEV2",
-   "generic": "比亚迪海豹08",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 200.0,
-   "front_p": 200.0
-  },
-  {
-   "batch": "405",
-   "model": "BYD7150AZ6HEV3",
-   "generic": "比亚迪海豹08",
-   "power_type": "PHEV",
-   "verdict": "dual_gap",
-   "total_p": 400.0,
-   "front_p": 200.0
-  },
-  {
-   "batch": "405",
    "model": "BYD7150BV6HEV1",
    "generic": "比亚迪秦MAX、比亚迪大秦",
    "power_type": "PHEV",
@@ -25607,15 +22940,6 @@
   },
   {
    "batch": "405",
-   "model": "GAC6531CHEVMAJ6A",
-   "generic": "传祺向往M8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 120.0,
-   "front_p": 120.0
-  },
-  {
-   "batch": "405",
    "model": "HQ7151DCHEV120",
    "generic": "银河星耀7",
    "power_type": "PHEV",
@@ -25652,33 +22976,6 @@
   },
   {
    "batch": "405",
-   "model": "QCJ6530ABHEV3",
-   "generic": "腾势N9",
-   "power_type": "PHEV",
-   "verdict": "dual_gap",
-   "total_p": 680.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "405",
-   "model": "SKE6530DREEVA1F",
-   "generic": "问界M9",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 497.0,
-   "front_p": null
-  },
-  {
-   "batch": "405",
-   "model": "SKE6530DREEVA2F",
-   "generic": "问界M9",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 497.0,
-   "front_p": null
-  },
-  {
-   "batch": "405",
    "model": "SQR6490CHEVT293",
    "generic": "风云T9L",
    "power_type": "PHEV",
@@ -25709,9 +23006,9 @@
    "model": "AHC6450BEVD1Y",
    "generic": "埃安Y Plus",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 100.0,
-   "front_p": null
+   "front_p": 100.0
   },
   {
    "batch": "406",
@@ -25725,15 +23022,6 @@
   {
    "batch": "406",
    "model": "AHC7000BEVW0A",
-   "generic": "启境GT7",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
-  },
-  {
-   "batch": "406",
-   "model": "AHC7000BEVW0B",
    "generic": "启境GT7",
    "power_type": "BEV",
    "verdict": "single_legal",
@@ -25796,51 +23084,6 @@
   },
   {
    "batch": "406",
-   "model": "BMW6495ABBEV",
-   "generic": null,
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 351.0,
-   "front_p": null
-  },
-  {
-   "batch": "406",
-   "model": "BYD7000AZBEV1",
-   "generic": "比亚迪海豹08",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 320.0,
-   "front_p": 320.0
-  },
-  {
-   "batch": "406",
-   "model": "BYD7000AZBEV2",
-   "generic": "比亚迪海豹08",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 510.0,
-   "front_p": null
-  },
-  {
-   "batch": "406",
-   "model": "BYD7000AZBEV3",
-   "generic": "比亚迪海豹08",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 255.0,
-   "front_p": 255.0
-  },
-  {
-   "batch": "406",
-   "model": "CA7009B0EVB",
-   "generic": "悦意08",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 202.0,
-   "front_p": 202.0
-  },
-  {
-   "batch": "406",
    "model": "CC7000DE00HABEV",
    "generic": "ORA 5",
    "power_type": "BEV",
@@ -25852,24 +23095,6 @@
    "batch": "406",
    "model": "CC7000DE00HBBEV",
    "generic": "ORA 5",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
-  },
-  {
-   "batch": "406",
-   "model": "CSA6453JBEV9",
-   "generic": "MG 4X",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 125.0,
-   "front_p": 125.0
-  },
-  {
-   "batch": "406",
-   "model": "CSA6453JBEVA",
-   "generic": "MG 4X",
    "power_type": "BEV",
    "verdict": "single_legal",
    "total_p": 150.0,
@@ -26012,42 +23237,6 @@
   },
   {
    "batch": "406",
-   "model": "NHQ6470BEVXA",
-   "generic": "小鹏L03",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 183.0,
-   "front_p": 183.0
-  },
-  {
-   "batch": "406",
-   "model": "NHQ6470BEVXB",
-   "generic": "小鹏L03",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 183.0,
-   "front_p": 183.0
-  },
-  {
-   "batch": "406",
-   "model": "QCJ7000ANBEV1",
-   "generic": "腾势Z9,腾势Z9S",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 370.0,
-   "front_p": 370.0
-  },
-  {
-   "batch": "406",
-   "model": "QCJ7000ANBEV2",
-   "generic": "腾势Z9,腾势Z9S",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 890.0,
-   "front_p": 370.0
-  },
-  {
-   "batch": "406",
    "model": "QCJ7002BEVA1",
    "generic": "领汇e3",
    "power_type": "BEV",
@@ -26102,15 +23291,6 @@
   },
   {
    "batch": "406",
-   "model": "XMA6500LBEVR4",
-   "generic": "小米YU7",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 235.0,
-   "front_p": 235.0
-  },
-  {
-   "batch": "406",
    "model": "BJ6480A502RSHEV",
    "generic": "αT5",
    "power_type": "PHEV",
@@ -26147,15 +23327,6 @@
   },
   {
    "batch": "406",
-   "model": "CC6491CW25EPHEV",
-   "generic": "哈弗猛龙 PLUS",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 112.0,
-   "front_p": 112.0
-  },
-  {
-   "batch": "406",
    "model": "CC6510DG20APHEV",
    "generic": "V8X",
    "power_type": "PHEV",
@@ -26171,15 +23342,6 @@
    "verdict": "single_legal",
    "total_p": 122.0,
    "front_p": 122.0
-  },
-  {
-   "batch": "406",
-   "model": "CC6510DQ20APHEV",
-   "generic": "HX;H10",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 120.0,
-   "front_p": 120.0
   },
   {
    "batch": "406",
@@ -26210,69 +23372,6 @@
   },
   {
    "batch": "406",
-   "model": "CC6530DQ20BPHEV",
-   "generic": "HX;H10",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 120.0,
-   "front_p": 120.0
-  },
-  {
-   "batch": "406",
-   "model": "CC6530DQ23APHEV",
-   "generic": "HX;H10",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
-  },
-  {
-   "batch": "406",
-   "model": "FZ6470REEVC10S",
-   "generic": "C10",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
-  },
-  {
-   "batch": "406",
-   "model": "FZ6470REEVC10T",
-   "generic": "C10",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
-  },
-  {
-   "batch": "406",
-   "model": "FZ6490REEVC16P",
-   "generic": "C16",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
-  },
-  {
-   "batch": "406",
-   "model": "FZ6490REEVC16R",
-   "generic": "C16",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
-  },
-  {
-   "batch": "406",
-   "model": "FZ6490REEVC16S",
-   "generic": "C16",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
-  },
-  {
-   "batch": "406",
    "model": "GAC6490CHEVGAD6A",
    "generic": "传祺向往S7;传祺S7",
    "power_type": "PHEV",
@@ -26288,60 +23387,6 @@
    "verdict": "single_legal",
    "total_p": 120.0,
    "front_p": 120.0
-  },
-  {
-   "batch": "406",
-   "model": "LXA6512REEVX11",
-   "generic": "理想L8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 112.0,
-   "front_p": 112.0
-  },
-  {
-   "batch": "406",
-   "model": "LXA6512REEVX12",
-   "generic": "理想L8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 112.0,
-   "front_p": 112.0
-  },
-  {
-   "batch": "406",
-   "model": "NEQ6490REEVS5DJ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "406",
-   "model": "NEQ6490REEVS5DK",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "406",
-   "model": "NEQ6510REEVS5DJ",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "406",
-   "model": "NEQ6510REEVS5DK",
-   "generic": "V27",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
   },
   {
    "batch": "406",
@@ -26438,27 +23483,9 @@
    "model": "BYD6510BNBEV2",
    "generic": "比亚迪海狮08",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 585.0,
-   "front_p": null
-  },
-  {
-   "batch": "407",
-   "model": "BYD6510BNBEV3",
-   "generic": "比亚迪海狮08",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 320.0,
-   "front_p": 320.0
-  },
-  {
-   "batch": "407",
-   "model": "CA6490H0BEVF",
-   "generic": "红旗天工08",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 340.0,
-   "front_p": 340.0
+   "front_p": 160.0
   },
   {
    "batch": "407",
@@ -26498,48 +23525,12 @@
   },
   {
    "batch": "407",
-   "model": "CSA6492LBEVG",
-   "generic": "LS6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 245.0,
-   "front_p": 245.0
-  },
-  {
-   "batch": "407",
-   "model": "CSA6492LBEVH",
-   "generic": "LS6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 300.0,
-   "front_p": 300.0
-  },
-  {
-   "batch": "407",
-   "model": "CSA6492LBEVK",
-   "generic": "LS6",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 500.0,
-   "front_p": null
-  },
-  {
-   "batch": "407",
    "model": "CSA7005TBEV1",
    "generic": "MG 07",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 235.0,
    "front_p": 235.0
-  },
-  {
-   "batch": "407",
-   "model": "DFM6500S5F6BEV",
-   "generic": "奕派M8",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 230.0,
-   "front_p": 230.0
   },
   {
    "batch": "407",
@@ -26561,66 +23552,21 @@
   },
   {
    "batch": "407",
-   "model": "EQ6500AG5F1BEV",
-   "generic": "岚图追光S",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 300.0,
-   "front_p": 300.0
-  },
-  {
-   "batch": "407",
-   "model": "EQ6500AG5F2BEV",
-   "generic": "岚图追光S",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 475.0,
-   "front_p": 300.0
-  },
-  {
-   "batch": "407",
-   "model": "EQ6501AG5F1BEV",
-   "generic": "岚图追光S",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 300.0,
-   "front_p": 300.0
-  },
-  {
-   "batch": "407",
-   "model": "EQ6520AE5F2BEV",
-   "generic": "岚图泰山X8",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 475.0,
-   "front_p": null
-  },
-  {
-   "batch": "407",
    "model": "EQ6521AE5F2BEV",
    "generic": "岚图泰山X8",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 475.0,
-   "front_p": null
-  },
-  {
-   "batch": "407",
-   "model": "EQ6522AE5F2BEV",
-   "generic": "岚图泰山X8",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 475.0,
-   "front_p": null
+   "front_p": 150.0
   },
   {
    "batch": "407",
    "model": "EQ6523AE5F2BEV",
    "generic": "岚图泰山X8",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 475.0,
-   "front_p": null
+   "front_p": 150.0
   },
   {
    "batch": "407",
@@ -26642,24 +23588,6 @@
   },
   {
    "batch": "407",
-   "model": "FZ6450BEVB10M",
-   "generic": "B10",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 180.0,
-   "front_p": 180.0
-  },
-  {
-   "batch": "407",
-   "model": "FZ6450BEVB10N",
-   "generic": "B10",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 132.0,
-   "front_p": 132.0
-  },
-  {
-   "batch": "407",
    "model": "FZ6490BEVC16T",
    "generic": "C16",
    "power_type": "BEV",
@@ -26675,15 +23603,6 @@
    "verdict": "single_legal",
    "total_p": 70.0,
    "front_p": 70.0
-  },
-  {
-   "batch": "407",
-   "model": "HFC7000DEV8",
-   "generic": "尊界S800",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 390.0,
-   "front_p": null
   },
   {
    "batch": "407",
@@ -26720,24 +23639,6 @@
    "verdict": "single_legal",
    "total_p": 135.0,
    "front_p": 135.0
-  },
-  {
-   "batch": "407",
-   "model": "MR7001BEV133",
-   "generic": "领克 20",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 245.0,
-   "front_p": 245.0
-  },
-  {
-   "batch": "407",
-   "model": "MR7001BEV134",
-   "generic": "领克 20",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 245.0,
-   "front_p": 245.0
   },
   {
    "batch": "407",
@@ -26786,33 +23687,6 @@
   },
   {
    "batch": "407",
-   "model": "NEQ7000BEVT12AC",
-   "generic": "QQ3",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 58.0,
-   "front_p": 58.0
-  },
-  {
-   "batch": "407",
-   "model": "NEQ7000BEVT12AD",
-   "generic": "QQ3",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 90.0,
-   "front_p": 90.0
-  },
-  {
-   "batch": "407",
-   "model": "NEQ7000BEVT12AE",
-   "generic": "QQ3",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 90.0,
-   "front_p": 90.0
-  },
-  {
-   "batch": "407",
    "model": "NHQ6490BEVVA",
    "generic": "小鹏L05",
    "power_type": "BEV",
@@ -26828,51 +23702,6 @@
    "verdict": "single_legal",
    "total_p": 183.0,
    "front_p": 183.0
-  },
-  {
-   "batch": "407",
-   "model": "NHQ6510BEVRA",
-   "generic": "小鹏G9L",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 270.0,
-   "front_p": 270.0
-  },
-  {
-   "batch": "407",
-   "model": "NHQ6510BEVRB",
-   "generic": "小鹏G9L",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 270.0,
-   "front_p": 270.0
-  },
-  {
-   "batch": "407",
-   "model": "NHQ6510BEVRC",
-   "generic": "小鹏G9L",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 430.0,
-   "front_p": 270.0
-  },
-  {
-   "batch": "407",
-   "model": "SC6490AAADBEV",
-   "generic": "07L",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 712.0,
-   "front_p": null
-  },
-  {
-   "batch": "407",
-   "model": "SC6490AAAEBEV",
-   "generic": "07L",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 712.0,
-   "front_p": null
   },
   {
    "batch": "407",
@@ -26939,57 +23768,12 @@
   },
   {
    "batch": "407",
-   "model": "CC6500DL20BPHEV",
-   "generic": "V8X;V8X蓝山",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 122.0,
-   "front_p": 122.0
-  },
-  {
-   "batch": "407",
-   "model": "CC6500DL21APHEV",
-   "generic": "V8X;V8X蓝山",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
-  },
-  {
-   "batch": "407",
    "model": "CC6510DG21CPHEV",
    "generic": "V8X;V8X蓝山",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 170.0,
    "front_p": 170.0
-  },
-  {
-   "batch": "407",
-   "model": "CJL6510AF1REEV",
-   "generic": "FREELANDER 神行者8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "407",
-   "model": "CSA6492LFSHEV3",
-   "generic": "LS6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 230.0,
-   "front_p": 230.0
-  },
-  {
-   "batch": "407",
-   "model": "CSA6492LFSHEV4",
-   "generic": "LS6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 230.0,
-   "front_p": 230.0
   },
   {
    "batch": "407",
@@ -27020,30 +23804,12 @@
   },
   {
    "batch": "407",
-   "model": "DFM6500S5F9REEV",
-   "generic": "奕派M8",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 215.0,
-   "front_p": 215.0
-  },
-  {
-   "batch": "407",
    "model": "DFM6531S5F1REEV",
    "generic": "奕境X9",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 90.0,
    "front_p": 90.0
-  },
-  {
-   "batch": "407",
-   "model": "FZ6530REEVWD19F",
-   "generic": "D19",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 300.0,
-   "front_p": null
   },
   {
    "batch": "407",
@@ -27065,57 +23831,12 @@
   },
   {
    "batch": "407",
-   "model": "GAC6500CHEVPAM6B",
-   "generic": "传祺越7",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 120.0,
-   "front_p": 120.0
-  },
-  {
-   "batch": "407",
-   "model": "HFC6550DREEV1",
-   "generic": "尊界V800",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 390.0,
-   "front_p": null
-  },
-  {
-   "batch": "407",
-   "model": "LXA6493REEVX04",
-   "generic": "理想L6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 110.0,
-   "front_p": 110.0
-  },
-  {
-   "batch": "407",
-   "model": "LXA6493REEVX05",
-   "generic": "理想L6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 110.0,
-   "front_p": 110.0
-  },
-  {
-   "batch": "407",
-   "model": "MR7151DCHEV117",
-   "generic": "领克07GT",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 270.0,
-   "front_p": null
-  },
-  {
-   "batch": "407",
    "model": "MR7151DCHEV118",
    "generic": "领克07GT",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 180.0,
-   "front_p": null
+   "front_p": 180.0
   },
   {
    "batch": "407",
@@ -27128,30 +23849,12 @@
   },
   {
    "batch": "407",
-   "model": "NHQ6470REEVXA",
-   "generic": "小鹏L03",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 183.0,
-   "front_p": 183.0
-  },
-  {
-   "batch": "407",
    "model": "NHQ6490REEVVA",
    "generic": "小鹏L05",
    "power_type": "PHEV",
    "verdict": "single_legal",
    "total_p": 183.0,
    "front_p": 183.0
-  },
-  {
-   "batch": "407",
-   "model": "NHQ6510REEVRA",
-   "generic": "小鹏G9L",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 210.0,
-   "front_p": 210.0
   },
   {
    "batch": "407",
@@ -27182,15 +23885,6 @@
   },
   {
    "batch": "407",
-   "model": "SC6490AAAC6HEV",
-   "generic": "07L",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 231.0,
-   "front_p": 231.0
-  },
-  {
-   "batch": "407",
    "model": "SC6490AAAD6HEV",
    "generic": "07L",
    "power_type": "PHEV",
@@ -27200,29 +23894,11 @@
   },
   {
    "batch": "407",
-   "model": "SC6520AAAR6HEV",
-   "generic": "S09",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 231.0,
-   "front_p": 231.0
-  },
-  {
-   "batch": "407",
    "model": "SGM6490NAPHEV",
    "generic": "XT5",
    "power_type": "PHEV",
    "verdict": "rear_only",
    "total_p": 270.0,
-   "front_p": null
-  },
-  {
-   "batch": "407",
-   "model": "SKE6540DREEVA3F",
-   "generic": "问界M9",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 442.0,
    "front_p": null
   },
   {
@@ -27272,66 +23948,12 @@
   },
   {
    "batch": "408",
-   "model": "BJ6530K80BEV",
-   "generic": "问道V9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "408",
-   "model": "BJ7000K71BBEV",
-   "generic": "享界S9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "408",
-   "model": "BJ7000K71CBEV",
-   "generic": null,
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 387.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "408",
-   "model": "BJ7000K722BEV",
-   "generic": "享界S9T",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "408",
-   "model": "BJ7000K723BEV",
-   "generic": "享界S9T",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 387.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "408",
    "model": "BJ7004VALBEV",
    "generic": "C 350 L 4MATIC,C 350 LL 4MATIC",
    "power_type": "BEV",
    "verdict": "rear_only",
    "total_p": 463.0,
    "front_p": null
-  },
-  {
-   "batch": "408",
-   "model": "BYD7000AGBEV7",
-   "generic": "比亚迪海豹06GT",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 200.0,
-   "front_p": 200.0
   },
   {
    "batch": "408",
@@ -27380,21 +24002,12 @@
   },
   {
    "batch": "408",
-   "model": "EQ6502AG5F1BEV",
-   "generic": "岚图追光S",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 300.0,
-   "front_p": 300.0
-  },
-  {
-   "batch": "408",
    "model": "EQ6520AD5F2BEV",
    "generic": "岚图泰山,岚图泰山X9",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 475.0,
-   "front_p": null
+   "front_p": 150.0
   },
   {
    "batch": "408",
@@ -27404,24 +24017,6 @@
    "verdict": "single_legal",
    "total_p": 85.0,
    "front_p": 85.0
-  },
-  {
-   "batch": "408",
-   "model": "LXA6511BEVW07",
-   "generic": "理想i8",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 150.0,
-   "front_p": 150.0
-  },
-  {
-   "batch": "408",
-   "model": "LXA6540BEVW11",
-   "generic": "理想MEGA",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 155.0,
-   "front_p": 155.0
   },
   {
    "batch": "408",
@@ -27503,42 +24098,6 @@
    "verdict": "single_legal",
    "total_p": 85.0,
    "front_p": 85.0
-  },
-  {
-   "batch": "408",
-   "model": "QCJ6520MBEV4",
-   "generic": "腾势D9",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 300.0,
-   "front_p": 300.0
-  },
-  {
-   "batch": "408",
-   "model": "QCJ7000ARBEV1",
-   "generic": "腾势Z",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 1180.0,
-   "front_p": null
-  },
-  {
-   "batch": "408",
-   "model": "QCJ7000ARBEV2",
-   "generic": "腾势Z",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 1180.0,
-   "front_p": null
-  },
-  {
-   "batch": "408",
-   "model": "QCJ7000ARBEV3",
-   "generic": "腾势Z",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 1180.0,
-   "front_p": null
   },
   {
    "batch": "408",
@@ -27641,42 +24200,6 @@
   },
   {
    "batch": "408",
-   "model": "SC7000AABZBEV",
-   "generic": "L07",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 185.0,
-   "front_p": 185.0
-  },
-  {
-   "batch": "408",
-   "model": "SKE6501DBEVR2",
-   "generic": "问界M6EV",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "408",
-   "model": "SKE6501DBEVR3",
-   "generic": "问界M6EV",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "408",
-   "model": "SKE6540DBEVA1F",
-   "generic": "问界M9EV",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 160.0,
-   "front_p": 160.0
-  },
-  {
-   "batch": "408",
    "model": "SQR6500BEVEHX",
    "generic": "智界RX",
    "power_type": "BEV",
@@ -27728,69 +24251,6 @@
    "verdict": "single_legal",
    "total_p": 200.0,
    "front_p": 200.0
-  },
-  {
-   "batch": "408",
-   "model": "BJ6530K802RREEV",
-   "generic": "问道V9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "408",
-   "model": "BJ6540K901RSHEV",
-   "generic": "享界G9",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 437.0,
-   "front_p": null
-  },
-  {
-   "batch": "408",
-   "model": "BJ6540K90RSHEV",
-   "generic": "享界G9",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 437.0,
-   "front_p": null
-  },
-  {
-   "batch": "408",
-   "model": "BJ7150K714RSHEV",
-   "generic": "享界S9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "408",
-   "model": "BJ7150K715RSHEV",
-   "generic": "享界S9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "408",
-   "model": "BJ7150K722RSHEV",
-   "generic": "享界S9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "408",
-   "model": "BJ7150K723RSHEV",
-   "generic": "享界S9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
   },
   {
    "batch": "408",
@@ -27866,33 +24326,6 @@
   },
   {
    "batch": "408",
-   "model": "CC6510DQ23BPHEV",
-   "generic": "H10",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 320.0,
-   "front_p": null
-  },
-  {
-   "batch": "408",
-   "model": "CSA6494HFSHEV1",
-   "generic": "家越07",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 162.0,
-   "front_p": 162.0
-  },
-  {
-   "batch": "408",
-   "model": "CSA6494HFSHEV2",
-   "generic": "家越07",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 162.0,
-   "front_p": 162.0
-  },
-  {
-   "batch": "408",
    "model": "DFM6531S5F2REEV",
    "generic": null,
    "power_type": "PHEV",
@@ -27914,18 +24347,9 @@
    "model": "GAC6500CHEVPAF6B",
    "generic": null,
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 205.0,
-   "front_p": null
-  },
-  {
-   "batch": "408",
-   "model": "HFC6530DREEV1",
-   "generic": "尊界V680",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 390.0,
-   "front_p": null
+   "front_p": 205.0
   },
   {
    "batch": "408",
@@ -27938,30 +24362,12 @@
   },
   {
    "batch": "408",
-   "model": "SKE6540DREEVA2F",
-   "generic": "问界M9",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 664.0,
-   "front_p": null
-  },
-  {
-   "batch": "408",
    "model": "SQR6483CHEVT225",
    "generic": "瑶光 C-DM,EX 6",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 260.0,
-   "front_p": null
-  },
-  {
-   "batch": "408",
-   "model": "SQR6483CHEVT226",
-   "generic": "瑶光 C-DM,EX 6",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 260.0,
-   "front_p": null
+   "front_p": 165.0
   },
   {
    "batch": "408",
@@ -27989,15 +24395,6 @@
    "verdict": "rear_only",
    "total_p": 260.0,
    "front_p": null
-  },
-  {
-   "batch": "408",
-   "model": "SQR6521REEVE021",
-   "generic": "风云T11",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
   },
   {
    "batch": "408",
@@ -28334,29 +24731,11 @@
   },
   {
    "batch": "410",
-   "model": "NEQ6510REEVS5DL",
-   "generic": "iCAR V27",
-   "power_type": "PHEV",
-   "verdict": "prerequisite",
-   "total_p": null,
-   "front_p": null
-  },
-  {
-   "batch": "410",
    "model": "EQ6500MS5F0REEV",
    "generic": "猛士X700",
    "power_type": "PHEV",
    "verdict": "rear_only",
    "total_p": 190.0,
-   "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "EQ6530AB5F2BEV",
-   "generic": "岚图梦想家9",
-   "power_type": "BEV",
-   "verdict": "prerequisite",
-   "total_p": null,
    "front_p": null
   },
   {
@@ -28367,24 +24746,6 @@
    "verdict": "single_legal",
    "total_p": 90.0,
    "front_p": 90.0
-  },
-  {
-   "batch": "409",
-   "model": "NHQ6510BEVRD",
-   "generic": "小鹏G9L",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 270.0,
-   "front_p": 270.0
-  },
-  {
-   "batch": "409",
-   "model": "CA6490H0BEVXF",
-   "generic": "红旗天工08",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 340.0,
-   "front_p": 340.0
   },
   {
    "batch": "409",
@@ -28427,9 +24788,9 @@
    "model": "SQR6500BEVEHY8",
    "generic": "智界R7",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 150.0,
-   "front_p": null
+   "front_p": 150.0
   },
   {
    "batch": "409",
@@ -28445,17 +24806,8 @@
    "model": "YQZ6462BEV",
    "generic": "EV5",
    "power_type": "BEV",
-   "verdict": "prerequisite",
-   "total_p": null,
-   "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "SQR6500BEVEHY6",
-   "generic": "智界R7",
-   "power_type": "BEV",
    "verdict": "rear_only",
-   "total_p": 227.0,
+   "total_p": 160.0,
    "front_p": null
   },
   {
@@ -28472,17 +24824,8 @@
    "model": "YQZ6463BEV",
    "generic": "EV5",
    "power_type": "BEV",
-   "verdict": "prerequisite",
-   "total_p": null,
-   "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "SQR6500BEVEHY7",
-   "generic": "智界R7",
-   "power_type": "BEV",
    "verdict": "rear_only",
-   "total_p": 227.0,
+   "total_p": 160.0,
    "front_p": null
   },
   {
@@ -28589,9 +24932,9 @@
    "model": "BYD6430BZBEV3",
    "generic": "比亚迪元UP",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 100.0,
-   "front_p": null
+   "front_p": 70.0
   },
   {
    "batch": "409",
@@ -28616,9 +24959,9 @@
    "model": "CC6500DL21HABEV",
    "generic": "V8X;V8X蓝山",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 220.0,
-   "front_p": null
+   "front_p": 100.0
   },
   {
    "batch": "409",
@@ -28637,24 +24980,6 @@
    "verdict": "rear_only",
    "total_p": 300.0,
    "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "FV6485BABEV",
-   "generic": "ID.AURA T6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
-  },
-  {
-   "batch": "409",
-   "model": "FV6485AABEV",
-   "generic": "ID.AURA T6",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 170.0,
-   "front_p": 170.0
   },
   {
    "batch": "409",
@@ -28685,15 +25010,6 @@
   },
   {
    "batch": "409",
-   "model": "QCJ6460AHBEV11",
-   "generic": "方程豹钛3",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 240.0,
-   "front_p": 240.0
-  },
-  {
-   "batch": "409",
    "model": "SKE6522DBEVA2F",
    "generic": "问界M8EV",
    "power_type": "BEV",
@@ -28708,24 +25024,6 @@
    "power_type": "BEV",
    "verdict": "rear_only",
    "total_p": 387.0,
-   "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "LXA6524BEVW02",
-   "generic": "理想i9",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 150.0,
-   "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "LXA6524BEVW01",
-   "generic": "理想i9",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 150.0,
    "front_p": null
   },
   {
@@ -28784,56 +25082,11 @@
   },
   {
    "batch": "409",
-   "model": "TSL6480BEVBA6",
-   "generic": "特斯拉 MODEL Y",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 176.0,
-   "front_p": null
-  },
-  {
-   "batch": "409",
    "model": "BYD6476ST6HEV14",
    "generic": "比亚迪宋Pro",
    "power_type": "PHEV",
    "verdict": "rear_only",
    "total_p": 120.0,
-   "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "VCC6483G03WPHEV",
-   "generic": "沃尔沃XC70",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 107.0,
-   "front_p": 107.0
-  },
-  {
-   "batch": "409",
-   "model": "EQ6530AB5F2PHEV",
-   "generic": "岚图梦想家9",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 150.0,
-   "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "MR6511DCHEV114",
-   "generic": "银河战舰700",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 230.0,
-   "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "MR6511DCHEV113",
-   "generic": "银河战舰700",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 230.0,
    "front_p": null
   },
   {
@@ -28883,15 +25136,6 @@
   },
   {
    "batch": "409",
-   "model": "SQR6540REEVEHV4",
-   "generic": "智界V9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "409",
    "model": "AHC6510SHEVX0C",
    "generic": "启境GX7",
    "power_type": "PHEV",
@@ -28919,39 +25163,12 @@
   },
   {
    "batch": "409",
-   "model": "SQR6540REEVEHV3",
-   "generic": "智界V9",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "409",
-   "model": "XMA6500KREEVF3",
-   "generic": "小米澎程N70",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 310.0,
-   "front_p": null
-  },
-  {
-   "batch": "409",
    "model": "XMA6500KREEVA1",
    "generic": "小米澎程N70",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 310.0,
-   "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "SKE6501DREEVR2",
-   "generic": "问界M6",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
+   "front_p": 210.0
   },
   {
    "batch": "409",
@@ -29027,15 +25244,6 @@
   },
   {
    "batch": "409",
-   "model": "XMA6530KREEVA1",
-   "generic": "小米澎程N90",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 210.0,
-   "front_p": null
-  },
-  {
-   "batch": "409",
    "model": "CA7002B0EVE",
    "generic": "奔腾小马",
    "power_type": "BEV",
@@ -29078,33 +25286,6 @@
    "verdict": "single_legal",
    "total_p": 30.0,
    "front_p": 30.0
-  },
-  {
-   "batch": "409",
-   "model": "AHC7000BEVW0C",
-   "generic": "启境GT7",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 250.0,
-   "front_p": 250.0
-  },
-  {
-   "batch": "409",
-   "model": "QCJ7000ANBEV3",
-   "generic": "腾势Z9S",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 320.0,
-   "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "QCJ7000ANBEV4",
-   "generic": "腾势Z9S",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 370.0,
-   "front_p": null
   },
   {
    "batch": "409",
@@ -29246,18 +25427,18 @@
    "model": "BYD7153WT6HEV13",
    "generic": "比亚迪秦PLUS,比亚迪秦L",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 120.0,
-   "front_p": null
+   "front_p": 120.0
   },
   {
    "batch": "409",
    "model": "BYD7153WT6HEV14",
    "generic": "比亚迪秦PLUS,比亚迪秦L",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 120.0,
-   "front_p": null
+   "front_p": 120.0
   },
   {
    "batch": "409",
@@ -29267,24 +25448,6 @@
    "verdict": "prerequisite",
    "total_p": null,
    "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "AHC7150SHEVW0A",
-   "generic": "启境GT7",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 250.0,
-   "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "CA7159B6SHEVB",
-   "generic": "悦意08",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 202.0,
-   "front_p": 202.0
   },
   {
    "batch": "409",
@@ -29303,15 +25466,6 @@
    "verdict": "rear_only",
    "total_p": 190.0,
    "front_p": null
-  },
-  {
-   "batch": "409",
-   "model": "CSA6494HFSHEV3",
-   "generic": "家越07",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 162.0,
-   "front_p": 162.0
   },
   {
    "batch": "397",
@@ -29423,24 +25577,6 @@
   },
   {
    "batch": "397",
-   "model": "BJ7000K721BEV",
-   "generic": "享界S9T",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 387.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "397",
-   "model": "BJ7000K72BEV",
-   "generic": "享界S9T",
-   "power_type": "BEV",
-   "verdict": "dual_gap",
-   "total_p": 387.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "397",
    "model": "BJ7000T373BEV",
    "generic": "T1",
    "power_type": "BEV",
@@ -29525,18 +25661,18 @@
    "model": "AFN7000BAABEVA",
    "generic": "A6L",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 260.0,
-   "front_p": null
+   "front_p": 18.0
   },
   {
    "batch": "397",
    "model": "AFN7000BAABEVB",
    "generic": "A6L",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 260.0,
-   "front_p": null
+   "front_p": 18.0
   },
   {
    "batch": "397",
@@ -29600,24 +25736,6 @@
    "verdict": "single_legal",
    "total_p": 80.0,
    "front_p": 80.0
-  },
-  {
-   "batch": "397",
-   "model": "XMA6500LBEVA7",
-   "generic": "小米YU7",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 130.0,
-   "front_p": null
-  },
-  {
-   "batch": "397",
-   "model": "XMA6500LBEVR8",
-   "generic": "小米YU7",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 235.0,
-   "front_p": null
   },
   {
    "batch": "397",
@@ -29756,15 +25874,6 @@
   },
   {
    "batch": "397",
-   "model": "TSL6500BEVBA0",
-   "generic": "特斯拉 MODEL Y L",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 340.0,
-   "front_p": null
-  },
-  {
-   "batch": "397",
    "model": "SKE6521SBEVAS",
    "generic": "问界M8EV",
    "power_type": "BEV",
@@ -29819,15 +25928,6 @@
   },
   {
    "batch": "397",
-   "model": "SC7000AAAJBEV",
-   "generic": "L07",
-   "power_type": "BEV",
-   "verdict": "single_legal",
-   "total_p": 185.0,
-   "front_p": 185.0
-  },
-  {
-   "batch": "397",
    "model": "FZ6490BEVC16M",
    "generic": "C16",
    "power_type": "BEV",
@@ -29864,15 +25964,6 @@
   },
   {
    "batch": "397",
-   "model": "CSA6531LFSHEV1",
-   "generic": "LS9",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 390.0,
-   "front_p": null
-  },
-  {
-   "batch": "397",
    "model": "DFM7151S1F5REEV",
    "generic": "eπ007,eπ007+",
    "power_type": "PHEV",
@@ -29897,24 +25988,6 @@
    "verdict": "single_legal",
    "total_p": 120.0,
    "front_p": 120.0
-  },
-  {
-   "batch": "397",
-   "model": "BJ7150K721RSHEV",
-   "generic": "享界S9T",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
-  },
-  {
-   "batch": "397",
-   "model": "BJ7150K72RSHEV",
-   "generic": "享界S9T",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 227.0,
-   "front_p": 227.0
   },
   {
    "batch": "397",
@@ -29972,24 +26045,6 @@
   },
   {
    "batch": "397",
-   "model": "SQR6520REEVE02",
-   "generic": "风云T11",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "397",
-   "model": "SQR6520REEVE021",
-   "generic": "风云T11",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 105.0,
-   "front_p": 105.0
-  },
-  {
-   "batch": "397",
    "model": "SC6480AAAB6HEV",
    "generic": "07",
    "power_type": "PHEV",
@@ -30032,24 +26087,6 @@
    "verdict": "single_legal",
    "total_p": 160.0,
    "front_p": 160.0
-  },
-  {
-   "batch": "397",
-   "model": "SC6520AAAA6HEV",
-   "generic": "S09",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 231.0,
-   "front_p": 231.0
-  },
-  {
-   "batch": "397",
-   "model": "SC6520AAAB6HEV",
-   "generic": "S09",
-   "power_type": "PHEV",
-   "verdict": "single_legal",
-   "total_p": 231.0,
-   "front_p": 231.0
   },
   {
    "batch": "397",
@@ -30164,9 +26201,9 @@
    "model": "BYD7150ADHEV10",
    "generic": "比亚迪海豹06",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 160.0,
-   "front_p": null
+   "front_p": 160.0
   },
   {
    "batch": "397",
@@ -30818,24 +26855,6 @@
   },
   {
    "batch": "341",
-   "model": "GAM6480BEVB0C",
-   "generic": "AION LX",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 150.0,
-   "front_p": null
-  },
-  {
-   "batch": "341",
-   "model": "GAM6480BEVB0E",
-   "generic": "AION LX",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 150.0,
-   "front_p": null
-  },
-  {
-   "batch": "341",
    "model": "GAM6480BEVB0F",
    "generic": "纯电动多用途乘用车",
    "power_type": "BEV",
@@ -30859,33 +26878,6 @@
    "power_type": "BEV",
    "verdict": "prerequisite",
    "total_p": null,
-   "front_p": null
-  },
-  {
-   "batch": "341",
-   "model": "GAM6480BEVB0J",
-   "generic": "AION LX",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 135.0,
-   "front_p": null
-  },
-  {
-   "batch": "341",
-   "model": "GAM6480BEVB0K",
-   "generic": "AION LX",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 150.0,
-   "front_p": null
-  },
-  {
-   "batch": "341",
-   "model": "GAM6480BEVB0L",
-   "generic": "AION LX",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 150.0,
    "front_p": null
   },
   {
@@ -30920,18 +26912,18 @@
    "model": "BYD7152WT6HEVB4",
    "generic": "插电式混合动力轿车",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 145.0,
-   "front_p": null
+   "front_p": 120.0
   },
   {
    "batch": "341",
    "model": "BYD7152WT6HEVB5",
    "generic": "插电式混合动力轿车",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 132.0,
-   "front_p": null
+   "front_p": 120.0
   },
   {
    "batch": "341",
@@ -31550,9 +27542,9 @@
    "model": "FV7201BAQCHEV",
    "generic": "插电式混合动力轿车",
    "power_type": "PHEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 105.0,
-   "front_p": null
+   "front_p": 18.0
   },
   {
    "batch": "344",
@@ -31825,15 +27817,6 @@
    "front_p": null
   },
   {
-   "batch": "346",
-   "model": "TSL6480BEVBA0",
-   "generic": "特斯拉 MODEL Y",
-   "power_type": "BEV",
-   "verdict": "prerequisite",
-   "total_p": null,
-   "front_p": null
-  },
-  {
    "batch": "347",
    "model": "NEQ6460BEVS61A",
    "generic": "eQ5",
@@ -31939,15 +27922,6 @@
    "power_type": "BEV",
    "verdict": "rear_only",
    "total_p": 60.0,
-   "front_p": null
-  },
-  {
-   "batch": "348",
-   "model": "TSL6480BEVBA1",
-   "generic": "特斯拉 MODEL Y",
-   "power_type": "BEV",
-   "verdict": "prerequisite",
-   "total_p": null,
    "front_p": null
   },
   {
@@ -32729,9 +28703,9 @@
    "model": "DXK6510AC4BEV",
    "generic": "瑞驰 EC75",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 70.0,
-   "front_p": null
+   "front_p": 70.0
   },
   {
    "batch": "390",
@@ -32936,18 +28910,18 @@
    "model": "BJ6521EVAA1",
    "generic": "乐福",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 125.0,
-   "front_p": null
+   "front_p": 125.0
   },
   {
    "batch": "392",
    "model": "BJ6521EVAA2",
    "generic": "乐福",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 125.0,
-   "front_p": null
+   "front_p": 125.0
   },
   {
    "batch": "392",
@@ -32999,9 +28973,9 @@
    "model": "DXK6510AC3BEV",
    "generic": "瑞驰 EC75",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 70.0,
-   "front_p": null
+   "front_p": 70.0
   },
   {
    "batch": "392",
@@ -33017,9 +28991,9 @@
    "model": "DXK6510AC6BEV",
    "generic": "瑞驰 EC75",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 70.0,
-   "front_p": null
+   "front_p": 70.0
   },
   {
    "batch": "392",
@@ -33042,33 +29016,6 @@
   {
    "batch": "393",
    "model": "SC6558AAAABEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
-   "front_p": null
-  },
-  {
-   "batch": "393",
-   "model": "SC6558AAABBEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
-   "front_p": null
-  },
-  {
-   "batch": "393",
-   "model": "SC6558AAACBEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
-   "front_p": null
-  },
-  {
-   "batch": "393",
-   "model": "SC6558AAADBEV",
    "generic": "V919",
    "power_type": "BEV",
    "verdict": "rear_only",
@@ -33158,39 +29105,30 @@
   },
   {
    "batch": "398",
-   "model": "WHJ6451BEVK133",
-   "generic": "江豚E5",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 60.0,
-   "front_p": null
-  },
-  {
-   "batch": "398",
    "model": "DXK6510AC10BEV",
    "generic": "瑞驰 EC75",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 70.0,
-   "front_p": null
+   "front_p": 130.0
   },
   {
    "batch": "398",
    "model": "DXK6510AC11BEV",
    "generic": "瑞驰 EC75",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 70.0,
-   "front_p": null
+   "front_p": 70.0
   },
   {
    "batch": "398",
    "model": "DXK6510AC14BEV",
    "generic": "瑞驰 EC75",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 70.0,
-   "front_p": null
+   "front_p": 130.0
   },
   {
    "batch": "398",
@@ -33341,27 +29279,27 @@
    "model": "BJ6491EVAA2",
    "generic": "乐福",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 125.0,
-   "front_p": null
+   "front_p": 125.0
   },
   {
    "batch": "400",
    "model": "BJ6521EVAA4",
    "generic": "乐福",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 125.0,
-   "front_p": null
+   "front_p": 125.0
   },
   {
    "batch": "400",
    "model": "BJ6521EVAA5",
    "generic": "乐福",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 125.0,
-   "front_p": null
+   "front_p": 125.0
   },
   {
    "batch": "400",
@@ -33424,69 +29362,6 @@
    "power_type": "BEV",
    "verdict": "rear_only",
    "total_p": 70.0,
-   "front_p": null
-  },
-  {
-   "batch": "400",
-   "model": "SC6508AAABBEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
-   "front_p": null
-  },
-  {
-   "batch": "400",
-   "model": "SC6508AAAFBEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
-   "front_p": null
-  },
-  {
-   "batch": "400",
-   "model": "SC6558AAAJBEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
-   "front_p": null
-  },
-  {
-   "batch": "400",
-   "model": "SC6558AAAKBEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
-   "front_p": null
-  },
-  {
-   "batch": "400",
-   "model": "SC6558AAALBEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
-   "front_p": null
-  },
-  {
-   "batch": "400",
-   "model": "SC6558AAAMBEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
-   "front_p": null
-  },
-  {
-   "batch": "400",
-   "model": "SC6558AAANBEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
    "front_p": null
   },
   {
@@ -33554,15 +29429,6 @@
   },
   {
    "batch": "401",
-   "model": "WHJ6451BEVK139",
-   "generic": "江豚E5",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 60.0,
-   "front_p": null
-  },
-  {
-   "batch": "401",
    "model": "WHJ6520BEVK135",
    "generic": "江豚E7",
    "power_type": "BEV",
@@ -33620,9 +29486,9 @@
    "model": "DXK6510AC15BEV",
    "generic": "瑞驰 EC75",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "dual_gap",
    "total_p": 70.0,
-   "front_p": null
+   "front_p": 130.0
   },
   {
    "batch": "401",
@@ -33788,15 +29654,6 @@
   },
   {
    "batch": "405",
-   "model": "WHJ6451BEVK134",
-   "generic": "江豚E5",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 60.0,
-   "front_p": null
-  },
-  {
-   "batch": "405",
    "model": "WHJ6520BEVK138",
    "generic": "江豚E6 PLUS",
    "power_type": "BEV",
@@ -33827,18 +29684,18 @@
    "model": "DXK6520AC5BEV",
    "generic": "瑞驰 EC75,瑞驰 R5",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 130.0,
-   "front_p": null
+   "front_p": 130.0
   },
   {
    "batch": "407",
    "model": "DXK6520AC6BEV",
    "generic": "瑞驰 EC75,瑞驰 R5",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 130.0,
-   "front_p": null
+   "front_p": 130.0
   },
   {
    "batch": "407",
@@ -33865,15 +29722,6 @@
    "power_type": "PHEV",
    "verdict": "rear_only",
    "total_p": 215.0,
-   "front_p": null
-  },
-  {
-   "batch": "407",
-   "model": "SC6520AAAS6HEV",
-   "generic": "插电式增程混合动力多用途乘用车",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 131.0,
    "front_p": null
   },
   {
@@ -33917,18 +29765,9 @@
    "model": "AHC6470BEVJ0Z",
    "generic": "埃安i60",
    "power_type": "BEV",
-   "verdict": "rear_only",
+   "verdict": "single_legal",
    "total_p": 165.0,
-   "front_p": null
-  },
-  {
-   "batch": "408",
-   "model": "SC6558AAAQBEV",
-   "generic": "V919",
-   "power_type": "BEV",
-   "verdict": "rear_only",
-   "total_p": 110.0,
-   "front_p": null
+   "front_p": 165.0
   },
   {
    "batch": "408",
@@ -33955,15 +29794,6 @@
    "power_type": "PHEV",
    "verdict": "rear_only",
    "total_p": 75.0,
-   "front_p": null
-  },
-  {
-   "batch": "408",
-   "model": "SQR6521REEVE023",
-   "generic": "插电式增程混合动力多用途乘用车",
-   "power_type": "PHEV",
-   "verdict": "rear_only",
-   "total_p": 200.0,
    "front_p": null
   },
   {
@@ -34067,20 +29897,11 @@
   },
   {
    "batch": "410",
-   "model": "SQR6500BEVEHY9",
-   "generic": "智界R7",
-   "power_type": "纯电动多用途乘用车",
-   "verdict": "prerequisite",
-   "total_p": null,
-   "front_p": null
-  },
-  {
-   "batch": "410",
    "model": "CSA6501ZBEV1",
    "generic": "iMAX8 EV",
    "power_type": "纯电动多用途乘用车",
-   "verdict": "prerequisite",
-   "total_p": null,
+   "verdict": "rear_only",
+   "total_p": 180.0,
    "front_p": null
   },
   {
