@@ -1,0 +1,116 @@
+{
+ "kw": "XT5",
+ "kws": [
+  "XT5"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 15:30",
+ "series_url": "https://www.dongchedi.com/auto/series/861",
+ "series": {
+  "sid": "861",
+  "name": "凯迪拉克XT5",
+  "brand": "凯迪拉克"
+ },
+ "cars": [
+  {
+   "id": "252233",
+   "name": "28T 两驱大都会型",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "37.99万",
+   "vals": {
+    "length": "4888",
+    "wheelbase": "2863",
+    "curb_weight": "1880",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽通用凯迪拉克"
+   }
+  },
+  {
+   "id": "252234",
+   "name": "28T 四驱豪华型",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "39.99万",
+   "vals": {
+    "length": "4888",
+    "wheelbase": "2863",
+    "curb_weight": "1970",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽通用凯迪拉克"
+   }
+  },
+  {
+   "id": "252235",
+   "name": "28T 四驱尊贵型",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "41.99万",
+   "vals": {
+    "length": "4888",
+    "wheelbase": "2863",
+    "curb_weight": "1970",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽通用凯迪拉克"
+   }
+  },
+  {
+   "id": "252236",
+   "name": "28T 四驱铂金型",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "45.99万",
+   "vals": {
+    "length": "4888",
+    "wheelbase": "2863",
+    "curb_weight": "2000",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽通用凯迪拉克"
+   }
+  }
+ ]
+}

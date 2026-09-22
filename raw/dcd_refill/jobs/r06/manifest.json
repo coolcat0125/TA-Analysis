@@ -1,0 +1,42 @@
+{
+ "batch": "r06",
+ "created": "2026-09-22 15:30:44",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "r06-01",
+   "kw": "捷途环游者",
+   "js": "r06-01_捷途环游者.js",
+   "series_name": "捷途环游者",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r06-02",
+   "kw": "TF7",
+   "js": "r06-02_TF7.js",
+   "series_name": "TF7",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r06-03",
+   "kw": "钛9",
+   "js": "r06-03_钛9.js",
+   "series_name": "钛9",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r06-04",
+   "kw": "NX7",
+   "js": "r06-04_NX7.js",
+   "series_name": "NX7",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r06-05",
+   "kw": "银河M7",
+   "js": "r06-05_银河M7.js",
+   "series_name": "银河M7",
+   "gap_rows": 1
+  }
+ ]
+}

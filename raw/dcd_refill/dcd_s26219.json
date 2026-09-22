@@ -1,0 +1,91 @@
+{
+ "kw": "启境GX7",
+ "kws": [
+  "启境GX7"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 15:29",
+ "series_url": "https://www.dongchedi.com/auto/series/26219",
+ "series": {
+  "sid": "26219",
+  "name": "启境GX7",
+  "brand": "启境"
+ },
+ "cars": [
+  {
+   "id": "262192",
+   "name": "Ultra",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5099",
+    "wheelbase": "3070",
+    "curb_weight": "2488",
+    "cltc_recharge_mileage": "340",
+    "recharge_mileage": "270",
+    "power_consumption": "20.5",
+    "battery_capacity": "52",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "200kW(272Ps)",
+    "total_electric_torque": "320",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "200",
+    "rear_electric_max_torque": "320",
+    "sub_brand_name": "启境汽车"
+   }
+  },
+  {
+   "id": "262195",
+   "name": "Ultra 双电机 四驱",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5099",
+    "wheelbase": "3070",
+    "curb_weight": "2599",
+    "cltc_recharge_mileage": "325",
+    "recharge_mileage": "260",
+    "power_consumption": "21",
+    "battery_capacity": "52",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "340kW(462Ps)",
+    "total_electric_torque": "550",
+    "front_electric_max_power": "140",
+    "front_electric_max_torque": "230",
+    "rear_electric_max_power": "200",
+    "rear_electric_max_torque": "320",
+    "sub_brand_name": "启境汽车"
+   }
+  },
+  {
+   "id": "262190",
+   "name": "Ultra 三电机 四驱",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5099",
+    "wheelbase": "3070",
+    "curb_weight": "2720",
+    "cltc_recharge_mileage": "385",
+    "recharge_mileage": "305",
+    "power_consumption": "24.1",
+    "battery_capacity": "67",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "550kW(748Ps)",
+    "total_electric_torque": "854",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "230",
+    "rear_electric_max_power": "400",
+    "rear_electric_max_torque": "624",
+    "sub_brand_name": "启境汽车"
+   }
+  }
+ ]
+}

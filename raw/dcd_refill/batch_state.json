@@ -680,7 +680,10 @@
       "406": 4,
       "408": 2,
       "410": 16
-     }
+     },
+     "ok": true,
+     "reject_reason": "brand_conflict",
+     "sid": "26429"
     },
     {
      "kw": "捷途环游者",
@@ -698,7 +701,9 @@
      },
      "batches": {
       "410": 16
-     }
+     },
+     "ok": true,
+     "sid": "26103"
     },
     {
      "kw": "星光M",
@@ -716,7 +721,9 @@
      },
      "batches": {
       "410": 12
-     }
+     },
+     "ok": true,
+     "sid": "26490"
     },
     {
      "kw": "ID.ERA 5X",
@@ -734,7 +741,10 @@
      },
      "batches": {
       "410": 10
-     }
+     },
+     "ok": true,
+     "reject_reason": "brand_conflict",
+     "sid": "26460"
     },
     {
      "kw": "欧拉5",
@@ -749,12 +759,45 @@
      },
      "batches": {
       "410": 10
-     }
+     },
+     "sid": "25987",
+     "ok": true
     }
    ],
-   "status": "planned-recent",
+   "status": "applied",
    "created": "2026-09-22 10:33:20",
-   "priority": "recent-first(用户指令2026-09-22)"
+   "priority": "recent-first(用户指令2026-09-22)",
+   "ingested": {
+    "found": [
+     {
+      "kw": "ORA 5",
+      "file": "dcd_s26429.json"
+     },
+     {
+      "kw": "捷途环游者",
+      "file": "dcd_s26103.json"
+     },
+     {
+      "kw": "星光M",
+      "file": "dcd_s26490.json"
+     },
+     {
+      "kw": "ID.ERA 5X",
+      "file": "dcd_s26460.json"
+     },
+     {
+      "kw": "欧拉5",
+      "file": "dcd_s25987.json"
+     }
+    ],
+    "missing": [],
+    "time": "2026-09-22 15:30:45"
+   },
+   "applied": {
+    "green": 0,
+    "time": "2026-09-22 15:35:27",
+    "cells": []
+   }
   },
   "r02": {
    "id": "r02",
@@ -776,7 +819,9 @@
      "batches": {
       "404": 3,
       "410": 9
-     }
+     },
+     "sid": "25682",
+     "ok": true
     },
     {
      "kw": "奕境X9",
@@ -797,7 +842,9 @@
       "407": 2,
       "408": 8,
       "410": 8
-     }
+     },
+     "sid": "26057",
+     "ok": true
     },
     {
      "kw": "问界M8EV",
@@ -816,7 +863,9 @@
      "batches": {
       "409": 4,
       "410": 8
-     }
+     },
+     "ok": true,
+     "sid": "24850"
     },
     {
      "kw": "XT5",
@@ -835,7 +884,9 @@
      "batches": {
       "407": 3,
       "410": 8
-     }
+     },
+     "sid": "861",
+     "ok": true
     },
     {
      "kw": "iMAX8 EV",
@@ -853,12 +904,102 @@
      },
      "batches": {
       "410": 8
-     }
+     },
+     "ok": true,
+     "sid": "5818"
     }
    ],
-   "status": "planned-recent",
+   "status": "applied",
    "created": "2026-09-22 10:33:20",
-   "priority": "recent-first(用户指令2026-09-22)"
+   "priority": "recent-first(用户指令2026-09-22)",
+   "ingested": {
+    "found": [
+     {
+      "kw": "Lafa 5",
+      "file": "dcd_s25682.json"
+     },
+     {
+      "kw": "奕境X9",
+      "file": "dcd_s26057.json"
+     },
+     {
+      "kw": "问界M8EV",
+      "file": "dcd_s24850.json"
+     },
+     {
+      "kw": "XT5",
+      "file": "dcd_s861.json"
+     },
+     {
+      "kw": "iMAX8 EV",
+      "file": "dcd_s5818.json"
+     }
+    ],
+    "missing": [],
+    "time": "2026-09-22 15:30:46"
+   },
+   "applied": {
+    "green": 14,
+    "time": "2026-09-22 15:35:56",
+    "cells": [
+     {
+      "field": "电池类型",
+      "model": "FZ7000BEVB05K"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DFM6531S5F4REEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DFM6531S5F4REEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DFM6531S5F4REEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "SKE6521SBEVAS"
+     },
+     {
+      "field": "电池类型",
+      "model": "SKE6521SBEVR"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SKE6522DBEVR2"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SKE6522DBEVR2"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CSA6501ZBEV1"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CSA6501ZBEV1"
+     },
+     {
+      "field": "百公里电耗(kWh/100km)",
+      "model": "CSA6501ZBEV1"
+     },
+     {
+      "field": "电池类型",
+      "model": "CSA6501ZBEV1"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "CSA6501ZBEV1"
+     },
+     {
+      "field": "电机总功率/扭矩",
+      "model": "CSA6501ZBEV1"
+     }
+    ]
+   }
   },
   "r03": {
    "id": "r03",
@@ -879,7 +1020,9 @@
      },
      "batches": {
       "410": 8
-     }
+     },
+     "sid": "26443",
+     "ok": true
     },
     {
      "kw": "问界M8",
@@ -894,7 +1037,9 @@
       "404": 1,
       "410": 6,
       "409": 6
-     }
+     },
+     "sid": "24850",
+     "ok": true
     },
     {
      "kw": "猛士X700",
@@ -908,7 +1053,9 @@
      "batches": {
       "410": 6,
       "409": 6
-     }
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "海豹07",
@@ -920,7 +1067,9 @@
      },
      "batches": {
       "410": 6
-     }
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "智界RX",
@@ -934,12 +1083,46 @@
      "batches": {
       "408": 10,
       "410": 4
-     }
+     },
+     "sid": "26305",
+     "ok": true
     }
    ],
-   "status": "planned-recent",
+   "status": "applied",
    "created": "2026-09-22 10:33:20",
-   "priority": "recent-first(用户指令2026-09-22)"
+   "priority": "recent-first(用户指令2026-09-22)",
+   "ingested": {
+    "found": [
+     {
+      "kw": "埃安Ray 7",
+      "file": "dcd_s26443.json"
+     },
+     {
+      "kw": "问界M8",
+      "file": "dcd_s24850.json"
+     },
+     {
+      "kw": "智界RX",
+      "file": "dcd_s26305.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "猛士X700",
+      "file": null
+     },
+     {
+      "kw": "海豹07",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 15:31:14"
+   },
+   "applied": {
+    "green": 0,
+    "time": "2026-09-22 15:36:25",
+    "cells": []
+   }
   },
   "r04": {
    "id": "r04",
@@ -956,7 +1139,9 @@
      },
      "batches": {
       "410": 4
-     }
+     },
+     "ok": true,
+     "sid": "26493"
     },
     {
      "kw": "高山9",
@@ -970,7 +1155,9 @@
      },
      "batches": {
       "410": 4
-     }
+     },
+     "ok": true,
+     "sid": "26627"
     },
     {
      "kw": "iCAR V27",
@@ -984,7 +1171,9 @@
      },
      "batches": {
       "410": 4
-     }
+     },
+     "sid": "25620",
+     "ok": true
     },
     {
      "kw": "Ray7",
@@ -997,7 +1186,9 @@
      },
      "batches": {
       "410": 3
-     }
+     },
+     "sid": "26443",
+     "ok": true
     },
     {
      "kw": "极狐T1",
@@ -1010,12 +1201,54 @@
      },
      "batches": {
       "410": 3
-     }
+     },
+     "sid": "25401",
+     "ok": true
     }
    ],
-   "status": "planned-recent",
+   "status": "applied",
    "created": "2026-09-22 10:33:20",
-   "priority": "recent-first(用户指令2026-09-22)"
+   "priority": "recent-first(用户指令2026-09-22)",
+   "ingested": {
+    "found": [
+     {
+      "kw": "VLE",
+      "file": "dcd_s26493.json"
+     },
+     {
+      "kw": "高山9",
+      "file": "dcd_s26627.json"
+     },
+     {
+      "kw": "iCAR V27",
+      "file": "dcd_s25620.json"
+     },
+     {
+      "kw": "Ray7",
+      "file": "dcd_s26443.json"
+     },
+     {
+      "kw": "极狐T1",
+      "file": "dcd_s25401.json"
+     }
+    ],
+    "missing": [],
+    "time": "2026-09-22 15:31:14"
+   },
+   "applied": {
+    "green": 2,
+    "time": "2026-09-22 15:36:55",
+    "cells": [
+     {
+      "field": "百公里电耗(kWh/100km)",
+      "model": "BJ7000T37SEV"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "BJ7000T37SEV"
+     }
+    ]
+   }
   },
   "r05": {
    "id": "r05",
@@ -1031,7 +1264,9 @@
      },
      "batches": {
       "410": 3
-     }
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "MG 07",
@@ -1044,7 +1279,9 @@
      "batches": {
       "407": 4,
       "410": 2
-     }
+     },
+     "sid": "37",
+     "ok": true
     },
     {
      "kw": "smart精灵#2",
@@ -1056,7 +1293,9 @@
      },
      "batches": {
       "410": 2
-     }
+     },
+     "sid": "25896",
+     "ok": true
     },
     {
      "kw": "Lafa 5 Ultra",
@@ -1068,7 +1307,9 @@
      },
      "batches": {
       "410": 2
-     }
+     },
+     "ok": true,
+     "sid": "25682"
     },
     {
      "kw": "极狐αT5",
@@ -1080,12 +1321,59 @@
      },
      "batches": {
       "410": 2
-     }
+     },
+     "sid": "6363",
+     "ok": true
     }
    ],
-   "status": "planned-recent",
+   "status": "applied",
    "created": "2026-09-22 10:33:20",
-   "priority": "recent-first(用户指令2026-09-22)"
+   "priority": "recent-first(用户指令2026-09-22)",
+   "ingested": {
+    "found": [
+     {
+      "kw": "MG 07",
+      "file": "dcd_s37.json"
+     },
+     {
+      "kw": "smart精灵#2",
+      "file": "dcd_s25896.json"
+     },
+     {
+      "kw": "Lafa 5 Ultra",
+      "file": "dcd_s25682.json"
+     },
+     {
+      "kw": "极狐αT5",
+      "file": "dcd_s6363.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "V9X",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 15:31:15"
+   },
+   "applied": {
+    "green": 3,
+    "time": "2026-09-22 15:37:24",
+    "cells": [
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "BJ6480A508BEV"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "BJ6480A509BEV"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "BJ6480A50ABEV"
+     }
+    ]
+   }
   },
   "r06": {
    "id": "r06",
@@ -1100,7 +1388,9 @@
      },
      "batches": {
       "410": 2
-     }
+     },
+     "sid": "26103",
+     "ok": true
     },
     {
      "kw": "TF7",
@@ -1112,7 +1402,9 @@
      },
      "batches": {
       "410": 2
-     }
+     },
+     "ok": true,
+     "sid": "26499"
     },
     {
      "kw": "钛9",
@@ -1124,7 +1416,9 @@
      },
      "batches": {
       "410": 2
-     }
+     },
+     "sid": "26458",
+     "ok": true
     },
     {
      "kw": "NX7",
@@ -1136,7 +1430,9 @@
      },
      "batches": {
       "410": 2
-     }
+     },
+     "sid": "26470",
+     "ok": true
     },
     {
      "kw": "银河M7",
@@ -1147,12 +1443,45 @@
      },
      "batches": {
       "410": 1
-     }
+     },
+     "sid": "25871",
+     "ok": true
     }
    ],
-   "status": "planned-recent",
+   "status": "applied",
    "created": "2026-09-22 10:33:20",
-   "priority": "recent-first(用户指令2026-09-22)"
+   "priority": "recent-first(用户指令2026-09-22)",
+   "ingested": {
+    "found": [
+     {
+      "kw": "捷途环游者",
+      "file": "dcd_s26103.json"
+     },
+     {
+      "kw": "TF7",
+      "file": "dcd_s26499.json"
+     },
+     {
+      "kw": "钛9",
+      "file": "dcd_s26458.json"
+     },
+     {
+      "kw": "NX7",
+      "file": "dcd_s26470.json"
+     },
+     {
+      "kw": "银河M7",
+      "file": "dcd_s25871.json"
+     }
+    ],
+    "missing": [],
+    "time": "2026-09-22 15:30:48"
+   },
+   "applied": {
+    "green": 0,
+    "time": "2026-09-22 15:37:55",
+    "cells": []
+   }
   },
   "r07": {
    "id": "r07",
@@ -1166,7 +1495,9 @@
      },
      "batches": {
       "410": 1
-     }
+     },
+     "sid": "24788",
+     "ok": true
     },
     {
      "kw": "A05L",
@@ -1180,7 +1511,9 @@
      },
      "batches": {
       "409": 16
-     }
+     },
+     "sid": "26353",
+     "ok": true
     },
     {
      "kw": "享界V8",
@@ -1193,7 +1526,9 @@
      },
      "batches": {
       "409": 15
-     }
+     },
+     "sid": "26217",
+     "ok": true
     },
     {
      "kw": "EV5",
@@ -1207,7 +1542,9 @@
      },
      "batches": {
       "409": 14
-     }
+     },
+     "sid": "9237",
+     "ok": true
     },
     {
      "kw": "江铃E途顺",
@@ -1221,12 +1558,78 @@
      },
      "batches": {
       "409": 14
-     }
+     },
+     "sid": "26376",
+     "ok": true
     }
    ],
-   "status": "planned-recent",
+   "status": "applied",
    "created": "2026-09-22 10:33:20",
-   "priority": "recent-first(用户指令2026-09-22)"
+   "priority": "recent-first(用户指令2026-09-22)",
+   "ingested": {
+    "found": [
+     {
+      "kw": "银河星舰7",
+      "file": "dcd_s24788.json"
+     },
+     {
+      "kw": "A05L",
+      "file": "dcd_s26353.json"
+     },
+     {
+      "kw": "享界V8",
+      "file": "dcd_s26217.json"
+     },
+     {
+      "kw": "EV5",
+      "file": "dcd_s9237.json"
+     },
+     {
+      "kw": "江铃E途顺",
+      "file": "dcd_s26376.json"
+     }
+    ],
+    "missing": [],
+    "time": "2026-09-22 15:30:49"
+   },
+   "applied": {
+    "green": 8,
+    "time": "2026-09-22 15:38:26",
+    "cells": [
+     {
+      "field": "整备质量(kg)",
+      "model": "HQ6472DCHEV107"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "HQ6472DCHEV107"
+     },
+     {
+      "field": "百公里电耗(kWh/100km)",
+      "model": "HQ6472DCHEV111"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "HQ6472DCHEV111"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DN6530MBEV5"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DN6530MBEV5"
+     },
+     {
+      "field": "电机总功率/扭矩",
+      "model": "YQZ6462BEV"
+     },
+     {
+      "field": "电机总功率/扭矩",
+      "model": "YQZ6463BEV"
+     }
+    ]
+   }
   },
   "r08": {
    "id": "r08",
@@ -1244,7 +1647,9 @@
       "407": 6,
       "408": 4,
       "409": 10
-     }
+     },
+     "sid": "26074",
+     "ok": true
     },
     {
      "kw": "奔腾小马",
@@ -1257,7 +1662,9 @@
      "batches": {
       "407": 6,
       "409": 10
-     }
+     },
+     "sid": "8956",
+     "ok": true
     },
     {
      "kw": "远程M7E",
@@ -1270,7 +1677,9 @@
      },
      "batches": {
       "409": 9
-     }
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "启境GX7",
@@ -1283,7 +1692,9 @@
      },
      "batches": {
       "409": 9
-     }
+     },
+     "sid": "26219",
+     "ok": true
     },
     {
      "kw": "红旗天工07",
@@ -1296,12 +1707,55 @@
      },
      "batches": {
       "409": 9
-     }
+     },
+     "sid": "26383",
+     "ok": true
     }
    ],
-   "status": "planned-recent",
+   "status": "applied",
    "created": "2026-09-22 10:33:20",
-   "priority": "recent-first(用户指令2026-09-22)"
+   "priority": "recent-first(用户指令2026-09-22)",
+   "ingested": {
+    "found": [
+     {
+      "kw": "星海V6",
+      "file": "dcd_s26074.json"
+     },
+     {
+      "kw": "奔腾小马",
+      "file": "dcd_s8956.json"
+     },
+     {
+      "kw": "启境GX7",
+      "file": "dcd_s26219.json"
+     },
+     {
+      "kw": "红旗天工07",
+      "file": "dcd_s26383.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "远程M7E",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 15:30:50"
+   },
+   "applied": {
+    "green": 2,
+    "time": "2026-09-22 15:39:01",
+    "cells": [
+     {
+      "field": "整备质量(kg)",
+      "model": "LZ6480MME1EV"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "LZ6480MME3EV"
+     }
+    ]
+   }
   }
  },
  "created": "2026-09-21 23:39:24"

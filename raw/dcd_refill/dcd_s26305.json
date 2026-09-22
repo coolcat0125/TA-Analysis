@@ -1,0 +1,166 @@
+{
+ "kw": "智界RX",
+ "kws": [
+  "智界RX"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 15:29",
+ "series_url": "https://www.dongchedi.com/auto/series/26305",
+ "series": {
+  "sid": "26305",
+  "name": "智界RX",
+  "brand": "智界"
+ },
+ "cars": [
+  {
+   "id": "263201",
+   "name": "Max",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "3000",
+    "curb_weight": "2285",
+    "cltc_recharge_mileage": "672",
+    "recharge_mileage": "",
+    "power_consumption": "13.5",
+    "battery_capacity": "81",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "277kW(377Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "277",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "260079",
+   "name": "Max 长续航版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "3000",
+    "curb_weight": "2250",
+    "cltc_recharge_mileage": "822",
+    "recharge_mileage": "",
+    "power_consumption": "13.4",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "277kW(377Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "277",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "263202",
+   "name": "Ultra",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "3000",
+    "curb_weight": "2285",
+    "cltc_recharge_mileage": "702",
+    "recharge_mileage": "",
+    "power_consumption": "12.9",
+    "battery_capacity": "81",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "277kW(377Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "277",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "260080",
+   "name": "Ultra 长续航版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "3000",
+    "curb_weight": "2250",
+    "cltc_recharge_mileage": "852",
+    "recharge_mileage": "",
+    "power_consumption": "12.9",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "277kW(377Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "277",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "260081",
+   "name": "Ultra 四驱版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "3000",
+    "curb_weight": "2400",
+    "cltc_recharge_mileage": "753",
+    "recharge_mileage": "",
+    "power_consumption": "14.6",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "437kW(594Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "277",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "262377",
+   "name": "Ultra+",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "3000",
+    "curb_weight": "2400",
+    "cltc_recharge_mileage": "700",
+    "recharge_mileage": "",
+    "power_consumption": "15.7",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "437kW(594Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "277",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  }
+ ]
+}

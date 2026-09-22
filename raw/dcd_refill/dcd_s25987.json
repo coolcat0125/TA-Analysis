@@ -1,0 +1,116 @@
+{
+ "kw": "欧拉5",
+ "kws": [
+  "欧拉5"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 15:29",
+ "series_url": "https://www.dongchedi.com/auto/series/25987",
+ "series": {
+  "sid": "25987",
+  "name": "欧拉5SUV燃油版",
+  "brand": "欧拉"
+ },
+ "cars": [
+  {
+   "id": "258123",
+   "name": "1.5T Air版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "7.98万",
+   "vals": {
+    "length": "4471",
+    "wheelbase": "2720",
+    "curb_weight": "1455",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "256165",
+   "name": "1.5T Max版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "8.98万",
+   "vals": {
+    "length": "4471",
+    "wheelbase": "2720",
+    "curb_weight": "1455",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "258124",
+   "name": "Hi2电混 Air版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "8.98万",
+   "vals": {
+    "length": "4471",
+    "wheelbase": "2720",
+    "curb_weight": "1555",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "140kW(190Ps)",
+    "total_electric_torque": "236",
+    "front_electric_max_power": "140",
+    "front_electric_max_torque": "236",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "256703",
+   "name": "Hi2电混 Max版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "9.98万",
+   "vals": {
+    "length": "4471",
+    "wheelbase": "2720",
+    "curb_weight": "1555",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "140kW(190Ps)",
+    "total_electric_torque": "236",
+    "front_electric_max_power": "140",
+    "front_electric_max_torque": "236",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长城汽车"
+   }
+  }
+ ]
+}

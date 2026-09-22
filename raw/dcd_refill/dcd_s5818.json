@@ -1,0 +1,141 @@
+{
+ "kw": "iMAX8 EV",
+ "kws": [
+  "iMAX8 EV"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 15:29",
+ "series_url": "https://www.dongchedi.com/auto/series/5818",
+ "series": {
+  "sid": "5818",
+  "name": "荣威iMAX8 EV",
+  "brand": "荣威"
+ },
+ "cars": [
+  {
+   "id": "73963",
+   "name": "白银版",
+   "year": "2022",
+   "sale_status": 0,
+   "official_price": "25.98万",
+   "vals": {
+    "length": "5016",
+    "wheelbase": "3000",
+    "curb_weight": "2230",
+    "cltc_recharge_mileage": "570",
+    "recharge_mileage": "570",
+    "power_consumption": "16.7",
+    "battery_capacity": "90",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "195.0",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽集团"
+   }
+  },
+  {
+   "id": "73964",
+   "name": "黄金版",
+   "year": "2022",
+   "sale_status": 0,
+   "official_price": "28.98万",
+   "vals": {
+    "length": "5016",
+    "wheelbase": "3000",
+    "curb_weight": "2290",
+    "cltc_recharge_mileage": "550",
+    "recharge_mileage": "550",
+    "power_consumption": "17.3",
+    "battery_capacity": "90",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "195.0",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽集团"
+   }
+  },
+  {
+   "id": "71660",
+   "name": "头等舱铂金版",
+   "year": "2022",
+   "sale_status": 0,
+   "official_price": "30.98万",
+   "vals": {
+    "length": "5016",
+    "wheelbase": "3000",
+    "curb_weight": "2360",
+    "cltc_recharge_mileage": "550",
+    "recharge_mileage": "550",
+    "power_consumption": "17.3",
+    "battery_capacity": "90",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "195.0",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽集团"
+   }
+  },
+  {
+   "id": "77145",
+   "name": "头等舱钛金版",
+   "year": "2022",
+   "sale_status": 0,
+   "official_price": "33.98万",
+   "vals": {
+    "length": "5016",
+    "wheelbase": "3000",
+    "curb_weight": "2360",
+    "cltc_recharge_mileage": "550",
+    "recharge_mileage": "550",
+    "power_consumption": "17.3",
+    "battery_capacity": "90",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "195.0",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽集团"
+   }
+  },
+  {
+   "id": "77146",
+   "name": "头等舱钻石版",
+   "year": "2022",
+   "sale_status": 0,
+   "official_price": "35.98万",
+   "vals": {
+    "length": "5016",
+    "wheelbase": "3000",
+    "curb_weight": "2360",
+    "cltc_recharge_mileage": "550",
+    "recharge_mileage": "550",
+    "power_consumption": "17.3",
+    "battery_capacity": "90",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "195.0",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽集团"
+   }
+  }
+ ]
+}

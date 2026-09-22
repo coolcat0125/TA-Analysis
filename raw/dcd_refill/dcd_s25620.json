@@ -1,0 +1,91 @@
+{
+ "kw": "iCAR V27",
+ "kws": [
+  "iCAR V27"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 15:28",
+ "series_url": "https://www.dongchedi.com/auto/series/25620",
+ "series": {
+  "sid": "25620",
+  "name": "iCAR V27",
+  "brand": "iCAR"
+ },
+ "cars": [
+  {
+   "id": "256757",
+   "name": "210km 两驱猎鹰500",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "16.98万",
+   "vals": {
+    "length": "5055",
+    "wheelbase": "2910",
+    "curb_weight": "2222",
+    "cltc_recharge_mileage": "210",
+    "recharge_mileage": "150",
+    "power_consumption": "20.4",
+    "battery_capacity": "34.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "185kW(252Ps)",
+    "total_electric_torque": "300",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "185",
+    "rear_electric_max_torque": "300",
+    "sub_brand_name": "奇瑞新能源"
+   }
+  },
+  {
+   "id": "256758",
+   "name": "200km 四驱猎鹰500",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "18.28万",
+   "vals": {
+    "length": "5055",
+    "wheelbase": "2910",
+    "curb_weight": "2335",
+    "cltc_recharge_mileage": "200",
+    "recharge_mileage": "145",
+    "power_consumption": "21.7",
+    "battery_capacity": "34.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "335kW(456Ps)",
+    "total_electric_torque": "505",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "205",
+    "rear_electric_max_power": "185",
+    "rear_electric_max_torque": "300",
+    "sub_brand_name": "奇瑞新能源"
+   }
+  },
+  {
+   "id": "256759",
+   "name": "200km 四驱猎鹰700",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "19.68万",
+   "vals": {
+    "length": "5055",
+    "wheelbase": "2910",
+    "curb_weight": "2335",
+    "cltc_recharge_mileage": "200",
+    "recharge_mileage": "145",
+    "power_consumption": "21.7",
+    "battery_capacity": "34.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "335kW(456Ps)",
+    "total_electric_torque": "505",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "205",
+    "rear_electric_max_power": "185",
+    "rear_electric_max_torque": "300",
+    "sub_brand_name": "奇瑞新能源"
+   }
+  }
+ ]
+}

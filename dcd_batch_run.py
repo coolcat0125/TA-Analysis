@@ -215,7 +215,8 @@ def cmd_ingest(args):
                     d = json.load(open(os.path.join(REFILL, f), encoding='utf-8'))
                 except Exception:
                     continue
-                if str(d.get('kw', '')).strip() == j['kw']:
+                if (str(d.get('kw', '')).strip() == j['kw']
+                        or j['kw'] in (d.get('kws') or [])):
                     hit = f; break
         (found if hit else missing).append({'kw': j['kw'], 'file': hit})
     b['status'] = 'ingested' if found and not missing else ('partial' if found else 'waiting')

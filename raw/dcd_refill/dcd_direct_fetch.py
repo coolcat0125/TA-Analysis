@@ -129,6 +129,7 @@ def main():
     ap.add_argument('--probe', action='store_true')
     ap.add_argument('--out', action='store_true')
     ap.add_argument('--diff', action='store_true')
+    ap.add_argument('--kw', default='', help='落盘时写入的 kw（供 ingest 匹配）')
     a = ap.parse_args()
 
     if not os.path.exists(COOKIE_FILE):

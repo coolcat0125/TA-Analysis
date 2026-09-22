@@ -1,0 +1,42 @@
+{
+ "batch": "r03",
+ "created": "2026-09-22 15:30:42",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "r03-01",
+   "kw": "埃安Ray 7",
+   "js": "r03-01_埃安Ray7.js",
+   "series_name": "埃安Ray 7,埃安Ray 01",
+   "gap_rows": 8
+  },
+  {
+   "rid": "r03-02",
+   "kw": "问界M8",
+   "js": "r03-02_问界M8.js",
+   "series_name": "问界M8",
+   "gap_rows": 13
+  },
+  {
+   "rid": "r03-03",
+   "kw": "猛士X700",
+   "js": "r03-03_猛士X700.js",
+   "series_name": "猛士X700",
+   "gap_rows": 12
+  },
+  {
+   "rid": "r03-04",
+   "kw": "海豹07",
+   "js": "r03-04_海豹07.js",
+   "series_name": "海豹07",
+   "gap_rows": 6
+  },
+  {
+   "rid": "r03-05",
+   "kw": "智界RX",
+   "js": "r03-05_智界RX.js",
+   "series_name": "智界RX",
+   "gap_rows": 14
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "batch": "r07",
+ "created": "2026-09-22 15:30:44",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "r07-01",
+   "kw": "银河星舰7",
+   "js": "r07-01_银河星舰7.js",
+   "series_name": "银河星舰7",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r07-02",
+   "kw": "A05L",
+   "js": "r07-02_A05L.js",
+   "series_name": "A05L",
+   "gap_rows": 16
+  },
+  {
+   "rid": "r07-03",
+   "kw": "享界V8",
+   "js": "r07-03_享界V8.js",
+   "series_name": "享界V8",
+   "gap_rows": 15
+  },
+  {
+   "rid": "r07-04",
+   "kw": "EV5",
+   "js": "r07-04_EV5.js",
+   "series_name": "EV5",
+   "gap_rows": 14
+  },
+  {
+   "rid": "r07-05",
+   "kw": "江铃E途顺",
+   "js": "r07-05_江铃E途顺.js",
+   "series_name": "江铃E途顺",
+   "gap_rows": 14
+  }
+ ]
+}

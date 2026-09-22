@@ -58,7 +58,15 @@
 3. 全部 apply 须在提交信息注明"DCD 通道（懂车帝）"，台账 数据来源=`懂车帝参数页 · <series_url> · dcd_refill`
 4. 电芯供应商缺口（3706）不在本通道范围——维持公示详情页通道
 
+## ⚡ 2026-09-22 15:00~18:00 会话 · 直连通道落地 + Wave 1（r01~r08）收口
+
+- **层A 直连升级为主通道**（方案 §11）：登录态 cookie 回放（Tabbit 导出存 `$TEMP`，不入 git），`params-carIds-x-<sid>`（数字=车系id）直拉，搜索页 SSR 同通。试点 13/13 与 Tabbit 样本零失配。新工具：`dcd_direct_fetch.py`（执行器）/`pilot_direct.py`（对拍）/`dcd_map_direct.py`（映射+品牌守卫+alias）/`dcd_fetch_batch.py`（批量抓取）。**Tabbit 从此仅用于 cookie 导出与保底。**
+- **后电机缺口重分类**（`gap_reclass.json`）：2,998 单电机合法空置剔除 / 63 真双电机 / **600 后驱车新识别** / 127 前置依赖。
+- **Wave 1 收口**：r01~r08 映射 36/40 有源（无源 4 列 HOLD）→ 抓取 32/32 → apply 净 **+29 格**（台账 seq 52,258~52,286）+ ambiguous 246 格留档 Wave 3；三件套全绿零新增，两版看板重生。详见方案 §11。
+- **下一棒**：①b01~b08 映射（`dcd_map_direct.py --batches b01,...`）②recent_queue 剩余 221 目标分批 ③ambiguous 消解=S4 加代际过滤（批次日期→model-year 圈定候选）④rear_only 600 行经 DCD rear_electric_* 确认回填。
+
 ## ⚡ 门禁 Agent 协调记录（2026-09-21 00:45 · agent/night-gate-20260920）
+
 
 - **阶段2 首批已被门禁整合执行**（提交 dea106d，v4.9.16）：独立整合器 `integrate_dcd_refill.py` 基于 same 人审映射（13 有效车系），**302 格绿填（只补空+款型唯一值规则+能源对齐过滤）+ 8 格双源红修（与 T4 补丁收敛）**，台账 seq 46,359~46,484，数据来源=`懂车帝参数页(sid=…)（懂车帝参数页，检索 2026-09-20）`。三件套 PASS。
 - **⚠️ `_dcd_apply_refill.py` 的 dry=354 已过期**：首批格位多数已被填充（只补空原则下重跑计数会大幅下降）。执行其 apply 前必须先重跑 `--dry` 复核剩余格。

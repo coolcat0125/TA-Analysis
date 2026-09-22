@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-22T04:34:11+00:00",
+  "generated_at_utc": "2026-09-22T07:39:45+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "1394ba95616ff742b75c80292394887fc26232a470ea62f24fe6620f4ad4a600",
+    "sha256": "157eeb2af7ca402c9378a5acbe6858407a0f66fb1b7a608517c914ae0c3fb8fb",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
@@ -127,9 +127,9 @@
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 4865,
-      "coverage": 0.902263,
-      "missing": 527
+      "populated": 4868,
+      "coverage": 0.902819,
+      "missing": 524
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
@@ -139,21 +139,21 @@
     },
     "电池容量": {
       "header": "电池容量(kWh)",
-      "populated": 4917,
-      "coverage": 0.911907,
-      "missing": 475
+      "populated": 4919,
+      "coverage": 0.912277,
+      "missing": 473
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
-      "populated": 4241,
-      "coverage": 0.786536,
-      "missing": 1151
+      "populated": 4246,
+      "coverage": 0.787463,
+      "missing": 1146
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
-      "populated": 5174,
-      "coverage": 0.95957,
-      "missing": 218
+      "populated": 5177,
+      "coverage": 0.960126,
+      "missing": 215
     },
     "前电机功率": {
       "header": "前电机功率/扭矩",
@@ -163,9 +163,9 @@
     },
     "电机总功率": {
       "header": "电机总功率/扭矩",
-      "populated": 5209,
-      "coverage": 0.966061,
-      "missing": 183
+      "populated": 5212,
+      "coverage": 0.966617,
+      "missing": 180
     },
     "后电机功率": {
       "header": "后电机功率/扭矩",
@@ -186,7 +186,7 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 4865,
+      "numeric_values": 4868,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -204,7 +204,7 @@
         1.0,
         300.0
       ],
-      "numeric_values": 4917,
+      "numeric_values": 4919,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -213,7 +213,7 @@
         30.0,
         400.0
       ],
-      "numeric_values": 4241,
+      "numeric_values": 4246,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -222,7 +222,7 @@
         3.0,
         40.0
       ],
-      "numeric_values": 5174,
+      "numeric_values": 5177,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -240,7 +240,7 @@
         5.0,
         1500.0
       ],
-      "numeric_values": 5209,
+      "numeric_values": 5212,
       "outliers": 2,
       "sample_outliers": [
         {

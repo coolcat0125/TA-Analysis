@@ -1,0 +1,42 @@
+{
+ "batch": "r04",
+ "created": "2026-09-22 15:30:43",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "r04-01",
+   "kw": "VLE",
+   "js": "r04-01_VLE.js",
+   "series_name": "VLE",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r04-02",
+   "kw": "高山9",
+   "js": "r04-02_高山9.js",
+   "series_name": "高山9",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r04-03",
+   "kw": "iCAR V27",
+   "js": "r04-03_iCARV27.js",
+   "series_name": "iCAR V27",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r04-04",
+   "kw": "Ray7",
+   "js": "r04-04_Ray7.js",
+   "series_name": "Ray7",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r04-05",
+   "kw": "极狐T1",
+   "js": "r04-05_极狐T1.js",
+   "series_name": "极狐T1",
+   "gap_rows": 3
+  }
+ ]
+}

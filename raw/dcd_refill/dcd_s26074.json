@@ -1,0 +1,141 @@
+{
+ "kw": "星海V6",
+ "kws": [
+  "星海V6"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 15:29",
+ "series_url": "https://www.dongchedi.com/auto/series/26074",
+ "series": {
+  "sid": "26074",
+  "name": "星海V6",
+  "brand": "东风风行"
+ },
+ "cars": [
+  {
+   "id": "260551",
+   "name": "400km 豪华型",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "8.99万",
+   "vals": {
+    "length": "4835",
+    "wheelbase": "2900",
+    "curb_weight": "1670",
+    "cltc_recharge_mileage": "400",
+    "recharge_mileage": "",
+    "power_consumption": "13",
+    "battery_capacity": "45.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "135kW(184Ps)",
+    "total_electric_torque": "260",
+    "front_electric_max_power": "135",
+    "front_electric_max_torque": "260",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "东风风行"
+   }
+  },
+  {
+   "id": "260553",
+   "name": "400km 尊享型 乾崑智驾ADS SE版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.49万",
+   "vals": {
+    "length": "4835",
+    "wheelbase": "2900",
+    "curb_weight": "1670",
+    "cltc_recharge_mileage": "400",
+    "recharge_mileage": "",
+    "power_consumption": "13",
+    "battery_capacity": "45.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "135kW(184Ps)",
+    "total_electric_torque": "260",
+    "front_electric_max_power": "135",
+    "front_electric_max_torque": "260",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "东风风行"
+   }
+  },
+  {
+   "id": "260064",
+   "name": "510km 尊贵型",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.49万",
+   "vals": {
+    "length": "4835",
+    "wheelbase": "2900",
+    "curb_weight": "1800",
+    "cltc_recharge_mileage": "510",
+    "recharge_mileage": "",
+    "power_consumption": "13.5",
+    "battery_capacity": "60.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "135kW(184Ps)",
+    "total_electric_torque": "260",
+    "front_electric_max_power": "135",
+    "front_electric_max_torque": "260",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "东风风行"
+   }
+  },
+  {
+   "id": "260554",
+   "name": "510km 旗舰型 乾崑智驾ADS SE版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.49万",
+   "vals": {
+    "length": "4835",
+    "wheelbase": "2900",
+    "curb_weight": "1800",
+    "cltc_recharge_mileage": "510",
+    "recharge_mileage": "",
+    "power_consumption": "13.5",
+    "battery_capacity": "60.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "135kW(184Ps)",
+    "total_electric_torque": "260",
+    "front_electric_max_power": "135",
+    "front_electric_max_torque": "260",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "东风风行"
+   }
+  },
+  {
+   "id": "263183",
+   "name": "510km 尊贵型 乾崑智驾ADS SE版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.49万",
+   "vals": {
+    "length": "4835",
+    "wheelbase": "2900",
+    "curb_weight": "1800",
+    "cltc_recharge_mileage": "510",
+    "recharge_mileage": "",
+    "power_consumption": "13.5",
+    "battery_capacity": "60.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "135kW(184Ps)",
+    "total_electric_torque": "260",
+    "front_electric_max_power": "135",
+    "front_electric_max_torque": "260",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "东风风行"
+   }
+  }
+ ]
+}

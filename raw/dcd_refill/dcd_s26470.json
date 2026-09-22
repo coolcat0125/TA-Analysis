@@ -1,0 +1,41 @@
+{
+ "kw": "NX7",
+ "kws": [
+  "NX7"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 15:29",
+ "series_url": "https://www.dongchedi.com/auto/series/26470",
+ "series": {
+  "sid": "26470",
+  "name": "日产NX7",
+  "brand": "日产"
+ },
+ "cars": [
+  {
+   "id": "261727",
+   "name": "基本型",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "4785",
+    "wheelbase": "2815",
+    "curb_weight": "1915",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "170kW(231Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "东风日产"
+   }
+  }
+ ]
+}

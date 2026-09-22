@@ -1,0 +1,42 @@
+{
+ "batch": "r02",
+ "created": "2026-09-22 15:30:42",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "r02-01",
+   "kw": "Lafa 5",
+   "js": "r02-01_Lafa5.js",
+   "series_name": "Lafa 5",
+   "gap_rows": 12
+  },
+  {
+   "rid": "r02-02",
+   "kw": "奕境X9",
+   "js": "r02-02_奕境X9.js",
+   "series_name": "奕境X9",
+   "gap_rows": 18
+  },
+  {
+   "rid": "r02-03",
+   "kw": "问界M8EV",
+   "js": "r02-03_问界M8EV.js",
+   "series_name": "问界M8EV",
+   "gap_rows": 12
+  },
+  {
+   "rid": "r02-04",
+   "kw": "XT5",
+   "js": "r02-04_XT5.js",
+   "series_name": "XT5",
+   "gap_rows": 11
+  },
+  {
+   "rid": "r02-05",
+   "kw": "iMAX8 EV",
+   "js": "r02-05_iMAX8EV.js",
+   "series_name": "iMAX8 EV",
+   "gap_rows": 8
+  }
+ ]
+}

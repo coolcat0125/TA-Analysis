@@ -1,20 +1,20 @@
 {
- "updated": "2026-09-22 10:38:46",
+ "updated": "2026-09-22 15:39:15",
  "workbook_rows": 5392,
  "dcd_coverage": {
-  "整备质量(kg)": 90.2,
-  "轴距(mm)": 82.9,
+  "轴距(mm)": 83.0,
+  "车长(mm)": 82.7,
   "纯电续航里程(km)": 97.3,
-  "前电机功率/扭矩": 81.6,
-  "后电机功率/扭矩": 29.7,
   "电池能量密度(Wh/kg)": 78.7,
-  "电池类型": 91.7,
   "电池容量(kWh)": 91.2,
-  "车长(mm)": 82.6,
-  "百公里电耗(kWh/100km)": 94.9,
-  "电机总功率/扭矩": 96.6
+  "后电机功率/扭矩": 29.7,
+  "整备质量(kg)": 90.3,
+  "电机总功率/扭矩": 96.7,
+  "百公里电耗(kWh/100km)": 96.0,
+  "前电机功率/扭矩": 81.6,
+  "电池类型": 91.8
  },
- "dcd_ledger_cells": 1036,
+ "dcd_ledger_cells": 1065,
  "batches": [
   {
    "id": "b01",
@@ -122,7 +122,7 @@
   },
   {
    "id": "r01",
-   "status": "planned-recent",
+   "status": "applied",
    "series": [
     "ORA 5",
     "捷途环游者",
@@ -135,7 +135,7 @@
   },
   {
    "id": "r02",
-   "status": "planned-recent",
+   "status": "applied",
    "series": [
     "Lafa 5",
     "奕境X9",
@@ -144,11 +144,11 @@
     "iMAX8 EV"
    ],
    "gap_rows": 61,
-   "green": 0
+   "green": 14
   },
   {
    "id": "r03",
-   "status": "planned-recent",
+   "status": "applied",
    "series": [
     "埃安Ray 7",
     "问界M8",
@@ -161,7 +161,7 @@
   },
   {
    "id": "r04",
-   "status": "planned-recent",
+   "status": "applied",
    "series": [
     "VLE",
     "高山9",
@@ -170,11 +170,11 @@
     "极狐T1"
    ],
    "gap_rows": 18,
-   "green": 0
+   "green": 2
   },
   {
    "id": "r05",
-   "status": "planned-recent",
+   "status": "applied",
    "series": [
     "V9X",
     "MG 07",
@@ -183,11 +183,11 @@
     "极狐αT5"
    ],
    "gap_rows": 15,
-   "green": 0
+   "green": 3
   },
   {
    "id": "r06",
-   "status": "planned-recent",
+   "status": "applied",
    "series": [
     "捷途环游者",
     "TF7",
@@ -200,7 +200,7 @@
   },
   {
    "id": "r07",
-   "status": "planned-recent",
+   "status": "applied",
    "series": [
     "银河星舰7",
     "A05L",
@@ -209,11 +209,11 @@
     "江铃E途顺"
    ],
    "gap_rows": 60,
-   "green": 0
+   "green": 8
   },
   {
    "id": "r08",
-   "status": "planned-recent",
+   "status": "applied",
    "series": [
     "星海V6",
     "奔腾小马",
@@ -222,129 +222,129 @@
     "红旗天工07"
    ],
    "gap_rows": 63,
-   "green": 0
+   "green": 2
   }
  ],
  "recent_ledger": [
   {
-   "seq": 47191,
-   "model": "LZW7001EVAHAN",
+   "seq": 52287,
+   "model": "LZ6480MME3EV",
+   "field": "整备质量(kg)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "1800.0"
+  },
+  {
+   "seq": 52286,
+   "model": "LZ6480MME1EV",
+   "field": "整备质量(kg)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "1800.0"
+  },
+  {
+   "seq": 52285,
+   "model": "YQZ6463BEV",
    "field": "电机总功率/扭矩",
-   "kind": "代际错配更正",
-   "old": "180",
-   "new": "30"
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "160.0"
   },
   {
-   "seq": 47190,
-   "model": "LZW7001EVAHAN",
-   "field": "后电机功率/扭矩",
-   "kind": "代际错配更正",
-   "old": "150/310",
-   "new": null
-  },
-  {
-   "seq": 47189,
-   "model": "LZW7004EVPHAK",
+   "seq": 52284,
+   "model": "YQZ6462BEV",
    "field": "电机总功率/扭矩",
-   "kind": "代际错配更正",
-   "old": "180",
-   "new": "30"
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "160.0"
   },
   {
-   "seq": 47188,
-   "model": "LZW7004EVPHAK",
-   "field": "后电机功率/扭矩",
-   "kind": "代际错配更正",
-   "old": "150/310",
-   "new": null
-  },
-  {
-   "seq": 47187,
-   "model": "LZW7004EVPHAK",
+   "seq": 52283,
+   "model": "DN6530MBEV5",
    "field": "轴距(mm)",
-   "kind": "代际错配更正",
-   "old": "2600.0",
-   "new": "1940"
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "2750.0"
   },
   {
-   "seq": 47186,
-   "model": "LZW7004EVPHAK",
+   "seq": 52282,
+   "model": "DN6530MBEV5",
    "field": "车长(mm)",
-   "kind": "代际错配更正",
-   "old": "4470.0",
-   "new": "2917"
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "4615.0"
   },
   {
-   "seq": 47185,
-   "model": "LZW7004EVPEAK",
-   "field": "电机总功率/扭矩",
-   "kind": "代际错配更正",
-   "old": "180",
-   "new": "30"
+   "seq": 52281,
+   "model": "HQ6472DCHEV111",
+   "field": "电池容量(kWh)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "19.09"
   },
   {
-   "seq": 47184,
-   "model": "LZW7004EVPEAK",
-   "field": "后电机功率/扭矩",
-   "kind": "代际错配更正",
-   "old": "150/310",
-   "new": null
+   "seq": 52280,
+   "model": "HQ6472DCHEV111",
+   "field": "百公里电耗(kWh/100km)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "14.9"
   },
   {
-   "seq": 47183,
-   "model": "LZW7004EVPEAK",
-   "field": "轴距(mm)",
-   "kind": "代际错配更正",
-   "old": "2600.0",
-   "new": "1940"
+   "seq": 52279,
+   "model": "HQ6472DCHEV107",
+   "field": "电池容量(kWh)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "8.5"
   },
   {
-   "seq": 47182,
-   "model": "LZW7004EVPEAK",
-   "field": "车长(mm)",
-   "kind": "代际错配更正",
-   "old": "4470.0",
-   "new": "2917"
+   "seq": 52278,
+   "model": "HQ6472DCHEV107",
+   "field": "整备质量(kg)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "1610.0"
   },
   {
-   "seq": 47181,
-   "model": "LZW7004EVJEAM",
-   "field": "电机总功率/扭矩",
-   "kind": "代际错配更正",
-   "old": "180",
-   "new": "30"
+   "seq": 52277,
+   "model": "BJ6480A50ABEV",
+   "field": "电池能量密度(Wh/kg)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "136.0"
   },
   {
-   "seq": 47180,
-   "model": "LZW7004EVJEAM",
-   "field": "后电机功率/扭矩",
-   "kind": "代际错配更正",
-   "old": "150/310",
-   "new": null
+   "seq": 52276,
+   "model": "BJ6480A509BEV",
+   "field": "电池能量密度(Wh/kg)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "137.5"
   },
   {
-   "seq": 47179,
-   "model": "LZW7004EVJEAM",
-   "field": "轴距(mm)",
-   "kind": "代际错配更正",
-   "old": "2600.0",
-   "new": "1940"
+   "seq": 52275,
+   "model": "BJ6480A508BEV",
+   "field": "电池能量密度(Wh/kg)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "136.0"
   },
   {
-   "seq": 47178,
-   "model": "LZW7004EVJEAM",
-   "field": "车长(mm)",
-   "kind": "代际错配更正",
-   "old": "4470.0",
-   "new": "2917"
+   "seq": 52274,
+   "model": "BJ7000T37SEV",
+   "field": "电池能量密度(Wh/kg)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "137.0"
   },
   {
-   "seq": 47177,
-   "model": "LZW7004EVJDBB",
-   "field": "电机总功率/扭矩",
-   "kind": "代际错配更正",
-   "old": "180",
-   "new": "30"
+   "seq": 52273,
+   "model": "BJ7000T37SEV",
+   "field": "百公里电耗(kWh/100km)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "11.9"
   }
  ]
 }

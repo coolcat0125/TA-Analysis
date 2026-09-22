@@ -1,0 +1,192 @@
+{
+ "kw": "Lafa 5",
+ "kws": [
+  "Lafa 5",
+  "Lafa 5 Ultra"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 15:28",
+ "series_url": "https://www.dongchedi.com/auto/series/25682",
+ "series": {
+  "sid": "25682",
+  "name": "零跑Lafa5",
+  "brand": "零跑汽车"
+ },
+ "cars": [
+  {
+   "id": "253635",
+   "name": "515 Plus",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "9.78万",
+   "vals": {
+    "length": "4430",
+    "wheelbase": "2735",
+    "curb_weight": "1630",
+    "cltc_recharge_mileage": "515",
+    "recharge_mileage": "515",
+    "power_consumption": "12.3",
+    "battery_capacity": "56.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "132kW(180Ps)",
+    "total_electric_torque": "175",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "132",
+    "rear_electric_max_torque": "175",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "253636",
+   "name": "515 Pro",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.58万",
+   "vals": {
+    "length": "4430",
+    "wheelbase": "2735",
+    "curb_weight": "1665",
+    "cltc_recharge_mileage": "515",
+    "recharge_mileage": "515",
+    "power_consumption": "12.3",
+    "battery_capacity": "56.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "160kW(218Ps)",
+    "total_electric_torque": "240",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "160",
+    "rear_electric_max_torque": "240",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "253637",
+   "name": "515 Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.58万",
+   "vals": {
+    "length": "4430",
+    "wheelbase": "2735",
+    "curb_weight": "1665",
+    "cltc_recharge_mileage": "515",
+    "recharge_mileage": "515",
+    "power_consumption": "12.3",
+    "battery_capacity": "56.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "160kW(218Ps)",
+    "total_electric_torque": "240",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "160",
+    "rear_electric_max_torque": "240",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "253638",
+   "name": "605 Pro",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.18万",
+   "vals": {
+    "length": "4430",
+    "wheelbase": "2735",
+    "curb_weight": "1715",
+    "cltc_recharge_mileage": "605",
+    "recharge_mileage": "605",
+    "power_consumption": "12.4",
+    "battery_capacity": "67.1",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "160kW(218Ps)",
+    "total_electric_torque": "240",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "160",
+    "rear_electric_max_torque": "240",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "253639",
+   "name": "605 Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.18万",
+   "vals": {
+    "length": "4430",
+    "wheelbase": "2735",
+    "curb_weight": "1715",
+    "cltc_recharge_mileage": "605",
+    "recharge_mileage": "605",
+    "power_consumption": "12.4",
+    "battery_capacity": "67.1",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "160kW(218Ps)",
+    "total_electric_torque": "240",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "160",
+    "rear_electric_max_torque": "240",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "256163",
+   "name": "500 Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.38万",
+   "vals": {
+    "length": "4490",
+    "wheelbase": "2735",
+    "curb_weight": "1665",
+    "cltc_recharge_mileage": "500",
+    "recharge_mileage": "500",
+    "power_consumption": "12.5",
+    "battery_capacity": "56.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "255",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "180",
+    "rear_electric_max_torque": "255",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "251669",
+   "name": "600 Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.98万",
+   "vals": {
+    "length": "4490",
+    "wheelbase": "2735",
+    "curb_weight": "1750",
+    "cltc_recharge_mileage": "600",
+    "recharge_mileage": "600",
+    "power_consumption": "12.7",
+    "battery_capacity": "67.1",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "255",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "180",
+    "rear_electric_max_torque": "255",
+    "sub_brand_name": "零跑汽车"
+   }
+  }
+ ]
+}

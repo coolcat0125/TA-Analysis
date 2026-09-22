@@ -94,6 +94,430 @@
    "sid": "4635",
    "series": "欧拉好猫",
    "ok": true
+  },
+  {
+   "kw": "捷途环游者",
+   "sid": "26103",
+   "series": "捷途环游者",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:12",
+   "note": "brand_ok(2家) score=0 brand=奇瑞汽车"
+  },
+  {
+   "kw": "星光M",
+   "sid": "26490",
+   "series": "星光M",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:12",
+   "note": "brand_ok(1家) score=0 brand=上汽通用五菱"
+  },
+  {
+   "kw": "ID.ERA 5X",
+   "sid": "26460",
+   "series": "ID. ERA 5X",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:15",
+   "note": "brand_ok(1家) score=0 brand=上汽大众"
+  },
+  {
+   "kw": "欧拉5",
+   "sid": "25987",
+   "series": "欧拉5SUV燃油版",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:15",
+   "note": "brand_ok(1家) score=1 brand=长城汽车 | DCD 仅燃油/电混款型, 无EV款——BEV行将被电池守卫跳过"
+  },
+  {
+   "kw": "ORA 5",
+   "sid": "26429",
+   "series": "欧拉5运动款燃油版",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:16",
+   "note": "sole_candidate_brand_ok score=2 brand=长城汽车 | DCD 仅燃油/电混款型, 无EV款——BEV行将被电池守卫跳过"
+  },
+  {
+   "kw": "Lafa 5",
+   "sid": "25682",
+   "series": "零跑Lafa5",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:18",
+   "note": "sole_candidate_brand_ok score=1 brand=零跑汽车"
+  },
+  {
+   "kw": "奕境X9",
+   "sid": "26057",
+   "series": "奕境X9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:18",
+   "note": "sole_candidate_brand_ok score=0 brand=东风汽车"
+  },
+  {
+   "kw": "问界M8EV",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "XT5",
+   "sid": "861",
+   "series": "凯迪拉克XT5",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "note": "sole_candidate_brand_ok score=1 brand=上汽通用凯迪拉克"
+  },
+  {
+   "kw": "iMAX8 EV",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "埃安Ray 7",
+   "sid": "26443",
+   "series": "Ray7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "note": "sole_candidate_brand_ok score=1 brand=广汽埃安新能源"
+  },
+  {
+   "kw": "问界M8",
+   "sid": "24850",
+   "series": "问界M8",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "note": "sole_candidate_brand_ok score=0 brand=赛力斯汽车"
+  },
+  {
+   "kw": "猛士X700",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "海豹07",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "智界RX",
+   "sid": "26305",
+   "series": "智界RX",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "note": "sole_candidate_brand_ok score=0 brand=奇瑞汽车"
+  },
+  {
+   "kw": "VLE",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "高山9",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "iCAR V27",
+   "sid": "25620",
+   "series": "iCAR V27",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "note": "sole_candidate_brand_ok score=0 brand=奇瑞新能源"
+  },
+  {
+   "kw": "Ray7",
+   "sid": "26443",
+   "series": "Ray7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "note": "sole_candidate_brand_ok score=0 brand=广汽埃安新能源"
+  },
+  {
+   "kw": "极狐T1",
+   "sid": "25401",
+   "series": "极狐 贝塔T1",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "note": "sole_candidate_brand_ok score=2 brand=北汽新能源"
+  },
+  {
+   "kw": "V9X",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "MG 07",
+   "sid": "37",
+   "series": "MG7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "note": "sole_candidate_brand_ok score=2 brand=上汽集团"
+  },
+  {
+   "kw": "smart精灵#2",
+   "sid": "25896",
+   "series": "smart精灵#2",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "note": "sole_candidate_brand_ok score=0 brand=smart"
+  },
+  {
+   "kw": "Lafa 5 Ultra",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "极狐αT5",
+   "sid": "6363",
+   "series": "极狐 阿尔法T5",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:19",
+   "note": "sole_candidate_brand_ok score=2 brand=北汽新能源"
+  },
+  {
+   "kw": "TF7",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "钛9",
+   "sid": "26458",
+   "series": "钛9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "note": "sole_candidate_brand_ok score=0 brand=方程豹"
+  },
+  {
+   "kw": "NX7",
+   "sid": "26470",
+   "series": "日产NX7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "note": "sole_candidate_brand_ok score=1 brand=东风日产"
+  },
+  {
+   "kw": "银河M7",
+   "sid": "25871",
+   "series": "银河M7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "note": "sole_candidate_brand_ok score=0 brand=吉利银河"
+  },
+  {
+   "kw": "银河星舰7",
+   "sid": "24788",
+   "series": "银河星舰7 EM-i",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "note": "sole_candidate_brand_ok score=1 brand=吉利银河"
+  },
+  {
+   "kw": "A05L",
+   "sid": "26353",
+   "series": "长安启源A05L",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "note": "sole_candidate_brand_ok score=1 brand=长安启源"
+  },
+  {
+   "kw": "享界V8",
+   "sid": "26217",
+   "series": "享界V8",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "note": "sole_candidate_brand_ok score=0 brand=北汽新能源"
+  },
+  {
+   "kw": "EV5",
+   "sid": "9237",
+   "series": "起亚EV5",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "note": "sole_candidate_brand_ok score=1 brand=起亚"
+  },
+  {
+   "kw": "江铃E途顺",
+   "sid": "26376",
+   "series": "E途顺",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "note": "sole_candidate_brand_ok score=1 brand=江铃汽车"
+  },
+  {
+   "kw": "星海V6",
+   "sid": "26074",
+   "series": "星海V6",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "note": "sole_candidate_brand_ok score=0 brand=东风风行"
+  },
+  {
+   "kw": "奔腾小马",
+   "sid": "8956",
+   "series": "奔腾小马",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "note": "sole_candidate_brand_ok score=0 brand=一汽奔腾"
+  },
+  {
+   "kw": "远程M7E",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "启境GX7",
+   "sid": "26219",
+   "series": "启境GX7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "note": "sole_candidate_brand_ok score=0 brand=启境汽车"
+  },
+  {
+   "kw": "红旗天工07",
+   "sid": "26383",
+   "series": "红旗天工07",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 15:20",
+   "note": "sole_candidate_brand_ok score=0 brand=一汽红旗"
+  },
+  {
+   "kw": "问界M8EV",
+   "sid": "24850",
+   "series": "问界m8",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "alias_of(问界m8)",
+   "time": "09-22 15:24"
+  },
+  {
+   "kw": "iMAX8 EV",
+   "sid": "5818",
+   "series": "荣威iMAX8 EV",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=imax8ev sole_candidate_brand_ok",
+   "time": "09-22 15:24"
+  },
+  {
+   "kw": "VLE",
+   "sid": "26493",
+   "series": "奔驰VLE",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=奔驰vle sole_candidate_brand_ok",
+   "time": "09-22 15:24"
+  },
+  {
+   "kw": "Lafa 5 Ultra",
+   "sid": "25682",
+   "series": "lafa5",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "alias_of(lafa5)",
+   "time": "09-22 15:25"
+  },
+  {
+   "kw": "捷途环游者",
+   "sid": "26103",
+   "series": "捷途环游者",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "alias_of(捷途环游者)",
+   "time": "09-22 15:25"
+  },
+  {
+   "kw": "TF7",
+   "sid": "26499",
+   "series": "大通TF7",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=tf7 sole_candidate_brand_ok",
+   "time": "09-22 15:25"
+  },
+  {
+   "kw": "高山9",
+   "sid": "26627",
+   "series": "高山",
+   "ok": true,
+   "via": "manual(dcd家族容器)",
+   "note": "搜索'高山/魏牌高山'唯一车系卡高山(26627)，DCD家族含高山9款型",
+   "time": "09-22 15:27"
   }
  ],
  "field_map": {

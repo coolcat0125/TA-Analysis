@@ -1,0 +1,42 @@
+{
+ "batch": "r08",
+ "created": "2026-09-22 15:30:45",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "r08-01",
+   "kw": "星海V6",
+   "js": "r08-01_星海V6.js",
+   "series_name": "星海V6",
+   "gap_rows": 20
+  },
+  {
+   "rid": "r08-02",
+   "kw": "奔腾小马",
+   "js": "r08-02_奔腾小马.js",
+   "series_name": "奔腾小马",
+   "gap_rows": 16
+  },
+  {
+   "rid": "r08-03",
+   "kw": "远程M7E",
+   "js": "r08-03_远程M7E.js",
+   "series_name": "远程M7E",
+   "gap_rows": 9
+  },
+  {
+   "rid": "r08-04",
+   "kw": "启境GX7",
+   "js": "r08-04_启境GX7.js",
+   "series_name": "启境GX7",
+   "gap_rows": 9
+  },
+  {
+   "rid": "r08-05",
+   "kw": "红旗天工07",
+   "js": "r08-05_红旗天工07.js",
+   "series_name": "红旗天工07",
+   "gap_rows": 9
+  }
+ ]
+}

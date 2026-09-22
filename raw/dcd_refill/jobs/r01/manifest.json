@@ -1,0 +1,42 @@
+{
+ "batch": "r01",
+ "created": "2026-09-22 15:30:41",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "r01-01",
+   "kw": "ORA 5",
+   "js": "r01-01_ORA5.js",
+   "series_name": "ORA 5",
+   "gap_rows": 22
+  },
+  {
+   "rid": "r01-02",
+   "kw": "捷途环游者",
+   "js": "r01-02_捷途环游者.js",
+   "series_name": "捷途环游者,环游者",
+   "gap_rows": 16
+  },
+  {
+   "rid": "r01-03",
+   "kw": "星光M",
+   "js": "r01-03_星光M.js",
+   "series_name": "星光M",
+   "gap_rows": 12
+  },
+  {
+   "rid": "r01-04",
+   "kw": "ID.ERA 5X",
+   "js": "r01-04_IDERA5X.js",
+   "series_name": "ID.ERA 5X",
+   "gap_rows": 10
+  },
+  {
+   "rid": "r01-05",
+   "kw": "欧拉5",
+   "js": "r01-05_欧拉5.js",
+   "series_name": "欧拉5",
+   "gap_rows": 10
+  }
+ ]
+}

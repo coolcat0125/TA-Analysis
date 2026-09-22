@@ -1,0 +1,191 @@
+{
+ "kw": "奔腾小马",
+ "kws": [
+  "奔腾小马"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 15:30",
+ "series_url": "https://www.dongchedi.com/auto/series/8956",
+ "series": {
+  "sid": "8956",
+  "name": "奔腾小马",
+  "brand": "奔腾"
+ },
+ "cars": [
+  {
+   "id": "250209",
+   "name": "222km 萌趣马",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "3.49万",
+   "vals": {
+    "length": "3000",
+    "wheelbase": "1953",
+    "curb_weight": "750",
+    "cltc_recharge_mileage": "222",
+    "recharge_mileage": "222",
+    "power_consumption": "8.8",
+    "battery_capacity": "18.11",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "30kW(41Ps)",
+    "total_electric_torque": "90",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "30",
+    "rear_electric_max_torque": "90",
+    "sub_brand_name": "一汽奔腾"
+   }
+  },
+  {
+   "id": "262851",
+   "name": "222km 吉祥马",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "3.79万",
+   "vals": {
+    "length": "3000",
+    "wheelbase": "1953",
+    "curb_weight": "750",
+    "cltc_recharge_mileage": "222",
+    "recharge_mileage": "222",
+    "power_consumption": "8.8",
+    "battery_capacity": "16.97",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "30kW(41Ps)",
+    "total_electric_torque": "90",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "30",
+    "rear_electric_max_torque": "90",
+    "sub_brand_name": "一汽奔腾"
+   }
+  },
+  {
+   "id": "250210",
+   "name": "222km 炫彩马",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "3.89万",
+   "vals": {
+    "length": "3000",
+    "wheelbase": "1953",
+    "curb_weight": "750",
+    "cltc_recharge_mileage": "222",
+    "recharge_mileage": "222",
+    "power_consumption": "8.8",
+    "battery_capacity": "18.11",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "30kW(41Ps)",
+    "total_electric_torque": "90",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "30",
+    "rear_electric_max_torque": "90",
+    "sub_brand_name": "一汽奔腾"
+   }
+  },
+  {
+   "id": "250211",
+   "name": "222km 闪耀马",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "4.19万",
+   "vals": {
+    "length": "3000",
+    "wheelbase": "1953",
+    "curb_weight": "750",
+    "cltc_recharge_mileage": "222",
+    "recharge_mileage": "222",
+    "power_consumption": "8.8",
+    "battery_capacity": "18.11",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "30kW(41Ps)",
+    "total_electric_torque": "90",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "30",
+    "rear_electric_max_torque": "90",
+    "sub_brand_name": "一汽奔腾"
+   }
+  },
+  {
+   "id": "255568",
+   "name": "222km 摩登马",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "4.59万",
+   "vals": {
+    "length": "3000",
+    "wheelbase": "1953",
+    "curb_weight": "750",
+    "cltc_recharge_mileage": "222",
+    "recharge_mileage": "222",
+    "power_consumption": "8.8",
+    "battery_capacity": "18.11",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "30kW(41Ps)",
+    "total_electric_torque": "90",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "30",
+    "rear_electric_max_torque": "90",
+    "sub_brand_name": "一汽奔腾"
+   }
+  },
+  {
+   "id": "250212",
+   "name": "222km 伶俐马",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "4.29万",
+   "vals": {
+    "length": "3000",
+    "wheelbase": "1953",
+    "curb_weight": "750",
+    "cltc_recharge_mileage": "222",
+    "recharge_mileage": "222",
+    "power_consumption": "8.8",
+    "battery_capacity": "18.11",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "30kW(41Ps)",
+    "total_electric_torque": "90",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "30",
+    "rear_electric_max_torque": "90",
+    "sub_brand_name": "一汽奔腾"
+   }
+  },
+  {
+   "id": "250213",
+   "name": "222km 玲珑马",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "4.59万",
+   "vals": {
+    "length": "3000",
+    "wheelbase": "1953",
+    "curb_weight": "750",
+    "cltc_recharge_mileage": "222",
+    "recharge_mileage": "222",
+    "power_consumption": "8.8",
+    "battery_capacity": "18.11",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "30kW(41Ps)",
+    "total_electric_torque": "90",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "30",
+    "rear_electric_max_torque": "90",
+    "sub_brand_name": "一汽奔腾"
+   }
+  }
+ ]
+}

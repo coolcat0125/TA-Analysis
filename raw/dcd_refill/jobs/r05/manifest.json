@@ -1,0 +1,42 @@
+{
+ "batch": "r05",
+ "created": "2026-09-22 15:30:43",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "r05-01",
+   "kw": "V9X",
+   "js": "r05-01_V9X.js",
+   "series_name": "V9X",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r05-02",
+   "kw": "MG 07",
+   "js": "r05-02_MG07.js",
+   "series_name": "MG 07",
+   "gap_rows": 6
+  },
+  {
+   "rid": "r05-03",
+   "kw": "smart精灵#2",
+   "js": "r05-03_smart精灵2.js",
+   "series_name": "smart精灵#2",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r05-04",
+   "kw": "Lafa 5 Ultra",
+   "js": "r05-04_Lafa5Ultra.js",
+   "series_name": "Lafa 5 Ultra",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r05-05",
+   "kw": "极狐αT5",
+   "js": "r05-05_极狐T5.js",
+   "series_name": "极狐αT5",
+   "gap_rows": 2
+  }
+ ]
+}

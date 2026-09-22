@@ -73,6 +73,13 @@
 
 ## 5. 迭代记录
 
+### 2026-09-22 15:00~18:00 · DCD 直连通道落地 + Wave 1（r01~r08）收口（用户指令：避免交叉更新、等并行会话停稳后开工）
+- **层A 直连通道正式落地（升级为主通道，Tabbit 退居 cookie 导出+保底）**：Tabbit 导出用户登录态 cookie（32 条含 sessionid，存 `$TEMP` 不入 git）→ `raw/dcd_refill/dcd_direct_fetch.py` 纯 HTTP 直拉。**关键发现**：`params-carIds-x-<数字>` 的数字=**车系 id**（x 为字面量），一页载全系款型含停售历史款；搜索页 SSR 同样可直连（车系卡 cell_type=26、名字在 display 子对象）。**试点 13/13 与 Tabbit 浏览器样本逐字段零失配**。匿名直连 302 login-required 维持定论；全程未绕验证码/签名。
+- **Wave 0 附产**：`reclass_rear_motor.py`→`gap_reclass.json` 后电机缺口重分类（single_legal 2,998 合法空置 / dual_gap 63 / **rear_only 600 后驱车新识别** / prerequisite 127），有效缺口 9,766→6,737。
+- **Wave 1 全链收口**：`dcd_map_direct.py`（直连搜索映射+media_fill 品牌守卫+alias 变体消解；教训=品牌收割子串污染 'a5'⊂'ora5' 已改严格匹配）r01~r08 映射 36/40 有源（无源 4：猛士X700/海豹07/V9X/远程M7E，DCD 未收录列 HOLD；欧拉5 两 sid 仅燃油/电混款、BEV 守卫自动零填充）→ `dcd_fetch_batch.py` 抓取 32/32 零失败 → ingest 补 kws 别名契约 → apply（只补空+唯一值+打分选款+W5 成对）dry 33 实填**净 +29 格**（台账 seq 52,258~52,286），**ambiguous 246 格留档 Wave 3**（多配置歧义，需 S4 代际过滤消解），skip_filled 1,272 格正确避让并行能耗会话刚灌满的电耗/续航域。
+- **三件套**：audit strict quality_gates PASS；verify CRITICAL=0、WARN 208 与 v4.9.22 基线逐项一致零新增；两版看板重生成。总纲与进展详见 `Update/DCD全量补全与数据库优化总体方案_20260922.md` §5/§11，执行中枢已更新。
+- **下一棒**：b01~b08 映射（40 车系同工具链）→ recent_queue 剩余 221 目标分批 → ambiguous 消解（批次日期→model-year 代际过滤）→ rear_only 600 行经 DCD rear_electric_* 回填。
+
 ### 2026-09-22 12:2x · DCD 全量补全与数据库优化总体方案 v1.0（规划轮，未动库，用户指令：直连优先/抽离 Tabbit）
 - **方案落盘**：`Update/DCD全量补全与数据库优化总体方案_20260922.md`——三层采集执行器（层A 登录态 cookie 直连=W0 试点 / 层B 浏览器可插拔：Tabbit·ZCode内置·Playwright·dcd_auto / 层C 汽车之家双源仲裁）+ 五段管道扩展（缺口重分类、映射失败出口）+ Wave 0~4 放量计划 + 覆盖率目标 **11 域加权 83.5%→≥93%**。完全复用 dcd_batch_run.py/integrate_dcd_refill 既有工具与全部质量铁律（代际/品牌/只补空/W5成对/台账三件套）。
 - **关键口径修正（方案 §2.2，执行前必做）**：后电机 3,788 空行重定性——2,998 行=单电机车合法空置（总≈前，非缺口）、63 行=真双电机缺口、727 行=前置依赖（须先补总/前）→ **有效 DCD 缺口 9,766→约 6,768 格**。
