@@ -170,6 +170,7 @@ def main():
                     key_est = (str(row[hi['批次']].value or '').strip(), code, fld)
                     cand_vals = {fnum(c['vals'].get(key)) for c in tied}
                     cand_vals.discard(None)
+                    est_allowed = '--allow-est' in sys.argv  # 默认禁用：est 底账红修两次失控（W5 成对失衡），须成对评估+显式旗标
                     if key4 in t4 and fnum(cur) is not None and fnum(cur) != fnum(t4[key4]) and cand_vals == {fnum(t4[key4])}:
                         old = cur
                         cell.value = fnum(t4[key4])
@@ -179,7 +180,7 @@ def main():
                                        fld, '双源更正', str(old), t4[key4],
                                        f'懂车帝参数页(sid={sid}) 与 T4补丁 双源一致：{DCD_URL.format(sid=sid)}'))
                         stats['red_fix'] += 1
-                    elif key_est in est_keys and len(cand_vals) == 1 and fnum(cur) is not None and fnum(cur) != next(iter(cand_vals)):
+                    elif est_allowed and key_est in est_keys and len(cand_vals) == 1 and fnum(cur) is not None and fnum(cur) != next(iter(cand_vals)):
                         old = cur
                         newv = next(iter(cand_vals))
                         cell.value = newv
