@@ -1,0 +1,91 @@
+{
+ "kw": "家越07",
+ "kws": [
+  "家越07"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26077",
+ "series": {
+  "sid": "26077",
+  "name": "家越07",
+  "brand": "荣威"
+ },
+ "cars": [
+  {
+   "id": "260110",
+   "name": "220激光雷达版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "4900",
+    "wheelbase": "2908",
+    "curb_weight": "1965",
+    "cltc_recharge_mileage": "220",
+    "recharge_mileage": "",
+    "power_consumption": "17.7",
+    "battery_capacity": "32.6",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "162kW(220Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "162",
+    "rear_electric_max_torque": "350",
+    "sub_brand_name": "上汽集团"
+   }
+  },
+  {
+   "id": "263139",
+   "name": "320激光雷达版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "4900",
+    "wheelbase": "2908",
+    "curb_weight": "2040",
+    "cltc_recharge_mileage": "320",
+    "recharge_mileage": "",
+    "power_consumption": "18.2",
+    "battery_capacity": "44.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "162kW(220Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "162",
+    "rear_electric_max_torque": "350",
+    "sub_brand_name": "上汽集团"
+   }
+  },
+  {
+   "id": "260987",
+   "name": "320激光雷达智尊版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "4900",
+    "wheelbase": "2908",
+    "curb_weight": "2075",
+    "cltc_recharge_mileage": "320",
+    "recharge_mileage": "",
+    "power_consumption": "18.2",
+    "battery_capacity": "44.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "162kW(220Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "162",
+    "rear_electric_max_torque": "350",
+    "sub_brand_name": "上汽集团"
+   }
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "kw": "领汇e9",
+ "kws": [
+  "领汇e9"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:02",
+ "series_url": "https://www.dongchedi.com/auto/series/25951",
+ "series": {
+  "sid": "25951",
+  "name": "领汇e9 EV",
+  "brand": "领汇"
+ },
+ "cars": [
+  {
+   "id": "255786",
+   "name": "535豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "15.08万",
+   "vals": {
+    "length": "4995",
+    "wheelbase": "2920",
+    "curb_weight": "1790",
+    "cltc_recharge_mileage": "535",
+    "recharge_mileage": "535",
+    "power_consumption": "13",
+    "battery_capacity": "60.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "135kW(184Ps)",
+    "total_electric_torque": "250",
+    "front_electric_max_power": "135",
+    "front_electric_max_torque": "250",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "领汇汽车"
+   }
+  },
+  {
+   "id": "258633",
+   "name": "605闪充豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "15.98万",
+   "vals": {
+    "length": "4995",
+    "wheelbase": "2920",
+    "curb_weight": "1890",
+    "cltc_recharge_mileage": "605",
+    "recharge_mileage": "605",
+    "power_consumption": "12.2",
+    "battery_capacity": "64.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "305",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "305",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "领汇汽车"
+   }
+  },
+  {
+   "id": "255787",
+   "name": "605闪充旗舰版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "16.98万",
+   "vals": {
+    "length": "4995",
+    "wheelbase": "2920",
+    "curb_weight": "1890",
+    "cltc_recharge_mileage": "605",
+    "recharge_mileage": "605",
+    "power_consumption": "12.2",
+    "battery_capacity": "64.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "305",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "305",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "领汇汽车"
+   }
+  }
+ ]
+}

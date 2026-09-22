@@ -1,0 +1,42 @@
+{
+ "batch": "b02",
+ "created": "2026-09-22 17:09:20",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "b02-01",
+   "kw": "ID.UNYX 与众06",
+   "js": "b02-01_IDUNYX与众06.js",
+   "series_name": "ID.UNYX 与众06",
+   "gap_rows": 43
+  },
+  {
+   "rid": "b02-02",
+   "kw": "乐福",
+   "js": "b02-02_乐福.js",
+   "series_name": "乐福",
+   "gap_rows": 43
+  },
+  {
+   "rid": "b02-03",
+   "kw": "Hyper GT",
+   "js": "b02-03_HyperGT.js",
+   "series_name": "Hyper GT",
+   "gap_rows": 42
+  },
+  {
+   "rid": "b02-04",
+   "kw": "Hyper HT",
+   "js": "b02-04_HyperHT.js",
+   "series_name": "Hyper HT",
+   "gap_rows": 42
+  },
+  {
+   "rid": "b02-05",
+   "kw": "αS5",
+   "js": "b02-05_S5.js",
+   "series_name": "αS5",
+   "gap_rows": 37
+  }
+ ]
+}

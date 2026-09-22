@@ -1,0 +1,166 @@
+{
+ "kw": "小鹏G9L",
+ "kws": [
+  "小鹏G9L"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26151",
+ "series": {
+  "sid": "26151",
+  "name": "小鹏G9L",
+  "brand": "小鹏汽车"
+ },
+ "cars": [
+  {
+   "id": "258717",
+   "name": "纯电 702 Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "24.18万",
+   "vals": {
+    "length": "5120",
+    "wheelbase": "3100",
+    "curb_weight": "2600",
+    "cltc_recharge_mileage": "702",
+    "recharge_mileage": "",
+    "power_consumption": "14.9",
+    "battery_capacity": "91.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "270kW(367Ps)",
+    "total_electric_torque": "465",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "270",
+    "rear_electric_max_torque": "465",
+    "sub_brand_name": "小鹏汽车"
+   }
+  },
+  {
+   "id": "262066",
+   "name": "纯电 660 四驱Ultra SE",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "25.98万",
+   "vals": {
+    "length": "5120",
+    "wheelbase": "3100",
+    "curb_weight": "2740",
+    "cltc_recharge_mileage": "660",
+    "recharge_mileage": "",
+    "power_consumption": "16.1",
+    "battery_capacity": "91.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "430kW(585Ps)",
+    "total_electric_torque": "695",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "230",
+    "rear_electric_max_power": "270",
+    "rear_electric_max_torque": "465",
+    "sub_brand_name": "小鹏汽车"
+   }
+  },
+  {
+   "id": "262065",
+   "name": "纯电 660 四驱Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "28.98万",
+   "vals": {
+    "length": "5120",
+    "wheelbase": "3100",
+    "curb_weight": "2740",
+    "cltc_recharge_mileage": "660",
+    "recharge_mileage": "",
+    "power_consumption": "16.1",
+    "battery_capacity": "91.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "430kW(585Ps)",
+    "total_electric_torque": "695",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "230",
+    "rear_electric_max_power": "270",
+    "rear_electric_max_torque": "465",
+    "sub_brand_name": "小鹏汽车"
+   }
+  },
+  {
+   "id": "258723",
+   "name": "纯电 755 四驱Ultra旗舰版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "31.98万",
+   "vals": {
+    "length": "5120",
+    "wheelbase": "3100",
+    "curb_weight": "2740",
+    "cltc_recharge_mileage": "755",
+    "recharge_mileage": "",
+    "power_consumption": "16.2",
+    "battery_capacity": "110",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "430kW(585Ps)",
+    "total_electric_torque": "695",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "230",
+    "rear_electric_max_power": "270",
+    "rear_electric_max_torque": "465",
+    "sub_brand_name": "小鹏汽车"
+   }
+  },
+  {
+   "id": "262064",
+   "name": "增程 1602 四驱Ultra SE",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "25.98万",
+   "vals": {
+    "length": "5120",
+    "wheelbase": "3100",
+    "curb_weight": "2775",
+    "cltc_recharge_mileage": "435",
+    "recharge_mileage": "",
+    "power_consumption": "21.7",
+    "battery_capacity": "63.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "370kW(503Ps)",
+    "total_electric_torque": "695",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "230",
+    "rear_electric_max_power": "210",
+    "rear_electric_max_torque": "465",
+    "sub_brand_name": "小鹏汽车"
+   }
+  },
+  {
+   "id": "258726",
+   "name": "增程 1602 四驱UItra旗舰版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "30.98万",
+   "vals": {
+    "length": "5120",
+    "wheelbase": "3100",
+    "curb_weight": "2775",
+    "cltc_recharge_mileage": "435",
+    "recharge_mileage": "",
+    "power_consumption": "21.7",
+    "battery_capacity": "63.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "370kW(503Ps)",
+    "total_electric_torque": "695",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "230",
+    "rear_electric_max_power": "210",
+    "rear_electric_max_torque": "465",
+    "sub_brand_name": "小鹏汽车"
+   }
+  }
+ ]
+}

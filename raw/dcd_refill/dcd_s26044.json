@@ -1,0 +1,116 @@
+{
+ "kw": "H10",
+ "kws": [
+  "H10"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26044",
+ "series": {
+  "sid": "26044",
+  "name": "长城H10",
+  "brand": "哈弗"
+ },
+ "cars": [
+  {
+   "id": "257698",
+   "name": "Hi4 Max 五座版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "20.98万",
+   "vals": {
+    "length": "5138",
+    "wheelbase": "3000",
+    "curb_weight": "2510",
+    "cltc_recharge_mileage": "232",
+    "recharge_mileage": "",
+    "power_consumption": "21.9",
+    "battery_capacity": "42.8",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "320kW(435Ps)",
+    "total_electric_torque": "482",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "312",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "261139",
+   "name": "Hi4 Pro 六座版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "21.18万",
+   "vals": {
+    "length": "5299",
+    "wheelbase": "3000",
+    "curb_weight": "2570",
+    "cltc_recharge_mileage": "227",
+    "recharge_mileage": "",
+    "power_consumption": "22.2",
+    "battery_capacity": "42.8",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "320kW(435Ps)",
+    "total_electric_torque": "482",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "312",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "261037",
+   "name": "Hi4 Max 六座版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "22.18万",
+   "vals": {
+    "length": "5299",
+    "wheelbase": "3000",
+    "curb_weight": "2570",
+    "cltc_recharge_mileage": "227",
+    "recharge_mileage": "",
+    "power_consumption": "22.2",
+    "battery_capacity": "42.8",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "320kW(435Ps)",
+    "total_electric_torque": "482",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "312",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "257697",
+   "name": "Hi4 Ultra 六座版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "23.18万",
+   "vals": {
+    "length": "5299",
+    "wheelbase": "3000",
+    "curb_weight": "2570",
+    "cltc_recharge_mileage": "227",
+    "recharge_mileage": "",
+    "power_consumption": "22.2",
+    "battery_capacity": "42.8",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "320kW(435Ps)",
+    "total_electric_torque": "482",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "312",
+    "sub_brand_name": "长城汽车"
+   }
+  }
+ ]
+}

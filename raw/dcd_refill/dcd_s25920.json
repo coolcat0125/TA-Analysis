@@ -1,0 +1,92 @@
+{
+ "kw": "尚界 Z7",
+ "kws": [
+  "尚界 Z7",
+  "尚界 Z7 ULTRA"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:02",
+ "series_url": "https://www.dongchedi.com/auto/series/25920",
+ "series": {
+  "sid": "25920",
+  "name": "尚界Z7",
+  "brand": "尚界"
+ },
+ "cars": [
+  {
+   "id": "256857",
+   "name": "Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "21.98万",
+   "vals": {
+    "length": "5036",
+    "wheelbase": "3000",
+    "curb_weight": "2260",
+    "cltc_recharge_mileage": "732",
+    "recharge_mileage": "732",
+    "power_consumption": "12.3",
+    "battery_capacity": "81",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "264kW(359Ps)",
+    "total_electric_torque": "460",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "264",
+    "rear_electric_max_torque": "460",
+    "sub_brand_name": "上汽集团"
+   }
+  },
+  {
+   "id": "256858",
+   "name": "Max+",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "24.98万",
+   "vals": {
+    "length": "5036",
+    "wheelbase": "3000",
+    "curb_weight": "2210",
+    "cltc_recharge_mileage": "905",
+    "recharge_mileage": "905",
+    "power_consumption": "12",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "264kW(359Ps)",
+    "total_electric_torque": "460",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "264",
+    "rear_electric_max_torque": "460",
+    "sub_brand_name": "上汽集团"
+   }
+  },
+  {
+   "id": "255228",
+   "name": "Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "29.98万",
+   "vals": {
+    "length": "5036",
+    "wheelbase": "3000",
+    "curb_weight": "2300",
+    "cltc_recharge_mileage": "791",
+    "recharge_mileage": "791",
+    "power_consumption": "13.7",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "434kW(590Ps)",
+    "total_electric_torque": "760",
+    "front_electric_max_power": "170",
+    "front_electric_max_torque": "300",
+    "rear_electric_max_power": "264",
+    "rear_electric_max_torque": "460",
+    "sub_brand_name": "上汽集团"
+   }
+  }
+ ]
+}

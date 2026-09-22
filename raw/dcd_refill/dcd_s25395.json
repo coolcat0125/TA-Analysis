@@ -1,0 +1,91 @@
+{
+ "kw": "ID.ERA 9X",
+ "kws": [
+  "ID.ERA 9X"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25395",
+ "series": {
+  "sid": "25395",
+  "name": "ID. ERA 9X",
+  "brand": "大众"
+ },
+ "cars": [
+  {
+   "id": "257339",
+   "name": "Pro 四驱版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "30.98万",
+   "vals": {
+    "length": "5207",
+    "wheelbase": "3070",
+    "curb_weight": "2680",
+    "cltc_recharge_mileage": "347",
+    "recharge_mileage": "255",
+    "power_consumption": "20.5",
+    "battery_capacity": "51.1",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "370kW(503Ps)",
+    "total_electric_torque": "660",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "240",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "420",
+    "sub_brand_name": "上汽大众"
+   }
+  },
+  {
+   "id": "257005",
+   "name": "Max 四驱版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "33.98万",
+   "vals": {
+    "length": "5207",
+    "wheelbase": "3070",
+    "curb_weight": "2700",
+    "cltc_recharge_mileage": "406",
+    "recharge_mileage": "321",
+    "power_consumption": "20.9",
+    "battery_capacity": "65.2",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "380kW(517Ps)",
+    "total_electric_torque": "660",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "240",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "420",
+    "sub_brand_name": "上汽大众"
+   }
+  },
+  {
+   "id": "255250",
+   "name": "Ultra 四驱版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "35.98万",
+   "vals": {
+    "length": "5207",
+    "wheelbase": "3070",
+    "curb_weight": "2700",
+    "cltc_recharge_mileage": "406",
+    "recharge_mileage": "321",
+    "power_consumption": "20.9",
+    "battery_capacity": "65.2",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "380kW(517Ps)",
+    "total_electric_torque": "660",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "240",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "420",
+    "sub_brand_name": "上汽大众"
+   }
+  }
+ ]
+}

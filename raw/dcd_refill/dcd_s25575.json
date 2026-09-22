@@ -1,0 +1,91 @@
+{
+ "kw": "星光730",
+ "kws": [
+  "星光730"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25575",
+ "series": {
+  "sid": "25575",
+  "name": "星光730",
+  "brand": "五菱汽车"
+ },
+ "cars": [
+  {
+   "id": "258406",
+   "name": "1.5T CVT 尊享型",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "9.18万",
+   "vals": {
+    "length": "4910",
+    "wheelbase": "2910",
+    "curb_weight": "1610",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽通用五菱"
+   }
+  },
+  {
+   "id": "252768",
+   "name": "1.5T 6MT 舒适型",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "7.3万",
+   "vals": {
+    "length": "4910",
+    "wheelbase": "2910",
+    "curb_weight": "1560",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽通用五菱"
+   }
+  },
+  {
+   "id": "252769",
+   "name": "1.5T CVT 精英型",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "8.38万",
+   "vals": {
+    "length": "4910",
+    "wheelbase": "2910",
+    "curb_weight": "1610",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽通用五菱"
+   }
+  }
+ ]
+}

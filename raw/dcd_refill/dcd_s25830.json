@@ -1,0 +1,116 @@
+{
+ "kw": "问道V9",
+ "kws": [
+  "问道V9"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:02",
+ "series_url": "https://www.dongchedi.com/auto/series/25830",
+ "series": {
+  "sid": "25830",
+  "name": "极狐 问道V9",
+  "brand": "ARCFOX极狐"
+ },
+ "cars": [
+  {
+   "id": "258418",
+   "name": "1250 Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "21.48万",
+   "vals": {
+    "length": "5300",
+    "wheelbase": "3200",
+    "curb_weight": "2525",
+    "cltc_recharge_mileage": "216",
+    "recharge_mileage": "166",
+    "power_consumption": "21.7",
+    "battery_capacity": "37",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "132.0",
+    "total_electric_power": "227kW(309Ps)",
+    "total_electric_torque": "320",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "227",
+    "rear_electric_max_torque": "320",
+    "sub_brand_name": "北汽新能源"
+   }
+  },
+  {
+   "id": "258419",
+   "name": "1250 Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "24.78万",
+   "vals": {
+    "length": "5300",
+    "wheelbase": "3200",
+    "curb_weight": "2525",
+    "cltc_recharge_mileage": "216",
+    "recharge_mileage": "166",
+    "power_consumption": "21.7",
+    "battery_capacity": "37",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "132.0",
+    "total_electric_power": "227kW(309Ps)",
+    "total_electric_torque": "320",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "227",
+    "rear_electric_max_torque": "320",
+    "sub_brand_name": "北汽新能源"
+   }
+  },
+  {
+   "id": "258420",
+   "name": "1330 Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "25.98万",
+   "vals": {
+    "length": "5300",
+    "wheelbase": "3200",
+    "curb_weight": "2580",
+    "cltc_recharge_mileage": "310",
+    "recharge_mileage": "236",
+    "power_consumption": "21.7",
+    "battery_capacity": "53.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "176.7",
+    "total_electric_power": "227kW(309Ps)",
+    "total_electric_torque": "320",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "227",
+    "rear_electric_max_torque": "320",
+    "sub_brand_name": "北汽新能源"
+   }
+  },
+  {
+   "id": "253961",
+   "name": "1330 Ultra+",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "26.98万",
+   "vals": {
+    "length": "5300",
+    "wheelbase": "3200",
+    "curb_weight": "2580",
+    "cltc_recharge_mileage": "310",
+    "recharge_mileage": "236",
+    "power_consumption": "21.7",
+    "battery_capacity": "53.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "176.7",
+    "total_electric_power": "227kW(309Ps)",
+    "total_electric_torque": "320",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "227",
+    "rear_electric_max_torque": "320",
+    "sub_brand_name": "北汽新能源"
+   }
+  }
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "kw": "五菱扬光Pro",
+ "kws": [
+  "五菱扬光Pro"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26296",
+ "series": {
+  "sid": "26296",
+  "name": "五菱扬光Pro",
+  "brand": "五菱汽车"
+ },
+ "cars": [
+  {
+   "id": "259909",
+   "name": "纯电 318km 客车版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "9.98万",
+   "vals": {
+    "length": "5495",
+    "wheelbase": "3450",
+    "curb_weight": "2015",
+    "cltc_recharge_mileage": "318",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "54.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "380",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "150",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "上汽通用五菱"
+   }
+  },
+  {
+   "id": "260490",
+   "name": "纯电 380km 封窗版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.38万",
+   "vals": {
+    "length": "5495",
+    "wheelbase": "3450",
+    "curb_weight": "2035",
+    "cltc_recharge_mileage": "380",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "69.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "380",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "150",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "上汽通用五菱"
+   }
+  },
+  {
+   "id": "260969",
+   "name": "纯电 365km 封窗宁德天行订制版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "14.38万",
+   "vals": {
+    "length": "5495",
+    "wheelbase": "3450",
+    "curb_weight": "2035",
+    "cltc_recharge_mileage": "365",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "66.67",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "380",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "150",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "上汽通用五菱"
+   }
+  },
+  {
+   "id": "260491",
+   "name": "纯电 405km 客车版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.58万",
+   "vals": {
+    "length": "5495",
+    "wheelbase": "3450",
+    "curb_weight": "2155",
+    "cltc_recharge_mileage": "405",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "69.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "380",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "150",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "上汽通用五菱"
+   }
+  },
+  {
+   "id": "260492",
+   "name": "纯电 405km 9座营运版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "14.98万",
+   "vals": {
+    "length": "5495",
+    "wheelbase": "3450",
+    "curb_weight": "2155",
+    "cltc_recharge_mileage": "405",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "69.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "380",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "150",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "上汽通用五菱"
+   }
+  },
+  {
+   "id": "262670",
+   "name": "增程 150km 客车版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.58万",
+   "vals": {
+    "length": "5495",
+    "wheelbase": "3450",
+    "curb_weight": "2155",
+    "cltc_recharge_mileage": "150",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "31.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "110kW(150Ps)",
+    "total_electric_torque": "280",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "110",
+    "rear_electric_max_torque": "280",
+    "sub_brand_name": "上汽通用五菱"
+   }
+  }
+ ]
+}

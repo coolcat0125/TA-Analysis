@@ -335,7 +335,8 @@ def cmd_apply(args):
                     if key == 'battery_type':
                         vals.add(BT_NORM.get(str(v).strip(), str(v).strip()))
                     elif key in ('total_electric_power', 'front_electric_max_power', 'rear_electric_max_power'):
-                        m = re.match(r'^\s*(\d+(?:\.\d+)?)\s*kW', str(v), re.I)
+                        # DCD total 带 kW 后缀，front/rear 为裸数字——两者都收
+                        m = re.match(r'^\s*(\d+(?:\.\d+)?)(?:\s*kW)?', str(v), re.I)
                         if m:
                             vals.add(float(m.group(1)))
                     else:

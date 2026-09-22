@@ -1,0 +1,91 @@
+{
+ "kw": "方程豹钛3",
+ "kws": [
+  "方程豹钛3"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:18",
+ "series_url": "https://www.dongchedi.com/auto/series/9249",
+ "series": {
+  "sid": "9249",
+  "name": "钛3",
+  "brand": "方程豹"
+ },
+ "cars": [
+  {
+   "id": "262081",
+   "name": "510KM 后驱闪充版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "14.38万",
+   "vals": {
+    "length": "4605",
+    "wheelbase": "2745",
+    "curb_weight": "1920",
+    "cltc_recharge_mileage": "510",
+    "recharge_mileage": "510",
+    "power_consumption": "14.1",
+    "battery_capacity": "64.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "240kW(326Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "240",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "方程豹"
+   }
+  },
+  {
+   "id": "255319",
+   "name": "620KM 后驱闪充版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "15.38万",
+   "vals": {
+    "length": "4605",
+    "wheelbase": "2745",
+    "curb_weight": "2080",
+    "cltc_recharge_mileage": "620",
+    "recharge_mileage": "620",
+    "power_consumption": "13.6",
+    "battery_capacity": "75.6",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "240kW(326Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "240",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "方程豹"
+   }
+  },
+  {
+   "id": "255318",
+   "name": "565KM 四驱闪充版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "16.98万",
+   "vals": {
+    "length": "4605",
+    "wheelbase": "2745",
+    "curb_weight": "2170",
+    "cltc_recharge_mileage": "565",
+    "recharge_mileage": "565",
+    "power_consumption": "15",
+    "battery_capacity": "75.6",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "375kW(510Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "135",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "240",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "方程豹"
+   }
+  }
+ ]
+}

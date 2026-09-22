@@ -1,0 +1,116 @@
+{
+ "kw": "昊铂A800",
+ "kws": [
+  "昊铂A800"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25642",
+ "series": {
+  "sid": "25642",
+  "name": "昊铂A800",
+  "brand": "广汽昊铂"
+ },
+ "cars": [
+  {
+   "id": "256269",
+   "name": "智能豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "18.98万",
+   "vals": {
+    "length": "5130",
+    "wheelbase": "3020",
+    "curb_weight": "2245",
+    "cltc_recharge_mileage": "220",
+    "recharge_mileage": "178",
+    "power_consumption": "18.1",
+    "battery_capacity": "35",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "200kW(272Ps)",
+    "total_electric_torque": "305",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "200",
+    "rear_electric_max_torque": "305",
+    "sub_brand_name": "广汽埃安新能源"
+   }
+  },
+  {
+   "id": "256268",
+   "name": "智慧豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "22.98万",
+   "vals": {
+    "length": "5130",
+    "wheelbase": "3020",
+    "curb_weight": "2245",
+    "cltc_recharge_mileage": "220",
+    "recharge_mileage": "178",
+    "power_consumption": "18.1",
+    "battery_capacity": "35",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "200kW(272Ps)",
+    "total_electric_torque": "305",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "200",
+    "rear_electric_max_torque": "305",
+    "sub_brand_name": "广汽埃安新能源"
+   }
+  },
+  {
+   "id": "256267",
+   "name": "智慧尊贵版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "24.98万",
+   "vals": {
+    "length": "5130",
+    "wheelbase": "3020",
+    "curb_weight": "2300",
+    "cltc_recharge_mileage": "220",
+    "recharge_mileage": "178",
+    "power_consumption": "18.1",
+    "battery_capacity": "35",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "200kW(272Ps)",
+    "total_electric_torque": "305",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "200",
+    "rear_electric_max_torque": "305",
+    "sub_brand_name": "广汽埃安新能源"
+   }
+  },
+  {
+   "id": "250583",
+   "name": "智慧旗舰版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "29.98万",
+   "vals": {
+    "length": "5130",
+    "wheelbase": "3020",
+    "curb_weight": "2400",
+    "cltc_recharge_mileage": "200",
+    "recharge_mileage": "163",
+    "power_consumption": "21",
+    "battery_capacity": "35",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "440kW(598Ps)",
+    "total_electric_torque": "650",
+    "front_electric_max_power": "140",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "300",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "广汽埃安新能源"
+   }
+  }
+ ]
+}

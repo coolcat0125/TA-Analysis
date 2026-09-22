@@ -1,0 +1,66 @@
+{
+ "kw": "理想i8",
+ "kws": [
+  "理想i8"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 16:59",
+ "series_url": "https://www.dongchedi.com/auto/series/10178",
+ "series": {
+  "sid": "10178",
+  "name": "理想i8",
+  "brand": "理想汽车"
+ },
+ "cars": [
+  {
+   "id": "260085",
+   "name": "后驱长续航版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "30.98万",
+   "vals": {
+    "length": "5085",
+    "wheelbase": "3050",
+    "curb_weight": "2505",
+    "cltc_recharge_mileage": "780",
+    "recharge_mileage": "",
+    "power_consumption": "13.6",
+    "battery_capacity": "97.8",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "250kW(340Ps)",
+    "total_electric_torque": "425",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "250",
+    "rear_electric_max_torque": "425",
+    "sub_brand_name": "理想汽车"
+   }
+  },
+  {
+   "id": "261762",
+   "name": "四驱高性能版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "33.98万",
+   "vals": {
+    "length": "5085",
+    "wheelbase": "3050",
+    "curb_weight": "2610",
+    "cltc_recharge_mileage": "720",
+    "recharge_mileage": "",
+    "power_consumption": "14.8",
+    "battery_capacity": "97.8",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "400kW(544Ps)",
+    "total_electric_torque": "660",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "235",
+    "rear_electric_max_power": "250",
+    "rear_electric_max_torque": "425",
+    "sub_brand_name": "理想汽车"
+   }
+  }
+ ]
+}

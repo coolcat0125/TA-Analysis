@@ -1,0 +1,166 @@
+{
+ "kw": "锐胜M8",
+ "kws": [
+  "锐胜M8"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:02",
+ "series_url": "https://www.dongchedi.com/auto/series/25683",
+ "series": {
+  "sid": "25683",
+  "name": "锐胜M8",
+  "brand": "北京汽车制造厂"
+ },
+ "cars": [
+  {
+   "id": "253527",
+   "name": "CNG尊享型7座",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.68万",
+   "vals": {
+    "length": "5317",
+    "wheelbase": "3200",
+    "curb_weight": "2260",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京汽车制造厂"
+   }
+  },
+  {
+   "id": "254411",
+   "name": "CNG尊享型9座",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "13.08万",
+   "vals": {
+    "length": "5317",
+    "wheelbase": "3200",
+    "curb_weight": "2260",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京汽车制造厂"
+   }
+  },
+  {
+   "id": "253531",
+   "name": "CNG中级营运7座",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "14.68万",
+   "vals": {
+    "length": "5317",
+    "wheelbase": "3200",
+    "curb_weight": "2260",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京汽车制造厂"
+   }
+  },
+  {
+   "id": "254412",
+   "name": "CNG中级营运9座",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "15.08万",
+   "vals": {
+    "length": "5317",
+    "wheelbase": "3200",
+    "curb_weight": "2260",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京汽车制造厂"
+   }
+  },
+  {
+   "id": "253532",
+   "name": "CNG高级营运7座",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "14.98万",
+   "vals": {
+    "length": "5317",
+    "wheelbase": "3200",
+    "curb_weight": "2260",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京汽车制造厂"
+   }
+  },
+  {
+   "id": "254413",
+   "name": "CNG高级营运9座",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "15.38万",
+   "vals": {
+    "length": "5317",
+    "wheelbase": "3200",
+    "curb_weight": "2260",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京汽车制造厂"
+   }
+  }
+ ]
+}

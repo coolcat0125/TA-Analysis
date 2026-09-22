@@ -1,0 +1,41 @@
+{
+ "kw": "比亚迪e3",
+ "kws": [
+  "比亚迪e3"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:04",
+ "series_url": "https://www.dongchedi.com/auto/series/4076",
+ "series": {
+  "sid": "4076",
+  "name": "比亚迪e3",
+  "brand": "比亚迪"
+ },
+ "cars": [
+  {
+   "id": "55708",
+   "name": "领畅版",
+   "year": "2021",
+   "sale_status": 0,
+   "official_price": "15.48万",
+   "vals": {
+    "length": "4450",
+    "wheelbase": "2610",
+    "curb_weight": "1360",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "401",
+    "power_consumption": "11.4",
+    "battery_capacity": "43.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "100kW(136Ps)",
+    "total_electric_torque": "180",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "180",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "比亚迪"
+   }
+  }
+ ]
+}

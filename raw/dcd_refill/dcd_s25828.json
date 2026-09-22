@@ -1,0 +1,141 @@
+{
+ "kw": "风云T9L",
+ "kws": [
+  "风云T9L"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:02",
+ "series_url": "https://www.dongchedi.com/auto/series/25828",
+ "series": {
+  "sid": "25828",
+  "name": "风云T9L",
+  "brand": "奇瑞风云"
+ },
+ "cars": [
+  {
+   "id": "257204",
+   "name": "135 Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.99万",
+   "vals": {
+    "length": "4870",
+    "wheelbase": "2920",
+    "curb_weight": "1940",
+    "cltc_recharge_mileage": "135",
+    "recharge_mileage": "101",
+    "power_consumption": "16",
+    "battery_capacity": "19.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "260kW(354Ps)",
+    "total_electric_torque": "330",
+    "front_electric_max_power": "260",
+    "front_electric_max_torque": "330",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "253890",
+   "name": "230 Pro",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "14.29万",
+   "vals": {
+    "length": "4870",
+    "wheelbase": "2920",
+    "curb_weight": "2050",
+    "cltc_recharge_mileage": "230",
+    "recharge_mileage": "170",
+    "power_consumption": "19",
+    "battery_capacity": "32.7",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "260kW(354Ps)",
+    "total_electric_torque": "330",
+    "front_electric_max_power": "260",
+    "front_electric_max_torque": "330",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "256675",
+   "name": "230 Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "15.39万",
+   "vals": {
+    "length": "4870",
+    "wheelbase": "2920",
+    "curb_weight": "2050",
+    "cltc_recharge_mileage": "230",
+    "recharge_mileage": "170",
+    "power_consumption": "19",
+    "battery_capacity": "32.7",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "260kW(354Ps)",
+    "total_electric_torque": "330",
+    "front_electric_max_power": "260",
+    "front_electric_max_torque": "330",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "257782",
+   "name": "230 Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "16.79万",
+   "vals": {
+    "length": "4870",
+    "wheelbase": "2920",
+    "curb_weight": "2050",
+    "cltc_recharge_mileage": "230",
+    "recharge_mileage": "170",
+    "power_consumption": "19",
+    "battery_capacity": "32.7",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "260kW(354Ps)",
+    "total_electric_torque": "330",
+    "front_electric_max_power": "260",
+    "front_electric_max_torque": "330",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "257215",
+   "name": "200 四驱超能超舒适",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "18.69万",
+   "vals": {
+    "length": "4870",
+    "wheelbase": "2920",
+    "curb_weight": "2215",
+    "cltc_recharge_mileage": "200",
+    "recharge_mileage": "140",
+    "power_consumption": "21.3",
+    "battery_capacity": "32.7",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "435kW(592Ps)",
+    "total_electric_torque": "640",
+    "front_electric_max_power": "260",
+    "front_electric_max_torque": "330",
+    "rear_electric_max_power": "175",
+    "rear_electric_max_torque": "310",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  }
+ ]
+}

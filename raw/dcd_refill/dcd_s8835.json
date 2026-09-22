@@ -1,0 +1,41 @@
+{
+ "kw": "红旗天工08",
+ "kws": [
+  "红旗天工08"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:17",
+ "series_url": "https://www.dongchedi.com/auto/series/8835",
+ "series": {
+  "sid": "8835",
+  "name": "红旗天工08",
+  "brand": "红旗"
+ },
+ "cars": [
+  {
+   "id": "258555",
+   "name": "670 Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "19.79万",
+   "vals": {
+    "length": "4925",
+    "wheelbase": "3000",
+    "curb_weight": "2280",
+    "cltc_recharge_mileage": "670",
+    "recharge_mileage": "",
+    "power_consumption": "14.3",
+    "battery_capacity": "85",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "257kW(350Ps)",
+    "total_electric_torque": "450",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "257",
+    "rear_electric_max_torque": "450",
+    "sub_brand_name": "一汽红旗"
+   }
+  }
+ ]
+}

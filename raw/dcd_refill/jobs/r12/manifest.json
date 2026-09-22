@@ -1,0 +1,287 @@
+{
+ "batch": "r12",
+ "created": "2026-09-22 17:09:53",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "r12-01",
+   "kw": "V25",
+   "js": "r12-01_V25.js",
+   "series_name": "V25",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-02",
+   "kw": "V25",
+   "js": "r12-02_V25.js",
+   "series_name": "V25,V25S",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-03",
+   "kw": "小米澎程N90",
+   "js": "r12-03_小米澎程N90.js",
+   "series_name": "小米澎程N90",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-04",
+   "kw": "S3",
+   "js": "r12-04_S3.js",
+   "series_name": "S3,βS3",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-05",
+   "kw": "方程豹钛3",
+   "js": "r12-05_方程豹钛3.js",
+   "series_name": "方程豹钛3",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-06",
+   "kw": "悦意08",
+   "js": "r12-06_悦意08.js",
+   "series_name": "悦意08",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-07",
+   "kw": "C 350 L 4MATIC",
+   "js": "r12-07_C350L4MATIC.js",
+   "series_name": "C 350 L 4MATIC,C 350 LL 4MATIC",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-08",
+   "kw": "岚图泰山",
+   "js": "r12-08_岚图泰山.js",
+   "series_name": "岚图泰山,岚图泰山X9",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-09",
+   "kw": "H10",
+   "js": "r12-09_H10.js",
+   "series_name": "H10",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-10",
+   "kw": "尊界V680",
+   "js": "r12-10_尊界V680.js",
+   "series_name": "尊界V680",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-11",
+   "kw": "五菱扬光L",
+   "js": "r12-11_五菱扬光L.js",
+   "series_name": "五菱扬光L",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-12",
+   "kw": "比亚迪海豹06GT",
+   "js": "r12-12_比亚迪海豹06GT.js",
+   "series_name": "比亚迪海豹06GT",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-13",
+   "kw": "G318",
+   "js": "r12-13_G318.js",
+   "series_name": "G318",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-14",
+   "kw": "B01",
+   "js": "r12-14_B01.js",
+   "series_name": "B01",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-15",
+   "kw": "银河TT、TT、A8、银河A8",
+   "js": "r12-15_银河TTTTA8银河A8.js",
+   "series_name": "银河TT、TT、A8、银河A8",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-16",
+   "kw": "尊界V800",
+   "js": "r12-16_尊界V800.js",
+   "series_name": "尊界V800",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-17",
+   "kw": "银河星耀6EF",
+   "js": "r12-17_银河星耀6EF.js",
+   "series_name": "银河星耀6EF",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-18",
+   "kw": "V9",
+   "js": "r12-18_V9.js",
+   "series_name": "V9",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-19",
+   "kw": "T1",
+   "js": "r12-19_T1.js",
+   "series_name": "T1",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-20",
+   "kw": "EU8",
+   "js": "r12-20_EU8.js",
+   "series_name": "EU8",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-21",
+   "kw": "江豚E5",
+   "js": "r12-21_江豚E5.js",
+   "series_name": "江豚E5",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-22",
+   "kw": "ELECTRA E7;ELECTRA X7",
+   "js": "r12-22_ELECTRAE7ELECTRAX7.js",
+   "series_name": "ELECTRA E7;ELECTRA X7",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-23",
+   "kw": "ID.ERA 9X",
+   "js": "r12-23_IDERA9X.js",
+   "series_name": "ID.ERA 9X",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r12-24",
+   "kw": "欧拉芭蕾猫",
+   "js": "r12-24_欧拉芭蕾猫.js",
+   "series_name": "欧拉芭蕾猫,ORA 6",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-25",
+   "kw": "埃安RT",
+   "js": "r12-25_埃安RT.js",
+   "series_name": "埃安RT",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-26",
+   "kw": "享界S9T",
+   "js": "r12-26_享界S9T.js",
+   "series_name": "享界S9T",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-27",
+   "kw": "理想i8",
+   "js": "r12-27_理想i8.js",
+   "series_name": "理想i8",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-28",
+   "kw": "理想MEGA",
+   "js": "r12-28_理想MEGA.js",
+   "series_name": "理想MEGA",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-29",
+   "kw": "菱智EV",
+   "js": "r12-29_菱智EV.js",
+   "series_name": "菱智EV",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-30",
+   "kw": "S07EV",
+   "js": "r12-30_S07EV.js",
+   "series_name": "S07EV",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-31",
+   "kw": "领汇e5",
+   "js": "r12-31_领汇e5.js",
+   "series_name": "领汇e5",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-32",
+   "kw": "领汇M9",
+   "js": "r12-32_领汇M9.js",
+   "series_name": "领汇M9",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-33",
+   "kw": "问界M9EV",
+   "js": "r12-33_问界M9EV.js",
+   "series_name": "问界M9EV",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-34",
+   "kw": "尊界S800",
+   "js": "r12-34_尊界S800.js",
+   "series_name": "尊界S800",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-35",
+   "kw": "星愿、星愿Ultra",
+   "js": "r12-35_星愿星愿Ultra.js",
+   "series_name": "星愿、星愿Ultra",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-36",
+   "kw": "ELECTRA L7",
+   "js": "r12-36_ELECTRAL7.js",
+   "series_name": "ELECTRA L7",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-37",
+   "kw": "风云T7",
+   "js": "r12-37_风云T7.js",
+   "series_name": "风云T7,风云E5",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-38",
+   "kw": "FREELANDER 神行者8",
+   "js": "r12-38_FREELANDER神行者8.js",
+   "series_name": "FREELANDER 神行者8",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-39",
+   "kw": "ID.ERA 5S",
+   "js": "r12-39_IDERA5S.js",
+   "series_name": "ID.ERA 5S",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r12-40",
+   "kw": "拾月max",
+   "js": "r12-40_拾月max.js",
+   "series_name": "拾月max",
+   "gap_rows": 2
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "kw": "腾势Z",
+ "kws": [
+  "腾势Z",
+  "腾势Z9",
+  "腾势Z9"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25440",
+ "series": {
+  "sid": "25440",
+  "name": "腾势Z",
+  "brand": "腾势"
+ },
+ "cars": [
+  {
+   "id": "260072",
+   "name": "硬顶版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "4780",
+    "wheelbase": "2780",
+    "curb_weight": "2220",
+    "cltc_recharge_mileage": "540",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "76",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "1180kW(1605Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "500",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "680",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "腾势汽车"
+   }
+  },
+  {
+   "id": "258021",
+   "name": "敞篷版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "4780",
+    "wheelbase": "2780",
+    "curb_weight": "2290",
+    "cltc_recharge_mileage": "510",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "76",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "1180kW(1605Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "500",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "680",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "腾势汽车"
+   }
+  },
+  {
+   "id": "247757",
+   "name": "赛道版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "4870",
+    "wheelbase": "2780",
+    "curb_weight": "2240",
+    "cltc_recharge_mileage": "470",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "76",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "1180kW(1605Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "500",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "680",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "腾势汽车"
+   }
+  }
+ ]
+}

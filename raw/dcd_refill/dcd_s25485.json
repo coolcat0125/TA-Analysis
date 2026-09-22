@@ -1,0 +1,166 @@
+{
+ "kw": "沃尔沃XC70",
+ "kws": [
+  "沃尔沃XC70"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25485",
+ "series": {
+  "sid": "25485",
+  "name": "沃尔沃XC70",
+  "brand": "沃尔沃"
+ },
+ "cars": [
+  {
+   "id": "252375",
+   "name": "99周年感恩版 两驱 Core",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "41.19万",
+   "vals": {
+    "length": "4815",
+    "wheelbase": "2895",
+    "curb_weight": "2110",
+    "cltc_recharge_mileage": "116",
+    "recharge_mileage": "100",
+    "power_consumption": "17.3",
+    "battery_capacity": "21.22",
+    "battery_type": "磷酸铁锂电池+三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "107kW(145Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "107",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  },
+  {
+   "id": "251194",
+   "name": "99周年感恩版 两驱 Plus",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "43.19万",
+   "vals": {
+    "length": "4815",
+    "wheelbase": "2895",
+    "curb_weight": "2110",
+    "cltc_recharge_mileage": "116",
+    "recharge_mileage": "100",
+    "power_consumption": "17.3",
+    "battery_capacity": "21.22",
+    "battery_type": "磷酸铁锂电池+三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "107kW(145Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "107",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  },
+  {
+   "id": "252315",
+   "name": "两驱长续航Core",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "41.69万",
+   "vals": {
+    "length": "4815",
+    "wheelbase": "2895",
+    "curb_weight": "2110",
+    "cltc_recharge_mileage": "116",
+    "recharge_mileage": "100",
+    "power_consumption": "17.3",
+    "battery_capacity": "21.22",
+    "battery_type": "磷酸铁锂电池+三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "107kW(145Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "107",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  },
+  {
+   "id": "252318",
+   "name": "四驱超长续航Core",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "44.69万",
+   "vals": {
+    "length": "4815",
+    "wheelbase": "2895",
+    "curb_weight": "2275",
+    "cltc_recharge_mileage": "212",
+    "recharge_mileage": "180",
+    "power_consumption": "22",
+    "battery_capacity": "39.63",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "263kW(357Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "107",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "156",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  },
+  {
+   "id": "252319",
+   "name": "四驱超长续航Plus",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "46.69万",
+   "vals": {
+    "length": "4815",
+    "wheelbase": "2895",
+    "curb_weight": "2275",
+    "cltc_recharge_mileage": "212",
+    "recharge_mileage": "180",
+    "power_consumption": "22",
+    "battery_capacity": "39.63",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "263kW(357Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "107",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "156",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  },
+  {
+   "id": "252320",
+   "name": "四驱超长续航Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "49.69万",
+   "vals": {
+    "length": "4815",
+    "wheelbase": "2895",
+    "curb_weight": "2275",
+    "cltc_recharge_mileage": "212",
+    "recharge_mileage": "180",
+    "power_consumption": "22",
+    "battery_capacity": "39.63",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "263kW(357Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "107",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "156",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  }
+ ]
+}

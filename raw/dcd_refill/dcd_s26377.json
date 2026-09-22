@@ -1,0 +1,66 @@
+{
+ "kw": "小米澎程N70",
+ "kws": [
+  "小米澎程N70"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26377",
+ "series": {
+  "sid": "26377",
+  "name": "小米澎程N70",
+  "brand": "小米汽车"
+ },
+ "cars": [
+  {
+   "id": "260984",
+   "name": "Pro版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "20.99万",
+   "vals": {
+    "length": "4960",
+    "wheelbase": "2950",
+    "curb_weight": "2453",
+    "cltc_recharge_mileage": "351",
+    "recharge_mileage": "270",
+    "power_consumption": "19.5",
+    "battery_capacity": "52",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "210kW(286Ps)",
+    "total_electric_torque": "330",
+    "front_electric_max_power": "210",
+    "front_electric_max_torque": "330",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "小米汽车"
+   }
+  },
+  {
+   "id": "260982",
+   "name": "Max版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "23.99万",
+   "vals": {
+    "length": "4960",
+    "wheelbase": "2950",
+    "curb_weight": "2561",
+    "cltc_recharge_mileage": "505",
+    "recharge_mileage": "380",
+    "power_consumption": "20.6",
+    "battery_capacity": "76",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "310kW(422Ps)",
+    "total_electric_torque": "540",
+    "front_electric_max_power": "210",
+    "front_electric_max_torque": "330",
+    "rear_electric_max_power": "100",
+    "rear_electric_max_torque": "210",
+    "sub_brand_name": "小米汽车"
+   }
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "kw": "MG 4X",
+ "kws": [
+  "MG 4X"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26013",
+ "series": {
+  "sid": "26013",
+  "name": "MG 4X",
+  "brand": "MG"
+ },
+ "cars": [
+  {
+   "id": "258904",
+   "name": "510半固态自由版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "9.98万",
+   "vals": {
+    "length": "4500",
+    "wheelbase": "2735",
+    "curb_weight": "1640",
+    "cltc_recharge_mileage": "510",
+    "recharge_mileage": "510",
+    "power_consumption": "12.5",
+    "battery_capacity": "53.9",
+    "battery_type": "磷酸锰铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "125kW(170Ps)",
+    "total_electric_torque": "250",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "125",
+    "rear_electric_max_torque": "250",
+    "sub_brand_name": "上汽集团"
+   }
+  },
+  {
+   "id": "256879",
+   "name": "510半固态智享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.98万",
+   "vals": {
+    "length": "4500",
+    "wheelbase": "2735",
+    "curb_weight": "1680",
+    "cltc_recharge_mileage": "510",
+    "recharge_mileage": "510",
+    "power_consumption": "12.5",
+    "battery_capacity": "53.9",
+    "battery_type": "磷酸锰铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "125kW(170Ps)",
+    "total_electric_torque": "250",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "125",
+    "rear_electric_max_torque": "250",
+    "sub_brand_name": "上汽集团"
+   }
+  },
+  {
+   "id": "258902",
+   "name": "610自由版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.68万",
+   "vals": {
+    "length": "4500",
+    "wheelbase": "2735",
+    "curb_weight": "1710",
+    "cltc_recharge_mileage": "610",
+    "recharge_mileage": "610",
+    "power_consumption": "12.4",
+    "battery_capacity": "64.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "150",
+    "rear_electric_max_torque": "350",
+    "sub_brand_name": "上汽集团"
+   }
+  },
+  {
+   "id": "256728",
+   "name": "610智享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.68万",
+   "vals": {
+    "length": "4500",
+    "wheelbase": "2735",
+    "curb_weight": "1755",
+    "cltc_recharge_mileage": "610",
+    "recharge_mileage": "610",
+    "power_consumption": "12.4",
+    "battery_capacity": "64.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "150",
+    "rear_electric_max_torque": "350",
+    "sub_brand_name": "上汽集团"
+   }
+  }
+ ]
+}

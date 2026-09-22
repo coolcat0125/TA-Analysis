@@ -1,0 +1,42 @@
+{
+ "batch": "b05",
+ "created": "2026-09-22 17:09:30",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "b05-01",
+   "kw": "方程豹钛7",
+   "js": "b05-01_方程豹钛7.js",
+   "series_name": "方程豹钛7",
+   "gap_rows": 30
+  },
+  {
+   "rid": "b05-02",
+   "kw": "eπ008",
+   "js": "b05-02_e008.js",
+   "series_name": "eπ008",
+   "gap_rows": 30
+  },
+  {
+   "rid": "b05-03",
+   "kw": "欧拉iQ",
+   "js": "b05-03_欧拉iQ.js",
+   "series_name": "欧拉iQ",
+   "gap_rows": 30
+  },
+  {
+   "rid": "b05-04",
+   "kw": "EV90",
+   "js": "b05-04_EV90.js",
+   "series_name": "EV90",
+   "gap_rows": 28
+  },
+  {
+   "rid": "b05-05",
+   "kw": "智界R7",
+   "js": "b05-05_智界R7.js",
+   "series_name": "智界R7",
+   "gap_rows": 28
+  }
+ ]
+}

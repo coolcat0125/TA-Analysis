@@ -1,0 +1,166 @@
+{
+ "kw": "银河战舰700",
+ "kws": [
+  "银河战舰700"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25441",
+ "series": {
+  "sid": "25441",
+  "name": "银河战舰700",
+  "brand": "吉利银河"
+ },
+ "cars": [
+  {
+   "id": "263084",
+   "name": "305km 1.5T两驱 探索版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5085",
+    "wheelbase": "2900",
+    "curb_weight": "2405",
+    "cltc_recharge_mileage": "305",
+    "recharge_mileage": "",
+    "power_consumption": "21.5",
+    "battery_capacity": "47.14",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "230kW(313Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "230",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "吉利银河"
+   }
+  },
+  {
+   "id": "263085",
+   "name": "305km 1.5T两驱 探索+版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5085",
+    "wheelbase": "2900",
+    "curb_weight": "2405",
+    "cltc_recharge_mileage": "305",
+    "recharge_mileage": "",
+    "power_consumption": "21.5",
+    "battery_capacity": "47.14",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "230kW(313Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "230",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "吉利银河"
+   }
+  },
+  {
+   "id": "260983",
+   "name": "280km 1.5T三电机四驱 驭峰版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5085",
+    "wheelbase": "2900",
+    "curb_weight": "2575",
+    "cltc_recharge_mileage": "280",
+    "recharge_mileage": "",
+    "power_consumption": "23.2",
+    "battery_capacity": "47.14",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "570kW(775Ps)",
+    "total_electric_torque": "910",
+    "front_electric_max_power": "230",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "340",
+    "rear_electric_max_torque": "560",
+    "sub_brand_name": "吉利银河"
+   }
+  },
+  {
+   "id": "263086",
+   "name": "280km 1.5T三电机四驱 驭峰+版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5085",
+    "wheelbase": "2900",
+    "curb_weight": "2605",
+    "cltc_recharge_mileage": "280",
+    "recharge_mileage": "",
+    "power_consumption": "23.2",
+    "battery_capacity": "47.14",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "570kW(775Ps)",
+    "total_electric_torque": "910",
+    "front_electric_max_power": "230",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "340",
+    "rear_electric_max_torque": "560",
+    "sub_brand_name": "吉利银河"
+   }
+  },
+  {
+   "id": "257069",
+   "name": "270km 2.0T三电机四驱 顶峰版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5085",
+    "wheelbase": "2900",
+    "curb_weight": "2750",
+    "cltc_recharge_mileage": "270",
+    "recharge_mileage": "",
+    "power_consumption": "24.6",
+    "battery_capacity": "47.14",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "670kW(911Ps)",
+    "total_electric_torque": "970",
+    "front_electric_max_power": "230",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "440",
+    "rear_electric_max_torque": "620",
+    "sub_brand_name": "吉利银河"
+   }
+  },
+  {
+   "id": "263087",
+   "name": "陆地方舟版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5085",
+    "wheelbase": "2900",
+    "curb_weight": "",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "47.14",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "670kW(911Ps)",
+    "total_electric_torque": "970",
+    "front_electric_max_power": "230",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "440",
+    "rear_electric_max_torque": "620",
+    "sub_brand_name": "吉利银河"
+   }
+  }
+ ]
+}

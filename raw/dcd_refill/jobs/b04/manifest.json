@@ -1,0 +1,42 @@
+{
+ "batch": "b04",
+ "created": "2026-09-22 17:09:26",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "b04-01",
+   "kw": "V8",
+   "js": "b04-01_V8.js",
+   "series_name": "V8",
+   "gap_rows": 32
+  },
+  {
+   "rid": "b04-02",
+   "kw": "特斯拉 MODEL Y",
+   "js": "b04-02_特斯拉MODELY.js",
+   "series_name": "特斯拉 MODEL Y",
+   "gap_rows": 31
+  },
+  {
+   "rid": "b04-03",
+   "kw": "比亚迪e3",
+   "js": "b04-03_比亚迪e3.js",
+   "series_name": "比亚迪e3",
+   "gap_rows": 31
+  },
+  {
+   "rid": "b04-04",
+   "kw": "EX90",
+   "js": "b04-04_EX90.js",
+   "series_name": "EX90",
+   "gap_rows": 31
+  },
+  {
+   "rid": "b04-05",
+   "kw": "ELEXIO",
+   "js": "b04-05_ELEXIO.js",
+   "series_name": "ELEXIO",
+   "gap_rows": 30
+  }
+ ]
+}

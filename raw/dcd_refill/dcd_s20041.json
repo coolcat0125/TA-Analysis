@@ -1,0 +1,141 @@
+{
+ "kw": "小米YU7",
+ "kws": [
+  "小米YU7"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 16:59",
+ "series_url": "https://www.dongchedi.com/auto/series/20041",
+ "series": {
+  "sid": "20041",
+  "name": "小米YU7",
+  "brand": "小米汽车"
+ },
+ "cars": [
+  {
+   "id": "258908",
+   "name": "后驱标准版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "23.35万",
+   "vals": {
+    "length": "4999",
+    "wheelbase": "3000",
+    "curb_weight": "2200",
+    "cltc_recharge_mileage": "643",
+    "recharge_mileage": "643",
+    "power_consumption": "12.9",
+    "battery_capacity": "73",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "235kW(320Ps)",
+    "total_electric_torque": "528",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "235",
+    "rear_electric_max_torque": "528",
+    "sub_brand_name": "小米汽车"
+   }
+  },
+  {
+   "id": "256134",
+   "name": "四驱GT",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "38.99万",
+   "vals": {
+    "length": "5015",
+    "wheelbase": "3000",
+    "curb_weight": "2460",
+    "cltc_recharge_mileage": "705",
+    "recharge_mileage": "705",
+    "power_consumption": "15.9",
+    "battery_capacity": "101.7",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "738kW(1003Ps)",
+    "total_electric_torque": "1068",
+    "front_electric_max_power": "288",
+    "front_electric_max_torque": "528",
+    "rear_electric_max_power": "450",
+    "rear_electric_max_torque": "540",
+    "sub_brand_name": "小米汽车"
+   }
+  },
+  {
+   "id": "244341",
+   "name": "后驱长续航版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "25.35万",
+   "vals": {
+    "length": "4999",
+    "wheelbase": "3000",
+    "curb_weight": "2315",
+    "cltc_recharge_mileage": "835",
+    "recharge_mileage": "835",
+    "power_consumption": "13.3",
+    "battery_capacity": "96.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "235kW(320Ps)",
+    "total_electric_torque": "528",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "235",
+    "rear_electric_max_torque": "528",
+    "sub_brand_name": "小米汽车"
+   }
+  },
+  {
+   "id": "245384",
+   "name": "四驱Pro版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "27.99万",
+   "vals": {
+    "length": "4999",
+    "wheelbase": "3000",
+    "curb_weight": "2425",
+    "cltc_recharge_mileage": "770",
+    "recharge_mileage": "770",
+    "power_consumption": "14.4",
+    "battery_capacity": "96.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "365kW(496Ps)",
+    "total_electric_torque": "690",
+    "front_electric_max_power": "130",
+    "front_electric_max_torque": "185",
+    "rear_electric_max_power": "235",
+    "rear_electric_max_torque": "505",
+    "sub_brand_name": "小米汽车"
+   }
+  },
+  {
+   "id": "243271",
+   "name": "四驱Max版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "32.99万",
+   "vals": {
+    "length": "4999",
+    "wheelbase": "3000",
+    "curb_weight": "2405",
+    "cltc_recharge_mileage": "760",
+    "recharge_mileage": "760",
+    "power_consumption": "14.8",
+    "battery_capacity": "101.7",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "508kW(690Ps)",
+    "total_electric_torque": "866",
+    "front_electric_max_power": "220",
+    "front_electric_max_torque": "338",
+    "rear_electric_max_power": "288",
+    "rear_electric_max_torque": "528",
+    "sub_brand_name": "小米汽车"
+   }
+  }
+ ]
+}

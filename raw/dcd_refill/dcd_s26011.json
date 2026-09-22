@@ -1,0 +1,91 @@
+{
+ "kw": "领克07GT",
+ "kws": [
+  "领克07GT"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26011",
+ "series": {
+  "sid": "26011",
+  "name": "领克07GT",
+  "brand": "领克"
+ },
+ "cars": [
+  {
+   "id": "260568",
+   "name": "200超长续航Max",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "15.78万",
+   "vals": {
+    "length": "4846",
+    "wheelbase": "2843",
+    "curb_weight": "1915",
+    "cltc_recharge_mileage": "200",
+    "recharge_mileage": "",
+    "power_consumption": "17.5",
+    "battery_capacity": "28.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "领克"
+   }
+  },
+  {
+   "id": "256720",
+   "name": "200超长续航Ultra",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "16.78万",
+   "vals": {
+    "length": "4846",
+    "wheelbase": "2843",
+    "curb_weight": "1915",
+    "cltc_recharge_mileage": "200",
+    "recharge_mileage": "",
+    "power_consumption": "17.5",
+    "battery_capacity": "28.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "领克"
+   }
+  },
+  {
+   "id": "258708",
+   "name": "四驱性能Ultra",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "17.78万",
+   "vals": {
+    "length": "4846",
+    "wheelbase": "2843",
+    "curb_weight": "2029",
+    "cltc_recharge_mileage": "170",
+    "recharge_mileage": "",
+    "power_consumption": "18.9",
+    "battery_capacity": "28.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "270kW(367Ps)",
+    "total_electric_torque": "500",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "90",
+    "rear_electric_max_torque": "150",
+    "sub_brand_name": "领克"
+   }
+  }
+ ]
+}

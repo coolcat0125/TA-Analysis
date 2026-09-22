@@ -1,0 +1,91 @@
+{
+ "kw": "风云T7",
+ "kws": [
+  "风云T7"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26120",
+ "series": {
+  "sid": "26120",
+  "name": "风云T7",
+  "brand": "奇瑞风云"
+ },
+ "cars": [
+  {
+   "id": "262083",
+   "name": "600km 悦享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "9.79万",
+   "vals": {
+    "length": "4570",
+    "wheelbase": "2700",
+    "curb_weight": "1780",
+    "cltc_recharge_mileage": "600",
+    "recharge_mileage": "600",
+    "power_consumption": "12.9",
+    "battery_capacity": "65.05",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "178kW(242Ps)",
+    "total_electric_torque": "275",
+    "front_electric_max_power": "178",
+    "front_electric_max_torque": "275",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "262084",
+   "name": "600km 舒享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.89万",
+   "vals": {
+    "length": "4570",
+    "wheelbase": "2700",
+    "curb_weight": "1780",
+    "cltc_recharge_mileage": "600",
+    "recharge_mileage": "600",
+    "power_consumption": "12.9",
+    "battery_capacity": "65.05",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "178kW(242Ps)",
+    "total_electric_torque": "275",
+    "front_electric_max_power": "178",
+    "front_electric_max_torque": "275",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "258730",
+   "name": "600km 智享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.89万",
+   "vals": {
+    "length": "4570",
+    "wheelbase": "2700",
+    "curb_weight": "1780",
+    "cltc_recharge_mileage": "600",
+    "recharge_mileage": "600",
+    "power_consumption": "12.9",
+    "battery_capacity": "65.05",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "178kW(242Ps)",
+    "total_electric_torque": "275",
+    "front_electric_max_power": "178",
+    "front_electric_max_torque": "275",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  }
+ ]
+}

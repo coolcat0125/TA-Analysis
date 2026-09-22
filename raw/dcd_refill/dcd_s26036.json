@@ -1,0 +1,166 @@
+{
+ "kw": "FREELANDER 神行者8",
+ "kws": [
+  "FREELANDER 神行者8"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26036",
+ "series": {
+  "sid": "26036",
+  "name": "神行者8",
+  "brand": "FREELANDER神行者"
+ },
+ "cars": [
+  {
+   "id": "262219",
+   "name": "PRO版 五座版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "30.99万",
+   "vals": {
+    "length": "5118",
+    "wheelbase": "3040",
+    "curb_weight": "2900",
+    "cltc_recharge_mileage": "310",
+    "recharge_mileage": "",
+    "power_consumption": "27.4",
+    "battery_capacity": "60.3",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "610kW(830Ps)",
+    "total_electric_torque": "813",
+    "front_electric_max_power": "360",
+    "front_electric_max_torque": "338",
+    "rear_electric_max_power": "250",
+    "rear_electric_max_torque": "475",
+    "sub_brand_name": "奇瑞捷豹路虎"
+   }
+  },
+  {
+   "id": "262783",
+   "name": "MAX版 五座版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "34.99万",
+   "vals": {
+    "length": "5118",
+    "wheelbase": "3040",
+    "curb_weight": "2900",
+    "cltc_recharge_mileage": "310",
+    "recharge_mileage": "",
+    "power_consumption": "27.4",
+    "battery_capacity": "60.3",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "610kW(830Ps)",
+    "total_electric_torque": "813",
+    "front_electric_max_power": "360",
+    "front_electric_max_torque": "338",
+    "rear_electric_max_power": "250",
+    "rear_electric_max_torque": "475",
+    "sub_brand_name": "奇瑞捷豹路虎"
+   }
+  },
+  {
+   "id": "262782",
+   "name": "MAX+版 五座版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "38.99万",
+   "vals": {
+    "length": "5118",
+    "wheelbase": "3040",
+    "curb_weight": "2900",
+    "cltc_recharge_mileage": "310",
+    "recharge_mileage": "",
+    "power_consumption": "27.4",
+    "battery_capacity": "60.3",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "610kW(830Ps)",
+    "total_electric_torque": "813",
+    "front_electric_max_power": "360",
+    "front_electric_max_torque": "338",
+    "rear_electric_max_power": "250",
+    "rear_electric_max_torque": "475",
+    "sub_brand_name": "奇瑞捷豹路虎"
+   }
+  },
+  {
+   "id": "262218",
+   "name": "PRO版 六座版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "31.99万",
+   "vals": {
+    "length": "5118",
+    "wheelbase": "3040",
+    "curb_weight": "2980",
+    "cltc_recharge_mileage": "310",
+    "recharge_mileage": "",
+    "power_consumption": "27.4",
+    "battery_capacity": "60.3",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "610kW(830Ps)",
+    "total_electric_torque": "813",
+    "front_electric_max_power": "360",
+    "front_electric_max_torque": "338",
+    "rear_electric_max_power": "250",
+    "rear_electric_max_torque": "475",
+    "sub_brand_name": "奇瑞捷豹路虎"
+   }
+  },
+  {
+   "id": "262094",
+   "name": "MAX版 六座版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "35.99万",
+   "vals": {
+    "length": "5118",
+    "wheelbase": "3040",
+    "curb_weight": "2980",
+    "cltc_recharge_mileage": "310",
+    "recharge_mileage": "",
+    "power_consumption": "27.4",
+    "battery_capacity": "60.3",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "610kW(830Ps)",
+    "total_electric_torque": "813",
+    "front_electric_max_power": "360",
+    "front_electric_max_torque": "338",
+    "rear_electric_max_power": "250",
+    "rear_electric_max_torque": "475",
+    "sub_brand_name": "奇瑞捷豹路虎"
+   }
+  },
+  {
+   "id": "258387",
+   "name": "MAX+版 六座版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "39.99万",
+   "vals": {
+    "length": "5118",
+    "wheelbase": "3040",
+    "curb_weight": "2980",
+    "cltc_recharge_mileage": "310",
+    "recharge_mileage": "",
+    "power_consumption": "27.4",
+    "battery_capacity": "60.3",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "610kW(830Ps)",
+    "total_electric_torque": "813",
+    "front_electric_max_power": "360",
+    "front_electric_max_torque": "338",
+    "rear_electric_max_power": "250",
+    "rear_electric_max_torque": "475",
+    "sub_brand_name": "奇瑞捷豹路虎"
+   }
+  }
+ ]
+}

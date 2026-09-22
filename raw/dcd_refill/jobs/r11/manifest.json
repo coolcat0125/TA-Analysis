@@ -1,0 +1,287 @@
+{
+ "batch": "r11",
+ "created": "2026-09-22 17:09:49",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "r11-01",
+   "kw": "αT5",
+   "js": "r11-01_T5.js",
+   "series_name": "αT5",
+   "gap_rows": 5
+  },
+  {
+   "rid": "r11-02",
+   "kw": "C10",
+   "js": "r11-02_C10.js",
+   "series_name": "C10",
+   "gap_rows": 5
+  },
+  {
+   "rid": "r11-03",
+   "kw": "GLC 350 L 4MATIC",
+   "js": "r11-03_GLC350L4MATIC.js",
+   "series_name": "GLC 350 L 4MATIC",
+   "gap_rows": 5
+  },
+  {
+   "rid": "r11-04",
+   "kw": "创维鸿途EV",
+   "js": "r11-04_创维鸿途EV.js",
+   "series_name": "创维鸿途EV",
+   "gap_rows": 5
+  },
+  {
+   "rid": "r11-05",
+   "kw": "远程M8E",
+   "js": "r11-05_远程M8E.js",
+   "series_name": "远程M8E",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-06",
+   "kw": "ID.AURA T6",
+   "js": "r11-06_IDAURAT6.js",
+   "series_name": "ID.AURA T6",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-07",
+   "kw": "腾势N8L",
+   "js": "r11-07_腾势N8L.js",
+   "series_name": "腾势N8L",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-08",
+   "kw": "红旗天工08",
+   "js": "r11-08_红旗天工08.js",
+   "series_name": "红旗天工08",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-09",
+   "kw": "问道V9",
+   "js": "r11-09_问道V9.js",
+   "series_name": "问道V9",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-10",
+   "kw": "方程豹方程S GT",
+   "js": "r11-10_方程豹方程SGT.js",
+   "series_name": "方程豹方程S GT",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-11",
+   "kw": "埃安S Plus",
+   "js": "r11-11_埃安SPlus.js",
+   "series_name": "埃安S Plus",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-12",
+   "kw": "GLC 400 L 4MATIC",
+   "js": "r11-12_GLC400L4MATIC.js",
+   "series_name": "GLC 400 L 4MATIC",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-13",
+   "kw": "问界M6EV",
+   "js": "r11-13_问界M6EV.js",
+   "series_name": "问界M6EV",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-14",
+   "kw": "ET7",
+   "js": "r11-14_ET7.js",
+   "series_name": "ET7,EX7",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-15",
+   "kw": "星愿UP、星愿",
+   "js": "r11-15_星愿UP星愿.js",
+   "series_name": "星愿UP、星愿",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-16",
+   "kw": "奕派M8",
+   "js": "r11-16_奕派M8.js",
+   "series_name": "奕派M8",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-17",
+   "kw": "领克 20",
+   "js": "r11-17_领克20.js",
+   "series_name": "领克 20",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-18",
+   "kw": "理想L6",
+   "js": "r11-18_理想L6.js",
+   "series_name": "理想L6",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-19",
+   "kw": "传祺向往S7;传祺S7",
+   "js": "r11-19_传祺向往S7传祺S7.js",
+   "series_name": "传祺向往S7;传祺S7",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-20",
+   "kw": "星愿STAR、星愿",
+   "js": "r11-20_星愿STAR星愿.js",
+   "series_name": "星愿STAR、星愿",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-21",
+   "kw": "腾势Z9",
+   "js": "r11-21_腾势Z9.js",
+   "series_name": "腾势Z9,腾势Z9S",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-22",
+   "kw": "V8X",
+   "js": "r11-22_V8X.js",
+   "series_name": "V8X",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-23",
+   "kw": "理想L8",
+   "js": "r11-23_理想L8.js",
+   "series_name": "理想L8",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-24",
+   "kw": "V27",
+   "js": "r11-24_V27.js",
+   "series_name": "V27",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-25",
+   "kw": "尚界 Z7",
+   "js": "r11-25_尚界Z7.js",
+   "series_name": "尚界 Z7",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-26",
+   "kw": "尚界 Z7 T",
+   "js": "r11-26_尚界Z7T.js",
+   "series_name": "尚界 Z7 T",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-27",
+   "kw": "009",
+   "js": "r11-27_009.js",
+   "series_name": "009",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-28",
+   "kw": "比亚迪宋Ultra、比亚迪大宋",
+   "js": "r11-28_比亚迪宋Ultra比亚迪大宋.js",
+   "series_name": "比亚迪宋Ultra、比亚迪大宋",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-29",
+   "kw": "传祺向往M8",
+   "js": "r11-29_传祺向往M8.js",
+   "series_name": "传祺向往M8",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-30",
+   "kw": "比亚迪宋Ultra",
+   "js": "r11-30_比亚迪宋Ultra.js",
+   "series_name": "比亚迪宋Ultra,比亚迪大宋",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-31",
+   "kw": "007GT",
+   "js": "r11-31_007GT.js",
+   "series_name": "007GT",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-32",
+   "kw": "007",
+   "js": "r11-32_007.js",
+   "series_name": "007",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-33",
+   "kw": "06T",
+   "js": "r11-33_06T.js",
+   "series_name": "06T",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-34",
+   "kw": "哈弗猛龙",
+   "js": "r11-34_哈弗猛龙.js",
+   "series_name": "哈弗猛龙",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-35",
+   "kw": "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
+   "js": "r11-35_哈弗猛龙V7PLUS哈弗猛龙PLUS.js",
+   "series_name": "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-36",
+   "kw": "腾势Z9 GT",
+   "js": "r11-36_腾势Z9GT.js",
+   "series_name": "腾势Z9 GT",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-37",
+   "kw": "魏派高山7",
+   "js": "r11-37_魏派高山7.js",
+   "series_name": "魏派高山7",
+   "gap_rows": 4
+  },
+  {
+   "rid": "r11-38",
+   "kw": "远程V7E",
+   "js": "r11-38_远程V7E.js",
+   "series_name": "远程V7E",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r11-39",
+   "kw": "黄金仓",
+   "js": "r11-39_黄金仓.js",
+   "series_name": "黄金仓",
+   "gap_rows": 3
+  },
+  {
+   "rid": "r11-40",
+   "kw": "腾势N8",
+   "js": "r11-40_腾势N8.js",
+   "series_name": "腾势N8",
+   "gap_rows": 3
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "kw": "特斯拉 MODEL Y",
+ "kws": [
+  "特斯拉 MODEL Y"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:04",
+ "series_url": "https://www.dongchedi.com/auto/series/4363",
+ "series": {
+  "sid": "4363",
+  "name": "Model Y",
+  "brand": "特斯拉"
+ },
+ "cars": [
+  {
+   "id": "255110",
+   "name": "后轮驱动版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "26.35万",
+   "vals": {
+    "length": "4797",
+    "wheelbase": "2890",
+    "curb_weight": "1921",
+    "cltc_recharge_mileage": "593",
+    "recharge_mileage": "593",
+    "power_consumption": "11.9",
+    "battery_capacity": "62.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "220kW(299Ps)",
+    "total_electric_torque": "410",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "410",
+    "sub_brand_name": "特斯拉中国"
+   }
+  },
+  {
+   "id": "255111",
+   "name": "长续航后轮驱动版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "28.85万",
+   "vals": {
+    "length": "4797",
+    "wheelbase": "2890",
+    "curb_weight": "1891",
+    "cltc_recharge_mileage": "821",
+    "recharge_mileage": "821",
+    "power_consumption": "",
+    "battery_capacity": "78.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "168.0",
+    "total_electric_power": "225kW(306Ps)",
+    "total_electric_torque": "428",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "225",
+    "rear_electric_max_torque": "428",
+    "sub_brand_name": "特斯拉中国"
+   }
+  },
+  {
+   "id": "255112",
+   "name": "长续航全轮驱动版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "31.35万",
+   "vals": {
+    "length": "4797",
+    "wheelbase": "2890",
+    "curb_weight": "1992",
+    "cltc_recharge_mileage": "750",
+    "recharge_mileage": "750",
+    "power_consumption": "12.2",
+    "battery_capacity": "78.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "168.0",
+    "total_electric_power": "331kW(450Ps)",
+    "total_electric_torque": "559",
+    "front_electric_max_power": "137",
+    "front_electric_max_torque": "219",
+    "rear_electric_max_power": "194",
+    "rear_electric_max_torque": "340",
+    "sub_brand_name": "特斯拉中国"
+   }
+  },
+  {
+   "id": "261004",
+   "name": "高性能全轮驱动版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "36.9万",
+   "vals": {
+    "length": "4796",
+    "wheelbase": "2890",
+    "curb_weight": "2027",
+    "cltc_recharge_mileage": "659",
+    "recharge_mileage": "",
+    "power_consumption": "14",
+    "battery_capacity": "78.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "168.0",
+    "total_electric_power": "467kW(635Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "176",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "291",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "特斯拉中国"
+   }
+  }
+ ]
+}

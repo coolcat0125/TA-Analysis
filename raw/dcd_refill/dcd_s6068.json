@@ -1,0 +1,118 @@
+{
+ "kw": "比亚迪海狮05",
+ "kws": [
+  "比亚迪海狮05",
+  "比亚迪海狮08",
+  "比亚迪海狮06"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:17",
+ "series_url": "https://www.dongchedi.com/auto/series/6068",
+ "series": {
+  "sid": "6068",
+  "name": "海狮07EV",
+  "brand": "比亚迪"
+ },
+ "cars": [
+  {
+   "id": "245041",
+   "name": "550智航版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "18.98万",
+   "vals": {
+    "length": "4830",
+    "wheelbase": "2930",
+    "curb_weight": "2155",
+    "cltc_recharge_mileage": "550",
+    "recharge_mileage": "550",
+    "power_consumption": "15",
+    "battery_capacity": "71.8",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "170kW(231Ps)",
+    "total_electric_torque": "380",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "170",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "比亚迪"
+   }
+  },
+  {
+   "id": "245042",
+   "name": "610智航版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "19.98万",
+   "vals": {
+    "length": "4830",
+    "wheelbase": "2930",
+    "curb_weight": "2210",
+    "cltc_recharge_mileage": "610",
+    "recharge_mileage": "610",
+    "power_consumption": "15.2",
+    "battery_capacity": "80.64",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "230kW(313Ps)",
+    "total_electric_torque": "380",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "比亚迪"
+   }
+  },
+  {
+   "id": "245043",
+   "name": "610智驾版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "21.98万",
+   "vals": {
+    "length": "4830",
+    "wheelbase": "2930",
+    "curb_weight": "2210",
+    "cltc_recharge_mileage": "610",
+    "recharge_mileage": "610",
+    "power_consumption": "15.2",
+    "battery_capacity": "80.64",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "230kW(313Ps)",
+    "total_electric_torque": "380",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "比亚迪"
+   }
+  },
+  {
+   "id": "245044",
+   "name": "550四驱智驾版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "23.98万",
+   "vals": {
+    "length": "4830",
+    "wheelbase": "2930",
+    "curb_weight": "2330",
+    "cltc_recharge_mileage": "550",
+    "recharge_mileage": "550",
+    "power_consumption": "16.7",
+    "battery_capacity": "80.64",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "390kW(530Ps)",
+    "total_electric_torque": "690",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "比亚迪"
+   }
+  }
+ ]
+}

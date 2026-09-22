@@ -1,0 +1,116 @@
+{
+ "kw": "LS9",
+ "kws": [
+  "LS9"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25607",
+ "series": {
+  "sid": "25607",
+  "name": "智己LS9",
+  "brand": "智己汽车"
+ },
+ "cars": [
+  {
+   "id": "253553",
+   "name": "52 Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "33.28万",
+   "vals": {
+    "length": "5279",
+    "wheelbase": "3160",
+    "curb_weight": "2670",
+    "cltc_recharge_mileage": "320",
+    "recharge_mileage": "",
+    "power_consumption": "21.3",
+    "battery_capacity": "52",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "380kW(517Ps)",
+    "total_electric_torque": "670",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "240",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "430",
+    "sub_brand_name": "智己汽车"
+   }
+  },
+  {
+   "id": "249991",
+   "name": "66 Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "36.28万",
+   "vals": {
+    "length": "5279",
+    "wheelbase": "3160",
+    "curb_weight": "2695",
+    "cltc_recharge_mileage": "402",
+    "recharge_mileage": "",
+    "power_consumption": "21.8",
+    "battery_capacity": "66",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "390kW(530Ps)",
+    "total_electric_torque": "670",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "240",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "430",
+    "sub_brand_name": "智己汽车"
+   }
+  },
+  {
+   "id": "261145",
+   "name": "52 Ultra 线控版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "34.98万",
+   "vals": {
+    "length": "5279",
+    "wheelbase": "3160",
+    "curb_weight": "2670",
+    "cltc_recharge_mileage": "320",
+    "recharge_mileage": "",
+    "power_consumption": "21.3",
+    "battery_capacity": "52",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "380kW(517Ps)",
+    "total_electric_torque": "670",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "240",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "430",
+    "sub_brand_name": "智己汽车"
+   }
+  },
+  {
+   "id": "255252",
+   "name": "Hyper",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "37.98万",
+   "vals": {
+    "length": "5279",
+    "wheelbase": "3160",
+    "curb_weight": "2695",
+    "cltc_recharge_mileage": "390",
+    "recharge_mileage": "",
+    "power_consumption": "22.2",
+    "battery_capacity": "66",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "550kW(748Ps)",
+    "total_electric_torque": "730",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "240",
+    "rear_electric_max_power": "390",
+    "rear_electric_max_torque": "490",
+    "sub_brand_name": "智己汽车"
+   }
+  }
+ ]
+}

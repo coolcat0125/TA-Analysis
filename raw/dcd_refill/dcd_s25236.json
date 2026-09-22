@@ -1,0 +1,141 @@
+{
+ "kw": "银河星耀8 EMi",
+ "kws": [
+  "银河星耀8 EMi"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25236",
+ "series": {
+  "sid": "25236",
+  "name": "银河星耀8 PHEV",
+  "brand": "吉利银河"
+ },
+ "cars": [
+  {
+   "id": "257109",
+   "name": "225km EM-i 远航家航海版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "14.28万",
+   "vals": {
+    "length": "5018",
+    "wheelbase": "2928",
+    "curb_weight": "1895",
+    "cltc_recharge_mileage": "225",
+    "recharge_mileage": "166",
+    "power_consumption": "15.1",
+    "battery_capacity": "28.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "175kW(238Ps)",
+    "total_electric_torque": "262",
+    "front_electric_max_power": "175",
+    "front_electric_max_torque": "262",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "吉利银河"
+   }
+  },
+  {
+   "id": "256956",
+   "name": "225km EM-i 远航家远洋版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "15.18万",
+   "vals": {
+    "length": "5018",
+    "wheelbase": "2928",
+    "curb_weight": "1895",
+    "cltc_recharge_mileage": "225",
+    "recharge_mileage": "166",
+    "power_consumption": "15.1",
+    "battery_capacity": "28.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "175kW(238Ps)",
+    "total_electric_torque": "262",
+    "front_electric_max_power": "175",
+    "front_electric_max_torque": "262",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "吉利银河"
+   }
+  },
+  {
+   "id": "256955",
+   "name": "225km EM-i 远航家星河版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "16.18万",
+   "vals": {
+    "length": "5018",
+    "wheelbase": "2928",
+    "curb_weight": "1895",
+    "cltc_recharge_mileage": "225",
+    "recharge_mileage": "166",
+    "power_consumption": "15.1",
+    "battery_capacity": "28.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "175kW(238Ps)",
+    "total_electric_torque": "262",
+    "front_electric_max_power": "175",
+    "front_electric_max_torque": "262",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "吉利银河"
+   }
+  },
+  {
+   "id": "257110",
+   "name": "225km EM-P 远航家星河版+耀夜套装",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "17.28万",
+   "vals": {
+    "length": "5018",
+    "wheelbase": "2928",
+    "curb_weight": "1950",
+    "cltc_recharge_mileage": "225",
+    "recharge_mileage": "166",
+    "power_consumption": "15.7",
+    "battery_capacity": "28.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "吉利银河"
+   }
+  },
+  {
+   "id": "247833",
+   "name": "130km EM-i 尊享版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "13.58万",
+   "vals": {
+    "length": "5018",
+    "wheelbase": "2928",
+    "curb_weight": "1860",
+    "cltc_recharge_mileage": "130",
+    "recharge_mileage": "104",
+    "power_consumption": "14.1",
+    "battery_capacity": "18.4",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "175kW(238Ps)",
+    "total_electric_torque": "262",
+    "front_electric_max_power": "175",
+    "front_electric_max_torque": "262",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "吉利银河"
+   }
+  }
+ ]
+}

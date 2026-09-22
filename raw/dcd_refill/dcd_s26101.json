@@ -1,0 +1,142 @@
+{
+ "kw": "东风奕派M8",
+ "kws": [
+  "东风奕派M8",
+  "奕派M8"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26101",
+ "series": {
+  "sid": "26101",
+  "name": "奕派M8",
+  "brand": "东风奕派"
+ },
+ "cars": [
+  {
+   "id": "261306",
+   "name": "增程 300Core 乾崑版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "17.98万",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "3025",
+    "curb_weight": "2238",
+    "cltc_recharge_mileage": "300",
+    "recharge_mileage": "",
+    "power_consumption": "15.7",
+    "battery_capacity": "45.66",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "134.7",
+    "total_electric_power": "215kW(292Ps)",
+    "total_electric_torque": "380",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "215",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "东风乘用车"
+   }
+  },
+  {
+   "id": "260543",
+   "name": "增程 300Pro 乾崑版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "19.38万",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "3025",
+    "curb_weight": "2299",
+    "cltc_recharge_mileage": "300",
+    "recharge_mileage": "",
+    "power_consumption": "15.7",
+    "battery_capacity": "45.66",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "134.7",
+    "total_electric_power": "215kW(292Ps)",
+    "total_electric_torque": "380",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "215",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "东风乘用车"
+   }
+  },
+  {
+   "id": "258307",
+   "name": "增程 300Max 乾崑版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "21.38万",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "3025",
+    "curb_weight": "2299",
+    "cltc_recharge_mileage": "300",
+    "recharge_mileage": "",
+    "power_consumption": "15.7",
+    "battery_capacity": "45.66",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "134.7",
+    "total_electric_power": "215kW(292Ps)",
+    "total_electric_torque": "380",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "215",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "东风乘用车"
+   }
+  },
+  {
+   "id": "260544",
+   "name": "纯电 600Pro 乾崑版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "19.98万",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "3025",
+    "curb_weight": "2235",
+    "cltc_recharge_mileage": "600",
+    "recharge_mileage": "",
+    "power_consumption": "14.6",
+    "battery_capacity": "77.38",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "145.5",
+    "total_electric_power": "230kW(313Ps)",
+    "total_electric_torque": "395",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "395",
+    "sub_brand_name": "东风乘用车"
+   }
+  },
+  {
+   "id": "258724",
+   "name": "纯电 600Max 乾崑版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "21.98万",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "3025",
+    "curb_weight": "2235",
+    "cltc_recharge_mileage": "600",
+    "recharge_mileage": "",
+    "power_consumption": "14.6",
+    "battery_capacity": "77.38",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "145.5",
+    "total_electric_power": "230kW(313Ps)",
+    "total_electric_torque": "395",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "395",
+    "sub_brand_name": "东风乘用车"
+   }
+  }
+ ]
+}

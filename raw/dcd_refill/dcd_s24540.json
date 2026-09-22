@@ -1,0 +1,116 @@
+{
+ "kw": "UNI-Z",
+ "kws": [
+  "UNI-Z"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:00",
+ "series_url": "https://www.dongchedi.com/auto/series/24540",
+ "series": {
+  "sid": "24540",
+  "name": "长安UNI-Z",
+  "brand": "长安"
+ },
+ "cars": [
+  {
+   "id": "256845",
+   "name": "智慧新蓝鲸 500Bar PRO",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.59万",
+   "vals": {
+    "length": "4730",
+    "wheelbase": "2795",
+    "curb_weight": "1500",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长安汽车"
+   }
+  },
+  {
+   "id": "256846",
+   "name": "智慧新蓝鲸 500Bar MAX",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.49万",
+   "vals": {
+    "length": "4730",
+    "wheelbase": "2795",
+    "curb_weight": "1500",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长安汽车"
+   }
+  },
+  {
+   "id": "248772",
+   "name": "智慧新蓝鲸 500Bar PRO",
+   "year": "2025",
+   "sale_status": 2,
+   "official_price": "11.59万",
+   "vals": {
+    "length": "4730",
+    "wheelbase": "2795",
+    "curb_weight": "1500",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长安汽车"
+   }
+  },
+  {
+   "id": "248735",
+   "name": "智慧新蓝鲸 500Bar MAX",
+   "year": "2025",
+   "sale_status": 2,
+   "official_price": "12.49万",
+   "vals": {
+    "length": "4730",
+    "wheelbase": "2795",
+    "curb_weight": "1500",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长安汽车"
+   }
+  }
+ ]
+}

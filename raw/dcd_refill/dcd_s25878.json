@@ -1,0 +1,91 @@
+{
+ "kw": "埃安N60",
+ "kws": [
+  "埃安N60"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:02",
+ "series_url": "https://www.dongchedi.com/auto/series/25878",
+ "series": {
+  "sid": "25878",
+  "name": "AION N60",
+  "brand": "埃安"
+ },
+ "cars": [
+  {
+   "id": "254461",
+   "name": "410 激光雷达Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.98万",
+   "vals": {
+    "length": "4615",
+    "wheelbase": "2775",
+    "curb_weight": "1660",
+    "cltc_recharge_mileage": "410",
+    "recharge_mileage": "410",
+    "power_consumption": "11.5",
+    "battery_capacity": "45.582",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "165kW(224Ps)",
+    "total_electric_torque": "205",
+    "front_electric_max_power": "165",
+    "front_electric_max_torque": "205",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "广汽埃安新能源"
+   }
+  },
+  {
+   "id": "254462",
+   "name": "510 激光雷达Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.98万",
+   "vals": {
+    "length": "4615",
+    "wheelbase": "2775",
+    "curb_weight": "1760",
+    "cltc_recharge_mileage": "510",
+    "recharge_mileage": "510",
+    "power_consumption": "11.7",
+    "battery_capacity": "57.433",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "165kW(224Ps)",
+    "total_electric_torque": "205",
+    "front_electric_max_power": "165",
+    "front_electric_max_torque": "205",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "广汽埃安新能源"
+   }
+  },
+  {
+   "id": "254463",
+   "name": "610 激光雷达Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.98万",
+   "vals": {
+    "length": "4615",
+    "wheelbase": "2775",
+    "curb_weight": "1850",
+    "cltc_recharge_mileage": "610",
+    "recharge_mileage": "610",
+    "power_consumption": "11.8",
+    "battery_capacity": "69.753",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "165kW(224Ps)",
+    "total_electric_torque": "205",
+    "front_electric_max_power": "165",
+    "front_electric_max_torque": "205",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "广汽埃安新能源"
+   }
+  }
+ ]
+}

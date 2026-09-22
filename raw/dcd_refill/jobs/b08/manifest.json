@@ -1,0 +1,42 @@
+{
+ "batch": "b08",
+ "created": "2026-09-22 17:09:38",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "b08-01",
+   "kw": "小虎",
+   "js": "b08-01_小虎.js",
+   "series_name": "小虎",
+   "gap_rows": 25
+  },
+  {
+   "rid": "b08-02",
+   "kw": "风神E70",
+   "js": "b08-02_风神E70.js",
+   "series_name": "风神E70",
+   "gap_rows": 25
+  },
+  {
+   "rid": "b08-03",
+   "kw": "比亚迪海豹06",
+   "js": "b08-03_比亚迪海豹06.js",
+   "series_name": "比亚迪海豹06",
+   "gap_rows": 25
+  },
+  {
+   "rid": "b08-04",
+   "kw": "AION LX",
+   "js": "b08-04_AIONLX.js",
+   "series_name": "AION LX",
+   "gap_rows": 25
+  },
+  {
+   "rid": "b08-05",
+   "kw": "QQ冰淇淋",
+   "js": "b08-05_QQ冰淇淋.js",
+   "series_name": "QQ冰淇淋",
+   "gap_rows": 24
+  }
+ ]
+}

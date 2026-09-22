@@ -1,0 +1,116 @@
+{
+ "kw": "智界V9",
+ "kws": [
+  "智界V9"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:02",
+ "series_url": "https://www.dongchedi.com/auto/series/25886",
+ "series": {
+  "sid": "25886",
+  "name": "智界V9",
+  "brand": "智界"
+ },
+ "cars": [
+  {
+   "id": "258129",
+   "name": "Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "38.98万",
+   "vals": {
+    "length": "5359",
+    "wheelbase": "3250",
+    "curb_weight": "2790",
+    "cltc_recharge_mileage": "305",
+    "recharge_mileage": "223",
+    "power_consumption": "23.7",
+    "battery_capacity": "53.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "227kW(309Ps)",
+    "total_electric_torque": "305",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "227",
+    "rear_electric_max_torque": "305",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "254528",
+   "name": "Max+",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "42.98万",
+   "vals": {
+    "length": "5359",
+    "wheelbase": "3250",
+    "curb_weight": "2870",
+    "cltc_recharge_mileage": "285",
+    "recharge_mileage": "210",
+    "power_consumption": "24",
+    "battery_capacity": "53.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "382kW(520Ps)",
+    "total_electric_torque": "532",
+    "front_electric_max_power": "155",
+    "front_electric_max_torque": "227",
+    "rear_electric_max_power": "227",
+    "rear_electric_max_torque": "305",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "255255",
+   "name": "Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "45.98万",
+   "vals": {
+    "length": "5359",
+    "wheelbase": "3250",
+    "curb_weight": "2940",
+    "cltc_recharge_mileage": "285",
+    "recharge_mileage": "210",
+    "power_consumption": "24",
+    "battery_capacity": "53.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "382kW(520Ps)",
+    "total_electric_torque": "532",
+    "front_electric_max_power": "155",
+    "front_electric_max_torque": "227",
+    "rear_electric_max_power": "227",
+    "rear_electric_max_torque": "305",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "255256",
+   "name": "Ultra+",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "51.98万",
+   "vals": {
+    "length": "5359",
+    "wheelbase": "3250",
+    "curb_weight": "2940",
+    "cltc_recharge_mileage": "285",
+    "recharge_mileage": "210",
+    "power_consumption": "24",
+    "battery_capacity": "53.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "382kW(520Ps)",
+    "total_electric_torque": "532",
+    "front_electric_max_power": "155",
+    "front_electric_max_torque": "227",
+    "rear_electric_max_power": "227",
+    "rear_electric_max_torque": "305",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  }
+ ]
+}

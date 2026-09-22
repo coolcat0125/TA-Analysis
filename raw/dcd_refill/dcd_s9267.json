@@ -1,0 +1,116 @@
+{
+ "kw": "A10",
+ "kws": [
+  "A10"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:08",
+ "series_url": "https://www.dongchedi.com/auto/series/9267",
+ "series": {
+  "sid": "9267",
+  "name": "零跑A10",
+  "brand": "零跑汽车"
+ },
+ "cars": [
+  {
+   "id": "257247",
+   "name": "403舒享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "6.58万",
+   "vals": {
+    "length": "4270",
+    "wheelbase": "2605",
+    "curb_weight": "1360",
+    "cltc_recharge_mileage": "403",
+    "recharge_mileage": "403",
+    "power_consumption": "10.7",
+    "battery_capacity": "39.8",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "70kW(95Ps)",
+    "total_electric_torque": "150",
+    "front_electric_max_power": "70",
+    "front_electric_max_torque": "150",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "254119",
+   "name": "403悦享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "6.98万",
+   "vals": {
+    "length": "4270",
+    "wheelbase": "2605",
+    "curb_weight": "1360",
+    "cltc_recharge_mileage": "403",
+    "recharge_mileage": "403",
+    "power_consumption": "10.7",
+    "battery_capacity": "39.8",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "70kW(95Ps)",
+    "total_electric_torque": "150",
+    "front_electric_max_power": "70",
+    "front_electric_max_torque": "150",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "254120",
+   "name": "505悦享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "7.68万",
+   "vals": {
+    "length": "4270",
+    "wheelbase": "2605",
+    "curb_weight": "1460",
+    "cltc_recharge_mileage": "505",
+    "recharge_mileage": "505",
+    "power_consumption": "11.3",
+    "battery_capacity": "53",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "90kW(122Ps)",
+    "total_electric_torque": "150",
+    "front_electric_max_power": "90",
+    "front_electric_max_torque": "150",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "92961",
+   "name": "505激光雷达版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "8.68万",
+   "vals": {
+    "length": "4270",
+    "wheelbase": "2605",
+    "curb_weight": "1460",
+    "cltc_recharge_mileage": "505",
+    "recharge_mileage": "505",
+    "power_consumption": "11.3",
+    "battery_capacity": "53",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "90kW(122Ps)",
+    "total_electric_torque": "150",
+    "front_electric_max_power": "90",
+    "front_electric_max_torque": "150",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "零跑汽车"
+   }
+  }
+ ]
+}

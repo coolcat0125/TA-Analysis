@@ -1,0 +1,116 @@
+{
+ "kw": "风云T11",
+ "kws": [
+  "风云T11"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:18",
+ "series_url": "https://www.dongchedi.com/auto/series/9436",
+ "series": {
+  "sid": "9436",
+  "name": "风云T11",
+  "brand": "奇瑞风云"
+ },
+ "cars": [
+  {
+   "id": "252774",
+   "name": "220后驱 伯牙巨幕奢享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "18.99万",
+   "vals": {
+    "length": "5205",
+    "wheelbase": "3120",
+    "curb_weight": "2452",
+    "cltc_recharge_mileage": "220",
+    "recharge_mileage": "170",
+    "power_consumption": "20.9",
+    "battery_capacity": "33.68",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "195kW(265Ps)",
+    "total_electric_torque": "324",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "195",
+    "rear_electric_max_torque": "324",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "252775",
+   "name": "220后驱 双IMAX影院版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "20.99万",
+   "vals": {
+    "length": "5205",
+    "wheelbase": "3120",
+    "curb_weight": "2452",
+    "cltc_recharge_mileage": "220",
+    "recharge_mileage": "170",
+    "power_consumption": "20.9",
+    "battery_capacity": "33.68",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "195kW(265Ps)",
+    "total_electric_torque": "324",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "195",
+    "rear_electric_max_torque": "324",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "252776",
+   "name": "220四驱 双IMAX影院版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "22.99万",
+   "vals": {
+    "length": "5205",
+    "wheelbase": "3120",
+    "curb_weight": "2635",
+    "cltc_recharge_mileage": "220",
+    "recharge_mileage": "180",
+    "power_consumption": "23.3",
+    "battery_capacity": "39.92",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "345kW(469Ps)",
+    "total_electric_torque": "634",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "195",
+    "rear_electric_max_torque": "324",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "252777",
+   "name": "220四驱 全家乐",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "24.99万",
+   "vals": {
+    "length": "5205",
+    "wheelbase": "3120",
+    "curb_weight": "2635",
+    "cltc_recharge_mileage": "220",
+    "recharge_mileage": "180",
+    "power_consumption": "23.3",
+    "battery_capacity": "39.92",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "345kW(469Ps)",
+    "total_electric_torque": "634",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "195",
+    "rear_electric_max_torque": "324",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "kw": "07L",
+ "kws": [
+  "07L"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26154",
+ "series": {
+  "sid": "26154",
+  "name": "阿维塔 07L",
+  "brand": "阿维塔"
+ },
+ "cars": [
+  {
+   "id": "261832",
+   "name": "Elite 纯电版",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "22.99万",
+   "vals": {
+    "length": "4910",
+    "wheelbase": "2990",
+    "curb_weight": "2335",
+    "cltc_recharge_mileage": "725",
+    "recharge_mileage": "725",
+    "power_consumption": "13.6",
+    "battery_capacity": "89.33",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "305kW(415Ps)",
+    "total_electric_torque": "435",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "305",
+    "rear_electric_max_torque": "435",
+    "sub_brand_name": "阿维塔科技"
+   }
+  },
+  {
+   "id": "258728",
+   "name": "Max+ 纯电版",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "24.99万",
+   "vals": {
+    "length": "4910",
+    "wheelbase": "2990",
+    "curb_weight": "2340",
+    "cltc_recharge_mileage": "725",
+    "recharge_mileage": "725",
+    "power_consumption": "13.6",
+    "battery_capacity": "89.33",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "305kW(415Ps)",
+    "total_electric_torque": "435",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "305",
+    "rear_electric_max_torque": "435",
+    "sub_brand_name": "阿维塔科技"
+   }
+  },
+  {
+   "id": "258684",
+   "name": "Ultra 三电机纯电版",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "27.99万",
+   "vals": {
+    "length": "4910",
+    "wheelbase": "2990",
+    "curb_weight": "2480",
+    "cltc_recharge_mileage": "650",
+    "recharge_mileage": "650",
+    "power_consumption": "15.6",
+    "battery_capacity": "89.33",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "712kW(968Ps)",
+    "total_electric_torque": "996",
+    "front_electric_max_power": "210",
+    "front_electric_max_torque": "246",
+    "rear_electric_max_power": "502",
+    "rear_electric_max_torque": "750",
+    "sub_brand_name": "阿维塔科技"
+   }
+  }
+ ]
+}

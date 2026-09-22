@@ -518,6 +518,2661 @@
    "via": "manual(dcd家族容器)",
    "note": "搜索'高山/魏牌高山'唯一车系卡高山(26627)，DCD家族含高山9款型",
    "time": "09-22 15:27"
+  },
+  {
+   "kw": "V919",
+   "sid": "10163",
+   "series": "长安凯程V919",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:27",
+   "note": "sole_candidate_brand_ok score=1 brand=长安轻型车"
+  },
+  {
+   "kw": "欧拉R1",
+   "sid": "2911",
+   "series": "欧拉黑猫",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:27",
+   "note": "sole_candidate_brand_ok score=2 brand=长城汽车"
+  },
+  {
+   "kw": "瑞驰 EC75",
+   "sid": "9255",
+   "series": "瑞驰EC75",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:27",
+   "note": "sole_candidate_brand_ok score=0 brand=瑞驰汽车"
+  },
+  {
+   "kw": "ID.UNYX 与众06",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:27",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "乐福",
+   "sid": "25148",
+   "series": "乐福",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:27",
+   "note": "sole_candidate_brand_ok score=0 brand=卡文汽车"
+  },
+  {
+   "kw": "Hyper GT",
+   "sid": "6311",
+   "series": "昊铂GT",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:27",
+   "note": "sole_candidate_brand_ok score=2 brand=广汽埃安新能源"
+  },
+  {
+   "kw": "Hyper HT",
+   "sid": "9345",
+   "series": "昊铂HT",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "note": "sole_candidate_brand_ok score=2 brand=广汽埃安新能源"
+  },
+  {
+   "kw": "αS5",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "聚星",
+   "sid": "24690",
+   "series": "聚星",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "note": "sole_candidate_brand_ok score=0 brand=戴德房车"
+  },
+  {
+   "kw": "SV",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "ID.UNYX 与众07",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "eQ5",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "V8",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "特斯拉 MODEL Y",
+   "sid": "4363",
+   "series": "Model Y",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "note": "sole_candidate_brand_ok score=1 brand=特斯拉中国"
+  },
+  {
+   "kw": "EX90",
+   "sid": "6172",
+   "series": "沃尔沃EX90",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "note": "sole_candidate_brand_ok score=1 brand=沃尔沃亚太"
+  },
+  {
+   "kw": "ELEXIO",
+   "sid": "25427",
+   "series": "EO 羿欧",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "note": "sole_candidate_brand_ok score=2 brand=北京现代"
+  },
+  {
+   "kw": "方程豹钛7",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "eπ008",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "欧拉iQ",
+   "sid": "2910",
+   "series": "欧拉iQ",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "note": "sole_candidate_brand_ok score=0 brand=长城汽车"
+  },
+  {
+   "kw": "EV90",
+   "sid": "4708",
+   "series": "新途EV90",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "note": "sole_candidate_brand_ok score=1 brand=大通"
+  },
+  {
+   "kw": "智界R7",
+   "sid": "10180",
+   "series": "智界R7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "note": "sole_candidate_brand_ok score=0 brand=奇瑞汽车"
+  },
+  {
+   "kw": "锐胜M8",
+   "sid": "25683",
+   "series": "锐胜M8",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "note": "sole_candidate_brand_ok score=0 brand=北京汽车制造厂"
+  },
+  {
+   "kw": "αT7",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "星钽5X",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:28",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "G3i",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "HYCAN Z03",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "LS6",
+   "sid": "9118",
+   "series": "智己LS6",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=1 brand=智己汽车"
+  },
+  {
+   "kw": "C16",
+   "sid": "10125",
+   "series": "零跑C16",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=1 brand=零跑汽车"
+  },
+  {
+   "kw": "哪吒V",
+   "sid": "4629",
+   "series": "哪吒V",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=0 brand=合众汽车"
+  },
+  {
+   "kw": "eQ1",
+   "sid": "1101",
+   "series": "小蚂蚁",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=2 brand=奇瑞新能源"
+  },
+  {
+   "kw": "小虎",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "风神E70",
+   "sid": "1655",
+   "series": "东风风神E70",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=1 brand=东风乘用车"
+  },
+  {
+   "kw": "比亚迪海豹06",
+   "sid": "9824",
+   "series": "海豹06DM",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=2 brand=比亚迪"
+  },
+  {
+   "kw": "AION LX",
+   "sid": "3503",
+   "series": "AION LX",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=0 brand=广汽埃安新能源"
+  },
+  {
+   "kw": "QQ冰淇淋",
+   "sid": "5257",
+   "series": "冰淇淋",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=1 brand=奇瑞新能源"
+  },
+  {
+   "kw": "埃安i60",
+   "sid": "25643",
+   "series": "AION i60",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=2 brand=广汽埃安新能源"
+  },
+  {
+   "kw": "腾势D9",
+   "sid": "5843",
+   "series": "腾势D9 DM",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=1 brand=腾势汽车"
+  },
+  {
+   "kw": "东风奕派M8",
+   "sid": "26101",
+   "series": "奕派M8",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=1 brand=东风乘用车"
+  },
+  {
+   "kw": "比亚迪海狮05",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "小鹏G9L",
+   "sid": "26151",
+   "series": "小鹏G9L",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=0 brand=小鹏汽车"
+  },
+  {
+   "kw": "福瑞通",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "问界M9",
+   "sid": "6325",
+   "series": "问界M9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:29",
+   "note": "sole_candidate_brand_ok score=0 brand=赛力斯汽车"
+  },
+  {
+   "kw": "岚图泰山X8",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "07L",
+   "sid": "26154",
+   "series": "阿维塔 07L",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "note": "sole_candidate_brand_ok score=1 brand=阿维塔科技"
+  },
+  {
+   "kw": "D19",
+   "sid": "25718",
+   "series": "零跑D19",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "note": "sole_candidate_brand_ok score=1 brand=零跑汽车"
+  },
+  {
+   "kw": "IONIQ",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "比亚迪海狮08",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "比亚迪海豹08",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "启境GT7",
+   "sid": "25732",
+   "series": "启境GT7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "note": "sole_candidate_brand_ok score=0 brand=启境汽车"
+  },
+  {
+   "kw": "V8X;V8X蓝山",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "腾势Z",
+   "sid": "25440",
+   "series": "腾势Z",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "note": "sole_candidate_brand_ok score=0 brand=腾势汽车"
+  },
+  {
+   "kw": "旅行者",
+   "sid": "5563",
+   "series": "捷途旅行者",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "note": "sole_candidate_brand_ok score=1 brand=奇瑞汽车"
+  },
+  {
+   "kw": "Q06E",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "小鹏GX",
+   "sid": "25621",
+   "series": "小鹏GX",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "note": "sole_candidate_brand_ok score=0 brand=小鹏汽车"
+  },
+  {
+   "kw": "岚图梦想家9",
+   "sid": "5924",
+   "series": "岚图梦想家 PHEV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "note": "sole_candidate_brand_ok score=2 brand=岚图汽车"
+  },
+  {
+   "kw": "小米澎程N70",
+   "sid": "26377",
+   "series": "小米澎程N70",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "note": "sole_candidate_brand_ok score=0 brand=小米汽车"
+  },
+  {
+   "kw": "A06",
+   "sid": "",
+   "series": "长安启源A06",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "25486",
+     "series_name": "长安启源A06",
+     "brand_name": "长安启源"
+    }
+   ]
+  },
+  {
+   "kw": "M6",
+   "sid": "",
+   "series": "传祺M6",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "2832",
+     "series_name": "传祺M6",
+     "brand_name": "广汽传祺"
+    }
+   ]
+  },
+  {
+   "kw": "ID.UNYX 与众09",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "ID.ERA 8X",
+   "sid": "26292",
+   "series": "ID. ERA 8X",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:30",
+   "note": "sole_candidate_brand_ok score=0 brand=上汽大众"
+  },
+  {
+   "kw": "M9 Plus",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "岚图追光S",
+   "sid": "26147",
+   "series": "岚图追光S",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=0 brand=岚图汽车"
+  },
+  {
+   "kw": "A10",
+   "sid": "9267",
+   "series": "零跑A10",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=1 brand=零跑汽车"
+  },
+  {
+   "kw": "A05",
+   "sid": "",
+   "series": "零跑A05",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "26031",
+     "series_name": "零跑A05",
+     "brand_name": "零跑汽车"
+    }
+   ]
+  },
+  {
+   "kw": "宝马iX3",
+   "sid": "4538",
+   "series": "宝马iX3",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=0 brand=华晨宝马"
+  },
+  {
+   "kw": "MG 4X",
+   "sid": "26013",
+   "series": "MG 4X",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=0 brand=上汽集团"
+  },
+  {
+   "kw": "比亚迪元PLUS",
+   "sid": "5248",
+   "series": "元PLUS",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=1 brand=比亚迪"
+  },
+  {
+   "kw": "比亚迪大唐",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "沃尔沃XC60",
+   "sid": "1282",
+   "series": "沃尔沃XC60",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=0 brand=沃尔沃亚太"
+  },
+  {
+   "kw": "智界V9",
+   "sid": "25886",
+   "series": "智界V9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=0 brand=奇瑞汽车"
+  },
+  {
+   "kw": "比亚迪元UP",
+   "sid": "9689",
+   "series": "元UP",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=1 brand=比亚迪"
+  },
+  {
+   "kw": "比亚迪宋Pro",
+   "sid": "3195",
+   "series": "宋Pro",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=1 brand=比亚迪"
+  },
+  {
+   "kw": "享界S9",
+   "sid": "9947",
+   "series": "享界S9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=0 brand=北汽新能源"
+  },
+  {
+   "kw": "方程豹方程S",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "ORA 7;长城闪电猫;O 7;R 7;T 7",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "传祺越7",
+   "sid": "26071",
+   "series": "传祺越7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=0 brand=广汽传祺"
+  },
+  {
+   "kw": "QQ3",
+   "sid": "25678",
+   "series": "QQ3 EV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=1 brand=奇瑞新能源"
+  },
+  {
+   "kw": "埃安Y Plus",
+   "sid": "4814",
+   "series": "AION Y",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "note": "sole_candidate_brand_ok score=2 brand=广汽埃安新能源"
+  },
+  {
+   "kw": "L6",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:31",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "领克10",
+   "sid": "26030",
+   "series": "领克10",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=0 brand=领克"
+  },
+  {
+   "kw": "ES90",
+   "sid": "25226",
+   "series": "沃尔沃ES90",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=1 brand=沃尔沃亚太"
+  },
+  {
+   "kw": "12",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "理想i9",
+   "sid": "24592",
+   "series": "理想i9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=0 brand=理想汽车"
+  },
+  {
+   "kw": "比亚迪宋Ultra",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "Q05",
+   "sid": "25634",
+   "series": "长安启源Q05",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=1 brand=长安启源"
+  },
+  {
+   "kw": "银河战舰700",
+   "sid": "25441",
+   "series": "银河战舰700",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=0 brand=吉利银河"
+  },
+  {
+   "kw": "腾势Z9S",
+   "sid": "26385",
+   "series": "腾势Z9S EV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=1 brand=腾势汽车"
+  },
+  {
+   "kw": "比亚迪秦PLUS",
+   "sid": "4802",
+   "series": "秦PLUS DM",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=2 brand=比亚迪"
+  },
+  {
+   "kw": "家越07",
+   "sid": "26077",
+   "series": "家越07",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=0 brand=上汽集团"
+  },
+  {
+   "kw": "比亚迪大汉",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "奕派EP7",
+   "sid": "26307",
+   "series": "奕派EP7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=0 brand=东风乘用车"
+  },
+  {
+   "kw": "银河E5",
+   "sid": "10026",
+   "series": "银河E5",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=0 brand=吉利银河"
+  },
+  {
+   "kw": "享界G9",
+   "sid": "25983",
+   "series": "享界G9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=0 brand=北汽新能源"
+  },
+  {
+   "kw": "红旗H9",
+   "sid": "4355",
+   "series": "红旗H9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=0 brand=一汽红旗"
+  },
+  {
+   "kw": "哈弗枭龙MAX;哈弗H6L;枭龙MAX;H6L",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "瑶光 C-DM",
+   "sid": "8967",
+   "series": "星途瑶光C-DM",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=1 brand=星途"
+  },
+  {
+   "kw": "B10",
+   "sid": "9268",
+   "series": "零跑B10",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "note": "sole_candidate_brand_ok score=1 brand=零跑汽车"
+  },
+  {
+   "kw": "TT、TT7、银河TT、银河TT7、Viva7、Viva、Luna7、Luna",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:32",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "小鹏L05",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "领克07GT",
+   "sid": "26011",
+   "series": "领克07GT",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "note": "sole_candidate_brand_ok score=0 brand=领克"
+  },
+  {
+   "kw": "小鹏L03",
+   "sid": "25225",
+   "series": "小鹏MONA L03",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "note": "sole_candidate_brand_ok score=2 brand=小鹏汽车"
+  },
+  {
+   "kw": "红旗H7",
+   "sid": "690",
+   "series": "红旗H7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "note": "sole_candidate_brand_ok score=0 brand=一汽红旗"
+  },
+  {
+   "kw": "HX;H10",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "海豚K7",
+   "sid": "25909",
+   "series": "海豚K7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "note": "sole_candidate_brand_ok score=0 brand=凯翼汽车"
+  },
+  {
+   "kw": "风云A9",
+   "sid": "24729",
+   "series": "风云A9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "note": "sole_candidate_brand_ok score=0 brand=奇瑞汽车"
+  },
+  {
+   "kw": "比亚迪海狮06",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "D99",
+   "sid": "25889",
+   "series": "零跑D99",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "note": "sole_candidate_brand_ok score=1 brand=零跑汽车"
+  },
+  {
+   "kw": "江豚E6 PLUS",
+   "sid": "26025",
+   "series": "江豚E6 PLUS",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "note": "sole_candidate_brand_ok score=0 brand=凯翼汽车"
+  },
+  {
+   "kw": "比亚迪秦MAX、比亚迪大秦",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "比亚迪海豹06、比亚迪海豹06MAX",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "银河星耀7",
+   "sid": "25739",
+   "series": "银河星耀7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "note": "sole_candidate_brand_ok score=0 brand=吉利银河"
+  },
+  {
+   "kw": "8X",
+   "sid": "",
+   "series": "ZEEKR 8X",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "25555",
+     "series_name": "ZEEKR 8X",
+     "brand_name": "极氪"
+    }
+   ]
+  },
+  {
+   "kw": "领汇e7",
+   "sid": "25949",
+   "series": "领汇e7 EV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "note": "sole_candidate_brand_ok score=1 brand=领汇汽车"
+  },
+  {
+   "kw": "问界M6",
+   "sid": "25953",
+   "series": "问界M6",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "note": "sole_candidate_brand_ok score=0 brand=赛力斯汽车"
+  },
+  {
+   "kw": "星愿、星愿UP",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:33",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "αT5",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "C10",
+   "sid": "9307",
+   "series": "零跑C10",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "note": "sole_candidate_brand_ok score=1 brand=零跑汽车"
+  },
+  {
+   "kw": "GLC 350 L 4MATIC",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "创维鸿途EV",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "远程M8E",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "ID.AURA T6",
+   "sid": "26052",
+   "series": "ID.AURA T6",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "note": "sole_candidate_brand_ok score=0 brand=一汽-大众"
+  },
+  {
+   "kw": "腾势N8L",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "红旗天工08",
+   "sid": "8835",
+   "series": "红旗天工08",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "note": "sole_candidate_brand_ok score=0 brand=一汽红旗"
+  },
+  {
+   "kw": "问道V9",
+   "sid": "25830",
+   "series": "极狐 问道V9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "note": "sole_candidate_brand_ok score=1 brand=北汽新能源"
+  },
+  {
+   "kw": "方程豹方程S GT",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "埃安S Plus",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "GLC 400 L 4MATIC",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "问界M6EV",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "ET7",
+   "sid": "",
+   "series": "蔚来ET7",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "3478",
+     "series_name": "蔚来ET7",
+     "brand_name": "蔚来"
+    }
+   ]
+  },
+  {
+   "kw": "星愿UP、星愿",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "奕派M8",
+   "sid": "26101",
+   "series": "奕派M8",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "note": "sole_candidate_brand_ok score=0 brand=东风乘用车"
+  },
+  {
+   "kw": "领克 20",
+   "sid": "26150",
+   "series": "领克20",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "note": "sole_candidate_brand_ok score=0 brand=领克"
+  },
+  {
+   "kw": "理想L6",
+   "sid": "5845",
+   "series": "理想L6",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:34",
+   "note": "sole_candidate_brand_ok score=0 brand=理想汽车"
+  },
+  {
+   "kw": "传祺向往S7;传祺S7",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "星愿STAR、星愿",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "腾势Z9",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "V8X",
+   "sid": "26048",
+   "series": "魏牌V8X PHEV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "note": "sole_candidate_brand_ok score=1 brand=长城汽车"
+  },
+  {
+   "kw": "理想L8",
+   "sid": "6095",
+   "series": "理想L8",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "note": "sole_candidate_brand_ok score=0 brand=理想汽车"
+  },
+  {
+   "kw": "V27",
+   "sid": "25620",
+   "series": "iCAR V27",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "note": "sole_candidate_brand_ok score=1 brand=奇瑞新能源"
+  },
+  {
+   "kw": "尚界 Z7",
+   "sid": "25920",
+   "series": "尚界Z7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "note": "sole_candidate_brand_ok score=0 brand=上汽集团"
+  },
+  {
+   "kw": "尚界 Z7 T",
+   "sid": "26005",
+   "series": "尚界Z7T",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "note": "sole_candidate_brand_ok score=0 brand=上汽集团"
+  },
+  {
+   "kw": "009",
+   "sid": "5878",
+   "series": "ZEEKR 009",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "note": "sole_candidate_brand_ok score=1 brand=极氪"
+  },
+  {
+   "kw": "比亚迪宋Ultra、比亚迪大宋",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "传祺向往M8",
+   "sid": "24787",
+   "series": "传祺向往M8",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "note": "sole_candidate_brand_ok score=0 brand=广汽传祺"
+  },
+  {
+   "kw": "比亚迪宋Ultra",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "007GT",
+   "sid": "25172",
+   "series": "ZEEKR 007GT",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "note": "sole_candidate_brand_ok score=1 brand=极氪"
+  },
+  {
+   "kw": "007",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "06T",
+   "sid": "25982",
+   "series": "阿维塔 06T",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "note": "sole_candidate_brand_ok score=1 brand=阿维塔科技"
+  },
+  {
+   "kw": "哈弗猛龙",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "腾势Z9 GT",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:35",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "魏派高山7",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "远程V7E",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "黄金仓",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "腾势N8",
+   "sid": "8899",
+   "series": "腾势N8 EV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "note": "sole_candidate_brand_ok score=1 brand=腾势汽车"
+  },
+  {
+   "kw": "V25",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "V25",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "小米澎程N90",
+   "sid": "25339",
+   "series": "小米澎程N90",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "note": "sole_candidate_brand_ok score=0 brand=小米汽车"
+  },
+  {
+   "kw": "S3",
+   "sid": "",
+   "series": "极狐 贝塔S3",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "25573",
+     "series_name": "极狐 贝塔S3",
+     "brand_name": "北汽新能源"
+    }
+   ]
+  },
+  {
+   "kw": "方程豹钛3",
+   "sid": "9249",
+   "series": "钛3",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "note": "sole_candidate_brand_ok score=1 brand=方程豹"
+  },
+  {
+   "kw": "悦意08",
+   "sid": "25434",
+   "series": "悦意08",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "note": "sole_candidate_brand_ok score=0 brand=一汽奔腾"
+  },
+  {
+   "kw": "C 350 L 4MATIC",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "岚图泰山",
+   "sid": "25619",
+   "series": "岚图泰山 PHEV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "note": "sole_candidate_brand_ok score=1 brand=岚图汽车"
+  },
+  {
+   "kw": "H10",
+   "sid": "26044",
+   "series": "长城H10",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "note": "sole_candidate_brand_ok score=1 brand=长城汽车"
+  },
+  {
+   "kw": "尊界V680",
+   "sid": "26303",
+   "series": "尊界V680",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "note": "sole_candidate_brand_ok score=0 brand=江淮汽车"
+  },
+  {
+   "kw": "五菱扬光L",
+   "sid": "26604",
+   "series": "五菱扬光L",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "note": "sole_candidate_brand_ok score=0 brand=上汽通用五菱"
+  },
+  {
+   "kw": "比亚迪海豹06GT",
+   "sid": "10205",
+   "series": "海豹06GT",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "note": "sole_candidate_brand_ok score=1 brand=比亚迪"
+  },
+  {
+   "kw": "G318",
+   "sid": "9211",
+   "series": "深蓝G318",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "note": "sole_candidate_brand_ok score=1 brand=深蓝汽车"
+  },
+  {
+   "kw": "B01",
+   "sid": "9266",
+   "series": "零跑B01",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:36",
+   "note": "sole_candidate_brand_ok score=1 brand=零跑汽车"
+  },
+  {
+   "kw": "银河TT、TT、A8、银河A8",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "尊界V800",
+   "sid": "24601",
+   "series": "尊界V800",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "note": "sole_candidate_brand_ok score=0 brand=江淮汽车"
+  },
+  {
+   "kw": "银河星耀6EF",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "V9",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "T1",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "EU8",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "江豚E5",
+   "sid": "25491",
+   "series": "江豚E5",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "note": "sole_candidate_brand_ok score=0 brand=凯翼汽车"
+  },
+  {
+   "kw": "ELECTRA E7;ELECTRA X7",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "ID.ERA 9X",
+   "sid": "25395",
+   "series": "ID. ERA 9X",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "note": "sole_candidate_brand_ok score=0 brand=上汽大众"
+  },
+  {
+   "kw": "欧拉芭蕾猫",
+   "sid": "5297",
+   "series": "欧拉芭蕾猫",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "note": "sole_candidate_brand_ok score=0 brand=长城汽车"
+  },
+  {
+   "kw": "埃安RT",
+   "sid": "24800",
+   "series": "AION RT",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "note": "sole_candidate_brand_ok score=2 brand=广汽埃安新能源"
+  },
+  {
+   "kw": "享界S9T",
+   "sid": "25595",
+   "series": "享界S9T",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "note": "sole_candidate_brand_ok score=0 brand=北汽新能源"
+  },
+  {
+   "kw": "理想i8",
+   "sid": "10178",
+   "series": "理想i8",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "note": "sole_candidate_brand_ok score=0 brand=理想汽车"
+  },
+  {
+   "kw": "理想MEGA",
+   "sid": "6067",
+   "series": "理想MEGA",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "note": "sole_candidate_brand_ok score=0 brand=理想汽车"
+  },
+  {
+   "kw": "菱智EV",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "S07EV",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "领汇e5",
+   "sid": "25950",
+   "series": "领汇e5 EV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "note": "sole_candidate_brand_ok score=1 brand=领汇汽车"
+  },
+  {
+   "kw": "领汇M9",
+   "sid": "25948",
+   "series": "领汇M9 DM",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "note": "sole_candidate_brand_ok score=1 brand=领汇汽车"
+  },
+  {
+   "kw": "问界M9EV",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:37",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "尊界S800",
+   "sid": "24599",
+   "series": "尊界S800",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "note": "sole_candidate_brand_ok score=0 brand=江淮汽车"
+  },
+  {
+   "kw": "星愿、星愿Ultra",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "ELECTRA L7",
+   "sid": "",
+   "series": "别克至境L7",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "25600",
+     "series_name": "别克至境L7",
+     "brand_name": "别克至境"
+    }
+   ]
+  },
+  {
+   "kw": "风云T7",
+   "sid": "26120",
+   "series": "风云T7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "note": "sole_candidate_brand_ok score=0 brand=奇瑞汽车"
+  },
+  {
+   "kw": "FREELANDER 神行者8",
+   "sid": "26036",
+   "series": "神行者8",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "note": "sole_candidate_brand_ok score=1 brand=奇瑞捷豹路虎"
+  },
+  {
+   "kw": "ID.ERA 5S",
+   "sid": "26133",
+   "series": "ID. ERA 5S",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "note": "sole_candidate_brand_ok score=0 brand=上汽大众"
+  },
+  {
+   "kw": "拾月max",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "北汽EU8",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "D7",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "领汇e3",
+   "sid": "26047",
+   "series": "领汇e3 EV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "note": "sole_candidate_brand_ok score=1 brand=领汇汽车"
+  },
+  {
+   "kw": "小米YU7",
+   "sid": "20041",
+   "series": "小米YU7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "note": "sole_candidate_brand_ok score=0 brand=小米汽车"
+  },
+  {
+   "kw": "传祺向往E8",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "Q06R",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "埃安N60",
+   "sid": "25878",
+   "series": "AION N60",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "note": "sole_candidate_brand_ok score=2 brand=广汽埃安新能源"
+  },
+  {
+   "kw": "尚界 Z7 ULTRA",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "尚界 Z7 T ULTRA",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "比亚迪宋pro",
+   "sid": "3195",
+   "series": "宋Pro",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "note": "sole_candidate_brand_ok score=1 brand=比亚迪"
+  },
+  {
+   "kw": "风云T9L",
+   "sid": "25828",
+   "series": "风云T9L",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:38",
+   "note": "sole_candidate_brand_ok score=0 brand=奇瑞汽车"
+  },
+  {
+   "kw": "小米YU7 GT",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "东风日产NX8",
+   "sid": "25874",
+   "series": "日产NX8",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=1 brand=东风日产"
+  },
+  {
+   "kw": "江铃大道",
+   "sid": "6366",
+   "series": "大道",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=1 brand=江铃汽车"
+  },
+  {
+   "kw": "理想L9 Livis",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "比亚迪海豚",
+   "sid": "5008",
+   "series": "海豚",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=1 brand=比亚迪"
+  },
+  {
+   "kw": "ES9",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "创维EV6Ⅱ",
+   "sid": "5122",
+   "series": "创维EV6",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=1 brand=创维汽车"
+  },
+  {
+   "kw": "腾势Z9",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "领汇e9",
+   "sid": "25951",
+   "series": "领汇e9 EV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=1 brand=领汇汽车"
+  },
+  {
+   "kw": "LS9",
+   "sid": "25607",
+   "series": "智己LS9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=1 brand=智己汽车"
+  },
+  {
+   "kw": "TAYRON L",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "沃尔沃XC70",
+   "sid": "25485",
+   "series": "沃尔沃XC70",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=0 brand=沃尔沃亚太"
+  },
+  {
+   "kw": "UT",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "星海S7",
+   "sid": "9958",
+   "series": "星海S7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=0 brand=东风风行"
+  },
+  {
+   "kw": "L07",
+   "sid": "10214",
+   "series": "深蓝L07",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=1 brand=深蓝汽车"
+  },
+  {
+   "kw": "悦意07",
+   "sid": "25138",
+   "series": "悦意07",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=0 brand=一汽奔腾"
+  },
+  {
+   "kw": "领克07",
+   "sid": "4370",
+   "series": "领克07 EM-P",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=1 brand=领克"
+  },
+  {
+   "kw": "风云T11",
+   "sid": "9436",
+   "series": "风云T11",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=0 brand=奇瑞汽车"
+  },
+  {
+   "kw": "比亚迪海鸥",
+   "sid": "5952",
+   "series": "海鸥",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:39",
+   "note": "sole_candidate_brand_ok score=1 brand=比亚迪"
+  },
+  {
+   "kw": "精灵#1",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "比亚迪M9",
+   "sid": "25579",
+   "series": "比亚迪M9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "note": "sole_candidate_brand_ok score=0 brand=比亚迪"
+  },
+  {
+   "kw": "银河A7",
+   "sid": "25547",
+   "series": "银河A7 EM",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "note": "sole_candidate_brand_ok score=1 brand=吉利银河"
+  },
+  {
+   "kw": "S09",
+   "sid": "25136",
+   "series": "深蓝S09",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "note": "sole_candidate_brand_ok score=1 brand=深蓝汽车"
+  },
+  {
+   "kw": "五菱扬光Pro",
+   "sid": "26296",
+   "series": "五菱扬光Pro",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "note": "sole_candidate_brand_ok score=0 brand=上汽通用五菱"
+  },
+  {
+   "kw": "跨越星光",
+   "sid": "25629",
+   "series": "跨越星光 EV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "note": "sole_candidate_brand_ok score=1 brand=长安跨越"
+  },
+  {
+   "kw": "星光730",
+   "sid": "25575",
+   "series": "星光730",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "note": "sole_candidate_brand_ok score=0 brand=上汽通用五菱"
+  },
+  {
+   "kw": "哈弗猛龙 PLUS",
+   "sid": "25638",
+   "series": "长城猛龙PLUS",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "note": "sole_candidate_brand_ok score=2 brand=长城汽车"
+  },
+  {
+   "kw": "UNI-Z",
+   "sid": "24540",
+   "series": "长安UNI-Z",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "note": "sole_candidate_brand_ok score=1 brand=长安汽车"
+  },
+  {
+   "kw": "山海T1",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "腾势N9",
+   "sid": "24726",
+   "series": "腾势N9 DM",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "note": "sole_candidate_brand_ok score=1 brand=腾势汽车"
+  },
+  {
+   "kw": "TIGGO 9 C-DM",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "A6L",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "银河星耀6 EM-i",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "银河星耀8 EMi",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "至境E7",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "TIGUAN L ePRO",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:40",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "大众ID 9X",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:41",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "图雅诺",
+   "sid": "247",
+   "series": "图雅诺",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:41",
+   "note": "sole_candidate_brand_ok score=0 brand=福田图雅诺"
+  },
+  {
+   "kw": "比亚迪海豹07",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:41",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "06",
+   "sid": "",
+   "series": "领克06",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:41",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "4342",
+     "series_name": "领克06",
+     "brand_name": "领克"
+    }
+   ]
+  },
+  {
+   "kw": "昊铂A800",
+   "sid": "25642",
+   "series": "昊铂A800",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:41",
+   "note": "sole_candidate_brand_ok score=0 brand=广汽埃安新能源"
+  },
+  {
+   "kw": "魏牌高山",
+   "sid": "26627",
+   "series": "高山",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:41",
+   "note": "sole_candidate_brand_ok score=1 brand=长城汽车"
+  },
+  {
+   "kw": "魏牌高山7",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-22 16:41",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "魏牌高山",
+   "sid": "26627",
+   "series": "高山",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:41",
+   "note": "sole_candidate_brand_ok score=1 brand=长城汽车"
+  },
+  {
+   "kw": "MAGOTAN",
+   "sid": "415",
+   "series": "迈腾",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-22 16:41",
+   "note": "sole_candidate_brand_ok score=2 brand=一汽-大众"
+  },
+  {
+   "kw": "菱智M5EV",
+   "sid": "1793",
+   "series": "菱智新能源",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=菱智m5ev sole_candidate_brand_ok",
+   "time": "09-22 16:42"
+  },
+  {
+   "kw": "αS5",
+   "sid": "169",
+   "series": "北汽幻速S5",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=北汽αs5 sole_candidate_brand_ok",
+   "time": "09-22 16:43"
+  },
+  {
+   "kw": "eQ5",
+   "sid": "4384",
+   "series": "大蚂蚁",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=奇瑞eq5 sole_candidate_brand_ok",
+   "time": "09-22 16:43"
+  },
+  {
+   "kw": "比亚迪e3",
+   "sid": "4076",
+   "series": "比亚迪e3",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=比亚迪e3 sole_candidate_brand_ok",
+   "time": "09-22 16:43"
+  },
+  {
+   "kw": "比亚迪海狮05",
+   "sid": "6068",
+   "series": "海狮07EV",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=比亚迪海狮 sole_candidate_brand_ok",
+   "time": "09-22 16:45"
+  },
+  {
+   "kw": "比亚迪海狮08",
+   "sid": "6068",
+   "series": "海狮07EV",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=比亚迪海狮 sole_candidate_brand_ok",
+   "time": "09-22 16:46"
+  },
+  {
+   "kw": "比亚迪海豹08",
+   "sid": "5579",
+   "series": "海豹",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=比亚迪海豹 sole_candidate_brand_ok",
+   "time": "09-22 16:46"
+  },
+  {
+   "kw": "比亚迪宋Ultra",
+   "sid": "314",
+   "series": "宋",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=比亚迪宋 sole_candidate_brand_ok",
+   "time": "09-22 16:48"
+  },
+  {
+   "kw": "比亚迪海狮06",
+   "sid": "6068",
+   "series": "海狮07EV",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=比亚迪海狮 sole_candidate_brand_ok",
+   "time": "09-22 16:49"
+  },
+  {
+   "kw": "创维鸿途EV",
+   "sid": "24912",
+   "series": "创维鸿途",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=创维鸿途 sole_candidate_brand_ok",
+   "time": "09-22 16:50"
+  },
+  {
+   "kw": "问界M6EV",
+   "sid": "25953",
+   "series": "问界m6",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "alias_of(问界m6)",
+   "time": "09-22 16:51"
+  },
+  {
+   "kw": "腾势Z9",
+   "sid": "25440",
+   "series": "腾势z",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "alias_of(腾势z)",
+   "time": "09-22 16:52"
+  },
+  {
+   "kw": "比亚迪宋Ultra",
+   "sid": "314",
+   "series": "比亚迪宋ultra",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "alias_of(比亚迪宋ultra)",
+   "time": "09-22 16:52"
+  },
+  {
+   "kw": "魏派高山7",
+   "sid": "6303",
+   "series": "高山 PHEV",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=魏派高山 sole_candidate_brand_ok",
+   "time": "09-22 16:53"
+  },
+  {
+   "kw": "问界M9EV",
+   "sid": "6325",
+   "series": "问界m9",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "alias_of(问界m9)",
+   "time": "09-22 16:55"
+  },
+  {
+   "kw": "ELECTRA L7",
+   "sid": "10151",
+   "series": "Electra-L",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=electral sole_candidate_brand_ok",
+   "time": "09-22 16:55"
+  },
+  {
+   "kw": "北汽EU8",
+   "sid": "197",
+   "series": "北汽新能源EU",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=北汽eu sole_candidate_brand_ok",
+   "time": "09-22 16:56"
+  },
+  {
+   "kw": "尚界 Z7 ULTRA",
+   "sid": "25920",
+   "series": "尚界z7",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "alias_of(尚界z7)",
+   "time": "09-22 16:56"
+  },
+  {
+   "kw": "尚界 Z7 T ULTRA",
+   "sid": "26005",
+   "series": "尚界z7t",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "alias_of(尚界z7t)",
+   "time": "09-22 16:56"
+  },
+  {
+   "kw": "腾势Z9",
+   "sid": "25440",
+   "series": "腾势z9",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "alias_of(腾势z9)",
+   "time": "09-22 16:57"
+  },
+  {
+   "kw": "TAYRON L",
+   "sid": "2835",
+   "series": "探岳",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=tayronl sole_candidate_brand_ok",
+   "time": "09-22 16:57"
+  },
+  {
+   "kw": "UT",
+   "sid": "25014",
+   "series": "AION UT",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=埃安ut sole_candidate_brand_ok",
+   "time": "09-22 16:57"
+  },
+  {
+   "kw": "精灵#1",
+   "sid": "1489",
+   "series": "长城精灵",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=精灵# sole_candidate_brand_ok",
+   "time": "09-22 16:57"
+  },
+  {
+   "kw": "A6L",
+   "sid": "99",
+   "series": "奥迪A6L",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=一汽a6l sole_candidate_brand_ok",
+   "time": "09-22 16:57"
+  },
+  {
+   "kw": "银河星耀8 EMi",
+   "sid": "25236",
+   "series": "银河星耀8 PHEV",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=银河星耀8 sole_candidate_brand_ok",
+   "time": "09-22 16:58"
+  },
+  {
+   "kw": "比亚迪海豹07",
+   "sid": "5579",
+   "series": "海豹",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "variant=比亚迪海豹 sole_candidate_brand_ok",
+   "time": "09-22 16:58"
+  },
+  {
+   "kw": "魏牌高山7",
+   "sid": "26627",
+   "series": "魏牌高山",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "alias_of(魏牌高山)",
+   "time": "09-22 16:59"
   }
  ],
  "field_map": {

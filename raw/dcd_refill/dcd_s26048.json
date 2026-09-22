@@ -1,0 +1,141 @@
+{
+ "kw": "V8X",
+ "kws": [
+  "V8X"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26048",
+ "series": {
+  "sid": "26048",
+  "name": "魏牌V8X PHEV",
+  "brand": "魏牌"
+ },
+ "cars": [
+  {
+   "id": "261804",
+   "name": "1.5T 运动版Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "23.98万",
+   "vals": {
+    "length": "5040",
+    "wheelbase": "2968",
+    "curb_weight": "2510",
+    "cltc_recharge_mileage": "261",
+    "recharge_mileage": "202",
+    "power_consumption": "22.6",
+    "battery_capacity": "44",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "320kW(435Ps)",
+    "total_electric_torque": "482",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "312",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "262199",
+   "name": "2.0T 运动版Ultra ",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "27.98万",
+   "vals": {
+    "length": "5040",
+    "wheelbase": "2968",
+    "curb_weight": "2580",
+    "cltc_recharge_mileage": "324",
+    "recharge_mileage": "251",
+    "power_consumption": "23.3",
+    "battery_capacity": "55.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "340kW(462Ps)",
+    "total_electric_torque": "482",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "240",
+    "rear_electric_max_torque": "312",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "262200",
+   "name": "1.5T 豪华家庭版Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "25.98万",
+   "vals": {
+    "length": "5125",
+    "wheelbase": "3050",
+    "curb_weight": "2570",
+    "cltc_recharge_mileage": "258",
+    "recharge_mileage": "200",
+    "power_consumption": "22.8",
+    "battery_capacity": "44",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "320kW(435Ps)",
+    "total_electric_torque": "482",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "312",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "261501",
+   "name": "1.5T 豪华家庭版Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "27.98万",
+   "vals": {
+    "length": "5125",
+    "wheelbase": "3050",
+    "curb_weight": "2685",
+    "cltc_recharge_mileage": "402",
+    "recharge_mileage": "312",
+    "power_consumption": "23.7",
+    "battery_capacity": "66.6",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "330kW(449Ps)",
+    "total_electric_torque": "550",
+    "front_electric_max_power": "110",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "261502",
+   "name": "2.0T 豪华家庭版Ultra+",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "31.58万",
+   "vals": {
+    "length": "5125",
+    "wheelbase": "3050",
+    "curb_weight": "2715",
+    "cltc_recharge_mileage": "402",
+    "recharge_mileage": "312",
+    "power_consumption": "23.7",
+    "battery_capacity": "66.6",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "330kW(449Ps)",
+    "total_electric_torque": "550",
+    "front_electric_max_power": "110",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "380",
+    "sub_brand_name": "长城汽车"
+   }
+  }
+ ]
+}

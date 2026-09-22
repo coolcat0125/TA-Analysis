@@ -1,24 +1,24 @@
 {
- "updated": "2026-09-22 15:39:15",
+ "updated": "2026-09-22 21:13:54",
  "workbook_rows": 5392,
  "dcd_coverage": {
-  "轴距(mm)": 83.0,
-  "车长(mm)": 82.7,
+  "轴距(mm)": 85.3,
+  "整备质量(kg)": 90.7,
+  "电机总功率/扭矩": 96.8,
+  "电池容量(kWh)": 91.6,
   "纯电续航里程(km)": 97.3,
-  "电池能量密度(Wh/kg)": 78.7,
-  "电池容量(kWh)": 91.2,
-  "后电机功率/扭矩": 29.7,
-  "整备质量(kg)": 90.3,
-  "电机总功率/扭矩": 96.7,
+  "电池能量密度(Wh/kg)": 79.1,
+  "前电机功率/扭矩": 84.6,
+  "车长(mm)": 85.0,
   "百公里电耗(kWh/100km)": 96.0,
-  "前电机功率/扭矩": 81.6,
-  "电池类型": 91.8
+  "后电机功率/扭矩": 38.4,
+  "电池类型": 92.8
  },
- "dcd_ledger_cells": 1065,
+ "dcd_ledger_cells": 2057,
  "batches": [
   {
    "id": "b01",
-   "status": "planned",
+   "status": "applied",
    "series": [
     "V919",
     "欧拉R1",
@@ -27,11 +27,11 @@
     "比亚迪唐"
    ],
    "gap_rows": 305,
-   "green": 0
+   "green": 136
   },
   {
    "id": "b02",
-   "status": "planned",
+   "status": "applied",
    "series": [
     "ID.UNYX 与众06",
     "乐福",
@@ -40,11 +40,11 @@
     "αS5"
    ],
    "gap_rows": 207,
-   "green": 0
+   "green": 106
   },
   {
    "id": "b03",
-   "status": "planned",
+   "status": "applied",
    "series": [
     "聚星",
     "哪吒U",
@@ -53,11 +53,11 @@
     "eQ5"
    ],
    "gap_rows": 168,
-   "green": 0
+   "green": 16
   },
   {
    "id": "b04",
-   "status": "planned",
+   "status": "applied",
    "series": [
     "V8",
     "特斯拉 MODEL Y",
@@ -66,11 +66,11 @@
     "ELEXIO"
    ],
    "gap_rows": 155,
-   "green": 0
+   "green": 92
   },
   {
    "id": "b05",
-   "status": "planned",
+   "status": "applied",
    "series": [
     "方程豹钛7",
     "eπ008",
@@ -79,11 +79,11 @@
     "智界R7"
    ],
    "gap_rows": 146,
-   "green": 0
+   "green": 45
   },
   {
    "id": "b06",
-   "status": "planned",
+   "status": "applied",
    "series": [
     "锐胜M8",
     "αT7",
@@ -96,7 +96,7 @@
   },
   {
    "id": "b07",
-   "status": "planned",
+   "status": "applied",
    "series": [
     "LS6",
     "C16",
@@ -105,11 +105,11 @@
     "欧拉好猫"
    ],
    "gap_rows": 131,
-   "green": 0
+   "green": 55
   },
   {
    "id": "b08",
-   "status": "planned",
+   "status": "applied",
    "series": [
     "小虎",
     "风神E70",
@@ -118,7 +118,7 @@
     "QQ冰淇淋"
    ],
    "gap_rows": 124,
-   "green": 0
+   "green": 39
   },
   {
    "id": "r01",
@@ -223,128 +223,392 @@
    ],
    "gap_rows": 63,
    "green": 2
+  },
+  {
+   "id": "r09",
+   "status": "applied",
+   "series": [
+    "埃安i60",
+    "腾势D9",
+    "东风奕派M8",
+    "比亚迪海狮05",
+    "小鹏G9L",
+    "福瑞通",
+    "问界M9",
+    "岚图泰山X8",
+    "07L",
+    "D19",
+    "IONIQ",
+    "比亚迪海狮08",
+    "比亚迪海豹08",
+    "启境GT7",
+    "V8X;V8X蓝山",
+    "腾势Z",
+    "旅行者",
+    "Q06E",
+    "小鹏GX",
+    "岚图梦想家9",
+    "小米澎程N70",
+    "A06",
+    "M6",
+    "ID.UNYX 与众09",
+    "ID.ERA 8X",
+    "M9 Plus",
+    "岚图追光S",
+    "A10",
+    "A05",
+    "宝马iX3",
+    "MG 4X",
+    "比亚迪元PLUS",
+    "比亚迪大唐",
+    "沃尔沃XC60",
+    "智界V9",
+    "比亚迪元UP",
+    "比亚迪宋Pro",
+    "享界S9",
+    "方程豹方程S",
+    "ORA 7;长城闪电猫;O 7;R 7;T 7"
+   ],
+   "gap_rows": 379,
+   "green": 167
+  },
+  {
+   "id": "r10",
+   "status": "applied",
+   "series": [
+    "传祺越7",
+    "QQ3",
+    "埃安Y Plus",
+    "L6",
+    "领克10",
+    "ES90",
+    "12",
+    "理想i9",
+    "比亚迪宋Ultra",
+    "Q05",
+    "银河战舰700",
+    "腾势Z9S",
+    "比亚迪秦PLUS",
+    "家越07",
+    "比亚迪大汉",
+    "奕派EP7",
+    "银河E5",
+    "享界G9",
+    "红旗H9",
+    "哈弗枭龙MAX;哈弗H6L;枭龙MAX;H6L",
+    "瑶光 C-DM",
+    "B10",
+    "TT、TT7、银河TT、银河TT7、Viva7、Viva、Luna7、Luna",
+    "小鹏L05",
+    "领克07GT",
+    "小鹏L03",
+    "红旗H7",
+    "HX;H10",
+    "海豚K7",
+    "风云A9",
+    "比亚迪海狮06",
+    "D99",
+    "江豚E6 PLUS",
+    "比亚迪秦MAX、比亚迪大秦",
+    "比亚迪海豹06、比亚迪海豹06MAX",
+    "银河星耀7",
+    "8X",
+    "领汇e7",
+    "问界M6",
+    "星愿、星愿UP"
+   ],
+   "gap_rows": 245,
+   "green": 90
+  },
+  {
+   "id": "r11",
+   "status": "applied",
+   "series": [
+    "αT5",
+    "C10",
+    "GLC 350 L 4MATIC",
+    "创维鸿途EV",
+    "远程M8E",
+    "ID.AURA T6",
+    "腾势N8L",
+    "红旗天工08",
+    "问道V9",
+    "方程豹方程S GT",
+    "埃安S Plus",
+    "GLC 400 L 4MATIC",
+    "问界M6EV",
+    "ET7",
+    "星愿UP、星愿",
+    "奕派M8",
+    "领克 20",
+    "理想L6",
+    "传祺向往S7;传祺S7",
+    "星愿STAR、星愿",
+    "腾势Z9",
+    "V8X",
+    "理想L8",
+    "V27",
+    "尚界 Z7",
+    "尚界 Z7 T",
+    "009",
+    "比亚迪宋Ultra、比亚迪大宋",
+    "传祺向往M8",
+    "比亚迪宋Ultra",
+    "007GT",
+    "007",
+    "06T",
+    "哈弗猛龙",
+    "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
+    "腾势Z9 GT",
+    "魏派高山7",
+    "远程V7E",
+    "黄金仓",
+    "腾势N8"
+   ],
+   "gap_rows": 161,
+   "green": 80
+  },
+  {
+   "id": "r12",
+   "status": "applied",
+   "series": [
+    "V25",
+    "V25",
+    "小米澎程N90",
+    "S3",
+    "方程豹钛3",
+    "悦意08",
+    "C 350 L 4MATIC",
+    "岚图泰山",
+    "H10",
+    "尊界V680",
+    "五菱扬光L",
+    "比亚迪海豹06GT",
+    "G318",
+    "B01",
+    "银河TT、TT、A8、银河A8",
+    "尊界V800",
+    "银河星耀6EF",
+    "V9",
+    "T1",
+    "EU8",
+    "江豚E5",
+    "ELECTRA E7;ELECTRA X7",
+    "ID.ERA 9X",
+    "欧拉芭蕾猫",
+    "埃安RT",
+    "享界S9T",
+    "理想i8",
+    "理想MEGA",
+    "菱智EV",
+    "S07EV",
+    "领汇e5",
+    "领汇M9",
+    "问界M9EV",
+    "尊界S800",
+    "星愿、星愿Ultra",
+    "ELECTRA L7",
+    "风云T7",
+    "FREELANDER 神行者8",
+    "ID.ERA 5S",
+    "拾月max"
+   ],
+   "gap_rows": 103,
+   "green": 65
+  },
+  {
+   "id": "r13",
+   "status": "applied",
+   "series": [
+    "北汽EU8",
+    "D7",
+    "领汇e3",
+    "小米YU7",
+    "传祺向往E8",
+    "Q06R",
+    "埃安N60",
+    "尚界 Z7 ULTRA",
+    "尚界 Z7 T ULTRA",
+    "比亚迪宋pro",
+    "风云T9L",
+    "小米YU7 GT",
+    "东风日产NX8",
+    "江铃大道",
+    "理想L9 Livis",
+    "比亚迪海豚",
+    "ES9",
+    "创维EV6Ⅱ",
+    "腾势Z9",
+    "领汇e9",
+    "LS9",
+    "TAYRON L",
+    "沃尔沃XC70",
+    "UT",
+    "星海S7",
+    "L07",
+    "悦意07",
+    "领克07",
+    "风云T11",
+    "比亚迪海鸥",
+    "精灵#1",
+    "比亚迪M9",
+    "银河A7",
+    "S09",
+    "五菱扬光Pro",
+    "跨越星光",
+    "星光730",
+    "哈弗猛龙 PLUS",
+    "UNI-Z",
+    "山海T1"
+   ],
+   "gap_rows": 62,
+   "green": 82
+  },
+  {
+   "id": "r14",
+   "status": "applied",
+   "series": [
+    "腾势N9",
+    "TIGGO 9 C-DM",
+    "A6L",
+    "银河星耀6 EM-i",
+    "银河星耀8 EMi",
+    "至境E7",
+    "TIGUAN L ePRO",
+    "大众ID 9X",
+    "图雅诺",
+    "比亚迪海豹07",
+    "06",
+    "昊铂A800",
+    "魏牌高山",
+    "魏牌高山7",
+    "魏牌高山",
+    "MAGOTAN"
+   ],
+   "gap_rows": 16,
+   "green": 19
   }
  ],
  "recent_ledger": [
   {
-   "seq": 52287,
-   "model": "LZ6480MME3EV",
-   "field": "整备质量(kg)",
+   "seq": 53279,
+   "model": "AHC7150SHEVQ0D",
+   "field": "后电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "1800.0"
+   "new": "300.0"
   },
   {
-   "seq": 52286,
-   "model": "LZ6480MME1EV",
-   "field": "整备质量(kg)",
+   "seq": 53278,
+   "model": "AHC7150SHEVQ0A",
+   "field": "后电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "1800.0"
+   "new": "200.0"
   },
   {
-   "seq": 52285,
-   "model": "YQZ6463BEV",
-   "field": "电机总功率/扭矩",
+   "seq": 53277,
+   "model": "BYD7000BXBEV3",
+   "field": "后电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "160.0"
+   "new": "170.0"
   },
   {
-   "seq": 52284,
-   "model": "YQZ6462BEV",
-   "field": "电机总功率/扭矩",
+   "seq": 53276,
+   "model": "BYD7000BXBEV2",
+   "field": "后电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "160.0"
+   "new": "170.0"
   },
   {
-   "seq": 52283,
-   "model": "DN6530MBEV5",
+   "seq": 53275,
+   "model": "BYD7151YT6HEV10",
+   "field": "后电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "170.0"
+  },
+  {
+   "seq": 53274,
+   "model": "BYD7151YT6HEV8",
+   "field": "后电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "170.0"
+  },
+  {
+   "seq": 53273,
+   "model": "BYD7151YT6HEV7",
    "field": "轴距(mm)",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "2750.0"
+   "new": "2920.0"
   },
   {
-   "seq": 52282,
-   "model": "DN6530MBEV5",
+   "seq": 53272,
+   "model": "BYD7151YT6HEV7",
    "field": "车长(mm)",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "4615.0"
+   "new": "4800.0"
   },
   {
-   "seq": 52281,
-   "model": "HQ6472DCHEV111",
-   "field": "电池容量(kWh)",
+   "seq": 53271,
+   "model": "BYD7151YT6HEV6",
+   "field": "后电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "19.09"
+   "new": "170.0"
   },
   {
-   "seq": 52280,
-   "model": "HQ6472DCHEV111",
-   "field": "百公里电耗(kWh/100km)",
+   "seq": 53270,
+   "model": "BYD7151Y6HEV3",
+   "field": "后电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "14.9"
+   "new": "170.0"
   },
   {
-   "seq": 52279,
-   "model": "HQ6472DCHEV107",
-   "field": "电池容量(kWh)",
+   "seq": 53269,
+   "model": "FV7201BAQCHEV",
+   "field": "前电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "8.5"
+   "new": "18.0"
   },
   {
-   "seq": 52278,
-   "model": "HQ6472DCHEV107",
-   "field": "整备质量(kg)",
+   "seq": 53268,
+   "model": "AFN7000BAABEVB",
+   "field": "前电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "1610.0"
+   "new": "18.0"
   },
   {
-   "seq": 52277,
-   "model": "BJ6480A50ABEV",
-   "field": "电池能量密度(Wh/kg)",
+   "seq": 53267,
+   "model": "AFN7000BAABEVB",
+   "field": "电池类型",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "136.0"
+   "new": "磷酸铁锂"
   },
   {
-   "seq": 52276,
-   "model": "BJ6480A509BEV",
-   "field": "电池能量密度(Wh/kg)",
+   "seq": 53266,
+   "model": "AFN7000BAABEVA",
+   "field": "前电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "137.5"
+   "new": "18.0"
   },
   {
-   "seq": 52275,
-   "model": "BJ6480A508BEV",
-   "field": "电池能量密度(Wh/kg)",
+   "seq": 53265,
+   "model": "AFN7000BAABEVA",
+   "field": "电池类型",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "136.0"
-  },
-  {
-   "seq": 52274,
-   "model": "BJ7000T37SEV",
-   "field": "电池能量密度(Wh/kg)",
-   "kind": "媒体参数补全",
-   "old": "(空)",
-   "new": "137.0"
-  },
-  {
-   "seq": 52273,
-   "model": "BJ7000T37SEV",
-   "field": "百公里电耗(kWh/100km)",
-   "kind": "媒体参数补全",
-   "old": "(空)",
-   "new": "11.9"
+   "new": "磷酸铁锂"
   }
  ]
 }

@@ -58,6 +58,12 @@
 3. 全部 apply 须在提交信息注明"DCD 通道（懂车帝）"，台账 数据来源=`懂车帝参数页 · <series_url> · dcd_refill`
 4. 电芯供应商缺口（3706）不在本通道范围——维持公示详情页通道
 
+## ⚡ 2026-09-22 晚 · Wave 2 收口（净 +993 格，累计 2,057）
+
+- 全队列 296 车系映射 212 有源 / 抓取 188/192 sid（4 真无源）/ 14 批 apply 净 **+993**（台账 52,287→53,279）。**正则修复**：apply 前/后电机接受裸数字（DCD 无 kW 后缀）——此前该域漏填。软限流判别与防限流节奏固化见方案 §11。
+- 覆盖率抬升：后电机 38.4 / 前电机 84.6 / 轴距 85.3 / 车长 85.0 / 电耗 96.0；加权 ≈85.5%。verify WARN 209 = 基线 + 新增 W2 1 条（344批 CC7000BJ02ABEV，Wave 3 甄别）。监控：`wave_status.py`。
+- **Wave 3 待办（下一棒）**：①ambiguous ~1,000 格消解=apply S4 加批次日期→model-year 代际过滤（估 1~2h 开发 + 跑批复核 2h）②rear_only 600 行 DCD rear_electric_* 定向回填 ③84 拒收车系复查（DCD 未上架者随其上架自动解锁）④新增 W2 1 条双源仲裁。
+
 ## ⚡ 2026-09-22 15:00~18:00 会话 · 直连通道落地 + Wave 1（r01~r08）收口
 
 - **层A 直连升级为主通道**（方案 §11）：登录态 cookie 回放（Tabbit 导出存 `$TEMP`，不入 git），`params-carIds-x-<sid>`（数字=车系id）直拉，搜索页 SSR 同通。试点 13/13 与 Tabbit 样本零失配。新工具：`dcd_direct_fetch.py`（执行器）/`pilot_direct.py`（对拍）/`dcd_map_direct.py`（映射+品牌守卫+alias）/`dcd_fetch_batch.py`（批量抓取）。**Tabbit 从此仅用于 cookie 导出与保底。**

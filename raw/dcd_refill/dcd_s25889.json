@@ -1,0 +1,166 @@
+{
+ "kw": "D99",
+ "kws": [
+  "D99"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:02",
+ "series_url": "https://www.dongchedi.com/auto/series/25889",
+ "series": {
+  "sid": "25889",
+  "name": "零跑D99",
+  "brand": "零跑汽车"
+ },
+ "cars": [
+  {
+   "id": "260475",
+   "name": "增程480尊享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "24.98万",
+   "vals": {
+    "length": "5280",
+    "wheelbase": "3110",
+    "curb_weight": "2865",
+    "cltc_recharge_mileage": "480",
+    "recharge_mileage": "",
+    "power_consumption": "23.8",
+    "battery_capacity": "80.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "300kW(408Ps)",
+    "total_electric_torque": "525",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "165",
+    "rear_electric_max_power": "200",
+    "rear_electric_max_torque": "360",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "260476",
+   "name": "增程480智尊版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "27.98万",
+   "vals": {
+    "length": "5280",
+    "wheelbase": "3110",
+    "curb_weight": "2965",
+    "cltc_recharge_mileage": "480",
+    "recharge_mileage": "",
+    "power_consumption": "23.8",
+    "battery_capacity": "80.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "300kW(408Ps)",
+    "total_electric_torque": "525",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "165",
+    "rear_electric_max_power": "200",
+    "rear_electric_max_torque": "360",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "254598",
+   "name": "增程480旗舰版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "30.98万",
+   "vals": {
+    "length": "5280",
+    "wheelbase": "3110",
+    "curb_weight": "2965",
+    "cltc_recharge_mileage": "480",
+    "recharge_mileage": "",
+    "power_consumption": "23.8",
+    "battery_capacity": "80.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "300kW(408Ps)",
+    "total_electric_torque": "525",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "165",
+    "rear_electric_max_power": "200",
+    "rear_electric_max_torque": "360",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "260477",
+   "name": "纯电700尊享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "25.98万",
+   "vals": {
+    "length": "5280",
+    "wheelbase": "3110",
+    "curb_weight": "2825",
+    "cltc_recharge_mileage": "700",
+    "recharge_mileage": "",
+    "power_consumption": "18.8",
+    "battery_capacity": "115",
+    "battery_type": "磷酸铁锂电池+三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "410kW(558Ps)",
+    "total_electric_torque": "625",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "265",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "360",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "260478",
+   "name": "纯电700智尊版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "28.98万",
+   "vals": {
+    "length": "5280",
+    "wheelbase": "3110",
+    "curb_weight": "2925",
+    "cltc_recharge_mileage": "700",
+    "recharge_mileage": "",
+    "power_consumption": "18.8",
+    "battery_capacity": "115",
+    "battery_type": "磷酸铁锂电池+三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "410kW(558Ps)",
+    "total_electric_torque": "625",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "265",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "360",
+    "sub_brand_name": "零跑汽车"
+   }
+  },
+  {
+   "id": "254596",
+   "name": "纯电700旗舰版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "31.98万",
+   "vals": {
+    "length": "5280",
+    "wheelbase": "3110",
+    "curb_weight": "2925",
+    "cltc_recharge_mileage": "700",
+    "recharge_mileage": "",
+    "power_consumption": "18.8",
+    "battery_capacity": "115",
+    "battery_type": "磷酸铁锂电池+三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "410kW(558Ps)",
+    "total_electric_torque": "625",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "265",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "360",
+    "sub_brand_name": "零跑汽车"
+   }
+  }
+ ]
+}

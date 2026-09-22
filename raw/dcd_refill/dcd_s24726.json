@@ -1,0 +1,166 @@
+{
+ "kw": "腾势N9",
+ "kws": [
+  "腾势N9"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:00",
+ "series_url": "https://www.dongchedi.com/auto/series/24726",
+ "series": {
+  "sid": "24726",
+  "name": "腾势N9 DM",
+  "brand": "腾势"
+ },
+ "cars": [
+  {
+   "id": "257591",
+   "name": "闪充尊荣型",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "40.98万",
+   "vals": {
+    "length": "5258",
+    "wheelbase": "3125",
+    "curb_weight": "3260",
+    "cltc_recharge_mileage": "420",
+    "recharge_mileage": "315",
+    "power_consumption": "",
+    "battery_capacity": "75.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "680kW(925Ps)",
+    "total_electric_torque": "1035",
+    "front_electric_max_power": "200",
+    "front_electric_max_torque": "315",
+    "rear_electric_max_power": "480",
+    "rear_electric_max_torque": "720",
+    "sub_brand_name": "腾势汽车"
+   }
+  },
+  {
+   "id": "258952",
+   "name": "闪充尊越型",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "43.98万",
+   "vals": {
+    "length": "5258",
+    "wheelbase": "3125",
+    "curb_weight": "3260",
+    "cltc_recharge_mileage": "420",
+    "recharge_mileage": "315",
+    "power_consumption": "",
+    "battery_capacity": "75.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "680kW(925Ps)",
+    "total_electric_torque": "1035",
+    "front_electric_max_power": "200",
+    "front_electric_max_torque": "315",
+    "rear_electric_max_power": "480",
+    "rear_electric_max_torque": "720",
+    "sub_brand_name": "腾势汽车"
+   }
+  },
+  {
+   "id": "257592",
+   "name": "闪充旗舰型",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "46.98万",
+   "vals": {
+    "length": "5258",
+    "wheelbase": "3125",
+    "curb_weight": "3260",
+    "cltc_recharge_mileage": "420",
+    "recharge_mileage": "315",
+    "power_consumption": "",
+    "battery_capacity": "75.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "680kW(925Ps)",
+    "total_electric_torque": "1035",
+    "front_electric_max_power": "200",
+    "front_electric_max_torque": "315",
+    "rear_electric_max_power": "480",
+    "rear_electric_max_torque": "720",
+    "sub_brand_name": "腾势汽车"
+   }
+  },
+  {
+   "id": "252022",
+   "name": "尊荣型",
+   "year": "2026",
+   "sale_status": 2,
+   "official_price": "38.98万",
+   "vals": {
+    "length": "5258",
+    "wheelbase": "3125",
+    "curb_weight": "3130",
+    "cltc_recharge_mileage": "202",
+    "recharge_mileage": "202",
+    "power_consumption": "16.6",
+    "battery_capacity": "46.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "680kW(925Ps)",
+    "total_electric_torque": "1035",
+    "front_electric_max_power": "200",
+    "front_electric_max_torque": "315",
+    "rear_electric_max_power": "480",
+    "rear_electric_max_torque": "720",
+    "sub_brand_name": "腾势汽车"
+   }
+  },
+  {
+   "id": "251369",
+   "name": "尊越型",
+   "year": "2026",
+   "sale_status": 2,
+   "official_price": "40.98万",
+   "vals": {
+    "length": "5258",
+    "wheelbase": "3125",
+    "curb_weight": "3245",
+    "cltc_recharge_mileage": "202",
+    "recharge_mileage": "202",
+    "power_consumption": "16.6",
+    "battery_capacity": "46.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "680kW(925Ps)",
+    "total_electric_torque": "1035",
+    "front_electric_max_power": "200",
+    "front_electric_max_torque": "315",
+    "rear_electric_max_power": "480",
+    "rear_electric_max_torque": "720",
+    "sub_brand_name": "腾势汽车"
+   }
+  },
+  {
+   "id": "251617",
+   "name": "旗舰型",
+   "year": "2026",
+   "sale_status": 2,
+   "official_price": "44.98万",
+   "vals": {
+    "length": "5258",
+    "wheelbase": "3125",
+    "curb_weight": "3245",
+    "cltc_recharge_mileage": "202",
+    "recharge_mileage": "202",
+    "power_consumption": "16.6",
+    "battery_capacity": "46.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "680kW(925Ps)",
+    "total_electric_torque": "1035",
+    "front_electric_max_power": "200",
+    "front_electric_max_torque": "315",
+    "rear_electric_max_power": "480",
+    "rear_electric_max_torque": "720",
+    "sub_brand_name": "腾势汽车"
+   }
+  }
+ ]
+}

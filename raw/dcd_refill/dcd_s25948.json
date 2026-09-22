@@ -1,0 +1,66 @@
+{
+ "kw": "领汇M9",
+ "kws": [
+  "领汇M9"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:02",
+ "series_url": "https://www.dongchedi.com/auto/series/25948",
+ "series": {
+  "sid": "25948",
+  "name": "领汇M9 DM",
+  "brand": "领汇"
+ },
+ "cars": [
+  {
+   "id": "255782",
+   "name": "1105豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "18.88万",
+   "vals": {
+    "length": "5200",
+    "wheelbase": "3045",
+    "curb_weight": "2470",
+    "cltc_recharge_mileage": "145",
+    "recharge_mileage": "",
+    "power_consumption": "19.8",
+    "battery_capacity": "26.6",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "200kW(272Ps)",
+    "total_electric_torque": "315",
+    "front_electric_max_power": "200",
+    "front_electric_max_torque": "315",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "领汇汽车"
+   }
+  },
+  {
+   "id": "260541",
+   "name": "1105尊贵版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "19.98万",
+   "vals": {
+    "length": "5200",
+    "wheelbase": "3045",
+    "curb_weight": "2470",
+    "cltc_recharge_mileage": "145",
+    "recharge_mileage": "",
+    "power_consumption": "19.8",
+    "battery_capacity": "26.6",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "200kW(272Ps)",
+    "total_electric_torque": "315",
+    "front_electric_max_power": "200",
+    "front_electric_max_torque": "315",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "领汇汽车"
+   }
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "kw": "领汇e7",
+ "kws": [
+  "领汇e7"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:02",
+ "series_url": "https://www.dongchedi.com/auto/series/25949",
+ "series": {
+  "sid": "25949",
+  "name": "领汇e7 EV",
+  "brand": "领汇"
+ },
+ "cars": [
+  {
+   "id": "257829",
+   "name": "450启航版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "9.58万",
+   "vals": {
+    "length": "4780",
+    "wheelbase": "2820",
+    "curb_weight": "1499",
+    "cltc_recharge_mileage": "450",
+    "recharge_mileage": "450",
+    "power_consumption": "11.4",
+    "battery_capacity": "48",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "100kW(136Ps)",
+    "total_electric_torque": "180",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "180",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "领汇汽车"
+   }
+  },
+  {
+   "id": "257828",
+   "name": "520进阶版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.18万",
+   "vals": {
+    "length": "4780",
+    "wheelbase": "2820",
+    "curb_weight": "1566",
+    "cltc_recharge_mileage": "520",
+    "recharge_mileage": "520",
+    "power_consumption": "11.8",
+    "battery_capacity": "57.6",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "100kW(136Ps)",
+    "total_electric_torque": "180",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "180",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "领汇汽车"
+   }
+  },
+  {
+   "id": "257827",
+   "name": "520悦享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.78万",
+   "vals": {
+    "length": "4780",
+    "wheelbase": "2820",
+    "curb_weight": "1566",
+    "cltc_recharge_mileage": "520",
+    "recharge_mileage": "520",
+    "power_consumption": "11.8",
+    "battery_capacity": "57.6",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "100kW(136Ps)",
+    "total_electric_torque": "180",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "180",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "领汇汽车"
+   }
+  },
+  {
+   "id": "257825",
+   "name": "550闪充领先版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.98万",
+   "vals": {
+    "length": "4780",
+    "wheelbase": "2820",
+    "curb_weight": "1595",
+    "cltc_recharge_mileage": "550",
+    "recharge_mileage": "550",
+    "power_consumption": "11.5",
+    "battery_capacity": "57.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "130kW(177Ps)",
+    "total_electric_torque": "180",
+    "front_electric_max_power": "130",
+    "front_electric_max_torque": "180",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "领汇汽车"
+   }
+  },
+  {
+   "id": "257826",
+   "name": "550闪充高能版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.58万",
+   "vals": {
+    "length": "4780",
+    "wheelbase": "2820",
+    "curb_weight": "1595",
+    "cltc_recharge_mileage": "550",
+    "recharge_mileage": "550",
+    "power_consumption": "11.5",
+    "battery_capacity": "57.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "130kW(177Ps)",
+    "total_electric_torque": "180",
+    "front_electric_max_power": "130",
+    "front_electric_max_torque": "180",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "领汇汽车"
+   }
+  }
+ ]
+}

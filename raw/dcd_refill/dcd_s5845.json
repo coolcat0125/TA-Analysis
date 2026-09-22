@@ -1,0 +1,41 @@
+{
+ "kw": "理想L6",
+ "kws": [
+  "理想L6"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:05",
+ "series_url": "https://www.dongchedi.com/auto/series/5845",
+ "series": {
+  "sid": "5845",
+  "name": "理想L6",
+  "brand": "理想汽车"
+ },
+ "cars": [
+  {
+   "id": "258702",
+   "name": "Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "24.98万",
+   "vals": {
+    "length": "4935",
+    "wheelbase": "2920",
+    "curb_weight": "2520",
+    "cltc_recharge_mileage": "300",
+    "recharge_mileage": "",
+    "power_consumption": "22.3",
+    "battery_capacity": "51",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "300kW(408Ps)",
+    "total_electric_torque": "529",
+    "front_electric_max_power": "130",
+    "front_electric_max_torque": "220",
+    "rear_electric_max_power": "170",
+    "rear_electric_max_torque": "309",
+    "sub_brand_name": "理想汽车"
+   }
+  }
+ ]
+}

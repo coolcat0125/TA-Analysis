@@ -1,0 +1,116 @@
+{
+ "kw": "岚图泰山",
+ "kws": [
+  "岚图泰山"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25619",
+ "series": {
+  "sid": "25619",
+  "name": "岚图泰山 PHEV",
+  "brand": "岚图"
+ },
+ "cars": [
+  {
+   "id": "253929",
+   "name": "Max版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "37.99万",
+   "vals": {
+    "length": "5230",
+    "wheelbase": "3120",
+    "curb_weight": "2760",
+    "cltc_recharge_mileage": "350",
+    "recharge_mileage": "290",
+    "power_consumption": "22.3",
+    "battery_capacity": "65",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "380kW(517Ps)",
+    "total_electric_torque": "705",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "395",
+    "sub_brand_name": "岚图汽车"
+   }
+  },
+  {
+   "id": "253930",
+   "name": "Max+版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "40.99万",
+   "vals": {
+    "length": "5230",
+    "wheelbase": "3120",
+    "curb_weight": "2852",
+    "cltc_recharge_mileage": "350",
+    "recharge_mileage": "290",
+    "power_consumption": "22.3",
+    "battery_capacity": "65",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "380kW(517Ps)",
+    "total_electric_torque": "705",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "395",
+    "sub_brand_name": "岚图汽车"
+   }
+  },
+  {
+   "id": "250189",
+   "name": "Ultra版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "45.99万",
+   "vals": {
+    "length": "5230",
+    "wheelbase": "3120",
+    "curb_weight": "2852",
+    "cltc_recharge_mileage": "350",
+    "recharge_mileage": "290",
+    "power_consumption": "22.3",
+    "battery_capacity": "65",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "380kW(517Ps)",
+    "total_electric_torque": "705",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "395",
+    "sub_brand_name": "岚图汽车"
+   }
+  },
+  {
+   "id": "253950",
+   "name": "黑武士版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "50.99万",
+   "vals": {
+    "length": "5230",
+    "wheelbase": "3120",
+    "curb_weight": "2852",
+    "cltc_recharge_mileage": "350",
+    "recharge_mileage": "290",
+    "power_consumption": "22.3",
+    "battery_capacity": "65",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "410kW(558Ps)",
+    "total_electric_torque": "705",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "260",
+    "rear_electric_max_torque": "395",
+    "sub_brand_name": "岚图汽车"
+   }
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "kw": "Q05",
+ "kws": [
+  "Q05"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25634",
+ "series": {
+  "sid": "25634",
+  "name": "长安启源Q05",
+  "brand": "长安启源"
+ },
+ "cars": [
+  {
+   "id": "254067",
+   "name": "405 Air",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "7.99万",
+   "vals": {
+    "length": "4435",
+    "wheelbase": "2735",
+    "curb_weight": "1435",
+    "cltc_recharge_mileage": "405",
+    "recharge_mileage": "405",
+    "power_consumption": "11.3",
+    "battery_capacity": "40.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "120kW(163Ps)",
+    "total_electric_torque": "190",
+    "front_electric_max_power": "120",
+    "front_electric_max_torque": "190",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长安启源"
+   }
+  },
+  {
+   "id": "257711",
+   "name": "506 Pro+",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "9.59万",
+   "vals": {
+    "length": "4435",
+    "wheelbase": "2735",
+    "curb_weight": "1550",
+    "cltc_recharge_mileage": "506",
+    "recharge_mileage": "506",
+    "power_consumption": "11.7",
+    "battery_capacity": "51.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "120kW(163Ps)",
+    "total_electric_torque": "190",
+    "front_electric_max_power": "120",
+    "front_electric_max_torque": "190",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长安启源"
+   }
+  },
+  {
+   "id": "254068",
+   "name": "405 Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "8.99万",
+   "vals": {
+    "length": "4435",
+    "wheelbase": "2735",
+    "curb_weight": "1470",
+    "cltc_recharge_mileage": "405",
+    "recharge_mileage": "405",
+    "power_consumption": "11.3",
+    "battery_capacity": "40.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "120kW(163Ps)",
+    "total_electric_torque": "190",
+    "front_electric_max_power": "120",
+    "front_electric_max_torque": "190",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长安启源"
+   }
+  },
+  {
+   "id": "254070",
+   "name": "506 Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "9.99万",
+   "vals": {
+    "length": "4435",
+    "wheelbase": "2735",
+    "curb_weight": "1550",
+    "cltc_recharge_mileage": "506",
+    "recharge_mileage": "506",
+    "power_consumption": "11.7",
+    "battery_capacity": "51.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "120kW(163Ps)",
+    "total_electric_torque": "190",
+    "front_electric_max_power": "120",
+    "front_electric_max_torque": "190",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长安启源"
+   }
+  },
+  {
+   "id": "257712",
+   "name": "506 Max+",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.19万",
+   "vals": {
+    "length": "4435",
+    "wheelbase": "2735",
+    "curb_weight": "1550",
+    "cltc_recharge_mileage": "506",
+    "recharge_mileage": "506",
+    "power_consumption": "11.7",
+    "battery_capacity": "51.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "120kW(163Ps)",
+    "total_electric_torque": "190",
+    "front_electric_max_power": "120",
+    "front_electric_max_torque": "190",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长安启源"
+   }
+  },
+  {
+   "id": "253922",
+   "name": "405 激光极智版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.49万",
+   "vals": {
+    "length": "4435",
+    "wheelbase": "2735",
+    "curb_weight": "1470",
+    "cltc_recharge_mileage": "405",
+    "recharge_mileage": "405",
+    "power_consumption": "11.3",
+    "battery_capacity": "40.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "120kW(163Ps)",
+    "total_electric_torque": "190",
+    "front_electric_max_power": "120",
+    "front_electric_max_torque": "190",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长安启源"
+   }
+  },
+  {
+   "id": "252912",
+   "name": "506 激光极智版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.49万",
+   "vals": {
+    "length": "4435",
+    "wheelbase": "2735",
+    "curb_weight": "1550",
+    "cltc_recharge_mileage": "506",
+    "recharge_mileage": "506",
+    "power_consumption": "11.7",
+    "battery_capacity": "51.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "120kW(163Ps)",
+    "total_electric_torque": "190",
+    "front_electric_max_power": "120",
+    "front_electric_max_torque": "190",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长安启源"
+   }
+  }
+ ]
+}

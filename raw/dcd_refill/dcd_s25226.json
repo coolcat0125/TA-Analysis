@@ -1,0 +1,66 @@
+{
+ "kw": "ES90",
+ "kws": [
+  "ES90"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:00",
+ "series_url": "https://www.dongchedi.com/auto/series/25226",
+ "series": {
+  "sid": "25226",
+  "name": "沃尔沃ES90",
+  "brand": "沃尔沃"
+ },
+ "cars": [
+  {
+   "id": "245121",
+   "name": "后驱长续航版 Plus",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "53.99万",
+   "vals": {
+    "length": "5000",
+    "wheelbase": "3102",
+    "curb_weight": "2370",
+    "cltc_recharge_mileage": "777",
+    "recharge_mileage": "",
+    "power_consumption": "13.4",
+    "battery_capacity": "92",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "245kW(333Ps)",
+    "total_electric_torque": "480",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "245",
+    "rear_electric_max_torque": "480",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  },
+  {
+   "id": "256158",
+   "name": "双电机四驱高性能版 Ultra",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "62.99万",
+   "vals": {
+    "length": "5000",
+    "wheelbase": "3102",
+    "curb_weight": "2558",
+    "cltc_recharge_mileage": "848",
+    "recharge_mileage": "",
+    "power_consumption": "14.1",
+    "battery_capacity": "106",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "500kW(680Ps)",
+    "total_electric_torque": "870",
+    "front_electric_max_power": "220",
+    "front_electric_max_torque": "390",
+    "rear_electric_max_power": "280",
+    "rear_electric_max_torque": "480",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  }
+ ]
+}

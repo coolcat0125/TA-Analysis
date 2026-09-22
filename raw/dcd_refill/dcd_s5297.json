@@ -1,0 +1,91 @@
+{
+ "kw": "欧拉芭蕾猫",
+ "kws": [
+  "欧拉芭蕾猫"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:05",
+ "series_url": "https://www.dongchedi.com/auto/series/5297",
+ "series": {
+  "sid": "5297",
+  "name": "欧拉芭蕾猫",
+  "brand": "欧拉"
+ },
+ "cars": [
+  {
+   "id": "88725",
+   "name": "401km 豪华版",
+   "year": "2023",
+   "sale_status": 0,
+   "official_price": "14.98万",
+   "vals": {
+    "length": "4401",
+    "wheelbase": "2750",
+    "curb_weight": "1740",
+    "cltc_recharge_mileage": "401",
+    "recharge_mileage": "401",
+    "power_consumption": "13.4",
+    "battery_capacity": "49.92",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "130.3",
+    "total_electric_power": "126kW(171Ps)",
+    "total_electric_torque": "250",
+    "front_electric_max_power": "126",
+    "front_electric_max_torque": "250",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "88726",
+   "name": "401km 尊贵版",
+   "year": "2023",
+   "sale_status": 0,
+   "official_price": "15.98万",
+   "vals": {
+    "length": "4401",
+    "wheelbase": "2750",
+    "curb_weight": "1765",
+    "cltc_recharge_mileage": "401",
+    "recharge_mileage": "401",
+    "power_consumption": "13.4",
+    "battery_capacity": "49.92",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "130.3",
+    "total_electric_power": "126kW(171Ps)",
+    "total_electric_torque": "250",
+    "front_electric_max_power": "126",
+    "front_electric_max_torque": "250",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "88727",
+   "name": "500km 尊贵版",
+   "year": "2023",
+   "sale_status": 0,
+   "official_price": "17.98万",
+   "vals": {
+    "length": "4401",
+    "wheelbase": "2750",
+    "curb_weight": "1835",
+    "cltc_recharge_mileage": "500",
+    "recharge_mileage": "500",
+    "power_consumption": "13.9",
+    "battery_capacity": "60.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "145.1",
+    "total_electric_power": "126kW(171Ps)",
+    "total_electric_torque": "250",
+    "front_electric_max_power": "126",
+    "front_electric_max_torque": "250",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长城汽车"
+   }
+  }
+ ]
+}

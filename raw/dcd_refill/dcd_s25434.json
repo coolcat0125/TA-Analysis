@@ -1,0 +1,166 @@
+{
+ "kw": "悦意08",
+ "kws": [
+  "悦意08"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25434",
+ "series": {
+  "sid": "25434",
+  "name": "悦意08",
+  "brand": "奔腾"
+ },
+ "cars": [
+  {
+   "id": "257588",
+   "name": "增程 240 Plus",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.99万",
+   "vals": {
+    "length": "4920",
+    "wheelbase": "2900",
+    "curb_weight": "1765",
+    "cltc_recharge_mileage": "240",
+    "recharge_mileage": "",
+    "power_consumption": "14.6",
+    "battery_capacity": "27.8",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "202kW(275Ps)",
+    "total_electric_torque": "300",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "202",
+    "rear_electric_max_torque": "300",
+    "sub_brand_name": "一汽奔腾"
+   }
+  },
+  {
+   "id": "258817",
+   "name": "纯电 565 Air",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "9.99万",
+   "vals": {
+    "length": "4920",
+    "wheelbase": "2900",
+    "curb_weight": "1740",
+    "cltc_recharge_mileage": "565",
+    "recharge_mileage": "",
+    "power_consumption": "11.4",
+    "battery_capacity": "59.04",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "202kW(275Ps)",
+    "total_electric_torque": "300",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "202",
+    "rear_electric_max_torque": "300",
+    "sub_brand_name": "一汽奔腾"
+   }
+  },
+  {
+   "id": "247703",
+   "name": "纯电 565 Plus",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "10.99万",
+   "vals": {
+    "length": "4920",
+    "wheelbase": "2900",
+    "curb_weight": "1740",
+    "cltc_recharge_mileage": "565",
+    "recharge_mileage": "",
+    "power_consumption": "11.4",
+    "battery_capacity": "59.04",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "202kW(275Ps)",
+    "total_electric_torque": "300",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "202",
+    "rear_electric_max_torque": "300",
+    "sub_brand_name": "一汽奔腾"
+   }
+  },
+  {
+   "id": "256124",
+   "name": "纯电 565 Pro",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.99万",
+   "vals": {
+    "length": "4920",
+    "wheelbase": "2900",
+    "curb_weight": "1740",
+    "cltc_recharge_mileage": "565",
+    "recharge_mileage": "",
+    "power_consumption": "11.4",
+    "battery_capacity": "59.04",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "202kW(275Ps)",
+    "total_electric_torque": "300",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "202",
+    "rear_electric_max_torque": "300",
+    "sub_brand_name": "一汽奔腾"
+   }
+  },
+  {
+   "id": "259432",
+   "name": "纯电 650 Pro",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.99万",
+   "vals": {
+    "length": "4920",
+    "wheelbase": "2900",
+    "curb_weight": "1770",
+    "cltc_recharge_mileage": "650",
+    "recharge_mileage": "",
+    "power_consumption": "11.4",
+    "battery_capacity": "70.5",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "202kW(275Ps)",
+    "total_electric_torque": "300",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "202",
+    "rear_electric_max_torque": "300",
+    "sub_brand_name": "一汽奔腾"
+   }
+  },
+  {
+   "id": "259433",
+   "name": "纯电 650 Pro领航版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "13.99万",
+   "vals": {
+    "length": "4920",
+    "wheelbase": "2900",
+    "curb_weight": "1770",
+    "cltc_recharge_mileage": "650",
+    "recharge_mileage": "",
+    "power_consumption": "11.4",
+    "battery_capacity": "70.5",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "202kW(275Ps)",
+    "total_electric_torque": "300",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "202",
+    "rear_electric_max_torque": "300",
+    "sub_brand_name": "一汽奔腾"
+   }
+  }
+ ]
+}

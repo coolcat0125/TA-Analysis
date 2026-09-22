@@ -1,0 +1,41 @@
+{
+ "kw": "聚星",
+ "kws": [
+  "聚星"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:00",
+ "series_url": "https://www.dongchedi.com/auto/series/24690",
+ "series": {
+  "sid": "24690",
+  "name": "聚星",
+  "brand": "戴德房车"
+ },
+ "cars": [
+  {
+   "id": "239522",
+   "name": "Vanlife",
+   "year": "2024",
+   "sale_status": 0,
+   "official_price": "29.8万",
+   "vals": {
+    "length": "5364",
+    "wheelbase": "3366",
+    "curb_weight": "",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "戴德房车"
+   }
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "batch": "b07",
+ "created": "2026-09-22 17:09:35",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "b07-01",
+   "kw": "LS6",
+   "js": "b07-01_LS6.js",
+   "series_name": "LS6",
+   "gap_rows": 27
+  },
+  {
+   "rid": "b07-02",
+   "kw": "C16",
+   "js": "b07-02_C16.js",
+   "series_name": "C16",
+   "gap_rows": 27
+  },
+  {
+   "rid": "b07-03",
+   "kw": "哪吒V",
+   "js": "b07-03_哪吒V.js",
+   "series_name": "哪吒V",
+   "gap_rows": 26
+  },
+  {
+   "rid": "b07-04",
+   "kw": "eQ1",
+   "js": "b07-04_eQ1.js",
+   "series_name": "eQ1",
+   "gap_rows": 26
+  },
+  {
+   "rid": "b07-05",
+   "kw": "欧拉好猫",
+   "js": "b07-05_欧拉好猫.js",
+   "series_name": "欧拉好猫",
+   "gap_rows": 25
+  }
+ ]
+}

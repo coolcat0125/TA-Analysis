@@ -1,0 +1,166 @@
+{
+ "kw": "北汽EU8",
+ "kws": [
+  "北汽EU8"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 16:59",
+ "series_url": "https://www.dongchedi.com/auto/series/197",
+ "series": {
+  "sid": "197",
+  "name": "北汽新能源EU",
+  "brand": "北汽新能源"
+ },
+ "cars": [
+  {
+   "id": "31704",
+   "name": "EU快换乐途版",
+   "year": "2018",
+   "sale_status": 1,
+   "official_price": "12.98万",
+   "vals": {
+    "length": "4602",
+    "wheelbase": "2650",
+    "curb_weight": "",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "300",
+    "power_consumption": "",
+    "battery_capacity": "45",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "100kW(136Ps)",
+    "total_electric_torque": "250",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "250",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北汽新能源"
+   }
+  },
+  {
+   "id": "2846",
+   "name": "EU260 乐途plus版",
+   "year": "2017",
+   "sale_status": 1,
+   "official_price": "20.59万",
+   "vals": {
+    "length": "4582",
+    "wheelbase": "2650",
+    "curb_weight": "1613",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "260",
+    "power_consumption": "",
+    "battery_capacity": "41.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "100kW(136Ps)",
+    "total_electric_torque": "260",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "260",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北汽新能源"
+   }
+  },
+  {
+   "id": "2847",
+   "name": "EU260 乐享版",
+   "year": "2017",
+   "sale_status": 1,
+   "official_price": "21.59万",
+   "vals": {
+    "length": "4582",
+    "wheelbase": "2650",
+    "curb_weight": "1613",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "260",
+    "power_consumption": "",
+    "battery_capacity": "41.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "100kW(136Ps)",
+    "total_electric_torque": "260",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "260",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北汽新能源"
+   }
+  },
+  {
+   "id": "22743",
+   "name": "EU400 乐享版",
+   "year": "2017",
+   "sale_status": 1,
+   "official_price": "22.49万",
+   "vals": {
+    "length": "4602",
+    "wheelbase": "2650",
+    "curb_weight": "1683",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "360",
+    "power_consumption": "",
+    "battery_capacity": "54.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "100kW(136Ps)",
+    "total_electric_torque": "",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北汽新能源"
+   }
+  },
+  {
+   "id": "2848",
+   "name": "EU260 乐途plus版",
+   "year": "2016",
+   "sale_status": 1,
+   "official_price": "23.99万",
+   "vals": {
+    "length": "4582",
+    "wheelbase": "2650",
+    "curb_weight": "",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "260",
+    "power_consumption": "",
+    "battery_capacity": "41.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "100kW(136Ps)",
+    "total_electric_torque": "260",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "260",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北汽新能源"
+   }
+  },
+  {
+   "id": "2849",
+   "name": "EU260 乐享版",
+   "year": "2016",
+   "sale_status": 1,
+   "official_price": "25.69万",
+   "vals": {
+    "length": "4582",
+    "wheelbase": "2650",
+    "curb_weight": "",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "260",
+    "power_consumption": "",
+    "battery_capacity": "41.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "100kW(136Ps)",
+    "total_electric_torque": "260",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "260",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北汽新能源"
+   }
+  }
+ ]
+}

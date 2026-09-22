@@ -1,0 +1,116 @@
+{
+ "kw": "AION LX",
+ "kws": [
+  "AION LX"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:04",
+ "series_url": "https://www.dongchedi.com/auto/series/3503",
+ "series": {
+  "sid": "3503",
+  "name": "AION LX",
+  "brand": "埃安"
+ },
+ "cars": [
+  {
+   "id": "57082",
+   "name": "PLUS 80 智尊版",
+   "year": "2022",
+   "sale_status": 0,
+   "official_price": "28.66万",
+   "vals": {
+    "length": "4835",
+    "wheelbase": "2920",
+    "curb_weight": "2070",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "650",
+    "power_consumption": "15.5",
+    "battery_capacity": "93.3",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "180.0",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "广汽埃安新能源"
+   }
+  },
+  {
+   "id": "56204",
+   "name": "PLUS 80D 旗舰版",
+   "year": "2022",
+   "sale_status": 0,
+   "official_price": "33.96万",
+   "vals": {
+    "length": "4835",
+    "wheelbase": "2920",
+    "curb_weight": "2220",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "600",
+    "power_consumption": "16",
+    "battery_capacity": "93.3",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "175.0",
+    "total_electric_power": "360kW(490Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "180",
+    "rear_electric_max_torque": "350",
+    "sub_brand_name": "广汽埃安新能源"
+   }
+  },
+  {
+   "id": "59715",
+   "name": "PLUS 80D Max版",
+   "year": "2022",
+   "sale_status": 0,
+   "official_price": "41.96万",
+   "vals": {
+    "length": "4835",
+    "wheelbase": "2920",
+    "curb_weight": "2240",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "600",
+    "power_consumption": "16",
+    "battery_capacity": "93.3",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "175.0",
+    "total_electric_power": "360kW(490Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "180",
+    "rear_electric_max_torque": "350",
+    "sub_brand_name": "广汽埃安新能源"
+   }
+  },
+  {
+   "id": "56239",
+   "name": "PLUS 千里版",
+   "year": "2022",
+   "sale_status": 0,
+   "official_price": "46.96万",
+   "vals": {
+    "length": "4835",
+    "wheelbase": "2920",
+    "curb_weight": "2220",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "1008",
+    "power_consumption": "15.8",
+    "battery_capacity": "144.4",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "350",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "350",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "广汽埃安新能源"
+   }
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "kw": "尊界V800",
+ "kws": [
+  "尊界V800"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:00",
+ "series_url": "https://www.dongchedi.com/auto/series/24601",
+ "series": {
+  "sid": "24601",
+  "name": "尊界V800",
+  "brand": "尊界"
+ },
+ "cars": [
+  {
+   "id": "261559",
+   "name": "尊享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "76.6万",
+   "vals": {
+    "length": "5495",
+    "wheelbase": "3430",
+    "curb_weight": "3120",
+    "cltc_recharge_mileage": "340",
+    "recharge_mileage": "",
+    "power_consumption": "24.7",
+    "battery_capacity": "65",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "390kW(530Ps)",
+    "total_electric_torque": "604",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "208",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "396",
+    "sub_brand_name": "江淮汽车"
+   }
+  },
+  {
+   "id": "261558",
+   "name": "行政版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "86.6万",
+   "vals": {
+    "length": "5495",
+    "wheelbase": "3430",
+    "curb_weight": "3190",
+    "cltc_recharge_mileage": "330",
+    "recharge_mileage": "",
+    "power_consumption": "25.6",
+    "battery_capacity": "65",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "390kW(530Ps)",
+    "total_electric_torque": "604",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "208",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "396",
+    "sub_brand_name": "江淮汽车"
+   }
+  },
+  {
+   "id": "258696",
+   "name": "领航版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "101.6万",
+   "vals": {
+    "length": "5495",
+    "wheelbase": "3430",
+    "curb_weight": "3190",
+    "cltc_recharge_mileage": "330",
+    "recharge_mileage": "",
+    "power_consumption": "25.6",
+    "battery_capacity": "65",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "390kW(530Ps)",
+    "total_electric_torque": "604",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "208",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "396",
+    "sub_brand_name": "江淮汽车"
+   }
+  }
+ ]
+}

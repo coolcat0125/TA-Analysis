@@ -1,0 +1,287 @@
+{
+ "batch": "r13",
+ "created": "2026-09-22 17:10:01",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "r13-01",
+   "kw": "北汽EU8",
+   "js": "r13-01_北汽EU8.js",
+   "series_name": "北汽EU8",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-02",
+   "kw": "D7",
+   "js": "r13-02_D7.js",
+   "series_name": "D7",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-03",
+   "kw": "领汇e3",
+   "js": "r13-03_领汇e3.js",
+   "series_name": "领汇e3",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-04",
+   "kw": "小米YU7",
+   "js": "r13-04_小米YU7.js",
+   "series_name": "小米YU7",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-05",
+   "kw": "传祺向往E8",
+   "js": "r13-05_传祺向往E8.js",
+   "series_name": "传祺向往E8",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-06",
+   "kw": "Q06R",
+   "js": "r13-06_Q06R.js",
+   "series_name": "Q06R",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-07",
+   "kw": "埃安N60",
+   "js": "r13-07_埃安N60.js",
+   "series_name": "埃安N60",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-08",
+   "kw": "尚界 Z7 ULTRA",
+   "js": "r13-08_尚界Z7ULTRA.js",
+   "series_name": "尚界 Z7 ULTRA",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-09",
+   "kw": "尚界 Z7 T ULTRA",
+   "js": "r13-09_尚界Z7TULTRA.js",
+   "series_name": "尚界 Z7 T ULTRA",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-10",
+   "kw": "比亚迪宋pro",
+   "js": "r13-10_比亚迪宋pro.js",
+   "series_name": "比亚迪宋pro",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-11",
+   "kw": "风云T9L",
+   "js": "r13-11_风云T9L.js",
+   "series_name": "风云T9L",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-12",
+   "kw": "小米YU7 GT",
+   "js": "r13-12_小米YU7GT.js",
+   "series_name": "小米YU7 GT",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-13",
+   "kw": "东风日产NX8",
+   "js": "r13-13_东风日产NX8.js",
+   "series_name": "东风日产NX8",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-14",
+   "kw": "江铃大道",
+   "js": "r13-14_江铃大道.js",
+   "series_name": "江铃大道",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-15",
+   "kw": "理想L9 Livis",
+   "js": "r13-15_理想L9Livis.js",
+   "series_name": "理想L9 Livis",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-16",
+   "kw": "比亚迪海豚",
+   "js": "r13-16_比亚迪海豚.js",
+   "series_name": "比亚迪海豚",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-17",
+   "kw": "ES9",
+   "js": "r13-17_ES9.js",
+   "series_name": "ES9",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-18",
+   "kw": "创维EV6Ⅱ",
+   "js": "r13-18_创维EV6.js",
+   "series_name": "创维EV6Ⅱ",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-19",
+   "kw": "腾势Z9",
+   "js": "r13-19_腾势Z9.js",
+   "series_name": "腾势Z9",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-20",
+   "kw": "领汇e9",
+   "js": "r13-20_领汇e9.js",
+   "series_name": "领汇e9",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-21",
+   "kw": "LS9",
+   "js": "r13-21_LS9.js",
+   "series_name": "LS9",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-22",
+   "kw": "TAYRON L",
+   "js": "r13-22_TAYRONL.js",
+   "series_name": "TAYRON L",
+   "gap_rows": 2
+  },
+  {
+   "rid": "r13-23",
+   "kw": "沃尔沃XC70",
+   "js": "r13-23_沃尔沃XC70.js",
+   "series_name": "沃尔沃XC70",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-24",
+   "kw": "UT",
+   "js": "r13-24_UT.js",
+   "series_name": "UT",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-25",
+   "kw": "星海S7",
+   "js": "r13-25_星海S7.js",
+   "series_name": "星海S7",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-26",
+   "kw": "L07",
+   "js": "r13-26_L07.js",
+   "series_name": "L07",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-27",
+   "kw": "悦意07",
+   "js": "r13-27_悦意07.js",
+   "series_name": "悦意07",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-28",
+   "kw": "领克07",
+   "js": "r13-28_领克07.js",
+   "series_name": "领克07",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-29",
+   "kw": "风云T11",
+   "js": "r13-29_风云T11.js",
+   "series_name": "风云T11",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-30",
+   "kw": "比亚迪海鸥",
+   "js": "r13-30_比亚迪海鸥.js",
+   "series_name": "比亚迪海鸥",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-31",
+   "kw": "精灵#1",
+   "js": "r13-31_精灵1.js",
+   "series_name": "精灵#1",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-32",
+   "kw": "比亚迪M9",
+   "js": "r13-32_比亚迪M9.js",
+   "series_name": "比亚迪M9",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-33",
+   "kw": "银河A7",
+   "js": "r13-33_银河A7.js",
+   "series_name": "银河A7",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-34",
+   "kw": "S09",
+   "js": "r13-34_S09.js",
+   "series_name": "S09",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-35",
+   "kw": "五菱扬光Pro",
+   "js": "r13-35_五菱扬光Pro.js",
+   "series_name": "五菱扬光Pro",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-36",
+   "kw": "跨越星光",
+   "js": "r13-36_跨越星光.js",
+   "series_name": "跨越星光",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-37",
+   "kw": "星光730",
+   "js": "r13-37_星光730.js",
+   "series_name": "星光730",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-38",
+   "kw": "哈弗猛龙 PLUS",
+   "js": "r13-38_哈弗猛龙PLUS.js",
+   "series_name": "哈弗猛龙 PLUS",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-39",
+   "kw": "UNI-Z",
+   "js": "r13-39_UNIZ.js",
+   "series_name": "UNI-Z",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r13-40",
+   "kw": "山海T1",
+   "js": "r13-40_山海T1.js",
+   "series_name": "山海T1,山海T1 C-DM,自由者 C-DM",
+   "gap_rows": 1
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "kw": "尊界V680",
+ "kws": [
+  "尊界V680"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26303",
+ "series": {
+  "sid": "26303",
+  "name": "尊界V680",
+  "brand": "尊界"
+ },
+ "cars": [
+  {
+   "id": "260074",
+   "name": "尊享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "64.8万",
+   "vals": {
+    "length": "5320",
+    "wheelbase": "3290",
+    "curb_weight": "3070",
+    "cltc_recharge_mileage": "340",
+    "recharge_mileage": "",
+    "power_consumption": "24.7",
+    "battery_capacity": "65",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "390kW(530Ps)",
+    "total_electric_torque": "604",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "208",
+    "rear_electric_max_power": "230",
+    "rear_electric_max_torque": "396",
+    "sub_brand_name": "江淮汽车"
+   }
+  }
+ ]
+}

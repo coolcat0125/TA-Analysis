@@ -1,0 +1,141 @@
+{
+ "kw": "领克10",
+ "kws": [
+  "领克10"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26030",
+ "series": {
+  "sid": "26030",
+  "name": "领克10",
+  "brand": "领克"
+ },
+ "cars": [
+  {
+   "id": "259438",
+   "name": "701 长续航 Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "18.39万",
+   "vals": {
+    "length": "5050",
+    "wheelbase": "3005",
+    "curb_weight": "2148",
+    "cltc_recharge_mileage": "701",
+    "recharge_mileage": "",
+    "power_consumption": "13.2",
+    "battery_capacity": "77.17",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "300kW(408Ps)",
+    "total_electric_torque": "373",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "300",
+    "rear_electric_max_torque": "373",
+    "sub_brand_name": "领克"
+   }
+  },
+  {
+   "id": "256888",
+   "name": "701 长续航 Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "18.99万",
+   "vals": {
+    "length": "5050",
+    "wheelbase": "3005",
+    "curb_weight": "2148",
+    "cltc_recharge_mileage": "701",
+    "recharge_mileage": "",
+    "power_consumption": "13.2",
+    "battery_capacity": "77.17",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "300kW(408Ps)",
+    "total_electric_torque": "373",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "300",
+    "rear_electric_max_torque": "373",
+    "sub_brand_name": "领克"
+   }
+  },
+  {
+   "id": "256889",
+   "name": "816 超长续航 Ultra",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "20.59万",
+   "vals": {
+    "length": "5050",
+    "wheelbase": "3005",
+    "curb_weight": "2317",
+    "cltc_recharge_mileage": "816",
+    "recharge_mileage": "",
+    "power_consumption": "13.6",
+    "battery_capacity": "95",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "370kW(503Ps)",
+    "total_electric_torque": "535",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "370",
+    "rear_electric_max_torque": "535",
+    "sub_brand_name": "领克"
+   }
+  },
+  {
+   "id": "257125",
+   "name": "10+ 四驱运动版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "23.39万",
+   "vals": {
+    "length": "5050",
+    "wheelbase": "3005",
+    "curb_weight": "2287",
+    "cltc_recharge_mileage": "536",
+    "recharge_mileage": "",
+    "power_consumption": "17.1",
+    "battery_capacity": "77.17",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "680kW(925Ps)",
+    "total_electric_torque": "913",
+    "front_electric_max_power": "310",
+    "front_electric_max_torque": "378",
+    "rear_electric_max_power": "370",
+    "rear_electric_max_torque": "535",
+    "sub_brand_name": "领克"
+   }
+  },
+  {
+   "id": "259443",
+   "name": "10+ 四驱竞速版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "24.99万",
+   "vals": {
+    "length": "5050",
+    "wheelbase": "3005",
+    "curb_weight": "2287",
+    "cltc_recharge_mileage": "536",
+    "recharge_mileage": "",
+    "power_consumption": "17.1",
+    "battery_capacity": "77.17",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "680kW(925Ps)",
+    "total_electric_torque": "913",
+    "front_electric_max_power": "310",
+    "front_electric_max_torque": "378",
+    "rear_electric_max_power": "370",
+    "rear_electric_max_torque": "535",
+    "sub_brand_name": "领克"
+   }
+  }
+ ]
+}

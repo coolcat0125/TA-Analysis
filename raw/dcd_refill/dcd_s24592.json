@@ -1,0 +1,41 @@
+{
+ "kw": "理想i9",
+ "kws": [
+  "理想i9"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:00",
+ "series_url": "https://www.dongchedi.com/auto/series/24592",
+ "series": {
+  "sid": "24592",
+  "name": "理想i9",
+  "brand": "理想汽车"
+ },
+ "cars": [
+  {
+   "id": "239057",
+   "name": "Home",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "36.98万",
+   "vals": {
+    "length": "5225",
+    "wheelbase": "3168",
+    "curb_weight": "2745",
+    "cltc_recharge_mileage": "705",
+    "recharge_mileage": "",
+    "power_consumption": "15.1",
+    "battery_capacity": "101",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "400kW(544Ps)",
+    "total_electric_torque": "660",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "235",
+    "rear_electric_max_power": "250",
+    "rear_electric_max_torque": "425",
+    "sub_brand_name": "理想汽车"
+   }
+  }
+ ]
+}

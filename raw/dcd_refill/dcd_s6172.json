@@ -1,0 +1,66 @@
+{
+ "kw": "EX90",
+ "kws": [
+  "EX90"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:17",
+ "series_url": "https://www.dongchedi.com/auto/series/6172",
+ "series": {
+  "sid": "6172",
+  "name": "沃尔沃EX90",
+  "brand": "沃尔沃"
+ },
+ "cars": [
+  {
+   "id": "256176",
+   "name": "双电机四驱版 Plus 七座",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "79.59万",
+   "vals": {
+    "length": "5037",
+    "wheelbase": "2985",
+    "curb_weight": "2689",
+    "cltc_recharge_mileage": "756",
+    "recharge_mileage": "",
+    "power_consumption": "15.7",
+    "battery_capacity": "106",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "330kW(449Ps)",
+    "total_electric_torque": "670",
+    "front_electric_max_power": "130",
+    "front_electric_max_torque": "265",
+    "rear_electric_max_power": "200",
+    "rear_electric_max_torque": "405",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  },
+  {
+   "id": "256168",
+   "name": "双电机四驱高性能版 Ultra 七座",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "89.49万",
+   "vals": {
+    "length": "5037",
+    "wheelbase": "2985",
+    "curb_weight": "2710",
+    "cltc_recharge_mileage": "737",
+    "recharge_mileage": "",
+    "power_consumption": "16.1",
+    "battery_capacity": "106",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "500kW(680Ps)",
+    "total_electric_torque": "870",
+    "front_electric_max_power": "220",
+    "front_electric_max_torque": "390",
+    "rear_electric_max_power": "280",
+    "rear_electric_max_torque": "480",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  }
+ ]
+}

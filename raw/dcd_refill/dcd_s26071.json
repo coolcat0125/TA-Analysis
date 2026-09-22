@@ -1,0 +1,116 @@
+{
+ "kw": "传祺越7",
+ "kws": [
+  "传祺越7"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26071",
+ "series": {
+  "sid": "26071",
+  "name": "传祺越7",
+  "brand": "广汽传祺"
+ },
+ "cars": [
+  {
+   "id": "262730",
+   "name": "两驱Pro版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "4999",
+    "wheelbase": "2900",
+    "curb_weight": "2330",
+    "cltc_recharge_mileage": "161",
+    "recharge_mileage": "116",
+    "power_consumption": "20.6",
+    "battery_capacity": "28.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "205kW(279Ps)",
+    "total_electric_torque": "360",
+    "front_electric_max_power": "205",
+    "front_electric_max_torque": "360",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "广汽传祺"
+   }
+  },
+  {
+   "id": "258729",
+   "name": "两驱Max版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "4999",
+    "wheelbase": "2900",
+    "curb_weight": "2330",
+    "cltc_recharge_mileage": "261",
+    "recharge_mileage": "189",
+    "power_consumption": "22.6",
+    "battery_capacity": "45.975",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "205kW(279Ps)",
+    "total_electric_torque": "360",
+    "front_electric_max_power": "205",
+    "front_electric_max_torque": "360",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "广汽传祺"
+   }
+  },
+  {
+   "id": "262731",
+   "name": "四驱Max版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5045",
+    "wheelbase": "2900",
+    "curb_weight": "2510",
+    "cltc_recharge_mileage": "259",
+    "recharge_mileage": "188",
+    "power_consumption": "23.9",
+    "battery_capacity": "45.975",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "425kW(578Ps)",
+    "total_electric_torque": "745",
+    "front_electric_max_power": "205",
+    "front_electric_max_torque": "360",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "385",
+    "sub_brand_name": "广汽传祺"
+   }
+  },
+  {
+   "id": "258013",
+   "name": "四驱Ultra版",
+   "year": "2026",
+   "sale_status": 3,
+   "official_price": "暂无报价",
+   "vals": {
+    "length": "5045",
+    "wheelbase": "2900",
+    "curb_weight": "2510",
+    "cltc_recharge_mileage": "259",
+    "recharge_mileage": "188",
+    "power_consumption": "23.9",
+    "battery_capacity": "45.975",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "425kW(578Ps)",
+    "total_electric_torque": "745",
+    "front_electric_max_power": "205",
+    "front_electric_max_torque": "360",
+    "rear_electric_max_power": "220",
+    "rear_electric_max_torque": "385",
+    "sub_brand_name": "广汽传祺"
+   }
+  }
+ ]
+}

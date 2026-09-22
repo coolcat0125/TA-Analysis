@@ -16,8 +16,8 @@
       "电池容量(kWh)": 1,
       "电池能量密度(Wh/kg)": 12
      },
-     "sid": null,
-     "ok": false
+     "sid": "10163",
+     "ok": true
     },
     {
      "kw": "欧拉R1",
@@ -32,8 +32,8 @@
       "轴距(mm)": 8,
       "车长(mm)": 8
      },
-     "sid": null,
-     "ok": false
+     "sid": "2911",
+     "ok": true
     },
     {
      "kw": "瑞驰 EC75",
@@ -49,8 +49,8 @@
       "后电机功率/扭矩": 10,
       "车长(mm)": 10
      },
-     "sid": null,
-     "ok": false
+     "sid": "9255",
+     "ok": true
     },
     {
      "kw": "菱智M5EV",
@@ -67,8 +67,8 @@
       "前电机功率/扭矩": 5,
       "百公里电耗(kWh/100km)": 3
      },
-     "sid": null,
-     "ok": false
+     "sid": "1793",
+     "ok": true
     },
     {
      "kw": "比亚迪唐",
@@ -90,8 +90,585 @@
      "ok": true
     }
    ],
-   "status": "planned",
-   "created": "2026-09-21 23:39:25"
+   "status": "applied",
+   "created": "2026-09-21 23:39:25",
+   "ingested": {
+    "found": [
+     {
+      "kw": "V919",
+      "file": "dcd_s10163.json"
+     },
+     {
+      "kw": "瑞驰 EC75",
+      "file": "dcd_s9255.json"
+     },
+     {
+      "kw": "菱智M5EV",
+      "file": "dcd_s1793.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "欧拉R1",
+      "file": null
+     },
+     {
+      "kw": "比亚迪唐",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:19:32"
+   },
+   "applied": {
+    "green": 136,
+    "time": "2026-09-22 20:59:22",
+    "cells": [
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6503AABBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SC6553AAABEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SC6553AAABEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6553AAABEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SC6558AAABBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SC6558AAABBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6558AAABBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SC6558AAACBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SC6558AAACBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6558AAACBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SC6558AAADBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SC6558AAADBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6558AAADBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SC6508AAABBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SC6508AAABBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6508AAABBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SC6508AAAFBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SC6508AAAFBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6508AAAFBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SC6558AAAJBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SC6558AAAJBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6558AAAJBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SC6558AAAKBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SC6558AAAKBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6558AAAKBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SC6558AAALBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SC6558AAALBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6558AAALBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SC6558AAAMBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SC6558AAAMBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6558AAAMBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SC6558AAANBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SC6558AAANBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6558AAANBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SC6558AAAQBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SC6558AAAQBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6558AAAQBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000ZM00EBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000ZM05ABEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000ZM00FBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000ZM02FBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7000ZM02DBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7000ZM02DBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000ZM02DBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000ZM02CBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7000ZM00ABEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7000ZM00ABEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000ZM00ABEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7000ZM00BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7000ZM00BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000ZM00BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7000ZM01BBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7000ZM01BBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000ZM01BBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7000ZM01BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7000ZM01BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000ZM01BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7000ZM01CBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7000ZM01CBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000ZM01CBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7000ZM02ABEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7000ZM02ABEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000ZM02ABEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7000ZM03BBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7000ZM03BBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DXK6510AC1BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DXK6510AC1BEV"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "DXK6510AC1BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DXK6510AC1BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DXK6510AC4BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DXK6510AC4BEV"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "DXK6510AC4BEV"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "DXK6510AC4BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DXK6510AC4BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "DXK6510AC4BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DXK6510AC3BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DXK6510AC3BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DXK6510AC3BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "DXK6510AC3BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DXK6510AC5BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DXK6510AC5BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DXK6510AC5BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DXK6510AC6BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DXK6510AC6BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DXK6510AC6BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "DXK6510AC6BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DXK6510AC10BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DXK6510AC10BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DXK6510AC10BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "DXK6510AC10BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DXK6510AC11BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DXK6510AC11BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DXK6510AC11BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "DXK6510AC11BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DXK6510AC14BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DXK6510AC14BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DXK6510AC14BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "DXK6510AC14BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DXK6510AC8BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DXK6510AC8BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DXK6510AC8BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DXK6510AC15BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DXK6510AC15BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DXK6510AC15BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "DXK6510AC15BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DXK6520AC5BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DXK6520AC5BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DXK6520AC5BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "DXK6520AC5BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DXK6520AC6BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DXK6520AC6BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DXK6520AC6BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "DXK6520AC6BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "LZ6514MLANEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "LZ6514MLANEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LZ6514MLANEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "LZ6518MLAEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "LZ6518MLAEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LZ6518MLAEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "LZ6510NEB0EV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "LZ6510NEB0EV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "LZ6512MLANEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "LZ6512MLANEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "LZ6512MLANEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "LZ6513MLANEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "LZ6513MLANEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "LZ6513MLANEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "LZ6514MLAEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "LZ6514MLAEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "LZ6514MLAEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "LZ6516MLAEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "LZ6516MLAEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "LZ6516MLAEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "LZ6517MLAEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "LZ6517MLAEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "LZ6517MLAEV"
+     }
+    ]
+   }
   },
   "b02": {
    "id": "b02",
@@ -113,7 +690,8 @@
       "电机总功率/扭矩": 4
      },
      "sid": null,
-     "ok": false
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "乐福",
@@ -128,8 +706,8 @@
       "后电机功率/扭矩": 7,
       "车长(mm)": 7
      },
-     "sid": null,
-     "ok": false
+     "sid": "25148",
+     "ok": true
     },
     {
      "kw": "Hyper GT",
@@ -140,8 +718,8 @@
       "后电机功率/扭矩": 14,
       "车长(mm)": 14
      },
-     "sid": null,
-     "ok": false
+     "sid": "6311",
+     "ok": true
     },
     {
      "kw": "Hyper HT",
@@ -152,8 +730,8 @@
       "后电机功率/扭矩": 14,
       "车长(mm)": 14
      },
-     "sid": null,
-     "ok": false
+     "sid": "9345",
+     "ok": true
     },
     {
      "kw": "αS5",
@@ -169,12 +747,469 @@
       "电机总功率/扭矩": 3,
       "车长(mm)": 3
      },
-     "sid": null,
-     "ok": false
+     "sid": "169",
+     "ok": true
     }
    ],
-   "status": "planned",
-   "created": "2026-09-21 23:39:25"
+   "status": "applied",
+   "created": "2026-09-21 23:39:25",
+   "ingested": {
+    "found": [
+     {
+      "kw": "乐福",
+      "file": "dcd_s25148.json"
+     },
+     {
+      "kw": "Hyper GT",
+      "file": "dcd_s6311.json"
+     },
+     {
+      "kw": "Hyper HT",
+      "file": "dcd_s9345.json"
+     },
+     {
+      "kw": "αS5",
+      "file": "dcd_s169.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "ID.UNYX 与众06",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:19:34"
+   },
+   "applied": {
+    "green": 106,
+    "time": "2026-09-22 21:00:05",
+    "cells": [
+     {
+      "field": "电池类型",
+      "model": "BJ6521EVAA3"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BJ6491EVAA"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BJ6491EVAA"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BJ6521EVAA1"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BJ6521EVAA1"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "BJ6521EVAA1"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "BJ6521EVAA1"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BJ6521EVAA1"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BJ6521EVAA2"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BJ6521EVAA2"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "BJ6521EVAA2"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "BJ6521EVAA2"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BJ6521EVAA2"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BJ6491EVAA2"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BJ6491EVAA2"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BJ6491EVAA2"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BJ6521EVAA4"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BJ6521EVAA4"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BJ6521EVAA4"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BJ6521EVAA5"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BJ6521EVAA5"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BJ6521EVAA5"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM7000BEVE0B"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM7000BEVE0B"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM7000BEVE0B"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM7000BEVE0D"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM7000BEVE0D"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM7000BEVE0D"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM7000BEVE0E"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM7000BEVE0E"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM7000BEVE0E"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM7000BEVE0G"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM7000BEVE0G"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM7000BEVE0G"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM7000BEVE0J"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM7000BEVE0J"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM7000BEVE0J"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM7000BEVE0K"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM7000BEVE0K"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM7000BEVE0K"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM7000BEVE0A"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM7000BEVE0A"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM7000BEVE0A"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM7000BEVE0M"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM7000BEVE0M"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM7000BEVE0M"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC7000BEVE0A"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC7000BEVE0A"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC7000BEVE0A"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC7000BEVE0B"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC7000BEVE0B"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC7000BEVE0B"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC7000BEVE0D"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC7000BEVE0D"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC7000BEVE0D"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC7000BEVE0E"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC7000BEVE0E"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC7000BEVE0E"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC7000BEVE0G"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC7000BEVE0G"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC7000BEVE0G"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC7000BEVE0M"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC7000BEVE0M"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC7000BEVE0M"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM6490BEVH0C"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM6490BEVH0C"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM6490BEVH0C"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM6490BEVH0L"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM6490BEVH0L"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM6490BEVH0L"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM6490BEVH0G"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM6490BEVH0G"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM6490BEVH0G"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM6490BEVH0N"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM6490BEVH0N"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM6490BEVH0N"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM6490BEVH0Q"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM6490BEVH0Q"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM6490BEVH0Q"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM6490BEVH0R"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM6490BEVH0R"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM6490BEVH0R"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "GAM6490BEVH0U"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "GAM6490BEVH0U"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM6490BEVH0U"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC6490BEVH0C"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC6490BEVH0C"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC6490BEVH0C"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC6490BEVH0G"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC6490BEVH0G"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC6490BEVH0G"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC6490BEVH0L"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC6490BEVH0L"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC6490BEVH0L"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC6490BEVH0N"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC6490BEVH0N"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC6490BEVH0N"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC6490BEVH0Q"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC6490BEVH0Q"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC6490BEVH0Q"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC6490BEVH0R"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC6490BEVH0R"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC6490BEVH0R"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC6490BEVH0U"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC6490BEVH0U"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC6490BEVH0U"
+     }
+    ]
+   }
   },
   "b03": {
    "id": "b03",
@@ -188,8 +1223,8 @@
       "后电机功率/扭矩": 12,
       "车长(mm)": 12
      },
-     "sid": null,
-     "ok": false
+     "sid": "24690",
+     "ok": true
     },
     {
      "kw": "哪吒U",
@@ -215,7 +1250,8 @@
       "前电机功率/扭矩": 3
      },
      "sid": null,
-     "ok": false
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "ID.UNYX 与众07",
@@ -232,7 +1268,8 @@
       "车长(mm)": 4
      },
      "sid": null,
-     "ok": false
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "eQ5",
@@ -249,12 +1286,109 @@
       "百公里电耗(kWh/100km)": 2,
       "前电机功率/扭矩": 3
      },
-     "sid": null,
-     "ok": false
+     "sid": "4384",
+     "ok": true
     }
    ],
-   "status": "planned",
-   "created": "2026-09-21 23:39:25"
+   "status": "applied",
+   "created": "2026-09-21 23:39:25",
+   "ingested": {
+    "found": [
+     {
+      "kw": "聚星",
+      "file": "dcd_s24690.json"
+     },
+     {
+      "kw": "eQ5",
+      "file": "dcd_s4384.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "哪吒U",
+      "file": null
+     },
+     {
+      "kw": "SV",
+      "file": null
+     },
+     {
+      "kw": "ID.UNYX 与众07",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:19:34"
+   },
+   "applied": {
+    "green": 16,
+    "time": "2026-09-22 21:00:49",
+    "cells": [
+     {
+      "field": "车长(mm)",
+      "model": "NEQ6460BEVS61E"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "NEQ6460BEVS61E"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "NEQ6460BEVS61F"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "NEQ6460BEVS61F"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "NEQ6460BEVS61A"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "NEQ6460BEVS61A"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "NEQ6460BEVS61A"
+     },
+     {
+      "field": "电池类型",
+      "model": "NEQ6460BEVS61A"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "NEQ6460BEVS61B"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "NEQ6460BEVS61B"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "NEQ6460BEVS61B"
+     },
+     {
+      "field": "电池类型",
+      "model": "NEQ6460BEVS61B"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "NEQ6460BEVS61D"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "NEQ6460BEVS61D"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "NEQ6460BEVS61D"
+     },
+     {
+      "field": "电池类型",
+      "model": "NEQ6460BEVS61D"
+     }
+    ]
+   }
   },
   "b04": {
    "id": "b04",
@@ -274,7 +1408,8 @@
       "车长(mm)": 4
      },
      "sid": null,
-     "ok": false
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "特斯拉 MODEL Y",
@@ -292,8 +1427,8 @@
       "电机总功率/扭矩": 2,
       "车长(mm)": 2
      },
-     "sid": null,
-     "ok": false
+     "sid": "4363",
+     "ok": true
     },
     {
      "kw": "比亚迪e3",
@@ -307,8 +1442,8 @@
       "电池能量密度(Wh/kg)": 6,
       "前电机功率/扭矩": 6
      },
-     "sid": null,
-     "ok": false
+     "sid": "4076",
+     "ok": true
     },
     {
      "kw": "EX90",
@@ -320,8 +1455,8 @@
       "车长(mm)": 5,
       "前电机功率/扭矩": 8
      },
-     "sid": null,
-     "ok": false
+     "sid": "6172",
+     "ok": true
     },
     {
      "kw": "ELEXIO",
@@ -335,12 +1470,413 @@
       "后电机功率/扭矩": 5,
       "车长(mm)": 5
      },
-     "sid": null,
-     "ok": false
+     "sid": "25427",
+     "ok": true
     }
    ],
-   "status": "planned",
-   "created": "2026-09-21 23:39:25"
+   "status": "applied",
+   "created": "2026-09-21 23:39:25",
+   "ingested": {
+    "found": [
+     {
+      "kw": "特斯拉 MODEL Y",
+      "file": "dcd_s4363.json"
+     },
+     {
+      "kw": "比亚迪e3",
+      "file": "dcd_s4076.json"
+     },
+     {
+      "kw": "EX90",
+      "file": "dcd_s6172.json"
+     },
+     {
+      "kw": "ELEXIO",
+      "file": "dcd_s25427.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "V8",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:19:35"
+   },
+   "applied": {
+    "green": 92,
+    "time": "2026-09-22 21:01:32",
+    "cells": [
+     {
+      "field": "后电机功率/扭矩",
+      "model": "TSL6480BEVAR5"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "TSL6480BEVAR6"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "TSL6480BEVBR0"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "TSL6480BEVBA6"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "TSL6480BEVBA6"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "TSL6480BEVBA6"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "TSL6500BEVBA0"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "TSL6500BEVBA0"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "TSL6480BEVBA0"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "TSL6480BEVBA0"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "TSL6480BEVBA0"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "TSL6480BEVBA0"
+     },
+     {
+      "field": "电池类型",
+      "model": "TSL6480BEVBA0"
+     },
+     {
+      "field": "电机总功率/扭矩",
+      "model": "TSL6480BEVBA0"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "TSL6480BEVBA0"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "TSL6480BEVBA1"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "TSL6480BEVBA1"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "TSL6480BEVBA1"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "TSL6480BEVBA1"
+     },
+     {
+      "field": "电池类型",
+      "model": "TSL6480BEVBA1"
+     },
+     {
+      "field": "电机总功率/扭矩",
+      "model": "TSL6480BEVBA1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "TSL6480BEVBA1"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "BYD7002BEVA11"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "BYD7002BEVA11"
+     },
+     {
+      "field": "电池类型",
+      "model": "BYD7002BEVA11"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7002BEVA11"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "BYD7002BEVA10"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "BYD7002BEVA10"
+     },
+     {
+      "field": "电池类型",
+      "model": "BYD7002BEVA10"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7002BEVA10"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "BYD7002BEVA9"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "BYD7002BEVA9"
+     },
+     {
+      "field": "电池类型",
+      "model": "BYD7002BEVA9"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7002BEVA9"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "BYD7002BEVA5"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "BYD7002BEVA5"
+     },
+     {
+      "field": "电池类型",
+      "model": "BYD7002BEVA5"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7002BEVA5"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "BYD7002BEVA6"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "BYD7002BEVA6"
+     },
+     {
+      "field": "电池类型",
+      "model": "BYD7002BEVA6"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7002BEVA6"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "BYD7002BEVA7"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "BYD7002BEVA7"
+     },
+     {
+      "field": "电池类型",
+      "model": "BYD7002BEVA7"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7002BEVA7"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "VCC6505F03TBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "VCC6505F03TBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCC6505F03TBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "VCC6505F04TBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "VCC6505F04TBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCC6505F04TBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "VCC6505F05TBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "VCC6505F05TBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCC6505F05TBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "VCC6505F06TBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "VCC6505F06TBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCC6505F06TBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "VCC6505F07TBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "VCC6505F07TBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCC6505F07TBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "VCD6505F14TBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCD6505F14TBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "VCD6505F15TBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCD6505F15TBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "VCD6505F16TBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCD6505F16TBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "VCD6505F17TBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCD6505F17TBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "VCD6505F18TBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCD6505F18TBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BH6460BEVMLA"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BH6460BEVMLA"
+     },
+     {
+      "field": "电池类型",
+      "model": "BH6460BEVMLA"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BH6460BEVMLA"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BH6461BEVMLA"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BH6461BEVMLA"
+     },
+     {
+      "field": "电池类型",
+      "model": "BH6461BEVMLA"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BH6461BEVMLA"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BH6462BEVMLA"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BH6462BEVMLA"
+     },
+     {
+      "field": "电池类型",
+      "model": "BH6462BEVMLA"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BH6462BEVMLA"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BH6463BEVMLA"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BH6463BEVMLA"
+     },
+     {
+      "field": "电池类型",
+      "model": "BH6463BEVMLA"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BH6463BEVMLA"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BH6464BEVMLB"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BH6464BEVMLB"
+     },
+     {
+      "field": "电池类型",
+      "model": "BH6464BEVMLB"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BH6464BEVMLB"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BH6464BEVMLB"
+     }
+    ]
+   }
   },
   "b05": {
    "id": "b05",
@@ -356,7 +1892,8 @@
       "整备质量(kg)": 1
      },
      "sid": null,
-     "ok": false
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "eπ008",
@@ -376,7 +1913,8 @@
       "车长(mm)": 2
      },
      "sid": null,
-     "ok": false
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "欧拉iQ",
@@ -390,8 +1928,8 @@
       "前电机功率/扭矩": 5,
       "车长(mm)": 5
      },
-     "sid": null,
-     "ok": false
+     "sid": "2910",
+     "ok": true
     },
     {
      "kw": "EV90",
@@ -406,8 +1944,8 @@
       "电池容量(kWh)": 1,
       "电池能量密度(Wh/kg)": 1
      },
-     "sid": null,
-     "ok": false
+     "sid": "4708",
+     "ok": true
     },
     {
      "kw": "智界R7",
@@ -423,12 +1961,225 @@
       "电机总功率/扭矩": 1,
       "车长(mm)": 1
      },
-     "sid": null,
-     "ok": false
+     "sid": "10180",
+     "ok": true
     }
    ],
-   "status": "planned",
-   "created": "2026-09-21 23:39:25"
+   "status": "applied",
+   "created": "2026-09-21 23:39:25",
+   "ingested": {
+    "found": [
+     {
+      "kw": "欧拉iQ",
+      "file": "dcd_s2910.json"
+     },
+     {
+      "kw": "EV90",
+      "file": "dcd_s4708.json"
+     },
+     {
+      "kw": "智界R7",
+      "file": "dcd_s10180.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "方程豹钛7",
+      "file": null
+     },
+     {
+      "kw": "eπ008",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:19:38"
+   },
+   "applied": {
+    "green": 45,
+    "time": "2026-09-22 21:02:11",
+    "cells": [
+     {
+      "field": "车长(mm)",
+      "model": "CC7001CE03BBEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7001CE03BBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7001CE03BBEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7001CE02ABEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7001CE02ABEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "CC7001CE02ABEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7001CE02ABEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7001CE03ABEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7001CE03ABEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7001CE03ABEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7001CE03BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7001CE03BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7001CE03BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7001CE04BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7001CE04BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7001CE04BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CC7001CE05ABEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CC7001CE05ABEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7001CE05ABEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SH6591J2BEV-3"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SH6591J2BEV-3"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SH6551J2BEV-4"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SH6551J2BEV-4"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SH6552J2BEV-4"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SH6552J2BEV-4"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SH6553J2BEV-5"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SH6553J2BEV-5"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6500BEVEHY"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6500BEVEHY1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6500BEVEHY2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6500BEVEHY3"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SQR6500REEVEHY1"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SQR6500REEVEHY1"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SQR6500REEVEHY2"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SQR6500REEVEHY3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6500BEVEHY5"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SQR6500BEVEHY8"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6500BEVEHY6"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6500BEVEHY7"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "SQR6500BEVEHY9"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "SQR6500BEVEHY9"
+     },
+     {
+      "field": "百公里电耗(kWh/100km)",
+      "model": "SQR6500BEVEHY9"
+     },
+     {
+      "field": "电池类型",
+      "model": "SQR6500BEVEHY9"
+     },
+     {
+      "field": "电机总功率/扭矩",
+      "model": "SQR6500BEVEHY9"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6500BEVEHY9"
+     }
+    ]
+   }
   },
   "b06": {
    "id": "b06",
@@ -443,8 +2194,8 @@
       "前电机功率/扭矩": 6,
       "后电机功率/扭矩": 10
      },
-     "sid": null,
-     "ok": false
+     "sid": "25683",
+     "ok": true
     },
     {
      "kw": "αT7",
@@ -461,7 +2212,8 @@
       "车长(mm)": 2
      },
      "sid": null,
-     "ok": false
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "星钽5X",
@@ -478,7 +2230,8 @@
       "车长(mm)": 3
      },
      "sid": null,
-     "ok": false
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "G3i",
@@ -490,7 +2243,8 @@
       "车长(mm)": 9
      },
      "sid": null,
-     "ok": false
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "HYCAN Z03",
@@ -502,11 +2256,44 @@
       "车长(mm)": 9
      },
      "sid": null,
-     "ok": false
+     "ok": false,
+     "reject_reason": "no_candidate"
     }
    ],
-   "status": "planned",
-   "created": "2026-09-21 23:39:25"
+   "status": "applied",
+   "created": "2026-09-21 23:39:25",
+   "ingested": {
+    "found": [
+     {
+      "kw": "锐胜M8",
+      "file": "dcd_s25683.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "αT7",
+      "file": null
+     },
+     {
+      "kw": "星钽5X",
+      "file": null
+     },
+     {
+      "kw": "G3i",
+      "file": null
+     },
+     {
+      "kw": "HYCAN Z03",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:19:38"
+   },
+   "applied": {
+    "green": 0,
+    "time": "2026-09-22 21:02:52",
+    "cells": []
+   }
   },
   "b07": {
    "id": "b07",
@@ -522,8 +2309,8 @@
       "电池能量密度(Wh/kg)": 5,
       "前电机功率/扭矩": 1
      },
-     "sid": null,
-     "ok": false
+     "sid": "9118",
+     "ok": true
     },
     {
      "kw": "C16",
@@ -534,8 +2321,8 @@
       "电池能量密度(Wh/kg)": 5,
       "前电机功率/扭矩": 3
      },
-     "sid": null,
-     "ok": false
+     "sid": "10125",
+     "ok": true
     },
     {
      "kw": "哪吒V",
@@ -550,8 +2337,8 @@
       "百公里电耗(kWh/100km)": 1,
       "前电机功率/扭矩": 1
      },
-     "sid": null,
-     "ok": false
+     "sid": "4629",
+     "ok": true
     },
     {
      "kw": "eQ1",
@@ -565,8 +2352,8 @@
       "电池能量密度(Wh/kg)": 4,
       "百公里电耗(kWh/100km)": 4
      },
-     "sid": null,
-     "ok": false
+     "sid": "1101",
+     "ok": true
     },
     {
      "kw": "欧拉好猫",
@@ -583,8 +2370,261 @@
      "ok": true
     }
    ],
-   "status": "planned",
-   "created": "2026-09-21 23:39:25"
+   "status": "applied",
+   "created": "2026-09-21 23:39:25",
+   "ingested": {
+    "found": [
+     {
+      "kw": "LS6",
+      "file": "dcd_s9118.json"
+     },
+     {
+      "kw": "C16",
+      "file": "dcd_s10125.json"
+     },
+     {
+      "kw": "哪吒V",
+      "file": "dcd_s4629.json"
+     },
+     {
+      "kw": "eQ1",
+      "file": "dcd_s1101.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "欧拉好猫",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:19:39"
+   },
+   "applied": {
+    "green": 55,
+    "time": "2026-09-22 21:03:35",
+    "cells": [
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEV4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEV5"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEV6"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEV7"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEV8"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEV9"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEVA"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEVB"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEVC"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEVE"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEVF"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LFSHEV1"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "CSA6492LFSHEV2"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "CSA6492LFSHEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LFSHEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEVG"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEVH"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LBEVK"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LFSHEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6492LFSHEV4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6490SHEVC16B"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6490SHEVC16D"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6490BEVC16C"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6490BEVC16E"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6490SHEVC16G"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6490SHEVC16H"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6490SHEVC16F"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6470REEVC10S"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6470REEVC10T"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6490REEVC16P"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6490REEVC16R"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6490REEVC16S"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "THZ7001BEVS115"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "THZ7001BEVS115"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "NEQ7000BEVJ72S"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "NEQ7000BEVJ72S"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJ72S"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "NEQ7000BEVJ72T"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "NEQ7000BEVJ72T"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJ72T"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "NEQ7000BEVJ72V"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "NEQ7000BEVJ72V"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJ72V"
+     },
+     {
+      "field": "电池类型",
+      "model": "NEQ7000BEVJ728"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "NEQ7000BEVJ72F"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "NEQ7000BEVJ72F"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "NEQ7000BEVJ72P"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "NEQ7000BEVJ72P"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "NEQ7000BEVJ72R"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "NEQ7000BEVJ72R"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "NEQ7000BEVJ72E"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "NEQ7000BEVJ72E"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC7000BJ01CBEV"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "CC7000BJ02ABEV"
+     }
+    ]
+   }
   },
   "b08": {
    "id": "b08",
@@ -601,7 +2641,8 @@
       "电池容量(kWh)": 1
      },
      "sid": null,
-     "ok": false
+     "ok": false,
+     "reject_reason": "no_candidate"
     },
     {
      "kw": "风神E70",
@@ -615,8 +2656,8 @@
       "电池能量密度(Wh/kg)": 2,
       "前电机功率/扭矩": 2
      },
-     "sid": null,
-     "ok": false
+     "sid": "1655",
+     "ok": true
     },
     {
      "kw": "比亚迪海豹06",
@@ -627,8 +2668,8 @@
       "前电机功率/扭矩": 6,
       "电机总功率/扭矩": 2
      },
-     "sid": null,
-     "ok": false
+     "sid": "9824",
+     "ok": true
     },
     {
      "kw": "AION LX",
@@ -641,8 +2682,8 @@
       "前电机功率/扭矩": 5,
       "后电机功率/扭矩": 5
      },
-     "sid": null,
-     "ok": false
+     "sid": "3503",
+     "ok": true
     },
     {
      "kw": "QQ冰淇淋",
@@ -652,12 +2693,201 @@
       "后电机功率/扭矩": 19,
       "电池类型": 5
      },
-     "sid": null,
-     "ok": false
+     "sid": "5257",
+     "ok": true
     }
    ],
-   "status": "planned",
-   "created": "2026-09-21 23:39:25"
+   "status": "applied",
+   "created": "2026-09-21 23:39:25",
+   "ingested": {
+    "found": [
+     {
+      "kw": "风神E70",
+      "file": "dcd_s1655.json"
+     },
+     {
+      "kw": "比亚迪海豹06",
+      "file": "dcd_s9824.json"
+     },
+     {
+      "kw": "AION LX",
+      "file": "dcd_s3503.json"
+     },
+     {
+      "kw": "QQ冰淇淋",
+      "file": "dcd_s5257.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "小虎",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:19:42"
+   },
+   "applied": {
+    "green": 39,
+    "time": "2026-09-22 21:04:13",
+    "cells": [
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "DFM7001G1F2BEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "DFM7001G1F3BEV"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "DFM7001G1F3BEV"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "DFM7001G1F3BEV"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "DFM7001G1F3BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DFM7001G1F3BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "DFM7001G1F3BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7150ADHEVA1"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "BYD7150BW6HEV1"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7150ADHEV10"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "GAM6480BEVB0C"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM6480BEVB0C"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "GAM6480BEVB0E"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM6480BEVB0E"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "GAM6480BEVB0J"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM6480BEVB0J"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "GAM6480BEVB0K"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM6480BEVB0K"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "GAM6480BEVB0L"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAM6480BEVB0L"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11A"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11B"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11C"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11G"
+     },
+     {
+      "field": "电池类型",
+      "model": "NEQ7000BEVJH11H"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11H"
+     },
+     {
+      "field": "电池类型",
+      "model": "NEQ7000BEVJH11J"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11K"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11L"
+     },
+     {
+      "field": "电池类型",
+      "model": "NEQ7000BEVJH11M"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11M"
+     },
+     {
+      "field": "电池类型",
+      "model": "NEQ7000BEVJH11N"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11N"
+     },
+     {
+      "field": "电池类型",
+      "model": "NEQ7000BEVJH11P"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11Q"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11T"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11U"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11W"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVJH11X"
+     }
+    ]
+   }
   },
   "r01": {
    "id": "r01",
@@ -1753,6 +3983,6141 @@
      {
       "field": "整备质量(kg)",
       "model": "LZ6480MME3EV"
+     }
+    ]
+   }
+  },
+  "r09": {
+   "id": "r09",
+   "status": "applied",
+   "created": "2026-09-22 16:27:28",
+   "series": [
+    {
+     "kw": "埃安i60",
+     "series_name": "埃安i60",
+     "gap_rows": 15,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "前电机功率/扭矩": 3,
+      "后电机功率/扭矩": 3,
+      "轴距(mm)": 2,
+      "电池类型": 2,
+      "车长(mm)": 2
+     },
+     "batches": {
+      "407": 3,
+      "408": 12
+     },
+     "sid": "25643",
+     "ok": true
+    },
+    {
+     "kw": "腾势D9",
+     "series_name": "腾势D9",
+     "gap_rows": 14,
+     "fields": {
+      "前电机功率/扭矩": 6,
+      "后电机功率/扭矩": 3,
+      "电池能量密度(Wh/kg)": 5
+     },
+     "batches": {
+      "404": 3,
+      "405": 4,
+      "407": 2,
+      "408": 1,
+      "409": 4
+     },
+     "sid": "5843",
+     "ok": true
+    },
+    {
+     "kw": "东风奕派M8",
+     "series_name": "东风奕派M8",
+     "gap_rows": 14,
+     "fields": {
+      "整备质量(kg)": 2,
+      "纯电续航里程(km)": 2,
+      "电池容量(kWh)": 2,
+      "电池类型": 2,
+      "电池能量密度(Wh/kg)": 2,
+      "百公里电耗(kWh/100km)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "407": 14
+     },
+     "sid": "26101",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪海狮05",
+     "series_name": "比亚迪海狮05",
+     "gap_rows": 14,
+     "fields": {
+      "轴距(mm)": 3,
+      "前电机功率/扭矩": 3,
+      "车长(mm)": 3,
+      "后电机功率/扭矩": 3,
+      "电池能量密度(Wh/kg)": 2
+     },
+     "batches": {
+      "403": 11,
+      "404": 1,
+      "405": 2
+     },
+     "ok": true,
+     "sid": "6068"
+    },
+    {
+     "kw": "小鹏G9L",
+     "series_name": "小鹏G9L",
+     "gap_rows": 13,
+     "fields": {
+      "电池能量密度(Wh/kg)": 6,
+      "后电机功率/扭矩": 6,
+      "整备质量(kg)": 1
+     },
+     "batches": {
+      "407": 10,
+      "409": 3
+     },
+     "sid": "26151",
+     "ok": true
+    },
+    {
+     "kw": "福瑞通",
+     "series_name": "福瑞通",
+     "gap_rows": 12,
+     "fields": {
+      "轴距(mm)": 2,
+      "电池类型": 2,
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2,
+      "车长(mm)": 2
+     },
+     "batches": {
+      "405": 6,
+      "408": 6
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "问界M9",
+     "series_name": "问界M9",
+     "gap_rows": 12,
+     "fields": {
+      "电池能量密度(Wh/kg)": 4,
+      "前电机功率/扭矩": 4,
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "405": 6,
+      "407": 3,
+      "408": 3
+     },
+     "sid": "6325",
+     "ok": true
+    },
+    {
+     "kw": "岚图泰山X8",
+     "series_name": "岚图泰山X8",
+     "gap_rows": 12,
+     "fields": {
+      "电池能量密度(Wh/kg)": 4,
+      "前电机功率/扭矩": 4,
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "407": 12
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "07L",
+     "series_name": "07L",
+     "gap_rows": 12,
+     "fields": {
+      "电池能量密度(Wh/kg)": 5,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 5
+     },
+     "batches": {
+      "407": 12
+     },
+     "sid": "26154",
+     "ok": true
+    },
+    {
+     "kw": "D19",
+     "series_name": "D19",
+     "gap_rows": 12,
+     "fields": {
+      "前电机功率/扭矩": 6,
+      "后电机功率/扭矩": 6
+     },
+     "batches": {
+      "403": 4,
+      "404": 2,
+      "405": 4,
+      "407": 2
+     },
+     "sid": "25718",
+     "ok": true
+    },
+    {
+     "kw": "IONIQ",
+     "series_name": "IONIQ,IONIQ V,艾尼氪,艾尼氪V",
+     "gap_rows": 11,
+     "fields": {
+      "电池能量密度(Wh/kg)": 4,
+      "后电机功率/扭矩": 3,
+      "轴距(mm)": 1,
+      "电池类型": 1,
+      "前电机功率/扭矩": 1,
+      "车长(mm)": 1
+     },
+     "batches": {
+      "407": 11
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "比亚迪海狮08",
+     "series_name": "比亚迪海狮08",
+     "gap_rows": 11,
+     "fields": {
+      "电池能量密度(Wh/kg)": 5,
+      "后电机功率/扭矩": 5,
+      "前电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 11
+     },
+     "ok": true,
+     "sid": "6068"
+    },
+    {
+     "kw": "比亚迪海豹08",
+     "series_name": "比亚迪海豹08",
+     "gap_rows": 11,
+     "fields": {
+      "电池能量密度(Wh/kg)": 5,
+      "后电机功率/扭矩": 5,
+      "前电机功率/扭矩": 1
+     },
+     "batches": {
+      "405": 4,
+      "406": 7
+     },
+     "ok": true,
+     "sid": "5579"
+    },
+    {
+     "kw": "启境GT7",
+     "series_name": "启境GT7",
+     "gap_rows": 9,
+     "fields": {
+      "电池能量密度(Wh/kg)": 4,
+      "后电机功率/扭矩": 4,
+      "前电机功率/扭矩": 1
+     },
+     "batches": {
+      "406": 4,
+      "409": 5
+     },
+     "sid": "25732",
+     "ok": true
+    },
+    {
+     "kw": "V8X;V8X蓝山",
+     "series_name": "V8X;V8X蓝山",
+     "gap_rows": 9,
+     "fields": {
+      "电池能量密度(Wh/kg)": 4,
+      "后电机功率/扭矩": 4,
+      "前电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 6,
+      "409": 3
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "腾势Z",
+     "series_name": "腾势Z",
+     "gap_rows": 9,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "前电机功率/扭矩": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "408": 9
+     },
+     "sid": "25440",
+     "ok": true
+    },
+    {
+     "kw": "旅行者",
+     "series_name": "旅行者,旅行者7,山海T2",
+     "gap_rows": 9,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "前电机功率/扭矩": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "408": 9
+     },
+     "sid": "5563",
+     "ok": true
+    },
+    {
+     "kw": "Q06E",
+     "series_name": "Q06E",
+     "gap_rows": 9,
+     "fields": {
+      "电池能量密度(Wh/kg)": 4,
+      "后电机功率/扭矩": 5
+     },
+     "batches": {
+      "406": 9
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "小鹏GX",
+     "series_name": "小鹏GX",
+     "gap_rows": 9,
+     "fields": {
+      "后电机功率/扭矩": 6,
+      "前电机功率/扭矩": 3
+     },
+     "batches": {
+      "404": 9
+     },
+     "sid": "25621",
+     "ok": true
+    },
+    {
+     "kw": "岚图梦想家9",
+     "series_name": "岚图梦想家9",
+     "gap_rows": 8,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "电机总功率/扭矩": 1,
+      "后电机功率/扭矩": 2,
+      "整备质量(kg)": 1
+     },
+     "batches": {
+      "409": 8
+     },
+     "sid": "5924",
+     "ok": true
+    },
+    {
+     "kw": "小米澎程N70",
+     "series_name": "小米澎程N70",
+     "gap_rows": 8,
+     "fields": {
+      "整备质量(kg)": 2,
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "409": 8
+     },
+     "sid": "26377",
+     "ok": true
+    },
+    {
+     "kw": "A06",
+     "series_name": "A06",
+     "gap_rows": 8,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "电机总功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "409": 8
+     },
+     "ok": false,
+     "reject_reason": "name_mismatch_or_brand_conflict"
+    },
+    {
+     "kw": "M6",
+     "series_name": "M6",
+     "gap_rows": 8,
+     "fields": {
+      "电池能量密度(Wh/kg)": 4,
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "409": 8
+     },
+     "ok": false,
+     "reject_reason": "name_mismatch_or_brand_conflict"
+    },
+    {
+     "kw": "ID.UNYX 与众09",
+     "series_name": "ID.UNYX 与众09",
+     "gap_rows": 8,
+     "fields": {
+      "电池类型": 2,
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "409": 8
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "ID.ERA 8X",
+     "series_name": "ID.ERA 8X",
+     "gap_rows": 8,
+     "fields": {
+      "电池能量密度(Wh/kg)": 4,
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "408": 8
+     },
+     "sid": "26292",
+     "ok": true
+    },
+    {
+     "kw": "M9 Plus",
+     "series_name": "M9 Plus",
+     "gap_rows": 8,
+     "fields": {
+      "整备质量(kg)": 1,
+      "轴距(mm)": 1,
+      "电池容量(kWh)": 1,
+      "电池类型": 1,
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1,
+      "车长(mm)": 1
+     },
+     "batches": {
+      "408": 8
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "岚图追光S",
+     "series_name": "岚图追光S",
+     "gap_rows": 8,
+     "fields": {
+      "电池能量密度(Wh/kg)": 4,
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "407": 6,
+      "408": 2
+     },
+     "sid": "26147",
+     "ok": true
+    },
+    {
+     "kw": "A10",
+     "series_name": "A10",
+     "gap_rows": 8,
+     "fields": {
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 4,
+      "电池能量密度(Wh/kg)": 2
+     },
+     "batches": {
+      "403": 4,
+      "406": 2,
+      "407": 2
+     },
+     "sid": "9267",
+     "ok": true
+    },
+    {
+     "kw": "A05",
+     "series_name": "A05",
+     "gap_rows": 8,
+     "fields": {
+      "电池能量密度(Wh/kg)": 4,
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "405": 4,
+      "406": 2,
+      "407": 2
+     },
+     "ok": false,
+     "reject_reason": "name_mismatch_or_brand_conflict"
+    },
+    {
+     "kw": "宝马iX3",
+     "series_name": "宝马iX3",
+     "gap_rows": 8,
+     "fields": {
+      "电池容量(kWh)": 2,
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "406": 8
+     },
+     "sid": "4538",
+     "ok": true
+    },
+    {
+     "kw": "MG 4X",
+     "series_name": "MG 4X",
+     "gap_rows": 8,
+     "fields": {
+      "电池能量密度(Wh/kg)": 4,
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "405": 4,
+      "406": 4
+     },
+     "sid": "26013",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪元PLUS",
+     "series_name": "比亚迪元PLUS",
+     "gap_rows": 8,
+     "fields": {
+      "电池能量密度(Wh/kg)": 4,
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "405": 8
+     },
+     "sid": "5248",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪大唐",
+     "series_name": "比亚迪大唐",
+     "gap_rows": 8,
+     "fields": {
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 5,
+      "电池能量密度(Wh/kg)": 2
+     },
+     "batches": {
+      "404": 4,
+      "405": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "沃尔沃XC60",
+     "series_name": "沃尔沃XC60",
+     "gap_rows": 8,
+     "fields": {
+      "整备质量(kg)": 1,
+      "纯电续航里程(km)": 1,
+      "电池容量(kWh)": 1,
+      "电池能量密度(Wh/kg)": 1,
+      "百公里电耗(kWh/100km)": 1,
+      "前电机功率/扭矩": 1,
+      "电机总功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "404": 8
+     },
+     "sid": "1282",
+     "ok": true
+    },
+    {
+     "kw": "智界V9",
+     "series_name": "智界V9",
+     "gap_rows": 7,
+     "fields": {
+      "后电机功率/扭矩": 5,
+      "电池能量密度(Wh/kg)": 2
+     },
+     "batches": {
+      "403": 3,
+      "409": 4
+     },
+     "sid": "25886",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪元UP",
+     "series_name": "比亚迪元UP",
+     "gap_rows": 7,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3,
+      "前电机功率/扭矩": 1
+     },
+     "batches": {
+      "405": 4,
+      "409": 3
+     },
+     "sid": "9689",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪宋Pro",
+     "series_name": "比亚迪宋Pro",
+     "gap_rows": 7,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3,
+      "前电机功率/扭矩": 1
+     },
+     "batches": {
+      "408": 4,
+      "409": 3
+     },
+     "sid": "3195",
+     "ok": true
+    },
+    {
+     "kw": "享界S9",
+     "series_name": "享界S9",
+     "gap_rows": 7,
+     "fields": {
+      "后电机功率/扭矩": 6,
+      "整备质量(kg)": 1
+     },
+     "batches": {
+      "408": 7
+     },
+     "sid": "9947",
+     "ok": true
+    },
+    {
+     "kw": "方程豹方程S",
+     "series_name": "方程豹方程S",
+     "gap_rows": 7,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "408": 7
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "ORA 7;长城闪电猫;O 7;R 7;T 7",
+     "series_name": "ORA 7;长城闪电猫;O 7;R 7;T 7",
+     "gap_rows": 7,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3,
+      "前电机功率/扭矩": 1
+     },
+     "batches": {
+      "408": 7
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    }
+   ],
+   "ingested": {
+    "found": [
+     {
+      "kw": "埃安i60",
+      "file": "dcd_s25643.json"
+     },
+     {
+      "kw": "腾势D9",
+      "file": "dcd_s5843.json"
+     },
+     {
+      "kw": "东风奕派M8",
+      "file": "dcd_s26101.json"
+     },
+     {
+      "kw": "比亚迪海狮05",
+      "file": "dcd_s6068.json"
+     },
+     {
+      "kw": "小鹏G9L",
+      "file": "dcd_s26151.json"
+     },
+     {
+      "kw": "问界M9",
+      "file": "dcd_s6325.json"
+     },
+     {
+      "kw": "07L",
+      "file": "dcd_s26154.json"
+     },
+     {
+      "kw": "D19",
+      "file": "dcd_s25718.json"
+     },
+     {
+      "kw": "比亚迪海狮08",
+      "file": "dcd_s6068.json"
+     },
+     {
+      "kw": "比亚迪海豹08",
+      "file": "dcd_s5579.json"
+     },
+     {
+      "kw": "启境GT7",
+      "file": "dcd_s25732.json"
+     },
+     {
+      "kw": "腾势Z",
+      "file": "dcd_s25440.json"
+     },
+     {
+      "kw": "旅行者",
+      "file": "dcd_s5563.json"
+     },
+     {
+      "kw": "小鹏GX",
+      "file": "dcd_s25621.json"
+     },
+     {
+      "kw": "岚图梦想家9",
+      "file": "dcd_s5924.json"
+     },
+     {
+      "kw": "小米澎程N70",
+      "file": "dcd_s26377.json"
+     },
+     {
+      "kw": "ID.ERA 8X",
+      "file": "dcd_s26292.json"
+     },
+     {
+      "kw": "岚图追光S",
+      "file": "dcd_s26147.json"
+     },
+     {
+      "kw": "A10",
+      "file": "dcd_s9267.json"
+     },
+     {
+      "kw": "宝马iX3",
+      "file": "dcd_s4538.json"
+     },
+     {
+      "kw": "MG 4X",
+      "file": "dcd_s26013.json"
+     },
+     {
+      "kw": "比亚迪元PLUS",
+      "file": "dcd_s5248.json"
+     },
+     {
+      "kw": "沃尔沃XC60",
+      "file": "dcd_s1282.json"
+     },
+     {
+      "kw": "智界V9",
+      "file": "dcd_s25886.json"
+     },
+     {
+      "kw": "比亚迪元UP",
+      "file": "dcd_s9689.json"
+     },
+     {
+      "kw": "比亚迪宋Pro",
+      "file": "dcd_s3195.json"
+     },
+     {
+      "kw": "享界S9",
+      "file": "dcd_s9947.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "福瑞通",
+      "file": null
+     },
+     {
+      "kw": "岚图泰山X8",
+      "file": null
+     },
+     {
+      "kw": "IONIQ",
+      "file": null
+     },
+     {
+      "kw": "V8X;V8X蓝山",
+      "file": null
+     },
+     {
+      "kw": "Q06E",
+      "file": null
+     },
+     {
+      "kw": "A06",
+      "file": null
+     },
+     {
+      "kw": "M6",
+      "file": null
+     },
+     {
+      "kw": "ID.UNYX 与众09",
+      "file": null
+     },
+     {
+      "kw": "M9 Plus",
+      "file": null
+     },
+     {
+      "kw": "A05",
+      "file": null
+     },
+     {
+      "kw": "比亚迪大唐",
+      "file": null
+     },
+     {
+      "kw": "方程豹方程S",
+      "file": null
+     },
+     {
+      "kw": "ORA 7;长城闪电猫;O 7;R 7;T 7",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:19:44"
+   },
+   "applied": {
+    "green": 167,
+    "time": "2026-09-22 21:05:04",
+    "cells": [
+     {
+      "field": "车长(mm)",
+      "model": "AHC6470BEVJ0Y"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC6470BEVJ0Y"
+     },
+     {
+      "field": "电池类型",
+      "model": "AHC6470BEVJ0Y"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC6470BEVJ0Z"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC6470BEVJ0Z"
+     },
+     {
+      "field": "电池类型",
+      "model": "AHC6470BEVJ0Z"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "AHC6470BEVJ0Z"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ6520MBEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6520MBEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6520MBEV3"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ6520MT6HEV10"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ6520MT6HEV11"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ6520MT6HEV12"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6520MBEV4"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ6520MT6HEV14"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ6520MT6HEV13"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "DFM6500S5F6BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "DFM6500S5F6BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DFM6500S5F8BEV"
+     },
+     {
+      "field": "电池类型",
+      "model": "DFM6500S5F8REEV"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "DFM6500S5F9REEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "DFM6500S5F9REEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BYD6460ALBEV1"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BYD6460ALBEV1"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD6460ALBEV1"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BYD6460ALBEV2"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BYD6460ALBEV2"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BYD6460ALBEV3"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BYD6460ALBEV3"
+     },
+     {
+      "field": "电池类型",
+      "model": "NHQ6490BEVGM"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6490BEVGM"
+     },
+     {
+      "field": "电池类型",
+      "model": "NHQ6490BEVGN"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6490BEVGN"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6510BEVRA"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6510BEVRB"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6510BEVRC"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6510REEVRA"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "NHQ6510BEVRD"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6510BEVRD"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SKE6520SSHEVA5S"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SKE6520SSHEVA6S"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6530DBEVA1F"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SKE6530DREEVA1F"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6530DREEVA1F"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SKE6530DREEVA2F"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6530DREEVA2F"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SKE6540DREEVA3F"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6540DREEVA3F"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6540DBEVA1F"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SKE6540DREEVA2F"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6540DREEVA2F"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6490AAADBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SC6490AAAEBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6490AAAEBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6490AAAC6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC7000AAAJBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "FZ6530BEVWD19A"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6530BEVWD19A"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "FZ6530BEVWD19E"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6530BEVWD19E"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "FZ6530BEVWD19B"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6530BEVWD19B"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "FZ6530REEVWD19F"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6530REEVWD19F"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD6510BNBEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD6510BNBEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7150AZ6HEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7150AZ6HEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7000AZBEV1"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7000AZBEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7000AZBEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7000AZBEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC7000BEVW0B"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC7000BEVW0C"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "AHC7150SHEVW0A"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC7150SHEVW0A"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000AEBEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7200AEHEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000AEBEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7200AEHEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7200AEHEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000AEBEV5"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000AEBEV6"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000AEBEV7"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000AEBEV8"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000AEBEV9"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7200AEHEV4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000ANBEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000ANBEV2"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ7000ARBEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000ARBEV1"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ7000ARBEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000ARBEV2"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ7000ARBEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000ARBEV3"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ7000ANBEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000ANBEV3"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ7000ANBEV4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ7000ANBEV4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6530BEVTA"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6530BEVTC"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6530BEVTD"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "NHQ6530REEVTA"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "NHQ6530REEVTB"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "NHQ6530REEVTC"
+     },
+     {
+      "field": "电机总功率/扭矩",
+      "model": "EQ6530AB5F2BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "EQ6530AB5F2BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "EQ6530AB5F2BEV"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "EQ6530AB5F2PHEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "EQ6530AB5F2PHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "EQ6530AB5F2PHEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "XMA6500KREEVF3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "XMA6500KREEVF3"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "XMA6500KREEVA1"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "XMA6500KREEVA1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "EQ6500AG5F1BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "EQ6500AG5F2BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "EQ6501AG5F1BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "EQ6502AG5F1BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "FZ6430BEVA10A"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "FZ6430BEVA10B"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "BMW6495AABEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BMW6495ABBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6453JBEV7"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6453JBEV8"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6453JBEV9"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6453JBEVA"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD6450BZBEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD6470BZBEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD6470BZBEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD6470BZBEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD6470BZBEV4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6540REEVEHV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6540REEVEHV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6540REEVEHV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6540REEVEHV4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6540REEVEHV3"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD6430BZBEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7000K713BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7000K714BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7000K715BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7000K718BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K711RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K71RSHEV"
+     },
+     {
+      "field": "电机总功率/扭矩",
+      "model": ""
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": ""
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7000K719BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7000K71ABEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K712RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K713RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K711RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K712RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K713RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K72RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7000K71BBEV"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "BJ7000K71CBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7000K71CBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7000K722BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7000K723BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K714RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K715RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K722RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K723RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7000K721BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7000K72BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K721RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ7150K72RSHEV"
+     }
+    ]
+   }
+  },
+  "r10": {
+   "id": "r10",
+   "status": "applied",
+   "created": "2026-09-22 16:27:28",
+   "series": [
+    {
+     "kw": "传祺越7",
+     "series_name": "传祺越7",
+     "gap_rows": 7,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3,
+      "前电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 4,
+      "408": 3
+     },
+     "sid": "26071",
+     "ok": true
+    },
+    {
+     "kw": "QQ3",
+     "series_name": "QQ3",
+     "gap_rows": 7,
+     "fields": {
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 5
+     },
+     "batches": {
+      "403": 4,
+      "407": 3
+     },
+     "sid": "25678",
+     "ok": true
+    },
+    {
+     "kw": "埃安Y Plus",
+     "series_name": "埃安Y Plus",
+     "gap_rows": 7,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3,
+      "前电机功率/扭矩": 1
+     },
+     "batches": {
+      "406": 7
+     },
+     "sid": "4814",
+     "ok": true
+    },
+    {
+     "kw": "L6",
+     "series_name": "L6",
+     "gap_rows": 7,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "406": 7
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "领克10",
+     "series_name": "领克10",
+     "gap_rows": 7,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "405": 7
+     },
+     "sid": "26030",
+     "ok": true
+    },
+    {
+     "kw": "ES90",
+     "series_name": "ES90",
+     "gap_rows": 7,
+     "fields": {
+      "后电机功率/扭矩": 5,
+      "前电机功率/扭矩": 2
+     },
+     "batches": {
+      "404": 7
+     },
+     "sid": "25226",
+     "ok": true
+    },
+    {
+     "kw": "12",
+     "series_name": "12",
+     "gap_rows": 7,
+     "fields": {
+      "电池类型": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "403": 7
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "理想i9",
+     "series_name": "理想i9",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "409": 6
+     },
+     "sid": "24592",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪宋Ultra",
+     "series_name": "比亚迪宋Ultra",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "409": 6
+     },
+     "ok": true,
+     "sid": "314"
+    },
+    {
+     "kw": "Q05",
+     "series_name": "Q05",
+     "gap_rows": 6,
+     "fields": {
+      "整备质量(kg)": 2,
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "409": 6
+     },
+     "sid": "25634",
+     "ok": true
+    },
+    {
+     "kw": "银河战舰700",
+     "series_name": "银河战舰700",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "409": 6
+     },
+     "sid": "25441",
+     "ok": true
+    },
+    {
+     "kw": "腾势Z9S",
+     "series_name": "腾势Z9S",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "409": 6
+     },
+     "sid": "26385",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪秦PLUS",
+     "series_name": "比亚迪秦PLUS,比亚迪秦L",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "409": 6
+     },
+     "sid": "4802",
+     "ok": true
+    },
+    {
+     "kw": "家越07",
+     "series_name": "家越07",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "408": 4,
+      "409": 2
+     },
+     "sid": "26077",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪大汉",
+     "series_name": "比亚迪大汉",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "408": 6
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "奕派EP7",
+     "series_name": "奕派EP7",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "408": 6
+     },
+     "sid": "26307",
+     "ok": true
+    },
+    {
+     "kw": "银河E5",
+     "series_name": "银河E5",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "408": 6
+     },
+     "sid": "10026",
+     "ok": true
+    },
+    {
+     "kw": "享界G9",
+     "series_name": "享界G9",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "408": 6
+     },
+     "sid": "25983",
+     "ok": true
+    },
+    {
+     "kw": "红旗H9",
+     "series_name": "红旗H9",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "408": 6
+     },
+     "sid": "4355",
+     "ok": true
+    },
+    {
+     "kw": "哈弗枭龙MAX;哈弗H6L;枭龙MAX;H6L",
+     "series_name": "哈弗枭龙MAX;哈弗H6L;枭龙MAX;H6L",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "408": 6
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "瑶光 C-DM",
+     "series_name": "瑶光 C-DM,EX 6",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "408": 6
+     },
+     "sid": "8967",
+     "ok": true
+    },
+    {
+     "kw": "B10",
+     "series_name": "B10",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "407": 6
+     },
+     "sid": "9268",
+     "ok": true
+    },
+    {
+     "kw": "TT、TT7、银河TT、银河TT7、Viva7、Viva、Luna7、Luna",
+     "series_name": "TT、TT7、银河TT、银河TT7、Viva7、Viva、Luna7、Luna",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "407": 6
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "小鹏L05",
+     "series_name": "小鹏L05",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "407": 6
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "领克07GT",
+     "series_name": "领克07GT",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "407": 6
+     },
+     "sid": "26011",
+     "ok": true
+    },
+    {
+     "kw": "小鹏L03",
+     "series_name": "小鹏L03",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "406": 4,
+      "407": 2
+     },
+     "sid": "25225",
+     "ok": true
+    },
+    {
+     "kw": "红旗H7",
+     "series_name": "红旗H7",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "406": 6
+     },
+     "sid": "690",
+     "ok": true
+    },
+    {
+     "kw": "HX;H10",
+     "series_name": "HX;H10",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "406": 6
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "海豚K7",
+     "series_name": "海豚K7",
+     "gap_rows": 6,
+     "fields": {
+      "轴距(mm)": 1,
+      "电池类型": 1,
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1,
+      "车长(mm)": 1
+     },
+     "batches": {
+      "406": 6
+     },
+     "sid": "25909",
+     "ok": true
+    },
+    {
+     "kw": "风云A9",
+     "series_name": "风云A9",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "405": 2,
+      "406": 4
+     },
+     "sid": "24729",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪海狮06",
+     "series_name": "比亚迪海狮06",
+     "gap_rows": 6,
+     "fields": {
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 2,
+      "电池能量密度(Wh/kg)": 3
+     },
+     "batches": {
+      "403": 2,
+      "405": 3,
+      "406": 1
+     },
+     "ok": true,
+     "sid": "6068"
+    },
+    {
+     "kw": "D99",
+     "series_name": "D99",
+     "gap_rows": 6,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "405": 6
+     },
+     "sid": "25889",
+     "ok": true
+    },
+    {
+     "kw": "江豚E6 PLUS",
+     "series_name": "江豚E6 PLUS",
+     "gap_rows": 6,
+     "fields": {
+      "轴距(mm)": 1,
+      "电池类型": 1,
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1,
+      "车长(mm)": 1
+     },
+     "batches": {
+      "405": 6
+     },
+     "sid": "26025",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪秦MAX、比亚迪大秦",
+     "series_name": "比亚迪秦MAX、比亚迪大秦",
+     "gap_rows": 6,
+     "fields": {
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 3,
+      "电池能量密度(Wh/kg)": 2
+     },
+     "batches": {
+      "403": 2,
+      "405": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "比亚迪海豹06、比亚迪海豹06MAX",
+     "series_name": "比亚迪海豹06、比亚迪海豹06MAX",
+     "gap_rows": 6,
+     "fields": {
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 3,
+      "电池能量密度(Wh/kg)": 2
+     },
+     "batches": {
+      "403": 2,
+      "405": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "银河星耀7",
+     "series_name": "银河星耀7",
+     "gap_rows": 6,
+     "fields": {
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 5
+     },
+     "batches": {
+      "403": 2,
+      "404": 2,
+      "405": 2
+     },
+     "sid": "25739",
+     "ok": true
+    },
+    {
+     "kw": "8X",
+     "series_name": "8X",
+     "gap_rows": 6,
+     "fields": {
+      "后电机功率/扭矩": 6
+     },
+     "batches": {
+      "403": 3,
+      "404": 3
+     },
+     "ok": false,
+     "reject_reason": "name_mismatch_or_brand_conflict"
+    },
+    {
+     "kw": "领汇e7",
+     "series_name": "领汇e7",
+     "gap_rows": 6,
+     "fields": {
+      "前电机功率/扭矩": 3,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "403": 6
+     },
+     "sid": "25949",
+     "ok": true
+    },
+    {
+     "kw": "问界M6",
+     "series_name": "问界M6",
+     "gap_rows": 5,
+     "fields": {
+      "后电机功率/扭矩": 4,
+      "整备质量(kg)": 1
+     },
+     "batches": {
+      "404": 2,
+      "409": 3
+     },
+     "sid": "25953",
+     "ok": true
+    },
+    {
+     "kw": "星愿、星愿UP",
+     "series_name": "星愿、星愿UP",
+     "gap_rows": 5,
+     "fields": {
+      "后电机功率/扭矩": 4,
+      "电池能量密度(Wh/kg)": 1
+     },
+     "batches": {
+      "406": 3,
+      "408": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    }
+   ],
+   "ingested": {
+    "found": [
+     {
+      "kw": "传祺越7",
+      "file": "dcd_s26071.json"
+     },
+     {
+      "kw": "QQ3",
+      "file": "dcd_s25678.json"
+     },
+     {
+      "kw": "领克10",
+      "file": "dcd_s26030.json"
+     },
+     {
+      "kw": "ES90",
+      "file": "dcd_s25226.json"
+     },
+     {
+      "kw": "理想i9",
+      "file": "dcd_s24592.json"
+     },
+     {
+      "kw": "比亚迪宋Ultra",
+      "file": "dcd_s314.json"
+     },
+     {
+      "kw": "Q05",
+      "file": "dcd_s25634.json"
+     },
+     {
+      "kw": "银河战舰700",
+      "file": "dcd_s25441.json"
+     },
+     {
+      "kw": "腾势Z9S",
+      "file": "dcd_s26385.json"
+     },
+     {
+      "kw": "比亚迪秦PLUS",
+      "file": "dcd_s4802.json"
+     },
+     {
+      "kw": "家越07",
+      "file": "dcd_s26077.json"
+     },
+     {
+      "kw": "奕派EP7",
+      "file": "dcd_s26307.json"
+     },
+     {
+      "kw": "银河E5",
+      "file": "dcd_s10026.json"
+     },
+     {
+      "kw": "享界G9",
+      "file": "dcd_s25983.json"
+     },
+     {
+      "kw": "红旗H9",
+      "file": "dcd_s4355.json"
+     },
+     {
+      "kw": "瑶光 C-DM",
+      "file": "dcd_s8967.json"
+     },
+     {
+      "kw": "B10",
+      "file": "dcd_s9268.json"
+     },
+     {
+      "kw": "领克07GT",
+      "file": "dcd_s26011.json"
+     },
+     {
+      "kw": "小鹏L03",
+      "file": "dcd_s25225.json"
+     },
+     {
+      "kw": "红旗H7",
+      "file": "dcd_s690.json"
+     },
+     {
+      "kw": "风云A9",
+      "file": "dcd_s24729.json"
+     },
+     {
+      "kw": "比亚迪海狮06",
+      "file": "dcd_s6068.json"
+     },
+     {
+      "kw": "D99",
+      "file": "dcd_s25889.json"
+     },
+     {
+      "kw": "江豚E6 PLUS",
+      "file": "dcd_s26025.json"
+     },
+     {
+      "kw": "银河星耀7",
+      "file": "dcd_s25739.json"
+     },
+     {
+      "kw": "领汇e7",
+      "file": "dcd_s25949.json"
+     },
+     {
+      "kw": "问界M6",
+      "file": "dcd_s25953.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "埃安Y Plus",
+      "file": null
+     },
+     {
+      "kw": "L6",
+      "file": null
+     },
+     {
+      "kw": "12",
+      "file": null
+     },
+     {
+      "kw": "比亚迪大汉",
+      "file": null
+     },
+     {
+      "kw": "哈弗枭龙MAX;哈弗H6L;枭龙MAX;H6L",
+      "file": null
+     },
+     {
+      "kw": "TT、TT7、银河TT、银河TT7、Viva7、Viva、Luna7、Luna",
+      "file": null
+     },
+     {
+      "kw": "小鹏L05",
+      "file": null
+     },
+     {
+      "kw": "HX;H10",
+      "file": null
+     },
+     {
+      "kw": "海豚K7",
+      "file": null
+     },
+     {
+      "kw": "比亚迪秦MAX、比亚迪大秦",
+      "file": null
+     },
+     {
+      "kw": "比亚迪海豹06、比亚迪海豹06MAX",
+      "file": null
+     },
+     {
+      "kw": "8X",
+      "file": null
+     },
+     {
+      "kw": "星愿、星愿UP",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:19:48"
+   },
+   "applied": {
+    "green": 90,
+    "time": "2026-09-22 21:05:54",
+    "cells": [
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAC6500CHEVPAM6B"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "GAC6500CHEVPAF6B"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVT12AA"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVT12AB"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVT12AC"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVT12AD"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ7000BEVT12AE"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "AHC6450BEVD1Y"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "MR7151DCHEV112"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "MR7151DCHEV112"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "MR7151DCHEV112"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7151DCHEV112"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "MR7151DCHEV113"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "MR7151DCHEV113"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7151DCHEV113"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "MR7002BEV106"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7002BEV106"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7002BEV107"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7002BEV108"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCD7005F011BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCD7005F021BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "VCD7005F031BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCD7005F031BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCD7005F041BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "VCD7005F051BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCD7005F051BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "LXA6524BEVW02"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6524BEVW02"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "LXA6524BEVW01"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6524BEVW01"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "SC6440AAALBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "MR6511DCHEV114"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR6511DCHEV114"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "MR6511DCHEV113"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR6511DCHEV113"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7155WT6HEV2"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7155WT6HEV4"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7155WT6HEV5"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7153WT6HEV13"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7153WT6HEV14"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7008BEVA8"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7008BEVA9"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7152WT6HEVB4"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BYD7152WT6HEVB5"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6494HFSHEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6494HFSHEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6494HFSHEV3"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "MR6462BEV100"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "MR6462BEV101"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "MR6462BEV102"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BJ6540K901RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ6540K901RSHEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "BJ6540K90RSHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ6540K90RSHEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SQR6483CHEVT225"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6483CHEVT226"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6450BEVB10M"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6450BEVB10N"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "MR7151DCHEV117"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7151DCHEV117"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "MR7151DCHEV118"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6470BEVXA"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6470BEVXB"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NHQ6470REEVXA"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SQR7150CHEVE012"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "SQR7000BEVT16A"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "SQR7150REEVT16A"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "SQR7150REEVT16A1"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "FZ6530BEVWD99A"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6530BEVWD99A"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HQ7151DCHEV111"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HQ7151DCHEV112"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HQ7151DCHEV111"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HQ7151DCHEV112"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HQ7151DCHEV111"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HQ7151DCHEV112"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HQ7151DCHEV113"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HQ7151DCHEV118"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "HQ7151DCHEV117"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HQ7151DCHEV117"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ7000AKBEV1"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ7000AKBEV2"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ7000AKBEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6501DBEVR1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6501DREEVA1F"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6501DREEVA2F"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6521DREEVR1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6501DBEVR2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6501DBEVR3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SKE6501DREEVR2"
+     }
+    ]
+   }
+  },
+  "r11": {
+   "id": "r11",
+   "status": "applied",
+   "created": "2026-09-22 16:27:28",
+   "series": [
+    {
+     "kw": "αT5",
+     "series_name": "αT5",
+     "gap_rows": 5,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "406": 5
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "C10",
+     "series_name": "C10",
+     "gap_rows": 5,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "406": 5
+     },
+     "sid": "9307",
+     "ok": true
+    },
+    {
+     "kw": "GLC 350 L 4MATIC",
+     "series_name": "GLC 350 L 4MATIC",
+     "gap_rows": 5,
+     "fields": {
+      "轴距(mm)": 1,
+      "电池类型": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1,
+      "车长(mm)": 1
+     },
+     "batches": {
+      "403": 5
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "创维鸿途EV",
+     "series_name": "创维鸿途EV",
+     "gap_rows": 5,
+     "fields": {
+      "轴距(mm)": 1,
+      "电池类型": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1,
+      "车长(mm)": 1
+     },
+     "batches": {
+      "403": 5
+     },
+     "ok": true,
+     "sid": "24912"
+    },
+    {
+     "kw": "远程M8E",
+     "series_name": "远程M8E",
+     "gap_rows": 4,
+     "fields": {
+      "整备质量(kg)": 1,
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "409": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "ID.AURA T6",
+     "series_name": "ID.AURA T6",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "409": 4
+     },
+     "sid": "26052",
+     "ok": true
+    },
+    {
+     "kw": "腾势N8L",
+     "series_name": "腾势N8L",
+     "gap_rows": 4,
+     "fields": {
+      "前电机功率/扭矩": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "405": 2,
+      "409": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "红旗天工08",
+     "series_name": "红旗天工08",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "407": 2,
+      "409": 2
+     },
+     "sid": "8835",
+     "ok": true
+    },
+    {
+     "kw": "问道V9",
+     "series_name": "问道V9",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "408": 4
+     },
+     "sid": "25830",
+     "ok": true
+    },
+    {
+     "kw": "方程豹方程S GT",
+     "series_name": "方程豹方程S GT",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "408": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "埃安S Plus",
+     "series_name": "埃安S Plus",
+     "gap_rows": 4,
+     "fields": {
+      "轴距(mm)": 1,
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "车长(mm)": 1
+     },
+     "batches": {
+      "408": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "GLC 400 L 4MATIC",
+     "series_name": "GLC 400 L 4MATIC",
+     "gap_rows": 4,
+     "fields": {
+      "轴距(mm)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1,
+      "车长(mm)": 1
+     },
+     "batches": {
+      "408": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "问界M6EV",
+     "series_name": "问界M6EV",
+     "gap_rows": 4,
+     "fields": {
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "404": 2,
+      "408": 2
+     },
+     "ok": true,
+     "sid": "25953"
+    },
+    {
+     "kw": "ET7",
+     "series_name": "ET7,EX7",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "405": 2,
+      "408": 2
+     },
+     "ok": false,
+     "reject_reason": "name_mismatch_or_brand_conflict"
+    },
+    {
+     "kw": "星愿UP、星愿",
+     "series_name": "星愿UP、星愿",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "406": 2,
+      "408": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "奕派M8",
+     "series_name": "奕派M8",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "407": 4
+     },
+     "sid": "26101",
+     "ok": true
+    },
+    {
+     "kw": "领克 20",
+     "series_name": "领克 20",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "407": 4
+     },
+     "sid": "26150",
+     "ok": true
+    },
+    {
+     "kw": "理想L6",
+     "series_name": "理想L6",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "407": 4
+     },
+     "sid": "5845",
+     "ok": true
+    },
+    {
+     "kw": "传祺向往S7;传祺S7",
+     "series_name": "传祺向往S7;传祺S7",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "406": 2,
+      "407": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "星愿STAR、星愿",
+     "series_name": "星愿STAR、星愿",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "406": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "腾势Z9",
+     "series_name": "腾势Z9,腾势Z9S",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "406": 4
+     },
+     "ok": true,
+     "sid": "25440"
+    },
+    {
+     "kw": "V8X",
+     "series_name": "V8X",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "406": 4
+     },
+     "sid": "26048",
+     "ok": true
+    },
+    {
+     "kw": "理想L8",
+     "series_name": "理想L8",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "406": 4
+     },
+     "sid": "6095",
+     "ok": true
+    },
+    {
+     "kw": "V27",
+     "series_name": "V27",
+     "gap_rows": 4,
+     "fields": {
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "406": 4
+     },
+     "sid": "25620",
+     "ok": true
+    },
+    {
+     "kw": "尚界 Z7",
+     "series_name": "尚界 Z7",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "405": 4
+     },
+     "sid": "25920",
+     "ok": true
+    },
+    {
+     "kw": "尚界 Z7 T",
+     "series_name": "尚界 Z7 T",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "405": 4
+     },
+     "sid": "26005",
+     "ok": true
+    },
+    {
+     "kw": "009",
+     "series_name": "009",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "405": 4
+     },
+     "sid": "5878",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪宋Ultra、比亚迪大宋",
+     "series_name": "比亚迪宋Ultra、比亚迪大宋",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "405": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "传祺向往M8",
+     "series_name": "传祺向往M8",
+     "gap_rows": 4,
+     "fields": {
+      "电池能量密度(Wh/kg)": 2,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "405": 4
+     },
+     "sid": "24787",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪宋Ultra",
+     "series_name": "比亚迪宋Ultra,比亚迪大宋",
+     "gap_rows": 4,
+     "fields": {
+      "后电机功率/扭矩": 3,
+      "电池能量密度(Wh/kg)": 1
+     },
+     "batches": {
+      "403": 2,
+      "405": 2
+     },
+     "ok": true,
+     "sid": "314"
+    },
+    {
+     "kw": "007GT",
+     "series_name": "007GT",
+     "gap_rows": 4,
+     "fields": {
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "404": 4
+     },
+     "sid": "25172",
+     "ok": true
+    },
+    {
+     "kw": "007",
+     "series_name": "007",
+     "gap_rows": 4,
+     "fields": {
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "404": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "06T",
+     "series_name": "06T",
+     "gap_rows": 4,
+     "fields": {
+      "后电机功率/扭矩": 3,
+      "前电机功率/扭矩": 1
+     },
+     "batches": {
+      "404": 4
+     },
+     "sid": "25982",
+     "ok": true
+    },
+    {
+     "kw": "哈弗猛龙",
+     "series_name": "哈弗猛龙",
+     "gap_rows": 4,
+     "fields": {
+      "后电机功率/扭矩": 3,
+      "整备质量(kg)": 1
+     },
+     "batches": {
+      "404": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
+     "series_name": "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
+     "gap_rows": 4,
+     "fields": {
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "404": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "腾势Z9 GT",
+     "series_name": "腾势Z9 GT",
+     "gap_rows": 4,
+     "fields": {
+      "后电机功率/扭矩": 4
+     },
+     "batches": {
+      "403": 4
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "魏派高山7",
+     "series_name": "魏派高山7",
+     "gap_rows": 4,
+     "fields": {
+      "整备质量(kg)": 1,
+      "电池容量(kWh)": 1,
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "403": 4
+     },
+     "ok": true,
+     "sid": "6303"
+    },
+    {
+     "kw": "远程V7E",
+     "series_name": "远程V7E",
+     "gap_rows": 3,
+     "fields": {
+      "整备质量(kg)": 1,
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "409": 3
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "黄金仓",
+     "series_name": "黄金仓",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "409": 3
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "腾势N8",
+     "series_name": "腾势N8",
+     "gap_rows": 3,
+     "fields": {
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "409": 3
+     },
+     "sid": "8899",
+     "ok": true
+    }
+   ],
+   "ingested": {
+    "found": [
+     {
+      "kw": "C10",
+      "file": "dcd_s9307.json"
+     },
+     {
+      "kw": "ID.AURA T6",
+      "file": "dcd_s26052.json"
+     },
+     {
+      "kw": "红旗天工08",
+      "file": "dcd_s8835.json"
+     },
+     {
+      "kw": "问道V9",
+      "file": "dcd_s25830.json"
+     },
+     {
+      "kw": "问界M6EV",
+      "file": "dcd_s25953.json"
+     },
+     {
+      "kw": "奕派M8",
+      "file": "dcd_s26101.json"
+     },
+     {
+      "kw": "领克 20",
+      "file": "dcd_s26150.json"
+     },
+     {
+      "kw": "理想L6",
+      "file": "dcd_s5845.json"
+     },
+     {
+      "kw": "腾势Z9",
+      "file": "dcd_s25440.json"
+     },
+     {
+      "kw": "V8X",
+      "file": "dcd_s26048.json"
+     },
+     {
+      "kw": "理想L8",
+      "file": "dcd_s6095.json"
+     },
+     {
+      "kw": "尚界 Z7",
+      "file": "dcd_s25920.json"
+     },
+     {
+      "kw": "尚界 Z7 T",
+      "file": "dcd_s26005.json"
+     },
+     {
+      "kw": "009",
+      "file": "dcd_s5878.json"
+     },
+     {
+      "kw": "传祺向往M8",
+      "file": "dcd_s24787.json"
+     },
+     {
+      "kw": "比亚迪宋Ultra",
+      "file": "dcd_s314.json"
+     },
+     {
+      "kw": "007GT",
+      "file": "dcd_s25172.json"
+     },
+     {
+      "kw": "06T",
+      "file": "dcd_s25982.json"
+     },
+     {
+      "kw": "魏派高山7",
+      "file": "dcd_s6303.json"
+     },
+     {
+      "kw": "腾势N8",
+      "file": "dcd_s8899.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "αT5",
+      "file": null
+     },
+     {
+      "kw": "GLC 350 L 4MATIC",
+      "file": null
+     },
+     {
+      "kw": "创维鸿途EV",
+      "file": null
+     },
+     {
+      "kw": "远程M8E",
+      "file": null
+     },
+     {
+      "kw": "腾势N8L",
+      "file": null
+     },
+     {
+      "kw": "方程豹方程S GT",
+      "file": null
+     },
+     {
+      "kw": "埃安S Plus",
+      "file": null
+     },
+     {
+      "kw": "GLC 400 L 4MATIC",
+      "file": null
+     },
+     {
+      "kw": "ET7",
+      "file": null
+     },
+     {
+      "kw": "星愿UP、星愿",
+      "file": null
+     },
+     {
+      "kw": "传祺向往S7;传祺S7",
+      "file": null
+     },
+     {
+      "kw": "星愿STAR、星愿",
+      "file": null
+     },
+     {
+      "kw": "V27",
+      "file": null
+     },
+     {
+      "kw": "比亚迪宋Ultra、比亚迪大宋",
+      "file": null
+     },
+     {
+      "kw": "007",
+      "file": null
+     },
+     {
+      "kw": "哈弗猛龙",
+      "file": null
+     },
+     {
+      "kw": "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
+      "file": null
+     },
+     {
+      "kw": "腾势Z9 GT",
+      "file": null
+     },
+     {
+      "kw": "远程V7E",
+      "file": null
+     },
+     {
+      "kw": "黄金仓",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:19:53"
+   },
+   "applied": {
+    "green": 80,
+    "time": "2026-09-22 21:06:43",
+    "cells": [
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6470SHEVC10B"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FZ6470SHEVC10E"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FV6485BABEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "FV6485AABEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CA6490H0BEVF"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CA6490H0BEVXF"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "LZ6520M15B0PHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LZ6520M15B0PHEV"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "BJ6530K80BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ6530K80BEV"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "BJ6530K802RREEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BJ6530K802RREEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7001BEV133"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7001BEV134"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6493SHEVX01"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6493SHEVX02"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6493SHEVX03"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6493REEVX04"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6493REEVX05"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6500DL20BPHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6500DL21APHEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC6500DL21HABEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511SHEVX4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511SHEVX3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511SHEVX5"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511SHEVX01"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511SHEVX03"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511SHEVX04"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511SHEVX05"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511SHEVX06"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511SHEVX07"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511SHEVX08"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511SHEVX09"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6512REEVX11"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6512REEVX12"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6490REEVS5DA"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6490REEVS5DB"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6490REEVS5DC"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6510REEVS5DA"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6510REEVS5DB"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6510REEVS5DC"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6490REEVS5DD"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6490REEVS5DE"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6490REEVS5DH"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6510REEVS5DD"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6510REEVS5DE"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6510REEVS5DH"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6490REEVS5DF"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6490REEVS5DG"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6510REEVS5DF"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6510REEVS5DG"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6490REEVS5DJ"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6490REEVS5DK"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6510REEVS5DJ"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6510REEVS5DK"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "NEQ6510REEVS5DL"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "NEQ6510REEVS5DL"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA7008BBEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA7008BBEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA7008BBEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA7008BBEV4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA7008BBEV5"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA7008BBEV6"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR6525BEV09"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR6525BEV13"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR6521BEV100"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "GAC6531CHEVMAJ6A"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7001BEV100"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7001BEV101"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7001BEV102"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7001BEV103"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7001BEV124"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7001BEV125"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7001BEV126"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "MR7001BEV127"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC7000AABFBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC7000AABGBEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SC7000AABHBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC7000AABHBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6510BD23BPHEV"
+     }
+    ]
+   }
+  },
+  "r12": {
+   "id": "r12",
+   "status": "applied",
+   "created": "2026-09-22 16:27:28",
+   "series": [
+    {
+     "kw": "V25",
+     "series_name": "V25",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "409": 3
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "V25",
+     "series_name": "V25,V25S",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "409": 3
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "小米澎程N90",
+     "series_name": "小米澎程N90",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "409": 3
+     },
+     "sid": "25339",
+     "ok": true
+    },
+    {
+     "kw": "S3",
+     "series_name": "S3,βS3",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "409": 3
+     },
+     "ok": false,
+     "reject_reason": "name_mismatch_or_brand_conflict"
+    },
+    {
+     "kw": "方程豹钛3",
+     "series_name": "方程豹钛3",
+     "gap_rows": 3,
+     "fields": {
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "403": 2,
+      "409": 1
+     },
+     "sid": "9249",
+     "ok": true
+    },
+    {
+     "kw": "悦意08",
+     "series_name": "悦意08",
+     "gap_rows": 3,
+     "fields": {
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "403": 1,
+      "406": 1,
+      "409": 1
+     },
+     "sid": "25434",
+     "ok": true
+    },
+    {
+     "kw": "C 350 L 4MATIC",
+     "series_name": "C 350 L 4MATIC,C 350 LL 4MATIC",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "408": 3
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "岚图泰山",
+     "series_name": "岚图泰山,岚图泰山X9",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "408": 3
+     },
+     "sid": "25619",
+     "ok": true
+    },
+    {
+     "kw": "H10",
+     "series_name": "H10",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "408": 3
+     },
+     "sid": "26044",
+     "ok": true
+    },
+    {
+     "kw": "尊界V680",
+     "series_name": "尊界V680",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "408": 3
+     },
+     "sid": "26303",
+     "ok": true
+    },
+    {
+     "kw": "五菱扬光L",
+     "series_name": "五菱扬光L",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3
+     },
+     "batches": {
+      "407": 1,
+      "408": 2
+     },
+     "sid": "26604",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪海豹06GT",
+     "series_name": "比亚迪海豹06GT",
+     "gap_rows": 3,
+     "fields": {
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "403": 2,
+      "408": 1
+     },
+     "sid": "10205",
+     "ok": true
+    },
+    {
+     "kw": "G318",
+     "series_name": "G318",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3
+     },
+     "batches": {
+      "407": 2,
+      "408": 1
+     },
+     "sid": "9211",
+     "ok": true
+    },
+    {
+     "kw": "B01",
+     "series_name": "B01",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 3
+     },
+     "batches": {
+      "407": 3
+     },
+     "sid": "9266",
+     "ok": true
+    },
+    {
+     "kw": "银河TT、TT、A8、银河A8",
+     "series_name": "银河TT、TT、A8、银河A8",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 3
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "尊界V800",
+     "series_name": "尊界V800",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 3
+     },
+     "sid": "24601",
+     "ok": true
+    },
+    {
+     "kw": "银河星耀6EF",
+     "series_name": "银河星耀6EF",
+     "gap_rows": 3,
+     "fields": {
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "404": 1,
+      "405": 1,
+      "407": 1
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "V9",
+     "series_name": "V9",
+     "gap_rows": 3,
+     "fields": {
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "406": 3
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "T1",
+     "series_name": "T1",
+     "gap_rows": 3,
+     "fields": {
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "404": 2,
+      "406": 1
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "EU8",
+     "series_name": "EU8",
+     "gap_rows": 3,
+     "fields": {
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "405": 2,
+      "406": 1
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "江豚E5",
+     "series_name": "江豚E5",
+     "gap_rows": 3,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "405": 3
+     },
+     "sid": "25491",
+     "ok": true
+    },
+    {
+     "kw": "ELECTRA E7;ELECTRA X7",
+     "series_name": "ELECTRA E7;ELECTRA X7",
+     "gap_rows": 3,
+     "fields": {
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "403": 3
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "ID.ERA 9X",
+     "series_name": "ID.ERA 9X",
+     "gap_rows": 3,
+     "fields": {
+      "后电机功率/扭矩": 3
+     },
+     "batches": {
+      "403": 3
+     },
+     "sid": "25395",
+     "ok": true
+    },
+    {
+     "kw": "欧拉芭蕾猫",
+     "series_name": "欧拉芭蕾猫,ORA 6",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "409": 2
+     },
+     "sid": "5297",
+     "ok": true
+    },
+    {
+     "kw": "埃安RT",
+     "series_name": "埃安RT",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "408": 2
+     },
+     "sid": "24800",
+     "ok": true
+    },
+    {
+     "kw": "享界S9T",
+     "series_name": "享界S9T",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "408": 2
+     },
+     "sid": "25595",
+     "ok": true
+    },
+    {
+     "kw": "理想i8",
+     "series_name": "理想i8",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "408": 2
+     },
+     "sid": "10178",
+     "ok": true
+    },
+    {
+     "kw": "理想MEGA",
+     "series_name": "理想MEGA",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "408": 2
+     },
+     "sid": "6067",
+     "ok": true
+    },
+    {
+     "kw": "菱智EV",
+     "series_name": "菱智EV",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "408": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "S07EV",
+     "series_name": "S07EV",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "408": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "领汇e5",
+     "series_name": "领汇e5",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "403": 1,
+      "408": 1
+     },
+     "sid": "25950",
+     "ok": true
+    },
+    {
+     "kw": "领汇M9",
+     "series_name": "领汇M9",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "403": 1,
+      "408": 1
+     },
+     "sid": "25948",
+     "ok": true
+    },
+    {
+     "kw": "问界M9EV",
+     "series_name": "问界M9EV",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "405": 1,
+      "408": 1
+     },
+     "ok": true,
+     "sid": "6325"
+    },
+    {
+     "kw": "尊界S800",
+     "series_name": "尊界S800",
+     "gap_rows": 2,
+     "fields": {
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 2
+     },
+     "sid": "24599",
+     "ok": true
+    },
+    {
+     "kw": "星愿、星愿Ultra",
+     "series_name": "星愿、星愿Ultra",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "ELECTRA L7",
+     "series_name": "ELECTRA L7",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 2
+     },
+     "ok": true,
+     "sid": "10151"
+    },
+    {
+     "kw": "风云T7",
+     "series_name": "风云T7,风云E5",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 2
+     },
+     "sid": "26120",
+     "ok": true
+    },
+    {
+     "kw": "FREELANDER 神行者8",
+     "series_name": "FREELANDER 神行者8",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 2
+     },
+     "sid": "26036",
+     "ok": true
+    },
+    {
+     "kw": "ID.ERA 5S",
+     "series_name": "ID.ERA 5S",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 2
+     },
+     "sid": "26133",
+     "ok": true
+    },
+    {
+     "kw": "拾月max",
+     "series_name": "拾月max",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "406": 1,
+      "407": 1
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    }
+   ],
+   "ingested": {
+    "found": [
+     {
+      "kw": "小米澎程N90",
+      "file": "dcd_s25339.json"
+     },
+     {
+      "kw": "方程豹钛3",
+      "file": "dcd_s9249.json"
+     },
+     {
+      "kw": "悦意08",
+      "file": "dcd_s25434.json"
+     },
+     {
+      "kw": "岚图泰山",
+      "file": "dcd_s25619.json"
+     },
+     {
+      "kw": "H10",
+      "file": "dcd_s26044.json"
+     },
+     {
+      "kw": "尊界V680",
+      "file": "dcd_s26303.json"
+     },
+     {
+      "kw": "比亚迪海豹06GT",
+      "file": "dcd_s10205.json"
+     },
+     {
+      "kw": "G318",
+      "file": "dcd_s9211.json"
+     },
+     {
+      "kw": "B01",
+      "file": "dcd_s9266.json"
+     },
+     {
+      "kw": "尊界V800",
+      "file": "dcd_s24601.json"
+     },
+     {
+      "kw": "江豚E5",
+      "file": "dcd_s25491.json"
+     },
+     {
+      "kw": "ID.ERA 9X",
+      "file": "dcd_s25395.json"
+     },
+     {
+      "kw": "欧拉芭蕾猫",
+      "file": "dcd_s5297.json"
+     },
+     {
+      "kw": "埃安RT",
+      "file": "dcd_s24800.json"
+     },
+     {
+      "kw": "享界S9T",
+      "file": "dcd_s25595.json"
+     },
+     {
+      "kw": "理想i8",
+      "file": "dcd_s10178.json"
+     },
+     {
+      "kw": "理想MEGA",
+      "file": "dcd_s6067.json"
+     },
+     {
+      "kw": "领汇e5",
+      "file": "dcd_s25950.json"
+     },
+     {
+      "kw": "领汇M9",
+      "file": "dcd_s25948.json"
+     },
+     {
+      "kw": "问界M9EV",
+      "file": "dcd_s6325.json"
+     },
+     {
+      "kw": "尊界S800",
+      "file": "dcd_s24599.json"
+     },
+     {
+      "kw": "风云T7",
+      "file": "dcd_s26120.json"
+     },
+     {
+      "kw": "FREELANDER 神行者8",
+      "file": "dcd_s26036.json"
+     },
+     {
+      "kw": "ID.ERA 5S",
+      "file": "dcd_s26133.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "V25",
+      "file": null
+     },
+     {
+      "kw": "V25",
+      "file": null
+     },
+     {
+      "kw": "S3",
+      "file": null
+     },
+     {
+      "kw": "C 350 L 4MATIC",
+      "file": null
+     },
+     {
+      "kw": "五菱扬光L",
+      "file": null
+     },
+     {
+      "kw": "银河TT、TT、A8、银河A8",
+      "file": null
+     },
+     {
+      "kw": "银河星耀6EF",
+      "file": null
+     },
+     {
+      "kw": "V9",
+      "file": null
+     },
+     {
+      "kw": "T1",
+      "file": null
+     },
+     {
+      "kw": "EU8",
+      "file": null
+     },
+     {
+      "kw": "ELECTRA E7;ELECTRA X7",
+      "file": null
+     },
+     {
+      "kw": "菱智EV",
+      "file": null
+     },
+     {
+      "kw": "S07EV",
+      "file": null
+     },
+     {
+      "kw": "星愿、星愿Ultra",
+      "file": null
+     },
+     {
+      "kw": "ELECTRA L7",
+      "file": null
+     },
+     {
+      "kw": "拾月max",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:19:57"
+   },
+   "applied": {
+    "green": 65,
+    "time": "2026-09-22 21:07:32",
+    "cells": [
+     {
+      "field": "前电机功率/扭矩",
+      "model": "XMA6530KREEVA1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "XMA6530KREEVA1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6460AHBEV4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6460AHBEV5"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6460AHBEV6"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "QCJ6460AHBEV7"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6460AHBEV7"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6460AHBEV8"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6460AHBEV10"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6460AHBEV9"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6460AHBEV11"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CA7009B0EVA"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CA7159B6SHEVA"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CA7009B0EVB"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CA7159B6SHEVB"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "EQ6520AD5F2PHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "EQ6520AD5F2PHEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "EQ6520AE5F2PHEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "EQ6521AE5F2PHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "EQ6521AE5F2PHEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "EQ6520AE5F2BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "EQ6520AE5F2BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "EQ6521AE5F2BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "EQ6522AE5F2BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "EQ6522AE5F2BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "EQ6523AE5F2BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "EQ6520AD5F2BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6510DQ20APHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6530DQ20BPHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6530DQ23APHEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC6510DQ23BPHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6510DQ23BPHEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "HFC6530DREEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HFC6530DREEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7000AGBEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7000AGBEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7000AGBEV4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7000AGBEV5"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7000AGBEV6"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7000AGBEV7"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "SC6510AAAL6HEV"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "SC6510AAAM6HEV"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "SC6510AAAL6HEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "HFC6550DREEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HFC6550DREEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "WHJ6451BEVK133"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "WHJ6451BEVK139"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "WHJ6451BEVK134"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SVW652183BRV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SVW652185BRV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SVW652186BRV"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "CC6440CG00HBBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511BEVW01"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511BEVW04"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511BEVW05"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511BEVW06"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6511BEVW07"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6540BEVW01"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6540BEVW02"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LXA6540BEVW11"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HFC7000DEV4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HFC7000DEV5"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "HFC7000DEV8"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "HFC7000DEV8"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CJL6510AF1REEV"
+     }
+    ]
+   }
+  },
+  "r13": {
+   "id": "r13",
+   "status": "applied",
+   "created": "2026-09-22 16:27:28",
+   "series": [
+    {
+     "kw": "北汽EU8",
+     "series_name": "北汽EU8",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "406": 2
+     },
+     "ok": true,
+     "sid": "197"
+    },
+    {
+     "kw": "D7",
+     "series_name": "D7",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "406": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "领汇e3",
+     "series_name": "领汇e3",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "406": 2
+     },
+     "sid": "26047",
+     "ok": true
+    },
+    {
+     "kw": "小米YU7",
+     "series_name": "小米YU7",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "406": 2
+     },
+     "sid": "20041",
+     "ok": true
+    },
+    {
+     "kw": "传祺向往E8",
+     "series_name": "传祺向往E8",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "406": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "Q06R",
+     "series_name": "Q06R",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "406": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "埃安N60",
+     "series_name": "埃安N60",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "404": 1,
+      "406": 1
+     },
+     "sid": "25878",
+     "ok": true
+    },
+    {
+     "kw": "尚界 Z7 ULTRA",
+     "series_name": "尚界 Z7 ULTRA",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "405": 2
+     },
+     "ok": true,
+     "sid": "25920"
+    },
+    {
+     "kw": "尚界 Z7 T ULTRA",
+     "series_name": "尚界 Z7 T ULTRA",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "405": 2
+     },
+     "ok": true,
+     "sid": "26005"
+    },
+    {
+     "kw": "比亚迪宋pro",
+     "series_name": "比亚迪宋pro",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "405": 2
+     },
+     "sid": "3195",
+     "ok": true
+    },
+    {
+     "kw": "风云T9L",
+     "series_name": "风云T9L",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "404": 1,
+      "405": 1
+     },
+     "sid": "25828",
+     "ok": true
+    },
+    {
+     "kw": "小米YU7 GT",
+     "series_name": "小米YU7 GT",
+     "gap_rows": 2,
+     "fields": {
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "404": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "东风日产NX8",
+     "series_name": "东风日产NX8",
+     "gap_rows": 2,
+     "fields": {
+      "整备质量(kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "404": 2
+     },
+     "sid": "25874",
+     "ok": true
+    },
+    {
+     "kw": "江铃大道",
+     "series_name": "江铃大道",
+     "gap_rows": 2,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "404": 2
+     },
+     "sid": "6366",
+     "ok": true
+    },
+    {
+     "kw": "理想L9 Livis",
+     "series_name": "理想L9 Livis",
+     "gap_rows": 2,
+     "fields": {
+      "整备质量(kg)": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "404": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "比亚迪海豚",
+     "series_name": "比亚迪海豚",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "403": 2
+     },
+     "sid": "5008",
+     "ok": true
+    },
+    {
+     "kw": "ES9",
+     "series_name": "ES9",
+     "gap_rows": 2,
+     "fields": {
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "403": 2
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "创维EV6Ⅱ",
+     "series_name": "创维EV6Ⅱ",
+     "gap_rows": 2,
+     "fields": {
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "403": 2
+     },
+     "sid": "5122",
+     "ok": true
+    },
+    {
+     "kw": "腾势Z9",
+     "series_name": "腾势Z9",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "403": 2
+     },
+     "ok": true,
+     "sid": "25440"
+    },
+    {
+     "kw": "领汇e9",
+     "series_name": "领汇e9",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "403": 2
+     },
+     "sid": "25951",
+     "ok": true
+    },
+    {
+     "kw": "LS9",
+     "series_name": "LS9",
+     "gap_rows": 2,
+     "fields": {
+      "前电机功率/扭矩": 1,
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "403": 2
+     },
+     "sid": "25607",
+     "ok": true
+    },
+    {
+     "kw": "TAYRON L",
+     "series_name": "TAYRON L",
+     "gap_rows": 2,
+     "fields": {
+      "后电机功率/扭矩": 2
+     },
+     "batches": {
+      "403": 2
+     },
+     "ok": true,
+     "sid": "2835"
+    },
+    {
+     "kw": "沃尔沃XC70",
+     "series_name": "沃尔沃XC70",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "409": 1
+     },
+     "sid": "25485",
+     "ok": true
+    },
+    {
+     "kw": "UT",
+     "series_name": "UT",
+     "gap_rows": 1,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1
+     },
+     "batches": {
+      "408": 1
+     },
+     "ok": true,
+     "sid": "25014"
+    },
+    {
+     "kw": "星海S7",
+     "series_name": "星海S7",
+     "gap_rows": 1,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1
+     },
+     "batches": {
+      "408": 1
+     },
+     "sid": "9958",
+     "ok": true
+    },
+    {
+     "kw": "L07",
+     "series_name": "L07",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "408": 1
+     },
+     "sid": "10214",
+     "ok": true
+    },
+    {
+     "kw": "悦意07",
+     "series_name": "悦意07",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "408": 1
+     },
+     "sid": "25138",
+     "ok": true
+    },
+    {
+     "kw": "领克07",
+     "series_name": "领克07",
+     "gap_rows": 1,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1
+     },
+     "batches": {
+      "408": 1
+     },
+     "sid": "4370",
+     "ok": true
+    },
+    {
+     "kw": "风云T11",
+     "series_name": "风云T11",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "408": 1
+     },
+     "sid": "9436",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪海鸥",
+     "series_name": "比亚迪海鸥",
+     "gap_rows": 1,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1
+     },
+     "batches": {
+      "407": 1
+     },
+     "sid": "5952",
+     "ok": true
+    },
+    {
+     "kw": "精灵#1",
+     "series_name": "精灵#1",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 1
+     },
+     "ok": true,
+     "sid": "1489"
+    },
+    {
+     "kw": "比亚迪M9",
+     "series_name": "比亚迪M9",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 1
+     },
+     "sid": "25579",
+     "ok": true
+    },
+    {
+     "kw": "银河A7",
+     "series_name": "银河A7",
+     "gap_rows": 1,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1
+     },
+     "batches": {
+      "407": 1
+     },
+     "sid": "25547",
+     "ok": true
+    },
+    {
+     "kw": "S09",
+     "series_name": "S09",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 1
+     },
+     "sid": "25136",
+     "ok": true
+    },
+    {
+     "kw": "五菱扬光Pro",
+     "series_name": "五菱扬光Pro",
+     "gap_rows": 1,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1
+     },
+     "batches": {
+      "407": 1
+     },
+     "sid": "26296",
+     "ok": true
+    },
+    {
+     "kw": "跨越星光",
+     "series_name": "跨越星光",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "407": 1
+     },
+     "sid": "25629",
+     "ok": true
+    },
+    {
+     "kw": "星光730",
+     "series_name": "星光730",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "406": 1
+     },
+     "sid": "25575",
+     "ok": true
+    },
+    {
+     "kw": "哈弗猛龙 PLUS",
+     "series_name": "哈弗猛龙 PLUS",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "406": 1
+     },
+     "sid": "25638",
+     "ok": true
+    },
+    {
+     "kw": "UNI-Z",
+     "series_name": "UNI-Z",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "406": 1
+     },
+     "sid": "24540",
+     "ok": true
+    },
+    {
+     "kw": "山海T1",
+     "series_name": "山海T1,山海T1 C-DM,自由者 C-DM",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "406": 1
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    }
+   ],
+   "ingested": {
+    "found": [
+     {
+      "kw": "北汽EU8",
+      "file": "dcd_s197.json"
+     },
+     {
+      "kw": "领汇e3",
+      "file": "dcd_s26047.json"
+     },
+     {
+      "kw": "小米YU7",
+      "file": "dcd_s20041.json"
+     },
+     {
+      "kw": "埃安N60",
+      "file": "dcd_s25878.json"
+     },
+     {
+      "kw": "尚界 Z7 ULTRA",
+      "file": "dcd_s25920.json"
+     },
+     {
+      "kw": "尚界 Z7 T ULTRA",
+      "file": "dcd_s26005.json"
+     },
+     {
+      "kw": "比亚迪宋pro",
+      "file": "dcd_s3195.json"
+     },
+     {
+      "kw": "风云T9L",
+      "file": "dcd_s25828.json"
+     },
+     {
+      "kw": "东风日产NX8",
+      "file": "dcd_s25874.json"
+     },
+     {
+      "kw": "江铃大道",
+      "file": "dcd_s6366.json"
+     },
+     {
+      "kw": "比亚迪海豚",
+      "file": "dcd_s5008.json"
+     },
+     {
+      "kw": "创维EV6Ⅱ",
+      "file": "dcd_s5122.json"
+     },
+     {
+      "kw": "腾势Z9",
+      "file": "dcd_s25440.json"
+     },
+     {
+      "kw": "领汇e9",
+      "file": "dcd_s25951.json"
+     },
+     {
+      "kw": "LS9",
+      "file": "dcd_s25607.json"
+     },
+     {
+      "kw": "TAYRON L",
+      "file": "dcd_s2835.json"
+     },
+     {
+      "kw": "沃尔沃XC70",
+      "file": "dcd_s25485.json"
+     },
+     {
+      "kw": "UT",
+      "file": "dcd_s25014.json"
+     },
+     {
+      "kw": "星海S7",
+      "file": "dcd_s9958.json"
+     },
+     {
+      "kw": "L07",
+      "file": "dcd_s10214.json"
+     },
+     {
+      "kw": "悦意07",
+      "file": "dcd_s25138.json"
+     },
+     {
+      "kw": "领克07",
+      "file": "dcd_s4370.json"
+     },
+     {
+      "kw": "风云T11",
+      "file": "dcd_s9436.json"
+     },
+     {
+      "kw": "比亚迪海鸥",
+      "file": "dcd_s5952.json"
+     },
+     {
+      "kw": "精灵#1",
+      "file": "dcd_s1489.json"
+     },
+     {
+      "kw": "比亚迪M9",
+      "file": "dcd_s25579.json"
+     },
+     {
+      "kw": "银河A7",
+      "file": "dcd_s25547.json"
+     },
+     {
+      "kw": "S09",
+      "file": "dcd_s25136.json"
+     },
+     {
+      "kw": "五菱扬光Pro",
+      "file": "dcd_s26296.json"
+     },
+     {
+      "kw": "跨越星光",
+      "file": "dcd_s25629.json"
+     },
+     {
+      "kw": "星光730",
+      "file": "dcd_s25575.json"
+     },
+     {
+      "kw": "哈弗猛龙 PLUS",
+      "file": "dcd_s25638.json"
+     },
+     {
+      "kw": "UNI-Z",
+      "file": "dcd_s24540.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "D7",
+      "file": null
+     },
+     {
+      "kw": "传祺向往E8",
+      "file": null
+     },
+     {
+      "kw": "Q06R",
+      "file": null
+     },
+     {
+      "kw": "小米YU7 GT",
+      "file": null
+     },
+     {
+      "kw": "理想L9 Livis",
+      "file": null
+     },
+     {
+      "kw": "ES9",
+      "file": null
+     },
+     {
+      "kw": "山海T1",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:20:01"
+   },
+   "applied": {
+    "green": 82,
+    "time": "2026-09-22 21:08:33",
+    "cells": [
+     {
+      "field": "后电机功率/扭矩",
+      "model": "XMA6500LBEVR3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "XMA6500LBEVR6"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "XMA6500LBEVA9"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "XMA6500LBEVA9"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "XMA6500LBEVR4"
+     },
+     {
+      "field": "电池类型",
+      "model": "XMA6500LBEVA7"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "XMA6500LBEVA7"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "XMA6500LBEVA7"
+     },
+     {
+      "field": "电池类型",
+      "model": "XMA6500LBEVR8"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "XMA6500LBEVR8"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "SQR6490CHEVT29"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6490CHEVT292"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "DFL6490NNJ1BEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "DFL6490NNJ2BEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CSA6531LFSHEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6531LFSHEV1"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CSA6531LFSHEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6531LFSHEV3"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CSA6531LFSHEV4"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6531LFSHEV4"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CSA6531LFSHEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CSA6531LFSHEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCC6483G01WPHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "VCC6483G03WPHEV"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC7000BEVL0A"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC7000BEVL0A"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC7000BEVL0B"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC7000BEVL0B"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "AHC7000BEVL0D"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "AHC7000BEVL0D"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "LZ7000SQE0EV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC7006AASBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC7156AAG6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC7156AAJ6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC7000AAAHBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC7150AAAM6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC7000AABTBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC7000AABZBEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6520REEVE022"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6520REEVE023"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6520REEVE024"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6520REEVE024"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6520REEVE025"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6520REEVE026"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": ""
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": ""
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6520REEVE022"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6521REEVE02"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6521REEVE022"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6521REEVE021"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6520REEVE02"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6520REEVE021"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SQR6521REEVE023"
+     },
+     {
+      "field": "百公里电耗(kWh/100km)",
+      "model": "MR7151DCHEV131"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "MR7151DCHEV131"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6522AAA6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6522AAB6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6520AAAA6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6520AAAB6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6522AAA6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6522AAB6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6520AAAR6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6520AAAA6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6520AAAB6HEV"
+     },
+     {
+      "field": "电池能量密度(Wh/kg)",
+      "model": "SC6520AAAS6HEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "SC6520AAAS6HEV"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "LZW6550BEVA2"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "LZW6550BEVA2"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "LZW6550BEVA4"
+     },
+     {
+      "field": "电池容量(kWh)",
+      "model": "LZW6550BEVA4"
+     },
+     {
+      "field": "整备质量(kg)",
+      "model": "LZW6550BEVA6"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC6490CW23KPHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6490CW23KPHEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC6490CW23LPHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6490CW23LPHEV"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "CC6490CW23MPHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6490CW23MPHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6490CW23QPHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6490CW23RPHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6491CW25CPHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6491CW25DPHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "CC6491CW25EPHEV"
+     }
+    ]
+   }
+  },
+  "r14": {
+   "id": "r14",
+   "status": "applied",
+   "created": "2026-09-22 16:27:28",
+   "series": [
+    {
+     "kw": "腾势N9",
+     "series_name": "腾势N9",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "405": 1
+     },
+     "sid": "24726",
+     "ok": true
+    },
+    {
+     "kw": "TIGGO 9 C-DM",
+     "series_name": "TIGGO 9 C-DM",
+     "gap_rows": 1,
+     "fields": {
+      "电池能量密度(Wh/kg)": 1
+     },
+     "batches": {
+      "405": 1
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "A6L",
+     "series_name": "A6L",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "404": 1
+     },
+     "ok": true,
+     "sid": "99"
+    },
+    {
+     "kw": "银河星耀6 EM-i",
+     "series_name": "银河星耀6 EM-i",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "404": 1
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "银河星耀8 EMi",
+     "series_name": "银河星耀8 EMi",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "404": 1
+     },
+     "ok": true,
+     "sid": "25236"
+    },
+    {
+     "kw": "至境E7",
+     "series_name": "至境E7",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "404": 1
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "TIGUAN L ePRO",
+     "series_name": "TIGUAN L ePRO",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "404": 1
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "大众ID 9X",
+     "series_name": "大众ID 9X",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "404": 1
+     },
+     "ok": false,
+     "reject_reason": "no_candidate"
+    },
+    {
+     "kw": "图雅诺",
+     "series_name": "图雅诺",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "403": 1
+     },
+     "sid": "247",
+     "ok": true
+    },
+    {
+     "kw": "比亚迪海豹07",
+     "series_name": "比亚迪海豹07",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "403": 1
+     },
+     "ok": true,
+     "sid": "5579"
+    },
+    {
+     "kw": "06",
+     "series_name": "06",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "403": 1
+     },
+     "ok": false,
+     "reject_reason": "name_mismatch_or_brand_conflict"
+    },
+    {
+     "kw": "昊铂A800",
+     "series_name": "昊铂A800",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "403": 1
+     },
+     "sid": "25642",
+     "ok": true
+    },
+    {
+     "kw": "魏牌高山",
+     "series_name": "魏牌高山,魏牌高山MINI,魏牌高山AIR,魏牌高山7",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "403": 1
+     },
+     "sid": "26627",
+     "ok": true
+    },
+    {
+     "kw": "魏牌高山7",
+     "series_name": "魏牌高山7",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "403": 1
+     },
+     "ok": true,
+     "sid": "26627"
+    },
+    {
+     "kw": "魏牌高山",
+     "series_name": "魏牌高山",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "403": 1
+     },
+     "sid": "26627",
+     "ok": true
+    },
+    {
+     "kw": "MAGOTAN",
+     "series_name": "MAGOTAN",
+     "gap_rows": 1,
+     "fields": {
+      "后电机功率/扭矩": 1
+     },
+     "batches": {
+      "403": 1
+     },
+     "sid": "415",
+     "ok": true
+    }
+   ],
+   "ingested": {
+    "found": [
+     {
+      "kw": "腾势N9",
+      "file": "dcd_s24726.json"
+     },
+     {
+      "kw": "A6L",
+      "file": "dcd_s99.json"
+     },
+     {
+      "kw": "银河星耀8 EMi",
+      "file": "dcd_s25236.json"
+     },
+     {
+      "kw": "图雅诺",
+      "file": "dcd_s247.json"
+     },
+     {
+      "kw": "比亚迪海豹07",
+      "file": "dcd_s5579.json"
+     },
+     {
+      "kw": "昊铂A800",
+      "file": "dcd_s25642.json"
+     },
+     {
+      "kw": "MAGOTAN",
+      "file": "dcd_s415.json"
+     }
+    ],
+    "missing": [
+     {
+      "kw": "TIGGO 9 C-DM",
+      "file": null
+     },
+     {
+      "kw": "银河星耀6 EM-i",
+      "file": null
+     },
+     {
+      "kw": "至境E7",
+      "file": null
+     },
+     {
+      "kw": "TIGUAN L ePRO",
+      "file": null
+     },
+     {
+      "kw": "大众ID 9X",
+      "file": null
+     },
+     {
+      "kw": "06",
+      "file": null
+     },
+     {
+      "kw": "魏牌高山",
+      "file": null
+     },
+     {
+      "kw": "魏牌高山7",
+      "file": null
+     },
+     {
+      "kw": "魏牌高山",
+      "file": null
+     }
+    ],
+    "time": "2026-09-22 17:20:05"
+   },
+   "applied": {
+    "green": 19,
+    "time": "2026-09-22 21:09:39",
+    "cells": [
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6530ABHEV1"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6530ABHEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6530ABHEV5"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "QCJ6530ABHEV3"
+     },
+     {
+      "field": "电池类型",
+      "model": "AFN7000BAABEVA"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "AFN7000BAABEVA"
+     },
+     {
+      "field": "电池类型",
+      "model": "AFN7000BAABEVB"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "AFN7000BAABEVB"
+     },
+     {
+      "field": "前电机功率/扭矩",
+      "model": "FV7201BAQCHEV"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7151Y6HEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7151YT6HEV6"
+     },
+     {
+      "field": "车长(mm)",
+      "model": "BYD7151YT6HEV7"
+     },
+     {
+      "field": "轴距(mm)",
+      "model": "BYD7151YT6HEV7"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7151YT6HEV8"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7151YT6HEV10"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7000BXBEV2"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "BYD7000BXBEV3"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC7150SHEVQ0A"
+     },
+     {
+      "field": "后电机功率/扭矩",
+      "model": "AHC7150SHEVQ0D"
      }
     ]
    }

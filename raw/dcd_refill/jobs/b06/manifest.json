@@ -1,0 +1,42 @@
+{
+ "batch": "b06",
+ "created": "2026-09-22 17:09:33",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "b06-01",
+   "kw": "锐胜M8",
+   "js": "b06-01_锐胜M8.js",
+   "series_name": "锐胜M8",
+   "gap_rows": 28
+  },
+  {
+   "rid": "b06-02",
+   "kw": "αT7",
+   "js": "b06-02_T7.js",
+   "series_name": "αT7",
+   "gap_rows": 28
+  },
+  {
+   "rid": "b06-03",
+   "kw": "星钽5X",
+   "js": "b06-03_星钽5X.js",
+   "series_name": "星钽5X",
+   "gap_rows": 28
+  },
+  {
+   "rid": "b06-04",
+   "kw": "G3i",
+   "js": "b06-04_G3i.js",
+   "series_name": "G3i",
+   "gap_rows": 27
+  },
+  {
+   "rid": "b06-05",
+   "kw": "HYCAN Z03",
+   "js": "b06-05_HYCANZ03.js",
+   "series_name": "HYCAN Z03",
+   "gap_rows": 27
+  }
+ ]
+}

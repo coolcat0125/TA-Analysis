@@ -1,0 +1,41 @@
+{
+ "kw": "理想MEGA",
+ "kws": [
+  "理想MEGA"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:17",
+ "series_url": "https://www.dongchedi.com/auto/series/6067",
+ "series": {
+  "sid": "6067",
+  "name": "理想MEGA",
+  "brand": "理想汽车"
+ },
+ "cars": [
+  {
+   "id": "260077",
+   "name": "Home",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "50.98万",
+   "vals": {
+    "length": "5355",
+    "wheelbase": "3300",
+    "curb_weight": "2925",
+    "cltc_recharge_mileage": "710",
+    "recharge_mileage": "",
+    "power_consumption": "15.9",
+    "battery_capacity": "108",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "413kW(562Ps)",
+    "total_electric_torque": "657",
+    "front_electric_max_power": "155",
+    "front_electric_max_torque": "232",
+    "rear_electric_max_power": "258",
+    "rear_electric_max_torque": "425",
+    "sub_brand_name": "理想汽车"
+   }
+  }
+ ]
+}

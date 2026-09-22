@@ -1,0 +1,166 @@
+{
+ "kw": "ELEXIO",
+ "kws": [
+  "ELEXIO"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25427",
+ "series": {
+  "sid": "25427",
+  "name": "EO 羿欧",
+  "brand": "现代"
+ },
+ "cars": [
+  {
+   "id": "249357",
+   "name": "两驱FUN 64.2kWh",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "11.98万",
+   "vals": {
+    "length": "4615",
+    "wheelbase": "2750",
+    "curb_weight": "1884",
+    "cltc_recharge_mileage": "540",
+    "recharge_mileage": "540",
+    "power_consumption": "13.8",
+    "battery_capacity": "64.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "160kW(218Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京现代"
+   }
+  },
+  {
+   "id": "252932",
+   "name": "两驱SMART 64.2kWh",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "12.98万",
+   "vals": {
+    "length": "4615",
+    "wheelbase": "2750",
+    "curb_weight": "1884",
+    "cltc_recharge_mileage": "540",
+    "recharge_mileage": "540",
+    "power_consumption": "13.8",
+    "battery_capacity": "64.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "160kW(218Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京现代"
+   }
+  },
+  {
+   "id": "252934",
+   "name": "两驱TECH 64.2kWh",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "14.98万",
+   "vals": {
+    "length": "4615",
+    "wheelbase": "2750",
+    "curb_weight": "1884",
+    "cltc_recharge_mileage": "540",
+    "recharge_mileage": "540",
+    "power_consumption": "13.8",
+    "battery_capacity": "64.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "160kW(218Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京现代"
+   }
+  },
+  {
+   "id": "252933",
+   "name": "两驱SMART 88.112kWh",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "14.98万",
+   "vals": {
+    "length": "4615",
+    "wheelbase": "2750",
+    "curb_weight": "2039",
+    "cltc_recharge_mileage": "722",
+    "recharge_mileage": "722",
+    "power_consumption": "14.1",
+    "battery_capacity": "88.11",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "160kW(218Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京现代"
+   }
+  },
+  {
+   "id": "252935",
+   "name": "两驱TECH 88.112kWh",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "16.98万",
+   "vals": {
+    "length": "4615",
+    "wheelbase": "2750",
+    "curb_weight": "2039",
+    "cltc_recharge_mileage": "722",
+    "recharge_mileage": "722",
+    "power_consumption": "14.1",
+    "battery_capacity": "88.11",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "160kW(218Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京现代"
+   }
+  },
+  {
+   "id": "247676",
+   "name": "四驱TECH 88.112kWh",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "18.48万",
+   "vals": {
+    "length": "4615",
+    "wheelbase": "2750",
+    "curb_weight": "2184",
+    "cltc_recharge_mileage": "590",
+    "recharge_mileage": "590",
+    "power_consumption": "17.1",
+    "battery_capacity": "88.11",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "233kW(317Ps)",
+    "total_electric_torque": "480",
+    "front_electric_max_power": "160",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "73",
+    "rear_electric_max_torque": "170",
+    "sub_brand_name": "北京现代"
+   }
+  }
+ ]
+}

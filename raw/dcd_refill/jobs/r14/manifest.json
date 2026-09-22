@@ -1,0 +1,119 @@
+{
+ "batch": "r14",
+ "created": "2026-09-22 17:10:05",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "r14-01",
+   "kw": "腾势N9",
+   "js": "r14-01_腾势N9.js",
+   "series_name": "腾势N9",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-02",
+   "kw": "TIGGO 9 C-DM",
+   "js": "r14-02_TIGGO9CDM.js",
+   "series_name": "TIGGO 9 C-DM",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-03",
+   "kw": "A6L",
+   "js": "r14-03_A6L.js",
+   "series_name": "A6L",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-04",
+   "kw": "银河星耀6 EM-i",
+   "js": "r14-04_银河星耀6EMi.js",
+   "series_name": "银河星耀6 EM-i",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-05",
+   "kw": "银河星耀8 EMi",
+   "js": "r14-05_银河星耀8EMi.js",
+   "series_name": "银河星耀8 EMi",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-06",
+   "kw": "至境E7",
+   "js": "r14-06_至境E7.js",
+   "series_name": "至境E7",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-07",
+   "kw": "TIGUAN L ePRO",
+   "js": "r14-07_TIGUANLePRO.js",
+   "series_name": "TIGUAN L ePRO",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-08",
+   "kw": "大众ID 9X",
+   "js": "r14-08_大众ID9X.js",
+   "series_name": "大众ID 9X",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-09",
+   "kw": "图雅诺",
+   "js": "r14-09_图雅诺.js",
+   "series_name": "图雅诺",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-10",
+   "kw": "比亚迪海豹07",
+   "js": "r14-10_比亚迪海豹07.js",
+   "series_name": "比亚迪海豹07",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-11",
+   "kw": "06",
+   "js": "r14-11_06.js",
+   "series_name": "06",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-12",
+   "kw": "昊铂A800",
+   "js": "r14-12_昊铂A800.js",
+   "series_name": "昊铂A800",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-13",
+   "kw": "魏牌高山",
+   "js": "r14-13_魏牌高山.js",
+   "series_name": "魏牌高山,魏牌高山MINI,魏牌高山AIR,魏牌高山7",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-14",
+   "kw": "魏牌高山7",
+   "js": "r14-14_魏牌高山7.js",
+   "series_name": "魏牌高山7",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-15",
+   "kw": "魏牌高山",
+   "js": "r14-15_魏牌高山.js",
+   "series_name": "魏牌高山",
+   "gap_rows": 1
+  },
+  {
+   "rid": "r14-16",
+   "kw": "MAGOTAN",
+   "js": "r14-16_MAGOTAN.js",
+   "series_name": "MAGOTAN",
+   "gap_rows": 1
+  }
+ ]
+}

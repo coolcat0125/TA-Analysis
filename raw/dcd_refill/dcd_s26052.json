@@ -1,0 +1,116 @@
+{
+ "kw": "ID.AURA T6",
+ "kws": [
+  "ID.AURA T6"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26052",
+ "series": {
+  "sid": "26052",
+  "name": "ID.AURA T6",
+  "brand": "大众"
+ },
+ "cars": [
+  {
+   "id": "262653",
+   "name": "540 Pro",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.99万",
+   "vals": {
+    "length": "4811",
+    "wheelbase": "2836",
+    "curb_weight": "2026",
+    "cltc_recharge_mileage": "540",
+    "recharge_mileage": "",
+    "power_consumption": "12.5",
+    "battery_capacity": "59.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "170kW(231Ps)",
+    "total_electric_torque": "345",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "170",
+    "rear_electric_max_torque": "345",
+    "sub_brand_name": "一汽-大众"
+   }
+  },
+  {
+   "id": "262652",
+   "name": "660 Pro",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "13.99万",
+   "vals": {
+    "length": "4811",
+    "wheelbase": "2836",
+    "curb_weight": "2126",
+    "cltc_recharge_mileage": "660",
+    "recharge_mileage": "",
+    "power_consumption": "13.1",
+    "battery_capacity": "77.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "170kW(231Ps)",
+    "total_electric_torque": "345",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "170",
+    "rear_electric_max_torque": "345",
+    "sub_brand_name": "一汽-大众"
+   }
+  },
+  {
+   "id": "262651",
+   "name": "660 Max 激光雷达版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "14.99万",
+   "vals": {
+    "length": "4811",
+    "wheelbase": "2836",
+    "curb_weight": "2126",
+    "cltc_recharge_mileage": "660",
+    "recharge_mileage": "",
+    "power_consumption": "13.1",
+    "battery_capacity": "77.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "170kW(231Ps)",
+    "total_electric_torque": "345",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "170",
+    "rear_electric_max_torque": "345",
+    "sub_brand_name": "一汽-大众"
+   }
+  },
+  {
+   "id": "257754",
+   "name": "660 Ultra 激光雷达版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "16.69万",
+   "vals": {
+    "length": "4811",
+    "wheelbase": "2836",
+    "curb_weight": "2126",
+    "cltc_recharge_mileage": "660",
+    "recharge_mileage": "",
+    "power_consumption": "13.1",
+    "battery_capacity": "77.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "170kW(231Ps)",
+    "total_electric_torque": "345",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "170",
+    "rear_electric_max_torque": "345",
+    "sub_brand_name": "一汽-大众"
+   }
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "kw": "比亚迪海豚",
+ "kws": [
+  "比亚迪海豚"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:04",
+ "series_url": "https://www.dongchedi.com/auto/series/5008",
+ "series": {
+  "sid": "5008",
+  "name": "海豚",
+  "brand": "比亚迪"
+ },
+ "cars": [
+  {
+   "id": "243298",
+   "name": "智驾版 420KM自由版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "9.98万",
+   "vals": {
+    "length": "4280",
+    "wheelbase": "2700",
+    "curb_weight": "1410",
+    "cltc_recharge_mileage": "420",
+    "recharge_mileage": "420",
+    "power_consumption": "11.2",
+    "battery_capacity": "45.12",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "140.0",
+    "total_electric_power": "70kW(95Ps)",
+    "total_electric_torque": "180",
+    "front_electric_max_power": "70",
+    "front_electric_max_torque": "180",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "比亚迪"
+   }
+  },
+  {
+   "id": "243299",
+   "name": "智驾版 410KM时尚版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "10.98万",
+   "vals": {
+    "length": "4280",
+    "wheelbase": "2700",
+    "curb_weight": "1480",
+    "cltc_recharge_mileage": "410",
+    "recharge_mileage": "410",
+    "power_consumption": "11.3",
+    "battery_capacity": "45.12",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "140.0",
+    "total_electric_power": "130kW(177Ps)",
+    "total_electric_torque": "290",
+    "front_electric_max_power": "130",
+    "front_electric_max_torque": "290",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "比亚迪"
+   }
+  },
+  {
+   "id": "243300",
+   "name": "智驾版 520KM骑士版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "12.58万",
+   "vals": {
+    "length": "4280",
+    "wheelbase": "2700",
+    "curb_weight": "1600",
+    "cltc_recharge_mileage": "520",
+    "recharge_mileage": "520",
+    "power_consumption": "12.9",
+    "battery_capacity": "60.48",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "150.0",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "比亚迪"
+   }
+  }
+ ]
+}

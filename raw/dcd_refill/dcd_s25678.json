@@ -1,0 +1,91 @@
+{
+ "kw": "QQ3",
+ "kws": [
+  "QQ3"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25678",
+ "series": {
+  "sid": "25678",
+  "name": "QQ3 EV",
+  "brand": "奇瑞QQ"
+ },
+ "cars": [
+  {
+   "id": "256706",
+   "name": "310热爱版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "5.89万",
+   "vals": {
+    "length": "4195",
+    "wheelbase": "2700",
+    "curb_weight": "1275",
+    "cltc_recharge_mileage": "310",
+    "recharge_mileage": "310",
+    "power_consumption": "10.8",
+    "battery_capacity": "29.48",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "58kW(79Ps)",
+    "total_electric_torque": "90",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "58",
+    "rear_electric_max_torque": "90",
+    "sub_brand_name": "奇瑞新能源"
+   }
+  },
+  {
+   "id": "256705",
+   "name": "310分享版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "6.79万",
+   "vals": {
+    "length": "4195",
+    "wheelbase": "2700",
+    "curb_weight": "1275",
+    "cltc_recharge_mileage": "310",
+    "recharge_mileage": "310",
+    "power_consumption": "10.8",
+    "battery_capacity": "29.48",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "58kW(79Ps)",
+    "total_electric_torque": "90",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "58",
+    "rear_electric_max_torque": "90",
+    "sub_brand_name": "奇瑞新能源"
+   }
+  },
+  {
+   "id": "256708",
+   "name": "420热爱版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "6.89万",
+   "vals": {
+    "length": "4195",
+    "wheelbase": "2700",
+    "curb_weight": "1360",
+    "cltc_recharge_mileage": "420",
+    "recharge_mileage": "420",
+    "power_consumption": "11",
+    "battery_capacity": "41.28",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "90kW(122Ps)",
+    "total_electric_torque": "115",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "90",
+    "rear_electric_max_torque": "115",
+    "sub_brand_name": "奇瑞新能源"
+   }
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "kw": "瑶光 C-DM",
+ "kws": [
+  "瑶光 C-DM"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:18",
+ "series_url": "https://www.dongchedi.com/auto/series/8967",
+ "series": {
+  "sid": "8967",
+  "name": "星途瑶光C-DM",
+  "brand": "星途"
+ },
+ "cars": [
+  {
+   "id": "259175",
+   "name": "寰球版 120长续航两驱",
+   "year": "2027",
+   "sale_status": 0,
+   "official_price": "13.79万",
+   "vals": {
+    "length": "4781",
+    "wheelbase": "2815",
+    "curb_weight": "1913",
+    "cltc_recharge_mileage": "120",
+    "recharge_mileage": "100",
+    "power_consumption": "16.8",
+    "battery_capacity": "19.53",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "星途"
+   }
+  },
+  {
+   "id": "252487",
+   "name": "寰球版 120长续航两驱",
+   "year": "2026",
+   "sale_status": 2,
+   "official_price": "13.99万",
+   "vals": {
+    "length": "4781",
+    "wheelbase": "2815",
+    "curb_weight": "1913",
+    "cltc_recharge_mileage": "120",
+    "recharge_mileage": "100",
+    "power_consumption": "16.8",
+    "battery_capacity": "19.53",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "星途"
+   }
+  },
+  {
+   "id": "252488",
+   "name": "寰球版 210超长续航两驱",
+   "year": "2026",
+   "sale_status": 2,
+   "official_price": "16.99万",
+   "vals": {
+    "length": "4781",
+    "wheelbase": "2815",
+    "curb_weight": "2030",
+    "cltc_recharge_mileage": "210",
+    "recharge_mileage": "160",
+    "power_consumption": "19.3",
+    "battery_capacity": "34.46",
+    "battery_type": "三元锂电池+磷酸锰铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "165kW(224Ps)",
+    "total_electric_torque": "390",
+    "front_electric_max_power": "165",
+    "front_electric_max_torque": "390",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "星途"
+   }
+  },
+  {
+   "id": "252489",
+   "name": "寰球版 200超长续航四驱",
+   "year": "2026",
+   "sale_status": 2,
+   "official_price": "18.99万",
+   "vals": {
+    "length": "4781",
+    "wheelbase": "2815",
+    "curb_weight": "2171",
+    "cltc_recharge_mileage": "200",
+    "recharge_mileage": "150",
+    "power_consumption": "20.5",
+    "battery_capacity": "34.46",
+    "battery_type": "三元锂电池+磷酸锰铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "340kW(462Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "165",
+    "front_electric_max_torque": "390",
+    "rear_electric_max_power": "175",
+    "rear_electric_max_torque": "310",
+    "sub_brand_name": "星途"
+   }
+  },
+  {
+   "id": "249045",
+   "name": "星界版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "21.88万",
+   "vals": {
+    "length": "4781",
+    "wheelbase": "2815",
+    "curb_weight": "1977",
+    "cltc_recharge_mileage": "100",
+    "recharge_mileage": "84",
+    "power_consumption": "16.9",
+    "battery_capacity": "18.67",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "165kW(224Ps)",
+    "total_electric_torque": "390",
+    "front_electric_max_power": "165",
+    "front_electric_max_torque": "390",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "星途"
+   }
+  }
+ ]
+}

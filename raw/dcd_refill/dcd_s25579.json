@@ -1,0 +1,66 @@
+{
+ "kw": "比亚迪M9",
+ "kws": [
+  "比亚迪M9"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:01",
+ "series_url": "https://www.dongchedi.com/auto/series/25579",
+ "series": {
+  "sid": "25579",
+  "name": "比亚迪M9",
+  "brand": "比亚迪"
+ },
+ "cars": [
+  {
+   "id": "251290",
+   "name": "1060 领航版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "22.98万",
+   "vals": {
+    "length": "5145",
+    "wheelbase": "3045",
+    "curb_weight": "2470",
+    "cltc_recharge_mileage": "100",
+    "recharge_mileage": "85",
+    "power_consumption": "17.8",
+    "battery_capacity": "20.39",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "102.0",
+    "total_electric_power": "200kW(272Ps)",
+    "total_electric_torque": "315",
+    "front_electric_max_power": "200",
+    "front_electric_max_torque": "315",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "比亚迪"
+   }
+  },
+  {
+   "id": "251291",
+   "name": "1060 领航版Pro",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "24.98万",
+   "vals": {
+    "length": "5145",
+    "wheelbase": "3045",
+    "curb_weight": "2470",
+    "cltc_recharge_mileage": "100",
+    "recharge_mileage": "85",
+    "power_consumption": "17.8",
+    "battery_capacity": "20.39",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "102.0",
+    "total_electric_power": "200kW(272Ps)",
+    "total_electric_torque": "315",
+    "front_electric_max_power": "200",
+    "front_electric_max_torque": "315",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "比亚迪"
+   }
+  }
+ ]
+}

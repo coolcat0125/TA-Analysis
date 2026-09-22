@@ -1,0 +1,141 @@
+{
+ "kw": "ID.ERA 5S",
+ "kws": [
+  "ID.ERA 5S"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 17:03",
+ "series_url": "https://www.dongchedi.com/auto/series/26133",
+ "series": {
+  "sid": "26133",
+  "name": "ID. ERA 5S",
+  "brand": "大众"
+ },
+ "cars": [
+  {
+   "id": "258567",
+   "name": "Pure",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "11.99万",
+   "vals": {
+    "length": "4836",
+    "wheelbase": "2766",
+    "curb_weight": "1655",
+    "cltc_recharge_mileage": "160",
+    "recharge_mileage": "",
+    "power_consumption": "13.5",
+    "battery_capacity": "19.1",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "130kW(177Ps)",
+    "total_electric_torque": "270",
+    "front_electric_max_power": "130",
+    "front_electric_max_torque": "270",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽大众"
+   }
+  },
+  {
+   "id": "262018",
+   "name": "Neo",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.99万",
+   "vals": {
+    "length": "4836",
+    "wheelbase": "2766",
+    "curb_weight": "1655",
+    "cltc_recharge_mileage": "160",
+    "recharge_mileage": "",
+    "power_consumption": "13.5",
+    "battery_capacity": "19.1",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "130kW(177Ps)",
+    "total_electric_torque": "270",
+    "front_electric_max_power": "130",
+    "front_electric_max_torque": "270",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽大众"
+   }
+  },
+  {
+   "id": "262019",
+   "name": "Pro",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "13.99万",
+   "vals": {
+    "length": "4836",
+    "wheelbase": "2766",
+    "curb_weight": "1655",
+    "cltc_recharge_mileage": "160",
+    "recharge_mileage": "",
+    "power_consumption": "13.5",
+    "battery_capacity": "19.1",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "130kW(177Ps)",
+    "total_electric_torque": "270",
+    "front_electric_max_power": "130",
+    "front_electric_max_torque": "270",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽大众"
+   }
+  },
+  {
+   "id": "262393",
+   "name": "Pro领航版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "14.49万",
+   "vals": {
+    "length": "4836",
+    "wheelbase": "2766",
+    "curb_weight": "1655",
+    "cltc_recharge_mileage": "160",
+    "recharge_mileage": "",
+    "power_consumption": "13.5",
+    "battery_capacity": "19.1",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "130kW(177Ps)",
+    "total_electric_torque": "270",
+    "front_electric_max_power": "130",
+    "front_electric_max_torque": "270",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽大众"
+   }
+  },
+  {
+   "id": "262020",
+   "name": "Max",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "14.99万",
+   "vals": {
+    "length": "4836",
+    "wheelbase": "2766",
+    "curb_weight": "1655",
+    "cltc_recharge_mileage": "160",
+    "recharge_mileage": "",
+    "power_consumption": "13.5",
+    "battery_capacity": "19.1",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "130kW(177Ps)",
+    "total_electric_torque": "270",
+    "front_electric_max_power": "130",
+    "front_electric_max_torque": "270",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽大众"
+   }
+  }
+ ]
+}

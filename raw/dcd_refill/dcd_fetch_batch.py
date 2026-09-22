@@ -51,15 +51,21 @@ def main():
             log = json.load(f)
     ch = d.load_cookie_header()
     print(f'待抓取: {len(sid_kws)} 车系')
-    nok = nfail = 0
+    nok = nfail = done = 0
     for i, (sid, kws) in enumerate(sorted(sid_kws.items())):
         out_path = os.path.join(HERE, f'dcd_s{sid}.json')
         if os.path.exists(out_path) and not a.force:
             nok += 1
             continue
+        done += 1
+        if done > 1 and (done - 1) % 40 == 0:
+            print(f'  …冷却 45s（已抓 {done-1}）')
+            time.sleep(45)
         entry = {'kws': kws, 'time': datetime.now().strftime('%m-%d %H:%M')}
         built = None
-        for attempt in (1, 2):
+        for attempt, backoff in ((1, 0), (2, 8), (3, 20)):
+            if backoff:
+                time.sleep(backoff)
             try:
                 code, html = d.fetch(
                     f'https://www.dongchedi.com/auto/params-carIds-x-{sid}', ch)
@@ -71,7 +77,6 @@ def main():
                 break
             entry['error'] = entry.get('error') or 'rawData 空'
             built = None
-            time.sleep(3)
         if built:
             doc = {'kw': kws[0], 'kws': kws, 'channel': 'direct-http',
                    'fetched_at': entry['time'],
@@ -89,9 +94,9 @@ def main():
             log[sid] = entry
             print(f'[{i+1}/{len(sid_kws)}] sid={sid} {kws[0]} -> FAIL '
                   f"({entry.get('error')})")
-            with open(FETCH_LOG, 'w', encoding='utf-8') as f:
-                json.dump(log, f, ensure_ascii=False, indent=1)
-        time.sleep(2)
+        with open(FETCH_LOG, 'w', encoding='utf-8') as f:
+            json.dump(log, f, ensure_ascii=False, indent=1)
+        time.sleep(3.5)
     print(f'完成: ok={nok} fail={nfail}')
 
 

@@ -1,0 +1,141 @@
+{
+ "kw": "沃尔沃XC60",
+ "kws": [
+  "沃尔沃XC60"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-22 16:59",
+ "series_url": "https://www.dongchedi.com/auto/series/1282",
+ "series": {
+  "sid": "1282",
+  "name": "沃尔沃XC60",
+  "brand": "沃尔沃"
+ },
+ "cars": [
+  {
+   "id": "248933",
+   "name": "B5 四驱智逸豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "39.69万",
+   "vals": {
+    "length": "4708",
+    "wheelbase": "2865",
+    "curb_weight": "1920",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  },
+  {
+   "id": "248804",
+   "name": "B5 四驱智远豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "42.59万",
+   "vals": {
+    "length": "4708",
+    "wheelbase": "2865",
+    "curb_weight": "1920",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  },
+  {
+   "id": "248807",
+   "name": "B5 四驱智远运动版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "42.59万",
+   "vals": {
+    "length": "4708",
+    "wheelbase": "2865",
+    "curb_weight": "1920",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  },
+  {
+   "id": "249031",
+   "name": "B5 四驱智远极夜黑版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "42.59万",
+   "vals": {
+    "length": "4708",
+    "wheelbase": "2865",
+    "curb_weight": "1920",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  },
+  {
+   "id": "249032",
+   "name": "B5 四驱智雅豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "47.49万",
+   "vals": {
+    "length": "4708",
+    "wheelbase": "2865",
+    "curb_weight": "1920",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "沃尔沃亚太"
+   }
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "batch": "b03",
+ "created": "2026-09-22 17:09:22",
+ "channel": "tabbit-browser",
+ "jobs": [
+  {
+   "rid": "b03-01",
+   "kw": "聚星",
+   "js": "b03-01_聚星.js",
+   "series_name": "聚星",
+   "gap_rows": 36
+  },
+  {
+   "rid": "b03-02",
+   "kw": "哪吒U",
+   "js": "b03-02_哪吒U.js",
+   "series_name": "哪吒U",
+   "gap_rows": 34
+  },
+  {
+   "rid": "b03-03",
+   "kw": "SV",
+   "js": "b03-03_SV.js",
+   "series_name": "SV",
+   "gap_rows": 33
+  },
+  {
+   "rid": "b03-04",
+   "kw": "ID.UNYX 与众07",
+   "js": "b03-04_IDUNYX与众07.js",
+   "series_name": "ID.UNYX 与众07",
+   "gap_rows": 33
+  },
+  {
+   "rid": "b03-05",
+   "kw": "eQ5",
+   "js": "b03-05_eQ5.js",
+   "series_name": "eQ5",
+   "gap_rows": 32
+  }
+ ]
+}
