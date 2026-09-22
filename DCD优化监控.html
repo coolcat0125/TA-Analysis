@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta http-equiv="refresh" content="15">
+<title>DCD 自动优化监控</title>
+<style>
+:root{color-scheme:light}
+*{box-sizing:border-box}
+body{font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;margin:0;background:#f5f6f8;color:#1f2329}
+.wrap{max-width:1180px;margin:0 auto;padding:22px}
+h1{font-size:21px;margin:0 0 4px}
+h2{font-size:15px;margin:26px 0 10px;color:#333;border-left:4px solid #e8734a;padding-left:8px}
+.meta{color:#666;font-size:12.5px;margin-bottom:14px}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.kpi{background:#fff;border:1px solid #e4e6eb;border-radius:10px;padding:12px 14px}
+.kpi-l{font-size:12px;color:#777}
+.kpi-v{font-size:22px;font-weight:700;margin:2px 0}
+.kpi-s{font-size:11.5px;color:#999}
+.panel{background:#fff;border:1px solid #e4e6eb;border-radius:10px;padding:14px 16px;margin-top:12px}
+table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px}
+th{text-align:left;color:#666;font-weight:600;border-bottom:2px solid #eee;padding:6px 8px}
+td{border-bottom:1px solid #f0f0f0;padding:6px 8px}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.bar{background:#eee;border-radius:4px;height:9px;width:100%;min-width:90px}
+.bar-in{background:#4a9e5c;height:9px;border-radius:4px}
+.badge{display:inline-block;padding:1px 8px;border-radius:9px;font-size:11.5px}
+.b-ok{background:#e6f4ea;color:#1e7e34}.b-warn{background:#fff4e0;color:#a15c00}
+.b-bad{background:#fdecea;color:#c0392b}.b-info{background:#e8f0fe;color:#1a56b0}
+.b-idle{background:#eee;color:#666}
+.alert{background:#fdecea;border:1px solid #f5c6c0;border-radius:8px;padding:8px 12px;font-size:12.5px}
+.stale{background:#fff4e0;border:1px solid #f0d9a8;border-radius:8px;padding:9px 13px;margin:10px 0;font-size:13px}
+.blocker{background:#fdf3f2;border-left:3px solid #c0392b;padding:7px 11px;margin:6px 0;font-size:12.5px;border-radius:0 6px 6px 0}
+.muted{color:#999;font-size:12.5px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.foot{margin-top:26px;color:#999;font-size:11.5px;line-height:1.7}
+@media(max-width:900px){.kpis{grid-template-columns:repeat(3,1fr)}.grid2{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<h1>DCD 懂车帝参数自动优化 · 监控看板</h1>
+<div class="meta">数据截至 - · 页面 2026-09-22 15:25:08 生成 · 每 15s 自动刷新 ·
+循环状态 <span class="badge b-idle">空闲</span> · 基线 HEAD  · 底表 SHA </div>
+
+<div class="kpis"><div class="kpi"><div class="kpi-l">计划车系</div><div class="kpi-v">843</div><div class="kpi-s">缺口格 3,653</div></div><div class="kpi"><div class="kpi-l">已完成</div><div class="kpi-v">0</div><div class="kpi-s">拒绝 0 · 滞留 0</div></div><div class="kpi"><div class="kpi-l">累计绿填</div><div class="kpi-v">0</div><div class="kpi-s">红修 0(默认关)</div></div><div class="kpi"><div class="kpi-l">批次</div><div class="kpi-v">0</div><div class="kpi-s">回退 0</div></div><div class="kpi"><div class="kpi-l">门禁</div><div class="kpi-v">CRIT -</div><div class="kpi-s">WARN -</div></div><div class="kpi"><div class="kpi-l">护栏拦截</div><div class="kpi-v">0</div><div class="kpi-s">W5成对/污染锚点/歧义</div></div></div>
+<div class="panel"><b>总体进度</b>
+<div class="bar" style="margin-top:8px;height:14px"><div class="bar-in" style="width:0.0%;height:14px"></div></div>
+<div class="meta" style="margin-top:6px">已完成车系 0 / 843(0.0%)</div></div>
+<h2>进度与预计完成时间</h2>
+<div class="panel"><p class="muted">尚无进度数据(跑过 apply 或执行 eta 子命令后显示)</p></div>
+<h2>字段覆盖率(自动填充集 8 项)</h2>
+<div class="panel"><table><thead><tr><th>字段(自动填充集)</th><th>已填/总数</th><th>覆盖率</th><th></th></tr></thead>
+        <tbody><tr><td>车长(mm)</td><td class='num'>4,456/5,392</td><td class='num'>82.6%</td><td><div class='bar'><div class='bar-in' style='width:82.6%'></div></div></td></tr><tr><td>轴距(mm)</td><td class='num'>4,470/5,392</td><td class='num'>82.9%</td><td><div class='bar'><div class='bar-in' style='width:82.9%'></div></div></td></tr><tr><td>整备质量(kg)</td><td class='num'>4,865/5,392</td><td class='num'>90.2%</td><td><div class='bar'><div class='bar-in' style='width:90.2%'></div></div></td></tr><tr><td>纯电续航里程(km)</td><td class='num'>5,249/5,392</td><td class='num'>97.3%</td><td><div class='bar'><div class='bar-in' style='width:97.3%'></div></div></td></tr><tr><td>电池容量(kWh)</td><td class='num'>4,917/5,392</td><td class='num'>91.2%</td><td><div class='bar'><div class='bar-in' style='width:91.2%'></div></div></td></tr><tr><td>电池类型</td><td class='num'>4,940/5,392</td><td class='num'>91.6%</td><td><div class='bar'><div class='bar-in' style='width:91.6%'></div></div></td></tr><tr><td>电池能量密度(Wh/kg)</td><td class='num'>4,241/5,392</td><td class='num'>78.7%</td><td><div class='bar'><div class='bar-in' style='width:78.7%'></div></div></td></tr></tbody></table></div>
+<h2>批次历史</h2>
+<div class="panel"><p class="muted">尚无批次记录</p></div>
+<div class="grid2">
+<div><h2>当前批次</h2><div class="panel"><p class="muted">无活动批次</p></div></div>
+<div><h2>回退与阻塞</h2><div class="panel"><p class="muted">无回退/阻塞记录</p></div></div>
+</div>
+<h2>队列预览(缺口优先前 12)</h2>
+<div class="panel"><table><thead><tr><th>#</th><th>车系(族/名)</th><th>行数</th><th>缺口格</th><th>标记</th></tr></thead>
+    <tbody><tr><td class='num'>1</td><td>欧拉R1 / 欧拉R1</td><td class='num'>8</td><td class='num'>48</td><td>共享名</td></tr><tr><td class='num'>2</td><td>瑞驰 EC75 / 瑞驰 EC75</td><td class='num'>10</td><td class='num'>44</td><td>共享名</td></tr><tr><td class='num'>3</td><td>V919 / V919</td><td class='num'>12</td><td class='num'>38</td><td>共享名</td></tr><tr><td class='num'>4</td><td>菱智M5EV / 菱智M5EV</td><td class='num'>8</td><td class='num'>36</td><td></td></tr><tr><td class='num'>5</td><td>比亚迪唐 / 比亚迪唐</td><td class='num'>8</td><td class='num'>35</td><td>共享名</td></tr><tr><td class='num'>6</td><td>乐福 / 乐福</td><td class='num'>7</td><td class='num'>29</td><td></td></tr><tr><td class='num'>7</td><td>Hyper GT / Hyper GT</td><td class='num'>14</td><td class='num'>28</td><td></td></tr><tr><td class='num'>8</td><td>Hyper HT / Hyper HT</td><td class='num'>14</td><td class='num'>28</td><td></td></tr><tr><td class='num'>9</td><td>eQ1 / eQ1</td><td class='num'>8</td><td class='num'>26</td><td>共享名</td></tr><tr><td class='num'>10</td><td>欧拉iQ / 欧拉iQ</td><td class='num'>5</td><td class='num'>25</td><td></td></tr><tr><td class='num'>11</td><td>聚星 / 聚星</td><td class='num'>12</td><td class='num'>24</td><td></td></tr><tr><td class='num'>12</td><td>比亚迪e3 / 比亚迪e3</td><td class='num'>6</td><td class='num'>24</td><td>共享名</td></tr></tbody></table></div>
+<h2>最近填充(25 条)</h2>
+<div class="panel"><p class="muted">尚无填充记录</p></div>
+<div class="foot">
+纪律红线:只补空 · 唯一共识才写 · BEV 禁填油耗/发动机 · 车长/轴距成对(W5 铁律) · 22:40-06:00 禁写库 · 每批三件套自检(verify CRITICAL=0 / audit strict PASS / 双看板重生成) · 红修默认关闭待批准。<br>
+数据来源:懂车帝参数页(Tabbit 用户会话通道)· 台账落底表《变更记录》· 状态文件 dcd_auto/state/pipeline_state.json · 本看板由 render_dashboard.py 生成。
+</div>
+</div></body></html>

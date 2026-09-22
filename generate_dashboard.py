@@ -2534,7 +2534,7 @@ function renderCustom3D(ch, kind, bev, phev, m, avg, rng, fv){
 }
 /* ===== 方案C：梯度曲面图（surface3D，X-Y 网格聚合，曲面高=Z 聚合值，颜色=高度梯度） ===== */
 /* 与 renderHeat 同源的分箱思路，但输出规则网格供 surface3D 成面；
-   空格高度按 0 显示为低洼，即数据覆盖盲区；聚合方式由 CD_STATE.agg 控制 */
+   空格相应位置透明镂空（与泡泡图一致，只留网格线，不遮挡山峰），即数据覆盖盲区；聚合方式由 CD_STATE.agg 控制 */
 function renderSurface3D(ch, bev, phev, m, avg, rng, fv){
   const S=CD_STYLES[CD_STATE.style] || CD_STYLES.A;
   const xN=m.xN, yN=m.yN, zN=m.zN;
@@ -2583,16 +2583,26 @@ function renderSurface3D(ch, bev, phev, m, avg, rng, fv){
   const gmin=Math.min(gB.zlo,gP.zlo), gmax=Math.max(gB.zhi,gP.zhi);
   const total=all.length, totEmpty=gB.empty+gP.empty;
   const AGGN={mean:'均值',median:'中位数',count:'样本计数'}[CD_STATE.agg]||'均值';
+  /* ===== 空白格/区间外一律透明(与方案B泡泡图一致的底面观感,2026-09-22 用户要求)=====
+     历史:①最初 outOfRange 半透明灰泛白、且在屏幕空间盖住山峰;②改为不透明底板色后,
+     我用轴标签亮度反推主题明暗,而暗色主题的刻度恰是浅色 -> 误选浅色底板,在暗背景上
+     泛出一片白、压住梯度显示。
+     正解:空格不铺任何实色。three.js 中 material 为 opaque(transparent:false)时关闭混合,
+     alpha=0 的顶点只写深度、不改帧缓冲颜色 -> 空白处看不见,只剩 grid3D 网格线,
+     与方案B的底面观感一致。地形本体保持 opacity:1:不透明 mesh 才写深度缓冲,
+     山峰因 z 更高天然位于底面之前,不会被后绘制的系列罩住。 */
+  const EMPTY_COLOR='rgba(0,0,0,0)';   /* 空白格/区间外:全透明 */
+
   const mkSf=(nm,g,fam)=>({name:nm,type:'surface',data:g.data,
     shading:S.shading,
-    itemStyle:Object.assign({opacity:S.opacity},
+    itemStyle:Object.assign({opacity:1},
       S.border?{borderColor:S.border(fam),borderWidth:Math.max(.5,S.bw)}:{},
       S.bevel?{bevelSize:S.bevel[0],bevelSmoothness:S.bevel[1]}:{}),
     emphasis:{itemStyle:{opacity:1}}});
   const part3=(nm,st)=>st.every(v=>v!=null)?`${nm}：<em>${xN}</em> 均值 <em>${fv(st[0])}</em> · <em>${yN}</em> 均值 <em>${fv(st[1])}</em> · <em>${zN}</em> 均值 <em>${fv(st[2])}</em>`:'';
   const seg=[part3('BEV',statB),part3('PHEV/EREV',statP)].filter(Boolean).join(' ｜ ');
   let core=`<b>梯度曲面图（方案C · 地形）</b>：X <em>${xN}</em> × Y <em>${yN}</em> · 曲面高=Z <em>${zN}</em> 的<em>${AGGN}</em> · 网格 <em>${NX}×${NY}</em> · 风格 <em>${S.name}</em> · 有效样本 <em>${fmt(total)}</em> 组（BEV <em>${fmt(bev.length)}</em> / PHEV-EREV <em>${fmt(phev.length)}</em>，缺失不计入）`;
-  let detail=`颜色深度=地形海拔：曲面高度为 <em>${zN}</em> 的${AGGN}（范围 <em>${fv(gmin)} ~ ${fv(gmax)}</em>），同色系内越高颜色越深${CD_STATE.invZ?'（梯度已反向）':''}；<b>拖动右侧色带两端手柄选取数值区间</b>，区间外面自动置灰。`+
+  let detail=`颜色深度=地形海拔：曲面高度为 <em>${zN}</em> 的${AGGN}（范围 <em>${fv(gmin)} ~ ${fv(gmax)}</em>），同色系内越高颜色越深${CD_STATE.invZ?'（梯度已反向）':''}；<b>拖动右侧色带两端手柄选取数值区间</b>，区间外变为透明（镂空）。`+
     `<br><b>空白格</b>：<em>${fmt(totEmpty)}</em> 个网格无样本，高度按 0 显示为低洼，即数据覆盖盲区；`+
     `切「视图 → 三维柱状」可回到逐车型海拔视角。`;
   if(seg) detail += `<br>${seg}`;
@@ -2618,11 +2628,11 @@ function renderSurface3D(ch, bev, phev, m, avg, rng, fv){
       {type:'continuous',seriesIndex:0,dimension:2,min:gmin,max:gmax,calculable:true,show:true,
        orient:'vertical',right:8,top:'middle',itemWidth:13,itemHeight:110,hoverLink:true,
        text:[`BEV ${fv(gmax)}`,fv(gmin)],textStyle:{color:S.label,fontSize:10},
-       inRange:{color:brB}, outOfRange:{color:'rgba(132,140,152,.10)'}},
+       inRange:{color:brB}, outOfRange:{color:EMPTY_COLOR}},
       {type:'continuous',seriesIndex:1,dimension:2,min:gmin,max:gmax,calculable:true,show:true,
        orient:'vertical',right:66,top:'middle',itemWidth:13,itemHeight:110,hoverLink:true,
        text:[`PHEV/EREV ${fv(gmax)}`,fv(gmin)],textStyle:{color:S.label,fontSize:10},
-       inRange:{color:brP}, outOfRange:{color:'rgba(132,140,152,.10)'}}
+       inRange:{color:brP}, outOfRange:{color:EMPTY_COLOR}}
     ],
     grid3D:g3,
     xAxis3D:cdAX3(S,xN,exX,false,invX),
