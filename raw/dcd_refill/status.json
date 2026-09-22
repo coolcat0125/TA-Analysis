@@ -1,20 +1,20 @@
 {
- "updated": "2026-09-21 23:39:35",
+ "updated": "2026-09-22 10:38:46",
  "workbook_rows": 5392,
  "dcd_coverage": {
+  "整备质量(kg)": 90.2,
   "轴距(mm)": 82.9,
-  "前电机功率/扭矩": 81.6,
-  "车长(mm)": 82.6,
   "纯电续航里程(km)": 97.3,
-  "百公里电耗(kWh/100km)": 94.9,
-  "电池类型": 91.7,
-  "后电机功率/扭矩": 31.2,
+  "前电机功率/扭矩": 81.6,
+  "后电机功率/扭矩": 29.7,
   "电池能量密度(Wh/kg)": 78.7,
-  "电机总功率/扭矩": 96.6,
+  "电池类型": 91.7,
   "电池容量(kWh)": 91.2,
-  "整备质量(kg)": 90.2
+  "车长(mm)": 82.6,
+  "百公里电耗(kWh/100km)": 94.9,
+  "电机总功率/扭矩": 96.6
  },
- "dcd_ledger_cells": 745,
+ "dcd_ledger_cells": 1036,
  "batches": [
   {
    "id": "b01",
@@ -119,128 +119,232 @@
    ],
    "gap_rows": 124,
    "green": 0
+  },
+  {
+   "id": "r01",
+   "status": "planned-recent",
+   "series": [
+    "ORA 5",
+    "捷途环游者",
+    "星光M",
+    "ID.ERA 5X",
+    "欧拉5"
+   ],
+   "gap_rows": 70,
+   "green": 0
+  },
+  {
+   "id": "r02",
+   "status": "planned-recent",
+   "series": [
+    "Lafa 5",
+    "奕境X9",
+    "问界M8EV",
+    "XT5",
+    "iMAX8 EV"
+   ],
+   "gap_rows": 61,
+   "green": 0
+  },
+  {
+   "id": "r03",
+   "status": "planned-recent",
+   "series": [
+    "埃安Ray 7",
+    "问界M8",
+    "猛士X700",
+    "海豹07",
+    "智界RX"
+   ],
+   "gap_rows": 53,
+   "green": 0
+  },
+  {
+   "id": "r04",
+   "status": "planned-recent",
+   "series": [
+    "VLE",
+    "高山9",
+    "iCAR V27",
+    "Ray7",
+    "极狐T1"
+   ],
+   "gap_rows": 18,
+   "green": 0
+  },
+  {
+   "id": "r05",
+   "status": "planned-recent",
+   "series": [
+    "V9X",
+    "MG 07",
+    "smart精灵#2",
+    "Lafa 5 Ultra",
+    "极狐αT5"
+   ],
+   "gap_rows": 15,
+   "green": 0
+  },
+  {
+   "id": "r06",
+   "status": "planned-recent",
+   "series": [
+    "捷途环游者",
+    "TF7",
+    "钛9",
+    "NX7",
+    "银河M7"
+   ],
+   "gap_rows": 9,
+   "green": 0
+  },
+  {
+   "id": "r07",
+   "status": "planned-recent",
+   "series": [
+    "银河星舰7",
+    "A05L",
+    "享界V8",
+    "EV5",
+    "江铃E途顺"
+   ],
+   "gap_rows": 60,
+   "green": 0
+  },
+  {
+   "id": "r08",
+   "status": "planned-recent",
+   "series": [
+    "星海V6",
+    "奔腾小马",
+    "远程M7E",
+    "启境GX7",
+    "红旗天工07"
+   ],
+   "gap_rows": 63,
+   "green": 0
   }
  ],
  "recent_ledger": [
   {
-   "seq": 46898,
-   "model": "CC7000BJ02ABEV",
-   "field": "电池容量(kWh)",
-   "kind": "媒体参数补全",
-   "old": "(空)",
-   "new": "45.9"
+   "seq": 47191,
+   "model": "LZW7001EVAHAN",
+   "field": "电机总功率/扭矩",
+   "kind": "代际错配更正",
+   "old": "180",
+   "new": "30"
   },
   {
-   "seq": 46897,
-   "model": "CC6430BJ00HKBEV",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4480",
-   "new": 4242
+   "seq": 47190,
+   "model": "LZW7001EVAHAN",
+   "field": "后电机功率/扭矩",
+   "kind": "代际错配更正",
+   "old": "150/310",
+   "new": null
   },
   {
-   "seq": 46896,
-   "model": "CC6430BJ00NJBEV",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4480",
-   "new": 4242
+   "seq": 47189,
+   "model": "LZW7004EVPHAK",
+   "field": "电机总功率/扭矩",
+   "kind": "代际错配更正",
+   "old": "180",
+   "new": "30"
   },
   {
-   "seq": 46895,
-   "model": "CC6430BJ00NHBEV",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4480",
-   "new": 4242
+   "seq": 47188,
+   "model": "LZW7004EVPHAK",
+   "field": "后电机功率/扭矩",
+   "kind": "代际错配更正",
+   "old": "150/310",
+   "new": null
   },
   {
-   "seq": 46894,
-   "model": "CC6430BJ00HHBEV",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4480",
-   "new": 4242
+   "seq": 47187,
+   "model": "LZW7004EVPHAK",
+   "field": "轴距(mm)",
+   "kind": "代际错配更正",
+   "old": "2600.0",
+   "new": "1940"
   },
   {
-   "seq": 46893,
-   "model": "CC6430BJ00NDBEV",
+   "seq": 47186,
+   "model": "LZW7004EVPHAK",
    "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4480",
-   "new": 4242
+   "kind": "代际错配更正",
+   "old": "4470.0",
+   "new": "2917"
   },
   {
-   "seq": 46892,
-   "model": "CC7000BJ00NGBEV",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4560",
-   "new": 4235
+   "seq": 47185,
+   "model": "LZW7004EVPEAK",
+   "field": "电机总功率/扭矩",
+   "kind": "代际错配更正",
+   "old": "180",
+   "new": "30"
   },
   {
-   "seq": 46891,
-   "model": "CC7000BJ00NFBEV",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4560",
-   "new": 4235
+   "seq": 47184,
+   "model": "LZW7004EVPEAK",
+   "field": "后电机功率/扭矩",
+   "kind": "代际错配更正",
+   "old": "150/310",
+   "new": null
   },
   {
-   "seq": 46890,
-   "model": "CC7000BJ00HFBEV",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4560",
-   "new": 4242
+   "seq": 47183,
+   "model": "LZW7004EVPEAK",
+   "field": "轴距(mm)",
+   "kind": "代际错配更正",
+   "old": "2600.0",
+   "new": "1940"
   },
   {
-   "seq": 46889,
-   "model": "CC7000BJ03HABEV",
+   "seq": 47182,
+   "model": "LZW7004EVPEAK",
    "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4560",
-   "new": 4235
+   "kind": "代际错配更正",
+   "old": "4470.0",
+   "new": "2917"
   },
   {
-   "seq": 46888,
-   "model": "CC7000BJ02HBEV",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4560",
-   "new": 4242
+   "seq": 47181,
+   "model": "LZW7004EVJEAM",
+   "field": "电机总功率/扭矩",
+   "kind": "代际错配更正",
+   "old": "180",
+   "new": "30"
   },
   {
-   "seq": 46887,
-   "model": "CC7000BJ01FBEV",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4560",
-   "new": 4235
+   "seq": 47180,
+   "model": "LZW7004EVJEAM",
+   "field": "后电机功率/扭矩",
+   "kind": "代际错配更正",
+   "old": "150/310",
+   "new": null
   },
   {
-   "seq": 46886,
-   "model": "CC7000BJ02DBEV",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4560",
-   "new": 4242
+   "seq": 47179,
+   "model": "LZW7004EVJEAM",
+   "field": "轴距(mm)",
+   "kind": "代际错配更正",
+   "old": "2600.0",
+   "new": "1940"
   },
   {
-   "seq": 46885,
-   "model": "CC7000BJ01GBEV",
+   "seq": 47178,
+   "model": "LZW7004EVJEAM",
    "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4560",
-   "new": 4235
+   "kind": "代际错配更正",
+   "old": "4470.0",
+   "new": "2917"
   },
   {
-   "seq": 46884,
-   "model": "CC7000BJ01EBEV",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4560",
-   "new": 4235
+   "seq": 47177,
+   "model": "LZW7004EVJDBB",
+   "field": "电机总功率/扭矩",
+   "kind": "代际错配更正",
+   "old": "180",
+   "new": "30"
   }
  ]
 }

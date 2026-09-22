@@ -99,8 +99,8 @@
    "dcd_mappable": true
   },
   "电池容量(kWh)": {
-   "filled": 4918,
-   "empty": 474,
+   "filled": 4917,
+   "empty": 475,
    "placeholder": 0,
    "out_of_range": 9,
    "coverage": 91.2,
@@ -41899,6 +41899,12 @@
   {
    "batch": "344",
    "model": "CC7000BJ02ABEV",
+   "field": "电池容量(kWh)",
+   "kind": "P1缺失"
+  },
+  {
+   "batch": "344",
+   "model": "CC7000BJ02ABEV",
    "field": "电池能量密度(Wh/kg)",
    "kind": "P1缺失"
   },
@@ -58883,7 +58889,7 @@
    "kind": "P1缺失"
   }
  ],
- "dcd_gap_total": 9765,
+ "dcd_gap_total": 9766,
  "dcd_gap_by_field": {
   "后电机功率/扭矩": 3709,
   "电池能量密度(Wh/kg)": 1151,
@@ -58891,7 +58897,7 @@
   "车长(mm)": 937,
   "轴距(mm)": 922,
   "整备质量(kg)": 527,
-  "电池容量(kWh)": 474,
+  "电池容量(kWh)": 475,
   "电池类型": 448,
   "百公里电耗(kWh/100km)": 277,
   "电机总功率/扭矩": 183,

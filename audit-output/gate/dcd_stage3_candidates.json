@@ -1,0 +1,662 @@
+[
+ {
+  "series": "纯电动轿车",
+  "rows": 131,
+  "gaps": 830
+ },
+ {
+  "series": "纯电动多用途乘用车",
+  "rows": 44,
+  "gaps": 255
+ },
+ {
+  "series": "插电式混合动力多用途乘用车",
+  "rows": 70,
+  "gaps": 252
+ },
+ {
+  "series": "插电式混合动力轿车",
+  "rows": 40,
+  "gaps": 102
+ },
+ {
+  "series": "插电式增程混合动力多用途乘用车",
+  "rows": 19,
+  "gaps": 100
+ },
+ {
+  "series": "瑞驰 EC75",
+  "rows": 12,
+  "gaps": 52
+ },
+ {
+  "series": "V919",
+  "rows": 16,
+  "gaps": 47
+ },
+ {
+  "series": "极星2",
+  "rows": 22,
+  "gaps": 44
+ },
+ {
+  "series": "EU5",
+  "rows": 12,
+  "gaps": 42
+ },
+ {
+  "series": "菱智M5EV",
+  "rows": 8,
+  "gaps": 39
+ },
+ {
+  "series": "换电式纯电动多用途乘用车",
+  "rows": 10,
+  "gaps": 38
+ },
+ {
+  "series": "换电式纯电动轿车",
+  "rows": 10,
+  "gaps": 35
+ },
+ {
+  "series": "ID.UNYX 与众06",
+  "rows": 6,
+  "gaps": 32
+ },
+ {
+  "series": "乐福",
+  "rows": 7,
+  "gaps": 29
+ },
+ {
+  "series": "Hyper GT",
+  "rows": 14,
+  "gaps": 28
+ },
+ {
+  "series": "Hyper HT",
+  "rows": 14,
+  "gaps": 28
+ },
+ {
+  "series": "eQ1",
+  "rows": 25,
+  "gaps": 27
+ },
+ {
+  "series": "欧拉iQ",
+  "rows": 5,
+  "gaps": 25
+ },
+ {
+  "series": "eQ5",
+  "rows": 5,
+  "gaps": 24
+ },
+ {
+  "series": "聚星",
+  "rows": 12,
+  "gaps": 24
+ },
+ {
+  "series": "比亚迪e3",
+  "rows": 7,
+  "gaps": 24
+ },
+ {
+  "series": "ID.UNYX 与众07",
+  "rows": 5,
+  "gaps": 24
+ },
+ {
+  "series": "V8",
+  "rows": 4,
+  "gaps": 24
+ },
+ {
+  "series": "纯电动运动型乘用车",
+  "rows": 4,
+  "gaps": 22
+ },
+ {
+  "series": "欧拉R2",
+  "rows": 7,
+  "gaps": 20
+ },
+ {
+  "series": "ELEXIO",
+  "rows": 5,
+  "gaps": 20
+ },
+ {
+  "series": "星钽5X",
+  "rows": 5,
+  "gaps": 20
+ },
+ {
+  "series": "EV90",
+  "rows": 8,
+  "gaps": 19
+ },
+ {
+  "series": "G3i",
+  "rows": 9,
+  "gaps": 18
+ },
+ {
+  "series": "小虎",
+  "rows": 8,
+  "gaps": 18
+ },
+ {
+  "series": "HYCAN Z03",
+  "rows": 9,
+  "gaps": 18
+ },
+ {
+  "series": "αS5",
+  "rows": 16,
+  "gaps": 18
+ },
+ {
+  "series": "αT7",
+  "rows": 8,
+  "gaps": 18
+ },
+ {
+  "series": "MILA 1",
+  "rows": 6,
+  "gaps": 18
+ },
+ {
+  "series": "特斯拉 MODEL Y",
+  "rows": 15,
+  "gaps": 17
+ },
+ {
+  "series": "宏光MINI EV",
+  "rows": 21,
+  "gaps": 17
+ },
+ {
+  "series": "A5",
+  "rows": 6,
+  "gaps": 16
+ },
+ {
+  "series": "赛力斯问界M7",
+  "rows": 8,
+  "gaps": 16
+ },
+ {
+  "series": "HT",
+  "rows": 8,
+  "gaps": 16
+ },
+ {
+  "series": "蓝山",
+  "rows": 4,
+  "gaps": 16
+ },
+ {
+  "series": "海豚K5",
+  "rows": 4,
+  "gaps": 16
+ },
+ {
+  "series": "AION LX",
+  "rows": 11,
+  "gaps": 15
+ },
+ {
+  "series": "风景i9",
+  "rows": 4,
+  "gaps": 15
+ },
+ {
+  "series": "GL8 ENCASA",
+  "rows": 8,
+  "gaps": 15
+ },
+ {
+  "series": "ORA 5",
+  "rows": 5,
+  "gaps": 15
+ },
+ {
+  "series": "EU7",
+  "rows": 3,
+  "gaps": 14
+ },
+ {
+  "series": "HYCAN V09",
+  "rows": 7,
+  "gaps": 14
+ },
+ {
+  "series": "睿行EM60Ⅱ",
+  "rows": 6,
+  "gaps": 14
+ },
+ {
+  "series": "传祺AION.S;AION S",
+  "rows": 5,
+  "gaps": 14
+ },
+ {
+  "series": "星海V6",
+  "rows": 11,
+  "gaps": 13
+ },
+ {
+  "series": "捷途环游者",
+  "rows": 3,
+  "gaps": 13
+ },
+ {
+  "series": "TIGGO e",
+  "rows": 2,
+  "gaps": 13
+ },
+ {
+  "series": "比亚迪M3",
+  "rows": 3,
+  "gaps": 12
+ },
+ {
+  "series": "U5",
+  "rows": 5,
+  "gaps": 12
+ },
+ {
+  "series": "红旗E-HS9",
+  "rows": 7,
+  "gaps": 12
+ },
+ {
+  "series": "iA5",
+  "rows": 4,
+  "gaps": 12
+ },
+ {
+  "series": "bZ4X",
+  "rows": 6,
+  "gaps": 12
+ },
+ {
+  "series": "SV",
+  "rows": 18,
+  "gaps": 12
+ },
+ {
+  "series": "岚图知音",
+  "rows": 6,
+  "gaps": 12
+ },
+ {
+  "series": "比亚迪秦",
+  "rows": 5,
+  "gaps": 12
+ },
+ {
+  "series": "锐胜M8",
+  "rows": 12,
+  "gaps": 12
+ },
+ {
+  "series": "比亚迪宋LGT",
+  "rows": 3,
+  "gaps": 12
+ },
+ {
+  "series": "红旗HS7",
+  "rows": 3,
+  "gaps": 12
+ },
+ {
+  "series": "比亚迪秦Pro",
+  "rows": 4,
+  "gaps": 12
+ },
+ {
+  "series": "EQC 400 4MATIC",
+  "rows": 2,
+  "gaps": 12
+ },
+ {
+  "series": "EQC 350 4MATIC",
+  "rows": 2,
+  "gaps": 12
+ },
+ {
+  "series": "e-tron",
+  "rows": 2,
+  "gaps": 12
+ },
+ {
+  "series": "理念VE-1",
+  "rows": 2,
+  "gaps": 12
+ },
+ {
+  "series": "海豚K7",
+  "rows": 3,
+  "gaps": 12
+ },
+ {
+  "series": "eπ008",
+  "rows": 2,
+  "gaps": 12
+ },
+ {
+  "series": "悦也plus",
+  "rows": 9,
+  "gaps": 11
+ },
+ {
+  "series": "羿",
+  "rows": 7,
+  "gaps": 10
+ },
+ {
+  "series": "哪吒V",
+  "rows": 21,
+  "gaps": 10
+ },
+ {
+  "series": "ARRIZO e",
+  "rows": 5,
+  "gaps": 10
+ },
+ {
+  "series": "睿行EM60",
+  "rows": 7,
+  "gaps": 10
+ },
+ {
+  "series": "MIFA 9",
+  "rows": 5,
+  "gaps": 10
+ },
+ {
+  "series": "ARIYA",
+  "rows": 5,
+  "gaps": 10
+ },
+ {
+  "series": "M-NV",
+  "rows": 3,
+  "gaps": 10
+ },
+ {
+  "series": "Mach-E",
+  "rows": 5,
+  "gaps": 10
+ },
+ {
+  "series": "睿行EM80Ⅱ",
+  "rows": 4,
+  "gaps": 10
+ },
+ {
+  "series": "赛力斯问界M9",
+  "rows": 5,
+  "gaps": 10
+ },
+ {
+  "series": "插电式混合动力越野乘用车",
+  "rows": 2,
+  "gaps": 10
+ },
+ {
+  "series": "EX90",
+  "rows": 13,
+  "gaps": 10
+ },
+ {
+  "series": "E5 Sportback",
+  "rows": 5,
+  "gaps": 10
+ },
+ {
+  "series": "ARRIZO5 e",
+  "rows": 2,
+  "gaps": 10
+ },
+ {
+  "series": "海狮王EV",
+  "rows": 2,
+  "gaps": 10
+ },
+ {
+  "series": "五菱扬光Pro",
+  "rows": 4,
+  "gaps": 10
+ },
+ {
+  "series": "特顺EV",
+  "rows": 4,
+  "gaps": 9
+ },
+ {
+  "series": "逸动EV 460",
+  "rows": 4,
+  "gaps": 9
+ },
+ {
+  "series": "比亚迪汉",
+  "rows": 14,
+  "gaps": 9
+ },
+ {
+  "series": "风神E70",
+  "rows": 17,
+  "gaps": 9
+ },
+ {
+  "series": "Q4",
+  "rows": 9,
+  "gaps": 9
+ },
+ {
+  "series": "X30LEV",
+  "rows": 3,
+  "gaps": 9
+ },
+ {
+  "series": "HiPhi Z",
+  "rows": 4,
+  "gaps": 9
+ },
+ {
+  "series": "埃安S Plus",
+  "rows": 4,
+  "gaps": 9
+ },
+ {
+  "series": "悠宝利A3",
+  "rows": 2,
+  "gaps": 9
+ },
+ {
+  "series": "全顺EV",
+  "rows": 3,
+  "gaps": 9
+ },
+ {
+  "series": "熊猫mini",
+  "rows": 13,
+  "gaps": 9
+ },
+ {
+  "series": "MILA",
+  "rows": 4,
+  "gaps": 9
+ },
+ {
+  "series": "智界R7",
+  "rows": 15,
+  "gaps": 9
+ },
+ {
+  "series": "埃安i60",
+  "rows": 3,
+  "gaps": 9
+ },
+ {
+  "series": "逸动EV460",
+  "rows": 2,
+  "gaps": 9
+ },
+ {
+  "series": "小蚂蚁",
+  "rows": 3,
+  "gaps": 9
+ },
+ {
+  "series": "逸动EV 460换充版",
+  "rows": 2,
+  "gaps": 9
+ },
+ {
+  "series": "摩登",
+  "rows": 2,
+  "gaps": 8
+ },
+ {
+  "series": "图雅诺",
+  "rows": 5,
+  "gaps": 8
+ },
+ {
+  "series": "FM3",
+  "rows": 1,
+  "gaps": 8
+ },
+ {
+  "series": "ec1",
+  "rows": 4,
+  "gaps": 8
+ },
+ {
+  "series": "EU5 PLUS",
+  "rows": 4,
+  "gaps": 8
+ },
+ {
+  "series": "恒驰5 LX",
+  "rows": 4,
+  "gaps": 8
+ },
+ {
+  "series": "风景G7",
+  "rows": 4,
+  "gaps": 8
+ },
+ {
+  "series": "Smile",
+  "rows": 2,
+  "gaps": 8
+ },
+ {
+  "series": "CS75 Plus",
+  "rows": 4,
+  "gaps": 8
+ },
+ {
+  "series": "MIFA 6",
+  "rows": 3,
+  "gaps": 8
+ },
+ {
+  "series": "ID.7 VIZZION",
+  "rows": 4,
+  "gaps": 8
+ },
+ {
+  "series": "ID.UNYX 与众",
+  "rows": 4,
+  "gaps": 8
+ },
+ {
+  "series": "EZ-6",
+  "rows": 4,
+  "gaps": 8
+ },
+ {
+  "series": "03T",
+  "rows": 4,
+  "gaps": 8
+ },
+ {
+  "series": "比亚迪海狮05",
+  "rows": 11,
+  "gaps": 8
+ },
+ {
+  "series": "银河星舰7",
+  "rows": 14,
+  "gaps": 8
+ },
+ {
+  "series": "bZ3X",
+  "rows": 4,
+  "gaps": 8
+ },
+ {
+  "series": "问界M9",
+  "rows": 6,
+  "gaps": 8
+ },
+ {
+  "series": "FORD BRONCO BASECAMP",
+  "rows": 5,
+  "gaps": 8
+ },
+ {
+  "series": "星光M",
+  "rows": 2,
+  "gaps": 8
+ },
+ {
+  "series": "问界M8EV",
+  "rows": 5,
+  "gaps": 8
+ },
+ {
+  "series": "A05L",
+  "rows": 4,
+  "gaps": 8
+ },
+ {
+  "series": "K3",
+  "rows": 2,
+  "gaps": 8
+ },
+ {
+  "series": "传祺AION V;AION V",
+  "rows": 4,
+  "gaps": 8
+ },
+ {
+  "series": "东风风光",
+  "rows": 2,
+  "gaps": 8
+ },
+ {
+  "series": "D60EV",
+  "rows": 2,
+  "gaps": 8
+ },
+ {
+  "series": "风景i7",
+  "rows": 2,
+  "gaps": 8
+ },
+ {
+  "series": "福瑞通",
+  "rows": 2,
+  "gaps": 8
+ }
+]
