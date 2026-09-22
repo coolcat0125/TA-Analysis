@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-22T15:02:19+00:00",
+  "generated_at_utc": "2026-09-22T15:13:46+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "c9a3471cf10e8ee04b59e65b7636bad8c2c2d8a030d54bd2ff51502766821d18",
+    "sha256": "3f959c909c6286bc33af2c85961baef4944a3790b90696fb720d11bf96546138",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
@@ -127,9 +127,9 @@
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 4889,
-      "coverage": 0.906714,
-      "missing": 503
+      "populated": 4891,
+      "coverage": 0.907085,
+      "missing": 501
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
@@ -139,15 +139,15 @@
     },
     "电池容量": {
       "header": "电池容量(kWh)",
-      "populated": 4939,
-      "coverage": 0.915987,
-      "missing": 453
+      "populated": 4943,
+      "coverage": 0.916728,
+      "missing": 449
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
-      "populated": 4264,
-      "coverage": 0.790801,
-      "missing": 1128
+      "populated": 4268,
+      "coverage": 0.791543,
+      "missing": 1124
     },
     "百公里电耗": {
       "header": "百公里电耗(kWh/100km)",
@@ -186,7 +186,7 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 4889,
+      "numeric_values": 4891,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -204,7 +204,7 @@
         1.0,
         300.0
       ],
-      "numeric_values": 4939,
+      "numeric_values": 4943,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -213,7 +213,7 @@
         30.0,
         400.0
       ],
-      "numeric_values": 4264,
+      "numeric_values": 4268,
       "outliers": 0,
       "sample_outliers": []
     },

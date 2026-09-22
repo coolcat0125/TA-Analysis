@@ -3173,6 +3173,41 @@
    "via": "direct-alias",
    "note": "alias_of(魏牌高山)",
    "time": "09-22 16:59"
+  },
+  {
+   "kw": "奇瑞eQ1",
+   "sid": "1101",
+   "series": "小蚂蚁",
+   "ok": true,
+   "note": "eQ1 即小蚂蚁官方市场名；门禁人审 2026-09-21"
+  },
+  {
+   "kw": "Hyper GT",
+   "sid": "6311",
+   "series": "昊铂GT",
+   "ok": true,
+   "note": "Hyper=昊铂同牌异名；门禁人审"
+  },
+  {
+   "kw": "Hyper HT",
+   "sid": "9345",
+   "series": "昊铂HT",
+   "ok": true,
+   "note": "同上；门禁人审"
+  },
+  {
+   "kw": "瑞驰EC75",
+   "sid": "5794",
+   "series": "远程星享V",
+   "ok": false,
+   "reason": "品牌不符(远程=吉利商用车)，拒绝；门禁人审"
+  },
+  {
+   "kw": "ID.UNYX 与众06",
+   "sid": "20154",
+   "series": "星愿",
+   "ok": false,
+   "reason": "品牌不符(星愿=吉利)，拒绝；门禁人审"
   }
  ],
  "field_map": {
@@ -3188,5 +3223,5 @@
   "前电机功率/扭矩": "front_electric_max_power+front_electric_max_torque",
   "后电机功率/扭矩": "rear_electric_max_power+rear_electric_max_torque"
  },
- "note": "DCD 无电芯供应商标准列——该缺口(3706)仍需公示详情页通道；首轮首击命中率 13/15，apply 脚本必须带品牌校验"
+ "note": "DCD 无电芯供应商标准列——该缺口(3706)仍需公示详情页通道；首轮首击命中率 13/15，apply 脚本必须带品牌校验；阶段3 门禁批次(5 试 3 准 2 拒)已审 2026-09-21"
 }
