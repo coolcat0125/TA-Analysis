@@ -3208,6 +3208,15 @@
    "series": "星愿",
    "ok": false,
    "reason": "品牌不符(星愿=吉利)，拒绝；门禁人审"
+  },
+  {
+   "kw": "海豹07",
+   "sid": "5579",
+   "series": "比亚迪海豹07",
+   "ok": true,
+   "via": "direct-alias",
+   "note": "alias_of(比亚迪海豹07)",
+   "time": "09-23 23:09"
   }
  ],
  "field_map": {

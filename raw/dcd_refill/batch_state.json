@@ -117,555 +117,15 @@
       "file": null
      }
     ],
-    "time": "2026-09-22 17:19:32"
+    "time": "2026-09-23 23:24:01"
    },
    "applied": {
-    "green": 136,
-    "time": "2026-09-22 20:59:22",
+    "green": 1,
+    "time": "2026-09-23 23:39:43",
     "cells": [
      {
       "field": "后电机功率/扭矩",
-      "model": "SC6503AABBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SC6553AAABEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SC6553AAABEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SC6553AAABEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SC6558AAABBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SC6558AAABBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SC6558AAABBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SC6558AAACBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SC6558AAACBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SC6558AAACBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SC6558AAADBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SC6558AAADBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SC6558AAADBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SC6508AAABBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SC6508AAABBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SC6508AAABBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SC6508AAAFBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SC6508AAAFBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SC6508AAAFBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SC6558AAAJBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SC6558AAAJBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SC6558AAAJBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SC6558AAAKBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SC6558AAAKBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SC6558AAAKBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SC6558AAALBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SC6558AAALBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SC6558AAALBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SC6558AAAMBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SC6558AAAMBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SC6558AAAMBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SC6558AAANBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SC6558AAANBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SC6558AAANBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SC6558AAAQBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SC6558AAAQBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SC6558AAAQBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000ZM00EBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000ZM05ABEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000ZM00FBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000ZM02FBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7000ZM02DBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7000ZM02DBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000ZM02DBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000ZM02CBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7000ZM00ABEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7000ZM00ABEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000ZM00ABEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7000ZM00BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7000ZM00BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000ZM00BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7000ZM01BBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7000ZM01BBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000ZM01BBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7000ZM01BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7000ZM01BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000ZM01BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7000ZM01CBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7000ZM01CBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000ZM01CBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7000ZM02ABEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7000ZM02ABEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000ZM02ABEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7000ZM03BBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7000ZM03BBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DXK6510AC1BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DXK6510AC1BEV"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "DXK6510AC1BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DXK6510AC1BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DXK6510AC4BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DXK6510AC4BEV"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "DXK6510AC4BEV"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "DXK6510AC4BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DXK6510AC4BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "DXK6510AC4BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DXK6510AC3BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DXK6510AC3BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DXK6510AC3BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "DXK6510AC3BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DXK6510AC5BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DXK6510AC5BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DXK6510AC5BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DXK6510AC6BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DXK6510AC6BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DXK6510AC6BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "DXK6510AC6BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DXK6510AC10BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DXK6510AC10BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DXK6510AC10BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "DXK6510AC10BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DXK6510AC11BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DXK6510AC11BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DXK6510AC11BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "DXK6510AC11BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DXK6510AC14BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DXK6510AC14BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DXK6510AC14BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "DXK6510AC14BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DXK6510AC8BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DXK6510AC8BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DXK6510AC8BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DXK6510AC15BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DXK6510AC15BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DXK6510AC15BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "DXK6510AC15BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DXK6520AC5BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DXK6520AC5BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DXK6520AC5BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "DXK6520AC5BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DXK6520AC6BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DXK6520AC6BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DXK6520AC6BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "DXK6520AC6BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "LZ6514MLANEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "LZ6514MLANEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "LZ6514MLANEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "LZ6518MLAEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "LZ6518MLAEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "LZ6518MLAEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "LZ6510NEB0EV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "LZ6510NEB0EV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "LZ6512MLANEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "LZ6512MLANEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "LZ6512MLANEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "LZ6513MLANEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "LZ6513MLANEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "LZ6513MLANEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "LZ6514MLAEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "LZ6514MLAEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "LZ6514MLAEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "LZ6516MLAEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "LZ6516MLAEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "LZ6516MLAEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "LZ6517MLAEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "LZ6517MLAEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "LZ6517MLAEV"
+      "model": "SC6558AAAABEV"
      }
     ]
    }
@@ -760,14 +220,6 @@
       "file": "dcd_s25148.json"
      },
      {
-      "kw": "Hyper GT",
-      "file": "dcd_s6311.json"
-     },
-     {
-      "kw": "Hyper HT",
-      "file": "dcd_s9345.json"
-     },
-     {
       "kw": "αS5",
       "file": "dcd_s169.json"
      }
@@ -776,439 +228,22 @@
      {
       "kw": "ID.UNYX 与众06",
       "file": null
+     },
+     {
+      "kw": "Hyper GT",
+      "file": null
+     },
+     {
+      "kw": "Hyper HT",
+      "file": null
      }
     ],
-    "time": "2026-09-22 17:19:34"
+    "time": "2026-09-23 23:24:03"
    },
    "applied": {
-    "green": 106,
-    "time": "2026-09-22 21:00:05",
-    "cells": [
-     {
-      "field": "电池类型",
-      "model": "BJ6521EVAA3"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "BJ6491EVAA"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "BJ6491EVAA"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "BJ6521EVAA1"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "BJ6521EVAA1"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "BJ6521EVAA1"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "BJ6521EVAA1"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BJ6521EVAA1"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "BJ6521EVAA2"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "BJ6521EVAA2"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "BJ6521EVAA2"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "BJ6521EVAA2"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BJ6521EVAA2"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "BJ6491EVAA2"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "BJ6491EVAA2"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BJ6491EVAA2"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "BJ6521EVAA4"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "BJ6521EVAA4"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BJ6521EVAA4"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "BJ6521EVAA5"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "BJ6521EVAA5"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BJ6521EVAA5"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM7000BEVE0B"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM7000BEVE0B"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM7000BEVE0B"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM7000BEVE0D"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM7000BEVE0D"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM7000BEVE0D"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM7000BEVE0E"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM7000BEVE0E"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM7000BEVE0E"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM7000BEVE0G"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM7000BEVE0G"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM7000BEVE0G"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM7000BEVE0J"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM7000BEVE0J"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM7000BEVE0J"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM7000BEVE0K"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM7000BEVE0K"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM7000BEVE0K"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM7000BEVE0A"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM7000BEVE0A"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM7000BEVE0A"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM7000BEVE0M"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM7000BEVE0M"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM7000BEVE0M"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC7000BEVE0A"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC7000BEVE0A"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC7000BEVE0A"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC7000BEVE0B"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC7000BEVE0B"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC7000BEVE0B"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC7000BEVE0D"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC7000BEVE0D"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC7000BEVE0D"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC7000BEVE0E"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC7000BEVE0E"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC7000BEVE0E"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC7000BEVE0G"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC7000BEVE0G"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC7000BEVE0G"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC7000BEVE0M"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC7000BEVE0M"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC7000BEVE0M"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM6490BEVH0C"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM6490BEVH0C"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM6490BEVH0C"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM6490BEVH0L"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM6490BEVH0L"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM6490BEVH0L"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM6490BEVH0G"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM6490BEVH0G"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM6490BEVH0G"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM6490BEVH0N"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM6490BEVH0N"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM6490BEVH0N"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM6490BEVH0Q"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM6490BEVH0Q"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM6490BEVH0Q"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM6490BEVH0R"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM6490BEVH0R"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM6490BEVH0R"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "GAM6490BEVH0U"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "GAM6490BEVH0U"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM6490BEVH0U"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC6490BEVH0C"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC6490BEVH0C"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC6490BEVH0C"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC6490BEVH0G"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC6490BEVH0G"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC6490BEVH0G"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC6490BEVH0L"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC6490BEVH0L"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC6490BEVH0L"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC6490BEVH0N"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC6490BEVH0N"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC6490BEVH0N"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC6490BEVH0Q"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC6490BEVH0Q"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC6490BEVH0Q"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC6490BEVH0R"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC6490BEVH0R"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC6490BEVH0R"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "AHC6490BEVH0U"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "AHC6490BEVH0U"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "AHC6490BEVH0U"
-     }
-    ]
+    "green": 0,
+    "time": "2026-09-23 23:40:49",
+    "cells": []
    }
   },
   "b03": {
@@ -1317,77 +352,12 @@
       "file": null
      }
     ],
-    "time": "2026-09-22 17:19:34"
+    "time": "2026-09-23 23:24:04"
    },
    "applied": {
-    "green": 16,
-    "time": "2026-09-22 21:00:49",
-    "cells": [
-     {
-      "field": "车长(mm)",
-      "model": "NEQ6460BEVS61E"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "NEQ6460BEVS61E"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "NEQ6460BEVS61F"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "NEQ6460BEVS61F"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "NEQ6460BEVS61A"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "NEQ6460BEVS61A"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "NEQ6460BEVS61A"
-     },
-     {
-      "field": "电池类型",
-      "model": "NEQ6460BEVS61A"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "NEQ6460BEVS61B"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "NEQ6460BEVS61B"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "NEQ6460BEVS61B"
-     },
-     {
-      "field": "电池类型",
-      "model": "NEQ6460BEVS61B"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "NEQ6460BEVS61D"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "NEQ6460BEVS61D"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "NEQ6460BEVS61D"
-     },
-     {
-      "field": "电池类型",
-      "model": "NEQ6460BEVS61D"
-     }
-    ]
+    "green": 0,
+    "time": "2026-09-23 23:41:44",
+    "cells": []
    }
   },
   "b04": {
@@ -1501,381 +471,12 @@
       "file": null
      }
     ],
-    "time": "2026-09-22 17:19:35"
+    "time": "2026-09-23 23:24:06"
    },
    "applied": {
-    "green": 92,
-    "time": "2026-09-22 21:01:32",
-    "cells": [
-     {
-      "field": "后电机功率/扭矩",
-      "model": "TSL6480BEVAR5"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "TSL6480BEVAR6"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "TSL6480BEVBR0"
-     },
-     {
-      "field": "电池能量密度(Wh/kg)",
-      "model": "TSL6480BEVBA6"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "TSL6480BEVBA6"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "TSL6480BEVBA6"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "TSL6500BEVBA0"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "TSL6500BEVBA0"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "TSL6480BEVBA0"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "TSL6480BEVBA0"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "TSL6480BEVBA0"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "TSL6480BEVBA0"
-     },
-     {
-      "field": "电池类型",
-      "model": "TSL6480BEVBA0"
-     },
-     {
-      "field": "电机总功率/扭矩",
-      "model": "TSL6480BEVBA0"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "TSL6480BEVBA0"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "TSL6480BEVBA1"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "TSL6480BEVBA1"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "TSL6480BEVBA1"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "TSL6480BEVBA1"
-     },
-     {
-      "field": "电池类型",
-      "model": "TSL6480BEVBA1"
-     },
-     {
-      "field": "电机总功率/扭矩",
-      "model": "TSL6480BEVBA1"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "TSL6480BEVBA1"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "BYD7002BEVA11"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "BYD7002BEVA11"
-     },
-     {
-      "field": "电池类型",
-      "model": "BYD7002BEVA11"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BYD7002BEVA11"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "BYD7002BEVA10"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "BYD7002BEVA10"
-     },
-     {
-      "field": "电池类型",
-      "model": "BYD7002BEVA10"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BYD7002BEVA10"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "BYD7002BEVA9"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "BYD7002BEVA9"
-     },
-     {
-      "field": "电池类型",
-      "model": "BYD7002BEVA9"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BYD7002BEVA9"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "BYD7002BEVA5"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "BYD7002BEVA5"
-     },
-     {
-      "field": "电池类型",
-      "model": "BYD7002BEVA5"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BYD7002BEVA5"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "BYD7002BEVA6"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "BYD7002BEVA6"
-     },
-     {
-      "field": "电池类型",
-      "model": "BYD7002BEVA6"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BYD7002BEVA6"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "BYD7002BEVA7"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "BYD7002BEVA7"
-     },
-     {
-      "field": "电池类型",
-      "model": "BYD7002BEVA7"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BYD7002BEVA7"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "VCC6505F03TBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "VCC6505F03TBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "VCC6505F03TBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "VCC6505F04TBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "VCC6505F04TBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "VCC6505F04TBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "VCC6505F05TBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "VCC6505F05TBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "VCC6505F05TBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "VCC6505F06TBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "VCC6505F06TBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "VCC6505F06TBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "VCC6505F07TBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "VCC6505F07TBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "VCC6505F07TBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "VCD6505F14TBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "VCD6505F14TBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "VCD6505F15TBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "VCD6505F15TBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "VCD6505F16TBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "VCD6505F16TBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "VCD6505F17TBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "VCD6505F17TBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "VCD6505F18TBEV"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "VCD6505F18TBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "BH6460BEVMLA"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "BH6460BEVMLA"
-     },
-     {
-      "field": "电池类型",
-      "model": "BH6460BEVMLA"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BH6460BEVMLA"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "BH6461BEVMLA"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "BH6461BEVMLA"
-     },
-     {
-      "field": "电池类型",
-      "model": "BH6461BEVMLA"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BH6461BEVMLA"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "BH6462BEVMLA"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "BH6462BEVMLA"
-     },
-     {
-      "field": "电池类型",
-      "model": "BH6462BEVMLA"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BH6462BEVMLA"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "BH6463BEVMLA"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "BH6463BEVMLA"
-     },
-     {
-      "field": "电池类型",
-      "model": "BH6463BEVMLA"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BH6463BEVMLA"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "BH6464BEVMLB"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "BH6464BEVMLB"
-     },
-     {
-      "field": "电池类型",
-      "model": "BH6464BEVMLB"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BH6464BEVMLB"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "BH6464BEVMLB"
-     }
-    ]
+    "green": 0,
+    "time": "2026-09-23 23:42:38",
+    "cells": []
    }
   },
   "b05": {
@@ -1992,193 +593,12 @@
       "file": null
      }
     ],
-    "time": "2026-09-22 17:19:38"
+    "time": "2026-09-23 23:24:08"
    },
    "applied": {
-    "green": 45,
-    "time": "2026-09-22 21:02:11",
-    "cells": [
-     {
-      "field": "车长(mm)",
-      "model": "CC7001CE03BBEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7001CE03BBEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7001CE03BBEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7001CE02ABEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7001CE02ABEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "CC7001CE02ABEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7001CE02ABEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7001CE03ABEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7001CE03ABEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7001CE03ABEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7001CE03BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7001CE03BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7001CE03BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7001CE04BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7001CE04BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7001CE04BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CC7001CE05ABEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CC7001CE05ABEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7001CE05ABEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SH6591J2BEV-3"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SH6591J2BEV-3"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SH6551J2BEV-4"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SH6551J2BEV-4"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SH6552J2BEV-4"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SH6552J2BEV-4"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SH6553J2BEV-5"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SH6553J2BEV-5"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SQR6500BEVEHY"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SQR6500BEVEHY1"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SQR6500BEVEHY2"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SQR6500BEVEHY3"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "SQR6500REEVEHY1"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "SQR6500REEVEHY1"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "SQR6500REEVEHY2"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "SQR6500REEVEHY3"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SQR6500BEVEHY5"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "SQR6500BEVEHY8"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SQR6500BEVEHY6"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SQR6500BEVEHY7"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "SQR6500BEVEHY9"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "SQR6500BEVEHY9"
-     },
-     {
-      "field": "百公里电耗(kWh/100km)",
-      "model": "SQR6500BEVEHY9"
-     },
-     {
-      "field": "电池类型",
-      "model": "SQR6500BEVEHY9"
-     },
-     {
-      "field": "电机总功率/扭矩",
-      "model": "SQR6500BEVEHY9"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "SQR6500BEVEHY9"
-     }
-    ]
+    "green": 0,
+    "time": "2026-09-23 23:43:46",
+    "cells": []
    }
   },
   "b06": {
@@ -2287,11 +707,11 @@
       "file": null
      }
     ],
-    "time": "2026-09-22 17:19:38"
+    "time": "2026-09-23 23:24:10"
    },
    "applied": {
     "green": 0,
-    "time": "2026-09-22 21:02:52",
+    "time": "2026-09-23 23:44:50",
     "cells": []
    }
   },
@@ -2385,245 +805,24 @@
      {
       "kw": "哪吒V",
       "file": "dcd_s4629.json"
-     },
-     {
-      "kw": "eQ1",
-      "file": "dcd_s1101.json"
      }
     ],
     "missing": [
+     {
+      "kw": "eQ1",
+      "file": null
+     },
      {
       "kw": "欧拉好猫",
       "file": null
      }
     ],
-    "time": "2026-09-22 17:19:39"
+    "time": "2026-09-23 23:24:12"
    },
    "applied": {
-    "green": 55,
-    "time": "2026-09-22 21:03:35",
-    "cells": [
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEV3"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEV4"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEV5"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEV6"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEV7"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEV8"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEV9"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEVA"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEVB"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEVC"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEVE"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEVF"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LFSHEV1"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "CSA6492LFSHEV2"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "CSA6492LFSHEV2"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LFSHEV2"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEVG"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEVH"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LBEVK"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LFSHEV3"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "CSA6492LFSHEV4"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "FZ6490SHEVC16B"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "FZ6490SHEVC16D"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "FZ6490BEVC16C"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "FZ6490BEVC16E"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "FZ6490SHEVC16G"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "FZ6490SHEVC16H"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "FZ6490SHEVC16F"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "FZ6470REEVC10S"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "FZ6470REEVC10T"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "FZ6490REEVC16P"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "FZ6490REEVC16R"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "FZ6490REEVC16S"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "THZ7001BEVS115"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "THZ7001BEVS115"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "NEQ7000BEVJ72S"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "NEQ7000BEVJ72S"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJ72S"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "NEQ7000BEVJ72T"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "NEQ7000BEVJ72T"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJ72T"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "NEQ7000BEVJ72V"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "NEQ7000BEVJ72V"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJ72V"
-     },
-     {
-      "field": "电池类型",
-      "model": "NEQ7000BEVJ728"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "NEQ7000BEVJ72F"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "NEQ7000BEVJ72F"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "NEQ7000BEVJ72P"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "NEQ7000BEVJ72P"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "NEQ7000BEVJ72R"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "NEQ7000BEVJ72R"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "NEQ7000BEVJ72E"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "NEQ7000BEVJ72E"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "CC7000BJ01CBEV"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "CC7000BJ02ABEV"
-     }
-    ]
+    "green": 0,
+    "time": "2026-09-23 23:45:54",
+    "cells": []
    }
   },
   "b08": {
@@ -2724,169 +923,12 @@
       "file": null
      }
     ],
-    "time": "2026-09-22 17:19:42"
+    "time": "2026-09-23 23:24:14"
    },
    "applied": {
-    "green": 39,
-    "time": "2026-09-22 21:04:13",
-    "cells": [
-     {
-      "field": "电池能量密度(Wh/kg)",
-      "model": "DFM7001G1F2BEV"
-     },
-     {
-      "field": "车长(mm)",
-      "model": "DFM7001G1F3BEV"
-     },
-     {
-      "field": "轴距(mm)",
-      "model": "DFM7001G1F3BEV"
-     },
-     {
-      "field": "整备质量(kg)",
-      "model": "DFM7001G1F3BEV"
-     },
-     {
-      "field": "电池容量(kWh)",
-      "model": "DFM7001G1F3BEV"
-     },
-     {
-      "field": "电池类型",
-      "model": "DFM7001G1F3BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "DFM7001G1F3BEV"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BYD7150ADHEVA1"
-     },
-     {
-      "field": "电池能量密度(Wh/kg)",
-      "model": "BYD7150BW6HEV1"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "BYD7150ADHEV10"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "GAM6480BEVB0C"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM6480BEVB0C"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "GAM6480BEVB0E"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM6480BEVB0E"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "GAM6480BEVB0J"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM6480BEVB0J"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "GAM6480BEVB0K"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM6480BEVB0K"
-     },
-     {
-      "field": "前电机功率/扭矩",
-      "model": "GAM6480BEVB0L"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "GAM6480BEVB0L"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11A"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11B"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11C"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11G"
-     },
-     {
-      "field": "电池类型",
-      "model": "NEQ7000BEVJH11H"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11H"
-     },
-     {
-      "field": "电池类型",
-      "model": "NEQ7000BEVJH11J"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11K"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11L"
-     },
-     {
-      "field": "电池类型",
-      "model": "NEQ7000BEVJH11M"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11M"
-     },
-     {
-      "field": "电池类型",
-      "model": "NEQ7000BEVJH11N"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11N"
-     },
-     {
-      "field": "电池类型",
-      "model": "NEQ7000BEVJH11P"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11Q"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11T"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11U"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11W"
-     },
-     {
-      "field": "后电机功率/扭矩",
-      "model": "NEQ7000BEVJH11X"
-     }
-    ]
+    "green": 0,
+    "time": "2026-09-23 23:46:59",
+    "cells": []
    }
   },
   "r01": {
@@ -3298,8 +1340,8 @@
      "batches": {
       "410": 6
      },
-     "ok": false,
-     "reject_reason": "no_candidate"
+     "ok": true,
+     "sid": "5579"
     },
     {
      "kw": "智界RX",
@@ -3989,7 +2031,7 @@
   },
   "r09": {
    "id": "r09",
-   "status": "applied",
+   "status": "partial",
    "created": "2026-09-22 16:27:28",
    "series": [
     {
@@ -4805,7 +2847,7 @@
       "file": null
      }
     ],
-    "time": "2026-09-22 17:19:44"
+    "time": "2026-09-23 23:24:16"
    },
    "applied": {
     "green": 167,
@@ -5484,7 +3526,7 @@
   },
   "r10": {
    "id": "r10",
-   "status": "applied",
+   "status": "partial",
    "created": "2026-09-22 16:27:28",
    "series": [
     {
@@ -6255,7 +4297,7 @@
       "file": null
      }
     ],
-    "time": "2026-09-22 17:19:48"
+    "time": "2026-09-23 23:24:19"
    },
    "applied": {
     "green": 90,
@@ -6626,7 +4668,7 @@
   },
   "r11": {
    "id": "r11",
-   "status": "applied",
+   "status": "partial",
    "created": "2026-09-22 16:27:28",
    "series": [
     {
@@ -7372,7 +5414,7 @@
       "file": null
      }
     ],
-    "time": "2026-09-22 17:19:53"
+    "time": "2026-09-23 23:24:22"
    },
    "applied": {
     "green": 80,
@@ -7703,7 +5745,7 @@
   },
   "r12": {
    "id": "r12",
-   "status": "applied",
+   "status": "partial",
    "created": "2026-09-22 16:27:28",
    "series": [
     {
@@ -8439,7 +6481,7 @@
       "file": null
      }
     ],
-    "time": "2026-09-22 17:19:57"
+    "time": "2026-09-23 23:24:25"
    },
    "applied": {
     "green": 65,
@@ -8710,7 +6752,7 @@
   },
   "r13": {
    "id": "r13",
-   "status": "applied",
+   "status": "partial",
    "created": "2026-09-22 16:27:28",
    "series": [
     {
@@ -9417,7 +7459,7 @@
       "file": null
      }
     ],
-    "time": "2026-09-22 17:20:01"
+    "time": "2026-09-23 23:24:28"
    },
    "applied": {
     "green": 82,
@@ -9756,7 +7798,7 @@
   },
   "r14": {
    "id": "r14",
-   "status": "applied",
+   "status": "partial",
    "created": "2026-09-22 16:27:28",
    "series": [
     {
@@ -10037,7 +8079,7 @@
       "file": null
      }
     ],
-    "time": "2026-09-22 17:20:05"
+    "time": "2026-09-23 23:24:30"
    },
    "applied": {
     "green": 19,

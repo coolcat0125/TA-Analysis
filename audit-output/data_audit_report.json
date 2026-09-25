@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-09-22T15:13:46+00:00",
+  "generated_at_utc": "2026-09-25T15:07:52+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "3f959c909c6286bc33af2c85961baef4944a3790b90696fb720d11bf96546138",
+    "sha256": "672ef33d55596cfeed3b7c30f02074e83ffe6d6019e043d09b84d1cf0480d9f4",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
@@ -169,9 +169,9 @@
     },
     "后电机功率": {
       "header": "后电机功率/扭矩",
-      "populated": 2068,
-      "coverage": 0.383531,
-      "missing": 3324
+      "populated": 2069,
+      "coverage": 0.383717,
+      "missing": 3323
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
@@ -260,7 +260,7 @@
         5.0,
         1500.0
       ],
-      "numeric_values": 2068,
+      "numeric_values": 2069,
       "outliers": 0,
       "sample_outliers": []
     },
