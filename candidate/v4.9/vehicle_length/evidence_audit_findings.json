@@ -1,0 +1,84 @@
+{
+ "task": "A08 Evidence Audit — Vehicle.车长 跨车型传播污染",
+ "generated_at": "2026-09-17T13:08:19+0800",
+ "input_head": "fbfdf975667dc29fa1a7d2540db3552064526c22",
+ "input_dataset_sha256": "F86092460F828033C53EEB01E67E5C7C7EFD52A4C9545D27EBA32FA862BD8D55",
+ "audit_scope": {
+  "total_flagged_rows": 77,
+  "rows_with_evidence": 55,
+  "rows_without_evidence": 22,
+  "coverage_pct": 71.4
+ },
+ "evidence_level_calibration": [
+  {
+   "issue": "参数配置数据库的证据分级口径",
+   "before": "汽车之家/易车 参数配置页被定为 C 级（专业媒体）",
+   "after": "校准为 B 级（high-quality industry/database/research source）",
+   "rationale": "契约 B 级定义涵盖 industry/database source；参数配置页为结构化车型参数数据库，非单篇媒体报道，且多源（汽车之家/易车/官方公布）交叉一致。单篇评测文章仍应为 C 级。",
+   "impact": "熊猫Mini / 凌宝BOX / 糯玉米 / 奔腾小马 等的证据等级由 C 提升至 B；宏光MINIEV / 五菱缤果 保持 A 级（企业官网一手）"
+  }
+ ],
+ "traceability_check": {
+  "each_evidence_has_url": true,
+  "each_evidence_has_quoted_value": true,
+  "retrieval_date_recorded": "2026-09-17",
+  "note": "9 个车型族的每条证据均含 source_name / source_url / extraction_method / quoted_value"
+ },
+ "cross_source_conflict_check": [
+  {
+   "series": "宏光MINIEV",
+   "sources": [
+    "五菱官网",
+    "汽车之家",
+    "易车"
+   ],
+   "conflict": false,
+   "note": "三源一致；差异仅来自代际版本（3061/3064/3268）"
+  },
+  {
+   "series": "五菱缤果",
+   "sources": [
+    "五菱官网",
+    "汽车之家",
+    "易车"
+   ],
+   "conflict": false,
+   "note": "3950mm 全源全版本一致"
+  },
+  {
+   "series": "奔腾小马",
+   "sources": [
+    "汽车之家",
+    "易车",
+    "官方上市信息"
+   ],
+   "conflict": false,
+   "note": "三门3000/五门3350，各源一致"
+  },
+  {
+   "series": "凌宝BOX",
+   "sources": [
+    "汽车之家",
+    "易车",
+    "凌宝官网"
+   ],
+   "conflict": false,
+   "note": "3584mm(2022后) vs 3460mm(2021早期)，为代际差异非冲突"
+  }
+ ],
+ "key_audit_conclusions": [
+  "77 行污染中的 58 行（75.3%）已获外部证据支持，证据等级分布 A 级 13 行 / B 级 44 行 / C 级 1 行",
+  "**底表错误值 4470mm 被跨越 6 个不同车型族使用** → 确认为共识传播型污染，非单点录入错误",
+  "所有已取证车型的真值均 **远小于** 底表值（偏差 700~1,973mm），方向一致 → 单一污染源特征",
+  "真值普遍随**代际/版本**变化（如宏光MINIEV 3 个值、奔腾小马 三门/五门）→ **修复必须逐车型（甚至逐版本）定值**，任何统一替换都会引入新错误",
+  "剩余 19 行（五菱之光EV 2 / 欧拉系 4 / T03 2 / 兜底名行 4 / 其他 7）待取证"
+ ],
+ "large_batch_audit": {
+  "input_count": 77,
+  "output_candidates": 55,
+  "records_changed": 0,
+  "records_rejected": 0,
+  "canonical_master_modified": false,
+  "rollback_reference": "无（仅产出 candidate 层，未修改 canonical 数据）"
+ }
+}

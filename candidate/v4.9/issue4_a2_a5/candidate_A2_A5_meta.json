@@ -1,0 +1,32 @@
+{
+ "task": "A2-A5 契约化（Issue #4 四类问题的字段级候选）",
+ "generated_at": "2026-09-17T13:08:55+0800",
+ "input_head": "fbfdf975667dc29fa1a7d2540db3552064526c22",
+ "input_dataset_sha256": "F86092460F828033C53EEB01E67E5C7C7EFD52A4C9545D27EBA32FA862BD8D55",
+ "by_issue": {
+  "A2": 12,
+  "A3": 4,
+  "A4": 5,
+  "A5": 2
+ },
+ "large_batch_audit": {
+  "input_count": 23,
+  "output_candidates": 23,
+  "evidence_records": 18,
+  "records_changed": 0,
+  "records_rejected": 0,
+  "canonical_master_modified": false,
+  "rollback_reference": "无（仅产出 candidate 层）"
+ },
+ "status_distribution": {
+  "candidate": 17,
+  "unknown": 5,
+  "conflicted": 1
+ },
+ "evidence_level_distribution": {
+  "B": 12,
+  "C": 4,
+  "(无)": 5,
+  "A": 2
+ }
+}

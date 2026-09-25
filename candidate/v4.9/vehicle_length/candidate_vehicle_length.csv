@@ -1,0 +1,56 @@
+﻿candidate_id,entity_type,vehicle_id,product_model,manufacturer,brand,series_name,announcement_batch,energy_type,field_name,unit,current_value,candidate_range,status,evidence_level,evidence_ref,issue_flag,review_note
+CAND-VL-004,Vehicle,PM:HXK7000BEVA8,HXK7000BEVA8,江苏吉麦新能源车业有限公司,凌宝牌,凌宝BOX,342,BEV,车长,mm,4220,3460~3584,candidate,B,EVID-VL-004,cross_vehicle_propagation,轴距2455mm全版本一致；车长3460(2021早期)~3584(2022后)。
+CAND-VL-005,Vehicle,PM:HXK7000BEVA10,HXK7000BEVA10,江苏吉麦新能源车业有限公司,凌宝牌,凌宝BOX,343,BEV,车长,mm,4220,3460~3584,candidate,B,EVID-VL-005,cross_vehicle_propagation,轴距2455mm全版本一致；车长3460(2021早期)~3584(2022后)。
+CAND-VL-006,Vehicle,PM:HXK7000BEVA9,HXK7000BEVA9,江苏吉麦新能源车业有限公司,凌宝牌,凌宝BOX,343,BEV,车长,mm,4220,3460~3584,candidate,B,EVID-VL-006,cross_vehicle_propagation,轴距2455mm全版本一致；车长3460(2021早期)~3584(2022后)。
+CAND-VL-007,Vehicle,PM:LZW7002EVUHAN,LZW7002EVUHAN,上汽通用五菱汽车股份有限公司,五菱牌,Nano EV,343,BEV,车长,mm,4470,2497,candidate,B,EVID-VL-007,cross_vehicle_propagation,全系尺寸一致，可直接定值。
+CAND-VL-008,Vehicle,PM:LZW7002EVA1EAN,LZW7002EVA1EAN,上汽通用五菱汽车股份有限公司,五菱牌,Nano EV,344,BEV,车长,mm,4470,2497,candidate,B,EVID-VL-008,cross_vehicle_propagation,全系尺寸一致，可直接定值。
+CAND-VL-009,Vehicle,PM:LZW7002EVB1EAN,LZW7002EVB1EAN,上汽通用五菱汽车股份有限公司,五菱牌,Nano EV,344,BEV,车长,mm,4470,2497,candidate,B,EVID-VL-009,cross_vehicle_propagation,全系尺寸一致，可直接定值。
+CAND-VL-010,Vehicle,PM:LZW7002EVBHANA,LZW7002EVBHANA,上汽通用五菱汽车股份有限公司,五菱牌,Nano EV,344,BEV,车长,mm,4470,2497,candidate,B,EVID-VL-010,cross_vehicle_propagation,全系尺寸一致，可直接定值。
+CAND-VL-011,Vehicle,PM:LZW7002EVCHANA,LZW7002EVCHANA,上汽通用五菱汽车股份有限公司,五菱牌,Nano EV,344,BEV,车长,mm,4470,2497,candidate,B,EVID-VL-011,cross_vehicle_propagation,全系尺寸一致，可直接定值。
+CAND-VL-012,Vehicle,PM:LZW7002EVB1PAN,LZW7002EVB1PAN,上汽通用五菱汽车股份有限公司,五菱牌,NanoEV,346,BEV,车长,mm,4470,2497,candidate,B,EVID-VL-012,cross_vehicle_propagation,同「Nano EV」，通用名称写法差异（含/不含空格）需规范化。
+CAND-VL-014,Vehicle,PM:LZW7004EVA5DBK,LZW7004EVA5DBK,上汽通用五菱汽车股份有限公司,五菱牌,宏光MINIEV,348,BEV,车长,mm,4470,3061~3268,candidate,A,EVID-VL-014,cross_vehicle_propagation,A级一手来源确认底表4470为错误。真值随代际变化(3061/3064/3268)，须按型号对应年款分别定值，禁止统一替换。
+CAND-VL-015,Vehicle,PM:LZW7004EVA5EBK,LZW7004EVA5EBK,上汽通用五菱汽车股份有限公司,五菱牌,宏光MINIEV,348,BEV,车长,mm,4470,3061~3268,candidate,A,EVID-VL-015,cross_vehicle_propagation,A级一手来源确认底表4470为错误。真值随代际变化(3061/3064/3268)，须按型号对应年款分别定值，禁止统一替换。
+CAND-VL-016,Vehicle,PM:LZW7004EVC1DBK,LZW7004EVC1DBK,上汽通用五菱汽车股份有限公司,五菱牌,宏光MINIEV,348,BEV,车长,mm,4470,3061~3268,candidate,A,EVID-VL-016,cross_vehicle_propagation,A级一手来源确认底表4470为错误。真值随代际变化(3061/3064/3268)，须按型号对应年款分别定值，禁止统一替换。
+CAND-VL-017,Vehicle,PM:LZW7004EVC1EBK,LZW7004EVC1EBK,上汽通用五菱汽车股份有限公司,五菱牌,宏光MINIEV,348,BEV,车长,mm,4470,3061~3268,candidate,A,EVID-VL-017,cross_vehicle_propagation,A级一手来源确认底表4470为错误。真值随代际变化(3061/3064/3268)，须按型号对应年款分别定值，禁止统一替换。
+CAND-VL-018,Vehicle,PM:LZW7004EVA5EBKU,LZW7004EVA5EBKU,上汽通用五菱汽车股份有限公司,五菱牌,宏光MINIEV,349,BEV,车长,mm,4470,3061~3268,candidate,A,EVID-VL-018,cross_vehicle_propagation,A级一手来源确认底表4470为错误。真值随代际变化(3061/3064/3268)，须按型号对应年款分别定值，禁止统一替换。
+CAND-VL-019,Vehicle,PM:LZW7004EVA5HBK,LZW7004EVA5HBK,上汽通用五菱汽车股份有限公司,五菱牌,宏光MINIEV,349,BEV,车长,mm,4470,3061~3268,candidate,A,EVID-VL-019,cross_vehicle_propagation,A级一手来源确认底表4470为错误。真值随代际变化(3061/3064/3268)，须按型号对应年款分别定值，禁止统一替换。
+CAND-VL-020,Vehicle,PM:LZW7004EVC1DBKU,LZW7004EVC1DBKU,上汽通用五菱汽车股份有限公司,五菱牌,宏光MINIEV,349,BEV,车长,mm,4470,3061~3268,candidate,A,EVID-VL-020,cross_vehicle_propagation,A级一手来源确认底表4470为错误。真值随代际变化(3061/3064/3268)，须按型号对应年款分别定值，禁止统一替换。
+CAND-VL-021,Vehicle,PM:LZW7004EVC1KBK,LZW7004EVC1KBK,上汽通用五菱汽车股份有限公司,五菱牌,宏光MINIEV,349,BEV,车长,mm,4470,3061~3268,candidate,A,EVID-VL-021,cross_vehicle_propagation,A级一手来源确认底表4470为错误。真值随代际变化(3061/3064/3268)，须按型号对应年款分别定值，禁止统一替换。
+CAND-VL-023,Vehicle,PM:HXK7000BEVA12,HXK7000BEVA12,江苏吉麦新能源车业有限公司,凌宝牌,凌宝BOX,350,BEV,车长,mm,4220,3460~3584,candidate,B,EVID-VL-023,cross_vehicle_propagation,轴距2455mm全版本一致；车长3460(2021早期)~3584(2022后)。
+CAND-VL-024,Vehicle,PM:LZW7004EVA5EBKU,LZW7004EVA5EBKU,上汽通用五菱汽车股份有限公司,五菱牌,宏光MINIEV,350,BEV,车长,mm,4470,3061~3268,candidate,A,EVID-VL-024,cross_vehicle_propagation,A级一手来源确认底表4470为错误。真值随代际变化(3061/3064/3268)，须按型号对应年款分别定值，禁止统一替换。
+CAND-VL-025,Vehicle,PM:LZW7004EVC1DBKU,LZW7004EVC1DBKU,上汽通用五菱汽车股份有限公司,五菱牌,宏光MINIEV,350,BEV,车长,mm,4470,3061~3268,candidate,A,EVID-VL-025,cross_vehicle_propagation,A级一手来源确认底表4470为错误。真值随代际变化(3061/3064/3268)，须按型号对应年款分别定值，禁止统一替换。
+CAND-VL-026,Vehicle,PM:LZW7004EVA5EBKC,LZW7004EVA5EBKC,上汽通用五菱汽车股份有限公司,五菱牌,宏光MINIEV,351,BEV,车长,mm,4470,3061~3268,candidate,A,EVID-VL-026,cross_vehicle_propagation,A级一手来源确认底表4470为错误。真值随代际变化(3061/3064/3268)，须按型号对应年款分别定值，禁止统一替换。
+CAND-VL-028,Vehicle,PM:SC7001FACBEV,SC7001FACBEV,重庆长安汽车股份有限公司,长安牌,糯玉米,354,BEV,车长,mm,4640,3270~3293,candidate,B,EVID-VL-028,cross_vehicle_propagation,轴距1980mm高度一致；车长3270(主流)~3293(2026宝藏版)。
+CAND-VL-029,Vehicle,PM:SC7001FADBEV,SC7001FADBEV,重庆长安汽车股份有限公司,长安牌,糯玉米,354,BEV,车长,mm,4640,3270~3293,candidate,B,EVID-VL-029,cross_vehicle_propagation,轴距1980mm高度一致；车长3270(主流)~3293(2026宝藏版)。
+CAND-VL-030,Vehicle,PM:HXK7000BEVA13,HXK7000BEVA13,江苏吉麦新能源车业有限公司,凌宝牌,凌宝BOX,355,BEV,车长,mm,4220,3460~3584,candidate,B,EVID-VL-030,cross_vehicle_propagation,轴距2455mm全版本一致；车长3460(2021早期)~3584(2022后)。
+CAND-VL-031,Vehicle,PM:LZW7005EVA5DBKA,LZW7005EVA5DBKA,上汽通用五菱汽车股份有限公司,五菱牌,Airev,355,BEV,车长,mm,4470,2599~2974,candidate,B,EVID-VL-031,cross_vehicle_propagation,需按两座/四座版本分别定值。底表4470与真值差距近1600~1900mm。
+CAND-VL-032,Vehicle,PM:LZW7005EVA5EBK,LZW7005EVA5EBK,上汽通用五菱汽车股份有限公司,五菱牌,Airev,355,BEV,车长,mm,4470,2599~2974,candidate,B,EVID-VL-032,cross_vehicle_propagation,需按两座/四座版本分别定值。底表4470与真值差距近1600~1900mm。
+CAND-VL-033,Vehicle,PM:LZW7005EVC1DBKA,LZW7005EVC1DBKA,上汽通用五菱汽车股份有限公司,五菱牌,Airev,355,BEV,车长,mm,4470,2599~2974,candidate,B,EVID-VL-033,cross_vehicle_propagation,需按两座/四座版本分别定值。底表4470与真值差距近1600~1900mm。
+CAND-VL-034,Vehicle,PM:LZW7005EVC1EBJ,LZW7005EVC1EBJ,上汽通用五菱汽车股份有限公司,五菱牌,Airev,355,BEV,车长,mm,4470,2599~2974,candidate,B,EVID-VL-034,cross_vehicle_propagation,需按两座/四座版本分别定值。底表4470与真值差距近1600~1900mm。
+CAND-VL-035,Vehicle,PM:LZW7005EVC1HBKA,LZW7005EVC1HBKA,上汽通用五菱汽车股份有限公司,五菱牌,Airev,355,BEV,车长,mm,4470,2599~2974,candidate,B,EVID-VL-035,cross_vehicle_propagation,需按两座/四座版本分别定值。底表4470与真值差距近1600~1900mm。
+CAND-VL-036,Vehicle,PM:LZW7005EVC2CBM,LZW7005EVC2CBM,上汽通用五菱汽车股份有限公司,五菱牌,Airev,355,BEV,车长,mm,4470,2599~2974,candidate,B,EVID-VL-036,cross_vehicle_propagation,需按两座/四座版本分别定值。底表4470与真值差距近1600~1900mm。
+CAND-VL-037,Vehicle,PM:SC7001FAEBEV,SC7001FAEBEV,重庆长安汽车股份有限公司,长安牌,糯玉米,355,BEV,车长,mm,4640,3270~3293,candidate,B,EVID-VL-037,cross_vehicle_propagation,轴距1980mm高度一致；车长3270(主流)~3293(2026宝藏版)。
+CAND-VL-038,Vehicle,PM:SC7001FAKBEV,SC7001FAKBEV,重庆长安汽车股份有限公司,长安牌,糯玉米,355,BEV,车长,mm,4640,3270~3293,candidate,B,EVID-VL-038,cross_vehicle_propagation,轴距1980mm高度一致；车长3270(主流)~3293(2026宝藏版)。
+CAND-VL-039,Vehicle,PM:LZW7005EVC2MBM,LZW7005EVC2MBM,上汽通用五菱汽车股份有限公司,五菱牌,Airev,356,BEV,车长,mm,4470,2599~2974,candidate,B,EVID-VL-039,cross_vehicle_propagation,需按两座/四座版本分别定值。底表4470与真值差距近1600~1900mm。
+CAND-VL-040,Vehicle,PM:HXK7000BEVA14,HXK7000BEVA14,江苏吉麦新能源车业有限公司,凌宝牌,凌宝BOX,357,BEV,车长,mm,4150,3460~3584,candidate,B,EVID-VL-040,cross_vehicle_propagation,轴距2455mm全版本一致；车长3460(2021早期)~3584(2022后)。
+CAND-VL-041,Vehicle,PM:HXK7000BEVA15,HXK7000BEVA15,江苏吉麦新能源车业有限公司,凌宝牌,凌宝BOX,359,BEV,车长,mm,4220,3460~3584,candidate,B,EVID-VL-041,cross_vehicle_propagation,轴距2455mm全版本一致；车长3460(2021早期)~3584(2022后)。
+CAND-VL-042,Vehicle,PM:HXK7000BEVA16,HXK7000BEVA16,江苏吉麦新能源车业有限公司,凌宝牌,凌宝BOX,362,BEV,车长,mm,4220,3460~3584,candidate,B,EVID-VL-042,cross_vehicle_propagation,轴距2455mm全版本一致；车长3460(2021早期)~3584(2022后)。
+CAND-VL-043,Vehicle,PM:HXK7000BEVD00,HXK7000BEVD00,江苏吉麦新能源车业有限公司,凌宝牌,凌宝BOX,362,BEV,车长,mm,4220,3460~3584,candidate,B,EVID-VL-043,cross_vehicle_propagation,轴距2455mm全版本一致；车长3460(2021早期)~3584(2022后)。
+CAND-VL-045,Vehicle,PM:JL7007BEV02,JL7007BEV02,浙江豪情汽车制造有限公司,几何牌,熊猫Mini,365,BEV,车长,mm,4640,3065~3085,candidate,B,EVID-VL-045,cross_vehicle_propagation,分级校准：此前定为C级偏保守，参数配置数据库符合契约B级定义(industry/database)，现校准为B。轴距2015mm各年款高度一致，可高置信；车长随版本3065~3085。
+CAND-VL-046,Vehicle,PM:JL7007BEV04,JL7007BEV04,浙江豪情汽车制造有限公司,几何牌,熊猫Mini,365,BEV,车长,mm,4640,3065~3085,candidate,B,EVID-VL-046,cross_vehicle_propagation,分级校准：此前定为C级偏保守，参数配置数据库符合契约B级定义(industry/database)，现校准为B。轴距2015mm各年款高度一致，可高置信；车长随版本3065~3085。
+CAND-VL-047,Vehicle,PM:LZW7007EVC1KBJ,LZW7007EVC1KBJ,上汽通用五菱汽车股份有限公司,五菱牌,五菱缤果,365,BEV,车长,mm,4470,3950,candidate,A,EVID-VL-047,cross_vehicle_propagation,A级一手来源；四个版本尺寸完全一致，可直接定值。
+CAND-VL-050,Vehicle,PM:LZW7007EVC1KBJB,LZW7007EVC1KBJB,上汽通用五菱汽车股份有限公司,五菱牌,五菱缤果,367,BEV,车长,mm,4470,3950,candidate,A,EVID-VL-050,cross_vehicle_propagation,A级一手来源；四个版本尺寸完全一致，可直接定值。
+CAND-VL-051,Vehicle,PM:LZW7005EVA1,LZW7005EVA1,上汽通用五菱汽车股份有限公司,五菱牌,Airev,371,BEV,车长,mm,4470,2599~2974,candidate,B,EVID-VL-051,cross_vehicle_propagation,需按两座/四座版本分别定值。底表4470与真值差距近1600~1900mm。
+CAND-VL-057,Vehicle,PM:SC7001FATBEV,SC7001FATBEV,重庆长安汽车股份有限公司,长安牌,糯玉米,374,BEV,车长,mm,4640,3270~3293,candidate,B,EVID-VL-057,cross_vehicle_propagation,轴距1980mm高度一致；车长3270(主流)~3293(2026宝藏版)。
+CAND-VL-058,Vehicle,PM:SC7001FAUBEV,SC7001FAUBEV,重庆长安汽车股份有限公司,长安牌,糯玉米,374,BEV,车长,mm,4640,3270~3293,candidate,B,EVID-VL-058,cross_vehicle_propagation,轴距1980mm高度一致；车长3270(主流)~3293(2026宝藏版)。
+CAND-VL-060,Vehicle,PM:HXK7000BEVA17,HXK7000BEVA17,江苏吉麦新能源车业有限公司,凌宝牌,凌宝BOX,383,BEV,车长,mm,4220,3460~3584,candidate,B,EVID-VL-060,cross_vehicle_propagation,轴距2455mm全版本一致；车长3460(2021早期)~3584(2022后)。
+CAND-VL-065,Vehicle,PM:BAW7000UBJ1BEV,BAW7000UBJ1BEV,北京汽车制造厂有限公司,燕铃牌,L7H/L6H,391,BEV,车长,mm,5850,3475,candidate,C,EVID-VL-065,cross_vehicle_propagation,暂定C级（经转述）；**可回溯工信部390批公告原件后升为A级**。该行电机数据亦疑串位（底表前30/总180/后150-310，官方为30kW单电机）。
+CAND-VL-067,Vehicle,PM:SC7000AAAKBEV,SC7000AAAKBEV,重庆长安汽车股份有限公司,长安牌,糯玉米,395,BEV,车长,mm,4640,3270~3293,candidate,B,EVID-VL-067,cross_vehicle_propagation,轴距1980mm高度一致；车长3270(主流)~3293(2026宝藏版)。
+CAND-VL-068,Vehicle,PM:SC7000AAALBEV,SC7000AAALBEV,重庆长安汽车股份有限公司,长安牌,糯玉米,395,BEV,车长,mm,4640,3270~3293,candidate,B,EVID-VL-068,cross_vehicle_propagation,轴距1980mm高度一致；车长3270(主流)~3293(2026宝藏版)。
+CAND-VL-069,Vehicle,PM:SC7000AAASBEV,SC7000AAASBEV,重庆长安汽车股份有限公司,长安牌,糯玉米,396,BEV,车长,mm,4640,3270~3293,candidate,B,EVID-VL-069,cross_vehicle_propagation,轴距1980mm高度一致；车长3270(主流)~3293(2026宝藏版)。
+CAND-VL-070,Vehicle,PM:SC7000AAATBEV,SC7000AAATBEV,重庆长安汽车股份有限公司,长安牌,糯玉米,396,BEV,车长,mm,4640,3270~3293,candidate,B,EVID-VL-070,cross_vehicle_propagation,轴距1980mm高度一致；车长3270(主流)~3293(2026宝藏版)。
+CAND-VL-072,Vehicle,PM:CA7002B0EVE,CA7002B0EVE,中国第一汽车集团有限公司,一汽牌,奔腾小马,409,BEV,车长,mm,3810,3000~3350,candidate,B,EVID-VL-072,cross_vehicle_propagation,需按三门/五门版本分别定值。
+CAND-VL-073,Vehicle,PM:CA7002B0EVD,CA7002B0EVD,中国第一汽车集团有限公司,一汽牌,奔腾小马,409,BEV,车长,mm,3810,3000~3350,candidate,B,EVID-VL-073,cross_vehicle_propagation,需按三门/五门版本分别定值。
+CAND-VL-074,Vehicle,PM:CA7002B0EVC,CA7002B0EVC,中国第一汽车集团有限公司,一汽牌,奔腾小马,409,BEV,车长,mm,3810,3000~3350,candidate,B,EVID-VL-074,cross_vehicle_propagation,需按三门/五门版本分别定值。
+CAND-VL-075,Vehicle,PM:CA7002B0EVB,CA7002B0EVB,中国第一汽车集团有限公司,一汽牌,奔腾小马,409,BEV,车长,mm,3810,3000~3350,candidate,B,EVID-VL-075,cross_vehicle_propagation,需按三门/五门版本分别定值。
+CAND-VL-076,Vehicle,PM:CA7002B0EVA,CA7002B0EVA,中国第一汽车集团有限公司,一汽牌,奔腾小马,409,BEV,车长,mm,3810,3000~3350,candidate,B,EVID-VL-076,cross_vehicle_propagation,需按三门/五门版本分别定值。
