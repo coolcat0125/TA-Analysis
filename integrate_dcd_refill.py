@@ -130,8 +130,8 @@ def main():
                 ff = fuel_ff.get((sid, str(c.get('id'))), '')
                 if ff == '汽油':
                     continue
-                if is_bev and not v.get('battery_capacity'):
-                    continue
+                if is_bev and not (v.get('battery_capacity') or v.get('battery_type') or v.get('cltc_recharge_mileage')):
+                    continue  # BEV 守卫放宽：任一电动性证据（容量/类型/续航）即可
                 if (not is_bev) and not v.get('battery_capacity') and 'DM' not in c['name'] and 'EV' not in c['name']:
                     continue
                 trims.append(c)
