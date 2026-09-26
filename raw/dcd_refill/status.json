@@ -1,20 +1,20 @@
 {
- "updated": "2026-09-26 00:45:14",
+ "updated": "2026-09-27 06:57:35",
  "workbook_rows": 5392,
  "dcd_coverage": {
-  "电池能量密度(Wh/kg)": 79.2,
-  "整备质量(kg)": 90.7,
-  "电池类型": 92.8,
-  "后电机功率/扭矩": 38.4,
+  "轴距(mm)": 85.6,
   "电机总功率/扭矩": 96.8,
-  "前电机功率/扭矩": 84.6,
+  "前电机功率/扭矩": 84.8,
+  "电池能量密度(Wh/kg)": 79.2,
   "纯电续航里程(km)": 97.3,
+  "车长(mm)": 85.2,
   "百公里电耗(kWh/100km)": 96.0,
-  "轴距(mm)": 85.4,
-  "车长(mm)": 85.1,
-  "电池容量(kWh)": 91.7
+  "电池容量(kWh)": 91.8,
+  "整备质量(kg)": 90.8,
+  "电池类型": 92.9,
+  "后电机功率/扭矩": 38.6
  },
- "dcd_ledger_cells": 2981,
+ "dcd_ledger_cells": 3036,
  "batches": [
   {
    "id": "b01",
@@ -491,124 +491,124 @@
  ],
  "recent_ledger": [
   {
-   "seq": 54205,
-   "model": "SC6558AAAABEV",
+   "seq": 54260,
+   "model": "LZ7000SXF0EV",
    "field": "后电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "110.0"
+   "new": "230.0"
   },
   {
-   "seq": 54202,
-   "model": "BYD7000BXBEV3",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4990",
-   "new": 4800
+   "seq": 54259,
+   "model": "LZ7150SB0REEV",
+   "field": "后电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "160.0"
   },
   {
-   "seq": 54201,
-   "model": "BYD7000BXBEV2",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4990",
-   "new": 4800
+   "seq": 54258,
+   "model": "LZ7000SUF0EV",
+   "field": "后电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "200.0"
   },
   {
-   "seq": 54200,
-   "model": "BYD7151Y6HEV5",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4990",
-   "new": 4800
+   "seq": 54257,
+   "model": "CC6510BD23BPHEV",
+   "field": "电池容量(kWh)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "44.28"
   },
   {
-   "seq": 54199,
-   "model": "BYD7151YT6HEV10",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "4990",
-   "new": 4800
+   "seq": 54256,
+   "model": "CC6510BD23BPHEV",
+   "field": "整备质量(kg)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "2765.0"
   },
   {
-   "seq": 54198,
-   "model": "BYD7151YT6HEV8",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "5020",
-   "new": 4800
+   "seq": 54255,
+   "model": "FZ6450BEVB10L",
+   "field": "后电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "160.0"
   },
   {
-   "seq": 54197,
-   "model": "BYD7151YT6HEV6",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "5020",
-   "new": 4800
+   "seq": 54254,
+   "model": "FZ6450BEVB10H",
+   "field": "后电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "160.0"
   },
   {
-   "seq": 54196,
-   "model": "BYD7151Y6HEV3",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "5020",
-   "new": 4800
+   "seq": 54253,
+   "model": "FZ6450BEVB10E",
+   "field": "后电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "160.0"
   },
   {
-   "seq": 54195,
-   "model": "BYD7151Y6HEV2",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "5020",
-   "new": 4800
+   "seq": 54252,
+   "model": "SQR6483CHEVT226",
+   "field": "前电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "150.0"
   },
   {
-   "seq": 54194,
-   "model": "MR7152DCHEV105",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "5040",
-   "new": 5018
+   "seq": 54251,
+   "model": "AHC6470BEVJ0Y",
+   "field": "前电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "165.0"
   },
   {
-   "seq": 54193,
-   "model": "AFN7000BAABEVB",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "5290",
-   "new": 5142
+   "seq": 54250,
+   "model": "AHC6470SHEVN0C",
+   "field": "前电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "165.0"
   },
   {
-   "seq": 54192,
-   "model": "AFN7000BAABEVA",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "5290",
-   "new": 5142
+   "seq": 54249,
+   "model": "BYD7150ADHEV9",
+   "field": "前电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "120.0"
   },
   {
-   "seq": 54191,
-   "model": "AFN7000BADBEV",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "5110",
-   "new": 5142
+   "seq": 54248,
+   "model": "BYD7150ADHEV9",
+   "field": "电机总功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "120.0"
   },
   {
-   "seq": 54190,
-   "model": "AFN7000BACBEVB",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "5290",
-   "new": 5142
+   "seq": 54247,
+   "model": "BYD7000BWBEV5",
+   "field": "前电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "160.0"
   },
   {
-   "seq": 54189,
-   "model": "AFN7000BACBEVA",
-   "field": "车长(mm)",
-   "kind": "双源更正",
-   "old": "5290",
-   "new": 5142
+   "seq": 54246,
+   "model": "FZ6490BEVC16N",
+   "field": "后电机功率/扭矩",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "220.0"
   }
  ]
 }

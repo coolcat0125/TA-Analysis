@@ -92,3 +92,10 @@
 - **抓取**：浏览器/Tabbit 通道落地 recent_queue.json 的 r01 起（或并行会话 dcd_auto/targets.json 全量）；落盘 `raw/dcd_refill/dcd_s<sid>.json` 后先 `python dcd_batch_run.py ingest --batch r01` 再 `apply --batch r01`（先 dry-run）。
 - **代际铁律（新）**：DCD 参数页只载当前在售款型——历史公告行禁止直接套 DCD 当前值；须按批次日期映射媒体侧 model-year 款型，双源互证。已按此完成 MINIEV 全族；之光EV/宝骏E100/402批BEVEA-EB 共 7 行 HOLD 待各车系独立取证。
 - **存量疑点**：349批 B8EBJ/B9KBJ 电机 24/85（公告原文）vs 30（公告峰值）vs 30kW（媒体）三方冲突；全表后电机=150/310 共识污染共 692 行（五菱系 174 行已修 79 行 MINIEV 族，其余 95 行五菱非MINIEV+跨品牌行待逐车型审计单电机/双电机后处置）。
+
+## ⚡ 2026-09-27 早 · Wave 3 收口（v4.9.23，17 终端白天轮）
+
+- **S4 代际过滤落地**（`s4_generation_filter.py` 入库）：apply tied 层加"批次日期→model-year 圈定"（cap=公告年+(1 if 月≥7 else 0)），**收编 37 格**（台账 54,224~54,260）；Wave 3 待办① ambiguous 消解至此收口——残池实为 396 格（"~1,000"系累计口径），其中年代可圈定仅 37，余 359=同年代多配置+未来款型拒绝（正确行为，随 DCD 上架历史款解锁）。
+- **待办④ W2 仲裁收口**：344 批 CC7000BJ02ABEV 电耗 13.2 官方能耗源多行确证 → W2sup 白名单（WARN 209→208）。
+- **待办② rear_only 核查**：452 行中 118 行命中已抓车系（89 处歧义收编 20），**余 334 行=未映射车系**，解锁条件=新抓取（cookie 在位 $TEMP/dcd_cookies.json，通道 dcd_direct_fetch.py 可用）；待办③ 84 拒收车系维持"随 DCD 上架解锁"。
+- 门禁三件套全过，两版看板重生成；EIDC doCpQuery 复测仍超时（第 6 天）。
