@@ -1,0 +1,166 @@
+{
+ "kw": "U2",
+ "kws": [
+  "U2"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:40",
+ "series_url": "https://www.dongchedi.com/auto/series/6150",
+ "series": {
+  "sid": "6150",
+  "name": "江南U2",
+  "brand": "江南汽车"
+ },
+ "cars": [
+  {
+   "id": "86031",
+   "name": "150",
+   "year": "2023",
+   "sale_status": 1,
+   "official_price": "5.68万",
+   "vals": {
+    "length": "3840",
+    "wheelbase": "2521",
+    "curb_weight": "928",
+    "cltc_recharge_mileage": "151",
+    "recharge_mileage": "151",
+    "power_consumption": "10.4",
+    "battery_capacity": "13.3",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "105.5",
+    "total_electric_power": "35kW(48Ps)",
+    "total_electric_torque": "100",
+    "front_electric_max_power": "35",
+    "front_electric_max_torque": "100",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "江南汽车"
+   }
+  },
+  {
+   "id": "86032",
+   "name": "300",
+   "year": "2023",
+   "sale_status": 1,
+   "official_price": "6.98万",
+   "vals": {
+    "length": "3840",
+    "wheelbase": "2521",
+    "curb_weight": "1058",
+    "cltc_recharge_mileage": "305",
+    "recharge_mileage": "305",
+    "power_consumption": "10.6",
+    "battery_capacity": "29.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "125.5",
+    "total_electric_power": "55kW(75Ps)",
+    "total_electric_torque": "120",
+    "front_electric_max_power": "55",
+    "front_electric_max_torque": "120",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "江南汽车"
+   }
+  },
+  {
+   "id": "86033",
+   "name": "300 S",
+   "year": "2023",
+   "sale_status": 1,
+   "official_price": "7.68万",
+   "vals": {
+    "length": "3840",
+    "wheelbase": "2521",
+    "curb_weight": "1058",
+    "cltc_recharge_mileage": "305",
+    "recharge_mileage": "305",
+    "power_consumption": "10.6",
+    "battery_capacity": "29.9",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "125.5",
+    "total_electric_power": "55kW(75Ps)",
+    "total_electric_torque": "120",
+    "front_electric_max_power": "55",
+    "front_electric_max_torque": "120",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "江南汽车"
+   }
+  },
+  {
+   "id": "86034",
+   "name": "400",
+   "year": "2023",
+   "sale_status": 1,
+   "official_price": "8.38万",
+   "vals": {
+    "length": "3840",
+    "wheelbase": "2521",
+    "curb_weight": "1188",
+    "cltc_recharge_mileage": "406",
+    "recharge_mileage": "406",
+    "power_consumption": "11.3",
+    "battery_capacity": "43",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "129.8",
+    "total_electric_power": "80kW(109Ps)",
+    "total_electric_torque": "160",
+    "front_electric_max_power": "80",
+    "front_electric_max_torque": "160",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "江南汽车"
+   }
+  },
+  {
+   "id": "86035",
+   "name": "400 S",
+   "year": "2023",
+   "sale_status": 1,
+   "official_price": "8.88万",
+   "vals": {
+    "length": "3840",
+    "wheelbase": "2521",
+    "curb_weight": "1188",
+    "cltc_recharge_mileage": "406",
+    "recharge_mileage": "406",
+    "power_consumption": "11.3",
+    "battery_capacity": "43",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "129.8",
+    "total_electric_power": "80kW(109Ps)",
+    "total_electric_torque": "160",
+    "front_electric_max_power": "80",
+    "front_electric_max_torque": "160",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "江南汽车"
+   }
+  },
+  {
+   "id": "86036",
+   "name": "400 Pro",
+   "year": "2023",
+   "sale_status": 1,
+   "official_price": "9.88万",
+   "vals": {
+    "length": "3840",
+    "wheelbase": "2521",
+    "curb_weight": "1188",
+    "cltc_recharge_mileage": "406",
+    "recharge_mileage": "406",
+    "power_consumption": "11.3",
+    "battery_capacity": "43",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "129.8",
+    "total_electric_power": "80kW(109Ps)",
+    "total_electric_torque": "160",
+    "front_electric_max_power": "80",
+    "front_electric_max_torque": "160",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "江南汽车"
+   }
+  }
+ ]
+}

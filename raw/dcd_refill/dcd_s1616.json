@@ -1,0 +1,141 @@
+{
+ "kw": "ES8",
+ "kws": [
+  "ES8"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:45",
+ "series_url": "https://www.dongchedi.com/auto/series/1616",
+ "series": {
+  "sid": "1616",
+  "name": "蔚来ES8",
+  "brand": "蔚来"
+ },
+ "cars": [
+  {
+   "id": "260614",
+   "name": "五座行政豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "38.28万",
+   "vals": {
+    "length": "5280",
+    "wheelbase": "3130",
+    "curb_weight": "2590",
+    "cltc_recharge_mileage": "655",
+    "recharge_mileage": "655",
+    "power_consumption": "16.3",
+    "battery_capacity": "102",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "187.7",
+    "total_electric_power": "520kW(707Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "300",
+    "rear_electric_max_power": "340",
+    "rear_electric_max_torque": "400",
+    "sub_brand_name": "蔚来"
+   }
+  },
+  {
+   "id": "260377",
+   "name": "五座行政签名版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "42.28万",
+   "vals": {
+    "length": "5280",
+    "wheelbase": "3130",
+    "curb_weight": "2590",
+    "cltc_recharge_mileage": "655",
+    "recharge_mileage": "655",
+    "power_consumption": "16.3",
+    "battery_capacity": "102",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "187.7",
+    "total_electric_power": "520kW(707Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "300",
+    "rear_electric_max_power": "340",
+    "rear_electric_max_torque": "400",
+    "sub_brand_name": "蔚来"
+   }
+  },
+  {
+   "id": "250653",
+   "name": "七座行政豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "40.68万",
+   "vals": {
+    "length": "5280",
+    "wheelbase": "3130",
+    "curb_weight": "2630",
+    "cltc_recharge_mileage": "635",
+    "recharge_mileage": "635",
+    "power_consumption": "16.6",
+    "battery_capacity": "102",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "187.7",
+    "total_electric_power": "520kW(707Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "300",
+    "rear_electric_max_power": "340",
+    "rear_electric_max_torque": "400",
+    "sub_brand_name": "蔚来"
+   }
+  },
+  {
+   "id": "242921",
+   "name": "六座行政豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "40.68万",
+   "vals": {
+    "length": "5280",
+    "wheelbase": "3130",
+    "curb_weight": "2630",
+    "cltc_recharge_mileage": "635",
+    "recharge_mileage": "635",
+    "power_consumption": "16.6",
+    "battery_capacity": "102",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "187.7",
+    "total_electric_power": "520kW(707Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "300",
+    "rear_electric_max_power": "340",
+    "rear_electric_max_torque": "400",
+    "sub_brand_name": "蔚来"
+   }
+  },
+  {
+   "id": "250949",
+   "name": "六座行政签名版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "44.68万",
+   "vals": {
+    "length": "5280",
+    "wheelbase": "3130",
+    "curb_weight": "2630",
+    "cltc_recharge_mileage": "635",
+    "recharge_mileage": "635",
+    "power_consumption": "16.6",
+    "battery_capacity": "102",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "187.7",
+    "total_electric_power": "520kW(707Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "300",
+    "rear_electric_max_power": "340",
+    "rear_electric_max_torque": "400",
+    "sub_brand_name": "蔚来"
+   }
+  }
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "kw": "EC6",
+ "kws": [
+  "EC6"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:45",
+ "series_url": "https://www.dongchedi.com/auto/series/4357",
+ "series": {
+  "sid": "4357",
+  "name": "蔚来EC6",
+  "brand": "蔚来"
+ },
+ "cars": [
+  {
+   "id": "257433",
+   "name": "100kWh",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "35.8万",
+   "vals": {
+    "length": "4849",
+    "wheelbase": "2915",
+    "curb_weight": "2323",
+    "cltc_recharge_mileage": "655",
+    "recharge_mileage": "655",
+    "power_consumption": "15.9",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "185.4",
+    "total_electric_power": "360kW(490Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "280",
+    "rear_electric_max_power": "210",
+    "rear_electric_max_torque": "420",
+    "sub_brand_name": "蔚来"
+   }
+  },
+  {
+   "id": "263245",
+   "name": "100kWh 灵韵特别版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "36.98万",
+   "vals": {
+    "length": "4849",
+    "wheelbase": "2915",
+    "curb_weight": "2340",
+    "cltc_recharge_mileage": "635",
+    "recharge_mileage": "635",
+    "power_consumption": "16.4",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "185.4",
+    "total_electric_power": "360kW(490Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "280",
+    "rear_electric_max_power": "210",
+    "rear_electric_max_torque": "420",
+    "sub_brand_name": "蔚来"
+   }
+  },
+  {
+   "id": "257419",
+   "name": "100kWh 自然奇境版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "37万",
+   "vals": {
+    "length": "4849",
+    "wheelbase": "2915",
+    "curb_weight": "2340",
+    "cltc_recharge_mileage": "635",
+    "recharge_mileage": "635",
+    "power_consumption": "16.4",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "185.4",
+    "total_electric_power": "360kW(490Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "280",
+    "rear_electric_max_power": "210",
+    "rear_electric_max_torque": "420",
+    "sub_brand_name": "蔚来"
+   }
+  },
+  {
+   "id": "260239",
+   "name": "100kWh 冠军纪念版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "37.3万",
+   "vals": {
+    "length": "4849",
+    "wheelbase": "2915",
+    "curb_weight": "2340",
+    "cltc_recharge_mileage": "635",
+    "recharge_mileage": "635",
+    "power_consumption": "15.9",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "185.4",
+    "total_electric_power": "360kW(490Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "280",
+    "rear_electric_max_power": "210",
+    "rear_electric_max_torque": "420",
+    "sub_brand_name": "蔚来"
+   }
+  },
+  {
+   "id": "248410",
+   "name": "100kWh",
+   "year": "2025",
+   "sale_status": 2,
+   "official_price": "35.8万",
+   "vals": {
+    "length": "4849",
+    "wheelbase": "2915",
+    "curb_weight": "2323",
+    "cltc_recharge_mileage": "655",
+    "recharge_mileage": "655",
+    "power_consumption": "15.9",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "185.4",
+    "total_electric_power": "360kW(490Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "280",
+    "rear_electric_max_power": "210",
+    "rear_electric_max_torque": "420",
+    "sub_brand_name": "蔚来"
+   }
+  },
+  {
+   "id": "249695",
+   "name": "100kWh 冠军纪念版",
+   "year": "2025",
+   "sale_status": 2,
+   "official_price": "37万",
+   "vals": {
+    "length": "4849",
+    "wheelbase": "2915",
+    "curb_weight": "2340",
+    "cltc_recharge_mileage": "635",
+    "recharge_mileage": "635",
+    "power_consumption": "16.4",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "185.4",
+    "total_electric_power": "360kW(490Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "280",
+    "rear_electric_max_power": "210",
+    "rear_electric_max_torque": "420",
+    "sub_brand_name": "蔚来"
+   }
+  }
+ ]
+}

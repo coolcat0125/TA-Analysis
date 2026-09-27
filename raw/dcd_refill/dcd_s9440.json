@@ -1,0 +1,141 @@
+{
+ "kw": "Q6L",
+ "kws": [
+  "Q6L"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:41",
+ "series_url": "https://www.dongchedi.com/auto/series/9440",
+ "series": {
+  "sid": "9440",
+  "name": "奥迪Q6L e-tron",
+  "brand": "奥迪"
+ },
+ "cars": [
+  {
+   "id": "257384",
+   "name": "长续航版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "27.98万",
+   "vals": {
+    "length": "4884",
+    "wheelbase": "2995",
+    "curb_weight": "2397",
+    "cltc_recharge_mileage": "672",
+    "recharge_mileage": "672",
+    "power_consumption": "15.1",
+    "battery_capacity": "95",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "143.5",
+    "total_electric_power": "215kW(292Ps)",
+    "total_electric_torque": "450",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "215",
+    "rear_electric_max_torque": "450",
+    "sub_brand_name": "一汽奥迪"
+   }
+  },
+  {
+   "id": "257385",
+   "name": "超长续航乾崑智驾版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "33.98万",
+   "vals": {
+    "length": "4884",
+    "wheelbase": "2995",
+    "curb_weight": "2379",
+    "cltc_recharge_mileage": "709",
+    "recharge_mileage": "709",
+    "power_consumption": "15.9",
+    "battery_capacity": "107",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "173.2",
+    "total_electric_power": "205kW(279Ps)",
+    "total_electric_torque": "460",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "205",
+    "rear_electric_max_torque": "460",
+    "sub_brand_name": "一汽奥迪"
+   }
+  },
+  {
+   "id": "257386",
+   "name": "quattro乾崑智驾版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "39.98万",
+   "vals": {
+    "length": "4884",
+    "wheelbase": "2995",
+    "curb_weight": "2511",
+    "cltc_recharge_mileage": "668",
+    "recharge_mileage": "668",
+    "power_consumption": "16.9",
+    "battery_capacity": "107",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "173.2",
+    "total_electric_power": "405kW(551Ps)",
+    "total_electric_torque": "779",
+    "front_electric_max_power": "135",
+    "front_electric_max_torque": "249",
+    "rear_electric_max_power": "270",
+    "rear_electric_max_torque": "530",
+    "sub_brand_name": "一汽奥迪"
+   }
+  },
+  {
+   "id": "94228",
+   "name": "超长续航版",
+   "year": "2026",
+   "sale_status": 2,
+   "official_price": "36.98万",
+   "vals": {
+    "length": "4884",
+    "wheelbase": "2995",
+    "curb_weight": "2366",
+    "cltc_recharge_mileage": "752",
+    "recharge_mileage": "752",
+    "power_consumption": "15",
+    "battery_capacity": "107",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "173.2",
+    "total_electric_power": "205kW(279Ps)",
+    "total_electric_torque": "460",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "205",
+    "rear_electric_max_torque": "460",
+    "sub_brand_name": "一汽奥迪"
+   }
+  },
+  {
+   "id": "248909",
+   "name": "首发领航版",
+   "year": "2026",
+   "sale_status": 2,
+   "official_price": "39.98万",
+   "vals": {
+    "length": "4884",
+    "wheelbase": "2995",
+    "curb_weight": "2379",
+    "cltc_recharge_mileage": "709",
+    "recharge_mileage": "709",
+    "power_consumption": "15.9",
+    "battery_capacity": "107",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "173.2",
+    "total_electric_power": "205kW(279Ps)",
+    "total_electric_torque": "460",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "205",
+    "rear_electric_max_torque": "460",
+    "sub_brand_name": "一汽奥迪"
+   }
+  }
+ ]
+}

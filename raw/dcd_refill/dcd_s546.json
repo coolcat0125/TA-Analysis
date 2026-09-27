@@ -1,0 +1,166 @@
+{
+ "kw": "RAV4",
+ "kws": [
+  "RAV4"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:40",
+ "series_url": "https://www.dongchedi.com/auto/series/546",
+ "series": {
+  "sid": "546",
+  "name": "RAV4荣放",
+  "brand": "丰田"
+ },
+ "cars": [
+  {
+   "id": "253986",
+   "name": "2.0L 两驱豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "17.98万",
+   "vals": {
+    "length": "4620",
+    "wheelbase": "2690",
+    "curb_weight": "1630",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "一汽丰田"
+   }
+  },
+  {
+   "id": "253987",
+   "name": "2.0L 四驱豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "18.98万",
+   "vals": {
+    "length": "4620",
+    "wheelbase": "2690",
+    "curb_weight": "1685",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "一汽丰田"
+   }
+  },
+  {
+   "id": "253991",
+   "name": "双擎 2.0L 两驱精英版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "16.98万",
+   "vals": {
+    "length": "4620",
+    "wheelbase": "2690",
+    "curb_weight": "1625",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "83kW(113Ps)",
+    "total_electric_torque": "206",
+    "front_electric_max_power": "83",
+    "front_electric_max_torque": "206",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "一汽丰田"
+   }
+  },
+  {
+   "id": "253992",
+   "name": "双擎 2.0L 两驱豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "18.78万",
+   "vals": {
+    "length": "4620",
+    "wheelbase": "2690",
+    "curb_weight": "1660",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "83kW(113Ps)",
+    "total_electric_torque": "206",
+    "front_electric_max_power": "83",
+    "front_electric_max_torque": "206",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "一汽丰田"
+   }
+  },
+  {
+   "id": "253993",
+   "name": "双擎 2.5L 四驱豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "21.28万",
+   "vals": {
+    "length": "4620",
+    "wheelbase": "2690",
+    "curb_weight": "1745",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "138kW(189Ps)",
+    "total_electric_torque": "327.8",
+    "front_electric_max_power": "99.4",
+    "front_electric_max_torque": "208",
+    "rear_electric_max_power": "39.3",
+    "rear_electric_max_torque": "119.8",
+    "sub_brand_name": "一汽丰田"
+   }
+  },
+  {
+   "id": "253994",
+   "name": "双擎 2.5L 四驱旗舰版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "22.88万",
+   "vals": {
+    "length": "4620",
+    "wheelbase": "2690",
+    "curb_weight": "1770",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "138kW(189Ps)",
+    "total_electric_torque": "327.8",
+    "front_electric_max_power": "99.4",
+    "front_electric_max_torque": "208",
+    "rear_electric_max_power": "39.3",
+    "rear_electric_max_torque": "119.8",
+    "sub_brand_name": "一汽丰田"
+   }
+  }
+ ]
+}

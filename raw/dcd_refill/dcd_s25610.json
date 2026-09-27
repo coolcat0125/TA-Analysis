@@ -1,0 +1,66 @@
+{
+ "kw": "星光560",
+ "kws": [
+  "星光560"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:38",
+ "series_url": "https://www.dongchedi.com/auto/series/25610",
+ "series": {
+  "sid": "25610",
+  "name": "星光560",
+  "brand": "五菱汽车"
+ },
+ "cars": [
+  {
+   "id": "254560",
+   "name": "1.5T 6MT 舒适型",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "6.28万",
+   "vals": {
+    "length": "4745",
+    "wheelbase": "2810",
+    "curb_weight": "1445",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽通用五菱"
+   }
+  },
+  {
+   "id": "250000",
+   "name": "1.5T CVT 精英型",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "7.58万",
+   "vals": {
+    "length": "4745",
+    "wheelbase": "2810",
+    "curb_weight": "1520",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "上汽通用五菱"
+   }
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "kw": "哈弗大狗",
+ "kws": [
+  "哈弗大狗"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:40",
+ "series_url": "https://www.dongchedi.com/auto/series/4563",
+ "series": {
+  "sid": "4563",
+  "name": "哈弗大狗",
+  "brand": "哈弗"
+ },
+ "cars": [
+  {
+   "id": "249821",
+   "name": "1.5T 两驱 拉布拉多版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.39万",
+   "vals": {
+    "length": "4620",
+    "wheelbase": "2738",
+    "curb_weight": "1605",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "249613",
+   "name": "1.5T 两驱 边牧版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "12.99万",
+   "vals": {
+    "length": "4620",
+    "wheelbase": "2738",
+    "curb_weight": "1605",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "249397",
+   "name": "2.0T 四驱 中华田园犬版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "14.99万",
+   "vals": {
+    "length": "4620",
+    "wheelbase": "2738",
+    "curb_weight": "1740",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "",
+    "power_consumption": "",
+    "battery_capacity": "",
+    "battery_type": "",
+    "battery_energy_density": "",
+    "total_electric_power": "",
+    "total_electric_torque": "",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "长城汽车"
+   }
+  }
+ ]
+}

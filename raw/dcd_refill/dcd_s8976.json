@@ -1,0 +1,91 @@
+{
+ "kw": "山海L6 C-DM",
+ "kws": [
+  "山海L6 C-DM"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:40",
+ "series_url": "https://www.dongchedi.com/auto/series/8976",
+ "series": {
+  "sid": "8976",
+  "name": "捷途山海L6",
+  "brand": "捷途山海"
+ },
+ "cars": [
+  {
+   "id": "239647",
+   "name": "1.5TD DHT PRO",
+   "year": "2024",
+   "sale_status": 0,
+   "official_price": "12.39万",
+   "vals": {
+    "length": "4630",
+    "wheelbase": "2720",
+    "curb_weight": "1756",
+    "cltc_recharge_mileage": "125",
+    "recharge_mileage": "91",
+    "power_consumption": "16.8",
+    "battery_capacity": "19.43",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "239648",
+   "name": "1.5TD DHT MAX",
+   "year": "2024",
+   "sale_status": 0,
+   "official_price": "13.49万",
+   "vals": {
+    "length": "4630",
+    "wheelbase": "2720",
+    "curb_weight": "1756",
+    "cltc_recharge_mileage": "125",
+    "recharge_mileage": "91",
+    "power_consumption": "16.8",
+    "battery_capacity": "19.43",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  },
+  {
+   "id": "239649",
+   "name": "1.5TD DHT ULTRA",
+   "year": "2024",
+   "sale_status": 0,
+   "official_price": "14.49万",
+   "vals": {
+    "length": "4630",
+    "wheelbase": "2720",
+    "curb_weight": "1787",
+    "cltc_recharge_mileage": "125",
+    "recharge_mileage": "91",
+    "power_consumption": "16.8",
+    "battery_capacity": "19.43",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "奇瑞汽车"
+   }
+  }
+ ]
+}

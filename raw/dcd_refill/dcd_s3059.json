@@ -1,0 +1,91 @@
+{
+ "kw": "理想ONE",
+ "kws": [
+  "理想ONE"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:39",
+ "series_url": "https://www.dongchedi.com/auto/series/3059",
+ "series": {
+  "sid": "3059",
+  "name": "理想ONE",
+  "brand": "理想汽车"
+ },
+ "cars": [
+  {
+   "id": "53955",
+   "name": "增程6座版",
+   "year": "2021",
+   "sale_status": 1,
+   "official_price": "34.98万",
+   "vals": {
+    "length": "5030",
+    "wheelbase": "2935",
+    "curb_weight": "2300",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "188",
+    "power_consumption": "16.9",
+    "battery_capacity": "40.5",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "245kW(333Ps)",
+    "total_electric_torque": "455",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "240",
+    "rear_electric_max_power": "145",
+    "rear_electric_max_torque": "215",
+    "sub_brand_name": "理想汽车"
+   }
+  },
+  {
+   "id": "41351",
+   "name": "增程6座版",
+   "year": "2020",
+   "sale_status": 1,
+   "official_price": "32.8万",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "2935",
+    "curb_weight": "2300",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "180",
+    "power_consumption": "",
+    "battery_capacity": "40.5",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "240kW(326Ps)",
+    "total_electric_torque": "530",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "240",
+    "rear_electric_max_power": "140",
+    "rear_electric_max_torque": "290",
+    "sub_brand_name": "理想汽车"
+   }
+  },
+  {
+   "id": "41352",
+   "name": "增程7座版",
+   "year": "2020",
+   "sale_status": 1,
+   "official_price": "32.8万",
+   "vals": {
+    "length": "5020",
+    "wheelbase": "2935",
+    "curb_weight": "2300",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "180",
+    "power_consumption": "",
+    "battery_capacity": "40.5",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "240kW(326Ps)",
+    "total_electric_torque": "530",
+    "front_electric_max_power": "100",
+    "front_electric_max_torque": "240",
+    "rear_electric_max_power": "140",
+    "rear_electric_max_torque": "290",
+    "sub_brand_name": "理想汽车"
+   }
+  }
+ ]
+}

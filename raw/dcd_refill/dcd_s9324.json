@@ -1,0 +1,91 @@
+{
+ "kw": "仰望U7",
+ "kws": [
+  "仰望U7"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:41",
+ "series_url": "https://www.dongchedi.com/auto/series/9324",
+ "series": {
+  "sid": "9324",
+  "name": "仰望U7 EV",
+  "brand": "仰望"
+ },
+ "cars": [
+  {
+   "id": "256590",
+   "name": "五座豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "65.8万",
+   "vals": {
+    "length": "5265",
+    "wheelbase": "3160",
+    "curb_weight": "3120",
+    "cltc_recharge_mileage": "1006",
+    "recharge_mileage": "1006",
+    "power_consumption": "17.7",
+    "battery_capacity": "150.01",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "960kW(1306Ps)",
+    "total_electric_torque": "1680",
+    "front_electric_max_power": "480",
+    "front_electric_max_torque": "840",
+    "rear_electric_max_power": "480",
+    "rear_electric_max_torque": "840",
+    "sub_brand_name": "仰望"
+   }
+  },
+  {
+   "id": "256591",
+   "name": "四座旗舰版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "73.8万",
+   "vals": {
+    "length": "5265",
+    "wheelbase": "3160",
+    "curb_weight": "3195",
+    "cltc_recharge_mileage": "1006",
+    "recharge_mileage": "1006",
+    "power_consumption": "17.7",
+    "battery_capacity": "150.01",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "960kW(1306Ps)",
+    "total_electric_torque": "1680",
+    "front_electric_max_power": "480",
+    "front_electric_max_torque": "840",
+    "rear_electric_max_power": "480",
+    "rear_electric_max_torque": "840",
+    "sub_brand_name": "仰望"
+   }
+  },
+  {
+   "id": "256592",
+   "name": "超级四电版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "88.8万",
+   "vals": {
+    "length": "5265",
+    "wheelbase": "3160",
+    "curb_weight": "",
+    "cltc_recharge_mileage": "860",
+    "recharge_mileage": "860",
+    "power_consumption": "",
+    "battery_capacity": "150.01",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "960kW(1306Ps)",
+    "total_electric_torque": "1680",
+    "front_electric_max_power": "480",
+    "front_electric_max_torque": "840",
+    "rear_electric_max_power": "480",
+    "rear_electric_max_torque": "840",
+    "sub_brand_name": "仰望"
+   }
+  }
+ ]
+}

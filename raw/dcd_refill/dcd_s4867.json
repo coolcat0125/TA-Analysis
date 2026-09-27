@@ -1,0 +1,66 @@
+{
+ "kw": "摩卡PHEV",
+ "kws": [
+  "摩卡PHEV"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:40",
+ "series_url": "https://www.dongchedi.com/auto/series/4867",
+ "series": {
+  "sid": "4867",
+  "name": "摩卡PHEV",
+  "brand": "魏牌"
+ },
+ "cars": [
+  {
+   "id": "257706",
+   "name": "Hi4 Max版 四驱长续航",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "18.58万",
+   "vals": {
+    "length": "4881",
+    "wheelbase": "2915",
+    "curb_weight": "2245",
+    "cltc_recharge_mileage": "200",
+    "recharge_mileage": "165",
+    "power_consumption": "20.1",
+    "battery_capacity": "35.04",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "230kW(313Ps)",
+    "total_electric_torque": "520",
+    "front_electric_max_power": "80",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "150",
+    "rear_electric_max_torque": "350",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "257593",
+   "name": "Hi4 Max版 四驱黑武士",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "18.58万",
+   "vals": {
+    "length": "4881",
+    "wheelbase": "2915",
+    "curb_weight": "2245",
+    "cltc_recharge_mileage": "200",
+    "recharge_mileage": "165",
+    "power_consumption": "20.1",
+    "battery_capacity": "35.04",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "230kW(313Ps)",
+    "total_electric_torque": "520",
+    "front_electric_max_power": "80",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "150",
+    "rear_electric_max_torque": "350",
+    "sub_brand_name": "长城汽车"
+   }
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "kw": "红旗HQ9 PHEV",
+ "kws": [
+  "红旗HQ9 PHEV"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:40",
+ "series_url": "https://www.dongchedi.com/auto/series/8948",
+ "series": {
+  "sid": "8948",
+  "name": "红旗HQ9 PHEV",
+  "brand": "红旗"
+ },
+ "cars": [
+  {
+   "id": "258930",
+   "name": "四驱豪华版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "33.88万",
+   "vals": {
+    "length": "5222",
+    "wheelbase": "3200",
+    "curb_weight": "2775",
+    "cltc_recharge_mileage": "220",
+    "recharge_mileage": "168",
+    "power_consumption": "22.4",
+    "battery_capacity": "39.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "238kW(324Ps)",
+    "total_electric_torque": "500",
+    "front_electric_max_power": "168",
+    "front_electric_max_torque": "340",
+    "rear_electric_max_power": "70",
+    "rear_electric_max_torque": "160",
+    "sub_brand_name": "一汽红旗"
+   }
+  },
+  {
+   "id": "258932",
+   "name": "四驱尊贵版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "38.88万",
+   "vals": {
+    "length": "5222",
+    "wheelbase": "3200",
+    "curb_weight": "2775",
+    "cltc_recharge_mileage": "220",
+    "recharge_mileage": "168",
+    "power_consumption": "22.4",
+    "battery_capacity": "39.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "238kW(324Ps)",
+    "total_electric_torque": "500",
+    "front_electric_max_power": "168",
+    "front_electric_max_torque": "340",
+    "rear_electric_max_power": "70",
+    "rear_electric_max_torque": "160",
+    "sub_brand_name": "一汽红旗"
+   }
+  },
+  {
+   "id": "258931",
+   "name": "四驱旗舰版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "53.88万",
+   "vals": {
+    "length": "5222",
+    "wheelbase": "3200",
+    "curb_weight": "2775",
+    "cltc_recharge_mileage": "220",
+    "recharge_mileage": "168",
+    "power_consumption": "22.4",
+    "battery_capacity": "39.5",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "238kW(324Ps)",
+    "total_electric_torque": "500",
+    "front_electric_max_power": "168",
+    "front_electric_max_torque": "340",
+    "rear_electric_max_power": "70",
+    "rear_electric_max_torque": "160",
+    "sub_brand_name": "一汽红旗"
+   }
+  },
+  {
+   "id": "99763",
+   "name": "四驱商务版",
+   "year": "2024",
+   "sale_status": 2,
+   "official_price": "35.88万",
+   "vals": {
+    "length": "5222",
+    "wheelbase": "3200",
+    "curb_weight": "2605",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "73",
+    "power_consumption": "24.5",
+    "battery_capacity": "20.1",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "210kW(286Ps)",
+    "total_electric_torque": "440",
+    "front_electric_max_power": "140",
+    "front_electric_max_torque": "280",
+    "rear_electric_max_power": "70",
+    "rear_electric_max_torque": "160",
+    "sub_brand_name": "一汽红旗"
+   }
+  },
+  {
+   "id": "247928",
+   "name": "四驱商务版福祉版",
+   "year": "2024",
+   "sale_status": 2,
+   "official_price": "39.88万",
+   "vals": {
+    "length": "5222",
+    "wheelbase": "3200",
+    "curb_weight": "2605",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "73",
+    "power_consumption": "24.5",
+    "battery_capacity": "20.1",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "210kW(286Ps)",
+    "total_electric_torque": "440",
+    "front_electric_max_power": "140",
+    "front_electric_max_torque": "280",
+    "rear_electric_max_power": "70",
+    "rear_electric_max_torque": "160",
+    "sub_brand_name": "一汽红旗"
+   }
+  },
+  {
+   "id": "99764",
+   "name": "四驱豪华版",
+   "year": "2024",
+   "sale_status": 2,
+   "official_price": "43.88万",
+   "vals": {
+    "length": "5222",
+    "wheelbase": "3200",
+    "curb_weight": "2605",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "73",
+    "power_consumption": "24.5",
+    "battery_capacity": "20.1",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "210kW(286Ps)",
+    "total_electric_torque": "440",
+    "front_electric_max_power": "140",
+    "front_electric_max_torque": "280",
+    "rear_electric_max_power": "70",
+    "rear_electric_max_torque": "160",
+    "sub_brand_name": "一汽红旗"
+   }
+  },
+  {
+   "id": "99765",
+   "name": "四驱旗舰版",
+   "year": "2024",
+   "sale_status": 2,
+   "official_price": "53.88万",
+   "vals": {
+    "length": "5222",
+    "wheelbase": "3200",
+    "curb_weight": "2605",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "73",
+    "power_consumption": "24.5",
+    "battery_capacity": "20.1",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "210kW(286Ps)",
+    "total_electric_torque": "440",
+    "front_electric_max_power": "140",
+    "front_electric_max_torque": "280",
+    "rear_electric_max_power": "70",
+    "rear_electric_max_torque": "160",
+    "sub_brand_name": "一汽红旗"
+   }
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "kw": "E-M8",
+ "kws": [
+  "E-M8"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:38",
+ "series_url": "https://www.dongchedi.com/auto/series/24705",
+ "series": {
+  "sid": "24705",
+  "name": "领途E-M8",
+  "brand": "领途汽车"
+ },
+ "cars": [
+  {
+   "id": "239615",
+   "name": "320KM 豪华型中级营运 7座",
+   "year": "2025",
+   "sale_status": 1,
+   "official_price": "14.18万",
+   "vals": {
+    "length": "5240",
+    "wheelbase": "3200",
+    "curb_weight": "1880",
+    "cltc_recharge_mileage": "320",
+    "recharge_mileage": "",
+    "power_consumption": "16.8",
+    "battery_capacity": "50",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "60kW(82Ps)",
+    "total_electric_torque": "220",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "60",
+    "rear_electric_max_torque": "220",
+    "sub_brand_name": "领途汽车"
+   }
+  },
+  {
+   "id": "239616",
+   "name": "320KM 豪华型中级营运 8/9座",
+   "year": "2025",
+   "sale_status": 1,
+   "official_price": "14.48万",
+   "vals": {
+    "length": "5240",
+    "wheelbase": "3200",
+    "curb_weight": "1880",
+    "cltc_recharge_mileage": "320",
+    "recharge_mileage": "",
+    "power_consumption": "16.8",
+    "battery_capacity": "50",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "60kW(82Ps)",
+    "total_electric_torque": "220",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "60",
+    "rear_electric_max_torque": "220",
+    "sub_brand_name": "领途汽车"
+   }
+  },
+  {
+   "id": "239618",
+   "name": "401KM 尊贵型中级营运 7座",
+   "year": "2025",
+   "sale_status": 1,
+   "official_price": "16.98万",
+   "vals": {
+    "length": "5240",
+    "wheelbase": "3200",
+    "curb_weight": "2060",
+    "cltc_recharge_mileage": "401",
+    "recharge_mileage": "",
+    "power_consumption": "17.2",
+    "battery_capacity": "65",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "90kW(122Ps)",
+    "total_electric_torque": "270",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "90",
+    "rear_electric_max_torque": "270",
+    "sub_brand_name": "领途汽车"
+   }
+  },
+  {
+   "id": "239617",
+   "name": "401KM 尊贵型中级营运 8/9座",
+   "year": "2025",
+   "sale_status": 1,
+   "official_price": "17.28万",
+   "vals": {
+    "length": "5240",
+    "wheelbase": "3200",
+    "curb_weight": "2060",
+    "cltc_recharge_mileage": "401",
+    "recharge_mileage": "",
+    "power_consumption": "17.2",
+    "battery_capacity": "65",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "90kW(122Ps)",
+    "total_electric_torque": "270",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "90",
+    "rear_electric_max_torque": "270",
+    "sub_brand_name": "领途汽车"
+   }
+  }
+ ]
+}

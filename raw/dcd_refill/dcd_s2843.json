@@ -1,0 +1,66 @@
+{
+ "kw": "ES6",
+ "kws": [
+  "ES6"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:45",
+ "series_url": "https://www.dongchedi.com/auto/series/2843",
+ "series": {
+  "sid": "2843",
+  "name": "蔚来ES6",
+  "brand": "蔚来"
+ },
+ "cars": [
+  {
+   "id": "257416",
+   "name": "100kWh",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "33.8万",
+   "vals": {
+    "length": "4854",
+    "wheelbase": "2915",
+    "curb_weight": "2336",
+    "cltc_recharge_mileage": "650",
+    "recharge_mileage": "650",
+    "power_consumption": "16.1",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "185.4",
+    "total_electric_power": "360kW(490Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "280",
+    "rear_electric_max_power": "210",
+    "rear_electric_max_torque": "420",
+    "sub_brand_name": "蔚来"
+   }
+  },
+  {
+   "id": "257417",
+   "name": "100kWh 自然奇境版",
+   "year": "2026",
+   "sale_status": 0,
+   "official_price": "35万",
+   "vals": {
+    "length": "4854",
+    "wheelbase": "2915",
+    "curb_weight": "2353",
+    "cltc_recharge_mileage": "630",
+    "recharge_mileage": "630",
+    "power_consumption": "16.6",
+    "battery_capacity": "100",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "185.4",
+    "total_electric_power": "360kW(490Ps)",
+    "total_electric_torque": "700",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "280",
+    "rear_electric_max_power": "210",
+    "rear_electric_max_torque": "420",
+    "sub_brand_name": "蔚来"
+   }
+  }
+ ]
+}

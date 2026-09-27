@@ -1,0 +1,116 @@
+{
+ "kw": "腾势X",
+ "kws": [
+  "腾势X"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:40",
+ "series_url": "https://www.dongchedi.com/auto/series/4305",
+ "series": {
+  "sid": "4305",
+  "name": "腾势X BEV",
+  "brand": "腾势"
+ },
+ "cars": [
+  {
+   "id": "42339",
+   "name": "启航版",
+   "year": "2020",
+   "sale_status": 1,
+   "official_price": "31.98万",
+   "vals": {
+    "length": "4890",
+    "wheelbase": "2820",
+    "curb_weight": "",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "520",
+    "power_consumption": "17.3",
+    "battery_capacity": "82.8",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "330",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "330",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "腾势汽车"
+   }
+  },
+  {
+   "id": "42340",
+   "name": "经典版",
+   "year": "2020",
+   "sale_status": 1,
+   "official_price": "32.58万",
+   "vals": {
+    "length": "4890",
+    "wheelbase": "2820",
+    "curb_weight": "",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "520",
+    "power_consumption": "17.3",
+    "battery_capacity": "82.8",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "180kW(245Ps)",
+    "total_electric_torque": "330",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "330",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "腾势汽车"
+   }
+  },
+  {
+   "id": "42342",
+   "name": "运动版",
+   "year": "2020",
+   "sale_status": 1,
+   "official_price": "34.98万",
+   "vals": {
+    "length": "4890",
+    "wheelbase": "2820",
+    "curb_weight": "",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "500",
+    "power_consumption": "17.9",
+    "battery_capacity": "82.8",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "360kW(490Ps)",
+    "total_electric_torque": "660",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "330",
+    "rear_electric_max_power": "180",
+    "rear_electric_max_torque": "330",
+    "sub_brand_name": "腾势汽车"
+   }
+  },
+  {
+   "id": "42341",
+   "name": "旗舰版",
+   "year": "2020",
+   "sale_status": 1,
+   "official_price": "35.78万",
+   "vals": {
+    "length": "4890",
+    "wheelbase": "2820",
+    "curb_weight": "2330",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "500",
+    "power_consumption": "17.9",
+    "battery_capacity": "82.8",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "360kW(490Ps)",
+    "total_electric_torque": "660",
+    "front_electric_max_power": "180",
+    "front_electric_max_torque": "330",
+    "rear_electric_max_power": "180",
+    "rear_electric_max_torque": "330",
+    "sub_brand_name": "腾势汽车"
+   }
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "kw": "VV7 PHEV",
+ "kws": [
+  "VV7 PHEV"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:39",
+ "series_url": "https://www.dongchedi.com/auto/series/3714",
+ "series": {
+  "sid": "3714",
+  "name": "魏牌 VV7 PHEV",
+  "brand": "魏牌"
+ },
+ "cars": [
+  {
+   "id": "42322",
+   "name": "2.0T 豪华型",
+   "year": "2020",
+   "sale_status": 1,
+   "official_price": "21.98万",
+   "vals": {
+    "length": "4760",
+    "wheelbase": "2950",
+    "curb_weight": "2281",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "70",
+    "power_consumption": "",
+    "battery_capacity": "17.7",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "85kW(115Ps)",
+    "total_electric_torque": "195",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "85",
+    "rear_electric_max_torque": "195",
+    "sub_brand_name": "长城汽车"
+   }
+  },
+  {
+   "id": "40010",
+   "name": "2.0T 旗舰型",
+   "year": "2020",
+   "sale_status": 1,
+   "official_price": "23.98万",
+   "vals": {
+    "length": "4760",
+    "wheelbase": "2950",
+    "curb_weight": "2281",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "70",
+    "power_consumption": "",
+    "battery_capacity": "17.7",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "85kW(115Ps)",
+    "total_electric_torque": "195",
+    "front_electric_max_power": "",
+    "front_electric_max_torque": "",
+    "rear_electric_max_power": "85",
+    "rear_electric_max_torque": "195",
+    "sub_brand_name": "长城汽车"
+   }
+  }
+ ]
+}

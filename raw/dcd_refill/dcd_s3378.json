@@ -1,0 +1,91 @@
+{
+ "kw": "领动 插电混动",
+ "kws": [
+  "领动 插电混动"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:39",
+ "series_url": "https://www.dongchedi.com/auto/series/3378",
+ "series": {
+  "sid": "3378",
+  "name": "领动PHEV",
+  "brand": "现代"
+ },
+ "cars": [
+  {
+   "id": "39684",
+   "name": "1.6L PHS 畅行版",
+   "year": "2019",
+   "sale_status": 1,
+   "official_price": "19.78万",
+   "vals": {
+    "length": "4610",
+    "wheelbase": "2700",
+    "curb_weight": "1545",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "85",
+    "power_consumption": "13.54",
+    "battery_capacity": "12.9",
+    "battery_type": "锂离子电池",
+    "battery_energy_density": "",
+    "total_electric_power": "44kW(60Ps)",
+    "total_electric_torque": "170",
+    "front_electric_max_power": "44.5",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京现代"
+   }
+  },
+  {
+   "id": "39683",
+   "name": "1.6L PHX 乐行版",
+   "year": "2019",
+   "sale_status": 1,
+   "official_price": "20.98万",
+   "vals": {
+    "length": "4610",
+    "wheelbase": "2700",
+    "curb_weight": "1545",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "85",
+    "power_consumption": "13.54",
+    "battery_capacity": "12.9",
+    "battery_type": "锂离子电池",
+    "battery_energy_density": "",
+    "total_electric_power": "44kW(60Ps)",
+    "total_electric_torque": "170",
+    "front_electric_max_power": "44.5",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京现代"
+   }
+  },
+  {
+   "id": "36261",
+   "name": "1.6L PHP 智行版",
+   "year": "2019",
+   "sale_status": 1,
+   "official_price": "22.18万",
+   "vals": {
+    "length": "4610",
+    "wheelbase": "2700",
+    "curb_weight": "1545",
+    "cltc_recharge_mileage": "",
+    "recharge_mileage": "85",
+    "power_consumption": "13.54",
+    "battery_capacity": "12.9",
+    "battery_type": "锂离子电池",
+    "battery_energy_density": "",
+    "total_electric_power": "44kW(60Ps)",
+    "total_electric_torque": "170",
+    "front_electric_max_power": "44.5",
+    "front_electric_max_torque": "170",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "北京现代"
+   }
+  }
+ ]
+}

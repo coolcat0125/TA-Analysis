@@ -1,0 +1,141 @@
+{
+ "kw": "睿蓝RL9",
+ "kws": [
+  "睿蓝RL9"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:40",
+ "series_url": "https://www.dongchedi.com/auto/series/6003",
+ "series": {
+  "sid": "6003",
+  "name": "睿蓝9",
+  "brand": "睿蓝汽车"
+ },
+ "cars": [
+  {
+   "id": "80758",
+   "name": "风尚版",
+   "year": "2023",
+   "sale_status": 0,
+   "official_price": "15.99万",
+   "vals": {
+    "length": "4845",
+    "wheelbase": "2825",
+    "curb_weight": "1830",
+    "cltc_recharge_mileage": "380",
+    "recharge_mileage": "380",
+    "power_consumption": "15.4",
+    "battery_capacity": "52.56",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "睿蓝汽车"
+   }
+  },
+  {
+   "id": "80757",
+   "name": "引领版",
+   "year": "2023",
+   "sale_status": 0,
+   "official_price": "16.99万",
+   "vals": {
+    "length": "4845",
+    "wheelbase": "2825",
+    "curb_weight": "1850",
+    "cltc_recharge_mileage": "470",
+    "recharge_mileage": "470",
+    "power_consumption": "15.6",
+    "battery_capacity": "66.57",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "174.0",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "睿蓝汽车"
+   }
+  },
+  {
+   "id": "79849",
+   "name": "创始版",
+   "year": "2023",
+   "sale_status": 0,
+   "official_price": "17.19万",
+   "vals": {
+    "length": "4845",
+    "wheelbase": "2825",
+    "curb_weight": "1850",
+    "cltc_recharge_mileage": "470",
+    "recharge_mileage": "470",
+    "power_consumption": "15.6",
+    "battery_capacity": "66.57",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "174.0",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "睿蓝汽车"
+   }
+  },
+  {
+   "id": "80299",
+   "name": "旗舰版",
+   "year": "2023",
+   "sale_status": 0,
+   "official_price": "17.99万",
+   "vals": {
+    "length": "4845",
+    "wheelbase": "2825",
+    "curb_weight": "1850",
+    "cltc_recharge_mileage": "470",
+    "recharge_mileage": "470",
+    "power_consumption": "15.6",
+    "battery_capacity": "66.57",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "174.0",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "睿蓝汽车"
+   }
+  },
+  {
+   "id": "96288",
+   "name": "行政版",
+   "year": "2023",
+   "sale_status": 0,
+   "official_price": "19.79万",
+   "vals": {
+    "length": "4845",
+    "wheelbase": "2825",
+    "curb_weight": "1850",
+    "cltc_recharge_mileage": "470",
+    "recharge_mileage": "470",
+    "power_consumption": "15.6",
+    "battery_capacity": "66.57",
+    "battery_type": "三元锂电池",
+    "battery_energy_density": "174.0",
+    "total_electric_power": "150kW(204Ps)",
+    "total_electric_torque": "310",
+    "front_electric_max_power": "150",
+    "front_electric_max_torque": "310",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "睿蓝汽车"
+   }
+  }
+ ]
+}

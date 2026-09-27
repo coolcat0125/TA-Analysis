@@ -1,0 +1,91 @@
+{
+ "kw": "凌宝BOX",
+ "kws": [
+  "凌宝BOX"
+ ],
+ "channel": "direct-http",
+ "fetched_at": "09-27 11:40",
+ "series_url": "https://www.dongchedi.com/auto/series/4503",
+ "series": {
+  "sid": "4503",
+  "name": "凌宝BOX",
+  "brand": "凌宝汽车"
+ },
+ "cars": [
+  {
+   "id": "240234",
+   "name": "青柠版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "4.19万",
+   "vals": {
+    "length": "3584",
+    "wheelbase": "2455",
+    "curb_weight": "865",
+    "cltc_recharge_mileage": "140",
+    "recharge_mileage": "140",
+    "power_consumption": "10",
+    "battery_capacity": "14.72",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "30kW(41Ps)",
+    "total_electric_torque": "95",
+    "front_electric_max_power": "30",
+    "front_electric_max_torque": "95",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "吉麦新能源"
+   }
+  },
+  {
+   "id": "248278",
+   "name": "蜜柚Pro版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "4.99万",
+   "vals": {
+    "length": "3584",
+    "wheelbase": "2455",
+    "curb_weight": "940",
+    "cltc_recharge_mileage": "210",
+    "recharge_mileage": "210",
+    "power_consumption": "10.3",
+    "battery_capacity": "19.14",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "35kW(48Ps)",
+    "total_electric_torque": "105",
+    "front_electric_max_power": "35",
+    "front_electric_max_torque": "105",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "吉麦新能源"
+   }
+  },
+  {
+   "id": "248280",
+   "name": "金芒版",
+   "year": "2025",
+   "sale_status": 0,
+   "official_price": "6.19万",
+   "vals": {
+    "length": "3584",
+    "wheelbase": "2455",
+    "curb_weight": "1015",
+    "cltc_recharge_mileage": "320",
+    "recharge_mileage": "320",
+    "power_consumption": "11.1",
+    "battery_capacity": "31.2",
+    "battery_type": "磷酸铁锂电池",
+    "battery_energy_density": "",
+    "total_electric_power": "35kW(48Ps)",
+    "total_electric_torque": "105",
+    "front_electric_max_power": "35",
+    "front_electric_max_torque": "105",
+    "rear_electric_max_power": "",
+    "rear_electric_max_torque": "",
+    "sub_brand_name": "吉麦新能源"
+   }
+  }
+ ]
+}
