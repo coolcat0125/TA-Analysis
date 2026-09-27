@@ -1,0 +1,2447 @@
+{
+ "created": "2026-09-27",
+ "note": "阶段二：188行整数容量 vs DCD已抓容量关联(只读)",
+ "stats": {
+  "dcd_hit": 28,
+  "no_dcd": 160,
+  "row_miss": 0,
+  "dcd_unique": 0,
+  "dcd_multi": 28
+ },
+ "proposals": [
+  {
+   "batch": "341",
+   "model": "HFC7000WEV9",
+   "generic": "E·10X",
+   "enterprise": "安徽江淮汽车集团股份有限公司",
+   "cur_capacity": "15",
+   "cur_range": "150",
+   "cur_cons": "11.5",
+   "implied_cap": 17.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "343",
+   "model": "VCC7002F08VBEV",
+   "generic": "极星2",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "64",
+   "cur_range": "460",
+   "cur_cons": "15.7",
+   "implied_cap": 72.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "344",
+   "model": "VCC7002F08VBEV",
+   "generic": "极星2",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "64",
+   "cur_range": "460",
+   "cur_cons": "15.7",
+   "implied_cap": 72.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "345",
+   "model": "FV7147FADEHEV",
+   "generic": "MAGOTAN GTE",
+   "enterprise": "一汽-大众汽车有限公司",
+   "cur_capacity": "13",
+   "cur_range": "63",
+   "cur_cons": "15.1",
+   "implied_cap": 9.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "346",
+   "model": "LZW7004EVPHBG",
+   "generic": "宏光MINIEV",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "cur_capacity": "9",
+   "cur_range": "120",
+   "cur_cons": "8.8",
+   "implied_cap": 10.6,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "346",
+   "model": "TSL6480BEVAR0",
+   "generic": "特斯拉 MODEL Y",
+   "enterprise": "特斯拉(上海)有限公司",
+   "cur_capacity": "60",
+   "cur_range": "525",
+   "cur_cons": "13",
+   "implied_cap": 68.2,
+   "dcd_caps": [
+    62.5,
+    78.4
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "346",
+   "model": "TSL6480BEVAR1",
+   "generic": "特斯拉 MODEL Y",
+   "enterprise": "特斯拉(上海)有限公司",
+   "cur_capacity": "60",
+   "cur_range": "545",
+   "cur_cons": "12.7",
+   "implied_cap": 69.2,
+   "dcd_caps": [
+    62.5,
+    78.4
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "348",
+   "model": "LZW7003EVB3EAB",
+   "generic": "KiWi EV",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "cur_capacity": "32",
+   "cur_range": "301",
+   "cur_cons": "12",
+   "implied_cap": 36.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "348",
+   "model": "VCC7002F09VBEV",
+   "generic": "极星2",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "69",
+   "cur_range": "570",
+   "cur_cons": "13.8",
+   "implied_cap": 78.7,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "348",
+   "model": "VCC7003F03XBEV",
+   "generic": "XC40",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "69",
+   "cur_range": "529",
+   "cur_cons": "14.8",
+   "implied_cap": 78.3,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "351",
+   "model": "BJ7000C5D3-BEV",
+   "generic": "EU5",
+   "enterprise": "北京汽车股份有限公司",
+   "cur_capacity": "50",
+   "cur_range": "416",
+   "cur_cons": "14",
+   "implied_cap": 58.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "351",
+   "model": "TSL6480BEVAR2",
+   "generic": "Model Y",
+   "enterprise": "特斯拉(上海)有限公司",
+   "cur_capacity": "60",
+   "cur_range": "545",
+   "cur_cons": "12.7",
+   "implied_cap": 69.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "351",
+   "model": "TSL7000BEVAR5",
+   "generic": "Model 3",
+   "enterprise": "特斯拉(上海)有限公司",
+   "cur_capacity": "60",
+   "cur_range": "556",
+   "cur_cons": "12.5",
+   "implied_cap": 69.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "351",
+   "model": "TSL7000BEVAR6",
+   "generic": "Model 3",
+   "enterprise": "特斯拉(上海)有限公司",
+   "cur_capacity": "60",
+   "cur_range": "556",
+   "cur_cons": "12.5",
+   "implied_cap": 69.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "354",
+   "model": "GAM7000BEVD0U",
+   "generic": "AION Y",
+   "enterprise": "广汽乘用车有限公司",
+   "cur_capacity": "59",
+   "cur_range": "500",
+   "cur_cons": "13.8",
+   "implied_cap": 69.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "355",
+   "model": "FV6462HCDEHEV",
+   "generic": "探岳",
+   "enterprise": "一汽-大众汽车有限公司",
+   "cur_capacity": "13",
+   "cur_range": "46",
+   "cur_cons": "13.2",
+   "implied_cap": 6.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "356",
+   "model": "HFC6494ECSEV1-W",
+   "generic": "ES7",
+   "enterprise": "安徽江淮汽车集团股份有限公司",
+   "cur_capacity": "100/70/75",
+   "cur_range": "620",
+   "cur_cons": "17.60/19.10",
+   "implied_cap": 77.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "356",
+   "model": "JL7000BEV05",
+   "generic": "精灵1",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "66",
+   "cur_range": "500",
+   "cur_cons": "14.8",
+   "implied_cap": 74.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "356",
+   "model": "JL7000BEV07",
+   "generic": "精灵1",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "66",
+   "cur_range": "500",
+   "cur_cons": "14.8",
+   "implied_cap": 74.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "357",
+   "model": "FV7147FADEBHEV",
+   "generic": "迈腾GTE",
+   "enterprise": "一汽-大众汽车有限公司",
+   "cur_capacity": "13",
+   "cur_range": "52",
+   "cur_cons": "12.2",
+   "implied_cap": 6.3,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "359",
+   "model": "THZ7000BEVS403",
+   "generic": "哪吒S",
+   "enterprise": "合众新能源汽车有限公司",
+   "cur_capacity": "91",
+   "cur_range": "650",
+   "cur_cons": "16",
+   "implied_cap": 104.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "365",
+   "model": "SH6531T1SEV-9",
+   "generic": "MIFA 9",
+   "enterprise": "上汽大通汽车有限公司",
+   "cur_capacity": "77/90",
+   "cur_range": "540",
+   "cur_cons": "17.8",
+   "implied_cap": 96.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "365",
+   "model": "QCJ6520MT6HEV3",
+   "generic": "D9",
+   "enterprise": "比亚迪汽车工业有限公司",
+   "cur_capacity": "40",
+   "cur_range": "155",
+   "cur_cons": "21.9",
+   "implied_cap": 33.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "365",
+   "model": "QCJ6520MT6HEV4",
+   "generic": "D9",
+   "enterprise": "比亚迪汽车工业有限公司",
+   "cur_capacity": "40",
+   "cur_range": "145",
+   "cur_cons": "23",
+   "implied_cap": 33.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "366",
+   "model": "CSA7005DBEV4",
+   "generic": "F7",
+   "enterprise": "上海汽车集团股份有限公司",
+   "cur_capacity": "64",
+   "cur_range": "500",
+   "cur_cons": "14.5",
+   "implied_cap": 72.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "366",
+   "model": "CSA7005DSEV3",
+   "generic": "F7",
+   "enterprise": "上海汽车集团股份有限公司",
+   "cur_capacity": "64",
+   "cur_range": "500",
+   "cur_cons": "14.5",
+   "implied_cap": 72.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "366",
+   "model": "LTS6510H1BEV",
+   "generic": "ELETRE",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "112",
+   "cur_range": "640",
+   "cur_cons": "20.1",
+   "implied_cap": 128.6,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "366",
+   "model": "LTS6510H2BEV",
+   "generic": "ELETRE",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "112",
+   "cur_range": "650",
+   "cur_cons": "19.8",
+   "implied_cap": 128.7,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "366",
+   "model": "LTS6510H3BEV",
+   "generic": "ELETRE",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "112",
+   "cur_range": "720",
+   "cur_cons": "17.9",
+   "implied_cap": 128.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "366",
+   "model": "LTS6510H4BEV",
+   "generic": "ELETRE",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "112",
+   "cur_range": "535",
+   "cur_cons": "24.1",
+   "implied_cap": 128.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "366",
+   "model": "LTS6510H5BEV",
+   "generic": "ELETRE",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "112",
+   "cur_range": "560",
+   "cur_cons": "23.9",
+   "implied_cap": 133.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "366",
+   "model": "LTS6510H6BEV",
+   "generic": "ELETRE",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "112",
+   "cur_range": "565",
+   "cur_cons": "22.8",
+   "implied_cap": 128.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "367",
+   "model": "JL7000BEV01",
+   "generic": "#1",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "49",
+   "cur_range": "400",
+   "cur_cons": "14.3",
+   "implied_cap": 57.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "368",
+   "model": "MR7005BEV07",
+   "generic": "极氪X",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "66",
+   "cur_range": "500",
+   "cur_cons": "14.8",
+   "implied_cap": 74.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "368",
+   "model": "SH6473P1BEV-7",
+   "generic": "MIFA 6,大家6,大通大家6",
+   "enterprise": "上汽大通汽车有限公司",
+   "cur_capacity": "70",
+   "cur_range": "510",
+   "cur_cons": "15.7",
+   "implied_cap": 80.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "368",
+   "model": "SH6486N1BEV-7",
+   "generic": "MIFA 5,大家5,大通大家5",
+   "enterprise": "上汽大通汽车有限公司",
+   "cur_capacity": "70",
+   "cur_range": "510",
+   "cur_cons": "15.7",
+   "implied_cap": 80.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "368",
+   "model": "VCC7003F05XBEV",
+   "generic": "C40",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "82",
+   "cur_range": "630",
+   "cur_cons": "14.6",
+   "implied_cap": 92.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "369",
+   "model": "HFC7004CSEV1-W",
+   "generic": "ET5 Wagen",
+   "enterprise": "安徽江淮汽车集团股份有限公司",
+   "cur_capacity": "70/75/100",
+   "cur_range": "530",
+   "cur_cons": "16.2",
+   "implied_cap": 85.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "369",
+   "model": "NHQ6480BEVFA",
+   "generic": "G6",
+   "enterprise": "肇庆小鹏新能源投资有限公司",
+   "cur_capacity": "66",
+   "cur_range": "560",
+   "cur_cons": "13.5",
+   "implied_cap": 78.3,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "369",
+   "model": "VCC7002F21VBEV",
+   "generic": "极星2",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "78",
+   "cur_range": "650",
+   "cur_cons": "13.5",
+   "implied_cap": 87.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "369",
+   "model": "VCC7002F22VBEV",
+   "generic": "极星2",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "78",
+   "cur_range": "610",
+   "cur_cons": "14.5",
+   "implied_cap": 88.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "369",
+   "model": "VCC7002F23VBEV",
+   "generic": "极星2",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "82",
+   "cur_range": "780",
+   "cur_cons": "11.9",
+   "implied_cap": 92.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "369",
+   "model": "VCC7002F24VBEV",
+   "generic": "极星2",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "82",
+   "cur_range": "740",
+   "cur_cons": "12.7",
+   "implied_cap": 94.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "369",
+   "model": "VCC7003F06XBEV",
+   "generic": "XC40",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "73",
+   "cur_range": "660",
+   "cur_cons": "12.4",
+   "implied_cap": 81.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "369",
+   "model": "VCC7003F07XBEV",
+   "generic": "XC40",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "73",
+   "cur_range": "640",
+   "cur_cons": "13.3",
+   "implied_cap": 85.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "369",
+   "model": "VCC7003F45XBEV",
+   "generic": "C40",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "73",
+   "cur_range": "660",
+   "cur_cons": "12.6",
+   "implied_cap": 83.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "370",
+   "model": "LTS6510H7BEV",
+   "generic": "ELETRE",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "112",
+   "cur_range": "720",
+   "cur_cons": "17.9",
+   "implied_cap": 128.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "370",
+   "model": "SH6491N1BEV-6",
+   "generic": "MIFA 7,大通大家7,大家7",
+   "enterprise": "上汽大通汽车有限公司",
+   "cur_capacity": "64",
+   "cur_range": "410",
+   "cur_cons": "17.6",
+   "implied_cap": 72.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "371",
+   "model": "MR7005BEV08",
+   "generic": "极氪X",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "66",
+   "cur_range": "500",
+   "cur_cons": "14.8",
+   "implied_cap": 74.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "371",
+   "model": "QCJ6520MT6HEV5",
+   "generic": "D9",
+   "enterprise": "比亚迪汽车工业有限公司",
+   "cur_capacity": "40",
+   "cur_range": "145",
+   "cur_cons": "23",
+   "implied_cap": 33.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "371",
+   "model": "SH6472P1PHEV",
+   "generic": "MIFA 6",
+   "enterprise": "上汽大通汽车有限公司",
+   "cur_capacity": "13",
+   "cur_range": "43",
+   "cur_cons": "11.9",
+   "implied_cap": 5.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "371",
+   "model": "SH6485N1PHEV",
+   "generic": "EUNIQ 5",
+   "enterprise": "上汽大通汽车有限公司",
+   "cur_capacity": "13",
+   "cur_range": "43",
+   "cur_cons": "11.1",
+   "implied_cap": 4.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "372",
+   "model": "VCC7002F25VBEV",
+   "generic": "极星2",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "69",
+   "cur_range": "670",
+   "cur_cons": "11.7",
+   "implied_cap": 78.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "372",
+   "model": "VCC7002F26VBEV",
+   "generic": "极星2",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "69",
+   "cur_range": "640",
+   "cur_cons": "12.4",
+   "implied_cap": 79.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "373",
+   "model": "BJ6470A502BEV",
+   "generic": "αT5",
+   "enterprise": "北汽蓝谷麦格纳汽车有限公司",
+   "cur_capacity": "65",
+   "cur_range": "520",
+   "cur_cons": "14.7",
+   "implied_cap": 76.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "373",
+   "model": "BJ6480A607BEV",
+   "generic": "αT",
+   "enterprise": "北汽蓝谷麦格纳汽车有限公司",
+   "cur_capacity": "81",
+   "cur_range": "618",
+   "cur_cons": "15.6",
+   "implied_cap": 96.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "373",
+   "model": "BJ7001A61FBEV",
+   "generic": "αS6;αS",
+   "enterprise": "北汽蓝谷麦格纳汽车有限公司",
+   "cur_capacity": "81",
+   "cur_range": "650",
+   "cur_cons": "14.6",
+   "implied_cap": 94.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "374",
+   "model": "BJ7001A512BEV",
+   "generic": "αS5",
+   "enterprise": "北汽蓝谷麦格纳汽车有限公司",
+   "cur_capacity": "65",
+   "cur_range": "560",
+   "cur_cons": "13.6",
+   "implied_cap": 76.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "374",
+   "model": "CSA6492LBEV5",
+   "generic": "LS6",
+   "enterprise": "上海汽车集团股份有限公司",
+   "cur_capacity": "90",
+   "cur_range": "680",
+   "cur_cons": "15.1",
+   "implied_cap": 102.7,
+   "dcd_caps": [
+    52.0,
+    66.0
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "374",
+   "model": "MR7005BEV19",
+   "generic": "银河 E8",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "76",
+   "cur_range": "665",
+   "cur_cons": "12.9",
+   "implied_cap": 85.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "374",
+   "model": "SH6480U1BEV-J51",
+   "generic": "MILA",
+   "enterprise": "上汽大通汽车有限公司",
+   "cur_capacity": "51",
+   "cur_range": "350",
+   "cur_cons": "16.6",
+   "implied_cap": 58.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "374",
+   "model": "THZ6460BEVS37C",
+   "generic": "哪吒U Max,哪吒X",
+   "enterprise": "合众新能源汽车股份有限公司",
+   "cur_capacity": "62",
+   "cur_range": "501",
+   "cur_cons": "13.9",
+   "implied_cap": 69.6,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "375",
+   "model": "BJ6480A606BEV",
+   "generic": "αT",
+   "enterprise": "北汽蓝谷麦格纳汽车有限公司",
+   "cur_capacity": "65",
+   "cur_range": "500",
+   "cur_cons": "16.5",
+   "implied_cap": 82.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "375",
+   "model": "BJ7001A61EBEV",
+   "generic": "αS",
+   "enterprise": "北汽蓝谷麦格纳汽车有限公司",
+   "cur_capacity": "65",
+   "cur_range": "525",
+   "cur_cons": "15",
+   "implied_cap": 78.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "375",
+   "model": "MR7005BEV17",
+   "generic": "银河 E8",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "62",
+   "cur_range": "550",
+   "cur_cons": "12.7",
+   "implied_cap": 69.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "375",
+   "model": "TSL7000BEVAR7",
+   "generic": "特斯拉 MODEL 3",
+   "enterprise": "特斯拉(上海)有限公司",
+   "cur_capacity": "60",
+   "cur_range": "606",
+   "cur_cons": "11.3",
+   "implied_cap": 68.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "375",
+   "model": "VCC7006F022BEV",
+   "generic": "EX30",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "66",
+   "cur_range": "590",
+   "cur_cons": "12.7",
+   "implied_cap": 74.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "376",
+   "model": "TSL6480BEVAR3",
+   "generic": "特斯拉 MODEL Y",
+   "enterprise": "特斯拉(上海)有限公司",
+   "cur_capacity": "60",
+   "cur_range": "554",
+   "cur_cons": "12.5",
+   "implied_cap": 69.2,
+   "dcd_caps": [
+    62.5,
+    78.4
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "376",
+   "model": "TSL6480BEVAR4",
+   "generic": "特斯拉 MODEL Y",
+   "enterprise": "特斯拉(上海)有限公司",
+   "cur_capacity": "60",
+   "cur_range": "532",
+   "cur_cons": "13",
+   "implied_cap": 69.2,
+   "dcd_caps": [
+    62.5,
+    78.4
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "377",
+   "model": "QCJ6520MT6HEV7",
+   "generic": "腾势D9",
+   "enterprise": "比亚迪汽车工业有限公司",
+   "cur_capacity": "40",
+   "cur_range": "140",
+   "cur_cons": "23.3",
+   "implied_cap": 32.6,
+   "dcd_caps": [
+    40.0,
+    58.5,
+    66.5
+   ],
+   "dcd_years": [
+    "2024",
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "batch": "378",
+   "model": "BYD6433SBEV",
+   "generic": "比亚迪元UP",
+   "enterprise": "比亚迪汽车工业有限公司",
+   "cur_capacity": "32",
+   "cur_range": "301",
+   "cur_cons": "12",
+   "implied_cap": 36.1,
+   "dcd_caps": [
+    32.0,
+    45.12,
+    51.13
+   ],
+   "dcd_years": [
+    "2025",
+    "2027"
+   ]
+  },
+  {
+   "batch": "378",
+   "model": "CSA7005DBEV7",
+   "generic": "F7",
+   "enterprise": "上海汽车集团股份有限公司",
+   "cur_capacity": "77",
+   "cur_range": "640",
+   "cur_cons": "13.8",
+   "implied_cap": 88.3,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "378",
+   "model": "CSA7005DSEV5",
+   "generic": "F7",
+   "enterprise": "上海汽车集团股份有限公司",
+   "cur_capacity": "77",
+   "cur_range": "640",
+   "cur_cons": "13.8",
+   "implied_cap": 88.3,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "378",
+   "model": "NAL6482BSEVC1",
+   "generic": "EC6",
+   "enterprise": "蔚来汽车科技（安徽）有限公司",
+   "cur_capacity": "70/75/100/150",
+   "cur_range": "575",
+   "cur_cons": "18.8",
+   "implied_cap": 108.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "378",
+   "model": "NAL6492BSEVA1",
+   "generic": "ES7",
+   "enterprise": "蔚来汽车科技（安徽）有限公司",
+   "cur_capacity": "70/75/100/150",
+   "cur_range": "575",
+   "cur_cons": "19.1",
+   "implied_cap": 109.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "378",
+   "model": "NAL6492BSEVA2",
+   "generic": "EC7",
+   "enterprise": "蔚来汽车科技（安徽）有限公司",
+   "cur_capacity": "70/75/100/150",
+   "cur_range": "455",
+   "cur_cons": "18.9",
+   "implied_cap": 86.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "378",
+   "model": "NAL6492BSEVC1",
+   "generic": "ES6",
+   "enterprise": "蔚来汽车科技（安徽）有限公司",
+   "cur_capacity": "70/75/100/150",
+   "cur_range": "575",
+   "cur_cons": "18.8",
+   "implied_cap": 108.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "378",
+   "model": "NAL6512BSEVA1",
+   "generic": "ES8",
+   "enterprise": "蔚来汽车科技（安徽）有限公司",
+   "cur_capacity": "70/75/100/150",
+   "cur_range": "435",
+   "cur_cons": "19.6",
+   "implied_cap": 84.3,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "378",
+   "model": "NAL7002BSEVB1",
+   "generic": "ET7",
+   "enterprise": "蔚来汽车科技（安徽）有限公司",
+   "cur_capacity": "70/75/100/150",
+   "cur_range": "705",
+   "cur_cons": "15.2",
+   "implied_cap": 107.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "378",
+   "model": "SH6481U1BEV-J51",
+   "generic": "大拿",
+   "enterprise": "上汽大通汽车有限公司",
+   "cur_capacity": "51",
+   "cur_range": "350",
+   "cur_cons": "16.6",
+   "implied_cap": 58.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "378",
+   "model": "SH6486N1PHEV",
+   "generic": "MIFA 5 PLUGIN,大家5 PLUGIN,大通大家5 PLUGIN",
+   "enterprise": "上汽大通汽车有限公司",
+   "cur_capacity": "13",
+   "cur_range": "46",
+   "cur_cons": "10.2",
+   "implied_cap": 4.7,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "379",
+   "model": "JL7000BEV51",
+   "generic": "精灵#3",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "49",
+   "cur_range": "415",
+   "cur_cons": "13.8",
+   "implied_cap": 57.3,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "379",
+   "model": "MR7001BEV25",
+   "generic": "1",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "95",
+   "cur_range": "675",
+   "cur_cons": "16.3",
+   "implied_cap": 110.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "379",
+   "model": "MR7001BEV33",
+   "generic": "1",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "95",
+   "cur_range": "722",
+   "cur_cons": "15.2",
+   "implied_cap": 109.7,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "379",
+   "model": "DFM6473M5F1CHEV",
+   "generic": "东风皓瀚DH-i,东风风神皓瀚DH-i",
+   "enterprise": "东风汽车集团有限公司",
+   "cur_capacity": "17",
+   "cur_range": "86",
+   "cur_cons": "15.2",
+   "implied_cap": 13.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "380",
+   "model": "CA7001H0EVC",
+   "generic": "红旗EH7",
+   "enterprise": "中国第一汽车集团有限公司",
+   "cur_capacity": "85",
+   "cur_range": "720",
+   "cur_cons": "13.4",
+   "implied_cap": 96.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "380",
+   "model": "CA7001H0EVD",
+   "generic": "红旗EH7",
+   "enterprise": "中国第一汽车集团有限公司",
+   "cur_capacity": "85",
+   "cur_range": "690",
+   "cur_cons": "13.9",
+   "implied_cap": 95.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "380",
+   "model": "CA7001H0EVXC",
+   "generic": "红旗EH7",
+   "enterprise": "中国第一汽车集团有限公司",
+   "cur_capacity": "85",
+   "cur_range": "665",
+   "cur_cons": "14.5",
+   "implied_cap": 96.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "380",
+   "model": "CA7001H0EVXD",
+   "generic": "红旗EH7",
+   "enterprise": "中国第一汽车集团有限公司",
+   "cur_capacity": "85",
+   "cur_range": "640",
+   "cur_cons": "15",
+   "implied_cap": 96.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "380",
+   "model": "CSA7002EBEV1",
+   "generic": "L6",
+   "enterprise": "上海汽车集团股份有限公司",
+   "cur_capacity": "75",
+   "cur_range": "570",
+   "cur_cons": "15",
+   "implied_cap": 85.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "380",
+   "model": "CSA7002EBEV3",
+   "generic": "L6",
+   "enterprise": "上海汽车集团股份有限公司",
+   "cur_capacity": "100",
+   "cur_range": "822",
+   "cur_cons": "13.2",
+   "implied_cap": 112.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "380",
+   "model": "MR6525BEV09",
+   "generic": "009光辉",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "108",
+   "cur_range": "702",
+   "cur_cons": "17.6",
+   "implied_cap": 123.6,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "381",
+   "model": "CGC6521BEV2S9",
+   "generic": "远航H8",
+   "enterprise": "成都大运汽车集团有限公司",
+   "cur_capacity": "98",
+   "cur_range": "650",
+   "cur_cons": "17.3",
+   "implied_cap": 112.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "381",
+   "model": "CGC7000BEV2J14",
+   "generic": "远航Y6",
+   "enterprise": "成都大运汽车集团有限公司",
+   "cur_capacity": "98",
+   "cur_range": "720",
+   "cur_cons": "15.4",
+   "implied_cap": 110.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "381",
+   "model": "SH6531T1BEV-A",
+   "generic": "MIFA 9,大通大家9,大家9",
+   "enterprise": "上汽大通汽车有限公司",
+   "cur_capacity": "100",
+   "cur_range": "630",
+   "cur_cons": "17.9",
+   "implied_cap": 112.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "382",
+   "model": "CGC6521BEV2S10",
+   "generic": "远航H8",
+   "enterprise": "成都大运汽车集团有限公司",
+   "cur_capacity": "98",
+   "cur_range": "700",
+   "cur_cons": "16",
+   "implied_cap": 112.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "382",
+   "model": "CGC6521BEV2S11",
+   "generic": "远航H9",
+   "enterprise": "成都大运汽车集团有限公司",
+   "cur_capacity": "98",
+   "cur_range": "650",
+   "cur_cons": "17.3",
+   "implied_cap": 112.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "382",
+   "model": "CGC7001BEV2J3",
+   "generic": "远航Y7",
+   "enterprise": "成都大运汽车集团有限公司",
+   "cur_capacity": "98",
+   "cur_range": "720",
+   "cur_cons": "15.4",
+   "implied_cap": 110.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "382",
+   "model": "DFL6470NA53BEV",
+   "generic": "VX6",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "53",
+   "cur_range": "450",
+   "cur_cons": "13.2",
+   "implied_cap": 59.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "382",
+   "model": "LZW6470EVA1",
+   "generic": "五菱星辰PLUS",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "cur_capacity": "60",
+   "cur_range": "510",
+   "cur_cons": "14",
+   "implied_cap": 71.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "382",
+   "model": "MR6471BEV01",
+   "generic": "MIX",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "77",
+   "cur_range": "556",
+   "cur_cons": "16.1",
+   "implied_cap": 89.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "382",
+   "model": "MR6471BEV03",
+   "generic": "MIX",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "77",
+   "cur_range": "550",
+   "cur_cons": "16.4",
+   "implied_cap": 90.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "382",
+   "model": "THZ7000BEVS411",
+   "generic": "哪吒S",
+   "enterprise": "合众新能源汽车股份有限公司",
+   "cur_capacity": "91",
+   "cur_range": "640",
+   "cur_cons": "16.2",
+   "implied_cap": 103.7,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "383",
+   "model": "CA6490H0EVXD",
+   "generic": "EHS7",
+   "enterprise": "中国第一汽车集团有限公司",
+   "cur_capacity": "85",
+   "cur_range": "565",
+   "cur_cons": "16.9",
+   "implied_cap": 95.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "383",
+   "model": "MR6525BEV12",
+   "generic": "009",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "108",
+   "cur_range": "740",
+   "cur_cons": "16.8",
+   "implied_cap": 124.3,
+   "dcd_caps": [
+    108.0,
+    115.0,
+    140.0
+   ],
+   "dcd_years": [
+    "2024",
+    "2026"
+   ]
+  },
+  {
+   "batch": "383",
+   "model": "MR6525BEV13",
+   "generic": "009",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "108",
+   "cur_range": "702",
+   "cur_cons": "17.5",
+   "implied_cap": 122.8,
+   "dcd_caps": [
+    108.0,
+    115.0,
+    140.0
+   ],
+   "dcd_years": [
+    "2024",
+    "2026"
+   ]
+  },
+  {
+   "batch": "384",
+   "model": "CSA6501LBEV6",
+   "generic": "LS7",
+   "enterprise": "上海汽车集团股份有限公司",
+   "cur_capacity": "83",
+   "cur_range": "620",
+   "cur_cons": "15",
+   "implied_cap": 96.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "384",
+   "model": "DFL6470NB51BEV",
+   "generic": "VX6",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "53",
+   "cur_range": "450",
+   "cur_cons": "13.2",
+   "implied_cap": 59.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "384",
+   "model": "DFL6470NB53BEV",
+   "generic": "VX6",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "62",
+   "cur_range": "520",
+   "cur_cons": "13.5",
+   "implied_cap": 70.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "384",
+   "model": "HQ6475BEV03",
+   "generic": "精灵#5",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "76",
+   "cur_range": "570",
+   "cur_cons": "15.8",
+   "implied_cap": 90.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "384",
+   "model": "JL6431BEV103",
+   "generic": "精灵#1",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "66",
+   "cur_range": "500",
+   "cur_cons": "14.8",
+   "implied_cap": 74.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "384",
+   "model": "MR7001BEV30",
+   "generic": "领克Z10",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "71",
+   "cur_range": "602",
+   "cur_cons": "13.7",
+   "implied_cap": 82.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "384",
+   "model": "MR7001BEV31",
+   "generic": "领克Z10",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "95",
+   "cur_range": "806",
+   "cur_cons": "14",
+   "implied_cap": 112.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "384",
+   "model": "MR7001BEV32",
+   "generic": "领克Z10",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "95",
+   "cur_range": "702",
+   "cur_cons": "15.6",
+   "implied_cap": 109.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "384",
+   "model": "MR7001BEV38",
+   "generic": "领克Z10",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "95",
+   "cur_range": "766",
+   "cur_cons": "14.3",
+   "implied_cap": 109.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "384",
+   "model": "MR7005BEV28",
+   "generic": "银河 E8",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "76",
+   "cur_range": "700",
+   "cur_cons": "12.5",
+   "implied_cap": 87.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "384",
+   "model": "MR7005BEV29",
+   "generic": "银河 E8",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "62",
+   "cur_range": "575",
+   "cur_cons": "12.4",
+   "implied_cap": 71.3,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "385",
+   "model": "MR6481BEV102",
+   "generic": "7X",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "75",
+   "cur_range": "605",
+   "cur_cons": "14.2",
+   "implied_cap": 85.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "385",
+   "model": "MR7001BEV104",
+   "generic": "7",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "75",
+   "cur_range": "688",
+   "cur_cons": "12.5",
+   "implied_cap": 86.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "385",
+   "model": "MR7001BEV105",
+   "generic": "7",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "75",
+   "cur_range": "616",
+   "cur_cons": "14.2",
+   "implied_cap": 87.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "385",
+   "model": "NHQ6480BEVFD",
+   "generic": "小鹏G6",
+   "enterprise": "肇庆小鹏新能源投资有限公司",
+   "cur_capacity": "66",
+   "cur_range": "560",
+   "cur_cons": "13.5",
+   "implied_cap": 78.3,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "386",
+   "model": "THZ7000BEVS417",
+   "generic": "哪吒S,S,哪吒SF,SF",
+   "enterprise": "合众新能源汽车股份有限公司",
+   "cur_capacity": "63",
+   "cur_range": "550",
+   "cur_cons": "13.8",
+   "implied_cap": 75.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "387",
+   "model": "MR7005BEV04",
+   "generic": "X",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "49",
+   "cur_range": "420",
+   "cur_cons": "13.4",
+   "implied_cap": 56.3,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "388",
+   "model": "CA6490H0EVXA",
+   "generic": "红旗EHS7",
+   "enterprise": "中国第一汽车集团有限公司",
+   "cur_capacity": "85",
+   "cur_range": "585",
+   "cur_cons": "16.3",
+   "implied_cap": 95.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "388",
+   "model": "SC7007CAABEV",
+   "generic": "换电式纯电动轿车",
+   "enterprise": "重庆长安汽车股份有限公司",
+   "cur_capacity": "56",
+   "cur_range": "515",
+   "cur_cons": "12.4",
+   "implied_cap": 63.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "389",
+   "model": "MR7000BEV04",
+   "generic": "领克 Z20",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "49",
+   "cur_range": "430",
+   "cur_cons": "13.1",
+   "implied_cap": 56.3,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "389",
+   "model": "MR7001BEV109",
+   "generic": "银河 E8",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "75",
+   "cur_range": "620",
+   "cur_cons": "13.9",
+   "implied_cap": 86.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "390",
+   "model": "BYD6433SBEV3",
+   "generic": "比亚迪元UP",
+   "enterprise": "比亚迪汽车有限公司",
+   "cur_capacity": "32",
+   "cur_range": "301",
+   "cur_cons": "12",
+   "implied_cap": 36.1,
+   "dcd_caps": [
+    32.0,
+    45.12,
+    51.13
+   ],
+   "dcd_years": [
+    "2025",
+    "2027"
+   ]
+  },
+  {
+   "batch": "391",
+   "model": "CA6490H0EVXA",
+   "generic": "红旗EHS7",
+   "enterprise": "中国第一汽车集团有限公司",
+   "cur_capacity": "85",
+   "cur_range": "585",
+   "cur_cons": "16.3",
+   "implied_cap": 95.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "391",
+   "model": "DFL7000NAA1BEV",
+   "generic": "东风日产N7",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "58",
+   "cur_range": "525",
+   "cur_cons": "12.7",
+   "implied_cap": 68.6,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "391",
+   "model": "DFL7000NAA2BEV",
+   "generic": "东风日产N7",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "73",
+   "cur_range": "635",
+   "cur_cons": "13.2",
+   "implied_cap": 83.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "391",
+   "model": "MR7001BEV101",
+   "generic": "007GT",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "75",
+   "cur_range": "650",
+   "cur_cons": "13.3",
+   "implied_cap": 86.5,
+   "dcd_caps": [
+    75.0,
+    100.0,
+    103.0
+   ],
+   "dcd_years": [
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "batch": "391",
+   "model": "MR7001BEV103",
+   "generic": "007GT",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "75",
+   "cur_range": "585",
+   "cur_cons": "14.8",
+   "implied_cap": 86.6,
+   "dcd_caps": [
+    75.0,
+    100.0,
+    103.0
+   ],
+   "dcd_years": [
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "batch": "391",
+   "model": "NHQ6530BEVHF",
+   "generic": "小鹏X9",
+   "enterprise": "肇庆小鹏新能源投资有限公司",
+   "cur_capacity": "105",
+   "cur_range": "740",
+   "cur_cons": "16.2",
+   "implied_cap": 119.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "391",
+   "model": "NHQ6530BEVHG",
+   "generic": "小鹏X9",
+   "enterprise": "肇庆小鹏新能源投资有限公司",
+   "cur_capacity": "105",
+   "cur_range": "702",
+   "cur_cons": "16.9",
+   "implied_cap": 118.6,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "392",
+   "model": "CSA6493YSEV5",
+   "generic": "R7",
+   "enterprise": "上海汽车集团股份有限公司",
+   "cur_capacity": "90",
+   "cur_range": "730",
+   "cur_cons": "14",
+   "implied_cap": 102.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "392",
+   "model": "SC7000AAAFBEV",
+   "generic": "欧尚520",
+   "enterprise": "重庆长安汽车股份有限公司",
+   "cur_capacity": "56",
+   "cur_range": "515",
+   "cur_cons": "12.4",
+   "implied_cap": 63.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "393",
+   "model": "HQ6431BEV101",
+   "generic": "精灵#1",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "49",
+   "cur_range": "410",
+   "cur_cons": "14.1",
+   "implied_cap": 57.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "393",
+   "model": "LZW6402BEVA2",
+   "generic": "悦也plus",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "cur_capacity": "54",
+   "cur_range": "501",
+   "cur_cons": "12.8",
+   "implied_cap": 64.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "396",
+   "model": "BAW6530MBM2BEV",
+   "generic": "锐胜M8",
+   "enterprise": "北京汽车股份有限公司",
+   "cur_capacity": "92.0",
+   "cur_range": "560",
+   "cur_cons": "18.4",
+   "implied_cap": 103.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "396",
+   "model": "BAW6530MBM3BEV",
+   "generic": "锐胜M8",
+   "enterprise": "北京汽车股份有限公司",
+   "cur_capacity": "92.0",
+   "cur_range": "560",
+   "cur_cons": "18.4",
+   "implied_cap": 103.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "398",
+   "model": "MR7003BEV102",
+   "generic": "001",
+   "enterprise": "浙江极氪智能科技有限公司",
+   "cur_capacity": "95",
+   "cur_range": "690",
+   "cur_cons": "15.3",
+   "implied_cap": 108.6,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "399",
+   "model": "GTM6471BFLBEV",
+   "generic": "",
+   "enterprise": "广汽丰田汽车有限公司",
+   "cur_capacity": "69",
+   "cur_range": "752",
+   "cur_cons": "10.9",
+   "implied_cap": 82.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "399",
+   "model": "LZW6521HDUPHEVA1",
+   "generic": "享境S9,华境S",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "cur_capacity": "31",
+   "cur_range": "130",
+   "cur_cons": "20.7",
+   "implied_cap": 26.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "400",
+   "model": "BJ7000T66SEV",
+   "generic": "EU8",
+   "enterprise": "北京汽车股份有限公司",
+   "cur_capacity": "54",
+   "cur_range": "535",
+   "cur_cons": "12",
+   "implied_cap": 64.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "400",
+   "model": "HQ7151DCHEV113",
+   "generic": "银河星耀6 EM-i",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "17",
+   "cur_range": "100",
+   "cur_cons": "12.1",
+   "implied_cap": 12.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "401",
+   "model": "HQ6431BEV106",
+   "generic": "精灵#1",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "49",
+   "cur_range": "410",
+   "cur_cons": "13.9",
+   "implied_cap": 57.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "402",
+   "model": "DFL6490NNJ1BEV",
+   "generic": "东风日产NX8",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "73",
+   "cur_range": "565",
+   "cur_cons": "14.8",
+   "implied_cap": 85.8,
+   "dcd_caps": [
+    20.3,
+    21.1,
+    37.4,
+    43.2,
+    73.0,
+    81.0
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "402",
+   "model": "DFL6490NNJ2BEV",
+   "generic": "东风日产NX8",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "81",
+   "cur_range": "630",
+   "cur_cons": "14.9",
+   "implied_cap": 96.8,
+   "dcd_caps": [
+    20.3,
+    21.1,
+    37.4,
+    43.2,
+    73.0,
+    81.0
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "402",
+   "model": "SVW650171CEV",
+   "generic": "E7X",
+   "enterprise": "上汽大众汽车有限公司",
+   "cur_capacity": "100",
+   "cur_range": "705",
+   "cur_cons": "16",
+   "implied_cap": 112.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "402",
+   "model": "SVW650172CEV",
+   "generic": "E7X",
+   "enterprise": "上汽大众汽车有限公司",
+   "cur_capacity": "100",
+   "cur_range": "635",
+   "cur_cons": "18.1",
+   "implied_cap": 114.9,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "402",
+   "model": "HQ7151DCHEV106",
+   "generic": "精灵#6",
+   "enterprise": "",
+   "cur_capacity": "20",
+   "cur_range": "110",
+   "cur_cons": "15.8",
+   "implied_cap": 17.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "403",
+   "model": "FZ6530BEVWD19A",
+   "generic": "D19",
+   "enterprise": "零跑汽车有限公司",
+   "cur_capacity": "115",
+   "cur_range": "720",
+   "cur_cons": "18.3",
+   "implied_cap": 131.8,
+   "dcd_caps": [
+    63.7,
+    80.3,
+    99.6,
+    115.0
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "403",
+   "model": "XMA7001MBEVR3",
+   "generic": "小米SU7",
+   "enterprise": "小米汽车科技有限公司",
+   "cur_capacity": "73",
+   "cur_range": "720",
+   "cur_cons": "11.7",
+   "implied_cap": 84.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "403",
+   "model": "XMA7001MBEVR6",
+   "generic": "小米SU7",
+   "enterprise": "小米汽车科技有限公司",
+   "cur_capacity": "73",
+   "cur_range": "720",
+   "cur_cons": "11.7",
+   "implied_cap": 84.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "403",
+   "model": "FV6472MATEAHEV",
+   "generic": "TAYRON L",
+   "enterprise": "一汽-大众汽车有限公司",
+   "cur_capacity": "22",
+   "cur_range": "115",
+   "cur_cons": "15",
+   "implied_cap": 17.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "403",
+   "model": "FV6472MATEHEV",
+   "generic": "TAYRON L",
+   "enterprise": "一汽-大众汽车有限公司",
+   "cur_capacity": "22",
+   "cur_range": "113",
+   "cur_cons": "15.3",
+   "implied_cap": 17.3,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "403",
+   "model": "FV7157NATEHEV",
+   "generic": "MAGOTAN",
+   "enterprise": "一汽-大众汽车有限公司",
+   "cur_capacity": "22",
+   "cur_range": "127",
+   "cur_cons": "14.3",
+   "implied_cap": 18.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "404",
+   "model": "MR7001BEV124",
+   "generic": "007GT",
+   "enterprise": "浙江极氪智能科技有限公司",
+   "cur_capacity": "75",
+   "cur_range": "615",
+   "cur_cons": "14.4",
+   "implied_cap": 88.6,
+   "dcd_caps": [
+    75.0,
+    100.0,
+    103.0
+   ],
+   "dcd_years": [
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "batch": "404",
+   "model": "MR7001BEV126",
+   "generic": "007GT",
+   "enterprise": "浙江极氪智能科技有限公司",
+   "cur_capacity": "75",
+   "cur_range": "702",
+   "cur_cons": "12.9",
+   "implied_cap": 90.6,
+   "dcd_caps": [
+    75.0,
+    100.0,
+    103.0
+   ],
+   "dcd_years": [
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "batch": "404",
+   "model": "MR7001BEV130",
+   "generic": "007",
+   "enterprise": "浙江极氪智能科技有限公司",
+   "cur_capacity": "75",
+   "cur_range": "715",
+   "cur_cons": "12",
+   "implied_cap": 85.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "404",
+   "model": "MR7001BEV131",
+   "generic": "007",
+   "enterprise": "浙江极氪智能科技有限公司",
+   "cur_capacity": "75",
+   "cur_range": "635",
+   "cur_cons": "13.8",
+   "implied_cap": 87.6,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "404",
+   "model": "NHQ6530BEVTC",
+   "generic": "小鹏GX",
+   "enterprise": "广州小鹏汽车科技有限公司",
+   "cur_capacity": "110",
+   "cur_range": "720",
+   "cur_cons": "16.9",
+   "implied_cap": 126.7,
+   "dcd_caps": [
+    63.3,
+    91.9,
+    110.0
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "404",
+   "model": "VCD7005F021BEV",
+   "generic": "ES90",
+   "enterprise": "亚欧汽车制造(台州)有限公司",
+   "cur_capacity": "92",
+   "cur_range": "777",
+   "cur_cons": "13.4",
+   "implied_cap": 104.1,
+   "dcd_caps": [
+    92.0,
+    106.0
+   ],
+   "dcd_years": [
+    "2027"
+   ]
+  },
+  {
+   "batch": "404",
+   "model": "VCD7005F051BEV",
+   "generic": "ES90",
+   "enterprise": "亚欧汽车制造(台州)有限公司",
+   "cur_capacity": "106",
+   "cur_range": "848",
+   "cur_cons": "14.1",
+   "implied_cap": 119.6,
+   "dcd_caps": [
+    92.0,
+    106.0
+   ],
+   "dcd_years": [
+    "2027"
+   ]
+  },
+  {
+   "batch": "404",
+   "model": "SVW647161APV",
+   "generic": "TIGUAN L ePRO",
+   "enterprise": "上汽大众汽车有限公司",
+   "cur_capacity": "22",
+   "cur_range": "117",
+   "cur_cons": "16.1",
+   "implied_cap": 18.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "405",
+   "model": "BJ7000T661SEV",
+   "generic": "S3",
+   "enterprise": "北京新能源汽车股份有限公司",
+   "cur_capacity": "54",
+   "cur_range": "535",
+   "cur_cons": "12",
+   "implied_cap": 64.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "405",
+   "model": "FZ6530BEVWD99A",
+   "generic": "D99",
+   "enterprise": "零跑汽车有限公司",
+   "cur_capacity": "115",
+   "cur_range": "700",
+   "cur_cons": "18.8",
+   "implied_cap": 131.6,
+   "dcd_caps": [
+    80.3,
+    115.0
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "405",
+   "model": "MR6521BEV102",
+   "generic": "009",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "108",
+   "cur_range": "740",
+   "cur_cons": "16.8",
+   "implied_cap": 124.3,
+   "dcd_caps": [
+    108.0,
+    115.0,
+    140.0
+   ],
+   "dcd_years": [
+    "2024",
+    "2026"
+   ]
+  },
+  {
+   "batch": "405",
+   "model": "MR7002BEV108",
+   "generic": "领克10",
+   "enterprise": "",
+   "cur_capacity": "95",
+   "cur_range": "816",
+   "cur_cons": "13.6",
+   "implied_cap": 111.0,
+   "dcd_caps": [
+    77.17,
+    95.0
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "406",
+   "model": "BJ7000T66KSEV",
+   "generic": "",
+   "enterprise": "",
+   "cur_capacity": "54",
+   "cur_range": "535",
+   "cur_cons": "12",
+   "implied_cap": 64.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "406",
+   "model": "LZW6490BEVA7",
+   "generic": "星光730",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "cur_capacity": "60",
+   "cur_range": "500",
+   "cur_cons": "13.6",
+   "implied_cap": 68.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "406",
+   "model": "NHQ6470BEVXA",
+   "generic": "小鹏L03",
+   "enterprise": "",
+   "cur_capacity": "56",
+   "cur_range": "530",
+   "cur_cons": "11.8",
+   "implied_cap": 64.9,
+   "dcd_caps": [
+    37.2,
+    56.0,
+    69.0
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "406",
+   "model": "NHQ6470BEVXB",
+   "generic": "小鹏L03",
+   "enterprise": "",
+   "cur_capacity": "69",
+   "cur_range": "625",
+   "cur_cons": "12.4",
+   "implied_cap": 80.6,
+   "dcd_caps": [
+    37.2,
+    56.0,
+    69.0
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "406",
+   "model": "XMA6500LBEVR4",
+   "generic": "小米YU7",
+   "enterprise": "小米汽车科技有限公司",
+   "cur_capacity": "73",
+   "cur_range": "633",
+   "cur_cons": "13",
+   "implied_cap": 83.6,
+   "dcd_caps": [
+    73.0,
+    96.3,
+    101.7
+   ],
+   "dcd_years": [
+    "2025",
+    "2026"
+   ]
+  },
+  {
+   "batch": "407",
+   "model": "NHQ6510BEVRB",
+   "generic": "小鹏G9L",
+   "enterprise": "肇庆小鹏新能源投资有限公司",
+   "cur_capacity": "110",
+   "cur_range": "775",
+   "cur_cons": "15.6",
+   "implied_cap": 125.6,
+   "dcd_caps": [
+    63.3,
+    91.9,
+    110.0
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "407",
+   "model": "NHQ6510BEVRC",
+   "generic": "小鹏G9L",
+   "enterprise": "肇庆小鹏新能源投资有限公司",
+   "cur_capacity": "110",
+   "cur_range": "725",
+   "cur_cons": "16.7",
+   "implied_cap": 126.1,
+   "dcd_caps": [
+    63.3,
+    91.9,
+    110.0
+   ],
+   "dcd_years": [
+    "2026"
+   ]
+  },
+  {
+   "batch": "397",
+   "model": "LZW6470BEVAA",
+   "generic": "五菱星光S",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "cur_capacity": "60.0",
+   "cur_range": "510.0",
+   "cur_cons": "13.6",
+   "implied_cap": 69.4,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "397",
+   "model": "TSL6500BEVBA0",
+   "generic": "特斯拉 MODEL Y L",
+   "enterprise": "特斯拉(上海)有限公司",
+   "cur_capacity": "82.0",
+   "cur_range": "751.0",
+   "cur_cons": "12.8",
+   "implied_cap": 96.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "397",
+   "model": "BAW6530MB21SHEV",
+   "generic": "锐胜M8",
+   "enterprise": "北京汽车制造厂有限公司",
+   "cur_capacity": "46.0",
+   "cur_range": "180.0",
+   "cur_cons": "21",
+   "implied_cap": 37.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "397",
+   "model": "BAW6530MB22SHEV",
+   "generic": "锐胜M8",
+   "enterprise": "北京汽车制造厂有限公司",
+   "cur_capacity": "46.0",
+   "cur_range": "180.0",
+   "cur_cons": "21",
+   "implied_cap": 37.8,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "397",
+   "model": "HQ7151DCHEV100",
+   "generic": "银河星耀6 EM-i",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "17.0",
+   "cur_range": "100.0",
+   "cur_cons": "12.1",
+   "implied_cap": 12.1,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "342",
+   "model": "CGC6371BEV2S1",
+   "generic": "悦虎ES3,悦虎3,悦虎",
+   "enterprise": "成都大运汽车集团有限公司",
+   "cur_capacity": "111",
+   "cur_range": "255",
+   "cur_cons": "13.4",
+   "implied_cap": 34.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "373",
+   "model": "DFL6470NA51BEV",
+   "generic": "VX6",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "111",
+   "cur_range": "520",
+   "cur_cons": "13.5",
+   "implied_cap": 70.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "376",
+   "model": "DFL6470NA52BEV",
+   "generic": "VX6",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "111",
+   "cur_range": "520",
+   "cur_cons": "13.5",
+   "implied_cap": 70.2,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "377",
+   "model": "JX6546TF6BEV",
+   "generic": "大道EV",
+   "enterprise": "江铃汽车股份有限公司",
+   "cur_capacity": "111",
+   "cur_range": "458",
+   "cur_cons": "19.1",
+   "implied_cap": 87.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "379",
+   "model": "LZW6402EVA1",
+   "generic": "悦也plus",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "cur_capacity": "111",
+   "cur_range": "401",
+   "cur_cons": "12.6",
+   "implied_cap": 50.5,
+   "dcd_caps": [],
+   "dcd_years": []
+  },
+  {
+   "batch": "379",
+   "model": "ZN6531HCPBEV",
+   "generic": "帕拉索",
+   "enterprise": "郑州日产汽车有限公司",
+   "cur_capacity": "111",
+   "cur_range": "411",
+   "cur_cons": "19.7",
+   "implied_cap": 81.0,
+   "dcd_caps": [],
+   "dcd_years": []
+  }
+ ]
+}

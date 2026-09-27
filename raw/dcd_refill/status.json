@@ -1,20 +1,20 @@
 {
- "updated": "2026-09-27 06:57:35",
+ "updated": "2026-09-27 11:48:59",
  "workbook_rows": 5392,
  "dcd_coverage": {
-  "轴距(mm)": 85.6,
+  "后电机功率/扭矩": 39.8,
+  "电池能量密度(Wh/kg)": 79.3,
   "电机总功率/扭矩": 96.8,
-  "前电机功率/扭矩": 84.8,
-  "电池能量密度(Wh/kg)": 79.2,
+  "整备质量(kg)": 91.3,
+  "电池容量(kWh)": 92.1,
+  "轴距(mm)": 86.3,
+  "前电机功率/扭矩": 86.2,
+  "百公里电耗(kWh/100km)": 96.1,
   "纯电续航里程(km)": 97.3,
-  "车长(mm)": 85.2,
-  "百公里电耗(kWh/100km)": 96.0,
-  "电池容量(kWh)": 91.8,
-  "整备质量(kg)": 90.8,
-  "电池类型": 92.9,
-  "后电机功率/扭矩": 38.6
+  "车长(mm)": 85.8,
+  "电池类型": 93.5
  },
- "dcd_ledger_cells": 3036,
+ "dcd_ledger_cells": 3334,
  "batches": [
   {
    "id": "b01",
@@ -487,128 +487,198 @@
    ],
    "gap_rows": 16,
    "green": 19
+  },
+  {
+   "id": "b09",
+   "status": "applied",
+   "series": [
+    "U2",
+    "仰望U7",
+    "M817",
+    "FORD BRONCO BASECAMP",
+    "eπ007+",
+    "HiPhi X",
+    "传祺AION V",
+    "红旗E-HS9",
+    "凌宝BOX",
+    "风光MINIEV,蓝电糖果",
+    "比亚迪宋PLUS",
+    "旅行者",
+    "领动 插电混动",
+    "U5",
+    "传祺S7",
+    "V-ONLINE",
+    "iA5",
+    "旅行者C-DM",
+    "E 350 e L",
+    "E-M8",
+    "哈弗大狗",
+    "山海L6 C-DM",
+    "银河V900",
+    "红旗HQ9 PHEV",
+    "V9",
+    "比亚迪唐",
+    "V25",
+    "星光560"
+   ],
+   "gap_rows": 86,
+   "green": 116
+  },
+  {
+   "id": "b10",
+   "status": "applied",
+   "series": [
+    "RAV4",
+    "WILDLANDER",
+    "嘉际",
+    "吉利FY11",
+    "冒险家",
+    "EQC 400 4MATIC",
+    "EQC 350 4MATIC",
+    "哪吒UPro",
+    "宝马5系插电式混合动力",
+    "摩卡PHEV",
+    "腾势X",
+    "博瑞",
+    "e-tron",
+    "ES6",
+    "EC6",
+    "ES8",
+    "03 PHEV",
+    "帕拉索",
+    "比亚迪秦Pro",
+    "理想ONE",
+    "VV7 PHEV",
+    "VX6",
+    "海狮王EV",
+    "Q6L",
+    "易电易行FM3Pro",
+    "睿蓝RL9"
+   ],
+   "gap_rows": 50,
+   "green": 154
   }
  ],
  "recent_ledger": [
   {
-   "seq": 54260,
-   "model": "LZ7000SXF0EV",
+   "seq": 54558,
+   "model": "LXA6500SHEVM2",
    "field": "后电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "230.0"
+   "new": "145.0"
   },
   {
-   "seq": 54259,
-   "model": "LZ7150SB0REEV",
+   "seq": 54557,
+   "model": "LXA6500SHEVM1",
    "field": "后电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "160.0"
+   "new": "145.0"
   },
   {
-   "seq": 54258,
-   "model": "LZ7000SUF0EV",
-   "field": "后电机功率/扭矩",
+   "seq": 54556,
+   "model": "BMW7201JMHEV",
+   "field": "轴距(mm)",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "200.0"
+   "new": "3105.0"
   },
   {
-   "seq": 54257,
-   "model": "CC6510BD23BPHEV",
-   "field": "电池容量(kWh)",
+   "seq": 54555,
+   "model": "BMW7201JMHEV",
+   "field": "车长(mm)",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "44.28"
+   "new": "5106.0"
   },
   {
-   "seq": 54256,
-   "model": "CC6510BD23BPHEV",
-   "field": "整备质量(kg)",
+   "seq": 54554,
+   "model": "BMW7201HMHEV",
+   "field": "轴距(mm)",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "2765.0"
+   "new": "3105.0"
   },
   {
-   "seq": 54255,
-   "model": "FZ6450BEVB10L",
-   "field": "后电机功率/扭矩",
+   "seq": 54553,
+   "model": "BMW7201HMHEV",
+   "field": "车长(mm)",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "160.0"
+   "new": "5106.0"
   },
   {
-   "seq": 54254,
-   "model": "FZ6450BEVB10H",
-   "field": "后电机功率/扭矩",
+   "seq": 54552,
+   "model": "CA6520HA6PHEVTXC",
+   "field": "前电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "160.0"
+   "new": "168.0"
   },
   {
-   "seq": 54253,
-   "model": "FZ6450BEVB10E",
-   "field": "后电机功率/扭矩",
-   "kind": "媒体参数补全",
-   "old": "(空)",
-   "new": "160.0"
-  },
-  {
-   "seq": 54252,
-   "model": "SQR6483CHEVT226",
+   "seq": 54551,
+   "model": "GTM70022BEV",
    "field": "前电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
    "new": "150.0"
   },
   {
-   "seq": 54251,
-   "model": "AHC6470BEVJ0Y",
+   "seq": 54550,
+   "model": "GTM70022BEV",
+   "field": "车长(mm)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "4818.0"
+  },
+  {
+   "seq": 54549,
+   "model": "GTM700033BEV",
+   "field": "车长(mm)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "4818.0"
+  },
+  {
+   "seq": 54548,
+   "model": "GTM700030BEV",
+   "field": "车长(mm)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "4818.0"
+  },
+  {
+   "seq": 54547,
+   "model": "GAC6490CHEVGAB6A",
    "field": "前电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "165.0"
+   "new": "170.0"
   },
   {
-   "seq": 54250,
-   "model": "AHC6470SHEVN0C",
+   "seq": 54546,
+   "model": "JX6470UBEV",
    "field": "前电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "165.0"
+   "new": "150.0"
   },
   {
-   "seq": 54249,
-   "model": "BYD7150ADHEV9",
+   "seq": 54545,
+   "model": "JX6470UBEV",
+   "field": "整备质量(kg)",
+   "kind": "媒体参数补全",
+   "old": "(空)",
+   "new": "1770.0"
+  },
+  {
+   "seq": 54544,
+   "model": "JX6473UBEV",
    "field": "前电机功率/扭矩",
    "kind": "媒体参数补全",
    "old": "(空)",
-   "new": "120.0"
-  },
-  {
-   "seq": 54248,
-   "model": "BYD7150ADHEV9",
-   "field": "电机总功率/扭矩",
-   "kind": "媒体参数补全",
-   "old": "(空)",
-   "new": "120.0"
-  },
-  {
-   "seq": 54247,
-   "model": "BYD7000BWBEV5",
-   "field": "前电机功率/扭矩",
-   "kind": "媒体参数补全",
-   "old": "(空)",
-   "new": "160.0"
-  },
-  {
-   "seq": 54246,
-   "model": "FZ6490BEVC16N",
-   "field": "后电机功率/扭矩",
-   "kind": "媒体参数补全",
-   "old": "(空)",
-   "new": "220.0"
+   "new": "150.0"
   }
  ]
 }

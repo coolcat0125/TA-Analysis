@@ -1,0 +1,1834 @@
+{
+ "created": "2026-09-27",
+ "source": "gap_reclass rear_only 未覆盖部分+recent_queue 之外新目标",
+ "total_rows_uncovered": 292,
+ "series": [
+  {
+   "kw": "U2",
+   "gap_rows": 8,
+   "batches": [
+    "362",
+    "364",
+    "366",
+    "367"
+   ],
+   "enterprises": [
+    "湖南江南汽车制造有限公司"
+   ]
+  },
+  {
+   "kw": "瑞驰 R5",
+   "gap_rows": 7,
+   "batches": [
+    "392",
+    "398",
+    "401"
+   ],
+   "enterprises": [
+    "赛力斯汽车(湖北)有限公司"
+   ]
+  },
+  {
+   "kw": "仰望U7",
+   "gap_rows": 5,
+   "batches": [
+    "390",
+    "400",
+    "401",
+    "402"
+   ],
+   "enterprises": [
+    "比亚迪汽车工业有限公司"
+   ]
+  },
+  {
+   "kw": "M817",
+   "gap_rows": 5,
+   "batches": [
+    "395",
+    "396",
+    "397",
+    "401"
+   ],
+   "enterprises": [
+    "东风汽车集团有限公司"
+   ]
+  },
+  {
+   "kw": "FORD BRONCO BASECAMP",
+   "gap_rows": 5,
+   "batches": [
+    "397",
+    "400",
+    "401",
+    "402"
+   ],
+   "enterprises": [
+    "江铃汽车股份有限公司",
+    "长安福特汽车有限公司"
+   ]
+  },
+  {
+   "kw": "大圣",
+   "gap_rows": 4,
+   "batches": [
+    "362",
+    "363",
+    "367"
+   ],
+   "enterprises": [
+    "奇瑞商用车(安徽)有限公司"
+   ]
+  },
+  {
+   "kw": "S3，极狐S3",
+   "gap_rows": 4,
+   "batches": [
+    "396"
+   ],
+   "enterprises": [
+    "北京汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "eπ007+",
+   "gap_rows": 4,
+   "batches": [
+    "397"
+   ],
+   "enterprises": [
+    "东风汽车集团有限公司"
+   ]
+  },
+  {
+   "kw": "HiPhi X",
+   "gap_rows": 4,
+   "batches": [
+    "341"
+   ],
+   "enterprises": [
+    "东风悦达起亚汽车有限公司"
+   ]
+  },
+  {
+   "kw": "传祺AION V;AION V",
+   "gap_rows": 4,
+   "batches": [
+    "341"
+   ],
+   "enterprises": [
+    "广汽乘用车有限公司"
+   ]
+  },
+  {
+   "kw": "红旗E-HS9",
+   "gap_rows": 4,
+   "batches": [
+    "342"
+   ],
+   "enterprises": [
+    "中国第一汽车集团有限公司"
+   ]
+  },
+  {
+   "kw": "海豚K5",
+   "gap_rows": 4,
+   "batches": [
+    "392",
+    "401"
+   ],
+   "enterprises": [
+    "宜宾凯翼汽车有限公司"
+   ]
+  },
+  {
+   "kw": "江豚E7",
+   "gap_rows": 4,
+   "batches": [
+    "392",
+    "401"
+   ],
+   "enterprises": [
+    "宜宾凯翼汽车有限公司"
+   ]
+  },
+  {
+   "kw": "凌宝BOX",
+   "gap_rows": 3,
+   "batches": [
+    "359",
+    "362"
+   ],
+   "enterprises": [
+    "江苏吉麦新能源车业有限公司"
+   ]
+  },
+  {
+   "kw": "风光MINIEV,蓝电糖果",
+   "gap_rows": 3,
+   "batches": [
+    "365"
+   ],
+   "enterprises": [
+    "东风小康汽车有限公司"
+   ]
+  },
+  {
+   "kw": "好运",
+   "gap_rows": 3,
+   "batches": [
+    "368",
+    "370"
+   ],
+   "enterprises": [
+    "华晨鑫源重庆汽车有限公司"
+   ]
+  },
+  {
+   "kw": "全顺EV",
+   "gap_rows": 3,
+   "batches": [
+    "373"
+   ],
+   "enterprises": [
+    "江铃汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "昆仑iHD",
+   "gap_rows": 3,
+   "batches": [
+    "378",
+    "394",
+    "395"
+   ],
+   "enterprises": [
+    "宜宾凯翼汽车有限公司"
+   ]
+  },
+  {
+   "kw": "比亚迪宋PLUS",
+   "gap_rows": 3,
+   "batches": [
+    "351",
+    "392",
+    "395"
+   ],
+   "enterprises": [
+    "比亚迪汽车工业有限公司",
+    "比亚迪汽车有限公司"
+   ]
+  },
+  {
+   "kw": "旅行者,旅行者7,山海T2",
+   "gap_rows": 3,
+   "batches": [
+    "408"
+   ],
+   "enterprises": [
+    "奇瑞汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "东风小康EC36",
+   "gap_rows": 3,
+   "batches": [
+    "345"
+   ],
+   "enterprises": [
+    "东风小康汽车有限公司"
+   ]
+  },
+  {
+   "kw": "领动 插电混动",
+   "gap_rows": 3,
+   "batches": [
+    "350",
+    "369"
+   ],
+   "enterprises": [
+    "北京现代汽车有限公司"
+   ]
+  },
+  {
+   "kw": "U5",
+   "gap_rows": 3,
+   "batches": [
+    "352",
+    "374"
+   ],
+   "enterprises": [
+    "江铃控股有限公司"
+   ]
+  },
+  {
+   "kw": "传祺S7",
+   "gap_rows": 3,
+   "batches": [
+    "390"
+   ],
+   "enterprises": [
+    "广汽传祺汽车有限公司"
+   ]
+  },
+  {
+   "kw": "V-ONLINE",
+   "gap_rows": 2,
+   "batches": [
+    "369"
+   ],
+   "enterprises": [
+    "东风汽车有限公司"
+   ]
+  },
+  {
+   "kw": "A5,R-A5,S-A5,E-A5",
+   "gap_rows": 2,
+   "batches": [
+    "370"
+   ],
+   "enterprises": [
+    "赛力斯汽车有限公司"
+   ]
+  },
+  {
+   "kw": "福运FORTUNE EV",
+   "gap_rows": 2,
+   "batches": [
+    "374",
+    "383"
+   ],
+   "enterprises": [
+    "江西江铃集团晶马汽车有限公司"
+   ]
+  },
+  {
+   "kw": "旅行者C-DM",
+   "gap_rows": 2,
+   "batches": [
+    "375",
+    "379"
+   ],
+   "enterprises": [
+    "奇瑞商用车(安徽)有限公司"
+   ]
+  },
+  {
+   "kw": "E 350 e L",
+   "gap_rows": 2,
+   "batches": [
+    "344",
+    "377"
+   ],
+   "enterprises": [
+    "北京奔驰汽车有限公司"
+   ]
+  },
+  {
+   "kw": "E-M8",
+   "gap_rows": 2,
+   "batches": [
+    "385"
+   ],
+   "enterprises": [
+    "领途汽车有限公司"
+   ]
+  },
+  {
+   "kw": "哈弗大狗,哈弗大狗PLUS,哈弗H7",
+   "gap_rows": 2,
+   "batches": [
+    "394"
+   ],
+   "enterprises": [
+    "长城汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "山海L6 C-DM,大圣 C-DM,捷途",
+   "gap_rows": 2,
+   "batches": [
+    "396"
+   ],
+   "enterprises": []
+  },
+  {
+   "kw": "银河V900",
+   "gap_rows": 2,
+   "batches": [
+    "399"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "红旗HQ9 PHEV",
+   "gap_rows": 2,
+   "batches": [
+    "402"
+   ],
+   "enterprises": [
+    "中国第一汽车集团有限公司"
+   ]
+  },
+  {
+   "kw": "V9,星海V9,游艇V9",
+   "gap_rows": 2,
+   "batches": [
+    "402"
+   ],
+   "enterprises": [
+    "东风汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "比亚迪唐,比亚迪唐Pro",
+   "gap_rows": 2,
+   "batches": [
+    "409"
+   ],
+   "enterprises": [
+    "比亚迪汽车工业有限公司"
+   ]
+  },
+  {
+   "kw": "V25,V25S",
+   "gap_rows": 2,
+   "batches": [
+    "409",
+    "411"
+   ],
+   "enterprises": [
+    "奇瑞新能源汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "星光560",
+   "gap_rows": 2,
+   "batches": [
+    "397"
+   ],
+   "enterprises": [
+    "上汽通用五菱汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "RAV4",
+   "gap_rows": 2,
+   "batches": [
+    "341"
+   ],
+   "enterprises": [
+    "四川一汽丰田汽车有限公司"
+   ]
+  },
+  {
+   "kw": "WILDLANDER",
+   "gap_rows": 2,
+   "batches": [
+    "341",
+    "342"
+   ],
+   "enterprises": [
+    "广汽丰田汽车有限公司"
+   ]
+  },
+  {
+   "kw": "嘉际",
+   "gap_rows": 2,
+   "batches": [
+    "341",
+    "343"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "吉利FY11,吉利星越",
+   "gap_rows": 2,
+   "batches": [
+    "341"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "冒险家",
+   "gap_rows": 2,
+   "batches": [
+    "341"
+   ],
+   "enterprises": [
+    "长安福特汽车有限公司"
+   ]
+  },
+  {
+   "kw": "EQC 400 4MATIC",
+   "gap_rows": 2,
+   "batches": [
+    "342"
+   ],
+   "enterprises": [
+    "北京奔驰汽车有限公司"
+   ]
+  },
+  {
+   "kw": "EQC 350 4MATIC",
+   "gap_rows": 2,
+   "batches": [
+    "342"
+   ],
+   "enterprises": [
+    "北京奔驰汽车有限公司"
+   ]
+  },
+  {
+   "kw": "睿行EM60",
+   "gap_rows": 2,
+   "batches": [
+    "342",
+    "400"
+   ],
+   "enterprises": [
+    "河北长安汽车有限公司"
+   ]
+  },
+  {
+   "kw": "哪吒UPro",
+   "gap_rows": 2,
+   "batches": [
+    "342",
+    "343"
+   ],
+   "enterprises": [
+    "合众新能源汽车有限公司",
+    "浙江合众新能源汽车有限公司"
+   ]
+  },
+  {
+   "kw": "宝马5系插电式混合动力",
+   "gap_rows": 2,
+   "batches": [
+    "343",
+    "344"
+   ],
+   "enterprises": [
+    "华晨宝马汽车有限公司"
+   ]
+  },
+  {
+   "kw": "摩卡PHEV",
+   "gap_rows": 2,
+   "batches": [
+    "343"
+   ],
+   "enterprises": [
+    "长城汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "腾势X",
+   "gap_rows": 2,
+   "batches": [
+    "344"
+   ],
+   "enterprises": [
+    "比亚迪汽车工业有限公司"
+   ]
+  },
+  {
+   "kw": "博瑞",
+   "gap_rows": 2,
+   "batches": [
+    "344"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "e-tron",
+   "gap_rows": 2,
+   "batches": [
+    "345"
+   ],
+   "enterprises": [
+    "一汽-大众汽车有限公司"
+   ]
+  },
+  {
+   "kw": "ES6",
+   "gap_rows": 2,
+   "batches": [
+    "345"
+   ],
+   "enterprises": [
+    "安徽江淮汽车集团股份有限公司"
+   ]
+  },
+  {
+   "kw": "EC6",
+   "gap_rows": 2,
+   "batches": [
+    "345"
+   ],
+   "enterprises": [
+    "安徽江淮汽车集团股份有限公司"
+   ]
+  },
+  {
+   "kw": "ES8",
+   "gap_rows": 2,
+   "batches": [
+    "345"
+   ],
+   "enterprises": [
+    "安徽江淮汽车集团股份有限公司"
+   ]
+  },
+  {
+   "kw": "03 PHEV",
+   "gap_rows": 2,
+   "batches": [
+    "347",
+    "348"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "帕拉索",
+   "gap_rows": 2,
+   "batches": [
+    "350",
+    "379"
+   ],
+   "enterprises": [
+    "郑州日产汽车有限公司"
+   ]
+  },
+  {
+   "kw": "比亚迪秦Pro",
+   "gap_rows": 2,
+   "batches": [
+    "351"
+   ],
+   "enterprises": [
+    "比亚迪汽车有限公司"
+   ]
+  },
+  {
+   "kw": "理想ONE",
+   "gap_rows": 2,
+   "batches": [
+    "351"
+   ],
+   "enterprises": [
+    "重庆理想汽车有限公司"
+   ]
+  },
+  {
+   "kw": "VV7 PHEV",
+   "gap_rows": 2,
+   "batches": [
+    "351"
+   ],
+   "enterprises": [
+    "长城汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "VX6",
+   "gap_rows": 2,
+   "batches": [
+    "373",
+    "376"
+   ],
+   "enterprises": [
+    "东风汽车有限公司"
+   ]
+  },
+  {
+   "kw": "比亚迪M3",
+   "gap_rows": 2,
+   "batches": [
+    "380"
+   ],
+   "enterprises": [
+    "比亚迪汽车工业有限公司"
+   ]
+  },
+  {
+   "kw": "风景i9,风景i9+",
+   "gap_rows": 2,
+   "batches": [
+    "391"
+   ],
+   "enterprises": [
+    "北汽福田汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "海狮王EV",
+   "gap_rows": 2,
+   "batches": [
+    "398"
+   ],
+   "enterprises": [
+    "华晨雷诺金杯汽车有限公司"
+   ]
+  },
+  {
+   "kw": "Q6L",
+   "gap_rows": 2,
+   "batches": [
+    "399"
+   ],
+   "enterprises": [
+    "奥迪一汽新能源汽车有限公司"
+   ]
+  },
+  {
+   "kw": "易电易行FM3Pro",
+   "gap_rows": 1,
+   "batches": [
+    "355"
+   ],
+   "enterprises": [
+    "河北中兴汽车制造有限公司"
+   ]
+  },
+  {
+   "kw": "睿蓝RL9",
+   "gap_rows": 1,
+   "batches": [
+    "362"
+   ],
+   "enterprises": [
+    "重庆睿蓝汽车制造有限公司"
+   ]
+  },
+  {
+   "kw": "EC36Ⅱ",
+   "gap_rows": 1,
+   "batches": [
+    "363"
+   ],
+   "enterprises": [
+    "东风小康汽车有限公司"
+   ]
+  },
+  {
+   "kw": "悠宝利A3",
+   "gap_rows": 1,
+   "batches": [
+    "363"
+   ],
+   "enterprises": [
+    "观致汽车有限公司"
+   ]
+  },
+  {
+   "kw": "风景G5",
+   "gap_rows": 1,
+   "batches": [
+    "365"
+   ],
+   "enterprises": [
+    "北汽福田汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "揽胜极光L",
+   "gap_rows": 1,
+   "batches": [
+    "365"
+   ],
+   "enterprises": [
+    "奇瑞捷豹路虎汽车有限公司"
+   ]
+  },
+  {
+   "kw": "博腾V2 EV",
+   "gap_rows": 1,
+   "batches": [
+    "366"
+   ],
+   "enterprises": [
+    "北汽瑞翔汽车有限公司"
+   ]
+  },
+  {
+   "kw": "斯威大虎",
+   "gap_rows": 1,
+   "batches": [
+    "366"
+   ],
+   "enterprises": [
+    "华晨鑫源重庆汽车有限公司"
+   ]
+  },
+  {
+   "kw": "MIFA 5",
+   "gap_rows": 1,
+   "batches": [
+    "367"
+   ],
+   "enterprises": [
+    "上汽大通汽车有限公司"
+   ]
+  },
+  {
+   "kw": "帕拉索EV",
+   "gap_rows": 1,
+   "batches": [
+    "368"
+   ],
+   "enterprises": [
+    "郑州日产汽车有限公司"
+   ]
+  },
+  {
+   "kw": "S50",
+   "gap_rows": 1,
+   "batches": [
+    "369"
+   ],
+   "enterprises": [
+    "东风柳州汽车有限公司"
+   ]
+  },
+  {
+   "kw": "大蚂蚁",
+   "gap_rows": 1,
+   "batches": [
+    "369"
+   ],
+   "enterprises": [
+    "奇瑞新能源汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "瑞行EV",
+   "gap_rows": 1,
+   "batches": [
+    "369"
+   ],
+   "enterprises": [
+    "河北长安汽车有限公司"
+   ]
+  },
+  {
+   "kw": "EC36Ⅱ,ES50",
+   "gap_rows": 1,
+   "batches": [
+    "370"
+   ],
+   "enterprises": [
+    "东风小康汽车有限公司"
+   ]
+  },
+  {
+   "kw": "MIFA 7;大通大家7;大家7",
+   "gap_rows": 1,
+   "batches": [
+    "370"
+   ],
+   "enterprises": [
+    "上汽大通汽车有限公司"
+   ]
+  },
+  {
+   "kw": "Hyper SSR",
+   "gap_rows": 1,
+   "batches": [
+    "374"
+   ],
+   "enterprises": [
+    "广汽乘用车有限公司"
+   ]
+  },
+  {
+   "kw": "CS01",
+   "gap_rows": 1,
+   "batches": [
+    "374"
+   ],
+   "enterprises": [
+    "湖南猎豹汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "MILA",
+   "gap_rows": 1,
+   "batches": [
+    "374"
+   ],
+   "enterprises": [
+    "上汽大通汽车有限公司"
+   ]
+  },
+  {
+   "kw": "东风小康风光E380",
+   "gap_rows": 1,
+   "batches": [
+    "375"
+   ],
+   "enterprises": [
+    "东风小康汽车有限公司"
+   ]
+  },
+  {
+   "kw": "游艇,游艇V9",
+   "gap_rows": 1,
+   "batches": [
+    "375"
+   ],
+   "enterprises": [
+    "东风柳州汽车有限公司"
+   ]
+  },
+  {
+   "kw": "山海L9",
+   "gap_rows": 1,
+   "batches": [
+    "375"
+   ],
+   "enterprises": [
+    "奇瑞商用车(安徽)有限公司"
+   ]
+  },
+  {
+   "kw": "山海L7 C-DM,X70 C-DM",
+   "gap_rows": 1,
+   "batches": [
+    "377"
+   ],
+   "enterprises": [
+    "奇瑞商用车(安徽)有限公司"
+   ]
+  },
+  {
+   "kw": "游艇,游艇600,U-tour,游艇PHEV,U-tour PHEV",
+   "gap_rows": 1,
+   "batches": [
+    "378"
+   ],
+   "enterprises": [
+    "东风柳州汽车有限公司"
+   ]
+  },
+  {
+   "kw": "雷霆",
+   "gap_rows": 1,
+   "batches": [
+    "382"
+   ],
+   "enterprises": [
+    "东风柳州汽车有限公司"
+   ]
+  },
+  {
+   "kw": "GLC 350 e L 4MATIC",
+   "gap_rows": 1,
+   "batches": [
+    "383"
+   ],
+   "enterprises": [
+    "北京奔驰汽车有限公司"
+   ]
+  },
+  {
+   "kw": "星海V9",
+   "gap_rows": 1,
+   "batches": [
+    "383"
+   ],
+   "enterprises": [
+    "东风柳州汽车有限公司"
+   ]
+  },
+  {
+   "kw": "Hyper  SSR",
+   "gap_rows": 1,
+   "batches": [
+    "384"
+   ],
+   "enterprises": [
+    "广汽埃安新能源汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "菱智REEV",
+   "gap_rows": 1,
+   "batches": [
+    "384"
+   ],
+   "enterprises": [
+    "东风柳州汽车有限公司"
+   ]
+  },
+  {
+   "kw": "开瑞E5",
+   "gap_rows": 1,
+   "batches": [
+    "387"
+   ],
+   "enterprises": [
+    "奇瑞商用车(安徽)有限公司"
+   ]
+  },
+  {
+   "kw": "钇为3",
+   "gap_rows": 1,
+   "batches": [
+    "390"
+   ],
+   "enterprises": [
+    "安徽江淮汽车集团股份有限公司"
+   ]
+  },
+  {
+   "kw": "传祺S9",
+   "gap_rows": 1,
+   "batches": [
+    "394"
+   ],
+   "enterprises": [
+    "广汽传祺汽车有限公司"
+   ]
+  },
+  {
+   "kw": "HL",
+   "gap_rows": 1,
+   "batches": [
+    "395"
+   ],
+   "enterprises": [
+    "广汽埃安新能源汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "睿蓝蓝精灵、睿蓝蓝气球、睿蓝泡泡、睿蓝萤火",
+   "gap_rows": 1,
+   "batches": [
+    "396"
+   ],
+   "enterprises": []
+  },
+  {
+   "kw": "全新大V DD-i",
+   "gap_rows": 1,
+   "batches": [
+    "396"
+   ],
+   "enterprises": [
+    "东风汽车有限公司"
+   ]
+  },
+  {
+   "kw": "风神L8",
+   "gap_rows": 1,
+   "batches": [
+    "396"
+   ],
+   "enterprises": []
+  },
+  {
+   "kw": "U9",
+   "gap_rows": 1,
+   "batches": [
+    "398"
+   ],
+   "enterprises": [
+    "比亚迪汽车工业有限公司"
+   ]
+  },
+  {
+   "kw": "岚图追光",
+   "gap_rows": 1,
+   "batches": [
+    "398"
+   ],
+   "enterprises": [
+    "岚图汽车科技有限公司"
+   ]
+  },
+  {
+   "kw": "BJ40e",
+   "gap_rows": 1,
+   "batches": [
+    "399"
+   ],
+   "enterprises": []
+  },
+  {
+   "kw": "BJ60e",
+   "gap_rows": 1,
+   "batches": [
+    "399"
+   ],
+   "enterprises": []
+  },
+  {
+   "kw": "精灵#5",
+   "gap_rows": 1,
+   "batches": [
+    "399"
+   ],
+   "enterprises": [
+    "浙江豪情汽车制造有限公司"
+   ]
+  },
+  {
+   "kw": "αS6 HI",
+   "gap_rows": 1,
+   "batches": [
+    "401"
+   ],
+   "enterprises": []
+  },
+  {
+   "kw": "旅行者,山海T2",
+   "gap_rows": 1,
+   "batches": [
+    "401"
+   ],
+   "enterprises": [
+    "奇瑞汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "风云T8L C-DM,风云T8 C-DM,风云T8PRO C-DM",
+   "gap_rows": 1,
+   "batches": [
+    "402"
+   ],
+   "enterprises": [
+    "奇瑞新能源汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "C 350 L 4MATIC,C 350 LL 4MATIC",
+   "gap_rows": 1,
+   "batches": [
+    "408"
+   ],
+   "enterprises": []
+  },
+  {
+   "kw": "S3,βS3",
+   "gap_rows": 1,
+   "batches": [
+    "409"
+   ],
+   "enterprises": [
+    "北京新能源汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "乐福350,乐福450",
+   "gap_rows": 1,
+   "batches": [
+    "397"
+   ],
+   "enterprises": [
+    "北汽福田汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "V23S,V23",
+   "gap_rows": 1,
+   "batches": [
+    "397"
+   ],
+   "enterprises": [
+    "奇瑞新能源汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "S07,S07EV",
+   "gap_rows": 1,
+   "batches": [
+    "397"
+   ],
+   "enterprises": [
+    "重庆长安汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "eπ007,eπ007+",
+   "gap_rows": 1,
+   "batches": [
+    "397"
+   ],
+   "enterprises": [
+    "东风汽车集团有限公司"
+   ]
+  },
+  {
+   "kw": "STERRA E05",
+   "gap_rows": 1,
+   "batches": [
+    "397"
+   ],
+   "enterprises": [
+    "奇瑞汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "风云T8L C-DM",
+   "gap_rows": 1,
+   "batches": [
+    "397"
+   ],
+   "enterprises": [
+    "奇瑞汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "比亚迪秦L",
+   "gap_rows": 1,
+   "batches": [
+    "397"
+   ],
+   "enterprises": [
+    "比亚迪汽车工业有限公司"
+   ]
+  },
+  {
+   "kw": "方程豹钛9",
+   "gap_rows": 1,
+   "batches": [
+    "411"
+   ],
+   "enterprises": [
+    "比亚迪汽车有限公司"
+   ]
+  },
+  {
+   "kw": "ID.4 X",
+   "gap_rows": 1,
+   "batches": [
+    "341"
+   ],
+   "enterprises": [
+    "上汽大众汽车有限公司"
+   ]
+  },
+  {
+   "kw": "HYCAN 007",
+   "gap_rows": 1,
+   "batches": [
+    "341"
+   ],
+   "enterprises": [
+    "广汽乘用车有限公司"
+   ]
+  },
+  {
+   "kw": "HYCAN007",
+   "gap_rows": 1,
+   "batches": [
+    "341"
+   ],
+   "enterprises": [
+    "广汽乘用车有限公司"
+   ]
+  },
+  {
+   "kw": "吉利星越",
+   "gap_rows": 1,
+   "batches": [
+    "341"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "FY11,星越",
+   "gap_rows": 1,
+   "batches": [
+    "341"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "悦虎ES3,悦虎3,悦虎",
+   "gap_rows": 1,
+   "batches": [
+    "342"
+   ],
+   "enterprises": [
+    "成都大运汽车集团有限公司"
+   ]
+  },
+  {
+   "kw": "S60 T8",
+   "gap_rows": 1,
+   "batches": [
+    "342"
+   ],
+   "enterprises": [
+    "大庆沃尔沃汽车制造有限公司"
+   ]
+  },
+  {
+   "kw": "05 PHEV",
+   "gap_rows": 1,
+   "batches": [
+    "342"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "长安之星9",
+   "gap_rows": 1,
+   "batches": [
+    "343"
+   ],
+   "enterprises": [
+    "河北长安汽车有限公司"
+   ]
+  },
+  {
+   "kw": "S90 T8 版",
+   "gap_rows": 1,
+   "batches": [
+    "343"
+   ],
+   "enterprises": [
+    "大庆沃尔沃汽车制造有限公司"
+   ]
+  },
+  {
+   "kw": "02 PHEV",
+   "gap_rows": 1,
+   "batches": [
+    "343"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "上汽MAXUS EUNIQ6 PLUG IN",
+   "gap_rows": 1,
+   "batches": [
+    "343"
+   ],
+   "enterprises": [
+    "上汽大通汽车有限公司"
+   ]
+  },
+  {
+   "kw": "发现运动版",
+   "gap_rows": 1,
+   "batches": [
+    "343"
+   ],
+   "enterprises": [
+    "奇瑞捷豹路虎汽车有限公司"
+   ]
+  },
+  {
+   "kw": "玛奇朵PHEV",
+   "gap_rows": 1,
+   "batches": [
+    "343"
+   ],
+   "enterprises": [
+    "长城汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "大指挥官e",
+   "gap_rows": 1,
+   "batches": [
+    "344"
+   ],
+   "enterprises": [
+    "广汽菲亚特克莱斯勒汽车有限公司"
+   ]
+  },
+  {
+   "kw": "01 PHEV",
+   "gap_rows": 1,
+   "batches": [
+    "344"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "MAGOTAN GTE",
+   "gap_rows": 1,
+   "batches": [
+    "345"
+   ],
+   "enterprises": [
+    "一汽-大众汽车有限公司"
+   ]
+  },
+  {
+   "kw": "TAYRON GTE",
+   "gap_rows": 1,
+   "batches": [
+    "345"
+   ],
+   "enterprises": [
+    "一汽-大众汽车有限公司"
+   ]
+  },
+  {
+   "kw": "RS-5",
+   "gap_rows": 1,
+   "batches": [
+    "345"
+   ],
+   "enterprises": [
+    "上汽通用五菱汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "06 PHEV",
+   "gap_rows": 1,
+   "batches": [
+    "345"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "PASSAT PHEV",
+   "gap_rows": 1,
+   "batches": [
+    "347"
+   ],
+   "enterprises": [
+    "上汽大众汽车有限公司"
+   ]
+  },
+  {
+   "kw": "TIGUAN L PHEV",
+   "gap_rows": 1,
+   "batches": [
+    "347"
+   ],
+   "enterprises": [
+    "上汽大众汽车有限公司"
+   ]
+  },
+  {
+   "kw": "TX",
+   "gap_rows": 1,
+   "batches": [
+    "347"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "e-THARU",
+   "gap_rows": 1,
+   "batches": [
+    "348"
+   ],
+   "enterprises": [
+    "上汽大众汽车有限公司"
+   ]
+  },
+  {
+   "kw": "X30LEV",
+   "gap_rows": 1,
+   "batches": [
+    "348"
+   ],
+   "enterprises": [
+    "华晨鑫源重庆汽车有限公司"
+   ]
+  },
+  {
+   "kw": "上汽MAXUS EUNIQ5 PLUG IN",
+   "gap_rows": 1,
+   "batches": [
+    "348"
+   ],
+   "enterprises": [
+    "上汽大通汽车有限公司"
+   ]
+  },
+  {
+   "kw": "传祺GS4 PHEV",
+   "gap_rows": 1,
+   "batches": [
+    "348"
+   ],
+   "enterprises": [
+    "广汽乘用车有限公司"
+   ]
+  },
+  {
+   "kw": "本田BREEZE",
+   "gap_rows": 1,
+   "batches": [
+    "348"
+   ],
+   "enterprises": [
+    "广汽本田汽车有限公司"
+   ]
+  },
+  {
+   "kw": "LX",
+   "gap_rows": 1,
+   "batches": [
+    "348"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "卡罗拉 双擎E+",
+   "gap_rows": 1,
+   "batches": [
+    "349"
+   ],
+   "enterprises": [
+    "天津一汽丰田汽车有限公司"
+   ]
+  },
+  {
+   "kw": "LEVIN",
+   "gap_rows": 1,
+   "batches": [
+    "349"
+   ],
+   "enterprises": [
+    "广汽丰田汽车有限公司"
+   ]
+  },
+  {
+   "kw": "思威",
+   "gap_rows": 1,
+   "batches": [
+    "349"
+   ],
+   "enterprises": [
+    "东风本田汽车有限公司"
+   ]
+  },
+  {
+   "kw": "ID.4 CROZZ",
+   "gap_rows": 1,
+   "batches": [
+    "350"
+   ],
+   "enterprises": [
+    "一汽-大众汽车有限公司"
+   ]
+  },
+  {
+   "kw": "奔腾E01",
+   "gap_rows": 1,
+   "batches": [
+    "350"
+   ],
+   "enterprises": [
+    "中国第一汽车集团有限公司"
+   ]
+  },
+  {
+   "kw": "比亚迪e6",
+   "gap_rows": 1,
+   "batches": [
+    "350"
+   ],
+   "enterprises": [
+    "比亚迪汽车工业有限公司"
+   ]
+  },
+  {
+   "kw": "VELITE 6",
+   "gap_rows": 1,
+   "batches": [
+    "350"
+   ],
+   "enterprises": [
+    "上汽通用汽车有限公司"
+   ]
+  },
+  {
+   "kw": "X70EV;X70SEV;远鉴X70SEV",
+   "gap_rows": 1,
+   "batches": [
+    "351"
+   ],
+   "enterprises": [
+    "奇瑞商用车(安徽)有限公司"
+   ]
+  },
+  {
+   "kw": "SONGSAN",
+   "gap_rows": 1,
+   "batches": [
+    "351"
+   ],
+   "enterprises": [
+    "比亚迪汽车有限公司"
+   ]
+  },
+  {
+   "kw": "VV7GT PHEV",
+   "gap_rows": 1,
+   "batches": [
+    "351"
+   ],
+   "enterprises": [
+    "长城汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "6P",
+   "gap_rows": 1,
+   "batches": [
+    "352"
+   ],
+   "enterprises": [
+    "海马汽车有限公司"
+   ]
+  },
+  {
+   "kw": "X7",
+   "gap_rows": 1,
+   "batches": [
+    "352"
+   ],
+   "enterprises": [
+    "北汽(广州)汽车有限公司"
+   ]
+  },
+  {
+   "kw": "大道EV",
+   "gap_rows": 1,
+   "batches": [
+    "377"
+   ],
+   "enterprises": [
+    "江铃汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "悦也plus",
+   "gap_rows": 1,
+   "batches": [
+    "379"
+   ],
+   "enterprises": [
+    "上汽通用五菱汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "风景i7,祥菱U7",
+   "gap_rows": 1,
+   "batches": [
+    "391"
+   ],
+   "enterprises": [
+    "北汽福田汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "AION Y",
+   "gap_rows": 1,
+   "batches": [
+    "395"
+   ],
+   "enterprises": [
+    "广汽埃安新能源汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "银河星耀8",
+   "gap_rows": 1,
+   "batches": [
+    "398"
+   ],
+   "enterprises": [
+    "浙江吉利汽车有限公司"
+   ]
+  },
+  {
+   "kw": "风景i7",
+   "gap_rows": 1,
+   "batches": [
+    "399"
+   ],
+   "enterprises": [
+    "北汽福田汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "风景i9+",
+   "gap_rows": 1,
+   "batches": [
+    "399"
+   ],
+   "enterprises": [
+    "北汽福田汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "吉运E6",
+   "gap_rows": 1,
+   "batches": [
+    "399"
+   ],
+   "enterprises": [
+    "华晨雷诺金杯汽车有限公司"
+   ]
+  },
+  {
+   "kw": "悦意03",
+   "gap_rows": 1,
+   "batches": [
+    "400"
+   ],
+   "enterprises": [
+    "中国第一汽车集团有限公司"
+   ]
+  },
+  {
+   "kw": "祥菱",
+   "gap_rows": 1,
+   "batches": [
+    "400"
+   ],
+   "enterprises": [
+    "北汽福田汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "风景i9",
+   "gap_rows": 1,
+   "batches": [
+    "400"
+   ],
+   "enterprises": [
+    "北汽福田汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "睿行EM80",
+   "gap_rows": 1,
+   "batches": [
+    "400"
+   ],
+   "enterprises": [
+    "河北长安汽车有限公司"
+   ]
+  },
+  {
+   "kw": "睿行EM80Ⅱ",
+   "gap_rows": 1,
+   "batches": [
+    "400"
+   ],
+   "enterprises": [
+    "河北长安汽车有限公司"
+   ]
+  },
+  {
+   "kw": "INJOY L",
+   "gap_rows": 1,
+   "batches": [
+    "400"
+   ],
+   "enterprises": [
+    "海马汽车有限公司"
+   ]
+  },
+  {
+   "kw": "睿行EM60Ⅱ",
+   "gap_rows": 1,
+   "batches": [
+    "401"
+   ],
+   "enterprises": [
+    "河北长安汽车有限公司"
+   ]
+  },
+  {
+   "kw": "MILA 1,大拿 M1,大拿 V1,大拿 V1L",
+   "gap_rows": 1,
+   "batches": [
+    "401"
+   ],
+   "enterprises": [
+    "上汽大通汽车有限公司"
+   ]
+  },
+  {
+   "kw": "五菱扬光",
+   "gap_rows": 1,
+   "batches": [
+    "402"
+   ],
+   "enterprises": [
+    "上汽通用五菱汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "PASSAT ePRO",
+   "gap_rows": 1,
+   "batches": [
+    "402"
+   ],
+   "enterprises": [
+    "上汽大众汽车有限公司"
+   ]
+  },
+  {
+   "kw": "星光L",
+   "gap_rows": 1,
+   "batches": [
+    "402"
+   ],
+   "enterprises": [
+    "上汽通用五菱汽车股份有限公司"
+   ]
+  },
+  {
+   "kw": "V919,V919荣耀版",
+   "gap_rows": 1,
+   "batches": [
+    "408"
+   ],
+   "enterprises": [
+    "河北长安汽车有限公司"
+   ]
+  },
+  {
+   "kw": "五菱荣光L",
+   "gap_rows": 1,
+   "batches": [
+    "408"
+   ],
+   "enterprises": [
+    "上汽通用五菱汽车股份有限公司"
+   ]
+  }
+ ]
+}

@@ -2010,26 +2010,6 @@
    "note": "sole_candidate_brand_ok score=1 brand=腾势汽车"
   },
   {
-   "kw": "V25",
-   "sid": "",
-   "series": "",
-   "ok": false,
-   "via": "direct-search",
-   "time": "09-22 16:36",
-   "reason": "no_candidate",
-   "candidates": []
-  },
-  {
-   "kw": "V25",
-   "sid": "",
-   "series": "",
-   "ok": false,
-   "via": "direct-search",
-   "time": "09-22 16:36",
-   "reason": "no_candidate",
-   "candidates": []
-  },
-  {
    "kw": "小米澎程N90",
    "sid": "25339",
    "series": "小米澎程N90",
@@ -2166,16 +2146,6 @@
   },
   {
    "kw": "银河星耀6EF",
-   "sid": "",
-   "series": "",
-   "ok": false,
-   "via": "direct-search",
-   "time": "09-22 16:37",
-   "reason": "no_candidate",
-   "candidates": []
-  },
-  {
-   "kw": "V9",
    "sid": "",
    "series": "",
    "ok": false,
@@ -3259,6 +3229,744 @@
    "series": "大蚂蚁",
    "ok": true,
    "note": "底表裸名别名（行通用名称=eQ5）；门禁 09-21"
+  },
+  {
+   "kw": "U2",
+   "sid": "6150",
+   "series": "江南U2",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:11",
+   "note": "sole_candidate_brand_ok score=1 brand=江南汽车"
+  },
+  {
+   "kw": "M817",
+   "sid": "25412",
+   "series": "猛士M817",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:11",
+   "note": "sole_candidate_brand_ok score=1 brand=猛士科技"
+  },
+  {
+   "kw": "红旗E-HS9",
+   "sid": "4146",
+   "series": "红旗E-HS9",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:12",
+   "note": "sole_candidate_brand_ok score=0 brand=一汽红旗"
+  },
+  {
+   "kw": "凌宝BOX",
+   "sid": "4503",
+   "series": "凌宝BOX",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:12",
+   "note": "sole_candidate_brand_ok score=0 brand=吉麦新能源"
+  },
+  {
+   "kw": "比亚迪宋PLUS",
+   "sid": "4539",
+   "series": "宋PLUS",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:12",
+   "note": "sole_candidate_brand_ok score=1 brand=比亚迪"
+  },
+  {
+   "kw": "领动 插电混动",
+   "sid": "3378",
+   "series": "领动PHEV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:12",
+   "note": "sole_candidate_brand_ok score=2 brand=北京现代"
+  },
+  {
+   "kw": "传祺S7",
+   "sid": "25071",
+   "series": "传祺向往S7",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:12",
+   "note": "sole_candidate_brand_ok score=2 brand=广汽传祺"
+  },
+  {
+   "kw": "V-ONLINE",
+   "sid": "5153",
+   "series": "启辰大V",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:12",
+   "note": "sole_candidate_brand_ok score=2 brand=东风日产"
+  },
+  {
+   "kw": "旅行者C-DM",
+   "sid": "8943",
+   "series": "捷途旅行者C-DM",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:12",
+   "note": "sole_candidate_brand_ok score=1 brand=奇瑞汽车"
+  },
+  {
+   "kw": "银河V900",
+   "sid": "25711",
+   "series": "银河V900",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:12",
+   "note": "sole_candidate_brand_ok score=0 brand=吉利银河"
+  },
+  {
+   "kw": "红旗HQ9 PHEV",
+   "sid": "8948",
+   "series": "红旗HQ9 PHEV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:12",
+   "note": "sole_candidate_brand_ok score=0 brand=一汽红旗"
+  },
+  {
+   "kw": "星光560",
+   "sid": "25610",
+   "series": "星光560",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:12",
+   "note": "sole_candidate_brand_ok score=0 brand=上汽通用五菱"
+  },
+  {
+   "kw": "RAV4",
+   "sid": "546",
+   "series": "RAV4荣放",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "note": "sole_candidate_brand_ok score=1 brand=一汽丰田"
+  },
+  {
+   "kw": "WILDLANDER",
+   "sid": "4172",
+   "series": "威兰达",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "note": "sole_candidate_brand_ok score=2 brand=广汽丰田"
+  },
+  {
+   "kw": "嘉际",
+   "sid": "2167",
+   "series": "嘉际",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "note": "sole_candidate_brand_ok score=0 brand=吉利汽车"
+  },
+  {
+   "kw": "吉利FY11",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "冒险家",
+   "sid": "3981",
+   "series": "冒险家",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "note": "sole_candidate_brand_ok score=0 brand=长安林肯"
+  },
+  {
+   "kw": "EQC 400 4MATIC",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "EQC 350 4MATIC",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "哪吒UPro",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "宝马5系插电式混合动力",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "摩卡PHEV",
+   "sid": "4867",
+   "series": "摩卡PHEV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "note": "sole_candidate_brand_ok score=0 brand=长城汽车"
+  },
+  {
+   "kw": "腾势X",
+   "sid": "4305",
+   "series": "腾势X BEV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "note": "sole_candidate_brand_ok score=1 brand=腾势汽车"
+  },
+  {
+   "kw": "博瑞",
+   "sid": "2799",
+   "series": "博瑞",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "note": "sole_candidate_brand_ok score=0 brand=吉利汽车"
+  },
+  {
+   "kw": "e-tron",
+   "sid": "",
+   "series": "奥迪e-tron",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "4543",
+     "series_name": "奥迪e-tron",
+     "brand_name": "一汽奥迪"
+    }
+   ]
+  },
+  {
+   "kw": "ES6",
+   "sid": "",
+   "series": "蔚来ES6",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "2843",
+     "series_name": "蔚来ES6",
+     "brand_name": "蔚来"
+    }
+   ]
+  },
+  {
+   "kw": "EC6",
+   "sid": "",
+   "series": "蔚来EC6",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "4357",
+     "series_name": "蔚来EC6",
+     "brand_name": "蔚来"
+    }
+   ]
+  },
+  {
+   "kw": "ES8",
+   "sid": "",
+   "series": "蔚来ES8",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "1616",
+     "series_name": "蔚来ES8",
+     "brand_name": "蔚来"
+    }
+   ]
+  },
+  {
+   "kw": "03 PHEV",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "比亚迪秦Pro",
+   "sid": "3007",
+   "series": "秦Pro",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:13",
+   "note": "sole_candidate_brand_ok score=1 brand=比亚迪"
+  },
+  {
+   "kw": "理想ONE",
+   "sid": "3059",
+   "series": "理想ONE",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:14",
+   "note": "sole_candidate_brand_ok score=0 brand=理想汽车"
+  },
+  {
+   "kw": "VV7 PHEV",
+   "sid": "3714",
+   "series": "魏牌 VV7 PHEV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:14",
+   "note": "sole_candidate_brand_ok score=1 brand=长城汽车"
+  },
+  {
+   "kw": "VX6",
+   "sid": "6328",
+   "series": "启辰VX6",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:14",
+   "note": "sole_candidate_brand_ok score=1 brand=东风日产"
+  },
+  {
+   "kw": "Q6L",
+   "sid": "9440",
+   "series": "奥迪Q6L e-tron",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:14",
+   "note": "sole_candidate_brand_ok score=1 brand=一汽奥迪"
+  },
+  {
+   "kw": "易电易行FM3Pro",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:14",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "睿蓝RL9",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:14",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "仰望U7",
+   "sid": "9324",
+   "series": "仰望U7 EV",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:26",
+   "note": "brand_ok(1家) score=1 brand=仰望"
+  },
+  {
+   "kw": "FORD BRONCO BASECAMP",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:26",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "eπ007+",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:26",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "传祺AION V",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:27",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "风光MINIEV,蓝电糖果",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:27",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "U5",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:27",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "A5",
+   "sid": "",
+   "series": "奥迪A5",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:27",
+   "reason": "name_mismatch_or_brand_conflict",
+   "candidates": [
+    {
+     "sid": "76",
+     "series_name": "奥迪A5",
+     "brand_name": "奥迪"
+    },
+    {
+     "sid": "6210",
+     "series_name": "赛力斯A5",
+     "brand_name": "奥迪"
+    },
+    {
+     "sid": "24521",
+     "series_name": "奥迪A5L",
+     "brand_name": "奥迪"
+    }
+   ]
+  },
+  {
+   "kw": "E 350 e L",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:27",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "E-M8",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:27",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "哈弗大狗",
+   "sid": "4563",
+   "series": "哈弗大狗",
+   "ok": true,
+   "via": "direct-search",
+   "time": "09-27 11:27",
+   "note": "brand_ok(1家) score=0 brand=哈弗"
+  },
+  {
+   "kw": "山海L6 C-DM",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:27",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "V9",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:27",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "V25",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "direct-search",
+   "time": "09-27 11:27",
+   "reason": "no_candidate",
+   "candidates": []
+  },
+  {
+   "kw": "V9",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "manual-drop",
+   "note": "kw跨品牌(极狐问道V9+魏派V9X),弃——09-17撞名教训",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "V25",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "manual-drop",
+   "note": "DCD未上架(奇瑞409/411批新车型)",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "FORD BRONCO BASECAMP",
+   "sid": "9350",
+   "series": "福特烈马",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe bronco/烈马 江铃/长安福特",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "eπ007+",
+   "sid": "9349",
+   "series": "奕派007",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe 奕派007 东风乘用车",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "传祺AION V",
+   "sid": "4426",
+   "series": "AION V",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe AION V 广汽埃安",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "风光MINIEV,蓝电糖果",
+   "sid": "5389",
+   "series": "风光MINIEV",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe 风光miniev 东风小康",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "U5",
+   "sid": "2818",
+   "series": "爱驰U5",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe 爱驰u5 江铃控股",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "E 350 e L",
+   "sid": "2716",
+   "series": "奔驰E级PHEV",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe e级新能源 北京奔驰",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "E-M8",
+   "sid": "24705",
+   "series": "领途E-M8",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe 领途em8",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "山海L6 C-DM",
+   "sid": "8976",
+   "series": "捷途山海L6",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe 山海l6 捷途",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "V9",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "manual-drop",
+   "note": "kw跨品牌(极狐问道V9+魏派V9X)弃",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "V25",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "manual-drop",
+   "note": "DCD未上架(奇瑞新车型)",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "吉利FY11",
+   "sid": "3152",
+   "series": "星越",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe 星越 吉利 FY11代号",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "EQC 400 4MATIC",
+   "sid": "3719",
+   "series": "奔驰EQC",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe 奔驰eqc 北京奔驰",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "EQC 350 4MATIC",
+   "sid": "3719",
+   "series": "奔驰EQC",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe 奔驰eqc 北京奔驰",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "哪吒UPro",
+   "sid": "3275",
+   "series": "哪吒U",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe 哪吒u 合众",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "宝马5系插电式混合动力",
+   "sid": "147",
+   "series": "宝马5系PHEV",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe 宝马5系新能源 华晨宝马",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "e-tron",
+   "sid": "4543",
+   "series": "奥迪e-tron",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe etron 一汽-大众(DCD品牌一汽奥迪)",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "03 PHEV",
+   "sid": "3346",
+   "series": "领克03 PHEV",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe 领克03新能源 吉利",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "帕拉索",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "manual-drop",
+   "note": "皮卡商用车(双原则)",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "海狮王EV",
+   "sid": "",
+   "series": "",
+   "ok": false,
+   "via": "manual-drop",
+   "note": "金杯商用车(双原则)",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "睿蓝RL9",
+   "sid": "6003",
+   "series": "睿蓝9",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "probe 睿蓝9 睿蓝",
+   "time": "09-27 11:36"
+  },
+  {
+   "kw": "iA5",
+   "sid": "4087",
+   "series": "广汽丰田iA5",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "kw A5→iA5 防 ora5⊂ 撞名(09-17教训)",
+   "time": "09-27 11:38"
+  },
+  {
+   "kw": "ES6",
+   "sid": "2843",
+   "series": "蔚来ES6",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "brand=蔚来",
+   "time": "09-27 11:45"
+  },
+  {
+   "kw": "EC6",
+   "sid": "4357",
+   "series": "蔚来EC6",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "brand=蔚来",
+   "time": "09-27 11:45"
+  },
+  {
+   "kw": "ES8",
+   "sid": "1616",
+   "series": "蔚来ES8",
+   "ok": true,
+   "via": "direct-search-manual",
+   "note": "brand=蔚来",
+   "time": "09-27 11:45"
   }
  ],
  "field_map": {

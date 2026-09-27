@@ -68,6 +68,25 @@ def build_kw_brands():
     return out
 
 
+def _ala_series_cards(cell):
+    """cell_type=26 ala 聚合卡（is_car_series_list=1）：display.serie[] 内嵌车系，
+    sid 在 murl 的 cid= 参数，品牌在 display.url 的 brand_name= 参数。"""
+    disp = cell.get('display') or {}
+    out = []
+    if not disp.get('is_car_series_list'):
+        return out
+    m = re.search(r'brand_name=([^&]+)', str(disp.get('url') or ''))
+    brand = urllib.parse.unquote(m.group(1)) if m else ''
+    for it in disp.get('serie') or []:
+        if not isinstance(it, dict):
+            continue
+        mm = re.search(r'cid=(\d+)', str(it.get('murl') or ''))
+        nm = str(it.get('name') or '')
+        if mm and nm:
+            out.append({'sid': mm.group(1), 'series_name': nm, 'brand_name': brand})
+    return out
+
+
 def search_candidates(ch, kw):
     from urllib.request import Request, urlopen
     q = urllib.parse.quote(kw)
@@ -78,6 +97,15 @@ def search_candidates(ch, kw):
     for cell in sd.get('data') or []:
         if not isinstance(cell, dict):
             continue
+        # ala 聚合卡：serie[] 内嵌车系列表（仰望U7 等查询的真实形态）
+        if cell.get('cell_type') == 26:
+            ala = _ala_series_cards(cell)
+            if ala:
+                for c in ala:
+                    if c['sid'] not in seen:
+                        seen.add(c['sid'])
+                        cands.append(c)
+                continue
         # 车系卡：cell_type=26，名字/品牌在 display 子对象
         disp = cell.get('display') or {}
         sid = cell.get('series_id')
