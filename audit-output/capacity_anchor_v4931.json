@@ -1,0 +1,1548 @@
+{
+ "created": "2026-09-28",
+ "纪律": "配置签名锚定=续航±8km+整备±40kg 双信号唯一命中",
+ "stats": {
+  "keep_same": 14,
+  "amb_3": 4,
+  "amb_2": 9,
+  "fix_anchored": 2,
+  "amb_7": 2,
+  "amb_9": 4,
+  "amb_5": 3,
+  "amb_4": 1,
+  "review_rejected": 2
+ },
+ "proposals": [
+  {
+   "batch": "377",
+   "model": "QCJ6520MT6HEV7",
+   "generic": "腾势D9",
+   "enterprise": "比亚迪汽车工业有限公司",
+   "cur_capacity": "40",
+   "cur_range": "140",
+   "cur_cons": "23.3",
+   "implied_cap": 32.6,
+   "dcd_caps": [
+    40.0,
+    58.5,
+    66.5
+   ],
+   "dcd_years": [
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "series_name": "腾势D9",
+   "sid": 6669,
+   "evidence": [
+    [
+     2024,
+     20.39
+    ],
+    [
+     2024,
+     40.0
+    ],
+    [
+     2024,
+     103.36
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    20.39,
+    40.0,
+    103.36
+   ],
+   "cur_cw": "2750",
+   "power_type": "PHEV"
+  },
+  {
+   "batch": "378",
+   "model": "NAL6492BSEVA2",
+   "generic": "EC7",
+   "enterprise": "蔚来汽车科技（安徽）有限公司",
+   "cur_capacity": "70/75/100/150",
+   "cur_range": "455",
+   "cur_cons": "18.9",
+   "implied_cap": 86.0,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "蔚来EC7",
+   "sid": 6994,
+   "evidence": [
+    [
+     2024,
+     75.0
+    ],
+    [
+     2024,
+     100.0
+    ]
+   ],
+   "verdict": "AMBIG_3",
+   "eligible_values": [
+    75.0,
+    100.0
+   ],
+   "cur_cw": "2390/2399/2420/2419/2440/2448",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "378",
+   "model": "NAL7002BSEVB1",
+   "generic": "ET7",
+   "enterprise": "蔚来汽车科技（安徽）有限公司",
+   "cur_capacity": "70/75/100/150",
+   "cur_range": "705",
+   "cur_cons": "15.2",
+   "implied_cap": 107.2,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "蔚来ET7",
+   "sid": 5264,
+   "evidence": [
+    [
+     2024,
+     75.0
+    ],
+    [
+     2024,
+     100.0
+    ]
+   ],
+   "verdict": "AMBIG_2",
+   "eligible_values": [
+    75.0,
+    100.0
+   ],
+   "cur_cw": "2414/2349/2429/2449/2384/2404/2369/2434/2379/2399/2469/2479",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "381",
+   "model": "CGC6521BEV2S9",
+   "generic": "远航H8",
+   "enterprise": "成都大运汽车集团有限公司",
+   "cur_capacity": "98",
+   "cur_range": "650",
+   "cur_cons": "17.3",
+   "implied_cap": 112.5,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "远航H8",
+   "sid": 6904,
+   "evidence": [
+    [
+     2024,
+     81.05
+    ],
+    [
+     2024,
+     88.42
+    ],
+    [
+     2024,
+     98.0
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    81.05,
+    88.42,
+    98.0
+   ],
+   "cur_cw": "2640",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "381",
+   "model": "CGC7000BEV2J14",
+   "generic": "远航Y6",
+   "enterprise": "成都大运汽车集团有限公司",
+   "cur_capacity": "98",
+   "cur_range": "720",
+   "cur_cons": "15.4",
+   "implied_cap": 110.9,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "远航Y6",
+   "sid": 6905,
+   "evidence": [
+    [
+     2024,
+     81.05
+    ],
+    [
+     2024,
+     88.42
+    ],
+    [
+     2024,
+     98.0
+    ]
+   ],
+   "verdict": "AMBIG_2",
+   "eligible_values": [
+    81.05,
+    88.42,
+    98.0
+   ],
+   "cur_cw": "2500",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "382",
+   "model": "CGC6521BEV2S10",
+   "generic": "远航H8",
+   "enterprise": "成都大运汽车集团有限公司",
+   "cur_capacity": "98",
+   "cur_range": "700",
+   "cur_cons": "16",
+   "implied_cap": 112.0,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "远航H8",
+   "sid": 6904,
+   "evidence": [
+    [
+     2024,
+     81.05
+    ],
+    [
+     2024,
+     88.42
+    ],
+    [
+     2024,
+     98.0
+    ]
+   ],
+   "verdict": "AMBIG_2",
+   "eligible_values": [
+    81.05,
+    88.42,
+    98.0
+   ],
+   "cur_cw": "2500",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "382",
+   "model": "CGC6521BEV2S11",
+   "generic": "远航H9",
+   "enterprise": "成都大运汽车集团有限公司",
+   "cur_capacity": "98",
+   "cur_range": "650",
+   "cur_cons": "17.3",
+   "implied_cap": 112.5,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "远航H9",
+   "sid": 6906,
+   "evidence": [
+    [
+     2024,
+     98.0
+    ],
+    [
+     2024,
+     120.0
+    ],
+    [
+     2024,
+     150.0
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    98.0,
+    120.0,
+    150.0
+   ],
+   "cur_cw": "2640",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "382",
+   "model": "DFL6470NA53BEV",
+   "generic": "VX6",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "53",
+   "cur_range": "450",
+   "cur_cons": "13.2",
+   "implied_cap": 59.4,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "启辰VX6",
+   "sid": 7099,
+   "evidence": [
+    [
+     2024,
+     53.0
+    ],
+    [
+     2024,
+     62.0
+    ]
+   ],
+   "verdict": "AMBIG_2",
+   "eligible_values": [
+    53.0,
+    62.0
+   ],
+   "cur_cw": "1750",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "382",
+   "model": "THZ7000BEVS411",
+   "generic": "哪吒S",
+   "enterprise": "合众新能源汽车股份有限公司",
+   "cur_capacity": "91",
+   "cur_range": "640",
+   "cur_cons": "16.2",
+   "implied_cap": 103.7,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "哪吒S猎装",
+   "sid": 7598,
+   "evidence": [
+    [
+     2024,
+     43.88
+    ],
+    [
+     2024,
+     64.84
+    ],
+    [
+     2024,
+     91.0
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    43.88,
+    64.84,
+    91.0
+   ],
+   "cur_cw": "2160",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "383",
+   "model": "MR6525BEV12",
+   "generic": "009",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "108",
+   "cur_range": "740",
+   "cur_cons": "16.8",
+   "implied_cap": 124.3,
+   "dcd_caps": [
+    108.0,
+    115.0,
+    140.0
+   ],
+   "dcd_years": [
+    "2024",
+    "2026"
+   ],
+   "series_name": "极氪009",
+   "sid": 6846,
+   "evidence": [
+    [
+     2024,
+     108.0
+    ],
+    [
+     2024,
+     140.0
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    108.0,
+    140.0
+   ],
+   "cur_cw": "2783",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "383",
+   "model": "MR6525BEV13",
+   "generic": "009",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "108",
+   "cur_range": "702",
+   "cur_cons": "17.5",
+   "implied_cap": 122.8,
+   "dcd_caps": [
+    108.0,
+    115.0,
+    140.0
+   ],
+   "dcd_years": [
+    "2024",
+    "2026"
+   ],
+   "series_name": "极氪009",
+   "sid": 6846,
+   "evidence": [
+    [
+     2024,
+     108.0
+    ],
+    [
+     2024,
+     140.0
+    ]
+   ],
+   "verdict": "AMBIG_2",
+   "eligible_values": [
+    108.0,
+    140.0
+   ],
+   "cur_cw": "2910",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "384",
+   "model": "CSA6501LBEV6",
+   "generic": "LS7",
+   "enterprise": "上海汽车集团股份有限公司",
+   "cur_capacity": "83",
+   "cur_range": "620",
+   "cur_cons": "15",
+   "implied_cap": 96.0,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "智己LS7",
+   "sid": 6013,
+   "evidence": [
+    [
+     2024,
+     90.0
+    ],
+    [
+     2024,
+     100.0
+    ]
+   ],
+   "verdict": "REVIEW_REJECTED",
+   "eligible_values": [
+    90.0,
+    100.0
+   ],
+   "cur_cw": "2350/2420",
+   "power_type": "BEV",
+   "fix_value": 100.0,
+   "anchor_name": "2024款 100kWh Max Lux后驱版",
+   "anchor_rng": 705.0,
+   "anchor_cw": 2320.0,
+   "reject_reason": "续航信号未命中：行续航 620 vs 款型续航 705.0（整备单信号兜底不可辩护）"
+  },
+  {
+   "batch": "384",
+   "model": "DFL6470NB51BEV",
+   "generic": "VX6",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "53",
+   "cur_range": "450",
+   "cur_cons": "13.2",
+   "implied_cap": 59.4,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "启辰VX6",
+   "sid": 7099,
+   "evidence": [
+    [
+     2024,
+     53.0
+    ],
+    [
+     2024,
+     62.0
+    ]
+   ],
+   "verdict": "AMBIG_2",
+   "eligible_values": [
+    53.0,
+    62.0
+   ],
+   "cur_cw": "1750",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "384",
+   "model": "DFL6470NB53BEV",
+   "generic": "VX6",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "62",
+   "cur_range": "520",
+   "cur_cons": "13.5",
+   "implied_cap": 70.2,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "启辰VX6",
+   "sid": 7099,
+   "evidence": [
+    [
+     2024,
+     53.0
+    ],
+    [
+     2024,
+     62.0
+    ]
+   ],
+   "verdict": "AMBIG_3",
+   "eligible_values": [
+    53.0,
+    62.0
+   ],
+   "cur_cw": "1842",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "384",
+   "model": "MR7005BEV28",
+   "generic": "银河 E8",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "76",
+   "cur_range": "700",
+   "cur_cons": "12.5",
+   "implied_cap": 87.5,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "银河E8",
+   "sid": 7170,
+   "evidence": [
+    [
+     2025,
+     62.0
+    ],
+    [
+     2025,
+     67.8
+    ],
+    [
+     2025,
+     75.0
+    ],
+    [
+     2025,
+     76.0
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    62.0,
+    67.8,
+    75.0,
+    76.0
+   ],
+   "cur_cw": "2030",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "384",
+   "model": "MR7005BEV29",
+   "generic": "银河 E8",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "62",
+   "cur_range": "575",
+   "cur_cons": "12.4",
+   "implied_cap": 71.3,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "银河E8",
+   "sid": 7170,
+   "evidence": [
+    [
+     2025,
+     62.0
+    ],
+    [
+     2025,
+     67.8
+    ],
+    [
+     2025,
+     75.0
+    ],
+    [
+     2025,
+     76.0
+    ]
+   ],
+   "verdict": "AMBIG_2",
+   "eligible_values": [
+    62.0,
+    67.8,
+    75.0,
+    76.0
+   ],
+   "cur_cw": "1905",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "386",
+   "model": "THZ7000BEVS417",
+   "generic": "哪吒S,S,哪吒SF,SF",
+   "enterprise": "合众新能源汽车股份有限公司",
+   "cur_capacity": "63",
+   "cur_range": "550",
+   "cur_cons": "13.8",
+   "implied_cap": 75.9,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "哪吒S猎装",
+   "sid": 7598,
+   "evidence": [
+    [
+     2024,
+     43.88
+    ],
+    [
+     2024,
+     64.84
+    ],
+    [
+     2024,
+     91.0
+    ]
+   ],
+   "verdict": "AMBIG_7",
+   "eligible_values": [
+    43.88,
+    64.84,
+    91.0
+   ],
+   "cur_cw": "1998",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "389",
+   "model": "MR7001BEV109",
+   "generic": "银河 E8",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "75",
+   "cur_range": "620",
+   "cur_cons": "13.9",
+   "implied_cap": 86.2,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "银河E8",
+   "sid": 7170,
+   "evidence": [
+    [
+     2025,
+     62.0
+    ],
+    [
+     2025,
+     67.8
+    ],
+    [
+     2025,
+     75.0
+    ],
+    [
+     2025,
+     76.0
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    62.0,
+    67.8,
+    75.0,
+    76.0
+   ],
+   "cur_cw": "2150",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "390",
+   "model": "BYD6433SBEV3",
+   "generic": "比亚迪元UP",
+   "enterprise": "比亚迪汽车有限公司",
+   "cur_capacity": "32",
+   "cur_range": "301",
+   "cur_cons": "12",
+   "implied_cap": 36.1,
+   "dcd_caps": [
+    32.0,
+    45.12,
+    51.13
+   ],
+   "dcd_years": [
+    "2025",
+    "2027"
+   ],
+   "series_name": "比亚迪元UP",
+   "sid": 7538,
+   "evidence": [
+    [
+     2025,
+     32.0
+    ],
+    [
+     2025,
+     45.12
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    32.0,
+    45.12
+   ],
+   "cur_cw": "1430",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "392",
+   "model": "CSA6493YSEV5",
+   "generic": "R7",
+   "enterprise": "上海汽车集团股份有限公司",
+   "cur_capacity": "90",
+   "cur_range": "730",
+   "cur_cons": "14",
+   "implied_cap": 102.2,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "飞凡R7",
+   "sid": 6072,
+   "evidence": [
+    [
+     2025,
+     62.2
+    ],
+    [
+     2025,
+     71.0
+    ],
+    [
+     2025,
+     90.0
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    62.2,
+    71.0,
+    90.0
+   ],
+   "cur_cw": "2060",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "396",
+   "model": "BAW6530MBM2BEV",
+   "generic": "锐胜M8",
+   "enterprise": "北京汽车股份有限公司",
+   "cur_capacity": "92.0",
+   "cur_range": "560",
+   "cur_cons": "18.4",
+   "implied_cap": 103.0,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "锐胜M8新能源",
+   "sid": 8214,
+   "evidence": [
+    [
+     2026,
+     35.0
+    ],
+    [
+     2026,
+     46.0
+    ],
+    [
+     2026,
+     81.0
+    ],
+    [
+     2026,
+     92.0
+    ]
+   ],
+   "verdict": "AMBIG_10",
+   "eligible_values": [
+    35.0,
+    46.0,
+    81.0,
+    92.0
+   ],
+   "cur_cw": "2490",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "396",
+   "model": "BAW6530MBM3BEV",
+   "generic": "锐胜M8",
+   "enterprise": "北京汽车股份有限公司",
+   "cur_capacity": "92.0",
+   "cur_range": "560",
+   "cur_cons": "18.4",
+   "implied_cap": 103.0,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "锐胜M8新能源",
+   "sid": 8214,
+   "evidence": [
+    [
+     2026,
+     35.0
+    ],
+    [
+     2026,
+     46.0
+    ],
+    [
+     2026,
+     81.0
+    ],
+    [
+     2026,
+     92.0
+    ]
+   ],
+   "verdict": "AMBIG_10",
+   "eligible_values": [
+    35.0,
+    46.0,
+    81.0,
+    92.0
+   ],
+   "cur_cw": "2490",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "401",
+   "model": "HQ6431BEV106",
+   "generic": "精灵#1",
+   "enterprise": "浙江豪情汽车制造有限公司",
+   "cur_capacity": "49",
+   "cur_range": "410",
+   "cur_cons": "13.9",
+   "implied_cap": 57.0,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "smart精灵#1",
+   "sid": 6369,
+   "evidence": [
+    [
+     2026,
+     49.0
+    ],
+    [
+     2026,
+     66.0
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    49.0,
+    66.0
+   ],
+   "cur_cw": "1790",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "403",
+   "model": "FZ6530BEVWD19A",
+   "generic": "D19",
+   "enterprise": "零跑汽车有限公司",
+   "cur_capacity": "115",
+   "cur_range": "720",
+   "cur_cons": "18.3",
+   "implied_cap": 131.8,
+   "dcd_caps": [
+    63.7,
+    80.3,
+    99.6,
+    115.0
+   ],
+   "dcd_years": [
+    "2026"
+   ],
+   "series_name": "零跑D19",
+   "sid": 8273,
+   "evidence": [
+    [
+     2026,
+     63.7
+    ],
+    [
+     2026,
+     80.3
+    ],
+    [
+     2026,
+     99.6
+    ],
+    [
+     2026,
+     115.0
+    ]
+   ],
+   "verdict": "AMBIG_5",
+   "eligible_values": [
+    63.7,
+    80.3,
+    99.6,
+    115.0
+   ],
+   "cur_cw": " 2730/2760 ",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "404",
+   "model": "MR7001BEV124",
+   "generic": "007GT",
+   "enterprise": "浙江极氪智能科技有限公司",
+   "cur_capacity": "75",
+   "cur_range": "615",
+   "cur_cons": "14.4",
+   "implied_cap": 88.6,
+   "dcd_caps": [
+    75.0,
+    100.0,
+    103.0
+   ],
+   "dcd_years": [
+    "2025",
+    "2026"
+   ],
+   "series_name": "极氪007GT",
+   "sid": 8010,
+   "evidence": [
+    [
+     2026,
+     75.0
+    ],
+    [
+     2026,
+     103.0
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    75.0,
+    103.0
+   ],
+   "cur_cw": "2300",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "404",
+   "model": "MR7001BEV126",
+   "generic": "007GT",
+   "enterprise": "浙江极氪智能科技有限公司",
+   "cur_capacity": "75",
+   "cur_range": "702",
+   "cur_cons": "12.9",
+   "implied_cap": 90.6,
+   "dcd_caps": [
+    75.0,
+    100.0,
+    103.0
+   ],
+   "dcd_years": [
+    "2025",
+    "2026"
+   ],
+   "series_name": "极氪007GT",
+   "sid": 8010,
+   "evidence": [
+    [
+     2026,
+     75.0
+    ],
+    [
+     2026,
+     103.0
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    75.0,
+    103.0
+   ],
+   "cur_cw": "2195",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "404",
+   "model": "MR7001BEV130",
+   "generic": "007",
+   "enterprise": "浙江极氪智能科技有限公司",
+   "cur_capacity": "75",
+   "cur_range": "715",
+   "cur_cons": "12",
+   "implied_cap": 85.8,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "eπ007",
+   "sid": 7398,
+   "evidence": [
+    [
+     2025,
+     28.4
+    ],
+    [
+     2025,
+     58.4
+    ],
+    [
+     2025,
+     73.5
+    ]
+   ],
+   "verdict": "AMBIG_18",
+   "eligible_values": [
+    28.4,
+    58.4,
+    73.5
+   ],
+   "cur_cw": "2150",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "404",
+   "model": "MR7001BEV131",
+   "generic": "007",
+   "enterprise": "浙江极氪智能科技有限公司",
+   "cur_capacity": "75",
+   "cur_range": "635",
+   "cur_cons": "13.8",
+   "implied_cap": 87.6,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "eπ007",
+   "sid": 7398,
+   "evidence": [
+    [
+     2025,
+     28.4
+    ],
+    [
+     2025,
+     58.4
+    ],
+    [
+     2025,
+     73.5
+    ]
+   ],
+   "verdict": "AMBIG_18",
+   "eligible_values": [
+    28.4,
+    58.4,
+    73.5
+   ],
+   "cur_cw": "2255",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "404",
+   "model": "NHQ6530BEVTC",
+   "generic": "小鹏GX",
+   "enterprise": "广州小鹏汽车科技有限公司",
+   "cur_capacity": "110",
+   "cur_range": "720",
+   "cur_cons": "16.9",
+   "implied_cap": 126.7,
+   "dcd_caps": [
+    63.3,
+    91.9,
+    110.0
+   ],
+   "dcd_years": [
+    "2026"
+   ],
+   "series_name": "小鹏GX",
+   "sid": 8224,
+   "evidence": [
+    [
+     2026,
+     63.3
+    ],
+    [
+     2026,
+     91.9
+    ],
+    [
+     2026,
+     110.0
+    ]
+   ],
+   "verdict": "AMBIG_5",
+   "eligible_values": [
+    63.3,
+    91.9,
+    110.0
+   ],
+   "cur_cw": "2820",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "405",
+   "model": "FZ6530BEVWD99A",
+   "generic": "D99",
+   "enterprise": "零跑汽车有限公司",
+   "cur_capacity": "115",
+   "cur_range": "700",
+   "cur_cons": "18.8",
+   "implied_cap": 131.6,
+   "dcd_caps": [
+    80.3,
+    115.0
+   ],
+   "dcd_years": [
+    "2026"
+   ],
+   "series_name": "零跑D99",
+   "sid": 8298,
+   "evidence": [
+    [
+     2026,
+     80.3
+    ],
+    [
+     2026,
+     115.0
+    ]
+   ],
+   "verdict": "AMBIG_4",
+   "eligible_values": [
+    80.3,
+    115.0
+   ],
+   "cur_cw": "2825",
+   "power_type": "PHEV"
+  },
+  {
+   "batch": "405",
+   "model": "MR6521BEV102",
+   "generic": "009",
+   "enterprise": "浙江吉利汽车有限公司",
+   "cur_capacity": "108",
+   "cur_range": "740",
+   "cur_cons": "16.8",
+   "implied_cap": 124.3,
+   "dcd_caps": [
+    108.0,
+    115.0,
+    140.0
+   ],
+   "dcd_years": [
+    "2024",
+    "2026"
+   ],
+   "series_name": "极氪009",
+   "sid": 6846,
+   "evidence": [
+    [
+     2024,
+     108.0
+    ],
+    [
+     2024,
+     140.0
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    108.0,
+    140.0
+   ],
+   "cur_cw": "2850",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "405",
+   "model": "MR7002BEV108",
+   "generic": "领克10",
+   "enterprise": "",
+   "cur_capacity": "95",
+   "cur_range": "816",
+   "cur_cons": "13.6",
+   "implied_cap": 111.0,
+   "dcd_caps": [
+    77.17,
+    95.0
+   ],
+   "dcd_years": [
+    "2026"
+   ],
+   "series_name": "领克10",
+   "sid": 8176,
+   "evidence": [
+    [
+     2025,
+     18.4
+    ],
+    [
+     2025,
+     38.2
+    ]
+   ],
+   "verdict": "AMBIG_7",
+   "eligible_values": [
+    18.4,
+    38.2
+   ],
+   "cur_cw": "2317",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "406",
+   "model": "LZW6490BEVA7",
+   "generic": "星光730",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "cur_capacity": "60",
+   "cur_range": "500",
+   "cur_cons": "13.6",
+   "implied_cap": 68.0,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "星光730新能源",
+   "sid": 8187,
+   "evidence": [
+    [
+     2025,
+     20.5
+    ],
+    [
+     2025,
+     60.0
+    ]
+   ],
+   "verdict": "AMBIG_2",
+   "eligible_values": [
+    20.5,
+    60.0
+   ],
+   "cur_cw": "1810",
+   "power_type": "PHEV"
+  },
+  {
+   "batch": "406",
+   "model": "XMA6500LBEVR4",
+   "generic": "小米YU7",
+   "enterprise": "小米汽车科技有限公司",
+   "cur_capacity": "73",
+   "cur_range": "633",
+   "cur_cons": "13",
+   "implied_cap": 83.6,
+   "dcd_caps": [
+    73.0,
+    96.3,
+    101.7
+   ],
+   "dcd_years": [
+    "2025",
+    "2026"
+   ],
+   "series_name": "小米YU7",
+   "sid": 7793,
+   "evidence": [
+    [
+     2026,
+     73.0
+    ],
+    [
+     2026,
+     101.7
+    ]
+   ],
+   "verdict": "KEEP_SAME",
+   "eligible_values": [
+    73.0,
+    101.7
+   ],
+   "cur_cw": "2200",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "407",
+   "model": "NHQ6510BEVRB",
+   "generic": "小鹏G9L",
+   "enterprise": "肇庆小鹏新能源投资有限公司",
+   "cur_capacity": "110",
+   "cur_range": "775",
+   "cur_cons": "15.6",
+   "implied_cap": 125.6,
+   "dcd_caps": [
+    63.3,
+    91.9,
+    110.0
+   ],
+   "dcd_years": [
+    "2026"
+   ],
+   "series_name": "小鹏G9L",
+   "sid": 8659,
+   "evidence": [
+    [
+     2026,
+     63.3
+    ],
+    [
+     2026,
+     91.9
+    ],
+    [
+     2026,
+     110.0
+    ]
+   ],
+   "verdict": "REVIEW_REJECTED",
+   "eligible_values": [
+    63.3,
+    91.9,
+    110.0
+   ],
+   "cur_cw": "2600",
+   "power_type": "BEV",
+   "fix_value": 91.9,
+   "anchor_name": "2026款 纯电 702 Max",
+   "anchor_rng": null,
+   "anchor_cw": 2600.0,
+   "reject_reason": "续航信号未命中：行续航 775 vs 款型续航 None（整备单信号兜底不可辩护）"
+  },
+  {
+   "batch": "407",
+   "model": "NHQ6510BEVRC",
+   "generic": "小鹏G9L",
+   "enterprise": "肇庆小鹏新能源投资有限公司",
+   "cur_capacity": "110",
+   "cur_range": "725",
+   "cur_cons": "16.7",
+   "implied_cap": 126.1,
+   "dcd_caps": [
+    63.3,
+    91.9,
+    110.0
+   ],
+   "dcd_years": [
+    "2026"
+   ],
+   "series_name": "小鹏G9L",
+   "sid": 8659,
+   "evidence": [
+    [
+     2026,
+     63.3
+    ],
+    [
+     2026,
+     91.9
+    ],
+    [
+     2026,
+     110.0
+    ]
+   ],
+   "verdict": "AMBIG_5",
+   "eligible_values": [
+    63.3,
+    91.9,
+    110.0
+   ],
+   "cur_cw": "2740",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "397",
+   "model": "LZW6470BEVAA",
+   "generic": "五菱星光S",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "cur_capacity": "60.0",
+   "cur_range": "510.0",
+   "cur_cons": "13.6",
+   "implied_cap": 69.4,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "五菱星光S",
+   "sid": 7671,
+   "evidence": [
+    [
+     2025,
+     9.5
+    ],
+    [
+     2025,
+     20.5
+    ],
+    [
+     2025,
+     60.0
+    ]
+   ],
+   "verdict": "AMBIG_2",
+   "eligible_values": [
+    9.5,
+    20.5,
+    60.0
+   ],
+   "cur_cw": "1735",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "397",
+   "model": "BAW6530MB21SHEV",
+   "generic": "锐胜M8",
+   "enterprise": "北京汽车制造厂有限公司",
+   "cur_capacity": "46.0",
+   "cur_range": "180.0",
+   "cur_cons": "21",
+   "implied_cap": 37.8,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "锐胜M8新能源",
+   "sid": 8214,
+   "evidence": [
+    [
+     2026,
+     35.0
+    ],
+    [
+     2026,
+     46.0
+    ],
+    [
+     2026,
+     81.0
+    ],
+    [
+     2026,
+     92.0
+    ]
+   ],
+   "verdict": "FIX_ANCHORED",
+   "eligible_values": [
+    35.0,
+    46.0,
+    81.0,
+    92.0
+   ],
+   "cur_cw": "2410",
+   "power_type": "PHEV",
+   "fix_value": 35.0,
+   "anchor_name": "2026款 增程版 180尊享型 7座",
+   "anchor_rng": 180.0,
+   "anchor_cw": 2410.0
+  },
+  {
+   "batch": "397",
+   "model": "BAW6530MB22SHEV",
+   "generic": "锐胜M8",
+   "enterprise": "北京汽车制造厂有限公司",
+   "cur_capacity": "46.0",
+   "cur_range": "180.0",
+   "cur_cons": "21",
+   "implied_cap": 37.8,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "锐胜M8新能源",
+   "sid": 8214,
+   "evidence": [
+    [
+     2026,
+     35.0
+    ],
+    [
+     2026,
+     46.0
+    ],
+    [
+     2026,
+     81.0
+    ],
+    [
+     2026,
+     92.0
+    ]
+   ],
+   "verdict": "FIX_ANCHORED",
+   "eligible_values": [
+    35.0,
+    46.0,
+    81.0,
+    92.0
+   ],
+   "cur_cw": "2410",
+   "power_type": "PHEV",
+   "fix_value": 35.0,
+   "anchor_name": "2026款 增程版 180尊享型 7座",
+   "anchor_rng": 180.0,
+   "anchor_cw": 2410.0
+  },
+  {
+   "batch": "373",
+   "model": "DFL6470NA51BEV",
+   "generic": "VX6",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "111",
+   "cur_range": "520",
+   "cur_cons": "13.5",
+   "implied_cap": 70.2,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "启辰VX6",
+   "sid": 7099,
+   "evidence": [
+    [
+     2024,
+     53.0
+    ],
+    [
+     2024,
+     62.0
+    ]
+   ],
+   "verdict": "AMBIG_3",
+   "eligible_values": [
+    53.0,
+    62.0
+   ],
+   "cur_cw": "",
+   "power_type": "BEV"
+  },
+  {
+   "batch": "376",
+   "model": "DFL6470NA52BEV",
+   "generic": "VX6",
+   "enterprise": "东风汽车有限公司",
+   "cur_capacity": "111",
+   "cur_range": "520",
+   "cur_cons": "13.5",
+   "implied_cap": 70.2,
+   "dcd_caps": [],
+   "dcd_years": [],
+   "series_name": "启辰VX6",
+   "sid": 7099,
+   "evidence": [
+    [
+     2024,
+     53.0
+    ],
+    [
+     2024,
+     62.0
+    ]
+   ],
+   "verdict": "AMBIG_3",
+   "eligible_values": [
+    53.0,
+    62.0
+   ],
+   "cur_cw": "",
+   "power_type": "BEV"
+  }
+ ]
+}

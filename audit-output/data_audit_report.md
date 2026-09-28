@@ -2,9 +2,9 @@
 
 Copyright © 2026 David YE
 
-- 生成时间（UTC）：2026-09-27T15:23:10+00:00
+- 生成时间（UTC）：2026-09-28T15:52:12+00:00
 - 输入文件：`NEV公告参数汇总表_合并版（341~410批）.xlsx`
-- SHA-256：`1c064612bbaf85b8df0d3f7cfeb983af315b4bafed3c5fed7ac2123be3af6f64`
+- SHA-256：`c3b41dbb09b6d65e0e02f36e078a6efaa823ed268e1ccd6c23be07af01b185cc`
 - 工作表：`NEV公告参数汇总`
 - 记录数：5392；字段数：38
 
