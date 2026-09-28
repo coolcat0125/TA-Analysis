@@ -104,8 +104,8 @@ def add_table_under_chart(slide, ch, slide_h):
     if tbl_h < Inches(0.7):
         return False
     nrow = len(cats) + 1
-    # 形态选择：类目较多（≥7）→ 双列紧凑（防行高溢出）；类目少 → 竖表
-    if len(cats) >= 7:
+    # 形态选择：单系列且类目多（≥7）→ 双列紧凑；多系列 → 全系列竖表（压行高防溢出）
+    if len(sers) == 1 and len(cats) >= 7:
         half = (len(cats) + 1) // 2
         grid = [['类目', sers[0][0], '类目', sers[0][0]]]
         for i in range(half):
@@ -135,23 +135,24 @@ def add_table_under_chart(slide, ch, slide_h):
         tbl.style = 'Light Style 1'
     except Exception:
         pass
-    hset = min(Inches(0.26), tbl_h // nrow)
+    hset = min(Inches(0.26), tbl_h // nrow) if nrow < 8 else min(Inches(0.22), tbl_h // nrow)
     for ri in range(nrow):
-        tbl.rows[ri].height = hset if ri else int(hset * 1.1)
+        tbl.rows[ri].height = hset if ri else int(hset * 1.05)
+    fsz = 8 if nrow >= 8 else 8.5
     for ri, row in enumerate(grid):
         for ci, val in enumerate(row):
             if ci >= ncol:
                 break
             cell = tbl.cell(ri, ci)
             cell.text = str(val)
-            cell.margin_top = Emu(18288)   # 0.02"
-            cell.margin_bottom = Emu(18288)
+            cell.margin_top = Emu(9144)   # 0.01"
+            cell.margin_bottom = Emu(9144)
             cell.margin_left = Emu(36576)
             cell.margin_right = Emu(36576)
             for p in cell.text_frame.paragraphs:
                 p.alignment = 2 if ci else 1  # right / center
                 for r in p.runs:
-                    r.font.size = Pt(8.5 if ri else 9)
+                    r.font.size = Pt(fsz if ri else 8.5)
                     r.font.name = '微软雅黑'
                     r.font.bold = ri == 0
                     r.font.color.rgb = BLUE if ri == 0 else GREY
