@@ -344,22 +344,24 @@ def main():
 
     # yoy（2022..2026）
     def yoy(f, grp):
-        out = ['']
+        out = [None]
         prev = None
         for y in YEARS:
             vals = [r[f] for r in recs if r['年'] == y and r['组'] == grp and r[f] is not None]
             m = sum(vals) / len(vals) if vals else None
-            out.append(round((m - prev) / prev * 100, 1) if (m is not None and prev) else None)
+            out.append(round((m - prev) / prev * 100, 1)
+                       if (m is not None and prev) else None)
             prev = m if m is not None else prev
-        return out[1:]
+        return out[1:]  # 2022-2026 五值（类目同步 2022-2026）
     YSPEC = [('平均续航(km)', '续航'), ('平均容量(kWh)', '容量'), ('平均功率(kW)', '功率'),
              ('平均整备质量(kg)', '整备'), ('平均能量密度(Wh/kg)', '密度')]
     for sn, grp in ((59, 'BEV'), (60, 'PHEV')):
         for lab, f in YSPEC:
             R[(sn, lab)] = (lambda f=f, grp=grp: yoy(f, grp))
         R[(sn, '公告数量(款)')] = lambda grp=grp: [
-            round((cnt(grp, y) - cnt(grp, y - 1)) / max(1, cnt(grp, y - 1)) * 100, 1)
-            for y in YEARS[1:]]
+            (lambda a, b: round((a - b) / b * 100, 1) if b else None)(
+                cnt('BEV', y) + cnt('PHEV', y), cnt('BEV', y - 1) + cnt('PHEV', y - 1))
+            for y in YEARS[1:]]  # 总量口径（修复：原为 BEV 单口径）
 
     # ---------- 执行替换 ----------
     cnt = lambda g, y: sum(1 for r in recs if r['组'] == g and r['年'] == y)
