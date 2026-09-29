@@ -79,6 +79,7 @@ def load_records():
             '批次': bno, '年': batch_year.get(bno), '组': grp,
             '商标': str(g('产品商标') or '').strip(),
             '企业': str(g('企业名称') or '').strip(),
+            '通用': str(g('通用名称') or '').strip(),
             '细分': str(g('细分市场') or '').strip(),
             '续航': fnum(g('纯电续航里程(km)')),
             '容量': fnum(g('电池容量(kWh)')),
