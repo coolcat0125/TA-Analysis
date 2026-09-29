@@ -6,6 +6,7 @@
 数据：build_deliverables_v4923.load_records()（权威底表 5,392 款），全部数值程序化派生。
 输出：NEV公告车型行业分析_移动版.html
 """
+import html as _html
 import json
 import re
 import statistics as st
@@ -80,6 +81,14 @@ def main():
     # 供应商 Top5（有值子集）
     top_bat = Counter(r['电芯'] for r in recs if r['电芯']).most_common(5)
     top_mot = Counter(r['电机企'] for r in recs if r['电机企']).most_common(5)
+    # 月销 Top10（易车零售口径；车系级数值→按销量值去重（同族变体共享值），取最短规范名）
+    _sname = {}
+    for r in recs:
+        if r['月销']:
+            nm = r['通用'] or r['商标'] or r['企业'][:10]
+            if r['月销'] not in _sname or len(nm) < len(_sname[r['月销']]):
+                _sname[r['月销']] = nm
+    sales = sorted(((v, nm, None) for v, nm in _sname.items()), key=lambda x: -x[0])[:10]
     # 检索数据（轻量字段）
     search_rows = [[r['批次'], str(r['商标'] or ''), str(r['企业'] or '')[:14],
                     r['续航'], r['容量'], r['功率'],
@@ -110,11 +119,13 @@ def main():
                        for i, (k, v) in enumerate(top_bat))
     mot_html = ''.join(f'<div class="sup"><b>{i+1}. {k}</b><span>{v} 款</span></div>'
                        for i, (k, v) in enumerate(top_mot))
+    sales_html = ''.join(f'<div class="sup"><b>{i+1}. {_html.escape(str(nm))}</b><span>{int(v):,} 辆/月</span></div>'
+                         for i, (v, nm, _m) in enumerate(sales))
     ejs = open(ECHARTS, encoding='utf-8').read()
     html = HTML.replace('__ECHARTS__', ejs).replace('__DATA__', json.dumps(DATA, ensure_ascii=False)) \
         .replace('__KPI__', kpi_html).replace('__FIND__', find_html) \
         .replace('__YEARROWS__', year_rows_html).replace('__BAT__', bat_html) \
-        .replace('__MOT__', mot_html) \
+        .replace('__MOT__', mot_html).replace('__SALES__', sales_html) \
         .replace('__GEN__', '2026-09-30').replace('__TOTAL__', f'{total:,}')
     open(OUT, 'w', encoding='utf-8').write(html)
     print(f'手机版生成: {OUT}（{total} 款口径, KPI {len(kpis)} / 发现 {len(findings)} / 图 4 / 检索 {len(search_rows)} 行）')
@@ -188,6 +199,10 @@ __YEARROWS__
 __BAT__
 <div class="sub" style="margin:10px 0 8px">电机生产企业（有值子集）</div>
 __MOT__
+
+<h2>月销 Top 10（参考）</h2>
+<div class="sub" style="margin:0 0 8px">易车零售月度口径 · 2026-08</div>
+__SALES__
 
 <h2>车型检索</h2>
 <input id="q" class="search" placeholder="输入型号 / 商标 / 企业名检索…">

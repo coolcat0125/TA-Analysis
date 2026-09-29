@@ -238,5 +238,35 @@
  },
  "悦也plus": {
   "err": "brand_guard_or_no_hit"
+ },
+ "Polestar 2_retry": {
+  "query": "polestar",
+  "series_name": "Polestar 4",
+  "sid": "6654",
+  "err": null
+ },
+ "XC40_retry": {
+  "query": "xc",
+  "series_name": "XCODE",
+  "sid": "4188",
+  "err": null
+ },
+ "长安_retry": {
+  "query": "长安新能源",
+  "series_name": "长安新能源E-Pro",
+  "sid": "5528",
+  "err": null
+ },
+ "精灵#6_retry": {
+  "query": "精灵#",
+  "series_name": "smart精灵#1",
+  "sid": "6369",
+  "err": null
+ },
+ "大道EV_retry": {
+  "query": "大道",
+  "series_name": "大道",
+  "sid": "7195",
+  "err": null
  }
 }
