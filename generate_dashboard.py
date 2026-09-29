@@ -3244,26 +3244,50 @@ function jsSanitize(k,val,ptype){
   return (rng[0]<=val&&val<=rng[1])?val:null;
 }
 function parseImportedSheet(aoa, fname){
+  /* v4.9.27：表头名寻址（导入文件=权威底表 38 列同构），输出 30 位记录与 RAW_INIT 同构。
+     旧版按 v4.1-era 25 位硬编码下标解析，导入后与内嵌 30 位数据错位（09-16 遗留，本版重构）。 */
   const records=[]; let cleaned=0;
-  for(let i=1;i<aoa.length;i++){
+  if(!aoa.length) return {records,cleaned};
+  // 表头行探测：含「批次」且含「产品型号」的首行
+  let hrow=-1;
+  for(let i=0;i<Math.min(aoa.length,5);i++){
+    const cells=(aoa[i]||[]).map(c=>String(c==null?'':c).trim());
+    if(cells.includes('批次')&&cells.includes('产品型号')){ hrow=i; break; }
+  }
+  if(hrow<0) throw new Error('表头未识别（需含 批次/产品型号 列）');
+  const H={};
+  aoa[hrow].forEach((c,i)=>{ const k=String(c==null?'':c).trim(); if(k&&!(k in H)) H[k]=i; });
+  const g=(row,name)=>{ const i=H[name]; return i==null?null:row[i]; };
+  const ptOf=v=>{ const s=jsCleanStr(v)||''; return s||'未知'; };
+  const kwFirst=v=>{ const s=String(v==null?'':v).trim(); if(!s) return null;
+    const m=s.split('/')[0].match(/^[-+]?\d+(?:\.\d+)?/); return m?parseFloat(m[0]):null; };
+  const kwSecond=v=>{ const s=String(v==null?'':v).trim(); if(!s||s.indexOf('/')<0) return null;
+    const m=s.split('/')[1].match(/^[-+]?\d+(?:\.\d+)?/); return m?parseFloat(m[0]):null; };
+  for(let i=hrow+1;i<aoa.length;i++){
     const row=aoa[i];
     if(!row||row[0]==null) continue;
     const batch=parseInt(String(row[0]).trim(),10);
     if(!isFinite(batch)) continue;
-    const ptype = jsCleanStr(row[9])||'未知';
-    const raw = {w:jsCleanNum(row[11]),ab:jsCleanNum(row[12]),r:jsCleanNum(row[13]),c:jsCleanNum(row[14]),ed:jsCleanNum(row[16]),
-      ec:jsCleanNum(row[17]),pp:jsCleanNum(row[18]),tp:jsCleanNum(row[19]),tq:jsTorque(row[21]),
-      fo:jsCleanNum(row[23]),dv:jsCleanNum(row[25]),ep:jsCleanNum(row[26]),
-      lg:(row.length>30?jsCleanNum(row[30]):null)};
+    const ptype=ptOf(g(row,'动力类型'));
+    const raw={w:jsCleanNum(g(row,'整备质量(kg)')),ab:jsCleanNum(g(row,'轴距(mm)')),r:jsCleanNum(g(row,'纯电续航里程(km)')),
+      c:jsCleanNum(g(row,'电池容量(kWh)')),ed:jsCleanNum(g(row,'电池能量密度(Wh/kg)')),ec:jsCleanNum(g(row,'百公里电耗(kWh/100km)')),
+      fp:kwFirst(g(row,'前电机功率/扭矩')),tp:kwFirst(g(row,'电机总功率/扭矩')),tq:kwSecond(g(row,'电机总功率/扭矩')),
+      rp:kwFirst(g(row,'后电机功率/扭矩')),rt2:kwSecond(g(row,'后电机功率/扭矩')),
+      fo:jsCleanNum(g(row,'综合油耗(L/100km)')),dv:jsCleanNum(g(row,'发动机排量(mL)')),ep:jsCleanNum(g(row,'发动机功率(kW)')),
+      lg:(H['车长(mm)']!=null?jsCleanNum(g(row,'车长(mm)')):null),sn:(H['月销量(辆)']!=null?jsCleanNum(g(row,'月销量(辆)')):null)};
     const val={};
     for(const k in raw){
-      const s=(k==='lg')?(raw[k]==null?null:raw[k]):jsSanitize(k,raw[k],ptype);
+      const s=(k==='lg'||k==='sn'||k==='fp'||k==='tp'||k==='tq'||k==='rp'||k==='rt2')?(raw[k]==null?null:raw[k]):jsSanitize(k,raw[k],ptype);
       if(raw[k]!=null&&s==null) cleaned++;
       val[k]=s;
     }
-    records.push([batch,ptype,jsCleanSeg(row[8]),jsCleanStr(row[3]),val.w,val.r,val.c,jsNormBt(row[15]),
-      val.ed,val.ec,val.pp,val.tp,jsCleanStr(row[20]),val.tq,val.fo,val.dv,val.ep,jsCleanStr(row[27]),jsCleanStr(row[29]),
-      jsCleanStr(row[1]),jsCleanStr(row[2]),jsNormTax(row[10]),val.ab,val.lg,jsCleanStr(row[6])]);
+    // 驱动形式派生：后电机有值 或 总>前 ⇒ 四驱；否则两驱
+    let drive='两驱';
+    if(val.rp!=null||(val.tp!=null&&val.fp!=null&&val.tp>val.fp)) drive='四驱';
+    records.push([batch,ptype,jsCleanSeg(g(row,'细分市场')),jsCleanStr(g(row,'企业名称')),val.w,val.r,val.c,jsNormBt(g(row,'电池类型')),
+      val.ed,val.ec,val.fp,val.tp,jsCleanStr(g(row,'电机生产企业')),val.tq,val.fo,val.dv,val.ep,jsCleanStr(g(row,'发动机生产企业')),jsCleanStr(g(row,'数据来源')),
+      jsCleanStr(g(row,'产品型号')),jsCleanStr(g(row,'产品商标')),jsNormTax(g(row,'是否减免购置税')),val.ab,val.lg,jsCleanStr(g(row,'通用名称')),
+      val.rt2,val.rp,drive,jsCleanStr(g(row,'产品名称')),val.sn]);
   }
   return {records,cleaned};
 }
