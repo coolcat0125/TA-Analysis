@@ -212,7 +212,7 @@ def build(recs):
              '品牌-电池供应商', '品牌-电机供应商', '细分市场-BEV', '细分市场-PHEV',
              '细分市场续航对比', '细分市场容量对比', '质量按细分市场', '相关性-BEV',
              '相关性-PHEV', '同比增长-BEV', '同比增长-PHEV', '关键指标汇总-BEV',
-             '关键指标汇总-PHEV', '年度综合指标']
+             '关键指标汇总-PHEV', '年度综合指标', '月销量分析']
     b.table(ws, 3, ['序', '工作表'], list(enumerate(names, 1)), widths=[6, 26])
 
     # ---------- 3 数据补充说明 ----------
@@ -621,22 +621,42 @@ def build(recs):
         rows.append(row)
     b.table(ws, 3, hdr, rows, widths=[8] + [11] * 10)
 
+    # ---------- 46 月销量分析（易车零售月度口径，参考） ----------
+    ws = b.sheet('月销量分析', '月销量参考（易车零售 · 2026-08 · 车系级数值）')
+    ws.cell(3, 1, '按通用名称聚合取最大值（同系多行共享车系级销量）；806 行有值中的 Top20')
+    _s = {}
+    for r in recs:
+        if r['月销']:
+            k = r['通用'] or r['商标'] or r['企业'][:10]
+            if r['月销'] > _s.get(k, (0, ''))[0]:
+                _s[k] = (r['月销'], r['商标'] or r['企业'][:8])
+    top_sales = sorted(((k, v[0], v[1]) for k, v in _s.items()), key=lambda x: -x[1])[:20]
+    b.table(ws, 4, ['排名', '车系（通用名称）', '月销量(辆)', '品牌'],
+            [[i, _html_e(k), int(v), ent] for i, (k, v, ent) in enumerate(top_sales, 1)],
+            widths=[6, 30, 12, 14])
+
     return b, names
+
+
+def _html_e(s):
+    import html as _h
+    return _h.escape(str(s))
 
 
 def main():
     recs = load_records()
     book, names = build(recs)
-    # 覆盖检查：目录与实际 sheet 一致
+    # 覆盖检查：目录与实际 sheet 一致（45 表 + 月销量分析）
     actual = book.wb.sheetnames
     missing = [n for n in names if n not in actual]
     assert not missing, f'缺表: {missing}'
+    assert '月销量分析' in actual, '缺月销量分析表'
     shutil.copy2(OUT, f"archive/行业分析底表_pre-v4923_backup_{datetime.date.today():%Y%m%d}.xlsx")
     book.wb.save(OUT)
     # 复开验证
     chk = openpyxl.load_workbook(OUT, read_only=True)
-    assert len(chk.sheetnames) == 45, len(chk.sheetnames)
-    print(f'生成完成：45 表 → {OUT}（底表 {len(recs)} 行口径 {VER}）')
+    assert len(chk.sheetnames) == 46, len(chk.sheetnames)
+    print(f'生成完成：46 表（45+月销量分析） → {OUT}（底表 {len(recs)} 行口径 {VER}）')
     print('sheets:', '、'.join(chk.sheetnames[:8]), '…')
 
 
