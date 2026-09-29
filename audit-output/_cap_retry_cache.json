@@ -1,0 +1,242 @@
+{
+ "江淮": {
+  "sid": 4847,
+  "series_name": "江淮T8",
+  "rows": null,
+  "err": "no_capacity_param"
+ },
+ "Polestar 2": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "迈腾GTE": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "北汽EU5": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "吉利车型": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "上汽大通MIFA 9": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "上汽大通MIFA 6": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "上汽大通MIFA 5": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "XC40": {
+  "sid": 5198,
+  "series_name": "沃尔沃XC40",
+  "rows": null,
+  "err": "no_capacity_param"
+ },
+ "C40": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "MIFA 7;大通大家7;大家7": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "上汽MAXUS EUNIQ6 PLUG IN;MIFA 6 PLUGIN;大通大家6 PLUGIN;大家6 PLUGIN": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "上汽MAXUS EUNIQ5 PLUG IN;MIFA 5 PLUGIN;大通大家5 PLUGIN;大家5 PLUGIN": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "极狐": {
+  "sid": 8440,
+  "series_name": "极狐问道V9",
+  "rows": [
+   {
+    "year": 2026,
+    "cap": 37.0,
+    "rng": 166.0,
+    "cw": 2525.0,
+    "name": "2026款 1250 Max"
+   },
+   {
+    "year": 2026,
+    "cap": 37.0,
+    "rng": 166.0,
+    "cw": 2525.0,
+    "name": "2026款 1250 Ultra"
+   },
+   {
+    "year": 2026,
+    "cap": 53.4,
+    "rng": 236.0,
+    "cw": 2580.0,
+    "name": "2026款 1330 Ultra"
+   },
+   {
+    "year": 2026,
+    "cap": 53.4,
+    "rng": 236.0,
+    "cw": 2580.0,
+    "name": "2026款 1330 Ultra+"
+   }
+  ],
+  "err": null
+ },
+ "哪吒U Max,哪吒X": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "蔚来ES7": {
+  "sid": 6700,
+  "series_name": "蔚来ES7",
+  "rows": [
+   {
+    "year": 2024,
+    "cap": 75.0,
+    "rng": 485.0,
+    "cw": 2361.0,
+    "name": "2024款 75kWh"
+   },
+   {
+    "year": 2024,
+    "cap": 100.0,
+    "rng": 620.0,
+    "cw": 2381.0,
+    "name": "2024款 100kWh"
+   },
+   {
+    "year": 2024,
+    "cap": 100.0,
+    "rng": 575.0,
+    "cw": 2400.0,
+    "name": "2024款 100kWh 签名版"
+   }
+  ],
+  "err": null
+ },
+ "EUNIQ5 PLUG IN,MIFA 5 PLUGIN,大家5 PLUGIN,大通大家5 PLUGIN": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "东风风神": {
+  "sid": 3341,
+  "series_name": "东风风神AX7",
+  "rows": null,
+  "err": "no_capacity_param"
+ },
+ "MIFA 9,大通大家9,大家9": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "远航Y7": {
+  "sid": 6895,
+  "series_name": "远航Y7",
+  "rows": [
+   {
+    "year": 2024,
+    "cap": 98.0,
+    "rng": 720.0,
+    "cw": null,
+    "name": "2024款 720km 四驱奢享版"
+   },
+   {
+    "year": 2024,
+    "cap": 120.0,
+    "rng": 920.0,
+    "cw": null,
+    "name": "2024款 920km 四驱奢享版"
+   },
+   {
+    "year": 2024,
+    "cap": 150.0,
+    "rng": 1020.0,
+    "cw": null,
+    "name": "2024款 1020km 四驱远航版"
+   }
+  ],
+  "err": null
+ },
+ "五菱": {
+  "sid": 6777,
+  "series_name": "五菱星驰",
+  "rows": null,
+  "err": "no_capacity_param"
+ },
+ "红旗": {
+  "sid": 6002,
+  "series_name": "红旗E-QM5",
+  "rows": [
+   {
+    "year": 2024,
+    "cap": 60.0,
+    "rng": 450.0,
+    "cw": 1840.0,
+    "name": "2024款 450km 出行版"
+   },
+   {
+    "year": 2024,
+    "cap": 60.0,
+    "rng": 500.0,
+    "cw": 1840.0,
+    "name": "2024款 500km 出行版"
+   },
+   {
+    "year": 2024,
+    "cap": 72.0,
+    "rng": 560.0,
+    "cw": 1900.0,
+    "name": "2024款 560km PLUS"
+   },
+   {
+    "year": 2024,
+    "cap": 72.0,
+    "rng": 610.0,
+    "cw": 1900.0,
+    "name": "2024款 610km PLUS"
+   }
+  ],
+  "err": null
+ },
+ "长安": {
+  "sid": 3155,
+  "series_name": "长安星卡",
+  "rows": null,
+  "err": "no_capacity_param"
+ },
+ "东风日产N7": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "享境S9,华境S": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "银河星耀6 EM-i": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "东风日产NX8": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "奥迪E7X": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "精灵#6": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "大众Tayron L": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "大众迈腾": {
+  "sid": 496,
+  "series_name": "大众迈腾",
+  "rows": null,
+  "err": "no_capacity_param"
+ },
+ "途观L ePro": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "小鹏L03": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "悦虎ES3,悦虎3,悦虎": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "大道EV": {
+  "err": "brand_guard_or_no_hit"
+ },
+ "悦也plus": {
+  "err": "brand_guard_or_no_hit"
+ }
+}

@@ -80,6 +80,25 @@ def chart_facts(ch):
     return ''
 
 
+def yoy_page_fact(sno, ch):
+    """同比页事实：取 2026 年同比全部为正的指标清单（语义=百分比，不二次求增幅）"""
+    try:
+        cats = [str(c) for c in ch.plots[0].categories]
+        pos = []
+        for se in ch.series:
+            vals = list(se.values)
+            if cats and len(vals) == len(cats):
+                v26 = vals[-1]
+                if isinstance(v26, (int, float)) and v26 > 0:
+                    pos.append(f'{se.name} +{v26:.1f}%')
+        if pos:
+            head = 'PHEV' if sno == 60 else 'BEV'
+            return f' ｜ {cats[-1]} 年 {head} 同比转正：' + '、'.join(pos[:3])
+    except Exception:
+        pass
+    return ''
+
+
 def add_table_under_chart(slide, ch, slide_h):
     """图表下方加同源数据小表；返回是否写入（ch=GraphicFrame 形状，数据走 ch.chart）"""
     try:
@@ -259,7 +278,12 @@ def main():
                         break
                     for ch_sh in s.shapes:
                         if ch_sh.has_chart:
-                            fact = chart_facts(ch_sh.chart)
+                            # 页级事实覆写：同比页（59/60）的系列值本身是百分比，
+                            # 禁止再当绝对值求增幅/峰值（09-29 固化）
+                            if i in (59, 60):
+                                fact = yoy_page_fact(i, ch_sh.chart)
+                            else:
+                                fact = chart_facts(ch_sh.chart)
                             if fact:
                                 p0 = sh.text_frame.paragraphs[0]
                                 if p0.runs:

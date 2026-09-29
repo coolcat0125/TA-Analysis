@@ -352,7 +352,7 @@ def main():
             out.append(round((m - prev) / prev * 100, 1)
                        if (m is not None and prev) else None)
             prev = m if m is not None else prev
-        return out[1:]  # 2022-2026 五值（类目同步 2022-2026）
+        return out[2:]  # 2022-2026 五值（2021 无前值，剔除占位；类目同步 2022-2026）
     YSPEC = [('平均续航(km)', '续航'), ('平均容量(kWh)', '容量'), ('平均功率(kW)', '功率'),
              ('平均整备质量(kg)', '整备'), ('平均能量密度(Wh/kg)', '密度')]
     for sn, grp in ((59, 'BEV'), (60, 'PHEV')):
@@ -371,7 +371,8 @@ def main():
     NEWCATS = {7: D['seg_bev_cats'], 8: D['seg_phev_cats'],
                43: [t[0] for t in top_bat], 44: [t[0] for t in top_mot],
                51: SEG[51][0], 52: SEG[52][0], 53: SEG[53][0],
-               55: [k for k, _ in S55], 37: DL, 38: DL}
+               55: [k for k, _ in S55], 37: DL, 38: DL,
+               59: YS[1:], 60: YS[1:]}  # 同比图类目=2022-2026（与 yoy 五值对齐）
     for sno in sorted({s for s, _ in R}):
         s = prs.slides[sno - 1]
         for sh in s.shapes:
