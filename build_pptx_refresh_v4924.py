@@ -576,7 +576,9 @@ def main():
                         run.text = t2
                         replaced['texts'] += 1
 
-    shutil.copy2(SRC, 'archive/演示文稿_pre-v4924_backup_20260927.pptx')
+    if not os.path.exists('archive/演示文稿_pre-v4924_backup_20260927.pptx'):
+        shutil.copy2(SRC, 'archive/演示文稿_pre-v4924_backup_20260927.pptx')
+    # 09-30 教训：重复运行不得覆盖原始备份（存在性检查）
     prs.save(SRC)
     print(f"刷新完成 charts={replaced['charts']} tables={replaced['tables']} texts={replaced['texts']}")
     print(f"口径：{tot:,} 款（BEV {nb:,}/PHEV {np_:,}）· 2025 PHEV占比 {p25}%")

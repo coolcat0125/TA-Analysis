@@ -651,7 +651,9 @@ def main():
     missing = [n for n in names if n not in actual]
     assert not missing, f'缺表: {missing}'
     assert '月销量分析' in actual, '缺月销量分析表'
-    shutil.copy2(OUT, f"archive/行业分析底表_pre-v4923_backup_{datetime.date.today():%Y%m%d}.xlsx")
+    _bak = f"archive/行业分析底表_pre-v4923_backup_{datetime.date.today():%Y%m%d}.xlsx"
+    if not os.path.exists(_bak):
+        shutil.copy2(OUT, _bak)  # 09-30 教训：重复运行不得覆盖原始备份
     book.wb.save(OUT)
     # 复开验证
     chk = openpyxl.load_workbook(OUT, read_only=True)
