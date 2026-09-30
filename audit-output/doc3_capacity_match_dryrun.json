@@ -1,0 +1,40 @@
+{
+ "strong_anchors": [],
+ "all_matches": [
+  {
+   "batch": "342",
+   "model": "BJ7000C5DEK-BEV",
+   "generic": "换电式纯电动轿车",
+   "cur_capacity": "None",
+   "sig": 1,
+   "evidence": {
+    "enterprise": "北汽云南瑞丽汽车有限公司",
+    "model": "BJ7000C5DEK-BEV",
+    "generic": "EU5",
+    "product": "换电式纯电动轿车",
+    "range": "350",
+    "curb": "1620",
+    "energy_kwh": "44.14",
+    "batch": "383",
+    "pt": "BEV",
+    "source": "doc3.txt（购置税目录原文，公告附件3）"
+   }
+  },
+  {
+   "batch": "392",
+   "model": "BJ6521EVAA2",
+   "generic": "乐福",
+   "cur_capacity": "66.67",
+   "sig": 0,
+   "evidence": null
+  },
+  {
+   "batch": "397",
+   "model": "BYD7153WT6HEV5",
+   "generic": "插电式混合动力轿车",
+   "cur_capacity": "44.2",
+   "sig": 0,
+   "evidence": null
+  }
+ ]
+}
