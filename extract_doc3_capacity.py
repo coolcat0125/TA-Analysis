@@ -62,20 +62,30 @@ def scan_all(lines, batch, path):
         if pt is None or not in_psg:
             i += 1
             continue
-        if s == '序号':
-            header = ['序号']
-            i += 1
-            while i < n:
-                t = lines[i].strip().lstrip(SEP).strip()
-                if not t:
-                    i += 1
-                    continue
-                if t[0].isdigit():
-                    break
-                header.append(t)
+        if s == '序号' or s.startswith('序号' + TAB) or s.startswith('序号 ' + TAB):
+            # 341-era 单行 TAB 表头 or SEP 前缀多行表头 两种形态兼容
+            cells = [c.strip().lstrip(SEP) for c in re.split('[' + SEP + TAB + ']', raw)]
+            header = [c for c in cells if c]
+            if s == '序号':
+                header = ['序号']
                 i += 1
+                while i < n:
+                    t = lines[i].strip().lstrip(SEP).strip()
+                    if not t:
+                        i += 1
+                        continue
+                    if t[0].isdigit():
+                        break
+                    header.append(t)
+                    i += 1
+            else:
+                i += 1  # 单行表头：推进当前行（修复 09-30 死循环）
             continue
         if (SEP in raw or TAB in raw) and s:
+            if header is None:
+                # 341-era 格式：数据行先于可识别表头（防 None 崩溃，该行跳过）
+                i += 1
+                continue
             vals = [c.strip().lstrip(SEP) for c in re.split('[' + SEP + TAB + ']', raw)]
             vals = [v for v in vals if v != '']
             buf.extend(vals)

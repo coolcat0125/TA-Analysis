@@ -1,0 +1,168 @@
+{
+ "341": {
+  "status": "exists"
+ },
+ "342": {
+  "batch": 342,
+  "page": "http://www.miit.gov.cn/jgsj/zbys/qcgy/art/2021/art_b2bbe914f1784b06a18825db9977b3e9.html",
+  "status": "err:HTTPError",
+  "detail": "HTTP Error 404: Not Found"
+ },
+ "343": {
+  "batch": 343,
+  "page": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2021/art_9d464536f7484eda87fe0f1273a959c4.html",
+  "doc_url": "http://www.miit.gov.cn/api-gateway/jpaas-web-server/front/document/file-download?fileUrl=/cms_files/filemanager/1226211233/attach/20214/fa594ed2f6b6496b87f96eb7631492d8.doc&fileName=4.免征车辆购置税的新能源汽车车型目录（第四十二批）.doc",
+  "label": "4.免征车辆购置税的新能源汽车车型目录（第四十二批）.doc",
+  "bytes": 0,
+  "status": "ok"
+ },
+ "344": {
+  "status": "exists"
+ },
+ "345": {
+  "status": "exists"
+ },
+ "346": {
+  "status": "exists"
+ },
+ "348": {
+  "batch": 348,
+  "page": "https://www.miit.gov.cn/jgsj/zbys/wjfb/art/2021/art_6251156c415246c6aea3beb746514341.html",
+  "doc_url": "https://jyhwzhq.miit.gov.cn/cms_files/filemanager/1226211233/attach/20219/6d445196a06b4a0dab2123b594963595.doc",
+  "label": "4.免征车辆购置税的新能源汽车车型目录（第四十七批）.doc",
+  "status": "err:HTTPError",
+  "detail": "HTTP Error 403: Forbidden"
+ },
+ "351": {
+  "status": "exists"
+ },
+ "354": {
+  "status": "exists"
+ },
+ "355": {
+  "status": "exists"
+ },
+ "356": {
+  "status": "exists"
+ },
+ "357": {
+  "status": "exists"
+ },
+ "359": {
+  "batch": 359,
+  "page": "https://www.miit.gov.cn/ythzxfwpt/hlwmh/tzgg/xzxk/clsczr/art/2022/art_49d462edb4524f5a83b323530f5a7a47.html",
+  "doc_url": null,
+  "label": null,
+  "status": "no_doc"
+ },
+ "365": {
+  "batch": 365,
+  "page": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2022/art_056bdde01c9642a8bcd2977e312561dc.html",
+  "doc_url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/202212/7e0d5a0167cf496c93ba9eac851d8fef.doc",
+  "label": "4.免征车辆购置税的新能源汽车车型目录（第六十一批）.doc",
+  "bytes": 882046,
+  "status": "ok"
+ },
+ "366": {
+  "batch": 366,
+  "page": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2022/art_f129e45163f243a9b04463f6c4c191d7.html",
+  "doc_url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/202210/2624aece64f047a4b2824af093b603ee.doc",
+  "label": "1.道路机动车辆生产企业及产品（第366批）.doc",
+  "bytes": 3587584,
+  "status": "ok"
+ },
+ "367": {
+  "batch": 367,
+  "page": "https://www.miit.gov.cn/ythzxfwpt/hlwmh/tzgg/xzxk/clsczr/art/2023/art_3f09b458b398428e90a3eec79a34525b.html",
+  "doc_url": null,
+  "label": null,
+  "status": "no_doc"
+ },
+ "368": {
+  "batch": 368,
+  "page": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2023/art_4b1f4e1cb83a43cbaabbf2dc649e3f4f.html",
+  "doc_url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20233/c8cb272662094b3baa0c924e7fae0e68.doc",
+  "label": "3.免征车辆购置税的新能源汽车车型目录（第六十三批）.doc",
+  "bytes": 591360,
+  "status": "ok"
+ },
+ "369": {
+  "batch": 369,
+  "page": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2023/art_7ebffdaa452a4520a4c722f417f0a759.html",
+  "doc_url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20233/9eea6bcf248840788ad8a6d23c9df14a.doc",
+  "label": "3.免征车辆购置税的新能源汽车车型目录（第六十四批）.doc",
+  "bytes": 597504,
+  "status": "ok"
+ },
+ "370": {
+  "batch": 370,
+  "page": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2023/art_775ad683e9a848fbb774204a2462eb58.html",
+  "doc_url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20233/9690d55f242d491d98c7bed3465e948c.doc",
+  "label": "3.免征车辆购置税的新能源汽车车型目录（第六十五批）",
+  "bytes": 608256,
+  "status": "ok"
+ },
+ "371": {
+  "batch": 371,
+  "page": "https://www.miit.gov.cn/jgsj/zbys/qcgy/art/2023/art_8f6cd5c56b694e979f0cb801acb4269f.html",
+  "doc_url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20235/2bbdeccfb7fe4573b236a27dcaa2284e.doc",
+  "label": "3.免征车辆购置税的新能源汽车车型目录（第六十六批）",
+  "bytes": 634368,
+  "status": "ok"
+ },
+ "372": {
+  "batch": 372,
+  "page": "https://www.miit.gov.cn/jgsj/zbys/wjfb/art/2023/art_ca2bc775ecad4e949f2c5cbab1ec881b.html",
+  "doc_url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20236/dda4cab9489e4383b0b98841b13bbf9d.doc",
+  "label": "3.免征车辆购置税的新能源汽车车型目录（第六十七批）",
+  "bytes": 716800,
+  "status": "ok"
+ },
+ "373": {
+  "batch": 373,
+  "page": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2023/art_09a577fff43b4fbd88f6334607688069.html",
+  "doc_url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20238/7e184f798bec44b7a2276d496381f29f.doc",
+  "label": "3.免征车辆购置税的新能源汽车车型目录（第六十八批）.doc",
+  "bytes": 518656,
+  "status": "ok"
+ },
+ "374": {
+  "batch": 374,
+  "page": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2023/art_61fa01e4838e407194ffcd41ea0e00b2.html",
+  "doc_url": "http://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20238/97f9f386eabc4ef9a9cb7a93bbd8fc47.doc",
+  "label": "3.免征车辆购置税的新能源汽车车型目录（第六十九批）.doc",
+  "bytes": 759808,
+  "status": "ok"
+ },
+ "375": {
+  "batch": 375,
+  "page": "https://www.miit.gov.cn/ythzxfwpt/hlwmh/tzgg/xzxk/clsczr/art/2023/art_6daf3748643c4ac49fc672dc8b9e02db.html",
+  "doc_url": null,
+  "label": null,
+  "status": "no_doc"
+ },
+ "376": {
+  "batch": 376,
+  "page": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2023/art_eef75198fdc347bf9b2d9b0c0bec15dc.html",
+  "doc_url": "http://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/202311/b616da30dcbc4111a4a19262f191f629.doc",
+  "label": "3.免征车辆购置税的新能源汽车车型目录（第七十一批）.doc",
+  "bytes": 575488,
+  "status": "ok"
+ },
+ "377": {
+  "batch": 377,
+  "page": "https://www.miit.gov.cn/jgsj/zbys/wjfb/art/2023/art_1d9d471ad77f4147abc7adfaeac9ab5a.html",
+  "doc_url": "https://jyhwzhq.miit.gov.cn/cms_files/filemanager/1226211233/attach/202311/3252bcc3b7a646aba4fde99f4914960a.doc",
+  "label": "3.免征车辆购置税的新能源汽车车型目录（第七十二批）.doc",
+  "status": "err:HTTPError",
+  "detail": "HTTP Error 403: Forbidden"
+ },
+ "378": {
+  "batch": 378,
+  "page": "http://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2023/art_f9e4c7489a5f4c89a1683a8e06525c02.html",
+  "doc_url": "http://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20239/7e91a26f23444936b1b34333945eca6b.doc",
+  "label": "3.免征车辆购置税的新能源汽车车型目录（第七十三批）.doc",
+  "bytes": 623616,
+  "status": "ok"
+ }
+}

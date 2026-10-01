@@ -1,0 +1,426 @@
+{
+ "created": "2026-10-01",
+ "note": "doc3 老批次全量核证（22/27 批；342/359/366/367/375 公告未捆绑购置税目录）",
+ "stats": {
+  "hit": 26,
+  "no_hit": 162
+ },
+ "results": [
+  {
+   "batch": 345,
+   "model": "FV7147FADEHEV",
+   "generic": 240,
+   "cur_capacity": 13.0,
+   "implied": 9.5,
+   "doc": {
+    "batch_doc": "382",
+    "energy_kwh": "13.0",
+    "range": 51.0,
+    "curb": "1750",
+    "rng_ok": false,
+    "generic_doc": "MAGOTAN GTE",
+    "pt": "PHEV"
+   }
+  },
+  {
+   "batch": 348,
+   "model": "LZW7003EVB3EAB",
+   "generic": 400,
+   "cur_capacity": 32.0,
+   "implied": 36.1,
+   "doc": {
+    "batch_doc": "348",
+    "energy_kwh": "32",
+    "range": 301.0,
+    "curb": "1052",
+    "rng_ok": true,
+    "generic_doc": "KiWi EV",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 351,
+   "model": "TSL6480BEVAR2",
+   "generic": 557,
+   "cur_capacity": 60.0,
+   "implied": 69.2,
+   "doc": {
+    "batch_doc": "351",
+    "energy_kwh": "60.0",
+    "range": 545.0,
+    "curb": "1929",
+    "rng_ok": true,
+    "generic_doc": "特斯拉 MODEL Y",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 368,
+   "model": "SH6486N1BEV-7",
+   "generic": 1268,
+   "cur_capacity": 70.0,
+   "implied": 80.1,
+   "doc": {
+    "batch_doc": "368",
+    "energy_kwh": "70",
+    "range": 510.0,
+    "curb": "1805/1835",
+    "rng_ok": true,
+    "generic_doc": "MIFA 5",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 369,
+   "model": "VCC7002F23VBEV",
+   "generic": 1327,
+   "cur_capacity": 82.0,
+   "implied": 92.8,
+   "doc": {
+    "batch_doc": "369",
+    "energy_kwh": "82",
+    "range": 780.0,
+    "curb": "2034",
+    "rng_ok": true,
+    "generic_doc": "极星2",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 370,
+   "model": "LTS6510H7BEV",
+   "generic": 1371,
+   "cur_capacity": 112.0,
+   "implied": 128.9,
+   "doc": {
+    "batch_doc": "370",
+    "energy_kwh": "112",
+    "range": 720.0,
+    "curb": "2495/2545",
+    "rng_ok": true,
+    "generic_doc": "ELETRE",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 374,
+   "model": "CSA6492LBEV5",
+   "generic": 1623,
+   "cur_capacity": 90.0,
+   "implied": 102.7,
+   "doc": {
+    "batch_doc": "374",
+    "energy_kwh": "90",
+    "range": 680.0,
+    "curb": "2227",
+    "rng_ok": true,
+    "generic_doc": "LS6",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 378,
+   "model": "BYD6433SBEV",
+   "generic": 1893,
+   "cur_capacity": 32.0,
+   "implied": 36.1,
+   "doc": {
+    "batch_doc": "378",
+    "energy_kwh": "32.000",
+    "range": null,
+    "curb": "1430",
+    "rng_ok": false,
+    "generic_doc": "比亚迪元UP",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 378,
+   "model": "CSA7005DSEV5",
+   "generic": 1903,
+   "cur_capacity": 77.0,
+   "implied": 88.3,
+   "doc": {
+    "batch_doc": "378",
+    "energy_kwh": "77",
+    "range": 640.0,
+    "curb": "2075",
+    "rng_ok": true,
+    "generic_doc": "F7",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 378,
+   "model": "NAL6492BSEVA2",
+   "generic": 1924,
+   "cur_capacity": 70.0,
+   "implied": 86.0,
+   "doc": {
+    "batch_doc": "379",
+    "energy_kwh": "70/75/100/150",
+    "range": 455.0,
+    "curb": "2390/2399/2420/2419/2440/2448",
+    "rng_ok": true,
+    "generic_doc": "EC7",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 378,
+   "model": "NAL6512BSEVA1",
+   "generic": 1926,
+   "cur_capacity": 70.0,
+   "implied": 84.3,
+   "doc": {
+    "batch_doc": "379",
+    "energy_kwh": "70/75/100/150",
+    "range": 430.0,
+    "curb": "2560/2565/2579/2585/2599/2614",
+    "rng_ok": true,
+    "generic_doc": "ES8",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 379,
+   "model": "DFM6473M5F1CHEV",
+   "generic": 2019,
+   "cur_capacity": 17.0,
+   "implied": 13.1,
+   "doc": {
+    "batch_doc": "379",
+    "energy_kwh": "17",
+    "range": 86.0,
+    "curb": "1725",
+    "rng_ok": true,
+    "generic_doc": "东风皓瀚DH-i/东风风神皓瀚DH-i",
+    "pt": "PHEV"
+   }
+  },
+  {
+   "batch": 384,
+   "model": "CSA6501LBEV6",
+   "generic": 2383,
+   "cur_capacity": 83.0,
+   "implied": 96.0,
+   "doc": {
+    "batch_doc": "384",
+    "energy_kwh": "83.0",
+    "range": 640.0,
+    "curb": "2350/2420",
+    "rng_ok": true,
+    "generic_doc": "LS7",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 384,
+   "model": "JL6431BEV103",
+   "generic": 2400,
+   "cur_capacity": 66.0,
+   "implied": 74.0,
+   "doc": {
+    "batch_doc": "384",
+    "energy_kwh": "66",
+    "range": 500.0,
+    "curb": "1900",
+    "rng_ok": true,
+    "generic_doc": "精灵#1",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 386,
+   "model": "THZ7000BEVS417",
+   "generic": 2564,
+   "cur_capacity": 63.0,
+   "implied": 75.9,
+   "doc": {
+    "batch_doc": "386",
+    "energy_kwh": "63",
+    "range": 550.0,
+    "curb": "1998",
+    "rng_ok": true,
+    "generic_doc": "哪吒S,S,哪吒SF,SF",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 390,
+   "model": "BYD6433SBEV3",
+   "generic": 2785,
+   "cur_capacity": 32.0,
+   "implied": 36.1,
+   "doc": {
+    "batch_doc": "390",
+    "energy_kwh": "32.000",
+    "range": 301.0,
+    "curb": "1430",
+    "rng_ok": true,
+    "generic_doc": "比亚迪元UP",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 391,
+   "model": "MR7001BEV101",
+   "generic": 2906,
+   "cur_capacity": 75.0,
+   "implied": 86.5,
+   "doc": {
+    "batch_doc": "391",
+    "energy_kwh": "75",
+    "range": 650.0,
+    "curb": "2230",
+    "rng_ok": true,
+    "generic_doc": "007GT",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 391,
+   "model": "MR7001BEV103",
+   "generic": 2908,
+   "cur_capacity": 75.0,
+   "implied": 86.6,
+   "doc": {
+    "batch_doc": "391",
+    "energy_kwh": "75",
+    "range": 585.0,
+    "curb": "2330",
+    "rng_ok": true,
+    "generic_doc": "007GT",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 393,
+   "model": "HQ6431BEV101",
+   "generic": 3033,
+   "cur_capacity": 49.0,
+   "implied": 57.8,
+   "doc": {
+    "batch_doc": "393",
+    "energy_kwh": "49",
+    "range": 410.0,
+    "curb": "1770",
+    "rng_ok": true,
+    "generic_doc": "精灵#1",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 396,
+   "model": "BAW6530MBM2BEV",
+   "generic": 3212,
+   "cur_capacity": 92.0,
+   "implied": 103.0,
+   "doc": {
+    "batch_doc": "396",
+    "energy_kwh": "92.0",
+    "range": 560.0,
+    "curb": "2490",
+    "rng_ok": true,
+    "generic_doc": "锐胜M8",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 396,
+   "model": "BAW6530MBM3BEV",
+   "generic": 3213,
+   "cur_capacity": 92.0,
+   "implied": 103.0,
+   "doc": {
+    "batch_doc": "396",
+    "energy_kwh": "92.0",
+    "range": 560.0,
+    "curb": "2490",
+    "rng_ok": true,
+    "generic_doc": "锐胜M8",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 398,
+   "model": "MR7003BEV102",
+   "generic": 3320,
+   "cur_capacity": 95.0,
+   "implied": 108.6,
+   "doc": {
+    "batch_doc": "398",
+    "energy_kwh": "95",
+    "range": 710.0,
+    "curb": "2470/2550",
+    "rng_ok": true,
+    "generic_doc": "001",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 399,
+   "model": "GTM6471BFLBEV",
+   "generic": 3404,
+   "cur_capacity": 69.0,
+   "implied": 82.0,
+   "doc": {
+    "batch_doc": "400",
+    "energy_kwh": "68.5",
+    "range": 752.0,
+    "curb": "1890",
+    "rng_ok": true,
+    "generic_doc": "bZ4X",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 401,
+   "model": "HQ6431BEV106",
+   "generic": 3575,
+   "cur_capacity": 49.0,
+   "implied": 57.0,
+   "doc": {
+    "batch_doc": "401",
+    "energy_kwh": "49",
+    "range": 410.0,
+    "curb": "1790",
+    "rng_ok": true,
+    "generic_doc": "精灵#1",
+    "pt": "BEV"
+   }
+  },
+  {
+   "batch": 397,
+   "model": "BAW6530MB21SHEV",
+   "generic": 4568,
+   "cur_capacity": 46.0,
+   "implied": 37.8,
+   "doc": {
+    "batch_doc": "397",
+    "energy_kwh": "46",
+    "range": 180.0,
+    "curb": "2410",
+    "rng_ok": true,
+    "generic_doc": "锐胜M8",
+    "pt": "PHEV"
+   }
+  },
+  {
+   "batch": 373,
+   "model": "DFL6470NA51BEV",
+   "generic": 5127,
+   "cur_capacity": 111.0,
+   "implied": 70.2,
+   "doc": {
+    "batch_doc": "373",
+    "energy_kwh": "62",
+    "range": 520.0,
+    "curb": "1821",
+    "rng_ok": true,
+    "generic_doc": "VX6",
+    "pt": "BEV"
+   }
+  }
+ ]
+}
