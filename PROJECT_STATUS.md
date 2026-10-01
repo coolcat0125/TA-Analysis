@@ -103,3 +103,4 @@
 - **值守**：云端全程无外推（fb4a464 基线），无并行进程；443 两次间歇阻断重试通过。
 - **教训（已入 AGENTS）**：python-pptx shape.chart 对象陷阱、docx vMerge 表格 cell 错位、replace_data 类目/系列长度一致性、文档数值映射的页内局部+token 收紧正解。
 
+- **2026-09-29 23:0x · 17 TA analysis 终端（zcode）· 门禁 Agent 容量锚定验证轮**：①基线复核：main@97551f6、底表 5,392×38 零改动、CRITICAL=0 / WARN 209；②**容量矛盾 188 行三证据锚定扫描**（续航±8km+整备±40kg+款型唯一）：dcd_s*.json 240 车系文件全量匹配 → 93 行唯一锚定（含 180 多锚定行按纪律弃权）→ 与 188 矛盾清册交集 **6 行现值确认正确**（极星2 78/82kWh、极氪 75kWh×4——dcd 同款型配置容量与底表逐格一致，矛盾源=电耗×续航期望侧）；③产出 `capacity_anchor_scan_20260929.json`（全量扫描）+ `capacity_anchor_conflict_hits.json`（交集）+ `capacity_anchor_verified_20260929.json`（验证报告）；④EIDC 快探：通道活但 410 批仍未收录（blocker 第 8 天精确化）。零 canonical 改动。
