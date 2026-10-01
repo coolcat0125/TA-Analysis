@@ -3287,7 +3287,9 @@ function parseImportedSheet(aoa, fname){
     records.push([batch,ptype,jsCleanSeg(g(row,'细分市场')),jsCleanStr(g(row,'企业名称')),val.w,val.r,val.c,jsNormBt(g(row,'电池类型')),
       val.ed,val.ec,val.fp,val.tp,jsCleanStr(g(row,'电机生产企业')),val.tq,val.fo,val.dv,val.ep,jsCleanStr(g(row,'发动机生产企业')),jsCleanStr(g(row,'数据来源')),
       jsCleanStr(g(row,'产品型号')),jsCleanStr(g(row,'产品商标')),jsNormTax(g(row,'是否减免购置税')),val.ab,val.lg,jsCleanStr(g(row,'通用名称')),
-      val.rt2,val.rp,drive,jsCleanStr(g(row,'产品名称')),val.sn]);
+      val.rt2,val.rp,drive,jsCleanStr(g(row,'产品名称')),val.sn,
+      /* 31st 核验复合字段（与生成器 rec.append(f'{ann_body}|{raw_pn}') 同构） */
+      jsCleanStr(g(row,'动力类型'))+'|'+jsCleanStr(g(row,'产品名称'))]);
   }
   return {records,cleaned};
 }
