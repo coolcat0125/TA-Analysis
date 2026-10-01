@@ -1,0 +1,128 @@
+[
+ {
+  "row": 1325,
+  "batch": "369",
+  "model": "VCC7002F21VBEV",
+  "generic": "极星2",
+  "brand": "极星",
+  "row_range": 650.0,
+  "row_cw": 2132.0,
+  "row_cap": 78.0,
+  "sid": "3166",
+  "hits": [
+   {
+    "name": "双电机长续航",
+    "year": "2024",
+    "range": 650.0,
+    "cw": 2132.0,
+    "cap": 78.0,
+    "motor": "310kW(421Ps)"
+   }
+  ]
+ },
+ {
+  "row": 1327,
+  "batch": "369",
+  "model": "VCC7002F23VBEV",
+  "generic": "极星2",
+  "brand": "极星",
+  "row_range": 780.0,
+  "row_cw": 2034.0,
+  "row_cap": 82.0,
+  "sid": "3166",
+  "hits": [
+   {
+    "name": "单电机长续航",
+    "year": "2024",
+    "range": 780.0,
+    "cw": 2034.0,
+    "cap": 82.0,
+    "motor": "220kW(299Ps)"
+   }
+  ]
+ },
+ {
+  "row": 2906,
+  "batch": "391",
+  "model": "MR7001BEV101",
+  "generic": "007GT",
+  "brand": "极氪",
+  "row_range": 650.0,
+  "row_cw": 2230.0,
+  "row_cap": 75.0,
+  "sid": "25172",
+  "hits": [
+   {
+    "name": "后驱智驾版 75kWh",
+    "year": "2025",
+    "range": 650.0,
+    "cw": 2230.0,
+    "cap": 75.0,
+    "motor": "310kW(422Ps)"
+   }
+  ]
+ },
+ {
+  "row": 2908,
+  "batch": "391",
+  "model": "MR7001BEV103",
+  "generic": "007GT",
+  "brand": "极氪",
+  "row_range": 585.0,
+  "row_cw": 2330.0,
+  "row_cap": 75.0,
+  "sid": "25172",
+  "hits": [
+   {
+    "name": "四驱智驾版 75kWh",
+    "year": "2025",
+    "range": 585.0,
+    "cw": 2330.0,
+    "cap": 75.0,
+    "motor": "475kW(646Ps)"
+   }
+  ]
+ },
+ {
+  "row": 3929,
+  "batch": "404",
+  "model": "MR7001BEV124",
+  "generic": "007GT",
+  "brand": "极氪",
+  "row_range": 615.0,
+  "row_cw": 2300.0,
+  "row_cap": 75.0,
+  "sid": "25172",
+  "hits": [
+   {
+    "name": "四驱Max版 75kWh",
+    "year": "2026",
+    "range": 615.0,
+    "cw": 2300.0,
+    "cap": 75.0,
+    "motor": "585kW(796Ps)"
+   }
+  ]
+ },
+ {
+  "row": 3931,
+  "batch": "404",
+  "model": "MR7001BEV126",
+  "generic": "007GT",
+  "brand": "极氪",
+  "row_range": 702.0,
+  "row_cw": 2195.0,
+  "row_cap": 75.0,
+  "sid": "25172",
+  "hits": [
+   {
+    "name": "后驱Max版 75kWh",
+    "year": "2026",
+    "range": 702.0,
+    "cw": 2195.0,
+    "cap": 75.0,
+    "motor": "370kW(503Ps)"
+   }
+  ]
+ }
+]

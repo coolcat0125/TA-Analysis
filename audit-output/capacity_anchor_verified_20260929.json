@@ -1,0 +1,65 @@
+{
+ "conclusion": "容量矛盾行配置签名锚定验证（三证据：续航±8km+整备±40kg+款型唯一）",
+ "verified_correct": [
+  {
+   "row": "369 VCC7002F21VBEV",
+   "brand": "极星",
+   "current_capacity": 78.0,
+   "dcd_trim": "双电机长续航",
+   "dcd_capacity": 78.0,
+   "dcd_range": 650.0,
+   "dcd_cw": 2132.0,
+   "verdict": "现容量经配置身份锚定验证正确，矛盾源于电耗×续航期望侧（W2 家族）"
+  },
+  {
+   "row": "369 VCC7002F23VBEV",
+   "brand": "极星",
+   "current_capacity": 82.0,
+   "dcd_trim": "单电机长续航",
+   "dcd_capacity": 82.0,
+   "dcd_range": 780.0,
+   "dcd_cw": 2034.0,
+   "verdict": "现容量经配置身份锚定验证正确，矛盾源于电耗×续航期望侧（W2 家族）"
+  },
+  {
+   "row": "391 MR7001BEV101",
+   "brand": "极氪",
+   "current_capacity": 75.0,
+   "dcd_trim": "后驱智驾版 75kWh",
+   "dcd_capacity": 75.0,
+   "dcd_range": 650.0,
+   "dcd_cw": 2230.0,
+   "verdict": "现容量经配置身份锚定验证正确，矛盾源于电耗×续航期望侧（W2 家族）"
+  },
+  {
+   "row": "391 MR7001BEV103",
+   "brand": "极氪",
+   "current_capacity": 75.0,
+   "dcd_trim": "四驱智驾版 75kWh",
+   "dcd_capacity": 75.0,
+   "dcd_range": 585.0,
+   "dcd_cw": 2330.0,
+   "verdict": "现容量经配置身份锚定验证正确，矛盾源于电耗×续航期望侧（W2 家族）"
+  },
+  {
+   "row": "404 MR7001BEV124",
+   "brand": "极氪",
+   "current_capacity": 75.0,
+   "dcd_trim": "四驱Max版 75kWh",
+   "dcd_capacity": 75.0,
+   "dcd_range": 615.0,
+   "dcd_cw": 2300.0,
+   "verdict": "现容量经配置身份锚定验证正确，矛盾源于电耗×续航期望侧（W2 家族）"
+  },
+  {
+   "row": "404 MR7001BEV126",
+   "brand": "极氪",
+   "current_capacity": 75.0,
+   "dcd_trim": "后驱Max版 75kWh",
+   "dcd_capacity": 75.0,
+   "dcd_range": 702.0,
+   "dcd_cw": 2195.0,
+   "verdict": "现容量经配置身份锚定验证正确，矛盾源于电耗×续航期望侧（W2 家族）"
+  }
+ ]
+}

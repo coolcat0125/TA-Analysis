@@ -1,0 +1,9067 @@
+{
+ "uniq": [
+  {
+   "row": 49,
+   "batch": "342",
+   "model": "HXK7000BEVA8",
+   "generic": "凌宝BOX",
+   "brand": "凌宝",
+   "row_range": 140.0,
+   "row_cw": 865.0,
+   "row_cap": 14.72,
+   "sid": "4503",
+   "hits": [
+    {
+     "name": "青柠版",
+     "year": "2025",
+     "range": 140.0,
+     "cw": 865.0,
+     "cap": 14.72,
+     "motor": "30kW(41Ps)"
+    }
+   ]
+  },
+  {
+   "row": 96,
+   "batch": "343",
+   "model": "HXK7000BEVA10",
+   "generic": "凌宝BOX",
+   "brand": "凌宝",
+   "row_range": 140.0,
+   "row_cw": 865.0,
+   "row_cap": 14.72,
+   "sid": "4503",
+   "hits": [
+    {
+     "name": "青柠版",
+     "year": "2025",
+     "range": 140.0,
+     "cw": 865.0,
+     "cap": 14.72,
+     "motor": "30kW(41Ps)"
+    }
+   ]
+  },
+  {
+   "row": 286,
+   "batch": "346",
+   "model": "MR7001BEV11",
+   "generic": "001",
+   "brand": "极氪",
+   "row_range": 616.0,
+   "row_cw": 2340.0,
+   "row_cap": 100.0,
+   "sid": "25172",
+   "hits": [
+    {
+     "name": "四驱Max版 75kWh",
+     "year": "2026",
+     "range": 615.0,
+     "cw": 2300.0,
+     "cap": 75.0,
+     "motor": "585kW(796Ps)"
+    }
+   ]
+  },
+  {
+   "row": 328,
+   "batch": "347",
+   "model": "DFM7001G1F5BEV",
+   "generic": "风神E60",
+   "brand": "风神",
+   "row_range": 401.0,
+   "row_cw": 1550.0,
+   "row_cap": 50.3,
+   "sid": "1655",
+   "hits": [
+    {
+     "name": "500 智行版 磷酸铁锂 120kW",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1515.0,
+     "cap": 47.58,
+     "motor": "120kW(163Ps)"
+    }
+   ]
+  },
+  {
+   "row": 709,
+   "batch": "355",
+   "model": "HXK7000BEVA13",
+   "generic": "凌宝BOX",
+   "brand": "凌宝",
+   "row_range": 145.0,
+   "row_cw": 865.0,
+   "row_cap": 14.08,
+   "sid": "4503",
+   "hits": [
+    {
+     "name": "青柠版",
+     "year": "2025",
+     "range": 140.0,
+     "cw": 865.0,
+     "cap": 14.72,
+     "motor": "30kW(41Ps)"
+    }
+   ]
+  },
+  {
+   "row": 806,
+   "batch": "357",
+   "model": "HXK7000BEVA14",
+   "generic": "凌宝BOX",
+   "brand": "凌宝",
+   "row_range": 205.0,
+   "row_cw": 920.0,
+   "row_cap": 19.008,
+   "sid": "4503",
+   "hits": [
+    {
+     "name": "蜜柚Pro版",
+     "year": "2025",
+     "range": 210.0,
+     "cw": 940.0,
+     "cap": 19.14,
+     "motor": "35kW(48Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1056,
+   "batch": "365",
+   "model": "DXK6460HF5BEV",
+   "generic": "风光E380",
+   "brand": "东风",
+   "row_range": 350.0,
+   "row_cw": 1545.0,
+   "row_cap": 49.92,
+   "sid": "1655",
+   "hits": [
+    {
+     "name": "360H 换电版",
+     "year": "2023",
+     "range": 347.0,
+     "cw": 1550.0,
+     "cap": 43.2,
+     "motor": "120kW(163Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1159,
+   "batch": "366",
+   "model": "JNJ7000EVF4",
+   "generic": "U2",
+   "brand": "江南",
+   "row_range": 151.0,
+   "row_cw": 928.0,
+   "row_cap": 13.3,
+   "sid": "6150",
+   "hits": [
+    {
+     "name": "150",
+     "year": "2023",
+     "range": 151.0,
+     "cw": 928.0,
+     "cap": 13.3,
+     "motor": "35kW(48Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1203,
+   "batch": "367",
+   "model": "GAM6450BEVD0P",
+   "generic": "AION Y Plus",
+   "brand": "埃安(AION)",
+   "row_range": 610.0,
+   "row_cw": 1700.0,
+   "row_cap": 74.4056,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 610 智享版",
+     "year": "2025",
+     "range": 610.0,
+     "cw": 1700.0,
+     "cap": 68.2,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1204,
+   "batch": "367",
+   "model": "GAM6450BEVD0Q",
+   "generic": "AION Y Plus",
+   "brand": "埃安(AION)",
+   "row_range": 610.0,
+   "row_cw": 1700.0,
+   "row_cap": 74.4056,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 610 智享版",
+     "year": "2025",
+     "range": 610.0,
+     "cw": 1700.0,
+     "cap": 68.2,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1205,
+   "batch": "367",
+   "model": "GAM6450BEVD0R",
+   "generic": "AION Y Plus",
+   "brand": "埃安(AION)",
+   "row_range": 430.0,
+   "row_cw": 1590.0,
+   "row_cap": 51.9168,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 430 智享版",
+     "year": "2025",
+     "range": 430.0,
+     "cw": 1590.0,
+     "cap": 49.75,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1325,
+   "batch": "369",
+   "model": "VCC7002F21VBEV",
+   "generic": "极星2",
+   "brand": "极星",
+   "row_range": 650.0,
+   "row_cw": 2132.0,
+   "row_cap": 78.0,
+   "sid": "3166",
+   "hits": [
+    {
+     "name": "双电机长续航",
+     "year": "2024",
+     "range": 650.0,
+     "cw": 2132.0,
+     "cap": 78.0,
+     "motor": "310kW(421Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1327,
+   "batch": "369",
+   "model": "VCC7002F23VBEV",
+   "generic": "极星2",
+   "brand": "极星",
+   "row_range": 780.0,
+   "row_cw": 2034.0,
+   "row_cap": 82.0,
+   "sid": "3166",
+   "hits": [
+    {
+     "name": "单电机长续航",
+     "year": "2024",
+     "range": 780.0,
+     "cw": 2034.0,
+     "cap": 82.0,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1419,
+   "batch": "371",
+   "model": "JNJ7000EVF6",
+   "generic": "U2",
+   "brand": "江南",
+   "row_range": 151.0,
+   "row_cw": 928.0,
+   "row_cap": 13.4,
+   "sid": "6150",
+   "hits": [
+    {
+     "name": "150",
+     "year": "2023",
+     "range": 151.0,
+     "cw": 928.0,
+     "cap": 13.3,
+     "motor": "35kW(48Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1468,
+   "batch": "372",
+   "model": "DXK6460HF6BEV",
+   "generic": "风光E380",
+   "brand": "东风",
+   "row_range": 350.0,
+   "row_cw": 1545.0,
+   "row_cap": 49.92,
+   "sid": "1655",
+   "hits": [
+    {
+     "name": "360H 换电版",
+     "year": "2023",
+     "range": 347.0,
+     "cw": 1550.0,
+     "cap": 43.2,
+     "motor": "120kW(163Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1656,
+   "batch": "374",
+   "model": "NJL6473BEV400",
+   "generic": "创维EV6Ⅱ",
+   "brand": "创维",
+   "row_range": 430.0,
+   "row_cw": 1830.0,
+   "row_cap": 54.7596,
+   "sid": "5122",
+   "hits": [
+    {
+     "name": "极耀版",
+     "year": "2025",
+     "range": 430.0,
+     "cw": 1830.0,
+     "cap": 54.75,
+     "motor": "170kW(231Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1684,
+   "batch": "374",
+   "model": "FZ6480SHEV21",
+   "generic": "C11",
+   "brand": "零跑",
+   "row_range": 205.0,
+   "row_cw": 2040.0,
+   "row_cap": 43.74,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "增程式 200尊享版 6座",
+     "year": "2026",
+     "range": 200.0,
+     "cw": 2065.0,
+     "cap": 28.4,
+     "motor": "170kW(231Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1843,
+   "batch": "377",
+   "model": "GAM6450BEVD1E",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 610.0,
+   "row_cw": 1740.0,
+   "row_cap": 68.237,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 610 智享版",
+     "year": "2025",
+     "range": 610.0,
+     "cw": 1700.0,
+     "cap": 68.2,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1908,
+   "batch": "378",
+   "model": "GAM6450BEVD1B",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 430.0,
+   "row_cw": 1590.0,
+   "row_cap": 49.753,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 430 智享版",
+     "year": "2025",
+     "range": 430.0,
+     "cw": 1590.0,
+     "cap": 49.75,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1984,
+   "batch": "379",
+   "model": "GAM6450BEVD1F",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 610.0,
+   "row_cw": 1740.0,
+   "row_cap": 68.443,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 610 智享版",
+     "year": "2025",
+     "range": 610.0,
+     "cw": 1700.0,
+     "cap": 68.2,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2092,
+   "batch": "380",
+   "model": "FZ6480SHEV25",
+   "generic": "C11",
+   "brand": "零跑",
+   "row_range": 205.0,
+   "row_cw": 2040.0,
+   "row_cap": 43.74,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "增程式 200尊享版 6座",
+     "year": "2026",
+     "range": 200.0,
+     "cw": 2065.0,
+     "cap": 28.4,
+     "motor": "170kW(231Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2127,
+   "batch": "381",
+   "model": "GAM6450BEVD1J",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 610.0,
+   "row_cw": 1700.0,
+   "row_cap": 68.237,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 610 智享版",
+     "year": "2025",
+     "range": 610.0,
+     "cw": 1700.0,
+     "cap": 68.2,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2345,
+   "batch": "384",
+   "model": "AHC6450BEVD1E",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 610.0,
+   "row_cw": 1740.0,
+   "row_cap": 68.237,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 610 智享版",
+     "year": "2025",
+     "range": 610.0,
+     "cw": 1700.0,
+     "cap": 68.2,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2347,
+   "batch": "384",
+   "model": "AHC6450BEVD1J",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 610.0,
+   "row_cw": 1700.0,
+   "row_cap": 68.237,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 610 智享版",
+     "year": "2025",
+     "range": 610.0,
+     "cw": 1700.0,
+     "cap": 68.2,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2391,
+   "batch": "384",
+   "model": "FZ6480BEV28",
+   "generic": "C11",
+   "brand": "零跑",
+   "row_range": 580.0,
+   "row_cw": 2120.0,
+   "row_cap": 78.54,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "纯电版 580尊享版 6座",
+     "year": "2026",
+     "range": 580.0,
+     "cw": 2125.0,
+     "cap": 74.9,
+     "motor": "215kW(292Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2455,
+   "batch": "385",
+   "model": "AHC6450BEVD1B",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 430.0,
+   "row_cw": 1590.0,
+   "row_cap": 49.753,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 430 智享版",
+     "year": "2025",
+     "range": 430.0,
+     "cw": 1590.0,
+     "cap": 49.75,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2657,
+   "batch": "388",
+   "model": "FZ6490BEVC16C",
+   "generic": "C16",
+   "brand": "零跑",
+   "row_range": 580.0,
+   "row_cw": 2125.0,
+   "row_cap": 74.93,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "纯电版 580尊享版 6座",
+     "year": "2026",
+     "range": 580.0,
+     "cw": 2125.0,
+     "cap": 74.9,
+     "motor": "215kW(292Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2712,
+   "batch": "389",
+   "model": "FZ6490BEVC16E",
+   "generic": "C16",
+   "brand": "零跑",
+   "row_range": 580.0,
+   "row_cw": 2125.0,
+   "row_cap": 74.93,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "纯电版 580尊享版 6座",
+     "year": "2026",
+     "range": 580.0,
+     "cw": 2125.0,
+     "cap": 74.9,
+     "motor": "215kW(292Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2715,
+   "batch": "389",
+   "model": "HXK7000BEVA18",
+   "generic": "凌宝BOX",
+   "brand": "凌宝",
+   "row_range": 210.0,
+   "row_cw": 940.0,
+   "row_cap": 19.136,
+   "sid": "4503",
+   "hits": [
+    {
+     "name": "蜜柚Pro版",
+     "year": "2025",
+     "range": 210.0,
+     "cw": 940.0,
+     "cap": 19.14,
+     "motor": "35kW(48Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2716,
+   "batch": "389",
+   "model": "HXK7000BEVA19",
+   "generic": "凌宝BOX",
+   "brand": "凌宝",
+   "row_range": 320.0,
+   "row_cw": 1015.0,
+   "row_cap": 31.2832,
+   "sid": "4503",
+   "hits": [
+    {
+     "name": "金芒版",
+     "year": "2025",
+     "range": 320.0,
+     "cw": 1015.0,
+     "cap": 31.2,
+     "motor": "35kW(48Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2905,
+   "batch": "391",
+   "model": "MR7001BEV100",
+   "generic": "007GT",
+   "brand": "极氪",
+   "row_range": 730.0,
+   "row_cw": 2350.0,
+   "row_cap": 100.01,
+   "sid": "25172",
+   "hits": [
+    {
+     "name": "长续航四驱智驾版 100kWh",
+     "year": "2025",
+     "range": 730.0,
+     "cw": 2350.0,
+     "cap": 100.0,
+     "motor": "475kW(646Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2906,
+   "batch": "391",
+   "model": "MR7001BEV101",
+   "generic": "007GT",
+   "brand": "极氪",
+   "row_range": 650.0,
+   "row_cw": 2230.0,
+   "row_cap": 75.0,
+   "sid": "25172",
+   "hits": [
+    {
+     "name": "后驱智驾版 75kWh",
+     "year": "2025",
+     "range": 650.0,
+     "cw": 2230.0,
+     "cap": 75.0,
+     "motor": "310kW(422Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2907,
+   "batch": "391",
+   "model": "MR7001BEV102",
+   "generic": "007GT",
+   "brand": "极氪",
+   "row_range": 825.0,
+   "row_cw": 2245.0,
+   "row_cap": 100.01,
+   "sid": "25172",
+   "hits": [
+    {
+     "name": "长续航后驱智驾版 100kWh",
+     "year": "2025",
+     "range": 825.0,
+     "cw": 2245.0,
+     "cap": 100.0,
+     "motor": "310kW(422Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2908,
+   "batch": "391",
+   "model": "MR7001BEV103",
+   "generic": "007GT",
+   "brand": "极氪",
+   "row_range": 585.0,
+   "row_cw": 2330.0,
+   "row_cap": 75.0,
+   "sid": "25172",
+   "hits": [
+    {
+     "name": "四驱智驾版 75kWh",
+     "year": "2025",
+     "range": 585.0,
+     "cw": 2330.0,
+     "cap": 75.0,
+     "motor": "475kW(646Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2922,
+   "batch": "391",
+   "model": "TSL6480BEVAR5",
+   "generic": "特斯拉 MODEL Y",
+   "brand": "特斯拉",
+   "row_range": 593.0,
+   "row_cw": 1921.0,
+   "row_cap": 62.5,
+   "sid": "4363",
+   "hits": [
+    {
+     "name": "后轮驱动版",
+     "year": "2026",
+     "range": 593.0,
+     "cw": 1921.0,
+     "cap": 62.5,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2923,
+   "batch": "391",
+   "model": "TSL6480BEVAR6",
+   "generic": "特斯拉 MODEL Y",
+   "brand": "特斯拉",
+   "row_range": 593.0,
+   "row_cw": 1921.0,
+   "row_cap": 62.5,
+   "sid": "4363",
+   "hits": [
+    {
+     "name": "后轮驱动版",
+     "year": "2026",
+     "range": 593.0,
+     "cw": 1921.0,
+     "cap": 62.5,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2983,
+   "batch": "392",
+   "model": "XMA6500LBEVA2",
+   "generic": "小米YU7",
+   "brand": "小米",
+   "row_range": 760.0,
+   "row_cw": 2425.0,
+   "row_cap": 96.3,
+   "sid": "20041",
+   "hits": [
+    {
+     "name": "四驱Max版",
+     "year": "2025",
+     "range": 760.0,
+     "cw": 2405.0,
+     "cap": 101.7,
+     "motor": "508kW(690Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3041,
+   "batch": "393",
+   "model": "MR6461BEV100",
+   "generic": "银河E5",
+   "brand": "吉利",
+   "row_range": 610.0,
+   "row_cw": 1730.0,
+   "row_cap": 68.39,
+   "sid": "10026",
+   "hits": [
+    {
+     "name": "610km 远航版",
+     "year": "2026",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 68.39,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3090,
+   "batch": "394",
+   "model": "LXA6511BEVW04",
+   "generic": "理想i8",
+   "brand": "理想",
+   "row_range": 720.0,
+   "row_cw": 2610.0,
+   "row_cap": 97.842,
+   "sid": "10178",
+   "hits": [
+    {
+     "name": "四驱高性能版",
+     "year": "2026",
+     "range": 720.0,
+     "cw": 2610.0,
+     "cap": 97.8,
+     "motor": "400kW(544Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3149,
+   "batch": "395",
+   "model": "MR6461BEV103",
+   "generic": "银河E5",
+   "brand": "吉利",
+   "row_range": 610.0,
+   "row_cw": 1730.0,
+   "row_cap": 68.39,
+   "sid": "10026",
+   "hits": [
+    {
+     "name": "610km 远航版",
+     "year": "2026",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 68.39,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3171,
+   "batch": "395",
+   "model": "XMA6500LBEVA5",
+   "generic": "小米YU7",
+   "brand": "小米",
+   "row_range": 760.0,
+   "row_cw": 2425.0,
+   "row_cap": 96.3,
+   "sid": "20041",
+   "hits": [
+    {
+     "name": "四驱Max版",
+     "year": "2025",
+     "range": 760.0,
+     "cw": 2405.0,
+     "cap": 101.7,
+     "motor": "508kW(690Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3219,
+   "batch": "396",
+   "model": "BH6464BEVMLB",
+   "generic": "ELEXIO",
+   "brand": "现代",
+   "row_range": 590.0,
+   "row_cw": 2184.0,
+   "row_cap": 88.1,
+   "sid": "25427",
+   "hits": [
+    {
+     "name": "四驱TECH 88.112kWh",
+     "year": "2025",
+     "range": 590.0,
+     "cw": 2184.0,
+     "cap": 88.11,
+     "motor": "233kW(317Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3322,
+   "batch": "398",
+   "model": "MR7003BEV104",
+   "generic": "001",
+   "brand": "极氪",
+   "row_range": 762.0,
+   "row_cw": 2350.0,
+   "row_cap": 103.0,
+   "sid": "25172",
+   "hits": [
+    {
+     "name": "长续航四驱Ultra版 103kWh",
+     "year": "2026",
+     "range": 760.0,
+     "cw": 2320.0,
+     "cap": 103.0,
+     "motor": "585kW(796Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3390,
+   "batch": "399",
+   "model": "AHC7000BEVL0M",
+   "generic": "UT",
+   "brand": "埃安(AION)",
+   "row_range": 320.0,
+   "row_cw": 1436.0,
+   "row_cap": 32.238,
+   "sid": "25014",
+   "hits": [
+    {
+     "name": "320 星辉版",
+     "year": "2026",
+     "range": 320.0,
+     "cw": 1436.0,
+     "cap": 32.24,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3506,
+   "batch": "400",
+   "model": "TSL6480BEVBR0",
+   "generic": "特斯拉 MODEL Y",
+   "brand": "特斯拉",
+   "row_range": 821.0,
+   "row_cw": 1891.0,
+   "row_cap": 78.4,
+   "sid": "4363",
+   "hits": [
+    {
+     "name": "长续航后轮驱动版",
+     "year": "2026",
+     "range": 821.0,
+     "cw": 1891.0,
+     "cap": 78.4,
+     "motor": "225kW(306Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3676,
+   "batch": "402",
+   "model": "AHC7000BEVK0G",
+   "generic": "RT",
+   "brand": "埃安(AION)",
+   "row_range": 505.0,
+   "row_cw": 1685.0,
+   "row_cap": 55.979,
+   "sid": "24800",
+   "hits": [
+    {
+     "name": "super版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1685.0,
+     "cap": 55.979,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3715,
+   "batch": "402",
+   "model": "QCJ7000BTBEV4",
+   "generic": "仰望U7",
+   "brand": "仰望",
+   "row_range": 1006.0,
+   "row_cw": 3120.0,
+   "row_cap": 150.01,
+   "sid": "9324",
+   "hits": [
+    {
+     "name": "五座豪华版",
+     "year": "2026",
+     "range": 1006.0,
+     "cw": 3120.0,
+     "cap": 150.01,
+     "motor": "960kW(1306Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3850,
+   "batch": "403",
+   "model": "BYD7004BEV15",
+   "generic": "比亚迪海豚",
+   "brand": "",
+   "row_range": 420.0,
+   "row_cw": 1445.0,
+   "row_cap": 42.313,
+   "sid": "5008",
+   "hits": [
+    {
+     "name": "智驾版 420KM自由版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1410.0,
+     "cap": 45.12,
+     "motor": "70kW(95Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3858,
+   "batch": "403",
+   "model": "NEQ7000BEVT12AB",
+   "generic": "QQ3",
+   "brand": "",
+   "row_range": 420.0,
+   "row_cw": 1360.0,
+   "row_cap": 41.278,
+   "sid": "25678",
+   "hits": [
+    {
+     "name": "420热爱版",
+     "year": "2026",
+     "range": 420.0,
+     "cw": 1360.0,
+     "cap": 41.28,
+     "motor": "90kW(122Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3861,
+   "batch": "403",
+   "model": "QCJ6460AHBEV10",
+   "generic": "方程豹钛3",
+   "brand": "",
+   "row_range": 565.0,
+   "row_cw": 2150.0,
+   "row_cap": 75.616,
+   "sid": "9249",
+   "hits": [
+    {
+     "name": "565KM 四驱闪充版",
+     "year": "2026",
+     "range": 565.0,
+     "cw": 2170.0,
+     "cap": 75.6,
+     "motor": "375kW(510Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3862,
+   "batch": "403",
+   "model": "QCJ6460AHBEV9",
+   "generic": "方程豹钛3",
+   "brand": "",
+   "row_range": 620.0,
+   "row_cw": 2050.0,
+   "row_cap": 75.616,
+   "sid": "9249",
+   "hits": [
+    {
+     "name": "620KM 后驱闪充版",
+     "year": "2026",
+     "range": 620.0,
+     "cw": 2080.0,
+     "cap": 75.6,
+     "motor": "240kW(326Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3869,
+   "batch": "403",
+   "model": "QCJ7000AKBEV2",
+   "generic": "领汇e7",
+   "brand": "",
+   "row_range": 450.0,
+   "row_cw": 1499.0,
+   "row_cap": 48.0,
+   "sid": "25949",
+   "hits": [
+    {
+     "name": "450启航版",
+     "year": "2026",
+     "range": 450.0,
+     "cw": 1499.0,
+     "cap": 48.0,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3877,
+   "batch": "403",
+   "model": "XMA7001MBEVA1",
+   "generic": "小米SU7",
+   "brand": "小米",
+   "row_range": 835.0,
+   "row_cw": 2280.0,
+   "row_cap": 101.7,
+   "sid": "20041",
+   "hits": [
+    {
+     "name": "后驱长续航版",
+     "year": "2025",
+     "range": 835.0,
+     "cw": 2315.0,
+     "cap": 96.3,
+     "motor": "235kW(320Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3878,
+   "batch": "403",
+   "model": "XMA7001MBEVA4",
+   "generic": "小米SU7",
+   "brand": "小米",
+   "row_range": 835.0,
+   "row_cw": 2280.0,
+   "row_cap": 101.7,
+   "sid": "20041",
+   "hits": [
+    {
+     "name": "后驱长续航版",
+     "year": "2025",
+     "range": 835.0,
+     "cw": 2315.0,
+     "cap": 96.3,
+     "motor": "235kW(320Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3919,
+   "batch": "404",
+   "model": "BJ7000T379BEV",
+   "generic": "T1",
+   "brand": "极狐",
+   "row_range": 352.0,
+   "row_cw": 1400.0,
+   "row_cap": 36.4,
+   "sid": "25401",
+   "hits": [
+    {
+     "name": "350PRO",
+     "year": "2026",
+     "range": 350.0,
+     "cw": 1400.0,
+     "cap": 36.4,
+     "motor": "95kW(129Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3929,
+   "batch": "404",
+   "model": "MR7001BEV124",
+   "generic": "007GT",
+   "brand": "极氪",
+   "row_range": 615.0,
+   "row_cw": 2300.0,
+   "row_cap": 75.0,
+   "sid": "25172",
+   "hits": [
+    {
+     "name": "四驱Max版 75kWh",
+     "year": "2026",
+     "range": 615.0,
+     "cw": 2300.0,
+     "cap": 75.0,
+     "motor": "585kW(796Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3930,
+   "batch": "404",
+   "model": "MR7001BEV125",
+   "generic": "007GT",
+   "brand": "极氪",
+   "row_range": 880.0,
+   "row_cw": 2210.0,
+   "row_cap": 103.0,
+   "sid": "25172",
+   "hits": [
+    {
+     "name": "长续航后驱Max版 103kWh",
+     "year": "2026",
+     "range": 880.0,
+     "cw": 2210.0,
+     "cap": 103.0,
+     "motor": "370kW(503Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3931,
+   "batch": "404",
+   "model": "MR7001BEV126",
+   "generic": "007GT",
+   "brand": "极氪",
+   "row_range": 702.0,
+   "row_cw": 2195.0,
+   "row_cap": 75.0,
+   "sid": "25172",
+   "hits": [
+    {
+     "name": "后驱Max版 75kWh",
+     "year": "2026",
+     "range": 702.0,
+     "cw": 2195.0,
+     "cap": 75.0,
+     "motor": "370kW(503Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3932,
+   "batch": "404",
+   "model": "MR7001BEV127",
+   "generic": "007GT",
+   "brand": "极氪",
+   "row_range": 760.0,
+   "row_cw": 2320.0,
+   "row_cap": 103.0,
+   "sid": "25172",
+   "hits": [
+    {
+     "name": "长续航四驱Ultra版 103kWh",
+     "year": "2026",
+     "range": 760.0,
+     "cw": 2320.0,
+     "cap": 103.0,
+     "motor": "585kW(796Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3946,
+   "batch": "404",
+   "model": "SC7000AABFBEV",
+   "generic": "06T",
+   "brand": "阿维塔（AVATR）",
+   "row_range": 652.0,
+   "row_cw": 2200.0,
+   "row_cap": 72.88,
+   "sid": "25982",
+   "hits": [
+    {
+     "name": "Elite双电机纯电版",
+     "year": "2026",
+     "range": 652.0,
+     "cw": 2200.0,
+     "cap": 75.46,
+     "motor": "450kW(612Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3948,
+   "batch": "404",
+   "model": "SC7000AABHBEV",
+   "generic": "06T",
+   "brand": "阿维塔（AVATR）",
+   "row_range": 680.0,
+   "row_cw": 2385.0,
+   "row_cap": 87.301,
+   "sid": "25982",
+   "hits": [
+    {
+     "name": "Performance三电机纯电版",
+     "year": "2026",
+     "range": 680.0,
+     "cw": 2385.0,
+     "cap": 89.33,
+     "motor": "712kW(968Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3964,
+   "batch": "404",
+   "model": "XMA6500LBEVA9",
+   "generic": "",
+   "brand": "小米",
+   "row_range": 705.0,
+   "row_cw": 2460.0,
+   "row_cap": 101.7,
+   "sid": "20041",
+   "hits": [
+    {
+     "name": "四驱GT",
+     "year": "2026",
+     "range": 705.0,
+     "cw": 2460.0,
+     "cap": 101.7,
+     "motor": "738kW(1003Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4013,
+   "batch": "405",
+   "model": "CSA6453JBEV8",
+   "generic": "MG 4X",
+   "brand": "名爵",
+   "row_range": 610.0,
+   "row_cw": 1710.0,
+   "row_cap": 64.2,
+   "sid": "26013",
+   "hits": [
+    {
+     "name": "610自由版",
+     "year": "2026",
+     "range": 610.0,
+     "cw": 1710.0,
+     "cap": 64.2,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4014,
+   "batch": "405",
+   "model": "CSA7008BBEV1",
+   "generic": "尚界 Z7",
+   "brand": "尚界",
+   "row_range": 905.0,
+   "row_cw": 2210.0,
+   "row_cap": 100.2,
+   "sid": "25920",
+   "hits": [
+    {
+     "name": "Max+",
+     "year": "2026",
+     "range": 905.0,
+     "cw": 2210.0,
+     "cap": 100.0,
+     "motor": "264kW(359Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4015,
+   "batch": "405",
+   "model": "CSA7008BBEV2",
+   "generic": "尚界 Z7 ULTRA",
+   "brand": "尚界",
+   "row_range": 791.0,
+   "row_cw": 2300.0,
+   "row_cap": 100.2,
+   "sid": "25920",
+   "hits": [
+    {
+     "name": "Ultra",
+     "year": "2026",
+     "range": 791.0,
+     "cw": 2300.0,
+     "cap": 100.0,
+     "motor": "434kW(590Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4017,
+   "batch": "405",
+   "model": "CSA7008BBEV4",
+   "generic": "尚界 Z7",
+   "brand": "尚界",
+   "row_range": 732.0,
+   "row_cw": 2260.0,
+   "row_cap": 81.081,
+   "sid": "25920",
+   "hits": [
+    {
+     "name": "Max",
+     "year": "2026",
+     "range": 732.0,
+     "cw": 2260.0,
+     "cap": 81.0,
+     "motor": "264kW(359Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4084,
+   "batch": "406",
+   "model": "CSA6453JBEVA",
+   "generic": "MG 4X",
+   "brand": "名爵",
+   "row_range": 610.0,
+   "row_cw": 1755.0,
+   "row_cap": 64.2,
+   "sid": "26013",
+   "hits": [
+    {
+     "name": "610智享版",
+     "year": "2026",
+     "range": 610.0,
+     "cw": 1755.0,
+     "cap": 64.2,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4180,
+   "batch": "407",
+   "model": "HFC7000DEV8",
+   "generic": "尊界S800",
+   "brand": "江淮",
+   "row_range": 780.0,
+   "row_cw": 2870.0,
+   "row_cap": 120.043,
+   "sid": "24599",
+   "hits": [
+    {
+     "name": "纯电 Grand Design 典藏大观 4座",
+     "year": "2026",
+     "range": 780.0,
+     "cw": 2870.0,
+     "cap": 120.0,
+     "motor": "390kW(530Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4201,
+   "batch": "407",
+   "model": "SC6490AAAEBEV",
+   "generic": "07L",
+   "brand": "阿维塔（AVATR）",
+   "row_range": 650.0,
+   "row_cw": 2480.0,
+   "row_cap": 87.301,
+   "sid": "26154",
+   "hits": [
+    {
+     "name": "Ultra 三电机纯电版",
+     "year": "2027",
+     "range": 650.0,
+     "cw": 2480.0,
+     "cap": 89.33,
+     "motor": "712kW(968Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4210,
+   "batch": "407",
+   "model": "CC6500DL21APHEV",
+   "generic": "V8X;V8X蓝山",
+   "brand": "魏",
+   "row_range": 251.0,
+   "row_cw": 2580.0,
+   "row_cap": 53.6,
+   "sid": "26048",
+   "hits": [
+    {
+     "name": "1.5T 豪华家庭版Max",
+     "year": "2026",
+     "range": 258.0,
+     "cw": 2570.0,
+     "cap": 44.0,
+     "motor": "320kW(435Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4249,
+   "batch": "408",
+   "model": "AHC7000BEVL0P",
+   "generic": "UT",
+   "brand": "埃安(AION)",
+   "row_range": 530.0,
+   "row_cw": 1600.0,
+   "row_cap": 56.684,
+   "sid": "25014",
+   "hits": [
+    {
+     "name": "530 宁德版",
+     "year": "2027",
+     "range": 530.0,
+     "cw": 1600.0,
+     "cap": 56.684,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4267,
+   "batch": "408",
+   "model": "LXA6511BEVW07",
+   "generic": "理想i8",
+   "brand": "理想",
+   "row_range": 780.0,
+   "row_cw": 2505.0,
+   "row_cap": 97.842,
+   "sid": "10178",
+   "hits": [
+    {
+     "name": "后驱长续航版",
+     "year": "2026",
+     "range": 780.0,
+     "cw": 2505.0,
+     "cap": 97.8,
+     "motor": "250kW(340Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4357,
+   "batch": "410",
+   "model": "",
+   "generic": "iX3",
+   "brand": "宝马(BMW)",
+   "row_range": 702.0,
+   "row_cw": 2255.0,
+   "row_cap": 86.9,
+   "sid": "4538",
+   "hits": [
+    {
+     "name": "40L xDrive",
+     "year": "2026",
+     "range": 702.0,
+     "cw": 2255.0,
+     "cap": 86.9,
+     "motor": "275kW(374Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4425,
+   "batch": "409",
+   "model": "TSL6480BEVBA6",
+   "generic": "特斯拉 MODEL Y",
+   "brand": "特斯拉",
+   "row_range": 659.0,
+   "row_cw": 2027.0,
+   "row_cap": 78.4,
+   "sid": "4363",
+   "hits": [
+    {
+     "name": "高性能全轮驱动版",
+     "year": "2026",
+     "range": 659.0,
+     "cw": 2027.0,
+     "cap": 78.4,
+     "motor": "467kW(635Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4470,
+   "batch": "409",
+   "model": "CA7001H0BEVXK",
+   "generic": "红旗天工07",
+   "brand": "红旗",
+   "row_range": 680.0,
+   "row_cw": 2295.0,
+   "row_cap": null,
+   "sid": "26383",
+   "hits": [
+    {
+     "name": "680 四驱 Ultra",
+     "year": "2026",
+     "range": 680.0,
+     "cw": 2295.0,
+     "cap": 85.0,
+     "motor": "530kW(721Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4471,
+   "batch": "409",
+   "model": "CA7001H0BEVK",
+   "generic": "红旗天工07",
+   "brand": "红旗",
+   "row_range": 730.0,
+   "row_cw": 2190.0,
+   "row_cap": null,
+   "sid": "26383",
+   "hits": [
+    {
+     "name": "730 Ultra",
+     "year": "2026",
+     "range": 730.0,
+     "cw": 2190.0,
+     "cap": 85.0,
+     "motor": "340kW(462Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4473,
+   "batch": "409",
+   "model": "CA7001H0BEVG",
+   "generic": "红旗天工07",
+   "brand": "红旗",
+   "row_range": 640.0,
+   "row_cw": 2130.0,
+   "row_cap": null,
+   "sid": "26383",
+   "hits": [
+    {
+     "name": "640 Max",
+     "year": "2026",
+     "range": 640.0,
+     "cw": 2130.0,
+     "cap": 75.0,
+     "motor": "340kW(462Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4530,
+   "batch": "397",
+   "model": "XMA6500LBEVR8",
+   "generic": "小米YU7",
+   "brand": "",
+   "row_range": 835.0,
+   "row_cw": 2315.0,
+   "row_cap": 96.3,
+   "sid": "20041",
+   "hits": [
+    {
+     "name": "后驱长续航版",
+     "year": "2025",
+     "range": 835.0,
+     "cw": 2315.0,
+     "cap": 96.3,
+     "motor": "235kW(320Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4636,
+   "batch": "341",
+   "model": "LZW7004EVA4KAK",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 120.0,
+   "row_cw": 685.0,
+   "row_cap": 9.3,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "120km 磷酸铁锂",
+     "year": "2024",
+     "range": 120.0,
+     "cw": 685.0,
+     "cap": 9.3,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4639,
+   "batch": "341",
+   "model": "LZW7004EVJDAK",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 120.0,
+   "row_cw": 685.0,
+   "row_cap": 9.3,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "120km 磷酸铁锂",
+     "year": "2024",
+     "range": 120.0,
+     "cw": 685.0,
+     "cap": 9.3,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4641,
+   "batch": "341",
+   "model": "LZW7004EVJDJ",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 120.0,
+   "row_cw": 685.0,
+   "row_cap": 9.3,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "120km 磷酸铁锂",
+     "year": "2024",
+     "range": 120.0,
+     "cw": 685.0,
+     "cap": 9.3,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4645,
+   "batch": "341",
+   "model": "LZW7004EVPDAK",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 120.0,
+   "row_cw": 685.0,
+   "row_cap": 9.3,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "120km 磷酸铁锂",
+     "year": "2024",
+     "range": 120.0,
+     "cw": 685.0,
+     "cap": 9.3,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4647,
+   "batch": "341",
+   "model": "LZW7004EVPDBB",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 120.0,
+   "row_cw": 685.0,
+   "row_cap": 9.3,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "120km 磷酸铁锂",
+     "year": "2024",
+     "range": 120.0,
+     "cw": 685.0,
+     "cap": 9.3,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4648,
+   "batch": "341",
+   "model": "LZW7004EVPDJ",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 120.0,
+   "row_cw": 685.0,
+   "row_cap": 9.3,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "120km 磷酸铁锂",
+     "year": "2024",
+     "range": 120.0,
+     "cw": 685.0,
+     "cap": 9.3,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4650,
+   "batch": "341",
+   "model": "LZW7004EVPKAK",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 120.0,
+   "row_cw": 685.0,
+   "row_cap": 9.3,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "120km 磷酸铁锂",
+     "year": "2024",
+     "range": 120.0,
+     "cw": 685.0,
+     "cap": 9.3,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4753,
+   "batch": "342",
+   "model": "LZW7004EVJDBB",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 120.0,
+   "row_cw": 685.0,
+   "row_cap": 9.3,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "120km 磷酸铁锂",
+     "year": "2024",
+     "range": 120.0,
+     "cw": 685.0,
+     "cap": 9.3,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4755,
+   "batch": "342",
+   "model": "LZW7004EVPEAK",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 120.0,
+   "row_cw": 685.0,
+   "row_cap": 9.3,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "120km 磷酸铁锂",
+     "year": "2024",
+     "range": 120.0,
+     "cw": 685.0,
+     "cap": 9.3,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4878,
+   "batch": "344",
+   "model": "CC7000BJ01CBEV",
+   "generic": "欧拉好猫",
+   "brand": "",
+   "row_range": 401.0,
+   "row_cw": 1515.0,
+   "row_cap": 45.9,
+   "sid": "4635",
+   "hits": [
+    {
+     "name": "401km 经典型",
+     "year": "2025",
+     "range": 401.0,
+     "cw": 1515.0,
+     "cap": 45.9,
+     "motor": "105kW(143Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4939,
+   "batch": "346",
+   "model": "TSL6480BEVBA0",
+   "generic": "特斯拉 MODEL Y",
+   "brand": "",
+   "row_range": 594.0,
+   "row_cw": 1921.0,
+   "row_cap": 62.5,
+   "sid": "4363",
+   "hits": [
+    {
+     "name": "后轮驱动版",
+     "year": "2026",
+     "range": 593.0,
+     "cw": 1921.0,
+     "cap": 62.5,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4977,
+   "batch": "348",
+   "model": "TSL6480BEVBA1",
+   "generic": "特斯拉 MODEL Y",
+   "brand": "",
+   "row_range": 594.0,
+   "row_cw": 1921.0,
+   "row_cap": 62.5,
+   "sid": "4363",
+   "hits": [
+    {
+     "name": "后轮驱动版",
+     "year": "2026",
+     "range": 593.0,
+     "cw": 1921.0,
+     "cap": 62.5,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5233,
+   "batch": "395",
+   "model": "AHC6450BEVD2B",
+   "generic": "AION Y",
+   "brand": "",
+   "row_range": 430.0,
+   "row_cw": 1590.0,
+   "row_cap": 49.753,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 430 智享版",
+     "year": "2025",
+     "range": 430.0,
+     "cw": 1590.0,
+     "cap": 49.75,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5256,
+   "batch": "399",
+   "model": "AFN6490LABBEVB",
+   "generic": "Q6L",
+   "brand": "",
+   "row_range": 668.0,
+   "row_cw": 2511.0,
+   "row_cap": 106.7,
+   "sid": "9440",
+   "hits": [
+    {
+     "name": "quattro乾崑智驾版",
+     "year": "2026",
+     "range": 668.0,
+     "cw": 2511.0,
+     "cap": 107.0,
+     "motor": "405kW(551Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5291,
+   "batch": "401",
+   "model": "LZW6550BEVA2",
+   "generic": "五菱扬光Pro",
+   "brand": "",
+   "row_range": 318.0,
+   "row_cw": 2015.0,
+   "row_cap": 54.5,
+   "sid": "26296",
+   "hits": [
+    {
+     "name": "纯电 318km 客车版",
+     "year": "2026",
+     "range": 318.0,
+     "cw": 2015.0,
+     "cap": 54.5,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  }
+ ],
+ "multi": [
+  {
+   "row": 93,
+   "batch": "343",
+   "model": "GAM7001BEVA0D",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1660.0,
+   "row_cap": 58.81,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "Plus 舒享版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 舒享版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "MAX 70 星意版 磷酸铁锂",
+     "year": "2025",
+     "range": 505.0,
+     "cw": 1630.0,
+     "cap": 53.7,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 153,
+   "batch": "344",
+   "model": "GAM7001BEVA0E",
+   "generic": "AION S Plus",
+   "brand": "埃安(AION)",
+   "row_range": 602.0,
+   "row_cw": 1750.0,
+   "row_cap": 69.94,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "MAX 80 星耀版 磷酸铁锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 67.1,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "MAX 80 星辰版 磷酸铁锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 67.1,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "MAX 80 星瀚版 磷酸铁锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 67.1,
+     "motor": "180kW(245Ps)"
+    }
+   ]
+  },
+  {
+   "row": 525,
+   "batch": "351",
+   "model": "DFM7009G1F1BEV",
+   "generic": "风神E70",
+   "brand": "风神",
+   "row_range": 426.0,
+   "row_cw": 1515.0,
+   "row_cap": 52.56,
+   "sid": "1655",
+   "hits": [
+    {
+     "name": "改款 500 Plus 专享版",
+     "year": "2023",
+     "range": 433.0,
+     "cw": 1502.0,
+     "cap": 52.9,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "PRO 奕智版 长续航型",
+     "year": "2023",
+     "range": 433.0,
+     "cw": 1515.0,
+     "cap": 52.85,
+     "motor": "120kW(163Ps)"
+    }
+   ]
+  },
+  {
+   "row": 639,
+   "batch": "354",
+   "model": "DFM7002G1F4BEV",
+   "generic": "风神E70",
+   "brand": "风神",
+   "row_range": 433.0,
+   "row_cw": 1502.0,
+   "row_cap": 52.85,
+   "sid": "1655",
+   "hits": [
+    {
+     "name": "改款 500 Plus 专享版",
+     "year": "2023",
+     "range": 433.0,
+     "cw": 1502.0,
+     "cap": 52.9,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "PRO 奕智版 长续航型",
+     "year": "2023",
+     "range": 433.0,
+     "cw": 1515.0,
+     "cap": 52.85,
+     "motor": "120kW(163Ps)"
+    }
+   ]
+  },
+  {
+   "row": 645,
+   "batch": "354",
+   "model": "GAM7001BEVA0M",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1640.0,
+   "row_cap": 58.81,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "Plus 舒享版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 舒享版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "MAX 70 星意版 磷酸铁锂",
+     "year": "2025",
+     "range": 505.0,
+     "cw": 1630.0,
+     "cap": 53.7,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 652,
+   "batch": "354",
+   "model": "NHQ7000BEVEH",
+   "generic": "P7",
+   "brand": "小鹏",
+   "row_range": 625.0,
+   "row_cw": 1940.0,
+   "row_cap": 77.9,
+   "sid": "25225",
+   "hits": [
+    {
+     "name": "纯电 625 Max",
+     "year": "2026",
+     "range": 625.0,
+     "cw": 1920.0,
+     "cap": 69.0,
+     "motor": "183kW(249Ps)"
+    },
+    {
+     "name": "纯电 625 Ultra SE",
+     "year": "2026",
+     "range": 625.0,
+     "cw": 1920.0,
+     "cap": 69.0,
+     "motor": "183kW(249Ps)"
+    }
+   ]
+  },
+  {
+   "row": 693,
+   "batch": "355",
+   "model": "DFM7002G1FABEV",
+   "generic": "风神E70",
+   "brand": "风神",
+   "row_range": 433.0,
+   "row_cw": 1502.0,
+   "row_cap": 52.85,
+   "sid": "1655",
+   "hits": [
+    {
+     "name": "改款 500 Plus 专享版",
+     "year": "2023",
+     "range": 433.0,
+     "cw": 1502.0,
+     "cap": 52.9,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "PRO 奕智版 长续航型",
+     "year": "2023",
+     "range": 433.0,
+     "cw": 1515.0,
+     "cap": 52.85,
+     "motor": "120kW(163Ps)"
+    }
+   ]
+  },
+  {
+   "row": 801,
+   "batch": "357",
+   "model": "FZ7000BEVWC01C",
+   "generic": "C01",
+   "brand": "零跑",
+   "row_range": 630.0,
+   "row_cw": 2145.0,
+   "row_cap": 89.97372,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "纯电版 630尊享版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630尊享版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    }
+   ]
+  },
+  {
+   "row": 970,
+   "batch": "362",
+   "model": "JNJ7000EVF1",
+   "generic": "U2",
+   "brand": "江南",
+   "row_range": 406.0,
+   "row_cw": 1188.0,
+   "row_cap": 40.444,
+   "sid": "6150",
+   "hits": [
+    {
+     "name": "400",
+     "year": "2023",
+     "range": 406.0,
+     "cw": 1188.0,
+     "cap": 43.0,
+     "motor": "80kW(109Ps)"
+    },
+    {
+     "name": "400 S",
+     "year": "2023",
+     "range": 406.0,
+     "cw": 1188.0,
+     "cap": 43.0,
+     "motor": "80kW(109Ps)"
+    },
+    {
+     "name": "400 Pro",
+     "year": "2023",
+     "range": 406.0,
+     "cw": 1188.0,
+     "cap": 43.0,
+     "motor": "80kW(109Ps)"
+    }
+   ]
+  },
+  {
+   "row": 971,
+   "batch": "362",
+   "model": "JNJ7000EVF3",
+   "generic": "U2",
+   "brand": "江南",
+   "row_range": 305.0,
+   "row_cw": 1058.0,
+   "row_cap": 29.9,
+   "sid": "6150",
+   "hits": [
+    {
+     "name": "300",
+     "year": "2023",
+     "range": 305.0,
+     "cw": 1058.0,
+     "cap": 29.9,
+     "motor": "55kW(75Ps)"
+    },
+    {
+     "name": "300 S",
+     "year": "2023",
+     "range": 305.0,
+     "cw": 1058.0,
+     "cap": 29.9,
+     "motor": "55kW(75Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1045,
+   "batch": "364",
+   "model": "JNJ7000EVF1",
+   "generic": "U2",
+   "brand": "江南",
+   "row_range": 406.0,
+   "row_cw": 1188.0,
+   "row_cap": 40.444,
+   "sid": "6150",
+   "hits": [
+    {
+     "name": "400",
+     "year": "2023",
+     "range": 406.0,
+     "cw": 1188.0,
+     "cap": 43.0,
+     "motor": "80kW(109Ps)"
+    },
+    {
+     "name": "400 S",
+     "year": "2023",
+     "range": 406.0,
+     "cw": 1188.0,
+     "cap": 43.0,
+     "motor": "80kW(109Ps)"
+    },
+    {
+     "name": "400 Pro",
+     "year": "2023",
+     "range": 406.0,
+     "cw": 1188.0,
+     "cap": 43.0,
+     "motor": "80kW(109Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1046,
+   "batch": "364",
+   "model": "JNJ7000EVF3",
+   "generic": "U2",
+   "brand": "江南",
+   "row_range": 305.0,
+   "row_cw": 1058.0,
+   "row_cap": 29.9,
+   "sid": "6150",
+   "hits": [
+    {
+     "name": "300",
+     "year": "2023",
+     "range": 305.0,
+     "cw": 1058.0,
+     "cap": 29.9,
+     "motor": "55kW(75Ps)"
+    },
+    {
+     "name": "300 S",
+     "year": "2023",
+     "range": 305.0,
+     "cw": 1058.0,
+     "cap": 29.9,
+     "motor": "55kW(75Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1085,
+   "batch": "365",
+   "model": "NEQ7000BEVJ728",
+   "generic": "eQ1,小蚂蚁",
+   "brand": "奇瑞",
+   "row_range": 251.0,
+   "row_cw": 920.0,
+   "row_cap": 25.056,
+   "sid": "1101",
+   "hits": [
+    {
+     "name": "喜爱 磷酸铁锂 25.05kWh 251km",
+     "year": "2025",
+     "range": 251.0,
+     "cw": 920.0,
+     "cap": 25.05,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "改款 真爱 磷酸铁锂 25.05kWh 251km",
+     "year": "2024",
+     "range": 251.0,
+     "cw": 920.0,
+     "cap": 25.05,
+     "motor": "36kW(49Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1157,
+   "batch": "366",
+   "model": "JNJ7000EVF",
+   "generic": "U2",
+   "brand": "江南",
+   "row_range": 406.0,
+   "row_cw": 1188.0,
+   "row_cap": 43.0,
+   "sid": "6150",
+   "hits": [
+    {
+     "name": "400",
+     "year": "2023",
+     "range": 406.0,
+     "cw": 1188.0,
+     "cap": 43.0,
+     "motor": "80kW(109Ps)"
+    },
+    {
+     "name": "400 S",
+     "year": "2023",
+     "range": 406.0,
+     "cw": 1188.0,
+     "cap": 43.0,
+     "motor": "80kW(109Ps)"
+    },
+    {
+     "name": "400 Pro",
+     "year": "2023",
+     "range": 406.0,
+     "cw": 1188.0,
+     "cap": 43.0,
+     "motor": "80kW(109Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1158,
+   "batch": "366",
+   "model": "JNJ7000EVF2",
+   "generic": "U2",
+   "brand": "江南",
+   "row_range": 305.0,
+   "row_cw": 1058.0,
+   "row_cap": 29.9,
+   "sid": "6150",
+   "hits": [
+    {
+     "name": "300",
+     "year": "2023",
+     "range": 305.0,
+     "cw": 1058.0,
+     "cap": 29.9,
+     "motor": "55kW(75Ps)"
+    },
+    {
+     "name": "300 S",
+     "year": "2023",
+     "range": 305.0,
+     "cw": 1058.0,
+     "cap": 29.9,
+     "motor": "55kW(75Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1192,
+   "batch": "367",
+   "model": "DFM7002G1FBBEV",
+   "generic": "风神E70",
+   "brand": "风神",
+   "row_range": 401.0,
+   "row_cw": 1500.0,
+   "row_cap": 48.46,
+   "sid": "1655",
+   "hits": [
+    {
+     "name": "改款 500 智行版 磷酸铁锂 110kW",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1465.0,
+     "cap": 47.58,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "500 智行版 磷酸铁锂 120kW",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1515.0,
+     "cap": 47.58,
+     "motor": "120kW(163Ps)"
+    },
+    {
+     "name": "400H换电出租版",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1500.0,
+     "cap": 48.4,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "400H换电网约版",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1500.0,
+     "cap": 48.4,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "改款 PRO 智行版",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1500.0,
+     "cap": 48.46,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "改款 PRO 畅行版",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1502.0,
+     "cap": 48.45,
+     "motor": "110kW(150Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1200,
+   "batch": "367",
+   "model": "GAM6450BEVD0L",
+   "generic": "AION Y Plus",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1655.0,
+   "row_cap": 61.777,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1201,
+   "batch": "367",
+   "model": "GAM6450BEVD0M",
+   "generic": "AION Y Plus",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1655.0,
+   "row_cap": 61.777,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1202,
+   "batch": "367",
+   "model": "GAM6450BEVD0N",
+   "generic": "AION Y Plus",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1655.0,
+   "row_cap": 61.777,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1211,
+   "batch": "367",
+   "model": "JNJ7000EVF7",
+   "generic": "U2",
+   "brand": "江南",
+   "row_range": 406.0,
+   "row_cw": 1188.0,
+   "row_cap": 40.4,
+   "sid": "6150",
+   "hits": [
+    {
+     "name": "400",
+     "year": "2023",
+     "range": 406.0,
+     "cw": 1188.0,
+     "cap": 43.0,
+     "motor": "80kW(109Ps)"
+    },
+    {
+     "name": "400 S",
+     "year": "2023",
+     "range": 406.0,
+     "cw": 1188.0,
+     "cap": 43.0,
+     "motor": "80kW(109Ps)"
+    },
+    {
+     "name": "400 Pro",
+     "year": "2023",
+     "range": 406.0,
+     "cw": 1188.0,
+     "cap": 43.0,
+     "motor": "80kW(109Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1463,
+   "batch": "372",
+   "model": "CGC6481BEV2P3",
+   "generic": "远志M1",
+   "brand": "大运",
+   "row_range": 490.0,
+   "row_cw": 1870.0,
+   "row_cap": 70.08,
+   "sid": "4542",
+   "hits": [
+    {
+     "name": "5座标准版 490KM",
+     "year": "2024",
+     "range": 490.0,
+     "cw": 1870.0,
+     "cap": 70.08,
+     "motor": "145kW(197Ps)"
+    },
+    {
+     "name": "6座标准版 490KM",
+     "year": "2024",
+     "range": 490.0,
+     "cw": 1870.0,
+     "cap": 70.08,
+     "motor": "145kW(197Ps)"
+    },
+    {
+     "name": "7座标准版 490KM",
+     "year": "2024",
+     "range": 490.0,
+     "cw": 1870.0,
+     "cap": 70.08,
+     "motor": "145kW(197Ps)"
+    },
+    {
+     "name": "5座精英版 490KM",
+     "year": "2024",
+     "range": 490.0,
+     "cw": 1870.0,
+     "cap": 70.08,
+     "motor": "145kW(197Ps)"
+    },
+    {
+     "name": "6座精英版 490KM",
+     "year": "2024",
+     "range": 490.0,
+     "cw": 1870.0,
+     "cap": 70.08,
+     "motor": "145kW(197Ps)"
+    },
+    {
+     "name": "7座精英版 490KM",
+     "year": "2024",
+     "range": 490.0,
+     "cw": 1870.0,
+     "cap": 70.08,
+     "motor": "145kW(197Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1486,
+   "batch": "372",
+   "model": "NEQ7001BEVJ72",
+   "generic": "eQ1,小蚂蚁",
+   "brand": "奇瑞",
+   "row_range": 321.0,
+   "row_cw": 960.0,
+   "row_cap": 30.03,
+   "sid": "1101",
+   "hits": [
+    {
+     "name": "改款 钟爱 磷酸铁锂 29.23kWh 321km",
+     "year": "2024",
+     "range": 321.0,
+     "cw": 960.0,
+     "cap": 29.23,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "改款 钟爱Pro 磷酸铁锂 29.23kWh 321km",
+     "year": "2024",
+     "range": 321.0,
+     "cw": 960.0,
+     "cap": 29.23,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "改款 酷爱 磷酸铁锂 29.23kWh 321km",
+     "year": "2024",
+     "range": 321.0,
+     "cw": 960.0,
+     "cap": 29.23,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "改款 唯爱 磷酸铁锂 29.23kWh 321km",
+     "year": "2024",
+     "range": 321.0,
+     "cw": 960.0,
+     "cap": 29.23,
+     "motor": "36kW(49Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1487,
+   "batch": "372",
+   "model": "NEQ7001BEVJ72A",
+   "generic": "eQ1,小蚂蚁",
+   "brand": "奇瑞",
+   "row_range": 321.0,
+   "row_cw": 960.0,
+   "row_cap": 29.23,
+   "sid": "1101",
+   "hits": [
+    {
+     "name": "改款 钟爱 磷酸铁锂 29.23kWh 321km",
+     "year": "2024",
+     "range": 321.0,
+     "cw": 960.0,
+     "cap": 29.23,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "改款 钟爱Pro 磷酸铁锂 29.23kWh 321km",
+     "year": "2024",
+     "range": 321.0,
+     "cw": 960.0,
+     "cap": 29.23,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "改款 酷爱 磷酸铁锂 29.23kWh 321km",
+     "year": "2024",
+     "range": 321.0,
+     "cw": 960.0,
+     "cap": 29.23,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "改款 唯爱 磷酸铁锂 29.23kWh 321km",
+     "year": "2024",
+     "range": 321.0,
+     "cw": 960.0,
+     "cap": 29.23,
+     "motor": "36kW(49Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1488,
+   "batch": "372",
+   "model": "NEQ7001BEVJ72B",
+   "generic": "eQ1,小蚂蚁",
+   "brand": "奇瑞",
+   "row_range": 271.0,
+   "row_cw": 935.0,
+   "row_cap": 25.056,
+   "sid": "1101",
+   "hits": [
+    {
+     "name": "271km 喜爱版",
+     "year": "2026",
+     "range": 271.0,
+     "cw": 920.0,
+     "cap": 25.05,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "271km 真爱版",
+     "year": "2026",
+     "range": 271.0,
+     "cw": 920.0,
+     "cap": 25.05,
+     "motor": "36kW(49Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1678,
+   "batch": "374",
+   "model": "YQZ6460BEV",
+   "generic": "EV5",
+   "brand": "起亚",
+   "row_range": 530.0,
+   "row_cw": 1870.0,
+   "row_cap": 64.2,
+   "sid": "9237",
+   "hits": [
+    {
+     "name": "530 Light",
+     "year": "2025",
+     "range": 530.0,
+     "cw": 1870.0,
+     "cap": 64.2,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530 Air",
+     "year": "2025",
+     "range": 530.0,
+     "cw": 1870.0,
+     "cap": 64.2,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530 Land",
+     "year": "2025",
+     "range": 530.0,
+     "cw": 1870.0,
+     "cap": 64.2,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1715,
+   "batch": "375",
+   "model": "GAM7001BEVA1J",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 610.0,
+   "row_cw": 1680.0,
+   "row_cap": 67.997,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "MAX 80 星耀版 三元锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1660.0,
+     "cap": 67.9,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "MAX 80 星辰版 三元锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1660.0,
+     "cap": 67.9,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "MAX 80 星瀚版 三元锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1660.0,
+     "cap": 67.9,
+     "motor": "180kW(245Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1716,
+   "batch": "375",
+   "model": "GAM7001BEVA1K",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 610.0,
+   "row_cw": 1660.0,
+   "row_cap": 67.997,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "MAX 80 星耀版 三元锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1660.0,
+     "cap": 67.9,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "MAX 80 星辰版 三元锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1660.0,
+     "cap": 67.9,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "MAX 80 星瀚版 三元锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1660.0,
+     "cap": 67.9,
+     "motor": "180kW(245Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1775,
+   "batch": "376",
+   "model": "DFM7003G1F3BEV",
+   "generic": "风神E70",
+   "brand": "风神",
+   "row_range": 401.0,
+   "row_cw": 1465.0,
+   "row_cap": 46.92,
+   "sid": "1655",
+   "hits": [
+    {
+     "name": "改款 500 智行版 磷酸铁锂 110kW",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1465.0,
+     "cap": 47.58,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "改款 500 智行版 三元锂",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1438.0,
+     "cap": 47.3,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "400H换电出租版",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1500.0,
+     "cap": 48.4,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "400H换电网约版",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1500.0,
+     "cap": 48.4,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "改款 PRO 智行版",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1500.0,
+     "cap": 48.46,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "改款 PRO 畅行版",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1502.0,
+     "cap": 48.45,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "PRO 奕智版 标准续航型",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1438.0,
+     "cap": 48.45,
+     "motor": "110kW(150Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1783,
+   "batch": "376",
+   "model": "GAM6450BEVD1C",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1670.0,
+   "row_cap": 61.777,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1791,
+   "batch": "376",
+   "model": "NEQ7001BEVJ72C",
+   "generic": "eQ1,小蚂蚁",
+   "brand": "奇瑞",
+   "row_range": 251.0,
+   "row_cw": 920.0,
+   "row_cap": 23.99,
+   "sid": "1101",
+   "hits": [
+    {
+     "name": "喜爱 磷酸铁锂 25.05kWh 251km",
+     "year": "2025",
+     "range": 251.0,
+     "cw": 920.0,
+     "cap": 25.05,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "改款 真爱 磷酸铁锂 25.05kWh 251km",
+     "year": "2024",
+     "range": 251.0,
+     "cw": 920.0,
+     "cap": 25.05,
+     "motor": "36kW(49Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1792,
+   "batch": "376",
+   "model": "NEQ7001BEVJ72D",
+   "generic": "eQ1,小蚂蚁",
+   "brand": "奇瑞",
+   "row_range": 321.0,
+   "row_cw": 920.0,
+   "row_cap": 28.86,
+   "sid": "1101",
+   "hits": [
+    {
+     "name": "改款 钟爱 磷酸铁锂 29.23kWh 321km",
+     "year": "2024",
+     "range": 321.0,
+     "cw": 960.0,
+     "cap": 29.23,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "改款 钟爱Pro 磷酸铁锂 29.23kWh 321km",
+     "year": "2024",
+     "range": 321.0,
+     "cw": 960.0,
+     "cap": 29.23,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "改款 酷爱 磷酸铁锂 29.23kWh 321km",
+     "year": "2024",
+     "range": 321.0,
+     "cw": 960.0,
+     "cap": 29.23,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "改款 唯爱 磷酸铁锂 29.23kWh 321km",
+     "year": "2024",
+     "range": 321.0,
+     "cw": 960.0,
+     "cap": 29.23,
+     "motor": "36kW(49Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1841,
+   "batch": "377",
+   "model": "GAM6450BEVD1A",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1670.0,
+   "row_cap": 61.701,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1848,
+   "batch": "377",
+   "model": "GAM7001BEVA1N",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 610.0,
+   "row_cw": 1720.0,
+   "row_cap": 67.08,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "MAX 80 星耀版 磷酸铁锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 67.1,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "MAX 80 星辰版 磷酸铁锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 67.1,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "MAX 80 星瀚版 磷酸铁锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 67.1,
+     "motor": "180kW(245Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1865,
+   "batch": "377",
+   "model": "NJL6472BEV500",
+   "generic": "创维EV6Ⅱ",
+   "brand": "创维",
+   "row_range": 520.0,
+   "row_cw": 1860.0,
+   "row_cap": 65.71152,
+   "sid": "5122",
+   "hits": [
+    {
+     "name": "舒享版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1860.0,
+     "cap": 65.71,
+     "motor": "250kW(340Ps)"
+    },
+    {
+     "name": "改款 Pro",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1860.0,
+     "cap": 65.71,
+     "motor": "250kW(340Ps)"
+    },
+    {
+     "name": "神行版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1860.0,
+     "cap": 65.71,
+     "motor": "250kW(340Ps)"
+    },
+    {
+     "name": "健康尊贵版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1860.0,
+     "cap": 65.71,
+     "motor": "250kW(340Ps)"
+    },
+    {
+     "name": "闪现版+",
+     "year": "2025",
+     "range": 520.0,
+     "cw": 1860.0,
+     "cap": 65.71,
+     "motor": "250kW(340Ps)"
+    },
+    {
+     "name": "荣耀版",
+     "year": "2024",
+     "range": 520.0,
+     "cw": 1860.0,
+     "cap": 65.71,
+     "motor": "250kW(340Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1947,
+   "batch": "378",
+   "model": "YQZ6461BEV",
+   "generic": "EV5",
+   "brand": "起亚",
+   "row_range": 720.0,
+   "row_cw": 2030.0,
+   "row_cap": 88.1,
+   "sid": "9237",
+   "hits": [
+    {
+     "name": "720 Light",
+     "year": "2025",
+     "range": 720.0,
+     "cw": 2030.0,
+     "cap": 88.1,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "720 Air",
+     "year": "2025",
+     "range": 720.0,
+     "cw": 2030.0,
+     "cap": 88.1,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "720 Land",
+     "year": "2025",
+     "range": 720.0,
+     "cw": 2030.0,
+     "cap": 88.1,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "720 Wave",
+     "year": "2025",
+     "range": 720.0,
+     "cw": 2030.0,
+     "cap": 88.1,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 1948,
+   "batch": "378",
+   "model": "YQZ6461WBEV",
+   "generic": "EV5",
+   "brand": "起亚",
+   "row_range": 630.0,
+   "row_cw": 2130.0,
+   "row_cap": 88.1,
+   "sid": "9237",
+   "hits": [
+    {
+     "name": "630 Land AWD",
+     "year": "2025",
+     "range": 630.0,
+     "cw": 2130.0,
+     "cap": 88.1,
+     "motor": "233kW(317Ps)"
+    },
+    {
+     "name": "630 Wave AWD",
+     "year": "2025",
+     "range": 630.0,
+     "cw": 2130.0,
+     "cap": 88.1,
+     "motor": "233kW(317Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2135,
+   "batch": "381",
+   "model": "NEQ7001BEVJ72E",
+   "generic": "eQ1,小蚂蚁",
+   "brand": "奇瑞",
+   "row_range": 251.0,
+   "row_cw": 920.0,
+   "row_cap": 25.056,
+   "sid": "1101",
+   "hits": [
+    {
+     "name": "喜爱 磷酸铁锂 25.05kWh 251km",
+     "year": "2025",
+     "range": 251.0,
+     "cw": 920.0,
+     "cap": 25.05,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "改款 真爱 磷酸铁锂 25.05kWh 251km",
+     "year": "2024",
+     "range": 251.0,
+     "cw": 920.0,
+     "cap": 25.05,
+     "motor": "36kW(49Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2197,
+   "batch": "382",
+   "model": "MR6465BEV01",
+   "generic": "银河E5",
+   "brand": "吉利",
+   "row_range": 530.0,
+   "row_cw": 1655.0,
+   "row_cap": 60.22,
+   "sid": "10026",
+   "hits": [
+    {
+     "name": "530km 启航版",
+     "year": "2026",
+     "range": 530.0,
+     "cw": 1655.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530km 公务版",
+     "year": "2024",
+     "range": 530.0,
+     "cw": 1655.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530km 远航版",
+     "year": "2024",
+     "range": 530.0,
+     "cw": 1655.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2198,
+   "batch": "382",
+   "model": "MR6465BEV02",
+   "generic": "银河E5",
+   "brand": "吉利",
+   "row_range": 530.0,
+   "row_cw": 1655.0,
+   "row_cap": 60.22,
+   "sid": "10026",
+   "hits": [
+    {
+     "name": "530km 启航版",
+     "year": "2026",
+     "range": 530.0,
+     "cw": 1655.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530km 公务版",
+     "year": "2024",
+     "range": 530.0,
+     "cw": 1655.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530km 远航版",
+     "year": "2024",
+     "range": 530.0,
+     "cw": 1655.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2199,
+   "batch": "382",
+   "model": "MR6465BEV03",
+   "generic": "银河E5",
+   "brand": "吉利",
+   "row_range": 530.0,
+   "row_cw": 1655.0,
+   "row_cap": 60.22,
+   "sid": "10026",
+   "hits": [
+    {
+     "name": "530km 启航版",
+     "year": "2026",
+     "range": 530.0,
+     "cw": 1655.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530km 公务版",
+     "year": "2024",
+     "range": 530.0,
+     "cw": 1655.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530km 远航版",
+     "year": "2024",
+     "range": 530.0,
+     "cw": 1655.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2200,
+   "batch": "382",
+   "model": "MR6465BEV04",
+   "generic": "银河E5",
+   "brand": "吉利",
+   "row_range": 440.0,
+   "row_cw": 1615.0,
+   "row_cap": 49.52,
+   "sid": "10026",
+   "hits": [
+    {
+     "name": "440km 启航版",
+     "year": "2024",
+     "range": 440.0,
+     "cw": 1615.0,
+     "cap": 49.52,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "440km 探索版",
+     "year": "2024",
+     "range": 440.0,
+     "cw": 1630.0,
+     "cap": 49.52,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2201,
+   "batch": "382",
+   "model": "MR6465BEV05",
+   "generic": "银河E5",
+   "brand": "吉利",
+   "row_range": 440.0,
+   "row_cw": 1615.0,
+   "row_cap": 49.52,
+   "sid": "10026",
+   "hits": [
+    {
+     "name": "440km 启航版",
+     "year": "2024",
+     "range": 440.0,
+     "cw": 1615.0,
+     "cap": 49.52,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "440km 探索版",
+     "year": "2024",
+     "range": 440.0,
+     "cw": 1630.0,
+     "cap": 49.52,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2232,
+   "batch": "382",
+   "model": "YQZ6461GTWBEV",
+   "generic": "EV5",
+   "brand": "起亚",
+   "row_range": 580.0,
+   "row_cw": 2230.0,
+   "row_cap": 88.1,
+   "sid": "9237",
+   "hits": [
+    {
+     "name": "580 Air AWD GT-Line",
+     "year": "2025",
+     "range": 580.0,
+     "cw": 2230.0,
+     "cap": 88.1,
+     "motor": "233kW(317Ps)"
+    },
+    {
+     "name": "580 Land AWD GT-Line",
+     "year": "2025",
+     "range": 580.0,
+     "cw": 2230.0,
+     "cap": 88.1,
+     "motor": "233kW(317Ps)"
+    },
+    {
+     "name": "580 Wave AWD GT-Line",
+     "year": "2025",
+     "range": 580.0,
+     "cw": 2230.0,
+     "cap": 88.1,
+     "motor": "233kW(317Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2276,
+   "batch": "383",
+   "model": "GAM6450BEVD1G",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1640.0,
+   "row_cap": 61.297,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2277,
+   "batch": "383",
+   "model": "GAM6450BEVD1M",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1650.0,
+   "row_cap": 61.297,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2280,
+   "batch": "383",
+   "model": "GAM7001BEVA1P",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 505.0,
+   "row_cw": 1630.0,
+   "row_cap": 55.161,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "Plus 舒享版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 舒享版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "MAX 70 星意版 磷酸铁锂",
+     "year": "2025",
+     "range": 505.0,
+     "cw": 1630.0,
+     "cap": 53.7,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2346,
+   "batch": "384",
+   "model": "AHC6450BEVD1G",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1640.0,
+   "row_cap": 61.297,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2348,
+   "batch": "384",
+   "model": "AHC6450BEVD1M",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1650.0,
+   "row_cap": 61.297,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2369,
+   "batch": "384",
+   "model": "AHC7001BEVA0W",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1730.0,
+   "row_cap": 60.003,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "MAX 70 星耀版 磷酸铁锂",
+     "year": "2024",
+     "range": 510.0,
+     "cw": 1730.0,
+     "cap": 59.5,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "MAX 70 星辰版 磷酸铁锂",
+     "year": "2024",
+     "range": 510.0,
+     "cw": 1730.0,
+     "cap": 59.5,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2374,
+   "batch": "384",
+   "model": "AHC7001BEVA1N",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 610.0,
+   "row_cw": 1720.0,
+   "row_cap": 67.08,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "MAX 80 星耀版 磷酸铁锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 67.1,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "MAX 80 星辰版 磷酸铁锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 67.1,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "MAX 80 星瀚版 磷酸铁锂",
+     "year": "2024",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 67.1,
+     "motor": "180kW(245Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2375,
+   "batch": "384",
+   "model": "AHC7001BEVA1P",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 505.0,
+   "row_cw": 1630.0,
+   "row_cap": 55.161,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "Plus 舒享版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 舒享版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "MAX 70 星意版 磷酸铁锂",
+     "year": "2025",
+     "range": 505.0,
+     "cw": 1630.0,
+     "cap": 53.7,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2382,
+   "batch": "384",
+   "model": "CA7000BEVD",
+   "generic": "奔腾小马",
+   "brand": "一汽",
+   "row_range": 222.0,
+   "row_cw": 750.0,
+   "row_cap": 18.11,
+   "sid": "8956",
+   "hits": [
+    {
+     "name": "222km 萌趣马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 吉祥马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 16.97,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 炫彩马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 闪耀马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 摩登马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 伶俐马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 玲珑马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2452,
+   "batch": "385",
+   "model": "AHC6450BEVD0L",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1685.0,
+   "row_cap": 61.777,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2454,
+   "batch": "385",
+   "model": "AHC6450BEVD1A",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1670.0,
+   "row_cap": 61.701,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2456,
+   "batch": "385",
+   "model": "AHC6450BEVD1C",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1670.0,
+   "row_cap": 61.777,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2459,
+   "batch": "385",
+   "model": "AHC7001BEVA0Y",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1730.0,
+   "row_cap": 59.488,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "MAX 70 星耀版 磷酸铁锂",
+     "year": "2024",
+     "range": 510.0,
+     "cw": 1730.0,
+     "cap": 59.5,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "MAX 70 星辰版 磷酸铁锂",
+     "year": "2024",
+     "range": 510.0,
+     "cw": 1730.0,
+     "cap": 59.5,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2489,
+   "batch": "385",
+   "model": "SQR6500BEVEHY",
+   "generic": "智界R7",
+   "brand": "奇瑞",
+   "row_range": 667.0,
+   "row_cw": 2148.0,
+   "row_cap": 79.934,
+   "sid": "10180",
+   "hits": [
+    {
+     "name": "纯电 Max(192线激光雷达)",
+     "year": "2026",
+     "range": 667.0,
+     "cw": 2148.0,
+     "cap": 82.0,
+     "motor": "215kW(292Ps)"
+    },
+    {
+     "name": "纯电 Max(896线激光雷达)",
+     "year": "2026",
+     "range": 667.0,
+     "cw": 2148.0,
+     "cap": 82.0,
+     "motor": "215kW(292Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2491,
+   "batch": "385",
+   "model": "SQR6500BEVEHY2",
+   "generic": "智界R7",
+   "brand": "奇瑞",
+   "row_range": 736.0,
+   "row_cw": 2320.0,
+   "row_cap": 97.682,
+   "sid": "10180",
+   "hits": [
+    {
+     "name": "纯电 UItra(192线激光雷达)",
+     "year": "2026",
+     "range": 736.0,
+     "cw": 2320.0,
+     "cap": 100.0,
+     "motor": "365kW(496Ps)"
+    },
+    {
+     "name": "纯电 UItra(896线激光雷达)",
+     "year": "2026",
+     "range": 736.0,
+     "cw": 2320.0,
+     "cap": 100.0,
+     "motor": "365kW(496Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2492,
+   "batch": "385",
+   "model": "SQR6500BEVEHY3",
+   "generic": "智界R7",
+   "brand": "奇瑞",
+   "row_range": 667.0,
+   "row_cw": 2148.0,
+   "row_cap": 80.186,
+   "sid": "10180",
+   "hits": [
+    {
+     "name": "纯电 Max(192线激光雷达)",
+     "year": "2026",
+     "range": 667.0,
+     "cw": 2148.0,
+     "cap": 82.0,
+     "motor": "215kW(292Ps)"
+    },
+    {
+     "name": "纯电 Max(896线激光雷达)",
+     "year": "2026",
+     "range": 667.0,
+     "cw": 2148.0,
+     "cap": 82.0,
+     "motor": "215kW(292Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2500,
+   "batch": "385",
+   "model": "YGM6521BEVBE1",
+   "generic": "E-M8",
+   "brand": "领途",
+   "row_range": 401.0,
+   "row_cw": 2020.0,
+   "row_cap": 65.318,
+   "sid": "24705",
+   "hits": [
+    {
+     "name": "401KM 尊贵型中级营运 7座",
+     "year": "2025",
+     "range": 401.0,
+     "cw": 2060.0,
+     "cap": 65.0,
+     "motor": "90kW(122Ps)"
+    },
+    {
+     "name": "401KM 尊贵型中级营运 8/9座",
+     "year": "2025",
+     "range": 401.0,
+     "cw": 2060.0,
+     "cap": 65.0,
+     "motor": "90kW(122Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2501,
+   "batch": "385",
+   "model": "YGM6521BEVBE2",
+   "generic": "E-M8",
+   "brand": "领途",
+   "row_range": 320.0,
+   "row_cw": 1880.0,
+   "row_cap": 50.232,
+   "sid": "24705",
+   "hits": [
+    {
+     "name": "320KM 豪华型中级营运 7座",
+     "year": "2025",
+     "range": 320.0,
+     "cw": 1880.0,
+     "cap": 50.0,
+     "motor": "60kW(82Ps)"
+    },
+    {
+     "name": "320KM 豪华型中级营运 8/9座",
+     "year": "2025",
+     "range": 320.0,
+     "cw": 1880.0,
+     "cap": 50.0,
+     "motor": "60kW(82Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2530,
+   "batch": "386",
+   "model": "AHC7001BEVA1R",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 505.0,
+   "row_cw": 1630.0,
+   "row_cap": 55.507,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "Plus 舒享版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 舒享版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "MAX 70 星意版 磷酸铁锂",
+     "year": "2025",
+     "range": 505.0,
+     "cw": 1630.0,
+     "cap": 53.7,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2592,
+   "batch": "387",
+   "model": "AHC6450BEVD1Q",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1650.0,
+   "row_cap": 61.297,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2593,
+   "batch": "387",
+   "model": "AHC6450BEVD1R",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1650.0,
+   "row_cap": 61.044,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2644,
+   "batch": "388",
+   "model": "AHC6450BEVD1S",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1655.0,
+   "row_cap": 58.455,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2645,
+   "batch": "388",
+   "model": "AHC6450BEVD1T",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1655.0,
+   "row_cap": 58.984,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2647,
+   "batch": "388",
+   "model": "AHC7000BEVK0D",
+   "generic": "RT",
+   "brand": "埃安(AION)",
+   "row_range": 520.0,
+   "row_cw": 1685.0,
+   "row_cap": 55.607,
+   "sid": "24800",
+   "hits": [
+    {
+     "name": "520智享版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1670.0,
+     "cap": 55.1,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "520智豪版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1670.0,
+     "cap": 55.1,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2668,
+   "batch": "388",
+   "model": "MR6461BEV101",
+   "generic": "银河E5",
+   "brand": "吉利",
+   "row_range": 530.0,
+   "row_cw": 1655.0,
+   "row_cap": 60.22,
+   "sid": "10026",
+   "hits": [
+    {
+     "name": "530km 启航版",
+     "year": "2026",
+     "range": 530.0,
+     "cw": 1655.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530km 公务版",
+     "year": "2024",
+     "range": 530.0,
+     "cw": 1655.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530km 远航版",
+     "year": "2024",
+     "range": 530.0,
+     "cw": 1655.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2707,
+   "batch": "389",
+   "model": "AHC7000BEVL0A",
+   "generic": "UT",
+   "brand": "埃安(AION)",
+   "row_range": 420.0,
+   "row_cw": 1510.0,
+   "row_cap": 44.257,
+   "sid": "25014",
+   "hits": [
+    {
+     "name": "永冲锋版",
+     "year": "2026",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智享版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智豪版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智尊版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2708,
+   "batch": "389",
+   "model": "AHC7000BEVL0B",
+   "generic": "UT",
+   "brand": "埃安(AION)",
+   "row_range": 420.0,
+   "row_cw": 1510.0,
+   "row_cap": 44.133,
+   "sid": "25014",
+   "hits": [
+    {
+     "name": "永冲锋版",
+     "year": "2026",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智享版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智豪版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智尊版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2709,
+   "batch": "389",
+   "model": "AHC7000BEVL0D",
+   "generic": "UT",
+   "brand": "埃安(AION)",
+   "row_range": 420.0,
+   "row_cw": 1510.0,
+   "row_cap": 44.108,
+   "sid": "25014",
+   "hits": [
+    {
+     "name": "永冲锋版",
+     "year": "2026",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智享版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智豪版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智尊版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2763,
+   "batch": "390",
+   "model": "AHC6450BEVD1U",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1655.0,
+   "row_cap": 58.455,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2764,
+   "batch": "390",
+   "model": "AHC6450BEVD1V",
+   "generic": "AION Y",
+   "brand": "埃安(AION)",
+   "row_range": 510.0,
+   "row_cw": 1655.0,
+   "row_cap": 58.984,
+   "sid": "4814",
+   "hits": [
+    {
+     "name": "Plus 510 智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智享版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 510 智豪版",
+     "year": "2025",
+     "range": 510.0,
+     "cw": 1655.0,
+     "cap": 58.4,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2781,
+   "batch": "390",
+   "model": "AHC7000BEVL0F",
+   "generic": "UT",
+   "brand": "埃安(AION)",
+   "row_range": 420.0,
+   "row_cw": 1510.0,
+   "row_cap": 44.133,
+   "sid": "25014",
+   "hits": [
+    {
+     "name": "永冲锋版",
+     "year": "2026",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智享版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智豪版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智尊版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2789,
+   "batch": "390",
+   "model": "BYD6450ALBEV2",
+   "generic": "比亚迪海狮05",
+   "brand": "比亚迪",
+   "row_range": 520.0,
+   "row_cw": 1780.0,
+   "row_cap": 60.928,
+   "sid": "10205",
+   "hits": [
+    {
+     "name": "520海浪版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1750.0,
+     "cap": 57.54,
+     "motor": "200kW(272Ps)"
+    },
+    {
+     "name": "520海浪Plus版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1750.0,
+     "cap": 57.54,
+     "motor": "200kW(272Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2958,
+   "batch": "392",
+   "model": "AHC7000BEVL0G",
+   "generic": "UT",
+   "brand": "埃安(AION)",
+   "row_range": 330.0,
+   "row_cw": 1510.0,
+   "row_cap": 34.868,
+   "sid": "25014",
+   "hits": [
+    {
+     "name": "330 星耀版",
+     "year": "2025",
+     "range": 330.0,
+     "cw": 1510.0,
+     "cap": 34.836,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "330 星辉版",
+     "year": "2025",
+     "range": 330.0,
+     "cw": 1510.0,
+     "cap": 34.836,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2960,
+   "batch": "392",
+   "model": "AHC7001BEVA1X",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 505.0,
+   "row_cw": 1650.0,
+   "row_cap": 55.587,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "Plus 舒享版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 舒享版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "MAX 70 星意版 磷酸铁锂",
+     "year": "2025",
+     "range": 505.0,
+     "cw": 1630.0,
+     "cap": 53.7,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2967,
+   "batch": "392",
+   "model": "DFM6430A5F1BEV",
+   "generic": "纳米06",
+   "brand": "东风",
+   "row_range": 401.0,
+   "row_cw": 1526.0,
+   "row_cap": 44.94,
+   "sid": "1655",
+   "hits": [
+    {
+     "name": "500 智行版 磷酸铁锂 120kW",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1515.0,
+     "cap": 47.58,
+     "motor": "120kW(163Ps)"
+    },
+    {
+     "name": "400H换电出租版",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1500.0,
+     "cap": 48.4,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "400H换电网约版",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1500.0,
+     "cap": 48.4,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "改款 PRO 智行版",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1500.0,
+     "cap": 48.46,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "改款 PRO 畅行版",
+     "year": "2023",
+     "range": 401.0,
+     "cw": 1502.0,
+     "cap": 48.45,
+     "motor": "110kW(150Ps)"
+    }
+   ]
+  },
+  {
+   "row": 2975,
+   "batch": "392",
+   "model": "HFC7000DEV5",
+   "generic": "尊界S800",
+   "brand": "江淮",
+   "row_range": 670.0,
+   "row_cw": 2590.0,
+   "row_cap": 94.364,
+   "sid": "24599",
+   "hits": [
+    {
+     "name": "纯电 星辉尊享版 5座",
+     "year": "2026",
+     "range": 670.0,
+     "cw": 2604.0,
+     "cap": 97.0,
+     "motor": "390kW(530Ps)"
+    },
+    {
+     "name": "纯电 星辉尊享版 5座",
+     "year": "2025",
+     "range": 670.0,
+     "cw": 2604.0,
+     "cap": 97.0,
+     "motor": "390kW(530Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3017,
+   "batch": "393",
+   "model": "AHC7000BEVL0H",
+   "generic": "UT",
+   "brand": "埃安(AION)",
+   "row_range": 420.0,
+   "row_cw": 1510.0,
+   "row_cap": 44.089,
+   "sid": "25014",
+   "hits": [
+    {
+     "name": "永冲锋版",
+     "year": "2026",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智享版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智豪版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "420 智尊版",
+     "year": "2025",
+     "range": 420.0,
+     "cw": 1540.0,
+     "cap": 44.089,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3018,
+   "batch": "393",
+   "model": "AHC7001BEVA2C",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 503.0,
+   "row_cw": 1590.0,
+   "row_cap": 54.036,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "Plus 舒享版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 舒享版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "MAX 70 星意版 磷酸铁锂",
+     "year": "2025",
+     "range": 505.0,
+     "cw": 1630.0,
+     "cap": 53.7,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3019,
+   "batch": "393",
+   "model": "AHC7001BEVA2D",
+   "generic": " AION S",
+   "brand": "埃安(AION)",
+   "row_range": 503.0,
+   "row_cw": 1600.0,
+   "row_cap": 53.109,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "Plus 舒享版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 舒享版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "MAX 70 星意版 磷酸铁锂",
+     "year": "2025",
+     "range": 505.0,
+     "cw": 1630.0,
+     "cap": 53.7,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3020,
+   "batch": "393",
+   "model": "AHC7001BEVA2E",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 505.0,
+   "row_cw": 1610.0,
+   "row_cap": 55.742,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "Plus 舒享版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 舒享版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "MAX 70 星意版 磷酸铁锂",
+     "year": "2025",
+     "range": 505.0,
+     "cw": 1630.0,
+     "cap": 53.7,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3021,
+   "batch": "393",
+   "model": "AHC7001BEVA2F",
+   "generic": "AION S",
+   "brand": "埃安(AION)",
+   "row_range": 505.0,
+   "row_cw": 1590.0,
+   "row_cap": 55.607,
+   "sid": "3101",
+   "hits": [
+    {
+     "name": "Plus 舒享版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 舒享版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "Plus 豪华版(2026年6月停产)",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1620.0,
+     "cap": 55.587,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "MAX 70 星意版 磷酸铁锂",
+     "year": "2025",
+     "range": 505.0,
+     "cw": 1630.0,
+     "cap": 53.7,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3072,
+   "batch": "394",
+   "model": "BJ7000T372BEV",
+   "generic": "极狐T1",
+   "brand": "极狐",
+   "row_range": 425.0,
+   "row_cw": 1420.0,
+   "row_cap": 42.3,
+   "sid": "25401",
+   "hits": [
+    {
+     "name": "425 PRO",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "425 PLUS",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "425 MAX",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3081,
+   "batch": "394",
+   "model": "FZ6490BEVC16J",
+   "generic": "C16",
+   "brand": "零跑",
+   "row_range": 630.0,
+   "row_cw": 2195.0,
+   "row_cap": 81.9,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "纯电版 630尊享版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630尊享版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 5座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3082,
+   "batch": "394",
+   "model": "FZ6490BEVC16K",
+   "generic": "C16",
+   "brand": "零跑",
+   "row_range": 630.0,
+   "row_cw": 2195.0,
+   "row_cap": 81.9,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "纯电版 630尊享版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630尊享版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 5座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3083,
+   "batch": "394",
+   "model": "FZ6490BEVC16L",
+   "generic": "C16",
+   "brand": "零跑",
+   "row_range": 630.0,
+   "row_cw": 2195.0,
+   "row_cap": 81.9,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "纯电版 630尊享版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630尊享版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 5座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3118,
+   "batch": "395",
+   "model": "AHC7000BEVL0L",
+   "generic": "UT",
+   "brand": "埃安(AION)",
+   "row_range": 330.0,
+   "row_cw": 1510.0,
+   "row_cap": 34.836,
+   "sid": "25014",
+   "hits": [
+    {
+     "name": "330 星耀版",
+     "year": "2025",
+     "range": 330.0,
+     "cw": 1510.0,
+     "cap": 34.836,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "330 星辉版",
+     "year": "2025",
+     "range": 330.0,
+     "cw": 1510.0,
+     "cap": 34.836,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3215,
+   "batch": "396",
+   "model": "BH6460BEVMLA",
+   "generic": "ELEXIO",
+   "brand": "现代",
+   "row_range": 540.0,
+   "row_cw": 1884.0,
+   "row_cap": 64.2,
+   "sid": "25427",
+   "hits": [
+    {
+     "name": "两驱FUN 64.2kWh",
+     "year": "2025",
+     "range": 540.0,
+     "cw": 1884.0,
+     "cap": 64.2,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "两驱SMART 64.2kWh",
+     "year": "2025",
+     "range": 540.0,
+     "cw": 1884.0,
+     "cap": 64.2,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "两驱TECH 64.2kWh",
+     "year": "2025",
+     "range": 540.0,
+     "cw": 1884.0,
+     "cap": 64.2,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3217,
+   "batch": "396",
+   "model": "BH6462BEVMLA",
+   "generic": "ELEXIO",
+   "brand": "现代",
+   "row_range": 722.0,
+   "row_cw": 2039.0,
+   "row_cap": 88.1,
+   "sid": "25427",
+   "hits": [
+    {
+     "name": "两驱SMART 88.112kWh",
+     "year": "2025",
+     "range": 722.0,
+     "cw": 2039.0,
+     "cap": 88.11,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "两驱TECH 88.112kWh",
+     "year": "2025",
+     "range": 722.0,
+     "cw": 2039.0,
+     "cap": 88.11,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3243,
+   "batch": "396",
+   "model": "NAL6533BSEVE1",
+   "generic": "ES8",
+   "brand": "蔚来",
+   "row_range": 635.0,
+   "row_cw": 2630.0,
+   "row_cap": 102.0,
+   "sid": "1616",
+   "hits": [
+    {
+     "name": "七座行政豪华版",
+     "year": "2026",
+     "range": 635.0,
+     "cw": 2630.0,
+     "cap": 102.0,
+     "motor": "520kW(707Ps)"
+    },
+    {
+     "name": "六座行政豪华版",
+     "year": "2026",
+     "range": 635.0,
+     "cw": 2630.0,
+     "cap": 102.0,
+     "motor": "520kW(707Ps)"
+    },
+    {
+     "name": "六座行政签名版",
+     "year": "2026",
+     "range": 635.0,
+     "cw": 2630.0,
+     "cap": 102.0,
+     "motor": "520kW(707Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3291,
+   "batch": "398",
+   "model": "AHC6470BEVJ0R",
+   "generic": "i60",
+   "brand": "埃安(AION)",
+   "row_range": 530.0,
+   "row_cw": 1800.0,
+   "row_cap": 62.268,
+   "sid": "25643",
+   "hits": [
+    {
+     "name": "530 标准版",
+     "year": "2026",
+     "range": 530.0,
+     "cw": 1800.0,
+     "cap": 62.268,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "530 进阶版",
+     "year": "2026",
+     "range": 530.0,
+     "cw": 1840.0,
+     "cap": 62.268,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "530 宁德进阶版",
+     "year": "2026",
+     "range": 530.0,
+     "cw": 1800.0,
+     "cap": 64.619,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3292,
+   "batch": "398",
+   "model": "AHC6470BEVJ0S",
+   "generic": "i60",
+   "brand": "埃安(AION)",
+   "row_range": 650.0,
+   "row_cw": 1910.0,
+   "row_cap": 75.26,
+   "sid": "25643",
+   "hits": [
+    {
+     "name": "650 标准版",
+     "year": "2026",
+     "range": 650.0,
+     "cw": 1910.0,
+     "cap": 74.96,
+     "motor": "165kW(224Ps)"
+    },
+    {
+     "name": "650 进阶版",
+     "year": "2026",
+     "range": 650.0,
+     "cw": 1910.0,
+     "cap": 74.96,
+     "motor": "165kW(224Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3299,
+   "batch": "398",
+   "model": "BJ7000T374BEV",
+   "generic": "T1",
+   "brand": "极狐",
+   "row_range": 320.0,
+   "row_cw": 1415.0,
+   "row_cap": 33.4,
+   "sid": "25401",
+   "hits": [
+    {
+     "name": "320 PRO",
+     "year": "2025",
+     "range": 320.0,
+     "cw": 1415.0,
+     "cap": 33.4,
+     "motor": "95kW(129Ps)"
+    },
+    {
+     "name": "320 PLUS",
+     "year": "2025",
+     "range": 320.0,
+     "cw": 1415.0,
+     "cap": 33.4,
+     "motor": "95kW(129Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3300,
+   "batch": "398",
+   "model": "BJ7000T375BEV",
+   "generic": "T1,畅行",
+   "brand": "极狐",
+   "row_range": 425.0,
+   "row_cw": 1435.0,
+   "row_cap": 44.1,
+   "sid": "25401",
+   "hits": [
+    {
+     "name": "425 PRO",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "425 PLUS",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "425 MAX",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3301,
+   "batch": "398",
+   "model": "BJ7000T376BEV",
+   "generic": "T1",
+   "brand": "极狐",
+   "row_range": 425.0,
+   "row_cw": 1435.0,
+   "row_cap": 42.4,
+   "sid": "25401",
+   "hits": [
+    {
+     "name": "425 PRO",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "425 PLUS",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "425 MAX",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3302,
+   "batch": "398",
+   "model": "BJ7000T377BEV",
+   "generic": "T1,畅行",
+   "brand": "极狐",
+   "row_range": 425.0,
+   "row_cw": 1450.0,
+   "row_cap": 42.3,
+   "sid": "25401",
+   "hits": [
+    {
+     "name": "425 PRO",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "425 PLUS",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "425 MAX",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3412,
+   "batch": "399",
+   "model": "HQ6471BEV100",
+   "generic": "银河星舰7 EV",
+   "brand": "吉利",
+   "row_range": 525.0,
+   "row_cw": 1712.0,
+   "row_cap": 60.22,
+   "sid": "10026",
+   "hits": [
+    {
+     "name": "530km 探索版",
+     "year": "2026",
+     "range": 530.0,
+     "cw": 1699.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530km 探索+版",
+     "year": "2024",
+     "range": 530.0,
+     "cw": 1699.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530km 星舰版",
+     "year": "2024",
+     "range": 530.0,
+     "cw": 1740.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3413,
+   "batch": "399",
+   "model": "HQ6471BEV101",
+   "generic": "银河星舰7 EV",
+   "brand": "吉利",
+   "row_range": 605.0,
+   "row_cw": 1760.0,
+   "row_cap": 68.39,
+   "sid": "10026",
+   "hits": [
+    {
+     "name": "610km 远航版",
+     "year": "2026",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 68.39,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "610km 探索+版",
+     "year": "2026",
+     "range": 610.0,
+     "cw": 1778.0,
+     "cap": 68.39,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "610km 星舰版",
+     "year": "2026",
+     "range": 610.0,
+     "cw": 1778.0,
+     "cap": 68.39,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3481,
+   "batch": "400",
+   "model": "AHC6470BEVJ0V",
+   "generic": "i60",
+   "brand": "埃安(AION)",
+   "row_range": 650.0,
+   "row_cw": 1910.0,
+   "row_cap": 74.976,
+   "sid": "25643",
+   "hits": [
+    {
+     "name": "650 标准版",
+     "year": "2026",
+     "range": 650.0,
+     "cw": 1910.0,
+     "cap": 74.96,
+     "motor": "165kW(224Ps)"
+    },
+    {
+     "name": "650 进阶版",
+     "year": "2026",
+     "range": 650.0,
+     "cw": 1910.0,
+     "cap": 74.96,
+     "motor": "165kW(224Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3482,
+   "batch": "400",
+   "model": "BJ7000K719BEV",
+   "generic": "享界S9",
+   "brand": "华彰",
+   "row_range": 800.0,
+   "row_cw": 2298.0,
+   "row_cap": 97.6,
+   "sid": "25595",
+   "hits": [
+    {
+     "name": "纯电 Max后驱 100kWh(192线激光雷达)",
+     "year": "2025",
+     "range": 801.0,
+     "cw": 2302.0,
+     "cap": 100.0,
+     "motor": "227kW(309Ps)"
+    },
+    {
+     "name": "纯电 Max后驱 100kWh(896线激光雷达)",
+     "year": "2025",
+     "range": 801.0,
+     "cw": 2302.0,
+     "cap": 100.0,
+     "motor": "227kW(309Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3492,
+   "batch": "400",
+   "model": "HQ6481BEV100",
+   "generic": "银河星舰7 EV",
+   "brand": "吉利",
+   "row_range": 525.0,
+   "row_cw": 1712.0,
+   "row_cap": 60.22,
+   "sid": "10026",
+   "hits": [
+    {
+     "name": "530km 探索版",
+     "year": "2026",
+     "range": 530.0,
+     "cw": 1699.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530km 探索+版",
+     "year": "2024",
+     "range": 530.0,
+     "cw": 1699.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530km 星舰版",
+     "year": "2024",
+     "range": 530.0,
+     "cw": 1740.0,
+     "cap": 60.22,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3493,
+   "batch": "400",
+   "model": "HQ6481BEV101",
+   "generic": "银河星舰7 EV",
+   "brand": "吉利",
+   "row_range": 605.0,
+   "row_cw": 1760.0,
+   "row_cap": 68.39,
+   "sid": "10026",
+   "hits": [
+    {
+     "name": "610km 远航版",
+     "year": "2026",
+     "range": 610.0,
+     "cw": 1730.0,
+     "cap": 68.39,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "610km 探索+版",
+     "year": "2026",
+     "range": 610.0,
+     "cw": 1778.0,
+     "cap": 68.39,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "610km 星舰版",
+     "year": "2026",
+     "range": 610.0,
+     "cw": 1778.0,
+     "cap": 68.39,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3560,
+   "batch": "401",
+   "model": "AHC6470BEVJ0T",
+   "generic": "i60",
+   "brand": "埃安(AION)",
+   "row_range": 650.0,
+   "row_cw": 1900.0,
+   "row_cap": 75.26,
+   "sid": "25643",
+   "hits": [
+    {
+     "name": "650 标准版",
+     "year": "2026",
+     "range": 650.0,
+     "cw": 1910.0,
+     "cap": 74.96,
+     "motor": "165kW(224Ps)"
+    },
+    {
+     "name": "650 进阶版",
+     "year": "2026",
+     "range": 650.0,
+     "cw": 1910.0,
+     "cap": 74.96,
+     "motor": "165kW(224Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3569,
+   "batch": "401",
+   "model": "CA7009B0EVA",
+   "generic": "悦意08",
+   "brand": "一汽",
+   "row_range": 565.0,
+   "row_cw": 1740.0,
+   "row_cap": 59.04,
+   "sid": "25434",
+   "hits": [
+    {
+     "name": "纯电 565 Air",
+     "year": "2026",
+     "range": 565.0,
+     "cw": 1740.0,
+     "cap": 59.04,
+     "motor": "202kW(275Ps)"
+    },
+    {
+     "name": "纯电 565 Plus",
+     "year": "2026",
+     "range": 565.0,
+     "cw": 1740.0,
+     "cap": 59.04,
+     "motor": "202kW(275Ps)"
+    },
+    {
+     "name": "纯电 565 Pro",
+     "year": "2026",
+     "range": 565.0,
+     "cw": 1740.0,
+     "cap": 59.04,
+     "motor": "202kW(275Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3586,
+   "batch": "401",
+   "model": "NEQ7001BEVJ72F",
+   "generic": "eQ1,小蚂蚁",
+   "brand": "奇瑞",
+   "row_range": 271.0,
+   "row_cw": 920.0,
+   "row_cap": 25.056,
+   "sid": "1101",
+   "hits": [
+    {
+     "name": "271km 喜爱版",
+     "year": "2026",
+     "range": 271.0,
+     "cw": 920.0,
+     "cap": 25.05,
+     "motor": "36kW(49Ps)"
+    },
+    {
+     "name": "271km 真爱版",
+     "year": "2026",
+     "range": 271.0,
+     "cw": 920.0,
+     "cap": 25.05,
+     "motor": "36kW(49Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3681,
+   "batch": "402",
+   "model": "BYD7000AGBEV4",
+   "generic": "比亚迪海豹06GT",
+   "brand": "比亚迪",
+   "row_range": 520.0,
+   "row_cw": 1750.0,
+   "row_cap": 57.545,
+   "sid": "10205",
+   "hits": [
+    {
+     "name": "520海浪版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1750.0,
+     "cap": 57.54,
+     "motor": "200kW(272Ps)"
+    },
+    {
+     "name": "520海浪Plus版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1750.0,
+     "cap": 57.54,
+     "motor": "200kW(272Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3682,
+   "batch": "402",
+   "model": "BYD7000AGBEV5",
+   "generic": "比亚迪海豹06GT",
+   "brand": "比亚迪",
+   "row_range": 620.0,
+   "row_cw": 1880.0,
+   "row_cap": 69.07,
+   "sid": "10205",
+   "hits": [
+    {
+     "name": "620热浪Plus版",
+     "year": "2026",
+     "range": 620.0,
+     "cw": 1880.0,
+     "cap": 69.07,
+     "motor": "240kW(326Ps)"
+    },
+    {
+     "name": "620热浪Max版",
+     "year": "2026",
+     "range": 620.0,
+     "cw": 1880.0,
+     "cap": 69.07,
+     "motor": "240kW(326Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3749,
+   "batch": "402",
+   "model": "CSA6531LFSHEV1",
+   "generic": "LS9",
+   "brand": "智己",
+   "row_range": 318.0,
+   "row_cw": 2695.0,
+   "row_cap": 65.9,
+   "sid": "25607",
+   "hits": [
+    {
+     "name": "52 Ultra",
+     "year": "2026",
+     "range": 320.0,
+     "cw": 2670.0,
+     "cap": 52.0,
+     "motor": "380kW(517Ps)"
+    },
+    {
+     "name": "52 Ultra 线控版",
+     "year": "2026",
+     "range": 320.0,
+     "cw": 2670.0,
+     "cap": 52.0,
+     "motor": "380kW(517Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3844,
+   "batch": "403",
+   "model": "BYD7000AGBEV6",
+   "generic": "比亚迪海豹06GT",
+   "brand": "",
+   "row_range": 620.0,
+   "row_cw": 1880.0,
+   "row_cap": 69.07,
+   "sid": "10205",
+   "hits": [
+    {
+     "name": "620热浪Plus版",
+     "year": "2026",
+     "range": 620.0,
+     "cw": 1880.0,
+     "cap": 69.07,
+     "motor": "240kW(326Ps)"
+    },
+    {
+     "name": "620热浪Max版",
+     "year": "2026",
+     "range": 620.0,
+     "cw": 1880.0,
+     "cap": 69.07,
+     "motor": "240kW(326Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3848,
+   "batch": "403",
+   "model": "BYD7001BEVA6",
+   "generic": "比亚迪海鸥",
+   "brand": "",
+   "row_range": 305.0,
+   "row_cw": 1150.0,
+   "row_cap": 30.105,
+   "sid": "5952",
+   "hits": [
+    {
+     "name": "活力版",
+     "year": "2026",
+     "range": 305.0,
+     "cw": 1160.0,
+     "cap": 30.08,
+     "motor": "55kW(75Ps)"
+    },
+    {
+     "name": "自由版",
+     "year": "2026",
+     "range": 305.0,
+     "cw": 1160.0,
+     "cap": 30.08,
+     "motor": "55kW(75Ps)"
+    },
+    {
+     "name": "智驾版 305KM 活力版",
+     "year": "2025",
+     "range": 305.0,
+     "cw": 1160.0,
+     "cap": 30.08,
+     "motor": "55kW(75Ps)"
+    },
+    {
+     "name": "智驾版 305KM 自由版",
+     "year": "2025",
+     "range": 305.0,
+     "cw": 1160.0,
+     "cap": 30.08,
+     "motor": "55kW(75Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3849,
+   "batch": "403",
+   "model": "BYD7001BEVA7",
+   "generic": "比亚迪海鸥",
+   "brand": "",
+   "row_range": 410.0,
+   "row_cw": 1240.0,
+   "row_cap": 40.077,
+   "sid": "5952",
+   "hits": [
+    {
+     "name": "自在版",
+     "year": "2026",
+     "range": 405.0,
+     "cw": 1240.0,
+     "cap": 38.88,
+     "motor": "55kW(75Ps)"
+    },
+    {
+     "name": "飞翔版",
+     "year": "2026",
+     "range": 405.0,
+     "cw": 1240.0,
+     "cap": 38.88,
+     "motor": "55kW(75Ps)"
+    },
+    {
+     "name": "智驾版 405KM 自在版",
+     "year": "2025",
+     "range": 405.0,
+     "cw": 1240.0,
+     "cap": 38.88,
+     "motor": "55kW(75Ps)"
+    },
+    {
+     "name": "智驾版 405KM 飞翔版",
+     "year": "2025",
+     "range": 405.0,
+     "cw": 1240.0,
+     "cap": 38.88,
+     "motor": "55kW(75Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3852,
+   "batch": "403",
+   "model": "FZ6430BEVA10A",
+   "generic": "A10",
+   "brand": "",
+   "row_range": 403.0,
+   "row_cw": 1360.0,
+   "row_cap": 39.8,
+   "sid": "9267",
+   "hits": [
+    {
+     "name": "403舒享版",
+     "year": "2026",
+     "range": 403.0,
+     "cw": 1360.0,
+     "cap": 39.8,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "403悦享版",
+     "year": "2026",
+     "range": 403.0,
+     "cw": 1360.0,
+     "cap": 39.8,
+     "motor": "70kW(95Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3853,
+   "batch": "403",
+   "model": "FZ6430BEVA10B",
+   "generic": "A10",
+   "brand": "",
+   "row_range": 505.0,
+   "row_cw": 1460.0,
+   "row_cap": 53.0,
+   "sid": "9267",
+   "hits": [
+    {
+     "name": "505悦享版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1460.0,
+     "cap": 53.0,
+     "motor": "90kW(122Ps)"
+    },
+    {
+     "name": "505激光雷达版",
+     "year": "2026",
+     "range": 505.0,
+     "cw": 1460.0,
+     "cap": 53.0,
+     "motor": "90kW(122Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3854,
+   "batch": "403",
+   "model": "FZ6530BEVWD19A",
+   "generic": "D19",
+   "brand": "",
+   "row_range": 720.0,
+   "row_cw": 2730.0,
+   "row_cap": 115.0,
+   "sid": "25718",
+   "hits": [
+    {
+     "name": "纯电720智尊版 六座",
+     "year": "2026",
+     "range": 720.0,
+     "cw": 2730.0,
+     "cap": 115.0,
+     "motor": "410kW(558Ps)"
+    },
+    {
+     "name": "纯电720智尊版 七座",
+     "year": "2026",
+     "range": 720.0,
+     "cw": 2760.0,
+     "cap": 115.0,
+     "motor": "410kW(558Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3857,
+   "batch": "403",
+   "model": "NEQ7000BEVT12AA",
+   "generic": "QQ3",
+   "brand": "",
+   "row_range": 310.0,
+   "row_cw": 1275.0,
+   "row_cap": 29.484,
+   "sid": "25678",
+   "hits": [
+    {
+     "name": "310热爱版",
+     "year": "2026",
+     "range": 310.0,
+     "cw": 1275.0,
+     "cap": 29.48,
+     "motor": "58kW(79Ps)"
+    },
+    {
+     "name": "310分享版",
+     "year": "2026",
+     "range": 310.0,
+     "cw": 1275.0,
+     "cap": 29.48,
+     "motor": "58kW(79Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3868,
+   "batch": "403",
+   "model": "QCJ7000AKBEV1",
+   "generic": "领汇e7",
+   "brand": "",
+   "row_range": 550.0,
+   "row_cw": 1595.0,
+   "row_cap": 57.545,
+   "sid": "25949",
+   "hits": [
+    {
+     "name": "550闪充领先版",
+     "year": "2026",
+     "range": 550.0,
+     "cw": 1595.0,
+     "cap": 57.5,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "550闪充高能版",
+     "year": "2026",
+     "range": 550.0,
+     "cw": 1595.0,
+     "cap": 57.5,
+     "motor": "130kW(177Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3870,
+   "batch": "403",
+   "model": "QCJ7000AKBEV3",
+   "generic": "领汇e7",
+   "brand": "",
+   "row_range": 520.0,
+   "row_cw": 1566.0,
+   "row_cap": 57.6,
+   "sid": "25949",
+   "hits": [
+    {
+     "name": "520进阶版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1566.0,
+     "cap": 57.6,
+     "motor": "100kW(136Ps)"
+    },
+    {
+     "name": "520悦享版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1566.0,
+     "cap": 57.6,
+     "motor": "100kW(136Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3918,
+   "batch": "404",
+   "model": "BJ7000T378BEV",
+   "generic": "T1",
+   "brand": "极狐",
+   "row_range": 550.0,
+   "row_cw": 1540.0,
+   "row_cap": 55.6,
+   "sid": "25401",
+   "hits": [
+    {
+     "name": "550PRO",
+     "year": "2026",
+     "range": 550.0,
+     "cw": 1540.0,
+     "cap": 55.6,
+     "motor": "95kW(129Ps)"
+    },
+    {
+     "name": "550MAX",
+     "year": "2026",
+     "range": 550.0,
+     "cw": 1540.0,
+     "cap": 55.6,
+     "motor": "95kW(129Ps)"
+    }
+   ]
+  },
+  {
+   "row": 3947,
+   "batch": "404",
+   "model": "SC7000AABGBEV",
+   "generic": "06T",
+   "brand": "阿维塔（AVATR）",
+   "row_range": 741.0,
+   "row_cw": 2280.0,
+   "row_cap": 87.301,
+   "sid": "25982",
+   "hits": [
+    {
+     "name": "Max双电机纯电版",
+     "year": "2026",
+     "range": 741.0,
+     "cw": 2280.0,
+     "cap": 89.33,
+     "motor": "502kW(683Ps)"
+    },
+    {
+     "name": "猎装骑士版纯电版",
+     "year": "2026",
+     "range": 741.0,
+     "cw": 2280.0,
+     "cap": 89.33,
+     "motor": "502kW(683Ps)"
+    },
+    {
+     "name": "Max+双电机纯电版",
+     "year": "2026",
+     "range": 741.0,
+     "cw": 2280.0,
+     "cap": 89.33,
+     "motor": "502kW(683Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4012,
+   "batch": "405",
+   "model": "CSA6453JBEV7",
+   "generic": "MG 4X",
+   "brand": "名爵",
+   "row_range": 510.0,
+   "row_cw": 1640.0,
+   "row_cap": 53.9,
+   "sid": "26013",
+   "hits": [
+    {
+     "name": "510半固态自由版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1640.0,
+     "cap": 53.9,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "510半固态智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1680.0,
+     "cap": 53.9,
+     "motor": "125kW(170Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4070,
+   "batch": "406",
+   "model": "BJ7000T378BEV",
+   "generic": "T1",
+   "brand": "极狐",
+   "row_range": 550.0,
+   "row_cw": 1540.0,
+   "row_cap": 55.6,
+   "sid": "25401",
+   "hits": [
+    {
+     "name": "550PRO",
+     "year": "2026",
+     "range": 550.0,
+     "cw": 1540.0,
+     "cap": 55.6,
+     "motor": "95kW(129Ps)"
+    },
+    {
+     "name": "550MAX",
+     "year": "2026",
+     "range": 550.0,
+     "cw": 1540.0,
+     "cap": 55.6,
+     "motor": "95kW(129Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4080,
+   "batch": "406",
+   "model": "CA7009B0EVB",
+   "generic": "悦意08",
+   "brand": "一汽",
+   "row_range": 650.0,
+   "row_cw": 1770.0,
+   "row_cap": 70.5,
+   "sid": "25434",
+   "hits": [
+    {
+     "name": "纯电 650 Pro",
+     "year": "2026",
+     "range": 650.0,
+     "cw": 1770.0,
+     "cap": 70.5,
+     "motor": "202kW(275Ps)"
+    },
+    {
+     "name": "纯电 650 Pro领航版",
+     "year": "2026",
+     "range": 650.0,
+     "cw": 1770.0,
+     "cap": 70.5,
+     "motor": "202kW(275Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4083,
+   "batch": "406",
+   "model": "CSA6453JBEV9",
+   "generic": "MG 4X",
+   "brand": "名爵",
+   "row_range": 510.0,
+   "row_cw": 1680.0,
+   "row_cap": 53.9,
+   "sid": "26013",
+   "hits": [
+    {
+     "name": "510半固态自由版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1640.0,
+     "cap": 53.9,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "510半固态智享版",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 1680.0,
+     "cap": 53.9,
+     "motor": "125kW(170Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4092,
+   "batch": "406",
+   "model": "FZ6490BEVC16T",
+   "generic": "C16",
+   "brand": "零跑",
+   "row_range": 630.0,
+   "row_cw": 2160.0,
+   "row_cap": 81.9,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "纯电版 630尊享版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630尊享版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 5座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4093,
+   "batch": "406",
+   "model": "FZ6490BEVC16U",
+   "generic": "C16",
+   "brand": "零跑",
+   "row_range": 630.0,
+   "row_cw": 2160.0,
+   "row_cap": 81.9,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "纯电版 630尊享版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630尊享版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 5座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4102,
+   "batch": "406",
+   "model": "NHQ6470BEVXA",
+   "generic": "小鹏L03",
+   "brand": "小鹏",
+   "row_range": 530.0,
+   "row_cw": 1855.0,
+   "row_cap": 56.0,
+   "sid": "25225",
+   "hits": [
+    {
+     "name": "纯电 525 Max",
+     "year": "2026",
+     "range": 525.0,
+     "cw": 1855.0,
+     "cap": 56.0,
+     "motor": "183kW(249Ps)"
+    },
+    {
+     "name": "纯电 525 Ultra SE",
+     "year": "2026",
+     "range": 525.0,
+     "cw": 1855.0,
+     "cap": 56.0,
+     "motor": "183kW(249Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4103,
+   "batch": "406",
+   "model": "NHQ6470BEVXB",
+   "generic": "小鹏L03",
+   "brand": "小鹏",
+   "row_range": 625.0,
+   "row_cw": 1920.0,
+   "row_cap": 69.0,
+   "sid": "25225",
+   "hits": [
+    {
+     "name": "纯电 625 Max",
+     "year": "2026",
+     "range": 625.0,
+     "cw": 1920.0,
+     "cap": 69.0,
+     "motor": "183kW(249Ps)"
+    },
+    {
+     "name": "纯电 625 Ultra SE",
+     "year": "2026",
+     "range": 625.0,
+     "cw": 1920.0,
+     "cap": 69.0,
+     "motor": "183kW(249Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4153,
+   "batch": "407",
+   "model": "CA7000BEVF",
+   "generic": "奔腾小马",
+   "brand": "一汽",
+   "row_range": 222.0,
+   "row_cw": 750.0,
+   "row_cap": 16.97,
+   "sid": "8956",
+   "hits": [
+    {
+     "name": "222km 萌趣马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 吉祥马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 16.97,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 炫彩马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 闪耀马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 摩登马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 伶俐马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 玲珑马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4154,
+   "batch": "407",
+   "model": "CA7000BEVG",
+   "generic": "奔腾小马",
+   "brand": "一汽",
+   "row_range": 222.0,
+   "row_cw": 750.0,
+   "row_cap": 16.96,
+   "sid": "8956",
+   "hits": [
+    {
+     "name": "222km 萌趣马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 吉祥马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 16.97,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 炫彩马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 闪耀马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 摩登马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 伶俐马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 玲珑马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4155,
+   "batch": "407",
+   "model": "CA7000BEVH",
+   "generic": "奔腾小马",
+   "brand": "一汽",
+   "row_range": 222.0,
+   "row_cw": 750.0,
+   "row_cap": 16.97,
+   "sid": "8956",
+   "hits": [
+    {
+     "name": "222km 萌趣马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 吉祥马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 16.97,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 炫彩马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 闪耀马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 摩登马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 伶俐马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    },
+    {
+     "name": "222km 玲珑马",
+     "year": "2026",
+     "range": 222.0,
+     "cw": 750.0,
+     "cap": 18.11,
+     "motor": "30kW(41Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4175,
+   "batch": "407",
+   "model": "FZ6490BEVC16T",
+   "generic": "C16",
+   "brand": "零跑",
+   "row_range": 630.0,
+   "row_cw": 2160.0,
+   "row_cap": 81.9,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "纯电版 630尊享版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630尊享版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 5座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4200,
+   "batch": "407",
+   "model": "SC6490AAADBEV",
+   "generic": "07L",
+   "brand": "阿维塔（AVATR）",
+   "row_range": 725.0,
+   "row_cw": 2340.0,
+   "row_cap": 87.301,
+   "sid": "26154",
+   "hits": [
+    {
+     "name": "Elite 纯电版",
+     "year": "2027",
+     "range": 725.0,
+     "cw": 2335.0,
+     "cap": 89.33,
+     "motor": "305kW(415Ps)"
+    },
+    {
+     "name": "Max+ 纯电版",
+     "year": "2027",
+     "range": 725.0,
+     "cw": 2340.0,
+     "cap": 89.33,
+     "motor": "305kW(415Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4221,
+   "batch": "407",
+   "model": "GAC6490CHEVGAL6A",
+   "generic": "传祺向往S7;传祺S7",
+   "brand": "传祺(Trumpchi)",
+   "row_range": 180.0,
+   "row_cw": 2260.0,
+   "row_cap": 38.883,
+   "sid": "25071",
+   "hits": [
+    {
+     "name": "180km Ultra四驱版",
+     "year": "2025",
+     "range": 180.0,
+     "cw": 2235.0,
+     "cap": 36.3,
+     "motor": "250kW(340Ps)"
+    },
+    {
+     "name": "180km Ultra四驱激光雷达版",
+     "year": "2025",
+     "range": 180.0,
+     "cw": 2235.0,
+     "cap": 36.3,
+     "motor": "250kW(340Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4256,
+   "batch": "408",
+   "model": "BJ7000K723BEV",
+   "generic": "享界S9T",
+   "brand": "享界",
+   "row_range": 701.0,
+   "row_cw": 2437.0,
+   "row_cap": 97.6,
+   "sid": "25595",
+   "hits": [
+    {
+     "name": "纯电 Max四驱 100kWh(192线激光雷达)",
+     "year": "2025",
+     "range": 701.0,
+     "cw": 2437.0,
+     "cap": 100.0,
+     "motor": "385kW(524Ps)"
+    },
+    {
+     "name": "纯电 Max四驱 100kWh(896线激光雷达)",
+     "year": "2025",
+     "range": 701.0,
+     "cw": 2437.0,
+     "cap": 100.0,
+     "motor": "385kW(524Ps)"
+    },
+    {
+     "name": "纯电 Ultra四驱 100kWh(192线激光雷达)",
+     "year": "2025",
+     "range": 701.0,
+     "cw": 2437.0,
+     "cap": 100.0,
+     "motor": "385kW(524Ps)"
+    },
+    {
+     "name": "纯电 Ultra四驱 100kWh(896线激光雷达)",
+     "year": "2025",
+     "range": 701.0,
+     "cw": 2437.0,
+     "cap": 100.0,
+     "motor": "385kW(524Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4258,
+   "batch": "408",
+   "model": "BYD7000AGBEV7",
+   "generic": "比亚迪海豹06GT",
+   "brand": "比亚迪",
+   "row_range": 520.0,
+   "row_cw": 1750.0,
+   "row_cap": 57.545,
+   "sid": "10205",
+   "hits": [
+    {
+     "name": "520海浪版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1750.0,
+     "cap": 57.54,
+     "motor": "200kW(272Ps)"
+    },
+    {
+     "name": "520海浪Plus版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1750.0,
+     "cap": 57.54,
+     "motor": "200kW(272Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4387,
+   "batch": "409",
+   "model": "YQZ6462BEV",
+   "generic": "EV5",
+   "brand": "起亚",
+   "row_range": 535.0,
+   "row_cw": 1895.0,
+   "row_cap": 64.2,
+   "sid": "9237",
+   "hits": [
+    {
+     "name": "530 Light",
+     "year": "2025",
+     "range": 530.0,
+     "cw": 1870.0,
+     "cap": 64.2,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530 Air",
+     "year": "2025",
+     "range": 530.0,
+     "cw": 1870.0,
+     "cap": 64.2,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "530 Land",
+     "year": "2025",
+     "range": 530.0,
+     "cw": 1870.0,
+     "cap": 64.2,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4390,
+   "batch": "409",
+   "model": "YQZ6463BEV",
+   "generic": "EV5",
+   "brand": "起亚",
+   "row_range": 720.0,
+   "row_cw": 2052.0,
+   "row_cap": 88.1,
+   "sid": "9237",
+   "hits": [
+    {
+     "name": "720 Light",
+     "year": "2025",
+     "range": 720.0,
+     "cw": 2030.0,
+     "cap": 88.1,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "720 Air",
+     "year": "2025",
+     "range": 720.0,
+     "cw": 2030.0,
+     "cap": 88.1,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "720 Land",
+     "year": "2025",
+     "range": 720.0,
+     "cw": 2030.0,
+     "cap": 88.1,
+     "motor": "160kW(218Ps)"
+    },
+    {
+     "name": "720 Wave",
+     "year": "2025",
+     "range": 720.0,
+     "cw": 2030.0,
+     "cap": 88.1,
+     "motor": "160kW(218Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4502,
+   "batch": "397",
+   "model": "LZ7000SXF0EV",
+   "generic": "星海S7",
+   "brand": "",
+   "row_range": 650.0,
+   "row_cw": 1835.0,
+   "row_cap": 68.2,
+   "sid": "9958",
+   "hits": [
+    {
+     "name": "650超快充奢享版",
+     "year": "2026",
+     "range": 650.0,
+     "cw": 1850.0,
+     "cap": 68.2,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "650超快充至尊版",
+     "year": "2026",
+     "range": 650.0,
+     "cw": 1850.0,
+     "cap": 68.2,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "650至尊版",
+     "year": "2024",
+     "range": 650.0,
+     "cw": 1835.0,
+     "cap": 70.26,
+     "motor": "200kW(272Ps)"
+    },
+    {
+     "name": "650行政版",
+     "year": "2024",
+     "range": 650.0,
+     "cw": 1835.0,
+     "cap": 70.26,
+     "motor": "200kW(272Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4507,
+   "batch": "397",
+   "model": "BJ7000K721BEV",
+   "generic": "享界S9T",
+   "brand": "",
+   "row_range": 701.0,
+   "row_cw": 2437.0,
+   "row_cap": 97.6,
+   "sid": "25595",
+   "hits": [
+    {
+     "name": "纯电 Max四驱 100kWh(192线激光雷达)",
+     "year": "2025",
+     "range": 701.0,
+     "cw": 2437.0,
+     "cap": 100.0,
+     "motor": "385kW(524Ps)"
+    },
+    {
+     "name": "纯电 Max四驱 100kWh(896线激光雷达)",
+     "year": "2025",
+     "range": 701.0,
+     "cw": 2437.0,
+     "cap": 100.0,
+     "motor": "385kW(524Ps)"
+    },
+    {
+     "name": "纯电 Ultra四驱 100kWh(192线激光雷达)",
+     "year": "2025",
+     "range": 701.0,
+     "cw": 2437.0,
+     "cap": 100.0,
+     "motor": "385kW(524Ps)"
+    },
+    {
+     "name": "纯电 Ultra四驱 100kWh(896线激光雷达)",
+     "year": "2025",
+     "range": 701.0,
+     "cw": 2437.0,
+     "cap": 100.0,
+     "motor": "385kW(524Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4509,
+   "batch": "397",
+   "model": "BJ7000T373BEV",
+   "generic": "T1",
+   "brand": "",
+   "row_range": 425.0,
+   "row_cw": 1435.0,
+   "row_cap": 42.3,
+   "sid": "25401",
+   "hits": [
+    {
+     "name": "425 PRO",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "425 PLUS",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "425 MAX",
+     "year": "2025",
+     "range": 425.0,
+     "cw": 1420.0,
+     "cap": 42.3,
+     "motor": "70kW(95Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4536,
+   "batch": "397",
+   "model": "AHC7000BEVK0F",
+   "generic": "RT",
+   "brand": "",
+   "row_range": 520.0,
+   "row_cw": 1685.0,
+   "row_cap": 55.607,
+   "sid": "24800",
+   "hits": [
+    {
+     "name": "520智享版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1670.0,
+     "cap": 55.1,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "520智豪版",
+     "year": "2026",
+     "range": 520.0,
+     "cw": 1670.0,
+     "cap": 55.1,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4555,
+   "batch": "397",
+   "model": "SC7000AAAJBEV",
+   "generic": "L07",
+   "brand": "",
+   "row_range": 660.0,
+   "row_cw": 1890.0,
+   "row_cap": 68.82,
+   "sid": "10214",
+   "hits": [
+    {
+     "name": "660Max华为乾崑ADS SE版",
+     "year": "2026",
+     "range": 660.0,
+     "cw": 1890.0,
+     "cap": 68.82,
+     "motor": "200kW(272Ps)"
+    },
+    {
+     "name": "660Ultra华为乾崑ADS SE版",
+     "year": "2026",
+     "range": 660.0,
+     "cw": 1890.0,
+     "cap": 68.82,
+     "motor": "200kW(272Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4556,
+   "batch": "397",
+   "model": "FZ6490BEVC16M",
+   "generic": "C16",
+   "brand": "",
+   "row_range": 630.0,
+   "row_cw": 2195.0,
+   "row_cap": 81.9,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "纯电版 630尊享版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630尊享版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 5座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4557,
+   "batch": "397",
+   "model": "FZ6490BEVC16N",
+   "generic": "C16",
+   "brand": "",
+   "row_range": 630.0,
+   "row_cw": 2195.0,
+   "row_cap": 81.9,
+   "sid": "10125",
+   "hits": [
+    {
+     "name": "纯电版 630尊享版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630尊享版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 五座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 六座",
+     "year": "2027",
+     "range": 630.0,
+     "cw": 2160.0,
+     "cap": 81.9,
+     "motor": "230kW(313Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 6座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    },
+    {
+     "name": "纯电版 630激光雷达智尊版 5座",
+     "year": "2026",
+     "range": 630.0,
+     "cw": 2195.0,
+     "cap": 81.9,
+     "motor": "220kW(299Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4560,
+   "batch": "397",
+   "model": "CSA6531LFSHEV1",
+   "generic": "LS9",
+   "brand": "智己",
+   "row_range": 318.0,
+   "row_cw": 2695.0,
+   "row_cap": 65.9,
+   "sid": "25607",
+   "hits": [
+    {
+     "name": "52 Ultra",
+     "year": "2026",
+     "range": 320.0,
+     "cw": 2670.0,
+     "cap": 52.0,
+     "motor": "380kW(517Ps)"
+    },
+    {
+     "name": "52 Ultra 线控版",
+     "year": "2026",
+     "range": 320.0,
+     "cw": 2670.0,
+     "cap": 52.0,
+     "motor": "380kW(517Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4637,
+   "batch": "341",
+   "model": "LZW7004EVJCAM",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 170.0,
+   "row_cw": 715.0,
+   "row_cap": 13.4,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "170km 三元锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    },
+    {
+     "name": "170km 磷酸铁锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4638,
+   "batch": "341",
+   "model": "LZW7004EVJDAG",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 170.0,
+   "row_cw": 715.0,
+   "row_cap": 13.4,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "170km 三元锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    },
+    {
+     "name": "170km 磷酸铁锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4640,
+   "batch": "341",
+   "model": "LZW7004EVJDAM",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 170.0,
+   "row_cw": 715.0,
+   "row_cap": 13.4,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "170km 三元锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    },
+    {
+     "name": "170km 磷酸铁锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4643,
+   "batch": "341",
+   "model": "LZW7004EVPCAM",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 170.0,
+   "row_cw": 715.0,
+   "row_cap": 13.4,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "170km 三元锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    },
+    {
+     "name": "170km 磷酸铁锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4644,
+   "batch": "341",
+   "model": "LZW7004EVPDAG",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 170.0,
+   "row_cw": 715.0,
+   "row_cap": 13.4,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "170km 三元锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    },
+    {
+     "name": "170km 磷酸铁锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4649,
+   "batch": "341",
+   "model": "LZW7004EVPHAM",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 170.0,
+   "row_cw": 715.0,
+   "row_cap": 13.4,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "170km 三元锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    },
+    {
+     "name": "170km 磷酸铁锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4651,
+   "batch": "341",
+   "model": "LZW7004EVPKAM",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 170.0,
+   "row_cw": 715.0,
+   "row_cap": 13.4,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "170km 三元锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    },
+    {
+     "name": "170km 磷酸铁锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4754,
+   "batch": "342",
+   "model": "LZW7004EVJEAM",
+   "generic": "宏光MINI EV",
+   "brand": "",
+   "row_range": 170.0,
+   "row_cw": 715.0,
+   "row_cap": 13.4,
+   "sid": "4499",
+   "hits": [
+    {
+     "name": "170km 三元锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    },
+    {
+     "name": "170km 磷酸铁锂",
+     "year": "2024",
+     "range": 170.0,
+     "cw": 715.0,
+     "cap": 13.4,
+     "motor": "20kW(27Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4849,
+   "batch": "343",
+   "model": "THZ6450BEVS30A",
+   "generic": "哪吒UPro",
+   "brand": "",
+   "row_range": 610.0,
+   "row_cw": 1779.0,
+   "row_cap": 68.0,
+   "sid": "3275",
+   "hits": [
+    {
+     "name": "U-Ⅱ 610",
+     "year": "2022",
+     "range": 610.0,
+     "cw": 1779.0,
+     "cap": 79.6,
+     "motor": "170kW(231Ps)"
+    },
+    {
+     "name": "智610 Pro 三元锂",
+     "year": "2022",
+     "range": 610.0,
+     "cw": 1779.0,
+     "cap": 79.63,
+     "motor": "170kW(231Ps)"
+    },
+    {
+     "name": "U-Ⅱ 610 尊享版",
+     "year": "2022",
+     "range": 610.0,
+     "cw": 1779.0,
+     "cap": 81.57,
+     "motor": "170kW(231Ps)"
+    }
+   ]
+  },
+  {
+   "row": 4881,
+   "batch": "344",
+   "model": "CC7000ZM00EBEV",
+   "generic": "欧拉黑猫",
+   "brand": "",
+   "row_range": 351.0,
+   "row_cw": 990.0,
+   "row_cap": 33.0,
+   "sid": "2911",
+   "hits": [
+    {
+     "name": "351km 标准型 三元锂",
+     "year": "2022",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 舒适型 三元锂",
+     "year": "2022",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 舒适型 磷酸铁锂",
+     "year": "2022",
+     "range": 351.0,
+     "cw": 1020.0,
+     "cap": 34.9,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 舒享型 三元锂",
+     "year": "2022",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 舒享型 磷酸铁锂",
+     "year": "2022",
+     "range": 351.0,
+     "cw": 1020.0,
+     "cap": 34.9,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 豪华型 三元锂",
+     "year": "2022",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 豪华型 磷酸铁锂",
+     "year": "2022",
+     "range": 351.0,
+     "cw": 1020.0,
+     "cap": 34.9,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km HelloKitty联名款 三元锂",
+     "year": "2022",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km HelloKitty联名款 磷酸铁锂",
+     "year": "2022",
+     "range": 351.0,
+     "cw": 1020.0,
+     "cap": 34.9,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 标准型",
+     "year": "2021",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 豪华型",
+     "year": "2021",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 公务版",
+     "year": "2021",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 亲子版",
+     "year": "2019",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 女神版",
+     "year": "2019",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 灵趣版",
+     "year": "2019",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 灵智版",
+     "year": "2019",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    },
+    {
+     "name": "351km 灵睿版",
+     "year": "2019",
+     "range": 351.0,
+     "cw": 990.0,
+     "cap": 33.0,
+     "motor": "35kW(48Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5004,
+   "batch": "350",
+   "model": "BJ7000C5DA-BEV",
+   "generic": "EU5",
+   "brand": "",
+   "row_range": 401.0,
+   "row_cw": 1580.0,
+   "row_cap": 50.0,
+   "sid": "4074",
+   "hits": [
+    {
+     "name": "鸿途标准版",
+     "year": "2025",
+     "range": 401.0,
+     "cw": 1580.0,
+     "cap": 50.0,
+     "motor": "120kW(163Ps)"
+    },
+    {
+     "name": "鸿途豪华版",
+     "year": "2025",
+     "range": 401.0,
+     "cw": 1580.0,
+     "cap": 50.0,
+     "motor": "120kW(163Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5005,
+   "batch": "350",
+   "model": "BJ7000C5DD-BEV",
+   "generic": "EU5",
+   "brand": "",
+   "row_range": 401.0,
+   "row_cw": 1580.0,
+   "row_cap": 50.0,
+   "sid": "4074",
+   "hits": [
+    {
+     "name": "鸿途标准版",
+     "year": "2025",
+     "range": 401.0,
+     "cw": 1580.0,
+     "cap": 50.0,
+     "motor": "120kW(163Ps)"
+    },
+    {
+     "name": "鸿途豪华版",
+     "year": "2025",
+     "range": 401.0,
+     "cw": 1580.0,
+     "cap": 50.0,
+     "motor": "120kW(163Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5007,
+   "batch": "350",
+   "model": "BJ7000C5DAK-BEV",
+   "generic": "EU5",
+   "brand": "",
+   "row_range": 401.0,
+   "row_cw": 1580.0,
+   "row_cap": 50.0,
+   "sid": "4074",
+   "hits": [
+    {
+     "name": "鸿途标准版",
+     "year": "2025",
+     "range": 401.0,
+     "cw": 1580.0,
+     "cap": 50.0,
+     "motor": "120kW(163Ps)"
+    },
+    {
+     "name": "鸿途豪华版",
+     "year": "2025",
+     "range": 401.0,
+     "cw": 1580.0,
+     "cap": 50.0,
+     "motor": "120kW(163Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5013,
+   "batch": "350",
+   "model": "BYD7002BEV8",
+   "generic": "比亚迪e2",
+   "brand": "",
+   "row_range": 401.0,
+   "row_cw": 1340.0,
+   "row_cap": 43.2,
+   "sid": "3455",
+   "hits": [
+    {
+     "name": "荣耀版 舒适型",
+     "year": "2024",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "荣耀版 豪华型",
+     "year": "2024",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "舒适型",
+     "year": "2023",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "豪华型",
+     "year": "2023",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "出行版",
+     "year": "2023",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5014,
+   "batch": "350",
+   "model": "BYD7002BEV9",
+   "generic": "比亚迪e2",
+   "brand": "",
+   "row_range": 401.0,
+   "row_cw": 1340.0,
+   "row_cap": 43.2,
+   "sid": "3455",
+   "hits": [
+    {
+     "name": "荣耀版 舒适型",
+     "year": "2024",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "荣耀版 豪华型",
+     "year": "2024",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "舒适型",
+     "year": "2023",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "豪华型",
+     "year": "2023",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "出行版",
+     "year": "2023",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5143,
+   "batch": "380",
+   "model": "BYD7002BEV7",
+   "generic": "比亚迪e2",
+   "brand": "",
+   "row_range": 405.0,
+   "row_cw": 1340.0,
+   "row_cap": 43.2,
+   "sid": "3455",
+   "hits": [
+    {
+     "name": "荣耀版 舒适型",
+     "year": "2024",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "荣耀版 豪华型",
+     "year": "2024",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "舒适型",
+     "year": "2023",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "豪华型",
+     "year": "2023",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    },
+    {
+     "name": "出行版",
+     "year": "2023",
+     "range": 405.0,
+     "cw": 1340.0,
+     "cap": 43.2,
+     "motor": "70kW(95Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5188,
+   "batch": "390",
+   "model": "DXK6510AC1BEV",
+   "generic": "瑞驰 EC75",
+   "brand": "",
+   "row_range": 334.0,
+   "row_cw": 1785.0,
+   "row_cap": 52.16,
+   "sid": "9255",
+   "hits": [
+    {
+     "name": "Pro 货运 超充版-先锋型Ⅱ 2座 50.18kWh",
+     "year": "2027",
+     "range": 340.0,
+     "cw": 1785.0,
+     "cap": 50.18,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 货运 智行超充版-先锋型Ⅱ 2座 50.18kWh",
+     "year": "2027",
+     "range": 340.0,
+     "cw": 1785.0,
+     "cap": 50.18,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 货运 智行超充版-超越型Ⅱ 2座 50.18kWh",
+     "year": "2027",
+     "range": 340.0,
+     "cw": 1785.0,
+     "cap": 50.18,
+     "motor": "130kW(177Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5213,
+   "batch": "392",
+   "model": "BJ6521EVAA1",
+   "generic": "乐福",
+   "brand": "",
+   "row_range": 330.0,
+   "row_cw": 1810.0,
+   "row_cap": 50.23,
+   "sid": "25148",
+   "hits": [
+    {
+     "name": "福版 悦行版 长轴平顶 爱易科50.23kWh",
+     "year": "2026",
+     "range": 330.0,
+     "cw": 1810.0,
+     "cap": 50.23,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "福版 悦行版 长轴平顶 宁德时代50.23kWh",
+     "year": "2026",
+     "range": 330.0,
+     "cw": 1810.0,
+     "cap": 50.23,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "福版 畅行版 长轴平顶 爱易科50.23kWh",
+     "year": "2026",
+     "range": 330.0,
+     "cw": 1810.0,
+     "cap": 50.23,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "福版 畅行版 长轴平顶 宁德时代50.23kWh",
+     "year": "2026",
+     "range": 330.0,
+     "cw": 1810.0,
+     "cap": 50.23,
+     "motor": "125kW(170Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5214,
+   "batch": "392",
+   "model": "BJ6521EVAA2",
+   "generic": "乐福",
+   "brand": "",
+   "row_range": 450.0,
+   "row_cw": 1770.0,
+   "row_cap": 66.67,
+   "sid": "25148",
+   "hits": [
+    {
+     "name": "MAX 乐版 悦行版 宁德时代66.67kWh",
+     "year": "2026",
+     "range": 450.0,
+     "cw": 1770.0,
+     "cap": 66.67,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "MAX 乐版 畅行版 宁德时代66.67kWh",
+     "year": "2026",
+     "range": 450.0,
+     "cw": 1770.0,
+     "cap": 66.67,
+     "motor": "125kW(170Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5228,
+   "batch": "393",
+   "model": "SC6558AAAABEV",
+   "generic": "V919",
+   "brand": "",
+   "row_range": 470.0,
+   "row_cw": 2530.0,
+   "row_cap": 88.02,
+   "sid": "10163",
+   "hits": [
+    {
+     "name": "商务舱 商旅版舒适型 宁德时代88kWh 9座",
+     "year": "2026",
+     "range": 470.0,
+     "cw": 2530.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "商务舱 商旅版精英型 宁德时代88kWh 7/9座",
+     "year": "2026",
+     "range": 470.0,
+     "cw": 2530.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "商务舱 商旅版豪华型 宁德时代88kwh 7/9座",
+     "year": "2026",
+     "range": 470.0,
+     "cw": 2530.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5244,
+   "batch": "398",
+   "model": "DXK6510AC10BEV",
+   "generic": "瑞驰 EC75",
+   "brand": "",
+   "row_range": 353.0,
+   "row_cw": 1920.0,
+   "row_cap": 50.1,
+   "sid": "9255",
+   "hits": [
+    {
+     "name": "Pro 非营运客运 超充版-先锋型Ⅱ 6座 50.18kWh",
+     "year": "2027",
+     "range": 353.0,
+     "cw": 1895.0,
+     "cap": 50.18,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 非营运客运 智行超充版-先锋型Ⅱ 6座 50.18kWh",
+     "year": "2027",
+     "range": 353.0,
+     "cw": 1895.0,
+     "cap": 50.18,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 非营运客运 智行超充版-超越型Ⅱ 6座 50.18kWh",
+     "year": "2027",
+     "range": 353.0,
+     "cw": 1895.0,
+     "cap": 50.18,
+     "motor": "130kW(177Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5265,
+   "batch": "400",
+   "model": "BJ6491EVAA2",
+   "generic": "乐福",
+   "brand": "",
+   "row_range": 295.0,
+   "row_cw": 1670.0,
+   "row_cap": 41.86,
+   "sid": "25148",
+   "hits": [
+    {
+     "name": "福版 悦行版 短轴平顶 爱易科40.18kWh",
+     "year": "2026",
+     "range": 295.0,
+     "cw": 1670.0,
+     "cap": 40.18,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "福版 畅行版 短轴平顶 爱易科40.18kWh",
+     "year": "2026",
+     "range": 295.0,
+     "cw": 1670.0,
+     "cap": 40.18,
+     "motor": "125kW(170Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5266,
+   "batch": "400",
+   "model": "BJ6521EVAA4",
+   "generic": "乐福",
+   "brand": "",
+   "row_range": 330.0,
+   "row_cw": 1775.0,
+   "row_cap": 50.23,
+   "sid": "25148",
+   "hits": [
+    {
+     "name": "福版 悦行版 长轴平顶 爱易科50.23kWh",
+     "year": "2026",
+     "range": 330.0,
+     "cw": 1810.0,
+     "cap": 50.23,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "福版 悦行版 长轴平顶 宁德时代50.23kWh",
+     "year": "2026",
+     "range": 330.0,
+     "cw": 1810.0,
+     "cap": 50.23,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "福版 畅行版 长轴平顶 爱易科50.23kWh",
+     "year": "2026",
+     "range": 330.0,
+     "cw": 1810.0,
+     "cap": 50.23,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "福版 畅行版 长轴平顶 宁德时代50.23kWh",
+     "year": "2026",
+     "range": 330.0,
+     "cw": 1810.0,
+     "cap": 50.23,
+     "motor": "125kW(170Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5267,
+   "batch": "400",
+   "model": "BJ6521EVAA5",
+   "generic": "乐福",
+   "brand": "",
+   "row_range": 420.0,
+   "row_cw": 1940.0,
+   "row_cap": 66.67,
+   "sid": "25148",
+   "hits": [
+    {
+     "name": "福版 悦行版 长轴平顶 宁德时代66.67kWh",
+     "year": "2026",
+     "range": 420.0,
+     "cw": 1940.0,
+     "cap": 66.67,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "福版 畅行版 长轴平顶 宁德时代66.67kWh",
+     "year": "2026",
+     "range": 420.0,
+     "cw": 1940.0,
+     "cap": 66.67,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "福版 悦行版 长轴高顶 宁德时代66.67kWh",
+     "year": "2026",
+     "range": 420.0,
+     "cw": 1940.0,
+     "cap": 66.67,
+     "motor": "125kW(170Ps)"
+    },
+    {
+     "name": "福版 畅行版 长轴高顶 宁德时代66.67kWh",
+     "year": "2026",
+     "range": 420.0,
+     "cw": 1940.0,
+     "cap": 66.67,
+     "motor": "125kW(170Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5278,
+   "batch": "400",
+   "model": "SC6558AAAKBEV",
+   "generic": "V919",
+   "brand": "",
+   "row_range": 510.0,
+   "row_cw": 2305.0,
+   "row_cap": 88.02,
+   "sid": "10163",
+   "hits": [
+    {
+     "name": "速运舱 长轴高顶精英型 宁德时代88kwh 6座",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 2305.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "速运舱 长轴高顶智慧型 宁德时代88kwh 6座",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 2305.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "速运舱 长轴高顶智慧型 宁德时代88kwh 7座",
+     "year": "2026",
+     "range": 510.0,
+     "cw": 2305.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5279,
+   "batch": "400",
+   "model": "SC6558AAALBEV",
+   "generic": "V919",
+   "brand": "",
+   "row_range": 470.0,
+   "row_cw": 2530.0,
+   "row_cap": 88.02,
+   "sid": "10163",
+   "hits": [
+    {
+     "name": "商务舱 商旅版舒适型 宁德时代88kWh 9座",
+     "year": "2026",
+     "range": 470.0,
+     "cw": 2530.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "商务舱 商旅版精英型 宁德时代88kWh 7/9座",
+     "year": "2026",
+     "range": 470.0,
+     "cw": 2530.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "商务舱 商旅版豪华型 宁德时代88kwh 7/9座",
+     "year": "2026",
+     "range": 470.0,
+     "cw": 2530.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5280,
+   "batch": "400",
+   "model": "SC6558AAAMBEV",
+   "generic": "V919",
+   "brand": "",
+   "row_range": 480.0,
+   "row_cw": 2530.0,
+   "row_cap": 88.02,
+   "sid": "10163",
+   "hits": [
+    {
+     "name": "商务舱 中级营运版舒适型 宁德时代88kwh 9座",
+     "year": "2026",
+     "range": 480.0,
+     "cw": 2530.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "商务舱 中级营运版智慧型 宁德时代88kWh 9座",
+     "year": "2026",
+     "range": 480.0,
+     "cw": 2530.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "商务舱 高级营运版豪华型 宁德时代88kWh 9座",
+     "year": "2026",
+     "range": 480.0,
+     "cw": 2530.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5281,
+   "batch": "400",
+   "model": "SC6558AAANBEV",
+   "generic": "V919",
+   "brand": "",
+   "row_range": 480.0,
+   "row_cw": 2530.0,
+   "row_cap": 88.02,
+   "sid": "10163",
+   "hits": [
+    {
+     "name": "商务舱 中级营运版舒适型 宁德时代88kwh 9座",
+     "year": "2026",
+     "range": 480.0,
+     "cw": 2530.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "商务舱 中级营运版智慧型 宁德时代88kWh 9座",
+     "year": "2026",
+     "range": 480.0,
+     "cw": 2530.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    },
+    {
+     "name": "商务舱 高级营运版豪华型 宁德时代88kWh 9座",
+     "year": "2026",
+     "range": 480.0,
+     "cw": 2530.0,
+     "cap": 88.02,
+     "motor": "110kW(150Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5292,
+   "batch": "401",
+   "model": "LZW6550BEVA4",
+   "generic": "五菱扬光Pro",
+   "brand": "",
+   "row_range": 405.0,
+   "row_cw": 2155.0,
+   "row_cap": 69.2,
+   "sid": "26296",
+   "hits": [
+    {
+     "name": "纯电 405km 客车版",
+     "year": "2026",
+     "range": 405.0,
+     "cw": 2155.0,
+     "cap": 69.2,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "纯电 405km 9座营运版",
+     "year": "2026",
+     "range": 405.0,
+     "cw": 2155.0,
+     "cap": 69.2,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5302,
+   "batch": "401",
+   "model": "DXK6510AC15BEV",
+   "generic": "瑞驰 EC75",
+   "brand": "",
+   "row_range": 353.0,
+   "row_cw": 1895.0,
+   "row_cap": 50.18,
+   "sid": "9255",
+   "hits": [
+    {
+     "name": "Pro 非营运客运 超充版-先锋型Ⅱ 6座 50.18kWh",
+     "year": "2027",
+     "range": 353.0,
+     "cw": 1895.0,
+     "cap": 50.18,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 非营运客运 智行超充版-先锋型Ⅱ 6座 50.18kWh",
+     "year": "2027",
+     "range": 353.0,
+     "cw": 1895.0,
+     "cap": 50.18,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 非营运客运 智行超充版-超越型Ⅱ 6座 50.18kWh",
+     "year": "2027",
+     "range": 353.0,
+     "cw": 1895.0,
+     "cap": 50.18,
+     "motor": "130kW(177Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5338,
+   "batch": "407",
+   "model": "LZW6550BEVA7",
+   "generic": "五菱扬光Pro",
+   "brand": "",
+   "row_range": 405.0,
+   "row_cw": 2155.0,
+   "row_cap": 69.2,
+   "sid": "26296",
+   "hits": [
+    {
+     "name": "纯电 405km 客车版",
+     "year": "2026",
+     "range": 405.0,
+     "cw": 2155.0,
+     "cap": 69.2,
+     "motor": "150kW(204Ps)"
+    },
+    {
+     "name": "纯电 405km 9座营运版",
+     "year": "2026",
+     "range": 405.0,
+     "cw": 2155.0,
+     "cap": 69.2,
+     "motor": "150kW(204Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5340,
+   "batch": "407",
+   "model": "DXK6520AC5BEV",
+   "generic": "瑞驰 EC75,瑞驰 R5",
+   "brand": "",
+   "row_range": 430.0,
+   "row_cw": 1980.0,
+   "row_cap": 61.94,
+   "sid": "9255",
+   "hits": [
+    {
+     "name": "Pro 非营运客运 超充版-先锋型Ⅰ 6座 61.94kWh",
+     "year": "2027",
+     "range": 430.0,
+     "cw": 1980.0,
+     "cap": 61.94,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 非营运客运 超充版-先锋型Ⅰ 9座 61.94kWh",
+     "year": "2027",
+     "range": 430.0,
+     "cw": 1980.0,
+     "cap": 61.94,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 非营运客运 智行超充版-先锋型Ⅰ 6座 61.94kWh",
+     "year": "2027",
+     "range": 430.0,
+     "cw": 1980.0,
+     "cap": 61.94,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 非营运客运 智行超充版-先锋型Ⅰ 9座 61.94kWh",
+     "year": "2027",
+     "range": 430.0,
+     "cw": 1980.0,
+     "cap": 61.94,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 非营运客运 智行超充版-超越型Ⅰ 6座 61.94kWh",
+     "year": "2027",
+     "range": 430.0,
+     "cw": 1980.0,
+     "cap": 61.94,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 非营运客运 智行超充版-超越型Ⅰ 9座 61.94kWh",
+     "year": "2027",
+     "range": 430.0,
+     "cw": 1980.0,
+     "cap": 61.94,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 营运客运 智行超充版-先锋型Ⅰ 9座 61.94kWh",
+     "year": "2027",
+     "range": 430.0,
+     "cw": 1980.0,
+     "cap": 61.94,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 营运客运 智行超充版-超越型Ⅰ 9座 61.94kWh",
+     "year": "2027",
+     "range": 430.0,
+     "cw": 1980.0,
+     "cap": 61.94,
+     "motor": "130kW(177Ps)"
+    }
+   ]
+  },
+  {
+   "row": 5341,
+   "batch": "407",
+   "model": "DXK6520AC6BEV",
+   "generic": "瑞驰 EC75,瑞驰 R5",
+   "brand": "",
+   "row_range": 353.0,
+   "row_cw": 1895.0,
+   "row_cap": 50.18,
+   "sid": "9255",
+   "hits": [
+    {
+     "name": "Pro 非营运客运 超充版-先锋型Ⅱ 6座 50.18kWh",
+     "year": "2027",
+     "range": 353.0,
+     "cw": 1895.0,
+     "cap": 50.18,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 非营运客运 智行超充版-先锋型Ⅱ 6座 50.18kWh",
+     "year": "2027",
+     "range": 353.0,
+     "cw": 1895.0,
+     "cap": 50.18,
+     "motor": "130kW(177Ps)"
+    },
+    {
+     "name": "Pro 非营运客运 智行超充版-超越型Ⅱ 6座 50.18kWh",
+     "year": "2027",
+     "range": 353.0,
+     "cw": 1895.0,
+     "cap": 50.18,
+     "motor": "130kW(177Ps)"
+    }
+   ]
+  }
+ ]
+}
