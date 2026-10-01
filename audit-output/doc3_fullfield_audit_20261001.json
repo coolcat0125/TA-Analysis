@@ -1,0 +1,293 @@
+{
+ "created": "2026-10-01",
+ "note": "doc3 全字段互证审计（续航±8/整备±40，型号级匹配，疑点不擅改待人工）",
+ "compared": 350,
+ "suspects": [
+  {
+   "batch": "341",
+   "model": "SVW6492BEV",
+   "wb_range": 617.0,
+   "wb_curb": 2280.0,
+   "doc_best_range": 588.0,
+   "range_gap": 29.0,
+   "doc_best_curb": 2280.0,
+   "curb_gap": 0.0,
+   "doc_generic": "ID.6 X"
+  },
+  {
+   "batch": "344",
+   "model": "JX7001ERDBEV",
+   "wb_range": 470.0,
+   "wb_curb": 1680.0,
+   "doc_best_range": 450.0,
+   "range_gap": 20.0,
+   "doc_best_curb": 1680.0,
+   "curb_gap": 0.0,
+   "doc_generic": "羿"
+  },
+  {
+   "batch": "345",
+   "model": "FV7147FADEHEV",
+   "wb_range": 63.0,
+   "wb_curb": 1750.0,
+   "doc_best_range": 51.0,
+   "range_gap": 12.0,
+   "doc_best_curb": 1750.0,
+   "curb_gap": 0.0,
+   "doc_generic": "MAGOTAN GTE"
+  },
+  {
+   "batch": "346",
+   "model": "BYD6490SBEV9",
+   "wb_range": 635.0,
+   "wb_curb": 2560.0,
+   "doc_best_range": 615.0,
+   "range_gap": 20.0,
+   "doc_best_curb": 2560.0,
+   "curb_gap": 0.0,
+   "doc_generic": "比亚迪唐"
+  },
+  {
+   "batch": "346",
+   "model": "MR7001BEV06",
+   "wb_range": 536.0,
+   "wb_curb": 2270.0,
+   "doc_best_range": 526.0,
+   "range_gap": 10.0,
+   "doc_best_curb": 2270.0,
+   "curb_gap": 0.0,
+   "doc_generic": "001"
+  },
+  {
+   "batch": "348",
+   "model": "NHQ7000BEVDN",
+   "wb_range": 510.0,
+   "wb_curb": 1699.0,
+   "doc_best_range": 495.0,
+   "range_gap": 15.0,
+   "doc_best_curb": 1700.0,
+   "curb_gap": 1.0,
+   "doc_generic": "P5"
+  },
+  {
+   "batch": "357",
+   "model": "SC6491EBBBEV",
+   "wb_range": 730.0,
+   "wb_curb": 2365.0,
+   "doc_best_range": 730.0,
+   "range_gap": 0.0,
+   "doc_best_curb": 2425.0,
+   "curb_gap": 60.0,
+   "doc_generic": "11,011"
+  },
+  {
+   "batch": "367",
+   "model": "HFC6494ECSEV2-W",
+   "wb_range": 635.0,
+   "wb_curb": 2306.0,
+   "doc_best_range": 445.0,
+   "range_gap": 190.0,
+   "doc_best_curb": 2390.0,
+   "curb_gap": 84.0,
+   "doc_generic": "EC7"
+  },
+  {
+   "batch": "368",
+   "model": "JKC6450A0X3BEV",
+   "wb_range": 270.0,
+   "wb_curb": 1300.0,
+   "doc_best_range": 270.0,
+   "range_gap": 0.0,
+   "doc_best_curb": 1450.0,
+   "curb_gap": 150.0,
+   "doc_generic": "好运"
+  },
+  {
+   "batch": "368",
+   "model": "JL7001SEV03",
+   "wb_range": 415.0,
+   "wb_curb": null,
+   "doc_best_range": 605.0,
+   "range_gap": 190.0,
+   "doc_best_curb": null,
+   "curb_gap": null,
+   "doc_generic": "CC60"
+  },
+  {
+   "batch": "370",
+   "model": "JKC6450A0X5BEV",
+   "wb_range": 258.0,
+   "wb_curb": 1300.0,
+   "doc_best_range": 258.0,
+   "range_gap": 0.0,
+   "doc_best_curb": 1415.0,
+   "curb_gap": 115.0,
+   "doc_generic": "好运"
+  },
+  {
+   "batch": "372",
+   "model": "BYD7008BEVA11",
+   "wb_range": 420.0,
+   "wb_curb": 1955.0,
+   "doc_best_range": null,
+   "range_gap": null,
+   "doc_best_curb": 1580.0,
+   "curb_gap": 375.0,
+   "doc_generic": "比亚迪秦PLUS"
+  },
+  {
+   "batch": "372",
+   "model": "FV7007ABBEV",
+   "wb_range": 570.0,
+   "wb_curb": 2700.0,
+   "doc_best_range": null,
+   "range_gap": null,
+   "doc_best_curb": 2232.0,
+   "curb_gap": 468.0,
+   "doc_generic": "ID.7 VIZZION"
+  },
+  {
+   "batch": "372",
+   "model": "LF6461SEV01",
+   "wb_range": 450.0,
+   "wb_curb": 1780.0,
+   "doc_best_range": 605.0,
+   "range_gap": 155.0,
+   "doc_best_curb": 1780.0,
+   "curb_gap": 0.0,
+   "doc_generic": "RL7"
+  },
+  {
+   "batch": "372",
+   "model": "THZ7000BEVS407",
+   "wb_range": 520.0,
+   "wb_curb": 2315.0,
+   "doc_best_range": 520.0,
+   "range_gap": 0.0,
+   "doc_best_curb": 1940.0,
+   "curb_gap": 375.0,
+   "doc_generic": "哪吒S"
+  },
+  {
+   "batch": "373",
+   "model": "JX6556TA-M6BEV",
+   "wb_range": 306.0,
+   "wb_curb": 2685.0,
+   "doc_best_range": 357.0,
+   "range_gap": 51.0,
+   "doc_best_curb": 2685.0,
+   "curb_gap": 0.0,
+   "doc_generic": "E全顺"
+  },
+  {
+   "batch": "376",
+   "model": "LF6462SEV01",
+   "wb_range": 450.0,
+   "wb_curb": 1715.0,
+   "doc_best_range": 605.0,
+   "range_gap": 155.0,
+   "doc_best_curb": 1715.0,
+   "curb_gap": 0.0,
+   "doc_generic": "RL7"
+  },
+  {
+   "batch": "384",
+   "model": "CSA6501LBEV6",
+   "wb_range": 620.0,
+   "wb_curb": 2350.0,
+   "doc_best_range": 640.0,
+   "range_gap": 20.0,
+   "doc_best_curb": 2350.0,
+   "curb_gap": 0.0,
+   "doc_generic": "LS7"
+  },
+  {
+   "batch": "391",
+   "model": "XMA6500LBEVA1",
+   "wb_range": 750.0,
+   "wb_curb": 2405.0,
+   "doc_best_range": 760.0,
+   "range_gap": 10.0,
+   "doc_best_curb": 2405.0,
+   "curb_gap": 0.0,
+   "doc_generic": "小米YU7"
+  },
+  {
+   "batch": "398",
+   "model": "MR7003BEV102",
+   "wb_range": 690.0,
+   "wb_curb": 2470.0,
+   "doc_best_range": 710.0,
+   "range_gap": 20.0,
+   "doc_best_curb": 2470.0,
+   "curb_gap": 0.0,
+   "doc_generic": "001"
+  },
+  {
+   "batch": "397",
+   "model": "XMA6500LBEVR8",
+   "wb_range": 835.0,
+   "wb_curb": 2315.0,
+   "doc_best_range": 810.0,
+   "range_gap": 25.0,
+   "doc_best_curb": 2315.0,
+   "curb_gap": 0.0,
+   "doc_generic": "小米YU7"
+  },
+  {
+   "batch": "341",
+   "model": "CAF6461A62PHEV",
+   "wb_range": 54.0,
+   "wb_curb": null,
+   "doc_best_range": 77.0,
+   "range_gap": 23.0,
+   "doc_best_curb": null,
+   "curb_gap": null,
+   "doc_generic": "锐际"
+  },
+  {
+   "batch": "342",
+   "model": "BJ7000C5DEK-BEV",
+   "wb_range": 350.0,
+   "wb_curb": 1770.0,
+   "doc_best_range": 350.0,
+   "range_gap": 0.0,
+   "doc_best_curb": 1620.0,
+   "curb_gap": 150.0,
+   "doc_generic": "EU5"
+  },
+  {
+   "batch": "392",
+   "model": "BJ6521EVAA2",
+   "wb_range": 450.0,
+   "wb_curb": 1770.0,
+   "doc_best_range": 420.0,
+   "range_gap": 30.0,
+   "doc_best_curb": 1870.0,
+   "curb_gap": 100.0,
+   "doc_generic": "乐福450"
+  },
+  {
+   "batch": "393",
+   "model": "SC6558AAAABEV",
+   "wb_range": 470.0,
+   "wb_curb": 2530.0,
+   "doc_best_range": 470.0,
+   "range_gap": 0.0,
+   "doc_best_curb": 2310.0,
+   "curb_gap": 220.0,
+   "doc_generic": "V919"
+  },
+  {
+   "batch": "397",
+   "model": "BYD7153WT6HEV5",
+   "wb_range": 103.0,
+   "wb_curb": 2075.0,
+   "doc_best_range": 60.0,
+   "range_gap": 43.0,
+   "doc_best_curb": 1660.0,
+   "curb_gap": 415.0,
+   "doc_generic": "比亚迪秦L"
+  }
+ ]
+}
