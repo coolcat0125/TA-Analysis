@@ -1,0 +1,170 @@
+[
+ {
+  "batch": "398",
+  "model": "BYD6480AMHEV8",
+  "zh": "4.7",
+  "doc_fuels": [
+   4.7
+  ]
+ },
+ {
+  "batch": "399",
+  "model": "BYD7150ADHEV13",
+  "zh": "3.8",
+  "doc_fuels": [
+   3.8
+  ]
+ },
+ {
+  "batch": "399",
+  "model": "LZW6521HDUPHEVA2",
+  "zh": "6.18",
+  "doc_fuels": [
+   6.18
+  ]
+ },
+ {
+  "batch": "400",
+  "model": "DFL7150NATA3PHEV",
+  "zh": "4.39",
+  "doc_fuels": [
+   4.74
+  ]
+ },
+ {
+  "batch": "400",
+  "model": "GAC6490CHEVGAB6E",
+  "zh": "6.35",
+  "doc_fuels": [
+   6.35
+  ]
+ },
+ {
+  "batch": "400",
+  "model": "SQR6485CHEVT1J",
+  "zh": "6.78",
+  "doc_fuels": [
+   6.78
+  ]
+ },
+ {
+  "batch": "401",
+  "model": "BYD7150ADHEV14",
+  "zh": "3.98",
+  "doc_fuels": [
+   3.98
+  ]
+ },
+ {
+  "batch": "401",
+  "model": "SQR6485CHEVT1J",
+  "zh": "6.78",
+  "doc_fuels": [
+   6.78
+  ]
+ },
+ {
+  "batch": "402",
+  "model": "BYD6480AMHEV10",
+  "zh": "4.6",
+  "doc_fuels": [
+   4.6
+  ]
+ },
+ {
+  "batch": "402",
+  "model": "CSA6512LFREEV3",
+  "zh": "5.9",
+  "doc_fuels": [
+   5.9
+  ]
+ },
+ {
+  "batch": "402",
+  "model": "EQ6520AE5F2PHEV",
+  "zh": "6.80/6.50",
+  "doc_fuels": [
+   6.8
+  ]
+ },
+ {
+  "batch": "403",
+  "model": "MR7151DCHEV103",
+  "zh": "3.9",
+  "doc_fuels": [
+   3.9
+  ]
+ },
+ {
+  "batch": "406",
+  "model": "NEQ6490REEVS5DK",
+  "zh": "7.2",
+  "doc_fuels": [
+   7.2
+  ]
+ },
+ {
+  "batch": "406",
+  "model": "SQR7150REEVT16A1",
+  "zh": "4.85",
+  "doc_fuels": [
+   4.85
+  ]
+ },
+ {
+  "batch": "407",
+  "model": "FZ6530REEVWD19F",
+  "zh": "6.6",
+  "doc_fuels": [
+   6.6
+  ]
+ },
+ {
+  "batch": "408",
+  "model": "BYD6476ST6HEV12",
+  "zh": "4.58",
+  "doc_fuels": [
+   4.58
+  ]
+ },
+ {
+  "batch": "408",
+  "model": "CC6510DQ23BPHEV",
+  "zh": "6.8",
+  "doc_fuels": [
+   6.8
+  ]
+ },
+ {
+  "batch": "397",
+  "model": "BAW6530MB21SHEV",
+  "zh": "6.50",
+  "doc_fuels": [
+   6.5
+  ]
+ },
+ {
+  "batch": "397",
+  "model": "BYD7153WT6HEV6",
+  "zh": "3.98",
+  "doc_fuels": [
+   3.98
+  ]
+ },
+ {
+  "batch": "397",
+  "model": "MR6481DCHEV103",
+  "zh": "1.2",
+  "doc_fuels": [
+   5.5
+  ]
+ },
+ {
+  "batch": "341",
+  "model": "CAF6461A62PHEV",
+  "zh": "4.81",
+  "doc_fuels": [
+   4.9
+  ]
+ }
+]
