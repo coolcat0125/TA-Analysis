@@ -289,5 +289,65 @@
    "curb_gap": 415.0,
    "doc_generic": "比亚迪秦L"
   }
- ]
+ ],
+ "range_factor_analysis": {
+  "n": 18,
+  "median_ratio": 1.025,
+  "nedc_cltc_band(1.00-1.12)": [
+   "SVW6492BEV",
+   "JX7001ERDBEV",
+   "BYD6490SBEV9",
+   "MR7001BEV06",
+   "NHQ7000BEVDN",
+   "XMA6500LBEVR8",
+   "BJ6521EVAA2"
+  ],
+  "outliers_config_pairing候选": [
+   [
+    "FV7147FADEHEV",
+    1.235
+   ],
+   [
+    "HFC6494ECSEV2-W",
+    1.427
+   ],
+   [
+    "JL7001SEV03",
+    0.686
+   ],
+   [
+    "LF6461SEV01",
+    0.744
+   ],
+   [
+    "JX6556TA-M6BEV",
+    0.857
+   ],
+   [
+    "LF6462SEV01",
+    0.744
+   ],
+   [
+    "CSA6501LBEV6",
+    0.969
+   ],
+   [
+    "XMA6500LBEVA1",
+    0.987
+   ],
+   [
+    "MR7003BEV102",
+    0.972
+   ],
+   [
+    "CAF6461A62PHEV",
+    0.701
+   ],
+   [
+    "BYD7153WT6HEV5",
+    1.717
+   ]
+  ],
+  "结论": "10例归因NEDC↔CLTC工况口径差（底表CLTC/doc3目录NEDC）；8例离群为配置/年款配对候选待取证"
+ }
 }
