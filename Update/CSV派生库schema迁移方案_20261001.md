@@ -31,3 +31,9 @@
 ## 建议排期
 方案甲成本≈30 分钟（脚本+验证+消费方 grep 修）；乙≈1.5 小时且留双轨债。
 待确认后执行。
+
+## 执行记录（2026-10-01~02）
+- **方案甲已落地**：export_workbook_csv_v2.py 底表全量重导出（5,392×38，旧 33 列/4,459 行 CSV → .bak-202610022248 归档）。
+- **消费方核验**：sync_master_vehicles.py 列映射已适配（新增 P/T 三列+lengthMm/monthSales/cellSupplier 等；旧列键保留为 Legacy 缺省）；**build-master.js/parse-master.js 实为另一条 legacy 链**（输入 source-sheets/NEV公告参数汇总.csv，不读 master_export_fixed.csv）——零破坏；build-master.js 电机域已预防性适配 v4.4 列（ptFirst/ptSecond helper）。
+- **键名约定（重要）**：双构建器统一采用 rebuild_from_workbook.py 键名——motorPeakKw/motorTotalKw/motorRearKw = 前后总电机 P/T 文本；**勿再引入 motorPeakPT 等第二套键名**（10-02 曾引发双构建器 schema 冲突，已即时修复）。
+- 派生库现状：master_vehicles.json 5,392 条（rebuild 权威态），lengthMm 4,628 / monthSales 806 / motorPeakKw 4,648 / cellSupplier 1,630。
