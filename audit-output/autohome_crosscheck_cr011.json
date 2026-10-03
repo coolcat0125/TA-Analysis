@@ -1,0 +1,125 @@
+[
+ {
+  "model": "FV7147FADEHEV",
+  "generic": "迈腾GTE",
+  "brand": "大众",
+  "row_range": 54.0,
+  "doc_range": 77.0,
+  "verdict": "no_series_match"
+ },
+ {
+  "model": "HFC6494ECSEV2-W",
+  "generic": "思皓E10X",
+  "brand": "江淮",
+  "row_range": 635.0,
+  "doc_range": 445.0,
+  "verdict": "no_series_match"
+ },
+ {
+  "model": "JL7001SEV03",
+  "generic": "银河L6",
+  "brand": "吉利",
+  "row_range": 415.0,
+  "doc_range": 605.0,
+  "series": "银河L6",
+  "sid": 7167,
+  "specs_n": 14,
+  "matching_n": 0,
+  "verdict": "no_matching_trim",
+  "matching_names": []
+ },
+ {
+  "model": "LF6461SEV01",
+  "generic": "雷诺",
+  "brand": "力帆",
+  "row_range": 450.0,
+  "doc_range": 605.0,
+  "series": "雷诺",
+  "sid": 10,
+  "specs_n": 0,
+  "matching_n": 0,
+  "verdict": "no_matching_trim",
+  "matching_names": []
+ },
+ {
+  "model": "JX6556TA-M6BEV",
+  "generic": "江铃E路达",
+  "brand": "江铃",
+  "row_range": 306.0,
+  "doc_range": 357.0,
+  "verdict": "no_series_match"
+ },
+ {
+  "model": "LF6462SEV01",
+  "generic": "雷诺",
+  "brand": "力帆",
+  "row_range": 450.0,
+  "doc_range": 605.0,
+  "series": "雷诺",
+  "sid": 10,
+  "specs_n": 0,
+  "matching_n": 0,
+  "verdict": "no_matching_trim",
+  "matching_names": []
+ },
+ {
+  "model": "CSA6501LBEV6",
+  "generic": "荣威iMAX8 EV",
+  "brand": "荣威",
+  "row_range": 620.0,
+  "doc_range": 640.0,
+  "verdict": "no_series_match"
+ },
+ {
+  "model": "XMA6500LBEVA1",
+  "generic": "小马",
+  "brand": "厦门金龙",
+  "row_range": 750.0,
+  "doc_range": 760.0,
+  "series": "奔腾小马",
+  "sid": 7231,
+  "specs_n": 24,
+  "matching_n": 0,
+  "verdict": "no_matching_trim",
+  "matching_names": []
+ },
+ {
+  "model": "MR7003BEV102",
+  "generic": "极氪",
+  "brand": "极氪",
+  "row_range": 690.0,
+  "doc_range": 710.0,
+  "series": "极氪",
+  "sid": 456,
+  "specs_n": 24,
+  "matching_n": 0,
+  "verdict": "no_matching_trim",
+  "matching_names": []
+ },
+ {
+  "model": "CAF6461A62PHEV",
+  "generic": "红旗E-QM5",
+  "brand": "红旗",
+  "row_range": 54.0,
+  "doc_range": 77.0,
+  "series": "红旗E-QM5",
+  "sid": 6002,
+  "specs_n": 35,
+  "matching_n": 0,
+  "verdict": "no_matching_trim",
+  "matching_names": []
+ },
+ {
+  "model": "BYD7153WT6HEV5",
+  "generic": "比亚迪宋",
+  "brand": "比亚迪",
+  "row_range": 103.0,
+  "doc_range": 60.0,
+  "series": "比亚迪宋",
+  "sid": 3780,
+  "specs_n": 48,
+  "matching_n": 0,
+  "verdict": "no_matching_trim",
+  "matching_names": []
+ }
+]
