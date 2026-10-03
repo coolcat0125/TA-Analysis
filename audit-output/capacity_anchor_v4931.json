@@ -768,7 +768,7 @@
      92.0
     ]
    ],
-   "verdict": "AMBIG_10",
+   "verdict": "SUPERSEDED_REVERTED",
    "eligible_values": [
     35.0,
     46.0,
@@ -776,7 +776,8 @@
     92.0
    ],
    "cur_cw": "2490",
-   "power_type": "BEV"
+   "power_type": "BEV",
+   "supersede_note": "2026-10-03 证据层级裁定：doc3 目录原文(总能量46/续航180/整备2410 精确型号行)优于 autohome 在售矩阵 35.0——恢复原值 46.0。媒体锚定在此类公告原文可查场景不适用。"
   },
   {
    "batch": "396",
@@ -809,7 +810,7 @@
      92.0
     ]
    ],
-   "verdict": "AMBIG_10",
+   "verdict": "SUPERSEDED_REVERTED",
    "eligible_values": [
     35.0,
     46.0,
@@ -817,7 +818,8 @@
     92.0
    ],
    "cur_cw": "2490",
-   "power_type": "BEV"
+   "power_type": "BEV",
+   "supersede_note": "2026-10-03 证据层级裁定：doc3 目录原文(总能量46/续航180/整备2410 精确型号行)优于 autohome 在售矩阵 35.0——恢复原值 46.0。媒体锚定在此类公告原文可查场景不适用。"
   },
   {
    "batch": "401",
@@ -1423,7 +1425,7 @@
      92.0
     ]
    ],
-   "verdict": "FIX_ANCHORED",
+   "verdict": "SUPERSEDED_REVERTED",
    "eligible_values": [
     35.0,
     46.0,
@@ -1435,7 +1437,8 @@
    "fix_value": 35.0,
    "anchor_name": "2026款 增程版 180尊享型 7座",
    "anchor_rng": 180.0,
-   "anchor_cw": 2410.0
+   "anchor_cw": 2410.0,
+   "supersede_note": "2026-10-03 证据层级裁定：doc3 目录原文(总能量46/续航180/整备2410 精确型号行)优于 autohome 在售矩阵 35.0——恢复原值 46.0。媒体锚定在此类公告原文可查场景不适用。"
   },
   {
    "batch": "397",
@@ -1468,7 +1471,7 @@
      92.0
     ]
    ],
-   "verdict": "FIX_ANCHORED",
+   "verdict": "SUPERSEDED_REVERTED",
    "eligible_values": [
     35.0,
     46.0,
@@ -1480,7 +1483,8 @@
    "fix_value": 35.0,
    "anchor_name": "2026款 增程版 180尊享型 7座",
    "anchor_rng": 180.0,
-   "anchor_cw": 2410.0
+   "anchor_cw": 2410.0,
+   "supersede_note": "2026-10-03 证据层级裁定：doc3 目录原文(总能量46/续航180/整备2410 精确型号行)优于 autohome 在售矩阵 35.0——恢复原值 46.0。媒体锚定在此类公告原文可查场景不适用。"
   },
   {
    "batch": "373",
@@ -1544,5 +1548,6 @@
    "cur_cw": "",
    "power_type": "BEV"
   }
- ]
+ ],
+ "final_adjudication": "BAW6530 双行恢复 46.0（公告体系原值）；10-01 的 35.0 锚定作废"
 }
