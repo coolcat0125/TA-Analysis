@@ -1,31 +1,197 @@
 {
-  "coding_rule": "CR-17-NNN（17=项目序号 17 TA analysis；NNN 三位流水号只增不复用）",
-  "updated": "2026-10-01",
-  "items": [
-    {"id": "CR-17-001", "title": "doc3 质量比能量互证审计（能量密度维度）", "status": "已完成", "domain": "数据质量", "result": "261可比/200一致/61疑点归档", "artifact": "audit-output/cr17_001_edensity_crosscheck.json"},
-    {"id": "CR-17-002", "title": "doc3 老批次购置税目录下载补齐", "status": "已完成", "domain": "证据源", "result": "22/27 批（5 批未捆绑弃追）", "artifact": "fetch_doc3_old_batches.py"},
-    {"id": "CR-17-003", "title": "188 行整数容量官方核证", "status": "已完成", "domain": "数据质量", "result": "26/26 全等 0 更正；整数=公告额定体系定谳", "artifact": "audit-output/doc3_capacity_verify_188.json"},
-    {"id": "CR-17-004", "title": "doc3 油耗口径判决+B状态补全", "status": "已完成", "domain": "数据质量", "result": "口径=亏电；21 格补全+19 行确证+18 双口径冲突留档", "artifact": "audit-output/doc3_fuel_crosscheck_20261002.json"},
-    {"id": "CR-17-005", "title": "doc3 全字段互证审计（续航/整备）", "status": "已完成", "domain": "数据质量", "result": "350 可比/26 疑点归档", "artifact": "audit-output/doc3_fullfield_audit_20261001.json"},
-    {"id": "CR-17-006", "title": "锐胜M8 证据层级裁定恢复 46.0", "status": "已完成", "domain": "数据质量", "result": "目录原文>媒体；自我勘误", "artifact": "台账 54587~54588"},
-    {"id": "CR-17-007", "title": "秦PLUS 整备更正 1955→1580", "status": "已完成", "domain": "数据质量", "result": "目录原文+DCD 双源", "artifact": "台账 54563"},
-    {"id": "CR-17-008", "title": "手机查阅版上线", "status": "已完成", "domain": "交付物", "result": "1MB 离线 HTML", "artifact": "build_mobile_v4935.py"},
-    {"id": "CR-17-009", "title": "看板导入通道重构+e2e", "status": "已完成", "domain": "交付物", "result": "31 位对齐 PASS", "artifact": "generate_dashboard.py"},
-    {"id": "CR-17-010", "title": "分析底表 46 表（+月销量分析）", "status": "已完成", "domain": "交付物", "result": "COM 实开验证", "artifact": "build_deliverables_v4923.py"},
-    {"id": "CR-17-011", "title": "doc3 疑点款型级取证（8 因子离群+4 整备无源+HFC6494 出界）", "status": "待办", "domain": "数据质量", "next": "其它平台取证或人工裁决", "artifact": "audit-output/doc3_fullfield_audit_20261001.json"},
-    {"id": "CR-17-012", "title": "CSV source-sheets legacy 链处置", "status": "待办", "domain": "工程", "next": "标记 legacy 或指向新 CSV", "artifact": "parse-master.js/build-master.js"},
-    {"id": "CR-17-013", "title": "EIDC 官方库新入口", "status": "挂起(外部)", "domain": "证据源", "next": "人工浏览器确认（现全站 404）"},
-    {"id": "CR-17-014", "title": "411 正式公告对齐入库", "status": "监测中", "domain": "批次滚动", "next": "主站命中即 S1 最高优先"},
-    {"id": "CR-17-015", "title": "电芯供应商 3,762 格缺口", "status": "挂起(外部)", "domain": "覆盖率", "next": "新公示详情页机会/EIDC 恢复"},
-    {"id": "CR-17-016", "title": "rear_only 213 行+84 拒收车系", "status": "挂起(外部)", "domain": "覆盖率", "next": "随 DCD 上架历史款解锁"},
-    {"id": "CR-17-017", "title": "手机版/PPT/报告使用反馈迭代", "status": "待用户", "domain": "交付物"},
-    {"id": "CR-17-018", "title": "易车销量换月", "status": "例行", "domain": "数据源", "next": "每月 10 日 fill_sales 重跑"},
-    {"id": "CR-17-019", "title": "W4 21 行 doc3 穷尽", "status": "已完成(负结果)", "domain": "证据源", "result": "0 命中，从未进目录"},
-    {"id": "CR-17-020", "title": "容量余量公告原文通道接续", "status": "待办", "domain": "数据质量", "next": "23 多配置+86 无源+162 未收录 行；通道=新公示详情页", "artifact": "audit-output/capacity_anchor_v4931.json"},
-    {"id": "CR-17-021", "title": "doc3 341-era 单行 TAB 表头格式兼容", "status": "已完成", "domain": "工程", "result": "全量 2,904 行/1,833 型号", "artifact": "extract_doc3_capacity.py"},
-    {"id": "CR-17-022", "title": "派生库双件套对齐（JSON 重建+CSV 方案甲）", "status": "已完成", "domain": "工程", "result": "双构建器键名统一约定", "artifact": "rebuild_from_workbook.py / export_workbook_csv_v2.py"},
-    {"id": "CR-17-023", "title": "S4+ 双电机签名定向回填", "status": "已完成", "domain": "数据质量", "result": "小米澎程N70 后电机 100", "artifact": "s4_rear_dual_v4934.py"},
-    {"id": "CR-17-024", "title": "doc1 通道探铅", "status": "否决(证伪)", "domain": "证据源", "result": "附件1 仅企业/产品目录，无参数/供应商字段"},
-    {"id": "CR-17-025", "title": "历史内容精简", "status": "已完成", "domain": "工程", "result": "仓库瘦身 56MB，git+归档双保险"}
-  ]
+ "coding_rule": "CR-17-NNN（17=项目序号 17 TA analysis；NNN 三位流水号只增不复用）",
+ "updated": "2026-10-01",
+ "items": [
+  {
+   "id": "CR-17-001",
+   "title": "doc3 质量比能量互证审计（能量密度维度）",
+   "status": "已完成",
+   "domain": "数据质量",
+   "result": "261可比/200一致/61疑点归档",
+   "artifact": "audit-output/cr17_001_edensity_crosscheck.json"
+  },
+  {
+   "id": "CR-17-002",
+   "title": "doc3 老批次购置税目录下载补齐",
+   "status": "已完成",
+   "domain": "证据源",
+   "result": "22/27 批（5 批未捆绑弃追）",
+   "artifact": "fetch_doc3_old_batches.py"
+  },
+  {
+   "id": "CR-17-003",
+   "title": "188 行整数容量官方核证",
+   "status": "已完成",
+   "domain": "数据质量",
+   "result": "26/26 全等 0 更正；整数=公告额定体系定谳",
+   "artifact": "audit-output/doc3_capacity_verify_188.json"
+  },
+  {
+   "id": "CR-17-004",
+   "title": "doc3 油耗口径判决+B状态补全",
+   "status": "已完成",
+   "domain": "数据质量",
+   "result": "口径=亏电；21 格补全+19 行确证+18 双口径冲突留档",
+   "artifact": "audit-output/doc3_fuel_crosscheck_20261002.json"
+  },
+  {
+   "id": "CR-17-005",
+   "title": "doc3 全字段互证审计（续航/整备）",
+   "status": "已完成",
+   "domain": "数据质量",
+   "result": "350 可比/26 疑点归档",
+   "artifact": "audit-output/doc3_fullfield_audit_20261001.json"
+  },
+  {
+   "id": "CR-17-006",
+   "title": "锐胜M8 证据层级裁定恢复 46.0",
+   "status": "已完成",
+   "domain": "数据质量",
+   "result": "目录原文>媒体；自我勘误",
+   "artifact": "台账 54587~54588"
+  },
+  {
+   "id": "CR-17-007",
+   "title": "秦PLUS 整备更正 1955→1580",
+   "status": "已完成",
+   "domain": "数据质量",
+   "result": "目录原文+DCD 双源",
+   "artifact": "台账 54563"
+  },
+  {
+   "id": "CR-17-008",
+   "title": "手机查阅版上线",
+   "status": "已完成",
+   "domain": "交付物",
+   "result": "1MB 离线 HTML",
+   "artifact": "build_mobile_v4935.py"
+  },
+  {
+   "id": "CR-17-009",
+   "title": "看板导入通道重构+e2e",
+   "status": "已完成",
+   "domain": "交付物",
+   "result": "31 位对齐 PASS",
+   "artifact": "generate_dashboard.py"
+  },
+  {
+   "id": "CR-17-010",
+   "title": "分析底表 46 表（+月销量分析）",
+   "status": "已完成",
+   "domain": "交付物",
+   "result": "COM 实开验证",
+   "artifact": "build_deliverables_v4923.py"
+  },
+  {
+   "id": "CR-17-011",
+   "title": "doc3 疑点款型级取证（8 因子离群+4 整备无源+HFC6494 出界）",
+   "status": "待办",
+   "domain": "数据质量",
+   "next": "其它平台取证或人工裁决",
+   "artifact": "audit-output/doc3_fullfield_audit_20261001.json + 台账 54589~54590",
+   "progress_20261002": "8 因子离流行判读完成：RL7 双行续航 450→605 红修落地（目录原文+量产规格一致）；其余 6 例=工况/配置配对留档（迈腾GTE/智己LS7/小米YU7×2/极氪001/CAF PHEV/比亚迪秦PLUS 55km版）"
+  },
+  {
+   "id": "CR-17-012",
+   "title": "CSV source-sheets legacy 链处置",
+   "status": "待办",
+   "domain": "工程",
+   "next": "标记 legacy 或指向新 CSV",
+   "artifact": "parse-master.js/build-master.js"
+  },
+  {
+   "id": "CR-17-013",
+   "title": "EIDC 官方库新入口",
+   "status": "挂起(外部)",
+   "domain": "证据源",
+   "next": "人工浏览器确认（现全站 404）"
+  },
+  {
+   "id": "CR-17-014",
+   "title": "411 正式公告对齐入库",
+   "status": "监测中",
+   "domain": "批次滚动",
+   "next": "主站命中即 S1 最高优先"
+  },
+  {
+   "id": "CR-17-015",
+   "title": "电芯供应商 3,762 格缺口",
+   "status": "挂起(外部)",
+   "domain": "覆盖率",
+   "next": "新公示详情页机会/EIDC 恢复"
+  },
+  {
+   "id": "CR-17-016",
+   "title": "rear_only 213 行+84 拒收车系",
+   "status": "挂起(外部)",
+   "domain": "覆盖率",
+   "next": "随 DCD 上架历史款解锁"
+  },
+  {
+   "id": "CR-17-017",
+   "title": "手机版/PPT/报告使用反馈迭代",
+   "status": "待用户",
+   "domain": "交付物"
+  },
+  {
+   "id": "CR-17-018",
+   "title": "易车销量换月",
+   "status": "例行",
+   "domain": "数据源",
+   "next": "每月 10 日 fill_sales 重跑"
+  },
+  {
+   "id": "CR-17-019",
+   "title": "W4 21 行 doc3 穷尽",
+   "status": "已完成(负结果)",
+   "domain": "证据源",
+   "result": "0 命中，从未进目录"
+  },
+  {
+   "id": "CR-17-020",
+   "title": "容量余量公告原文通道接续",
+   "status": "待办",
+   "domain": "数据质量",
+   "next": "23 多配置+86 无源+162 未收录 行；通道=新公示详情页",
+   "artifact": "audit-output/capacity_anchor_v4931.json"
+  },
+  {
+   "id": "CR-17-021",
+   "title": "doc3 341-era 单行 TAB 表头格式兼容",
+   "status": "已完成",
+   "domain": "工程",
+   "result": "全量 2,904 行/1,833 型号",
+   "artifact": "extract_doc3_capacity.py"
+  },
+  {
+   "id": "CR-17-022",
+   "title": "派生库双件套对齐（JSON 重建+CSV 方案甲）",
+   "status": "已完成",
+   "domain": "工程",
+   "result": "双构建器键名统一约定",
+   "artifact": "rebuild_from_workbook.py / export_workbook_csv_v2.py"
+  },
+  {
+   "id": "CR-17-023",
+   "title": "S4+ 双电机签名定向回填",
+   "status": "已完成",
+   "domain": "数据质量",
+   "result": "小米澎程N70 后电机 100",
+   "artifact": "s4_rear_dual_v4934.py"
+  },
+  {
+   "id": "CR-17-024",
+   "title": "doc1 通道探铅",
+   "status": "否决(证伪)",
+   "domain": "证据源",
+   "result": "附件1 仅企业/产品目录，无参数/供应商字段"
+  },
+  {
+   "id": "CR-17-025",
+   "title": "历史内容精简",
+   "status": "已完成",
+   "domain": "工程",
+   "result": "仓库瘦身 56MB，git+归档双保险"
+  }
+ ]
 }
