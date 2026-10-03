@@ -1,0 +1,497 @@
+{
+ "created": "2026-10-01",
+ "cr": "CR-17-001",
+ "note": "doc3 质量比能量(总能量/总质量)互证审计——只读疑点清单不擅改；doc3=测试口径 vs 底表=额定申报口径，差异>阈值仅标记",
+ "compared": 261,
+ "agree": 200,
+ "suspects": [
+  {
+   "batch": "344",
+   "model": "CC7000BJ02EBEV",
+   "wb_ed": 177.2,
+   "doc3_median_ratio": 159.7,
+   "dev": 17.5,
+   "pt": "BEV"
+  },
+  {
+   "batch": "350",
+   "model": "THZ6451BEVS30J",
+   "wb_ed": 160.0,
+   "doc3_median_ratio": 138.1,
+   "dev": 21.9,
+   "pt": "BEV"
+  },
+  {
+   "batch": "351",
+   "model": "THZ6451BEVS30J",
+   "wb_ed": 160.0,
+   "doc3_median_ratio": 138.1,
+   "dev": 21.9,
+   "pt": "BEV"
+  },
+  {
+   "batch": "355",
+   "model": "DFL6460NEU2BEV",
+   "wb_ed": 180.0,
+   "doc3_median_ratio": 154.6,
+   "dev": 25.4,
+   "pt": "BEV"
+  },
+  {
+   "batch": "355",
+   "model": "EQ6531AL5F2BEV",
+   "wb_ed": 180.0,
+   "doc3_median_ratio": 207.1,
+   "dev": 27.1,
+   "pt": "BEV"
+  },
+  {
+   "batch": "356",
+   "model": "JL7000BEV03",
+   "wb_ed": 184.4,
+   "doc3_median_ratio": 169.2,
+   "dev": 15.2,
+   "pt": "BEV"
+  },
+  {
+   "batch": "362",
+   "model": "NEQ7000BEVJH11J",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 99.2,
+   "dev": 40.8,
+   "pt": "BEV"
+  },
+  {
+   "batch": "364",
+   "model": "CAF6470B4BEV",
+   "wb_ed": 180.0,
+   "doc3_median_ratio": 144.7,
+   "dev": 35.3,
+   "pt": "BEV"
+  },
+  {
+   "batch": "367",
+   "model": "DFM7002G1FBBEV",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 120.2,
+   "dev": 19.8,
+   "pt": "BEV"
+  },
+  {
+   "batch": "367",
+   "model": "HFC6494ECSEV2-W",
+   "wb_ed": 180.0,
+   "doc3_median_ratio": 133.3,
+   "dev": 46.7,
+   "pt": "BEV"
+  },
+  {
+   "batch": "368",
+   "model": "SH6486N1BEV-7",
+   "wb_ed": 160.0,
+   "doc3_median_ratio": 175.0,
+   "dev": 15.0,
+   "pt": "BEV"
+  },
+  {
+   "batch": "369",
+   "model": "LZW7007EVB3UAB",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 124.1,
+   "dev": 15.9,
+   "pt": "BEV"
+  },
+  {
+   "batch": "370",
+   "model": "CC7000BH00NEBEV",
+   "wb_ed": 150.0,
+   "doc3_median_ratio": 136.6,
+   "dev": 13.4,
+   "pt": "BEV"
+  },
+  {
+   "batch": "370",
+   "model": "JX6556TB-M6BEV",
+   "wb_ed": 180.0,
+   "doc3_median_ratio": 155.5,
+   "dev": 24.5,
+   "pt": "BEV"
+  },
+  {
+   "batch": "370",
+   "model": "SGM7002BBBEV",
+   "wb_ed": 170.0,
+   "doc3_median_ratio": 152.4,
+   "dev": 17.6,
+   "pt": "BEV"
+  },
+  {
+   "batch": "371",
+   "model": "MR7003BEV08",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 126.9,
+   "dev": 13.1,
+   "pt": "BEV"
+  },
+  {
+   "batch": "372",
+   "model": "HFC7002BSEV2",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 125.1,
+   "dev": 14.9,
+   "pt": "BEV"
+  },
+  {
+   "batch": "372",
+   "model": "NEQ7001BEVJ72B",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 121.9,
+   "dev": 18.1,
+   "pt": "BEV"
+  },
+  {
+   "batch": "373",
+   "model": "LZW7004EVA4",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 121.0,
+   "dev": 19.0,
+   "pt": "BEV"
+  },
+  {
+   "batch": "373",
+   "model": "YGM7000BEVBD1",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 114.5,
+   "dev": 25.5,
+   "pt": "BEV"
+  },
+  {
+   "batch": "374",
+   "model": "BMW7001AAEV",
+   "wb_ed": 170.0,
+   "doc3_median_ratio": 140.4,
+   "dev": 29.6,
+   "pt": "BEV"
+  },
+  {
+   "batch": "374",
+   "model": "JL7007BEV08",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 117.4,
+   "dev": 22.6,
+   "pt": "BEV"
+  },
+  {
+   "batch": "374",
+   "model": "JMV6550QRBEV",
+   "wb_ed": 180.0,
+   "doc3_median_ratio": 157.3,
+   "dev": 22.7,
+   "pt": "BEV"
+  },
+  {
+   "batch": "374",
+   "model": "LZW7007EVA3",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 126.3,
+   "dev": 13.7,
+   "pt": "BEV"
+  },
+  {
+   "batch": "375",
+   "model": "HXK7000BEVC01",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 111.8,
+   "dev": 28.2,
+   "pt": "BEV"
+  },
+  {
+   "batch": "376",
+   "model": "DFM7003G1F3BEV",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 126.8,
+   "dev": 13.2,
+   "pt": "BEV"
+  },
+  {
+   "batch": "376",
+   "model": "CC6470CF01EPHEV",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 111.7,
+   "dev": 28.3,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "377",
+   "model": "JL7007BEV15",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 121.6,
+   "dev": 18.4,
+   "pt": "BEV"
+  },
+  {
+   "batch": "378",
+   "model": "NAL6492BSEVA2",
+   "wb_ed": 170.0,
+   "doc3_median_ratio": 133.3,
+   "dev": 36.7,
+   "pt": "BEV"
+  },
+  {
+   "batch": "378",
+   "model": "NAL6512BSEVA1",
+   "wb_ed": 170.0,
+   "doc3_median_ratio": 133.3,
+   "dev": 36.7,
+   "pt": "BEV"
+  },
+  {
+   "batch": "390",
+   "model": "SC6481GAE6HEV",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 119.3,
+   "dev": 20.7,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "398",
+   "model": "BJ6480A504BEV",
+   "wb_ed": 150.0,
+   "doc3_median_ratio": 136.0,
+   "dev": 14.0,
+   "pt": "BEV"
+  },
+  {
+   "batch": "398",
+   "model": "BYD6480AMHEV8",
+   "wb_ed": 150.0,
+   "doc3_median_ratio": 121.0,
+   "dev": 29.0,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "399",
+   "model": "BYD7150ADHEV13",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 99.2,
+   "dev": 40.8,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "399",
+   "model": "LZW6521HDUPHEVA2",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 127.4,
+   "dev": 12.6,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "400",
+   "model": "BJ7008TLBEV",
+   "wb_ed": 150.0,
+   "doc3_median_ratio": 125.0,
+   "dev": 25.0,
+   "pt": "BEV"
+  },
+  {
+   "batch": "401",
+   "model": "HQ6431BEV106",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 119.7,
+   "dev": 20.3,
+   "pt": "BEV"
+  },
+  {
+   "batch": "401",
+   "model": "SQR6500CHEVM36T2",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 122.8,
+   "dev": 17.2,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "402",
+   "model": "AHC6460BEVP0B",
+   "wb_ed": 170.0,
+   "doc3_median_ratio": 142.2,
+   "dev": 27.8,
+   "pt": "BEV"
+  },
+  {
+   "batch": "402",
+   "model": "CSA7004GBEV6",
+   "wb_ed": 150.0,
+   "doc3_median_ratio": 136.5,
+   "dev": 13.5,
+   "pt": "BEV"
+  },
+  {
+   "batch": "402",
+   "model": "CSA7004GBEVG",
+   "wb_ed": 160.0,
+   "doc3_median_ratio": 133.7,
+   "dev": 26.3,
+   "pt": "BEV"
+  },
+  {
+   "batch": "402",
+   "model": "SAL7000AC01BBEV",
+   "wb_ed": 170.0,
+   "doc3_median_ratio": 149.7,
+   "dev": 20.3,
+   "pt": "BEV"
+  },
+  {
+   "batch": "402",
+   "model": "SGM6525BABEV",
+   "wb_ed": 180.0,
+   "doc3_median_ratio": 154.4,
+   "dev": 25.6,
+   "pt": "BEV"
+  },
+  {
+   "batch": "402",
+   "model": "BYD6480AMHEV10",
+   "wb_ed": 150.0,
+   "doc3_median_ratio": 121.0,
+   "dev": 29.0,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "402",
+   "model": "CSA6512LFREEV3",
+   "wb_ed": 150.0,
+   "doc3_median_ratio": 137.5,
+   "dev": 12.5,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "402",
+   "model": "SQR2030CHEVD012",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 112.6,
+   "dev": 27.4,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "403",
+   "model": "MR7151DCHEV103",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 128.6,
+   "dev": 11.4,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "404",
+   "model": "BJ7000T379BEV",
+   "wb_ed": 160.0,
+   "doc3_median_ratio": 133.8,
+   "dev": 26.2,
+   "pt": "BEV"
+  },
+  {
+   "batch": "404",
+   "model": "SC7000AABGBEV",
+   "wb_ed": 175.0,
+   "doc3_median_ratio": 136.4,
+   "dev": 38.6,
+   "pt": "BEV"
+  },
+  {
+   "batch": "404",
+   "model": "VCD6505F16TBEV",
+   "wb_ed": 190.0,
+   "doc3_median_ratio": 164.3,
+   "dev": 25.7,
+   "pt": "BEV"
+  },
+  {
+   "batch": "404",
+   "model": "VCD7005F011BEV",
+   "wb_ed": 180.0,
+   "doc3_median_ratio": 153.6,
+   "dev": 26.4,
+   "pt": "BEV"
+  },
+  {
+   "batch": "404",
+   "model": "XMA6500LBEVA9",
+   "wb_ed": 180.0,
+   "doc3_median_ratio": 152.7,
+   "dev": 27.3,
+   "pt": "BEV"
+  },
+  {
+   "batch": "404",
+   "model": "CC6530DC21APHEV",
+   "wb_ed": 170.0,
+   "doc3_median_ratio": 186.1,
+   "dev": 16.1,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "404",
+   "model": "SQR6490CHEVT292",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 122.8,
+   "dev": 17.2,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "405",
+   "model": "BYD6430BZBEV2",
+   "wb_ed": 150.0,
+   "doc3_median_ratio": 136.8,
+   "dev": 13.2,
+   "pt": "BEV"
+  },
+  {
+   "batch": "406",
+   "model": "JL7001BEV108",
+   "wb_ed": 175.0,
+   "doc3_median_ratio": 156.1,
+   "dev": 18.9,
+   "pt": "BEV"
+  },
+  {
+   "batch": "406",
+   "model": "CC6520DH21APHEV",
+   "wb_ed": 128.4705882352941,
+   "doc3_median_ratio": 144.1,
+   "dev": 15.6,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "406",
+   "model": "NEQ6490REEVS5DK",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 121.3,
+   "dev": 18.7,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "406",
+   "model": "SQR7150REEVT16A1",
+   "wb_ed": 195.0,
+   "doc3_median_ratio": 100.9,
+   "dev": 94.1,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "397",
+   "model": "BYD7153WT6HEV6",
+   "wb_ed": 140.0,
+   "doc3_median_ratio": 99.2,
+   "dev": 40.8,
+   "pt": "PHEV"
+  },
+  {
+   "batch": "373",
+   "model": "DFL6470NA51BEV",
+   "wb_ed": 167.420814479638,
+   "doc3_median_ratio": 134.5,
+   "dev": 32.9,
+   "pt": "BEV"
+  }
+ ]
+}
