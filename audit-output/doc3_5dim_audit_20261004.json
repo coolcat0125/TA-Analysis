@@ -1,0 +1,396 @@
+{
+ "match": 350,
+ "agree": 302,
+ "suspect": 48,
+ "suspect_detail": [
+  {
+   "model": "SVW6492BEV",
+   "batch": "341",
+   "generic": "ID.6 X",
+   "findings": [
+    "续航(km): 底表617.0 vs doc3588.0(差29.0)"
+   ]
+  },
+  {
+   "model": "LXA6500SHEVMC",
+   "batch": "343",
+   "generic": "理想ONE",
+   "findings": [
+    "油耗(L/100km): 底表1.5 vs doc38.8(差7.3)"
+   ]
+  },
+  {
+   "model": "JX7001ERDBEV",
+   "batch": "344",
+   "generic": "羿",
+   "findings": [
+    "续航(km): 底表470.0 vs doc3450.0(差20.0)"
+   ]
+  },
+  {
+   "model": "BYD7152WT6HEVB12",
+   "batch": "345",
+   "generic": "比亚迪秦PLUS",
+   "findings": [
+    "油耗(L/100km): 底表1.2 vs doc33.8(差2.6)"
+   ]
+  },
+  {
+   "model": "FV7147FADEHEV",
+   "batch": "345",
+   "generic": "MAGOTAN GTE",
+   "findings": [
+    "续航(km): 底表63.0 vs doc351.0(差12.0)",
+    "油耗(L/100km): 底表1.4 vs doc35.59(差4.2)"
+   ]
+  },
+  {
+   "model": "LXA6500SHEVMH",
+   "batch": "345",
+   "generic": "理想ONE",
+   "findings": [
+    "油耗(L/100km): 底表1.4 vs doc36.8(差5.4)"
+   ]
+  },
+  {
+   "model": "SC6493AAC6HEV",
+   "batch": "345",
+   "generic": "UNI-K",
+   "findings": [
+    "油耗(L/100km): 底表0.8 vs doc35.0(差4.2)"
+   ]
+  },
+  {
+   "model": "BYD6490SBEV9",
+   "batch": "346",
+   "generic": "比亚迪唐",
+   "findings": [
+    "续航(km): 底表635.0 vs doc3615.0(差20.0)"
+   ]
+  },
+  {
+   "model": "MR7001BEV06",
+   "batch": "346",
+   "generic": "001",
+   "findings": [
+    "续航(km): 底表536.0 vs doc3526.0(差10.0)"
+   ]
+  },
+  {
+   "model": "NHQ7000BEVDN",
+   "batch": "348",
+   "generic": "P5",
+   "findings": [
+    "续航(km): 底表510.0 vs doc3495.0(差15.0)"
+   ]
+  },
+  {
+   "model": "EQ6492AL5F1SHEV",
+   "batch": "348",
+   "generic": "岚图FREE",
+   "findings": [
+    "油耗(L/100km): 底表5.3 vs doc36.9(差1.6)"
+   ]
+  },
+  {
+   "model": "EQ6491AL5F2SHEV",
+   "batch": "354",
+   "generic": "岚图FREE",
+   "findings": [
+    "油耗(L/100km): 底表5.3 vs doc37.6(差2.3)"
+   ]
+  },
+  {
+   "model": "SC6491EBBBEV",
+   "batch": "357",
+   "generic": "11",
+   "findings": [
+    "整备(kg): 底表2365.0 vs doc32425.0(差60.0)"
+   ]
+  },
+  {
+   "model": "CC6470CF01BPHEV",
+   "batch": "361",
+   "generic": "大狗",
+   "findings": [
+    "油耗(L/100km): 底表3.94 vs doc35.92(差2.0)"
+   ]
+  },
+  {
+   "model": "HFC6494ECSEV2-W",
+   "batch": "367",
+   "generic": "ES6",
+   "findings": [
+    "续航(km): 底表635.0 vs doc3445.0(差190.0)",
+    "整备(kg): 底表2306.0 vs doc32390.0(差84.0)"
+   ]
+  },
+  {
+   "model": "JL7001SEV03",
+   "batch": "368",
+   "generic": "换电式纯电动轿车",
+   "findings": [
+    "续航(km): 底表415.0 vs doc3605.0(差190.0)"
+   ]
+  },
+  {
+   "model": "CC6460BM02CPHEV",
+   "batch": "368",
+   "generic": "哈弗如歌,哈弗枭龙",
+   "findings": [
+    "油耗(L/100km): 底表3.26 vs doc35.3(差2.0)"
+   ]
+  },
+  {
+   "model": "BYD6482ST6HEV8",
+   "batch": "369",
+   "generic": "护卫舰07",
+   "findings": [
+    "油耗(L/100km): 底表4.03 vs doc35.8(差1.8)"
+   ]
+  },
+  {
+   "model": "DHW7201CUHEV",
+   "batch": "369",
+   "generic": "英仕派(INSPIRE)",
+   "findings": [
+    "油耗(L/100km): 底表3.18 vs doc34.88(差1.7)"
+   ]
+  },
+  {
+   "model": "CC6480BT25DPHEV",
+   "batch": "370",
+   "generic": "哈弗枭龙MAX",
+   "findings": [
+    "油耗(L/100km): 底表3.68 vs doc35.5(差1.8)"
+   ]
+  },
+  {
+   "model": "FV7007ABBEV",
+   "batch": "372",
+   "generic": "ID.7 VIZZION",
+   "findings": [
+    "整备(kg): 底表2700.0 vs doc32232.0(差468.0)"
+   ]
+  },
+  {
+   "model": "THZ7000BEVS407",
+   "batch": "372",
+   "generic": "哪吒S",
+   "findings": [
+    "整备(kg): 底表2315.0 vs doc31940.0(差375.0)"
+   ]
+  },
+  {
+   "model": "BYD6483ST6HEV2",
+   "batch": "372",
+   "generic": "比亚迪宋PLUS/比亚迪护卫舰0",
+   "findings": [
+    "油耗(L/100km): 底表3.72 vs doc36.29(差2.6)"
+   ]
+  },
+  {
+   "model": "BYD7151YT6HEV4",
+   "batch": "372",
+   "generic": "比亚迪驱逐舰07",
+   "findings": [
+    "油耗(L/100km): 底表2.8 vs doc35.3(差2.5)"
+   ]
+  },
+  {
+   "model": "DFL6460NTT84PHEV",
+   "batch": "372",
+   "generic": "启辰大V DD-i超混动",
+   "findings": [
+    "油耗(L/100km): 底表3.0 vs doc35.2(差2.2)"
+   ]
+  },
+  {
+   "model": "JX6556TA-M6BEV",
+   "batch": "373",
+   "generic": "全顺EV",
+   "findings": [
+    "续航(km): 底表306.0 vs doc3357.0(差51.0)"
+   ]
+  },
+  {
+   "model": "LZW7154KBUPHEVA2",
+   "batch": "374",
+   "generic": "五菱星光",
+   "findings": [
+    "油耗(L/100km): 底表2.24 vs doc34.09(差1.8)"
+   ]
+  },
+  {
+   "model": "SC7157BAD6HEV",
+   "batch": "374",
+   "generic": "A05",
+   "findings": [
+    "油耗(L/100km): 底表1.59 vs doc34.6(差3.0)"
+   ]
+  },
+  {
+   "model": "CC6470CF01EPHEV",
+   "batch": "376",
+   "generic": "哈弗大狗",
+   "findings": [
+    "油耗(L/100km): 底表3.94 vs doc35.92(差2.0)"
+   ]
+  },
+  {
+   "model": "CA6520HA6PHEVTX",
+   "batch": "377",
+   "generic": "红旗HQ9",
+   "findings": [
+    "油耗(L/100km): 底表8.8 vs doc37.5(差1.3)"
+   ]
+  },
+  {
+   "model": "SGM6470DACHEV",
+   "batch": "378",
+   "generic": "EQUINOX",
+   "findings": [
+    "油耗(L/100km): 底表3.4 vs doc35.97(差2.6)"
+   ]
+  },
+  {
+   "model": "CSA6501LBEV6",
+   "batch": "384",
+   "generic": "LS7",
+   "findings": [
+    "续航(km): 底表620.0 vs doc3640.0(差20.0)"
+   ]
+  },
+  {
+   "model": "MR6481DCHEV100",
+   "batch": "384",
+   "generic": "领克08",
+   "findings": [
+    "油耗(L/100km): 底表1.2 vs doc35.5(差4.3)"
+   ]
+  },
+  {
+   "model": "BAW6512MB6SHEV",
+   "batch": "385",
+   "generic": "极石01",
+   "findings": [
+    "油耗(L/100km): 底表3.61 vs doc37.9(差4.3)"
+   ]
+  },
+  {
+   "model": "EQ7152AL1F2CHEV",
+   "batch": "386",
+   "generic": "岚图追光",
+   "findings": [
+    "油耗(L/100km): 底表0.17 vs doc35.76(差5.6)"
+   ]
+  },
+  {
+   "model": "SKE6500SSHEVA6S",
+   "batch": "386",
+   "generic": "赛力斯问界M7",
+   "findings": [
+    "油耗(L/100km): 底表3.68 vs doc37.4(差3.7)"
+   ]
+  },
+  {
+   "model": "XMA6500LBEVA1",
+   "batch": "391",
+   "generic": "小米YU7",
+   "findings": [
+    "续航(km): 底表750.0 vs doc3760.0(差10.0)"
+   ]
+  },
+  {
+   "model": "LZW6470HDUPHEVA3",
+   "batch": "393",
+   "generic": "五菱星光S",
+   "findings": [
+    "油耗(L/100km): 底表3.82 vs doc35.25(差1.4)"
+   ]
+  },
+  {
+   "model": "MR7151DCHEV110",
+   "batch": "393",
+   "generic": "银河星耀8",
+   "findings": [
+    "油耗(L/100km): 底表2.94 vs doc34.18(差1.2)"
+   ]
+  },
+  {
+   "model": "MR7003BEV102",
+   "batch": "398",
+   "generic": "001",
+   "findings": [
+    "续航(km): 底表690.0 vs doc3710.0(差20.0)"
+   ]
+  },
+  {
+   "model": "MR6511DCHEV105",
+   "batch": "404",
+   "generic": "8X",
+   "findings": [
+    "油耗(L/100km): 底表1.2 vs doc36.49(差5.3)"
+   ]
+  },
+  {
+   "model": "XMA6500LBEVR8",
+   "batch": "397",
+   "generic": "小米YU7",
+   "findings": [
+    "续航(km): 底表835.0 vs doc3810.0(差25.0)"
+   ]
+  },
+  {
+   "model": "MR6481DCHEV103",
+   "batch": "397",
+   "generic": "领克08",
+   "findings": [
+    "油耗(L/100km): 底表1.2 vs doc35.5(差4.3)"
+   ]
+  },
+  {
+   "model": "CAF6461A62PHEV",
+   "batch": "341",
+   "generic": "插电式混合动力多用途乘用车",
+   "findings": [
+    "续航(km): 底表54.0 vs doc377.0(差23.0)"
+   ]
+  },
+  {
+   "model": "BJ7000C5DEK-BEV",
+   "batch": "342",
+   "generic": "换电式纯电动轿车",
+   "findings": [
+    "整备(kg): 底表1770.0 vs doc31620.0(差150.0)"
+   ]
+  },
+  {
+   "model": "BJ6521EVAA2",
+   "batch": "392",
+   "generic": "乐福",
+   "findings": [
+    "续航(km): 底表450.0 vs doc3420.0(差30.0)",
+    "整备(kg): 底表1770.0 vs doc31870.0(差100.0)"
+   ]
+  },
+  {
+   "model": "SC6558AAAABEV",
+   "batch": "393",
+   "generic": "V919",
+   "findings": [
+    "整备(kg): 底表2530.0 vs doc32310.0(差220.0)"
+   ]
+  },
+  {
+   "model": "BYD7153WT6HEV5",
+   "batch": "397",
+   "generic": "插电式混合动力轿车",
+   "findings": [
+    "续航(km): 底表103.0 vs doc360.0(差43.0)",
+    "整备(kg): 底表2075.0 vs doc31660.0(差415.0)",
+    "油耗(L/100km): 底表0.34 vs doc33.8(差3.5)"
+   ]
+  }
+ ]
+}
