@@ -27,6 +27,10 @@ KW = {
     'energy_kwh': ('总能量',),
     'pack_mass': ('蓄电池组总质量', '蓄电池组质量'),
     'fuel': ('燃料消耗量',),
+    'displacement': ('排量',),
+    'engine_power': ('发动机额定功率', '发动机功率'),
+    'motor_rated_power': ('驱动电机额定功率', '电机额定功率'),
+    'motor_peak_power': ('驱动电机峰值功率', '电机峰值功率'),
 }
 
 
