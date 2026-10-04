@@ -1,0 +1,46 @@
+{
+ "created": "2026-10-04 07:38",
+ "note": "EIDC 新查询系统(doCpQueryByeOne)官方批次核证——5 疑点行+4 跨批同码行",
+ "verifications": [
+  {
+   "model": "HFC6494ECSEV2-W",
+   "workbook_batch": "367",
+   "eidc_all_batches": [
+    "378"
+   ],
+   "eidc_pc_matches_wb": false
+  },
+  {
+   "model": "JKC6450A0X3BEV",
+   "workbook_batch": "368",
+   "eidc_all_batches": [
+    "394"
+   ],
+   "eidc_pc_matches_wb": false
+  },
+  {
+   "model": "JKC6450A0X5BEV",
+   "workbook_batch": "370",
+   "eidc_all_batches": [
+    "394"
+   ],
+   "eidc_pc_matches_wb": false
+  },
+  {
+   "model": "SC6491EBBBEV",
+   "workbook_batch": "357",
+   "eidc_all_batches": [
+    "366"
+   ],
+   "eidc_pc_matches_wb": false
+  },
+  {
+   "model": "BYD7008BEVA11",
+   "workbook_batch": "372",
+   "eidc_all_batches": [
+    "380"
+   ],
+   "eidc_pc_matches_wb": false
+  }
+ ]
+}
