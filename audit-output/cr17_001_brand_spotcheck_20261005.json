@@ -1,0 +1,988 @@
+{
+ "generated": "2026-10-05",
+ "ledger_sample_n": 40,
+ "plan_sample_n": 40,
+ "verdict_counts": {
+  "CONFIRM": 21,
+  "NO_BASELINE": 15,
+  "DIFFERS": 4,
+  "plan_WRITE_CONFIRM": 28,
+  "plan_NO_BASELINE": 12
+ },
+ "ledger_checks": [
+  {
+   "id": "341::BYD6461ST6HEV4",
+   "enterprise": "比亚迪汽车有限公司",
+   "modelName": "比亚迪",
+   "ledger_brand": "比亚迪牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "比亚迪",
+    "n": 1
+   },
+   "verdict": "CONFIRM",
+   "row": 4742,
+   "wb_modelName": "比亚迪汽车有限公司"
+  },
+  {
+   "id": "410::BJ7001A51GBEV",
+   "enterprise": "北汽蓝谷麦格纳汽车有限公司",
+   "modelName": "",
+   "ledger_brand": "极狐牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "极狐",
+    "n": 7
+   },
+   "verdict": "CONFIRM",
+   "row": 5382,
+   "wb_modelName": "北汽蓝谷麦格纳汽车有限公司"
+  },
+  {
+   "id": "342::LZW7004EVJDBB",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "modelName": "五菱",
+   "ledger_brand": "五菱牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "五菱",
+    "n": 4
+   },
+   "verdict": "CONFIRM",
+   "row": 4753,
+   "wb_modelName": "上汽通用五菱汽车股份有限公司"
+  },
+  {
+   "id": "380::BYD7003BEV3",
+   "enterprise": "比亚迪汽车工业有限公司",
+   "modelName": "",
+   "ledger_brand": "比亚迪牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 5155,
+   "wb_modelName": "比亚迪汽车工业有限公司"
+  },
+  {
+   "id": "344::MR7153PHEV24",
+   "enterprise": "浙江吉利汽车有限公司",
+   "modelName": "博瑞",
+   "ledger_brand": "吉利牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 4895,
+   "wb_modelName": "浙江吉利汽车有限公司"
+  },
+  {
+   "id": "403::BYD7000BXBEV3",
+   "enterprise": "比亚迪汽车工业有限公司",
+   "modelName": "比亚迪海豹07",
+   "ledger_brand": "比亚迪牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "比亚迪",
+    "n": 5
+   },
+   "verdict": "CONFIRM",
+   "row": 3847,
+   "wb_modelName": "比亚迪汽车工业有限公司"
+  },
+  {
+   "id": "357::SKE7003BEVF",
+   "enterprise": "赛力斯汽车有限公司",
+   "modelName": "",
+   "ledger_brand": "赛力斯牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 5098,
+   "wb_modelName": "赛力斯汽车有限公司"
+  },
+  {
+   "id": "408::LZW6482KDUREEVA2",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "modelName": "五菱荣光L",
+   "ledger_brand": "五菱牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 5357,
+   "wb_modelName": "上汽通用五菱汽车股份有限公司"
+  },
+  {
+   "id": "391::BJ6492EVAA",
+   "enterprise": "北汽福田汽车股份有限公司",
+   "modelName": "风景i7,祥菱U7",
+   "ledger_brand": "福田牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "福田",
+    "n": 14
+   },
+   "verdict": "CONFIRM",
+   "row": 5204,
+   "wb_modelName": "北汽福田汽车股份有限公司"
+  },
+  {
+   "id": "390::LXA6511SHEVX0B",
+   "enterprise": "北京理想汽车有限公司",
+   "modelName": "",
+   "ledger_brand": "理想牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "理想",
+    "n": 41
+   },
+   "verdict": "CONFIRM",
+   "row": 5199,
+   "wb_modelName": "北京理想汽车有限公司"
+  },
+  {
+   "id": "397::NEQ6420BEVS59L",
+   "enterprise": "奇瑞新能源汽车股份有限公司",
+   "modelName": "V23",
+   "ledger_brand": "奇瑞牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "爱咖",
+    "n": 7
+   },
+   "verdict": "DIFFERS",
+   "row": 4519,
+   "wb_modelName": "奇瑞新能源汽车股份有限公司"
+  },
+  {
+   "id": "344::BYD7005BEVA4",
+   "enterprise": "比亚迪汽车有限公司",
+   "modelName": "比亚迪秦",
+   "ledger_brand": "比亚迪牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "比亚迪",
+    "n": 1
+   },
+   "verdict": "CONFIRM",
+   "row": 4871,
+   "wb_modelName": "比亚迪汽车有限公司"
+  },
+  {
+   "id": "341::LZW7004EVA4KAK",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "modelName": "五菱",
+   "ledger_brand": "五菱牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "五菱",
+    "n": 4
+   },
+   "verdict": "CONFIRM",
+   "row": 4636,
+   "wb_modelName": "上汽通用五菱汽车股份有限公司"
+  },
+  {
+   "id": "341::YQZ7160GPHEV",
+   "enterprise": "东风悦达起亚汽车有限公司",
+   "modelName": "",
+   "ledger_brand": "起亚牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 4731,
+   "wb_modelName": "东风悦达起亚汽车有限公司"
+  },
+  {
+   "id": "390::LXA6520SHEVX06",
+   "enterprise": "北京理想汽车有限公司",
+   "modelName": "",
+   "ledger_brand": "理想牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "理想",
+    "n": 41
+   },
+   "verdict": "CONFIRM",
+   "row": 5202,
+   "wb_modelName": "北京理想汽车有限公司"
+  },
+  {
+   "id": "343::THZ7000BEVS111",
+   "enterprise": "合众新能源汽车有限公司",
+   "modelName": "哪吒",
+   "ledger_brand": "哪吒牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "哪吒",
+    "n": 15
+   },
+   "verdict": "CONFIRM",
+   "row": 4818,
+   "wb_modelName": "合众新能源汽车有限公司"
+  },
+  {
+   "id": "396::BYD7151YT6HEV7",
+   "enterprise": "比亚迪汽车工业有限公司",
+   "modelName": "海豹07 EV",
+   "ledger_brand": "比亚迪牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "比亚迪",
+    "n": 5
+   },
+   "verdict": "CONFIRM",
+   "row": 3256,
+   "wb_modelName": "比亚迪汽车工业有限公司"
+  },
+  {
+   "id": "350::BYD6490SBEV4",
+   "enterprise": "比亚迪汽车工业有限公司",
+   "modelName": "比亚迪唐",
+   "ledger_brand": "比亚迪牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "比亚迪",
+    "n": 9
+   },
+   "verdict": "CONFIRM",
+   "row": 5021,
+   "wb_modelName": "比亚迪汽车工业有限公司"
+  },
+  {
+   "id": "345::DXK6450EC8BEV",
+   "enterprise": "东风小康汽车有限公司",
+   "modelName": "东风小康EC36",
+   "ledger_brand": "东风牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "东风",
+    "n": 1
+   },
+   "verdict": "CONFIRM",
+   "row": 4912,
+   "wb_modelName": "东风小康汽车有限公司"
+  },
+  {
+   "id": "345::JX7001ESLBEV",
+   "enterprise": "江西江铃集团新能源汽车有限公司",
+   "modelName": "1 易至EV3",
+   "ledger_brand": "江铃牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "易至",
+    "n": 2
+   },
+   "verdict": "DIFFERS",
+   "row": 4904,
+   "wb_modelName": "江西江铃集团新能源汽车有限公司"
+  },
+  {
+   "id": "391::BYD7152ACHEV3",
+   "enterprise": "比亚迪汽车有限公司",
+   "modelName": "",
+   "ledger_brand": "比亚迪牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 5207,
+   "wb_modelName": "比亚迪汽车有限公司"
+  },
+  {
+   "id": "341::GAH7000BEVN0C",
+   "enterprise": "广汽乘用车(杭州)有限公司",
+   "modelName": "AION S",
+   "ledger_brand": "传祺牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 4670,
+   "wb_modelName": "广汽乘用车(杭州)有限公司"
+  },
+  {
+   "id": "398::DXK6520AC12BEV",
+   "enterprise": "赛力斯汽车(湖北)有限公司",
+   "modelName": "瑞驰 R5",
+   "ledger_brand": "问界牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 5248,
+   "wb_modelName": "赛力斯汽车(湖北)有限公司"
+  },
+  {
+   "id": "343::THZ6450BEVS306",
+   "enterprise": "合众新能源汽车有限公司",
+   "modelName": "哪吒U",
+   "ledger_brand": "哪吒牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "哪吒",
+    "n": 10
+   },
+   "verdict": "CONFIRM",
+   "row": 4848,
+   "wb_modelName": "合众新能源汽车有限公司"
+  },
+  {
+   "id": "350::SQR7000BEVT195",
+   "enterprise": "奇瑞汽车股份有限公司",
+   "modelName": "TIGGO e",
+   "ledger_brand": "奇瑞牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 5011,
+   "wb_modelName": "奇瑞汽车股份有限公司"
+  },
+  {
+   "id": "410::CC6481DE01HPHEV",
+   "enterprise": "长城汽车股份有限公司",
+   "modelName": "",
+   "ledger_brand": "长城牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 5388,
+   "wb_modelName": "长城汽车股份有限公司"
+  },
+  {
+   "id": "342::THZ6450BEVS309",
+   "enterprise": "浙江合众新能源汽车有限公司",
+   "modelName": "哪吒U;哪吒U-Ⅱ",
+   "ledger_brand": "哪吒牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "哪吒",
+    "n": 1
+   },
+   "verdict": "CONFIRM",
+   "row": 4781,
+   "wb_modelName": "浙江合众新能源汽车有限公司"
+  },
+  {
+   "id": "403::SQJ6460YX5BEV",
+   "enterprise": "北京汽车制造厂有限公司",
+   "modelName": "S5",
+   "ledger_brand": "北京牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "燕铃",
+    "n": 1
+   },
+   "verdict": "DIFFERS",
+   "row": 3876,
+   "wb_modelName": "北京汽车制造厂有限公司"
+  },
+  {
+   "id": "403::BYD6480CDBEV1",
+   "enterprise": "",
+   "modelName": "比亚迪宋Ultra,比亚迪大宋",
+   "ledger_brand": "比亚迪牌",
+   "ledger_source": "backfill:nameTokens",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "比亚迪",
+    "n": 1
+   },
+   "verdict": "CONFIRM",
+   "row": 3842,
+   "wb_modelName": ""
+  },
+  {
+   "id": "397::WHJ6520BEVK133",
+   "enterprise": "宜宾凯翼汽车有限公司",
+   "modelName": "江豚E7",
+   "ledger_brand": "凯翼牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "凯翼",
+    "n": 16
+   },
+   "verdict": "CONFIRM",
+   "row": 4528,
+   "wb_modelName": "宜宾凯翼汽车有限公司"
+  },
+  {
+   "id": "358::YQZ7202GPHEV",
+   "enterprise": "江苏悦达起亚汽车有限公司",
+   "modelName": "",
+   "ledger_brand": "起亚牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 5108,
+   "wb_modelName": "江苏悦达起亚汽车有限公司"
+  },
+  {
+   "id": "400::BJ6491EVAA2",
+   "enterprise": "北汽福田汽车股份有限公司",
+   "modelName": "乐福",
+   "ledger_brand": "福田牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "福田",
+    "n": 14
+   },
+   "verdict": "CONFIRM",
+   "row": 5265,
+   "wb_modelName": "北汽福田汽车股份有限公司"
+  },
+  {
+   "id": "343::LZW7003EVGEAB",
+   "enterprise": "上汽通用五菱汽车股份有限公司",
+   "modelName": "五菱",
+   "ledger_brand": "五菱牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 4792,
+   "wb_modelName": "上汽通用五菱汽车股份有限公司"
+  },
+  {
+   "id": "343::LZ6511MLANEV",
+   "enterprise": "东风柳州汽车有限公司",
+   "modelName": "",
+   "ledger_brand": "风行牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 4841,
+   "wb_modelName": "东风柳州汽车有限公司"
+  },
+  {
+   "id": "390::SC6480V7Q6B5BEV",
+   "enterprise": "重庆长安汽车股份有限公司",
+   "modelName": "跨越星V7",
+   "ledger_brand": "长安牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "长安",
+    "n": 5
+   },
+   "verdict": "CONFIRM",
+   "row": 2833,
+   "wb_modelName": "重庆长安汽车股份有限公司"
+  },
+  {
+   "id": "344::BJ7205MLHEV",
+   "enterprise": "北京奔驰汽车有限公司",
+   "modelName": "E 350 e L",
+   "ledger_brand": "奔驰牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 4888,
+   "wb_modelName": "北京奔驰汽车有限公司"
+  },
+  {
+   "id": "397::FZ6490BEVC16N",
+   "enterprise": "零跑汽车有限公司",
+   "modelName": "C16",
+   "ledger_brand": "零跑牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "零跑",
+    "n": 17
+   },
+   "verdict": "CONFIRM",
+   "row": 4557,
+   "wb_modelName": "零跑汽车有限公司"
+  },
+  {
+   "id": "341::GAM6480BEVB0E",
+   "enterprise": "广汽乘用车有限公司",
+   "modelName": "AION LX",
+   "ledger_brand": "传祺牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "埃安",
+    "n": 4
+   },
+   "verdict": "DIFFERS",
+   "row": 4722,
+   "wb_modelName": "广汽乘用车有限公司"
+  },
+  {
+   "id": "380::BYD7002BEV6",
+   "enterprise": "比亚迪汽车工业有限公司",
+   "modelName": "比亚迪e2",
+   "ledger_brand": "比亚迪牌",
+   "ledger_source": "backfill:enterpriseExact",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "比亚迪",
+    "n": 1
+   },
+   "verdict": "CONFIRM",
+   "row": 5142,
+   "wb_modelName": "比亚迪汽车工业有限公司"
+  },
+  {
+   "id": "396::SQR6464CHEVT1H",
+   "enterprise": "",
+   "modelName": "大圣 C-DM",
+   "ledger_brand": "捷途牌",
+   "ledger_source": "backfill:nameTokens",
+   "baseline": null,
+   "verdict": "NO_BASELINE",
+   "row": 3286,
+   "wb_modelName": ""
+  }
+ ],
+ "plan_checks": [
+  {
+   "id": "341::BJ7001AUA7-BEV",
+   "channel": "C2",
+   "write_value": "极狐(ARCFOX)牌",
+   "derived": "极狐牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "极狐",
+    "n": 13
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "351::BAW6451MA4BEV",
+   "channel": "C4",
+   "write_value": "北京汽车",
+   "derived": "北京牌",
+   "baseline": null,
+   "verdict": "NO_BASELINE"
+  },
+  {
+   "id": "344::SH6523C1BEV",
+   "channel": "C3",
+   "write_value": "大通牌",
+   "derived": "大通牌",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "大通",
+    "n": 43
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "341::BYD6470MT6HEV5",
+   "channel": "C2",
+   "write_value": "比亚迪牌",
+   "derived": "比亚迪牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "比亚迪",
+    "n": 1
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "346::CC7001ZM01BEV",
+   "channel": "C4",
+   "write_value": "欧拉牌",
+   "derived": "长城牌",
+   "baseline": null,
+   "verdict": "NO_BASELINE"
+  },
+  {
+   "id": "341::LZW7004EVPKAK",
+   "channel": "C2",
+   "write_value": "五菱牌",
+   "derived": "五菱牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "五菱",
+    "n": 4
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "348::TSL7000BEVAR1",
+   "channel": "C2",
+   "write_value": "特斯拉牌",
+   "derived": "特斯拉牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "特斯拉",
+    "n": 3
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "397::DFM7001S1F7BEV",
+   "channel": "C2",
+   "write_value": "东风牌",
+   "derived": "东风牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "东风",
+    "n": 1
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "343::LZ6514MLAEV",
+   "channel": "C2",
+   "write_value": "东风牌",
+   "derived": "风行牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "东风",
+    "n": 3
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "346::NEQ7000BEVJ72F",
+   "channel": "C2",
+   "write_value": "奇瑞牌",
+   "derived": "奇瑞牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "奇瑞",
+    "n": 2
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "376::DFL6470NA52BEV",
+   "channel": "C2",
+   "write_value": "启辰牌",
+   "derived": "东风牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "启辰",
+    "n": 3
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "400::SC6488AAAABEV",
+   "channel": "C2",
+   "write_value": "长安牌",
+   "derived": "长安牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "长安",
+    "n": 4
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "401::SC6468AAACBEV",
+   "channel": "C2",
+   "write_value": "长安牌",
+   "derived": "长安牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "长安",
+    "n": 5
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "344::BMW7201JMHEV",
+   "channel": "C3",
+   "write_value": "宝马(BMW)牌",
+   "derived": "宝马牌",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "宝马",
+    "n": 42
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "391::BYD7152ACHEV3",
+   "channel": "C0",
+   "write_value": "比亚迪牌",
+   "derived": "比亚迪牌",
+   "baseline": null,
+   "verdict": "NO_BASELINE"
+  },
+  {
+   "id": "400::BJ6491EVAA2",
+   "channel": "C3",
+   "write_value": "福田牌",
+   "derived": "福田牌",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "福田",
+    "n": 14
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "348::SVW7005AEV",
+   "channel": "C4",
+   "write_value": "大众",
+   "derived": "大众牌",
+   "baseline": null,
+   "verdict": "NO_BASELINE"
+  },
+  {
+   "id": "343::THZ7000BEVS00J",
+   "channel": "C3",
+   "write_value": "哪吒牌",
+   "derived": "哪吒牌",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "哪吒",
+    "n": 53
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "405::EQ6531VLBEVB",
+   "channel": "C3",
+   "write_value": "东风牌",
+   "derived": "东风牌",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "东风",
+    "n": 16
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "341::SC7001ABABEV",
+   "channel": "C2",
+   "write_value": "长安牌",
+   "derived": "长安牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "长安",
+    "n": 1
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "380::BYD7002BEVA8",
+   "channel": "C0",
+   "write_value": "比亚迪牌",
+   "derived": "比亚迪牌",
+   "baseline": null,
+   "verdict": "NO_BASELINE"
+  },
+  {
+   "id": "390::GAC6490CHEVGAB6A",
+   "channel": "C3",
+   "write_value": "传祺(Trumpchi)牌",
+   "derived": "传祺牌",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "传祺",
+    "n": 4
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "403::QCJ6460AHBEV10",
+   "channel": "C2",
+   "write_value": "方程豹牌",
+   "derived": "比亚迪牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "方程豹",
+    "n": 8
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "344::CC7000ZM00EBEV",
+   "channel": "C4",
+   "write_value": "欧拉牌",
+   "derived": "长城牌",
+   "baseline": null,
+   "verdict": "NO_BASELINE"
+  },
+  {
+   "id": "343::SC6443PAABEV",
+   "channel": "C2",
+   "write_value": "长安牌",
+   "derived": "长安牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "长安",
+    "n": 4
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "343::LZ6516MLAEV",
+   "channel": "C2",
+   "write_value": "东风牌",
+   "derived": "风行牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "东风",
+    "n": 3
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "341::LZW7004EVA4CAM",
+   "channel": "C4",
+   "write_value": "五菱牌",
+   "derived": "五菱牌",
+   "baseline": null,
+   "verdict": "NO_BASELINE"
+  },
+  {
+   "id": "380::BYD7002BEV3",
+   "channel": "C0",
+   "write_value": "比亚迪牌",
+   "derived": "比亚迪牌",
+   "baseline": null,
+   "verdict": "NO_BASELINE"
+  },
+  {
+   "id": "410::SQR6500BEVEHY9",
+   "channel": "C4",
+   "write_value": "智界牌",
+   "derived": "奇瑞牌",
+   "baseline": null,
+   "verdict": "NO_BASELINE"
+  },
+  {
+   "id": "380::BYD7002BEV2",
+   "channel": "C0",
+   "write_value": "比亚迪牌",
+   "derived": "比亚迪牌",
+   "baseline": null,
+   "verdict": "NO_BASELINE"
+  },
+  {
+   "id": "403::BYD7000BVBEV5",
+   "channel": "C0",
+   "write_value": "比亚迪牌",
+   "derived": "比亚迪牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "比亚迪",
+    "n": 2
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "345::DXK6450EC7BEV",
+   "channel": "C3",
+   "write_value": "东风牌",
+   "derived": "东风牌",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "东风",
+    "n": 25
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "348::TSL7000BEVBR0",
+   "channel": "C2",
+   "write_value": "特斯拉牌",
+   "derived": "特斯拉牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "特斯拉",
+    "n": 3
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "348::JKC6451FXBEV",
+   "channel": "C2",
+   "write_value": "鑫源牌",
+   "derived": "鑫源牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "鑫源",
+    "n": 2
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "343::SC7003AEBEV",
+   "channel": "C4",
+   "write_value": "长安牌",
+   "derived": "长安牌",
+   "baseline": null,
+   "verdict": "NO_BASELINE"
+  },
+  {
+   "id": "397::XMA6500LBEVA7",
+   "channel": "C2",
+   "write_value": "小米牌",
+   "derived": "小米牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "小米",
+    "n": 6
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "343::THZ7000BEVS00F",
+   "channel": "C3",
+   "write_value": "哪吒牌",
+   "derived": "哪吒牌",
+   "baseline": {
+    "source": "同企业全部",
+    "core": "哪吒",
+    "n": 53
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "350::BYD7007BEV",
+   "channel": "C4",
+   "write_value": "比亚迪牌",
+   "derived": "比亚迪牌",
+   "baseline": null,
+   "verdict": "NO_BASELINE"
+  },
+  {
+   "id": "352::BJ6480BSA-BEV",
+   "channel": "C2",
+   "write_value": "极狐(ARCFOX)牌",
+   "derived": "极狐牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "极狐",
+    "n": 9
+   },
+   "verdict": "WRITE_CONFIRM"
+  },
+  {
+   "id": "410::BJ6500C313RPHEV",
+   "channel": "C2",
+   "write_value": "北京牌",
+   "derived": "北京牌",
+   "baseline": {
+    "source": "同企业同通用名称",
+    "core": "北京",
+    "n": 2
+   },
+   "verdict": "WRITE_CONFIRM"
+  }
+ ]
+}

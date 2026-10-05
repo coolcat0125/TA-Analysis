@@ -1,0 +1,756 @@
+{
+ "generated": "2026-10-05",
+ "holds": 318,
+ "q1_enterprise_presence": {
+  "ent_present": 292,
+  "ent_empty": 26
+ },
+ "q3_ledger_alignment": {
+  "ledger_hit_brand": 313,
+  "ledger_hit_nobrand": 5
+ },
+ "q2_model_prefix_evidence": {
+  "JL": {
+   "brand_core": null,
+   "multi": {
+    "吉利": 14,
+    "帝豪": 1,
+    "枫叶": 4,
+    "精灵": 19,
+    "几何": 17,
+    "远程": 22
+   },
+   "rows": [
+    "390::JL6551BEV104",
+    "391::JL6551BEV106",
+    "391::JL6551BEV107"
+   ]
+  },
+  "JHC": {
+   "brand_core": null,
+   "multi": {
+    "几何": 3,
+    "远程": 10
+   },
+   "rows": [
+    "391::JHC6481BEVR2",
+    "397::JHC6481BEVS2",
+    "397::JHC6481BEVS3"
+   ]
+  },
+  "LZ": {
+   "brand_core": "东风",
+   "brand_raw": "东风牌",
+   "support_n": 42,
+   "rows": [
+    "391::LZ6510NFD0EV",
+    "343::LZ7008SLAEV",
+    "343::LZ6511MLANEV",
+    "343::LZ6515MLAEV",
+    "344::LZ6513MLAEV"
+   ]
+  },
+  "BYD": {
+   "brand_core": "比亚迪",
+   "brand_raw": "比亚迪牌",
+   "support_n": 364,
+   "rows": [
+    "396::BYD6510MT6HEV2",
+    "403::BYD6480AMBEV3",
+    "403::BYD6480CDBEV1",
+    "403::BYD6480CDBEV2",
+    "403::BYD7000BVBEV5",
+    "403::BYD7001BEVA6",
+    "403::BYD7001BEVA7",
+    "341::BYD7009BEV4",
+    "351::BYD7152WT6HEVSS",
+    "380::BYD7001BEV",
+    "380::BYD7001BEV1",
+    "380::BYD7002BEV",
+    "380::BYD7002BEV1",
+    "380::BYD7002BEV2",
+    "380::BYD7002BEV3",
+    "380::BYD7002BEV4",
+    "380::BYD7002BEVA",
+    "380::BYD7002BEVA1",
+    "380::BYD7002BEVA2",
+    "380::BYD7002BEVA3",
+    "380::BYD7002BEVA8",
+    "380::BYD7003BEV",
+    "380::BYD7003BEV1",
+    "380::BYD7003BEV2",
+    "380::BYD7003BEV3",
+    "380::BYD7003BEV4",
+    "380::BYD7003BEV5",
+    "380::BYD7003BEV6",
+    "380::BYD7006BEVG",
+    "380::BYD7009BEV3",
+    "380::BYD6470MBEV1",
+    "380::BYD6490SBEV3",
+    "391::BYD7152ACHEV3"
+   ]
+  },
+  "DFM": {
+   "brand_core": null,
+   "multi": {
+    "风神": 27,
+    "东风": 56,
+    "奕境": 3
+   },
+   "rows": [
+    "396::DFM6480M5F2PHEV",
+    "347::DFM7000G1FABEV",
+    "351::DFM7000G1F8PBEV",
+    "351::DFM7000G1A3BEV",
+    "390::DFM6473M5F7BEV",
+    "402::DFM6500S5F6REEV",
+    "407::DFM6531S5F0REEV",
+    "410::DFM6531S5F4REEV"
+   ]
+  },
+  "EQ": {
+   "brand_core": null,
+   "multi": {
+    "岚图": 52,
+    "东风": 2,
+    "猛士": 9
+   },
+   "rows": [
+    "396::EQ6530AL5F1CHEV",
+    "396::EQ6535AL5F2CHEV",
+    "396::EQ6536AL5F2CHEV",
+    "401::EQ2033RMV6PHEV",
+    "401::EQ2034RMV6PHEV",
+    "344::EQ7000FV2F1BEV",
+    "353::EQ7000FR2F1BEV",
+    "353::EQ7000FR2F2BEV"
+   ]
+  },
+  "QCJ": {
+   "brand_core": null,
+   "multi": {
+    "腾势": 60,
+    "仰望": 13,
+    "方程豹": 41,
+    "领汇": 7
+   },
+   "rows": [
+    "396::QCJ6500BG6HEV",
+    "396::QCJ6500BG6HEV2",
+    "403::QCJ7000AKBEV1",
+    "403::QCJ7000AKBEV2",
+    "403::QCJ7000AKBEV3",
+    "380::QCJ7007BEV1",
+    "380::QCJ7007BEV2",
+    "380::QCJ7007BEV3"
+   ]
+  },
+  "SQR": {
+   "brand_core": null,
+   "multi": {
+    "星途": 59,
+    "奇瑞": 92,
+    "捷途": 71,
+    "开瑞": 4,
+    "智界": 14
+   },
+   "rows": [
+    "396::SQR6464CHEVT1H",
+    "396::SQR6465CHEVT1H",
+    "350::SQR7000BEVT193",
+    "350::SQR7000BEVT194",
+    "350::SQR7000BEVT195",
+    "351::SQR6480BEVF11",
+    "408::SQR6521REEVE023"
+   ]
+  },
+  "BJ": {
+   "brand_core": null,
+   "multi": {
+    "北京": 28,
+    "福田": 14,
+    "梅赛德斯-奔驰": 9,
+    "极狐": 91,
+    "梅赛德斯-奔驰(Mercedes-Ben...": 8,
+    "小米": 3,
+    "华彰": 15,
+    "北汽": 4,
+    "享界": 15
+   },
+   "rows": [
+    "399::BJ2030V411MSHEV",
+    "399::BJ2030V601MSHEV",
+    "403::BJ6496VALBEV",
+    "397::BJ7000T373BEV",
+    "342::BJ6480LABEV",
+    "342::BJ6480LABEV1",
+    "342::BJ6480LABEV2",
+    "342::BJ6480LABEV3",
+    "344::BJ7205MLHEV",
+    "345::BJ7001C5FBEV",
+    "350::BJ7000C5FBEV",
+    "352::BJ6472U8XDKPHEV",
+    "408::BJ6496VALBEV1"
+   ]
+  },
+  "SQJ": {
+   "brand_core": "野马",
+   "brand_raw": "野马牌",
+   "support_n": 16,
+   "rows": [
+    "403::SQJ6460YX5BEV"
+   ]
+  },
+  "SGM": {
+   "brand_core": null,
+   "multi": {
+    "雪佛兰": 6,
+    "别克": 35,
+    "凯迪拉克": 12
+   },
+   "rows": [
+    "397::SGM6500BHBEV",
+    "397::SGM6500BJBEV",
+    "350::SGM7008GCBEV",
+    "350::SGM7007LABEV",
+    "350::SGM7156LCCHEV",
+    "410::SGM6490NAPHEV"
+   ]
+  },
+  "NEQ": {
+   "brand_core": null,
+   "multi": {
+    "奇瑞": 80,
+    "瑞腾": 1,
+    "爱咖": 44,
+    "iCAR": 1
+   },
+   "rows": [
+    "397::NEQ6420BEVS59J",
+    "397::NEQ6420BEVS59K",
+    "397::NEQ6420BEVS59L",
+    "345::NEQ7000BEVJ72Q",
+    "346::NEQ7000BEVJ72G",
+    "346::NEQ7000BEVJ72R",
+    "347::NEQ7000BEVJ72B",
+    "348::NEQ7000BEVJ60",
+    "348::NEQ7000BEVJ60A",
+    "348::NEQ7000BEVJ60C",
+    "404::NEQ7000BEVJ72",
+    "404::NEQ7000BEVJ72A",
+    "404::NEQ7000BEVJ72C",
+    "404::NEQ7000BEVJ72D",
+    "404::NEQ7000BEVJ72H",
+    "404::NEQ7000BEVJ72J",
+    "404::NEQ7000BEVJ72K",
+    "404::NEQ7000BEVJ72L",
+    "404::NEQ7000BEVJ72M"
+   ]
+  },
+  "JX": {
+   "brand_core": null,
+   "multi": {
+    "江铃": 13,
+    "羿驰": 17,
+    "爱驰": 5,
+    "易至": 3,
+    "江铃全顺": 5,
+    "颐驰": 4,
+    "福特": 10
+   },
+   "rows": [
+    "397::JX6480EUCBEV",
+    "397::JX6508PA6BEV",
+    "344::JX7001ERCBEV",
+    "349::JX6462P5BEV",
+    "352::JX7001ESDBEV",
+    "352::JX7001ESEBEV",
+    "352::JX7001ESFBEV",
+    "352::JX7001ESGBEV",
+    "352::JX7001ESHBEV",
+    "352::JX7001ESJBEV",
+    "352::JX7001ESKBEV",
+    "352::JX7001EUABEV",
+    "352::JX7001EUBBEV",
+    "352::JX7001EUCBEV",
+    "352::JX7001EUDBEV",
+    "352::JX7002ESABEV",
+    "352::JX7002ESCBEV",
+    "352::JX7002ESDBEV",
+    "352::JX7002ESEBEV",
+    "352::JX7002ESFBEV",
+    "352::JX7003ESABEV",
+    "352::JX7003ESBBEV",
+    "352::JX6471UBEV",
+    "352::JX6473UBEV",
+    "374::JX70034BEV",
+    "374::JX6470UBEV",
+    "377::JX6546TF6BEV",
+    "391::JX7001EPABEV",
+    "397::JX6480EUBBEV",
+    "402::JX6491TD-L6BEV",
+    "402::JX6521TE-L6BEV"
+   ]
+  },
+  "SC": {
+   "brand_core": null,
+   "multi": {
+    "长安": 227,
+    "阿维塔": 43
+   },
+   "rows": [
+    "397::SC6480AAAEBEV",
+    "404::SC7150AAAZ6HEV",
+    "407::SC6520AAAS6HEV"
+   ]
+  },
+  "YQZ": {
+   "brand_core": null,
+   "multi": {
+    "悦达": 14,
+    "起亚": 8
+   },
+   "rows": [
+    "341::YQZ7005BEV",
+    "341::YQZ6520BEVHIPHI1A",
+    "341::YQZ6520BEVHIPHI1B",
+    "341::YQZ6520BEVHIPHI1C",
+    "341::YQZ6520BEVHIPHI1D",
+    "341::YQZ7160GPHEV",
+    "341::YQZ7160PHEV",
+    "342::YQZ7004BEV",
+    "358::YQZ7202GPHEV",
+    "358::YQZ7202PHEV"
+   ]
+  },
+  "GAH": {
+   "brand_core": null,
+   "multi": {
+    "合创": 20,
+    "埃安": 1
+   },
+   "rows": [
+    "341::GAH7000BEVN0A",
+    "341::GAH7000BEVN0B",
+    "341::GAH7000BEVN0C",
+    "344::GAH7000BEVH0C",
+    "344::GAH7000BEVH0D",
+    "344::GAH7000BEVN0D",
+    "354::GAH7000BEVH0A",
+    "354::GAH7000BEVH0B"
+   ]
+  },
+  "SVW": {
+   "brand_core": null,
+   "multi": {
+    "大众": 10,
+    "奥迪": 20,
+    "大众汽车": 33
+   },
+   "rows": [
+    "341::SVW6461BEV",
+    "347::SVW7142BPV",
+    "347::SVW6474APV",
+    "348::SVW6451AEV",
+    "402::SVW715281BPV"
+   ]
+  },
+  "GAM": {
+   "brand_core": null,
+   "multi": {
+    "埃安": 101,
+    "合创": 7
+   },
+   "rows": [
+    "341::GAM6490BEVN0C",
+    "341::GAM6490BEVN0D",
+    "341::GAM6460BEVC0A",
+    "341::GAM6460BEVC0B",
+    "341::GAM6460BEVC0G",
+    "341::GAM6460BEVC0H",
+    "341::GAM6480BEVB0A",
+    "341::GAM6480BEVB0B",
+    "341::GAM6480BEVB0C",
+    "341::GAM6480BEVB0E",
+    "341::GAM6480BEVB0F",
+    "341::GAM6480BEVB0G",
+    "341::GAM6480BEVB0H",
+    "341::GAM6480BEVB0J",
+    "341::GAM6480BEVB0K",
+    "341::GAM6480BEVB0L"
+   ]
+  },
+  "CA": {
+   "brand_core": null,
+   "multi": {
+    "红旗": 68,
+    "一汽": 35,
+    "丰田": 2
+   },
+   "rows": [
+    "341::CA64652XMCHEVE6",
+    "341::CA64654XGCHEVE6"
+   ]
+  },
+  "GTM": {
+   "brand_core": null,
+   "multi": {
+    "广汽": 3,
+    "丰田": 16,
+    "丰田 ": 2
+   },
+   "rows": [
+    "341::GTM6470FFCHEVM",
+    "342::GTM6470FWCHEVM",
+    "348::GTM7000XBEV",
+    "349::GTM7180LCHEVM",
+    "350::GTM70022BEV"
+   ]
+  },
+  "MR": {
+   "brand_core": null,
+   "multi": {
+    "帝豪": 10,
+    "吉利": 64,
+    "极氪": 94,
+    "领克": 40,
+    "英伦": 3,
+    "吉利美日": 2,
+    "枫叶": 5,
+    "几何": 2,
+    "极越": 14,
+    "极星": 3,
+    "翼真": 8
+   },
+   "rows": [
+    "341::MR6471PHEV10",
+    "341::MR6463PHEV07",
+    "341::MR6463PHEV08",
+    "341::MR6463PHEV09",
+    "342::MR6463DPHEV02",
+    "343::MR7153PHEV11",
+    "343::MR6471PHEV08",
+    "344::MR7153PHEV05",
+    "344::MR7153PHEV08",
+    "344::MR7153PHEV18",
+    "344::MR7153PHEV19",
+    "344::MR7153PHEV23",
+    "344::MR7153PHEV24",
+    "344::MR6453PHEV05",
+    "344::MR6453PHEV10",
+    "344::MR6463PHEV10",
+    "345::MR6432DPHEV02",
+    "347::MR7152PHEV13",
+    "347::MR6490SHEV01",
+    "348::MR7152PHEV14",
+    "348::MR6490DSHEV02",
+    "398::MR7151DCHEV114"
+   ]
+  },
+  "CAF": {
+   "brand_core": "玛斯丹",
+   "brand_raw": "玛斯丹(MUSTANG)牌",
+   "support_n": 9,
+   "rows": [
+    "341::CAF6460A6PHEV",
+    "341::CAF6461A62PHEV"
+   ]
+  },
+  "FV": {
+   "brand_core": null,
+   "multi": {
+    "大众": 42,
+    "奥迪": 10,
+    "捷达": 4
+   },
+   "rows": [
+    "342::FV7004BABEV",
+    "344::FV7201BAQCHEV",
+    "345::FV6494AA1BEV",
+    "345::FV6494AABEV",
+    "345::FV7147FADCHEV",
+    "345::FV6462LCDCHEV",
+    "351::FV7002CABEV"
+   ]
+  },
+  "BH": {
+   "brand_core": null,
+   "multi": {
+    "现代": 5,
+    "北京现代": 3
+   },
+   "rows": [
+    "342::BH7000BEVDBA",
+    "348::BH7000BEVCAA",
+    "350::BH7160PHEVCBAS",
+    "369::BH7000BEVSCA",
+    "369::BH7200PHEVRAS",
+    "369::BH7201PHEVRAS"
+   ]
+  },
+  "CGC": {
+   "brand_core": null,
+   "multi": {
+    "大运": 18,
+    "大运远航": 10
+   },
+   "rows": [
+    "342::CGC6371BEV2S1",
+    "353::CGC6371BEV2S2"
+   ]
+  },
+  "CJL": {
+   "brand_core": null,
+   "multi": {
+    "路虎": 3,
+    "神行者": 1
+   },
+   "rows": [
+    "343::CJL6460AL2HEV"
+   ]
+  },
+  "CC": {
+   "brand_core": null,
+   "multi": {
+    "欧拉": 60,
+    "长城": 16,
+    "魏派": 6,
+    "魏牌": 44,
+    "哈弗": 83,
+    "沙龙": 3,
+    "魏": 13
+   },
+   "rows": [
+    "343::CC6450AG02BPHEV",
+    "343::CC6490AY01APHEV",
+    "343::CC6490AY21APHEV",
+    "351::CC6481AD23CPHEV",
+    "351::CC6483AD23BPHEV",
+    "351::CC6483AD23CPHEV",
+    "410::CC6481DE00HHBEV",
+    "410::CC6481DE01HPHEV"
+   ]
+  },
+  "DFA": {
+   "brand_core": "俊风",
+   "brand_raw": "俊风牌",
+   "support_n": 1,
+   "rows": [
+    "344::DFA7000C1A2BEV",
+    "348::DFA7000A1F7BEV"
+   ]
+  },
+  "GFA": {
+   "brand_core": "吉普",
+   "brand_raw": "吉普(JEEP)牌",
+   "support_n": 1,
+   "rows": [
+    "344::GFA6490CHEV1DA"
+   ]
+  },
+  "HFC": {
+   "brand_core": null,
+   "multi": {
+    "思皓": 10,
+    "江淮": 37,
+    "蔚来": 8,
+    "瑞风": 8
+   },
+   "rows": [
+    "345::HFC6483ECSEV-W",
+    "345::HFC6483ECSEV2-W",
+    "345::HFC6483ECSEV5-W",
+    "345::HFC6483ECSEV6-W",
+    "345::HFC6502ECSEV5-W",
+    "345::HFC6502ECSEV9-W",
+    "404::HFC7150DREEV11"
+   ]
+  },
+  "LZW": {
+   "brand_core": null,
+   "multi": {
+    "五菱": 128,
+    "宝骏": 24
+   },
+   "rows": [
+    "345::LZW6461GK6PHEV",
+    "348::LZW7001EVAHAN",
+    "402::LZW6502KBUPHEVA1"
+   ]
+  },
+  "DFL": {
+   "brand_core": null,
+   "multi": {
+    "睿英": 1,
+    "启辰": 17,
+    "霆睿": 8,
+    "东风日产": 19,
+    "岚图": 8
+   },
+   "rows": [
+    "348::DFL7000NA62BEV",
+    "348::DFL7000NA63BEV",
+    "348::DFL7000NA81BEV"
+   ]
+  },
+  "DHW": {
+   "brand_core": null,
+   "multi": {
+    "本田": 8,
+    "毅威": 2,
+    "灵悉": 1
+   },
+   "rows": [
+    "349::DHW7003DHBEV",
+    "349::DHW7004DHBEV",
+    "349::DHW6471R7HEV"
+   ]
+  },
+  "DN": {
+   "brand_core": "东南",
+   "brand_raw": "东南牌",
+   "support_n": 2,
+   "rows": [
+    "350::DN7007HBEVS3",
+    "365::DN7007GBEV4",
+    "365::DN7007MBEVS3"
+   ]
+  },
+  "BAW": {
+   "brand_core": null,
+   "multi": {
+    "北京汽车": 2,
+    "燕铃": 14,
+    "锐胜": 24,
+    "极石": 8,
+    "北汽": 4
+   },
+   "rows": [
+    "351::BAW7000UB42BEV",
+    "351::BAW7000UB41BEV",
+    "351::BAW7000UL41BEV",
+    "351::BAW7000UL4BEV",
+    "351::BAW6330CA41BEV",
+    "351::BAW6330CB42BEV",
+    "400::BAW6521MAM2BEV",
+    "400::BAW6530MBM8BEV",
+    "402::BAW6521MAM7BEV",
+    "407::BAW6530MBM9BEV"
+   ]
+  },
+  "SKE": {
+   "brand_core": null,
+   "multi": {
+    "赛力斯": 66,
+    "东风": 1,
+    "问界": 22
+   },
+   "rows": [
+    "357::SKE7000BEVF5",
+    "357::SKE7000BEVF6",
+    "357::SKE7000BEVF1",
+    "357::SKE7000BEVF2",
+    "357::SKE7003BEVF",
+    "357::SKE7000BEVF7",
+    "357::SKE7000BEVF",
+    "357::SKE6470SHEVF",
+    "357::SKE6470SHEVFS",
+    "357::SKE7150SHEVF3"
+   ]
+  },
+  "LF": {
+   "brand_core": null,
+   "multi": {
+    "力帆": 4,
+    "枫叶": 7,
+    "睿蓝": 1
+   },
+   "rows": [
+    "357::LF7002PEV",
+    "357::LF7002SEV",
+    "357::LF7002SEV2",
+    "357::LF6440EV2"
+   ]
+  },
+  "DXK": {
+   "brand_core": null,
+   "multi": {
+    "东风": 29,
+    "瑞驰": 1,
+    "赛力斯蓝电": 8
+   },
+   "rows": [
+    "390::DXK6510AC1BEV",
+    "390::DXK6510AC4BEV",
+    "392::DXK6510AC3BEV",
+    "392::DXK6510AC5BEV",
+    "392::DXK6510AC6BEV",
+    "392::DXK6520AC1BEV",
+    "392::DXK6520AC3BEV",
+    "398::DXK6510AC10BEV",
+    "398::DXK6510AC11BEV",
+    "398::DXK6510AC14BEV",
+    "398::DXK6510AC8BEV",
+    "398::DXK6520AC12BEV",
+    "398::DXK6520AC13BEV",
+    "398::DXK6520AC15BEV",
+    "398::DXK6520AC9BEV",
+    "401::DXK6510AC15BEV",
+    "401::DXK6520AC4BEV",
+    "407::DXK6520AC5BEV",
+    "407::DXK6520AC6BEV"
+   ]
+  },
+  "SY": {
+   "brand_core": "华晨新日",
+   "brand_raw": "华晨新日牌",
+   "support_n": 1,
+   "rows": [
+    "398::SY6535BEVD1GB",
+    "398::SY6535BEVD1GB1",
+    "399::SY6480BEVD1EB"
+   ]
+  },
+  "VWA": {
+   "brand_core": "大众汽车",
+   "brand_raw": "大众汽车(VOLKSWAGEN)牌",
+   "support_n": 11,
+   "rows": [
+    "403::VWA64702BEV4"
+   ]
+  },
+  "CSA": {
+   "brand_core": null,
+   "multi": {
+    "荣威": 38,
+    "科莱威": 1,
+    "智己": 53,
+    "上汽飞凡": 5,
+    "名爵": 23,
+    "飞凡": 21,
+    "尚界": 8,
+    "MG": 1
+   },
+   "rows": [
+    "410::CSA6501ZBEV1"
+   ]
+  },
+  "HSE": {
+   "brand_core": "予风",
+   "brand_raw": "予风牌",
+   "support_n": 4,
+   "rows": [
+    "410::HSE6513BEVM1F",
+    "410::HSE6512BEVM1F",
+    "410::HSE6510BEVM1F",
+    "410::HSE6511BEVM1F"
+   ]
+  }
+ },
+ "q2_prefix_summary": {
+  "keys": 42,
+  "single_brand_keys": 10,
+  "multi_or_none_keys": 32,
+  "rows_fillable_by_prefix": 55
+ }
+}
