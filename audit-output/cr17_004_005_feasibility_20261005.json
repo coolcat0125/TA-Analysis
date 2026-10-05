@@ -1,0 +1,47 @@
+{
+ "generated": "2026-10-05",
+ "records": 5392,
+ "A_change_log": {
+  "rows": 58105,
+  "field_histogram_top": {
+   "结构迁移": 10525,
+   "通用名称共识": 7897,
+   "官方能耗数据更正": 4262,
+   "共识补全": 4111,
+   "轴距估算": 3892,
+   "公式补全": 3870,
+   "官方能耗数据补充": 2584,
+   "企业车系共识": 2526,
+   "官方目录交叉补全": 2047,
+   "媒体参数补全": 1811
+  },
+  "battery_pack_related_records": {},
+  "official_url_related_records": {}
+ },
+ "B_media_sidechannel": {
+  "media_filled_rows": 2370,
+  "media_coverage": 43.95,
+  "rows_with_supplier_hint": 0,
+  "rows_with_param_page_hint": 0,
+  "batches_with_media": 70,
+  "recent_batches_media": {
+   "400": 44,
+   "401": 68,
+   "402": 75,
+   "403": 60,
+   "404": 33,
+   "405": 37,
+   "406": 38,
+   "407": 66,
+   "408": 55,
+   "409": 54,
+   "410": 25,
+   "411": 18
+  }
+ },
+ "C_control": {
+  "cellSupplier_nonempty": 1630,
+  "cell_coverage": 30.23,
+  "rows_with_both_cell_and_pack": 110
+ }
+}

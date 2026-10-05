@@ -1,0 +1,240 @@
+{
+ "generated": "2026-10-05",
+ "records": 5392,
+ "CR004_packSupplier": {
+  "nonempty": 110,
+  "coverage": 2.04,
+  "cellSupplier_nonempty": 1630,
+  "cell_coverage": 30.23,
+  "top10_brands": {
+   "比亚迪": {
+    "n": 586,
+    "covered": 23,
+    "rate": 3.9
+   },
+   "特斯拉": {
+    "n": 32,
+    "covered": 1,
+    "rate": 3.1
+   },
+   "埃安": {
+    "n": 247,
+    "covered": 5,
+    "rate": 2.0
+   },
+   "吉利": {
+    "n": 330,
+    "covered": 2,
+    "rate": 0.6
+   },
+   "长安": {
+    "n": 368,
+    "covered": 8,
+    "rate": 2.2
+   },
+   "奇瑞": {
+    "n": 410,
+    "covered": 7,
+    "rate": 1.7
+   },
+   "理想": {
+    "n": 85,
+    "covered": 2,
+    "rate": 2.4
+   },
+   "蔚来": {
+    "n": 25,
+    "covered": 0,
+    "rate": 0.0
+   },
+   "小鹏": {
+    "n": 110,
+    "covered": 1,
+    "rate": 0.9
+   },
+   "上汽": {
+    "n": 411,
+    "covered": 0,
+    "rate": 0.0
+   }
+  },
+  "top10_aggregate": {
+   "n": 2604,
+   "covered": 49,
+   "rate": 1.9,
+   "gate_60pct": false
+  },
+  "distinct_values": 42,
+  "top_values": {
+   "宁德时代新能源科技股份有限公司": 13,
+   "重庆长安汽车股份有限公司": 8,
+   "中国第一汽车集团有限公司": 6,
+   "宜宾三江时代新能源科技有限公司": 5,
+   "绍兴弗迪电池有限公司": 5,
+   "中创新航科技集团股份有限公司": 4,
+   "华霆(合肥)动力技术有限公司": 4,
+   "深圳比亚迪汽车实业有限公司": 4,
+   "西安弗迪电池有限公司": 4,
+   "中州时代新能源科技有限公司": 3,
+   "浙江吉曜通行能源科技有限公司": 3,
+   "无为弗迪电池有限公司": 3,
+   "郑州弗迪电池有限公司": 3,
+   "大众汽车（安徽）零部件有限公司": 3,
+   "时代广汽动力电池有限公司": 3
+  },
+  "top_gap_enterprises": {
+   "比亚迪汽车工业有限公司": 368,
+   "浙江吉利汽车有限公司": 286,
+   "重庆长安汽车股份有限公司": 265,
+   "长城汽车股份有限公司": 255,
+   "上汽通用五菱汽车股份有限公司": 211,
+   "奇瑞汽车股份有限公司": 200,
+   "奇瑞新能源汽车股份有限公司": 177,
+   "浙江豪情汽车制造有限公司": 164,
+   "": 163,
+   "比亚迪汽车有限公司": 154,
+   "广汽乘用车有限公司": 154,
+   "上海汽车集团股份有限公司": 152
+  }
+ },
+ "CR005_officialUrl": {
+  "nonempty": 111,
+  "coverage": 2.06,
+  "gate_90pct": false,
+  "distinct_urls": 111,
+  "duplicated_urls": {},
+  "malformed": [],
+  "malformed_count": 0,
+  "domains": {
+   "www.miit.gov.cn": 111
+  },
+  "overlaps_media_urls": 0,
+  "sample": [
+   {
+    "row": 4377,
+    "id": "409::EQ6530AB5F2BEV",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_7d7a9243558848b9bad5db2654932290.html"
+   },
+   {
+    "row": 4378,
+    "id": "409::JL6501BEV128",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_b7cca48c2be543c695481cde5c887f4c.html"
+   },
+   {
+    "row": 4379,
+    "id": "409::NHQ6510BEVRD",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_ea0e33fa5d124e2dbf62a4b7a69fe74d.html"
+   },
+   {
+    "row": 4380,
+    "id": "409::CA6490H0BEVXF",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_12cb0c2047804c83a0bbf4b7532151ad.html"
+   },
+   {
+    "row": 4381,
+    "id": "409::JL6501BEV126",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_a38d5e296ab042c19ee4d623c7cb3edc.html"
+   },
+   {
+    "row": 4382,
+    "id": "409::JL6501BEV127",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_832d6319c0a24a03a2dd2951300c8e7a.html"
+   },
+   {
+    "row": 4383,
+    "id": "409::HSE6543BEVM1B",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_1953cdb59d6e47999ba694a7ae2c80b0.html"
+   },
+   {
+    "row": 4384,
+    "id": "409::JL6541BEV110",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_e6062aae59d4494cabbe945b1b6a6cbe.html"
+   },
+   {
+    "row": 4385,
+    "id": "409::SQR6500BEVEHY8",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_db4347d40d964b79bc089a7f13e6e5ea.html"
+   },
+   {
+    "row": 4386,
+    "id": "409::YQZ6462ZBEV",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_ba0ac6b741494cbdad1c8becc19b78d5.html"
+   },
+   {
+    "row": 4387,
+    "id": "409::YQZ6462BEV",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_cd8b43ea1a5046daba9f9ea5f488997e.html"
+   },
+   {
+    "row": 4388,
+    "id": "409::SQR6500BEVEHY6",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_50bf9fa761684476b83f6edf9b4cb740.html"
+   },
+   {
+    "row": 4389,
+    "id": "409::YQZ6463GTBEV",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_adbe88af09e746baaba9d7565cd035bd.html"
+   },
+   {
+    "row": 4390,
+    "id": "409::YQZ6463BEV",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_4ca0ae86363e425f916e44e14ee10619.html"
+   },
+   {
+    "row": 4391,
+    "id": "409::SQR6500BEVEHY7",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_aebebfc0935246cdba5f4a8e7524c35d.html"
+   },
+   {
+    "row": 4392,
+    "id": "409::JL6501BEV125",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_a0bdb5e945794143b5baba100ba27ec4.html"
+   },
+   {
+    "row": 4393,
+    "id": "409::LZ6480MME1EV",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_dd4b854b839b4ba68f080e39d02a1137.html"
+   },
+   {
+    "row": 4394,
+    "id": "409::LZ6480MME3EV",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_bebb69931ab645969fabeff615c1918c.html"
+   },
+   {
+    "row": 4395,
+    "id": "409::LZ6480MME2EV",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_34b83c38b2954aeba7689853b5fa14bb.html"
+   },
+   {
+    "row": 4396,
+    "id": "409::LZ6480MMD1EV",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_f458ef3b73ff4c5d9023c395ccb0684e.html"
+   },
+   {
+    "row": 4397,
+    "id": "409::JX6511TA-L6BEV",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_f8ea61832d3445f7a0d02776dbb2edb7.html"
+   },
+   {
+    "row": 4398,
+    "id": "409::JX6541TB-L6BEV",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_03492867b5454602bc68147d4dc3d5a2.html"
+   },
+   {
+    "row": 4399,
+    "id": "409::JX6511TB-L6BEV",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_9fd0b6ebd62f4fe7935c2f4eda67599d.html"
+   },
+   {
+    "row": 4400,
+    "id": "409::QCJ6520BUBEV1",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_92c0a16484f64364a8fee80cb4549948.html"
+   },
+   {
+    "row": 4401,
+    "id": "409::QCJ6520BUBEV3",
+    "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs409dwdwe233/art/2026/art_3b17926cdac44781bf50cbc1badf009d.html"
+   }
+  ]
+ }
+}
