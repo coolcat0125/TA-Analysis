@@ -1,0 +1,68 @@
+{
+ "generated": "2026-10-05",
+ "Q1_idempotent": {
+  "md5_before": "62c05cbbbc679b9682f60f22ece3cdfc",
+  "md5_after": "62c05cbbbc679b9682f60f22ece3cdfc",
+  "identical": true
+ },
+ "Q2_persist": {
+  "empty_brand_before": 295,
+  "empty_brand_after": 295,
+  "brand_persisted_to_workbook": true
+ },
+ "Q3_field_conservation": {
+  "brand": {
+   "before": 5097,
+   "after": 5097,
+   "delta": 0
+  },
+  "packSupplier": {
+   "before": 110,
+   "after": 110,
+   "delta": 0
+  },
+  "cellSupplier": {
+   "before": 1630,
+   "after": 1630,
+   "delta": 0
+  },
+  "officialUrl": {
+   "before": 111,
+   "after": 111,
+   "delta": 0
+  },
+  "isErev": {
+   "before": 285,
+   "after": 285,
+   "delta": 0
+  },
+  "media": {
+   "before": 2370,
+   "after": 2370,
+   "delta": 0
+  },
+  "brandSource": {
+   "before": 0,
+   "after": 0,
+   "delta": 0
+  },
+  "packSupplierSource": {
+   "before": 0,
+   "after": 0,
+   "delta": 0
+  },
+  "mediaSource": {
+   "before": 0,
+   "after": 0,
+   "delta": 0
+  }
+ },
+ "Q4_guard_effective": {
+  "injected_loss": 2,
+  "row_shrink": 1,
+  "guard_would_abort": true,
+  "no_false_positive_when_rows_deleted": true
+ },
+ "rows": 5392,
+ "unique_id": 5390
+}
