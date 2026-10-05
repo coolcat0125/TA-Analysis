@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """build_deliverables_v4923.py — 下游交付①·45表分析底表重建（v4.9.23 口径，可复跑）
 
-源：NEV公告参数汇总表_合并版（341~410批）.xlsx（权威底表 5,392 行 × 38 列）
+源：NEV公告参数汇总表_合并版（341~410批）.xlsx（权威底表 5,392 行 × 39 列）
 旧版基线快照（v4.3.6 口径 4,613 行）：audit-output/old_deliverable_45sheets_snapshot_20260927.json
 输出：NEV公告车型行业分析_数据底表.xlsx（45 表，全部由当前底表重算）
 
@@ -194,7 +194,7 @@ def build(recs):
     ws = b.sheet('封面')
     ws['B2'] = 'NEV 公告车型行业分析 · 数据底表'
     ws['B2'].font = Font(bold=True, size=18, color='1F3864')
-    ws['B4'] = f'口径版本 {VER} · {total:,} 款 × 38 列（第 341~411 批 · 纯乘用车）'
+    ws['B4'] = f'口径版本 {VER} · {total:,} 款 × 39 列（第 341~411 批 · 纯乘用车）'
     ws['B5'] = f'生成日期 {today} · 权威源 NEV公告参数汇总表_合并版（341~410批）.xlsx'
     ws['B6'] = '电耗/续航已与工信部能耗数据20260915 官方对齐 · 销量参考=易车零售月度口径'
     ws['B7'] = '分析表均由权威底表程序化重算（生成器 build_deliverables_v4923.py，可复跑）'

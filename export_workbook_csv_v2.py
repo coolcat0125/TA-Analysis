@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""export_workbook_csv_v2.py — 权威底表 → master_export CSV（方案甲：全量 38 列直导出）
+"""export_workbook_csv_v2.py — 权威底表 → master_export CSV（方案甲：全量 39 列直导出）
 
 替代旧 export_master_csv.js（v4.3 33 列 schema）。行集=当前底表全量（5,392），
-列=底表 38 列原序原表头（天然对齐后续 schema）。reader/writer 逐行写（09-22 教训）。
+列=底表 39 列原序原表头（天然对齐后续 schema）。reader/writer 逐行写（09-22 教训）。
 旧 CSV 先 .bak-时间戳 归档；产出校验：行数+列数+抽样值三方核对。
 用法：python export_workbook_csv_v2.py [--apply]（缺省 dry 预览统计）
 """

@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-10-05T03:43:38+00:00",
+  "generated_at_utc": "2026-10-05T04:15:09+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "ca6c0eda0caaad001fb7c9bd382625c644fd4655d6c02c3b15fdb5a2210e36fc",
+    "sha256": "687152294a8141f753a2f5ab96201a6ef8ca05524f16a0d4218aaffcfd000397",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
     "records": 5392,
-    "columns": 38,
+    "columns": 39,
     "headers": [
       "批次",
       "产品型号",
@@ -48,7 +48,8 @@
       "媒体校验来源",
       "月销量(辆)",
       "销量数据月份",
-      "销量更新日期"
+      "销量更新日期",
+      "是否增程(EREV)"
     ],
     "batches": {
       "341": 144,

@@ -172,7 +172,7 @@ footer{color:var(--sub);font-size:10.5px;text-align:center;margin-top:26px;line-
 <header>
   <h1>NEV 公告车型行业分析</h1>
   <div class="badge">移动版 · 核心前置</div>
-  <div class="sub">权威底表 v4.9.23 口径 · __TOTAL__ 款 × 38 列 · 第 341~411 批（2021–2026）<br>生成 __GEN__ · 数据同源：45 表分析底表</div>
+  <div class="sub">权威底表 v4.9.23 口径 · __TOTAL__ 款 × 39 列 · 第 341~411 批（2021–2026）<br>生成 __GEN__ · 数据同源：45 表分析底表</div>
 </header>
 
 <h2>核心指标</h2>

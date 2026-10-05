@@ -3244,7 +3244,7 @@ function jsSanitize(k,val,ptype){
   return (rng[0]<=val&&val<=rng[1])?val:null;
 }
 function parseImportedSheet(aoa, fname){
-  /* v4.9.27：表头名寻址（导入文件=权威底表 38 列同构），输出 30 位记录与 RAW_INIT 同构。
+  /* v4.9.27：表头名寻址（导入文件=权威底表 39 列同构），输出 30 位记录与 RAW_INIT 同构。
      旧版按 v4.1-era 25 位硬编码下标解析，导入后与内嵌 30 位数据错位（09-16 遗留，本版重构）。 */
   const records=[]; let cleaned=0;
   if(!aoa.length) return {records,cleaned};
