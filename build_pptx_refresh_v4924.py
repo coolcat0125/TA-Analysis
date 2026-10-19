@@ -6,14 +6,21 @@
 页脚/口径文本全局替换 + 页内旧值→新值映射（页面局部匹配，年份 token 保护）。
 验证：python-pptx 重开 + PowerPoint COM 实开 + 字体扫描。
 """
+import argparse
 import copy
+import json
+import os
 import re
 import shutil
 import statistics as st
+import sys
 from collections import Counter, defaultdict
+from datetime import date
 
 from pptx import Presentation
 from pptx.chart.data import CategoryChartData
+from pptx.dml.color import RGBColor
+from pptx.util import Inches, Pt
 
 from build_deliverables_v4923 import load_records, pct
 
@@ -143,6 +150,36 @@ def cr(vals, k):
     if n < 5:
         return None
     return round(sum(v for _, v in c.most_common(k)) / n * 100, 1)
+
+
+def base_table_shape(path=None, sheet='NEV公告参数汇总'):
+    """底表规模（行, 列）——口径文案的派生真值来源。加列数下界断言，防读取异常产出 × 0 列。"""
+    import openpyxl
+    src_path = path or 'NEV公告参数汇总表_合并版（341~410批）.xlsx'
+    wb = openpyxl.load_workbook(src_path, read_only=True)
+    try:
+        ws = wb[sheet]
+        it = ws.iter_rows(values_only=True)
+        hdr = next(it)
+        ncol = len([c for c in hdr if c is not None])
+        if not (30 <= ncol <= 60):
+            raise AssertionError(f'底表列数 {ncol} 越界 [30,60]，拒绝据此生成口径文案')
+        nrow = 0
+        for row in it:
+            if row is None or all(v is None for v in row):
+                continue
+            nrow += 1
+        return nrow, ncol
+    finally:
+        wb.close()
+
+
+def se_values(chart, name):
+    """按系列名取图表内现有值（未注册系列的兜底：保留原数据）。"""
+    for se in chart.series:
+        if str(se.name) == str(name):
+            return list(se.values)
+    raise ContractError(f'图表内不存在系列 {name!r}')
 
 
 def main():
@@ -389,6 +426,10 @@ def main():
                     vals = list(se_values(ch, nm))
                 else:
                     vals = fn()
+                if len(vals) != len(list(cd.categories)):
+                    raise AssertionError(
+                        f'S{sno} 系列 {nm!r} 值数 {len(vals)} ≠ 类目数 {len(list(cd.categories))}'
+                        f'（replace_data 会左移或前置空值，拒绝写入）')
                 cd.add_series(str(nm), vals)
             ch.replace_data(cd)
             replaced['charts'] += 1
@@ -444,9 +485,9 @@ def main():
         grid2.append([y, D['cnt_bev'][i], D['cnt_phev'][i],
                       D['cnt_bev'][i] + D['cnt_phev'][i], D['phev_pct'][i],
                       mean2(yb, '续航'), mean2(yb, '容量')])
-    set_table(2, [['年份', 'BEV(款)', 'PHEV(款)', '合计', 'PHEV占比%',
+    set_table(2, [['年份', 'BEV(条)', 'PHEV(条)', '合计(条)', 'PHEV占比%（公告口径）',
                    'BEV均值续航(km)', 'BEV均值容量(kWh)']] + grid2)
-    set_table(9, [['年份', 'BEV(款)', 'PHEV(款)', '合计(款)', 'PHEV占比%']] +
+    set_table(9, [['年份', 'BEV(条)', 'PHEV(条)', '合计(条)', 'PHEV占比%（公告口径）']] +
               [[y, D['cnt_bev'][i], D['cnt_phev'][i],
                 D['cnt_bev'][i] + D['cnt_phev'][i], D['phev_pct'][i]]
                for i, y in enumerate(YEARS)])
@@ -546,47 +587,111 @@ def main():
         rows66.append([lab, a, b, round((b - a) / a * 100, 1)])
     set_table(66, rows66)
 
-    # ---------- 文本口径更新 ----------
+    # ---------- 文本口径更新（v4.9.50 重构）----------
+    # 旧实现 = 7 条字面量替换对；实测在现稿上 **全部 0 命中**（源字面量在首次替换成功后即
+    # 永久消失；且现稿数量词存在 `5,392 款` / `5392款` 两种形态）——属静默漂移，详见结构文档 §2.6。
+    # 现改为：**正则归一 + 逐规则命中计数**，任一规则命中 0 即抛错，绝不"看起来在刷新"。
     tot = len(recs)
     nb = sum(1 for r in recs if r['组'] == 'BEV')
     np_ = tot - nb
+    nrow, ncol = base_table_shape()
+    # 公示批（412 批 58 条）：公告日期为空，按年统计会被排除 → 必须拆分披露，不得并入年度口径
+    pub_rows = [r for r in recs if r['年'] is None]
+    npublic = len(pub_rows)
+    nformal = nrow - npublic
+    pub_batches = sorted({int(float(r['批次'])) for r in pub_rows if r['批次'] is not None})
+    pub_batch_txt = '、'.join(str(b) for b in pub_batches) or '—'
+    SPLIT = f'{nrow:,} 条公告/公示记录（{nformal:,} 条正式公告 + {npublic} 条公示批次记录）'
     p25 = D['phev_pct'][4]
-    GLOBAL = [
-        ('基于 4,613 条公告车型数据', f'基于 {tot:,} 条公告车型数据'),
-        ('权威底表 v4.3.6', '权威底表 v4.9.23'),
-        ('共4,613款纯新能源乘用车', f'共{tot}款纯新能源乘用车'),
-        ('共 4,613 款', f'共 {tot:,} 款'),
-        ('样本 4,613 款（BEV 3,099 / PHEV 1,514）',
-         f'样本 {tot:,} 款（BEV {nb:,} / PHEV {np_:,}）'),
-        ('4,613 款', f'{tot:,} 款'),
-        ('纯乘用车口径（v4.3.4底表）', f'纯乘用车口径（{tot:,} 款 × 39 列）'),
-        ('2025 年 PHEV 占比', '2025 年 PHEV 占比'),  # 占位保持
+    if nrow != tot:
+        raise AssertionError(f'底表行数 {nrow} ≠ load_records 载入 {tot} 条，拒绝生成口径文案')
+
+    _bs = sorted({int(float(str(r['批次']))) for r in recs if r['批次'] not in (None, '')})
+    _blo, _bhi = _bs[0], _bs[-1]
+    RULES = [
+        (re.compile(r'第\s*\d{3}\s*[~\-–]\s*\d{3}\s*批'), f'第{_blo}~{_bhi}批'),
+        (re.compile(r'基于\s*[\d,]+\s*条公告[车型数据]*'),
+         f'基于 {nrow:,} 条公告/公示记录'),
+        (re.compile(r'权威底表\s*v4\.[\d.]+'), f'权威底表 {VER_DECK}'),
+        (re.compile(r'共\s*[\d,]+\s*款纯新能源乘用车'), f'共 {nrow:,} 条公告/公示记录'),
+        (re.compile(r'样本\s*[\d,]+\s*款（BEV[^）]*）'),
+         f'样本 {nrow:,} 条公告/公示记录（BEV {nb:,} / PHEV {np_:,}）'),
+        (re.compile(r'纯乘用车口径（[^）]*）'),
+         f'纯乘用车口径（{nrow:,} 条公告/公示记录 × {ncol} 列；'
+        f'其中 {npublic} 条为 {pub_batch_txt} 批公示记录）'),
+        # 千分位形态的计数（年款如 2026款 不含千分位，天然不误伤）
+        (re.compile(r'\d{1,3}(?:,\d{3})+\s*款'), f'{nrow:,} 条公告/公示记录'),
+        (re.compile(r'(?<![\d,.])5392\s*款?'), f'{nrow:,} 条公告/公示记录'),
     ]
+    hits = [0] * len(RULES)
+    replaced_texts = 0
     for s in prs.slides:
         for sh in s.shapes:
-            if not sh.has_text_frame:
-                continue
-            for para in sh.text_frame.paragraphs:
-                for run in para.runs:
-                    t = run.text
-                    t2 = t
-                    for a, b in GLOBAL:
-                        t2 = t2.replace(a, b)
-                    if t2 != t:
-                        run.text = t2
-                        replaced['texts'] += 1
+            frames = []
+            if sh.has_text_frame:
+                frames.append(sh.text_frame)
+            if getattr(sh, 'has_table', False):          # P2 的列数文案就在表格里
+                for row in sh.table.rows:
+                    for cell in row.cells:
+                        frames.append(cell.text_frame)
+            for tf in frames:
+                for para in tf.paragraphs:
+                    runs = para.runs
+                    if not runs:
+                        continue
+                    t0 = ''.join(r.text for r in runs)
+                    t1 = t0
+                    for ri, (rx, rep) in enumerate(RULES):
+                        # 命中数按**替换前**原文统计：规则间会互相消耗文本（如 #2 吞掉
+                        # 「5392款」使 #6 无剩余可匹配），按替换后统计会产出假 0 命中；
+                        # 按原文统计才能真实反映"该模式在本稿中是否存在"。
+                        hits[ri] += len(rx.findall(t0))
+                        t1 = rx.sub(rep, t1)
+                    if t1 != t0:
+                        runs[0].text = t1
+                        for r in runs[1:]:
+                            r.text = ''
+                        replaced_texts += 1
+    replaced['texts'] = replaced_texts
+    dead = [(i, RULES[i][0].pattern, hits[i]) for i in range(len(RULES)) if hits[i] == 0]
+    if dead:
+        raise AssertionError(
+            '口径文案规则 0 命中（替换源与现稿字面量不一致 = 静默漂移）：'
+            + '; '.join(f'#{i} {p!r}' for i, p, _ in dead))
 
-    if not os.path.exists('archive/演示文稿_pre-v4924_backup_20260927.pptx'):
-        shutil.copy2(SRC, 'archive/演示文稿_pre-v4924_backup_20260927.pptx')
-    # 09-30 教训：重复运行不得覆盖原始备份（存在性检查）
+    # 备份：含版本号 + 日期 + 存在性检查（重复运行不覆盖原始备份）
+    BACKUP = f'archive/演示文稿_pre-{VER_DECK}-refresh_backup_{date.today():%Y%m%d}.pptx'
+    if not os.path.exists(BACKUP):
+        shutil.copy2(SRC, BACKUP)
+        print(f'  已备份：{BACKUP}')
+    else:
+        print(f'  备份已存在，跳过覆盖：{BACKUP}')
     prs.save(SRC)
     print(f"刷新完成 charts={replaced['charts']} tables={replaced['tables']} texts={replaced['texts']}")
-    print(f"口径：{tot:,} 款（BEV {nb:,}/PHEV {np_:,}）· 2025 PHEV占比 {p25}%")
+    print(f"口径：{SPLIT} × {ncol} 列（BEV {nb:,} / PHEV 其余 {np_:,}）· "
+          f"2025 年公告车型中 PHEV 占 {p25}%（公告口径，非销量口径）")
+    print("  规则命中：" + ' | '.join(f'#{i}:{h}' for i, h in enumerate(hits)))
     print("补充文本轮替换 run:", supplement_text_remap(SRC))
 
 
 BATCH_YEAR = None
 
+
+def load_batch_year(src='NEV公告参数汇总表_合并版（341~410批）.xlsx'):
+    """批次 → 公告年。原先只在 __main__ 里赋值，导致作为模块导入时 BATCH_YEAR=None、
+    B 状态油耗恒为空（2026-10-19 审计发现）。改为可调用函数，行为与 _main 内联逻辑一致。"""
+    import openpyxl as _px
+    wb = _px.load_workbook(src, read_only=True)
+    bt = wb['批次时间表']
+    hdr = [str(c.value or '').strip() for c in next(bt.iter_rows(min_row=1, max_row=1))]
+    bi, di = hdr.index('批次'), hdr.index('公告日期')
+    out = {}
+    for r in bt.iter_rows(min_row=2, values_only=True):
+        m = re.match(r'^(\d{4})', str(r[di] or ''))
+        if r[bi] is not None and m:
+            out[str(r[bi]).strip()] = int(m.group(1))
+    wb.close()
+    return out
 
 
 def supplement_text_remap(prs_path):
@@ -594,7 +699,8 @@ def supplement_text_remap(prs_path):
     容差 ±0.051），仅动 小数/千分位/≥3位整数 token；保护版本号/批次区间/年份。可复跑。"""
     import re, datetime
     from pptx import Presentation
-    OLD = 'archive/演示文稿_pre-v4924_backup_20260927.pptx'
+    OLD = (f'archive/演示文稿_pre-{VER_DECK}-refresh_backup_'
+           f'{datetime.date.today():%Y%m%d}.pptx')
     po = Presentation(OLD)
     pn = Presentation(prs_path)
     NUM = r'\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+\.\d+|\d{3,}'
@@ -670,17 +776,38 @@ def supplement_text_remap(prs_path):
     return n
 
 
+# ==========================================================================================
+# v4.9.50 · 销量联动页注入（实装模块：build_sales_pages_v4950.py / 2026-10-19 / deck-builder）
+#   · 数据源唯一：audit-output/sales_linkage_analytics_20261019.json（task-2 产出）
+#   · 本文件不含任何业务数字；所有数值一律由该模块从 JSON / 底表派生注入
+#   · 结构定义见 Update/销量分析演示稿结构_20261019.md；硬约束落点见其 §2.4 / §2.6
+#   · 分工：本文件负责"既有 41 图 / 16 表 / 文本口径刷新"，
+#            build_sales_pages_v4950.py 负责"新增与销量页重建 + 全稿口径文案归一"
+# ==========================================================================================
+VER_DECK = 'v4.9.50'
+SALES_ANALYTICS = 'audit-output/sales_linkage_analytics_20261019.json'
+
+
+def build_sales_pages_v4950(argv=None):
+    """委托给实装模块（保持本文件既有调用入口不变）。
+
+    注意：argv 必须显式传入空列表，否则被委托模块的 argparse 会去解析
+    本文件的命令行参数（--refresh/--sales）而报 unrecognized arguments。
+    """
+    import build_sales_pages_v4950 as _sp
+    return _sp.main([] if argv is None else argv)
+
+
 if __name__ == '__main__':
-    # 批次→年（与 load_records 同源）
-    import openpyxl as _px
-    _wb = _px.load_workbook('NEV公告参数汇总表_合并版（341~410批）.xlsx', read_only=True)
-    _bt = _wb['批次时间表']
-    _hdr = [str(c.value or '').strip() for c in next(_bt.iter_rows(min_row=1, max_row=1))]
-    _bi, _di = _hdr.index('批次'), _hdr.index('公告日期')
-    BATCH_YEAR = {}
-    for _r in _bt.iter_rows(min_row=2, values_only=True):
-        _m = re.match(r'^(\d{4})', str(_r[_di] or ''))
-        if _r[_bi] is not None and _m:
-            BATCH_YEAR[str(_r[_bi]).strip()] = int(_m.group(1))
-    _wb.close()
-    main()
+    _ap = argparse.ArgumentParser(description='演示文稿数据刷新（v4.9.x）+ 销量联动页注入（v4.9.50）')
+    _ap.add_argument('--refresh', action='store_true',
+                     help='执行既有 41 图 / 16 表 / 文本口径刷新（默认开启）')
+    _ap.add_argument('--sales', action='store_true',
+                     help='在刷新之后执行销量联动页注入（调用 build_sales_pages_v4950.py）')
+    _ap.add_argument('--no-refresh', action='store_true', help='仅执行 --sales，跳过既有刷新')
+    _a, _rest = _ap.parse_known_args()
+    if not _a.no_refresh:
+        BATCH_YEAR = load_batch_year()
+        main()
+    if _a.sales:
+        build_sales_pages_v4950(_rest)

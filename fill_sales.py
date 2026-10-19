@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-"""fill_sales.py — 易车车系销量榜 → 底表月销量参考列补全（仅参考项）
+"""fill_sales.py — 【已废弃 OBSOLETE · 2026-10-19】易车车系销量榜 → 底表月销量参考列补全
+
+⚠️ 本脚本已被 link_sales.py（汽车之家 2026-09 口径）取代，**禁止运行**。
+   详见文件末尾的硬停守卫与 Update/销量口径规范_20261019.md §10 禁止运行清单。
 
 数据源：audit-output/yiche_sales_rank_202608_raw.json
   （car.yiche.com/newcar/salesrank/?energy=6，零售量=行业综合销量，2026年08月，车系级）
@@ -28,6 +31,28 @@ from collections import defaultdict
 
 import openpyxl
 from openpyxl.styles import PatternFill
+
+# ============================================================================
+# 【硬停守卫】OBSOLETE WRITER —— 2026-10-19 由 Lead 加装
+# 本脚本已于 2026-10-19 被 link_sales.py（汽车之家 2026-09 口径）取代，禁止运行：
+#   ① 源 audit-output/yiche_sales_rank_202608_raw.json 是「易车 2026-08」旧口径，
+#      而底表 col35 已统一为「汽车之家 2026-09」——运行会把旧口径值回灌已统一列；
+#   ② MONTH_TAG='2026-08'、SOURCE_TAG='易车车系销量榜' 均为硬编码；
+#   ③ 只补空、不写新增的 col39(车系ID) / col40(销量覆盖状态)，
+#      会造成「数值已统一、覆盖状态未写」的不一致状态；
+#   ④ 绕过 link_sales.py 的口径自检与写入后校验。
+# 依据：AGENTS 经验教训（过期写入器在本轮统一口径后再运行 = 数据回灌污染，
+#       同族事故见 2026-09-11「工作簿清洗必须同步源链」11 格回灌）。
+# 唯一放行方式（仅限离线取证 / 历史复现）：
+#       PowerShell:  $env:ALLOW_OBSOLETE_FILL_SALES='1'
+# ============================================================================
+if os.environ.get("ALLOW_OBSOLETE_FILL_SALES") != "1":
+    raise SystemExit(
+        "fill_sales.py 已废弃（OBSOLETE）：源为易车 2026-08 旧口径，运行会污染已统一为\n"
+        "汽车之家 2026-09 的底表销量列，并绕开 col39/col40 写入与口径自检。\n"
+        "请改用 link_sales.py。确需离线取证时设置 ALLOW_OBSOLETE_FILL_SALES=1 强制放行，\n"
+        "并在变更记录中注明（参见 Update/销量口径规范_20261019.md §10 禁止运行清单）。"
+    )
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 WB_PATH = os.path.join(HERE, 'NEV公告参数汇总表_合并版（341~410批）.xlsx')

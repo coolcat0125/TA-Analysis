@@ -2,7 +2,7 @@
 """audit_brand_v2.py — 媒体填充行品牌一致性审计（离线优先，v2 限流加固）
 
 原理：
-  1. 从底表 col34(媒体校验来源) 提取 autohome seriesId（480 个去重）
+  1. 从底表「媒体校验来源」列（按表头名寻址，不写列索引）提取 autohome seriesId（480 个去重）
   2. listSpec 逐个取车系名（0.55s 限速 + ERR 退避重试 + 断点续跑缓存）
   3. 车系名含品牌词的：与行商标(产品商标+企业名称)品牌词比对，含别名表
   4. 车系名不含品牌词的：记 unresolvable（离线无法定性，不判错）
@@ -55,11 +55,25 @@ def brand_tokens(s):
 def main():
     wb = openpyxl.load_workbook(os.path.join(HERE, 'NEV公告参数汇总表_合并版（341~410批）.xlsx'),
                                 read_only=True, data_only=True)
-    cr = list(wb['NEV公告参数汇总'].iter_rows(min_row=2, values_only=True))
+    ws = wb['NEV公告参数汇总']
+    # 列一律按表头名寻址（AGENTS 2026-09-09：硬编码列索引在 schema 尾插/重构后立即失配）
+    hdr = [str(c.value).strip() if c.value is not None else ''
+           for c in next(ws.iter_rows(min_row=1, max_row=1))]
+    hi = {h: i for i, h in enumerate(hdr)}
+    if '媒体校验来源' not in hi:
+        raise KeyError(f'底表缺表头「媒体校验来源」，现有列：{hdr}')
+    _NEED = ('批次', '产品型号', '产品商标', '企业名称', '通用名称', '媒体校验来源')
+    _miss = [n for n in _NEED if n not in hi]
+    if _miss:
+        raise KeyError(f'底表缺必需表头 {_miss}，现有列：{hdr}')
+    COL_BATCH, COL_CODE = hi['批次'], hi['产品型号']
+    COL_BRAND, COL_ENT = hi['产品商标'], hi['企业名称']
+    COL_GENERIC, COL_SRC = hi['通用名称'], hi['媒体校验来源']
+    cr = list(ws.iter_rows(min_row=2, values_only=True))
     wb.close()
     sid_rows = {}
     for r in cr:
-        src = str(r[34] or '')
+        src = str(r[COL_SRC] or '')
         for m in re.findall(r'series/(\d+)', src):
             sid_rows.setdefault(m, []).append(r)
     print(f'rows_with_media={sum(len(v) for v in sid_rows.values())} distinct={len(sid_rows)}')
@@ -104,7 +118,7 @@ def main():
             continue
         for r in rows:
             checked += 1
-            btoks = brand_tokens(str(r[2] or '') + ' ' + str(r[3] or ''))
+            btoks = brand_tokens(str(r[COL_BRAND] or '') + ' ' + str(r[COL_ENT] or ''))
             if not btoks:
                 continue
             conflict = all(
@@ -112,8 +126,9 @@ def main():
                 for bt in btoks for st in stoks
             )
             if conflict:
-                flags.append({'批次': r[0], '型号': r[1], '商标': str(r[2] or '')[:14],
-                              '通用名称': str(r[6] or '')[:22], '车系': sname, 'sid': sid,
+                flags.append({'批次': r[COL_BATCH], '型号': r[COL_CODE],
+                              '商标': str(r[COL_BRAND] or '')[:14],
+                              '通用名称': str(r[COL_GENERIC] or '')[:22], '车系': sname, 'sid': sid,
                               '行品牌词': btoks, '车系品牌词': stoks})
     print(f'checked={checked} unresolvable_rows={unresolvable} brand_conflicts={len(flags)}')
     json.dump({'checked': checked, 'unresolvableRows': unresolvable, 'conflicts': flags},

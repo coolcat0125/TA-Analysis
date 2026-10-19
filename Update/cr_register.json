@@ -1,6 +1,6 @@
 {
  "coding_rule": "CR-17-NNN（17=项目序号 17 TA analysis；NNN 三位流水号只增不复用）",
- "updated": "2026-10-01",
+ "updated": "2026-10-19",
  "items": [
   {
    "id": "CR-17-001",
@@ -110,11 +110,12 @@
   },
   {
    "id": "CR-17-014",
-   "title": "411 正式公告对齐入库",
-   "status": "监测中",
+   "title": "411 正式公告 + 412 公示批对齐入库",
+   "status": "进行中",
    "domain": "批次滚动",
-   "next": "主站命中即 S1 最高优先",
-   "note": "10-04：EIDC 新系统 411 批搜索 0 命中 → 411 确实尚未正式公告，与主站搜索结论一致"
+   "next": "并发会话执行中：cr17_011_apply_rows.py（new_rows 83 + enrich_cells 66，已 check 未落盘）",
+   "note": "10-04：EIDC 新系统 411 批搜索 0 命中 → 411 确实尚未正式公告，与主站搜索结论一致。10-19：主站已命中 → 解锁，411（正式公告）+ 412（公示，无正式发文号）合并入库；已与「销量联动工作流」建立写入串行化协议（Update/协同_销量列写入互斥声明_20261019.md），约定本批先落盘、销量列后落盘",
+   "artifact": "cr17_008_rows_411.py / cr17_009_rows_412.py / cr17_011_apply_rows.py / audit-output/cr17_011_check_20261019-163442.json"
   },
   {
    "id": "CR-17-015",
@@ -138,10 +139,12 @@
   },
   {
    "id": "CR-17-018",
-   "title": "易车销量换月",
-   "status": "例行",
+   "title": "车型销量月度换月（数据源已由易车切换为汽车之家）",
+   "status": "进行中",
    "domain": "数据源",
-   "next": "每月 10 日 fill_sales 重跑"
+   "next": "每月 10 日后由 fetch_sales_autohome.py 重跑；**fill_sales.py 已废弃并加硬停守卫（P0 禁跑）**",
+   "note": "10-19：易车 salesrank 已被腾讯 TCaptcha 拦截、懂车帝 /sales 页亦被验证码拦截 → 主源切换为汽车之家「行业综合销量」新能源榜（typeid=9&subranktypeid=2305，每月 10 日左右更新）。口径等价性已实证：易车 2026-08 可比 483 格中 479 格在 1% 内一致（WS1 逐值比对 147/147 零偏差）；跨源懂车帝全量 660 条复检 282 可比 / 278 在 1% 内 / 18 项超差全部证据化（unexplained = 0）。历史 806 格易车 2026-08 值按 D10 统一替换为汽车之家 2026-09。",
+   "artifact": "fetch_sales_autohome.py / sales_source_qc.py / Update/销量口径规范_20261019.md / audit-output/sales_autohome_series_monthly_20261019.json"
   },
   {
    "id": "CR-17-019",
@@ -195,6 +198,47 @@
    "status": "已完成",
    "domain": "工程",
    "result": "仓库瘦身 56MB，git+归档双保险"
+  },
+  {
+   "id": "CR-17-026",
+   "title": "车型销量数据补充与底表指标联动（本轮主任务）",
+   "status": "进行中",
+   "domain": "交付物",
+   "next": "link-engine 以最终行集（含 411/412 新增行）重跑干跑 → Lead 验收 → 底表 apply → 扩表 54 表 / 看板 / 移动版 / 报告 / 演示稿刷新",
+   "note": "快照 = 汽车之家新能源榜 2026-09；10 个月快照（2025-12~2026-09）；底表尾插列 39 车系ID / 40 销量覆盖状态（39→41 列）；列 35/36/37 按统一口径写入；行级覆盖率 40.52%、在售车系级 282/411 = 68.61%、已锚定销量 797,701 = 全榜 73.05%（均为写入前实测，待最终行集重算）",
+   "artifact": "link_sales.py / audit-output/sales_link_20261019.json / audit-output/sales_linkage_analytics_20261019.json"
+  },
+  {
+   "id": "CR-17-027",
+   "title": "销量口径规范与匹配引擎规则定稿",
+   "status": "已完成",
+   "domain": "工程",
+   "result": "§1~§11 定稿：分层最小长度守卫（exact≥1/prefix≥2/substr≥3，统一≥3 会掉 89 行）、四级消歧、并列格先拆（475 行 8.8% / 472 可拆 / 3 为「/」占位）、seriesid 归属仲裁、聚合规则（分类型众数+并列字典序最小、数值型中位数、空白归 (未定)）、禁止运行清单",
+   "artifact": "Update/销量口径规范_20261019.md / Update/销量匹配天花板与引擎规则_20261019.md"
+  },
+  {
+   "id": "CR-17-028",
+   "title": "公告通用名称 ↔ 媒体车系名 锚定表（长期数据资产）",
+   "status": "待办(人工裁决)",
+   "domain": "覆盖率",
+   "next": "129 个在榜未关联车系 / 294,363 辆 / 26.95%：其中 88 个（223,077 辆）底表有命名痕迹（多为短名，如 S3→极狐贝塔S3、EZ-6→？、熊猫→熊猫Mini）、41 个无任何痕迹。已建候选表逐条带签名（brand_ok/model_family_ok/generation_hint）；多候选一律 HOLD，须逐条人工裁决（S3/EZ-6/熊猫 命中 AGENTS 泛化名撞名与跨代事故模式）；一次性锚定可将在榜覆盖由 68.61% 提升至 90% 量级",
+   "artifact": "audit-output/sales_series_anchor_candidates_20261019.json"
+  },
+  {
+   "id": "CR-17-029",
+   "title": "底表并发写入串行化协议（销量列 ↔ 411/412 批）",
+   "status": "已完成",
+   "domain": "工程",
+   "result": "协议定案：411/412 批先落盘 → 销量列后落盘；双方强制 --expect-sha 哈希守卫 + 落盘前整本备份 + 行身份复核（注意 (410, None) 重复键 3 行陷阱）+ base_rows 一律实读",
+   "artifact": "Update/协同_销量列写入互斥声明_20261019.md / _lead_prewrite_fingerprint.py"
+  },
+  {
+   "id": "CR-17-030",
+   "title": "底表脏值登记（通用名称空白/数字、细分市场前后空格）",
+   "status": "待办(低)",
+   "domain": "数据质量",
+   "next": "只登记不改。通用名称空白/数字脏值 10 种 36 行（'ID.6 X '、'ARRIZO e '、' AION S'、'风云 A8 L,… '、以及值为整数 1/6/7/9/11/12 的 32 行）；细分市场前后空格 4 种 16 行（' SUV-C' 7、'SUV-C ' 3、'SUV-B ' 3、'Car-D ' 3）——后者会在聚合时凭空造桶，故 §11.1 强制 strip",
+   "artifact": "audit-output/_lead_prewrite_fingerprint_20261019.json"
   }
  ]
 }

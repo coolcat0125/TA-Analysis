@@ -1,0 +1,11710 @@
+{
+ "meta": {
+  "snapshot_month": "2026-09",
+  "months": [
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09"
+  ],
+  "fetch_date": "2026-10-19",
+  "source": "汽车之家 · 行业综合销量（车系级月零售）",
+  "source_tip": "数据源于行业综合销量，每月10日左右更新",
+  "source_url_template": "https://car-web-api.autohome.com.cn/car/rank/getList?...&typeid=9&subranktypeid=2305&date={month}",
+  "reference_source": "全车型总榜 typeid=1（仅参照） + 易车202608快照 + 懂车帝微型车榜",
+  "scope": "新能源榜（与本项目仅 NEV 乘用车口径同宇宙）",
+  "dedup_rule": "车系级（seriesid 唯一）；底表行级值仅供单行参考，禁止加总",
+  "price_bins": [
+   "≤10万",
+   "10-15万",
+   "15-20万",
+   "20-30万",
+   "30-40万",
+   "40万+"
+  ],
+  "price_bin_rule": "priceinfo 指导价区间取中值后分箱",
+  "backup_old": "audit-output/sales_prior_yiche_202608_backup_20261019.json",
+  "base_table_path": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
+  "base_rows": 5475,
+  "matched_rows": 2200,
+  "match_channel_counts": {
+   "A_exact": 202,
+   "B_brand": 177,
+   "C_substr": 59,
+   "D_suggest": 0,
+   "hold": 22,
+   "A2_split": 110,
+   "multi_series_cell": 11,
+   "unmatched": 724,
+   "placeholder": 10,
+   "empty": 2
+  },
+  "qc": {
+   "monthly_counts": {
+    "2025-12": 388,
+    "2026-01": 355,
+    "2026-02": 341,
+    "2026-03": 365,
+    "2026-04": 376,
+    "2026-05": 379,
+    "2026-06": 377,
+    "2026-07": 384,
+    "2026-08": 396,
+    "2026-09": 411
+   },
+   "union_series": 507,
+   "current_month_series": 411,
+   "reference_universe_per_month": {
+    "2025-12": {
+     "series": 678,
+     "sales": 2275509
+    },
+    "2026-01": {
+     "series": 643,
+     "sales": 1555205
+    },
+    "2026-02": {
+     "series": 624,
+     "sales": 1037176
+    },
+    "2026-03": {
+     "series": 641,
+     "sales": 1665628
+    },
+    "2026-04": {
+     "series": 638,
+     "sales": 1380592
+    },
+    "2026-05": {
+     "series": 643,
+     "sales": 1526294
+    },
+    "2026-06": {
+     "series": 637,
+     "sales": 1616502
+    },
+    "2026-07": {
+     "series": 638,
+     "sales": 1460071
+    },
+    "2026-08": {
+     "series": 650,
+     "sales": 1553454
+    },
+    "2026-09": {
+     "series": 660,
+     "sales": 1630241
+    }
+   },
+   "reference_universe_note": "参照宇宙 = 汽车之家**全车型总榜**（typeid=1&subranktypeid=1）逐月车系数与销量合计；仅作分母/渗透率参照，**不入底表**。来源：WS1 官方产物 `audit-output/sales_autohome_series_monthly_20261019.json` → `reference_only.全车型榜.monthly`（与 WS1 QC 报告 `sales_source_qc_20261019.json` 逐月一致）",
+   "cross_source": {
+    "yiche_202608": {
+     "compared": 483,
+     "within_1pct": 479,
+     "within_5pct": 479,
+     "unmatched": 74,
+     "autohome_count": 650,
+     "over_10pct": [
+      [
+       "五菱宏光",
+       2012,
+       2236,
+       0.1113
+      ],
+      [
+       "五菱宏光",
+       2012,
+       2236,
+       0.1113
+      ],
+      [
+       "五菱宏光",
+       2012,
+       2236,
+       0.1113
+      ],
+      [
+       "五菱宏光",
+       2012,
+       2236,
+       0.1113
+      ]
+     ],
+     "over_10pct_fields": [
+      "generic",
+      "base_sales_yiche",
+      "autohome_sales",
+      "rel_diff"
+     ],
+     "mean_rel_diff": 0.000922,
+     "source": "_lead_crosscheck_202608.json（Lead 独立交叉验证，只读引用）",
+     "note": "易车202608 与 汽车之家202608 同属行业综合销量家族；换源唯一实质差异是覆盖率，相对差 >10% 仅五菱宏光一例口径尾数"
+    },
+    "qc_report_path": "audit-output/sales_source_qc_20261019.json",
+    "qc_report_note": "以 WS1 QC 报告为权威，本处为只读摘要（Lead m00341②）",
+    "deprecated": {
+     "dongchedi_micro_202609": "已废弃：WS1 完成懂车帝 2026-09 全量抓取（660 条）前的旧状态（compared=0），禁止引用；请改用 dongchedi_202609"
+    },
+    "dongchedi_202609": {
+     "status": "ok",
+     "source": "懂车帝 www.dongchedi.com/motor/pc/car/rank_data",
+     "scope_note": "rank_data_type=11 → 月度零售量（与汽车之家行业综合销量同口径族）；公开 API 仅提供合并月榜，不暴露细分市场榜参数（level 参数被服务端忽略，已实测 level=1..6 返回同一序列）",
+     "dcd_rows": 660,
+     "dcd_month": "2026-09",
+     "matched": 323,
+     "comparable_nev_count": 282,
+     "within_1pct": 278,
+     "mean_abs_rel_diff": 0.0062,
+     "over_10pct_count": 18,
+     "over_10pct_by_category": {
+      "口径差-动力版本拆分方式（已锚定）": 14,
+      "口径差-DCD含燃油": 1,
+      "口径差-命名粒度": 3
+     },
+     "over_10pct_anchored_by_sibling_evidence": 14,
+     "over_10pct_unexplained_count": 0,
+     "claim_arbitration_conflict_count": 2,
+     "scope_difference_conclusion": "懂车帝公开 API 只发布「全动力合并车系」月榜（其细分市场榜参数 level/price 被服务端忽略，实测无效），而汽车之家主宇宙是「新能源榜」——同一车系名下前者含燃油销量、后者仅新能源部分。故两家同名车系的差值主要是**口径差**而非数据错误。已逐项证据化定性：① 口径差-动力版本拆分方式（已锚定）：汽车之家侧把多个动力版本并为一个车系，懂车帝侧拆为「X PHEV / X EV / X Hi4-T / X EM-P / X 增程版」等兄弟行，且汽车之家值 **逐值等于**某兄弟行或某兄弟行子集之和（subset-sum 穷举验证，如 星光730新能源 2875 == 星光730 EV 2149 + PHEV 726）；② 口径差-命名粒度：两源原始名不同（如「X」vs「X新能源」）；③ 口径差-DCD含燃油：懂车帝值显著更大且汽车之家侧仅余量。超差项分类计数 canonical = 18（14 + 3 + 1），**另有 2 项重复认领冲突已单独登记，不计入 18**。该 2 项（菱智、锐胜M8）均为**命名粒度差**（汽车之家单列新能源版 vs 懂车帝并入全动力车系），**不构成数值错误**：懂车帝同一基名下同时存在「X新能源」与「X」两行，已按「原始名逐字相等」仲裁归属；被挤出的行（菱智 395、锐胜M8 8）仍如实登记于 `claim_arbitration.conflicts` 并保留其偏差定性。另：原「领克10 存疑项」已由本轮 subset-sum 锚定解决——`领克10 4228 == 领克10 2756 + 领克10 EM-P 1472 逐值相等`，**已移出存疑清单**。**0 项无法解释的数值异常**。",
+     "mirror_of": "audit-output/sales_source_qc_20261019.json#c_crosscheck.dongchedi_202609",
+     "note": "只读镜像，未在本地重算"
+    }
+   }
+  },
+  "dedup_selfcheck": {
+   "case": "星愿",
+   "resolved_seriesid": "7806",
+   "seriesname_in_board": "星愿",
+   "generic_names": [
+    "星愿STAR、星愿",
+    "星愿UP、星愿",
+    "星愿、星愿UP",
+    "星愿、星愿Ultra",
+    "星愿、派派、龙猫"
+   ],
+   "generic_names_count": 5,
+   "collapsed_rows": 15,
+   "distinct_series_in_top20": 1,
+   "in_top20": true,
+   "pass": true
+  },
+  "match_channel_counts_rows": {
+   "unmatched": 2331,
+   "A_exact": 1192,
+   "B_brand": 933,
+   "placeholder": 317,
+   "A2_split": 266,
+   "C_substr": 227,
+   "hold": 96,
+   "empty": 93,
+   "multi_series_cell": 20
+  },
+  "match_channel_detail": {
+   "unit": "通用名称单元格（去重后 1,317 格，实读）",
+   "A2_split": "并列格按分隔符切候选后唯一命中",
+   "multi_series_cell": "一枚并列格命中 ≥2 个 seriesid → 该行 HOLD",
+   "A2_split_base_channels": {
+    "null": 110
+   }
+  },
+  "source_meta": {
+   "source_kind": "official",
+   "source_path": "D:\\#AI\\00 Project\\17 TA analysis\\01-主仓库\\TA-Analysis\\audit-output\\sales_autohome_series_monthly_20261019.json",
+   "source_tag": "ws1_official",
+   "has_rank_fields": true
+  },
+  "ledger_file": "audit-output/sales_link_20261019.json",
+  "coverage_status_enum": [
+   "在售-已匹配",
+   "在售-零销量",
+   "未匹配-命名待锚定",
+   "未匹配-已停产或未上量",
+   "无车系身份",
+   "未匹配-无车系ID"
+  ],
+  "pending_naming": [
+   [
+    "Q6L",
+    14,
+    [
+     "奥迪Q6L Sportback e-tron",
+     "奥迪Q6L e-tron"
+    ]
+   ],
+   [
+    "P7",
+    12,
+    [
+     "小鹏P7",
+     "小鹏P7+"
+    ]
+   ],
+   [
+    "悦也plus",
+    9,
+    [
+     "宝骏悦也",
+     "宝骏悦也Plus"
+    ]
+   ],
+   [
+    "007GT",
+    8,
+    [
+     "极氪007",
+     "极氪007GT"
+    ]
+   ],
+   [
+    "风神L8",
+    8,
+    [
+     "东风风神L8",
+     "东风风神L8Y"
+    ]
+   ],
+   [
+    "银河A7",
+    6,
+    [
+     "银河A7 EM",
+     "银河A7 EV"
+    ]
+   ],
+   [
+    "五菱缤果S",
+    5,
+    [
+     "五菱缤果",
+     "缤果S"
+    ]
+   ],
+   [
+    "007",
+    4,
+    [
+     "极氪007",
+     "极氪007GT"
+    ]
+   ],
+   [
+    "G9",
+    4,
+    [
+     "小鹏G9",
+     "小鹏G9L"
+    ]
+   ],
+   [
+    "领克07",
+    4,
+    [
+     "领克07 EM-P",
+     "领克07GT"
+    ]
+   ],
+   [
+    "享境S9,华境S",
+    3,
+    [
+     "华境S",
+     "宝骏享境"
+    ]
+   ],
+   [
+    "岚图FREE,岚图知音",
+    3,
+    [
+     "岚图FREE",
+     "岚图知音"
+    ]
+   ],
+   [
+    "海豹07",
+    3,
+    [
+     "海豹07 DM-i",
+     "海豹07 EV"
+    ]
+   ],
+   [
+    "ET5",
+    2,
+    [
+     "蔚来ET5",
+     "蔚来ET5T"
+    ]
+   ],
+   [
+    "EZ-60",
+    2,
+    [
+     "马自达EZ-6",
+     "马自达EZ-60"
+    ]
+   ],
+   [
+    "e-tron",
+    2,
+    [
+     "奥迪A6L e-tron",
+     "奥迪Q4 e-tron",
+     "奥迪Q5 e-tron",
+     "奥迪Q6L Sportback e-tron",
+     "奥迪Q6L e-tron"
+    ]
+   ],
+   [
+    "五菱缤果Pro",
+    2,
+    [
+     "五菱缤果",
+     "缤果Pro"
+    ]
+   ],
+   [
+    "悦也",
+    2,
+    [
+     "宝骏悦也",
+     "宝骏悦也Plus"
+    ]
+   ],
+   [
+    "星海V6,星海V6PLUS",
+    2,
+    [
+     "星海V6",
+     "星海V6 PLUS"
+    ]
+   ],
+   [
+    "星耀、星耀8、银河星耀、银河星耀8",
+    2,
+    [
+     "银河星耀6",
+     "银河星耀7",
+     "银河星耀8"
+    ]
+   ],
+   [
+    "比亚迪秦PLUS,比亚迪秦L",
+    2,
+    [
+     "秦L",
+     "秦PLUS"
+    ]
+   ],
+   [
+    "腾势Z9,腾势Z9S",
+    2,
+    [
+     "腾势Z9",
+     "腾势Z9S"
+    ]
+   ],
+   [
+    "追光",
+    2,
+    [
+     "岚图追光",
+     "岚图追光 L",
+     "岚图追光S"
+    ]
+   ],
+   [
+    "阿尔法S",
+    2,
+    [
+     "极狐 阿尔法S",
+     "极狐 阿尔法S5"
+    ]
+   ],
+   [
+    "阿尔法T",
+    2,
+    [
+     "极狐 阿尔法T",
+     "极狐 阿尔法T5",
+     "极狐 阿尔法T7"
+    ]
+   ],
+   [
+    "风云A9,风云A9 L",
+    2,
+    [
+     "风云A9",
+     "风云A9L"
+    ]
+   ],
+   [
+    "ET5T",
+    1,
+    [
+     "蔚来ET5",
+     "蔚来ET5T"
+    ]
+   ],
+   [
+    "U8",
+    1,
+    [
+     "仰望U8",
+     "仰望U8 L"
+    ]
+   ],
+   [
+    "尚界 Z7 T ULTRA",
+    1,
+    [
+     "尚界Z7",
+     "尚界Z7T"
+    ]
+   ],
+   [
+    "比亚迪汉、比亚迪e9",
+    1,
+    [
+     "比亚迪e9",
+     "汉"
+    ]
+   ],
+   [
+    "羿,羿驰05",
+    1,
+    [
+     "羿",
+     "羿驰05"
+    ]
+   ],
+   [
+    "雷霆、星海X5、星海T5 PLUS",
+    1,
+    [
+     "星海T5",
+     "星海X5"
+    ]
+   ],
+   [
+    "雷霆、星海X5、星海T5 PLUS、星海T5",
+    1,
+    [
+     "星海T5",
+     "星海X5"
+    ]
+   ]
+  ],
+  "pending_naming_detail": [
+   {
+    "generic": "Q6L",
+    "rows": 14,
+    "channel": "hold",
+    "candidates": [
+     "奥迪Q6L Sportback e-tron",
+     "奥迪Q6L e-tron"
+    ],
+    "candidate_sids": [
+     "7413",
+     "7936"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "奥迪牌",
+    "per_cand": [
+     {
+      "name": "Q6L",
+      "cand": "Q6L",
+      "channel": "B_brand",
+      "sids": [
+       "7413",
+       "7936"
+      ],
+      "cands": [
+       "奥迪Q6L Sportback e-tron",
+       "奥迪Q6L e-tron"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "P7",
+    "rows": 12,
+    "channel": "hold",
+    "candidates": [
+     "小鹏P7",
+     "小鹏P7+"
+    ],
+    "candidate_sids": [
+     "5213",
+     "7554"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "小鹏牌",
+    "per_cand": [
+     {
+      "name": "P7",
+      "cand": "P7",
+      "channel": "B_brand",
+      "sids": [
+       "5213",
+       "7554"
+      ],
+      "cands": [
+       "小鹏P7",
+       "小鹏P7+"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "悦也plus",
+    "rows": 9,
+    "channel": "hold",
+    "candidates": [
+     "宝骏悦也",
+     "宝骏悦也Plus"
+    ],
+    "candidate_sids": [
+     "6936",
+     "7574"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "宝骏牌",
+    "per_cand": [
+     {
+      "name": "悦也plus",
+      "cand": "悦也plus",
+      "channel": "B_brand",
+      "sids": [
+       "6936",
+       "7574"
+      ],
+      "cands": [
+       "宝骏悦也",
+       "宝骏悦也Plus"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "007GT",
+    "rows": 8,
+    "channel": "hold",
+    "candidates": [
+     "极氪007",
+     "极氪007GT"
+    ],
+    "candidate_sids": [
+     "7491",
+     "8010"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "极氪牌",
+    "per_cand": [
+     {
+      "name": "007GT",
+      "cand": "007GT",
+      "channel": "B_brand",
+      "sids": [
+       "7491",
+       "8010"
+      ],
+      "cands": [
+       "极氪007",
+       "极氪007GT"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "风神L8",
+    "rows": 8,
+    "channel": "hold",
+    "candidates": [
+     "东风风神L8",
+     "东风风神L8Y"
+    ],
+    "candidate_sids": [
+     "8149",
+     "8759"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "东风牌",
+    "per_cand": [
+     {
+      "name": "风神L8",
+      "cand": "风神L8",
+      "channel": "B_brand",
+      "sids": [
+       "8149",
+       "8759"
+      ],
+      "cands": [
+       "东风风神L8",
+       "东风风神L8Y"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "银河A7",
+    "rows": 6,
+    "channel": "hold",
+    "candidates": [
+     "银河A7 EM",
+     "银河A7 EV"
+    ],
+    "candidate_sids": [
+     "8158",
+     "8666"
+    ],
+    "chan_before": "C_substr",
+    "trademark": "吉利牌",
+    "per_cand": [
+     {
+      "name": "银河A7",
+      "cand": "银河A7",
+      "channel": "C_substr",
+      "sids": [
+       "8158",
+       "8666"
+      ],
+      "cands": [
+       "银河A7 EM",
+       "银河A7 EV"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "五菱缤果S",
+    "rows": 5,
+    "channel": "hold",
+    "candidates": [
+     "五菱缤果",
+     "缤果S"
+    ],
+    "candidate_sids": [
+     "7045",
+     "8189"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "五菱牌",
+    "per_cand": [
+     {
+      "name": "五菱缤果S",
+      "cand": "五菱缤果S",
+      "channel": "B_brand",
+      "sids": [
+       "7045",
+       "8189"
+      ],
+      "cands": [
+       "五菱缤果",
+       "缤果S"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "007",
+    "rows": 4,
+    "channel": "hold",
+    "candidates": [
+     "极氪007",
+     "极氪007GT"
+    ],
+    "candidate_sids": [
+     "7491",
+     "8010"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "极氪牌",
+    "per_cand": [
+     {
+      "name": "007",
+      "cand": "007",
+      "channel": "B_brand",
+      "sids": [
+       "7491",
+       "8010"
+      ],
+      "cands": [
+       "极氪007",
+       "极氪007GT"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "G9",
+    "rows": 4,
+    "channel": "hold",
+    "candidates": [
+     "小鹏G9",
+     "小鹏G9L"
+    ],
+    "candidate_sids": [
+     "6492",
+     "8659"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "小鹏牌",
+    "per_cand": [
+     {
+      "name": "G9",
+      "cand": "G9",
+      "channel": "B_brand",
+      "sids": [
+       "6492",
+       "8659"
+      ],
+      "cands": [
+       "小鹏G9",
+       "小鹏G9L"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "领克07",
+    "rows": 4,
+    "channel": "hold",
+    "candidates": [
+     "领克07 EM-P",
+     "领克07GT"
+    ],
+    "candidate_sids": [
+     "5576",
+     "8562"
+    ],
+    "chan_before": "C_substr",
+    "trademark": "领克牌",
+    "per_cand": [
+     {
+      "name": "领克07",
+      "cand": "领克07",
+      "channel": "C_substr",
+      "sids": [
+       "5576",
+       "8562"
+      ],
+      "cands": [
+       "领克07 EM-P",
+       "领克07GT"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "享境S9,华境S",
+    "rows": 3,
+    "channel": "multi_series_cell",
+    "candidates": [
+     "华境S",
+     "宝骏享境"
+    ],
+    "candidate_sids": [
+     "7826",
+     "8283"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "宝骏牌",
+    "per_cand": [
+     {
+      "name": "享境S9",
+      "cand": "享境S9",
+      "channel": "B_brand",
+      "sids": [
+       "7826"
+      ],
+      "cands": [
+       "宝骏享境"
+      ],
+      "note": "",
+      "suggest": null
+     },
+     {
+      "name": "华境S",
+      "cand": "华境S",
+      "channel": "A_exact",
+      "sids": [
+       "8283"
+      ],
+      "cands": [
+       "华境S"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "岚图FREE,岚图知音",
+    "rows": 3,
+    "channel": "multi_series_cell",
+    "candidates": [
+     "岚图FREE",
+     "岚图知音"
+    ],
+    "candidate_sids": [
+     "5924",
+     "7728"
+    ],
+    "chan_before": "A_exact",
+    "trademark": "岚图牌",
+    "per_cand": [
+     {
+      "name": "岚图FREE",
+      "cand": "岚图FREE",
+      "channel": "A_exact",
+      "sids": [
+       "5924"
+      ],
+      "cands": [
+       "岚图FREE"
+      ],
+      "note": "",
+      "suggest": null
+     },
+     {
+      "name": "岚图知音",
+      "cand": "岚图知音",
+      "channel": "A_exact",
+      "sids": [
+       "7728"
+      ],
+      "cands": [
+       "岚图知音"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "海豹07",
+    "rows": 3,
+    "channel": "hold",
+    "candidates": [
+     "海豹07 DM-i",
+     "海豹07 EV"
+    ],
+    "candidate_sids": [
+     "7822",
+     "8462"
+    ],
+    "chan_before": "C_substr",
+    "trademark": "比亚迪牌",
+    "per_cand": [
+     {
+      "name": "海豹07",
+      "cand": "海豹07",
+      "channel": "C_substr",
+      "sids": [
+       "7822",
+       "8462"
+      ],
+      "cands": [
+       "海豹07 DM-i",
+       "海豹07 EV"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "ET5",
+    "rows": 2,
+    "channel": "hold",
+    "candidates": [
+     "蔚来ET5",
+     "蔚来ET5T"
+    ],
+    "candidate_sids": [
+     "6453",
+     "7306"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "蔚来牌",
+    "per_cand": [
+     {
+      "name": "ET5",
+      "cand": "ET5",
+      "channel": "B_brand",
+      "sids": [
+       "6453",
+       "7306"
+      ],
+      "cands": [
+       "蔚来ET5",
+       "蔚来ET5T"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "EZ-60",
+    "rows": 2,
+    "channel": "hold",
+    "candidates": [
+     "马自达EZ-6",
+     "马自达EZ-60"
+    ],
+    "candidate_sids": [
+     "7692",
+     "7717"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "马自达牌",
+    "per_cand": [
+     {
+      "name": "EZ-60",
+      "cand": "EZ-60",
+      "channel": "B_brand",
+      "sids": [
+       "7692",
+       "7717"
+      ],
+      "cands": [
+       "马自达EZ-6",
+       "马自达EZ-60"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "e-tron",
+    "rows": 2,
+    "channel": "hold",
+    "candidates": [
+     "奥迪A6L e-tron",
+     "奥迪Q4 e-tron",
+     "奥迪Q5 e-tron",
+     "奥迪Q6L Sportback e-tron",
+     "奥迪Q6L e-tron"
+    ],
+    "candidate_sids": [
+     "6336",
+     "6504",
+     "7413",
+     "7936",
+     "8105"
+    ],
+    "chan_before": "C_substr",
+    "trademark": "",
+    "per_cand": [
+     {
+      "name": "e-tron",
+      "cand": "e-tron",
+      "channel": "C_substr",
+      "sids": [
+       "6336",
+       "6504",
+       "7413",
+       "7936",
+       "8105"
+      ],
+      "cands": [
+       "奥迪A6L e-tron",
+       "奥迪Q4 e-tron",
+       "奥迪Q5 e-tron",
+       "奥迪Q6L Sportback e-tron",
+       "奥迪Q6L e-tron"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "五菱缤果Pro",
+    "rows": 2,
+    "channel": "hold",
+    "candidates": [
+     "五菱缤果",
+     "缤果Pro"
+    ],
+    "candidate_sids": [
+     "7045",
+     "8585"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "五菱牌",
+    "per_cand": [
+     {
+      "name": "五菱缤果Pro",
+      "cand": "五菱缤果Pro",
+      "channel": "B_brand",
+      "sids": [
+       "7045",
+       "8585"
+      ],
+      "cands": [
+       "五菱缤果",
+       "缤果Pro"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "悦也",
+    "rows": 2,
+    "channel": "hold",
+    "candidates": [
+     "宝骏悦也",
+     "宝骏悦也Plus"
+    ],
+    "candidate_sids": [
+     "6936",
+     "7574"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "宝骏牌",
+    "per_cand": [
+     {
+      "name": "悦也",
+      "cand": "悦也",
+      "channel": "B_brand",
+      "sids": [
+       "6936",
+       "7574"
+      ],
+      "cands": [
+       "宝骏悦也",
+       "宝骏悦也Plus"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "星海V6,星海V6PLUS",
+    "rows": 2,
+    "channel": "multi_series_cell",
+    "candidates": [
+     "星海V6",
+     "星海V6 PLUS"
+    ],
+    "candidate_sids": [
+     "8600",
+     "8745"
+    ],
+    "chan_before": "A_exact",
+    "trademark": "东风牌",
+    "per_cand": [
+     {
+      "name": "星海V6",
+      "cand": "星海V6",
+      "channel": "A_exact",
+      "sids": [
+       "8600"
+      ],
+      "cands": [
+       "星海V6"
+      ],
+      "note": "",
+      "suggest": null
+     },
+     {
+      "name": "星海V6PLUS",
+      "cand": "星海V6PLUS",
+      "channel": "A_exact",
+      "sids": [
+       "8745"
+      ],
+      "cands": [
+       "星海V6 PLUS"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "星耀、星耀8、银河星耀、银河星耀8",
+    "rows": 2,
+    "channel": "multi_series_cell",
+    "candidates": [
+     "银河星耀6",
+     "银河星耀7",
+     "银河星耀8"
+    ],
+    "candidate_sids": [
+     "8042",
+     "8211",
+     "8313"
+    ],
+    "chan_before": "C_substr",
+    "trademark": "吉利牌",
+    "per_cand": [
+     {
+      "name": "星耀",
+      "cand": "星耀",
+      "channel": "unmatched",
+      "sids": [],
+      "cands": [],
+      "note": "10 个月并集内无匹配",
+      "suggest": null
+     },
+     {
+      "name": "星耀8",
+      "cand": "星耀8",
+      "channel": "unmatched",
+      "sids": [],
+      "cands": [],
+      "note": "10 个月并集内无匹配",
+      "suggest": null
+     },
+     {
+      "name": "银河星耀",
+      "cand": "银河星耀",
+      "channel": "C_substr",
+      "sids": [
+       "8042",
+       "8211",
+       "8313"
+      ],
+      "cands": [
+       "银河星耀6",
+       "银河星耀7",
+       "银河星耀8"
+      ],
+      "note": "",
+      "suggest": null
+     },
+     {
+      "name": "银河星耀8",
+      "cand": "银河星耀8",
+      "channel": "A_exact",
+      "sids": [
+       "8042"
+      ],
+      "cands": [
+       "银河星耀8"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "比亚迪秦PLUS,比亚迪秦L",
+    "rows": 2,
+    "channel": "multi_series_cell",
+    "candidates": [
+     "秦L",
+     "秦PLUS"
+    ],
+    "candidate_sids": [
+     "5964",
+     "7578"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "比亚迪牌",
+    "per_cand": [
+     {
+      "name": "比亚迪秦PLUS",
+      "cand": "比亚迪秦PLUS",
+      "channel": "B_brand",
+      "sids": [
+       "5964"
+      ],
+      "cands": [
+       "秦PLUS"
+      ],
+      "note": "",
+      "suggest": null
+     },
+     {
+      "name": "比亚迪秦L",
+      "cand": "比亚迪秦L",
+      "channel": "B_brand",
+      "sids": [
+       "7578"
+      ],
+      "cands": [
+       "秦L"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "腾势Z9,腾势Z9S",
+    "rows": 2,
+    "channel": "multi_series_cell",
+    "candidates": [
+     "腾势Z9",
+     "腾势Z9S"
+    ],
+    "candidate_sids": [
+     "7838",
+     "8758"
+    ],
+    "chan_before": "A_exact",
+    "trademark": "腾势牌",
+    "per_cand": [
+     {
+      "name": "腾势Z9",
+      "cand": "腾势Z9",
+      "channel": "A_exact",
+      "sids": [
+       "7838"
+      ],
+      "cands": [
+       "腾势Z9"
+      ],
+      "note": "",
+      "suggest": null
+     },
+     {
+      "name": "腾势Z9S",
+      "cand": "腾势Z9S",
+      "channel": "A_exact",
+      "sids": [
+       "8758"
+      ],
+      "cands": [
+       "腾势Z9S"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "追光",
+    "rows": 2,
+    "channel": "hold",
+    "candidates": [
+     "岚图追光",
+     "岚图追光 L",
+     "岚图追光S"
+    ],
+    "candidate_sids": [
+     "6915",
+     "8259",
+     "8534"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "岚图牌",
+    "per_cand": [
+     {
+      "name": "追光",
+      "cand": "追光",
+      "channel": "B_brand",
+      "sids": [
+       "6915",
+       "8259",
+       "8534"
+      ],
+      "cands": [
+       "岚图追光",
+       "岚图追光 L",
+       "岚图追光S"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "阿尔法S",
+    "rows": 2,
+    "channel": "hold",
+    "candidates": [
+     "极狐 阿尔法S",
+     "极狐 阿尔法S5"
+    ],
+    "candidate_sids": [
+     "5824",
+     "7327"
+    ],
+    "chan_before": "C_substr",
+    "trademark": "极狐(ARCFOX)牌",
+    "per_cand": [
+     {
+      "name": "阿尔法S",
+      "cand": "阿尔法S",
+      "channel": "C_substr",
+      "sids": [
+       "5824",
+       "7327"
+      ],
+      "cands": [
+       "极狐 阿尔法S",
+       "极狐 阿尔法S5"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "阿尔法T",
+    "rows": 2,
+    "channel": "hold",
+    "candidates": [
+     "极狐 阿尔法T",
+     "极狐 阿尔法T5",
+     "极狐 阿尔法T7"
+    ],
+    "candidate_sids": [
+     "5590",
+     "7125",
+     "8702"
+    ],
+    "chan_before": "C_substr",
+    "trademark": "极狐(ARCFOX)牌",
+    "per_cand": [
+     {
+      "name": "阿尔法T",
+      "cand": "阿尔法T",
+      "channel": "C_substr",
+      "sids": [
+       "5590",
+       "7125",
+       "8702"
+      ],
+      "cands": [
+       "极狐 阿尔法T",
+       "极狐 阿尔法T5",
+       "极狐 阿尔法T7"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "风云A9,风云A9 L",
+    "rows": 2,
+    "channel": "multi_series_cell",
+    "candidates": [
+     "风云A9",
+     "风云A9L"
+    ],
+    "candidate_sids": [
+     "7225",
+     "7853"
+    ],
+    "chan_before": "A_exact",
+    "trademark": "奇瑞牌",
+    "per_cand": [
+     {
+      "name": "风云A9",
+      "cand": "风云A9",
+      "channel": "A_exact",
+      "sids": [
+       "7853"
+      ],
+      "cands": [
+       "风云A9"
+      ],
+      "note": "",
+      "suggest": null
+     },
+     {
+      "name": "风云A9 L",
+      "cand": "风云A9 L",
+      "channel": "A_exact",
+      "sids": [
+       "7225"
+      ],
+      "cands": [
+       "风云A9L"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "ET5T",
+    "rows": 1,
+    "channel": "hold",
+    "candidates": [
+     "蔚来ET5",
+     "蔚来ET5T"
+    ],
+    "candidate_sids": [
+     "6453",
+     "7306"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "蔚来牌",
+    "per_cand": [
+     {
+      "name": "ET5T",
+      "cand": "ET5T",
+      "channel": "B_brand",
+      "sids": [
+       "6453",
+       "7306"
+      ],
+      "cands": [
+       "蔚来ET5",
+       "蔚来ET5T"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "U8",
+    "rows": 1,
+    "channel": "hold",
+    "candidates": [
+     "仰望U8",
+     "仰望U8 L"
+    ],
+    "candidate_sids": [
+     "7003",
+     "8266"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "仰望牌",
+    "per_cand": [
+     {
+      "name": "U8",
+      "cand": "U8",
+      "channel": "B_brand",
+      "sids": [
+       "7003",
+       "8266"
+      ],
+      "cands": [
+       "仰望U8",
+       "仰望U8 L"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "尚界 Z7 T ULTRA",
+    "rows": 1,
+    "channel": "hold",
+    "candidates": [
+     "尚界Z7",
+     "尚界Z7T"
+    ],
+    "candidate_sids": [
+     "8508",
+     "8554"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "尚界牌",
+    "per_cand": [
+     {
+      "name": "尚界 Z7 T ULTRA",
+      "cand": "尚界 Z7 T ULTRA",
+      "channel": "B_brand",
+      "sids": [
+       "8508",
+       "8554"
+      ],
+      "cands": [
+       "尚界Z7",
+       "尚界Z7T"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "比亚迪汉、比亚迪e9",
+    "rows": 1,
+    "channel": "multi_series_cell",
+    "candidates": [
+     "比亚迪e9",
+     "汉"
+    ],
+    "candidate_sids": [
+     "5499",
+     "5955"
+    ],
+    "chan_before": "B_brand",
+    "trademark": "比亚迪牌",
+    "per_cand": [
+     {
+      "name": "比亚迪汉",
+      "cand": "比亚迪汉",
+      "channel": "B_brand",
+      "sids": [
+       "5499"
+      ],
+      "cands": [
+       "汉"
+      ],
+      "note": "",
+      "suggest": null
+     },
+     {
+      "name": "比亚迪e9",
+      "cand": "比亚迪e9",
+      "channel": "A_exact",
+      "sids": [
+       "5955"
+      ],
+      "cands": [
+       "比亚迪e9"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "羿,羿驰05",
+    "rows": 1,
+    "channel": "multi_series_cell",
+    "candidates": [
+     "羿",
+     "羿驰05"
+    ],
+    "candidate_sids": [
+     "6005",
+     "8017"
+    ],
+    "chan_before": "A_exact",
+    "trademark": "羿驰牌",
+    "per_cand": [
+     {
+      "name": "羿",
+      "cand": "羿",
+      "channel": "A_exact",
+      "sids": [
+       "6005"
+      ],
+      "cands": [
+       "羿"
+      ],
+      "note": "",
+      "suggest": null
+     },
+     {
+      "name": "羿驰05",
+      "cand": "羿驰05",
+      "channel": "A_exact",
+      "sids": [
+       "8017"
+      ],
+      "cands": [
+       "羿驰05"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "雷霆、星海X5、星海T5 PLUS",
+    "rows": 1,
+    "channel": "multi_series_cell",
+    "candidates": [
+     "星海T5",
+     "星海X5"
+    ],
+    "candidate_sids": [
+     "8277",
+     "8457"
+    ],
+    "chan_before": "A_exact",
+    "trademark": "东风牌",
+    "per_cand": [
+     {
+      "name": "雷霆",
+      "cand": "雷霆",
+      "channel": "unmatched",
+      "sids": [],
+      "cands": [],
+      "note": "10 个月并集内无匹配",
+      "suggest": null
+     },
+     {
+      "name": "星海X5",
+      "cand": "星海X5",
+      "channel": "A_exact",
+      "sids": [
+       "8277"
+      ],
+      "cands": [
+       "星海X5"
+      ],
+      "note": "",
+      "suggest": null
+     },
+     {
+      "name": "星海T5 PLUS",
+      "cand": "星海T5 PLUS",
+      "channel": "C_substr",
+      "sids": [
+       "8457"
+      ],
+      "cands": [
+       "星海T5"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   },
+   {
+    "generic": "雷霆、星海X5、星海T5 PLUS、星海T5",
+    "rows": 1,
+    "channel": "multi_series_cell",
+    "candidates": [
+     "星海T5",
+     "星海X5"
+    ],
+    "candidate_sids": [
+     "8277",
+     "8457"
+    ],
+    "chan_before": "A_exact",
+    "trademark": "东风牌",
+    "per_cand": [
+     {
+      "name": "雷霆",
+      "cand": "雷霆",
+      "channel": "unmatched",
+      "sids": [],
+      "cands": [],
+      "note": "10 个月并集内无匹配",
+      "suggest": null
+     },
+     {
+      "name": "星海X5",
+      "cand": "星海X5",
+      "channel": "A_exact",
+      "sids": [
+       "8277"
+      ],
+      "cands": [
+       "星海X5"
+      ],
+      "note": "",
+      "suggest": null
+     },
+     {
+      "name": "星海T5 PLUS",
+      "cand": "星海T5 PLUS",
+      "channel": "C_substr",
+      "sids": [
+       "8457"
+      ],
+      "cands": [
+       "星海T5"
+      ],
+      "note": "",
+      "suggest": null
+     },
+     {
+      "name": "星海T5",
+      "cand": "星海T5",
+      "channel": "A_exact",
+      "sids": [
+       "8457"
+      ],
+      "cands": [
+       "星海T5"
+      ],
+      "note": "",
+      "suggest": null
+     }
+    ]
+   }
+  ],
+  "suggest_decision": {
+   "enabled": false,
+   "decision": "本轮**未启用**通道 D（汽车之家 suggest），保持 --no-suggest（Lead m00878 裁决 3）",
+   "reasons": [
+    "AGENTS 已载两次事故模式：2026-09-17 泛化名撞名跨品牌（E5/ET7/S3/M6/G6/A05）、2026-09-27 代际过滤；suggest 是本项目唯一会引入外部未验证车系名的通道",
+    "已有两条可人工裁决通道：pending_naming（33 条）与 sales_series_anchor_candidates_20261019.json（129 条，逐条证据）",
+    "跑 suggest 会改变已验收的全部数字（match_channel_counts、覆盖率三口径、六类状态），需整体重新验收；收益（最多几十格）不抵风险"
+   ],
+   "consequence": "未锚定的在榜/待锚定车系一律 HOLD，不做推测性补名（保守设计）"
+  },
+  "base_table_sha256": "230dbb96378072902a932f111031ccc3be20d420ac158570b0680eb584d70e41",
+  "dry_run": false,
+  "base_table_columns": 41,
+  "base_table_columns_pre": 41,
+  "base_table_sha256_note": "**落盘后**工作簿 sha256（小写 hex）；base_table_sha256_prewrite 为本次运行读取时的 sha；apply 需带 --expect-sha <prewrite 值>",
+  "suggest_enabled": false,
+  "suggest_calls": 0,
+  "suggest_note": "验收基线要求 `--no-suggest`：suggest_enabled=False 且 suggest_calls=0；若为 True/非 0 则与 Lead 验收基线（matched_rows=2185）不符",
+  "agg_rule": "分类型字段取众数，并列取字典序最小（lexicographic-min）；数值型字段取中位数（剔除空值）；空白值归 `(未定)` 而非 null；统计单元 = 车系（seriesid 去重）",
+  "batch_range": [
+   341,
+   412
+  ],
+  "batch_count": 72,
+  "batch_range_note": "末批 412 为**公示口径**（未正式公告）；交付物封面/说明页引用批次范围时须标注",
+  "base_table_sha256_prewrite": "230dbb96378072902a932f111031ccc3be20d420ac158570b0680eb584d70e41"
+ },
+ "coverage": {
+  "row": {
+   "covered": 2200,
+   "total": 5475,
+   "pct": 40.1826
+  },
+  "series": {
+   "matched": 348,
+   "total": 1305,
+   "pct": 26.6667,
+   "generic_names_matched": 548,
+   "generic_names_total": 1305,
+   "generic_names_pct": 41.9923
+  },
+  "current_board": {
+   "board_series": 411,
+   "linked_series": 282,
+   "pct": 68.6131,
+   "linked_generic_cells": 441,
+   "generic_cells_anchored": 548,
+   "linked_sales": 797701,
+   "board_sales": 1092064,
+   "sales_pct": 73.0453,
+   "definition": "已锚定车系 ∩ 2026-09 新能源榜 / 2026-09 全榜车系数；**对外任何「在售车系覆盖率」主张只准引用本字段**"
+  },
+  "self_consistent_ratio": {
+   "matched": 348,
+   "total": 381,
+   "pct": 91.3386,
+   "generic_names_matched": 548,
+   "generic_names_hold": 33,
+   "generic_names_pct": 94.3201,
+   "definition": "分母（已匹配+命名待锚定）由分子派生，属同义反复，**不是覆盖率**"
+  },
+  "anchored_not_on_board": {
+   "rows": 418,
+   "series": 66,
+   "note": "已锚定车系ID、但该车系不在 2026-09 榜（属 10 个月并集），按口径当期销量留空、不写旧月值不写 0；与『未匹配-已停产或未上量』2,749 行为包含关系（该状态含本类 418 行）"
+  },
+  "status_counts": {
+   "在售-已匹配": 2200,
+   "在售-零销量": 0,
+   "未匹配-命名待锚定": 116,
+   "未匹配-已停产或未上量": 2749,
+   "无车系身份": 410,
+   "未匹配-无车系ID": 0
+  },
+  "buckets": {
+   "无车系身份": 410,
+   "未匹配-已停产或未上量": 2749,
+   "未匹配-命名待锚定": 116,
+   "未匹配-无车系ID": 0
+  },
+  "pending_naming": [
+   [
+    "Q6L",
+    14,
+    [
+     "奥迪Q6L Sportback e-tron",
+     "奥迪Q6L e-tron"
+    ]
+   ],
+   [
+    "P7",
+    12,
+    [
+     "小鹏P7",
+     "小鹏P7+"
+    ]
+   ],
+   [
+    "悦也plus",
+    9,
+    [
+     "宝骏悦也",
+     "宝骏悦也Plus"
+    ]
+   ],
+   [
+    "007GT",
+    8,
+    [
+     "极氪007",
+     "极氪007GT"
+    ]
+   ],
+   [
+    "风神L8",
+    8,
+    [
+     "东风风神L8",
+     "东风风神L8Y"
+    ]
+   ],
+   [
+    "银河A7",
+    6,
+    [
+     "银河A7 EM",
+     "银河A7 EV"
+    ]
+   ],
+   [
+    "五菱缤果S",
+    5,
+    [
+     "五菱缤果",
+     "缤果S"
+    ]
+   ],
+   [
+    "007",
+    4,
+    [
+     "极氪007",
+     "极氪007GT"
+    ]
+   ],
+   [
+    "G9",
+    4,
+    [
+     "小鹏G9",
+     "小鹏G9L"
+    ]
+   ],
+   [
+    "领克07",
+    4,
+    [
+     "领克07 EM-P",
+     "领克07GT"
+    ]
+   ],
+   [
+    "享境S9,华境S",
+    3,
+    [
+     "华境S",
+     "宝骏享境"
+    ]
+   ],
+   [
+    "岚图FREE,岚图知音",
+    3,
+    [
+     "岚图FREE",
+     "岚图知音"
+    ]
+   ],
+   [
+    "海豹07",
+    3,
+    [
+     "海豹07 DM-i",
+     "海豹07 EV"
+    ]
+   ],
+   [
+    "ET5",
+    2,
+    [
+     "蔚来ET5",
+     "蔚来ET5T"
+    ]
+   ],
+   [
+    "EZ-60",
+    2,
+    [
+     "马自达EZ-6",
+     "马自达EZ-60"
+    ]
+   ],
+   [
+    "e-tron",
+    2,
+    [
+     "奥迪A6L e-tron",
+     "奥迪Q4 e-tron",
+     "奥迪Q5 e-tron",
+     "奥迪Q6L Sportback e-tron",
+     "奥迪Q6L e-tron"
+    ]
+   ],
+   [
+    "五菱缤果Pro",
+    2,
+    [
+     "五菱缤果",
+     "缤果Pro"
+    ]
+   ],
+   [
+    "悦也",
+    2,
+    [
+     "宝骏悦也",
+     "宝骏悦也Plus"
+    ]
+   ],
+   [
+    "星海V6,星海V6PLUS",
+    2,
+    [
+     "星海V6",
+     "星海V6 PLUS"
+    ]
+   ],
+   [
+    "星耀、星耀8、银河星耀、银河星耀8",
+    2,
+    [
+     "银河星耀6",
+     "银河星耀7",
+     "银河星耀8"
+    ]
+   ],
+   [
+    "比亚迪秦PLUS,比亚迪秦L",
+    2,
+    [
+     "秦L",
+     "秦PLUS"
+    ]
+   ],
+   [
+    "腾势Z9,腾势Z9S",
+    2,
+    [
+     "腾势Z9",
+     "腾势Z9S"
+    ]
+   ],
+   [
+    "追光",
+    2,
+    [
+     "岚图追光",
+     "岚图追光 L",
+     "岚图追光S"
+    ]
+   ],
+   [
+    "阿尔法S",
+    2,
+    [
+     "极狐 阿尔法S",
+     "极狐 阿尔法S5"
+    ]
+   ],
+   [
+    "阿尔法T",
+    2,
+    [
+     "极狐 阿尔法T",
+     "极狐 阿尔法T5",
+     "极狐 阿尔法T7"
+    ]
+   ],
+   [
+    "风云A9,风云A9 L",
+    2,
+    [
+     "风云A9",
+     "风云A9L"
+    ]
+   ],
+   [
+    "ET5T",
+    1,
+    [
+     "蔚来ET5",
+     "蔚来ET5T"
+    ]
+   ],
+   [
+    "U8",
+    1,
+    [
+     "仰望U8",
+     "仰望U8 L"
+    ]
+   ],
+   [
+    "尚界 Z7 T ULTRA",
+    1,
+    [
+     "尚界Z7",
+     "尚界Z7T"
+    ]
+   ],
+   [
+    "比亚迪汉、比亚迪e9",
+    1,
+    [
+     "比亚迪e9",
+     "汉"
+    ]
+   ],
+   [
+    "羿,羿驰05",
+    1,
+    [
+     "羿",
+     "羿驰05"
+    ]
+   ],
+   [
+    "雷霆、星海X5、星海T5 PLUS",
+    1,
+    [
+     "星海T5",
+     "星海X5"
+    ]
+   ],
+   [
+    "雷霆、星海X5、星海T5 PLUS、星海T5",
+    1,
+    [
+     "星海T5",
+     "星海X5"
+    ]
+   ]
+  ],
+  "definitions": {
+   "row": "已填销量行 / 底表数据行（5,475，实读，非硬编码）",
+   "series": "已匹配独一无二车系数 / (去重通用名称数 − 无车系身份)；当前分子 348，分母 1305",
+   "current_board": "对外唯一在售覆盖率口径：已锚定车系 ∩ 2026-09 在榜 / 2026-09 全榜车系数（411）",
+   "self_consistent_ratio": "自指指标，分母由分子派生 → 非覆盖率，不得对外主张",
+   "buckets": "四类未覆盖行数（= status_counts 后 4 类之和）",
+   "suggest": "通道 D（suggest）本轮**未启用**，属保守设计；未锚定的 129 个在榜车系一律 HOLD，不做推测性补名（Lead m00878 裁决 3）"
+  },
+  "detail": {
+   "generic_names_all": 1317,
+   "generic_names_no_identity": 12,
+   "generic_names_denominator": 1305,
+   "generic_names_anchored": 548,
+   "generic_names_hold": 33,
+   "generic_names_unmatched": 724,
+   "distinct_seriesid_anchored": 348,
+   "pending_naming_total": 33,
+   "pending_naming_shown": 33
+  }
+ },
+ "structure": {
+  "by_segment": [
+   [
+    "SUV-D",
+    164936
+   ],
+   [
+    "SUV-C",
+    149065
+   ],
+   [
+    "Car-C",
+    110419
+   ],
+   [
+    "Car-B",
+    72128
+   ],
+   [
+    "Car-D",
+    66112
+   ],
+   [
+    "Lux SUV-3",
+    54979
+   ],
+   [
+    "SUV-B",
+    47275
+   ],
+   [
+    "Car-A",
+    30587
+   ],
+   [
+    "MPV-D",
+    30083
+   ],
+   [
+    "SUV",
+    20702
+   ],
+   [
+    "Lux Car-3",
+    14949
+   ],
+   [
+    "SUV-E",
+    10891
+   ],
+   [
+    "Lux SUV-4",
+    10539
+   ],
+   [
+    "Car-E",
+    3135
+   ],
+   [
+    "(未定)",
+    2889
+   ],
+   [
+    "Car",
+    2358
+   ],
+   [
+    "MPV-B",
+    2020
+   ],
+   [
+    "MPV",
+    1918
+   ],
+   [
+    "Sports",
+    1688
+   ],
+   [
+    "Lux Car-5",
+    486
+   ],
+   [
+    "Lux SUV",
+    256
+   ],
+   [
+    "Lux Car",
+    143
+   ],
+   [
+    "MPV-C",
+    82
+   ],
+   [
+    "Lux MPV",
+    61
+   ]
+  ],
+  "by_segment_pct": [
+   [
+    "SUV-D",
+    20.6764
+   ],
+   [
+    "SUV-C",
+    18.6868
+   ],
+   [
+    "Car-C",
+    13.8422
+   ],
+   [
+    "Car-B",
+    9.042
+   ],
+   [
+    "Car-D",
+    8.2878
+   ],
+   [
+    "Lux SUV-3",
+    6.8922
+   ],
+   [
+    "SUV-B",
+    5.9264
+   ],
+   [
+    "Car-A",
+    3.8344
+   ],
+   [
+    "MPV-D",
+    3.7712
+   ],
+   [
+    "SUV",
+    2.5952
+   ],
+   [
+    "Lux Car-3",
+    1.874
+   ],
+   [
+    "SUV-E",
+    1.3653
+   ],
+   [
+    "Lux SUV-4",
+    1.3212
+   ],
+   [
+    "Car-E",
+    0.393
+   ],
+   [
+    "(未定)",
+    0.3622
+   ],
+   [
+    "Car",
+    0.2956
+   ],
+   [
+    "MPV-B",
+    0.2532
+   ],
+   [
+    "MPV",
+    0.2404
+   ],
+   [
+    "Sports",
+    0.2116
+   ],
+   [
+    "Lux Car-5",
+    0.0609
+   ],
+   [
+    "Lux SUV",
+    0.0321
+   ],
+   [
+    "Lux Car",
+    0.0179
+   ],
+   [
+    "MPV-C",
+    0.0103
+   ],
+   [
+    "Lux MPV",
+    0.0076
+   ]
+  ],
+  "by_energy": [
+   [
+    "BEV",
+    523457
+   ],
+   [
+    "PHEV",
+    231121
+   ],
+   [
+    "EREV",
+    43123
+   ]
+  ],
+  "by_price": [
+   [
+    "≤10万",
+    152899
+   ],
+   [
+    "10-15万",
+    196371
+   ],
+   [
+    "15-20万",
+    99698
+   ],
+   [
+    "20-30万",
+    182169
+   ],
+   [
+    "30-40万",
+    109144
+   ],
+   [
+    "40万+",
+    56614
+   ]
+  ],
+  "by_price_pct": [
+   [
+    "≤10万",
+    19.1675
+   ],
+   [
+    "10-15万",
+    24.6171
+   ],
+   [
+    "15-20万",
+    12.4982
+   ],
+   [
+    "20-30万",
+    22.8368
+   ],
+   [
+    "30-40万",
+    13.6823
+   ],
+   [
+    "40万+",
+    7.0971
+   ]
+  ],
+  "by_price_coverage": {
+   "binned": 796895,
+   "total": 797701,
+   "pct": 99.899,
+   "uncovered_sales": 806,
+   "uncovered_series": 1,
+   "note": "价格带份额分母统一 = 当月已锚定销量总量；未覆盖 806 辆（0.101%）为无有效指导价车系，未计入任何价格带（Lead m00990 F3）"
+  },
+  "by_oem": [
+   [
+    "比亚迪汽车工业有限公司",
+    203342
+   ],
+   [
+    "浙江吉利汽车有限公司",
+    84222
+   ],
+   [
+    "零跑汽车有限公司",
+    66257
+   ],
+   [
+    "特斯拉(上海)有限公司",
+    64837
+   ],
+   [
+    "上海汽车集团股份有限公司",
+    47067
+   ],
+   [
+    "(未定)",
+    41542
+   ],
+   [
+    "小米汽车科技有限公司",
+    40015
+   ],
+   [
+    "北京理想汽车有限公司",
+    31817
+   ],
+   [
+    "上汽通用五菱汽车股份有限公司",
+    31165
+   ],
+   [
+    "中国第一汽车集团有限公司",
+    23306
+   ],
+   [
+    "赛力斯汽车有限公司",
+    22612
+   ],
+   [
+    "长城汽车股份有限公司",
+    18674
+   ],
+   [
+    "安徽江淮汽车集团股份有限公司",
+    14813
+   ],
+   [
+    "奇瑞汽车股份有限公司",
+    11706
+   ],
+   [
+    "广州小鹏汽车科技有限公司",
+    10229
+   ],
+   [
+    "上汽大众汽车有限公司",
+    8759
+   ],
+   [
+    "东风汽车有限公司",
+    8083
+   ],
+   [
+    "浙江极氪智能科技有限公司",
+    8000
+   ],
+   [
+    "广汽乘用车有限公司",
+    6356
+   ],
+   [
+    "蔚来汽车科技（安徽）有限公司",
+    5839
+   ],
+   [
+    "奇瑞新能源汽车股份有限公司",
+    5796
+   ],
+   [
+    "比亚迪汽车有限公司",
+    5611
+   ],
+   [
+    "东风汽车集团有限公司",
+    5346
+   ],
+   [
+    "上汽通用汽车有限公司",
+    4951
+   ],
+   [
+    "浙江豪情汽车制造有限公司",
+    4802
+   ],
+   [
+    "浙江吉利控股集团有限公司",
+    4228
+   ],
+   [
+    "重庆长安汽车股份有限公司",
+    3619
+   ],
+   [
+    "肇庆小鹏新能源投资有限公司",
+    2817
+   ],
+   [
+    "东风柳州汽车有限公司",
+    1693
+   ],
+   [
+    "大众汽车（安徽）有限公司",
+    1651
+   ],
+   [
+    "北京新能源汽车股份有限公司",
+    1567
+   ],
+   [
+    "华晨鑫源重庆汽车有限公司",
+    1164
+   ],
+   [
+    "宜宾凯翼汽车有限公司",
+    1117
+   ],
+   [
+    "赛力斯汽车(湖北)有限公司",
+    1042
+   ],
+   [
+    "岚图汽车科技有限公司",
+    653
+   ],
+   [
+    "广汽埃安新能源汽车股份有限公司",
+    589
+   ],
+   [
+    "神龙汽车有限公司",
+    500
+   ],
+   [
+    "奥迪一汽新能源汽车有限公司",
+    312
+   ],
+   [
+    "江苏吉麦新能源车业有限公司",
+    279
+   ],
+   [
+    "江西江铃集团新能源汽车有限公司",
+    279
+   ],
+   [
+    "赛力斯汽车（湖北）有限公司",
+    214
+   ],
+   [
+    "一汽-大众汽车有限公司",
+    211
+   ],
+   [
+    "上汽大通汽车有限公司",
+    207
+   ],
+   [
+    "北京汽车股份有限公司",
+    145
+   ],
+   [
+    "广汽本田汽车有限公司",
+    67
+   ],
+   [
+    "南京金龙客车制造有限公司",
+    60
+   ],
+   [
+    "河北长安汽车有限公司",
+    57
+   ],
+   [
+    "亚欧汽车制造(台州)有限公司",
+    28
+   ],
+   [
+    "北京现代汽车有限公司",
+    28
+   ],
+   [
+    "东风小康汽车有限公司",
+    11
+   ],
+   [
+    "北京汽车制造厂有限公司",
+    7
+   ],
+   [
+    "东风本田汽车有限公司",
+    4
+   ],
+   [
+    "江苏悦达起亚汽车有限公司",
+    3
+   ],
+   [
+    "北京奔驰汽车有限公司",
+    2
+   ]
+  ],
+  "by_brand": [
+   [
+    "比亚迪",
+    166758
+   ],
+   [
+    "吉利",
+    79002
+   ],
+   [
+    "零跑",
+    66257
+   ],
+   [
+    "特斯拉",
+    64837
+   ],
+   [
+    "小米",
+    40015
+   ],
+   [
+    "方程豹",
+    37044
+   ],
+   [
+    "理想",
+    31817
+   ],
+   [
+    "名爵",
+    31548
+   ],
+   [
+    "五菱",
+    30825
+   ],
+   [
+    "奇瑞",
+    18918
+   ],
+   [
+    "极氪",
+    17210
+   ],
+   [
+    "一汽",
+    15481
+   ],
+   [
+    "腾势",
+    14324
+   ],
+   [
+    "赛力斯",
+    13961
+   ],
+   [
+    "小鹏",
+    13046
+   ],
+   [
+    "领克",
+    12257
+   ],
+   [
+    "蔚来",
+    12046
+   ],
+   [
+    "岚图",
+    10045
+   ],
+   [
+    "长城",
+    9127
+   ],
+   [
+    "大众(VOLKSWAGEN)",
+    8922
+   ],
+   [
+    "问界",
+    8651
+   ],
+   [
+    "红旗",
+    7825
+   ],
+   [
+    "智己",
+    6810
+   ],
+   [
+    "乐道",
+    5839
+   ],
+   [
+    "尚界",
+    5741
+   ],
+   [
+    "东风日产",
+    5493
+   ],
+   [
+    "捷途",
+    4982
+   ],
+   [
+    "别克",
+    4951
+   ],
+   [
+    "东风",
+    4915
+   ],
+   [
+    "智界",
+    4602
+   ],
+   [
+    "哈弗",
+    4357
+   ],
+   [
+    "埃安(AION)",
+    4341
+   ],
+   [
+    "魏",
+    3740
+   ],
+   [
+    "传祺(Trumpchi)",
+    3694
+   ],
+   [
+    "长安",
+    3638
+   ],
+   [
+    "精灵(smart)",
+    3065
+   ],
+   [
+    "荣威",
+    2718
+   ],
+   [
+    "江淮",
+    2585
+   ],
+   [
+    "沃尔沃",
+    1843
+   ],
+   [
+    "欧拉",
+    1450
+   ],
+   [
+    "大众",
+    1399
+   ],
+   [
+    "iCAR",
+    1368
+   ],
+   [
+    "金杯",
+    1164
+   ],
+   [
+    "凯翼",
+    1117
+   ],
+   [
+    "(未定)",
+    1042
+   ],
+   [
+    "享界",
+    1000
+   ],
+   [
+    "昊铂",
+    589
+   ],
+   [
+    "启辰",
+    537
+   ],
+   [
+    "富康",
+    500
+   ],
+   [
+    "猛士",
+    417
+   ],
+   [
+    "华彰",
+    392
+   ],
+   [
+    "宝骏",
+    340
+   ],
+   [
+    "奥迪",
+    312
+   ],
+   [
+    "奥迪(AUDI)",
+    300
+   ],
+   [
+    "凌宝",
+    279
+   ],
+   [
+    "睿蓝",
+    266
+   ],
+   [
+    "飞凡",
+    250
+   ],
+   [
+    "羿驰",
+    240
+   ],
+   [
+    "赛力斯蓝电",
+    214
+   ],
+   [
+    "大通",
+    207
+   ],
+   [
+    "星途",
+    196
+   ],
+   [
+    "瑞风",
+    182
+   ],
+   [
+    "极狐",
+    175
+   ],
+   [
+    "锐胜",
+    145
+   ],
+   [
+    "仰望",
+    137
+   ],
+   [
+    "本田(HONDA)",
+    67
+   ],
+   [
+    "开沃",
+    51
+   ],
+   [
+    "易至",
+    39
+   ],
+   [
+    "阿维塔（AVATR）",
+    38
+   ],
+   [
+    "北京现代",
+    28
+   ],
+   [
+    "创维",
+    9
+   ],
+   [
+    "极石",
+    7
+   ],
+   [
+    "翼真",
+    5
+   ],
+   [
+    "灵悉",
+    4
+   ],
+   [
+    "起亚",
+    3
+   ],
+   [
+    "梅赛德斯-奔驰(Mercedes-Ben...",
+    2
+   ]
+  ],
+  "sales_total_dedup": 797701,
+  "sales_total_rowlevel_naive": 9376779,
+  "unit": "车系",
+  "dedup_rule": "先按 seriesid 建车系记录（数值型取中位数 median、分类型取众数 mode），再对车系记录聚合销量；同车系多行不重复计数",
+  "universe": "已锚定车系（seriesid ∈ 2026-09 新能源榜，且通用名称可锚定到底表）",
+  "series_count": 282,
+  "series_count_onsale": 282,
+  "board_sales_total": 1092064,
+  "board_series_count": 411,
+  "linked_share_of_board_pct": 73.0453,
+  "duplication_ratio": 11.7548,
+  "by_price_board": [
+   [
+    "≤10万",
+    245911
+   ],
+   [
+    "10-15万",
+    315222
+   ],
+   [
+    "15-20万",
+    134419
+   ],
+   [
+    "20-30万",
+    211655
+   ],
+   [
+    "30-40万",
+    116382
+   ],
+   [
+    "40万+",
+    67669
+   ]
+  ],
+  "by_price_board_pct": [
+   [
+    "≤10万",
+    22.518
+   ],
+   [
+    "10-15万",
+    28.8648
+   ],
+   [
+    "15-20万",
+    12.3087
+   ],
+   [
+    "20-30万",
+    19.3812
+   ],
+   [
+    "30-40万",
+    10.6571
+   ],
+   [
+    "40万+",
+    6.1964
+   ]
+  ],
+  "by_energy_board": null,
+  "agg_rule": "分类型字段：众数（mode），并列取字典序最小（lexicographic-min）；数值型字段：中位数（median，剔除空值后计算）；空白值归 `(未定)` 而非 null；统计单元 = 车系（seriesid 去重）",
+  "oem_tiebreak": "lexicographic-min",
+  "energy_rule": "全库动力三分一律 **R1**：行级标签 = EREV（`是否增程(EREV)` 列取真值）否则 BEV（`动力类型` 含 BEV）否则 PHEV；车系级 = 行级标签众数（并列取字典序最小）。`by_energy` 与 `trend.monthly` **同源同规则**；旧 R2（任一行为增程→整系 EREV）已废弃，仅留 `trend.monthly_prev_r2` 审计对照（Lead m00806/m00990 F1）",
+  "share_denominator_rule": "全篇份额（动力/品牌/企业/价格带/细分市场）分母统一 = **当月已锚定销量**（structure 用 2026-09 的 linked_total=797,701）；价格带未覆盖部分为无有效指导价车系，不计入任何价格带（Lead m00990 F3）",
+  "segment_rule": "车系级 `细分市场` = 该车系行值的众数（值先 strip，去空白变体）；行值全为空 → 该车系 segment=None → 归入 `(未定)` 桶；`(未定)` 是显式桶，计入 by_segment 的 n",
+  "segment_empty_rule": "空值归入 `(未定)` 桶（不计入任何具体细分市场）；by_segment 的 n 含 `(未定)`",
+  "tech_agg_rule": "数值型字段先按行取中位数（剔除空值）得到车系值；加权均值分母 = 该字段非空的已锚定车系数（sample_n.weighted）；等权均值分母同",
+  "mixed_energy_families": {
+   "series": 74,
+   "sales": 258134,
+   "pct_of_linked": 32.3597,
+   "items": [
+    {
+     "车系": "钛7",
+     "销量": 27544,
+     "占比": 3.4529,
+     "行级标签计数": {
+      "BEV": 3,
+      "PHEV": 15
+     }
+    },
+    {
+     "车系": "宋Ultra",
+     "销量": 17131,
+     "占比": 2.1475,
+     "行级标签计数": {
+      "BEV": 5,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "海狮06",
+     "销量": 14821,
+     "占比": 1.858,
+     "行级标签计数": {
+      "BEV": 9,
+      "PHEV": 9
+     }
+    },
+    {
+     "车系": "MG 07",
+     "销量": 14577,
+     "占比": 1.8274,
+     "行级标签计数": {
+      "BEV": 1,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "海豹06",
+     "销量": 14479,
+     "占比": 1.8151,
+     "行级标签计数": {
+      "BEV": 5,
+      "PHEV": 17
+     }
+    },
+    {
+     "车系": "大唐",
+     "销量": 10997,
+     "占比": 1.3786,
+     "行级标签计数": {
+      "BEV": 3,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "秦PLUS",
+     "销量": 10652,
+     "占比": 1.3353,
+     "行级标签计数": {
+      "BEV": 12,
+      "PHEV": 21
+     }
+    },
+    {
+     "车系": "问界M9",
+     "销量": 10262,
+     "占比": 1.2864,
+     "行级标签计数": {
+      "BEV": 5,
+      "EREV": 5,
+      "PHEV": 6
+     }
+    },
+    {
+     "车系": "零跑C10",
+     "销量": 10103,
+     "占比": 1.2665,
+     "行级标签计数": {
+      "BEV": 11,
+      "EREV": 4
+     }
+    },
+    {
+     "车系": "问界M6",
+     "销量": 8651,
+     "占比": 1.0845,
+     "行级标签计数": {
+      "BEV": 4,
+      "EREV": 3
+     }
+    },
+    {
+     "车系": "海豹08",
+     "销量": 7789,
+     "占比": 0.9764,
+     "行级标签计数": {
+      "BEV": 3,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "小鹏GX",
+     "销量": 6780,
+     "占比": 0.8499,
+     "行级标签计数": {
+      "BEV": 3,
+      "PHEV": 3
+     }
+    },
+    {
+     "车系": "风云A9",
+     "销量": 6393,
+     "占比": 0.8014,
+     "行级标签计数": {
+      "BEV": 1,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "零跑C16",
+     "销量": 6146,
+     "占比": 0.7705,
+     "行级标签计数": {
+      "BEV": 11,
+      "EREV": 5,
+      "PHEV": 3
+     }
+    },
+    {
+     "车系": "秦MAX",
+     "销量": 5869,
+     "占比": 0.7357,
+     "行级标签计数": {
+      "BEV": 3,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "极氪7X",
+     "销量": 5544,
+     "占比": 0.695,
+     "行级标签计数": {
+      "BEV": 14,
+      "EREV": 2
+     }
+    },
+    {
+     "车系": "极氪9X",
+     "销量": 5175,
+     "占比": 0.6487,
+     "行级标签计数": {
+      "BEV": 2,
+      "PHEV": 12
+     }
+    },
+    {
+     "车系": "银河星舰7",
+     "销量": 5083,
+     "占比": 0.6372,
+     "行级标签计数": {
+      "BEV": 4,
+      "PHEV": 18
+     }
+    },
+    {
+     "车系": "腾势D9",
+     "销量": 5056,
+     "占比": 0.6338,
+     "行级标签计数": {
+      "BEV": 5,
+      "PHEV": 15
+     }
+    },
+    {
+     "车系": "零跑C11",
+     "销量": 4341,
+     "占比": 0.5442,
+     "行级标签计数": {
+      "BEV": 21,
+      "EREV": 9,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "领克10",
+     "销量": 4228,
+     "占比": 0.53,
+     "行级标签计数": {
+      "BEV": 3,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "腾势N8L",
+     "销量": 4045,
+     "占比": 0.5071,
+     "行级标签计数": {
+      "BEV": 2,
+      "PHEV": 9
+     }
+    },
+    {
+     "车系": "秦L",
+     "销量": 3873,
+     "占比": 0.4855,
+     "行级标签计数": {
+      "BEV": 2,
+      "PHEV": 10
+     }
+    },
+    {
+     "车系": "智己LS6",
+     "销量": 3490,
+     "占比": 0.4375,
+     "行级标签计数": {
+      "BEV": 14,
+      "PHEV": 7
+     }
+    },
+    {
+     "车系": "腾势Z9GT",
+     "销量": 3135,
+     "占比": 0.393,
+     "行级标签计数": {
+      "BEV": 4,
+      "PHEV": 3
+     }
+    },
+    {
+     "车系": "零跑D19",
+     "销量": 3018,
+     "占比": 0.3783,
+     "行级标签计数": {
+      "BEV": 3,
+      "PHEV": 3
+     }
+    },
+    {
+     "车系": "星光730新能源",
+     "销量": 2875,
+     "占比": 0.3604,
+     "行级标签计数": {
+      "BEV": 1,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "岚图梦想家",
+     "销量": 2791,
+     "占比": 0.3499,
+     "行级标签计数": {
+      "BEV": 9,
+      "PHEV": 8
+     }
+    },
+    {
+     "车系": "日产NX8",
+     "销量": 2695,
+     "占比": 0.3378,
+     "行级标签计数": {
+      "BEV": 2,
+      "PHEV": 4
+     }
+    },
+    {
+     "车系": "汉",
+     "销量": 2465,
+     "占比": 0.309,
+     "行级标签计数": {
+      "BEV": 10,
+      "PHEV": 14
+     }
+    },
+    {
+     "车系": "问界M7",
+     "销量": 2400,
+     "占比": 0.3009,
+     "行级标签计数": {
+      "BEV": 2,
+      "EREV": 23
+     }
+    },
+    {
+     "车系": "理想L9",
+     "销量": 2386,
+     "占比": 0.2991,
+     "行级标签计数": {
+      "EREV": 7,
+      "PHEV": 1
+     }
+    },
+    {
+     "车系": "五菱宏光新能源",
+     "销量": 2339,
+     "占比": 0.2932,
+     "行级标签计数": {
+      "BEV": 2,
+      "EREV": 2
+     }
+    },
+    {
+     "车系": "小鹏P7+",
+     "销量": 2132,
+     "占比": 0.2673,
+     "行级标签计数": {
+      "BEV": 5,
+      "PHEV": 3
+     }
+    },
+    {
+     "车系": "银河星耀8",
+     "销量": 1976,
+     "占比": 0.2477,
+     "行级标签计数": {
+      "BEV": 2,
+      "PHEV": 6
+     }
+    },
+    {
+     "车系": "尚界H5",
+     "销量": 1688,
+     "占比": 0.2116,
+     "行级标签计数": {
+      "EREV": 2,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "智己L6",
+     "销量": 1534,
+     "占比": 0.1923,
+     "行级标签计数": {
+      "BEV": 9,
+      "PHEV": 3
+     }
+    },
+    {
+     "车系": "问界M8",
+     "销量": 1216,
+     "占比": 0.1524,
+     "行级标签计数": {
+      "BEV": 6,
+      "EREV": 5,
+      "PHEV": 11
+     }
+    },
+    {
+     "车系": "小鹏G9L",
+     "销量": 1100,
+     "占比": 0.1379,
+     "行级标签计数": {
+      "BEV": 4,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "奕派M8",
+     "销量": 1087,
+     "占比": 0.1363,
+     "行级标签计数": {
+      "BEV": 1,
+      "PHEV": 1
+     }
+    },
+    {
+     "车系": "唐新能源",
+     "销量": 989,
+     "占比": 0.124,
+     "行级标签计数": {
+      "BEV": 11,
+      "PHEV": 14
+     }
+    },
+    {
+     "车系": "海狮08",
+     "销量": 857,
+     "占比": 0.1074,
+     "行级标签计数": {
+      "BEV": 3,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "小鹏X9",
+     "销量": 805,
+     "占比": 0.1009,
+     "行级标签计数": {
+      "BEV": 9,
+      "PHEV": 3
+     }
+    },
+    {
+     "车系": "悦意08",
+     "销量": 778,
+     "占比": 0.0975,
+     "行级标签计数": {
+      "BEV": 1,
+      "EREV": 3
+     }
+    },
+    {
+     "车系": "享界S9T",
+     "销量": 766,
+     "占比": 0.096,
+     "行级标签计数": {
+      "BEV": 4,
+      "EREV": 2
+     }
+    },
+    {
+     "车系": "小鹏G7",
+     "销量": 520,
+     "占比": 0.0652,
+     "行级标签计数": {
+      "BEV": 2,
+      "PHEV": 1
+     }
+    },
+    {
+     "车系": "尊界S800",
+     "销量": 486,
+     "占比": 0.0609,
+     "行级标签计数": {
+      "BEV": 3,
+      "PHEV": 4
+     }
+    },
+    {
+     "车系": "eπ007",
+     "销量": 476,
+     "占比": 0.0597,
+     "行级标签计数": {
+      "BEV": 7,
+      "EREV": 3,
+      "PHEV": 5
+     }
+    },
+    {
+     "车系": "智界R7",
+     "销量": 467,
+     "占比": 0.0585,
+     "行级标签计数": {
+      "BEV": 10,
+      "EREV": 1,
+      "PHEV": 4
+     }
+    },
+    {
+     "车系": "eπ008",
+     "销量": 451,
+     "占比": 0.0565,
+     "行级标签计数": {
+      "BEV": 2,
+      "EREV": 3
+     }
+    },
+    {
+     "车系": "smart精灵#5",
+     "销量": 417,
+     "占比": 0.0523,
+     "行级标签计数": {
+      "BEV": 7,
+      "PHEV": 1
+     }
+    },
+    {
+     "车系": "五菱星光",
+     "销量": 399,
+     "占比": 0.05,
+     "行级标签计数": {
+      "BEV": 5,
+      "PHEV": 8
+     }
+    },
+    {
+     "车系": "享界S9",
+     "销量": 392,
+     "占比": 0.0491,
+     "行级标签计数": {
+      "BEV": 7,
+      "PHEV": 12
+     }
+    },
+    {
+     "车系": "荣威D7",
+     "销量": 305,
+     "占比": 0.0382,
+     "行级标签计数": {
+      "BEV": 6,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "宝骏云海",
+     "销量": 296,
+     "占比": 0.0371,
+     "行级标签计数": {
+      "BEV": 2,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "小鹏G6",
+     "销量": 257,
+     "占比": 0.0322,
+     "行级标签计数": {
+      "BEV": 8,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "昊铂S600",
+     "销量": 250,
+     "占比": 0.0313,
+     "行级标签计数": {
+      "BEV": 2,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "理想L7",
+     "销量": 200,
+     "占比": 0.0251,
+     "行级标签计数": {
+      "BEV": 1,
+      "EREV": 12
+     }
+    },
+    {
+     "车系": "汉L",
+     "销量": 176,
+     "占比": 0.0221,
+     "行级标签计数": {
+      "BEV": 1,
+      "PHEV": 3
+     }
+    },
+    {
+     "车系": "极狐问道V9",
+     "销量": 175,
+     "占比": 0.0219,
+     "行级标签计数": {
+      "BEV": 1,
+      "PHEV": 1
+     }
+    },
+    {
+     "车系": "锐胜M8新能源",
+     "销量": 145,
+     "占比": 0.0182,
+     "行级标签计数": {
+      "BEV": 9,
+      "EREV": 3
+     }
+    },
+    {
+     "车系": "仰望U7",
+     "销量": 136,
+     "占比": 0.017,
+     "行级标签计数": {
+      "BEV": 4,
+      "PHEV": 5
+     }
+    },
+    {
+     "车系": "深蓝G318",
+     "销量": 99,
+     "占比": 0.0124,
+     "行级标签计数": {
+      "EREV": 4,
+      "PHEV": 8
+     }
+    },
+    {
+     "车系": "问界M5",
+     "销量": 83,
+     "占比": 0.0104,
+     "行级标签计数": {
+      "BEV": 2,
+      "EREV": 10
+     }
+    },
+    {
+     "车系": "星海S7",
+     "销量": 63,
+     "占比": 0.0079,
+     "行级标签计数": {
+      "BEV": 5,
+      "EREV": 1
+     }
+    },
+    {
+     "车系": "唐L",
+     "销量": 61,
+     "占比": 0.0076,
+     "行级标签计数": {
+      "BEV": 3,
+      "PHEV": 4
+     }
+    },
+    {
+     "车系": "昊铂HL",
+     "销量": 55,
+     "占比": 0.0069,
+     "行级标签计数": {
+      "BEV": 4,
+      "PHEV": 1
+     }
+    },
+    {
+     "车系": "五菱星光S",
+     "销量": 54,
+     "占比": 0.0068,
+     "行级标签计数": {
+      "BEV": 2,
+      "PHEV": 5
+     }
+    },
+    {
+     "车系": "荣威iMAX8新能源",
+     "销量": 46,
+     "占比": 0.0058,
+     "行级标签计数": {
+      "BEV": 1,
+      "PHEV": 3
+     }
+    },
+    {
+     "车系": "海豹",
+     "销量": 32,
+     "占比": 0.004,
+     "行级标签计数": {
+      "BEV": 8,
+      "PHEV": 3
+     }
+    },
+    {
+     "车系": "岚图FREE",
+     "销量": 14,
+     "占比": 0.0018,
+     "行级标签计数": {
+      "BEV": 3,
+      "EREV": 7,
+      "PHEV": 9
+     }
+    },
+    {
+     "车系": "宋PLUS新能源",
+     "销量": 7,
+     "占比": 0.0009,
+     "行级标签计数": {
+      "BEV": 5,
+      "PHEV": 25
+     }
+    },
+    {
+     "车系": "深蓝SL03",
+     "销量": 7,
+     "占比": 0.0009,
+     "行级标签计数": {
+      "BEV": 6,
+      "EREV": 2,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "领克06 EM-P",
+     "销量": 4,
+     "占比": 0.0005,
+     "行级标签计数": {
+      "BEV": 2,
+      "PHEV": 3
+     }
+    }
+   ],
+   "list": [
+    [
+     "钛7",
+     27544,
+     3.4529,
+     {
+      "BEV": 3,
+      "PHEV": 15
+     }
+    ],
+    [
+     "宋Ultra",
+     17131,
+     2.1475,
+     {
+      "BEV": 5,
+      "PHEV": 2
+     }
+    ],
+    [
+     "海狮06",
+     14821,
+     1.858,
+     {
+      "BEV": 9,
+      "PHEV": 9
+     }
+    ],
+    [
+     "MG 07",
+     14577,
+     1.8274,
+     {
+      "BEV": 1,
+      "PHEV": 2
+     }
+    ],
+    [
+     "海豹06",
+     14479,
+     1.8151,
+     {
+      "BEV": 5,
+      "PHEV": 17
+     }
+    ],
+    [
+     "大唐",
+     10997,
+     1.3786,
+     {
+      "BEV": 3,
+      "PHEV": 2
+     }
+    ],
+    [
+     "秦PLUS",
+     10652,
+     1.3353,
+     {
+      "BEV": 12,
+      "PHEV": 21
+     }
+    ],
+    [
+     "问界M9",
+     10262,
+     1.2864,
+     {
+      "BEV": 5,
+      "EREV": 5,
+      "PHEV": 6
+     }
+    ],
+    [
+     "零跑C10",
+     10103,
+     1.2665,
+     {
+      "BEV": 11,
+      "EREV": 4
+     }
+    ],
+    [
+     "问界M6",
+     8651,
+     1.0845,
+     {
+      "BEV": 4,
+      "EREV": 3
+     }
+    ],
+    [
+     "海豹08",
+     7789,
+     0.9764,
+     {
+      "BEV": 3,
+      "PHEV": 2
+     }
+    ],
+    [
+     "小鹏GX",
+     6780,
+     0.8499,
+     {
+      "BEV": 3,
+      "PHEV": 3
+     }
+    ],
+    [
+     "风云A9",
+     6393,
+     0.8014,
+     {
+      "BEV": 1,
+      "PHEV": 2
+     }
+    ],
+    [
+     "零跑C16",
+     6146,
+     0.7705,
+     {
+      "BEV": 11,
+      "EREV": 5,
+      "PHEV": 3
+     }
+    ],
+    [
+     "秦MAX",
+     5869,
+     0.7357,
+     {
+      "BEV": 3,
+      "PHEV": 2
+     }
+    ],
+    [
+     "极氪7X",
+     5544,
+     0.695,
+     {
+      "BEV": 14,
+      "EREV": 2
+     }
+    ],
+    [
+     "极氪9X",
+     5175,
+     0.6487,
+     {
+      "BEV": 2,
+      "PHEV": 12
+     }
+    ],
+    [
+     "银河星舰7",
+     5083,
+     0.6372,
+     {
+      "BEV": 4,
+      "PHEV": 18
+     }
+    ],
+    [
+     "腾势D9",
+     5056,
+     0.6338,
+     {
+      "BEV": 5,
+      "PHEV": 15
+     }
+    ],
+    [
+     "零跑C11",
+     4341,
+     0.5442,
+     {
+      "BEV": 21,
+      "EREV": 9,
+      "PHEV": 2
+     }
+    ],
+    [
+     "领克10",
+     4228,
+     0.53,
+     {
+      "BEV": 3,
+      "PHEV": 2
+     }
+    ],
+    [
+     "腾势N8L",
+     4045,
+     0.5071,
+     {
+      "BEV": 2,
+      "PHEV": 9
+     }
+    ],
+    [
+     "秦L",
+     3873,
+     0.4855,
+     {
+      "BEV": 2,
+      "PHEV": 10
+     }
+    ],
+    [
+     "智己LS6",
+     3490,
+     0.4375,
+     {
+      "BEV": 14,
+      "PHEV": 7
+     }
+    ],
+    [
+     "腾势Z9GT",
+     3135,
+     0.393,
+     {
+      "BEV": 4,
+      "PHEV": 3
+     }
+    ],
+    [
+     "零跑D19",
+     3018,
+     0.3783,
+     {
+      "BEV": 3,
+      "PHEV": 3
+     }
+    ],
+    [
+     "星光730新能源",
+     2875,
+     0.3604,
+     {
+      "BEV": 1,
+      "PHEV": 2
+     }
+    ],
+    [
+     "岚图梦想家",
+     2791,
+     0.3499,
+     {
+      "BEV": 9,
+      "PHEV": 8
+     }
+    ],
+    [
+     "日产NX8",
+     2695,
+     0.3378,
+     {
+      "BEV": 2,
+      "PHEV": 4
+     }
+    ],
+    [
+     "汉",
+     2465,
+     0.309,
+     {
+      "BEV": 10,
+      "PHEV": 14
+     }
+    ],
+    [
+     "问界M7",
+     2400,
+     0.3009,
+     {
+      "BEV": 2,
+      "EREV": 23
+     }
+    ],
+    [
+     "理想L9",
+     2386,
+     0.2991,
+     {
+      "EREV": 7,
+      "PHEV": 1
+     }
+    ],
+    [
+     "五菱宏光新能源",
+     2339,
+     0.2932,
+     {
+      "BEV": 2,
+      "EREV": 2
+     }
+    ],
+    [
+     "小鹏P7+",
+     2132,
+     0.2673,
+     {
+      "BEV": 5,
+      "PHEV": 3
+     }
+    ],
+    [
+     "银河星耀8",
+     1976,
+     0.2477,
+     {
+      "BEV": 2,
+      "PHEV": 6
+     }
+    ],
+    [
+     "尚界H5",
+     1688,
+     0.2116,
+     {
+      "EREV": 2,
+      "PHEV": 2
+     }
+    ],
+    [
+     "智己L6",
+     1534,
+     0.1923,
+     {
+      "BEV": 9,
+      "PHEV": 3
+     }
+    ],
+    [
+     "问界M8",
+     1216,
+     0.1524,
+     {
+      "BEV": 6,
+      "EREV": 5,
+      "PHEV": 11
+     }
+    ],
+    [
+     "小鹏G9L",
+     1100,
+     0.1379,
+     {
+      "BEV": 4,
+      "PHEV": 2
+     }
+    ],
+    [
+     "奕派M8",
+     1087,
+     0.1363,
+     {
+      "BEV": 1,
+      "PHEV": 1
+     }
+    ],
+    [
+     "唐新能源",
+     989,
+     0.124,
+     {
+      "BEV": 11,
+      "PHEV": 14
+     }
+    ],
+    [
+     "海狮08",
+     857,
+     0.1074,
+     {
+      "BEV": 3,
+      "PHEV": 2
+     }
+    ],
+    [
+     "小鹏X9",
+     805,
+     0.1009,
+     {
+      "BEV": 9,
+      "PHEV": 3
+     }
+    ],
+    [
+     "悦意08",
+     778,
+     0.0975,
+     {
+      "BEV": 1,
+      "EREV": 3
+     }
+    ],
+    [
+     "享界S9T",
+     766,
+     0.096,
+     {
+      "BEV": 4,
+      "EREV": 2
+     }
+    ],
+    [
+     "小鹏G7",
+     520,
+     0.0652,
+     {
+      "BEV": 2,
+      "PHEV": 1
+     }
+    ],
+    [
+     "尊界S800",
+     486,
+     0.0609,
+     {
+      "BEV": 3,
+      "PHEV": 4
+     }
+    ],
+    [
+     "eπ007",
+     476,
+     0.0597,
+     {
+      "BEV": 7,
+      "EREV": 3,
+      "PHEV": 5
+     }
+    ],
+    [
+     "智界R7",
+     467,
+     0.0585,
+     {
+      "BEV": 10,
+      "EREV": 1,
+      "PHEV": 4
+     }
+    ],
+    [
+     "eπ008",
+     451,
+     0.0565,
+     {
+      "BEV": 2,
+      "EREV": 3
+     }
+    ],
+    [
+     "smart精灵#5",
+     417,
+     0.0523,
+     {
+      "BEV": 7,
+      "PHEV": 1
+     }
+    ],
+    [
+     "五菱星光",
+     399,
+     0.05,
+     {
+      "BEV": 5,
+      "PHEV": 8
+     }
+    ],
+    [
+     "享界S9",
+     392,
+     0.0491,
+     {
+      "BEV": 7,
+      "PHEV": 12
+     }
+    ],
+    [
+     "荣威D7",
+     305,
+     0.0382,
+     {
+      "BEV": 6,
+      "PHEV": 2
+     }
+    ],
+    [
+     "宝骏云海",
+     296,
+     0.0371,
+     {
+      "BEV": 2,
+      "PHEV": 2
+     }
+    ],
+    [
+     "小鹏G6",
+     257,
+     0.0322,
+     {
+      "BEV": 8,
+      "PHEV": 2
+     }
+    ],
+    [
+     "昊铂S600",
+     250,
+     0.0313,
+     {
+      "BEV": 2,
+      "PHEV": 2
+     }
+    ],
+    [
+     "理想L7",
+     200,
+     0.0251,
+     {
+      "BEV": 1,
+      "EREV": 12
+     }
+    ],
+    [
+     "汉L",
+     176,
+     0.0221,
+     {
+      "BEV": 1,
+      "PHEV": 3
+     }
+    ],
+    [
+     "极狐问道V9",
+     175,
+     0.0219,
+     {
+      "BEV": 1,
+      "PHEV": 1
+     }
+    ],
+    [
+     "锐胜M8新能源",
+     145,
+     0.0182,
+     {
+      "BEV": 9,
+      "EREV": 3
+     }
+    ],
+    [
+     "仰望U7",
+     136,
+     0.017,
+     {
+      "BEV": 4,
+      "PHEV": 5
+     }
+    ],
+    [
+     "深蓝G318",
+     99,
+     0.0124,
+     {
+      "EREV": 4,
+      "PHEV": 8
+     }
+    ],
+    [
+     "问界M5",
+     83,
+     0.0104,
+     {
+      "BEV": 2,
+      "EREV": 10
+     }
+    ],
+    [
+     "星海S7",
+     63,
+     0.0079,
+     {
+      "BEV": 5,
+      "EREV": 1
+     }
+    ],
+    [
+     "唐L",
+     61,
+     0.0076,
+     {
+      "BEV": 3,
+      "PHEV": 4
+     }
+    ],
+    [
+     "昊铂HL",
+     55,
+     0.0069,
+     {
+      "BEV": 4,
+      "PHEV": 1
+     }
+    ],
+    [
+     "五菱星光S",
+     54,
+     0.0068,
+     {
+      "BEV": 2,
+      "PHEV": 5
+     }
+    ],
+    [
+     "荣威iMAX8新能源",
+     46,
+     0.0058,
+     {
+      "BEV": 1,
+      "PHEV": 3
+     }
+    ],
+    [
+     "海豹",
+     32,
+     0.004,
+     {
+      "BEV": 8,
+      "PHEV": 3
+     }
+    ],
+    [
+     "岚图FREE",
+     14,
+     0.0018,
+     {
+      "BEV": 3,
+      "EREV": 7,
+      "PHEV": 9
+     }
+    ],
+    [
+     "宋PLUS新能源",
+     7,
+     0.0009,
+     {
+      "BEV": 5,
+      "PHEV": 25
+     }
+    ],
+    [
+     "深蓝SL03",
+     7,
+     0.0009,
+     {
+      "BEV": 6,
+      "EREV": 2,
+      "PHEV": 2
+     }
+    ],
+    [
+     "领克06 EM-P",
+     4,
+     0.0005,
+     {
+      "BEV": 2,
+      "PHEV": 3
+     }
+    ]
+   ]
+  },
+  "mixed_with_erev": {
+   "series": 23,
+   "sales": 58625,
+   "pct_of_linked": 7.3492,
+   "items": [
+    {
+     "车系": "问界M9",
+     "销量": 10262,
+     "占比": 1.2864,
+     "行级标签计数": {
+      "BEV": 5,
+      "EREV": 5,
+      "PHEV": 6
+     }
+    },
+    {
+     "车系": "零跑C10",
+     "销量": 10103,
+     "占比": 1.2665,
+     "行级标签计数": {
+      "BEV": 11,
+      "EREV": 4
+     }
+    },
+    {
+     "车系": "问界M6",
+     "销量": 8651,
+     "占比": 1.0845,
+     "行级标签计数": {
+      "BEV": 4,
+      "EREV": 3
+     }
+    },
+    {
+     "车系": "零跑C16",
+     "销量": 6146,
+     "占比": 0.7705,
+     "行级标签计数": {
+      "BEV": 11,
+      "EREV": 5,
+      "PHEV": 3
+     }
+    },
+    {
+     "车系": "极氪7X",
+     "销量": 5544,
+     "占比": 0.695,
+     "行级标签计数": {
+      "BEV": 14,
+      "EREV": 2
+     }
+    },
+    {
+     "车系": "零跑C11",
+     "销量": 4341,
+     "占比": 0.5442,
+     "行级标签计数": {
+      "BEV": 21,
+      "EREV": 9,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "问界M7",
+     "销量": 2400,
+     "占比": 0.3009,
+     "行级标签计数": {
+      "BEV": 2,
+      "EREV": 23
+     }
+    },
+    {
+     "车系": "理想L9",
+     "销量": 2386,
+     "占比": 0.2991,
+     "行级标签计数": {
+      "EREV": 7,
+      "PHEV": 1
+     }
+    },
+    {
+     "车系": "五菱宏光新能源",
+     "销量": 2339,
+     "占比": 0.2932,
+     "行级标签计数": {
+      "BEV": 2,
+      "EREV": 2
+     }
+    },
+    {
+     "车系": "尚界H5",
+     "销量": 1688,
+     "占比": 0.2116,
+     "行级标签计数": {
+      "EREV": 2,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "问界M8",
+     "销量": 1216,
+     "占比": 0.1524,
+     "行级标签计数": {
+      "BEV": 6,
+      "EREV": 5,
+      "PHEV": 11
+     }
+    },
+    {
+     "车系": "悦意08",
+     "销量": 778,
+     "占比": 0.0975,
+     "行级标签计数": {
+      "BEV": 1,
+      "EREV": 3
+     }
+    },
+    {
+     "车系": "享界S9T",
+     "销量": 766,
+     "占比": 0.096,
+     "行级标签计数": {
+      "BEV": 4,
+      "EREV": 2
+     }
+    },
+    {
+     "车系": "eπ007",
+     "销量": 476,
+     "占比": 0.0597,
+     "行级标签计数": {
+      "BEV": 7,
+      "EREV": 3,
+      "PHEV": 5
+     }
+    },
+    {
+     "车系": "智界R7",
+     "销量": 467,
+     "占比": 0.0585,
+     "行级标签计数": {
+      "BEV": 10,
+      "EREV": 1,
+      "PHEV": 4
+     }
+    },
+    {
+     "车系": "eπ008",
+     "销量": 451,
+     "占比": 0.0565,
+     "行级标签计数": {
+      "BEV": 2,
+      "EREV": 3
+     }
+    },
+    {
+     "车系": "理想L7",
+     "销量": 200,
+     "占比": 0.0251,
+     "行级标签计数": {
+      "BEV": 1,
+      "EREV": 12
+     }
+    },
+    {
+     "车系": "锐胜M8新能源",
+     "销量": 145,
+     "占比": 0.0182,
+     "行级标签计数": {
+      "BEV": 9,
+      "EREV": 3
+     }
+    },
+    {
+     "车系": "深蓝G318",
+     "销量": 99,
+     "占比": 0.0124,
+     "行级标签计数": {
+      "EREV": 4,
+      "PHEV": 8
+     }
+    },
+    {
+     "车系": "问界M5",
+     "销量": 83,
+     "占比": 0.0104,
+     "行级标签计数": {
+      "BEV": 2,
+      "EREV": 10
+     }
+    },
+    {
+     "车系": "星海S7",
+     "销量": 63,
+     "占比": 0.0079,
+     "行级标签计数": {
+      "BEV": 5,
+      "EREV": 1
+     }
+    },
+    {
+     "车系": "岚图FREE",
+     "销量": 14,
+     "占比": 0.0018,
+     "行级标签计数": {
+      "BEV": 3,
+      "EREV": 7,
+      "PHEV": 9
+     }
+    },
+    {
+     "车系": "深蓝SL03",
+     "销量": 7,
+     "占比": 0.0009,
+     "行级标签计数": {
+      "BEV": 6,
+      "EREV": 2,
+      "PHEV": 2
+     }
+    }
+   ],
+   "list": [
+    [
+     "问界M9",
+     10262,
+     1.2864,
+     {
+      "BEV": 5,
+      "EREV": 5,
+      "PHEV": 6
+     }
+    ],
+    [
+     "零跑C10",
+     10103,
+     1.2665,
+     {
+      "BEV": 11,
+      "EREV": 4
+     }
+    ],
+    [
+     "问界M6",
+     8651,
+     1.0845,
+     {
+      "BEV": 4,
+      "EREV": 3
+     }
+    ],
+    [
+     "零跑C16",
+     6146,
+     0.7705,
+     {
+      "BEV": 11,
+      "EREV": 5,
+      "PHEV": 3
+     }
+    ],
+    [
+     "极氪7X",
+     5544,
+     0.695,
+     {
+      "BEV": 14,
+      "EREV": 2
+     }
+    ],
+    [
+     "零跑C11",
+     4341,
+     0.5442,
+     {
+      "BEV": 21,
+      "EREV": 9,
+      "PHEV": 2
+     }
+    ],
+    [
+     "问界M7",
+     2400,
+     0.3009,
+     {
+      "BEV": 2,
+      "EREV": 23
+     }
+    ],
+    [
+     "理想L9",
+     2386,
+     0.2991,
+     {
+      "EREV": 7,
+      "PHEV": 1
+     }
+    ],
+    [
+     "五菱宏光新能源",
+     2339,
+     0.2932,
+     {
+      "BEV": 2,
+      "EREV": 2
+     }
+    ],
+    [
+     "尚界H5",
+     1688,
+     0.2116,
+     {
+      "EREV": 2,
+      "PHEV": 2
+     }
+    ],
+    [
+     "问界M8",
+     1216,
+     0.1524,
+     {
+      "BEV": 6,
+      "EREV": 5,
+      "PHEV": 11
+     }
+    ],
+    [
+     "悦意08",
+     778,
+     0.0975,
+     {
+      "BEV": 1,
+      "EREV": 3
+     }
+    ],
+    [
+     "享界S9T",
+     766,
+     0.096,
+     {
+      "BEV": 4,
+      "EREV": 2
+     }
+    ],
+    [
+     "eπ007",
+     476,
+     0.0597,
+     {
+      "BEV": 7,
+      "EREV": 3,
+      "PHEV": 5
+     }
+    ],
+    [
+     "智界R7",
+     467,
+     0.0585,
+     {
+      "BEV": 10,
+      "EREV": 1,
+      "PHEV": 4
+     }
+    ],
+    [
+     "eπ008",
+     451,
+     0.0565,
+     {
+      "BEV": 2,
+      "EREV": 3
+     }
+    ],
+    [
+     "理想L7",
+     200,
+     0.0251,
+     {
+      "BEV": 1,
+      "EREV": 12
+     }
+    ],
+    [
+     "锐胜M8新能源",
+     145,
+     0.0182,
+     {
+      "BEV": 9,
+      "EREV": 3
+     }
+    ],
+    [
+     "深蓝G318",
+     99,
+     0.0124,
+     {
+      "EREV": 4,
+      "PHEV": 8
+     }
+    ],
+    [
+     "问界M5",
+     83,
+     0.0104,
+     {
+      "BEV": 2,
+      "EREV": 10
+     }
+    ],
+    [
+     "星海S7",
+     63,
+     0.0079,
+     {
+      "BEV": 5,
+      "EREV": 1
+     }
+    ],
+    [
+     "岚图FREE",
+     14,
+     0.0018,
+     {
+      "BEV": 3,
+      "EREV": 7,
+      "PHEV": 9
+     }
+    ],
+    [
+     "深蓝SL03",
+     7,
+     0.0009,
+     {
+      "BEV": 6,
+      "EREV": 2,
+      "PHEV": 2
+     }
+    ]
+   ]
+  },
+  "r2_flip_impact": {
+   "series": 16,
+   "sales": 50639,
+   "pct_of_linked": 6.3481,
+   "items": [
+    {
+     "车系": "问界M9",
+     "销量": 10262,
+     "占比": 1.2864,
+     "行级标签计数": {
+      "BEV": 5,
+      "EREV": 5,
+      "PHEV": 6
+     }
+    },
+    {
+     "车系": "零跑C10",
+     "销量": 10103,
+     "占比": 1.2665,
+     "行级标签计数": {
+      "BEV": 11,
+      "EREV": 4
+     }
+    },
+    {
+     "车系": "问界M6",
+     "销量": 8651,
+     "占比": 1.0845,
+     "行级标签计数": {
+      "BEV": 4,
+      "EREV": 3
+     }
+    },
+    {
+     "车系": "零跑C16",
+     "销量": 6146,
+     "占比": 0.7705,
+     "行级标签计数": {
+      "BEV": 11,
+      "EREV": 5,
+      "PHEV": 3
+     }
+    },
+    {
+     "车系": "极氪7X",
+     "销量": 5544,
+     "占比": 0.695,
+     "行级标签计数": {
+      "BEV": 14,
+      "EREV": 2
+     }
+    },
+    {
+     "车系": "零跑C11",
+     "销量": 4341,
+     "占比": 0.5442,
+     "行级标签计数": {
+      "BEV": 21,
+      "EREV": 9,
+      "PHEV": 2
+     }
+    },
+    {
+     "车系": "五菱宏光新能源",
+     "销量": 2339,
+     "占比": 0.2932,
+     "行级标签计数": {
+      "BEV": 2,
+      "EREV": 2
+     }
+    },
+    {
+     "车系": "问界M8",
+     "销量": 1216,
+     "占比": 0.1524,
+     "行级标签计数": {
+      "BEV": 6,
+      "EREV": 5,
+      "PHEV": 11
+     }
+    },
+    {
+     "车系": "享界S9T",
+     "销量": 766,
+     "占比": 0.096,
+     "行级标签计数": {
+      "BEV": 4,
+      "EREV": 2
+     }
+    },
+    {
+     "车系": "eπ007",
+     "销量": 476,
+     "占比": 0.0597,
+     "行级标签计数": {
+      "BEV": 7,
+      "EREV": 3,
+      "PHEV": 5
+     }
+    },
+    {
+     "车系": "智界R7",
+     "销量": 467,
+     "占比": 0.0585,
+     "行级标签计数": {
+      "BEV": 10,
+      "EREV": 1,
+      "PHEV": 4
+     }
+    },
+    {
+     "车系": "锐胜M8新能源",
+     "销量": 145,
+     "占比": 0.0182,
+     "行级标签计数": {
+      "BEV": 9,
+      "EREV": 3
+     }
+    },
+    {
+     "车系": "深蓝G318",
+     "销量": 99,
+     "占比": 0.0124,
+     "行级标签计数": {
+      "EREV": 4,
+      "PHEV": 8
+     }
+    },
+    {
+     "车系": "星海S7",
+     "销量": 63,
+     "占比": 0.0079,
+     "行级标签计数": {
+      "BEV": 5,
+      "EREV": 1
+     }
+    },
+    {
+     "车系": "岚图FREE",
+     "销量": 14,
+     "占比": 0.0018,
+     "行级标签计数": {
+      "BEV": 3,
+      "EREV": 7,
+      "PHEV": 9
+     }
+    },
+    {
+     "车系": "深蓝SL03",
+     "销量": 7,
+     "占比": 0.0009,
+     "行级标签计数": {
+      "BEV": 6,
+      "EREV": 2,
+      "PHEV": 2
+     }
+    }
+   ],
+   "list": [
+    [
+     "问界M9",
+     10262,
+     1.2864,
+     {
+      "BEV": 5,
+      "EREV": 5,
+      "PHEV": 6
+     }
+    ],
+    [
+     "零跑C10",
+     10103,
+     1.2665,
+     {
+      "BEV": 11,
+      "EREV": 4
+     }
+    ],
+    [
+     "问界M6",
+     8651,
+     1.0845,
+     {
+      "BEV": 4,
+      "EREV": 3
+     }
+    ],
+    [
+     "零跑C16",
+     6146,
+     0.7705,
+     {
+      "BEV": 11,
+      "EREV": 5,
+      "PHEV": 3
+     }
+    ],
+    [
+     "极氪7X",
+     5544,
+     0.695,
+     {
+      "BEV": 14,
+      "EREV": 2
+     }
+    ],
+    [
+     "零跑C11",
+     4341,
+     0.5442,
+     {
+      "BEV": 21,
+      "EREV": 9,
+      "PHEV": 2
+     }
+    ],
+    [
+     "五菱宏光新能源",
+     2339,
+     0.2932,
+     {
+      "BEV": 2,
+      "EREV": 2
+     }
+    ],
+    [
+     "问界M8",
+     1216,
+     0.1524,
+     {
+      "BEV": 6,
+      "EREV": 5,
+      "PHEV": 11
+     }
+    ],
+    [
+     "享界S9T",
+     766,
+     0.096,
+     {
+      "BEV": 4,
+      "EREV": 2
+     }
+    ],
+    [
+     "eπ007",
+     476,
+     0.0597,
+     {
+      "BEV": 7,
+      "EREV": 3,
+      "PHEV": 5
+     }
+    ],
+    [
+     "智界R7",
+     467,
+     0.0585,
+     {
+      "BEV": 10,
+      "EREV": 1,
+      "PHEV": 4
+     }
+    ],
+    [
+     "锐胜M8新能源",
+     145,
+     0.0182,
+     {
+      "BEV": 9,
+      "EREV": 3
+     }
+    ],
+    [
+     "深蓝G318",
+     99,
+     0.0124,
+     {
+      "EREV": 4,
+      "PHEV": 8
+     }
+    ],
+    [
+     "星海S7",
+     63,
+     0.0079,
+     {
+      "BEV": 5,
+      "EREV": 1
+     }
+    ],
+    [
+     "岚图FREE",
+     14,
+     0.0018,
+     {
+      "BEV": 3,
+      "EREV": 7,
+      "PHEV": 9
+     }
+    ],
+    [
+     "深蓝SL03",
+     7,
+     0.0009,
+     {
+      "BEV": 6,
+      "EREV": 2,
+      "PHEV": 2
+     }
+    ]
+   ]
+  },
+  "mixed_family_defs": {
+   "mixed_energy_families": "同一车系含 ≥2 种行级动力标签（含 BEV+PHEV 混搭）",
+   "mixed_with_erev": "其中含 EREV 行者",
+   "r2_flip_impact": "R2（任一行为增程→整系 EREV）相对 R1（行级众数）会实际翻转的车系 —— 被否决方案的成本证据（Lead m00806/m00878）"
+  },
+  "mixed_family_fields": [
+   "车系名",
+   "销量",
+   "占已锚定比例",
+   "行级标签计数"
+  ],
+  "unlinked_board": {
+   "series_count": 129,
+   "sales": 294363,
+   "sales_pct": 26.9547,
+   "board_series": 411,
+   "board_sales": 1092064,
+   "top": [
+    [
+     "长安启源Q05",
+     18043,
+     "7.99-11.49万"
+    ],
+    [
+     "缤果Pro",
+     14002,
+     "5.68-7.08万"
+    ],
+    [
+     "QQ3 EV",
+     12688,
+     "5.89-8.89万"
+    ],
+    [
+     "深蓝S05",
+     12648,
+     "11.99-15.19万"
+    ],
+    [
+     "小鹏MONA L03",
+     12000,
+     "12.38-15.68万"
+    ],
+    [
+     "零跑A05",
+     11945,
+     "6.39-9.09万"
+    ],
+    [
+     "AION i60",
+     10478,
+     "10.28-14.28万"
+    ],
+    [
+     "铂智3X",
+     9855,
+     "10.98-15.98万"
+    ],
+    [
+     "长安Lumin",
+     9704,
+     "3.79-6.59万"
+    ],
+    [
+     "长城H10",
+     9103,
+     "20.98-23.18万"
+    ],
+    [
+     "海狮05 EV",
+     8306,
+     "11.78-16.38万"
+    ],
+    [
+     "海狮05 DM-i",
+     8099,
+     "9.79-12.79万"
+    ],
+    [
+     "蔚来ES9",
+     7706,
+     "49.80-62.80万"
+    ],
+    [
+     "华境S",
+     7416,
+     "15.98-20.68万"
+    ],
+    [
+     "firefly萤火虫",
+     7200,
+     "11.98-13.33万"
+    ],
+    [
+     "极狐贝塔T1",
+     7025,
+     "6.28-13.08万"
+    ],
+    [
+     "极狐贝塔S3",
+     6985,
+     "8.48-16.28万"
+    ],
+    [
+     "海豹05 DM-i",
+     6546,
+     "7.98-11.58万"
+    ],
+    [
+     "缤果S",
+     6028,
+     "6.68-8.98万"
+    ],
+    [
+     "小鹏MONA M03",
+     5553,
+     "11.98-15.18万"
+    ]
+   ],
+   "top_fields": [
+    "seriesname",
+    "salecount",
+    "priceinfo"
+   ],
+   "cause_bucket": {
+    "命名未锚定": {
+     "series": 88,
+     "sales": 223077,
+     "pct": 75.783,
+     "note": "底表存在短名/异形名痕迹（如 Q05←长安启源Q05、S3←极狐贝塔S3、07←极氪007GT），放宽守卫会跨品牌/跨代误锚 → 须逐条人工裁决"
+    },
+    "公告库无痕迹": {
+     "series": 41,
+     "sales": 71286,
+     "pct": 24.217,
+     "note": "底表无任何名称痕迹；Lead 已核验批次时间表（409/410 批=2026-08）排除公告时间边界成因"
+    },
+    "无痕迹-品牌在底表": {
+     "series": 20,
+     "sales": 35991
+    },
+    "无痕迹-品牌不在底表": {
+     "series": 21,
+     "sales": 35295
+    },
+    "trace_pool_rule": "痕迹池 = 全部底表通用名称形态（norm 后 len>=2，整串+分隔符切分；占位符/空除外），含已锚定到别的车系者",
+    "unit": "车系",
+    "unlinked_series": 129,
+    "unlinked_sales": 294363,
+    "pending_lead_confirm": true,
+    "note": "link-engine 独立计算，与 Lead m00239 的 88 车系/223,077 辆/75.78% 与 41 车系/71,286 辆/24.22% 互核"
+   },
+   "traced_series": [
+    [
+     "长安启源Q05",
+     18043,
+     "7.99-11.49万",
+     [
+      "Q05"
+     ],
+     [
+      "Q05"
+     ]
+    ],
+    [
+     "缤果Pro",
+     14002,
+     "5.68-7.08万",
+     [
+      "五菱缤果Pro"
+     ],
+     [
+      "五菱缤果Pro"
+     ]
+    ],
+    [
+     "QQ3 EV",
+     12688,
+     "5.89-8.89万",
+     [
+      "QQ3"
+     ],
+     [
+      "QQ3"
+     ]
+    ],
+    [
+     "深蓝S05",
+     12648,
+     "11.99-15.19万",
+     [
+      "S05"
+     ],
+     [
+      "S05"
+     ]
+    ],
+    [
+     "零跑A05",
+     11945,
+     "6.39-9.09万",
+     [
+      "A05"
+     ],
+     [
+      "A05"
+     ]
+    ],
+    [
+     "AION i60",
+     10478,
+     "10.28-14.28万",
+     [
+      "i60"
+     ],
+     [
+      "i60"
+     ]
+    ],
+    [
+     "长城H10",
+     9103,
+     "20.98-23.18万",
+     [
+      "H10",
+      "HX;H10"
+     ],
+     [
+      "H10",
+      "HX;H10"
+     ]
+    ],
+    [
+     "蔚来ES9",
+     7706,
+     "49.80-62.80万",
+     [
+      "ES9"
+     ],
+     [
+      "ES9"
+     ]
+    ],
+    [
+     "华境S",
+     7416,
+     "15.98-20.68万",
+     [
+      "享境S9,华境S"
+     ],
+     [
+      "享境S9,华境S"
+     ]
+    ],
+    [
+     "firefly萤火虫",
+     7200,
+     "11.98-13.33万",
+     [
+      "萤火虫"
+     ],
+     [
+      "萤火虫"
+     ]
+    ],
+    [
+     "极狐贝塔T1",
+     7025,
+     "6.28-13.08万",
+     [
+      "T1",
+      "T1,畅行"
+     ],
+     [
+      "T1",
+      "T1,畅行"
+     ]
+    ],
+    [
+     "极狐贝塔S3",
+     6985,
+     "8.48-16.28万",
+     [
+      "S3",
+      "S3,βS3",
+      "S3，极狐S3"
+     ],
+     [
+      "S3",
+      "S3,βS3",
+      "S3，极狐S3"
+     ]
+    ],
+    [
+     "海豹05 DM-i",
+     6546,
+     "7.98-11.58万",
+     [
+      "海豹"
+     ],
+     []
+    ],
+    [
+     "缤果S",
+     6028,
+     "6.68-8.98万",
+     [
+      "五菱缤果S"
+     ],
+     [
+      "五菱缤果S"
+     ]
+    ],
+    [
+     "AION RT",
+     5122,
+     "9.98-12.88万",
+     [
+      "RT",
+      "RT,VT,T"
+     ],
+     [
+      "RT",
+      "RT,VT,T"
+     ]
+    ],
+    [
+     "马自达EZ-60",
+     5103,
+     "11.99-17.29万",
+     [
+      "EZ-6",
+      "EZ-60"
+     ],
+     [
+      "EZ-6",
+      "EZ-60"
+     ]
+    ],
+    [
+     "极氪007GT",
+     4934,
+     "20.39-24.39万",
+     [
+      "007",
+      "007GT",
+      "07",
+      "GT"
+     ],
+     [
+      "007",
+      "007GT",
+      "07"
+     ]
+    ],
+    [
+     "深蓝L06",
+     4451,
+     "11.79-16.49万",
+     [
+      "06",
+      "L06"
+     ],
+     [
+      "L06"
+     ]
+    ],
+    [
+     "熊猫",
+     3965,
+     "4.69-5.09万",
+     [
+      "熊猫Mini",
+      "熊猫mini"
+     ],
+     [
+      "熊猫Mini",
+      "熊猫mini"
+     ]
+    ],
+    [
+     "长安启源A06",
+     3958,
+     "10.99-15.99万",
+     [
+      "06",
+      "A06"
+     ],
+     [
+      "A06"
+     ]
+    ],
+    [
+     "别克至境E7",
+     3770,
+     "15.99-19.99万",
+     [
+      "E7"
+     ],
+     [
+      "E7"
+     ]
+    ],
+    [
+     "东风风神L8Y",
+     3541,
+     "10.09-22.28万",
+     [
+      "L8",
+      "风神L8"
+     ],
+     [
+      "风神L8"
+     ]
+    ],
+    [
+     "极狐 阿尔法S5",
+     3040,
+     "10.48-17.78万",
+     [
+      "S5",
+      "阿尔法S"
+     ],
+     [
+      "S5",
+      "阿尔法S"
+     ]
+    ],
+    [
+     "乐道L80",
+     2915,
+     "24.28-27.98万",
+     [
+      "L8"
+     ],
+     []
+    ],
+    [
+     "iCAR 超级V23",
+     2748,
+     "10.98-17.48万",
+     [
+      "V23",
+      "V23S,V23"
+     ],
+     [
+      "V23",
+      "V23S,V23"
+     ]
+    ],
+    [
+     "长安启源Q06",
+     2724,
+     "13.99-16.99万",
+     [
+      "06"
+     ],
+     []
+    ],
+    [
+     "马自达EZ-6",
+     2706,
+     "11.98-16.28万",
+     [
+      "EZ-6"
+     ],
+     [
+      "EZ-6"
+     ]
+    ],
+    [
+     "欧拉5 EV",
+     2334,
+     "9.98-13.38万",
+     [
+      "欧拉5"
+     ],
+     [
+      "欧拉5"
+     ]
+    ],
+    [
+     "极狐 阿尔法T7",
+     2332,
+     "13.68-17.28万",
+     [
+      "ORA 7;长城闪电猫;O 7;R 7;T 7",
+      "阿尔法T"
+     ],
+     [
+      "ORA 7;长城闪电猫;O 7;R 7;T 7",
+      "阿尔法T"
+     ]
+    ],
+    [
+     "比亚迪e5",
+     2300,
+     "19.59-24.98万",
+     [
+      "E.5",
+      "E5",
+      "MG4 EV,E5,MG3 EV",
+      "MG4 EV,E5,MG3 EV,MG4"
+     ],
+     [
+      "E.5",
+      "E5",
+      "MG4 EV,E5,MG3 EV"
+     ]
+    ],
+    [
+     "银河A7 EM",
+     2192,
+     "8.98-13.18万",
+     [
+      "银河A7"
+     ],
+     [
+      "银河A7"
+     ]
+    ],
+    [
+     "长安启源Q07",
+     2062,
+     "12.98-17.98万",
+     [
+      "07"
+     ],
+     [
+      "07"
+     ]
+    ],
+    [
+     "魏牌 V8X",
+     2006,
+     "23.98-31.58万",
+     [
+      "8X",
+      "V8",
+      "V8X",
+      "V8X;V8X蓝山"
+     ],
+     [
+      "V8",
+      "V8X",
+      "V8X;V8X蓝山"
+     ]
+    ],
+    [
+     "凯迪拉克XT5 PHEV",
+     1819,
+     "29.00-35.00万",
+     [
+      "XT5",
+      "αT5,T5"
+     ],
+     [
+      "XT5",
+      "αT5,T5"
+     ]
+    ],
+    [
+     "深蓝S07",
+     1515,
+     "15.59-17.69万",
+     [
+      "07",
+      "S07",
+      "S07,S07EV"
+     ],
+     [
+      "07",
+      "S07",
+      "S07,S07EV"
+     ]
+    ],
+    [
+     "奥迪E7X",
+     1503,
+     "26.98-35.98万",
+     [
+      "7X",
+      "E7",
+      "E7X"
+     ],
+     [
+      "E7",
+      "E7X"
+     ]
+    ],
+    [
+     "AION UT",
+     1493,
+     "6.98-10.18万",
+     [
+      "UT"
+     ],
+     [
+      "UT"
+     ]
+    ],
+    [
+     "蔚来ET5T",
+     1431,
+     "29.80-31.30万",
+     [
+      "ET",
+      "ET5",
+      "ET5T",
+      "αT5,T5"
+     ],
+     [
+      "ET",
+      "ET5",
+      "ET5T",
+      "αT5,T5"
+     ]
+    ],
+    [
+     "阿维塔07L",
+     1339,
+     "22.99-27.99万",
+     [
+      "07",
+      "07L"
+     ],
+     [
+      "07",
+      "07L"
+     ]
+    ],
+    [
+     "江豚",
+     1310,
+     "13.38-16.28万",
+     [
+      "江豚E5",
+      "江豚E6 PLUS",
+      "江豚E7"
+     ],
+     [
+      "江豚E5",
+      "江豚E6 PLUS",
+      "江豚E7"
+     ]
+    ],
+    [
+     "丰田bZ3",
+     1199,
+     "10.98-19.98万",
+     [
+      "bZ3"
+     ],
+     [
+      "bZ3"
+     ]
+    ],
+    [
+     "别克至境L7",
+     1087,
+     "17.39-21.99万",
+     [
+      "L7"
+     ],
+     []
+    ],
+    [
+     "海豹06 DM-i旅行版",
+     941,
+     "11.19-13.99万",
+     [
+      "06",
+      "海豹"
+     ],
+     []
+    ],
+    [
+     "别克E5",
+     625,
+     "16.99-21.19万",
+     [
+      "E.5",
+      "E5",
+      "MG4 EV,E5,MG3 EV",
+      "MG4 EV,E5,MG3 EV,MG4"
+     ],
+     [
+      "E.5",
+      "E5",
+      "MG4 EV,E5,MG3 EV"
+     ]
+    ],
+    [
+     "东风风神L8",
+     614,
+     "13.99-25.99万",
+     [
+      "L8",
+      "风神L8"
+     ],
+     [
+      "风神L8"
+     ]
+    ],
+    [
+     "宝马i3",
+     604,
+     "27.80-33.80万",
+     [
+      "i3"
+     ],
+     [
+      "i3"
+     ]
+    ],
+    [
+     "阿维塔06T",
+     584,
+     "21.99-27.99万",
+     [
+      "06",
+      "06T"
+     ],
+     [
+      "06T"
+     ]
+    ],
+    [
+     "魏牌 V9X",
+     505,
+     "33.18-38.98万",
+     [
+      "9X",
+      "V9",
+      "V9X",
+      "V9X,远山"
+     ],
+     [
+      "V9",
+      "V9X",
+      "V9X,远山"
+     ]
+    ],
+    [
+     "奥迪Q6L e-tron",
+     501,
+     "27.98-39.98万",
+     [
+      "ET",
+      "Q6L",
+      "e-tron"
+     ],
+     [
+      "ET",
+      "Q6L",
+      "e-tron"
+     ]
+    ],
+    [
+     "易至EV2",
+     486,
+     "4.19-4.49万",
+     [
+      "EV2"
+     ],
+     [
+      "EV2"
+     ]
+    ],
+    [
+     "阿维塔07",
+     461,
+     "21.99-28.99万",
+     [
+      "07"
+     ],
+     [
+      "07"
+     ]
+    ],
+    [
+     "阿维塔12",
+     424,
+     "26.99-70.00万",
+     [
+      "12"
+     ],
+     [
+      "12"
+     ]
+    ],
+    [
+     "岚图追光 L",
+     383,
+     "27.99-33.99万",
+     [
+      "岚图追光",
+      "追光"
+     ],
+     [
+      "追光"
+     ]
+    ],
+    [
+     "捷达M6",
+     377,
+     "8.08-9.98万",
+     [
+      "M6"
+     ],
+     [
+      "M6"
+     ]
+    ],
+    [
+     "宝骏悦也Plus",
+     370,
+     "7.68-11.68万",
+     [
+      "悦也",
+      "悦也plus"
+     ],
+     [
+      "悦也",
+      "悦也plus"
+     ]
+    ],
+    [
+     "海豹07 EV",
+     328,
+     "16.99-20.18万",
+     [
+      "07",
+      "海豹",
+      "海豹07"
+     ],
+     [
+      "07",
+      "海豹07"
+     ]
+    ],
+    [
+     "埃尚",
+     317,
+     "3.98-5.28万",
+     [
+      "埃尚A100C"
+     ],
+     [
+      "埃尚A100C"
+     ]
+    ],
+    [
+     "极狐 考拉",
+     315,
+     "11.98-16.98万",
+     [
+      "考拉"
+     ],
+     [
+      "考拉"
+     ]
+    ],
+    [
+     "海豹07 DM-i",
+     296,
+     "14.98-20.18万",
+     [
+      "07",
+      "海豹",
+      "海豹07"
+     ],
+     [
+      "07",
+      "海豹07"
+     ]
+    ],
+    [
+     "红旗G919",
+     258,
+     "35.98-43.98万",
+     [
+      "G9"
+     ],
+     [
+      "G9"
+     ]
+    ]
+   ],
+   "traced_series_fields": [
+    "seriesname",
+    "salecount",
+    "priceinfo",
+    "底表痕迹名称",
+    "其中未锚定的痕迹名"
+   ],
+   "traced_series_total": 88,
+   "clean_series_total": 41,
+   "note": "2026-09 新能源榜 411 车系中未与底表建立关联者；cause_bucket 为初判，待 Lead 核验（pending_lead_confirm）。"
+  },
+  "missing": {
+   "price": {
+    "sales": 806,
+    "series_count": 1
+   },
+   "segment": {
+    "sales": 2889,
+    "series_count": 4
+   }
+  },
+  "note": "by_segment/by_energy/by_oem/by_brand/by_price 均为已锚定车系口径，合计 == sales_total_dedup；by_price_board 为 2026-09 全榜（含未锚定车系）价格结构。by_energy 由底表「动力类型」+「是否增程(EREV)」推导（接口 energytype 全为 1，无区分力）。企业/品牌均取底表原值，不做集团合并。"
+ },
+ "concentration": {
+  "series": {
+   "total": 797701,
+   "n": 282,
+   "CR3": 15.3163,
+   "CR5": 20.8997,
+   "CR10": 30.8074,
+   "HHI": 175.06
+  },
+  "brand": {
+   "total": 797701,
+   "n": 76,
+   "CR3": 39.1145,
+   "CR5": 52.2588,
+   "CR10": 71.0819,
+   "HHI": 802.89
+  },
+  "oem": {
+   "total": 797701,
+   "n": 54,
+   "CR3": 44.3551,
+   "CR5": 58.3834,
+   "CR10": 79.4245,
+   "HHI": 1051.33
+  },
+  "top_series": [
+   [
+    "Model Y",
+    50359,
+    6.313,
+    "特斯拉(上海)有限公司/特斯拉"
+   ],
+   [
+    "星愿",
+    44275,
+    5.5503,
+    "浙江吉利汽车有限公司/吉利"
+   ],
+   [
+    "钛7",
+    27544,
+    3.4529,
+    "比亚迪汽车工业有限公司/方程豹"
+   ],
+   [
+    "元UP",
+    22767,
+    2.8541,
+    "比亚迪汽车工业有限公司/比亚迪"
+   ],
+   [
+    "零跑A10",
+    21772,
+    2.7293,
+    "零跑汽车有限公司/零跑"
+   ],
+   [
+    "宋Ultra",
+    17131,
+    2.1475,
+    "比亚迪汽车工业有限公司/比亚迪"
+   ],
+   [
+    "海豚",
+    16754,
+    2.1003,
+    "比亚迪汽车工业有限公司/比亚迪"
+   ],
+   [
+    "小米SU7",
+    15751,
+    1.9745,
+    "小米汽车科技有限公司/小米"
+   ],
+   [
+    "海狮06",
+    14821,
+    1.858,
+    "比亚迪汽车工业有限公司/比亚迪"
+   ],
+   [
+    "MG 07",
+    14577,
+    1.8274,
+    "上海汽车集团股份有限公司/名爵"
+   ],
+   [
+    "海豹06",
+    14479,
+    1.8151,
+    "比亚迪汽车工业有限公司/比亚迪"
+   ],
+   [
+    "Model 3",
+    14478,
+    1.815,
+    "特斯拉(上海)有限公司/特斯拉"
+   ],
+   [
+    "MG4",
+    13966,
+    1.7508,
+    "上海汽车集团股份有限公司/名爵"
+   ],
+   [
+    "宏光MINIEV",
+    13630,
+    1.7087,
+    "上汽通用五菱汽车股份有限公司/五菱"
+   ],
+   [
+    "宋Pro新能源",
+    13472,
+    1.6889,
+    "比亚迪汽车工业有限公司/比亚迪"
+   ],
+   [
+    "奔腾小马",
+    12473,
+    1.5636,
+    "中国第一汽车集团有限公司/一汽"
+   ],
+   [
+    "小米YU7",
+    11820,
+    1.4818,
+    "小米汽车科技有限公司/小米"
+   ],
+   [
+    "大唐",
+    10997,
+    1.3786,
+    "比亚迪汽车工业有限公司/比亚迪"
+   ],
+   [
+    "理想L6",
+    10666,
+    1.3371,
+    "北京理想汽车有限公司/理想"
+   ],
+   [
+    "秦PLUS",
+    10652,
+    1.3353,
+    "比亚迪汽车工业有限公司/比亚迪"
+   ]
+  ],
+  "top_brand": [
+   [
+    "比亚迪",
+    166758,
+    20.9048
+   ],
+   [
+    "吉利",
+    79002,
+    9.9037
+   ],
+   [
+    "零跑",
+    66257,
+    8.306
+   ],
+   [
+    "特斯拉",
+    64837,
+    8.128
+   ],
+   [
+    "小米",
+    40015,
+    5.0163
+   ],
+   [
+    "方程豹",
+    37044,
+    4.6438
+   ],
+   [
+    "理想",
+    31817,
+    3.9886
+   ],
+   [
+    "名爵",
+    31548,
+    3.9549
+   ],
+   [
+    "五菱",
+    30825,
+    3.8642
+   ],
+   [
+    "奇瑞",
+    18918,
+    2.3716
+   ],
+   [
+    "极氪",
+    17210,
+    2.1574
+   ],
+   [
+    "一汽",
+    15481,
+    1.9407
+   ],
+   [
+    "腾势",
+    14324,
+    1.7957
+   ],
+   [
+    "赛力斯",
+    13961,
+    1.7502
+   ],
+   [
+    "小鹏",
+    13046,
+    1.6354
+   ],
+   [
+    "领克",
+    12257,
+    1.5365
+   ],
+   [
+    "蔚来",
+    12046,
+    1.5101
+   ],
+   [
+    "岚图",
+    10045,
+    1.2592
+   ],
+   [
+    "长城",
+    9127,
+    1.1442
+   ],
+   [
+    "大众(VOLKSWAGEN)",
+    8922,
+    1.1185
+   ]
+  ],
+  "top_oem": [
+   [
+    "比亚迪汽车工业有限公司",
+    203342,
+    25.491
+   ],
+   [
+    "浙江吉利汽车有限公司",
+    84222,
+    10.5581
+   ],
+   [
+    "零跑汽车有限公司",
+    66257,
+    8.306
+   ],
+   [
+    "特斯拉(上海)有限公司",
+    64837,
+    8.128
+   ],
+   [
+    "上海汽车集团股份有限公司",
+    47067,
+    5.9003
+   ],
+   [
+    "(未定)",
+    41542,
+    5.2077
+   ],
+   [
+    "小米汽车科技有限公司",
+    40015,
+    5.0163
+   ],
+   [
+    "北京理想汽车有限公司",
+    31817,
+    3.9886
+   ],
+   [
+    "上汽通用五菱汽车股份有限公司",
+    31165,
+    3.9069
+   ],
+   [
+    "中国第一汽车集团有限公司",
+    23306,
+    2.9216
+   ],
+   [
+    "赛力斯汽车有限公司",
+    22612,
+    2.8346
+   ],
+   [
+    "长城汽车股份有限公司",
+    18674,
+    2.341
+   ],
+   [
+    "安徽江淮汽车集团股份有限公司",
+    14813,
+    1.857
+   ],
+   [
+    "奇瑞汽车股份有限公司",
+    11706,
+    1.4675
+   ],
+   [
+    "广州小鹏汽车科技有限公司",
+    10229,
+    1.2823
+   ],
+   [
+    "上汽大众汽车有限公司",
+    8759,
+    1.098
+   ],
+   [
+    "东风汽车有限公司",
+    8083,
+    1.0133
+   ],
+   [
+    "浙江极氪智能科技有限公司",
+    8000,
+    1.0029
+   ],
+   [
+    "广汽乘用车有限公司",
+    6356,
+    0.7968
+   ],
+   [
+    "蔚来汽车科技（安徽）有限公司",
+    5839,
+    0.732
+   ]
+  ],
+  "unit": "车系",
+  "universe": "已锚定车系（seriesid ∈ 2026-09 新能源榜且可锚定到底表）",
+  "series_board": {
+   "total": 1092064,
+   "n": 411,
+   "CR3": 11.1878,
+   "CR5": 15.2662,
+   "CR10": 22.8207,
+   "HHI": 112.71
+  },
+  "top_series_board": [
+   [
+    "Model Y",
+    50359
+   ],
+   [
+    "星愿",
+    44275
+   ],
+   [
+    "钛7",
+    27544
+   ],
+   [
+    "元UP",
+    22767
+   ],
+   [
+    "零跑A10",
+    21772
+   ],
+   [
+    "长安启源Q05",
+    18043
+   ],
+   [
+    "宋Ultra",
+    17131
+   ],
+   [
+    "海豚",
+    16754
+   ],
+   [
+    "小米SU7",
+    15751
+   ],
+   [
+    "海狮06",
+    14821
+   ],
+   [
+    "MG 07",
+    14577
+   ],
+   [
+    "海豹06",
+    14479
+   ],
+   [
+    "Model 3",
+    14478
+   ],
+   [
+    "缤果Pro",
+    14002
+   ],
+   [
+    "MG4",
+    13966
+   ],
+   [
+    "宏光MINIEV",
+    13630
+   ],
+   [
+    "宋Pro新能源",
+    13472
+   ],
+   [
+    "QQ3 EV",
+    12688
+   ],
+   [
+    "深蓝S05",
+    12648
+   ],
+   [
+    "奔腾小马",
+    12473
+   ]
+  ],
+  "note": "CR3/CR5/CR10 单位=百分数数值（如 42.1 表示 42.1%）；HHI 为 0-10000 点值。series_board 为 2026-09 全榜 411 车系口径（未锚定车系无企业/品牌归属，故契约 top_series 用已锚定口径以保证第 4 位企业/品牌可溯）。"
+ },
+ "trend": {
+  "monthly": [
+   [
+    "2025-12",
+    1081206,
+    613974,
+    390952,
+    76280
+   ],
+   [
+    "2026-01",
+    480849,
+    275978,
+    158069,
+    46802
+   ],
+   [
+    "2026-02",
+    379231,
+    232640,
+    119752,
+    26839
+   ],
+   [
+    "2026-03",
+    661352,
+    435037,
+    191600,
+    34715
+   ],
+   [
+    "2026-04",
+    634125,
+    418780,
+    181425,
+    33920
+   ],
+   [
+    "2026-05",
+    708665,
+    471228,
+    205626,
+    31811
+   ],
+   [
+    "2026-06",
+    740915,
+    498616,
+    217005,
+    25294
+   ],
+   [
+    "2026-07",
+    691150,
+    447625,
+    208811,
+    34714
+   ],
+   [
+    "2026-08",
+    734155,
+    486799,
+    210742,
+    36614
+   ],
+   [
+    "2026-09",
+    797701,
+    523457,
+    231121,
+    43123
+   ]
+  ],
+  "monthly_prev_r2": [
+   [
+    "2025-12",
+    1081206,
+    557856,
+    523350
+   ],
+   [
+    "2026-01",
+    480849,
+    247340,
+    233509
+   ],
+   [
+    "2026-02",
+    379231,
+    210604,
+    168627
+   ],
+   [
+    "2026-03",
+    661352,
+    397553,
+    263799
+   ],
+   [
+    "2026-04",
+    634125,
+    382761,
+    251364
+   ],
+   [
+    "2026-05",
+    708665,
+    422002,
+    286663
+   ],
+   [
+    "2026-06",
+    740915,
+    449643,
+    291272
+   ],
+   [
+    "2026-07",
+    691150,
+    406912,
+    284238
+   ],
+   [
+    "2026-08",
+    734155,
+    449535,
+    284620
+   ],
+   [
+    "2026-09",
+    797701,
+    484409,
+    313292
+   ]
+  ],
+  "monthly_fields": [
+   "月份",
+   "已锚定合计",
+   "BEV",
+   "PHEV",
+   "EREV"
+  ],
+  "monthly_prev_r2_fields": [
+   "月份",
+   "已锚定合计",
+   "BEV(R2)",
+   "PHEV+EREV(R2)"
+  ],
+  "monthly_prev_r2_note": "**已废弃·仅审计留档**：R2 口径（任一行为增程→整系 EREV）的二元拆分。对外一律使用 `monthly`（R1 三层），两者不得混引（Lead m00990 F1）",
+  "energy_monthly": [
+   [
+    "2025-12",
+    613974,
+    390952,
+    76280,
+    56.786
+   ],
+   [
+    "2026-01",
+    275978,
+    158069,
+    46802,
+    57.3939
+   ],
+   [
+    "2026-02",
+    232640,
+    119752,
+    26839,
+    61.3452
+   ],
+   [
+    "2026-03",
+    435037,
+    191600,
+    34715,
+    65.7799
+   ],
+   [
+    "2026-04",
+    418780,
+    181425,
+    33920,
+    66.0406
+   ],
+   [
+    "2026-05",
+    471228,
+    205626,
+    31811,
+    66.4952
+   ],
+   [
+    "2026-06",
+    498616,
+    217005,
+    25294,
+    67.2973
+   ],
+   [
+    "2026-07",
+    447625,
+    208811,
+    34714,
+    64.7652
+   ],
+   [
+    "2026-08",
+    486799,
+    210742,
+    36614,
+    66.3074
+   ],
+   [
+    "2026-09",
+    523457,
+    231121,
+    43123,
+    65.6207
+   ]
+  ],
+  "price_monthly": [
+   [
+    "2025-12",
+    160464,
+    251796,
+    137532,
+    209967,
+    225176,
+    96213
+   ],
+   [
+    "2026-01",
+    71486,
+    82138,
+    53954,
+    97088,
+    123323,
+    52860
+   ],
+   [
+    "2026-02",
+    57675,
+    71213,
+    42298,
+    82140,
+    89272,
+    36633
+   ],
+   [
+    "2026-03",
+    130042,
+    161719,
+    83266,
+    127653,
+    104317,
+    54355
+   ],
+   [
+    "2026-04",
+    127358,
+    136607,
+    99673,
+    127945,
+    86880,
+    55662
+   ],
+   [
+    "2026-05",
+    144742,
+    134630,
+    111089,
+    166193,
+    92914,
+    59097
+   ],
+   [
+    "2026-06",
+    137712,
+    158396,
+    107504,
+    160233,
+    107783,
+    69287
+   ],
+   [
+    "2026-07",
+    128180,
+    159891,
+    98005,
+    148276,
+    90280,
+    66518
+   ],
+   [
+    "2026-08",
+    146997,
+    162688,
+    96317,
+    177053,
+    91602,
+    59496
+   ],
+   [
+    "2026-09",
+    152899,
+    196371,
+    99698,
+    182169,
+    109144,
+    56614
+   ]
+  ],
+  "price_monthly_fields": [
+   "月份",
+   "≤10万",
+   "10-15万",
+   "15-20万",
+   "20-30万",
+   "30-40万",
+   "40万+"
+  ],
+  "price_coverage": {
+   "2025-12": {
+    "binned": 1081148,
+    "total": 1081206,
+    "pct": 99.9946,
+    "uncovered_sales": 58,
+    "uncovered_series": 1
+   },
+   "2026-01": {
+    "binned": 480849,
+    "total": 480849,
+    "pct": 100.0,
+    "uncovered_sales": 0,
+    "uncovered_series": 0
+   },
+   "2026-02": {
+    "binned": 379231,
+    "total": 379231,
+    "pct": 100.0,
+    "uncovered_sales": 0,
+    "uncovered_series": 0
+   },
+   "2026-03": {
+    "binned": 661352,
+    "total": 661352,
+    "pct": 100.0,
+    "uncovered_sales": 0,
+    "uncovered_series": 0
+   },
+   "2026-04": {
+    "binned": 634125,
+    "total": 634125,
+    "pct": 100.0,
+    "uncovered_sales": 0,
+    "uncovered_series": 0
+   },
+   "2026-05": {
+    "binned": 708665,
+    "total": 708665,
+    "pct": 100.0,
+    "uncovered_sales": 0,
+    "uncovered_series": 0
+   },
+   "2026-06": {
+    "binned": 740915,
+    "total": 740915,
+    "pct": 100.0,
+    "uncovered_sales": 0,
+    "uncovered_series": 0
+   },
+   "2026-07": {
+    "binned": 691150,
+    "total": 691150,
+    "pct": 100.0,
+    "uncovered_sales": 0,
+    "uncovered_series": 0
+   },
+   "2026-08": {
+    "binned": 734153,
+    "total": 734155,
+    "pct": 99.9997,
+    "uncovered_sales": 2,
+    "uncovered_series": 1
+   },
+   "2026-09": {
+    "binned": 796895,
+    "total": 797701,
+    "pct": 99.899,
+    "uncovered_sales": 806,
+    "uncovered_series": 1
+   }
+  },
+  "price_coverage_note": "价格带份额分母统一 = 当月已锚定销量总量；2026-09 未覆盖 806 辆（0.101%）为无有效指导价车系，未计入任何价格带（Lead m00990 F3）",
+  "segment_monthly": [
+   [
+    "2025-12",
+    {
+     "SUV-D": 267880,
+     "Car-C": 170360,
+     "SUV-C": 164646,
+     "Car-D": 79380,
+     "Lux SUV-3": 76839,
+     "Car-B": 75516,
+     "Car-A": 53459,
+     "MPV-D": 42654,
+     "SUV": 29510,
+     "Lux Car-3": 29290,
+     "SUV-B": 26476,
+     "Lux SUV-4": 22258,
+     "SUV-E": 13216,
+     "Car": 9231,
+     "Sports": 6957,
+     "(未定)": 4746,
+     "Lux Car-5": 4223,
+     "MPV-B": 2367,
+     "MPV": 1225,
+     "Car-E": 413,
+     "Lux Car": 372,
+     "MPV-C": 113,
+     "Lux MPV": 66,
+     "Lux Car-4": 4,
+     "Lux SUV-2": 4,
+     "Lux Car-2": 1
+    }
+   ],
+   [
+    "2026-01",
+    {
+     "SUV-D": 169912,
+     "SUV-C": 67418,
+     "Car-C": 50509,
+     "Car-B": 40983,
+     "Car-D": 29401,
+     "MPV-D": 22022,
+     "Lux SUV-3": 20416,
+     "Lux SUV-4": 17645,
+     "Car-A": 15510,
+     "SUV": 14348,
+     "SUV-E": 7376,
+     "SUV-B": 7017,
+     "Car": 5086,
+     "Sports": 4681,
+     "Lux Car-5": 2798,
+     "Lux Car-3": 2098,
+     "(未定)": 1875,
+     "MPV-B": 1562,
+     "Lux Car": 96,
+     "Car-E": 62,
+     "Lux MPV": 17,
+     "MPV-C": 14,
+     "Lux Car-4": 3
+    }
+   ],
+   [
+    "2026-02",
+    {
+     "SUV-D": 113516,
+     "SUV-C": 53768,
+     "Car-B": 41483,
+     "Car-C": 35176,
+     "Lux SUV-3": 28526,
+     "Car-D": 23274,
+     "MPV-D": 18439,
+     "Lux Car-3": 13403,
+     "Lux SUV-4": 11260,
+     "Car-A": 10815,
+     "SUV": 8031,
+     "SUV-B": 6354,
+     "SUV-E": 5238,
+     "Car": 3382,
+     "Sports": 2727,
+     "(未定)": 1946,
+     "Lux Car-5": 922,
+     "MPV-B": 727,
+     "Car-E": 154,
+     "Lux Car": 76,
+     "MPV-C": 7,
+     "Lux MPV": 6,
+     "MPV": 1
+    }
+   ],
+   [
+    "2026-03",
+    {
+     "SUV-D": 146575,
+     "SUV-C": 124455,
+     "Car-C": 82838,
+     "Car-B": 64549,
+     "Lux SUV-3": 46149,
+     "Car-D": 41936,
+     "Car-A": 35823,
+     "SUV-B": 29664,
+     "MPV-D": 24879,
+     "Lux Car-3": 17246,
+     "Lux SUV-4": 16255,
+     "SUV": 11764,
+     "SUV-E": 4173,
+     "(未定)": 4021,
+     "Car": 3671,
+     "Sports": 3068,
+     "MPV-B": 1442,
+     "MPV": 1112,
+     "Lux Car-5": 783,
+     "Car-E": 712,
+     "Lux Car": 149,
+     "MPV-C": 63,
+     "Lux MPV": 22,
+     "Lux Car-4": 3
+    }
+   ],
+   [
+    "2026-04",
+    {
+     "SUV-D": 148927,
+     "SUV-C": 119379,
+     "Car-C": 80071,
+     "Car-B": 60175,
+     "Car-D": 57680,
+     "Car-A": 33477,
+     "SUV-B": 31810,
+     "Lux SUV-3": 28770,
+     "MPV-D": 26087,
+     "Lux SUV-4": 13020,
+     "SUV": 12782,
+     "SUV-E": 4439,
+     "Car-E": 3969,
+     "Sports": 3852,
+     "Lux Car-3": 3782,
+     "Car": 2144,
+     "MPV-B": 1549,
+     "Lux Car-5": 1147,
+     "(未定)": 910,
+     "Lux Car": 80,
+     "MPV-C": 34,
+     "Lux MPV": 25,
+     "Lux Car-4": 9,
+     "MPV": 7
+    }
+   ],
+   [
+    "2026-05",
+    {
+     "SUV-D": 162464,
+     "SUV-C": 141376,
+     "Car-C": 84521,
+     "Car-B": 64157,
+     "Car-D": 57225,
+     "SUV-B": 43074,
+     "Lux SUV-3": 34584,
+     "Car-A": 31300,
+     "MPV-D": 26214,
+     "Lux Car-3": 19080,
+     "SUV": 11975,
+     "Lux SUV-4": 11472,
+     "Car-E": 5842,
+     "Car": 3454,
+     "SUV-E": 2791,
+     "Sports": 2682,
+     "(未定)": 2077,
+     "MPV": 1793,
+     "MPV-B": 1515,
+     "Lux Car-5": 938,
+     "Lux Car": 76,
+     "Lux MPV": 22,
+     "Lux SUV": 20,
+     "MPV-C": 12,
+     "Lux Car-4": 1
+    }
+   ],
+   [
+    "2026-06",
+    {
+     "SUV-D": 166120,
+     "SUV-C": 151618,
+     "Car-C": 87194,
+     "Car-D": 63187,
+     "Car-B": 58666,
+     "SUV-B": 45866,
+     "Lux SUV-3": 44112,
+     "MPV-D": 35211,
+     "Car-A": 26210,
+     "Lux Car-3": 14908,
+     "SUV-E": 11177,
+     "SUV": 9988,
+     "Lux SUV-4": 8966,
+     "Car-E": 6025,
+     "Car": 2970,
+     "(未定)": 2279,
+     "MPV-B": 2153,
+     "MPV": 1746,
+     "Sports": 1648,
+     "Lux Car-5": 593,
+     "Lux Car": 195,
+     "Lux SUV": 45,
+     "Lux MPV": 24,
+     "MPV-C": 14
+    }
+   ],
+   [
+    "2026-07",
+    {
+     "SUV-D": 168990,
+     "SUV-C": 140462,
+     "Car-C": 84181,
+     "Car-D": 60624,
+     "Car-B": 56880,
+     "SUV-B": 49540,
+     "MPV-D": 36825,
+     "Lux SUV-3": 29815,
+     "Car-A": 18993,
+     "SUV-E": 10768,
+     "Lux SUV-4": 10284,
+     "SUV": 7373,
+     "Car-E": 5344,
+     "MPV-B": 2759,
+     "Lux Car-3": 2608,
+     "Sports": 1875,
+     "Car": 1644,
+     "(未定)": 1543,
+     "Lux Car-5": 367,
+     "Lux Car": 239,
+     "Lux SUV": 17,
+     "Lux MPV": 15,
+     "MPV-C": 3,
+     "MPV": 1
+    }
+   ],
+   [
+    "2026-08",
+    {
+     "SUV-D": 168978,
+     "SUV-C": 140040,
+     "Car-C": 84141,
+     "Car-B": 68162,
+     "Car-D": 60010,
+     "SUV-B": 56070,
+     "MPV-D": 37358,
+     "Lux SUV-3": 34125,
+     "Lux Car-3": 21426,
+     "Car-A": 21225,
+     "SUV-E": 11318,
+     "Lux SUV-4": 10991,
+     "SUV": 5811,
+     "Car-E": 3691,
+     "(未定)": 2786,
+     "MPV-B": 2407,
+     "MPV": 1782,
+     "Sports": 1617,
+     "Car": 1213,
+     "Lux Car-5": 391,
+     "Lux SUV": 339,
+     "Lux Car": 217,
+     "Lux MPV": 52,
+     "MPV-C": 5
+    }
+   ],
+   [
+    "2026-09",
+    {
+     "SUV-D": 164936,
+     "SUV-C": 149065,
+     "Car-C": 110419,
+     "Car-B": 72128,
+     "Car-D": 66112,
+     "Lux SUV-3": 54979,
+     "SUV-B": 47275,
+     "Car-A": 30587,
+     "MPV-D": 30083,
+     "SUV": 20702,
+     "Lux Car-3": 14949,
+     "SUV-E": 10891,
+     "Lux SUV-4": 10539,
+     "Car-E": 3135,
+     "(未定)": 2889,
+     "Car": 2358,
+     "MPV-B": 2020,
+     "MPV": 1918,
+     "Sports": 1688,
+     "Lux Car-5": 486,
+     "Lux SUV": 256,
+     "Lux Car": 143,
+     "MPV-C": 82,
+     "Lux MPV": 61
+    }
+   ]
+  ],
+  "top20_first": [
+   [
+    "Model Y",
+    65874
+   ],
+   [
+    "秦PLUS",
+    46837
+   ],
+   [
+    "小米YU7",
+    39089
+   ],
+   [
+    "星愿",
+    36147
+   ],
+   [
+    "钛7",
+    34086
+   ],
+   [
+    "问界M7",
+    29368
+   ],
+   [
+    "宏光MINIEV",
+    29365
+   ],
+   [
+    "Model 3",
+    27969
+   ],
+   [
+    "海狮06",
+    24380
+   ],
+   [
+    "蔚来ES8",
+    22258
+   ],
+   [
+    "元UP",
+    18766
+   ],
+   [
+    "宋Pro新能源",
+    18373
+   ],
+   [
+    "海鸥",
+    18307
+   ],
+   [
+    "极狐贝塔T1",
+    17170
+   ],
+   [
+    "问界M8",
+    17123
+   ],
+   [
+    "海豹05 DM-i",
+    16484
+   ],
+   [
+    "海豹06",
+    16471
+   ],
+   [
+    "理想i6",
+    15994
+   ],
+   [
+    "秦L",
+    15750
+   ],
+   [
+    "海豚",
+    15602
+   ]
+  ],
+  "top20_last": [
+   [
+    "Model Y",
+    50359
+   ],
+   [
+    "星愿",
+    44275
+   ],
+   [
+    "钛7",
+    27544
+   ],
+   [
+    "元UP",
+    22767
+   ],
+   [
+    "零跑A10",
+    21772
+   ],
+   [
+    "长安启源Q05",
+    18043
+   ],
+   [
+    "宋Ultra",
+    17131
+   ],
+   [
+    "海豚",
+    16754
+   ],
+   [
+    "小米SU7",
+    15751
+   ],
+   [
+    "海狮06",
+    14821
+   ],
+   [
+    "MG 07",
+    14577
+   ],
+   [
+    "海豹06",
+    14479
+   ],
+   [
+    "Model 3",
+    14478
+   ],
+   [
+    "缤果Pro",
+    14002
+   ],
+   [
+    "MG4",
+    13966
+   ],
+   [
+    "宏光MINIEV",
+    13630
+   ],
+   [
+    "宋Pro新能源",
+    13472
+   ],
+   [
+    "QQ3 EV",
+    12688
+   ],
+   [
+    "深蓝S05",
+    12648
+   ],
+   [
+    "奔腾小马",
+    12473
+   ]
+  ],
+  "rankchange_hist": [
+   [
+    "≤-50",
+    29
+   ],
+   [
+    "-49~-10",
+    155
+   ],
+   [
+    "-9~-1",
+    79
+   ],
+   [
+    "0",
+    39
+   ],
+   [
+    "+1~+9",
+    46
+   ],
+   [
+    "+10~+49",
+    49
+   ],
+   [
+    "≥+50",
+    14
+   ],
+   [
+    "缺失",
+    0
+   ]
+  ],
+  "new_entries": [
+   [
+    "MG 07",
+    14577
+   ],
+   [
+    "小米澎程N70",
+    7147
+   ],
+   [
+    "风云T7",
+    6171
+   ],
+   [
+    "小米澎程N90",
+    5297
+   ],
+   [
+    "东风风神L8Y",
+    3541
+   ],
+   [
+    "长安启源Q06",
+    2724
+   ],
+   [
+    "理想i9",
+    2206
+   ],
+   [
+    "凯迪拉克XT5 PHEV",
+    1819
+   ],
+   [
+    "腾势Z9S",
+    1098
+   ],
+   [
+    "海狮08",
+    857
+   ],
+   [
+    "纵横G700",
+    721
+   ],
+   [
+    "方程S",
+    663
+   ],
+   [
+    "智界RX",
+    379
+   ],
+   [
+    "捷达M6",
+    377
+   ],
+   [
+    "红旗G919",
+    258
+   ],
+   [
+    "银河战舰700",
+    239
+   ],
+   [
+    "东风风神E80",
+    135
+   ],
+   [
+    "ID.AURA T6",
+    111
+   ],
+   [
+    "极氪MIX",
+    91
+   ],
+   [
+    "长安之星9EV",
+    57
+   ],
+   [
+    "IONIQ(艾尼氪)V",
+    28
+   ],
+   [
+    "红旗天工07",
+    18
+   ],
+   [
+    "长安UNI-V 智电iDD",
+    10
+   ],
+   [
+    "深蓝SL03",
+    7
+   ],
+   [
+    "星途揽月C-DM",
+    6
+   ],
+   [
+    "翼真L380",
+    5
+   ],
+   [
+    "MG Cyberster",
+    2
+   ],
+   [
+    "比亚迪e9",
+    1
+   ],
+   [
+    "红旗E-HS9",
+    1
+   ],
+   [
+    "英仕派新能源",
+    1
+   ],
+   [
+    "逸动新能源",
+    1
+   ],
+   [
+    "长安UNI-K 智电iDD",
+    1
+   ],
+   [
+    "雅阁新能源",
+    1
+   ]
+  ],
+  "drops": [
+   [
+    "东风风神L7",
+    1879
+   ],
+   [
+    "QQ冰淇淋",
+    1304
+   ],
+   [
+    "星海V6 PLUS",
+    791
+   ],
+   [
+    "领克20",
+    389
+   ],
+   [
+    "深蓝S09",
+    98
+   ],
+   [
+    "星海T5",
+    78
+   ],
+   [
+    "魏牌 摩卡新能源",
+    40
+   ],
+   [
+    "五菱缤果PLUS",
+    24
+   ],
+   [
+    "爱跑",
+    10
+   ],
+   [
+    "极狐 阿尔法T",
+    7
+   ],
+   [
+    "奔驰EQB",
+    5
+   ],
+   [
+    "奔驰EQA",
+    4
+   ],
+   [
+    "蔚来EC7",
+    3
+   ],
+   [
+    "江淮QX PHEV",
+    2
+   ],
+   [
+    "零跑C01",
+    2
+   ],
+   [
+    "大众ID.7 VIZZION",
+    1
+   ],
+   [
+    "宝骏KiWi EV",
+    1
+   ],
+   [
+    "风行雷霆",
+    1
+   ]
+  ],
+  "unit": "车系",
+  "universe": "monthly/energy_monthly/price_monthly/segment_monthly 为已锚定车系口径（total == bev+phev+erev 自洽）；top20_*/new_entries/drops/rankchange_hist 为 2026-09 新能源榜全榜口径",
+  "monthly_board": [
+   [
+    "2025-12",
+    1344760
+   ],
+   [
+    "2026-01",
+    596349
+   ],
+   [
+    "2026-02",
+    466097
+   ],
+   [
+    "2026-03",
+    858304
+   ],
+   [
+    "2026-04",
+    846379
+   ],
+   [
+    "2026-05",
+    960354
+   ],
+   [
+    "2026-06",
+    1017165
+   ],
+   [
+    "2026-07",
+    951901
+   ],
+   [
+    "2026-08",
+    1013107
+   ],
+   [
+    "2026-09",
+    1092064
+   ]
+  ],
+  "price_monthly_board": [
+   [
+    "2025-12",
+    228817,
+    362572,
+    183234,
+    235028,
+    232295,
+    102756
+   ],
+   [
+    "2026-01",
+    94733,
+    136793,
+    74137,
+    106651,
+    126703,
+    57332
+   ],
+   [
+    "2026-02",
+    76808,
+    111344,
+    57203,
+    89341,
+    92072,
+    39329
+   ],
+   [
+    "2026-03",
+    180405,
+    253685,
+    109854,
+    145174,
+    110473,
+    58713
+   ],
+   [
+    "2026-04",
+    180910,
+    238136,
+    133751,
+    142201,
+    92677,
+    58704
+   ],
+   [
+    "2026-05",
+    205753,
+    249653,
+    151121,
+    188434,
+    99668,
+    65725
+   ],
+   [
+    "2026-06",
+    208320,
+    284816,
+    143555,
+    182639,
+    117098,
+    80737
+   ],
+   [
+    "2026-07",
+    202794,
+    271138,
+    130502,
+    172348,
+    98426,
+    76693
+   ],
+   [
+    "2026-08",
+    232433,
+    275357,
+    127911,
+    209956,
+    97774,
+    69674
+   ],
+   [
+    "2026-09",
+    245911,
+    315222,
+    134419,
+    211655,
+    116382,
+    67669
+   ]
+  ],
+  "new_entries_total": 33,
+  "drops_total": 18,
+  "roster_rule": "new_entries/drops = 月度榜单集合差（2026-09 vs 2026-08 新能源榜名册），非 Top20 位次差",
+  "rankchange_bins": [
+   "≤-50",
+   "-49~-10",
+   "-9~-1",
+   "0",
+   "+1~+9",
+   "+10~+49",
+   "≥+50",
+   "缺失"
+  ],
+  "note": "价格带取自当月榜单 priceinfo 中值；动力类型分解来自底表标注，故仅覆盖已锚定车系。动力三分一律 R1（与 structure.by_energy 同源同规则）；价格带/动力/品牌/企业份额分母统一 = 已锚定销量。"
+ },
+ "tech_sales": {
+  "weighted": {
+   "续航": 417.529,
+   "容量": 54.322,
+   "电耗": 14.885,
+   "整备": 1965.804,
+   "功率": 216.431,
+   "能量密度": 146.659
+  },
+  "unweighted": {
+   "续航": 395.069,
+   "容量": 56.668,
+   "电耗": 16.136,
+   "整备": 2111.141,
+   "功率": 216.703,
+   "能量密度": 147.364
+  },
+  "sample_n": {
+   "weighted": 282,
+   "unweighted": 282
+  },
+  "range_bins": [
+   [
+    "<300km",
+    33.0163,
+    113
+   ],
+   [
+    "300-400km",
+    6.4505,
+    21
+   ],
+   [
+    "400-500km",
+    16.873,
+    28
+   ],
+   [
+    "500-600km",
+    21.2883,
+    52
+   ],
+   [
+    "600-700km",
+    13.5116,
+    43
+   ],
+   [
+    "≥700km",
+    8.8603,
+    25
+   ]
+  ],
+  "range_bins_def": [
+   "<300km",
+   "300-400km",
+   "400-500km",
+   "500-600km",
+   "600-700km",
+   "≥700km"
+  ],
+  "price_tech": [
+   [
+    "≤10万",
+    368.775,
+    37.22,
+    83.928,
+    1265.519,
+    152899,
+    20
+   ],
+   [
+    "10-15万",
+    354.325,
+    42.776,
+    164.626,
+    1732.647,
+    196371,
+    55
+   ],
+   [
+    "15-20万",
+    409.981,
+    55.087,
+    213.21,
+    2009.137,
+    99698,
+    60
+   ],
+   [
+    "20-30万",
+    484.713,
+    68.453,
+    336.352,
+    2351.192,
+    182169,
+    80
+   ],
+   [
+    "30-40万",
+    527.987,
+    69.326,
+    247.038,
+    2290.467,
+    109144,
+    37
+   ],
+   [
+    "40万+",
+    352.414,
+    64.868,
+    314.221,
+    2726.527,
+    56614,
+    29
+   ]
+  ],
+  "price_range_matrix": [
+   [
+    "≤10万",
+    [
+     32736,
+     15933,
+     90264,
+     13966,
+     0,
+     0
+    ],
+    [
+     9,
+     6,
+     4,
+     1,
+     0,
+     0
+    ]
+   ],
+   [
+    "10-15万",
+    [
+     82604,
+     3281,
+     24864,
+     61956,
+     23666,
+     0
+    ],
+    [
+     20,
+     5,
+     8,
+     18,
+     4,
+     0
+    ]
+   ],
+   [
+    "15-20万",
+    [
+     30784,
+     17096,
+     2746,
+     21089,
+     27690,
+     293
+    ],
+    [
+     24,
+     4,
+     6,
+     18,
+     7,
+     1
+    ]
+   ],
+   [
+    "20-30万",
+    [
+     58687,
+     12444,
+     6344,
+     21981,
+     29941,
+     52772
+    ],
+    [
+     29,
+     2,
+     6,
+     11,
+     18,
+     14
+    ]
+   ],
+   [
+    "30-40万",
+    [
+     20756,
+     1563,
+     6780,
+     50824,
+     15944,
+     13277
+    ],
+    [
+     15,
+     2,
+     1,
+     3,
+     12,
+     4
+    ]
+   ],
+   [
+    "40万+",
+    [
+     37804,
+     1139,
+     2792,
+     1,
+     10541,
+     4337
+    ],
+    [
+     16,
+     2,
+     2,
+     1,
+     2,
+     6
+    ]
+   ]
+  ],
+  "by_energy_tech": [
+   [
+    "BEV",
+    {
+     "续航": 530.161,
+     "容量": 62.23,
+     "电耗": 12.992,
+     "整备": 1833.234,
+     "功率": 223.838,
+     "能量密度": 151.241
+    }
+   ],
+   [
+    "PHEV",
+    {
+     "续航": 195.712,
+     "容量": 37.19,
+     "电耗": 18.036,
+     "整备": 2169.397,
+     "功率": 187.168,
+     "能量密度": 136.098
+    }
+   ],
+   [
+    "EREV",
+    {
+     "续航": 239.162,
+     "容量": 50.158,
+     "电耗": 20.978,
+     "整备": 2483.557,
+     "功率": 285.554,
+     "能量密度": 144.247
+    }
+   ]
+  ],
+  "unit": "车系",
+  "metric_rule": "车系指标取该车系底表多行的中位数（数值）/众数（分类）",
+  "weight_rule": "2026-09 车系销量（salecount）加权",
+  "metric_fields": {
+   "续航": "range_km",
+   "容量": "capacity_kwh",
+   "电耗": "econs_kwh_100km",
+   "整备": "curb_kg",
+   "功率": "power_kw",
+   "能量密度": "density_wh_kg"
+  },
+  "universe": "已锚定车系；weighted 为销量加权均值，unweighted 为等权（公告）均值",
+  "missing": {
+   "range": {
+    "sales": 0,
+    "series_count": 0
+   }
+  },
+  "note": "range_bins 顺序 == range_bins_def（消费方勿自行猜边界）；price_range_matrix 外层 6 行 == meta.price_bins 顺序，内层 6 元 == range_bins_def 顺序。"
+ },
+ "conversion": {
+  "by_batch": [
+   [
+    341,
+    2021,
+    144,
+    49472
+   ],
+   [
+    342,
+    2021,
+    88,
+    82751
+   ],
+   [
+    343,
+    2021,
+    128,
+    19518
+   ],
+   [
+    344,
+    2021,
+    83,
+    16273
+   ],
+   [
+    345,
+    2021,
+    101,
+    46294
+   ],
+   [
+    346,
+    2021,
+    74,
+    108134
+   ],
+   [
+    347,
+    2021,
+    72,
+    48467
+   ],
+   [
+    348,
+    2021,
+    88,
+    80512
+   ],
+   [
+    349,
+    2021,
+    61,
+    38205
+   ],
+   [
+    350,
+    2021,
+    62,
+    20437
+   ],
+   [
+    351,
+    2021,
+    105,
+    96323
+   ],
+   [
+    352,
+    2022,
+    54,
+    10811
+   ],
+   [
+    353,
+    2022,
+    25,
+    17694
+   ],
+   [
+    354,
+    2022,
+    44,
+    17292
+   ],
+   [
+    355,
+    2022,
+    65,
+    27197
+   ],
+   [
+    356,
+    2022,
+    46,
+    1478
+   ],
+   [
+    357,
+    2022,
+    71,
+    49495
+   ],
+   [
+    358,
+    2022,
+    2,
+    0
+   ],
+   [
+    359,
+    2022,
+    52,
+    19368
+   ],
+   [
+    360,
+    2022,
+    42,
+    19356
+   ],
+   [
+    361,
+    2022,
+    16,
+    60
+   ],
+   [
+    362,
+    2022,
+    59,
+    35801
+   ],
+   [
+    363,
+    2022,
+    40,
+    9154
+   ],
+   [
+    364,
+    2022,
+    7,
+    2465
+   ],
+   [
+    365,
+    2022,
+    81,
+    31223
+   ],
+   [
+    366,
+    2022,
+    51,
+    25949
+   ],
+   [
+    367,
+    2023,
+    64,
+    38878
+   ],
+   [
+    368,
+    2023,
+    44,
+    26999
+   ],
+   [
+    369,
+    2023,
+    66,
+    4646
+   ],
+   [
+    370,
+    2023,
+    60,
+    30138
+   ],
+   [
+    371,
+    2023,
+    54,
+    22708
+   ],
+   [
+    372,
+    2023,
+    69,
+    23248
+   ],
+   [
+    373,
+    2023,
+    79,
+    38639
+   ],
+   [
+    374,
+    2023,
+    96,
+    51490
+   ],
+   [
+    375,
+    2023,
+    64,
+    54286
+   ],
+   [
+    376,
+    2023,
+    56,
+    80137
+   ],
+   [
+    377,
+    2023,
+    67,
+    74965
+   ],
+   [
+    378,
+    2023,
+    78,
+    58505
+   ],
+   [
+    379,
+    2024,
+    84,
+    56060
+   ],
+   [
+    380,
+    2024,
+    100,
+    50200
+   ],
+   [
+    381,
+    2024,
+    52,
+    51607
+   ],
+   [
+    382,
+    2024,
+    94,
+    64937
+   ],
+   [
+    383,
+    2024,
+    89,
+    83870
+   ],
+   [
+    384,
+    2024,
+    121,
+    34892
+   ],
+   [
+    385,
+    2024,
+    76,
+    109907
+   ],
+   [
+    386,
+    2024,
+    68,
+    25067
+   ],
+   [
+    387,
+    2024,
+    52,
+    40971
+   ],
+   [
+    388,
+    2024,
+    63,
+    25997
+   ],
+   [
+    389,
+    2024,
+    56,
+    99058
+   ],
+   [
+    390,
+    2024,
+    130,
+    91398
+   ],
+   [
+    391,
+    2025,
+    86,
+    138137
+   ],
+   [
+    392,
+    2025,
+    71,
+    64163
+   ],
+   [
+    393,
+    2025,
+    64,
+    42773
+   ],
+   [
+    394,
+    2025,
+    48,
+    70160
+   ],
+   [
+    395,
+    2025,
+    98,
+    84442
+   ],
+   [
+    396,
+    2025,
+    78,
+    92994
+   ],
+   [
+    397,
+    2025,
+    129,
+    151339
+   ],
+   [
+    398,
+    2025,
+    112,
+    142242
+   ],
+   [
+    399,
+    2025,
+    99,
+    125510
+   ],
+   [
+    400,
+    2025,
+    99,
+    97344
+   ],
+   [
+    401,
+    2025,
+    137,
+    111945
+   ],
+   [
+    402,
+    2025,
+    177,
+    133233
+   ],
+   [
+    403,
+    2026,
+    84,
+    148321
+   ],
+   [
+    404,
+    2026,
+    92,
+    105274
+   ],
+   [
+    405,
+    2026,
+    68,
+    197611
+   ],
+   [
+    406,
+    2026,
+    85,
+    172647
+   ],
+   [
+    407,
+    2026,
+    112,
+    234639
+   ],
+   [
+    408,
+    2026,
+    108,
+    105721
+   ],
+   [
+    409,
+    2026,
+    111,
+    207675
+   ],
+   [
+    410,
+    2026,
+    70,
+    32247
+   ],
+   [
+    411,
+    2026,
+    46,
+    36818
+   ],
+   [
+    412,
+    null,
+    58,
+    9501
+   ]
+  ],
+  "by_year": [
+   [
+    "2021",
+    1006,
+    146900
+   ],
+   [
+    "2022",
+    655,
+    106223
+   ],
+   [
+    "2023",
+    797,
+    281239
+   ],
+   [
+    "2024",
+    985,
+    366194
+   ],
+   [
+    "2025",
+    1198,
+    522845
+   ],
+   [
+    "2026",
+    776,
+    620684
+   ]
+  ],
+  "by_year_undated": [
+   {
+    "batch": 412,
+    "year": null,
+    "note": "412 批=公示口径（无正式发文字号），批次时间表无公告年月",
+    "models": 58,
+    "sales": 9501
+   }
+  ],
+  "by_year_note": "by_year 仅含「批次时间表」有公告年月的批次；`by_year_undated` 显式列出年份缺失的批次（412 公示批），下游按年汇总时**必须显式排除或单列『待定』桶**，不得静默丢弃",
+  "brand_scatter": [
+   [
+    "比亚迪",
+    478,
+    166758
+   ],
+   [
+    "吉利",
+    151,
+    79002
+   ],
+   [
+    "零跑",
+    148,
+    66257
+   ],
+   [
+    "特斯拉",
+    32,
+    64837
+   ],
+   [
+    "小米",
+    28,
+    40015
+   ],
+   [
+    "方程豹",
+    44,
+    37044
+   ],
+   [
+    "(未定)",
+    295,
+    34014
+   ],
+   [
+    "理想",
+    89,
+    31817
+   ],
+   [
+    "名爵",
+    23,
+    31548
+   ],
+   [
+    "五菱",
+    179,
+    30825
+   ],
+   [
+    "问界",
+    29,
+    22529
+   ],
+   [
+    "奇瑞",
+    186,
+    18918
+   ],
+   [
+    "极氪",
+    96,
+    17210
+   ],
+   [
+    "一汽",
+    39,
+    15481
+   ],
+   [
+    "MG",
+    1,
+    14577
+   ],
+   [
+    "腾势",
+    62,
+    14324
+   ],
+   [
+    "赛力斯",
+    66,
+    13961
+   ],
+   [
+    "小鹏",
+    110,
+    13046
+   ],
+   [
+    "领克",
+    45,
+    12257
+   ],
+   [
+    "蔚来",
+    18,
+    12046
+   ],
+   [
+    "岚图",
+    61,
+    10045
+   ],
+   [
+    "长城",
+    20,
+    9127
+   ],
+   [
+    "大众(VOLKSWAGEN)",
+    44,
+    8922
+   ],
+   [
+    "红旗",
+    78,
+    7825
+   ],
+   [
+    "智己",
+    53,
+    6810
+   ],
+   [
+    "乐道",
+    4,
+    5839
+   ],
+   [
+    "尚界",
+    12,
+    5741
+   ],
+   [
+    "阿维塔（AVATR）",
+    42,
+    5582
+   ],
+   [
+    "东风日产",
+    19,
+    5493
+   ],
+   [
+    "传祺(Trumpchi)",
+    51,
+    5387
+   ],
+   [
+    "东风",
+    169,
+    5129
+   ],
+   [
+    "智界",
+    18,
+    5069
+   ],
+   [
+    "捷途",
+    73,
+    4988
+   ],
+   [
+    "别克",
+    5,
+    4951
+   ],
+   [
+    "埃安(AION)",
+    211,
+    4481
+   ],
+   [
+    "哈弗",
+    83,
+    4357
+   ],
+   [
+    "魏",
+    63,
+    3740
+   ],
+   [
+    "长安",
+    291,
+    3638
+   ],
+   [
+    "精灵(smart)",
+    37,
+    3065
+   ],
+   [
+    "荣威",
+    39,
+    2718
+   ],
+   [
+    "江淮",
+    41,
+    2585
+   ],
+   [
+    "大众",
+    73,
+    2401
+   ],
+   [
+    "沃尔沃",
+    47,
+    1843
+   ],
+   [
+    "领途",
+    16,
+    1734
+   ],
+   [
+    "欧拉",
+    110,
+    1450
+   ],
+   [
+    "享界",
+    15,
+    1392
+   ],
+   [
+    "iCAR",
+    1,
+    1368
+   ],
+   [
+    "金杯",
+    2,
+    1164
+   ],
+   [
+    "华彰",
+    15,
+    1158
+   ],
+   [
+    "凯翼",
+    33,
+    1117
+   ],
+   [
+    "奥迪(AUDI)",
+    34,
+    612
+   ],
+   [
+    "昊铂",
+    28,
+    589
+   ],
+   [
+    "启辰",
+    19,
+    537
+   ],
+   [
+    "富康",
+    6,
+    500
+   ],
+   [
+    "猛士",
+    9,
+    417
+   ],
+   [
+    "宝骏",
+    30,
+    340
+   ],
+   [
+    "奥迪",
+    17,
+    312
+   ],
+   [
+    "凌宝",
+    21,
+    279
+   ],
+   [
+    "睿蓝",
+    1,
+    266
+   ],
+   [
+    "飞凡",
+    21,
+    250
+   ],
+   [
+    "羿驰",
+    17,
+    240
+   ],
+   [
+    "赛力斯蓝电",
+    8,
+    214
+   ],
+   [
+    "大通",
+    68,
+    207
+   ],
+   [
+    "星途",
+    60,
+    196
+   ],
+   [
+    "瑞风",
+    8,
+    182
+   ],
+   [
+    "极狐",
+    31,
+    175
+   ],
+   [
+    "北汽",
+    8,
+    145
+   ],
+   [
+    "锐胜",
+    24,
+    145
+   ],
+   [
+    "仰望",
+    13,
+    137
+   ],
+   [
+    "本田",
+    1,
+    67
+   ],
+   [
+    "本田(HONDA)",
+    19,
+    67
+   ],
+   [
+    "创维",
+    8,
+    60
+   ],
+   [
+    "开沃",
+    10,
+    60
+   ],
+   [
+    "易至",
+    3,
+    39
+   ],
+   [
+    "北京现代",
+    4,
+    28
+   ],
+   [
+    "极石",
+    8,
+    7
+   ],
+   [
+    "翼真",
+    8,
+    5
+   ],
+   [
+    "灵悉",
+    1,
+    4
+   ],
+   [
+    "颐驰",
+    4,
+    4
+   ],
+   [
+    "起亚",
+    8,
+    3
+   ],
+   [
+    "梅赛德斯-奔驰(Mercedes-Ben...",
+    9,
+    2
+   ],
+   [
+    "三菱",
+    3,
+    0
+   ],
+   [
+    "上汽飞凡",
+    5,
+    0
+   ],
+   [
+    "东南",
+    5,
+    0
+   ],
+   [
+    "东风标致",
+    1,
+    0
+   ],
+   [
+    "丰田",
+    1,
+    0
+   ],
+   [
+    "丰田 (TOYOTA)",
+    2,
+    0
+   ],
+   [
+    "丰田(TOYOTA)",
+    26,
+    0
+   ],
+   [
+    "予风",
+    4,
+    0
+   ],
+   [
+    "云度",
+    9,
+    0
+   ],
+   [
+    "众泰",
+    1,
+    0
+   ],
+   [
+    "依维柯",
+    14,
+    0
+   ],
+   [
+    "俊风",
+    1,
+    0
+   ],
+   [
+    "光束(MINI)",
+    8,
+    0
+   ],
+   [
+    "几何",
+    26,
+    0
+   ],
+   [
+    "凯迪拉克",
+    1,
+    0
+   ],
+   [
+    "凯迪拉克(CADILLAC)",
+    11,
+    0
+   ],
+   [
+    "别克(BUICK)",
+    34,
+    0
+   ],
+   [
+    "力帆",
+    4,
+    0
+   ],
+   [
+    "北京",
+    46,
+    0
+   ],
+   [
+    "北斗星",
+    1,
+    0
+   ],
+   [
+    "华晨新日",
+    1,
+    0
+   ],
+   [
+    "合创",
+    27,
+    0
+   ],
+   [
+    "吉利美日",
+    2,
+    0
+   ],
+   [
+    "吉普(JEEP)",
+    1,
+    0
+   ],
+   [
+    "吉麦",
+    1,
+    0
+   ],
+   [
+    "启境",
+    7,
+    0
+   ],
+   [
+    "哪吒",
+    141,
+    0
+   ],
+   [
+    "国金",
+    6,
+    0
+   ],
+   [
+    "埃安",
+    2,
+    0
+   ],
+   [
+    "大乘",
+    8,
+    0
+   ],
+   [
+    "大运",
+    20,
+    0
+   ],
+   [
+    "大运远航",
+    10,
+    0
+   ],
+   [
+    "大马",
+    6,
+    0
+   ],
+   [
+    "天琴",
+    7,
+    0
+   ],
+   [
+    "天际",
+    3,
+    0
+   ],
+   [
+    "天马",
+    1,
+    0
+   ],
+   [
+    "奕境",
+    5,
+    0
+   ],
+   [
+    "威尔马斯特",
+    3,
+    0
+   ],
+   [
+    "威马",
+    11,
+    0
+   ],
+   [
+    "宝马(BMW)",
+    48,
+    0
+   ],
+   [
+    "帝豪",
+    16,
+    0
+   ],
+   [
+    "广汽(GAC)",
+    3,
+    0
+   ],
+   [
+    "开瑞",
+    4,
+    0
+   ],
+   [
+    "御捷马",
+    8,
+    0
+   ],
+   [
+    "思皓",
+    13,
+    0
+   ],
+   [
+    "恒合",
+    1,
+    0
+   ],
+   [
+    "恒润",
+    2,
+    0
+   ],
+   [
+    "恒驰",
+    4,
+    0
+   ],
+   [
+    "悠宝利(U-Belief)",
+    2,
+    0
+   ],
+   [
+    "悦达",
+    14,
+    0
+   ],
+   [
+    "捷达(JETTA)",
+    4,
+    0
+   ],
+   [
+    "敏微",
+    1,
+    0
+   ],
+   [
+    "斯威",
+    1,
+    0
+   ],
+   [
+    "晶马",
+    3,
+    0
+   ],
+   [
+    "极星",
+    27,
+    0
+   ],
+   [
+    "极狐(ARCFOX)",
+    97,
+    0
+   ],
+   [
+    "极越",
+    14,
+    0
+   ],
+   [
+    "枫叶",
+    19,
+    0
+   ],
+   [
+    "梅赛德斯-奔驰",
+    6,
+    0
+   ],
+   [
+    "梅赛德斯-奔驰(Mercedes-Benz)",
+    5,
+    0
+   ],
+   [
+    "毅威(M-NV)",
+    2,
+    0
+   ],
+   [
+    "江南",
+    9,
+    0
+   ],
+   [
+    "江铃",
+    18,
+    0
+   ],
+   [
+    "江铃全顺",
+    8,
+    0
+   ],
+   [
+    "沙龙",
+    3,
+    0
+   ],
+   [
+    "海马",
+    11,
+    0
+   ],
+   [
+    "渝州",
+    1,
+    0
+   ],
+   [
+    "燕铃",
+    15,
+    0
+   ],
+   [
+    "爱咖",
+    44,
+    0
+   ],
+   [
+    "爱驰",
+    5,
+    0
+   ],
+   [
+    "猎豹(LEOPAARD)",
+    3,
+    0
+   ],
+   [
+    "玛斯丹(MUSTANG)",
+    9,
+    0
+   ],
+   [
+    "现代",
+    5,
+    0
+   ],
+   [
+    "瑞腾",
+    1,
+    0
+   ],
+   [
+    "瑞驰",
+    1,
+    0
+   ],
+   [
+    "田野",
+    5,
+    0
+   ],
+   [
+    "睿英",
+    1,
+    0
+   ],
+   [
+    "知豆",
+    8,
+    0
+   ],
+   [
+    "神行者(FREELANDER)",
+    1,
+    0
+   ],
+   [
+    "福特",
+    10,
+    0
+   ],
+   [
+    "福田",
+    32,
+    0
+   ],
+   [
+    "福达(FORTA)",
+    1,
+    0
+   ],
+   [
+    "科莱威",
+    1,
+    0
+   ],
+   [
+    "红星",
+    3,
+    0
+   ],
+   [
+    "翼刻",
+    4,
+    0
+   ],
+   [
+    "英伦",
+    3,
+    0
+   ],
+   [
+    "莲花",
+    1,
+    0
+   ],
+   [
+    "萤火虫",
+    2,
+    0
+   ],
+   [
+    "谛艾仕",
+    1,
+    0
+   ],
+   [
+    "赛豆",
+    2,
+    0
+   ],
+   [
+    "路特斯",
+    12,
+    0
+   ],
+   [
+    "路虎",
+    1,
+    0
+   ],
+   [
+    "路虎(LAND ROVER)",
+    2,
+    0
+   ],
+   [
+    "辰际",
+    1,
+    0
+   ],
+   [
+    "远程",
+    32,
+    0
+   ],
+   [
+    "野马",
+    16,
+    0
+   ],
+   [
+    "鑫源",
+    16,
+    0
+   ],
+   [
+    "阿维塔",
+    4,
+    0
+   ],
+   [
+    "雪佛兰(CHEVROLET)",
+    6,
+    0
+   ],
+   [
+    "霆睿",
+    8,
+    0
+   ],
+   [
+    "领汇",
+    7,
+    0
+   ],
+   [
+    "风神",
+    30,
+    0
+   ],
+   [
+    "马自达",
+    2,
+    0
+   ],
+   [
+    "马自达(MAZDA)",
+    5,
+    0
+   ],
+   [
+    "骏驰",
+    4,
+    0
+   ],
+   [
+    "魏派",
+    8,
+    0
+   ],
+   [
+    "黄海",
+    3,
+    0
+   ]
+  ],
+  "rate_table": [
+   [
+    "比亚迪",
+    478,
+    30,
+    166758,
+    5558.6
+   ],
+   [
+    "吉利",
+    151,
+    12,
+    79002,
+    6583.5
+   ],
+   [
+    "零跑",
+    148,
+    9,
+    66257,
+    7361.9
+   ],
+   [
+    "特斯拉",
+    32,
+    2,
+    64837,
+    32418.5
+   ],
+   [
+    "小米",
+    28,
+    4,
+    40015,
+    10003.8
+   ],
+   [
+    "方程豹",
+    44,
+    5,
+    37044,
+    7408.8
+   ],
+   [
+    "(未定)",
+    295,
+    11,
+    34014,
+    3092.2
+   ],
+   [
+    "理想",
+    89,
+    8,
+    31817,
+    3977.1
+   ],
+   [
+    "名爵",
+    23,
+    4,
+    31548,
+    7887.0
+   ],
+   [
+    "五菱",
+    179,
+    9,
+    30825,
+    3425.0
+   ],
+   [
+    "问界",
+    29,
+    4,
+    22529,
+    5632.2
+   ],
+   [
+    "奇瑞",
+    186,
+    7,
+    18918,
+    2702.6
+   ],
+   [
+    "极氪",
+    96,
+    7,
+    17210,
+    2458.6
+   ],
+   [
+    "一汽",
+    39,
+    4,
+    15481,
+    3870.2
+   ],
+   [
+    "MG",
+    1,
+    1,
+    14577,
+    14577.0
+   ],
+   [
+    "腾势",
+    62,
+    5,
+    14324,
+    2864.8
+   ],
+   [
+    "赛力斯",
+    66,
+    4,
+    13961,
+    3490.2
+   ],
+   [
+    "小鹏",
+    110,
+    8,
+    13046,
+    1630.8
+   ],
+   [
+    "领克",
+    45,
+    7,
+    12257,
+    1751.0
+   ],
+   [
+    "蔚来",
+    18,
+    4,
+    12046,
+    3011.5
+   ],
+   [
+    "岚图",
+    61,
+    6,
+    10045,
+    1674.2
+   ],
+   [
+    "长城",
+    20,
+    4,
+    9127,
+    2281.8
+   ],
+   [
+    "大众(VOLKSWAGEN)",
+    44,
+    5,
+    8922,
+    1784.4
+   ],
+   [
+    "红旗",
+    78,
+    13,
+    7825,
+    601.9
+   ],
+   [
+    "智己",
+    53,
+    6,
+    6810,
+    1135.0
+   ],
+   [
+    "乐道",
+    4,
+    2,
+    5839,
+    2919.5
+   ],
+   [
+    "尚界",
+    12,
+    3,
+    5741,
+    1913.7
+   ],
+   [
+    "阿维塔（AVATR）",
+    42,
+    2,
+    5582,
+    2791.0
+   ],
+   [
+    "东风日产",
+    19,
+    3,
+    5493,
+    1831.0
+   ],
+   [
+    "传祺(Trumpchi)",
+    51,
+    6,
+    5387,
+    897.8
+   ],
+   [
+    "东风",
+    169,
+    11,
+    5129,
+    466.3
+   ],
+   [
+    "智界",
+    18,
+    3,
+    5069,
+    1689.7
+   ],
+   [
+    "捷途",
+    73,
+    5,
+    4988,
+    997.6
+   ],
+   [
+    "别克",
+    5,
+    1,
+    4951,
+    4951.0
+   ],
+   [
+    "埃安(AION)",
+    211,
+    4,
+    4481,
+    1120.2
+   ],
+   [
+    "哈弗",
+    83,
+    3,
+    4357,
+    1452.3
+   ],
+   [
+    "魏",
+    63,
+    1,
+    3740,
+    3740.0
+   ],
+   [
+    "长安",
+    291,
+    9,
+    3638,
+    404.2
+   ],
+   [
+    "精灵(smart)",
+    37,
+    4,
+    3065,
+    766.2
+   ],
+   [
+    "荣威",
+    39,
+    6,
+    2718,
+    453.0
+   ],
+   [
+    "江淮",
+    41,
+    3,
+    2585,
+    861.7
+   ],
+   [
+    "大众",
+    73,
+    6,
+    2401,
+    400.2
+   ],
+   [
+    "沃尔沃",
+    47,
+    5,
+    1843,
+    368.6
+   ],
+   [
+    "领途",
+    16,
+    2,
+    1734,
+    867.0
+   ],
+   [
+    "欧拉",
+    110,
+    1,
+    1450,
+    1450.0
+   ],
+   [
+    "享界",
+    15,
+    3,
+    1392,
+    464.0
+   ],
+   [
+    "iCAR",
+    1,
+    1,
+    1368,
+    1368.0
+   ],
+   [
+    "金杯",
+    2,
+    1,
+    1164,
+    1164.0
+   ],
+   [
+    "华彰",
+    15,
+    2,
+    1158,
+    579.0
+   ],
+   [
+    "凯翼",
+    33,
+    3,
+    1117,
+    372.3
+   ],
+   [
+    "奥迪(AUDI)",
+    34,
+    2,
+    612,
+    306.0
+   ],
+   [
+    "昊铂",
+    28,
+    5,
+    589,
+    117.8
+   ],
+   [
+    "启辰",
+    19,
+    2,
+    537,
+    268.5
+   ],
+   [
+    "富康",
+    6,
+    1,
+    500,
+    500.0
+   ],
+   [
+    "猛士",
+    9,
+    1,
+    417,
+    417.0
+   ],
+   [
+    "宝骏",
+    30,
+    2,
+    340,
+    170.0
+   ],
+   [
+    "奥迪",
+    17,
+    1,
+    312,
+    312.0
+   ],
+   [
+    "凌宝",
+    21,
+    2,
+    279,
+    139.5
+   ],
+   [
+    "睿蓝",
+    1,
+    1,
+    266,
+    266.0
+   ],
+   [
+    "飞凡",
+    21,
+    1,
+    250,
+    250.0
+   ],
+   [
+    "羿驰",
+    17,
+    2,
+    240,
+    120.0
+   ],
+   [
+    "赛力斯蓝电",
+    8,
+    1,
+    214,
+    214.0
+   ],
+   [
+    "大通",
+    68,
+    2,
+    207,
+    103.5
+   ],
+   [
+    "星途",
+    60,
+    3,
+    196,
+    65.3
+   ],
+   [
+    "瑞风",
+    8,
+    2,
+    182,
+    91.0
+   ],
+   [
+    "极狐",
+    31,
+    1,
+    175,
+    175.0
+   ],
+   [
+    "北汽",
+    8,
+    1,
+    145,
+    145.0
+   ],
+   [
+    "锐胜",
+    24,
+    1,
+    145,
+    145.0
+   ],
+   [
+    "仰望",
+    13,
+    2,
+    137,
+    68.5
+   ],
+   [
+    "本田",
+    1,
+    1,
+    67,
+    67.0
+   ],
+   [
+    "本田(HONDA)",
+    19,
+    1,
+    67,
+    67.0
+   ],
+   [
+    "创维",
+    8,
+    2,
+    60,
+    30.0
+   ],
+   [
+    "开沃",
+    10,
+    2,
+    60,
+    30.0
+   ],
+   [
+    "易至",
+    3,
+    1,
+    39,
+    39.0
+   ],
+   [
+    "北京现代",
+    4,
+    1,
+    28,
+    28.0
+   ],
+   [
+    "极石",
+    8,
+    1,
+    7,
+    7.0
+   ],
+   [
+    "翼真",
+    8,
+    1,
+    5,
+    5.0
+   ],
+   [
+    "灵悉",
+    1,
+    1,
+    4,
+    4.0
+   ],
+   [
+    "颐驰",
+    4,
+    1,
+    4,
+    4.0
+   ],
+   [
+    "起亚",
+    8,
+    1,
+    3,
+    3.0
+   ],
+   [
+    "梅赛德斯-奔驰(Mercedes-Ben...",
+    9,
+    1,
+    2,
+    2.0
+   ],
+   [
+    "三菱",
+    3,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "上汽飞凡",
+    5,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "东南",
+    5,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "东风标致",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "丰田",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "丰田 (TOYOTA)",
+    2,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "丰田(TOYOTA)",
+    26,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "予风",
+    4,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "云度",
+    9,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "众泰",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "依维柯",
+    14,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "俊风",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "光束(MINI)",
+    8,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "几何",
+    26,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "凯迪拉克",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "凯迪拉克(CADILLAC)",
+    11,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "别克(BUICK)",
+    34,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "力帆",
+    4,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "北京",
+    46,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "北斗星",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "华晨新日",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "合创",
+    27,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "吉利美日",
+    2,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "吉普(JEEP)",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "吉麦",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "启境",
+    7,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "哪吒",
+    141,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "国金",
+    6,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "埃安",
+    2,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "大乘",
+    8,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "大运",
+    20,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "大运远航",
+    10,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "大马",
+    6,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "天琴",
+    7,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "天际",
+    3,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "天马",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "奕境",
+    5,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "威尔马斯特",
+    3,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "威马",
+    11,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "宝马(BMW)",
+    48,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "帝豪",
+    16,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "广汽(GAC)",
+    3,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "开瑞",
+    4,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "御捷马",
+    8,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "思皓",
+    13,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "恒合",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "恒润",
+    2,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "恒驰",
+    4,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "悠宝利(U-Belief)",
+    2,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "悦达",
+    14,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "捷达(JETTA)",
+    4,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "敏微",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "斯威",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "晶马",
+    3,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "极星",
+    27,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "极狐(ARCFOX)",
+    97,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "极越",
+    14,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "枫叶",
+    19,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "梅赛德斯-奔驰",
+    6,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "梅赛德斯-奔驰(Mercedes-Benz)",
+    5,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "毅威(M-NV)",
+    2,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "江南",
+    9,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "江铃",
+    18,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "江铃全顺",
+    8,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "沙龙",
+    3,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "海马",
+    11,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "渝州",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "燕铃",
+    15,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "爱咖",
+    44,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "爱驰",
+    5,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "猎豹(LEOPAARD)",
+    3,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "玛斯丹(MUSTANG)",
+    9,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "现代",
+    5,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "瑞腾",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "瑞驰",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "田野",
+    5,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "睿英",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "知豆",
+    8,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "神行者(FREELANDER)",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "福特",
+    10,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "福田",
+    32,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "福达(FORTA)",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "科莱威",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "红星",
+    3,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "翼刻",
+    4,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "英伦",
+    3,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "莲花",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "萤火虫",
+    2,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "谛艾仕",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "赛豆",
+    2,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "路特斯",
+    12,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "路虎",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "路虎(LAND ROVER)",
+    2,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "辰际",
+    1,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "远程",
+    32,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "野马",
+    16,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "鑫源",
+    16,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "阿维塔",
+    4,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "雪佛兰(CHEVROLET)",
+    6,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "霆睿",
+    8,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "领汇",
+    7,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "风神",
+    30,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "马自达",
+    2,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "马自达(MAZDA)",
+    5,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "骏驰",
+    4,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "魏派",
+    8,
+    0,
+    0,
+    0.0
+   ],
+   [
+    "黄海",
+    3,
+    0,
+    0,
+    0.0
+   ]
+  ],
+  "by_batch_note": "by_batch 第 3 位 = 该批次公告车型数（底表行数，=公告车型/型号条数）；第 4 位 = 该批次公告车型在 2026-09 的**车系级快照销量合计**（统一快照口径，非批次发布当期切片）；同批次内同车系只计一次。",
+  "unit": "车系",
+  "year_source": "底表「批次时间表」sheet 的公告年月（例 341→2021-03）",
+  "by_batch_detail": [
+   [
+    341,
+    144,
+    144,
+    16
+   ],
+   [
+    342,
+    88,
+    88,
+    16
+   ],
+   [
+    343,
+    128,
+    128,
+    15
+   ],
+   [
+    344,
+    83,
+    83,
+    8
+   ],
+   [
+    345,
+    101,
+    101,
+    17
+   ],
+   [
+    346,
+    74,
+    74,
+    16
+   ],
+   [
+    347,
+    72,
+    72,
+    11
+   ],
+   [
+    348,
+    88,
+    88,
+    17
+   ],
+   [
+    349,
+    61,
+    61,
+    9
+   ],
+   [
+    350,
+    62,
+    62,
+    13
+   ],
+   [
+    351,
+    105,
+    105,
+    15
+   ],
+   [
+    352,
+    54,
+    54,
+    10
+   ],
+   [
+    353,
+    25,
+    25,
+    6
+   ],
+   [
+    354,
+    44,
+    44,
+    11
+   ],
+   [
+    355,
+    65,
+    65,
+    14
+   ],
+   [
+    356,
+    46,
+    46,
+    8
+   ],
+   [
+    357,
+    71,
+    71,
+    19
+   ],
+   [
+    358,
+    2,
+    2,
+    0
+   ],
+   [
+    359,
+    52,
+    52,
+    16
+   ],
+   [
+    360,
+    42,
+    42,
+    17
+   ],
+   [
+    361,
+    16,
+    16,
+    1
+   ],
+   [
+    362,
+    59,
+    59,
+    17
+   ],
+   [
+    363,
+    40,
+    40,
+    7
+   ],
+   [
+    364,
+    7,
+    7,
+    1
+   ],
+   [
+    365,
+    81,
+    81,
+    19
+   ],
+   [
+    366,
+    51,
+    51,
+    12
+   ],
+   [
+    367,
+    64,
+    64,
+    19
+   ],
+   [
+    368,
+    44,
+    44,
+    14
+   ],
+   [
+    369,
+    66,
+    66,
+    18
+   ],
+   [
+    370,
+    60,
+    60,
+    18
+   ],
+   [
+    371,
+    54,
+    54,
+    11
+   ],
+   [
+    372,
+    69,
+    69,
+    20
+   ],
+   [
+    373,
+    79,
+    79,
+    24
+   ],
+   [
+    374,
+    96,
+    96,
+    22
+   ],
+   [
+    375,
+    64,
+    64,
+    27
+   ],
+   [
+    376,
+    56,
+    56,
+    18
+   ],
+   [
+    377,
+    67,
+    67,
+    21
+   ],
+   [
+    378,
+    78,
+    78,
+    19
+   ],
+   [
+    379,
+    84,
+    84,
+    25
+   ],
+   [
+    380,
+    100,
+    100,
+    22
+   ],
+   [
+    381,
+    52,
+    52,
+    20
+   ],
+   [
+    382,
+    94,
+    94,
+    32
+   ],
+   [
+    383,
+    89,
+    89,
+    24
+   ],
+   [
+    384,
+    121,
+    121,
+    20
+   ],
+   [
+    385,
+    76,
+    76,
+    25
+   ],
+   [
+    386,
+    68,
+    68,
+    16
+   ],
+   [
+    387,
+    52,
+    52,
+    15
+   ],
+   [
+    388,
+    63,
+    63,
+    21
+   ],
+   [
+    389,
+    56,
+    56,
+    25
+   ],
+   [
+    390,
+    130,
+    130,
+    36
+   ],
+   [
+    391,
+    86,
+    86,
+    26
+   ],
+   [
+    392,
+    71,
+    71,
+    22
+   ],
+   [
+    393,
+    64,
+    64,
+    19
+   ],
+   [
+    394,
+    48,
+    48,
+    15
+   ],
+   [
+    395,
+    98,
+    98,
+    32
+   ],
+   [
+    396,
+    78,
+    78,
+    22
+   ],
+   [
+    397,
+    129,
+    129,
+    36
+   ],
+   [
+    398,
+    112,
+    112,
+    37
+   ],
+   [
+    399,
+    99,
+    99,
+    28
+   ],
+   [
+    400,
+    99,
+    99,
+    30
+   ],
+   [
+    401,
+    137,
+    137,
+    38
+   ],
+   [
+    402,
+    177,
+    177,
+    42
+   ],
+   [
+    403,
+    84,
+    84,
+    24
+   ],
+   [
+    404,
+    92,
+    92,
+    20
+   ],
+   [
+    405,
+    68,
+    68,
+    26
+   ],
+   [
+    406,
+    85,
+    85,
+    21
+   ],
+   [
+    407,
+    112,
+    112,
+    38
+   ],
+   [
+    408,
+    108,
+    108,
+    28
+   ],
+   [
+    409,
+    111,
+    111,
+    30
+   ],
+   [
+    410,
+    70,
+    68,
+    12
+   ],
+   [
+    411,
+    46,
+    46,
+    10
+   ],
+   [
+    412,
+    58,
+    58,
+    5
+   ]
+  ],
+  "by_batch_detail_fields": [
+   "批次",
+   "公告行数",
+   "去重产品型号数",
+   "已锚定车系数"
+  ],
+  "note": "跨批次/跨年同车系会分别计入各自批次/年份（车系级去重仅在组内进行），故 by_batch 求和 > sales_total_dedup 属正确现象。"
+ },
+ "dedup_selfcheck": {
+  "star": {
+   "case": "星愿",
+   "resolved_seriesid": "7806",
+   "seriesname_in_board": "星愿",
+   "generic_names": [
+    "星愿STAR、星愿",
+    "星愿UP、星愿",
+    "星愿、星愿UP",
+    "星愿、星愿Ultra",
+    "星愿、派派、龙猫"
+   ],
+   "generic_names_count": 5,
+   "collapsed_rows": 15,
+   "distinct_series_in_top20": 1,
+   "in_top20": true,
+   "pass": true
+  },
+  "cases": [
+   {
+    "case": "星愿",
+    "resolved_seriesid": "7806",
+    "seriesname_in_board": "星愿",
+    "generic_names": [
+     "星愿STAR、星愿",
+     "星愿UP、星愿",
+     "星愿、星愿UP",
+     "星愿、星愿Ultra",
+     "星愿、派派、龙猫"
+    ],
+    "generic_names_count": 5,
+    "collapsed_rows": 15,
+    "distinct_series_in_top20": 1,
+    "in_top20": true,
+    "pass": true
+   },
+   {
+    "case": "Model Y",
+    "resolved_seriesid": "5769",
+    "seriesname_in_board": "Model Y",
+    "generic_names": [
+     "Model Y",
+     "特斯拉 MODEL Y",
+     "特斯拉 MODEL Y L"
+    ],
+    "generic_names_count": 3,
+    "collapsed_rows": 17,
+    "distinct_series_in_top20": 1,
+    "in_top20": true,
+    "pass": true
+   },
+   {
+    "case": "Model 3",
+    "resolved_seriesid": "5346",
+    "seriesname_in_board": "Model 3",
+    "generic_names": [
+     "Model 3",
+     "特斯拉 MODEL 3",
+     "特斯拉 MODEL3"
+    ],
+    "generic_names_count": 3,
+    "collapsed_rows": 14,
+    "distinct_series_in_top20": 1,
+    "in_top20": true,
+    "pass": true
+   },
+   {
+    "case": "比亚迪宋Ultra",
+    "resolved_seriesid": "8511",
+    "seriesname_in_board": "宋Ultra",
+    "generic_names": [
+     "比亚迪宋Ultra",
+     "比亚迪宋Ultra,比亚迪大宋",
+     "比亚迪宋Ultra、比亚迪大宋"
+    ],
+    "generic_names_count": 3,
+    "collapsed_rows": 7,
+    "distinct_series_in_top20": 1,
+    "in_top20": true,
+    "pass": true
+   },
+   {
+    "case": "元UP",
+    "resolved_seriesid": "7538",
+    "seriesname_in_board": "元UP",
+    "generic_names": [
+     "比亚迪元UP"
+    ],
+    "generic_names_count": 1,
+    "collapsed_rows": 9,
+    "distinct_series_in_top20": 1,
+    "in_top20": true,
+    "pass": true
+   },
+   {
+    "case": "海豚",
+    "resolved_seriesid": "6139",
+    "seriesname_in_board": "海豚",
+    "generic_names": [
+     "比亚迪海豚",
+     "比亚迪海豚,比亚迪EA1",
+     "海豚"
+    ],
+    "generic_names_count": 3,
+    "collapsed_rows": 16,
+    "distinct_series_in_top20": 1,
+    "in_top20": true,
+    "pass": true
+   }
+  ],
+  "summary": {
+   "cases_checked": 6,
+   "cases_pass": 6,
+   "rule": "先按 seriesid 建车系记录（数值型取中位数 median、分类型取众数 mode），再对车系记录聚合销量；同车系多行不重复计数"
+  },
+  "multi_series_cells": [
+   {
+    "generic": "享境S9,华境S",
+    "rows": 3,
+    "sids": [
+     "7826",
+     "8283"
+    ],
+    "candidate_names": [
+     "华境S",
+     "宝骏享境"
+    ]
+   },
+   {
+    "generic": "岚图FREE,岚图知音",
+    "rows": 3,
+    "sids": [
+     "5924",
+     "7728"
+    ],
+    "candidate_names": [
+     "岚图FREE",
+     "岚图知音"
+    ]
+   },
+   {
+    "generic": "星海V6,星海V6PLUS",
+    "rows": 2,
+    "sids": [
+     "8600",
+     "8745"
+    ],
+    "candidate_names": [
+     "星海V6",
+     "星海V6 PLUS"
+    ]
+   },
+   {
+    "generic": "星耀、星耀8、银河星耀、银河星耀8",
+    "rows": 2,
+    "sids": [
+     "8042",
+     "8211",
+     "8313"
+    ],
+    "candidate_names": [
+     "银河星耀6",
+     "银河星耀7",
+     "银河星耀8"
+    ]
+   },
+   {
+    "generic": "比亚迪秦PLUS,比亚迪秦L",
+    "rows": 2,
+    "sids": [
+     "5964",
+     "7578"
+    ],
+    "candidate_names": [
+     "秦L",
+     "秦PLUS"
+    ]
+   },
+   {
+    "generic": "腾势Z9,腾势Z9S",
+    "rows": 2,
+    "sids": [
+     "7838",
+     "8758"
+    ],
+    "candidate_names": [
+     "腾势Z9",
+     "腾势Z9S"
+    ]
+   },
+   {
+    "generic": "风云A9,风云A9 L",
+    "rows": 2,
+    "sids": [
+     "7225",
+     "7853"
+    ],
+    "candidate_names": [
+     "风云A9",
+     "风云A9L"
+    ]
+   },
+   {
+    "generic": "比亚迪汉、比亚迪e9",
+    "rows": 1,
+    "sids": [
+     "5499",
+     "5955"
+    ],
+    "candidate_names": [
+     "比亚迪e9",
+     "汉"
+    ]
+   },
+   {
+    "generic": "羿,羿驰05",
+    "rows": 1,
+    "sids": [
+     "6005",
+     "8017"
+    ],
+    "candidate_names": [
+     "羿",
+     "羿驰05"
+    ]
+   },
+   {
+    "generic": "雷霆、星海X5、星海T5 PLUS",
+    "rows": 1,
+    "sids": [
+     "8277",
+     "8457"
+    ],
+    "candidate_names": [
+     "星海T5",
+     "星海X5"
+    ]
+   },
+   {
+    "generic": "雷霆、星海X5、星海T5 PLUS、星海T5",
+    "rows": 1,
+    "sids": [
+     "8277",
+     "8457"
+    ],
+    "candidate_names": [
+     "星海T5",
+     "星海X5"
+    ]
+   }
+  ],
+  "multi_series_cell_count": 11,
+  "note": "star = meta.dedup_selfcheck（契约字段）；cases 为全部指定用例。distinct_series_in_top20 = 该用例在 2026-09 Top20 中占据的席位数，去重正确时应 == 1（未进 Top20 时为 0，见 in_top20）。"
+ },
+ "dedup_assertions": {
+  "assertions": [
+   {
+    "by": "细分市场",
+    "buckets": 24,
+    "series_count_sum": 282,
+    "distinct_series": 282,
+    "linked_series": 282,
+    "duplicated": [],
+    "pass": true
+   },
+   {
+    "by": "动力类型",
+    "buckets": 3,
+    "series_count_sum": 282,
+    "distinct_series": 282,
+    "linked_series": 282,
+    "duplicated": [],
+    "pass": true
+   },
+   {
+    "by": "企业",
+    "buckets": 54,
+    "series_count_sum": 282,
+    "distinct_series": 282,
+    "linked_series": 282,
+    "duplicated": [],
+    "pass": true
+   },
+   {
+    "by": "品牌",
+    "buckets": 76,
+    "series_count_sum": 282,
+    "distinct_series": 282,
+    "linked_series": 282,
+    "duplicated": [],
+    "pass": true
+   },
+   {
+    "by": "价格带",
+    "buckets": 7,
+    "series_count_sum": 282,
+    "distinct_series": 282,
+    "linked_series": 282,
+    "duplicated": [],
+    "pass": true
+   },
+   {
+    "by": "续航分箱",
+    "buckets": 6,
+    "series_count_sum": 282,
+    "distinct_series": 282,
+    "linked_series": 282,
+    "duplicated": [],
+    "pass": true
+   }
+  ],
+  "all_pass": true,
+  "selfcheck_pass": true
+ },
+ "unit": "车系",
+ "dedup_rule": "先按 seriesid 建车系记录（数值型取中位数 median、分类型取众数 mode），再对车系记录聚合销量；同车系多行不重复计数",
+ "generated_at": "2026-10-19",
+ "contract_assertions": {
+  "assertions": [
+   {
+    "name": "coverage.status_counts 六类之和 == base_rows",
+    "value": 5475,
+    "expect": 5475,
+    "pass": true
+   },
+   {
+    "name": "coverage.buckets 四类之和 == status_counts 后四类之和",
+    "value": 3275,
+    "expect": 3275,
+    "pass": true
+   },
+   {
+    "name": "trend.price_monthly 每行长度 == len(meta.price_bins)",
+    "value": [
+     7
+    ],
+    "expect": 7,
+    "pass": true
+   },
+   {
+    "name": "meta.qc.monthly_counts 键集合 == meta.months",
+    "value": [
+     "2025-12",
+     "2026-01",
+     "2026-02",
+     "2026-03",
+     "2026-04",
+     "2026-05",
+     "2026-06",
+     "2026-07",
+     "2026-08",
+     "2026-09"
+    ],
+    "expect": [
+     "2025-12",
+     "2026-01",
+     "2026-02",
+     "2026-03",
+     "2026-04",
+     "2026-05",
+     "2026-06",
+     "2026-07",
+     "2026-08",
+     "2026-09"
+    ],
+    "pass": true
+   },
+   {
+    "name": "trend.monthly 10 行、5 元（R1 三层）且 total == bev+phev+erev",
+    "value": [
+     [
+      "2025-12",
+      5,
+      0
+     ],
+     [
+      "2026-01",
+      5,
+      0
+     ],
+     [
+      "2026-02",
+      5,
+      0
+     ],
+     [
+      "2026-03",
+      5,
+      0
+     ],
+     [
+      "2026-04",
+      5,
+      0
+     ],
+     [
+      "2026-05",
+      5,
+      0
+     ],
+     [
+      "2026-06",
+      5,
+      0
+     ],
+     [
+      "2026-07",
+      5,
+      0
+     ],
+     [
+      "2026-08",
+      5,
+      0
+     ],
+     [
+      "2026-09",
+      5,
+      0
+     ]
+    ],
+    "pass": true
+   },
+   {
+    "name": "F1：trend.monthly 与 structure.by_energy 动力口径一致（R1 同源）",
+    "value": {
+     "by_energy": {
+      "BEV": 523457,
+      "PHEV": 231121,
+      "EREV": 43123
+     },
+     "monthly_last": [
+      523457,
+      231121,
+      43123
+     ]
+    },
+    "expect": [
+     523457,
+     231121,
+     43123
+    ],
+    "pass": true
+   },
+   {
+    "name": "F3：trend.price_monthly 各月分箱合计 == 当月已锚定合计 − 未覆盖",
+    "value": [
+     [
+      "2025-12",
+      1081148,
+      1081206,
+      58
+     ],
+     [
+      "2026-01",
+      480849,
+      480849,
+      0
+     ],
+     [
+      "2026-02",
+      379231,
+      379231,
+      0
+     ],
+     [
+      "2026-03",
+      661352,
+      661352,
+      0
+     ],
+     [
+      "2026-04",
+      634125,
+      634125,
+      0
+     ],
+     [
+      "2026-05",
+      708665,
+      708665,
+      0
+     ],
+     [
+      "2026-06",
+      740915,
+      740915,
+      0
+     ],
+     [
+      "2026-07",
+      691150,
+      691150,
+      0
+     ],
+     [
+      "2026-08",
+      734153,
+      734155,
+      2
+     ],
+     [
+      "2026-09",
+      796895,
+      797701,
+      806
+     ]
+    ],
+    "pass": true
+   },
+   {
+    "name": "price_range_matrix 6×6（销量/车系数各 6 元）",
+    "value": 6,
+    "pass": true
+   },
+   {
+    "name": "range_bins 顺序 == range_bins_def",
+    "value": [
+     "<300km",
+     "300-400km",
+     "400-500km",
+     "500-600km",
+     "600-700km",
+     "≥700km"
+    ],
+    "pass": true
+   },
+   {
+    "name": "去重结构断言（各分桶 seriesid 两两不交）",
+    "value": true,
+    "pass": true
+   }
+  ],
+  "all_pass": true
+ }
+}

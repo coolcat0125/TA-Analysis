@@ -23,3 +23,6 @@ _ocr_texts/
 # Node 本地依赖与复跑输出
 node_modules/
 /.rerun/
+# 销量原始页归档与采集缓存（体积过大，仅本地留存；见 sales_source_qc_20261019.json meta.raw_archive_policy）
+audit-output/sales_autohome_raw_pages_*.json
+_cache_sales_*.json

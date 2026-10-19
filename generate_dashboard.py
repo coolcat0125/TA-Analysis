@@ -66,6 +66,7 @@ import openpyxl
 import json
 import os
 import re
+import shutil
 import sys
 import datetime
 
@@ -77,6 +78,9 @@ DEFAULT_IN = os.path.join(HERE, 'NEV公告参数汇总表_合并版（341~410批
 DEFAULT_OUT = os.path.join(HERE, 'NEV公告数据看板.html')
 DEFAULT_RELEASE_OUT = os.path.join(HERE, 'NEV公告数据看板_发布版.html')
 COPYRIGHT = 'Copyright (c) 2026 David YEAH'
+VER = 'v4.9.24'
+ARCHIVE = os.path.join(HERE, 'archive')
+SALES_JSON = os.path.join(HERE, 'audit-output', 'sales_linkage_analytics_20261019.json')
 ECHARTS_PATH = os.path.join(HERE, 'echarts.min.js')
 ECHARTSGL_PATH = os.path.join(HERE, 'echarts-gl.min.js')   # 三维展示（scatter3D/grid3D）
 XLSXLIB_PATH = os.path.join(HERE, 'xlsx.full.min.js')
@@ -935,6 +939,7 @@ body.show-gaps .card.gap-hidden-note{display:none}
   <button class="tab" data-p="pDist">分布格局</button>
   <button class="tab" data-p="pCustom">自定义分布</button>
   <button class="tab" data-p="p5">企业与品牌</button>
+  <button class="tab" data-p="p7">销量联动</button>
   <button class="tab" data-p="p6">数据管理</button>
 </nav>
 
@@ -1083,6 +1088,22 @@ body.show-gaps .card.gap-hidden-note{display:none}
   </div>
 </section>
 
+<!-- ============ Panel 7 销量联动（车系级去重口径） ============ -->
+<section class="panel" id="p7">
+  <div class="insight"><div class="ic">¥</div><div class="tx" id="insightSalesTx"></div></div>
+  <div class="grid">
+    <div class="card c-s6"><div class="c-h"><div class="c-t">细分市场销量结构</div><div class="c-s">车系级去重 · 已锚定车系 Top 12</div></div><div class="chart tall" id="chSalesSeg"></div></div>
+    <div class="card c-s6"><div class="c-h"><div class="c-t">销量集中度 CR / HHI</div><div class="c-s">已锚定车系 vs 全榜 · 两种口径对照</div></div><div class="chart tall" id="chSalesCR"></div></div>
+    <div class="card c-s7"><div class="c-h"><div class="c-t">销量月度趋势</div><div class="c-s">BEV / PHEV / EREV 堆积（已锚定）+ 全榜总量对照线</div></div><div class="chart tall" id="chSalesTrend"></div></div>
+    <div class="card c-s5"><div class="c-h"><div class="c-t">月度榜单迁移</div><div class="c-s">新晋 vs 掉榜（月度名册集合差，非 Top20 位次差）</div></div><div class="chart tall" id="chSalesMigrate"></div></div>
+  </div>
+  <div class="caveat" style="margin-top:10px;font-size:11.5px;line-height:1.75;opacity:.82">
+    <b>口径铁律</b>：本页统计单元 = <b>车系</b>（按车系ID 去重）。底表行级「月销量」仅供单行参考，<b>禁止加总</b>——
+    <span id="salesCaveat"></span>
+    销量源：<span id="salesSrcTip"></span>
+  </div>
+</section>
+
 <!-- ============ Panel 6 数据管理 ============ -->
 <section class="panel" id="p6">
   <div class="insight"><div class="ic">⇅</div><div class="tx">导出当前筛选数据供进一步细化分析；导入最新公告数据表后，<b>全局数据与图表将实时刷新</b>（无需重新运行生成脚本）。</div></div>
@@ -1158,6 +1179,8 @@ body.show-gaps .card.gap-hidden-note{display:none}
 <script>
 const META = __META_JSON__;
 const RAW_INIT = __DATA_JSON__;
+/* v4.9.28：销量联动数据（车系级去重口径·全案唯一 JSON 接口 audit-output/sales_linkage_analytics_20261019.json） */
+const SALES = __SALES_JSON__;
 </script>
 <script>
 'use strict';
@@ -1218,7 +1241,8 @@ const CHART_INSIGHT_IDS = ['chBatch','chType','chSeg','chEnt','chEvo',
   'chRgB','chRgP','chCr','chBtTrend','chEd','chEcTrend','chEc',
   'dRvsLen','dCvsRg','dEcVsRg','dEdVsRg','dMassLen','chCustom',
   'chEntTrend','chEntSeg','chNewEnt','chBrandTop',
-  'chFill','chSrc','chHeat'];
+  'chFill','chSrc','chHeat',
+  'chSalesSeg','chSalesCR','chSalesTrend','chSalesMigrate'];
 function initCardInsights(){
   for(const id of CHART_INSIGHT_IDS){
     const el=document.getElementById(id); if(!el) continue;
@@ -3244,7 +3268,7 @@ function jsSanitize(k,val,ptype){
   return (rng[0]<=val&&val<=rng[1])?val:null;
 }
 function parseImportedSheet(aoa, fname){
-  /* v4.9.27：表头名寻址（导入文件=权威底表 39 列同构），输出 30 位记录与 RAW_INIT 同构。
+  /* v4.9.27：表头名寻址（导入文件=权威底表 41 列同构），输出 30 位记录与 RAW_INIT 同构。
      旧版按 v4.1-era 25 位硬编码下标解析，导入后与内嵌 30 位数据错位（09-16 遗留，本版重构）。 */
   const records=[]; let cleaned=0;
   if(!aoa.length) return {records,cleaned};
@@ -3354,6 +3378,104 @@ function initImport(){
     setTimeout(()=>{Object.values(CHARTS).forEach(c=>{try{c.resize();}catch(e){}});},60);
     document.getElementById('p6').scrollIntoView({behavior:'smooth',block:'start'});
   };
+}
+
+/* ==================== 销量联动（车系级去重口径 · 全案唯一 JSON 接口） ==================== */
+const SC = {bev:'#5B9BD5',phev:'#ED7D31',erev:'#A5A5A5',board:'#C00000',pos:'#2E9E5B',neg:'#C0504D'};
+function renderSales(){
+  const el = document.getElementById('insightSalesTx');
+  if(!SALES){ if(el) el.textContent='销量联动数据缺失（销量 JSON 未注入或文件不可读）'; return; }
+  const S = SALES.structure||{}, cb = (SALES.coverage||{}).current_board||{};
+  if(el){
+    el.innerHTML = '统计单元 <em>车系</em>（seriesid 去重；底表行级值禁止加总）· '
+      + '已锚定 <em>' + fmt(S.series_count) + '</em> 车系 / <em>' + fmt(S.sales_total_dedup) + '</em> 辆 · '
+      + '占全榜 <em>' + S.linked_share_of_board_pct + '%</em>'
+      + (cb.pct!=null ? ' · 当前在榜车系覆盖率 <em>' + cb.pct + '%</em>（' + cb.linked_series + '/' + cb.board_series + '）' : '');
+  }
+  const cav = document.getElementById('salesCaveat');
+  if(cav) cav.innerHTML = '行级直接加总得 <b>' + fmt(S.sales_total_rowlevel_naive) + '</b> 辆，为车系级口径 <b>'
+    + fmt(S.sales_total_dedup) + '</b> 辆的 <b>' + S.duplication_ratio + ' 倍</b>（同车系多行重复占位）。';
+  const tip = document.getElementById('salesSrcTip');
+  if(tip && SALES.meta) tip.textContent = (SALES.meta.source||'') + ' · 快照 ' + (SALES.meta.snapshot_month||'')
+    + ' · 抓取日 ' + (SALES.meta.fetch_date||'') + ' · ' + (SALES.meta.scope||'');
+  chSalesSeg(); chSalesCR(); chSalesTrend(); chSalesMigrate();
+}
+function chSalesSeg(){
+  const c = chart('chSalesSeg'); if(!c || !SALES) return;
+  const all = (SALES.structure||{}).by_segment||[]; if(!all.length) return;
+  const seg = all.slice(0,12).reverse();
+  c.setOption({
+    grid:{left:80,right:78,top:12,bottom:24},
+    tooltip:{trigger:'axis',axisPointer:{type:'shadow'},formatter:p=>p[0].name+'<br/>销量 <b>'+fmt(p[0].value)+'</b> 辆'},
+    xAxis:{type:'value',axisLabel:{fontSize:9,formatter:v=>v>=10000?(v/10000).toFixed(0)+'万':v}},
+    yAxis:{type:'category',data:seg.map(r=>r[0]),axisLabel:{fontSize:10}},
+    series:[{type:'bar',data:seg.map(r=>r[1]),itemStyle:{color:SC.bev},
+      label:{show:true,position:'right',fontSize:9,formatter:p=>fmt(p.value)}}]
+  },true);
+  const top = seg[seg.length-1];
+  setInsight('chSalesSeg','细分市场销量 Top'+seg.length+'（已锚定车系口径）· 首位 <em>'+top[0]+'</em>（<em>'+fmt(top[1])+'</em> 辆）');
+}
+function chSalesCR(){
+  const c = chart('chSalesCR'); if(!c || !SALES) return;
+  const A = (SALES.concentration||{}).series||{}, B = (SALES.concentration||{}).series_board||{};
+  const cats = ['CR3','CR5','CR10'];
+  c.setOption({
+    grid:{left:54,right:20,top:36,bottom:24},
+    legend:{top:4,textStyle:{fontSize:10}},
+    tooltip:{trigger:'axis',valueFormatter:v=>v+'%'},
+    xAxis:{type:'category',data:cats,axisLabel:{fontSize:11}},
+    yAxis:{type:'value',axisLabel:{fontSize:9,formatter:'{value}%'}},
+    series:[
+      {name:'已锚定车系',type:'bar',barWidth:20,data:cats.map(k=>A[k]),itemStyle:{color:SC.bev},
+       label:{show:true,position:'top',fontSize:9,formatter:p=>p.value+'%'}},
+      {name:'全榜车系',type:'bar',barWidth:20,data:cats.map(k=>B[k]),itemStyle:{color:SC.board},
+       label:{show:true,position:'top',fontSize:9,formatter:p=>p.value+'%'}}
+    ]
+  },true);
+  setInsight('chSalesCR','已锚定 CR3 <em>'+A.CR3+'%</em> · HHI <em>'+A.HHI+'</em>（n='+A.n+'）｜全榜 CR3 <em>'+B.CR3+'%</em> · HHI <em>'+B.HHI+'</em>（n='+B.n+'）');
+}
+function chSalesTrend(){
+  const c = chart('chSalesTrend'); if(!c || !SALES) return;
+  const m = (SALES.trend||{}).monthly||[], mb = (SALES.trend||{}).monthly_board||[];
+  if(!m.length) return;
+  const g = i => m.map(r=>r[i]);
+  c.setOption({
+    grid:{left:64,right:66,top:36,bottom:30},
+    legend:{top:4,textStyle:{fontSize:9}},
+    tooltip:{trigger:'axis',valueFormatter:v=>fmt(v)+' 辆'},
+    xAxis:{type:'category',data:m.map(r=>r[0]),axisLabel:{fontSize:9,rotate:38}},
+    yAxis:[
+      {type:'value',name:'已锚定',nameTextStyle:{fontSize:9},axisLabel:{fontSize:9,formatter:v=>v>=10000?(v/10000).toFixed(0)+'万':v}},
+      {type:'value',name:'全榜',nameTextStyle:{fontSize:9},axisLabel:{fontSize:9,formatter:v=>v>=10000?(v/10000).toFixed(0)+'万':v}}
+    ],
+    series:[
+      {name:'BEV',type:'bar',stack:'a',data:g(2),itemStyle:{color:SC.bev}},
+      {name:'PHEV',type:'bar',stack:'a',data:g(3),itemStyle:{color:SC.phev}},
+      {name:'EREV',type:'bar',stack:'a',data:g(4),itemStyle:{color:SC.erev}},
+      {name:'全榜总量',type:'line',yAxisIndex:1,smooth:true,symbolSize:5,
+       data:mb.map(r=>r[1]),itemStyle:{color:SC.board},lineStyle:{width:2}}
+    ]
+  },true);
+  const ov = m[m.length-1], ob = mb[mb.length-1]||[];
+  setInsight('chSalesTrend','<em>'+ov[0]+'</em> 已锚定 <em>'+fmt(ov[1])+'</em> 辆（BEV '+fmt(ov[2])+' / PHEV '+fmt(ov[3])+' / EREV '+fmt(ov[4])+'）· 全榜 <em>'+fmt(ob[1])+'</em> 辆');
+}
+function chSalesMigrate(){
+  const c = chart('chSalesMigrate'); if(!c || !SALES) return;
+  const T = SALES.trend||{};
+  const ne = (T.new_entries||[]).slice(0,10), dr = (T.drops||[]).slice(0,10);
+  const cats = [], vals = [];
+  ne.slice().reverse().forEach(r=>{cats.push(r[0]); vals.push(r[1]);});
+  dr.slice().reverse().forEach(r=>{cats.push(r[0]); vals.push(-r[1]);});
+  if(!cats.length) return;
+  c.setOption({
+    grid:{left:98,right:44,top:14,bottom:24},
+    tooltip:{trigger:'axis',axisPointer:{type:'shadow'},
+      formatter:p=>p[0].name+'<br/>'+(p[0].value>=0?'新晋':'掉榜')+' <b>'+fmt(Math.abs(p[0].value))+'</b> 辆'},
+    xAxis:{type:'value',axisLabel:{fontSize:9,formatter:v=>{const a=Math.abs(v);return a>=10000?(v/10000).toFixed(0)+'万':v;}}},
+    yAxis:{type:'category',data:cats,axisLabel:{fontSize:9}},
+    series:[{type:'bar',barWidth:'62%',data:vals.map(v=>({value:v,itemStyle:{color:v>=0?SC.pos:SC.neg}}))}]
+  },true);
+  setInsight('chSalesMigrate','2026-09 vs 2026-08 名册集合差：新晋 <em>'+(T.new_entries||[]).length+'</em> 个 / 掉榜 <em>'+(T.drops||[]).length+'</em> 个（<b>非 Top20 位次差</b>）');
 }
 
 /* ==================== 刷新 ==================== */
@@ -3517,6 +3639,7 @@ initToTop();
 initTable();
 document.getElementById('btnTheme').onclick = toggleTheme;
 updateAll();
+renderSales();
 </script>
 </body>
 </html>'''
@@ -3553,6 +3676,20 @@ def main():
     print('[2/4] 构建数据与元信息...')
     meta = build_meta(records, in_path)
     data_json = json.dumps(records, ensure_ascii=False, separators=(',', ':'))
+    # v4.9.28：销量联动数据（车系级去重口径）——全案唯一 JSON 接口
+    # 缺失即 fail-fast：禁止以旧口径（易车202608）或空数据静默降级
+    if not os.path.exists(SALES_JSON):
+        print(f'[错误] 找不到销量联动 JSON: {SALES_JSON}')
+        print('       该文件由 WS2/link-engine 产出（audit-output/sales_linkage_analytics_20261019.json）；')
+        print('       缺失时不得以旧口径或空数据降级生成看板。')
+        sys.exit(1)
+    with open(SALES_JSON, 'r', encoding='utf-8') as f:
+        sales = json.load(f)
+    sales_json = json.dumps(sales, ensure_ascii=False, separators=(',', ':'))
+    _ss, _sm = sales['structure'], sales['meta']
+    print(f'      销量联动口径：{_sm["source"]} · 快照 {_sm["snapshot_month"]}'
+          f' · 车系级合计 {_ss["sales_total_dedup"]:,} 辆 / 全榜 {_ss["board_sales_total"]:,} 辆'
+          f' · 占全榜 {_ss["linked_share_of_board_pct"]}%')
     with open(ECHARTS_PATH, 'r', encoding='utf-8') as f:
         echarts_lib = f.read()
     with open(XLSXLIB_PATH, 'r', encoding='utf-8') as f:
@@ -3582,6 +3719,9 @@ def main():
     html = html.replace('__XLSX_LIB__', xlsx_lib)
     html = html.replace('__META_JSON__', json.dumps(meta, ensure_ascii=False, separators=(',', ':')))
     html = html.replace('__DATA_JSON__', data_json)
+    # count=1：JS 内仅 `const SALES = __SALES_JSON__;` 一处占位符，禁止误伤其他文本
+    assert html.count('__SALES_JSON__') == 1, f"__SALES_JSON__ 占位符数异常: {html.count('__SALES_JSON__')}"
+    html = html.replace('__SALES_JSON__', sales_json, 1)
     html = html.replace('__SRC_FILE__', meta['sourceFile'])
     html = html.replace('__TOTAL__', f"{meta['total']:,}")
     html = html.replace('__BMIN__', str(meta['batchMin']))
@@ -3594,6 +3734,21 @@ def main():
     rel_tag = (' <span class="tag" style="background:rgba(212,169,78,.14);'
                'border-color:rgba(212,169,78,.5);color:#D4A94E;margin-left:6px">RELEASE 发布版</span>') if release else ''
     html = html.replace('__REL_TAG__', rel_tag)
+
+    # 自动备份：文件名必须含版本号（AGENTS 2026-09-27 教训③：
+    # 带自动备份的生成器多次运行会覆盖原始备份 → 备份名含版本号 + 存在性检查）
+    # 追加守卫（2026-10-19 回测发现）：**空/极小的同名文件会永久占位**，使真实备份再也
+    # 生成不出来（存在性检查反成「毒化槽位」）→ 现有备份 < 1KB 视为无效并重新备份。
+    if os.path.exists(out_path):
+        os.makedirs(ARCHIVE, exist_ok=True)
+        _stem = os.path.splitext(os.path.basename(out_path))[0]
+        _bak = os.path.join(ARCHIVE, f'{_stem}_pre-{VER}_backup_{datetime.date.today():%Y%m%d}.html')
+        _bak_ok = os.path.exists(_bak) and os.path.getsize(_bak) >= 1024
+        if not _bak_ok:
+            shutil.copy2(out_path, _bak)
+            print(f'  原始产物已备份 → {_bak}')
+        else:
+            print(f'  备份已存在且有效（{os.path.getsize(_bak):,} B），保留不覆盖 → {_bak}')
 
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(html)

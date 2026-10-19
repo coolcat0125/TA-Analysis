@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""export_workbook_csv_v2.py — 权威底表 → master_export CSV（方案甲：全量 39 列直导出）
+"""export_workbook_csv_v2.py — 权威底表 → master_export CSV（方案甲：全量 41 列直导出）
 
-替代旧 export_master_csv.js（v4.3 33 列 schema）。行集=当前底表全量（5,392），
-列=底表 39 列原序原表头（天然对齐后续 schema）。reader/writer 逐行写（09-22 教训）。
-旧 CSV 先 .bak-时间戳 归档；产出校验：行数+列数+抽样值三方核对。
+替代旧 export_master_csv.js（v4.3 33 列 schema）。行集=当前底表全量（行数实读，禁止硬编码 5,392），
+列=底表 41 列原序原表头（天然对齐后续 schema）。reader/writer 逐行写（09-22 教训）。
+旧 CSV 先 .bak-版本号-时间戳 归档；产出校验：行数+列数+抽样值三方核对。
 用法：python export_workbook_csv_v2.py [--apply]（缺省 dry 预览统计）
 """
 import csv
@@ -17,6 +17,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 WB = os.path.join(HERE, 'NEV公告参数汇总表_合并版（341~410批）.xlsx')
 OLD = os.path.normpath(os.path.join(HERE, '..', '..', '02-数据底表', 'data', 'nev-announcements', 'db', 'master_export_fixed.csv'))
 NEW = OLD
+VER = 'v4.9.24'
 
 
 def main():
@@ -34,7 +35,13 @@ def main():
         print('表头预览:', hdr[:10])
         return
     if os.path.exists(OLD):
-        bak = OLD + '.bak-' + datetime.datetime.now().strftime('%Y%m%d%H%M')
+        # 备份名含版本号（AGENTS 2026-09-27 教训③）：同分钟重跑不得覆盖原始备份
+        stamp = datetime.datetime.now().strftime('%Y%m%d%H%M')
+        bak = f'{OLD}.bak-{VER}-{stamp}'
+        n = 1
+        while os.path.exists(bak):
+            bak = f'{OLD}.bak-{VER}-{stamp}-{n}'
+            n += 1
         os.replace(OLD, bak)
         print('旧 CSV 归档:', bak)
     with open(NEW, 'w', encoding='utf-8-sig', newline='') as f:
@@ -45,6 +52,8 @@ def main():
     chk = list(csv.reader(open(NEW, encoding='utf-8-sig')))
     assert len(chk) == len(data) + 1, '行数不符'
     assert len(chk[0]) == len(hdr), '列数不符'
+    if chk[1] != data[0]:
+        raise AssertionError(f'首行抽样不符：\n  CSV={chk[1][:6]}\n  源 ={data[0][:6]}')
     print(f'校验 PASS: {len(chk)-1} 行 × {len(chk[0])} 列 → {NEW}')
 
 
