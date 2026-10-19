@@ -1,0 +1,24 @@
+{
+  "mode": "apply",
+  "workbook": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
+  "sha_before": "4f08ccd6b99e9eeab71f693c0562d951ebc6928b4a1b146f59054e7397fba521",
+  "sha_after": "a102c542b935bb26b123135d5a4486ac044bf91b7f27d26c04aa0da7ddc38d68",
+  "backup": "archive\\v4.9.32_pre-411412_backup_20261019.xlsx",
+  "new_rows": 83,
+  "enrich_cells": 66,
+  "ledger_rows": 149,
+  "seq_from": 62230,
+  "seq_to": 62378,
+  "skipped_dups": [],
+  "erev_cells": 8,
+  "by_batch": {
+    "411": 25,
+    "412": 58
+  },
+  "normalizations": [],
+  "dryruns": [
+    "D:\\#AI\\00 Project\\17 TA analysis\\01-主仓库\\TA-Analysis\\audit-output\\cr17_008_411_dryrun_20261019.json",
+    "D:\\#AI\\00 Project\\17 TA analysis\\01-主仓库\\TA-Analysis\\audit-output\\cr17_009_412_dryrun_20261019.json"
+  ],
+  "at": "2026-10-19T19:30:57"
+}

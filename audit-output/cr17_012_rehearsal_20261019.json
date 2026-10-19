@@ -1,0 +1,23 @@
+{
+  "sim_sha_before": "2dbb4f5c5b485f90e344d545cf093d53a26d5b71e48930cf23131d4abf2ebafd",
+  "sim_sha_after": "60b4c0b9d9b1050fc28eb08c87e05cce7fe9ddbf011cb1741b4c2d3f9a87be30",
+  "orig_rows": 5393,
+  "diff_cells": 66,
+  "diff_cols": {
+    "4": 17,
+    "14": 12,
+    "33": 21,
+    "18": 6,
+    "20": 3,
+    "38": 2,
+    "19": 5
+  },
+  "new_rows": 83,
+  "ledger_add": 149,
+  "time_add": 2,
+  "map_add": 2,
+  "peer_col_violations": 0,
+  "check_rc": 0,
+  "apply_rc": 0,
+  "idem_check_rc": 0
+}

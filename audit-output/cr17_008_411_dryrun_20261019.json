@@ -1,0 +1,2839 @@
+{
+  "meta": {
+    "workbook": "D:\\#AI\\00 Project\\17 TA analysis\\01-主仓库\\TA-Analysis\\NEV公告参数汇总表_合并版（341~410批）.xlsx",
+    "workbook_sha256": "224665e37744747e1f1f7e4506e5c6a59193fb281c5353e7116717830e48306a",
+    "header": [
+      "批次",
+      "产品型号",
+      "产品商标",
+      "企业名称",
+      "车型名称",
+      "产品名称",
+      "通用名称",
+      "产品类型",
+      "细分市场",
+      "动力类型",
+      "是否减免购置税",
+      "整备质量(kg)",
+      "轴距(mm)",
+      "纯电续航里程(km)",
+      "电池容量(kWh)",
+      "电池类型",
+      "电池能量密度(Wh/kg)",
+      "百公里电耗(kWh/100km)",
+      "前电机功率/扭矩",
+      "电机总功率/扭矩",
+      "后电机功率/扭矩",
+      "电机生产企业",
+      "电机型号",
+      "综合油耗(L/100km)",
+      "B状态油耗(L/100km)",
+      "发动机排量(mL)",
+      "发动机功率(kW)",
+      "发动机生产企业",
+      "发动机型号",
+      "数据来源",
+      "车长(mm)",
+      "电芯供应商",
+      "电池包供应商",
+      "官方参数页URL",
+      "媒体校验来源",
+      "月销量(辆)",
+      "销量数据月份",
+      "销量更新日期",
+      "是否增程(EREV)"
+    ],
+    "generated_at": "2026-10-19T17:07:48.015582+08:00",
+    "sources": [
+      {
+        "path": "D:\\#AI\\00 Project\\17 TA analysis\\公告批次扫描_411-412_20261017\\data\\list_411_nev_passenger.json",
+        "sha256": "54a11c4be364c18124436c5d984fe096af6966c624dc089d6944ab26bfb98077"
+      },
+      {
+        "path": "D:\\#AI\\00 Project\\17 TA analysis\\公告批次扫描_411-412_20261017\\data\\details_411.json",
+        "sha256": "fd33aae978c69ce0f00810f26516f6c5c789756b1b624f7a9b5dc9104833df4a"
+      }
+    ],
+    "counts": {
+      "list": 46,
+      "details": 47,
+      "workbook_411": 21,
+      "new_rows": 25,
+      "enrich_rows": 21,
+      "enrich_cells": 66,
+      "ledger": 91,
+      "qc_issues": 10,
+      "unmatched": 1
+    },
+    "batch": 411,
+    "data_source": "411批正式公告（工信部公告参数查询系统详情页）",
+    "normalizations": [
+      "strip 工况标注 (CLTC)/(WLTC)/(NEDC)/(WLTP)"
+    ],
+    "qc_notes": [
+      "工况标注剥离：改写 6 格（纯电续航里程(km)=6）",
+      "涉及型号 6 个：BYD7000CFBEV3、LZ6460MJD0EV、LZ6510VLC1EV、LZ6510VLD1EV、SVW646193AEV、SVW646194AEV",
+      "逐格明细：BYD7000CFBEV3.纯电续航里程(km) 320(CLTC)→320；LZ6510VLD1EV.纯电续航里程(km) 475（CLTC）→475；LZ6510VLC1EV.纯电续航里程(km) 370（CLTC）→370；SVW646193AEV.纯电续航里程(km) 415（CLTC）→415；LZ6460MJD0EV.纯电续航里程(km) 430（CLTC）→430；SVW646194AEV.纯电续航里程(km) 520（CLTC）→520"
+    ],
+    "normalization_details": [
+      {
+        "产品型号": "BYD7000CFBEV3",
+        "列名": "纯电续航里程(km)",
+        "原值": "320(CLTC)",
+        "归一值": 320
+      },
+      {
+        "产品型号": "LZ6510VLD1EV",
+        "列名": "纯电续航里程(km)",
+        "原值": "475（CLTC）",
+        "归一值": 475
+      },
+      {
+        "产品型号": "LZ6510VLC1EV",
+        "列名": "纯电续航里程(km)",
+        "原值": "370（CLTC）",
+        "归一值": 370
+      },
+      {
+        "产品型号": "SVW646193AEV",
+        "列名": "纯电续航里程(km)",
+        "原值": "415（CLTC）",
+        "归一值": 415
+      },
+      {
+        "产品型号": "LZ6460MJD0EV",
+        "列名": "纯电续航里程(km)",
+        "原值": "430（CLTC）",
+        "归一值": 430
+      },
+      {
+        "产品型号": "SVW646194AEV",
+        "列名": "纯电续航里程(km)",
+        "原值": "520（CLTC）",
+        "归一值": 520
+      }
+    ],
+    "detail_product_name_audit": {
+      "details_total": 47,
+      "distinct_count": 8,
+      "values": [
+        {
+          "值": "换电式纯电动轿车",
+          "条数": 1,
+          "型号": [
+            "DFM7002S1F4BSEV"
+          ]
+        },
+        {
+          "值": "插电式增程混合动力多用途乘用车",
+          "条数": 3,
+          "型号": [
+            "NEQ6460REEVS59DD",
+            "LXA6530REEVX12",
+            "BJ6500A602RSHEV"
+          ]
+        },
+        {
+          "值": "插电式混合动力多用途乘用车",
+          "条数": 13,
+          "型号": [
+            "CA6500HA6PHEVTXC",
+            "CA6500HA6PHEVTXA",
+            "CA6500HA6PHEVTA",
+            "QCJ6530BE6HEV2",
+            "CC6511DQ22CPHEV",
+            "CC6531DQ22APHEV",
+            "CC6531DQ22CPHEV",
+            "CC6511DQ22APHEV",
+            "MR6521DCHEV116",
+            "MR6521DCHEV117",
+            "SGM6536UDPHEV",
+            "SGM6536UEPHEV",
+            "SGM6536UFPHEV"
+          ]
+        },
+        {
+          "值": "插电式混合动力越野乘用车",
+          "条数": 3,
+          "型号": [
+            "CC2040BV23CPHEV",
+            "CC2040BV24DPHEV",
+            "CC2040BV24APHEV"
+          ]
+        },
+        {
+          "值": "插电式混合动力轿车",
+          "条数": 1,
+          "型号": [
+            "MR7151DCHEV131"
+          ]
+        },
+        {
+          "值": "插电式混合动力运动型乘用车",
+          "条数": 4,
+          "型号": [
+            "HQ6472DCHEV110",
+            "HQ6472DCHEV111",
+            "SC6530AAAA6HEV",
+            "SC6530AAAB6HEV"
+          ]
+        },
+        {
+          "值": "纯电动多用途乘用车",
+          "条数": 16,
+          "型号": [
+            "SQR6450BEVT1VA3",
+            "SQR6450BEVT1VA2",
+            "CC6420BJ00GEBEV",
+            "CC6510DG21HABEV",
+            "LXA6503BEVW05",
+            "LXA6503BEVW06",
+            "LXA6503BEVW04",
+            "LXA6540BEVW12",
+            "SVW646194AEV",
+            "SVW646193AEV",
+            "MR6481BEV106",
+            "MR6521BEV101",
+            "LZ6510VLD1EV",
+            "LZ6460MJD0EV",
+            "LZ6510VLC1EV",
+            "BMW6495CABEV"
+          ]
+        },
+        {
+          "值": "纯电动轿车",
+          "条数": 6,
+          "型号": [
+            "CC7002DE00HBBEV",
+            "CC7002DE00HABEV",
+            "DFM7002S1F3BEV",
+            "BMW7000BABEV",
+            "BJ7001A51HBEV",
+            "BYD7000CFBEV3"
+          ]
+        }
+      ],
+      "equal_to_generic": [],
+      "non_description": [],
+      "new_rows_filled": 25,
+      "new_rows_type_filled": 25,
+      "new_rows_total": 25
+    },
+    "ledger_schema": [
+      "序号",
+      "批次",
+      "产品型号",
+      "动力类型",
+      "字段",
+      "变更类型",
+      "附件1原值",
+      "合并值",
+      "数据来源"
+    ],
+    "序号": "None 占位：由 Lead 应用脚本统一分配",
+    "set_relations": {
+      "list_46": 46,
+      "workbook_411_21": 21,
+      "new_25": 25,
+      "enrich_21": 21,
+      "details_47": 47,
+      "unmatched_1": 1,
+      "new_models": [
+        "SQR6450BEVT1VA2",
+        "SQR6450BEVT1VA3",
+        "MR6521BEV101",
+        "MR6481BEV106",
+        "BYD7000CFBEV3",
+        "LZ6510VLD1EV",
+        "LZ6510VLC1EV",
+        "CC6510DG21HABEV",
+        "SVW646193AEV",
+        "BJ7001A51HBEV",
+        "CC7002DE00HBBEV",
+        "CC2040BV24DPHEV",
+        "CC6420BJ00GEBEV",
+        "LZ6460MJD0EV",
+        "BMW6495CABEV",
+        "SVW646194AEV",
+        "CC7002DE00HABEV",
+        "DFM7002S1F4BSEV",
+        "LXA6503BEVW05",
+        "LXA6503BEVW06",
+        "BMW7000BABEV",
+        "LXA6503BEVW04",
+        "DFM7002S1F3BEV",
+        "CC2040BV24APHEV",
+        "LXA6540BEVW12"
+      ],
+      "enrich_models": [
+        "CA6500HA6PHEVTXA",
+        "CA6500HA6PHEVTXC",
+        "CA6500HA6PHEVTA",
+        "QCJ6530BE6HEV2",
+        "CC2040BV23CPHEV",
+        "CC6511DQ22CPHEV",
+        "CC6531DQ22APHEV",
+        "CC6511DQ22APHEV",
+        "CC6531DQ22CPHEV",
+        "NEQ6460REEVS59DD",
+        "LXA6530REEVX12",
+        "HQ6472DCHEV111",
+        "HQ6472DCHEV110",
+        "MR6521DCHEV116",
+        "MR7151DCHEV131",
+        "MR6521DCHEV117",
+        "SGM6536UEPHEV",
+        "SGM6536UDPHEV",
+        "SGM6536UFPHEV",
+        "SC6530AAAB6HEV",
+        "SC6530AAAA6HEV"
+      ],
+      "check_list_eq_new_plus_enrich": true,
+      "check_new_eq_list_minus_wb": true,
+      "check_wb411_subset_of_list": true,
+      "check_unmatched": true,
+      "expected_new_vs_actual": {
+        "expected_only": [],
+        "actual_only": []
+      }
+    },
+    "warnings": [],
+    "systematic_notes": [
+      "产品商标重复后缀「牌牌」：魏牌牌（官方详情原文如此，按原值落库）",
+      "PHEV 详情页不提供电机功率：17/23 个 PHEV 型号前/后/总均空（系统性来源特征，非解析缺陷）",
+      "油耗申报值(L/100km) 全空：46/46 个型号（411 公示详情未给油耗），综合油耗/B 状态油耗留空",
+      "电机组件_公示详情 为空：25/46 个型号；其中 8 个仍给出电机功率分项（已逐行记 qc），其余为 PHEV 系统性缺电机数据"
+    ],
+    "column_stats": {
+      "new": {
+        "批次": 25,
+        "产品型号": 25,
+        "产品商标": 25,
+        "企业名称": 25,
+        "车型名称": 21,
+        "产品名称": 25,
+        "通用名称": 21,
+        "产品类型": 25,
+        "细分市场": 0,
+        "动力类型": 25,
+        "是否减免购置税": 0,
+        "整备质量(kg)": 25,
+        "轴距(mm)": 25,
+        "纯电续航里程(km)": 21,
+        "电池容量(kWh)": 21,
+        "电池类型": 20,
+        "电池能量密度(Wh/kg)": 0,
+        "百公里电耗(kWh/100km)": 0,
+        "前电机功率/扭矩": 23,
+        "电机总功率/扭矩": 23,
+        "后电机功率/扭矩": 9,
+        "电机生产企业": 22,
+        "电机型号": 22,
+        "综合油耗(L/100km)": 0,
+        "B状态油耗(L/100km)": 0,
+        "发动机排量(mL)": 2,
+        "发动机功率(kW)": 2,
+        "发动机生产企业": 2,
+        "发动机型号": 2,
+        "数据来源": 25,
+        "车长(mm)": 25,
+        "电芯供应商": 1,
+        "电池包供应商": 0,
+        "官方参数页URL": 25,
+        "媒体校验来源": 0,
+        "月销量(辆)": 0,
+        "销量数据月份": 0,
+        "销量更新日期": 0,
+        "是否增程(EREV)": 0
+      },
+      "enrich": {
+        "批次": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "产品型号": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "产品商标": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "企业名称": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "车型名称": {
+          "existing_nonblank": 4,
+          "patched": 17,
+          "still_blank": 0
+        },
+        "产品名称": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "通用名称": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "产品类型": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "细分市场": {
+          "existing_nonblank": 5,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "动力类型": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "是否减免购置税": {
+          "existing_nonblank": 0,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "整备质量(kg)": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "轴距(mm)": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "纯电续航里程(km)": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "电池容量(kWh)": {
+          "existing_nonblank": 9,
+          "patched": 12,
+          "still_blank": 0
+        },
+        "电池类型": {
+          "existing_nonblank": 18,
+          "patched": 0,
+          "still_blank": 3
+        },
+        "电池能量密度(Wh/kg)": {
+          "existing_nonblank": 1,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "百公里电耗(kWh/100km)": {
+          "existing_nonblank": 9,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "前电机功率/扭矩": {
+          "existing_nonblank": 5,
+          "patched": 6,
+          "still_blank": 10
+        },
+        "电机总功率/扭矩": {
+          "existing_nonblank": 7,
+          "patched": 5,
+          "still_blank": 9
+        },
+        "后电机功率/扭矩": {
+          "existing_nonblank": 1,
+          "patched": 3,
+          "still_blank": 17
+        },
+        "电机生产企业": {
+          "existing_nonblank": 1,
+          "patched": 0,
+          "still_blank": 20
+        },
+        "电机型号": {
+          "existing_nonblank": 1,
+          "patched": 0,
+          "still_blank": 20
+        },
+        "综合油耗(L/100km)": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "B状态油耗(L/100km)": {
+          "existing_nonblank": 3,
+          "patched": 0,
+          "still_blank": 18
+        },
+        "发动机排量(mL)": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "发动机功率(kW)": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "发动机生产企业": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "发动机型号": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "数据来源": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "车长(mm)": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "电芯供应商": {
+          "existing_nonblank": 21,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "电池包供应商": {
+          "existing_nonblank": 3,
+          "patched": 0,
+          "still_blank": 18
+        },
+        "官方参数页URL": {
+          "existing_nonblank": 0,
+          "patched": 21,
+          "still_blank": 0
+        },
+        "媒体校验来源": {
+          "existing_nonblank": 18,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "月销量(辆)": {
+          "existing_nonblank": 4,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "销量数据月份": {
+          "existing_nonblank": 4,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "销量更新日期": {
+          "existing_nonblank": 4,
+          "patched": 0,
+          "still_blank": 0
+        },
+        "是否增程(EREV)": {
+          "existing_nonblank": 0,
+          "patched": 2,
+          "still_blank": 19
+        }
+      }
+    }
+  },
+  "new_rows": [
+    {
+      "批次": 411,
+      "产品型号": "SQR6450BEVT1VA2",
+      "产品商标": "捷途牌",
+      "企业名称": "奇瑞汽车股份有限公司",
+      "车型名称": "捷途环游者,环游者",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "捷途环游者,环游者",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 1777,
+      "轴距(mm)": 2735,
+      "纯电续航里程(km)": 550,
+      "电池容量(kWh)": 65.05,
+      "前电机功率/扭矩": 200,
+      "电机总功率/扭矩": 200,
+      "电机生产企业": "芜湖埃科驱动科技有限公司",
+      "电机型号": "TZ18XYA1",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4475,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_76532d3fa5d1450bae40ead12063d99d.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "SQR6450BEVT1VA3",
+      "产品商标": "捷途牌",
+      "企业名称": "奇瑞汽车股份有限公司",
+      "车型名称": "捷途环游者,环游者",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "捷途环游者,环游者",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 1875,
+      "轴距(mm)": 2735,
+      "纯电续航里程(km)": 510,
+      "电池容量(kWh)": 65.05,
+      "前电机功率/扭矩": 75,
+      "电机总功率/扭矩": 275,
+      "后电机功率/扭矩": 200,
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4475,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_23af8a5952844932999d9c960f23338e.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "MR6521BEV101",
+      "产品商标": "极氪牌",
+      "企业名称": "浙江吉利汽车有限公司",
+      "车型名称": "009光辉",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "009光辉",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 2970,
+      "轴距(mm)": 3205,
+      "纯电续航里程(km)": 720,
+      "电池容量(kWh)": 115,
+      "电池类型": "三元锂离子电池",
+      "前电机功率/扭矩": 310,
+      "电机总功率/扭矩": 680,
+      "后电机功率/扭矩": 370,
+      "电机生产企业": "衢州极电电动汽车技术有限公司/衢州极电电动汽车技术有限公司",
+      "电机型号": "YS220XYG01/TZ230XYC04",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 5217,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_91d0c7d57d9c45029e5e48dd8b602ba7.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "MR6481BEV106",
+      "产品商标": "极氪牌",
+      "企业名称": "浙江吉利汽车有限公司",
+      "车型名称": "7X",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "7X",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": "2300/2350",
+      "轴距(mm)": 2925,
+      "纯电续航里程(km)": "680/660",
+      "电池容量(kWh)": 85.06,
+      "电池类型": "磷酸铁锂锂离子电池",
+      "前电机功率/扭矩": 370,
+      "电机总功率/扭矩": 370,
+      "电机生产企业": "衢州极电电动汽车技术有限公司",
+      "电机型号": "TZ230XYC04",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4825,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e37a6c11c74444fbbc24e3618e504d22.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "BYD7000CFBEV3",
+      "产品商标": "比亚迪牌",
+      "企业名称": "比亚迪汽车工业有限公司",
+      "车型名称": "比亚迪海鸥",
+      "产品名称": "纯电动轿车",
+      "通用名称": "比亚迪海鸥",
+      "产品类型": "纯电动轿车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 1170,
+      "轴距(mm)": 2650,
+      "纯电续航里程(km)": 320,
+      "电池容量(kWh)": 30.105,
+      "电池类型": "磷酸铁锂蓄电池",
+      "前电机功率/扭矩": 85,
+      "电机总功率/扭矩": 85,
+      "电机生产企业": "郑州比亚迪汽车有限公司",
+      "电机型号": "TZ164XYA",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4205,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_5e8cc0145e1040a79fa312212567706d.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "LZ6510VLD1EV",
+      "产品商标": "东风牌",
+      "企业名称": "东风柳州汽车有限公司",
+      "车型名称": "菱智大V",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "菱智大V",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 1930,
+      "轴距(mm)": 3250,
+      "纯电续航里程(km)": 475,
+      "电池容量(kWh)": 66.67,
+      "电池类型": "磷酸铁锂蓄电池",
+      "前电机功率/扭矩": 55,
+      "电机总功率/扭矩": 180,
+      "后电机功率/扭矩": 125,
+      "电机生产企业": "苏州汇川联合动力系统股份有限公司",
+      "电机型号": "TZ180XS161",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 5100,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_6672d38e91c748c884c6bf51a66d64ca.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "LZ6510VLC1EV",
+      "产品商标": "东风牌",
+      "企业名称": "东风柳州汽车有限公司",
+      "车型名称": "菱智大V",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "菱智大V",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 1830,
+      "轴距(mm)": 3250,
+      "纯电续航里程(km)": 370,
+      "电池容量(kWh)": 50.23,
+      "电池类型": "磷酸铁锂蓄电池",
+      "前电机功率/扭矩": 55,
+      "电机总功率/扭矩": 180,
+      "后电机功率/扭矩": 125,
+      "电机生产企业": "苏州汇川联合动力系统股份有限公司",
+      "电机型号": "TZ180XS161",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 5100,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ec78ee116eaf4a65aab9d1cc9ffb9aa0.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "CC6510DG21HABEV",
+      "产品商标": "魏牌牌",
+      "企业名称": "长城汽车股份有限公司",
+      "车型名称": "V8X",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "V8X",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 2650,
+      "轴距(mm)": 3050,
+      "纯电续航里程(km)": 665,
+      "电池容量(kWh)": 100,
+      "电池类型": "镍钴锰三元锂蓄电池",
+      "前电机功率/扭矩": 220,
+      "电机总功率/扭矩": 540,
+      "后电机功率/扭矩": 320,
+      "电机生产企业": "联合汽车电子有限公司/蜂巢传动科技河北有限公司徐水分公司",
+      "电机型号": "YS220QY234/QT70TZ220001",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 5125,
+      "电芯供应商": "巢能源科技股份有限公司(单体)/蜂巢能源科技股份有限公司(总成)",
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_5fabdca81ec346edbd28653c2ef15102.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "SVW646193AEV",
+      "产品商标": "大众汽车(VOLKSWAGEN)牌",
+      "企业名称": "上汽大众汽车有限公司",
+      "车型名称": "ID.ERA 5X",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "ID.ERA 5X",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 1685,
+      "轴距(mm)": 2815,
+      "纯电续航里程(km)": 415,
+      "电池容量(kWh)": 45.8,
+      "前电机功率/扭矩": 155,
+      "电机总功率/扭矩": 155,
+      "电机生产企业": "联合汽车电子有限公司",
+      "电机型号": "TZ220QY173",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4560,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_fab94d574a894d059e387ecebebb1b59.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "BJ7001A51HBEV",
+      "产品商标": "极狐(ARCFOX)牌",
+      "企业名称": "北汽蓝谷麦格纳汽车有限公司",
+      "车型名称": "αS5",
+      "产品名称": "纯电动轿车",
+      "通用名称": "αS5",
+      "产品类型": "纯电动轿车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 1885,
+      "轴距(mm)": 2900,
+      "纯电续航里程(km)": 650,
+      "电池容量(kWh)": 64.8,
+      "前电机功率/扭矩": 200,
+      "电机总功率/扭矩": 200,
+      "电机生产企业": "北京海浩动力系统有限公司",
+      "电机型号": "TZ220XY428",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4886,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ace269f59be841da834d6103f9313e18.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "CC7002DE00HBBEV",
+      "产品商标": "欧拉牌",
+      "企业名称": "长城汽车股份有限公司",
+      "车型名称": "ORA 5",
+      "产品名称": "纯电动轿车",
+      "通用名称": "ORA 5",
+      "产品类型": "纯电动轿车",
+      "动力类型": "BEV",
+      "整备质量(kg)": "1670/1710",
+      "轴距(mm)": 2720,
+      "纯电续航里程(km)": 601,
+      "电池容量(kWh)": 58.3,
+      "电池类型": "磷酸铁锂蓄电池",
+      "前电机功率/扭矩": 150,
+      "电机总功率/扭矩": 150,
+      "电机生产企业": "蜂巢传动科技邳州有限公司",
+      "电机型号": "QT36TZ220001",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4758,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_cf054a77f4b644f9b5e57df937846682.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "CC2040BV24DPHEV",
+      "产品商标": "长城牌",
+      "企业名称": "长城汽车股份有限公司",
+      "产品名称": "插电式混合动力越野乘用车",
+      "产品类型": "插电式混合动力越野乘用车",
+      "动力类型": "PHEV",
+      "整备质量(kg)": 3360,
+      "轴距(mm)": 3000,
+      "电池类型": "镍钴锰三元锂蓄电池",
+      "发动机排量(mL)": 2993,
+      "发动机功率(kW)": 265,
+      "发动机生产企业": "长城汽车股份有限公司",
+      "发动机型号": "E30Z",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 5110,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_7a7a2789e7a74d958ebdaad72569f970.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "CC6420BJ00GEBEV",
+      "产品商标": "欧拉牌",
+      "企业名称": "长城汽车股份有限公司",
+      "车型名称": "欧拉好猫",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "欧拉好猫",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 1410,
+      "轴距(mm)": 2650,
+      "纯电续航里程(km)": 335,
+      "电池容量(kWh)": 36.4,
+      "电池类型": "磷酸铁锂蓄电池",
+      "前电机功率/扭矩": 98,
+      "电机总功率/扭矩": 98,
+      "电机生产企业": "联合汽车电子有限公司",
+      "电机型号": "QT35TZ180250",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4242,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_418c0744ca0a4b77895b2530469eb257.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "LZ6460MJD0EV",
+      "产品商标": "东风牌",
+      "企业名称": "东风柳州汽车有限公司",
+      "车型名称": "小菱智",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "小菱智",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": "1520/1550",
+      "轴距(mm)": 2800,
+      "纯电续航里程(km)": 430,
+      "电池容量(kWh)": 50.23,
+      "电池类型": "磷酸铁锂蓄电池",
+      "前电机功率/扭矩": 55,
+      "电机总功率/扭矩": 155,
+      "后电机功率/扭矩": 100,
+      "电机生产企业": "珠海英搏尔电气股份有限公司",
+      "电机型号": "YY35TZ180WLA",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4570,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_0c58cb8b6eb44a88b4017400f92e5fc4.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "BMW6495CABEV",
+      "产品商标": "宝马(BMW)牌",
+      "企业名称": "华晨宝马汽车有限公司",
+      "产品名称": "纯电动多用途乘用车",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 2237,
+      "轴距(mm)": 3005,
+      "电池类型": "磷酸铁锂离子电池",
+      "前电机功率/扭矩": 235,
+      "电机总功率/扭矩": 235,
+      "电机生产企业": "BMW AG",
+      "电机型号": "HD1001N0",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4885,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_98ec86f3bda74c73bc0dfb6ed215d262.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "SVW646194AEV",
+      "产品商标": "大众汽车(VOLKSWAGEN)牌",
+      "企业名称": "上汽大众汽车有限公司",
+      "车型名称": "ID.ERA 5X",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "ID.ERA 5X",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 1780,
+      "轴距(mm)": 2815,
+      "纯电续航里程(km)": 520,
+      "电池容量(kWh)": 58.5,
+      "前电机功率/扭矩": 155,
+      "电机总功率/扭矩": 155,
+      "电机生产企业": "联合汽车电子有限公司",
+      "电机型号": "TZ220QY173",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4560,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_30e3ea01d08a480c96bed6e747ee3ab9.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "CC7002DE00HABEV",
+      "产品商标": "欧拉牌",
+      "企业名称": "长城汽车股份有限公司",
+      "车型名称": "ORA 5",
+      "产品名称": "纯电动轿车",
+      "通用名称": "ORA 5",
+      "产品类型": "纯电动轿车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 1585,
+      "轴距(mm)": 2720,
+      "纯电续航里程(km)": 480,
+      "电池容量(kWh)": 45.3,
+      "电池类型": "磷酸铁锂蓄电池",
+      "前电机功率/扭矩": 150,
+      "电机总功率/扭矩": 150,
+      "电机生产企业": "蜂巢传动科技邳州有限公司",
+      "电机型号": "QT36TZ220001",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4758,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_2932687d6cda4b669232b814e985e097.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "DFM7002S1F4BSEV",
+      "产品商标": "东风牌",
+      "企业名称": "东风汽车集团有限公司",
+      "产品名称": "换电式纯电动轿车",
+      "产品类型": "换电式纯电动轿车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 1851,
+      "轴距(mm)": 2920,
+      "电池类型": "磷酸铁锂蓄电池",
+      "前电机功率/扭矩": 215,
+      "电机总功率/扭矩": 215,
+      "电机生产企业": "智新科技股份有限公司",
+      "电机型号": "TZ225XYH02",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4910,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_be25c24375dd4165a19f834c5d7d1ee4.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "LXA6503BEVW05",
+      "产品商标": "理想牌",
+      "企业名称": "北京理想汽车有限公司",
+      "车型名称": "理想i6",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "理想i6",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": "2395/2460",
+      "轴距(mm)": 3000,
+      "纯电续航里程(km)": "780/770",
+      "电池容量(kWh)": 96.0,
+      "电池类型": "磷酸铁锂蓄电池",
+      "前电机功率/扭矩": 250,
+      "电机总功率/扭矩": 250,
+      "电机生产企业": "江苏理想驱动技术有限公司",
+      "电机型号": "TZ220XYHP1",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4950,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_33b47060cc074b819d030aaa95a7973d.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "LXA6503BEVW06",
+      "产品商标": "理想牌",
+      "企业名称": "北京理想汽车有限公司",
+      "车型名称": "理想i6",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "理想i6",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": "2520/2585",
+      "轴距(mm)": 3000,
+      "纯电续航里程(km)": "720/710",
+      "电池容量(kWh)": 96.0,
+      "电池类型": "磷酸铁锂蓄电池",
+      "前电机功率/扭矩": 150,
+      "电机总功率/扭矩": 400,
+      "后电机功率/扭矩": 250,
+      "电机生产企业": "合肥巨一动力系统有限公司/江苏理想驱动技术有限公司",
+      "电机型号": "YS210XY103/TZ220XYHP1",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4950,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_0c9d806fa39e4e2a889e9691e2ff8ba2.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "BMW7000BABEV",
+      "产品商标": "宝马(BMW)牌",
+      "企业名称": "华晨宝马汽车有限公司",
+      "车型名称": "新世代BMW i3长轴距版",
+      "产品名称": "纯电动轿车",
+      "通用名称": "新世代BMW i3长轴距版",
+      "产品类型": "纯电动轿车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 2074,
+      "轴距(mm)": 3005,
+      "纯电续航里程(km)": 802,
+      "电池容量(kWh)": 86.9,
+      "电池类型": "三元锂离子电池",
+      "前电机功率/扭矩": 235,
+      "电机总功率/扭矩": 235,
+      "电机生产企业": "唐山爱信齿轮有限责任公司",
+      "电机型号": "HD1001N0",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4864,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_0ccf1d9f0b6e4e0ba8c375146ac00784.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "LXA6503BEVW04",
+      "产品商标": "理想牌",
+      "企业名称": "北京理想汽车有限公司",
+      "车型名称": "理想i6",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "理想i6",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": "2520/2585",
+      "轴距(mm)": 3000,
+      "纯电续航里程(km)": "720/710",
+      "电池容量(kWh)": 96.0,
+      "电池类型": "磷酸铁锂蓄电池",
+      "前电机功率/扭矩": 150,
+      "电机总功率/扭矩": 400,
+      "后电机功率/扭矩": 250,
+      "电机生产企业": "合肥巨一动力系统有限公司/江苏理想驱动技术有限公司",
+      "电机型号": "YS210XY103/TZ220XYHP1",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4950,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_0afba0a0d1dd436191b1611b8de92ee3.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "DFM7002S1F3BEV",
+      "产品商标": "东风牌",
+      "企业名称": "东风汽车集团有限公司",
+      "车型名称": "奕派EP7",
+      "产品名称": "纯电动轿车",
+      "通用名称": "奕派EP7",
+      "产品类型": "纯电动轿车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 1905,
+      "轴距(mm)": 2920,
+      "纯电续航里程(km)": 1010,
+      "电池容量(kWh)": 101.6,
+      "电池类型": "三元锂离子电池",
+      "前电机功率/扭矩": 215,
+      "电机总功率/扭矩": 215,
+      "电机生产企业": "智新科技股份有限公司",
+      "电机型号": "TZ225XYH08",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 4910,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_bea2d50dca4a44578dea996bb6467f1b.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "CC2040BV24APHEV",
+      "产品商标": "长城牌",
+      "企业名称": "长城汽车股份有限公司",
+      "产品名称": "插电式混合动力越野乘用车",
+      "产品类型": "插电式混合动力越野乘用车",
+      "动力类型": "PHEV",
+      "整备质量(kg)": 3480,
+      "轴距(mm)": 3150,
+      "电池类型": "镍钴锰三元锂蓄电池",
+      "发动机排量(mL)": 2993,
+      "发动机功率(kW)": 265,
+      "发动机生产企业": "长城汽车股份有限公司",
+      "发动机型号": "E30Z",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 5445,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_301e9bed68994423844fc8f2ffc87768.html"
+    },
+    {
+      "批次": 411,
+      "产品型号": "LXA6540BEVW12",
+      "产品商标": "理想牌",
+      "企业名称": "北京理想汽车有限公司",
+      "车型名称": "理想MEGA",
+      "产品名称": "纯电动多用途乘用车",
+      "通用名称": "理想MEGA",
+      "产品类型": "纯电动多用途乘用车",
+      "动力类型": "BEV",
+      "整备质量(kg)": 2925,
+      "轴距(mm)": 3300,
+      "纯电续航里程(km)": 710,
+      "电池容量(kWh)": 108,
+      "电池类型": "三元锂离子动力电池",
+      "前电机功率/扭矩": 155,
+      "电机总功率/扭矩": 413,
+      "后电机功率/扭矩": 258,
+      "电机生产企业": "华为技术有限公司/江苏理想驱动技术有限公司",
+      "电机型号": "CYS210XY1P1/TZ220XYHP2",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）",
+      "车长(mm)": 5355,
+      "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_dca86f639c89456183357eb6c3393f10.html"
+    }
+  ],
+  "enrich": [
+    {
+      "批次": 411,
+      "产品型号": "CA6500HA6PHEVTXA",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "红旗HS7",
+        "电池容量(kWh)": 39.5,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_174f9552c032426ca588153e657422a5.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "红旗HS7",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_174f9552c032426ca588153e657422a5.html"
+        ],
+        [
+          "电池容量(kWh)",
+          "官方详情页补全",
+          "39.5",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_174f9552c032426ca588153e657422a5.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_174f9552c032426ca588153e657422a5.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_174f9552c032426ca588153e657422a5.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "CA6500HA6PHEVTXC",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "红旗HS7",
+        "电池容量(kWh)": 53,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_edf3afae53a543eb9bfd581dc4eb1514.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "红旗HS7",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_edf3afae53a543eb9bfd581dc4eb1514.html"
+        ],
+        [
+          "电池容量(kWh)",
+          "官方详情页补全",
+          "53",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_edf3afae53a543eb9bfd581dc4eb1514.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_edf3afae53a543eb9bfd581dc4eb1514.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_edf3afae53a543eb9bfd581dc4eb1514.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "CA6500HA6PHEVTA",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "红旗HS7",
+        "电池容量(kWh)": 39.5,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_95c4085631af4e5da752412dc128d017.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "红旗HS7",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_95c4085631af4e5da752412dc128d017.html"
+        ],
+        [
+          "电池容量(kWh)",
+          "官方详情页补全",
+          "39.5",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_95c4085631af4e5da752412dc128d017.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_95c4085631af4e5da752412dc128d017.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_95c4085631af4e5da752412dc128d017.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "QCJ6530BE6HEV2",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "方程豹钛9",
+        "前电机功率/扭矩": 200,
+        "后电机功率/扭矩": 200,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "方程豹钛9",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html"
+        ],
+        [
+          "前电机功率/扭矩",
+          "官方详情页补全",
+          "200",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html"
+        ],
+        [
+          "后电机功率/扭矩",
+          "官方详情页补全",
+          "200",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "CC2040BV23CPHEV",
+      "动力类型": "PHEV",
+      "cells": {
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e60066435294454999a50a8c7e3e8e3.html"
+      },
+      "ledger": [
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e60066435294454999a50a8c7e3e8e3.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e60066435294454999a50a8c7e3e8e3.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "CC6511DQ22CPHEV",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "蓝山",
+        "电池容量(kWh)": 64.7,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e8fe9c0ef3804fa39abfd344eec73556.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "蓝山",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e8fe9c0ef3804fa39abfd344eec73556.html"
+        ],
+        [
+          "电池容量(kWh)",
+          "官方详情页补全",
+          "64.7",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e8fe9c0ef3804fa39abfd344eec73556.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e8fe9c0ef3804fa39abfd344eec73556.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e8fe9c0ef3804fa39abfd344eec73556.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "CC6531DQ22APHEV",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "蓝山",
+        "电池容量(kWh)": 53.6,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_61d023d1159249558f03baa00cd4aaf5.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "蓝山",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_61d023d1159249558f03baa00cd4aaf5.html"
+        ],
+        [
+          "电池容量(kWh)",
+          "官方详情页补全",
+          "53.6",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_61d023d1159249558f03baa00cd4aaf5.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_61d023d1159249558f03baa00cd4aaf5.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_61d023d1159249558f03baa00cd4aaf5.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "CC6511DQ22APHEV",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "蓝山",
+        "电池容量(kWh)": 53.6,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8489903da89d4b768079edce3add0a07.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "蓝山",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8489903da89d4b768079edce3add0a07.html"
+        ],
+        [
+          "电池容量(kWh)",
+          "官方详情页补全",
+          "53.6",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8489903da89d4b768079edce3add0a07.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8489903da89d4b768079edce3add0a07.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8489903da89d4b768079edce3add0a07.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "CC6531DQ22CPHEV",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "蓝山",
+        "电池容量(kWh)": 64.7,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_777726ff5a4c497c9c3c77db275db6da.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "蓝山",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_777726ff5a4c497c9c3c77db275db6da.html"
+        ],
+        [
+          "电池容量(kWh)",
+          "官方详情页补全",
+          "64.7",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_777726ff5a4c497c9c3c77db275db6da.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_777726ff5a4c497c9c3c77db275db6da.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_777726ff5a4c497c9c3c77db275db6da.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "NEQ6460REEVS59DD",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "V25,V25S",
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_641f591f4a28439598d964bad991afbd.html",
+        "是否增程(EREV)": 1
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "V25,V25S",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_641f591f4a28439598d964bad991afbd.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_641f591f4a28439598d964bad991afbd.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_641f591f4a28439598d964bad991afbd.html"
+        ],
+        [
+          "是否增程(EREV)",
+          "官方详情页补全",
+          "1",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_641f591f4a28439598d964bad991afbd.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "LXA6530REEVX12",
+      "动力类型": "PHEV",
+      "cells": {
+        "电池容量(kWh)": 72.7,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_03d870d1976a4f7398d562a71b2b1e4d.html",
+        "是否增程(EREV)": 1
+      },
+      "ledger": [
+        [
+          "电池容量(kWh)",
+          "官方详情页补全",
+          "72.7",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_03d870d1976a4f7398d562a71b2b1e4d.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_03d870d1976a4f7398d562a71b2b1e4d.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_03d870d1976a4f7398d562a71b2b1e4d.html"
+        ],
+        [
+          "是否增程(EREV)",
+          "官方详情页补全",
+          "1",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_03d870d1976a4f7398d562a71b2b1e4d.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "HQ6472DCHEV111",
+      "动力类型": "PHEV",
+      "cells": {
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3a2b7de0ec284fe094e9b48fdf4e8ec4.html"
+      },
+      "ledger": [
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3a2b7de0ec284fe094e9b48fdf4e8ec4.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3a2b7de0ec284fe094e9b48fdf4e8ec4.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "HQ6472DCHEV110",
+      "动力类型": "PHEV",
+      "cells": {
+        "电池容量(kWh)": 40.06,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_32c8c132a46f4b1084f19870fb922c67.html"
+      },
+      "ledger": [
+        [
+          "电池容量(kWh)",
+          "官方详情页补全",
+          "40.06",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_32c8c132a46f4b1084f19870fb922c67.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_32c8c132a46f4b1084f19870fb922c67.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_32c8c132a46f4b1084f19870fb922c67.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "MR6521DCHEV116",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "银河M8",
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3c30b3e1925f41118ebe3903734037dc.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "银河M8",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3c30b3e1925f41118ebe3903734037dc.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3c30b3e1925f41118ebe3903734037dc.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3c30b3e1925f41118ebe3903734037dc.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "MR7151DCHEV131",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "银河A7",
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_b7f62acd616d403a804ac1ef135a1755.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "银河A7",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_b7f62acd616d403a804ac1ef135a1755.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_b7f62acd616d403a804ac1ef135a1755.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_b7f62acd616d403a804ac1ef135a1755.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "MR6521DCHEV117",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "银河M8",
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e553bfa972548b6a06dd0547a15114a.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "银河M8",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e553bfa972548b6a06dd0547a15114a.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e553bfa972548b6a06dd0547a15114a.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e553bfa972548b6a06dd0547a15114a.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "SGM6536UEPHEV",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "GL8 ENCASA",
+        "电池容量(kWh)": 67,
+        "前电机功率/扭矩": 270,
+        "电机总功率/扭矩": 270,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "GL8 ENCASA",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html"
+        ],
+        [
+          "电池容量(kWh)",
+          "官方详情页补全",
+          "67",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html"
+        ],
+        [
+          "前电机功率/扭矩",
+          "官方详情页补全",
+          "270",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html"
+        ],
+        [
+          "电机总功率/扭矩",
+          "官方详情页补全",
+          "270",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "SGM6536UDPHEV",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "GL8 ENCASA",
+        "电池容量(kWh)": 67,
+        "前电机功率/扭矩": 270,
+        "电机总功率/扭矩": 270,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "GL8 ENCASA",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html"
+        ],
+        [
+          "电池容量(kWh)",
+          "官方详情页补全",
+          "67",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html"
+        ],
+        [
+          "前电机功率/扭矩",
+          "官方详情页补全",
+          "270",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html"
+        ],
+        [
+          "电机总功率/扭矩",
+          "官方详情页补全",
+          "270",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "SGM6536UFPHEV",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "GL8 ENCASA",
+        "电池容量(kWh)": 67,
+        "前电机功率/扭矩": 270,
+        "电机总功率/扭矩": 270,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "GL8 ENCASA",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html"
+        ],
+        [
+          "电池容量(kWh)",
+          "官方详情页补全",
+          "67",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html"
+        ],
+        [
+          "前电机功率/扭矩",
+          "官方详情页补全",
+          "270",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html"
+        ],
+        [
+          "电机总功率/扭矩",
+          "官方详情页补全",
+          "270",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "SC6530AAAB6HEV",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "T09",
+        "前电机功率/扭矩": 180,
+        "电机总功率/扭矩": 490,
+        "后电机功率/扭矩": 310,
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "T09",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html"
+        ],
+        [
+          "前电机功率/扭矩",
+          "官方详情页补全",
+          "180",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html"
+        ],
+        [
+          "电机总功率/扭矩",
+          "官方详情页补全",
+          "490",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html"
+        ],
+        [
+          "后电机功率/扭矩",
+          "官方详情页补全",
+          "310",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html"
+        ]
+      ]
+    },
+    {
+      "批次": 411,
+      "产品型号": "SC6530AAAA6HEV",
+      "动力类型": "PHEV",
+      "cells": {
+        "车型名称": "T09",
+        "前电机功率/扭矩": 180,
+        "电机总功率/扭矩": 630,
+        "后电机功率/扭矩": "225/225",
+        "官方参数页URL": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html"
+      },
+      "ledger": [
+        [
+          "车型名称",
+          "官方详情页补全",
+          "T09",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html"
+        ],
+        [
+          "前电机功率/扭矩",
+          "官方详情页补全",
+          "180",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html"
+        ],
+        [
+          "电机总功率/扭矩",
+          "官方详情页补全",
+          "630",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html"
+        ],
+        [
+          "后电机功率/扭矩",
+          "官方详情页补全",
+          "225/225",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html"
+        ],
+        [
+          "官方参数页URL",
+          "官方详情页补全",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html",
+          "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html"
+        ]
+      ]
+    }
+  ],
+  "ledger": [
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SQR6450BEVT1VA2",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "SQR6450BEVT1VA2",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_76532d3fa5d1450bae40ead12063d99d.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SQR6450BEVT1VA3",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "SQR6450BEVT1VA3",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_23af8a5952844932999d9c960f23338e.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "MR6521BEV101",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "MR6521BEV101",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_91d0c7d57d9c45029e5e48dd8b602ba7.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "MR6481BEV106",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "MR6481BEV106",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e37a6c11c74444fbbc24e3618e504d22.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "BYD7000CFBEV3",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "BYD7000CFBEV3",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_5e8cc0145e1040a79fa312212567706d.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "LZ6510VLD1EV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "LZ6510VLD1EV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_6672d38e91c748c884c6bf51a66d64ca.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "LZ6510VLC1EV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "LZ6510VLC1EV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ec78ee116eaf4a65aab9d1cc9ffb9aa0.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6510DG21HABEV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "CC6510DG21HABEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_5fabdca81ec346edbd28653c2ef15102.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SVW646193AEV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "SVW646193AEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_fab94d574a894d059e387ecebebb1b59.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "BJ7001A51HBEV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "BJ7001A51HBEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ace269f59be841da834d6103f9313e18.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC7002DE00HBBEV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "CC7002DE00HBBEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_cf054a77f4b644f9b5e57df937846682.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC2040BV24DPHEV",
+      "动力类型": "PHEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "CC2040BV24DPHEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_7a7a2789e7a74d958ebdaad72569f970.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6420BJ00GEBEV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "CC6420BJ00GEBEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_418c0744ca0a4b77895b2530469eb257.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "LZ6460MJD0EV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "LZ6460MJD0EV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_0c58cb8b6eb44a88b4017400f92e5fc4.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "BMW6495CABEV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "BMW6495CABEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_98ec86f3bda74c73bc0dfb6ed215d262.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SVW646194AEV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "SVW646194AEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_30e3ea01d08a480c96bed6e747ee3ab9.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC7002DE00HABEV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "CC7002DE00HABEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_2932687d6cda4b669232b814e985e097.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "DFM7002S1F4BSEV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "DFM7002S1F4BSEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_be25c24375dd4165a19f834c5d7d1ee4.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "LXA6503BEVW05",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "LXA6503BEVW05",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_33b47060cc074b819d030aaa95a7973d.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "LXA6503BEVW06",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "LXA6503BEVW06",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_0c9d806fa39e4e2a889e9691e2ff8ba2.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "BMW7000BABEV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "BMW7000BABEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_0ccf1d9f0b6e4e0ba8c375146ac00784.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "LXA6503BEVW04",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "LXA6503BEVW04",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_0afba0a0d1dd436191b1611b8de92ee3.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "DFM7002S1F3BEV",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "DFM7002S1F3BEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_bea2d50dca4a44578dea996bb6467f1b.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC2040BV24APHEV",
+      "动力类型": "PHEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "CC2040BV24APHEV",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_301e9bed68994423844fc8f2ffc87768.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "LXA6540BEVW12",
+      "动力类型": "BEV",
+      "字段": "新增行",
+      "变更类型": "公告新增行",
+      "附件1原值": "(空)",
+      "合并值": "LXA6540BEVW12",
+      "数据来源": "411批正式公告（工信部公告参数查询系统详情页）；https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_dca86f639c89456183357eb6c3393f10.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CA6500HA6PHEVTXA",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "红旗HS7",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_174f9552c032426ca588153e657422a5.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CA6500HA6PHEVTXA",
+      "动力类型": "PHEV",
+      "字段": "电池容量(kWh)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "39.5",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_174f9552c032426ca588153e657422a5.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CA6500HA6PHEVTXA",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_174f9552c032426ca588153e657422a5.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_174f9552c032426ca588153e657422a5.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CA6500HA6PHEVTXC",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "红旗HS7",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_edf3afae53a543eb9bfd581dc4eb1514.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CA6500HA6PHEVTXC",
+      "动力类型": "PHEV",
+      "字段": "电池容量(kWh)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "53",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_edf3afae53a543eb9bfd581dc4eb1514.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CA6500HA6PHEVTXC",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_edf3afae53a543eb9bfd581dc4eb1514.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_edf3afae53a543eb9bfd581dc4eb1514.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CA6500HA6PHEVTA",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "红旗HS7",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_95c4085631af4e5da752412dc128d017.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CA6500HA6PHEVTA",
+      "动力类型": "PHEV",
+      "字段": "电池容量(kWh)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "39.5",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_95c4085631af4e5da752412dc128d017.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CA6500HA6PHEVTA",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_95c4085631af4e5da752412dc128d017.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_95c4085631af4e5da752412dc128d017.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "QCJ6530BE6HEV2",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "方程豹钛9",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "QCJ6530BE6HEV2",
+      "动力类型": "PHEV",
+      "字段": "前电机功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "200",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "QCJ6530BE6HEV2",
+      "动力类型": "PHEV",
+      "字段": "后电机功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "200",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "QCJ6530BE6HEV2",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC2040BV23CPHEV",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e60066435294454999a50a8c7e3e8e3.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e60066435294454999a50a8c7e3e8e3.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6511DQ22CPHEV",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "蓝山",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e8fe9c0ef3804fa39abfd344eec73556.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6511DQ22CPHEV",
+      "动力类型": "PHEV",
+      "字段": "电池容量(kWh)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "64.7",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e8fe9c0ef3804fa39abfd344eec73556.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6511DQ22CPHEV",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e8fe9c0ef3804fa39abfd344eec73556.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e8fe9c0ef3804fa39abfd344eec73556.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6531DQ22APHEV",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "蓝山",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_61d023d1159249558f03baa00cd4aaf5.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6531DQ22APHEV",
+      "动力类型": "PHEV",
+      "字段": "电池容量(kWh)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "53.6",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_61d023d1159249558f03baa00cd4aaf5.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6531DQ22APHEV",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_61d023d1159249558f03baa00cd4aaf5.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_61d023d1159249558f03baa00cd4aaf5.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6511DQ22APHEV",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "蓝山",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8489903da89d4b768079edce3add0a07.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6511DQ22APHEV",
+      "动力类型": "PHEV",
+      "字段": "电池容量(kWh)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "53.6",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8489903da89d4b768079edce3add0a07.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6511DQ22APHEV",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8489903da89d4b768079edce3add0a07.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8489903da89d4b768079edce3add0a07.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6531DQ22CPHEV",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "蓝山",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_777726ff5a4c497c9c3c77db275db6da.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6531DQ22CPHEV",
+      "动力类型": "PHEV",
+      "字段": "电池容量(kWh)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "64.7",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_777726ff5a4c497c9c3c77db275db6da.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "CC6531DQ22CPHEV",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_777726ff5a4c497c9c3c77db275db6da.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_777726ff5a4c497c9c3c77db275db6da.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "NEQ6460REEVS59DD",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "V25,V25S",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_641f591f4a28439598d964bad991afbd.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "NEQ6460REEVS59DD",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_641f591f4a28439598d964bad991afbd.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_641f591f4a28439598d964bad991afbd.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "NEQ6460REEVS59DD",
+      "动力类型": "PHEV",
+      "字段": "是否增程(EREV)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "1",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_641f591f4a28439598d964bad991afbd.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "LXA6530REEVX12",
+      "动力类型": "PHEV",
+      "字段": "电池容量(kWh)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "72.7",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_03d870d1976a4f7398d562a71b2b1e4d.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "LXA6530REEVX12",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_03d870d1976a4f7398d562a71b2b1e4d.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_03d870d1976a4f7398d562a71b2b1e4d.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "LXA6530REEVX12",
+      "动力类型": "PHEV",
+      "字段": "是否增程(EREV)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "1",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_03d870d1976a4f7398d562a71b2b1e4d.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "HQ6472DCHEV111",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3a2b7de0ec284fe094e9b48fdf4e8ec4.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3a2b7de0ec284fe094e9b48fdf4e8ec4.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "HQ6472DCHEV110",
+      "动力类型": "PHEV",
+      "字段": "电池容量(kWh)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "40.06",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_32c8c132a46f4b1084f19870fb922c67.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "HQ6472DCHEV110",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_32c8c132a46f4b1084f19870fb922c67.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_32c8c132a46f4b1084f19870fb922c67.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "MR6521DCHEV116",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "银河M8",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3c30b3e1925f41118ebe3903734037dc.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "MR6521DCHEV116",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3c30b3e1925f41118ebe3903734037dc.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3c30b3e1925f41118ebe3903734037dc.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "MR7151DCHEV131",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "银河A7",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_b7f62acd616d403a804ac1ef135a1755.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "MR7151DCHEV131",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_b7f62acd616d403a804ac1ef135a1755.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_b7f62acd616d403a804ac1ef135a1755.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "MR6521DCHEV117",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "银河M8",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e553bfa972548b6a06dd0547a15114a.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "MR6521DCHEV117",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e553bfa972548b6a06dd0547a15114a.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e553bfa972548b6a06dd0547a15114a.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UEPHEV",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "GL8 ENCASA",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UEPHEV",
+      "动力类型": "PHEV",
+      "字段": "电池容量(kWh)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "67",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UEPHEV",
+      "动力类型": "PHEV",
+      "字段": "前电机功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "270",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UEPHEV",
+      "动力类型": "PHEV",
+      "字段": "电机总功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "270",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UEPHEV",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3af7c93fa4484afa8e3aa8c95b628f9c.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UDPHEV",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "GL8 ENCASA",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UDPHEV",
+      "动力类型": "PHEV",
+      "字段": "电池容量(kWh)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "67",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UDPHEV",
+      "动力类型": "PHEV",
+      "字段": "前电机功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "270",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UDPHEV",
+      "动力类型": "PHEV",
+      "字段": "电机总功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "270",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UDPHEV",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_75eb239056964a368bef8dcd41732adb.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UFPHEV",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "GL8 ENCASA",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UFPHEV",
+      "动力类型": "PHEV",
+      "字段": "电池容量(kWh)",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "67",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UFPHEV",
+      "动力类型": "PHEV",
+      "字段": "前电机功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "270",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UFPHEV",
+      "动力类型": "PHEV",
+      "字段": "电机总功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "270",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SGM6536UFPHEV",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_c9ee677d58fa4c64ad203d60999f56ef.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SC6530AAAB6HEV",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "T09",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SC6530AAAB6HEV",
+      "动力类型": "PHEV",
+      "字段": "前电机功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "180",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SC6530AAAB6HEV",
+      "动力类型": "PHEV",
+      "字段": "电机总功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "490",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SC6530AAAB6HEV",
+      "动力类型": "PHEV",
+      "字段": "后电机功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "310",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SC6530AAAB6HEV",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SC6530AAAA6HEV",
+      "动力类型": "PHEV",
+      "字段": "车型名称",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "T09",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SC6530AAAA6HEV",
+      "动力类型": "PHEV",
+      "字段": "前电机功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "180",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SC6530AAAA6HEV",
+      "动力类型": "PHEV",
+      "字段": "电机总功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "630",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SC6530AAAA6HEV",
+      "动力类型": "PHEV",
+      "字段": "后电机功率/扭矩",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "225/225",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html"
+    },
+    {
+      "序号": null,
+      "批次": 411,
+      "产品型号": "SC6530AAAA6HEV",
+      "动力类型": "PHEV",
+      "字段": "官方参数页URL",
+      "变更类型": "官方详情页补全",
+      "附件1原值": "(空)",
+      "合并值": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html",
+      "数据来源": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html"
+    }
+  ],
+  "qc_issues": [
+    {
+      "产品型号": "SQR6450BEVT1VA3",
+      "字段": "电机组件_公示详情",
+      "原始值": "(空)",
+      "问题": "电机组件为空但详情给出电机功率分项：电机型号/生产企业无法映射，留空"
+    },
+    {
+      "产品型号": "CC6510DG21HABEV",
+      "字段": "电芯供应商",
+      "原始值": "巢能源科技股份有限公司(单体)/蜂巢能源科技股份有限公司(总成)",
+      "问题": "疑似品牌首字被截断（「巢能源科技…」疑缺「蜂」）；命中关键词守卫故按规则保留，待人工确认"
+    },
+    {
+      "产品型号": "CC6510DG21HABEV",
+      "字段": "电池包供应商",
+      "原始值": "蜂",
+      "问题": "供应商字段疑似解析垃圾（长度<3 或 不含企业关键词），按 QC 守卫留空"
+    },
+    {
+      "产品型号": "LZ6460MJD0EV",
+      "字段": "电机组件_公示详情",
+      "原始值": "[{\"型号\": \"YY35TZ180WLA\", \"生产企业\": \"珠海英搏尔电气股份有限公司\", \"排量\": \"0\", \"功率\": \"100\"}]",
+      "问题": "BEV 电机信息被解析进发动机组件，已按 BEV 电机回退规则取用；发动机字段留空"
+    },
+    {
+      "产品型号": "QCJ6530BE6HEV2",
+      "字段": "电机组件_公示详情",
+      "原始值": "(空)",
+      "问题": "电机组件为空但详情给出电机功率分项：电机型号/生产企业无法映射，留空"
+    },
+    {
+      "产品型号": "SGM6536UEPHEV",
+      "字段": "电机组件_公示详情",
+      "原始值": "(空)",
+      "问题": "电机组件为空但详情给出电机功率分项：电机型号/生产企业无法映射，留空"
+    },
+    {
+      "产品型号": "SGM6536UDPHEV",
+      "字段": "电机组件_公示详情",
+      "原始值": "(空)",
+      "问题": "电机组件为空但详情给出电机功率分项：电机型号/生产企业无法映射，留空"
+    },
+    {
+      "产品型号": "SGM6536UFPHEV",
+      "字段": "电机组件_公示详情",
+      "原始值": "(空)",
+      "问题": "电机组件为空但详情给出电机功率分项：电机型号/生产企业无法映射，留空"
+    },
+    {
+      "产品型号": "SC6530AAAB6HEV",
+      "字段": "电机组件_公示详情",
+      "原始值": "(空)",
+      "问题": "电机组件为空但详情给出电机功率分项：电机型号/生产企业无法映射，留空"
+    },
+    {
+      "产品型号": "SC6530AAAA6HEV",
+      "字段": "电机组件_公示详情",
+      "原始值": "(空)",
+      "问题": "电机组件为空但详情给出电机功率分项：电机型号/生产企业无法映射，留空"
+    }
+  ],
+  "unmatched": [
+    {
+      "产品型号": "BJ6500A602RSHEV",
+      "原因": "不在46条清单内（详情多出 1 条）",
+      "产品名称": "插电式增程混合动力多用途乘用车",
+      "通用名称": "αT7",
+      "详情页URL": null
+    }
+  ]
+}
