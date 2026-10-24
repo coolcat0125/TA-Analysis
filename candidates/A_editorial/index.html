@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>NEV公告车型行业分析 · 方案A 行业简报式</title>
+<style>
+:root{--bg:#f6f2ea;--paper:#fffdf9;--ink:#1f1b16;--ink2:#6b625a;--line:#e6ddd0;--bev:#1f4e79;--phev:#c2552b;--accent:#3d7a5a;--gold:#b8860b;--shadow:0 1px 2px rgba(60,40,20,.06),0 8px 24px -16px rgba(60,40,20,.25)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Source Han Serif SC","Noto Serif SC","Songti SC","STSong",Georgia,serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.sans,.filters,.kpi,.chart-h small,.nav,.tag,.sel,button{font-family:-apple-system,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif}
+/* masthead */
+.mast{max-width:1240px;margin:0 auto;padding:40px 24px 16px;border-bottom:3px double var(--ink)}
+.mast .kicker{font-size:12px;letter-spacing:.3em;color:var(--ink2);text-transform:uppercase}
+.mast h1{font-size:clamp(28px,4.5vw,46px);font-weight:700;letter-spacing:.02em;line-height:1.2;margin:8px 0 10px}
+.mast h1 em{font-style:normal;color:var(--phev)}
+.mast p{color:var(--ink2);font-size:13px;max-width:900px}
+.mast .row{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;align-items:flex-end}
+.tag{display:inline-block;border:1px solid var(--ink);padding:2px 10px;font-size:11px;letter-spacing:.15em;border-radius:2px}
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(246,242,234,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .in{max-width:1240px;margin:0 auto;padding:0 24px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.nav .in::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;padding:12px 14px;font-size:13px;color:var(--ink2);text-decoration:none;border-bottom:2px solid transparent}
+.nav a.on,.nav a:hover{color:var(--ink);border-color:var(--phev)}
+.nav a b{font-family:Georgia,serif;color:var(--phev);margin-right:6px;font-weight:400}
+/* filters */
+.fbar{max-width:1240px;margin:16px auto 0;padding:0 24px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;background:var(--paper);border:1px solid var(--line);padding:10px 16px;border-radius:6px;box-shadow:var(--shadow);font-size:13px}
+.f-group{display:flex;align-items:center;gap:8px}
+.f-label{color:var(--ink2);font-size:12px;letter-spacing:.05em}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:5px 12px;font-size:13px;cursor:pointer;color:var(--ink2)}
+.seg button.on{background:var(--ink);color:#fff}
+.sel{border:1px solid var(--line);background:#fff;padding:5px 10px;border-radius:4px;font-size:13px;color:var(--ink);cursor:pointer;list-style:none}
+.f-dash{color:var(--ink2)}
+.dd{position:relative}.dd summary::-webkit-details-marker{display:none}.dd summary::after{content:" ▾";color:var(--ink2)}
+.dd-menu{position:absolute;top:calc(100% + 6px);left:0;z-index:60;background:#fff;border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);padding:10px 12px;display:grid;grid-template-columns:repeat(3,minmax(96px,1fr));gap:4px 12px;max-height:300px;overflow:auto;width:max-content;max-width:calc(100vw - 48px)}
+.dd-menu label{font-size:12px;white-space:nowrap;cursor:pointer}
+.dd-actions{grid-column:1/-1;display:flex;gap:14px;font-size:12px;border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:4px}
+.dd-actions a{color:var(--bev);cursor:pointer;text-decoration:underline}
+.f-reset{margin-left:auto;border:0;background:none;color:var(--phev);text-decoration:underline;cursor:pointer;font-size:12px}
+/* layout */
+main{max-width:1240px;margin:0 auto;padding:8px 24px 60px}
+section{padding:36px 0 8px;border-bottom:1px solid var(--line)}
+.sec-h{display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:baseline;margin-bottom:6px}
+.sec-h .no{font-family:Georgia,serif;font-size:44px;color:var(--phev);line-height:1;font-weight:400}
+.sec-h h2{font-size:24px;font-weight:700;letter-spacing:.02em}
+.sec-h p{color:var(--ink2);font-size:13px;margin-top:2px}
+.lede{grid-column:2;font-size:15px;color:var(--ink);border-left:3px solid var(--gold);padding:4px 14px;margin:8px 0 18px;background:linear-gradient(90deg,rgba(184,134,11,.08),transparent)}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:18px 0 26px}
+.kpi{background:var(--paper);padding:16px 14px}
+.kpi .l{font-size:11px;color:var(--ink2);letter-spacing:.04em;min-height:2.6em;line-height:1.3}
+.kpi .v{font-family:Georgia,"Times New Roman",serif;font-size:32px;line-height:1.1;margin:6px 0 4px;color:var(--ink)}
+.kpi .v small{font-size:13px;color:var(--ink2);margin-left:3px;font-family:inherit}
+.kpi .s{font-size:11px;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-bottom:18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:16px 16px 10px;box-shadow:var(--shadow);grid-column:span 6;min-width:0}
+.card.w4{grid-column:span 4}.card.w8{grid-column:span 8}.card.w12{grid-column:span 12}.card.w3{grid-column:span 3}
+.chart-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.chart-h h3{font-size:16px;font-weight:700}
+.chart-h small{font-size:11px;color:var(--ink2)}
+.chart{height:300px;width:100%}
+.chart.tall{height:380px}
+.note{font-size:12px;color:var(--ink2);margin-top:6px;line-height:1.5}
+.note b{color:var(--ink)}
+.foot{max-width:1240px;margin:0 auto;padding:24px;color:var(--ink2);font-size:12px;border-top:3px double var(--ink);text-align:center}
+@media (max-width:1024px){.card,.card.w4,.card.w8,.card.w3{grid-column:span 12}.kpis{grid-template-columns:repeat(3,1fr)}.sec-h{grid-template-columns:52px 1fr}.sec-h .no{font-size:34px}}
+@media (max-width:640px){.mast{padding:24px 16px 12px}.fbar,main{padding-left:12px;padding-right:12px}.kpis{grid-template-columns:repeat(2,1fr)}.kpi .v{font-size:26px}.chart{height:260px}.filters{padding:10px 12px;gap:8px 14px}.f-segs{width:100%}.f-metric{width:100%}.lede{grid-column:1/-1;font-size:14px}.dd-menu{grid-template-columns:repeat(2,1fr)}.nav a{padding:10px 10px;font-size:12px}}
+</style>
+</head>
+<body>
+<header class="mast">
+  <div class="row">
+    <div>
+      <div class="kicker">NEV Announcement Industry Brief · 方案 A</div>
+      <h1>新能源公告车型<em>行业简报</em></h1>
+      <p class="sans">数据来源：工信部《道路机动车辆生产企业及产品公告》第 341~410 批（2021–2026）· 权威底表 v4.3.6 · 4,613 款纯新能源乘用车 · 全部指标为均值口径；供应商分析基于电芯/电机有值子集（电芯覆盖 29.5%）。</p>
+    </div>
+    <span class="tag">DATA BASELINE v4.3.6</span>
+  </div>
+</header>
+<nav class="nav"><div class="in" id="nav">
+  <a href="#s1"><b>01</b>总览</a><a href="#s2"><b>02</b>续航与电池</a><a href="#s3"><b>03</b>驱动与能效</a><a href="#s4"><b>04</b>供应商格局</a><a href="#s5"><b>05</b>细分市场</a><a href="#s6"><b>06</b>相关性与同比</a><a href="#s7"><b>07</b>综合指标</a>
+</div></nav>
+<div class="fbar" id="fbar"></div>
+
+<main>
+<section id="s1">
+  <div class="sec-h"><div class="no">01</div><div><h2>执行摘要与数据总览</h2><p>公告车型总量、动力结构与年度节奏</p></div>
+  <div class="lede" id="lede1"></div></div>
+  <div class="kpis" id="kpis"></div>
+  <div class="grid">
+    <div class="card w8"><div class="chart-h"><h3>年度公告车型数量与 PHEV 占比</h3><small>含 410 批公示占位计入 2026</small></div><div class="chart" id="c-yearly"></div><p class="note">2025 年 PHEV/EREV 占比冲高至 <b>49.2%</b>，2026 年（截至 410 批）回落至 39.2%；BEV 仍占累计总量的三分之二。</p></div>
+    <div class="card w4"><div class="chart-h"><h3>BEV 技术路线四象限</h3><small>中位数分界</small></div><div class="chart" id="c-quadrant"></div></div>
+  </div>
+</section>
+
+<section id="s2">
+  <div class="sec-h"><div class="no">02</div><div><h2>续航与电池</h2><p>均值 / 分位区间 / 分布结构 / 化学体系 / 能量密度</p></div>
+  <div class="lede">BEV 平均续航由 2021 年 413 km 升至 2026 年 624 km（+51%）；PHEV 纯电续航翻番至 213 km，「长纯电插混」成为主流；磷酸铁锂在 BEV 中占比已近八成。</div></div>
+  <div class="grid">
+    <div class="card w8"><div class="chart-h"><h3>续航里程年度趋势</h3><small>实线=均值 · 虚线=中位数 · 阴影=P25–P75</small></div><div class="chart tall" id="c-range"></div></div>
+    <div class="card w4"><div class="chart-h"><h3>续航分布（按年度占比）</h3><small>随动力类型切换</small></div><div class="chart tall" id="c-rangedist"></div></div>
+    <div class="card w4"><div class="chart-h"><h3>电池容量均值</h3><small>kWh</small></div><div class="chart" id="c-cap"></div></div>
+    <div class="card w4"><div class="chart-h"><h3>电池容量分布（占比）</h3><small>随动力类型切换</small></div><div class="chart" id="c-capdist"></div></div>
+    <div class="card w4"><div class="chart-h"><h3>电池类型构成</h3><small>按已填报数据百分比</small></div><div class="chart" id="c-bt"></div></div>
+    <div class="card w6"><div class="chart-h"><h3>电池系统能量密度</h3><small>Wh/kg</small></div><div class="chart" id="c-cdens"></div></div>
+    <div class="card w6"><div class="chart-h"><h3>整车能量密度（容量 / 整备质量）</h3><small>Wh/kg</small></div><div class="chart" id="c-vdens"></div></div>
+  </div>
+</section>
+
+<section id="s3">
+  <div class="sec-h"><div class="no">03</div><div><h2>驱动与能效</h2><p>电机功率 / 整备质量 / 功率质量比 / 电耗 / 油耗</p></div>
+  <div class="lede">BEV 平均功率 2026 年跃升至 272 kW（同比 +52%），功率质量比突破 127；百公里电耗持续下探至 12.1 kWh，LFP 车型电耗优势稳定在 1.5–2 kWh。</div></div>
+  <div class="grid">
+    <div class="card w4"><div class="chart-h"><h3>电机功率均值</h3><small>kW</small></div><div class="chart" id="c-power"></div></div>
+    <div class="card w4"><div class="chart-h"><h3>整备质量均值</h3><small>kg</small></div><div class="chart" id="c-mass"></div></div>
+    <div class="card w4"><div class="chart-h"><h3>功率质量比</h3><small>kW/kg × 1000</small></div><div class="chart" id="c-pw"></div></div>
+    <div class="card w6"><div class="chart-h"><h3>BEV 百公里电耗</h3><small>整体 / LFP / NCM</small></div><div class="chart" id="c-eff"></div></div>
+    <div class="card w6"><div class="chart-h"><h3>PHEV 油耗与纯电续航</h3><small>L/100km · km</small></div><div class="chart" id="c-fuel"></div><p class="note">综合油耗（WLTC 加权）随纯电续航口径变化上行，B 状态（馈电）油耗稳步下降至 5.56 L/100km，反映混动系统热效率持续改善。</p></div>
+  </div>
+</section>
+
+<section id="s4">
+  <div class="sec-h"><div class="no">04</div><div><h2>供应商格局</h2><p>HHI / CR / 排名 / 组合 / 品牌映射（有值子集）</p></div>
+  <div class="lede">电芯供应商 HHI 从 2021 年 2,125（高集中）降至 2026 年 748（低集中），CR3 由 74% 降至 40%，二线电池厂加速上车；电机供应格局始终高度分散（HHI &lt; 300）。</div></div>
+  <div class="grid">
+    <div class="card w4"><div class="chart-h"><h3>供应商 HHI 指数</h3><small>电池 / 电机</small></div><div class="chart" id="c-hhi"></div></div>
+    <div class="card w4"><div class="chart-h"><h3>电池供应商 CR 趋势</h3><small>%</small></div><div class="chart" id="c-crb"></div></div>
+    <div class="card w4"><div class="chart-h"><h3>电机供应商 CR 趋势</h3><small>%</small></div><div class="chart" id="c-crm"></div></div>
+    <div class="card w4"><div class="chart-h"><h3>电池供应商 Top10</h3><small>配套车型数</small></div><div class="chart tall" id="c-rkb"></div></div>
+    <div class="card w4"><div class="chart-h"><h3>电机供应商 Top10</h3><small>配套车型数</small></div><div class="chart tall" id="c-rkm"></div></div>
+    <div class="card w4"><div class="chart-h"><h3>电池-电机供应组合 Top10</h3><small>车型数</small></div><div class="chart tall" id="c-combo"></div></div>
+    <div class="card w6"><div class="chart-h"><h3>Top8 品牌 × Top5 电芯供应商</h3><small>车型数</small></div><div class="chart tall" id="c-bb"></div></div>
+    <div class="card w6"><div class="chart-h"><h3>Top10 品牌 × Top5 电机供应商</h3><small>车型数</small></div><div class="chart tall" id="c-bm"></div></div>
+  </div>
+</section>
+
+<section id="s5">
+  <div class="sec-h"><div class="no">05</div><div><h2>细分市场分析</h2><p>按轴距分级：Car / SUV / MPV × A–E 档，Lux 与 Sports 单列</p></div>
+  <div class="lede">SUV-C 为 BEV 与 PHEV 共同的最大细分（525 / 500 款）；BEV 续航头部集中在 Car-D（653 km）与 SUV-D（602 km），PHEV 大电量化最快的是 SUV-D（41.8 kWh）。可在上方筛选条勾选细分市场、切换指标。</div></div>
+  <div class="grid">
+    <div class="card w7" style="grid-column:span 7"><div class="chart-h"><h3>细分市场指标对比</h3><small>随「细分指标」切换</small></div><div class="chart tall" id="c-segbar"></div></div>
+    <div class="card w5" style="grid-column:span 5"><div class="chart-h"><h3>细分市场：续航 × 容量 × 规模</h3><small>气泡图</small></div><div class="chart tall" id="c-segsc"></div></div>
+    <div class="card w7" style="grid-column:span 7"><div class="chart-h"><h3>BEV 细分市场 2023 vs 2025</h3><small>续航 / 容量（随细分指标切换）</small></div><div class="chart" id="c-segcmp"></div></div>
+    <div class="card w5" style="grid-column:span 5"><div class="chart-h"><h3>各细分市场整备质量 Top12</h3><small>kg</small></div><div class="chart" id="c-segmass"></div></div>
+  </div>
+</section>
+
+<section id="s6">
+  <div class="sec-h"><div class="no">06</div><div><h2>相关性与同比增长</h2><p>Pearson 相关矩阵 · 五大指标年度同比</p></div>
+  <div class="lede">续航与电池容量高度相关（r = 0.90 / 0.92），整备质量与容量的相关性达 0.93——「以重换续航」路径尚未被能量密度提升打破；电耗与续航仅弱相关（0.24）。</div></div>
+  <div class="grid">
+    <div class="card w5" style="grid-column:span 5"><div class="chart-h"><h3>关键参数相关性矩阵</h3><small>随动力类型切换</small></div><div class="chart tall" id="c-corr"></div></div>
+    <div class="card w7" style="grid-column:span 7"><div class="chart-h"><h3>年度同比增长率</h3><small>%</small></div><div class="chart tall" id="c-yoy"></div></div>
+  </div>
+</section>
+
+<section id="s7" style="border:0">
+  <div class="sec-h"><div class="no">07</div><div><h2>年度综合指标</h2><p>指标探索器 · 指数化对比 · 描述统计</p></div></div>
+  <div class="grid">
+    <div class="card w6"><div class="chart-h"><h3>指标探索器</h3><span id="mp"></span></div><div class="chart" id="c-explorer"></div></div>
+    <div class="card w6"><div class="chart-h"><h3>五大指标指数化（2021=100）</h3><small>随动力类型切换</small></div><div class="chart" id="c-index"></div></div>
+    <div class="card w4"><div class="chart-h"><h3>BEV vs PHEV 关键指标雷达</h3><small>全期均值</small></div><div class="chart" id="c-radar"></div></div>
+    <div class="card w8"><div class="chart-h"><h3>关键指标描述统计</h3><small>均值 / 中位数 / 样本数</small></div><div id="kpi-table" class="sans" style="overflow:auto"></div></div>
+  </div>
+</section>
+</main>
+<footer class="foot">Copyright © 2026 David YEAH · MIT License · 数据引用请注明来源 · 方案 A「行业简报式」候选看板</footer>
+
+<script src="../../echarts.min.js"></script>
+<script src="../base_data.js"></script>
+<script>
+window.THEME={bev:'#1f4e79',phev:'#c2552b',lfp:'#3d7a5a',ncm:'#b8860b',other:'#9a9088',accent:'#b8860b',text:'#1f1b16',text2:'#6b625a',grid:'#e6ddd0',bg:'#fffdf9',tipBg:'#1f1b16',tipText:'#fffdf9',font:'-apple-system,"PingFang SC","Microsoft YaHei",sans-serif',smooth:false,barRadius:[2,2,0,0],heatLow:'#f6f2ea',heatLow2:'#d9cfc0',
+ palette:['#1f4e79','#c2552b','#3d7a5a','#b8860b','#6a4c93','#2a9d8f','#8d5524','#5c6b73'],seq:['#e8dcc8','#cdb995','#b59a6a','#9e7b45','#7f5f2e','#5e4520','#3e2c14','#22180a']};
+</script>
+<script src="../core.js"></script>
+<script src="../filters.js"></script>
+<script>
+const M=[['c-yearly','yearlyCount'],['c-quadrant','quadrant'],['c-range','rangeTrend'],['c-rangedist','rangeDist'],['c-cap','capacityTrend'],['c-capdist','capDist'],['c-bt','batteryType'],['c-cdens','cellDensity'],['c-vdens','vehDensity'],['c-power','powerTrend'],['c-mass','massTrend'],['c-pw','pwRatio'],['c-eff','efficiency'],['c-fuel','phevFuel'],['c-hhi','hhi'],['c-crb','crBatt'],['c-crm','crMotor'],['c-rkb','rankBatt'],['c-rkm','rankMotor'],['c-combo','combo'],['c-bb','brandBatt'],['c-bm','brandMotor'],['c-segbar','segBar'],['c-segsc','segScatter'],['c-segcmp','segCmp'],['c-segmass','segMass'],['c-corr','corr'],['c-yoy','yoy'],['c-explorer','metricExplorer'],['c-index','indexed'],['c-radar','kpiRadar']];
+M.forEach(([i,k])=>CORE.register(i,k));
+mountFilters(document.getElementById('fbar'));
+mountMetricPicker(document.getElementById('mp'));
+document.addEventListener('kpis',e=>{
+  document.getElementById('kpis').innerHTML=e.detail.map(k=>`<div class="kpi"><div class="l">${k.label}</div><div class="v">${k.value}<small>${k.unit}</small></div><div class="s">${k.sub}</div></div>`).join('');
+  const s=CORE.state;document.getElementById('lede1').textContent=`当前口径：${s.power==='ALL'?'BEV + PHEV/EREV':s.power==='BEV'?'仅 BEV':'仅 PHEV/EREV'} · ${s.years[0]}–${s.years[1]} 年${s.segs?` · 细分市场 ${s.segs.size} 项`:''}。2021–2026 年公告车型累计 4,613 款，PHEV/EREV 占比由 14% 提升至近四成，「大电量 + 长续航 + 高功率」成为共同趋势。`;
+});
+(function(){const b=DATA.kpi_bev,p=DATA.kpi_phev;const u=['km','kWh','kW','kg','Wh/kg'];
+document.getElementById('kpi-table').innerHTML=`<table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr style="border-bottom:2px solid #1f1b16"><th style="text-align:left;padding:8px 6px">指标</th><th style="text-align:right;padding:8px 6px;color:#1f4e79">BEV 均值</th><th style="text-align:right;padding:8px 6px;color:#1f4e79">中位数</th><th style="text-align:right;padding:8px 6px;color:#1f4e79">样本</th><th style="text-align:right;padding:8px 6px;color:#c2552b">PHEV 均值</th><th style="text-align:right;padding:8px 6px;color:#c2552b">中位数</th><th style="text-align:right;padding:8px 6px;color:#c2552b">样本</th></tr></thead><tbody>${b.map((r,i)=>`<tr style="border-bottom:1px solid #e6ddd0"><td style="padding:8px 6px">${r.name} <small style="color:#6b625a">${u[i]}</small></td><td style="text-align:right;padding:8px 6px">${r.mean.toLocaleString()}</td><td style="text-align:right;padding:8px 6px">${r.median.toLocaleString()}</td><td style="text-align:right;padding:8px 6px;color:#6b625a">${r.n.toLocaleString()}</td><td style="text-align:right;padding:8px 6px">${p[i].mean.toLocaleString()}</td><td style="text-align:right;padding:8px 6px">${p[i].median.toLocaleString()}</td><td style="text-align:right;padding:8px 6px;color:#6b625a">${p[i].n.toLocaleString()}</td></tr>`).join('')}</tbody></table>`})();
+CORE.renderAll();
+// scrollspy
+const links=[...document.querySelectorAll('#nav a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}})},{rootMargin:'-40% 0px -55% 0px'});secs.forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
