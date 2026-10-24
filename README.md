@@ -87,6 +87,21 @@ Copyright (c) 2026 David YEAH · 采用 [MIT License](LICENSE) 授权，数据�
 - 扭矩字段解析自"功率/扭矩"复合格式，纯数值单元格不计入
 
 
+## 候选分析看板（选型中）
+
+`candidates/` 目录基于《NEV公告车型行业分析_数据底表.xlsx》产出三款候选看板，共用同一数据抽取与图表内核（`extract_base_data.py` → `core.js` / `filters.js`），仅信息架构与视觉不同。后续 agent 可直接以选定方案为基础迭代，详见 [`candidates/README.md`](candidates/README.md)。
+
+| 方案 | 源码 | 自包含成品（双击离线可用） |
+|---|---|---|
+| A 行业简报式 | `candidates/A_editorial/` | `candidates/dist/看板A_行业简报式.html` |
+| B 分析控制台 | `candidates/B_console/` | `candidates/dist/看板B_分析控制台.html` |
+| C 移动卡片式 | `candidates/C_mobile/` | `candidates/dist/看板C_移动卡片式.html` |
+
+```bash
+python3 candidates/build.py   # 重新抽取底表并打包 dist/
+python3 candidates/serve.py   # 本地预览 http://localhost:8080/
+```
+
 ## 数据质量与版本审计
 
 运行 `audit_data.py` 可对当前公告源表生成 SHA-256 可追溯的 JSON/Markdown 审计报告，检查字段覆盖率、物理范围、批次分布和质量门禁：
