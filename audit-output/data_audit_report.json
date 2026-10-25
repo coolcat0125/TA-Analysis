@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-10-19T12:05:30+00:00",
+  "generated_at_utc": "2026-10-25T16:36:07+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
-    "sha256": "230dbb96378072902a932f111031ccc3be20d420ac158570b0680eb584d70e41",
+    "sha256": "e07b288a847412c1fdeb81e8f7e179495fa40dd240a33cd77e7e441c40f88d93",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
     "records": 5475,
-    "columns": 41,
+    "columns": 45,
     "headers": [
       "批次",
       "产品型号",
@@ -51,7 +51,11 @@
       "销量更新日期",
       "是否增程(EREV)",
       "车系ID",
-      "销量覆盖状态"
+      "销量覆盖状态",
+      "测试循环",
+      "CLTC续航(km)",
+      "WLTC续航(km)",
+      "续航工况证据"
     ],
     "batches": {
       "341": 144,
