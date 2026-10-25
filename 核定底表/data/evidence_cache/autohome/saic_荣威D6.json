@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 7980,
+ "ah_key": "荣威D6",
+ "ah_name": "荣威D6",
+ "n_on": 10,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/7980.html",
+ "dims": [
+  {
+   "spec": "2025款 450km 优享版",
+   "len": 4792.0,
+   "wb": 2750.0,
+   "width": 1828.0,
+   "height": 1496.0
+  },
+  {
+   "spec": "2025款 450km 尊享版",
+   "len": 4792.0,
+   "wb": 2750.0,
+   "width": 1828.0,
+   "height": 1496.0
+  },
+  {
+   "spec": "2025款 520km 舒享版",
+   "len": 4792.0,
+   "wb": 2750.0,
+   "width": 1828.0,
+   "height": 1496.0
+  }
+ ],
+ "group": "saic",
+ "series": "荣威D6",
+ "tier": "T2"
+}

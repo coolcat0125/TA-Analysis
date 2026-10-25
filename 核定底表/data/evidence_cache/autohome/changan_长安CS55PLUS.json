@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5498,
+ "ah_key": "长安CS55PLUS",
+ "ah_name": "长安CS55PLUS",
+ "n_on": 13,
+ "n_off": 17,
+ "url": "https://car.autohome.com.cn/config/series/5498.html",
+ "dims": [
+  {
+   "spec": "2027款 1.5T 蓝鲸超擎混动 启航型",
+   "len": 4550.0,
+   "wb": 2656.0,
+   "width": 1868.0,
+   "height": 1675.0
+  },
+  {
+   "spec": "2023款 第二代 1.5T DCT轻年版",
+   "len": 4515.0,
+   "wb": 2656.0,
+   "width": 1865.0,
+   "height": 1680.0
+  },
+  {
+   "spec": "2022款 蓝鲸版 1.5T 手动豪华型",
+   "len": 4500.0,
+   "wb": 2650.0,
+   "width": 1860.0,
+   "height": 1690.0
+  },
+  {
+   "spec": "2027款 1.5T 蓝鲸超擎混动 乐途型",
+   "len": 4550.0,
+   "wb": 2656.0,
+   "width": 1868.0,
+   "height": 1675.0
+  },
+  {
+   "spec": "2027款 1.5T 蓝鲸超擎混动 自在型",
+   "len": 4550.0,
+   "wb": 2656.0,
+   "width": 1868.0,
+   "height": 1675.0
+  }
+ ],
+ "group": "changan",
+ "series": "长安CS55PLUS",
+ "tier": "T2"
+}

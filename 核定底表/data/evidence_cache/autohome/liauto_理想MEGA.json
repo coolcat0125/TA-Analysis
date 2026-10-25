@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 6939,
+ "ah_key": "理想MEGA",
+ "ah_name": "理想MEGA",
+ "n_on": 1,
+ "n_off": 3,
+ "url": "https://car.autohome.com.cn/config/series/6939.html",
+ "dims": [
+  {
+   "spec": "2026款 Home",
+   "len": 5355.0,
+   "wb": 3300.0,
+   "width": 1965.0,
+   "height": 1850.0
+  },
+  {
+   "spec": "2025款 Ultra 智能焕新版",
+   "len": 5350.0,
+   "wb": 3300.0,
+   "width": 1965.0,
+   "height": 1850.0
+  },
+  {
+   "spec": "2025款 Home 家庭特别版",
+   "len": 5350.0,
+   "wb": 3300.0,
+   "width": 1965.0,
+   "height": 1850.0
+  }
+ ],
+ "group": "liauto",
+ "series": "理想MEGA",
+ "tier": "T1"
+}

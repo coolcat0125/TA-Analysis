@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8241,
+ "ah_key": "长安启源Q05",
+ "ah_name": "长安启源Q05",
+ "n_on": 7,
+ "n_off": 7,
+ "url": "https://car.autohome.com.cn/config/series/8241.html",
+ "dims": [
+  {
+   "spec": "2026款 405Air",
+   "len": 4435.0,
+   "wb": 2735.0,
+   "width": 1855.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2026款 405Max",
+   "len": 4435.0,
+   "wb": 2735.0,
+   "width": 1855.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2026款 506Pro",
+   "len": 4435.0,
+   "wb": 2735.0,
+   "width": 1855.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2027款 506乐享版",
+   "len": 4435.0,
+   "wb": 2735.0,
+   "width": 1855.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2027款 405畅享版",
+   "len": 4435.0,
+   "wb": 2735.0,
+   "width": 1855.0,
+   "height": 1600.0
+  }
+ ],
+ "group": "changan",
+ "series": "长安",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6124,
+ "ah_key": "欧拉闪电猫",
+ "ah_name": "欧拉闪电猫",
+ "n_on": 7,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/6124.html",
+ "dims": [
+  {
+   "spec": "2022款 555km 豪华版",
+   "len": 4871.0,
+   "wb": 2870.0,
+   "width": 1862.0,
+   "height": 1500.0
+  },
+  {
+   "spec": "2022款 原型车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2021款 概念版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2022款 555km 尊贵版",
+   "len": 4871.0,
+   "wb": 2870.0,
+   "width": 1862.0,
+   "height": 1500.0
+  },
+  {
+   "spec": "2024款 暗夜版 555km 尊贵版",
+   "len": 4871.0,
+   "wb": 2870.0,
+   "width": 1862.0,
+   "height": 1500.0
+  }
+ ],
+ "group": "gwm",
+ "series": "闪电猫",
+ "tier": "T1"
+}

@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 7165,
+ "ah_key": "银河M9",
+ "ah_name": "银河M9",
+ "n_on": 7,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7165.html",
+ "dims": [
+  {
+   "spec": "2025款 100km 两驱启航版",
+   "len": 5205.0,
+   "wb": 3030.0,
+   "width": 1999.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2025款 试装车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 100km 两驱智航版",
+   "len": 5205.0,
+   "wb": 3030.0,
+   "width": 1999.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2025款 230km 两驱远航版",
+   "len": 5205.0,
+   "wb": 3030.0,
+   "width": 1999.0,
+   "height": 1800.0
+  }
+ ],
+ "group": "geely",
+ "series": "吉利M9",
+ "tier": "T1"
+}

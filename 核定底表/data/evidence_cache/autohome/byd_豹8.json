@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7353,
+ "ah_key": "豹8",
+ "ah_name": "豹8",
+ "n_on": 3,
+ "n_off": 12,
+ "url": "https://car.autohome.com.cn/config/series/7353.html",
+ "dims": [
+  {
+   "spec": "2026款 闪充 七座版",
+   "len": 5195.0,
+   "wb": 2920.0,
+   "width": 1994.0,
+   "height": 1905.0
+  },
+  {
+   "spec": "2026款 云辇激光雷达版",
+   "len": 5195.0,
+   "wb": 2920.0,
+   "width": 1994.0,
+   "height": 2000.0
+  },
+  {
+   "spec": "2025款 智勇豪华版 7座",
+   "len": 5195.0,
+   "wb": 2920.0,
+   "width": 1994.0,
+   "height": 1905.0
+  },
+  {
+   "spec": "2026款 闪充 五座版",
+   "len": 5195.0,
+   "wb": 2920.0,
+   "width": 1994.0,
+   "height": 1905.0
+  },
+  {
+   "spec": "2026款 闪充 六座版",
+   "len": 5195.0,
+   "wb": 2920.0,
+   "width": 1994.0,
+   "height": 1905.0
+  }
+ ],
+ "group": "byd",
+ "series": "豹8",
+ "tier": "T2"
+}

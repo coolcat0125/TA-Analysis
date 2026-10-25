@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8140,
+ "ah_key": "长安启源A06",
+ "ah_name": "长安启源A06",
+ "n_on": 16,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8140.html",
+ "dims": [
+  {
+   "spec": "2026款 510Pro+",
+   "len": 4885.0,
+   "wb": 2922.0,
+   "width": 1916.0,
+   "height": 1496.0
+  },
+  {
+   "spec": "2026款 510Pro",
+   "len": 4885.0,
+   "wb": 2922.0,
+   "width": 1916.0,
+   "height": 1496.0
+  },
+  {
+   "spec": "2026款 510Max",
+   "len": 4885.0,
+   "wb": 2922.0,
+   "width": 1916.0,
+   "height": 1496.0
+  },
+  {
+   "spec": "2026款 630Pro+",
+   "len": 4885.0,
+   "wb": 2922.0,
+   "width": 1916.0,
+   "height": 1496.0
+  }
+ ],
+ "group": "changan",
+ "series": "启源A06",
+ "tier": "T1"
+}

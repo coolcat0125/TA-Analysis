@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7694,
+ "ah_key": "海豹06GT",
+ "ah_name": "海豹06GT",
+ "n_on": 4,
+ "n_off": 10,
+ "url": "https://car.autohome.com.cn/config/series/7694.html",
+ "dims": [
+  {
+   "spec": "2026款 520海浪版",
+   "len": 4630.0,
+   "wb": 2820.0,
+   "width": 1880.0,
+   "height": 1490.0
+  },
+  {
+   "spec": "2025款 505海浪版",
+   "len": 4630.0,
+   "wb": 2820.0,
+   "width": 1880.0,
+   "height": 1490.0
+  },
+  {
+   "spec": "2025款 智驾版 505海浪版",
+   "len": 4630.0,
+   "wb": 2820.0,
+   "width": 1880.0,
+   "height": 1490.0
+  },
+  {
+   "spec": "2026款 520海浪Plus版",
+   "len": 4630.0,
+   "wb": 2820.0,
+   "width": 1880.0,
+   "height": 1490.0
+  },
+  {
+   "spec": "2026款 620热浪Plus版",
+   "len": 4630.0,
+   "wb": 2820.0,
+   "width": 1880.0,
+   "height": 1490.0
+  }
+ ],
+ "group": "byd",
+ "series": "海豹06GT",
+ "tier": "T2"
+}

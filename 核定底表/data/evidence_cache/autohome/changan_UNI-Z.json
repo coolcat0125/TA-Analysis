@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7821,
+ "ah_key": "长安UNI-Z",
+ "ah_name": "长安UNI-Z",
+ "n_on": 4,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/7821.html",
+ "dims": [
+  {
+   "spec": "2025款 500Bar PRO",
+   "len": 4730.0,
+   "wb": 2795.0,
+   "width": 1890.0,
+   "height": 1680.0
+  },
+  {
+   "spec": "2026款 1.5T 低功率版",
+   "len": 4730.0,
+   "wb": 2795.0,
+   "width": 1890.0,
+   "height": 1680.0
+  },
+  {
+   "spec": "2026款 1.5T 畅行版",
+   "len": 4730.0,
+   "wb": 2795.0,
+   "width": 1890.0,
+   "height": 1680.0
+  },
+  {
+   "spec": "2026款 智慧新蓝鲸 500Bar PRO",
+   "len": 4730.0,
+   "wb": 2795.0,
+   "width": 1890.0,
+   "height": 1680.0
+  },
+  {
+   "spec": "2025款 500Bar MAX",
+   "len": 4730.0,
+   "wb": 2795.0,
+   "width": 1890.0,
+   "height": 1680.0
+  }
+ ],
+ "group": "changan",
+ "series": "UNI-Z",
+ "tier": "T2"
+}

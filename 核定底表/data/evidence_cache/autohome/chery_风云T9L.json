@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8435,
+ "ah_key": "风云T9L",
+ "ah_name": "风云T9L",
+ "n_on": 5,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8435.html",
+ "dims": [
+  {
+   "spec": "2026款 135 Max",
+   "len": 4870.0,
+   "wb": 2920.0,
+   "width": 1930.0,
+   "height": 1710.0
+  },
+  {
+   "spec": "2026款 230 Pro",
+   "len": 4870.0,
+   "wb": 2920.0,
+   "width": 1930.0,
+   "height": 1710.0
+  },
+  {
+   "spec": "2026款 230 Max",
+   "len": 4870.0,
+   "wb": 2920.0,
+   "width": 1930.0,
+   "height": 1710.0
+  }
+ ],
+ "group": "chery",
+ "series": "风云T9L",
+ "tier": "T2"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6501,
+ "ah_key": "合创V09",
+ "ah_name": "合创V09",
+ "n_on": 0,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/6501.html",
+ "dims": [
+  {
+   "spec": "2023款 豪华版 620",
+   "len": 5215.0,
+   "wb": 3170.0,
+   "width": 1967.0,
+   "height": 1910.0
+  },
+  {
+   "spec": "2023款 尊荣版 620",
+   "len": 5215.0,
+   "wb": 3170.0,
+   "width": 1967.0,
+   "height": 1910.0
+  }
+ ],
+ "group": "gac",
+ "series": "HYCANV09",
+ "tier": "T2"
+}

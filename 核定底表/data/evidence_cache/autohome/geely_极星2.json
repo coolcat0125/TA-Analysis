@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 5078,
+ "ah_key": "Polestar 2",
+ "ah_name": "Polestar 2",
+ "n_on": 0,
+ "n_off": 17,
+ "url": "https://car.autohome.com.cn/config/series/5078.html",
+ "dims": [
+  {
+   "spec": "2025款 Arctic Circle",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 单电机标准续航",
+   "len": 4606.0,
+   "wb": 2735.0,
+   "width": 1859.0,
+   "height": 1482.0
+  }
+ ],
+ "group": "geely",
+ "series": "极星2",
+ "tier": "T2"
+}

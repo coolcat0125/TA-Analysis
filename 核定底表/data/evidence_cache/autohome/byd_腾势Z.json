@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 8107,
+ "ah_key": "腾势Z",
+ "ah_name": "腾势Z",
+ "n_on": 0,
+ "n_off": 3,
+ "url": "https://car.autohome.com.cn/config/series/8107.html",
+ "dims": [
+  {
+   "spec": "2026款 硬顶版",
+   "len": 4870.0,
+   "wb": 2780.0,
+   "width": 1990.0,
+   "height": 1350.0
+  },
+  {
+   "spec": "2026款 敞篷版",
+   "len": 4780.0,
+   "wb": 2780.0,
+   "width": 1990.0,
+   "height": 1350.0
+  }
+ ],
+ "group": "byd",
+ "series": "腾势Z",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6298,
+ "ah_key": "元PLUS",
+ "ah_name": "元PLUS",
+ "n_on": 9,
+ "n_off": 18,
+ "url": "https://car.autohome.com.cn/config/series/6298.html",
+ "dims": [
+  {
+   "spec": "2025款 智驾版 430KM 领先型",
+   "len": 4455.0,
+   "wb": 2720.0,
+   "width": 1875.0,
+   "height": 1615.0
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 荣耀版 430KM 领先型",
+   "len": 4455.0,
+   "wb": 2720.0,
+   "width": 1875.0,
+   "height": 1615.0
+  },
+  {
+   "spec": "2025款 智驾版 430KM 超越型",
+   "len": 4455.0,
+   "wb": 2720.0,
+   "width": 1875.0,
+   "height": 1615.0
+  },
+  {
+   "spec": "2025款 智驾版 510KM 领先型",
+   "len": 4455.0,
+   "wb": 2720.0,
+   "width": 1875.0,
+   "height": 1615.0
+  }
+ ],
+ "group": "byd",
+ "series": "元PLUS",
+ "tier": "T1"
+}

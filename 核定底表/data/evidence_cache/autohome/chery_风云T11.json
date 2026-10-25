@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 7411,
+ "ah_key": "风云T11",
+ "ah_name": "风云T11",
+ "n_on": 5,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7411.html",
+ "dims": [
+  {
+   "spec": "2026款 220后驱伯牙巨幕奢享版",
+   "len": 5205.0,
+   "wb": 3120.0,
+   "width": 1998.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 试装车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 220后驱双IMAX影院版",
+   "len": 5205.0,
+   "wb": 3120.0,
+   "width": 1998.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 220四驱双IMAX影院版",
+   "len": 5205.0,
+   "wb": 3120.0,
+   "width": 1998.0,
+   "height": 1800.0
+  }
+ ],
+ "group": "chery",
+ "series": "风云T11",
+ "tier": "T2"
+}

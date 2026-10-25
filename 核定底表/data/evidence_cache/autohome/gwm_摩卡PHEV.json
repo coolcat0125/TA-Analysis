@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6010,
+ "ah_key": "魏牌 摩卡",
+ "ah_name": "魏牌 摩卡",
+ "n_on": 0,
+ "n_off": 8,
+ "url": "https://car.autohome.com.cn/config/series/6010.html",
+ "dims": [
+  {
+   "spec": "2022款 赛博摩卡",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2021款 2.0T 两驱特香版",
+   "len": 4875.0,
+   "wb": 2915.0,
+   "width": 1960.0,
+   "height": 1690.0
+  }
+ ],
+ "group": "gwm",
+ "series": "摩卡PHEV",
+ "tier": "T1"
+}

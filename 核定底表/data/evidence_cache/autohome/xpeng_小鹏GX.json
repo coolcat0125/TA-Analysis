@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8224,
+ "ah_key": "小鹏GX",
+ "ah_name": "小鹏GX",
+ "n_on": 8,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8224.html",
+ "dims": [
+  {
+   "spec": "2026款 增程 1585四驱Max",
+   "len": 5265.0,
+   "wb": 3115.0,
+   "width": 1999.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 增程 1585四驱UltraSE",
+   "len": 5265.0,
+   "wb": 3115.0,
+   "width": 1999.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 增程 1585四驱Ultra",
+   "len": 5265.0,
+   "wb": 3115.0,
+   "width": 1999.0,
+   "height": 1800.0
+  }
+ ],
+ "group": "xpeng",
+ "series": "小鹏GX",
+ "tier": "T2"
+}

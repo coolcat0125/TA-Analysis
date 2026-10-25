@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6639,
+ "ah_key": "吉利几何E萤火虫",
+ "ah_name": "吉利几何E萤火虫",
+ "n_on": 5,
+ "n_off": 10,
+ "url": "https://car.autohome.com.cn/config/series/6639.html",
+ "dims": [
+  {
+   "spec": "2024款 301km 龙腾版",
+   "len": 4006.0,
+   "wb": 2485.0,
+   "width": 1765.0,
+   "height": 1550.0
+  },
+  {
+   "spec": "2023款 320KM 开心虎 5座",
+   "len": 4006.0,
+   "wb": 2485.0,
+   "width": 1765.0,
+   "height": 1550.0
+  },
+  {
+   "spec": "2023款 320KM 乖帅虎 5座",
+   "len": 4006.0,
+   "wb": 2485.0,
+   "width": 1765.0,
+   "height": 1550.0
+  },
+  {
+   "spec": "2024款 301km 流光",
+   "len": 4006.0,
+   "wb": 2485.0,
+   "width": 1765.0,
+   "height": 1550.0
+  },
+  {
+   "spec": "2024款 301km 星光",
+   "len": 4006.0,
+   "wb": 2485.0,
+   "width": 1765.0,
+   "height": 1550.0
+  }
+ ],
+ "group": "nio",
+ "series": "萤火虫",
+ "tier": "T1"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7578,
+ "ah_key": "秦L",
+ "ah_name": "秦L",
+ "n_on": 16,
+ "n_off": 7,
+ "url": "https://car.autohome.com.cn/config/series/7578.html",
+ "dims": [
+  {
+   "spec": "2026款 DM-i 128KM进取型",
+   "len": 4830.0,
+   "wb": 2790.0,
+   "width": 1900.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2026款 DM-i 170KM超越型",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 DM-i 80KM领先型",
+   "len": 4830.0,
+   "wb": 2790.0,
+   "width": 1900.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2025款 DM-i 智驾版 80KM领先型",
+   "len": 4830.0,
+   "wb": 2790.0,
+   "width": 1900.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2026款 DM-i 128KM领先型",
+   "len": 4830.0,
+   "wb": 2790.0,
+   "width": 1900.0,
+   "height": 1495.0
+  }
+ ],
+ "group": "byd",
+ "series": "秦L",
+ "tier": "T2"
+}

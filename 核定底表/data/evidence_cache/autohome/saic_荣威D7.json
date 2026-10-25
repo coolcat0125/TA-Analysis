@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7301,
+ "ah_key": "荣威D7",
+ "ah_name": "荣威D7",
+ "n_on": 11,
+ "n_off": 11,
+ "url": "https://car.autohome.com.cn/config/series/7301.html",
+ "dims": [
+  {
+   "spec": "2025款 DMH 125km 世界冠军版",
+   "len": 4890.0,
+   "wb": 2810.0,
+   "width": 1890.0,
+   "height": 1510.0
+  },
+  {
+   "spec": "2025款 DMH 125领先版",
+   "len": 4890.0,
+   "wb": 2810.0,
+   "width": 1890.0,
+   "height": 1510.0
+  },
+  {
+   "spec": "2025款 DMH 125超越版",
+   "len": 4890.0,
+   "wb": 2810.0,
+   "width": 1890.0,
+   "height": 1510.0
+  },
+  {
+   "spec": "2025款 DMH 125km 世界冠军卓越版",
+   "len": 4890.0,
+   "wb": 2810.0,
+   "width": 1890.0,
+   "height": 1510.0
+  },
+  {
+   "spec": "2025款 DMH 125km 世界冠军旗舰版",
+   "len": 4890.0,
+   "wb": 2810.0,
+   "width": 1890.0,
+   "height": 1510.0
+  }
+ ],
+ "group": "saic",
+ "series": "荣威D7",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5262,
+ "ah_key": "埃安AION LX",
+ "ah_name": "AION LX",
+ "n_on": 4,
+ "n_off": 19,
+ "url": "https://car.autohome.com.cn/config/series/5262.html",
+ "dims": [
+  {
+   "spec": "2022款 Plus 80 智尊版",
+   "len": 4835.0,
+   "wb": 2920.0,
+   "width": 1935.0,
+   "height": 1685.0
+  },
+  {
+   "spec": "2024款 Plus 单电机",
+   "len": 4835.0,
+   "wb": 2920.0,
+   "width": 1935.0,
+   "height": 1685.0
+  },
+  {
+   "spec": "2024款 Plus 双电机",
+   "len": 4835.0,
+   "wb": 2920.0,
+   "width": 1935.0,
+   "height": 1685.0
+  },
+  {
+   "spec": "2022款 Plus 千里版",
+   "len": 4835.0,
+   "wb": 2920.0,
+   "width": 1935.0,
+   "height": 1685.0
+  },
+  {
+   "spec": "2022款 Plus 80D 旗舰版",
+   "len": 4835.0,
+   "wb": 2920.0,
+   "width": 1935.0,
+   "height": 1685.0
+  }
+ ],
+ "group": "gac",
+ "series": "埃安AIONLX",
+ "tier": "T2"
+}

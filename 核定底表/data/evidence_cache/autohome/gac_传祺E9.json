@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6869,
+ "ah_key": "传祺E9",
+ "ah_name": "传祺E9",
+ "n_on": 3,
+ "n_off": 15,
+ "url": "https://car.autohome.com.cn/config/series/6869.html",
+ "dims": [
+  {
+   "spec": "2025款 E9 超级快充 尊享",
+   "len": 5212.0,
+   "wb": 3070.0,
+   "width": 1893.0,
+   "height": 1823.0
+  },
+  {
+   "spec": "2025款 E9 4座版",
+   "len": 5212.0,
+   "wb": 3070.0,
+   "width": 1893.0,
+   "height": 1823.0
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 E9 超级快充 冠军",
+   "len": 5212.0,
+   "wb": 3070.0,
+   "width": 1893.0,
+   "height": 1823.0
+  },
+  {
+   "spec": "2025款 E9 超级快充  宗师",
+   "len": 5212.0,
+   "wb": 3070.0,
+   "width": 1893.0,
+   "height": 1823.0
+  }
+ ],
+ "group": "gac",
+ "series": "传祺E9",
+ "tier": "T1"
+}

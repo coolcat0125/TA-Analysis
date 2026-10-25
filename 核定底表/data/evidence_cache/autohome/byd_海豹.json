@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6394,
+ "ah_key": "海豹",
+ "ah_name": "海豹",
+ "n_on": 0,
+ "n_off": 39,
+ "url": "https://car.autohome.com.cn/config/series/6394.html",
+ "dims": [
+  {
+   "spec": "2025款 510标准版",
+   "len": 4800.0,
+   "wb": 2920.0,
+   "width": 1875.0,
+   "height": 1460.0
+  },
+  {
+   "spec": "2025款 510智航版",
+   "len": 4800.0,
+   "wb": 2920.0,
+   "width": 1875.0,
+   "height": 1460.0
+  }
+ ],
+ "group": "byd",
+ "series": "海豹",
+ "tier": "T2"
+}

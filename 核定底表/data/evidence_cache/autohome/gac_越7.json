@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8627,
+ "ah_key": "传祺越7",
+ "ah_name": "传祺越7",
+ "n_on": 5,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8627.html",
+ "dims": [
+  {
+   "spec": "2026款 两驱Pro版",
+   "len": 4999.0,
+   "wb": 2900.0,
+   "width": 2004.0,
+   "height": 1933.0
+  },
+  {
+   "spec": "2026款 两驱Max版",
+   "len": 4999.0,
+   "wb": 2900.0,
+   "width": 2004.0,
+   "height": 1933.0
+  },
+  {
+   "spec": "2026款 四驱Max版",
+   "len": 5045.0,
+   "wb": 2900.0,
+   "width": 2004.0,
+   "height": 1933.0
+  }
+ ],
+ "group": "gac",
+ "series": "越7",
+ "tier": "T2"
+}

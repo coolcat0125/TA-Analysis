@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 8050,
+ "ah_key": "沃尔沃ES90",
+ "ah_name": "沃尔沃ES90",
+ "n_on": 2,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8050.html",
+ "dims": [
+  {
+   "spec": "2027款 后驱长续航版 Plus",
+   "len": 5000.0,
+   "wb": 3102.0,
+   "width": 1942.0,
+   "height": 1553.0
+  },
+  {
+   "spec": "2027款 双电机四驱高性能版 Ultra",
+   "len": 5000.0,
+   "wb": 3102.0,
+   "width": 1942.0,
+   "height": 1547.0
+  }
+ ],
+ "group": "geely",
+ "series": "沃尔沃ES90",
+ "tier": "T2"
+}

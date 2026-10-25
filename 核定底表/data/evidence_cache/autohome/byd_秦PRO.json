@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 4900,
+ "ah_key": "秦Pro",
+ "ah_name": "秦Pro",
+ "n_on": 0,
+ "n_off": 23,
+ "url": "https://car.autohome.com.cn/config/series/4900.html",
+ "dims": [
+  {
+   "spec": "2020款 超越版 1.5TI 手动豪华型",
+   "len": 4765.0,
+   "wb": 2718.0,
+   "width": 1837.0,
+   "height": 1500.0
+  },
+  {
+   "spec": "2020款 超越版 1.5TI 自动尊贵型",
+   "len": 4765.0,
+   "wb": 2718.0,
+   "width": 1837.0,
+   "height": 1500.0
+  }
+ ],
+ "group": "byd",
+ "series": "秦PRO",
+ "tier": "T2"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 87,
+ "ah_key": "奇瑞QQ3",
+ "ah_name": "奇瑞QQ3",
+ "n_on": 0,
+ "n_off": 70,
+ "url": "https://car.autohome.com.cn/config/series/87.html",
+ "dims": [
+  {
+   "spec": "2012款 0.8L 手动暑期限量版",
+   "len": 3550.0,
+   "wb": 2340.0,
+   "width": 1495.0,
+   "height": 1485.0
+  },
+  {
+   "spec": "2012款 梦想版 0.8L 手动梦想型",
+   "len": 3550.0,
+   "wb": 2340.0,
+   "width": 1495.0,
+   "height": 1485.0
+  }
+ ],
+ "group": "chery",
+ "series": "奇瑞QQ3",
+ "tier": "T1"
+}

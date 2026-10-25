@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6949,
+ "ah_key": "理想L7",
+ "ah_name": "理想L7",
+ "n_on": 0,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/6949.html",
+ "dims": [
+  {
+   "spec": "2025款 Pro 智能焕新版",
+   "len": 5050.0,
+   "wb": 3005.0,
+   "width": 1995.0,
+   "height": 1750.0
+  },
+  {
+   "spec": "2025款 Max 智能焕新版",
+   "len": 5050.0,
+   "wb": 3005.0,
+   "width": 1995.0,
+   "height": 1750.0
+  }
+ ],
+ "group": "liauto",
+ "series": "理想L7",
+ "tier": "T2"
+}

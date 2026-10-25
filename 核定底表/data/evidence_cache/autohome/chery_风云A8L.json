@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7863,
+ "ah_key": "风云A8L",
+ "ah_name": "风云A8L",
+ "n_on": 5,
+ "n_off": 3,
+ "url": "https://car.autohome.com.cn/config/series/7863.html",
+ "dims": [
+  {
+   "spec": "2026款 1.5L 132km 标准型",
+   "len": 4790.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1487.0
+  },
+  {
+   "spec": "2026款 1.5L 基本型",
+   "len": 4790.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1487.0
+  },
+  {
+   "spec": "2025款 1.5L 70km 标准型",
+   "len": 4780.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1487.0
+  },
+  {
+   "spec": "2026款 1.5L 132km 智享型",
+   "len": 4790.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1487.0
+  },
+  {
+   "spec": "2025款  1.5TGDI 145km 标准型",
+   "len": 4790.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1487.0
+  }
+ ],
+ "group": "chery",
+ "series": "风云A8L",
+ "tier": "T2"
+}

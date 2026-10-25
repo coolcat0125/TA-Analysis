@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 7275,
+ "ah_key": "沃尔沃EX30",
+ "ah_name": "沃尔沃EX30",
+ "n_on": 8,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7275.html",
+ "dims": [
+  {
+   "spec": "2025款 后驱Core",
+   "len": 4233.0,
+   "wb": 2650.0,
+   "width": 1838.0,
+   "height": 1555.0
+  },
+  {
+   "spec": "2026款 Cross Country双电机四驱高性能版Ultra",
+   "len": 4233.0,
+   "wb": 2650.0,
+   "width": 1850.0,
+   "height": 1573.0
+  },
+  {
+   "spec": "2026款 后驱Plus",
+   "len": 4233.0,
+   "wb": 2650.0,
+   "width": 1838.0,
+   "height": 1555.0
+  },
+  {
+   "spec": "2025款 后驱长续航版 Plus",
+   "len": 4233.0,
+   "wb": 2650.0,
+   "width": 1838.0,
+   "height": 1555.0
+  }
+ ],
+ "group": "geely",
+ "series": "沃尔沃EX30",
+ "tier": "T2"
+}

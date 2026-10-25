@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5755,
+ "ah_key": "MG Cyberster",
+ "ah_name": "MG Cyberster",
+ "n_on": 3,
+ "n_off": 8,
+ "url": "https://car.autohome.com.cn/config/series/5755.html",
+ "dims": [
+  {
+   "spec": "2026款 501km 魅力心动版",
+   "len": 4535.0,
+   "wb": 2690.0,
+   "width": 1913.0,
+   "height": 1329.0
+  },
+  {
+   "spec": "2023款 英国版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 580km 超然致远版",
+   "len": 4535.0,
+   "wb": 2690.0,
+   "width": 1913.0,
+   "height": 1329.0
+  },
+  {
+   "spec": "2026款 520km 传奇四驱版",
+   "len": 4535.0,
+   "wb": 2690.0,
+   "width": 1913.0,
+   "height": 1329.0
+  }
+ ],
+ "group": "saic",
+ "series": "CYBERSTER",
+ "tier": "T2"
+}

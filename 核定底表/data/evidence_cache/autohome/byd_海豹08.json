@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8485,
+ "ah_key": "海豹08",
+ "ah_name": "海豹08",
+ "n_on": 6,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8485.html",
+ "dims": [
+  {
+   "spec": "2026款 DM-i 400KM尊贵型",
+   "len": 5150.0,
+   "wb": 3030.0,
+   "width": 1999.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2026款 EV 试装版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 DM-i 400KM旗舰型",
+   "len": 5150.0,
+   "wb": 3030.0,
+   "width": 1999.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2026款 DM-i 350KM四驱旗舰型",
+   "len": 5150.0,
+   "wb": 3030.0,
+   "width": 1999.0,
+   "height": 1505.0
+  }
+ ],
+ "group": "byd",
+ "series": "海豹08",
+ "tier": "T2"
+}

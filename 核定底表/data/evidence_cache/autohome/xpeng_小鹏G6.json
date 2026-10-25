@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7162,
+ "ah_key": "小鹏G6",
+ "ah_name": "小鹏G6",
+ "n_on": 3,
+ "n_off": 11,
+ "url": "https://car.autohome.com.cn/config/series/7162.html",
+ "dims": [
+  {
+   "spec": "2026款 增程 1704 Max",
+   "len": 4771.0,
+   "wb": 2890.0,
+   "width": 1920.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2025款 625 长续航 Max 科技版",
+   "len": 4758.0,
+   "wb": 2890.0,
+   "width": 1920.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2025款 625 长续航 Max 旗舰版",
+   "len": 4758.0,
+   "wb": 2890.0,
+   "width": 1920.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2026款 625 Max 科技版",
+   "len": 4758.0,
+   "wb": 2890.0,
+   "width": 1920.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2026款 625 Max 旗舰版",
+   "len": 4758.0,
+   "wb": 2890.0,
+   "width": 1920.0,
+   "height": 1650.0
+  }
+ ],
+ "group": "xpeng",
+ "series": "小鹏G6",
+ "tier": "T2"
+}

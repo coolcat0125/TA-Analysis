@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 7711,
+ "ah_key": "捷途山海L7",
+ "ah_name": "捷途山海L7",
+ "n_on": 22,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/7711.html",
+ "dims": [
+  {
+   "spec": "2026款 1.5T 130km 舒适版 5座",
+   "len": 4749.0,
+   "wb": 2745.0,
+   "width": 1900.0,
+   "height": 1720.0
+  },
+  {
+   "spec": "2026款 1.5T 130km 舒适版 7座",
+   "len": 4749.0,
+   "wb": 2745.0,
+   "width": 1900.0,
+   "height": 1720.0
+  },
+  {
+   "spec": "2026款 1.5T 130km 豪华版 5座",
+   "len": 4749.0,
+   "wb": 2745.0,
+   "width": 1900.0,
+   "height": 1720.0
+  }
+ ],
+ "group": "chery",
+ "series": "山海L7PLUSC-DM",
+ "tier": "T2"
+}

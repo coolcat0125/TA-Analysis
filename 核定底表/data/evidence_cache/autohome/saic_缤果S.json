@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8189,
+ "ah_key": "缤果S",
+ "ah_name": "缤果S",
+ "n_on": 5,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8189.html",
+ "dims": [
+  {
+   "spec": "2025款 325km 尊享款",
+   "len": 4265.0,
+   "wb": 2610.0,
+   "width": 1785.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2025款 325km 旗舰款",
+   "len": 4265.0,
+   "wb": 2610.0,
+   "width": 1785.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2025款 430km 尊享款",
+   "len": 4265.0,
+   "wb": 2610.0,
+   "width": 1785.0,
+   "height": 1600.0
+  }
+ ],
+ "group": "saic",
+ "series": "缤果S",
+ "tier": "T2"
+}

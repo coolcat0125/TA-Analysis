@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 7450,
+ "ah_key": "smart精灵#2",
+ "ah_name": "smart精灵#2",
+ "n_on": 1,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/7450.html",
+ "dims": [
+  {
+   "spec": "2026款 鎏金高定版",
+   "len": 2764.0,
+   "wb": 1875.0,
+   "width": 1669.0,
+   "height": 1555.0
+  },
+  {
+   "spec": "2026款 Concept",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 Premium 豪华版",
+   "len": 2751.0,
+   "wb": 1875.0,
+   "width": 1669.0,
+   "height": 1555.0
+  }
+ ],
+ "group": "geely",
+ "series": "精灵#2",
+ "tier": "T3"
+}

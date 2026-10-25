@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 5371,
+ "ah_key": "比亚迪e3",
+ "ah_name": "比亚迪e3",
+ "n_on": 2,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/5371.html",
+ "dims": [
+  {
+   "spec": "2021款 领畅版",
+   "len": 4450.0,
+   "wb": 2610.0,
+   "width": 1760.0,
+   "height": 1520.0
+  },
+  {
+   "spec": "2024款 基本型",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 出行版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2021款 出行版",
+   "len": 4450.0,
+   "wb": 2610.0,
+   "width": 1760.0,
+   "height": 1520.0
+  }
+ ],
+ "group": "byd",
+ "series": "比亚迪E3",
+ "tier": "T1"
+}

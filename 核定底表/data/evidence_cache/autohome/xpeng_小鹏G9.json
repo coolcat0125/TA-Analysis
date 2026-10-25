@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6492,
+ "ah_key": "小鹏G9",
+ "ah_name": "小鹏G9",
+ "n_on": 3,
+ "n_off": 19,
+ "url": "https://car.autohome.com.cn/config/series/6492.html",
+ "dims": [
+  {
+   "spec": "2026款 625 Max",
+   "len": 4891.0,
+   "wb": 2998.0,
+   "width": 1937.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2025款 625 长续航 Max",
+   "len": 4891.0,
+   "wb": 2998.0,
+   "width": 1937.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2025款 725 超长续航 Max",
+   "len": 4891.0,
+   "wb": 2998.0,
+   "width": 1937.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2026款 725 Max",
+   "len": 4891.0,
+   "wb": 2998.0,
+   "width": 1937.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2026款 680 四驱 Max",
+   "len": 4891.0,
+   "wb": 2998.0,
+   "width": 1937.0,
+   "height": 1670.0
+  }
+ ],
+ "group": "xpeng",
+ "series": "小鹏G9",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5976,
+ "ah_key": "AION Y",
+ "ah_name": "AION Y",
+ "n_on": 7,
+ "n_off": 60,
+ "url": "https://car.autohome.com.cn/config/series/5976.html",
+ "dims": [
+  {
+   "spec": "2025款 Plus 430 智享版",
+   "len": 4535.0,
+   "wb": 2750.0,
+   "width": 1870.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2025款 泰国版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 Younger",
+   "len": 4535.0,
+   "wb": 2750.0,
+   "width": 1870.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2025款 Plus 510 智享版",
+   "len": 4535.0,
+   "wb": 2750.0,
+   "width": 1870.0,
+   "height": 1650.0
+  }
+ ],
+ "group": "gac",
+ "series": "AION Y",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7537,
+ "ah_key": "翼真L380",
+ "ah_name": "翼真L380",
+ "n_on": 5,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/7537.html",
+ "dims": [
+  {
+   "spec": "2025款 570km卓越版",
+   "len": 5316.0,
+   "wb": 3185.0,
+   "width": 1998.0,
+   "height": 1940.0
+  },
+  {
+   "spec": "2024款 100度 6座 两驱Air",
+   "len": 5316.0,
+   "wb": 3185.0,
+   "width": 1998.0,
+   "height": 1940.0
+  },
+  {
+   "spec": "2024款 116度 6座 两驱Pro",
+   "len": 5316.0,
+   "wb": 3185.0,
+   "width": 1998.0,
+   "height": 1940.0
+  },
+  {
+   "spec": "2025款 825km非凡版",
+   "len": 5316.0,
+   "wb": 3185.0,
+   "width": 1998.0,
+   "height": 1920.0
+  },
+  {
+   "spec": "2025款 650km旗舰版四驱",
+   "len": 5316.0,
+   "wb": 3185.0,
+   "width": 1998.0,
+   "height": 1920.0
+  }
+ ],
+ "group": "geely",
+ "series": "翼真L380",
+ "tier": "T1"
+}

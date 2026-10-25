@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8532,
+ "ah_key": "魏牌 V9X",
+ "ah_name": "魏牌 V9X",
+ "n_on": 4,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8532.html",
+ "dims": [
+  {
+   "spec": "2026款 豪华家庭版 Ultra",
+   "len": 5205.0,
+   "wb": 3050.0,
+   "width": 2025.0,
+   "height": 1825.0
+  },
+  {
+   "spec": "2026款 EV基本型",
+   "len": 5299.0,
+   "wb": 3150.0,
+   "width": 2025.0,
+   "height": 1825.0
+  },
+  {
+   "spec": "2026款 豪华加长版",
+   "len": 5299.0,
+   "wb": 3150.0,
+   "width": 2025.0,
+   "height": 1825.0
+  },
+  {
+   "spec": "2026款 豪华家庭版 Ultra+",
+   "len": 5205.0,
+   "wb": 3050.0,
+   "width": 2025.0,
+   "height": 1825.0
+  }
+ ],
+ "group": "gwm",
+ "series": "魏牌V9",
+ "tier": "T2"
+}

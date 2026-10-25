@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5179,
+ "ah_key": "长安CS75PLUS",
+ "ah_name": "长安CS75PLUS",
+ "n_on": 14,
+ "n_off": 46,
+ "url": "https://car.autohome.com.cn/config/series/5179.html",
+ "dims": [
+  {
+   "spec": "2026款 第四代 1.5T 蓝鲸超擎混动 真香型",
+   "len": 4770.0,
+   "wb": 2800.0,
+   "width": 1910.0,
+   "height": 1705.0
+  },
+  {
+   "spec": "2026款 第四代 1.5T 基本型",
+   "len": 4770.0,
+   "wb": 2800.0,
+   "width": 1910.0,
+   "height": 1705.0
+  },
+  {
+   "spec": "2026款 HEV 基本型",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 第四代 1.5T 蓝鲸超擎混动 尊享型",
+   "len": 4770.0,
+   "wb": 2800.0,
+   "width": 1910.0,
+   "height": 1705.0
+  },
+  {
+   "spec": "2026款 第四代 1.5T 蓝鲸超擎混动 旗舰型",
+   "len": 4770.0,
+   "wb": 2800.0,
+   "width": 1910.0,
+   "height": 1705.0
+  }
+ ],
+ "group": "changan",
+ "series": "长安CS75PLUS",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 4892,
+ "ah_key": "长安睿行EM80",
+ "ah_name": "长安睿行EM80",
+ "n_on": 42,
+ "n_off": 83,
+ "url": "https://car.autohome.com.cn/config/series/4892.html",
+ "dims": [
+  {
+   "spec": "2025款 货运版 舒适型 2座 260km  对开门 60kW",
+   "len": 4820.0,
+   "wb": 3050.0,
+   "width": 1715.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2026款 财富版 客运版 舒适型 6座320km 对开门",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 客运版 舒适型 6座 320km 对开门",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2023款 平顶对开门2座60kW 41.932kWh",
+   "len": 4805.0,
+   "wb": 3050.0,
+   "width": 1715.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2023款 EM80 Ⅱ 对开门2座舒适型",
+   "len": 4805.0,
+   "wb": 3050.0,
+   "width": 1715.0,
+   "height": 1990.0
+  }
+ ],
+ "group": "changan",
+ "series": "睿行EM80",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5026,
+ "ah_key": "AION S",
+ "ah_name": "AION S",
+ "n_on": 4,
+ "n_off": 42,
+ "url": "https://car.autohome.com.cn/config/series/5026.html",
+ "dims": [
+  {
+   "spec": "2026款 炫 奥动换电版",
+   "len": 4805.0,
+   "wb": 2750.0,
+   "width": 1880.0,
+   "height": 1545.0
+  },
+  {
+   "spec": "2023款 炫 530 48.67kWh 磷酸铁锂",
+   "len": 4805.0,
+   "wb": 2750.0,
+   "width": 1880.0,
+   "height": 1545.0
+  },
+  {
+   "spec": "2023款 炫 580 55.5kWh 磷酸铁锂",
+   "len": 4805.0,
+   "wb": 2750.0,
+   "width": 1880.0,
+   "height": 1545.0
+  },
+  {
+   "spec": "2026款 炫 580",
+   "len": 4805.0,
+   "wb": 2750.0,
+   "width": 1880.0,
+   "height": 1545.0
+  },
+  {
+   "spec": "2026款 炫530",
+   "len": 4805.0,
+   "wb": 2750.0,
+   "width": 1880.0,
+   "height": 1545.0
+  }
+ ],
+ "group": "gac",
+ "series": "AION S",
+ "tier": "T2"
+}

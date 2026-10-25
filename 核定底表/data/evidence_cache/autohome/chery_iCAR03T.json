@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 7682,
+ "ah_key": "iCAR 03T",
+ "ah_name": "iCAR 03T",
+ "n_on": 0,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/7682.html",
+ "dims": [
+  {
+   "spec": "2025款 智驾版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 520km 两驱长续航版",
+   "len": 4380.0,
+   "wb": 2715.0,
+   "width": 1916.0,
+   "height": 1741.0
+  }
+ ],
+ "group": "chery",
+ "series": "iCAR03T",
+ "tier": "T2"
+}

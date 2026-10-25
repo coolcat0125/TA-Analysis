@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8659,
+ "ah_key": "小鹏G9L",
+ "ah_name": "小鹏G9L",
+ "n_on": 6,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8659.html",
+ "dims": [
+  {
+   "spec": "2026款 增程 1602 四驱Ultra SE",
+   "len": 5120.0,
+   "wb": 3100.0,
+   "width": 1999.0,
+   "height": 1782.0
+  },
+  {
+   "spec": "2026款 增程 后驱版",
+   "len": 5120.0,
+   "wb": 3100.0,
+   "width": 1999.0,
+   "height": 1782.0
+  },
+  {
+   "spec": "2026款 增程 1602 四驱Ultra旗舰版",
+   "len": 5120.0,
+   "wb": 3100.0,
+   "width": 1999.0,
+   "height": 1782.0
+  },
+  {
+   "spec": "2026款 纯电 702 Max",
+   "len": 5120.0,
+   "wb": 3100.0,
+   "width": 1999.0,
+   "height": 1782.0
+  }
+ ],
+ "group": "xpeng",
+ "series": "小鹏G9L",
+ "tier": "T2"
+}

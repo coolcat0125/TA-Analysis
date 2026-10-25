@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7569,
+ "ah_key": "深蓝G318",
+ "ah_name": "深蓝G318",
+ "n_on": 6,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/7569.html",
+ "dims": [
+  {
+   "spec": "2026款 无忧穿越版 四驱旷野版",
+   "len": 5125.0,
+   "wb": 2880.0,
+   "width": 2025.0,
+   "height": 1895.0
+  },
+  {
+   "spec": "2025款 无忧穿越版 两驱旷野版",
+   "len": 5125.0,
+   "wb": 2880.0,
+   "width": 2025.0,
+   "height": 1895.0
+  },
+  {
+   "spec": "2024款 两驱标准版",
+   "len": 5010.0,
+   "wb": 2880.0,
+   "width": 1985.0,
+   "height": 1895.0
+  },
+  {
+   "spec": "2026款 四驱舒享天枢版",
+   "len": 5085.0,
+   "wb": 2880.0,
+   "width": 1985.0,
+   "height": 1895.0
+  },
+  {
+   "spec": "2025款 无忧穿越版 四驱远山版",
+   "len": 5125.0,
+   "wb": 2880.0,
+   "width": 2025.0,
+   "height": 1950.0
+  }
+ ],
+ "group": "changan",
+ "series": "长安G318",
+ "tier": "T1"
+}

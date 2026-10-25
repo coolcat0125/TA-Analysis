@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 6950,
+ "ah_key": "理想L6",
+ "ah_name": "理想L6",
+ "n_on": 1,
+ "n_off": 4,
+ "url": "https://car.autohome.com.cn/config/series/6950.html",
+ "dims": [
+  {
+   "spec": "2026款 Ultra",
+   "len": 4935.0,
+   "wb": 2920.0,
+   "width": 1960.0,
+   "height": 1735.0
+  },
+  {
+   "spec": "2025款 Pro 智能焕新版",
+   "len": 4925.0,
+   "wb": 2920.0,
+   "width": 1960.0,
+   "height": 1735.0
+  },
+  {
+   "spec": "2025款 Max 智能焕新版",
+   "len": 4925.0,
+   "wb": 2920.0,
+   "width": 1960.0,
+   "height": 1735.0
+  }
+ ],
+ "group": "liauto",
+ "series": "理想L6",
+ "tier": "T2"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 4802,
+ "ah_key": "唐",
+ "ah_name": "唐",
+ "n_on": 0,
+ "n_off": 21,
+ "url": "https://car.autohome.com.cn/config/series/4802.html",
+ "dims": [
+  {
+   "spec": "2021款 2.0T 自动旗舰型",
+   "len": 4870.0,
+   "wb": 2820.0,
+   "width": 1940.0,
+   "height": 1720.0
+  },
+  {
+   "spec": "2019款 2.0T 自动智联尊尚型 7座 国VI",
+   "len": 4870.0,
+   "wb": 2820.0,
+   "width": 1940.0,
+   "height": 1720.0
+  }
+ ],
+ "group": "byd",
+ "series": "唐",
+ "tier": "T2"
+}

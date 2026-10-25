@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 7230,
+ "ah_key": "沃尔沃EX90",
+ "ah_name": "沃尔沃EX90",
+ "n_on": 2,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7230.html",
+ "dims": [
+  {
+   "spec": "2027款 双电机四驱版 Plus",
+   "len": 5037.0,
+   "wb": 2985.0,
+   "width": 1964.0,
+   "height": 1747.0
+  },
+  {
+   "spec": "2023款 基本型",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2027款 双电机四驱高性能版 Ultra",
+   "len": 5037.0,
+   "wb": 2985.0,
+   "width": 1964.0,
+   "height": 1742.0
+  }
+ ],
+ "group": "geely",
+ "series": "沃尔沃EX90",
+ "tier": "T2"
+}

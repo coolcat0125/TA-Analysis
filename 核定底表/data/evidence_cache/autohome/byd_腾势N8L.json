@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8159,
+ "ah_key": "腾势N8L",
+ "ah_name": "腾势N8L",
+ "n_on": 6,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8159.html",
+ "dims": [
+  {
+   "spec": "2025款 尊荣型",
+   "len": 5200.0,
+   "wb": 3075.0,
+   "width": 1999.0,
+   "height": 1820.0
+  },
+  {
+   "spec": "2025款 无人机版",
+   "len": 5200.0,
+   "wb": 3075.0,
+   "width": 1999.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2026款 插混 闪充尊荣型",
+   "len": 5200.0,
+   "wb": 3075.0,
+   "width": 1999.0,
+   "height": 1820.0
+  },
+  {
+   "spec": "2025款 旗舰型",
+   "len": 5200.0,
+   "wb": 3075.0,
+   "width": 1999.0,
+   "height": 1820.0
+  }
+ ],
+ "group": "byd",
+ "series": "腾势N8L",
+ "tier": "T2"
+}

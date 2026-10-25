@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 7574,
+ "ah_key": "宝骏悦也Plus",
+ "ah_name": "宝骏悦也Plus",
+ "n_on": 9,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/7574.html",
+ "dims": [
+  {
+   "spec": "2026款 301km旗舰版",
+   "len": 3996.0,
+   "wb": 2560.0,
+   "width": 1760.0,
+   "height": 1726.0
+  },
+  {
+   "spec": "2026款 401km旗舰版",
+   "len": 3996.0,
+   "wb": 2560.0,
+   "width": 1760.0,
+   "height": 1726.0
+  },
+  {
+   "spec": "2024款 旗舰版 4座",
+   "len": 3996.0,
+   "wb": 2560.0,
+   "width": 1760.0,
+   "height": 1726.0
+  }
+ ],
+ "group": "saic",
+ "series": "悦也PLUS",
+ "tier": "T2"
+}

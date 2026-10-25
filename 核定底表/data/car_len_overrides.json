@@ -1,0 +1,218 @@
+{
+ "chery|STERRAES": {
+  "len": 4945,
+  "wb": 3000,
+  "conf": "A",
+  "src": "人工仲裁(星途官网)",
+  "url": "https://www.exeedcars.com/xjy/es_reev/config",
+  "note": "星纪元ES 4945×1978×1480；公告众数4590×18全污染"
+ },
+ "chery|iCARV27": {
+  "len": 4909,
+  "wb": 2910,
+  "conf": "A",
+  "src": "人工仲裁(iCAR官网)",
+  "url": "https://www.icarglobal.com/zh/carview/iCARV27",
+  "note": "无备胎4909/含备胎5055；公告4920×21自洽(差11mm口径)"
+ },
+ "geely|#5": {
+  "len": 4705,
+  "wb": 2900,
+  "conf": "B",
+  "src": "人工仲裁(媒体多源)",
+  "url": "https://youjia.baidu.com/view/articleDetail/10303925249689984369",
+  "note": "smart#5量产4705；公告4560/4900双污染"
+ },
+ "xiaomi|YU7": {
+  "len": 4999,
+  "wb": 3000,
+  "conf": "B",
+  "src": "人工仲裁(媒体多源)",
+  "url": "https://www.xiaomiev.com",
+  "note": "YU7 4999(基础)/5015(GT)；公告5070污染"
+ },
+ "chery|奇瑞X3": {
+  "len": 4380,
+  "wb": 2715,
+  "conf": "A",
+  "src": "人工仲裁(风云官网)",
+  "url": "https://fulwin.chery.cn/vehicles/x3plus",
+  "note": "风云X3 4327 / X3 PLUS 4380；公告3090~5150全污染"
+ },
+ "changan|长安Q06E": {
+  "len": 4837,
+  "wb": 2940,
+  "conf": "B",
+  "src": "人工仲裁(申报信息)",
+  "url": "https://chejiahao.autohome.com.cn/info/25197965",
+  "note": "启源Q06 4837×1970×1670；公告4970污染"
+ },
+ "saic|享境S9": {
+  "len": 5235,
+  "wb": 3105,
+  "conf": "A",
+  "src": "人工仲裁(五菱官网)",
+  "url": "https://www.wuling.com/carDetail?id=325",
+  "note": "公开名华境S 5235×1999×1800；公告5250为公示值"
+ },
+ "byd|宋LGT": {
+  "len": 4840,
+  "wb": 2930,
+  "conf": "B",
+  "src": "人工仲裁(申报+百科)",
+  "url": "https://chejiahao.m.autohome.com.cn/info/21036800",
+  "note": "宋L GT 4840×1950×1560"
+ },
+ "geely|翼真L380": {
+  "len": 5316,
+  "wb": 3185,
+  "conf": "B",
+  "src": "人工仲裁(申报/媒体)",
+  "url": "https://www.xchuxing.com/article/118395",
+  "note": "XSPACE=L380申报名；公告4700×6污染"
+ },
+ "chery|智界RX": {
+  "len": 5020,
+  "wb": 3000,
+  "conf": "A",
+  "src": "人工仲裁(鸿蒙智行官网)",
+  "url": "https://hima.auto/zhijie/rx",
+  "note": "智界RX 5020×2007×1585；公告5070污染"
+ },
+ "saic|宏光": {
+  "len": null,
+  "wb": null,
+  "conf": null,
+  "src": "人工仲裁(未核定-泛名)",
+  "url": null,
+  "note": "宏光族混名（MINIEV/油车宏光），汽车之家匹配到MINIEV系属错配，置空"
+ },
+ "geely|精灵#2": {
+  "len": null,
+  "wb": null,
+  "conf": null,
+  "src": "人工仲裁(未核定-单行待复核)",
+  "url": null,
+  "note": "2026-10新公示单行，公开资料不足，置空"
+ },
+ "gwm|枭龙": {
+  "len": 4480,
+  "wb": null,
+  "conf": "C",
+  "src": "人工仲裁(公告自洽4行)",
+  "url": null,
+  "note": "如歌=哈弗枭龙双名；4480×4全库一致"
+ },
+ "gwm|哈弗H10": {
+  "len": 5070,
+  "wb": null,
+  "conf": "C",
+  "src": "人工仲裁(公告自洽4行)",
+  "url": null,
+  "note": "HX=H10双名；5070×4全库一致；2026新车型公开资料少"
+ },
+ "geely|#3": {
+  "len": 4400,
+  "wb": 2785,
+  "conf": "B",
+  "src": "人工仲裁(媒体多源)",
+  "url": "https://db.m.auto.sohu.com/model_6964/config",
+  "note": "smart#3 4400×1844×1556(运动套件4542)"
+ },
+ "geely|吉利L6": {
+  "len": 4782,
+  "wb": 2752,
+  "conf": "B",
+  "src": "人工仲裁(媒体多源)",
+  "url": "https://www.xchuxing.com/article/93977",
+  "note": "银河L6 4782×1875×1489"
+ },
+ "geely|星耀8": {
+  "len": 5018,
+  "wb": 2928,
+  "conf": "B",
+  "src": "人工仲裁(汽车之家配置)",
+  "url": "https://car.autohome.com.cn/config/series/8042.html",
+  "note": "银河星耀8 5018×1918×1480；公告5040/4820污染"
+ },
+ "gac|埃安I60": {
+  "len": 4685,
+  "wb": 2775,
+  "conf": "B",
+  "src": "人工仲裁(媒体+官网)",
+  "url": "https://www.aion.com.cn",
+  "note": "AION i60 4685×1854×1660；公告4690/4685并存"
+ },
+ "chery|山海T2": {
+  "len": 4785,
+  "wb": 2800,
+  "conf": "B",
+  "src": "人工仲裁(媒体)",
+  "url": "https://www.bitauto.my/zh/wiki/捷途山海T2",
+  "note": "标准4785/加长5034；公告4730为2024原版"
+ },
+ "xpeng|小鹏G3I": {
+  "len": 4495,
+  "wb": 2625,
+  "conf": "B",
+  "src": "人工仲裁(媒体多源)",
+  "url": "https://www.bitauto.my/zh/wiki/小鹏 G3 / G3i",
+  "note": "G3i 4495(G3 4450)"
+ },
+ "byd|驱逐舰07": {
+  "len": 4980,
+  "wb": 2900,
+  "conf": "B",
+  "src": "人工仲裁(车展官方)",
+  "url": "http://www.news.cn/auto/20230418/21946e1742c94772b745c88e6823c811/c.html",
+  "note": "车展亮相4980×1890×1495；量产更名海豹07DM-i；公告5020存疑"
+ },
+ "geely|领克Z20": {
+  "len": 4460,
+  "wb": 2755,
+  "conf": "B",
+  "src": "人工仲裁(媒体多源)",
+  "url": "https://share-m.kakamobi.com/m.toutiao.kakamobi.com/detail/?id=3354960",
+  "note": "Z20 4460(后继领克20 4495)；补种子URL证据"
+ },
+ "chery|iCARV23": {
+  "len": 4220,
+  "wb": 2730,
+  "conf": "A",
+  "src": "人工仲裁(iCAR官网)",
+  "url": "https://www.icarglobal.com/zh/carview/iCARV23",
+  "note": "V23 4220×1915×1845；公告4620×7污染(差400)"
+ },
+ "chery|奇瑞X3L": {
+  "len": 4545,
+  "wb": 2783,
+  "conf": "B",
+  "src": "人工仲裁(官网+媒体)",
+  "url": "https://fulwin.chery.cn/vehicles/x3plus",
+  "note": "风云X3L 4545×1950×1815；公告4700×6存疑"
+ },
+ "chery|智界S7": {
+  "len": 4971,
+  "wb": 2950,
+  "conf": "A",
+  "src": "人工仲裁(鸿蒙智行官网)",
+  "url": "https://hima.auto/zhijie/s7/configuration",
+  "note": "智界S7 4971×1963×1474；奇瑞S7系商标奇瑞牌的同一车"
+ },
+ "geely|吉利L7": {
+  "len": 4710,
+  "wb": 2785,
+  "conf": "B",
+  "src": "人工仲裁(媒体多源)",
+  "url": "https://www.bitauto.my/zh/wiki/吉利银河L7",
+  "note": "银河L7 4710×1905×1685"
+ },
+ "geely|星耀6": {
+  "len": 4806,
+  "wb": 2756,
+  "conf": "B",
+  "src": "人工仲裁(新华网)",
+  "url": "http://www.news.cn/auto/20251103/bbfb724067a94f759227fe8a7f7af5df/c.html",
+  "note": "银河星耀6 4806×1886×1490（EF纯电/EM-i插混同车身）"
+ }
+}

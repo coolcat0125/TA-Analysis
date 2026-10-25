@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5213,
+ "ah_key": "小鹏P7",
+ "ah_name": "小鹏P7",
+ "n_on": 4,
+ "n_off": 44,
+ "url": "https://car.autohome.com.cn/config/series/5213.html",
+ "dims": [
+  {
+   "spec": "2025款 702 Max",
+   "len": 5017.0,
+   "wb": 3008.0,
+   "width": 1970.0,
+   "height": 1427.0
+  },
+  {
+   "spec": "2025款 702 长续航 Ultra",
+   "len": 5017.0,
+   "wb": 3008.0,
+   "width": 1970.0,
+   "height": 1427.0
+  },
+  {
+   "spec": "2025款 820 超长续航 Ultra",
+   "len": 5017.0,
+   "wb": 3008.0,
+   "width": 1970.0,
+   "height": 1427.0
+  },
+  {
+   "spec": "2025款 820 Max",
+   "len": 5017.0,
+   "wb": 3008.0,
+   "width": 1970.0,
+   "height": 1427.0
+  },
+  {
+   "spec": "2025款 750 四驱 Max",
+   "len": 5017.0,
+   "wb": 3008.0,
+   "width": 1970.0,
+   "height": 1427.0
+  }
+ ],
+ "group": "xpeng",
+ "series": "小鹏P7",
+ "tier": "T2"
+}

@@ -1,0 +1,21 @@
+{
+ "status": "ok",
+ "seriesid": 8765,
+ "ah_key": "星光M",
+ "ah_name": "星光M",
+ "n_on": 0,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8765.html",
+ "dims": [
+  {
+   "spec": "2026款 基本型",
+   "len": 5150.0,
+   "wb": 3000.0,
+   "width": 1920.0,
+   "height": 1820.0
+  }
+ ],
+ "group": "saic",
+ "series": "星光M",
+ "tier": "T3"
+}

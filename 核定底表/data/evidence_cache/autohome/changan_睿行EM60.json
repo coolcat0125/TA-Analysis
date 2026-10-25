@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5477,
+ "ah_key": "长安睿行EM60",
+ "ah_name": "长安睿行EM60",
+ "n_on": 38,
+ "n_off": 62,
+ "url": "https://car.autohome.com.cn/config/series/5477.html",
+ "dims": [
+  {
+   "spec": "2025款 货运版 舒适型 2座 265km 背掀门 60kW",
+   "len": 4575.0,
+   "wb": 3000.0,
+   "width": 1715.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2026款 客运版 舒适型 6座 320km 对开门",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 货运版 舒适型 5座 265km 背掀门 60kW",
+   "len": 4575.0,
+   "wb": 3000.0,
+   "width": 1715.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2025款 货运版 舒适型 2座 265km 对开门 60kW",
+   "len": 4575.0,
+   "wb": 3000.0,
+   "width": 1715.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2025款 客运版 舒适型 6座 240km 背掀门 60kW",
+   "len": 4575.0,
+   "wb": 3000.0,
+   "width": 1715.0,
+   "height": 1990.0
+  }
+ ],
+ "group": "changan",
+ "series": "睿行EM60",
+ "tier": "T2"
+}

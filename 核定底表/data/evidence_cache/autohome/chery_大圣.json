@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6291,
+ "ah_key": "捷途大圣",
+ "ah_name": "捷途大圣",
+ "n_on": 16,
+ "n_off": 32,
+ "url": "https://car.autohome.com.cn/config/series/6291.html",
+ "dims": [
+  {
+   "spec": "2026款 青春版 1.5T 6MT舒适版",
+   "len": 4590.0,
+   "wb": 2720.0,
+   "width": 1900.0,
+   "height": 1685.0
+  },
+  {
+   "spec": "2026款 青春版 1.5T 6DCT精英版舒享套件",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 青春版 1.5T 6DCT豪华版舒享套件",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 青春版 1.5T 6DCT精英版",
+   "len": 4590.0,
+   "wb": 2720.0,
+   "width": 1900.0,
+   "height": 1685.0
+  },
+  {
+   "spec": "2026款 青春版 1.5T 6DCT豪华版",
+   "len": 4590.0,
+   "wb": 2720.0,
+   "width": 1900.0,
+   "height": 1685.0
+  }
+ ],
+ "group": "chery",
+ "series": "大圣",
+ "tier": "T2"
+}

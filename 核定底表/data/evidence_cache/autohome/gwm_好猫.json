@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5823,
+ "ah_key": "欧拉好猫",
+ "ah_name": "欧拉好猫",
+ "n_on": 8,
+ "n_off": 48,
+ "url": "https://car.autohome.com.cn/config/series/5823.html",
+ "dims": [
+  {
+   "spec": "2027款 335km 豪华版",
+   "len": 4242.0,
+   "wb": 2650.0,
+   "width": 1825.0,
+   "height": 1640.0
+  },
+  {
+   "spec": "2024款 401km 舒享型",
+   "len": 4235.0,
+   "wb": 2650.0,
+   "width": 1825.0,
+   "height": 1596.0
+  },
+  {
+   "spec": "2024款 401km 豪华型",
+   "len": 4235.0,
+   "wb": 2650.0,
+   "width": 1825.0,
+   "height": 1596.0
+  },
+  {
+   "spec": "2027款 335km 尊荣版",
+   "len": 4242.0,
+   "wb": 2650.0,
+   "width": 1825.0,
+   "height": 1640.0
+  },
+  {
+   "spec": "2027款 430km 豪华版",
+   "len": 4242.0,
+   "wb": 2650.0,
+   "width": 1825.0,
+   "height": 1640.0
+  }
+ ],
+ "group": "gwm",
+ "series": "好猫",
+ "tier": "T1"
+}

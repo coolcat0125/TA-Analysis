@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 4218,
+ "ah_key": "小蚂蚁",
+ "ah_name": "小蚂蚁",
+ "n_on": 2,
+ "n_off": 132,
+ "url": "https://car.autohome.com.cn/config/series/4218.html",
+ "dims": [
+  {
+   "spec": "2026款 271km 喜爱版",
+   "len": 3242.0,
+   "wb": 2150.0,
+   "width": 1670.0,
+   "height": 1550.0
+  },
+  {
+   "spec": "2025款 智驾版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 251km 喜爱版 25.05kWh",
+   "len": 3200.0,
+   "wb": 2150.0,
+   "width": 1670.0,
+   "height": 1550.0
+  },
+  {
+   "spec": "2026款 271km 真爱版",
+   "len": 3242.0,
+   "wb": 2150.0,
+   "width": 1670.0,
+   "height": 1550.0
+  }
+ ],
+ "group": "chery",
+ "series": "小蚂蚁",
+ "tier": "T1"
+}

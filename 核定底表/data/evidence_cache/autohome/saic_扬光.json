@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8788,
+ "ah_key": "五菱扬光L",
+ "ah_name": "五菱扬光L",
+ "n_on": 6,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8788.html",
+ "dims": [
+  {
+   "spec": "2026款 410km 封窗舒适型",
+   "len": 5125.0,
+   "wb": 3230.0,
+   "width": 1840.0,
+   "height": 1985.0
+  },
+  {
+   "spec": "2026款 420km 客车舒适型",
+   "len": 5125.0,
+   "wb": 3230.0,
+   "width": 1840.0,
+   "height": 1985.0
+  },
+  {
+   "spec": "2026款  420km 客车智能型",
+   "len": 5125.0,
+   "wb": 3230.0,
+   "width": 1840.0,
+   "height": 1985.0
+  }
+ ],
+ "group": "saic",
+ "series": "扬光",
+ "tier": "T2"
+}

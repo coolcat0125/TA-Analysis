@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 7179,
+ "ah_key": "腾势N8",
+ "ah_name": "腾势N8",
+ "n_on": 0,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/7179.html",
+ "dims": [
+  {
+   "spec": "2026款 纯电 320kw 基本型 ",
+   "len": 5150.0,
+   "wb": 3075.0,
+   "width": 1999.0,
+   "height": 1820.0
+  },
+  {
+   "spec": "2026款 纯电 三电机 基本型 ",
+   "len": 5150.0,
+   "wb": 3075.0,
+   "width": 1999.0,
+   "height": 1820.0
+  }
+ ],
+ "group": "byd",
+ "series": "腾势N8",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8232,
+ "ah_key": "iCAR V27",
+ "ah_name": "iCAR V27",
+ "n_on": 5,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/8232.html",
+ "dims": [
+  {
+   "spec": "2026款 210KM两驱猎鹰500",
+   "len": 5055.0,
+   "wb": 2910.0,
+   "width": 1976.0,
+   "height": 1894.0
+  },
+  {
+   "spec": "2026款 海外版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 改装版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 200KM四驱猎鹰500",
+   "len": 5055.0,
+   "wb": 2910.0,
+   "width": 1976.0,
+   "height": 1894.0
+  },
+  {
+   "spec": "2027款 300KM四驱猎鹰500",
+   "len": 5055.0,
+   "wb": 2910.0,
+   "width": 1976.0,
+   "height": 1894.0
+  }
+ ],
+ "group": "chery",
+ "series": "iCARV27",
+ "tier": "T2"
+}

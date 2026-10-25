@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6769,
+ "ah_key": "极越01",
+ "ah_name": "极越01",
+ "n_on": 0,
+ "n_off": 10,
+ "url": "https://car.autohome.com.cn/config/series/6769.html",
+ "dims": [
+  {
+   "spec": "2025款 焕新款 Max",
+   "len": 4853.0,
+   "wb": 3000.0,
+   "width": 1990.0,
+   "height": 1611.0
+  },
+  {
+   "spec": "2025款 焕新款 Max 长续航版",
+   "len": 4853.0,
+   "wb": 3000.0,
+   "width": 1990.0,
+   "height": 1611.0
+  }
+ ],
+ "group": "geely",
+ "series": "极越01",
+ "tier": "T2"
+}

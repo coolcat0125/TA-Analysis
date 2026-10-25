@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 5845,
+ "ah_key": "领克Z10",
+ "ah_name": "领克Z10",
+ "n_on": 0,
+ "n_off": 8,
+ "url": "https://car.autohome.com.cn/config/series/5845.html",
+ "dims": [
+  {
+   "spec": "2025款 95kWh 702km四驱Halo",
+   "len": 5028.0,
+   "wb": 3005.0,
+   "width": 1966.0,
+   "height": 1468.0
+  },
+  {
+   "spec": "2024款 71kWh 602km后驱Pro",
+   "len": 5028.0,
+   "wb": 3005.0,
+   "width": 1966.0,
+   "height": 1468.0
+  }
+ ],
+ "group": "geely",
+ "series": "领克Z10",
+ "tier": "T2"
+}

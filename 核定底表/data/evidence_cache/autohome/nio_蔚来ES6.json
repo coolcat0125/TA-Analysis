@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 4881,
+ "ah_key": "蔚来ES6",
+ "ah_name": "蔚来ES6",
+ "n_on": 2,
+ "n_off": 34,
+ "url": "https://car.autohome.com.cn/config/series/4881.html",
+ "dims": [
+  {
+   "spec": "2026款 100kWh",
+   "len": 4854.0,
+   "wb": 2915.0,
+   "width": 1995.0,
+   "height": 1703.0
+  },
+  {
+   "spec": "2024款 150kWh",
+   "len": 4854.0,
+   "wb": 2915.0,
+   "width": 1995.0,
+   "height": 1703.0
+  },
+  {
+   "spec": "2025款 75kWh",
+   "len": 4854.0,
+   "wb": 2915.0,
+   "width": 1995.0,
+   "height": 1703.0
+  },
+  {
+   "spec": "2026款 100kWh 自然奇境版",
+   "len": 4854.0,
+   "wb": 2915.0,
+   "width": 1995.0,
+   "height": 1703.0
+  }
+ ],
+ "group": "nio",
+ "series": "蔚来ES6",
+ "tier": "T2"
+}

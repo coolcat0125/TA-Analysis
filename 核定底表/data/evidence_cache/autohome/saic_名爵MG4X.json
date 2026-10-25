@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8564,
+ "ah_key": "MG 4X",
+ "ah_name": "MG 4X",
+ "n_on": 4,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8564.html",
+ "dims": [
+  {
+   "spec": "2026款 510 半固态自由版",
+   "len": 4500.0,
+   "wb": 2735.0,
+   "width": 1849.0,
+   "height": 1621.0
+  },
+  {
+   "spec": "2026款 510 半固态智享版",
+   "len": 4500.0,
+   "wb": 2735.0,
+   "width": 1849.0,
+   "height": 1627.0
+  },
+  {
+   "spec": "2026款 610 自由版",
+   "len": 4500.0,
+   "wb": 2735.0,
+   "width": 1849.0,
+   "height": 1621.0
+  }
+ ],
+ "group": "saic",
+ "series": "名爵MG4X",
+ "tier": "T2"
+}

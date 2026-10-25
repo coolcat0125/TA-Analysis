@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 6359,
+ "ah_key": "坦克400",
+ "ah_name": "坦克400",
+ "n_on": 2,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/6359.html",
+ "dims": [
+  {
+   "spec": "2026款 2.4T 柴油版",
+   "len": 4964.0,
+   "wb": 2850.0,
+   "width": 1970.0,
+   "height": 1905.0
+  },
+  {
+   "spec": "2026款 2.0T 探境版",
+   "len": 4964.0,
+   "wb": 2850.0,
+   "width": 1970.0,
+   "height": 1905.0
+  },
+  {
+   "spec": "2025款 2.0T 汽油版",
+   "len": 4985.0,
+   "wb": 2850.0,
+   "width": 1960.0,
+   "height": 1905.0
+  },
+  {
+   "spec": "2026款 2.0T 汽油版",
+   "len": 4964.0,
+   "wb": 2850.0,
+   "width": 1970.0,
+   "height": 1905.0
+  }
+ ],
+ "group": "gwm",
+ "series": "坦克400",
+ "tier": "T1"
+}

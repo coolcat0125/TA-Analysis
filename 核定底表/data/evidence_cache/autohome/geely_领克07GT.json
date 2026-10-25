@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8562,
+ "ah_key": "领克07GT",
+ "ah_name": "领克07GT",
+ "n_on": 3,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8562.html",
+ "dims": [
+  {
+   "spec": "2027款 200超长续航Max",
+   "len": 4846.0,
+   "wb": 2843.0,
+   "width": 1900.0,
+   "height": 1485.0
+  },
+  {
+   "spec": "2027款 时间限量版",
+   "len": 4866.0,
+   "wb": 2843.0,
+   "width": 1900.0,
+   "height": 1485.0
+  },
+  {
+   "spec": "2027款 200超长续航Ultra",
+   "len": 4846.0,
+   "wb": 2843.0,
+   "width": 1900.0,
+   "height": 1485.0
+  },
+  {
+   "spec": "2027款 四驱性能Ultra",
+   "len": 4846.0,
+   "wb": 2843.0,
+   "width": 1900.0,
+   "height": 1485.0
+  }
+ ],
+ "group": "geely",
+ "series": "领克07GT",
+ "tier": "T3"
+}

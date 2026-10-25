@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 3781,
+ "ah_key": "比亚迪元",
+ "ah_name": "元",
+ "n_on": 0,
+ "n_off": 21,
+ "url": "https://car.autohome.com.cn/config/series/3781.html",
+ "dims": [
+  {
+   "spec": "2017款 1.5L 手动酷炫活力型",
+   "len": 4360.0,
+   "wb": 2535.0,
+   "width": 1785.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2017款 1.5L 手动酷炫时尚型",
+   "len": 4360.0,
+   "wb": 2535.0,
+   "width": 1785.0,
+   "height": 1650.0
+  }
+ ],
+ "group": "byd",
+ "series": "元EV",
+ "tier": "T1"
+}

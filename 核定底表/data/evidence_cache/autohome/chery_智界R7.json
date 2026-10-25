@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7730,
+ "ah_key": "智界R7",
+ "ah_name": "智界R7",
+ "n_on": 16,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/7730.html",
+ "dims": [
+  {
+   "spec": "2026款 增程 Max(192线激光雷达）",
+   "len": 4982.0,
+   "wb": 2950.0,
+   "width": 1981.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2026款 改装版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 增程 251km Pro",
+   "len": 4956.0,
+   "wb": 2950.0,
+   "width": 1981.0,
+   "height": 1634.0
+  },
+  {
+   "spec": "2026款 增程 Max(896线激光雷达）",
+   "len": 4982.0,
+   "wb": 2950.0,
+   "width": 1981.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2026款 增程 Max+(192线激光雷达）",
+   "len": 4982.0,
+   "wb": 2950.0,
+   "width": 1981.0,
+   "height": 1650.0
+  }
+ ],
+ "group": "chery",
+ "series": "智界R7",
+ "tier": "T1"
+}

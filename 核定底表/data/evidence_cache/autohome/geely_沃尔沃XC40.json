@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5198,
+ "ah_key": "沃尔沃XC40",
+ "ah_name": "沃尔沃XC40",
+ "n_on": 10,
+ "n_off": 38,
+ "url": "https://car.autohome.com.cn/config/series/5198.html",
+ "dims": [
+  {
+   "spec": "2025款 B3 智行时尚版",
+   "len": 4440.0,
+   "wb": 2702.0,
+   "width": 1863.0,
+   "height": 1657.0
+  },
+  {
+   "spec": "2026款 B3 智行时尚版",
+   "len": 4440.0,
+   "wb": 2702.0,
+   "width": 1863.0,
+   "height": 1657.0
+  },
+  {
+   "spec": "2024款 B3 智行时尚版",
+   "len": 4440.0,
+   "wb": 2702.0,
+   "width": 1863.0,
+   "height": 1657.0
+  },
+  {
+   "spec": "2025款 B3 智远豪华版",
+   "len": 4440.0,
+   "wb": 2702.0,
+   "width": 1863.0,
+   "height": 1657.0
+  },
+  {
+   "spec": "2025款 B3 智远运动版",
+   "len": 4440.0,
+   "wb": 2702.0,
+   "width": 1863.0,
+   "height": 1657.0
+  }
+ ],
+ "group": "geely",
+ "series": "沃尔沃XC40",
+ "tier": "T2"
+}

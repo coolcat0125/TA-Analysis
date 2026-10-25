@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8590,
+ "ah_key": "魏牌 V8X",
+ "ah_name": "魏牌 V8X",
+ "n_on": 5,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8590.html",
+ "dims": [
+  {
+   "spec": "2026款 运动版Max",
+   "len": 5040.0,
+   "wb": 2968.0,
+   "width": 2025.0,
+   "height": 1808.0
+  },
+  {
+   "spec": "2026款 纯电版",
+   "len": 5000.0,
+   "wb": 2968.0,
+   "width": 2025.0,
+   "height": 1808.0
+  },
+  {
+   "spec": "2026款 豪华家庭版Max",
+   "len": 5125.0,
+   "wb": 3050.0,
+   "width": 2025.0,
+   "height": 1821.0
+  },
+  {
+   "spec": "2026款 豪华家庭版Ultra",
+   "len": 5125.0,
+   "wb": 3050.0,
+   "width": 2025.0,
+   "height": 1821.0
+  }
+ ],
+ "group": "gwm",
+ "series": "魏牌V8X",
+ "tier": "T2"
+}

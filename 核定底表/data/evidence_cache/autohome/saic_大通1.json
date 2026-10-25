@@ -1,0 +1,10 @@
+{
+ "status": "no_candidate",
+ "queries": [
+  "大通1",
+  "大通大通1"
+ ],
+ "group": "saic",
+ "series": "大通1",
+ "tier": "T2"
+}

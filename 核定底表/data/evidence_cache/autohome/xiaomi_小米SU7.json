@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6962,
+ "ah_key": "小米SU7",
+ "ah_name": "小米SU7",
+ "n_on": 3,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/6962.html",
+ "dims": [
+  {
+   "spec": "2026款 后驱标准版",
+   "len": 4997.0,
+   "wb": 3000.0,
+   "width": 1963.0,
+   "height": 1460.0
+  },
+  {
+   "spec": "2024款 SU7 L 猜想图",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 后驱长续航智驾版",
+   "len": 4997.0,
+   "wb": 3000.0,
+   "width": 1963.0,
+   "height": 1455.0
+  },
+  {
+   "spec": "2026款 后驱Pro版",
+   "len": 4997.0,
+   "wb": 3000.0,
+   "width": 1963.0,
+   "height": 1445.0
+  },
+  {
+   "spec": "2026款 四驱Max版",
+   "len": 4997.0,
+   "wb": 3000.0,
+   "width": 1963.0,
+   "height": 1445.0
+  }
+ ],
+ "group": "xiaomi",
+ "series": "小米SU7",
+ "tier": "T2"
+}

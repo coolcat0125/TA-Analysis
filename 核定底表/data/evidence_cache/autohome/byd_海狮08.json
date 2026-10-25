@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8484,
+ "ah_key": "海狮08",
+ "ah_name": "海狮08",
+ "n_on": 8,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8484.html",
+ "dims": [
+  {
+   "spec": "2026款 DM-i 400KM 5座 尊荣型",
+   "len": 5115.0,
+   "wb": 3030.0,
+   "width": 1999.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 DM-p 四驱版",
+   "len": 5115.0,
+   "wb": 3030.0,
+   "width": 1999.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 DM-i 350KM 5座 四驱旗舰型",
+   "len": 5115.0,
+   "wb": 3030.0,
+   "width": 1999.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 DM-i 400KM 6座 尊荣型",
+   "len": 5115.0,
+   "wb": 3030.0,
+   "width": 1999.0,
+   "height": 1800.0
+  }
+ ],
+ "group": "byd",
+ "series": "海狮08",
+ "tier": "T2"
+}

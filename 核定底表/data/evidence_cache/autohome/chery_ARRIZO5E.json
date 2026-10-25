@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 4262,
+ "ah_key": "艾瑞泽5e",
+ "ah_name": "艾瑞泽5e",
+ "n_on": 0,
+ "n_off": 8,
+ "url": "https://car.autohome.com.cn/config/series/4262.html",
+ "dims": [
+  {
+   "spec": "2019款 基本型",
+   "len": 4572.0,
+   "wb": 2670.0,
+   "width": 1825.0,
+   "height": 1496.0
+  },
+  {
+   "spec": "2019款 450 智享版",
+   "len": 4572.0,
+   "wb": 2670.0,
+   "width": 1825.0,
+   "height": 1496.0
+  }
+ ],
+ "group": "chery",
+ "series": "ARRIZO5E",
+ "tier": "T2"
+}

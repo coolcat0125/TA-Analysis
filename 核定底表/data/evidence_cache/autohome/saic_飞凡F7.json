@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 6925,
+ "ah_key": "飞凡F7",
+ "ah_name": "飞凡F7",
+ "n_on": 1,
+ "n_off": 13,
+ "url": "https://car.autohome.com.cn/config/series/6925.html",
+ "dims": [
+  {
+   "spec": "2025款 都市版",
+   "len": 5000.0,
+   "wb": 3000.0,
+   "width": 1953.0,
+   "height": 1494.0
+  },
+  {
+   "spec": "2026款 巴赫舒享版",
+   "len": 5000.0,
+   "wb": 3000.0,
+   "width": 1953.0,
+   "height": 1494.0
+  },
+  {
+   "spec": "2025款 长续版",
+   "len": 5000.0,
+   "wb": 3000.0,
+   "width": 1953.0,
+   "height": 1494.0
+  }
+ ],
+ "group": "saic",
+ "series": "飞凡F7",
+ "tier": "T2"
+}

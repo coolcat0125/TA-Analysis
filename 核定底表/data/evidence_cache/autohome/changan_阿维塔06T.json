@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8538,
+ "ah_key": "阿维塔06T",
+ "ah_name": "阿维塔06T",
+ "n_on": 6,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8538.html",
+ "dims": [
+  {
+   "spec": "2026款 Max 双电机增程版",
+   "len": 4940.0,
+   "wb": 2940.0,
+   "width": 1960.0,
+   "height": 1475.0
+  },
+  {
+   "spec": "2026款 Elite 双电机纯电版",
+   "len": 4940.0,
+   "wb": 2940.0,
+   "width": 1960.0,
+   "height": 1475.0
+  },
+  {
+   "spec": "2026款 Max 双电机纯电版",
+   "len": 4940.0,
+   "wb": 2940.0,
+   "width": 1960.0,
+   "height": 1475.0
+  }
+ ],
+ "group": "changan",
+ "series": "阿维塔06T",
+ "tier": "T2"
+}

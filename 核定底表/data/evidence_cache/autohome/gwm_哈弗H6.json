@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 2123,
+ "ah_key": "哈弗H6",
+ "ah_name": "哈弗H6",
+ "n_on": 7,
+ "n_off": 246,
+ "url": "https://car.autohome.com.cn/config/series/2123.html",
+ "dims": [
+  {
+   "spec": "2026款 1.5T 两驱经典版",
+   "len": 4653.0,
+   "wb": 2738.0,
+   "width": 1886.0,
+   "height": 1730.0
+  },
+  {
+   "spec": "2025款 1.5T 国潮都市版",
+   "len": 4645.0,
+   "wb": 2680.0,
+   "width": 1860.0,
+   "height": 1720.0
+  },
+  {
+   "spec": "2025款 1.5T 国潮冠军版",
+   "len": 4645.0,
+   "wb": 2680.0,
+   "width": 1860.0,
+   "height": 1720.0
+  },
+  {
+   "spec": "2024款 1.5T 两驱Pro",
+   "len": 4703.0,
+   "wb": 2738.0,
+   "width": 1886.0,
+   "height": 1730.0
+  },
+  {
+   "spec": "2024款 1.5T 两驱经典版",
+   "len": 4653.0,
+   "wb": 2738.0,
+   "width": 1886.0,
+   "height": 1730.0
+  }
+ ],
+ "group": "gwm",
+ "series": "哈弗H6",
+ "tier": "T2"
+}

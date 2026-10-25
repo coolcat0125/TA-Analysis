@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6335,
+ "ah_key": "长安UNI-V",
+ "ah_name": "长安UNI-V",
+ "n_on": 17,
+ "n_off": 16,
+ "url": "https://car.autohome.com.cn/config/series/6335.html",
+ "dims": [
+  {
+   "spec": "2026款 1.5T 蓝鲸超擎混动 智悦型",
+   "len": 4740.0,
+   "wb": 2750.0,
+   "width": 1838.0,
+   "height": 1435.0
+  },
+  {
+   "spec": "2024款 改装版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 试装车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 1.5T 蓝鲸超擎混动 智领型",
+   "len": 4740.0,
+   "wb": 2750.0,
+   "width": 1838.0,
+   "height": 1435.0
+  },
+  {
+   "spec": "2024款 1.5T 尊享型",
+   "len": 4720.0,
+   "wb": 2750.0,
+   "width": 1838.0,
+   "height": 1430.0
+  }
+ ],
+ "group": "changan",
+ "series": "UNI-V",
+ "tier": "T2"
+}

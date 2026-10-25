@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 4974,
+ "ah_key": "理想ONE",
+ "ah_name": "理想ONE",
+ "n_on": 0,
+ "n_off": 4,
+ "url": "https://car.autohome.com.cn/config/series/4974.html",
+ "dims": [
+  {
+   "spec": "2021款 增程6座版",
+   "len": 5030.0,
+   "wb": 2935.0,
+   "width": 1960.0,
+   "height": 1760.0
+  },
+  {
+   "spec": "2020款 增程7座版",
+   "len": 5020.0,
+   "wb": 2935.0,
+   "width": 1960.0,
+   "height": 1760.0
+  }
+ ],
+ "group": "liauto",
+ "series": "理想ONE",
+ "tier": "T2"
+}

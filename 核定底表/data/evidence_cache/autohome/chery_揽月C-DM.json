@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 7227,
+ "ah_key": "星途揽月C-DM",
+ "ah_name": "星途揽月C-DM",
+ "n_on": 9,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7227.html",
+ "dims": [
+  {
+   "spec": "2025款 180 超长续航Max四驱 6座",
+   "len": 5010.0,
+   "wb": 2900.0,
+   "width": 1940.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2023款 增程版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 180 超长续航Max四驱 7座",
+   "len": 5010.0,
+   "wb": 2900.0,
+   "width": 1940.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2027款 Max四驱 6座",
+   "len": 5010.0,
+   "wb": 2900.0,
+   "width": 1940.0,
+   "height": 1800.0
+  }
+ ],
+ "group": "chery",
+ "series": "揽月C-DM",
+ "tier": "T1"
+}

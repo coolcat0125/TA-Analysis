@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8716,
+ "ah_key": "五菱扬光Pro",
+ "ah_name": "五菱扬光Pro",
+ "n_on": 6,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8716.html",
+ "dims": [
+  {
+   "spec": "2026款 150km 增程 功能款客车版 6座",
+   "len": 5495.0,
+   "wb": 3450.0,
+   "width": 1999.0,
+   "height": 2170.0
+  },
+  {
+   "spec": "2026款 318km 纯电 功能款客车版 6座",
+   "len": 5495.0,
+   "wb": 3450.0,
+   "width": 1999.0,
+   "height": 2170.0
+  },
+  {
+   "spec": "2026款 380km 纯电 功能款封窗版 2座",
+   "len": 5495.0,
+   "wb": 3450.0,
+   "width": 1999.0,
+   "height": 2170.0
+  }
+ ],
+ "group": "saic",
+ "series": "扬光PRO",
+ "tier": "T1"
+}

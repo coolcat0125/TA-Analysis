@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6121,
+ "ah_key": "五菱NanoEV",
+ "ah_name": "五菱NanoEV",
+ "n_on": 0,
+ "n_off": 8,
+ "url": "https://car.autohome.com.cn/config/series/6121.html",
+ "dims": [
+  {
+   "spec": "2022款 乐享款",
+   "len": 2497.0,
+   "wb": 1600.0,
+   "width": 1526.0,
+   "height": 1616.0
+  },
+  {
+   "spec": "2022款 bilibili限定款",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  }
+ ],
+ "group": "saic",
+ "series": "NANOEV",
+ "tier": "T2"
+}

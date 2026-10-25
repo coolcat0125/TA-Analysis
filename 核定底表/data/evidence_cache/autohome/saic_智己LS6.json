@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7305,
+ "ah_key": "智己LS6",
+ "ah_name": "智己LS6",
+ "n_on": 7,
+ "n_off": 24,
+ "url": "https://car.autohome.com.cn/config/series/7305.html",
+ "dims": [
+  {
+   "spec": "2026款 增程 52 Max",
+   "len": 4937.0,
+   "wb": 2960.0,
+   "width": 1988.0,
+   "height": 1673.0
+  },
+  {
+   "spec": "2026款 纯电 Pro",
+   "len": 4937.0,
+   "wb": 2960.0,
+   "width": 1988.0,
+   "height": 1671.0
+  },
+  {
+   "spec": "2026款 增程 52 Pro",
+   "len": 4937.0,
+   "wb": 2960.0,
+   "width": 1988.0,
+   "height": 1673.0
+  },
+  {
+   "spec": "2026款 增程 66 Max",
+   "len": 4937.0,
+   "wb": 2960.0,
+   "width": 1988.0,
+   "height": 1673.0
+  },
+  {
+   "spec": "2026款 增程 52 Max+",
+   "len": 4937.0,
+   "wb": 2960.0,
+   "width": 1988.0,
+   "height": 1673.0
+  }
+ ],
+ "group": "saic",
+ "series": "智己LS6",
+ "tier": "T1"
+}

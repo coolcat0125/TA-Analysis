@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6664,
+ "ah_key": "艾瑞泽8",
+ "ah_name": "艾瑞泽8",
+ "n_on": 12,
+ "n_off": 19,
+ "url": "https://car.autohome.com.cn/config/series/6664.html",
+ "dims": [
+  {
+   "spec": "2024款 1.6T DCT 卓越版",
+   "len": 4780.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1469.0
+  },
+  {
+   "spec": "2024款 1.6T DCT智",
+   "len": 4780.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1469.0
+  },
+  {
+   "spec": "2024款 1.6T DCT睿",
+   "len": 4780.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1469.0
+  },
+  {
+   "spec": "2025款 1.6T DCT卓越版",
+   "len": 4780.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1469.0
+  },
+  {
+   "spec": "2025款 1.6T DCT尚",
+   "len": 4780.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1469.0
+  }
+ ],
+ "group": "chery",
+ "series": "ARRIZO8C-DM",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7028,
+ "ah_key": "极氪X",
+ "ah_name": "极氪X",
+ "n_on": 3,
+ "n_off": 13,
+ "url": "https://car.autohome.com.cn/config/series/7028.html",
+ "dims": [
+  {
+   "spec": "2026款 Max五座版",
+   "len": 4450.0,
+   "wb": 2750.0,
+   "width": 1836.0,
+   "height": 1572.0
+  },
+  {
+   "spec": "2025款 五座后驱版",
+   "len": 4450.0,
+   "wb": 2750.0,
+   "width": 1836.0,
+   "height": 1572.0
+  },
+  {
+   "spec": "2025款 五座长续航版",
+   "len": 4450.0,
+   "wb": 2750.0,
+   "width": 1836.0,
+   "height": 1572.0
+  },
+  {
+   "spec": "2026款 Max四座版",
+   "len": 4450.0,
+   "wb": 2750.0,
+   "width": 1836.0,
+   "height": 1572.0
+  },
+  {
+   "spec": "2026款 Ultra五座版",
+   "len": 4450.0,
+   "wb": 2750.0,
+   "width": 1836.0,
+   "height": 1572.0
+  }
+ ],
+ "group": "geely",
+ "series": "极氪X",
+ "tier": "T2"
+}

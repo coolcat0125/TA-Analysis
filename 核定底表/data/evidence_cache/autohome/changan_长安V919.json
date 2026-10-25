@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 7718,
+ "ah_key": "长安凯程V919",
+ "ah_name": "长安凯程V919",
+ "n_on": 42,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/7718.html",
+ "dims": [
+  {
+   "spec": "2025款 速运舱 宁德时代53kwh 短轴高顶标准型 2座",
+   "len": 4995.0,
+   "wb": 3150.0,
+   "width": 1910.0,
+   "height": 2380.0
+  },
+  {
+   "spec": "2025款 速运舱 宁德时代53kwh 短轴高顶精英型 2座",
+   "len": 4995.0,
+   "wb": 3150.0,
+   "width": 1910.0,
+   "height": 2380.0
+  },
+  {
+   "spec": "2025款 速运舱 宁德时代53kwh 短轴高顶标准型 6座",
+   "len": 4995.0,
+   "wb": 3150.0,
+   "width": 1910.0,
+   "height": 2380.0
+  }
+ ],
+ "group": "changan",
+ "series": "长安V919",
+ "tier": "T1"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6674,
+ "ah_key": "长安Lumin",
+ "ah_name": "长安Lumin",
+ "n_on": 16,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/6674.html",
+ "dims": [
+  {
+   "spec": "2024款 130km 清悦款",
+   "len": 3270.0,
+   "wb": 1980.0,
+   "width": 1700.0,
+   "height": 1545.0
+  },
+  {
+   "spec": "2027款 205km 五门版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2027款 301km 五门版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 210km 清香款",
+   "len": 3270.0,
+   "wb": 1980.0,
+   "width": 1700.0,
+   "height": 1545.0
+  },
+  {
+   "spec": "2025款 205km 清香款",
+   "len": 3270.0,
+   "wb": 1980.0,
+   "width": 1700.0,
+   "height": 1545.0
+  }
+ ],
+ "group": "changan",
+ "series": "糯玉米",
+ "tier": "T1"
+}

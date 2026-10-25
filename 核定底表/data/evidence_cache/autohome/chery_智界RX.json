@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8684,
+ "ah_key": "智界RX",
+ "ah_name": "智界RX",
+ "n_on": 6,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8684.html",
+ "dims": [
+  {
+   "spec": "2026款 Max",
+   "len": 5020.0,
+   "wb": 3000.0,
+   "width": 2007.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2026款 Max 长续航版",
+   "len": 5020.0,
+   "wb": 3000.0,
+   "width": 2007.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2026款 Ultra",
+   "len": 5020.0,
+   "wb": 3000.0,
+   "width": 2007.0,
+   "height": 1585.0
+  }
+ ],
+ "group": "chery",
+ "series": "智界RX",
+ "tier": "T1"
+}

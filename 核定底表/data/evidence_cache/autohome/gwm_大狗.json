@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5770,
+ "ah_key": "长城大狗",
+ "ah_name": "长城大狗",
+ "n_on": 6,
+ "n_off": 33,
+ "url": "https://car.autohome.com.cn/config/series/5770.html",
+ "dims": [
+  {
+   "spec": "2026款 Hi2电混 Pro版",
+   "len": 4620.0,
+   "wb": 2738.0,
+   "width": 1890.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2026款 复古版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 1.5T边牧领航版",
+   "len": 4620.0,
+   "wb": 2738.0,
+   "width": 1890.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2026款 Hi4电混 Max版",
+   "len": 4620.0,
+   "wb": 2738.0,
+   "width": 1890.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2026款 Hi4电混 Max领航版",
+   "len": 4620.0,
+   "wb": 2738.0,
+   "width": 1890.0,
+   "height": 1780.0
+  }
+ ],
+ "group": "gwm",
+ "series": "大狗",
+ "tier": "T2"
+}

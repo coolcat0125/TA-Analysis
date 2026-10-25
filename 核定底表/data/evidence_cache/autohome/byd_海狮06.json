@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8087,
+ "ah_key": "海狮06",
+ "ah_name": "海狮06",
+ "n_on": 15,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/8087.html",
+ "dims": [
+  {
+   "spec": "2026款 DM-i 205领航版",
+   "len": 4810.0,
+   "wb": 2820.0,
+   "width": 1920.0,
+   "height": 1675.0
+  },
+  {
+   "spec": "2026款 DM-i 170领航Plus版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 DM-i 175kW领航Pro版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 DM-i 132领航版",
+   "len": 4810.0,
+   "wb": 2820.0,
+   "width": 1920.0,
+   "height": 1675.0
+  },
+  {
+   "spec": "2026款 DM-i 205领航Pro版",
+   "len": 4810.0,
+   "wb": 2820.0,
+   "width": 1920.0,
+   "height": 1675.0
+  }
+ ],
+ "group": "byd",
+ "series": "海狮06",
+ "tier": "T2"
+}

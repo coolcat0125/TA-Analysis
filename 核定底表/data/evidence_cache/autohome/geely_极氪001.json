@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6091,
+ "ah_key": "极氪001",
+ "ah_name": "极氪001",
+ "n_on": 5,
+ "n_off": 21,
+ "url": "https://car.autohome.com.cn/config/series/6091.html",
+ "dims": [
+  {
+   "spec": "2026款 103度后驱 Max版",
+   "len": 4977.0,
+   "wb": 3005.0,
+   "width": 1999.0,
+   "height": 1545.0
+  },
+  {
+   "spec": "2025款 WE版 95kWh 后驱",
+   "len": 4977.0,
+   "wb": 3005.0,
+   "width": 1999.0,
+   "height": 1545.0
+  },
+  {
+   "spec": "2025款 WE版 95kWh 四驱",
+   "len": 4977.0,
+   "wb": 3005.0,
+   "width": 1999.0,
+   "height": 1545.0
+  },
+  {
+   "spec": "2026款 95度四驱 Max版",
+   "len": 4977.0,
+   "wb": 3005.0,
+   "width": 1999.0,
+   "height": 1545.0
+  },
+  {
+   "spec": "2026款 103度四驱  Ultra版",
+   "len": 4977.0,
+   "wb": 3005.0,
+   "width": 1999.0,
+   "height": 1533.0
+  }
+ ],
+ "group": "geely",
+ "series": "极氪001",
+ "tier": "T2"
+}

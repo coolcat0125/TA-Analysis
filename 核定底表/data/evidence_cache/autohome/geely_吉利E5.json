@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7650,
+ "ah_key": "银河E5",
+ "ah_name": "银河E5",
+ "n_on": 12,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/7650.html",
+ "dims": [
+  {
+   "spec": "2027款 530 全球经典版",
+   "len": 4615.0,
+   "wb": 2750.0,
+   "width": 1901.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2024款 440km 启航版",
+   "len": 4615.0,
+   "wb": 2750.0,
+   "width": 1901.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2024款 440km 探索版",
+   "len": 4615.0,
+   "wb": 2750.0,
+   "width": 1901.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2026款 530km 启航版",
+   "len": 4615.0,
+   "wb": 2750.0,
+   "width": 1901.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2026款 530km 探索版",
+   "len": 4615.0,
+   "wb": 2750.0,
+   "width": 1901.0,
+   "height": 1670.0
+  }
+ ],
+ "group": "geely",
+ "series": "吉利E5",
+ "tier": "T2"
+}

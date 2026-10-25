@@ -1,0 +1,10369 @@
+[
+ {
+  "tier": "T1",
+  "group": "saic",
+  "series": "宏光MINIEV",
+  "board": "五菱",
+  "rows": 68,
+  "spread": 463,
+  "batches": [
+   341,
+   402
+  ],
+  "lens": [
+   [
+    2920,
+    17
+   ],
+   [
+    2917,
+    17
+   ],
+   [
+    3061,
+    15
+   ],
+   [
+    3064,
+    7
+   ],
+   [
+    3256,
+    5
+   ],
+   [
+    3268,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "秦PLUS",
+  "board": "比亚迪",
+  "rows": 36,
+  "spread": 400,
+  "batches": [
+   341,
+   409
+  ],
+  "lens": [
+   [
+    5020,
+    20
+   ],
+   [
+    4680,
+    8
+   ],
+   [
+    4670,
+    5
+   ],
+   [
+    4820,
+    2
+   ],
+   [
+    4620,
+    1
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4765,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "海豹06",
+  "board": "比亚迪",
+  "rows": 33,
+  "spread": 350,
+  "batches": [
+   380,
+   405
+  ],
+  "lens": [
+   [
+    5020,
+    18
+   ],
+   [
+    4800,
+    7
+   ],
+   [
+    4850,
+    5
+   ],
+   [
+    4670,
+    2
+   ],
+   [
+    4780,
+    1
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4830,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "宋PLUS",
+  "board": "比亚迪",
+  "rows": 32,
+  "spread": 330,
+  "batches": [
+   345,
+   395
+  ],
+  "lens": [
+   [
+    4600,
+    30
+   ],
+   [
+    4930,
+    1
+   ],
+   [
+    4700,
+    1
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4785,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "小蚂蚁",
+  "board": "奇瑞",
+  "rows": 29,
+  "spread": 458,
+  "batches": [
+   343,
+   401
+  ],
+  "lens": [
+   [
+    3700,
+    20
+   ],
+   [
+    3242,
+    8
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "gwm",
+  "series": "好猫",
+  "board": "欧拉",
+  "rows": 28,
+  "spread": 325,
+  "batches": [
+   341,
+   411
+  ],
+  "lens": [
+   [
+    4560,
+    9
+   ],
+   [
+    4242,
+    9
+   ],
+   [
+    4235,
+    8
+   ],
+   [
+    4480,
+    1
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 4242,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_418c0744ca0a4b77895b2530469eb257.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   4242
+  ]
+ },
+ {
+  "tier": "T1",
+  "group": "gwm",
+  "series": "闪电猫",
+  "board": "欧拉",
+  "rows": 25,
+  "spread": 311,
+  "batches": [
+   353,
+   382
+  ],
+  "lens": [
+   [
+    4871,
+    13
+   ],
+   [
+    4560,
+    12
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "比亚迪",
+  "board": "比亚迪",
+  "rows": 23,
+  "spread": 420,
+  "batches": [
+   341,
+   397
+  ],
+  "lens": [
+   [
+    4930,
+    12
+   ],
+   [
+    4600,
+    8
+   ],
+   [
+    5020,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "changan",
+  "series": "糯玉米",
+  "board": "长安",
+  "rows": 22,
+  "spread": 860,
+  "batches": [
+   354,
+   402
+  ],
+  "lens": [
+   [
+    4640,
+    12
+   ],
+   [
+    3780,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "STERRAES",
+  "board": "星途",
+  "rows": 22,
+  "spread": 570,
+  "batches": [
+   374,
+   402
+  ],
+  "lens": [
+   [
+    4590,
+    18
+   ],
+   [
+    5160,
+    3
+   ],
+   [
+    5070,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "宋PRO",
+  "board": "比亚迪",
+  "rows": 21,
+  "spread": 350,
+  "batches": [
+   345,
+   409
+  ],
+  "lens": [
+   [
+    4600,
+    7
+   ],
+   [
+    4930,
+    7
+   ],
+   [
+    4580,
+    7
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "saic",
+  "series": "智己LS6",
+  "board": "智己",
+  "rows": 21,
+  "spread": 350,
+  "batches": [
+   372,
+   407
+  ],
+  "lens": [
+   [
+    4650,
+    12
+   ],
+   [
+    5000,
+    5
+   ],
+   [
+    4730,
+    3
+   ],
+   [
+    4937,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "腾势D9",
+  "board": "腾势",
+  "rows": 20,
+  "spread": 350,
+  "batches": [
+   359,
+   409
+  ],
+  "lens": [
+   [
+    4910,
+    10
+   ],
+   [
+    5220,
+    8
+   ],
+   [
+    5260,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "海豚",
+  "board": "比亚迪",
+  "rows": 16,
+  "spread": 380,
+  "batches": [
+   345,
+   403
+  ],
+  "lens": [
+   [
+    5020,
+    11
+   ],
+   [
+    4680,
+    3
+   ],
+   [
+    4640,
+    2
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4290,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "changan",
+  "series": "长安V919",
+  "board": "长安",
+  "rows": 16,
+  "spread": 480,
+  "batches": [
+   387,
+   408
+  ],
+  "lens": [
+   [
+    5495,
+    13
+   ],
+   [
+    5015,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "geely",
+  "series": "星愿",
+  "board": "吉利",
+  "rows": 16,
+  "spread": 470,
+  "batches": [
+   385,
+   408
+  ],
+  "lens": [
+   [
+    4560,
+    10
+   ],
+   [
+    4640,
+    2
+   ],
+   [
+    5030,
+    2
+   ],
+   [
+    4820,
+    2
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4135,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "智界R7",
+  "board": "奇瑞",
+  "rows": 15,
+  "spread": 930,
+  "batches": [
+   385,
+   410
+  ],
+  "lens": [
+   [
+    4510,
+    10
+   ],
+   [
+    4990,
+    3
+   ],
+   [
+    4060,
+    1
+   ],
+   [
+    4982,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "gwm",
+  "series": "猛龙",
+  "board": "哈弗",
+  "rows": 15,
+  "spread": 340,
+  "batches": [
+   373,
+   404
+  ],
+  "lens": [
+   [
+    4480,
+    8
+   ],
+   [
+    4630,
+    6
+   ],
+   [
+    4820,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "changan",
+  "series": "深蓝S07",
+  "board": "深蓝",
+  "rows": 14,
+  "spread": 340,
+  "batches": [
+   383,
+   408
+  ],
+  "lens": [
+   [
+    4560,
+    10
+   ],
+   [
+    4900,
+    3
+   ],
+   [
+    4750,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "gwm",
+  "series": "摩卡",
+  "board": "魏牌",
+  "rows": 14,
+  "spread": 401,
+  "batches": [
+   343,
+   375
+  ],
+  "lens": [
+   [
+    4480,
+    12
+   ],
+   [
+    4881,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "geely",
+  "series": "极氪009",
+  "board": "极氪",
+  "rows": 13,
+  "spread": 680,
+  "batches": [
+   360,
+   411
+  ],
+  "lens": [
+   [
+    4700,
+    10
+   ],
+   [
+    5380,
+    2
+   ],
+   [
+    5217,
+    1
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 5217,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_91d0c7d57d9c45029e5e48dd8b602ba7.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   5217
+  ]
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "海鸥",
+  "board": "比亚迪",
+  "rows": 12,
+  "spread": 900,
+  "batches": [
+   367,
+   411
+  ],
+  "lens": [
+   [
+    4680,
+    4
+   ],
+   [
+    4300,
+    3
+   ],
+   [
+    3780,
+    2
+   ],
+   [
+    4560,
+    2
+   ],
+   [
+    4205,
+    1
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 4205,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_5e8cc0145e1040a79fa312212567706d.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   4205
+  ]
+ },
+ {
+  "tier": "T1",
+  "group": "changan",
+  "series": "长安G318",
+  "board": "长安",
+  "rows": 12,
+  "spread": 310,
+  "batches": [
+   379,
+   408
+  ],
+  "lens": [
+   [
+    4560,
+    7
+   ],
+   [
+    4870,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "海狮05",
+  "board": "比亚迪",
+  "rows": 11,
+  "spread": 330,
+  "batches": [
+   385,
+   405
+  ],
+  "lens": [
+   [
+    4680,
+    4
+   ],
+   [
+    4830,
+    3
+   ],
+   [
+    4600,
+    2
+   ],
+   [
+    4930,
+    2
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4520,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "奇瑞X3",
+  "board": "奇瑞",
+  "rows": 11,
+  "spread": 2060,
+  "batches": [
+   394,
+   401
+  ],
+  "lens": [
+   [
+    5150,
+    5
+   ],
+   [
+    4590,
+    5
+   ],
+   [
+    3090,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "gwm",
+  "series": "蓝山",
+  "board": "魏牌",
+  "rows": 11,
+  "spread": 820,
+  "batches": [
+   367,
+   411
+  ],
+  "lens": [
+   [
+    4480,
+    7
+   ],
+   [
+    5140,
+    2
+   ],
+   [
+    5300,
+    2
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 5140,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e8fe9c0ef3804fa39abfd344eec73556.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   5140,
+   5300
+  ]
+ },
+ {
+  "tier": "T1",
+  "group": "saic",
+  "series": "缤果",
+  "board": "五菱",
+  "rows": 11,
+  "spread": 380,
+  "batches": [
+   365,
+   399
+  ],
+  "lens": [
+   [
+    4470,
+    9
+   ],
+   [
+    4400,
+    1
+   ],
+   [
+    4090,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "saic",
+  "series": "智己L6",
+  "board": "智己",
+  "rows": 11,
+  "spread": 420,
+  "batches": [
+   379,
+   406
+  ],
+  "lens": [
+   [
+    4650,
+    5
+   ],
+   [
+    4820,
+    3
+   ],
+   [
+    5070,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "元PLUS",
+  "board": "比亚迪",
+  "rows": 10,
+  "spread": 330,
+  "batches": [
+   346,
+   405
+  ],
+  "lens": [
+   [
+    4680,
+    4
+   ],
+   [
+    4930,
+    3
+   ],
+   [
+    4600,
+    3
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4455,
+  "url": null,
+  "conf": "A",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "changan",
+  "series": "深蓝SL03",
+  "board": "深蓝",
+  "rows": 10,
+  "spread": 350,
+  "batches": [
+   356,
+   400
+  ],
+  "lens": [
+   [
+    4640,
+    9
+   ],
+   [
+    4990,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "changan",
+  "series": "阿维塔12",
+  "board": "阿维塔",
+  "rows": 10,
+  "spread": 550,
+  "batches": [
+   373,
+   403
+  ],
+  "lens": [
+   [
+    4640,
+    5
+   ],
+   [
+    5020,
+    4
+   ],
+   [
+    5190,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "changan",
+  "series": "深蓝S09",
+  "board": "深蓝",
+  "rows": 10,
+  "spread": 740,
+  "batches": [
+   390,
+   407
+  ],
+  "lens": [
+   [
+    4510,
+    8
+   ],
+   [
+    5250,
+    1
+   ],
+   [
+    5205,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "gac",
+  "series": "AION UT",
+  "board": "埃安",
+  "rows": 10,
+  "spread": 460,
+  "batches": [
+   389,
+   408
+  ],
+  "lens": [
+   [
+    4730,
+    7
+   ],
+   [
+    4270,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "gwm",
+  "series": "高山",
+  "board": "魏牌",
+  "rows": 10,
+  "spread": 730,
+  "batches": [
+   370,
+   403
+  ],
+  "lens": [
+   [
+    4450,
+    6
+   ],
+   [
+    4480,
+    2
+   ],
+   [
+    5180,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "元UP",
+  "board": "比亚迪",
+  "rows": 9,
+  "spread": 500,
+  "batches": [
+   378,
+   409
+  ],
+  "lens": [
+   [
+    4930,
+    3
+   ],
+   [
+    4600,
+    3
+   ],
+   [
+    4430,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "仰望U7",
+  "board": "仰望",
+  "rows": 9,
+  "spread": 510,
+  "batches": [
+   379,
+   402
+  ],
+  "lens": [
+   [
+    5310,
+    4
+   ],
+   [
+    4850,
+    2
+   ],
+   [
+    5250,
+    2
+   ],
+   [
+    5360,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "changan",
+  "series": "启源A06",
+  "board": "启源",
+  "rows": 9,
+  "spread": 390,
+  "batches": [
+   372,
+   409
+  ],
+  "lens": [
+   [
+    4640,
+    7
+   ],
+   [
+    5030,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "changan",
+  "series": "深蓝L07",
+  "board": "深蓝",
+  "rows": 9,
+  "spread": 350,
+  "batches": [
+   383,
+   408
+  ],
+  "lens": [
+   [
+    4640,
+    6
+   ],
+   [
+    4990,
+    2
+   ],
+   [
+    4875,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "gwm",
+  "series": "白猫",
+  "board": "欧拉",
+  "rows": 9,
+  "spread": 330,
+  "batches": [
+   341,
+   384
+  ],
+  "lens": [
+   [
+    4230,
+    4
+   ],
+   [
+    4560,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "比亚迪E3",
+  "board": "比亚迪",
+  "rows": 8,
+  "spread": 570,
+  "batches": [
+   342,
+   380
+  ],
+  "lens": [
+   [
+    4450,
+    6
+   ],
+   [
+    5020,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "iCAR03",
+  "board": "iCAR",
+  "rows": 8,
+  "spread": 1470,
+  "batches": [
+   373,
+   394
+  ],
+  "lens": [
+   [
+    4380,
+    5
+   ],
+   [
+    2910,
+    1
+   ],
+   [
+    3220,
+    1
+   ],
+   [
+    3090,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "纵横G700",
+  "board": "捷途",
+  "rows": 8,
+  "spread": 340,
+  "batches": [
+   396,
+   402
+  ],
+  "lens": [
+   [
+    4850,
+    7
+   ],
+   [
+    4510,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "gac",
+  "series": "昊铂GT",
+  "board": "昊铂",
+  "rows": 8,
+  "spread": 337,
+  "batches": [
+   390,
+   399
+  ],
+  "lens": [
+   [
+    4683,
+    7
+   ],
+   [
+    5020,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "geely",
+  "series": "翼真L380",
+  "board": "翼真",
+  "rows": 8,
+  "spread": 616,
+  "batches": [
+   378,
+   382
+  ],
+  "lens": [
+   [
+    4700,
+    6
+   ],
+   [
+    5316,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "geely",
+  "series": "#5",
+  "board": "smart",
+  "rows": 8,
+  "spread": 340,
+  "batches": [
+   384,
+   399
+  ],
+  "lens": [
+   [
+    4560,
+    4
+   ],
+   [
+    4900,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "saic",
+  "series": "大通EV90",
+  "board": "大通",
+  "rows": 8,
+  "spread": 442,
+  "batches": [
+   343,
+   386
+  ],
+  "lens": [
+   [
+    5940,
+    5
+   ],
+   [
+    5498,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "saic",
+  "series": "五菱",
+  "board": "五菱",
+  "rows": 8,
+  "spread": 1473,
+  "batches": [
+   341,
+   342
+  ],
+  "lens": [
+   [
+    2917,
+    6
+   ],
+   [
+    4390,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "比亚迪E2",
+  "board": "比亚迪",
+  "rows": 7,
+  "spread": 780,
+  "batches": [
+   346,
+   380
+  ],
+  "lens": [
+   [
+    4260,
+    4
+   ],
+   [
+    4240,
+    2
+   ],
+   [
+    5020,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "腾势Z9GT",
+  "board": "腾势",
+  "rows": 7,
+  "spread": 360,
+  "batches": [
+   382,
+   403
+  ],
+  "lens": [
+   [
+    5380,
+    4
+   ],
+   [
+    5020,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "智界RX",
+  "board": "智界",
+  "rows": 7,
+  "spread": 560,
+  "batches": [
+   408,
+   410
+  ],
+  "lens": [
+   [
+    5070,
+    4
+   ],
+   [
+    4980,
+    2
+   ],
+   [
+    4510,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "宋L",
+  "board": "比亚迪",
+  "rows": 6,
+  "spread": 320,
+  "batches": [
+   374,
+   398
+  ],
+  "lens": [
+   [
+    5020,
+    3
+   ],
+   [
+    4700,
+    2
+   ],
+   [
+    4930,
+    1
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4840,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "腾势Z9",
+  "board": "腾势",
+  "rows": 6,
+  "spread": 360,
+  "batches": [
+   387,
+   406
+  ],
+  "lens": [
+   [
+    5020,
+    2
+   ],
+   [
+    5380,
+    2
+   ],
+   [
+    5200,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "gwm",
+  "series": "坦克500",
+  "board": "长城",
+  "rows": 6,
+  "spread": 598,
+  "batches": [
+   380,
+   397
+  ],
+  "lens": [
+   [
+    5070,
+    3
+   ],
+   [
+    5078,
+    2
+   ],
+   [
+    4480,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "xpeng",
+  "series": "小鹏M03",
+  "board": "小鹏",
+  "rows": 6,
+  "spread": 2030,
+  "batches": [
+   384,
+   401
+  ],
+  "lens": [
+   [
+    4840,
+    4
+   ],
+   [
+    2810,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "元",
+  "board": "比亚迪",
+  "rows": 5,
+  "spread": 570,
+  "batches": [
+   342,
+   371
+  ],
+  "lens": [
+   [
+    4930,
+    4
+   ],
+   [
+    4360,
+    1
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4360,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "changan",
+  "series": "长安Q06E",
+  "board": "长安",
+  "rows": 5,
+  "spread": 380,
+  "batches": [
+   406,
+   406
+  ],
+  "lens": [
+   [
+    4970,
+    4
+   ],
+   [
+    4590,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "山海L6C-DM",
+  "board": "捷途",
+  "rows": 5,
+  "spread": 1540,
+  "batches": [
+   381,
+   389
+  ],
+  "lens": [
+   [
+    4510,
+    4
+   ],
+   [
+    2970,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "风云A9",
+  "board": "奇瑞",
+  "rows": 5,
+  "spread": 400,
+  "batches": [
+   393,
+   406
+  ],
+  "lens": [
+   [
+    4990,
+    3
+   ],
+   [
+    4590,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "奇瑞QQ3",
+  "board": "奇瑞",
+  "rows": 5,
+  "spread": 445,
+  "batches": [
+   403,
+   407
+  ],
+  "lens": [
+   [
+    4640,
+    3
+   ],
+   [
+    4195,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "geely",
+  "series": "吉利M9",
+  "board": "吉利",
+  "rows": 5,
+  "spread": 475,
+  "batches": [
+   396,
+   399
+  ],
+  "lens": [
+   [
+    5205,
+    2
+   ],
+   [
+    5120,
+    2
+   ],
+   [
+    4730,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "gwm",
+  "series": "坦克400",
+  "board": "长城",
+  "rows": 5,
+  "spread": 505,
+  "batches": [
+   372,
+   397
+  ],
+  "lens": [
+   [
+    4480,
+    2
+   ],
+   [
+    4500,
+    2
+   ],
+   [
+    4985,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "saic",
+  "series": "扬光PRO",
+  "board": "五菱",
+  "rows": 5,
+  "spread": 1105,
+  "batches": [
+   401,
+   407
+  ],
+  "lens": [
+   [
+    4390,
+    4
+   ],
+   [
+    5495,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "byd",
+  "series": "腾势N9",
+  "board": "腾势",
+  "rows": 4,
+  "spread": 350,
+  "batches": [
+   388,
+   405
+  ],
+  "lens": [
+   [
+    5280,
+    2
+   ],
+   [
+    4930,
+    1
+   ],
+   [
+    5258,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "风云T6",
+  "board": "奇瑞",
+  "rows": 4,
+  "spread": 430,
+  "batches": [
+   377,
+   395
+  ],
+  "lens": [
+   [
+    4510,
+    3
+   ],
+   [
+    4080,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "TIGGO8C-DM",
+  "board": "奇瑞",
+  "rows": 4,
+  "spread": 520,
+  "batches": [
+   384,
+   399
+  ],
+  "lens": [
+   [
+    4510,
+    2
+   ],
+   [
+    4060,
+    1
+   ],
+   [
+    4580,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "liauto",
+  "series": "理想MEGA",
+  "board": "理想",
+  "rows": 4,
+  "spread": 490,
+  "batches": [
+   377,
+   411
+  ],
+  "lens": [
+   [
+    5050,
+    2
+   ],
+   [
+    5540,
+    1
+   ],
+   [
+    5355,
+    1
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 5355,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_dca86f639c89456183357eb6c3393f10.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   5355
+  ]
+ },
+ {
+  "tier": "T1",
+  "group": "saic",
+  "series": "宏光",
+  "board": "五菱",
+  "rows": 4,
+  "spread": 430,
+  "batches": [
+   384,
+   398
+  ],
+  "lens": [
+   [
+    4390,
+    3
+   ],
+   [
+    4820,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "揽月C-DM",
+  "board": "星途",
+  "rows": 3,
+  "spread": 390,
+  "batches": [
+   388,
+   401
+  ],
+  "lens": [
+   [
+    4510,
+    2
+   ],
+   [
+    4900,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "gac",
+  "series": "传祺E9",
+  "board": "传祺",
+  "rows": 3,
+  "spread": 540,
+  "batches": [
+   379,
+   402
+  ],
+  "lens": [
+   [
+    4620,
+    2
+   ],
+   [
+    5160,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "saic",
+  "series": "IMAX8DMH",
+  "board": "荣威",
+  "rows": 3,
+  "spread": 340,
+  "batches": [
+   382,
+   401
+  ],
+  "lens": [
+   [
+    5040,
+    2
+   ],
+   [
+    4700,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "saic",
+  "series": "星光730",
+  "board": "五菱",
+  "rows": 3,
+  "spread": 500,
+  "batches": [
+   396,
+   406
+  ],
+  "lens": [
+   [
+    4420,
+    1
+   ],
+   [
+    4470,
+    1
+   ],
+   [
+    4920,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "chery",
+  "series": "山海L9",
+  "board": "捷途",
+  "rows": 2,
+  "spread": 310,
+  "batches": [
+   375,
+   387
+  ],
+  "lens": [
+   [
+    4820,
+    1
+   ],
+   [
+    4510,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "nio",
+  "series": "蔚来ET7",
+  "board": "蔚来",
+  "rows": 2,
+  "spread": 581,
+  "batches": [
+   348,
+   378
+  ],
+  "lens": [
+   [
+    4520,
+    1
+   ],
+   [
+    5101,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "nio",
+  "series": "蔚来ES7",
+  "board": "蔚来",
+  "rows": 2,
+  "spread": 392,
+  "batches": [
+   356,
+   378
+  ],
+  "lens": [
+   [
+    4520,
+    1
+   ],
+   [
+    4912,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T1",
+  "group": "nio",
+  "series": "萤火虫",
+  "board": "萤火虫",
+  "rows": 2,
+  "spread": 494,
+  "batches": [
+   391,
+   401
+  ],
+  "lens": [
+   [
+    4006,
+    1
+   ],
+   [
+    4500,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "AION Y",
+  "board": "埃安",
+  "rows": 52,
+  "spread": 0,
+  "batches": [
+   341,
+   395
+  ],
+  "lens": [
+   [
+    4535,
+    52
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "AION S",
+  "board": "埃安",
+  "rows": 46,
+  "spread": 0,
+  "batches": [
+   341,
+   408
+  ],
+  "lens": [
+   [
+    4863,
+    42
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "AION V",
+  "board": "埃安",
+  "rows": 35,
+  "spread": 110,
+  "batches": [
+   341,
+   398
+  ],
+  "lens": [
+   [
+    4580,
+    21
+   ],
+   [
+    4690,
+    13
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "汉",
+  "board": "比亚迪",
+  "rows": 25,
+  "spread": 136,
+  "batches": [
+   341,
+   412
+  ],
+  "lens": [
+   [
+    5020,
+    21
+   ],
+   [
+    5050,
+    3
+   ],
+   [
+    5156,
+    1
+   ]
+  ],
+  "coverage": "official_draft",
+  "cur_len": 5156,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_3ecbf3fe94354153967c61b89ebb0cd6.html",
+  "conf": "A",
+  "has_seed": true,
+  "official_lens": [
+   5156
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "唐",
+  "board": "比亚迪",
+  "rows": 25,
+  "spread": 220,
+  "batches": [
+   346,
+   409
+  ],
+  "lens": [
+   [
+    4930,
+    14
+   ],
+   [
+    4770,
+    4
+   ],
+   [
+    4990,
+    2
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4870,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "极氪001",
+  "board": "极氪",
+  "rows": 25,
+  "spread": 140,
+  "batches": [
+   345,
+   398
+  ],
+  "lens": [
+   [
+    5030,
+    22
+   ],
+   [
+    5170,
+    3
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4970,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "liauto",
+  "series": "理想ONE",
+  "board": "理想",
+  "rows": 23,
+  "spread": 120,
+  "batches": [
+   342,
+   353
+  ],
+  "lens": [
+   [
+    5080,
+    21
+   ],
+   [
+    4960,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "极星2",
+  "board": "极星",
+  "rows": 22,
+  "spread": 0,
+  "batches": [
+   343,
+   372
+  ],
+  "lens": [
+   [
+    4606,
+    22
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "iCARV27",
+  "board": "iCAR",
+  "rows": 21,
+  "spread": 0,
+  "batches": [
+   399,
+   410
+  ],
+  "lens": [
+   [
+    4920,
+    21
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "QQ冰淇淋",
+  "board": "奇瑞",
+  "rows": 20,
+  "spread": 0,
+  "batches": [
+   347,
+   399
+  ],
+  "lens": [
+   [
+    3370,
+    20
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "精灵#1",
+  "board": "smart",
+  "rows": 19,
+  "spread": 90,
+  "batches": [
+   356,
+   407
+  ],
+  "lens": [
+   [
+    4560,
+    11
+   ],
+   [
+    4640,
+    6
+   ],
+   [
+    4650,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "黑猫",
+  "board": "欧拉",
+  "rows": 19,
+  "spread": 0,
+  "batches": [
+   342,
+   384
+  ],
+  "lens": [
+   [
+    3495,
+    19
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "海狮06",
+  "board": "比亚迪",
+  "rows": 18,
+  "spread": 40,
+  "batches": [
+   394,
+   406
+  ],
+  "lens": [
+   [
+    4770,
+    17
+   ],
+   [
+    4810,
+    1
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4810,
+  "url": null,
+  "conf": "A",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "启源A07",
+  "board": "启源",
+  "rows": 18,
+  "spread": 265,
+  "batches": [
+   370,
+   402
+  ],
+  "lens": [
+   [
+    4640,
+    14
+   ],
+   [
+    4905,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "STERRAET",
+  "board": "星途",
+  "rows": 18,
+  "spread": 80,
+  "batches": [
+   376,
+   392
+  ],
+  "lens": [
+   [
+    4510,
+    17
+   ],
+   [
+    4590,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "星耀7",
+  "board": "吉利",
+  "rows": 17,
+  "spread": 0,
+  "batches": [
+   400,
+   405
+  ],
+  "lens": [
+   [
+    4910,
+    17
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "tesla",
+  "series": "Model Y",
+  "board": "特斯拉",
+  "rows": 16,
+  "spread": 179,
+  "batches": [
+   342,
+   409
+  ],
+  "lens": [
+   [
+    4800,
+    8
+   ],
+   [
+    4880,
+    5
+   ],
+   [
+    4797,
+    2
+   ],
+   [
+    4976,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "熊猫MINI",
+  "board": "吉利",
+  "rows": 15,
+  "spread": 0,
+  "batches": [
+   365,
+   391
+  ],
+  "lens": [
+   [
+    4640,
+    6
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "远程SV",
+  "board": "远程",
+  "rows": 15,
+  "spread": 20,
+  "batches": [
+   378,
+   393
+  ],
+  "lens": [
+   [
+    4540,
+    14
+   ],
+   [
+    4560,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "枭龙MAX",
+  "board": "哈弗",
+  "rows": 15,
+  "spread": 270,
+  "batches": [
+   368,
+   408
+  ],
+  "lens": [
+   [
+    4480,
+    8
+   ],
+   [
+    4750,
+    7
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "tesla",
+  "series": "Model 3",
+  "board": "特斯拉",
+  "rows": 15,
+  "spread": 246,
+  "batches": [
+   341,
+   397
+  ],
+  "lens": [
+   [
+    4694,
+    14
+   ],
+   [
+    4940,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xpeng",
+  "series": "小鹏P7",
+  "board": "小鹏",
+  "rows": 15,
+  "spread": 0,
+  "batches": [
+   342,
+   395
+  ],
+  "lens": [
+   [
+    5160,
+    15
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xpeng",
+  "series": "小鹏P5",
+  "board": "小鹏",
+  "rows": 15,
+  "spread": 0,
+  "batches": [
+   345,
+   376
+  ],
+  "lens": [
+   [
+    4760,
+    15
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "钛7",
+  "board": "方程豹",
+  "rows": 14,
+  "spread": 0,
+  "batches": [
+   396,
+   409
+  ],
+  "lens": [
+   [
+    4930,
+    14
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "山海T1",
+  "board": "捷途",
+  "rows": 14,
+  "spread": 240,
+  "batches": [
+   385,
+   406
+  ],
+  "lens": [
+   [
+    4750,
+    10
+   ],
+   [
+    4510,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "埃安HYPERGT",
+  "board": "埃安",
+  "rows": 14,
+  "spread": 0,
+  "batches": [
+   371,
+   384
+  ],
+  "lens": [
+   [
+    4886,
+    14
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "HYPERHT",
+  "board": "埃安",
+  "rows": 14,
+  "spread": 0,
+  "batches": [
+   375,
+   384
+  ],
+  "lens": [
+   [
+    4935,
+    14
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "星舰7",
+  "board": "吉利",
+  "rows": 14,
+  "spread": 100,
+  "batches": [
+   387,
+   411
+  ],
+  "lens": [
+   [
+    4660,
+    8
+   ],
+   [
+    4560,
+    5
+   ],
+   [
+    4650,
+    1
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 4730,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_32c8c132a46f4b1084f19870fb922c67.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   4730
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "liauto",
+  "series": "理想L8",
+  "board": "理想",
+  "rows": 14,
+  "spread": 70,
+  "batches": [
+   362,
+   406
+  ],
+  "lens": [
+   [
+    5080,
+    12
+   ],
+   [
+    5150,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xiaomi",
+  "series": "小米SU7",
+  "board": "小米",
+  "rows": 14,
+  "spread": 0,
+  "batches": [
+   377,
+   403
+  ],
+  "lens": [
+   [
+    5160,
+    14
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "海豹07",
+  "board": "比亚迪",
+  "rows": 13,
+  "spread": 290,
+  "batches": [
+   384,
+   410
+  ],
+  "lens": [
+   [
+    4990,
+    5
+   ],
+   [
+    5020,
+    4
+   ],
+   [
+    5090,
+    3
+   ],
+   [
+    4800,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "睿行EM60",
+  "board": "长安",
+  "rows": 13,
+  "spread": 30,
+  "batches": [
+   342,
+   401
+  ],
+  "lens": [
+   [
+    5040,
+    4
+   ],
+   [
+    5070,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "阿维塔11",
+  "board": "阿维塔",
+  "rows": 13,
+  "spread": 0,
+  "batches": [
+   354,
+   386
+  ],
+  "lens": [
+   [
+    4560,
+    13
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "风云T11",
+  "board": "奇瑞",
+  "rows": 13,
+  "spread": 65,
+  "batches": [
+   397,
+   408
+  ],
+  "lens": [
+   [
+    5270,
+    12
+   ],
+   [
+    5205,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "沃尔沃EX90",
+  "board": "沃尔沃",
+  "rows": 13,
+  "spread": 77,
+  "batches": [
+   389,
+   404
+  ],
+  "lens": [
+   [
+    4960,
+    8
+   ],
+   [
+    5037,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xpeng",
+  "series": "小鹏G9",
+  "board": "小鹏",
+  "rows": 13,
+  "spread": 190,
+  "batches": [
+   357,
+   400
+  ],
+  "lens": [
+   [
+    5120,
+    6
+   ],
+   [
+    5260,
+    4
+   ],
+   [
+    5070,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "秦L",
+  "board": "比亚迪",
+  "rows": 12,
+  "spread": 220,
+  "batches": [
+   380,
+   401
+  ],
+  "lens": [
+   [
+    5020,
+    6
+   ],
+   [
+    4800,
+    6
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4830,
+  "url": null,
+  "conf": "C",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "长安",
+  "board": "长安",
+  "rows": 12,
+  "spread": 80,
+  "batches": [
+   348,
+   388
+  ],
+  "lens": [
+   [
+    4590,
+    6
+   ],
+   [
+    4640,
+    5
+   ],
+   [
+    4560,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "极氪9X",
+  "board": "极氪",
+  "rows": 12,
+  "spread": 0,
+  "batches": [
+   398,
+   401
+  ],
+  "lens": [
+   [
+    5360,
+    12
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "星耀6",
+  "board": "吉利",
+  "rows": 12,
+  "spread": 0,
+  "batches": [
+   397,
+   407
+  ],
+  "lens": [
+   [
+    4740,
+    12
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "liauto",
+  "series": "理想L7",
+  "board": "理想",
+  "rows": 12,
+  "spread": 0,
+  "batches": [
+   365,
+   383
+  ],
+  "lens": [
+   [
+    5080,
+    12
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "飞凡F7",
+  "board": "飞凡",
+  "rows": 12,
+  "spread": 0,
+  "batches": [
+   362,
+   378
+  ],
+  "lens": [
+   [
+    4820,
+    12
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xpeng",
+  "series": "小鹏X9",
+  "board": "小鹏",
+  "rows": 12,
+  "spread": 0,
+  "batches": [
+   375,
+   401
+  ],
+  "lens": [
+   [
+    5310,
+    12
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "极氪007",
+  "board": "极氪",
+  "rows": 11,
+  "spread": 210,
+  "batches": [
+   377,
+   404
+  ],
+  "lens": [
+   [
+    5030,
+    6
+   ],
+   [
+    4820,
+    5
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4865,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "吉利E5",
+  "board": "吉利",
+  "rows": 11,
+  "spread": 80,
+  "batches": [
+   382,
+   408
+  ],
+  "lens": [
+   [
+    4650,
+    6
+   ],
+   [
+    4730,
+    5
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4615,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "星光",
+  "board": "五菱",
+  "rows": 11,
+  "spread": 0,
+  "batches": [
+   374,
+   390
+  ],
+  "lens": [
+   [
+    4470,
+    11
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "钛3",
+  "board": "方程豹",
+  "rows": 10,
+  "spread": 40,
+  "batches": [
+   390,
+   409
+  ],
+  "lens": [
+   [
+    4640,
+    7
+   ],
+   [
+    4600,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "跨越星光",
+  "board": "长安",
+  "rows": 10,
+  "spread": 0,
+  "batches": [
+   395,
+   407
+  ],
+  "lens": [
+   [
+    4590,
+    10
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "山海T2",
+  "board": "捷途",
+  "rows": 10,
+  "spread": 220,
+  "batches": [
+   384,
+   401
+  ],
+  "lens": [
+   [
+    4730,
+    9
+   ],
+   [
+    4510,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "AIONSAIONS",
+  "board": "传祺",
+  "rows": 10,
+  "spread": 0,
+  "batches": [
+   341,
+   341
+  ],
+  "lens": [
+   [
+    4805,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "拿铁",
+  "board": "魏牌",
+  "rows": 10,
+  "spread": 0,
+  "batches": [
+   351,
+   376
+  ],
+  "lens": [
+   [
+    4480,
+    10
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "猛龙V7PLUS",
+  "board": "哈弗",
+  "rows": 10,
+  "spread": 0,
+  "batches": [
+   398,
+   404
+  ],
+  "lens": [
+   [
+    4820,
+    10
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "魏牌V8X",
+  "board": "魏牌",
+  "rows": 10,
+  "spread": 130,
+  "batches": [
+   406,
+   412
+  ],
+  "lens": [
+   [
+    5125,
+    4
+   ],
+   [
+    5150,
+    3
+   ],
+   [
+    5020,
+    3
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 5125,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_5fabdca81ec346edbd28653c2ef15102.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   5125
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "飞凡R7",
+  "board": "飞凡",
+  "rows": 10,
+  "spread": 0,
+  "batches": [
+   355,
+   392
+  ],
+  "lens": [
+   [
+    4730,
+    10
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xpeng",
+  "series": "小鹏G6",
+  "board": "小鹏",
+  "rows": 10,
+  "spread": 0,
+  "batches": [
+   369,
+   401
+  ],
+  "lens": [
+   [
+    4880,
+    7
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "睿行EM80",
+  "board": "长安",
+  "rows": 9,
+  "spread": 0,
+  "batches": [
+   346,
+   400
+  ],
+  "lens": [
+   [
+    5120,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "跨越星V7EV",
+  "board": "长安",
+  "rows": 9,
+  "spread": 160,
+  "batches": [
+   374,
+   397
+  ],
+  "lens": [
+   [
+    4640,
+    5
+   ],
+   [
+    4800,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "iCARV23",
+  "board": "iCAR",
+  "rows": 9,
+  "spread": 0,
+  "batches": [
+   387,
+   402
+  ],
+  "lens": [
+   [
+    4620,
+    9
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "HYCANZ03",
+  "board": "合创",
+  "rows": 9,
+  "spread": null,
+  "batches": [
+   347,
+   372
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "埃安I60",
+  "board": "埃安",
+  "rows": 9,
+  "spread": 5,
+  "batches": [
+   398,
+   408
+  ],
+  "lens": [
+   [
+    4690,
+    7
+   ],
+   [
+    4685,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "极氪X",
+  "board": "极氪",
+  "rows": 9,
+  "spread": 90,
+  "batches": [
+   368,
+   399
+  ],
+  "lens": [
+   [
+    4730,
+    8
+   ],
+   [
+    4820,
+    1
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4450,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "星耀8",
+  "board": "吉利",
+  "rows": 9,
+  "spread": 220,
+  "batches": [
+   393,
+   402
+  ],
+  "lens": [
+   [
+    5040,
+    6
+   ],
+   [
+    4820,
+    2
+   ],
+   [
+    5018,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "大狗",
+  "board": "哈弗",
+  "rows": 9,
+  "spread": 0,
+  "batches": [
+   361,
+   394
+  ],
+  "lens": [
+   [
+    4480,
+    9
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "liauto",
+  "series": "理想L9",
+  "board": "理想",
+  "rows": 9,
+  "spread": 200,
+  "batches": [
+   355,
+   411
+  ],
+  "lens": [
+   [
+    5080,
+    7
+   ],
+   [
+    5280,
+    1
+   ],
+   [
+    5110,
+    1
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 5255,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_03d870d1976a4f7398d562a71b2b1e4d.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   5255
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "五菱AIREV",
+  "board": "五菱",
+  "rows": 9,
+  "spread": 0,
+  "batches": [
+   355,
+   371
+  ],
+  "lens": [
+   [
+    4470,
+    8
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "扬光",
+  "board": "五菱",
+  "rows": 9,
+  "spread": 80,
+  "batches": [
+   382,
+   402
+  ],
+  "lens": [
+   [
+    4390,
+    4
+   ],
+   [
+    4470,
+    2
+   ],
+   [
+    4420,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "荣威D6",
+  "board": "荣威",
+  "rows": 9,
+  "spread": 90,
+  "batches": [
+   390,
+   402
+  ],
+  "lens": [
+   [
+    4820,
+    5
+   ],
+   [
+    4730,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "悦也PLUS",
+  "board": "宝骏",
+  "rows": 9,
+  "spread": 60,
+  "batches": [
+   379,
+   401
+  ],
+  "lens": [
+   [
+    4330,
+    3
+   ],
+   [
+    4390,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xpeng",
+  "series": "小鹏G3I",
+  "board": "小鹏",
+  "rows": 9,
+  "spread": null,
+  "batches": [
+   346,
+   359
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "海豹",
+  "board": "比亚迪",
+  "rows": 8,
+  "spread": 0,
+  "batches": [
+   354,
+   382
+  ],
+  "lens": [
+   [
+    4680,
+    8
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4800,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "护卫舰07",
+  "board": "比亚迪",
+  "rows": 8,
+  "spread": 0,
+  "batches": [
+   354,
+   369
+  ],
+  "lens": [
+   [
+    4600,
+    8
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "跨越星V5EV",
+  "board": "长安",
+  "rows": 8,
+  "spread": 20,
+  "batches": [
+   343,
+   397
+  ],
+  "lens": [
+   [
+    4540,
+    6
+   ],
+   [
+    4560,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "启源A05",
+  "board": "启源",
+  "rows": 8,
+  "spread": 0,
+  "batches": [
+   372,
+   386
+  ],
+  "lens": [
+   [
+    4640,
+    8
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "智界S7",
+  "board": "奇瑞",
+  "rows": 8,
+  "spread": 0,
+  "batches": [
+   374,
+   385
+  ],
+  "lens": [
+   [
+    4590,
+    8
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "瑶光C-DM",
+  "board": "星途",
+  "rows": 8,
+  "spread": 250,
+  "batches": [
+   375,
+   408
+  ],
+  "lens": [
+   [
+    4510,
+    5
+   ],
+   [
+    4730,
+    2
+   ],
+   [
+    4760,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "风云T9C-DM",
+  "board": "奇瑞",
+  "rows": 8,
+  "spread": 170,
+  "batches": [
+   380,
+   402
+  ],
+  "lens": [
+   [
+    4510,
+    6
+   ],
+   [
+    4680,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "山海L7PLUSC-DM",
+  "board": "捷途",
+  "rows": 8,
+  "spread": 260,
+  "batches": [
+   395,
+   408
+  ],
+  "lens": [
+   [
+    4770,
+    6
+   ],
+   [
+    4510,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "埃安RT",
+  "board": "埃安",
+  "rows": 8,
+  "spread": 95,
+  "batches": [
+   387,
+   408
+  ],
+  "lens": [
+   [
+    4865,
+    4
+   ],
+   [
+    4770,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "昊铂HT",
+  "board": "昊铂",
+  "rows": 8,
+  "spread": null,
+  "batches": [
+   390,
+   393
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "吉利L6",
+  "board": "吉利",
+  "rows": 8,
+  "spread": 80,
+  "batches": [
+   372,
+   391
+  ],
+  "lens": [
+   [
+    4640,
+    7
+   ],
+   [
+    4560,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "极越01",
+  "board": "极越",
+  "rows": 8,
+  "spread": 0,
+  "batches": [
+   374,
+   384
+  ],
+  "lens": [
+   [
+    4730,
+    8
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "吉利E8",
+  "board": "吉利",
+  "rows": 8,
+  "spread": 210,
+  "batches": [
+   374,
+   397
+  ],
+  "lens": [
+   [
+    4820,
+    7
+   ],
+   [
+    5030,
+    1
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 5010,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "极氪007GT",
+  "board": "极氪",
+  "rows": 8,
+  "spread": 0,
+  "batches": [
+   391,
+   404
+  ],
+  "lens": [
+   [
+    5030,
+    8
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4865,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "吉利A7",
+  "board": "吉利",
+  "rows": 8,
+  "spread": 115,
+  "batches": [
+   395,
+   411
+  ],
+  "lens": [
+   [
+    4890,
+    4
+   ],
+   [
+    4820,
+    3
+   ],
+   [
+    4935,
+    1
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 4932,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_b7f62acd616d403a804ac1ef135a1755.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   4932
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "智己LS7",
+  "board": "智己",
+  "rows": 8,
+  "spread": 0,
+  "batches": [
+   359,
+   385
+  ],
+  "lens": [
+   [
+    4650,
+    8
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xiaomi",
+  "series": "小米YU7",
+  "board": "小米",
+  "rows": 8,
+  "spread": 0,
+  "batches": [
+   391,
+   406
+  ],
+  "lens": [
+   [
+    5070,
+    8
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xpeng",
+  "series": "P7+",
+  "board": "小鹏",
+  "rows": 8,
+  "spread": 0,
+  "batches": [
+   385,
+   402
+  ],
+  "lens": [
+   [
+    5160,
+    8
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "驱逐舰05",
+  "board": "比亚迪",
+  "rows": 7,
+  "spread": 0,
+  "batches": [
+   351,
+   383
+  ],
+  "lens": [
+   [
+    5020,
+    7
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "腾势N7",
+  "board": "腾势",
+  "rows": 7,
+  "spread": 80,
+  "batches": [
+   369,
+   382
+  ],
+  "lens": [
+   [
+    4850,
+    4
+   ],
+   [
+    4930,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "腾势N8",
+  "board": "腾势",
+  "rows": 7,
+  "spread": 270,
+  "batches": [
+   370,
+   409
+  ],
+  "lens": [
+   [
+    4930,
+    4
+   ],
+   [
+    5200,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "唐L",
+  "board": "比亚迪",
+  "rows": 7,
+  "spread": 0,
+  "batches": [
+   391,
+   391
+  ],
+  "lens": [
+   [
+    4600,
+    7
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 5040,
+  "url": null,
+  "conf": "A",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "宋ULTRA",
+  "board": "比亚迪",
+  "rows": 7,
+  "spread": 50,
+  "batches": [
+   403,
+   409
+  ],
+  "lens": [
+   [
+    4800,
+    5
+   ],
+   [
+    4850,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "AIONSPIO",
+  "board": "埃安",
+  "rows": 7,
+  "spread": 0,
+  "batches": [
+   357,
+   371
+  ],
+  "lens": [
+   [
+    4805,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "HYCANV09",
+  "board": "合创",
+  "rows": 7,
+  "spread": null,
+  "batches": [
+   373,
+   381
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "吉利E",
+  "board": "吉利",
+  "rows": 7,
+  "spread": 90,
+  "batches": [
+   354,
+   371
+  ],
+  "lens": [
+   [
+    4820,
+    4
+   ],
+   [
+    4730,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "#3",
+  "board": "smart",
+  "rows": 7,
+  "spread": 0,
+  "batches": [
+   365,
+   379
+  ],
+  "lens": [
+   [
+    4560,
+    7
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "ELETRE",
+  "board": "路特斯",
+  "rows": 7,
+  "spread": 0,
+  "batches": [
+   366,
+   370
+  ],
+  "lens": [
+   [
+    5103,
+    7
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "领克08",
+  "board": "领克",
+  "rows": 7,
+  "spread": 0,
+  "batches": [
+   372,
+   397
+  ],
+  "lens": [
+   [
+    4730,
+    7
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "星享V6E",
+  "board": "远程",
+  "rows": 7,
+  "spread": 0,
+  "batches": [
+   376,
+   394
+  ],
+  "lens": [
+   [
+    5680,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "领克Z10",
+  "board": "领克",
+  "rows": 7,
+  "spread": 140,
+  "batches": [
+   384,
+   405
+  ],
+  "lens": [
+   [
+    5030,
+    4
+   ],
+   [
+    5170,
+    3
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 5028,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "极氪7X",
+  "board": "极氪",
+  "rows": 7,
+  "spread": 210,
+  "batches": [
+   385,
+   411
+  ],
+  "lens": [
+   [
+    4730,
+    3
+   ],
+   [
+    4940,
+    3
+   ],
+   [
+    4825,
+    1
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 4825,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e37a6c11c74444fbbc24e3618e504d22.html",
+  "conf": "A",
+  "has_seed": true,
+  "official_lens": [
+   4825
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "哈弗H6",
+  "board": "哈弗",
+  "rows": 7,
+  "spread": 0,
+  "batches": [
+   361,
+   385
+  ],
+  "lens": [
+   [
+    4480,
+    7
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "KIWIEV",
+  "board": "宝骏",
+  "rows": 7,
+  "spread": 0,
+  "batches": [
+   343,
+   360
+  ],
+  "lens": [
+   [
+    4470,
+    7
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "大拿",
+  "board": "大通",
+  "rows": 7,
+  "spread": 0,
+  "batches": [
+   378,
+   393
+  ],
+  "lens": [
+   [
+    5860,
+    6
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "星光S",
+  "board": "五菱",
+  "rows": 7,
+  "spread": 0,
+  "batches": [
+   384,
+   397
+  ],
+  "lens": [
+   [
+    4390,
+    7
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "大通1",
+  "board": "大通",
+  "rows": 7,
+  "spread": null,
+  "batches": [
+   392,
+   402
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "秦",
+  "board": "比亚迪",
+  "rows": 6,
+  "spread": 186,
+  "batches": [
+   344,
+   390
+  ],
+  "lens": [
+   [
+    4866,
+    4
+   ],
+   [
+    4680,
+    2
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4765,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "驱逐舰07",
+  "board": "比亚迪",
+  "rows": 6,
+  "spread": 0,
+  "batches": [
+   371,
+   372
+  ],
+  "lens": [
+   [
+    5020,
+    6
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "秦PRO",
+  "board": "比亚迪",
+  "rows": 6,
+  "spread": 145,
+  "batches": [
+   341,
+   351
+  ],
+  "lens": [
+   [
+    4765,
+    5
+   ],
+   [
+    4620,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "逸动EV460",
+  "board": "长安",
+  "rows": 6,
+  "spread": 0,
+  "batches": [
+   342,
+   346
+  ],
+  "lens": [
+   [
+    4640,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "UNI-V",
+  "board": "长安",
+  "rows": 6,
+  "spread": 10,
+  "batches": [
+   356,
+   402
+  ],
+  "lens": [
+   [
+    4640,
+    5
+   ],
+   [
+    4650,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "阿维塔07",
+  "board": "阿维塔",
+  "rows": 6,
+  "spread": 265,
+  "batches": [
+   383,
+   402
+  ],
+  "lens": [
+   [
+    4560,
+    2
+   ],
+   [
+    4825,
+    2
+   ],
+   [
+    4820,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "阿维塔07L",
+  "board": "阿维塔",
+  "rows": 6,
+  "spread": 140,
+  "batches": [
+   407,
+   412
+  ],
+  "lens": [
+   [
+    5050,
+    5
+   ],
+   [
+    4910,
+    1
+   ]
+  ],
+  "coverage": "official_draft",
+  "cur_len": 4910,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_55d55cfd84a54e099781bae866524a7b.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   4910
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "旅行者C-DM",
+  "board": "捷途",
+  "rows": 6,
+  "spread": 275,
+  "batches": [
+   375,
+   387
+  ],
+  "lens": [
+   [
+    4510,
+    4
+   ],
+   [
+    4785,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "风云A8",
+  "board": "奇瑞",
+  "rows": 6,
+  "spread": 0,
+  "batches": [
+   377,
+   391
+  ],
+  "lens": [
+   [
+    4590,
+    6
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "奇瑞X3L",
+  "board": "奇瑞",
+  "rows": 6,
+  "spread": 0,
+  "batches": [
+   395,
+   401
+  ],
+  "lens": [
+   [
+    4700,
+    6
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "星途ET7",
+  "board": "星途",
+  "rows": 6,
+  "spread": 90,
+  "batches": [
+   401,
+   408
+  ],
+  "lens": [
+   [
+    5070,
+    4
+   ],
+   [
+    5160,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "埃安AIONLX",
+  "board": "埃安",
+  "rows": 6,
+  "spread": 0,
+  "batches": [
+   345,
+   385
+  ],
+  "lens": [
+   [
+    4930,
+    6
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "合创Z03",
+  "board": "合创",
+  "rows": 6,
+  "spread": 0,
+  "batches": [
+   355,
+   361
+  ],
+  "lens": [
+   [
+    4602,
+    6
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "沃尔沃C40",
+  "board": "沃尔沃",
+  "rows": 6,
+  "spread": 0,
+  "batches": [
+   354,
+   369
+  ],
+  "lens": [
+   [
+    4440,
+    6
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "极越07",
+  "board": "极越",
+  "rows": 6,
+  "spread": 140,
+  "batches": [
+   383,
+   388
+  ],
+  "lens": [
+   [
+    5030,
+    3
+   ],
+   [
+    4890,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "极氪8X",
+  "board": "极氪",
+  "rows": 6,
+  "spread": 0,
+  "batches": [
+   403,
+   404
+  ],
+  "lens": [
+   [
+    5190,
+    6
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "欧拉5",
+  "board": "欧拉",
+  "rows": 6,
+  "spread": 158,
+  "batches": [
+   406,
+   411
+  ],
+  "lens": [
+   [
+    4680,
+    3
+   ],
+   [
+    4758,
+    2
+   ],
+   [
+    4600,
+    1
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 4758,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_cf054a77f4b644f9b5e57df937846682.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   4758
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "liauto",
+  "series": "理想I6",
+  "board": "理想",
+  "rows": 6,
+  "spread": 130,
+  "batches": [
+   396,
+   411
+  ],
+  "lens": [
+   [
+    5080,
+    3
+   ],
+   [
+    4950,
+    3
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 4950,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_33b47060cc074b819d030aaa95a7973d.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   4950
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "NANOEV",
+  "board": "五菱",
+  "rows": 6,
+  "spread": 0,
+  "batches": [
+   343,
+   346
+  ],
+  "lens": [
+   [
+    4470,
+    6
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "荣威D7",
+  "board": "荣威",
+  "rows": 6,
+  "spread": 10,
+  "batches": [
+   372,
+   406
+  ],
+  "lens": [
+   [
+    4820,
+    5
+   ],
+   [
+    4830,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "名爵MGS5",
+  "board": "名爵",
+  "rows": 6,
+  "spread": 120,
+  "batches": [
+   385,
+   400
+  ],
+  "lens": [
+   [
+    4730,
+    4
+   ],
+   [
+    4610,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "智己LS9",
+  "board": "智己",
+  "rows": 6,
+  "spread": 61,
+  "batches": [
+   397,
+   403
+  ],
+  "lens": [
+   [
+    5340,
+    5
+   ],
+   [
+    5279,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xpeng",
+  "series": "小鹏GX",
+  "board": "小鹏",
+  "rows": 6,
+  "spread": 0,
+  "batches": [
+   404,
+   404
+  ],
+  "lens": [
+   [
+    5260,
+    6
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xpeng",
+  "series": "小鹏G9L",
+  "board": "小鹏",
+  "rows": 6,
+  "spread": 0,
+  "batches": [
+   407,
+   409
+  ],
+  "lens": [
+   [
+    5240,
+    6
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "宋MAX",
+  "board": "比亚迪",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   345,
+   363
+  ],
+  "lens": [
+   [
+    4910,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "豹5",
+  "board": "方程豹",
+  "rows": 5,
+  "spread": 200,
+  "batches": [
+   375,
+   399
+  ],
+  "lens": [
+   [
+    4930,
+    3
+   ],
+   [
+    4730,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "汉L",
+  "board": "比亚迪",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   391,
+   395
+  ],
+  "lens": [
+   [
+    4680,
+    5
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 5050,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "秦MAX",
+  "board": "比亚迪",
+  "rows": 5,
+  "spread": 16,
+  "batches": [
+   402,
+   405
+  ],
+  "lens": [
+   [
+    4850,
+    4
+   ],
+   [
+    4866,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "大唐",
+  "board": "比亚迪",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   404,
+   405
+  ],
+  "lens": [
+   [
+    5290,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "海豹08",
+  "board": "比亚迪",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   405,
+   406
+  ],
+  "lens": [
+   [
+    5210,
+    5
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 5150,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "海狮08",
+  "board": "比亚迪",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   407,
+   407
+  ],
+  "lens": [
+   [
+    5120,
+    5
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 5115,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "之星9",
+  "board": "长安",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   342,
+   350
+  ],
+  "lens": [
+   [
+    4430,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "奔奔E-STAR国民版",
+  "board": "长安",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   342,
+   343
+  ],
+  "lens": [
+   [
+    4640,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "深蓝S7",
+  "board": "长安",
+  "rows": 5,
+  "spread": 80,
+  "batches": [
+   366,
+   370
+  ],
+  "lens": [
+   [
+    4560,
+    4
+   ],
+   [
+    4640,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "长安E07",
+  "board": "长安",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   379,
+   386
+  ],
+  "lens": [
+   [
+    4560,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "深蓝S05",
+  "board": "深蓝",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   383,
+   395
+  ],
+  "lens": [
+   [
+    4560,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "启源Q05",
+  "board": "启源",
+  "rows": 5,
+  "spread": 60,
+  "batches": [
+   384,
+   409
+  ],
+  "lens": [
+   [
+    4620,
+    4
+   ],
+   [
+    4560,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "逸动",
+  "board": "长安",
+  "rows": 5,
+  "spread": 30,
+  "batches": [
+   391,
+   402
+  ],
+  "lens": [
+   [
+    4640,
+    4
+   ],
+   [
+    4670,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "奇瑞EQ5",
+  "board": "奇瑞",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   343,
+   347
+  ],
+  "lens": [
+   [
+    4630,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "ARRIZOE",
+  "board": "奇瑞",
+  "rows": 5,
+  "spread": null,
+  "batches": [
+   345,
+   374
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "风云T9L",
+  "board": "奇瑞",
+  "rows": 5,
+  "spread": 60,
+  "batches": [
+   402,
+   412
+  ],
+  "lens": [
+   [
+    4930,
+    4
+   ],
+   [
+    4870,
+    1
+   ]
+  ],
+  "coverage": "official_draft",
+  "cur_len": 4870,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_dcdd032eec84404ca1fff1b040e2bc6e.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   4870
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "智界V9",
+  "board": "智界",
+  "rows": 5,
+  "spread": 30,
+  "batches": [
+   403,
+   409
+  ],
+  "lens": [
+   [
+    5460,
+    3
+   ],
+   [
+    5490,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "环游者",
+  "board": "捷途",
+  "rows": 5,
+  "spread": 145,
+  "batches": [
+   410,
+   411
+  ],
+  "lens": [
+   [
+    4605,
+    2
+   ],
+   [
+    4475,
+    2
+   ],
+   [
+    4620,
+    1
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 4475,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_23af8a5952844932999d9c960f23338e.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   4475
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "昊铂HL",
+  "board": "昊铂",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   390,
+   395
+  ],
+  "lens": [
+   [
+    5126,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "埃安N60",
+  "board": "埃安",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   402,
+   406
+  ],
+  "lens": [
+   [
+    4690,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "传祺AIONS",
+  "board": "传祺",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   341,
+   341
+  ],
+  "lens": [
+   [
+    4805,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "AION LX",
+  "board": "广汽",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   341,
+   341
+  ],
+  "lens": [
+   [
+    4960,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "吉利EVPRO",
+  "board": "吉利",
+  "rows": 5,
+  "spread": 250,
+  "batches": [
+   341,
+   345
+  ],
+  "lens": [
+   [
+    4640,
+    3
+   ],
+   [
+    4890,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "沃尔沃XC40",
+  "board": "沃尔沃",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   343,
+   369
+  ],
+  "lens": [
+   [
+    4425,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "星越L",
+  "board": "吉利",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   360,
+   370
+  ],
+  "lens": [
+   [
+    4560,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "路特斯EMEYA",
+  "board": "路特斯",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   375,
+   382
+  ],
+  "lens": [
+   [
+    5139,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "极氪MIX",
+  "board": "极氪",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   381,
+   385
+  ],
+  "lens": [
+   [
+    4700,
+    5
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4688,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "沃尔沃ES90",
+  "board": "沃尔沃",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   404,
+   404
+  ],
+  "lens": [
+   [
+    5150,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "芭蕾猫",
+  "board": "欧拉",
+  "rows": 5,
+  "spread": 90,
+  "batches": [
+   351,
+   409
+  ],
+  "lens": [
+   [
+    4560,
+    4
+   ],
+   [
+    4650,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "大狗PLUS",
+  "board": "哈弗",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   400,
+   401
+  ],
+  "lens": [
+   [
+    4750,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "欧拉IQ",
+  "board": "欧拉",
+  "rows": 5,
+  "spread": 0,
+  "batches": [
+   352,
+   384
+  ],
+  "lens": [
+   [
+    4445,
+    5
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "liauto",
+  "series": "理想L6",
+  "board": "理想",
+  "rows": 5,
+  "spread": 150,
+  "batches": [
+   379,
+   407
+  ],
+  "lens": [
+   [
+    5080,
+    3
+   ],
+   [
+    4930,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "liauto",
+  "series": "理想I8",
+  "board": "理想",
+  "rows": 5,
+  "spread": 70,
+  "batches": [
+   394,
+   408
+  ],
+  "lens": [
+   [
+    5080,
+    4
+   ],
+   [
+    5150,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "大通MIFA9",
+  "board": "大通",
+  "rows": 5,
+  "spread": null,
+  "batches": [
+   351,
+   381
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "荣光EV",
+  "board": "五菱",
+  "rows": 5,
+  "spread": 20,
+  "batches": [
+   341,
+   370
+  ],
+  "lens": [
+   [
+    4370,
+    3
+   ],
+   [
+    4390,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "缤果S",
+  "board": "五菱",
+  "rows": 5,
+  "spread": 70,
+  "batches": [
+   396,
+   400
+  ],
+  "lens": [
+   [
+    4490,
+    3
+   ],
+   [
+    4420,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "海狮07EV",
+  "board": "比亚迪",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   379,
+   382
+  ],
+  "lens": [
+   [
+    4600,
+    4
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4830,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "豹8",
+  "board": "方程豹",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   383,
+   398
+  ],
+  "lens": [
+   [
+    5195,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "海狮07",
+  "board": "比亚迪",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   390,
+   390
+  ],
+  "lens": [
+   [
+    4600,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "腾势N8L",
+  "board": "腾势",
+  "rows": 4,
+  "spread": 270,
+  "batches": [
+   395,
+   409
+  ],
+  "lens": [
+   [
+    4930,
+    2
+   ],
+   [
+    5200,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "海豹06GT",
+  "board": "比亚迪",
+  "rows": 4,
+  "spread": 220,
+  "batches": [
+   402,
+   408
+  ],
+  "lens": [
+   [
+    4850,
+    3
+   ],
+   [
+    4630,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "UNI-K",
+  "board": "长安",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   345,
+   367
+  ],
+  "lens": [
+   [
+    4560,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "长安CS75PLUS",
+  "board": "长安",
+  "rows": 4,
+  "spread": null,
+  "batches": [
+   365,
+   366
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "阿维塔6",
+  "board": "阿维塔",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   390,
+   391
+  ],
+  "lens": [
+   [
+    4640,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "启源A05L",
+  "board": "启源",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   409,
+   409
+  ],
+  "lens": [
+   [
+    4860,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "奇瑞EC1",
+  "board": "奇瑞",
+  "rows": 4,
+  "spread": null,
+  "batches": [
+   345,
+   345
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "大圣",
+  "board": "捷途",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   362,
+   367
+  ],
+  "lens": [
+   [
+    4590,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "山海L7C-DM",
+  "board": "捷途",
+  "rows": 4,
+  "spread": 90,
+  "batches": [
+   377,
+   402
+  ],
+  "lens": [
+   [
+    4510,
+    2
+   ],
+   [
+    4600,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "风云T10C-DM",
+  "board": "奇瑞",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   381,
+   384
+  ],
+  "lens": [
+   [
+    4510,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "TIGGO9C-DM",
+  "board": "奇瑞",
+  "rows": 4,
+  "spread": 260,
+  "batches": [
+   382,
+   405
+  ],
+  "lens": [
+   [
+    4510,
+    3
+   ],
+   [
+    4770,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "iCAR03T",
+  "board": "iCAR",
+  "rows": 4,
+  "spread": null,
+  "batches": [
+   385,
+   385
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "风云A8L",
+  "board": "奇瑞",
+  "rows": 4,
+  "spread": 210,
+  "batches": [
+   387,
+   402
+  ],
+  "lens": [
+   [
+    4590,
+    2
+   ],
+   [
+    4800,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "风云T8C-DM",
+  "board": "奇瑞",
+  "rows": 4,
+  "spread": 70,
+  "batches": [
+   388,
+   399
+  ],
+  "lens": [
+   [
+    4510,
+    3
+   ],
+   [
+    4580,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "旅行者",
+  "board": "捷途",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   401,
+   408
+  ],
+  "lens": [
+   [
+    4730,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "埃安AIONSPLUS",
+  "board": "埃安",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   344,
+   371
+  ],
+  "lens": [
+   [
+    4810,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "合创A06",
+  "board": "合创",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   360,
+   370
+  ],
+  "lens": [
+   [
+    4900,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "传祺M8",
+  "board": "传祺",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   360,
+   397
+  ],
+  "lens": [
+   [
+    4620,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "昊铂S600",
+  "board": "昊铂",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   402,
+   402
+  ],
+  "lens": [
+   [
+    4960,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "启境GT7",
+  "board": "启境",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   406,
+   409
+  ],
+  "lens": [
+   [
+    5160,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "枫叶60S",
+  "board": "枫叶",
+  "rows": 4,
+  "spread": 300,
+  "batches": [
+   348,
+   389
+  ],
+  "lens": [
+   [
+    4820,
+    1
+   ],
+   [
+    4730,
+    1
+   ],
+   [
+    5030,
+    1
+   ],
+   [
+    4890,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "09PHEV",
+  "board": "领克",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   367,
+   378
+  ],
+  "lens": [
+   [
+    4730,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "吉利L7",
+  "board": "吉利",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   369,
+   388
+  ],
+  "lens": [
+   [
+    4560,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "领克07",
+  "board": "领克",
+  "rows": 4,
+  "spread": 70,
+  "batches": [
+   380,
+   408
+  ],
+  "lens": [
+   [
+    4890,
+    3
+   ],
+   [
+    4820,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "远程V7E",
+  "board": "远程",
+  "rows": 4,
+  "spread": 260,
+  "batches": [
+   395,
+   409
+  ],
+  "lens": [
+   [
+    5680,
+    3
+   ],
+   [
+    5420,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "星舰7EV",
+  "board": "吉利",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   399,
+   400
+  ],
+  "lens": [
+   [
+    4660,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "星舰7EF",
+  "board": "吉利",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   400,
+   401
+  ],
+  "lens": [
+   [
+    4660,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "吉利TT",
+  "board": "吉利",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   407,
+   407
+  ],
+  "lens": [
+   [
+    5020,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "圆梦",
+  "board": "魏牌",
+  "rows": 4,
+  "spread": 80,
+  "batches": [
+   356,
+   363
+  ],
+  "lens": [
+   [
+    4560,
+    3
+   ],
+   [
+    4480,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "神兽",
+  "board": "哈弗",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   363,
+   365
+  ],
+  "lens": [
+   [
+    4480,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "枭龙",
+  "board": "哈弗",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   368,
+   368
+  ],
+  "lens": [
+   [
+    4480,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "哈弗H10",
+  "board": "哈弗",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   406,
+   408
+  ],
+  "lens": [
+   [
+    5070,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "智己L7",
+  "board": "智己",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   348,
+   373
+  ],
+  "lens": [
+   [
+    4650,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "大通MIFA7",
+  "board": "大通",
+  "rows": 4,
+  "spread": null,
+  "batches": [
+   370,
+   370
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "大通EV70",
+  "board": "大通",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   373,
+   379
+  ],
+  "lens": [
+   [
+    4860,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "大通MILA",
+  "board": "大通",
+  "rows": 4,
+  "spread": null,
+  "batches": [
+   374,
+   397
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "飞凡RC7",
+  "board": "飞凡",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   383,
+   383
+  ],
+  "lens": [
+   [
+    4730,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "云海",
+  "board": "宝骏",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   383,
+   383
+  ],
+  "lens": [
+   [
+    4390,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "之光EV",
+  "board": "五菱",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   388,
+   398
+  ],
+  "lens": [
+   [
+    4470,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "名爵MG4X",
+  "board": "名爵",
+  "rows": 4,
+  "spread": 0,
+  "batches": [
+   405,
+   406
+  ],
+  "lens": [
+   [
+    4620,
+    4
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "比亚迪M3",
+  "board": "比亚迪",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   342,
+   380
+  ],
+  "lens": [
+   [
+    4910,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "仰望U9",
+  "board": "仰望",
+  "rows": 3,
+  "spread": 40,
+  "batches": [
+   378,
+   398
+  ],
+  "lens": [
+   [
+    4850,
+    2
+   ],
+   [
+    4810,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "宋",
+  "board": "比亚迪",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   384,
+   387
+  ],
+  "lens": [
+   [
+    4930,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "夏",
+  "board": "比亚迪",
+  "rows": 3,
+  "spread": 210,
+  "batches": [
+   388,
+   398
+  ],
+  "lens": [
+   [
+    4910,
+    2
+   ],
+   [
+    5120,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "大汉",
+  "board": "比亚迪",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   408,
+   408
+  ],
+  "lens": [
+   [
+    5380,
+    3
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 5256,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "腾势Z",
+  "board": "腾势",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   408,
+   408
+  ],
+  "lens": [
+   [
+    4610,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "钛9",
+  "board": "方程豹",
+  "rows": 3,
+  "spread": 70,
+  "batches": [
+   410,
+   412
+  ],
+  "lens": [
+   [
+    5270,
+    2
+   ],
+   [
+    5200,
+    1
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 5270,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   5270
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "byd",
+  "series": "宋LGT",
+  "board": "比亚迪",
+  "rows": 3,
+  "spread": null,
+  "batches": [
+   397,
+   397
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "奔奔E-STAR",
+  "board": "长安",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   341,
+   343
+  ],
+  "lens": [
+   [
+    4640,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "长安CS55PLUS",
+  "board": "长安",
+  "rows": 3,
+  "spread": 70,
+  "batches": [
+   389,
+   402
+  ],
+  "lens": [
+   [
+    4490,
+    2
+   ],
+   [
+    4560,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "长安C798",
+  "board": "长安",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   390,
+   390
+  ],
+  "lens": [
+   [
+    4560,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "长安L06",
+  "board": "长安",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   398,
+   398
+  ],
+  "lens": [
+   [
+    4990,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "UNI-Z",
+  "board": "长安",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   400,
+   406
+  ],
+  "lens": [
+   [
+    4720,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "changan",
+  "series": "阿维塔06T",
+  "board": "阿维塔",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   404,
+   404
+  ],
+  "lens": [
+   [
+    5060,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "无界PRO",
+  "board": "奇瑞",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   359,
+   360
+  ],
+  "lens": [
+   [
+    3402,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "开瑞E5",
+  "board": "开瑞",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   386,
+   387
+  ],
+  "lens": [
+   [
+    4805,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "ARRIZO8C-DM",
+  "board": "奇瑞",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   389,
+   391
+  ],
+  "lens": [
+   [
+    4590,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "iCARV25",
+  "board": "iCAR",
+  "rows": 3,
+  "spread": 134,
+  "batches": [
+   409,
+   411
+  ],
+  "lens": [
+   [
+    4770,
+    2
+   ],
+   [
+    4636,
+    1
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 4636,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_641f591f4a28439598d964bad991afbd.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   4636
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "ARRIZO5E",
+  "board": "奇瑞",
+  "rows": 3,
+  "spread": null,
+  "batches": [
+   348,
+   348
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "chery",
+  "series": "TIGGOE",
+  "board": "奇瑞",
+  "rows": 3,
+  "spread": null,
+  "batches": [
+   350,
+   350
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "埃安SPIO",
+  "board": "埃安",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   355,
+   362
+  ],
+  "lens": [
+   [
+    4805,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "传祺ES9",
+  "board": "传祺",
+  "rows": 3,
+  "spread": 30,
+  "batches": [
+   373,
+   375
+  ],
+  "lens": [
+   [
+    4620,
+    2
+   ],
+   [
+    4650,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "向往S7",
+  "board": "传祺",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   400,
+   407
+  ],
+  "lens": [
+   [
+    4870,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "埃安YPLUS",
+  "board": "埃安",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   406,
+   406
+  ],
+  "lens": [
+   [
+    4650,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "越7",
+  "board": "传祺",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   407,
+   408
+  ],
+  "lens": [
+   [
+    4900,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "启境GX7",
+  "board": "启境",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   409,
+   409
+  ],
+  "lens": [
+   [
+    5190,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gac",
+  "series": "传祺S7",
+  "board": "传祺",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   390,
+   390
+  ],
+  "lens": [
+   [
+    4900,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "嘉际",
+  "board": "吉利",
+  "rows": 3,
+  "spread": 24,
+  "batches": [
+   341,
+   345
+  ],
+  "lens": [
+   [
+    4706,
+    2
+   ],
+   [
+    4730,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "英伦TX",
+  "board": "英伦",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   345,
+   365
+  ],
+  "lens": [
+   [
+    4820,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "博瑞",
+  "board": "吉利",
+  "rows": 3,
+  "spread": 166,
+  "batches": [
+   344,
+   345
+  ],
+  "lens": [
+   [
+    4986,
+    2
+   ],
+   [
+    4820,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "领克09",
+  "board": "领克",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   347,
+   366
+  ],
+  "lens": [
+   [
+    4730,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "XC60T8",
+  "board": "沃尔沃",
+  "rows": 3,
+  "spread": null,
+  "batches": [
+   349,
+   379
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "沃尔沃S60T8",
+  "board": "沃尔沃",
+  "rows": 3,
+  "spread": null,
+  "batches": [
+   342,
+   354
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "领克06",
+  "board": "领克",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   366,
+   373
+  ],
+  "lens": [
+   [
+    4730,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "极星4",
+  "board": "极星",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   375,
+   375
+  ],
+  "lens": [
+   [
+    4650,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "沃尔沃EX30",
+  "board": "沃尔沃",
+  "rows": 3,
+  "spread": null,
+  "batches": [
+   375,
+   375
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "领克Z20",
+  "board": "领克",
+  "rows": 3,
+  "spread": 300,
+  "batches": [
+   387,
+   395
+  ],
+  "lens": [
+   [
+    4820,
+    1
+   ],
+   [
+    4730,
+    1
+   ],
+   [
+    5030,
+    1
+   ]
+  ],
+  "coverage": "seed15",
+  "cur_len": 4460,
+  "url": null,
+  "conf": "B",
+  "has_seed": true,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "领克900",
+  "board": "领克",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   391,
+   394
+  ],
+  "lens": [
+   [
+    4730,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "沃尔沃XC70",
+  "board": "沃尔沃",
+  "rows": 3,
+  "spread": 75,
+  "batches": [
+   395,
+   409
+  ],
+  "lens": [
+   [
+    4815,
+    2
+   ],
+   [
+    4890,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "豪越R7",
+  "board": "吉利",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   397,
+   399
+  ],
+  "lens": [
+   [
+    4690,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "吉利M7",
+  "board": "吉利",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   402,
+   410
+  ],
+  "lens": [
+   [
+    4710,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "远程M7E",
+  "board": "远程",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   409,
+   409
+  ],
+  "lens": [
+   [
+    5420,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "战舰700",
+  "board": "吉利",
+  "rows": 3,
+  "spread": 185,
+  "batches": [
+   409,
+   412
+  ],
+  "lens": [
+   [
+    4900,
+    2
+   ],
+   [
+    5085,
+    1
+   ]
+  ],
+  "coverage": "official_draft",
+  "cur_len": 5085,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_0d4866d9416f4b55aaf3557730b715a4.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   5085
+  ]
+ },
+ {
+  "tier": "T2",
+  "group": "geely",
+  "series": "吉利FY11",
+  "board": "吉利",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   341,
+   341
+  ],
+  "lens": [
+   [
+    4740,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "玛奇朵PHEV",
+  "board": "魏牌",
+  "rows": 3,
+  "spread": null,
+  "batches": [
+   343,
+   344
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "朋克猫",
+  "board": "欧拉",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   354,
+   355
+  ],
+  "lens": [
+   [
+    4560,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "机甲龙",
+  "board": "沙龙",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   362,
+   365
+  ],
+  "lens": [
+   [
+    4560,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "魏牌V9X",
+  "board": "魏牌",
+  "rows": 3,
+  "spread": 90,
+  "batches": [
+   404,
+   410
+  ],
+  "lens": [
+   [
+    5320,
+    2
+   ],
+   [
+    5230,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "魏牌V9",
+  "board": "魏牌",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   406,
+   406
+  ],
+  "lens": [
+   [
+    5150,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "gwm",
+  "series": "欧拉ORA7",
+  "board": "欧拉",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   408,
+   408
+  ],
+  "lens": [
+   [
+    4940,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "nio",
+  "series": "蔚来ES8",
+  "board": "蔚来",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   366,
+   396
+  ],
+  "lens": [
+   [
+    4520,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "nio",
+  "series": "蔚来ES6",
+  "board": "蔚来",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   367,
+   378
+  ],
+  "lens": [
+   [
+    4520,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "荣威ERX5",
+  "board": "荣威",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   356,
+   360
+  ],
+  "lens": [
+   [
+    4730,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "木兰",
+  "board": "名爵",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   357,
+   362
+  ],
+  "lens": [
+   [
+    4820,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "征程EV",
+  "board": "五菱",
+  "rows": 3,
+  "spread": 20,
+  "batches": [
+   357,
+   369
+  ],
+  "lens": [
+   [
+    4370,
+    2
+   ],
+   [
+    4390,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "大通MIFA6",
+  "board": "大通",
+  "rows": 3,
+  "spread": null,
+  "batches": [
+   368,
+   371
+  ],
+  "lens": [],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "CYBERSTER",
+  "board": "名爵",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   370,
+   370
+  ],
+  "lens": [
+   [
+    4820,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "荣威D5X",
+  "board": "荣威",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   375,
+   388
+  ],
+  "lens": [
+   [
+    4730,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "G50MAXPHEV",
+  "board": "大通",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   389,
+   399
+  ],
+  "lens": [
+   [
+    4700,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "名爵MG4EV",
+  "board": "名爵",
+  "rows": 3,
+  "spread": 90,
+  "batches": [
+   393,
+   398
+  ],
+  "lens": [
+   [
+    4820,
+    2
+   ],
+   [
+    4730,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "享境S9",
+  "board": "宝骏",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   399,
+   399
+  ],
+  "lens": [
+   [
+    5250,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "智己LS8",
+  "board": "智己",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   402,
+   402
+  ],
+  "lens": [
+   [
+    5170,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "星光L",
+  "board": "五菱",
+  "rows": 3,
+  "spread": 10,
+  "batches": [
+   402,
+   402
+  ],
+  "lens": [
+   [
+    4990,
+    2
+   ],
+   [
+    4980,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "名爵MG07",
+  "board": "名爵",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   407,
+   410
+  ],
+  "lens": [
+   [
+    4860,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "家越07",
+  "board": "荣威",
+  "rows": 3,
+  "spread": 140,
+  "batches": [
+   408,
+   409
+  ],
+  "lens": [
+   [
+    4910,
+    2
+   ],
+   [
+    4770,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "saic",
+  "series": "扬光L",
+  "board": "五菱",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   407,
+   408
+  ],
+  "lens": [
+   [
+    4390,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xpeng",
+  "series": "小鹏G7",
+  "board": "小鹏",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   391,
+   399
+  ],
+  "lens": [
+   [
+    4880,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xpeng",
+  "series": "小鹏L03",
+  "board": "小鹏",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   406,
+   407
+  ],
+  "lens": [
+   [
+    4820,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T2",
+  "group": "xpeng",
+  "series": "小鹏L05",
+  "board": "小鹏",
+  "rows": 3,
+  "spread": 0,
+  "batches": [
+   407,
+   407
+  ],
+  "lens": [
+   [
+    4970,
+    3
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "byd",
+  "series": "领汇M9",
+  "board": "领汇",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   403,
+   408
+  ],
+  "lens": [
+   [
+    5120,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "byd",
+  "series": "腾势Z9S",
+  "board": "腾势",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   409,
+   409
+  ],
+  "lens": [
+   [
+    5200,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "changan",
+  "series": "阿维塔T09",
+  "board": "阿维塔",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   411,
+   411
+  ],
+  "lens": [
+   [
+    5285,
+    2
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 5285,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   5285
+  ]
+ },
+ {
+  "tier": "T3",
+  "group": "gac",
+  "series": "向往M8",
+  "board": "传祺",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   405,
+   405
+  ],
+  "lens": [
+   [
+    5160,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "gac",
+  "series": "埃安RAY7",
+  "board": "埃安",
+  "rows": 2,
+  "spread": 60,
+  "batches": [
+   410,
+   410
+  ],
+  "lens": [
+   [
+    5020,
+    1
+   ],
+   [
+    4960,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "geely",
+  "series": "#6",
+  "board": "smart",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   402,
+   402
+  ],
+  "lens": [
+   [
+    5030,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "geely",
+  "series": "领克20",
+  "board": "领克",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   407,
+   407
+  ],
+  "lens": [
+   [
+    4740,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "geely",
+  "series": "领克07GT",
+  "board": "领克",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   407,
+   407
+  ],
+  "lens": [
+   [
+    4890,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "geely",
+  "series": "吉利M8",
+  "board": "吉利",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   411,
+   411
+  ],
+  "lens": [
+   [
+    5205,
+    2
+   ]
+  ],
+  "coverage": "official",
+  "cur_len": 5205,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3c30b3e1925f41118ebe3903734037dc.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   5205
+  ]
+ },
+ {
+  "tier": "T3",
+  "group": "geely",
+  "series": "领克900L",
+  "board": "领克",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   412,
+   412
+  ],
+  "lens": [
+   [
+    5280,
+    2
+   ]
+  ],
+  "coverage": "official_draft",
+  "cur_len": 5280,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_16d1c9bf5c934f3bb7b0d091de431c1f.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   5280
+  ]
+ },
+ {
+  "tier": "T3",
+  "group": "gwm",
+  "series": "长城ORA5",
+  "board": "长城",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   410,
+   410
+  ],
+  "lens": [
+   [
+    4482,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "liauto",
+  "series": "理想I9",
+  "board": "理想",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   409,
+   409
+  ],
+  "lens": [
+   [
+    5350,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "saic",
+  "series": "缤果PRO",
+  "board": "五菱",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   402,
+   402
+  ],
+  "lens": [
+   [
+    4400,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "saic",
+  "series": "星光M",
+  "board": "五菱",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   410,
+   410
+  ],
+  "lens": [
+   [
+    5040,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "xiaomi",
+  "series": "澎程N70",
+  "board": "小米",
+  "rows": 2,
+  "spread": 0,
+  "batches": [
+   409,
+   409
+  ],
+  "lens": [
+   [
+    4990,
+    2
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "byd",
+  "series": "领汇E3",
+  "board": "领汇",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   406,
+   406
+  ],
+  "lens": [
+   [
+    4490,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "changan",
+  "series": "长安Q06R",
+  "board": "长安",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   406,
+   406
+  ],
+  "lens": [
+   [
+    4970,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "changan",
+  "series": "东风风神",
+  "board": "长安",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   404,
+   404
+  ],
+  "lens": [
+   [
+    4660,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "chery",
+  "series": "风云T7",
+  "board": "奇瑞",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   407,
+   407
+  ],
+  "lens": [
+   [
+    4560,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "chery",
+  "series": "ARRIZO7CDM",
+  "board": "奇瑞",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   412,
+   412
+  ],
+  "lens": [
+   [
+    4739,
+    1
+   ]
+  ],
+  "coverage": "official_draft",
+  "cur_len": 4739,
+  "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_ff0a8343b0af423b9119936b58f97a51.html",
+  "conf": "A",
+  "has_seed": false,
+  "official_lens": [
+   4739
+  ]
+ },
+ {
+  "tier": "T3",
+  "group": "gac",
+  "series": "昊铂A800",
+  "board": "昊铂",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   403,
+   403
+  ],
+  "lens": [
+   [
+    5190,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "gac",
+  "series": "向往E8",
+  "board": "传祺",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   406,
+   406
+  ],
+  "lens": [
+   [
+    5040,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "geely",
+  "series": "路特斯FORME",
+  "board": "路特斯",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   402,
+   402
+  ],
+  "lens": [
+   [
+    5100,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "geely",
+  "series": "星耀8EMI",
+  "board": "吉利",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   404,
+   404
+  ],
+  "lens": [
+   [
+    5040,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "geely",
+  "series": "沃尔沃XC60",
+  "board": "沃尔沃",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   404,
+   404
+  ],
+  "lens": [
+   [
+    4840,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "geely",
+  "series": "精灵#2",
+  "board": "smart",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   410,
+   410
+  ],
+  "lens": [
+   [
+    3220,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "geely",
+  "series": "远程M8E",
+  "board": "远程",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   409,
+   409
+  ],
+  "lens": [
+   [
+    6090,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "gwm",
+  "series": "高山7",
+  "board": "魏牌",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   403,
+   403
+  ],
+  "lens": [
+   [
+    5180,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "gwm",
+  "series": "魏派高山7",
+  "board": "魏牌",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   403,
+   403
+  ],
+  "lens": [
+   [
+    5180,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "gwm",
+  "series": "猛龙PLUS",
+  "board": "哈弗",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   406,
+   406
+  ],
+  "lens": [
+   [
+    4820,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "gwm",
+  "series": "高山9",
+  "board": "魏牌",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   410,
+   410
+  ],
+  "lens": [
+   [
+    5400,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "nio",
+  "series": "蔚来ES9",
+  "board": "蔚来",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   403,
+   403
+  ],
+  "lens": [
+   [
+    4960,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "saic",
+  "series": "大通TF7",
+  "board": "大通",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   410,
+   410
+  ],
+  "lens": [
+   [
+    5030,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "saic",
+  "series": "荣光",
+  "board": "五菱",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   401,
+   401
+  ],
+  "lens": [
+   [
+    4390,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "saic",
+  "series": "荣光L",
+  "board": "五菱",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   408,
+   408
+  ],
+  "lens": [
+   [
+    5860,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "xiaomi",
+  "series": "小米YU7GT",
+  "board": "小米",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   404,
+   404
+  ],
+  "lens": [
+   [
+    5070,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ },
+ {
+  "tier": "T3",
+  "group": "xiaomi",
+  "series": "澎程N90",
+  "board": "小米",
+  "rows": 1,
+  "spread": 0,
+  "batches": [
+   409,
+   409
+  ],
+  "lens": [
+   [
+    5210,
+    1
+   ]
+  ],
+  "coverage": "need_web",
+  "cur_len": null,
+  "url": null,
+  "conf": null,
+  "has_seed": false,
+  "official_lens": []
+ }
+]

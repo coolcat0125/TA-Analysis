@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 7793,
+ "ah_key": "小米YU7",
+ "ah_name": "小米YU7",
+ "n_on": 5,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7793.html",
+ "dims": [
+  {
+   "spec": "2026款 四驱GT",
+   "len": 5015.0,
+   "wb": 3000.0,
+   "width": 2007.0,
+   "height": 1597.0
+  },
+  {
+   "spec": "2025款 Max定制版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 后驱标准版",
+   "len": 4999.0,
+   "wb": 3000.0,
+   "width": 1996.0,
+   "height": 1608.0
+  },
+  {
+   "spec": "2025款 后驱长续航版",
+   "len": 4999.0,
+   "wb": 3000.0,
+   "width": 1996.0,
+   "height": 1608.0
+  }
+ ],
+ "group": "xiaomi",
+ "series": "小米YU7",
+ "tier": "T2"
+}

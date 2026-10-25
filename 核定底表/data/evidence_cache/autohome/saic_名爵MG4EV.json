@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6651,
+ "ah_key": "MG4",
+ "ah_name": "MG4",
+ "n_on": 12,
+ "n_off": 13,
+ "url": "https://car.autohome.com.cn/config/series/6651.html",
+ "dims": [
+  {
+   "spec": "2026款 437 随心版",
+   "len": 4395.0,
+   "wb": 2750.0,
+   "width": 1842.0,
+   "height": 1551.0
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2023款 415km 出海冠军版",
+   "len": 4287.0,
+   "wb": 2705.0,
+   "width": 1836.0,
+   "height": 1516.0
+  },
+  {
+   "spec": "2026款 改款 437 随心版",
+   "len": 4395.0,
+   "wb": 2750.0,
+   "width": 1842.0,
+   "height": 1551.0
+  },
+  {
+   "spec": "2026款 437 从容版",
+   "len": 4395.0,
+   "wb": 2750.0,
+   "width": 1842.0,
+   "height": 1551.0
+  }
+ ],
+ "group": "saic",
+ "series": "名爵MG4EV",
+ "tier": "T2"
+}

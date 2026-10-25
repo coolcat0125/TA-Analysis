@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 3411,
+ "ah_key": "沃尔沃XC60",
+ "ah_name": "沃尔沃XC60",
+ "n_on": 10,
+ "n_off": 73,
+ "url": "https://car.autohome.com.cn/config/series/3411.html",
+ "dims": [
+  {
+   "spec": "2026款 B5 四驱智逸豪华版",
+   "len": 4708.0,
+   "wb": 2865.0,
+   "width": 1902.0,
+   "height": 1660.0
+  },
+  {
+   "spec": "2025款 B5 四驱智逸豪华版",
+   "len": 4708.0,
+   "wb": 2865.0,
+   "width": 1902.0,
+   "height": 1660.0
+  },
+  {
+   "spec": "2025款 B5 四驱智远运动版",
+   "len": 4708.0,
+   "wb": 2865.0,
+   "width": 1902.0,
+   "height": 1660.0
+  },
+  {
+   "spec": "2027款 B5 四驱智逸豪华版",
+   "len": 4708.0,
+   "wb": 2865.0,
+   "width": 1902.0,
+   "height": 1660.0
+  },
+  {
+   "spec": "2026款 B5 四驱智远极夜黑版",
+   "len": 4708.0,
+   "wb": 2865.0,
+   "width": 1915.0,
+   "height": 1660.0
+  }
+ ],
+ "group": "geely",
+ "series": "XC60T8",
+ "tier": "T2"
+}

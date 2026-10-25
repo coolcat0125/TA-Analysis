@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8148,
+ "ah_key": "极氪8X",
+ "ah_name": "极氪8X",
+ "n_on": 7,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8148.html",
+ "dims": [
+  {
+   "spec": "2026款 Max版 55kWh",
+   "len": 5100.0,
+   "wb": 3069.0,
+   "width": 1998.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2026款 Max版 70kWh",
+   "len": 5100.0,
+   "wb": 3069.0,
+   "width": 1998.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2026款 Ultra版 55kWh",
+   "len": 5100.0,
+   "wb": 3069.0,
+   "width": 1998.0,
+   "height": 1780.0
+  }
+ ],
+ "group": "geely",
+ "series": "极氪8X",
+ "tier": "T2"
+}

@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8660,
+ "ah_key": "风云T7",
+ "ah_name": "风云T7",
+ "n_on": 3,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8660.html",
+ "dims": [
+  {
+   "spec": "2026款 600km 悦享版",
+   "len": 4570.0,
+   "wb": 2700.0,
+   "width": 1852.0,
+   "height": 1694.0
+  },
+  {
+   "spec": "2026款 600km 舒享版",
+   "len": 4570.0,
+   "wb": 2700.0,
+   "width": 1852.0,
+   "height": 1694.0
+  },
+  {
+   "spec": "2026款 600km 智享版",
+   "len": 4570.0,
+   "wb": 2700.0,
+   "width": 1852.0,
+   "height": 1694.0
+  }
+ ],
+ "group": "chery",
+ "series": "风云T7",
+ "tier": "T3"
+}

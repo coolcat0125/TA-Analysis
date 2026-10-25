@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8039,
+ "ah_key": "传祺向往M8",
+ "ah_name": "传祺向往M8",
+ "n_on": 5,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/8039.html",
+ "dims": [
+  {
+   "spec": "2026款 PHEV L Pro",
+   "len": 5264.0,
+   "wb": 3070.0,
+   "width": 1898.0,
+   "height": 1829.0
+  },
+  {
+   "spec": "2026款 宗师 尊享版",
+   "len": 5212.0,
+   "wb": 3070.0,
+   "width": 1893.0,
+   "height": 1823.0
+  },
+  {
+   "spec": "2026款 宗师 激光雷达版",
+   "len": 5251.0,
+   "wb": 3070.0,
+   "width": 1893.0,
+   "height": 1823.0
+  },
+  {
+   "spec": "2026款 PHEV L 四驱 Max",
+   "len": 5264.0,
+   "wb": 3070.0,
+   "width": 1898.0,
+   "height": 1848.0
+  },
+  {
+   "spec": "2026款 PHEV L 四驱 Ultra",
+   "len": 5264.0,
+   "wb": 3070.0,
+   "width": 1898.0,
+   "height": 1848.0
+  }
+ ],
+ "group": "gac",
+ "series": "向往M8",
+ "tier": "T3"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7215,
+ "ah_key": "瑶光C-DM",
+ "ah_name": "瑶光C-DM",
+ "n_on": 3,
+ "n_off": 18,
+ "url": "https://car.autohome.com.cn/config/series/7215.html",
+ "dims": [
+  {
+   "spec": "2027款 寰球版 120长续航两驱",
+   "len": 4781.0,
+   "wb": 2815.0,
+   "width": 1920.0,
+   "height": 1671.0
+  },
+  {
+   "spec": "2026款 寰球版 120长续航两驱",
+   "len": 4781.0,
+   "wb": 2815.0,
+   "width": 1920.0,
+   "height": 1671.0
+  },
+  {
+   "spec": "2026款 寰球版 210超长续航两驱",
+   "len": 4781.0,
+   "wb": 2815.0,
+   "width": 1920.0,
+   "height": 1671.0
+  },
+  {
+   "spec": "2026款 两驱世纪版",
+   "len": 4781.0,
+   "wb": 2815.0,
+   "width": 1920.0,
+   "height": 1671.0
+  },
+  {
+   "spec": "2026款 四驱世纪版",
+   "len": 4781.0,
+   "wb": 2815.0,
+   "width": 1920.0,
+   "height": 1671.0
+  }
+ ],
+ "group": "chery",
+ "series": "瑶光C-DM",
+ "tier": "T2"
+}

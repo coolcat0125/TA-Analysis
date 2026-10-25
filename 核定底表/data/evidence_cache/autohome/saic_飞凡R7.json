@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6072,
+ "ah_key": "飞凡R7",
+ "ah_name": "飞凡R7",
+ "n_on": 3,
+ "n_off": 16,
+ "url": "https://car.autohome.com.cn/config/series/6072.html",
+ "dims": [
+  {
+   "spec": "2025款 都市版",
+   "len": 4910.0,
+   "wb": 2950.0,
+   "width": 1925.0,
+   "height": 1655.0
+  },
+  {
+   "spec": "2024款 进阶版",
+   "len": 4900.0,
+   "wb": 2950.0,
+   "width": 1925.0,
+   "height": 1655.0
+  },
+  {
+   "spec": "2024款 进阶Pro版",
+   "len": 4900.0,
+   "wb": 2950.0,
+   "width": 1925.0,
+   "height": 1655.0
+  },
+  {
+   "spec": "2025款 进阶版",
+   "len": 4910.0,
+   "wb": 2950.0,
+   "width": 1925.0,
+   "height": 1655.0
+  },
+  {
+   "spec": "2025款 长续版",
+   "len": 4910.0,
+   "wb": 2950.0,
+   "width": 1925.0,
+   "height": 1655.0
+  }
+ ],
+ "group": "saic",
+ "series": "飞凡R7",
+ "tier": "T2"
+}

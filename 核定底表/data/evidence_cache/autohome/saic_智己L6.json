@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7514,
+ "ah_key": "智己L6",
+ "ah_name": "智己L6",
+ "n_on": 7,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/7514.html",
+ "dims": [
+  {
+   "spec": "2026款 Max",
+   "len": 4924.0,
+   "wb": 2950.0,
+   "width": 1960.0,
+   "height": 1474.0
+  },
+  {
+   "spec": "2025款 RICH版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 Pro Max",
+   "len": 4937.0,
+   "wb": 2950.0,
+   "width": 1960.0,
+   "height": 1474.0
+  },
+  {
+   "spec": "2025款 Max",
+   "len": 4937.0,
+   "wb": 2950.0,
+   "width": 1960.0,
+   "height": 1474.0
+  },
+  {
+   "spec": "2026款 Prof. JimmyChoo 高定限量版 76kWh",
+   "len": 4924.0,
+   "wb": 2950.0,
+   "width": 1960.0,
+   "height": 1474.0
+  }
+ ],
+ "group": "saic",
+ "series": "智己L6",
+ "tier": "T1"
+}

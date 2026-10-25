@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6924,
+ "ah_key": "熊猫",
+ "ah_name": "熊猫",
+ "n_on": 5,
+ "n_off": 15,
+ "url": "https://car.autohome.com.cn/config/series/6924.html",
+ "dims": [
+  {
+   "spec": "2025款 210km 熊猫卡丁",
+   "len": 3150.0,
+   "wb": 2015.0,
+   "width": 1540.0,
+   "height": 1685.0
+  },
+  {
+   "spec": "2025款 210km 熊猫卡丁猪猪侠限定版",
+   "len": 3150.0,
+   "wb": 2015.0,
+   "width": 1540.0,
+   "height": 1685.0
+  },
+  {
+   "spec": "2025款 210km 熊猫骑士",
+   "len": 3135.0,
+   "wb": 2015.0,
+   "width": 1565.0,
+   "height": 1655.0
+  },
+  {
+   "spec": "2024款 熊猫mini 200km 耐力熊",
+   "len": 3065.0,
+   "wb": 2015.0,
+   "width": 1522.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2025款 熊猫mini 210km 元气熊",
+   "len": 3085.0,
+   "wb": 2015.0,
+   "width": 1522.0,
+   "height": 1600.0
+  }
+ ],
+ "group": "geely",
+ "series": "熊猫MINI",
+ "tier": "T2"
+}

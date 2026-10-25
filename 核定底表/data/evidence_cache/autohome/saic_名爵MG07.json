@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 531,
+ "ah_key": "MG7",
+ "ah_name": "MG7",
+ "n_on": 5,
+ "n_off": 45,
+ "url": "https://car.autohome.com.cn/config/series/531.html",
+ "dims": [
+  {
+   "spec": "2026款 1.5T 300 DCT优雅版",
+   "len": 4884.0,
+   "wb": 2778.0,
+   "width": 1889.0,
+   "height": 1447.0
+  },
+  {
+   "spec": "2025款 1.5T 300 DCT豪华版",
+   "len": 4884.0,
+   "wb": 2778.0,
+   "width": 1889.0,
+   "height": 1447.0
+  },
+  {
+   "spec": "2025款 1.5T 300 DCT优雅版",
+   "len": 4884.0,
+   "wb": 2778.0,
+   "width": 1889.0,
+   "height": 1447.0
+  },
+  {
+   "spec": "2025款 1.5T 300 DCT怡享定制版",
+   "len": 4884.0,
+   "wb": 2778.0,
+   "width": 1889.0,
+   "height": 1447.0
+  },
+  {
+   "spec": "2026款 2.0T 405 AT奢享版",
+   "len": 4884.0,
+   "wb": 2778.0,
+   "width": 1889.0,
+   "height": 1447.0
+  }
+ ],
+ "group": "saic",
+ "series": "名爵MG07",
+ "tier": "T2"
+}

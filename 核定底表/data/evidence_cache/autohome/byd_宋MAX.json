@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 4279,
+ "ah_key": "宋MAX",
+ "ah_name": "宋MAX",
+ "n_on": 0,
+ "n_off": 65,
+ "url": "https://car.autohome.com.cn/config/series/4279.html",
+ "dims": [
+  {
+   "spec": "2021款 升级版 1.5T 手动豪华型 7座",
+   "len": 4710.0,
+   "wb": 2785.0,
+   "width": 1810.0,
+   "height": 1680.0
+  },
+  {
+   "spec": "2021款 升级版 1.5T 自动豪华型 7座",
+   "len": 4710.0,
+   "wb": 2785.0,
+   "width": 1810.0,
+   "height": 1680.0
+  }
+ ],
+ "group": "byd",
+ "series": "宋MAX",
+ "tier": "T2"
+}

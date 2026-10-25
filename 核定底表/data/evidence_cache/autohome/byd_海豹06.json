@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7588,
+ "ah_key": "海豹06",
+ "ah_name": "海豹06",
+ "n_on": 24,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/7588.html",
+ "dims": [
+  {
+   "spec": "2026款 DM-i 超享版 128KM豪华版",
+   "len": 4830.0,
+   "wb": 2790.0,
+   "width": 1875.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2025款 EV 试装车",
+   "len": 4720.0,
+   "wb": 2820.0,
+   "width": 1880.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2024款 DM-i 80KM豪华型",
+   "len": 4830.0,
+   "wb": 2790.0,
+   "width": 1875.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2025款 DM-i 智驾版 80KM豪华型",
+   "len": 4830.0,
+   "wb": 2790.0,
+   "width": 1875.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2027款 DM-i 230KM舒享型",
+   "len": 4870.0,
+   "wb": 2820.0,
+   "width": 1890.0,
+   "height": 1495.0
+  }
+ ],
+ "group": "byd",
+ "series": "海豹06",
+ "tier": "T1"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7860,
+ "ah_key": "AION RT",
+ "ah_name": "AION RT",
+ "n_on": 11,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/7860.html",
+ "dims": [
+  {
+   "spec": "2026款 520智享版",
+   "len": 4865.0,
+   "wb": 2775.0,
+   "width": 1875.0,
+   "height": 1520.0
+  },
+  {
+   "spec": "2025款 520智享版",
+   "len": 4865.0,
+   "wb": 2775.0,
+   "width": 1875.0,
+   "height": 1520.0
+  },
+  {
+   "spec": "2025款 520智豪版",
+   "len": 4865.0,
+   "wb": 2775.0,
+   "width": 1875.0,
+   "height": 1520.0
+  },
+  {
+   "spec": "2027款 550智享版",
+   "len": 4865.0,
+   "wb": 2775.0,
+   "width": 1875.0,
+   "height": 1520.0
+  },
+  {
+   "spec": "2026款 520智豪版",
+   "len": 4865.0,
+   "wb": 2775.0,
+   "width": 1875.0,
+   "height": 1520.0
+  }
+ ],
+ "group": "gac",
+ "series": "埃安RT",
+ "tier": "T2"
+}

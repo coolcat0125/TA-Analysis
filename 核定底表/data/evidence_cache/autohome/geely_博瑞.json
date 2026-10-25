@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 3589,
+ "ah_key": "博瑞",
+ "ah_name": "博瑞",
+ "n_on": 0,
+ "n_off": 48,
+ "url": "https://car.autohome.com.cn/config/series/3589.html",
+ "dims": [
+  {
+   "spec": "2021款 1.8T 领航版",
+   "len": 4986.0,
+   "wb": 2870.0,
+   "width": 1861.0,
+   "height": 1513.0
+  },
+  {
+   "spec": "2021款 1.8T 领航版+",
+   "len": 4986.0,
+   "wb": 2870.0,
+   "width": 1861.0,
+   "height": 1513.0
+  }
+ ],
+ "group": "geely",
+ "series": "博瑞",
+ "tier": "T2"
+}

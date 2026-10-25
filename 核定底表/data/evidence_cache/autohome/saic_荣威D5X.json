@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 7394,
+ "ah_key": "荣威D5X DMH",
+ "ah_name": "荣威D5X DMH",
+ "n_on": 3,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7394.html",
+ "dims": [
+  {
+   "spec": "2024款 135豪华版",
+   "len": 4700.0,
+   "wb": 2765.0,
+   "width": 1890.0,
+   "height": 1664.0
+  },
+  {
+   "spec": "2024款 135畅行版",
+   "len": 4700.0,
+   "wb": 2765.0,
+   "width": 1890.0,
+   "height": 1664.0
+  },
+  {
+   "spec": "2024款 135旗舰版",
+   "len": 4700.0,
+   "wb": 2765.0,
+   "width": 1890.0,
+   "height": 1664.0
+  },
+  {
+   "spec": "2024款 135科技版",
+   "len": 4700.0,
+   "wb": 2765.0,
+   "width": 1890.0,
+   "height": 1664.0
+  }
+ ],
+ "group": "saic",
+ "series": "荣威D5X",
+ "tier": "T2"
+}

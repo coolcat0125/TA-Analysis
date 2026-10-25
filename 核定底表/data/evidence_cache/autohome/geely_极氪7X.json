@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7777,
+ "ah_key": "极氪7X",
+ "ah_name": "极氪7X",
+ "n_on": 3,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/7777.html",
+ "dims": [
+  {
+   "spec": "2026款 75kWh 后驱MAX版",
+   "len": 4825.0,
+   "wb": 2925.0,
+   "width": 1930.0,
+   "height": 1666.0
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2027款 基本型",
+   "len": 4825.0,
+   "wb": 2925.0,
+   "width": 1930.0,
+   "height": 1656.0
+  },
+  {
+   "spec": "2026款 103kWh 后驱MAX版",
+   "len": 4825.0,
+   "wb": 2925.0,
+   "width": 1930.0,
+   "height": 1666.0
+  },
+  {
+   "spec": "2026款 103kWh 四驱Ultra版",
+   "len": 4825.0,
+   "wb": 2925.0,
+   "width": 1930.0,
+   "height": 1656.0
+  }
+ ],
+ "group": "geely",
+ "series": "极氪7X",
+ "tier": "T2"
+}

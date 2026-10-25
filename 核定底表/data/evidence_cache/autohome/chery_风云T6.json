@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 7216,
+ "ah_key": "风云T6",
+ "ah_name": "风云T6",
+ "n_on": 0,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/7216.html",
+ "dims": [
+  {
+   "spec": "2024款 AIR版",
+   "len": 4540.0,
+   "wb": 2672.0,
+   "width": 1865.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2024款 PRO版",
+   "len": 4540.0,
+   "wb": 2672.0,
+   "width": 1865.0,
+   "height": 1670.0
+  }
+ ],
+ "group": "chery",
+ "series": "风云T6",
+ "tier": "T1"
+}

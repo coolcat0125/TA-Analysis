@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8158,
+ "ah_key": "银河A7 EM",
+ "ah_name": "银河A7 EM",
+ "n_on": 12,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8158.html",
+ "dims": [
+  {
+   "spec": "2025款 EM-i 70km 豪享版",
+   "len": 4918.0,
+   "wb": 2845.0,
+   "width": 1905.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2026款 试装车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 EM-i 70km 启航版",
+   "len": 4918.0,
+   "wb": 2845.0,
+   "width": 1905.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2026款 150km 悦享版",
+   "len": 4918.0,
+   "wb": 2845.0,
+   "width": 1905.0,
+   "height": 1495.0
+  }
+ ],
+ "group": "geely",
+ "series": "吉利A7",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7170,
+ "ah_key": "银河E8",
+ "ah_name": "银河E8",
+ "n_on": 5,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/7170.html",
+ "dims": [
+  {
+   "spec": "2025款 610km 尊享版",
+   "len": 5010.0,
+   "wb": 2925.0,
+   "width": 1920.0,
+   "height": 1465.0
+  },
+  {
+   "spec": "2025款 575km 启航智驾版",
+   "len": 5010.0,
+   "wb": 2925.0,
+   "width": 1920.0,
+   "height": 1465.0
+  },
+  {
+   "spec": "2025款 575km 探索智驾版",
+   "len": 5010.0,
+   "wb": 2925.0,
+   "width": 1920.0,
+   "height": 1465.0
+  },
+  {
+   "spec": "2025款 610km 探索+版",
+   "len": 5010.0,
+   "wb": 2925.0,
+   "width": 1920.0,
+   "height": 1465.0
+  },
+  {
+   "spec": "2025款 610km 专享版",
+   "len": 5010.0,
+   "wb": 2925.0,
+   "width": 1920.0,
+   "height": 1465.0
+  }
+ ],
+ "group": "geely",
+ "series": "吉利E8",
+ "tier": "T2"
+}

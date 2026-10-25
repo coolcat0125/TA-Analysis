@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8149,
+ "ah_key": "东风风神L8",
+ "ah_name": "东风风神L8",
+ "n_on": 12,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/8149.html",
+ "dims": [
+  {
+   "spec": "2025款 185KM 理想版",
+   "len": 4762.0,
+   "wb": 2825.0,
+   "width": 1910.0,
+   "height": 1677.0
+  },
+  {
+   "spec": "2026款 185KM 坤途版",
+   "len": 4762.0,
+   "wb": 2825.0,
+   "width": 1910.0,
+   "height": 1677.0
+  },
+  {
+   "spec": "2025款 112KM 理想版",
+   "len": 4762.0,
+   "wb": 2825.0,
+   "width": 1910.0,
+   "height": 1677.0
+  },
+  {
+   "spec": "2027款 L8+ 220KM 卓越版",
+   "len": 4762.0,
+   "wb": 2825.0,
+   "width": 1910.0,
+   "height": 1686.0
+  },
+  {
+   "spec": "2025款 112KM 梦想版",
+   "len": 4762.0,
+   "wb": 2825.0,
+   "width": 1910.0,
+   "height": 1677.0
+  }
+ ],
+ "group": "changan",
+ "series": "东风风神",
+ "tier": "T3"
+}

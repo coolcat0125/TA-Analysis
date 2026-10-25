@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6215,
+ "ah_key": "枫叶60s",
+ "ah_name": "枫叶60s",
+ "n_on": 0,
+ "n_off": 25,
+ "url": "https://car.autohome.com.cn/config/series/6215.html",
+ "dims": [
+  {
+   "spec": "2025款 出行版",
+   "len": 4730.0,
+   "wb": 2700.0,
+   "width": 1804.0,
+   "height": 1530.0
+  },
+  {
+   "spec": "2024款 幸福定制换电 车电分离 出租车专用版",
+   "len": 4730.0,
+   "wb": 2700.0,
+   "width": 1804.0,
+   "height": 1530.0
+  }
+ ],
+ "group": "geely",
+ "series": "枫叶60S",
+ "tier": "T2"
+}

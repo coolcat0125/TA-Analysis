@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7859,
+ "ah_key": "汉L",
+ "ah_name": "汉L",
+ "n_on": 6,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/7859.html",
+ "dims": [
+  {
+   "spec": "2025款 EV 四驱激光雷达旗舰型",
+   "len": 5050.0,
+   "wb": 2970.0,
+   "width": 1960.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2025款 黑神话悟空特别版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 DM-p 四驱版",
+   "len": 5050.0,
+   "wb": 2970.0,
+   "width": 1960.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2025款 DM-i 200KM激光雷达尊享型",
+   "len": 5050.0,
+   "wb": 2970.0,
+   "width": 1960.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2025款 DM-i 200KM激光雷达旗舰型",
+   "len": 5050.0,
+   "wb": 2970.0,
+   "width": 1960.0,
+   "height": 1505.0
+  }
+ ],
+ "group": "byd",
+ "series": "汉L",
+ "tier": "T2"
+}

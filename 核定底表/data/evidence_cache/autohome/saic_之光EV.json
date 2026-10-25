@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 2456,
+ "ah_key": "五菱之光",
+ "ah_name": "五菱之光",
+ "n_on": 5,
+ "n_off": 40,
+ "url": "https://car.autohome.com.cn/config/series/2456.html",
+ "dims": [
+  {
+   "spec": "2023款 1.5L 实用型 5/7座",
+   "len": 3797.0,
+   "wb": 2500.0,
+   "width": 1510.0,
+   "height": 1820.0
+  },
+  {
+   "spec": "2025款 1.5L 实用型 5/7座",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2019款 1.2L 厢式运输车实用型2座",
+   "len": 3797.0,
+   "wb": 2500.0,
+   "width": 1510.0,
+   "height": 1835.0
+  },
+  {
+   "spec": "2023款 1.5L 实用型封窗版 2座",
+   "len": 3797.0,
+   "wb": 2500.0,
+   "width": 1510.0,
+   "height": 1820.0
+  },
+  {
+   "spec": "2020款 1.2L 实用型 国VI LSI",
+   "len": 3797.0,
+   "wb": 2500.0,
+   "width": 1510.0,
+   "height": 1820.0
+  }
+ ],
+ "group": "saic",
+ "series": "之光EV",
+ "tier": "T2"
+}

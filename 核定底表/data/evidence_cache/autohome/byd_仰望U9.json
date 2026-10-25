@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 7116,
+ "ah_key": "仰望U9",
+ "ah_name": "仰望U9",
+ "n_on": 1,
+ "n_off": 3,
+ "url": "https://car.autohome.com.cn/config/series/7116.html",
+ "dims": [
+  {
+   "spec": "2024款 标准版",
+   "len": 4966.0,
+   "wb": 2900.0,
+   "width": 2029.0,
+   "height": 1311.0
+  },
+  {
+   "spec": "2025款 基本型",
+   "len": 4966.0,
+   "wb": 2900.0,
+   "width": 2029.0,
+   "height": 1311.0
+  },
+  {
+   "spec": "2026款 特别版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  }
+ ],
+ "group": "byd",
+ "series": "仰望U9",
+ "tier": "T2"
+}

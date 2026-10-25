@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6157,
+ "ah_key": "合创Z03",
+ "ah_name": "合创Z03",
+ "n_on": 0,
+ "n_off": 18,
+ "url": "https://car.autohome.com.cn/config/series/6157.html",
+ "dims": [
+  {
+   "spec": "2022款 430km 潮享版 135kW 55.5kWh",
+   "len": 4602.0,
+   "wb": 2750.0,
+   "width": 1900.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2022款 510km 潮享版 135kW 63.98kWh",
+   "len": 4602.0,
+   "wb": 2750.0,
+   "width": 1900.0,
+   "height": 1645.0
+  }
+ ],
+ "group": "gac",
+ "series": "合创Z03",
+ "tier": "T2"
+}

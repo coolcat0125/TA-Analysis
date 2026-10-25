@@ -1,0 +1,10 @@
+{
+ "status": "no_candidate",
+ "queries": [
+  "smart1",
+  "smartsmart1"
+ ],
+ "group": "geely",
+ "series": "smart1",
+ "tier": "T2"
+}

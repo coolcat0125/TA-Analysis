@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8313,
+ "ah_key": "银河星耀7",
+ "ah_name": "银河星耀7",
+ "n_on": 5,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/8313.html",
+ "dims": [
+  {
+   "spec": "2026款 230km 两驱远航版",
+   "len": 4958.0,
+   "wb": 2845.0,
+   "width": 1915.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2026款 230km 两驱领航版",
+   "len": 4958.0,
+   "wb": 2845.0,
+   "width": 1915.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2026款 230km 两驱探索+版",
+   "len": 4958.0,
+   "wb": 2845.0,
+   "width": 1915.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2026款 220km 四驱远航版",
+   "len": 4958.0,
+   "wb": 2852.0,
+   "width": 1915.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2026款 220km 四驱领航版",
+   "len": 4958.0,
+   "wb": 2852.0,
+   "width": 1915.0,
+   "height": 1505.0
+  }
+ ],
+ "group": "geely",
+ "series": "星耀7",
+ "tier": "T2"
+}

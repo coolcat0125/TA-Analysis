@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8543,
+ "ah_key": "欧拉5",
+ "ah_name": "欧拉5",
+ "n_on": 4,
+ "n_off": 3,
+ "url": "https://car.autohome.com.cn/config/series/8543.html",
+ "dims": [
+  {
+   "spec": "2026款 1.5T Hi2电混 Air版",
+   "len": 4471.0,
+   "wb": 2720.0,
+   "width": 1833.0,
+   "height": 1641.0
+  },
+  {
+   "spec": "2026款 海外版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 1.5T Max侯明昊限定版",
+   "len": 4471.0,
+   "wb": 2720.0,
+   "width": 1833.0,
+   "height": 1641.0
+  },
+  {
+   "spec": "2026款 1.5T Hi2电混 Max版",
+   "len": 4471.0,
+   "wb": 2720.0,
+   "width": 1833.0,
+   "height": 1641.0
+  },
+  {
+   "spec": "2026款 1.5T Air版",
+   "len": 4471.0,
+   "wb": 2720.0,
+   "width": 1833.0,
+   "height": 1641.0
+  }
+ ],
+ "group": "gwm",
+ "series": "欧拉5",
+ "tier": "T2"
+}

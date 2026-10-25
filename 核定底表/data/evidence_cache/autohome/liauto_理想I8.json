@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 7727,
+ "ah_key": "理想i8",
+ "ah_name": "理想i8",
+ "n_on": 2,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7727.html",
+ "dims": [
+  {
+   "spec": "2026款 后驱长续航",
+   "len": 5085.0,
+   "wb": 3050.0,
+   "width": 1960.0,
+   "height": 1740.0
+  },
+  {
+   "spec": "2025款 标准版",
+   "len": 5085.0,
+   "wb": 3050.0,
+   "width": 1960.0,
+   "height": 1740.0
+  },
+  {
+   "spec": "2026款 四驱高性能",
+   "len": 5085.0,
+   "wb": 3050.0,
+   "width": 1960.0,
+   "height": 1740.0
+  }
+ ],
+ "group": "liauto",
+ "series": "理想I8",
+ "tier": "T2"
+}

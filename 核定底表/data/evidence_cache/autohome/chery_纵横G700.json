@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8023,
+ "ah_key": "纵横G700",
+ "ah_name": "纵横G700",
+ "n_on": 16,
+ "n_off": 7,
+ "url": "https://car.autohome.com.cn/config/series/8023.html",
+ "dims": [
+  {
+   "spec": "2025款 探野版 5座",
+   "len": 5198.0,
+   "wb": 2870.0,
+   "width": 2050.0,
+   "height": 1956.0
+  },
+  {
+   "spec": "2025款 至尊航行版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 共创版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2027款 探野版 5座",
+   "len": 5198.0,
+   "wb": 2870.0,
+   "width": 2050.0,
+   "height": 1956.0
+  },
+  {
+   "spec": "2025款 纵野版 5座",
+   "len": 5198.0,
+   "wb": 2870.0,
+   "width": 2050.0,
+   "height": 1956.0
+  }
+ ],
+ "group": "chery",
+ "series": "纵横G700",
+ "tier": "T1"
+}

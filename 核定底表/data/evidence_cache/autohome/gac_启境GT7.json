@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8424,
+ "ah_key": "启境GT7",
+ "ah_name": "启境GT7",
+ "n_on": 5,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8424.html",
+ "dims": [
+  {
+   "spec": "2026款 标准版",
+   "len": 5050.0,
+   "wb": 3000.0,
+   "width": 1980.0,
+   "height": 1470.0
+  },
+  {
+   "spec": "2026款 增程 基本型",
+   "len": 5050.0,
+   "wb": 3000.0,
+   "width": 1980.0,
+   "height": 1480.0
+  },
+  {
+   "spec": "2026款 Ultra",
+   "len": 5050.0,
+   "wb": 3000.0,
+   "width": 1980.0,
+   "height": 1470.0
+  },
+  {
+   "spec": "2026款 Ultra 超长续航",
+   "len": 5050.0,
+   "wb": 3000.0,
+   "width": 1980.0,
+   "height": 1470.0
+  }
+ ],
+ "group": "gac",
+ "series": "启境GT7",
+ "tier": "T2"
+}

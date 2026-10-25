@@ -1,0 +1,21 @@
+{
+ "status": "ok",
+ "seriesid": 7279,
+ "ah_key": "奔奔E-Star",
+ "ah_name": "奔奔E-Star",
+ "n_on": 0,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7279.html",
+ "dims": [
+  {
+   "spec": "2023款 多彩款 磷酸铁锂",
+   "len": 3770.0,
+   "wb": 2410.0,
+   "width": 1650.0,
+   "height": 1570.0
+  }
+ ],
+ "group": "changan",
+ "series": "奔奔E-STAR",
+ "tier": "T2"
+}

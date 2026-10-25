@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7345,
+ "ah_key": "捷途旅行者C-DM",
+ "ah_name": "捷途旅行者C-DM",
+ "n_on": 24,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/7345.html",
+ "dims": [
+  {
+   "spec": "2027款 旅行者7 两驱Pro ",
+   "len": 4827.0,
+   "wb": 2800.0,
+   "width": 2006.0,
+   "height": 1875.0
+  },
+  {
+   "spec": "2025款 智驾版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 超境共创版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 129km 探索 5座",
+   "len": 4795.0,
+   "wb": 2800.0,
+   "width": 2006.0,
+   "height": 1875.0
+  },
+  {
+   "spec": "2027款 旅行者7 两驱Max",
+   "len": 4827.0,
+   "wb": 2800.0,
+   "width": 2006.0,
+   "height": 1875.0
+  }
+ ],
+ "group": "chery",
+ "series": "旅行者C-DM",
+ "tier": "T2"
+}

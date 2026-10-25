@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6703,
+ "ah_key": "奇瑞无界Pro",
+ "ah_name": "奇瑞无界Pro",
+ "n_on": 0,
+ "n_off": 12,
+ "url": "https://car.autohome.com.cn/config/series/6703.html",
+ "dims": [
+  {
+   "spec": "2022款 301km 魔兽版 磷酸铁锂",
+   "len": 3402.0,
+   "wb": 2160.0,
+   "width": 1680.0,
+   "height": 1550.0
+  },
+  {
+   "spec": "2022款 301km 魔兽版 三元锂",
+   "len": 3402.0,
+   "wb": 2160.0,
+   "width": 1680.0,
+   "height": 1550.0
+  }
+ ],
+ "group": "chery",
+ "series": "无界PRO",
+ "tier": "T2"
+}

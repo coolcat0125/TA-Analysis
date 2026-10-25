@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7554,
+ "ah_key": "小鹏P7+",
+ "ah_name": "小鹏P7+",
+ "n_on": 4,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/7554.html",
+ "dims": [
+  {
+   "spec": "2026款 增程 1550 Max 科技版",
+   "len": 5071.0,
+   "wb": 3000.0,
+   "width": 1937.0,
+   "height": 1512.0
+  },
+  {
+   "spec": "2025款 超长续航 Max 旗舰版",
+   "len": 5056.0,
+   "wb": 3000.0,
+   "width": 1937.0,
+   "height": 1512.0
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 增程 1550 Max 旗舰版",
+   "len": 5071.0,
+   "wb": 3000.0,
+   "width": 1937.0,
+   "height": 1512.0
+  },
+  {
+   "spec": "2026款 纯电 615 Max 旗舰版",
+   "len": 5071.0,
+   "wb": 3000.0,
+   "width": 1937.0,
+   "height": 1512.0
+  }
+ ],
+ "group": "xpeng",
+ "series": "P7+",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7928,
+ "ah_key": "传祺向往S7",
+ "ah_name": "传祺向往S7",
+ "n_on": 11,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/7928.html",
+ "dims": [
+  {
+   "spec": "2027款 255km Pro版",
+   "len": 4900.0,
+   "wb": 2880.0,
+   "width": 1950.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2025款 欧洲版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 115km Pro版",
+   "len": 4900.0,
+   "wb": 2880.0,
+   "width": 1950.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2025款 205km Pro+版",
+   "len": 4900.0,
+   "wb": 2880.0,
+   "width": 1950.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2027款 255km Pro激光雷达版",
+   "len": 4900.0,
+   "wb": 2880.0,
+   "width": 1950.0,
+   "height": 1780.0
+  }
+ ],
+ "group": "gac",
+ "series": "向往S7",
+ "tier": "T2"
+}

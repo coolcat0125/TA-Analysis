@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7741,
+ "ah_key": "宝骏云海",
+ "ah_name": "宝骏云海",
+ "n_on": 8,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/7741.html",
+ "dims": [
+  {
+   "spec": "2026款 140km 插混标准版",
+   "len": 4590.0,
+   "wb": 2750.0,
+   "width": 1880.0,
+   "height": 1608.0
+  },
+  {
+   "spec": "2025款 500km 纯电青春版",
+   "len": 4541.0,
+   "wb": 2750.0,
+   "width": 1880.0,
+   "height": 1608.0
+  },
+  {
+   "spec": "2025款 500km 纯电出行版",
+   "len": 4541.0,
+   "wb": 2750.0,
+   "width": 1880.0,
+   "height": 1608.0
+  },
+  {
+   "spec": "2026款 500km 纯电标准版",
+   "len": 4541.0,
+   "wb": 2750.0,
+   "width": 1880.0,
+   "height": 1608.0
+  },
+  {
+   "spec": "2026款 500km 纯电俊雅版",
+   "len": 4541.0,
+   "wb": 2750.0,
+   "width": 1880.0,
+   "height": 1608.0
+  }
+ ],
+ "group": "saic",
+ "series": "云海",
+ "tier": "T2"
+}

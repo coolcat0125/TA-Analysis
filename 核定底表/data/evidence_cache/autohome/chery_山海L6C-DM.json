@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 7238,
+ "ah_key": "捷途山海L6",
+ "ah_name": "捷途山海L6",
+ "n_on": 3,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7238.html",
+ "dims": [
+  {
+   "spec": "2024款 1.5TD DHT PRO",
+   "len": 4630.0,
+   "wb": 2720.0,
+   "width": 1910.0,
+   "height": 1684.0
+  },
+  {
+   "spec": "2023款 试装车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 1.5TD DHT MAX",
+   "len": 4630.0,
+   "wb": 2720.0,
+   "width": 1910.0,
+   "height": 1684.0
+  },
+  {
+   "spec": "2024款 1.5TD DHT ULTRA",
+   "len": 4630.0,
+   "wb": 2720.0,
+   "width": 1910.0,
+   "height": 1690.0
+  }
+ ],
+ "group": "chery",
+ "series": "山海L6C-DM",
+ "tier": "T1"
+}

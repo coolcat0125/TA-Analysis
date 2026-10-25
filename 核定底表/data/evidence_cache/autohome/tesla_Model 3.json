@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5346,
+ "ah_key": "Model 3",
+ "ah_name": "Model 3",
+ "n_on": 4,
+ "n_off": 26,
+ "url": "https://car.autohome.com.cn/config/series/5346.html",
+ "dims": [
+  {
+   "spec": "2027款 后轮驱动版",
+   "len": 4720.0,
+   "wb": 2875.0,
+   "width": 1848.0,
+   "height": 1442.0
+  },
+  {
+   "spec": "2026款 后轮驱动版",
+   "len": 4720.0,
+   "wb": 2875.0,
+   "width": 1848.0,
+   "height": 1442.0
+  },
+  {
+   "spec": "2026款 长续航后轮驱动版",
+   "len": 4720.0,
+   "wb": 2875.0,
+   "width": 1848.0,
+   "height": 1442.0
+  },
+  {
+   "spec": "2027款 长续航后轮驱动版",
+   "len": 4720.0,
+   "wb": 2875.0,
+   "width": 1848.0,
+   "height": 1442.0
+  },
+  {
+   "spec": "2027款 长续航全轮驱动版",
+   "len": 4720.0,
+   "wb": 2875.0,
+   "width": 1848.0,
+   "height": 1442.0
+  }
+ ],
+ "group": "tesla",
+ "series": "Model 3",
+ "tier": "T2"
+}

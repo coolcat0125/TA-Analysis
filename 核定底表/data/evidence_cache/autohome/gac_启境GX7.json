@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8677,
+ "ah_key": "启境GX7",
+ "ah_name": "启境GX7",
+ "n_on": 3,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8677.html",
+ "dims": [
+  {
+   "spec": "2027款 Ultra",
+   "len": 5099.0,
+   "wb": 3070.0,
+   "width": 2006.0,
+   "height": 1750.0
+  },
+  {
+   "spec": "2027款 Ultra 双电机 四驱",
+   "len": 5099.0,
+   "wb": 3070.0,
+   "width": 2006.0,
+   "height": 1750.0
+  },
+  {
+   "spec": "2027款 Ultra 三电机 四驱",
+   "len": 5099.0,
+   "wb": 3070.0,
+   "width": 2006.0,
+   "height": 1750.0
+  }
+ ],
+ "group": "gac",
+ "series": "启境GX7",
+ "tier": "T2"
+}

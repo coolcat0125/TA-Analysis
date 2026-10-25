@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7067,
+ "ah_key": "小鹏X9",
+ "ah_name": "小鹏X9",
+ "n_on": 8,
+ "n_off": 11,
+ "url": "https://car.autohome.com.cn/config/series/7067.html",
+ "dims": [
+  {
+   "spec": "2026款 增程 1602 Max",
+   "len": 5316.0,
+   "wb": 3160.0,
+   "width": 1988.0,
+   "height": 1785.0
+  },
+  {
+   "spec": "2025款 纯电 650长续航 Max",
+   "len": 5293.0,
+   "wb": 3160.0,
+   "width": 1988.0,
+   "height": 1785.0
+  },
+  {
+   "spec": "2025款 纯电 740超长续航 Max",
+   "len": 5293.0,
+   "wb": 3160.0,
+   "width": 1988.0,
+   "height": 1785.0
+  },
+  {
+   "spec": "2026款 增程 1602 UltraSE",
+   "len": 5316.0,
+   "wb": 3160.0,
+   "width": 1988.0,
+   "height": 1785.0
+  },
+  {
+   "spec": "2026款 增程 1602 Ultra",
+   "len": 5316.0,
+   "wb": 3160.0,
+   "width": 1988.0,
+   "height": 1785.0
+  }
+ ],
+ "group": "xpeng",
+ "series": "小鹏X9",
+ "tier": "T2"
+}

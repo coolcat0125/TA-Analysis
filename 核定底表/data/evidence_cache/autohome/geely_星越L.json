@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6004,
+ "ah_key": "星越L",
+ "ah_name": "星越L",
+ "n_on": 18,
+ "n_off": 16,
+ "url": "https://car.autohome.com.cn/config/series/6004.html",
+ "dims": [
+  {
+   "spec": "2026款 i-HEV智擎混动 凌云版",
+   "len": 4795.0,
+   "wb": 2845.0,
+   "width": 1895.0,
+   "height": 1689.0
+  },
+  {
+   "spec": "2024款 2.0TD DCT EVO两驱舒适型",
+   "len": 4770.0,
+   "wb": 2845.0,
+   "width": 1895.0,
+   "height": 1689.0
+  },
+  {
+   "spec": "2024款 2.0TD DCT EVO两驱豪华型",
+   "len": 4770.0,
+   "wb": 2845.0,
+   "width": 1895.0,
+   "height": 1689.0
+  },
+  {
+   "spec": "2026款 i-HEV智擎混动 星汉版",
+   "len": 4795.0,
+   "wb": 2845.0,
+   "width": 1895.0,
+   "height": 1689.0
+  },
+  {
+   "spec": "2024款 油混 1.5T 星云版",
+   "len": 4795.0,
+   "wb": 2845.0,
+   "width": 1895.0,
+   "height": 1689.0
+  }
+ ],
+ "group": "geely",
+ "series": "星越L",
+ "tier": "T2"
+}

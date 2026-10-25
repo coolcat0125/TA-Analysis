@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8102,
+ "ah_key": "大唐",
+ "ah_name": "大唐",
+ "n_on": 4,
+ "n_off": 4,
+ "url": "https://car.autohome.com.cn/config/series/8102.html",
+ "dims": [
+  {
+   "spec": "2026款 纯电 800KM 后驱激光雷达尊荣型",
+   "len": 5263.0,
+   "wb": 3130.0,
+   "width": 1999.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2025款 概念版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 纯电 试装版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 纯电 950KM 后驱激光雷达旗舰型",
+   "len": 5263.0,
+   "wb": 3130.0,
+   "width": 1999.0,
+   "height": 1790.0
+  },
+  {
+   "spec": "2026款 纯电 850KM 四驱激光雷达旗舰型",
+   "len": 5263.0,
+   "wb": 3130.0,
+   "width": 1999.0,
+   "height": 1790.0
+  }
+ ],
+ "group": "byd",
+ "series": "大唐",
+ "tier": "T2"
+}

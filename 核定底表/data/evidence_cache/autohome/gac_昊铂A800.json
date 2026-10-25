@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8246,
+ "ah_key": "昊铂A800",
+ "ah_name": "昊铂A800",
+ "n_on": 4,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8246.html",
+ "dims": [
+  {
+   "spec": "2026款 智能豪华版",
+   "len": 5130.0,
+   "wb": 3020.0,
+   "width": 1966.0,
+   "height": 1500.0
+  },
+  {
+   "spec": "2026款 智慧豪华版",
+   "len": 5130.0,
+   "wb": 3020.0,
+   "width": 1966.0,
+   "height": 1500.0
+  },
+  {
+   "spec": "2026款 智慧尊贵版",
+   "len": 5130.0,
+   "wb": 3020.0,
+   "width": 1966.0,
+   "height": 1492.0
+  }
+ ],
+ "group": "gac",
+ "series": "昊铂A800",
+ "tier": "T3"
+}

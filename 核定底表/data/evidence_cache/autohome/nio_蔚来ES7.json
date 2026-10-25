@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6700,
+ "ah_key": "蔚来ES7",
+ "ah_name": "蔚来ES7",
+ "n_on": 0,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/6700.html",
+ "dims": [
+  {
+   "spec": "2024款 75kWh",
+   "len": 4912.0,
+   "wb": 2960.0,
+   "width": 1987.0,
+   "height": 1720.0
+  },
+  {
+   "spec": "2024款 100kWh",
+   "len": 4912.0,
+   "wb": 2960.0,
+   "width": 1987.0,
+   "height": 1720.0
+  }
+ ],
+ "group": "nio",
+ "series": "蔚来ES7",
+ "tier": "T1"
+}

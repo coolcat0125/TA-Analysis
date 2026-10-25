@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 3780,
+ "ah_key": "宋",
+ "ah_name": "宋",
+ "n_on": 0,
+ "n_off": 48,
+ "url": "https://car.autohome.com.cn/config/series/3780.html",
+ "dims": [
+  {
+   "spec": "2021款 经典版 1.5T 手动舒适型",
+   "len": 4600.0,
+   "wb": 2660.0,
+   "width": 1830.0,
+   "height": 1700.0
+  },
+  {
+   "spec": "2021款 经典版 1.5T 手动豪华型",
+   "len": 4600.0,
+   "wb": 2660.0,
+   "width": 1830.0,
+   "height": 1700.0
+  }
+ ],
+ "group": "byd",
+ "series": "宋",
+ "tier": "T2"
+}

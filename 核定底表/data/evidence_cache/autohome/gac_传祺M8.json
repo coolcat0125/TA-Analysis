@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 4174,
+ "ah_key": "传祺M8",
+ "ah_name": "传祺M8",
+ "n_on": 4,
+ "n_off": 67,
+ "url": "https://car.autohome.com.cn/config/series/4174.html",
+ "dims": [
+  {
+   "spec": "2026款 HEV尊贵版",
+   "len": 5212.0,
+   "wb": 3070.0,
+   "width": 1893.0,
+   "height": 1823.0
+  },
+  {
+   "spec": "2025款 宗师系列 超级混动版",
+   "len": 5212.0,
+   "wb": 3070.0,
+   "width": 1893.0,
+   "height": 1823.0
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 HEV至尊版",
+   "len": 5212.0,
+   "wb": 3070.0,
+   "width": 1893.0,
+   "height": 1823.0
+  },
+  {
+   "spec": "2026款 2.0T 尊享版",
+   "len": 5212.0,
+   "wb": 3070.0,
+   "width": 1893.0,
+   "height": 1823.0
+  }
+ ],
+ "group": "gac",
+ "series": "传祺M8",
+ "tier": "T2"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6299,
+ "ah_key": "哈弗神兽",
+ "ah_name": "哈弗神兽",
+ "n_on": 0,
+ "n_off": 19,
+ "url": "https://car.autohome.com.cn/config/series/6299.html",
+ "dims": [
+  {
+   "spec": "2023款 1.5T 智领版",
+   "len": 4780.0,
+   "wb": 2800.0,
+   "width": 1890.0,
+   "height": 1675.0
+  },
+  {
+   "spec": "2023款 1.5T 智享版",
+   "len": 4780.0,
+   "wb": 2800.0,
+   "width": 1890.0,
+   "height": 1675.0
+  }
+ ],
+ "group": "gwm",
+ "series": "神兽",
+ "tier": "T2"
+}

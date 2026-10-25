@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7391,
+ "ah_key": "仰望U7",
+ "ah_name": "仰望U7",
+ "n_on": 5,
+ "n_off": 4,
+ "url": "https://car.autohome.com.cn/config/series/7391.html",
+ "dims": [
+  {
+   "spec": "2026款 EV 五座豪华版",
+   "len": 5265.0,
+   "wb": 3160.0,
+   "width": 1998.0,
+   "height": 1517.0
+  },
+  {
+   "spec": "2025款 EV 五座豪华版",
+   "len": 5265.0,
+   "wb": 3160.0,
+   "width": 1998.0,
+   "height": 1517.0
+  },
+  {
+   "spec": "2025款 PHEV 五座豪华版",
+   "len": 5360.0,
+   "wb": 3200.0,
+   "width": 2000.0,
+   "height": 1515.0
+  },
+  {
+   "spec": "2026款 EV 四座旗舰版",
+   "len": 5265.0,
+   "wb": 3160.0,
+   "width": 1998.0,
+   "height": 1517.0
+  },
+  {
+   "spec": "2026款 EV 超级四电版",
+   "len": 5265.0,
+   "wb": 3160.0,
+   "width": 1998.0,
+   "height": 1517.0
+  }
+ ],
+ "group": "byd",
+ "series": "仰望U7",
+ "tier": "T1"
+}

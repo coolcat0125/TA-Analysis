@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6649,
+ "ah_key": "ELETRE",
+ "ah_name": "ELETRE",
+ "n_on": 3,
+ "n_off": 14,
+ "url": "https://car.autohome.com.cn/config/series/6649.html",
+ "dims": [
+  {
+   "spec": "2027款 600 SE 5座",
+   "len": 5103.0,
+   "wb": 3019.0,
+   "width": 2019.0,
+   "height": 1636.0
+  },
+  {
+   "spec": "2026款 600 5座",
+   "len": 5103.0,
+   "wb": 3019.0,
+   "width": 2019.0,
+   "height": 1636.0
+  },
+  {
+   "spec": "2026款 600 SE 5座",
+   "len": 5103.0,
+   "wb": 3019.0,
+   "width": 2019.0,
+   "height": 1636.0
+  },
+  {
+   "spec": "2027款 900 GOLD 5座",
+   "len": 5103.0,
+   "wb": 3019.0,
+   "width": 2019.0,
+   "height": 1636.0
+  },
+  {
+   "spec": "2027款 900 GOLD 4座",
+   "len": 5103.0,
+   "wb": 3019.0,
+   "width": 2019.0,
+   "height": 1636.0
+  }
+ ],
+ "group": "geely",
+ "series": "ELETRE",
+ "tier": "T2"
+}

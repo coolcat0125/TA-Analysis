@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 7824,
+ "ah_key": "智界V9",
+ "ah_name": "智界V9",
+ "n_on": 4,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/7824.html",
+ "dims": [
+  {
+   "spec": "2026款 Max",
+   "len": 5359.0,
+   "wb": 3250.0,
+   "width": 2009.0,
+   "height": 1879.0
+  },
+  {
+   "spec": "2026款 Max+",
+   "len": 5359.0,
+   "wb": 3250.0,
+   "width": 2009.0,
+   "height": 1859.0
+  },
+  {
+   "spec": "2026款 Ultra",
+   "len": 5359.0,
+   "wb": 3250.0,
+   "width": 2009.0,
+   "height": 1859.0
+  }
+ ],
+ "group": "chery",
+ "series": "智界V9",
+ "tier": "T2"
+}

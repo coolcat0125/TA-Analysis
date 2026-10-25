@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8599,
+ "ah_key": "家越07",
+ "ah_name": "家越07",
+ "n_on": 4,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8599.html",
+ "dims": [
+  {
+   "spec": "2026款 220智享版",
+   "len": 4900.0,
+   "wb": 2908.0,
+   "width": 1910.0,
+   "height": 1745.0
+  },
+  {
+   "spec": "2026款 Concept",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 220激光雷达版",
+   "len": 4900.0,
+   "wb": 2908.0,
+   "width": 1910.0,
+   "height": 1753.0
+  },
+  {
+   "spec": "2026款 320激光雷达版",
+   "len": 4900.0,
+   "wb": 2908.0,
+   "width": 1910.0,
+   "height": 1753.0
+  }
+ ],
+ "group": "saic",
+ "series": "家越07",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6998,
+ "ah_key": "小鹏MONA M03",
+ "ah_name": "小鹏MONA M03",
+ "n_on": 6,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/6998.html",
+ "dims": [
+  {
+   "spec": "2026款 540 长续航 Plus",
+   "len": 4785.0,
+   "wb": 2815.0,
+   "width": 1896.0,
+   "height": 1445.0
+  },
+  {
+   "spec": "2025款 515 长续航 Plus",
+   "len": 4780.0,
+   "wb": 2815.0,
+   "width": 1896.0,
+   "height": 1445.0
+  },
+  {
+   "spec": "2025款 502 长续航 Max",
+   "len": 4780.0,
+   "wb": 2815.0,
+   "width": 1896.0,
+   "height": 1445.0
+  },
+  {
+   "spec": "2026款 640 超长续航 Plus",
+   "len": 4785.0,
+   "wb": 2815.0,
+   "width": 1896.0,
+   "height": 1445.0
+  },
+  {
+   "spec": "2026款 510 长续航 Max",
+   "len": 4785.0,
+   "wb": 2815.0,
+   "width": 1896.0,
+   "height": 1445.0
+  }
+ ],
+ "group": "xpeng",
+ "series": "小鹏M03",
+ "tier": "T1"
+}

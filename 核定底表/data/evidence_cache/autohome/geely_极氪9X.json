@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 7835,
+ "ah_key": "极氪9X",
+ "ah_name": "极氪9X",
+ "n_on": 9,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7835.html",
+ "dims": [
+  {
+   "spec": "2025款 Max版 55kWh 六座",
+   "len": 5239.0,
+   "wb": 3169.0,
+   "width": 2019.0,
+   "height": 1819.0
+  },
+  {
+   "spec": "2025款 光辉",
+   "len": 5239.0,
+   "wb": 3169.0,
+   "width": 2029.0,
+   "height": 1819.0
+  },
+  {
+   "spec": "2026款 Ultra版 55kWh 五座",
+   "len": 5239.0,
+   "wb": 3169.0,
+   "width": 2029.0,
+   "height": 1819.0
+  },
+  {
+   "spec": "2025款 Ultra版 55kWh 六座",
+   "len": 5239.0,
+   "wb": 3169.0,
+   "width": 2029.0,
+   "height": 1819.0
+  }
+ ],
+ "group": "geely",
+ "series": "极氪9X",
+ "tier": "T2"
+}

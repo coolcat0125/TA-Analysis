@@ -1,0 +1,21 @@
+{
+ "status": "ok",
+ "seriesid": 8708,
+ "ah_key": "钛9",
+ "ah_name": "钛9",
+ "n_on": 0,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8708.html",
+ "dims": [
+  {
+   "spec": "2026款 基本型",
+   "len": 5270.0,
+   "wb": 3130.0,
+   "width": 1999.0,
+   "height": 1850.0
+  }
+ ],
+ "group": "byd",
+ "series": "钛9",
+ "tier": "T2"
+}

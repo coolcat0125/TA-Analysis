@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 3685,
+ "ah_key": "长安之星9",
+ "ah_name": "长安之星9",
+ "n_on": 0,
+ "n_off": 13,
+ "url": "https://car.autohome.com.cn/config/series/3685.html",
+ "dims": [
+  {
+   "spec": "2020款 1.5L 基本型客车5座国VI DAM15KR",
+   "len": 4430.0,
+   "wb": 2800.0,
+   "width": 1655.0,
+   "height": 1935.0
+  },
+  {
+   "spec": "2020款 1.5L 基本型客车7座国VI DAM15KR",
+   "len": 4430.0,
+   "wb": 2800.0,
+   "width": 1655.0,
+   "height": 1935.0
+  }
+ ],
+ "group": "changan",
+ "series": "之星9",
+ "tier": "T2"
+}

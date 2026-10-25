@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 7331,
+ "ah_key": "传祺ES9",
+ "ah_name": "传祺ES9",
+ "n_on": 1,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/7331.html",
+ "dims": [
+  {
+   "spec": "2024款 PHEV 143km Pro+",
+   "len": 5015.0,
+   "wb": 2920.0,
+   "width": 1950.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2024款 PHEV 143km Pro",
+   "len": 5015.0,
+   "wb": 2920.0,
+   "width": 1950.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2024款 PHEV 143km Max",
+   "len": 5015.0,
+   "wb": 2920.0,
+   "width": 1950.0,
+   "height": 1780.0
+  }
+ ],
+ "group": "gac",
+ "series": "传祺ES9",
+ "tier": "T2"
+}

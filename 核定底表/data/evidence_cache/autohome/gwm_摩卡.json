@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 6011,
+ "ah_key": "魏牌 摩卡新能源",
+ "ah_name": "魏牌 摩卡新能源",
+ "n_on": 2,
+ "n_off": 7,
+ "url": "https://car.autohome.com.cn/config/series/6011.html",
+ "dims": [
+  {
+   "spec": "2026款 Hi4 Max版 四驱黑武士",
+   "len": 4881.0,
+   "wb": 2915.0,
+   "width": 1960.0,
+   "height": 1690.0
+  },
+  {
+   "spec": "2024款 Hi4 长续航版",
+   "len": 4881.0,
+   "wb": 2915.0,
+   "width": 1960.0,
+   "height": 1690.0
+  },
+  {
+   "spec": "2023款 两驱长续航版",
+   "len": 4881.0,
+   "wb": 2915.0,
+   "width": 1960.0,
+   "height": 1690.0
+  },
+  {
+   "spec": "2026款 Hi4 Max版 四驱长续航",
+   "len": 4881.0,
+   "wb": 2915.0,
+   "width": 1960.0,
+   "height": 1690.0
+  }
+ ],
+ "group": "gwm",
+ "series": "摩卡",
+ "tier": "T1"
+}

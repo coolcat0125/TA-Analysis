@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6851,
+ "ah_key": "海狮07 EV",
+ "ah_name": "海狮07 EV",
+ "n_on": 0,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/6851.html",
+ "dims": [
+  {
+   "spec": "2025款 550智航版",
+   "len": 4830.0,
+   "wb": 2930.0,
+   "width": 1925.0,
+   "height": 1620.0
+  },
+  {
+   "spec": "2025款 610智航版",
+   "len": 4830.0,
+   "wb": 2930.0,
+   "width": 1925.0,
+   "height": 1620.0
+  }
+ ],
+ "group": "byd",
+ "series": "海狮07",
+ "tier": "T2"
+}

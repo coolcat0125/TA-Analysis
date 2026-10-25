@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6138,
+ "ah_key": "魏牌 拿铁DHT",
+ "ah_name": "魏牌 拿铁DHT",
+ "n_on": 0,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/6138.html",
+ "dims": [
+  {
+   "spec": "2022款 1.5T DHT中杯",
+   "len": 4668.0,
+   "wb": 2745.0,
+   "width": 1890.0,
+   "height": 1730.0
+  },
+  {
+   "spec": "2022款 1.5T DHT大杯",
+   "len": 4668.0,
+   "wb": 2745.0,
+   "width": 1890.0,
+   "height": 1730.0
+  }
+ ],
+ "group": "gwm",
+ "series": "拿铁",
+ "tier": "T2"
+}

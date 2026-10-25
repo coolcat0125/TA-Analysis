@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7812,
+ "ah_key": "领克20",
+ "ah_name": "领克20",
+ "n_on": 5,
+ "n_off": 7,
+ "url": "https://car.autohome.com.cn/config/series/7812.html",
+ "dims": [
+  {
+   "spec": "2027款 545 长续航Pro",
+   "len": 4495.0,
+   "wb": 2755.0,
+   "width": 1845.0,
+   "height": 1573.0
+  },
+  {
+   "spec": "2026款 430km 后驱Plus",
+   "len": 4460.0,
+   "wb": 2755.0,
+   "width": 1845.0,
+   "height": 1573.0
+  },
+  {
+   "spec": "2026款 430km 后驱Pro",
+   "len": 4460.0,
+   "wb": 2755.0,
+   "width": 1845.0,
+   "height": 1573.0
+  },
+  {
+   "spec": "2027款 545 长续航Max",
+   "len": 4495.0,
+   "wb": 2755.0,
+   "width": 1845.0,
+   "height": 1573.0
+  },
+  {
+   "spec": "2027款 630 超长续航Max",
+   "len": 4495.0,
+   "wb": 2755.0,
+   "width": 1845.0,
+   "height": 1573.0
+  }
+ ],
+ "group": "geely",
+ "series": "领克20",
+ "tier": "T3"
+}

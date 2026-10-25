@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7538,
+ "ah_key": "元UP",
+ "ah_name": "元UP",
+ "n_on": 9,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/7538.html",
+ "dims": [
+  {
+   "spec": "2025款 智驾版 401KM 领先型",
+   "len": 4310.0,
+   "wb": 2620.0,
+   "width": 1830.0,
+   "height": 1675.0
+  },
+  {
+   "spec": "2026款 DM-i 欧洲版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 301KM 领先型",
+   "len": 4310.0,
+   "wb": 2620.0,
+   "width": 1830.0,
+   "height": 1675.0
+  },
+  {
+   "spec": "2025款 智驾版 401KM 超越型",
+   "len": 4310.0,
+   "wb": 2620.0,
+   "width": 1830.0,
+   "height": 1675.0
+  },
+  {
+   "spec": "2025款 301KM 领航型",
+   "len": 4310.0,
+   "wb": 2620.0,
+   "width": 1830.0,
+   "height": 1675.0
+  }
+ ],
+ "group": "byd",
+ "series": "元UP",
+ "tier": "T1"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 2429,
+ "ah_key": "逸动",
+ "ah_name": "逸动",
+ "n_on": 12,
+ "n_off": 112,
+ "url": "https://car.autohome.com.cn/config/series/2429.html",
+ "dims": [
+  {
+   "spec": "2025款 PLUS 1.5L 手动豪华版",
+   "len": 4730.0,
+   "wb": 2700.0,
+   "width": 1820.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2026款 PLUS 1.4T 畅行版",
+   "len": 4730.0,
+   "wb": 2700.0,
+   "width": 1820.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2024款 1.5T GDI自动 畅享版",
+   "len": 4770.0,
+   "wb": 2765.0,
+   "width": 1840.0,
+   "height": 1440.0
+  },
+  {
+   "spec": "2025款 PLUS 1.4T 双离合高能版",
+   "len": 4730.0,
+   "wb": 2700.0,
+   "width": 1820.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2025款 蓝鲸 1.5T 高能版",
+   "len": 4770.0,
+   "wb": 2765.0,
+   "width": 1840.0,
+   "height": 1440.0
+  }
+ ],
+ "group": "changan",
+ "series": "逸动",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5714,
+ "ah_key": "宏光MINIEV",
+ "ah_name": "宏光MINIEV",
+ "n_on": 12,
+ "n_off": 45,
+ "url": "https://car.autohome.com.cn/config/series/5714.html",
+ "dims": [
+  {
+   "spec": "2024款 第三代 120km",
+   "len": 3064.0,
+   "wb": 2010.0,
+   "width": 1493.0,
+   "height": 1614.0
+  },
+  {
+   "spec": "2025款 两门版",
+   "len": 3256.0,
+   "wb": 2190.0,
+   "width": 1510.0,
+   "height": 1578.0
+  },
+  {
+   "spec": "2025款 改装版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 第三代 170km",
+   "len": 3064.0,
+   "wb": 2010.0,
+   "width": 1493.0,
+   "height": 1629.0
+  },
+  {
+   "spec": "2024款 第三代 215km 青春版",
+   "len": 3064.0,
+   "wb": 2010.0,
+   "width": 1493.0,
+   "height": 1614.0
+  }
+ ],
+ "group": "saic",
+ "series": "宏光",
+ "tier": "T1"
+}

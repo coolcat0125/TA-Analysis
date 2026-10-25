@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6139,
+ "ah_key": "海豚",
+ "ah_name": "海豚",
+ "n_on": 7,
+ "n_off": 17,
+ "url": "https://car.autohome.com.cn/config/series/6139.html",
+ "dims": [
+  {
+   "spec": "2025款 智驾版 410km 时尚版",
+   "len": 4280.0,
+   "wb": 2700.0,
+   "width": 1770.0,
+   "height": 1570.0
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 基本型",
+   "len": 4280.0,
+   "wb": 2700.0,
+   "width": 1770.0,
+   "height": 1570.0
+  },
+  {
+   "spec": "2025款 智驾版 520km 骑士版",
+   "len": 4280.0,
+   "wb": 2700.0,
+   "width": 1770.0,
+   "height": 1570.0
+  },
+  {
+   "spec": "2025款 520km 骑士版",
+   "len": 4150.0,
+   "wb": 2700.0,
+   "width": 1770.0,
+   "height": 1570.0
+  }
+ ],
+ "group": "byd",
+ "series": "海豚",
+ "tier": "T1"
+}

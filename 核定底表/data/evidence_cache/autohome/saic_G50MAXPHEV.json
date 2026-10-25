@@ -1,0 +1,10 @@
+{
+ "status": "no_candidate",
+ "queries": [
+  "G50MAXPHEV",
+  "大通G50MAXPHEV"
+ ],
+ "group": "saic",
+ "series": "G50MAXPHEV",
+ "tier": "T2"
+}

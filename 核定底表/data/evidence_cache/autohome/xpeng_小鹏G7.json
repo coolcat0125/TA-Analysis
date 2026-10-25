@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8014,
+ "ah_key": "小鹏G7",
+ "ah_name": "小鹏G7",
+ "n_on": 4,
+ "n_off": 4,
+ "url": "https://car.autohome.com.cn/config/series/8014.html",
+ "dims": [
+  {
+   "spec": "2026款 增程 1704 Max 科技版",
+   "len": 4918.0,
+   "wb": 2890.0,
+   "width": 1925.0,
+   "height": 1655.0
+  },
+  {
+   "spec": "2025款 602 长续航 Max",
+   "len": 4892.0,
+   "wb": 2890.0,
+   "width": 1925.0,
+   "height": 1655.0
+  },
+  {
+   "spec": "2025款 702 超长续航 Max",
+   "len": 4892.0,
+   "wb": 2890.0,
+   "width": 1925.0,
+   "height": 1655.0
+  },
+  {
+   "spec": "2026款 增程 1704 Max 旗舰版",
+   "len": 4918.0,
+   "wb": 2890.0,
+   "width": 1925.0,
+   "height": 1655.0
+  },
+  {
+   "spec": "2026款 纯电 602 Max 旗舰版",
+   "len": 4892.0,
+   "wb": 2890.0,
+   "width": 1925.0,
+   "height": 1655.0
+  }
+ ],
+ "group": "xpeng",
+ "series": "小鹏G7",
+ "tier": "T2"
+}

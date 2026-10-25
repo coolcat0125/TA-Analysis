@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6671,
+ "ah_key": "护卫舰07",
+ "ah_name": "护卫舰07",
+ "n_on": 0,
+ "n_off": 12,
+ "url": "https://car.autohome.com.cn/config/series/6671.html",
+ "dims": [
+  {
+   "spec": "2024款 荣耀版 DM-i 100KM 精英型",
+   "len": 4820.0,
+   "wb": 2820.0,
+   "width": 1920.0,
+   "height": 1750.0
+  },
+  {
+   "spec": "2024款 荣耀版 DM-i 100KM 豪华型",
+   "len": 4820.0,
+   "wb": 2820.0,
+   "width": 1920.0,
+   "height": 1750.0
+  }
+ ],
+ "group": "byd",
+ "series": "护卫舰07",
+ "tier": "T2"
+}

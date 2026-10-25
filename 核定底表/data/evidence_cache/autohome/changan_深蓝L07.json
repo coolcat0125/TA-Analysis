@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7738,
+ "ah_key": "深蓝L07",
+ "ah_name": "深蓝L07",
+ "n_on": 6,
+ "n_off": 17,
+ "url": "https://car.autohome.com.cn/config/series/7738.html",
+ "dims": [
+  {
+   "spec": "2026款 550Max华为乾崑ADS SE版",
+   "len": 4875.0,
+   "wb": 2900.0,
+   "width": 1890.0,
+   "height": 1480.0
+  },
+  {
+   "spec": "2026款 670智臻AI激光版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 240增程AI激光版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 550Ultra华为乾崑ADS SE版",
+   "len": 4875.0,
+   "wb": 2900.0,
+   "width": 1890.0,
+   "height": 1480.0
+  },
+  {
+   "spec": "2026款 660Max华为乾崑ADS SE版",
+   "len": 4875.0,
+   "wb": 2900.0,
+   "width": 1890.0,
+   "height": 1480.0
+  }
+ ],
+ "group": "changan",
+ "series": "深蓝L07",
+ "tier": "T1"
+}

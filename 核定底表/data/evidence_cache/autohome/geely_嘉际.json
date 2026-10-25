@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 4396,
+ "ah_key": "嘉际",
+ "ah_name": "嘉际",
+ "n_on": 0,
+ "n_off": 26,
+ "url": "https://car.autohome.com.cn/config/series/4396.html",
+ "dims": [
+  {
+   "spec": "2025款 1.5TD DCT龙腾版",
+   "len": 4826.0,
+   "wb": 2805.0,
+   "width": 1909.0,
+   "height": 1695.0
+  },
+  {
+   "spec": "2025款 1.5TD DCT鹏程版",
+   "len": 4826.0,
+   "wb": 2805.0,
+   "width": 1909.0,
+   "height": 1695.0
+  }
+ ],
+ "group": "geely",
+ "series": "嘉际",
+ "tier": "T2"
+}

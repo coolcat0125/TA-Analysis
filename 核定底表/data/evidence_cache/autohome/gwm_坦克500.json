@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6284,
+ "ah_key": "坦克500",
+ "ah_name": "坦克500",
+ "n_on": 5,
+ "n_off": 28,
+ "url": "https://car.autohome.com.cn/config/series/6284.html",
+ "dims": [
+  {
+   "spec": "2026款 3.0T 5座",
+   "len": 5070.0,
+   "wb": 2850.0,
+   "width": 1934.0,
+   "height": 1905.0
+  },
+  {
+   "spec": "2023款 3.0T 运动版 登峰型 5座",
+   "len": 5070.0,
+   "wb": 2850.0,
+   "width": 1934.0,
+   "height": 1905.0
+  },
+  {
+   "spec": "2023款 3.0T 商务版 登峰型 5座",
+   "len": 4878.0,
+   "wb": 2850.0,
+   "width": 1934.0,
+   "height": 1905.0
+  },
+  {
+   "spec": "2026款 3.0T 公务型 5座",
+   "len": 5070.0,
+   "wb": 2850.0,
+   "width": 1934.0,
+   "height": 1905.0
+  },
+  {
+   "spec": "2027款 3.0T 5座",
+   "len": 5070.0,
+   "wb": 2850.0,
+   "width": 1934.0,
+   "height": 1905.0
+  }
+ ],
+ "group": "gwm",
+ "series": "坦克500",
+ "tier": "T1"
+}

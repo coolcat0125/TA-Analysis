@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 5178,
+ "ah_key": "宋Pro",
+ "ah_name": "宋Pro",
+ "n_on": 0,
+ "n_off": 12,
+ "url": "https://car.autohome.com.cn/config/series/5178.html",
+ "dims": [
+  {
+   "spec": "2021款 1.5T 手动精英型",
+   "len": 4650.0,
+   "wb": 2712.0,
+   "width": 1860.0,
+   "height": 1700.0
+  },
+  {
+   "spec": "2021款 1.5T 自动精英型",
+   "len": 4650.0,
+   "wb": 2712.0,
+   "width": 1860.0,
+   "height": 1700.0
+  }
+ ],
+ "group": "byd",
+ "series": "宋PRO",
+ "tier": "T1"
+}

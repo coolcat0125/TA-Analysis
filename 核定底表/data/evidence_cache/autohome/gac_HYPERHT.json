@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7395,
+ "ah_key": "昊铂HT",
+ "ah_name": "昊铂HT",
+ "n_on": 4,
+ "n_off": 15,
+ "url": "https://car.autohome.com.cn/config/series/7395.html",
+ "dims": [
+  {
+   "spec": "2025款 670 Pro版",
+   "len": 4935.0,
+   "wb": 2935.0,
+   "width": 1920.0,
+   "height": 1700.0
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 550后驱充换版",
+   "len": 4935.0,
+   "wb": 2935.0,
+   "width": 1920.0,
+   "height": 1700.0
+  },
+  {
+   "spec": "2025款 670 Max版",
+   "len": 4935.0,
+   "wb": 2935.0,
+   "width": 1920.0,
+   "height": 1700.0
+  },
+  {
+   "spec": "2025款 825 Pro版",
+   "len": 4935.0,
+   "wb": 2935.0,
+   "width": 1920.0,
+   "height": 1700.0
+  }
+ ],
+ "group": "gac",
+ "series": "HYPERHT",
+ "tier": "T2"
+}

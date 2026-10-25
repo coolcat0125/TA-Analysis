@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6641,
+ "ah_key": "荣威iMAX8新能源",
+ "ah_name": "荣威iMAX8新能源",
+ "n_on": 8,
+ "n_off": 7,
+ "url": "https://car.autohome.com.cn/config/series/6641.html",
+ "dims": [
+  {
+   "spec": "2025款 1.5T DMH 陆尊舒享版",
+   "len": 5016.0,
+   "wb": 3000.0,
+   "width": 1909.0,
+   "height": 1802.0
+  },
+  {
+   "spec": "2025款 氢动力版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 EV 基本型",
+   "len": 5016.0,
+   "wb": 3000.0,
+   "width": 1909.0,
+   "height": 1796.0
+  },
+  {
+   "spec": "2026款 1.5T DMH 陆尊舒享版",
+   "len": 5016.0,
+   "wb": 3000.0,
+   "width": 1909.0,
+   "height": 1802.0
+  },
+  {
+   "spec": "2025款 1.5T DMH 陆尊至享版",
+   "len": 5016.0,
+   "wb": 3000.0,
+   "width": 1909.0,
+   "height": 1802.0
+  }
+ ],
+ "group": "saic",
+ "series": "IMAX8DMH",
+ "tier": "T1"
+}

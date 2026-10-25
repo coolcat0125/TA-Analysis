@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7174,
+ "ah_key": "星纪元 ET",
+ "ah_name": "星纪元 ET",
+ "n_on": 17,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/7174.html",
+ "dims": [
+  {
+   "spec": "2024款 增程 200 Plus",
+   "len": 4955.0,
+   "wb": 3000.0,
+   "width": 1975.0,
+   "height": 1698.0
+  },
+  {
+   "spec": "2025款 ExlantiX 海外版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 增程 265 Pro两驱高速辅助驾驶",
+   "len": 4955.0,
+   "wb": 3000.0,
+   "width": 1975.0,
+   "height": 1698.0
+  },
+  {
+   "spec": "2024款 增程 200 Pro",
+   "len": 4955.0,
+   "wb": 3000.0,
+   "width": 1975.0,
+   "height": 1698.0
+  }
+ ],
+ "group": "chery",
+ "series": "STERRAET",
+ "tier": "T2"
+}

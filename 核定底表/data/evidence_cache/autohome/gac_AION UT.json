@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7918,
+ "ah_key": "AION UT",
+ "ah_name": "AION UT",
+ "n_on": 8,
+ "n_off": 7,
+ "url": "https://car.autohome.com.cn/config/series/7918.html",
+ "dims": [
+  {
+   "spec": "2025款 330星耀版",
+   "len": 4270.0,
+   "wb": 2750.0,
+   "width": 1850.0,
+   "height": 1575.0
+  },
+  {
+   "spec": "2025款 泰国版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 改装版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 330星辉版",
+   "len": 4270.0,
+   "wb": 2750.0,
+   "width": 1850.0,
+   "height": 1575.0
+  },
+  {
+   "spec": "2026款 320 星辉版",
+   "len": 4270.0,
+   "wb": 2750.0,
+   "width": 1850.0,
+   "height": 1575.0
+  }
+ ],
+ "group": "gac",
+ "series": "AION UT",
+ "tier": "T1"
+}

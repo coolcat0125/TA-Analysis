@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 6719,
+ "ah_key": "五菱Air ev晴空",
+ "ah_name": "五菱Air ev晴空",
+ "n_on": 4,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/6719.html",
+ "dims": [
+  {
+   "spec": "2023款 两座-标准版",
+   "len": 2599.0,
+   "wb": 1635.0,
+   "width": 1505.0,
+   "height": 1631.0
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2023款 两座-进阶版",
+   "len": 2599.0,
+   "wb": 1635.0,
+   "width": 1505.0,
+   "height": 1631.0
+  },
+  {
+   "spec": "2023款 四座-标准版",
+   "len": 2974.0,
+   "wb": 2010.0,
+   "width": 1505.0,
+   "height": 1631.0
+  }
+ ],
+ "group": "saic",
+ "series": "五菱AIREV",
+ "tier": "T2"
+}

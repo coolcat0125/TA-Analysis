@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6353,
+ "ah_key": "深蓝SL03",
+ "ah_name": "深蓝SL03",
+ "n_on": 4,
+ "n_off": 26,
+ "url": "https://car.autohome.com.cn/config/series/6353.html",
+ "dims": [
+  {
+   "spec": "2025款 改款 纯电精英型",
+   "len": 4820.0,
+   "wb": 2900.0,
+   "width": 1890.0,
+   "height": 1480.0
+  },
+  {
+   "spec": "2025款 增程标准型",
+   "len": 4820.0,
+   "wb": 2900.0,
+   "width": 1890.0,
+   "height": 1480.0
+  },
+  {
+   "spec": "2025款 纯电经典版",
+   "len": 4820.0,
+   "wb": 2900.0,
+   "width": 1890.0,
+   "height": 1480.0
+  },
+  {
+   "spec": "2025款 纯电运动型",
+   "len": 4820.0,
+   "wb": 2900.0,
+   "width": 1890.0,
+   "height": 1480.0
+  },
+  {
+   "spec": "2025款 改款 增程精英型",
+   "len": 4820.0,
+   "wb": 2900.0,
+   "width": 1890.0,
+   "height": 1480.0
+  }
+ ],
+ "group": "changan",
+ "series": "深蓝SL03",
+ "tier": "T1"
+}

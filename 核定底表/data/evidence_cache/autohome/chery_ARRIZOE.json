@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 5403,
+ "ah_key": "艾瑞泽e",
+ "ah_name": "艾瑞泽e",
+ "n_on": 2,
+ "n_off": 12,
+ "url": "https://car.autohome.com.cn/config/series/5403.html",
+ "dims": [
+  {
+   "spec": "2024款 405km 出行版",
+   "len": 4602.0,
+   "wb": 2670.0,
+   "width": 1825.0,
+   "height": 1540.0
+  },
+  {
+   "spec": "2023款 畅行版",
+   "len": 4572.0,
+   "wb": 2670.0,
+   "width": 1825.0,
+   "height": 1496.0
+  },
+  {
+   "spec": "2023款 出行版",
+   "len": 4572.0,
+   "wb": 2670.0,
+   "width": 1825.0,
+   "height": 1520.0
+  },
+  {
+   "spec": "2024款 455km 出行版",
+   "len": 4602.0,
+   "wb": 2670.0,
+   "width": 1825.0,
+   "height": 1540.0
+  }
+ ],
+ "group": "chery",
+ "series": "ARRIZOE",
+ "tier": "T2"
+}

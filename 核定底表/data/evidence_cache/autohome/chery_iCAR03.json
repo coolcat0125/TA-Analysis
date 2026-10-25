@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 7069,
+ "ah_key": "iCAR 03",
+ "ah_name": "iCAR 03",
+ "n_on": 0,
+ "n_off": 20,
+ "url": "https://car.autohome.com.cn/config/series/7069.html",
+ "dims": [
+  {
+   "spec": "2024款 401km 两驱标准版",
+   "len": 4406.0,
+   "wb": 2715.0,
+   "width": 1910.0,
+   "height": 1715.0
+  },
+  {
+   "spec": "2024款 401km 两驱标准进阶版",
+   "len": 4406.0,
+   "wb": 2715.0,
+   "width": 1910.0,
+   "height": 1715.0
+  }
+ ],
+ "group": "chery",
+ "series": "iCAR03",
+ "tier": "T1"
+}

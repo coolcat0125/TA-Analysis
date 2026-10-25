@@ -1,0 +1,21 @@
+{
+ "status": "ok",
+ "seriesid": 8727,
+ "ah_key": "理想i9",
+ "ah_name": "理想i9",
+ "n_on": 1,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8727.html",
+ "dims": [
+  {
+   "spec": "2026款 Home",
+   "len": 5225.0,
+   "wb": 3168.0,
+   "width": 1970.0,
+   "height": 1752.0
+  }
+ ],
+ "group": "liauto",
+ "series": "理想I9",
+ "tier": "T3"
+}

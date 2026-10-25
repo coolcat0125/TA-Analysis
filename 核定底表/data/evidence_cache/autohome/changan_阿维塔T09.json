@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 8794,
+ "ah_key": "阿维塔T09",
+ "ah_name": "阿维塔T09",
+ "n_on": 0,
+ "n_off": 3,
+ "url": "https://car.autohome.com.cn/config/series/8794.html",
+ "dims": [
+  {
+   "spec": "2027款 Concept",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2027款 三电机基本型",
+   "len": 5285.0,
+   "wb": 3150.0,
+   "width": 2025.0,
+   "height": 1810.0
+  }
+ ],
+ "group": "changan",
+ "series": "阿维塔T09",
+ "tier": "T3"
+}

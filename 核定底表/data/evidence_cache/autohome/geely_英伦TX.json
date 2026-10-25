@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 841,
+ "ah_key": "英伦TX4",
+ "ah_name": "英伦TX4",
+ "n_on": 0,
+ "n_off": 7,
+ "url": "https://car.autohome.com.cn/config/series/841.html",
+ "dims": [
+  {
+   "spec": "2012款 2.4L 定制商务型",
+   "len": 4566.0,
+   "wb": 2883.0,
+   "width": 1783.0,
+   "height": 1823.0
+  },
+  {
+   "spec": "2009款 2.4L 标配",
+   "len": 4566.0,
+   "wb": 2883.0,
+   "width": 1783.0,
+   "height": 1823.0
+  }
+ ],
+ "group": "geely",
+ "series": "英伦TX",
+ "tier": "T2"
+}

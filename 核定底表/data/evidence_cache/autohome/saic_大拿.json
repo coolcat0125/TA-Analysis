@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7276,
+ "ah_key": "大拿V1",
+ "ah_name": "大拿V1",
+ "n_on": 11,
+ "n_off": 28,
+ "url": "https://car.autohome.com.cn/config/series/7276.html",
+ "dims": [
+  {
+   "spec": "2025款 低顶 货运版 42kWh",
+   "len": 4800.0,
+   "wb": 3100.0,
+   "width": 1870.0,
+   "height": 1960.0
+  },
+  {
+   "spec": "2025款 V1 短轴低顶 多功能版（51kWh）",
+   "len": 4800.0,
+   "wb": 3100.0,
+   "width": 1870.0,
+   "height": 1960.0
+  },
+  {
+   "spec": "2025款 餐车定制版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 V1 低顶 货运版（42kWh）",
+   "len": 4800.0,
+   "wb": 3100.0,
+   "width": 1870.0,
+   "height": 1960.0
+  },
+  {
+   "spec": "2026款 V1 低顶 货运版 宁德天行50kWh",
+   "len": 4800.0,
+   "wb": 3100.0,
+   "width": 1870.0,
+   "height": 1960.0
+  }
+ ],
+ "group": "saic",
+ "series": "大拿",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7806,
+ "ah_key": "星愿",
+ "ah_name": "星愿",
+ "n_on": 6,
+ "n_off": 11,
+ "url": "https://car.autohome.com.cn/config/series/7806.html",
+ "dims": [
+  {
+   "spec": "2026款 410km 向往版",
+   "len": 4135.0,
+   "wb": 2650.0,
+   "width": 1805.0,
+   "height": 1570.0
+  },
+  {
+   "spec": "2026款 310km 青春版",
+   "len": 4135.0,
+   "wb": 2650.0,
+   "width": 1805.0,
+   "height": 1570.0
+  },
+  {
+   "spec": "2026款 410km 自在版",
+   "len": 4135.0,
+   "wb": 2650.0,
+   "width": 1805.0,
+   "height": 1570.0
+  },
+  {
+   "spec": "2026款 410km 乘风版",
+   "len": 4135.0,
+   "wb": 2650.0,
+   "width": 1805.0,
+   "height": 1570.0
+  },
+  {
+   "spec": "2026款 480km 探索版",
+   "len": 4135.0,
+   "wb": 2650.0,
+   "width": 1805.0,
+   "height": 1570.0
+  }
+ ],
+ "group": "geely",
+ "series": "星愿",
+ "tier": "T1"
+}

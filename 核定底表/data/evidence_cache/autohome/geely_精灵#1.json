@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6369,
+ "ah_key": "smart精灵#1",
+ "ah_name": "smart精灵#1",
+ "n_on": 6,
+ "n_off": 23,
+ "url": "https://car.autohome.com.cn/config/series/6369.html",
+ "dims": [
+  {
+   "spec": "2026款 灵动升级版",
+   "len": 4270.0,
+   "wb": 2750.0,
+   "width": 1822.0,
+   "height": 1636.0
+  },
+  {
+   "spec": "2026款 米奇限定艺术车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 马年开运版试装车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 灵动长续航版",
+   "len": 4270.0,
+   "wb": 2750.0,
+   "width": 1822.0,
+   "height": 1636.0
+  },
+  {
+   "spec": "2027款 535 Max",
+   "len": 4270.0,
+   "wb": 2750.0,
+   "width": 1822.0,
+   "height": 1636.0
+  }
+ ],
+ "group": "geely",
+ "series": "精灵#1",
+ "tier": "T2"
+}

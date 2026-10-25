@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 7838,
+ "ah_key": "腾势Z9",
+ "ah_name": "腾势Z9",
+ "n_on": 5,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7838.html",
+ "dims": [
+  {
+   "spec": "2024款 1100km 四驱Pro版",
+   "len": 5235.0,
+   "wb": 3125.0,
+   "width": 1990.0,
+   "height": 1518.0
+  },
+  {
+   "spec": "2026款 单电机版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 1100km 四驱Max版",
+   "len": 5235.0,
+   "wb": 3125.0,
+   "width": 1990.0,
+   "height": 1500.0
+  },
+  {
+   "spec": "2024款 1100km 四驱Ultra版",
+   "len": 5235.0,
+   "wb": 3125.0,
+   "width": 1990.0,
+   "height": 1500.0
+  }
+ ],
+ "group": "byd",
+ "series": "腾势Z9",
+ "tier": "T1"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6013,
+ "ah_key": "智己LS7",
+ "ah_name": "智己LS7",
+ "n_on": 3,
+ "n_off": 12,
+ "url": "https://car.autohome.com.cn/config/series/6013.html",
+ "dims": [
+  {
+   "spec": "2024款 90kWh Max Elite后驱版",
+   "len": 5049.0,
+   "wb": 3060.0,
+   "width": 2002.0,
+   "height": 1763.0
+  },
+  {
+   "spec": "2025款 后驱版低配",
+   "len": 5049.0,
+   "wb": 3060.0,
+   "width": 2002.0,
+   "height": 1731.0
+  },
+  {
+   "spec": "2025款 四驱版低配",
+   "len": 5049.0,
+   "wb": 3060.0,
+   "width": 2002.0,
+   "height": 1731.0
+  },
+  {
+   "spec": "2024款 100kWh Max Lux后驱版",
+   "len": 5049.0,
+   "wb": 3060.0,
+   "width": 2002.0,
+   "height": 1763.0
+  },
+  {
+   "spec": "2025款 焕新版 Ultra",
+   "len": 5049.0,
+   "wb": 3060.0,
+   "width": 2002.0,
+   "height": 1784.0
+  }
+ ],
+ "group": "saic",
+ "series": "智己LS7",
+ "tier": "T2"
+}

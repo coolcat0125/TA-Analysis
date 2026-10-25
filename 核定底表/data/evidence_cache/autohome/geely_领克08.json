@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7243,
+ "ah_key": "领克08 EM-P",
+ "ah_name": "领克08 EM-P",
+ "n_on": 5,
+ "n_off": 14,
+ "url": "https://car.autohome.com.cn/config/series/7243.html",
+ "dims": [
+  {
+   "spec": "2026款 160长续航Max",
+   "len": 4825.0,
+   "wb": 2848.0,
+   "width": 1915.0,
+   "height": 1660.0
+  },
+  {
+   "spec": "2026款 230超长续航Ultra H7",
+   "len": 4825.0,
+   "wb": 2848.0,
+   "width": 1915.0,
+   "height": 1660.0
+  },
+  {
+   "spec": "2025款 120km 长续航Plus",
+   "len": 4820.0,
+   "wb": 2848.0,
+   "width": 1915.0,
+   "height": 1685.0
+  },
+  {
+   "spec": "2026款 230超长续航Max",
+   "len": 4825.0,
+   "wb": 2848.0,
+   "width": 1915.0,
+   "height": 1660.0
+  },
+  {
+   "spec": "2026款 160长续航Ultra",
+   "len": 4825.0,
+   "wb": 2848.0,
+   "width": 1915.0,
+   "height": 1660.0
+  }
+ ],
+ "group": "geely",
+ "series": "领克08",
+ "tier": "T2"
+}

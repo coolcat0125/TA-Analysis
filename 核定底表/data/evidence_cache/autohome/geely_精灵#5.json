@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7684,
+ "ah_key": "smart精灵#5",
+ "ah_name": "smart精灵#5",
+ "n_on": 11,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/7684.html",
+ "dims": [
+  {
+   "spec": "2026款 120Pro",
+   "len": 4705.0,
+   "wb": 2900.0,
+   "width": 1920.0,
+   "height": 1710.0
+  },
+  {
+   "spec": "2024款 概念车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 马年开运版试装车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 120Max",
+   "len": 4705.0,
+   "wb": 2900.0,
+   "width": 1920.0,
+   "height": 1710.0
+  },
+  {
+   "spec": "2026款 252Max",
+   "len": 4705.0,
+   "wb": 2900.0,
+   "width": 1920.0,
+   "height": 1710.0
+  }
+ ],
+ "group": "geely",
+ "series": "精灵#5",
+ "tier": "T1"
+}

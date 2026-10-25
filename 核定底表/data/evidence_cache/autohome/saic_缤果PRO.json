@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8585,
+ "ah_key": "缤果Pro",
+ "ah_name": "缤果Pro",
+ "n_on": 4,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8585.html",
+ "dims": [
+  {
+   "spec": "2026款 330km 尊享款",
+   "len": 4050.0,
+   "wb": 2560.0,
+   "width": 1758.0,
+   "height": 1580.0
+  },
+  {
+   "spec": "2026款 330km 旗舰款",
+   "len": 4050.0,
+   "wb": 2560.0,
+   "width": 1758.0,
+   "height": 1580.0
+  },
+  {
+   "spec": "2026款 403km 尊享款",
+   "len": 4050.0,
+   "wb": 2560.0,
+   "width": 1758.0,
+   "height": 1580.0
+  }
+ ],
+ "group": "saic",
+ "series": "缤果PRO",
+ "tier": "T3"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7150,
+ "ah_key": "哈弗枭龙MAX",
+ "ah_name": "哈弗枭龙MAX",
+ "n_on": 5,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/7150.html",
+ "dims": [
+  {
+   "spec": "2025款 Hi4 110 Air",
+   "len": 4780.0,
+   "wb": 2810.0,
+   "width": 1895.0,
+   "height": 1725.0
+  },
+  {
+   "spec": "2023款 1.5L Hi4 105 四驱精英版",
+   "len": 4758.0,
+   "wb": 2800.0,
+   "width": 1895.0,
+   "height": 1725.0
+  },
+  {
+   "spec": "2023款 1.5L Hi4 105 四驱领航版",
+   "len": 4758.0,
+   "wb": 2800.0,
+   "width": 1895.0,
+   "height": 1725.0
+  },
+  {
+   "spec": "2025款 Hi4 110 Pro",
+   "len": 4780.0,
+   "wb": 2810.0,
+   "width": 1895.0,
+   "height": 1725.0
+  },
+  {
+   "spec": "2025款 Hi4 110 Plus 智驾版",
+   "len": 4780.0,
+   "wb": 2810.0,
+   "width": 1895.0,
+   "height": 1725.0
+  }
+ ],
+ "group": "gwm",
+ "series": "枭龙",
+ "tier": "T2"
+}

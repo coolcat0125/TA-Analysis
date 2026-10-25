@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7740,
+ "ah_key": "深蓝S05",
+ "ah_name": "深蓝S05",
+ "n_on": 6,
+ "n_off": 15,
+ "url": "https://car.autohome.com.cn/config/series/7740.html",
+ "dims": [
+  {
+   "spec": "2027款 520智行版",
+   "len": 4620.0,
+   "wb": 2880.0,
+   "width": 1900.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2027款 520畅享版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 520Lite纯电版",
+   "len": 4620.0,
+   "wb": 2880.0,
+   "width": 1900.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2027款 520智臻版",
+   "len": 4620.0,
+   "wb": 2880.0,
+   "width": 1900.0,
+   "height": 1600.0
+  },
+  {
+   "spec": "2027款 620智臻版",
+   "len": 4620.0,
+   "wb": 2880.0,
+   "width": 1900.0,
+   "height": 1600.0
+  }
+ ],
+ "group": "changan",
+ "series": "深蓝S05",
+ "tier": "T2"
+}

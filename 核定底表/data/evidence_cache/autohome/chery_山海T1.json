@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7506,
+ "ah_key": "捷途山海T1",
+ "ah_name": "捷途山海T1",
+ "n_on": 14,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/7506.html",
+ "dims": [
+  {
+   "spec": "2025款 100km 进阶",
+   "len": 4706.0,
+   "wb": 2810.0,
+   "width": 1967.0,
+   "height": 1845.0
+  },
+  {
+   "spec": "2023款 T-L 概念车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 超境共创版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 150km 探索",
+   "len": 4706.0,
+   "wb": 2810.0,
+   "width": 1967.0,
+   "height": 1845.0
+  },
+  {
+   "spec": "2024款 150km 向山",
+   "len": 4706.0,
+   "wb": 2810.0,
+   "width": 1967.0,
+   "height": 1845.0
+  }
+ ],
+ "group": "chery",
+ "series": "山海T1",
+ "tier": "T2"
+}

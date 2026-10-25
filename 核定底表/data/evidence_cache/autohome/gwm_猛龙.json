@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8545,
+ "ah_key": "长城猛龙 PLUS",
+ "ah_name": "长城猛龙 PLUS",
+ "n_on": 9,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8545.html",
+ "dims": [
+  {
+   "spec": "2026款 Hi4 140 Pro",
+   "len": 4912.0,
+   "wb": 2850.0,
+   "width": 1950.0,
+   "height": 1905.0
+  },
+  {
+   "spec": "2026款 Hi4 195 Max",
+   "len": 4912.0,
+   "wb": 2850.0,
+   "width": 1950.0,
+   "height": 1905.0
+  },
+  {
+   "spec": "2026款  Hi4 192 Max 七座版",
+   "len": 4912.0,
+   "wb": 2850.0,
+   "width": 1950.0,
+   "height": 1905.0
+  }
+ ],
+ "group": "gwm",
+ "series": "猛龙",
+ "tier": "T1"
+}

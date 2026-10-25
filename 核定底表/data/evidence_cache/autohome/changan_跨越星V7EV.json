@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6868,
+ "ah_key": "跨越星V7 EV",
+ "ah_name": "跨越星V7 EV",
+ "n_on": 75,
+ "n_off": 29,
+ "url": "https://car.autohome.com.cn/config/series/6868.html",
+ "dims": [
+  {
+   "spec": "2026款 270km 宁德三代2C 智享型厢式运输车 2座 41.86kWh",
+   "len": 4800.0,
+   "wb": 3135.0,
+   "width": 1680.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2024款 239km 客运版舒适型 6座",
+   "len": 4800.0,
+   "wb": 3135.0,
+   "width": 1680.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2024款 251km 掀背门舒适型 6座",
+   "len": 4800.0,
+   "wb": 3135.0,
+   "width": 1680.0,
+   "height": 2005.0
+  },
+  {
+   "spec": "2026款 270km 宁德三代2C 舒适型厢式运输车 2座 41.86kWh",
+   "len": 4800.0,
+   "wb": 3135.0,
+   "width": 1680.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2026款 270km 宁德三代2C 豪华型厢式运输车 2座 41.86kWh",
+   "len": 4800.0,
+   "wb": 3135.0,
+   "width": 1680.0,
+   "height": 1990.0
+  }
+ ],
+ "group": "changan",
+ "series": "跨越星V7EV",
+ "tier": "T2"
+}

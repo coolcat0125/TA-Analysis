@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6900,
+ "ah_key": "哈弗大狗 PLUS 新能源",
+ "ah_name": "哈弗大狗 PLUS 新能源",
+ "n_on": 3,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/6900.html",
+ "dims": [
+  {
+   "spec": "2026款 Hi4 200km 长续航潮电版",
+   "len": 4705.0,
+   "wb": 2810.0,
+   "width": 1908.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2027款 基本型",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2027款 Hi4 200km 基本型",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 Hi4 105km 潮电版",
+   "len": 4705.0,
+   "wb": 2810.0,
+   "width": 1908.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2026款 Hi4 150km 潮电版",
+   "len": 4705.0,
+   "wb": 2810.0,
+   "width": 1908.0,
+   "height": 1780.0
+  }
+ ],
+ "group": "gwm",
+ "series": "大狗PLUS",
+ "tier": "T2"
+}

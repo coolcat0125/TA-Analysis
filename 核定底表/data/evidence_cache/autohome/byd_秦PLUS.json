@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5964,
+ "ah_key": "秦PLUS",
+ "ah_name": "秦PLUS",
+ "n_on": 18,
+ "n_off": 41,
+ "url": "https://car.autohome.com.cn/config/series/5964.html",
+ "dims": [
+  {
+   "spec": "2025款 DM-i 智驾版 55KM领先型",
+   "len": 4780.0,
+   "wb": 2718.0,
+   "width": 1837.0,
+   "height": 1515.0
+  },
+  {
+   "spec": "2023款 EV 500KM 出行版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 DM-i 55KM领航荣耀版",
+   "len": 4765.0,
+   "wb": 2718.0,
+   "width": 1837.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2025款 DM-i 智驾版 128KM进取型",
+   "len": 4780.0,
+   "wb": 2718.0,
+   "width": 1837.0,
+   "height": 1515.0
+  },
+  {
+   "spec": "2026款 DM-i 128KM进取型",
+   "len": 4780.0,
+   "wb": 2718.0,
+   "width": 1837.0,
+   "height": 1515.0
+  }
+ ],
+ "group": "byd",
+ "series": "秦PLUS",
+ "tier": "T1"
+}

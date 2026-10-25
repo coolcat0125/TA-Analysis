@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8233,
+ "ah_key": "跨越星光 EV",
+ "ah_name": "跨越星光 EV",
+ "n_on": 54,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/8233.html",
+ "dims": [
+  {
+   "spec": "2025款 3人厢车 300km 舒适版",
+   "len": 5095.0,
+   "wb": 3300.0,
+   "width": 1870.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2025款 300KM 快充舒适版 厢式车",
+   "len": 5095.0,
+   "wb": 3300.0,
+   "width": 1870.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2025款 300KM 快充舒适版 客运",
+   "len": 5095.0,
+   "wb": 3300.0,
+   "width": 1870.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2025款 300km 舒适版 7座 41.86kWh",
+   "len": 5095.0,
+   "wb": 3300.0,
+   "width": 1870.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2025款 3人厢车 300km 豪华版",
+   "len": 5095.0,
+   "wb": 3300.0,
+   "width": 1870.0,
+   "height": 1990.0
+  }
+ ],
+ "group": "changan",
+ "series": "跨越星光",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8010,
+ "ah_key": "极氪007GT",
+ "ah_name": "极氪007GT",
+ "n_on": 4,
+ "n_off": 4,
+ "url": "https://car.autohome.com.cn/config/series/8010.html",
+ "dims": [
+  {
+   "spec": "2026款 后驱Max版 75kWh",
+   "len": 4858.0,
+   "wb": 2925.0,
+   "width": 1900.0,
+   "height": 1460.0
+  },
+  {
+   "spec": "2025款 后驱智驾版 75kWh",
+   "len": 4864.0,
+   "wb": 2925.0,
+   "width": 1900.0,
+   "height": 1460.0
+  },
+  {
+   "spec": "2025款 长续航后驱智驾版 100kWh",
+   "len": 4864.0,
+   "wb": 2925.0,
+   "width": 1900.0,
+   "height": 1460.0
+  },
+  {
+   "spec": "2026款 后驱Max版 103kWh",
+   "len": 4858.0,
+   "wb": 2925.0,
+   "width": 1900.0,
+   "height": 1460.0
+  },
+  {
+   "spec": "2026款 四驱Max版 75kWh",
+   "len": 4858.0,
+   "wb": 2925.0,
+   "width": 1900.0,
+   "height": 1460.0
+  }
+ ],
+ "group": "geely",
+ "series": "极氪007GT",
+ "tier": "T2"
+}

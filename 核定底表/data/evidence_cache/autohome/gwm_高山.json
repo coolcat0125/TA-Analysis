@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7076,
+ "ah_key": "魏牌 高山新能源",
+ "ah_name": "魏牌 高山新能源",
+ "n_on": 8,
+ "n_off": 4,
+ "url": "https://car.autohome.com.cn/config/series/7076.html",
+ "dims": [
+  {
+   "spec": "2026款 四驱高山7 商务畅享版",
+   "len": 5050.0,
+   "wb": 3085.0,
+   "width": 1960.0,
+   "height": 1900.0
+  },
+  {
+   "spec": "2023款 四驱尊贵版",
+   "len": 5045.0,
+   "wb": 3085.0,
+   "width": 1960.0,
+   "height": 1900.0
+  },
+  {
+   "spec": "2023款 四驱旗舰版",
+   "len": 5045.0,
+   "wb": 3085.0,
+   "width": 1960.0,
+   "height": 1900.0
+  },
+  {
+   "spec": "2025款 四驱高山7",
+   "len": 5050.0,
+   "wb": 3085.0,
+   "width": 1960.0,
+   "height": 1900.0
+  },
+  {
+   "spec": "2026款 四驱高山7 SUV版",
+   "len": 5149.0,
+   "wb": 3085.0,
+   "width": 2005.0,
+   "height": 1925.0
+  }
+ ],
+ "group": "gwm",
+ "series": "高山",
+ "tier": "T1"
+}

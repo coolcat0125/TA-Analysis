@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8663,
+ "ah_key": "阿维塔07L",
+ "ah_name": "阿维塔07L",
+ "n_on": 3,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/8663.html",
+ "dims": [
+  {
+   "spec": "2027款 Elite 纯电版",
+   "len": 4910.0,
+   "wb": 2990.0,
+   "width": 1980.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2026款 单电机增程版",
+   "len": 4910.0,
+   "wb": 2990.0,
+   "width": 1980.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2026款 三电机增程版",
+   "len": 4910.0,
+   "wb": 2990.0,
+   "width": 1980.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2027款 Max+ 纯电版",
+   "len": 4910.0,
+   "wb": 2990.0,
+   "width": 1980.0,
+   "height": 1650.0
+  },
+  {
+   "spec": "2027款 Ultra 三电机纯电版",
+   "len": 4910.0,
+   "wb": 2990.0,
+   "width": 1980.0,
+   "height": 1670.0
+  }
+ ],
+ "group": "changan",
+ "series": "阿维塔07L",
+ "tier": "T2"
+}

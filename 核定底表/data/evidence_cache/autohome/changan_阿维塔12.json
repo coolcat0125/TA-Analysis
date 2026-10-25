@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7126,
+ "ah_key": "阿维塔12",
+ "ah_name": "阿维塔12",
+ "n_on": 14,
+ "n_off": 25,
+ "url": "https://car.autohome.com.cn/config/series/7126.html",
+ "dims": [
+  {
+   "spec": "2026款 Max 增程版",
+   "len": 5020.0,
+   "wb": 3020.0,
+   "width": 1999.0,
+   "height": 1460.0
+  },
+  {
+   "spec": "2025款 Max增程版",
+   "len": 5020.0,
+   "wb": 3020.0,
+   "width": 1999.0,
+   "height": 1460.0
+  },
+  {
+   "spec": "2025款 改款 Max增程版",
+   "len": 5020.0,
+   "wb": 3020.0,
+   "width": 1999.0,
+   "height": 1460.0
+  },
+  {
+   "spec": "2026款 Ultra 增程版",
+   "len": 5020.0,
+   "wb": 3020.0,
+   "width": 1999.0,
+   "height": 1450.0
+  },
+  {
+   "spec": "2026款 改款 Max 双电机增程版",
+   "len": 5020.0,
+   "wb": 3020.0,
+   "width": 1999.0,
+   "height": 1470.0
+  }
+ ],
+ "group": "changan",
+ "series": "阿维塔12",
+ "tier": "T1"
+}

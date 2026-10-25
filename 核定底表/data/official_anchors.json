@@ -1,0 +1,401 @@
+{
+ "chery|环游者": [
+  {
+   "model": "SQR6450BEVT1VA3",
+   "batch": "411",
+   "status": "正式",
+   "len": 4475,
+   "wb": 2735,
+   "wt": 1875,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_23af8a5952844932999d9c960f23338e.html"
+  },
+  {
+   "model": "SQR6450BEVT1VA2",
+   "batch": "411",
+   "status": "正式",
+   "len": 4475,
+   "wb": 2735,
+   "wt": 1777,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_76532d3fa5d1450bae40ead12063d99d.html"
+  }
+ ],
+ "gwm|欧拉5": [
+  {
+   "model": "CC7002DE00HBBEV",
+   "batch": "411",
+   "status": "正式",
+   "len": 4758,
+   "wb": 2720,
+   "wt": 1670,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_cf054a77f4b644f9b5e57df937846682.html"
+  },
+  {
+   "model": "CC7002DE00HABEV",
+   "batch": "411",
+   "status": "正式",
+   "len": 4758,
+   "wb": 2720,
+   "wt": 1585,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_2932687d6cda4b669232b814e985e097.html"
+  }
+ ],
+ "gwm|好猫": [
+  {
+   "model": "CC6420BJ00GEBEV",
+   "batch": "411",
+   "status": "正式",
+   "len": 4242,
+   "wb": 2650,
+   "wt": 1410,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_418c0744ca0a4b77895b2530469eb257.html"
+  }
+ ],
+ "gwm|魏牌V8X": [
+  {
+   "model": "CC6510DG21HABEV",
+   "batch": "411",
+   "status": "正式",
+   "len": 5125,
+   "wb": 3050,
+   "wt": 2650,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_5fabdca81ec346edbd28653c2ef15102.html"
+  },
+  {
+   "model": "CC6520DG20BPHEV",
+   "batch": "412",
+   "status": "公示",
+   "len": 5125,
+   "wb": 3050,
+   "wt": 2685,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_3f62db71af434dcab27a9624c05322ed.html"
+  },
+  {
+   "model": "CC6520DG21CPHEV",
+   "batch": "412",
+   "status": "公示",
+   "len": 5125,
+   "wb": 3050,
+   "wt": 2715,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_acb39da792bd445e94c1f6c95651daa2.html"
+  },
+  {
+   "model": "CC6520DG20APHEV",
+   "batch": "412",
+   "status": "公示",
+   "len": 5125,
+   "wb": 3050,
+   "wt": 2570,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_293ef2b76d7f400f9a28420c24a8844c.html"
+  }
+ ],
+ "liauto|理想I6": [
+  {
+   "model": "LXA6503BEVW05",
+   "batch": "411",
+   "status": "正式",
+   "len": 4950,
+   "wb": 3000,
+   "wt": 2395,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_33b47060cc074b819d030aaa95a7973d.html"
+  },
+  {
+   "model": "LXA6503BEVW06",
+   "batch": "411",
+   "status": "正式",
+   "len": 4950,
+   "wb": 3000,
+   "wt": 2520,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_0c9d806fa39e4e2a889e9691e2ff8ba2.html"
+  },
+  {
+   "model": "LXA6503BEVW04",
+   "batch": "411",
+   "status": "正式",
+   "len": 4950,
+   "wb": 3000,
+   "wt": 2520,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_0afba0a0d1dd436191b1611b8de92ee3.html"
+  }
+ ],
+ "liauto|理想MEGA": [
+  {
+   "model": "LXA6540BEVW12",
+   "batch": "411",
+   "status": "正式",
+   "len": 5355,
+   "wb": 3300,
+   "wt": 2925,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_dca86f639c89456183357eb6c3393f10.html"
+  }
+ ],
+ "geely|极氪7X": [
+  {
+   "model": "MR6481BEV106",
+   "batch": "411",
+   "status": "正式",
+   "len": 4825,
+   "wb": 2925,
+   "wt": 2300,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e37a6c11c74444fbbc24e3618e504d22.html"
+  }
+ ],
+ "geely|极氪009": [
+  {
+   "model": "MR6521BEV101",
+   "batch": "411",
+   "status": "正式",
+   "len": 5217,
+   "wb": 3205,
+   "wt": 2970,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_91d0c7d57d9c45029e5e48dd8b602ba7.html"
+  }
+ ],
+ "byd|海鸥": [
+  {
+   "model": "BYD7000CFBEV3",
+   "batch": "411",
+   "status": "正式",
+   "len": 4205,
+   "wb": 2650,
+   "wt": 1170,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_5e8cc0145e1040a79fa312212567706d.html"
+  }
+ ],
+ "byd|钛9": [
+  {
+   "model": "QCJ6530BE6HEV2",
+   "batch": "411",
+   "status": "正式",
+   "len": 5270,
+   "wb": 3130,
+   "wt": 2865,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_53965381e52f4a80a1ac33c371dac384.html"
+  },
+  {
+   "model": "QCJ6530BE6HEV4",
+   "batch": "412",
+   "status": "公示",
+   "len": 5270,
+   "wb": 3130,
+   "wt": 2965,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_b12e47053d7941bb9dcbddb2fd333564.html"
+  }
+ ],
+ "gwm|长城700": [
+  {
+   "model": "CC2040BV23CPHEV",
+   "batch": "411",
+   "status": "正式",
+   "len": 5445,
+   "wb": 3150,
+   "wt": 3395,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e60066435294454999a50a8c7e3e8e3.html"
+  }
+ ],
+ "gwm|蓝山": [
+  {
+   "model": "CC6511DQ22CPHEV",
+   "batch": "411",
+   "status": "正式",
+   "len": 5140,
+   "wb": 3010,
+   "wt": 2790,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_e8fe9c0ef3804fa39abfd344eec73556.html"
+  },
+  {
+   "model": "CC6531DQ22APHEV",
+   "batch": "411",
+   "status": "正式",
+   "len": 5300,
+   "wb": 3010,
+   "wt": 2725,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_61d023d1159249558f03baa00cd4aaf5.html"
+  },
+  {
+   "model": "CC6531DQ22CPHEV",
+   "batch": "411",
+   "status": "正式",
+   "len": 5300,
+   "wb": 3010,
+   "wt": 2870,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_777726ff5a4c497c9c3c77db275db6da.html"
+  },
+  {
+   "model": "CC6511DQ22APHEV",
+   "batch": "411",
+   "status": "正式",
+   "len": 5140,
+   "wb": 3010,
+   "wt": 2640,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8489903da89d4b768079edce3add0a07.html"
+  }
+ ],
+ "chery|iCARV25": [
+  {
+   "model": "NEQ6460REEVS59DD",
+   "batch": "411",
+   "status": "正式",
+   "len": 4636,
+   "wb": 2820,
+   "wt": 2221,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_641f591f4a28439598d964bad991afbd.html"
+  }
+ ],
+ "liauto|理想L9": [
+  {
+   "model": "LXA6530REEVX12",
+   "batch": "411",
+   "status": "正式",
+   "len": 5255,
+   "wb": 3125,
+   "wt": 2755,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_03d870d1976a4f7398d562a71b2b1e4d.html"
+  }
+ ],
+ "geely|星舰7": [
+  {
+   "model": "HQ6472DCHEV110",
+   "batch": "411",
+   "status": "正式",
+   "len": 4730,
+   "wb": 2752,
+   "wt": 1930,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_32c8c132a46f4b1084f19870fb922c67.html"
+  },
+  {
+   "model": "HQ6472DCHEV111",
+   "batch": "411",
+   "status": "正式",
+   "len": 4730,
+   "wb": 2752,
+   "wt": 1815,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3a2b7de0ec284fe094e9b48fdf4e8ec4.html"
+  }
+ ],
+ "geely|吉利A7": [
+  {
+   "model": "MR7151DCHEV131",
+   "batch": "411",
+   "status": "正式",
+   "len": 4932,
+   "wb": 2845,
+   "wt": 1705,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_b7f62acd616d403a804ac1ef135a1755.html"
+  }
+ ],
+ "geely|吉利M8": [
+  {
+   "model": "MR6521DCHEV116",
+   "batch": "411",
+   "status": "正式",
+   "len": 5205,
+   "wb": 3030,
+   "wt": 2620,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_3c30b3e1925f41118ebe3903734037dc.html"
+  },
+  {
+   "model": "MR6521DCHEV117",
+   "batch": "411",
+   "status": "正式",
+   "len": 5205,
+   "wb": 3030,
+   "wt": 2470,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_8e553bfa972548b6a06dd0547a15114a.html"
+  }
+ ],
+ "changan|阿维塔T09": [
+  {
+   "model": "SC6530AAAA6HEV",
+   "batch": "411",
+   "status": "正式",
+   "len": 5285,
+   "wb": 3150,
+   "wt": 3035,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_a449473049894a759f36fc6161fc94bb.html"
+  },
+  {
+   "model": "SC6530AAAB6HEV",
+   "batch": "411",
+   "status": "正式",
+   "len": 5285,
+   "wb": 3150,
+   "wt": 2880,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs411sdwdw3/art/2026/art_ae6d61be961a4ce998c591c88e122fd8.html"
+  }
+ ],
+ "chery|风云T9L": [
+  {
+   "model": "SQR6490CHEVT295",
+   "batch": "412",
+   "status": "公示",
+   "len": 4870,
+   "wb": 2920,
+   "wt": 2023,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_dcdd032eec84404ca1fff1b040e2bc6e.html"
+  }
+ ],
+ "chery|ARRIZO7CDM": [
+  {
+   "model": "SQR7150CHEVM1FA",
+   "batch": "412",
+   "status": "公示",
+   "len": 4739,
+   "wb": 2770,
+   "wt": 1598,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_ff0a8343b0af423b9119936b58f97a51.html"
+  }
+ ],
+ "geely|战舰700": [
+  {
+   "model": "MR2031DCHEV101",
+   "batch": "412",
+   "status": "公示",
+   "len": 5085,
+   "wb": 2900,
+   "wt": 2870,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_0d4866d9416f4b55aaf3557730b715a4.html"
+  }
+ ],
+ "changan|阿维塔07L": [
+  {
+   "model": "SC6490AAAK6HEV",
+   "batch": "412",
+   "status": "公示",
+   "len": 4910,
+   "wb": 2990,
+   "wt": 2380,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_55d55cfd84a54e099781bae866524a7b.html"
+  }
+ ],
+ "geely|领克900L": [
+  {
+   "model": "MR6532DCHEV101",
+   "batch": "412",
+   "status": "公示",
+   "len": 5280,
+   "wb": 3170,
+   "wt": 2965,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_16d1c9bf5c934f3bb7b0d091de431c1f.html"
+  },
+  {
+   "model": "MR6532DCHEV102",
+   "batch": "412",
+   "status": "公示",
+   "len": 5280,
+   "wb": 3170,
+   "wt": 2880,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_56b81dad135c4e499c5bb8eb636be8bf.html"
+  }
+ ],
+ "byd|汉": [
+  {
+   "model": "BYD7150CE6HEV1",
+   "batch": "412",
+   "status": "公示",
+   "len": 5156,
+   "wb": 3030,
+   "wt": 2115,
+   "url": "https://www.miit.gov.cn/datainfo/dljdclscqyjcpgg/xcpgs412156gfgy/art/2026/art_3ecbf3fe94354153967c61b89ebb0cd6.html"
+  }
+ ]
+}

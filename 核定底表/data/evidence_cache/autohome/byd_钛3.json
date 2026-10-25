@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7356,
+ "ah_key": "钛3",
+ "ah_name": "钛3",
+ "n_on": 3,
+ "n_off": 10,
+ "url": "https://car.autohome.com.cn/config/series/7356.html",
+ "dims": [
+  {
+   "spec": "2026款 510KM 后驱闪充版",
+   "len": 4605.0,
+   "wb": 2745.0,
+   "width": 1900.0,
+   "height": 1720.0
+  },
+  {
+   "spec": "2026款 改装版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 501KM 后驱Pro版",
+   "len": 4605.0,
+   "wb": 2745.0,
+   "width": 1900.0,
+   "height": 1720.0
+  },
+  {
+   "spec": "2026款 620KM 后驱闪充版",
+   "len": 4605.0,
+   "wb": 2745.0,
+   "width": 1900.0,
+   "height": 1720.0
+  },
+  {
+   "spec": "2026款 565KM 四驱闪充版",
+   "len": 4605.0,
+   "wb": 2745.0,
+   "width": 1900.0,
+   "height": 1720.0
+  }
+ ],
+ "group": "byd",
+ "series": "钛3",
+ "tier": "T2"
+}

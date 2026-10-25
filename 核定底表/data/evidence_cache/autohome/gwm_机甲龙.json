@@ -1,0 +1,21 @@
+{
+ "status": "ok",
+ "seriesid": 6497,
+ "ah_key": "机甲龙",
+ "ah_name": "机甲龙",
+ "n_on": 0,
+ "n_off": 4,
+ "url": "https://car.autohome.com.cn/config/series/6497.html",
+ "dims": [
+  {
+   "spec": "2022款 全球限量版",
+   "len": 5240.0,
+   "wb": 3040.0,
+   "width": 1950.0,
+   "height": 1495.0
+  }
+ ],
+ "group": "gwm",
+ "series": "机甲龙",
+ "tier": "T2"
+}

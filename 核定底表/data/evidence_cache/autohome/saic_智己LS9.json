@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8215,
+ "ah_key": "智己LS9",
+ "ah_name": "智己LS9",
+ "n_on": 4,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8215.html",
+ "dims": [
+  {
+   "spec": "2026款 52 Ultra",
+   "len": 5279.0,
+   "wb": 3160.0,
+   "width": 2000.0,
+   "height": 1806.0
+  },
+  {
+   "spec": "2026款 66 Ultra 顶配版",
+   "len": 5279.0,
+   "wb": 3160.0,
+   "width": 2000.0,
+   "height": 1806.0
+  },
+  {
+   "spec": "2026款 52 Ultra 线控版",
+   "len": 5279.0,
+   "wb": 3160.0,
+   "width": 2000.0,
+   "height": 1806.0
+  },
+  {
+   "spec": "2026款 66 Ultra",
+   "len": 5279.0,
+   "wb": 3160.0,
+   "width": 2000.0,
+   "height": 1806.0
+  }
+ ],
+ "group": "saic",
+ "series": "智己LS9",
+ "tier": "T2"
+}

@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 5555,
+ "ah_key": "领克06",
+ "ah_name": "领克06",
+ "n_on": 2,
+ "n_off": 22,
+ "url": "https://car.autohome.com.cn/config/series/5555.html",
+ "dims": [
+  {
+   "spec": "2026款 Relive 1.5T Max",
+   "len": 4350.0,
+   "wb": 2640.0,
+   "width": 1820.0,
+   "height": 1625.0
+  },
+  {
+   "spec": "2025款 Lite 1.5T Plus",
+   "len": 4350.0,
+   "wb": 2640.0,
+   "width": 1820.0,
+   "height": 1625.0
+  },
+  {
+   "spec": "2025款 Lite 1.5T Max",
+   "len": 4350.0,
+   "wb": 2640.0,
+   "width": 1820.0,
+   "height": 1625.0
+  },
+  {
+   "spec": "2026款 Relive 1.5T Ultra",
+   "len": 4350.0,
+   "wb": 2640.0,
+   "width": 1820.0,
+   "height": 1625.0
+  }
+ ],
+ "group": "geely",
+ "series": "领克06",
+ "tier": "T2"
+}

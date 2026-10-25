@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5499,
+ "ah_key": "比亚迪汉",
+ "ah_name": "汉",
+ "n_on": 20,
+ "n_off": 59,
+ "url": "https://car.autohome.com.cn/config/series/5499.html",
+ "dims": [
+  {
+   "spec": "2025款 DM-i 智驾版 125KM舒适型",
+   "len": 4995.0,
+   "wb": 2920.0,
+   "width": 1910.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2025款 特别版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 特别版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 DM-i 智驾版 245KM舒适型",
+   "len": 4995.0,
+   "wb": 2920.0,
+   "width": 1910.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2025款 DM-i 智驾版 125KM精英型",
+   "len": 4995.0,
+   "wb": 2920.0,
+   "width": 1910.0,
+   "height": 1495.0
+  }
+ ],
+ "group": "byd",
+ "series": "比亚迪",
+ "tier": "T1"
+}

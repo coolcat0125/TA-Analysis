@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8188,
+ "ah_key": "星光730",
+ "ah_name": "星光730",
+ "n_on": 3,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8188.html",
+ "dims": [
+  {
+   "spec": "2025款 1.5T 6MT 舒适型",
+   "len": 4910.0,
+   "wb": 2910.0,
+   "width": 1850.0,
+   "height": 1760.0
+  },
+  {
+   "spec": "2026款 海外版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 1.5T CVT 精英型",
+   "len": 4910.0,
+   "wb": 2910.0,
+   "width": 1850.0,
+   "height": 1770.0
+  },
+  {
+   "spec": "2026款 1.5T CVT 尊享型",
+   "len": 4910.0,
+   "wb": 2910.0,
+   "width": 1850.0,
+   "height": 1770.0
+  }
+ ],
+ "group": "saic",
+ "series": "星光730",
+ "tier": "T1"
+}

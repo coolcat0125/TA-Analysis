@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6898,
+ "ah_key": "腾势N7",
+ "ah_name": "腾势N7",
+ "n_on": 0,
+ "n_off": 15,
+ "url": "https://car.autohome.com.cn/config/series/6898.html",
+ "dims": [
+  {
+   "spec": "2025款 702 智驾双激光尊荣版",
+   "len": 4860.0,
+   "wb": 2940.0,
+   "width": 1935.0,
+   "height": 1620.0
+  },
+  {
+   "spec": "2025款 702 智驾双激光猎影版",
+   "len": 4860.0,
+   "wb": 2940.0,
+   "width": 1935.0,
+   "height": 1620.0
+  }
+ ],
+ "group": "byd",
+ "series": "腾势N7",
+ "tier": "T2"
+}

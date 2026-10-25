@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6979,
+ "ah_key": "魏牌 蓝山",
+ "ah_name": "魏牌 蓝山",
+ "n_on": 3,
+ "n_off": 10,
+ "url": "https://car.autohome.com.cn/config/series/6979.html",
+ "dims": [
+  {
+   "spec": "2026款 智能进阶版 四驱Max",
+   "len": 5156.0,
+   "wb": 3050.0,
+   "width": 1980.0,
+   "height": 1805.0
+  },
+  {
+   "spec": "2027款 二代 2.0T  Hi4 高配版 6座",
+   "len": 5300.0,
+   "wb": 3010.0,
+   "width": 2050.0,
+   "height": 1960.0
+  },
+  {
+   "spec": "2027款 二代 2.0T  Hi4 高配版 5座",
+   "len": 5140.0,
+   "wb": 3010.0,
+   "width": 2050.0,
+   "height": 1960.0
+  },
+  {
+   "spec": "2026款 智能进阶版 四驱Max+",
+   "len": 5156.0,
+   "wb": 3050.0,
+   "width": 1980.0,
+   "height": 1805.0
+  },
+  {
+   "spec": "2026款 智能进阶版 四驱Ultra黑武士",
+   "len": 5156.0,
+   "wb": 3050.0,
+   "width": 1980.0,
+   "height": 1805.0
+  }
+ ],
+ "group": "gwm",
+ "series": "蓝山",
+ "tier": "T1"
+}

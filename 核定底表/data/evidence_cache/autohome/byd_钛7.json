@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8171,
+ "ah_key": "钛7",
+ "ah_name": "钛7",
+ "n_on": 9,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8171.html",
+ "dims": [
+  {
+   "spec": "2025款 135KM两驱Pro版",
+   "len": 4999.0,
+   "wb": 2920.0,
+   "width": 1995.0,
+   "height": 1865.0
+  },
+  {
+   "spec": "2025款 200KM两驱Max版",
+   "len": 4999.0,
+   "wb": 2920.0,
+   "width": 1995.0,
+   "height": 1865.0
+  },
+  {
+   "spec": "2026款 315KM 两驱Max版",
+   "len": 4999.0,
+   "wb": 2920.0,
+   "width": 1995.0,
+   "height": 1865.0
+  }
+ ],
+ "group": "byd",
+ "series": "钛7",
+ "tier": "T2"
+}

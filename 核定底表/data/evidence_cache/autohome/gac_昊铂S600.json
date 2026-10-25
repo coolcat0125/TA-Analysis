@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8498,
+ "ah_key": "昊铂S600",
+ "ah_name": "昊铂S600",
+ "n_on": 5,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8498.html",
+ "dims": [
+  {
+   "spec": "2026款 增程 230 Max",
+   "len": 5015.0,
+   "wb": 2936.0,
+   "width": 1933.0,
+   "height": 1700.0
+  },
+  {
+   "spec": "2026款 增程 215 四驱Ultra+",
+   "len": 5015.0,
+   "wb": 2936.0,
+   "width": 1933.0,
+   "height": 1685.0
+  },
+  {
+   "spec": "2026款 215 四驱Ultra 行政版",
+   "len": 5015.0,
+   "wb": 2936.0,
+   "width": 1933.0,
+   "height": 1685.0
+  }
+ ],
+ "group": "gac",
+ "series": "昊铂S600",
+ "tier": "T2"
+}

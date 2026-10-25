@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 4826,
+ "ah_key": "欧拉黑猫",
+ "ah_name": "欧拉黑猫",
+ "n_on": 0,
+ "n_off": 35,
+ "url": "https://car.autohome.com.cn/config/series/4826.html",
+ "dims": [
+  {
+   "spec": "2022款 改款 301km 萌宠版 磷酸铁锂",
+   "len": 3495.0,
+   "wb": 2475.0,
+   "width": 1660.0,
+   "height": 1560.0
+  },
+  {
+   "spec": "2022款 301km 基础型 三元锂",
+   "len": 3495.0,
+   "wb": 2475.0,
+   "width": 1660.0,
+   "height": 1560.0
+  }
+ ],
+ "group": "gwm",
+ "series": "黑猫",
+ "tier": "T2"
+}

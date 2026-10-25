@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 4678,
+ "ah_key": "欧拉iQ",
+ "ah_name": "欧拉iQ",
+ "n_on": 0,
+ "n_off": 12,
+ "url": "https://car.autohome.com.cn/config/series/4678.html",
+ "dims": [
+  {
+   "spec": "2021款 尊享型",
+   "len": 4460.0,
+   "wb": 2650.0,
+   "width": 1735.0,
+   "height": 1567.0
+  },
+  {
+   "spec": "2021款 尊贵型",
+   "len": 4460.0,
+   "wb": 2650.0,
+   "width": 1735.0,
+   "height": 1567.0
+  }
+ ],
+ "group": "gwm",
+ "series": "欧拉IQ",
+ "tier": "T2"
+}

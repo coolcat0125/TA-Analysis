@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8462,
+ "ah_key": "海豹07 EV",
+ "ah_name": "海豹07 EV",
+ "n_on": 3,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8462.html",
+ "dims": [
+  {
+   "spec": "2026款 705尊荣型",
+   "len": 4995.0,
+   "wb": 2900.0,
+   "width": 1910.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2027基本型",
+   "len": 5080.0,
+   "wb": 2960.0,
+   "width": 1960.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2026款 705旗舰型",
+   "len": 4995.0,
+   "wb": 2900.0,
+   "width": 1910.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2026款 705领航闪充版",
+   "len": 4995.0,
+   "wb": 2900.0,
+   "width": 1910.0,
+   "height": 1495.0
+  }
+ ],
+ "group": "byd",
+ "series": "海豹07",
+ "tier": "T2"
+}

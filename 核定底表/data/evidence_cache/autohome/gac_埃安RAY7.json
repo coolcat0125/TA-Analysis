@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 8757,
+ "ah_key": "埃安Ray7",
+ "ah_name": "Ray7",
+ "n_on": 0,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/8757.html",
+ "dims": [
+  {
+   "spec": "2027款 530 后驱驾趣版",
+   "len": 4960.0,
+   "wb": 2920.0,
+   "width": 1900.0,
+   "height": 1455.0
+  },
+  {
+   "spec": "2027款 530 后驱激光版",
+   "len": 4960.0,
+   "wb": 2920.0,
+   "width": 1900.0,
+   "height": 1455.0
+  }
+ ],
+ "group": "gac",
+ "series": "埃安RAY7",
+ "tier": "T3"
+}

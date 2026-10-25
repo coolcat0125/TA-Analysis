@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7807,
+ "ah_key": "海狮05 DM-i",
+ "ah_name": "海狮05 DM-i",
+ "n_on": 5,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/7807.html",
+ "dims": [
+  {
+   "spec": "2026款 DM-i 220启航版",
+   "len": 4620.0,
+   "wb": 2770.0,
+   "width": 1860.0,
+   "height": 1630.0
+  },
+  {
+   "spec": "2026款 DM-i 激光雷达版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 DM-i 智驾版 75KM豪华型",
+   "len": 4726.0,
+   "wb": 2712.0,
+   "width": 1880.0,
+   "height": 1720.0
+  },
+  {
+   "spec": "2026款 DM-i 220领航版",
+   "len": 4620.0,
+   "wb": 2770.0,
+   "width": 1860.0,
+   "height": 1630.0
+  },
+  {
+   "spec": "2026款 DM-i 305领航版",
+   "len": 4620.0,
+   "wb": 2770.0,
+   "width": 1860.0,
+   "height": 1630.0
+  }
+ ],
+ "group": "byd",
+ "series": "海狮05",
+ "tier": "T1"
+}

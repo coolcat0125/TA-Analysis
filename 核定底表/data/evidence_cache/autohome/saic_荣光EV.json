@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 5715,
+ "ah_key": "五菱荣光EV",
+ "ah_name": "五菱荣光EV",
+ "n_on": 1,
+ "n_off": 12,
+ "url": "https://car.autohome.com.cn/config/series/5715.html",
+ "dims": [
+  {
+   "spec": "2026款 310km 客车标准型",
+   "len": 4535.0,
+   "wb": 2850.0,
+   "width": 1732.0,
+   "height": 1870.0
+  },
+  {
+   "spec": "2023款 基本型客车华霆电池",
+   "len": 4490.0,
+   "wb": 3050.0,
+   "width": 1615.0,
+   "height": 1915.0
+  },
+  {
+   "spec": "2023款 基本型封窗车2座华霆电池",
+   "len": 4490.0,
+   "wb": 3050.0,
+   "width": 1615.0,
+   "height": 1915.0
+  }
+ ],
+ "group": "saic",
+ "series": "荣光EV",
+ "tier": "T2"
+}

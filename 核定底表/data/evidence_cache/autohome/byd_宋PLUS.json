@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 5760,
+ "ah_key": "宋PLUS",
+ "ah_name": "宋PLUS",
+ "n_on": 0,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/5760.html",
+ "dims": [
+  {
+   "spec": "2020款 1.5T 自动豪华型",
+   "len": 4705.0,
+   "wb": 2765.0,
+   "width": 1890.0,
+   "height": 1680.0
+  },
+  {
+   "spec": "2020款 1.5T 自动尊贵型",
+   "len": 4705.0,
+   "wb": 2765.0,
+   "width": 1890.0,
+   "height": 1680.0
+  }
+ ],
+ "group": "byd",
+ "series": "宋PLUS",
+ "tier": "T1"
+}

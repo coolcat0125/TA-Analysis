@@ -1,0 +1,10 @@
+{
+ "status": "no_candidate",
+ "queries": [
+  "长城500",
+  "长城长城500"
+ ],
+ "group": "gwm",
+ "series": "长城500",
+ "tier": "T1"
+}

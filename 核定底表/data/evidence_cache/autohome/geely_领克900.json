@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8002,
+ "ah_key": "领克900",
+ "ah_name": "领克900",
+ "n_on": 7,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8002.html",
+ "dims": [
+  {
+   "spec": "2026款 1.5T Halo 5座",
+   "len": 5240.0,
+   "wb": 3160.0,
+   "width": 1999.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2027款 900L",
+   "len": 5280.0,
+   "wb": 3170.0,
+   "width": 1999.0,
+   "height": 1810.0
+  },
+  {
+   "spec": "2025款 1.5T Halo 6座",
+   "len": 5240.0,
+   "wb": 3160.0,
+   "width": 1999.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 1.5T Ultra 5座",
+   "len": 5240.0,
+   "wb": 3160.0,
+   "width": 1999.0,
+   "height": 1810.0
+  }
+ ],
+ "group": "geely",
+ "series": "领克900",
+ "tier": "T2"
+}

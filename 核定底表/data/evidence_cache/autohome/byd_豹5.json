@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7177,
+ "ah_key": "豹5",
+ "ah_name": "豹5",
+ "n_on": 10,
+ "n_off": 7,
+ "url": "https://car.autohome.com.cn/config/series/7177.html",
+ "dims": [
+  {
+   "spec": "2025款 125KM 天神智驾Max版",
+   "len": 4890.0,
+   "wb": 2800.0,
+   "width": 1970.0,
+   "height": 1920.0
+  },
+  {
+   "spec": "2025款 改装版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 无人机版",
+   "len": 4890.0,
+   "wb": 2800.0,
+   "width": 1970.0,
+   "height": 2015.0
+  },
+  {
+   "spec": "2025款 125KM 天神智驾Ultra版",
+   "len": 4890.0,
+   "wb": 2800.0,
+   "width": 1970.0,
+   "height": 1920.0
+  },
+  {
+   "spec": "2026款 210KM 天神Max版",
+   "len": 4890.0,
+   "wb": 2800.0,
+   "width": 1970.0,
+   "height": 1920.0
+  }
+ ],
+ "group": "byd",
+ "series": "豹5",
+ "tier": "T2"
+}

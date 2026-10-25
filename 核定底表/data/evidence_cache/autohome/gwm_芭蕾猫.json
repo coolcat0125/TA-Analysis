@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6345,
+ "ah_key": "欧拉芭蕾猫",
+ "ah_name": "欧拉芭蕾猫",
+ "n_on": 3,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/6345.html",
+ "dims": [
+  {
+   "spec": "2023款 401km 豪华型",
+   "len": 4401.0,
+   "wb": 2750.0,
+   "width": 1867.0,
+   "height": 1633.0
+  },
+  {
+   "spec": "2022款 原型车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2022款 401km 爱丽丝版",
+   "len": 4401.0,
+   "wb": 2750.0,
+   "width": 1867.0,
+   "height": 1633.0
+  },
+  {
+   "spec": "2023款 401km 尊贵型",
+   "len": 4401.0,
+   "wb": 2750.0,
+   "width": 1867.0,
+   "height": 1633.0
+  },
+  {
+   "spec": "2023款 500km 尊贵型",
+   "len": 4401.0,
+   "wb": 2750.0,
+   "width": 1867.0,
+   "height": 1633.0
+  }
+ ],
+ "group": "gwm",
+ "series": "芭蕾猫",
+ "tier": "T2"
+}

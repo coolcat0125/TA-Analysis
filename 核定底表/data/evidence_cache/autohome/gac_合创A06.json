@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6502,
+ "ah_key": "合创A06",
+ "ah_name": "合创A06",
+ "n_on": 0,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/6502.html",
+ "dims": [
+  {
+   "spec": "2024款 PLUS 520N",
+   "len": 4945.0,
+   "wb": 2850.0,
+   "width": 1920.0,
+   "height": 1520.0
+  },
+  {
+   "spec": "2023款 EDG版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  }
+ ],
+ "group": "gac",
+ "series": "合创A06",
+ "tier": "T2"
+}

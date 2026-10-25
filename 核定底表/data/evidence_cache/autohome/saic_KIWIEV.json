@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6155,
+ "ah_key": "宝骏KiWi EV",
+ "ah_name": "宝骏KiWi EV",
+ "n_on": 0,
+ "n_off": 29,
+ "url": "https://car.autohome.com.cn/config/series/6155.html",
+ "dims": [
+  {
+   "spec": "2023款 智潮版 磷酸铁锂",
+   "len": 2894.0,
+   "wb": 2020.0,
+   "width": 1655.0,
+   "height": 1595.0
+  },
+  {
+   "spec": "2023款 智潮版 三元锂",
+   "len": 2894.0,
+   "wb": 2020.0,
+   "width": 1655.0,
+   "height": 1595.0
+  }
+ ],
+ "group": "saic",
+ "series": "KIWIEV",
+ "tier": "T2"
+}

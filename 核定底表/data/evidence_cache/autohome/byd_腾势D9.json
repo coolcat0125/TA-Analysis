@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6669,
+ "ah_key": "腾势D9",
+ "ah_name": "腾势D9",
+ "n_on": 24,
+ "n_off": 16,
+ "url": "https://car.autohome.com.cn/config/series/6669.html",
+ "dims": [
+  {
+   "spec": "2024款 DM-i 970 豪华型",
+   "len": 5250.0,
+   "wb": 3110.0,
+   "width": 1960.0,
+   "height": 1920.0
+  },
+  {
+   "spec": "2025款 DM-i 两驱行政版",
+   "len": 5250.0,
+   "wb": 3110.0,
+   "width": 1960.0,
+   "height": 1920.0
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 DM-i 980 四驱尊贵型",
+   "len": 5250.0,
+   "wb": 3110.0,
+   "width": 1960.0,
+   "height": 1920.0
+  },
+  {
+   "spec": "2024款 DM-i 980 四驱尊荣型",
+   "len": 5250.0,
+   "wb": 3110.0,
+   "width": 1960.0,
+   "height": 1920.0
+  }
+ ],
+ "group": "byd",
+ "series": "腾势D9",
+ "tier": "T1"
+}

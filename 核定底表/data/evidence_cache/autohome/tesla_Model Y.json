@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5769,
+ "ah_key": "Model Y",
+ "ah_name": "Model Y",
+ "n_on": 4,
+ "n_off": 27,
+ "url": "https://car.autohome.com.cn/config/series/5769.html",
+ "dims": [
+  {
+   "spec": "2027款 后轮驱动版",
+   "len": 4797.0,
+   "wb": 2890.0,
+   "width": 1920.0,
+   "height": 1624.0
+  },
+  {
+   "spec": "2026款 高性能海外版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 后轮驱动版",
+   "len": 4797.0,
+   "wb": 2890.0,
+   "width": 1920.0,
+   "height": 1624.0
+  },
+  {
+   "spec": "2027款 长续航后轮驱动版",
+   "len": 4797.0,
+   "wb": 2890.0,
+   "width": 1920.0,
+   "height": 1624.0
+  },
+  {
+   "spec": "2027款 长续航全轮驱动版",
+   "len": 4797.0,
+   "wb": 2890.0,
+   "width": 1920.0,
+   "height": 1624.0
+  }
+ ],
+ "group": "tesla",
+ "series": "Model Y",
+ "tier": "T2"
+}

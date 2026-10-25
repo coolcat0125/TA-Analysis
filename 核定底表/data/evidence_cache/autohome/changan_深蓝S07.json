@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6817,
+ "ah_key": "深蓝S07",
+ "ah_name": "深蓝S07",
+ "n_on": 8,
+ "n_off": 44,
+ "url": "https://car.autohome.com.cn/config/series/6817.html",
+ "dims": [
+  {
+   "spec": "2026款 630Ultra 华为乾崑激光版",
+   "len": 4750.0,
+   "wb": 2900.0,
+   "width": 1930.0,
+   "height": 1625.0
+  },
+  {
+   "spec": "2026款 230Plus 华为乾崑ADS SE版",
+   "len": 4750.0,
+   "wb": 2900.0,
+   "width": 1930.0,
+   "height": 1625.0
+  },
+  {
+   "spec": "2026款 550Max 华为乾崑ADS SE版",
+   "len": 4750.0,
+   "wb": 2900.0,
+   "width": 1930.0,
+   "height": 1625.0
+  },
+  {
+   "spec": "2026款 600 智行AI激光版",
+   "len": 4750.0,
+   "wb": 2900.0,
+   "width": 1930.0,
+   "height": 1625.0
+  },
+  {
+   "spec": "2026款 600 智臻AI激光版",
+   "len": 4750.0,
+   "wb": 2900.0,
+   "width": 1930.0,
+   "height": 1625.0
+  }
+ ],
+ "group": "changan",
+ "series": "深蓝S07",
+ "tier": "T1"
+}

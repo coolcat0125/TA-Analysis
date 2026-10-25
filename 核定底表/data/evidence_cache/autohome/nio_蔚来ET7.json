@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 5264,
+ "ah_key": "蔚来ET7",
+ "ah_name": "蔚来ET7",
+ "n_on": 2,
+ "n_off": 12,
+ "url": "https://car.autohome.com.cn/config/series/5264.html",
+ "dims": [
+  {
+   "spec": "2024款 100kWh 行政版",
+   "len": 5101.0,
+   "wb": 3060.0,
+   "width": 1987.0,
+   "height": 1509.0
+  },
+  {
+   "spec": "2024款 75kWh 行政版",
+   "len": 5101.0,
+   "wb": 3060.0,
+   "width": 1987.0,
+   "height": 1509.0
+  },
+  {
+   "spec": "2024款 75kWh 行政签名版",
+   "len": 5101.0,
+   "wb": 3060.0,
+   "width": 1987.0,
+   "height": 1509.0
+  },
+  {
+   "spec": "2024款 100kWh 行政签名版",
+   "len": 5101.0,
+   "wb": 3060.0,
+   "width": 1987.0,
+   "height": 1509.0
+  }
+ ],
+ "group": "nio",
+ "series": "蔚来ET7",
+ "tier": "T1"
+}

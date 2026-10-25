@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6340,
+ "ah_key": "跨越星V5 EV",
+ "ah_name": "跨越星V5 EV",
+ "n_on": 24,
+ "n_off": 43,
+ "url": "https://car.autohome.com.cn/config/series/6340.html",
+ "dims": [
+  {
+   "spec": "2025款 240km 智享型 2座 38.64kWh",
+   "len": 4495.0,
+   "wb": 2930.0,
+   "width": 1680.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2024款 智享型 7座 掀背门",
+   "len": 4495.0,
+   "wb": 2930.0,
+   "width": 1680.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2024款 智享型 2座 掀背门",
+   "len": 4495.0,
+   "wb": 2930.0,
+   "width": 1680.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2025款 240km 智享型厢车 5座 38.64kWh",
+   "len": 4495.0,
+   "wb": 2930.0,
+   "width": 1680.0,
+   "height": 1990.0
+  },
+  {
+   "spec": "2025款 259km 智享型客车 6座 38.64kWh",
+   "len": 4495.0,
+   "wb": 2930.0,
+   "width": 1680.0,
+   "height": 1990.0
+  }
+ ],
+ "group": "changan",
+ "series": "跨越星V5EV",
+ "tier": "T2"
+}

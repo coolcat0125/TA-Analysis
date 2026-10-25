@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5238,
+ "ah_key": "比亚迪e2",
+ "ah_name": "比亚迪e2",
+ "n_on": 3,
+ "n_off": 19,
+ "url": "https://car.autohome.com.cn/config/series/5238.html",
+ "dims": [
+  {
+   "spec": "2024款 荣耀版 舒适型",
+   "len": 4260.0,
+   "wb": 2610.0,
+   "width": 1760.0,
+   "height": 1530.0
+  },
+  {
+   "spec": "2023款 舒适型",
+   "len": 4260.0,
+   "wb": 2610.0,
+   "width": 1760.0,
+   "height": 1530.0
+  },
+  {
+   "spec": "2023款 豪华型",
+   "len": 4260.0,
+   "wb": 2610.0,
+   "width": 1760.0,
+   "height": 1530.0
+  },
+  {
+   "spec": "2024款 荣耀版 豪华型",
+   "len": 4260.0,
+   "wb": 2610.0,
+   "width": 1760.0,
+   "height": 1530.0
+  },
+  {
+   "spec": "2023款 出行版",
+   "len": 4260.0,
+   "wb": 2610.0,
+   "width": 1760.0,
+   "height": 1530.0
+  }
+ ],
+ "group": "byd",
+ "series": "比亚迪E2",
+ "tier": "T1"
+}

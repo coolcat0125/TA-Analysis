@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6762,
+ "ah_key": "海鸥",
+ "ah_name": "海鸥",
+ "n_on": 9,
+ "n_off": 14,
+ "url": "https://car.autohome.com.cn/config/series/6762.html",
+ "dims": [
+  {
+   "spec": "2027款 320KM 活力版",
+   "len": 4205.0,
+   "wb": 2650.0,
+   "width": 1810.0,
+   "height": 1570.0
+  },
+  {
+   "spec": "2025款 305km 活力版",
+   "len": 3780.0,
+   "wb": 2500.0,
+   "width": 1715.0,
+   "height": 1540.0
+  },
+  {
+   "spec": "2025款 智驾版 305km 活力版",
+   "len": 3780.0,
+   "wb": 2500.0,
+   "width": 1715.0,
+   "height": 1540.0
+  },
+  {
+   "spec": "2027款 320KM 自由版",
+   "len": 4205.0,
+   "wb": 2650.0,
+   "width": 1810.0,
+   "height": 1570.0
+  },
+  {
+   "spec": "2027款 420KM 自在版",
+   "len": 4205.0,
+   "wb": 2650.0,
+   "width": 1810.0,
+   "height": 1570.0
+  }
+ ],
+ "group": "byd",
+ "series": "海鸥",
+ "tier": "T1"
+}

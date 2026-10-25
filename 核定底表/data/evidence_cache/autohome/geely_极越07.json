@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 7103,
+ "ah_key": "极越07",
+ "ah_name": "极越07",
+ "n_on": 0,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/7103.html",
+ "dims": [
+  {
+   "spec": "2025款 Passion版",
+   "len": 4953.0,
+   "wb": 3013.0,
+   "width": 1989.0,
+   "height": 1475.0
+  },
+  {
+   "spec": "2024款 标准版",
+   "len": 4953.0,
+   "wb": 3013.0,
+   "width": 1989.0,
+   "height": 1480.0
+  }
+ ],
+ "group": "geely",
+ "series": "极越07",
+ "tier": "T2"
+}

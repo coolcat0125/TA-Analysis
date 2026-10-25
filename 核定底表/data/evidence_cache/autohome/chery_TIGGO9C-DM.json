@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 7214,
+ "ah_key": "瑞虎9 C-DM",
+ "ah_name": "瑞虎9 C-DM",
+ "n_on": 9,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/7214.html",
+ "dims": [
+  {
+   "spec": "2025款 1.5T 106KM悦享版 5座 三元锂",
+   "len": 4820.0,
+   "wb": 2820.0,
+   "width": 1930.0,
+   "height": 1712.0
+  },
+  {
+   "spec": "2025款 1.5T 106KM悦享版 5座 磷酸铁锂",
+   "len": 4820.0,
+   "wb": 2820.0,
+   "width": 1930.0,
+   "height": 1712.0
+  },
+  {
+   "spec": "2026款 1.5T 106KM悦享版",
+   "len": 4820.0,
+   "wb": 2820.0,
+   "width": 1930.0,
+   "height": 1712.0
+  }
+ ],
+ "group": "chery",
+ "series": "TIGGO9C-DM",
+ "tier": "T2"
+}

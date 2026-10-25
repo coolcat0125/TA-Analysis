@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 7397,
+ "ah_key": "捷途山海L9",
+ "ah_name": "捷途山海L9",
+ "n_on": 0,
+ "n_off": 18,
+ "url": "https://car.autohome.com.cn/config/series/7397.html",
+ "dims": [
+  {
+   "spec": "2025款 1.5TD 2DHT 精英版 5座",
+   "len": 4911.0,
+   "wb": 2850.0,
+   "width": 1925.0,
+   "height": 1784.0
+  },
+  {
+   "spec": "2025款 1.5TD 2DHT 精英版 7座",
+   "len": 4911.0,
+   "wb": 2850.0,
+   "width": 1925.0,
+   "height": 1784.0
+  }
+ ],
+ "group": "chery",
+ "series": "山海L9",
+ "tier": "T1"
+}

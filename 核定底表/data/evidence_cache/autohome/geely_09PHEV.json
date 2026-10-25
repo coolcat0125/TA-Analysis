@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6144,
+ "ah_key": "领克09",
+ "ah_name": "领克09",
+ "n_on": 3,
+ "n_off": 8,
+ "url": "https://car.autohome.com.cn/config/series/6144.html",
+ "dims": [
+  {
+   "spec": "2026款 2.0T 四驱探索版Max",
+   "len": 5042.0,
+   "wb": 2984.0,
+   "width": 1977.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2027款 基本型",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 2.0T 四驱运动版 五座",
+   "len": 5042.0,
+   "wb": 2984.0,
+   "width": 1977.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2026款 2.0T 四驱探索版Ultra",
+   "len": 5042.0,
+   "wb": 2984.0,
+   "width": 1977.0,
+   "height": 1780.0
+  },
+  {
+   "spec": "2024款 2.0T 四驱全球版 七座",
+   "len": 5042.0,
+   "wb": 2984.0,
+   "width": 1977.0,
+   "height": 1780.0
+  }
+ ],
+ "group": "geely",
+ "series": "09PHEV",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7839,
+ "ah_key": "腾势N9",
+ "ah_name": "腾势N9",
+ "n_on": 6,
+ "n_off": 3,
+ "url": "https://car.autohome.com.cn/config/series/7839.html",
+ "dims": [
+  {
+   "spec": "2026款 尊荣型",
+   "len": 5258.0,
+   "wb": 3125.0,
+   "width": 2030.0,
+   "height": 1830.0
+  },
+  {
+   "spec": "2025款 尊荣型",
+   "len": 5258.0,
+   "wb": 3125.0,
+   "width": 2030.0,
+   "height": 1830.0
+  },
+  {
+   "spec": "2025款 旗舰型",
+   "len": 5258.0,
+   "wb": 3125.0,
+   "width": 2030.0,
+   "height": 1830.0
+  },
+  {
+   "spec": "2026款 尊越型",
+   "len": 5258.0,
+   "wb": 3125.0,
+   "width": 2030.0,
+   "height": 1830.0
+  },
+  {
+   "spec": "2026款 闪充 尊荣型",
+   "len": 5258.0,
+   "wb": 3125.0,
+   "width": 2030.0,
+   "height": 1830.0
+  }
+ ],
+ "group": "byd",
+ "series": "腾势N9",
+ "tier": "T1"
+}

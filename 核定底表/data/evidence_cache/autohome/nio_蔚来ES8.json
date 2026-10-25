@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 4427,
+ "ah_key": "蔚来ES8",
+ "ah_name": "蔚来ES8",
+ "n_on": 5,
+ "n_off": 44,
+ "url": "https://car.autohome.com.cn/config/series/4427.html",
+ "dims": [
+  {
+   "spec": "2026款 五座行政豪华版",
+   "len": 5280.0,
+   "wb": 3130.0,
+   "width": 2010.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 六座玄金特别版",
+   "len": 5280.0,
+   "wb": 3130.0,
+   "width": 2010.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2024款 75kWh",
+   "len": 5099.0,
+   "wb": 3070.0,
+   "width": 1989.0,
+   "height": 1750.0
+  },
+  {
+   "spec": "2026款 七座行政豪华版",
+   "len": 5280.0,
+   "wb": 3130.0,
+   "width": 2010.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 六座行政豪华版",
+   "len": 5280.0,
+   "wb": 3130.0,
+   "width": 2010.0,
+   "height": 1800.0
+  }
+ ],
+ "group": "nio",
+ "series": "蔚来ES8",
+ "tier": "T2"
+}

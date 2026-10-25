@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 5365,
+ "ah_key": "秦",
+ "ah_name": "秦",
+ "n_on": 0,
+ "n_off": 4,
+ "url": "https://car.autohome.com.cn/config/series/5365.html",
+ "dims": [
+  {
+   "spec": "2019款 1.5L 手动舒适型",
+   "len": 4675.0,
+   "wb": 2670.0,
+   "width": 1770.0,
+   "height": 1480.0
+  },
+  {
+   "spec": "2019款 1.5L 手动豪华型",
+   "len": 4675.0,
+   "wb": 2670.0,
+   "width": 1770.0,
+   "height": 1480.0
+  }
+ ],
+ "group": "byd",
+ "series": "秦",
+ "tier": "T2"
+}

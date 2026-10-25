@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6846,
+ "ah_key": "极氪009",
+ "ah_name": "极氪009",
+ "n_on": 11,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/6846.html",
+ "dims": [
+  {
+   "spec": "2024款 七座过道版 140kWh",
+   "len": 5217.0,
+   "wb": 3205.0,
+   "width": 2024.0,
+   "height": 1812.0
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 海外版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 七座过道版 108kWh",
+   "len": 5217.0,
+   "wb": 3205.0,
+   "width": 2024.0,
+   "height": 1812.0
+  },
+  {
+   "spec": "2026款 七座Ultra版",
+   "len": 5217.0,
+   "wb": 3205.0,
+   "width": 2024.0,
+   "height": 1812.0
+  }
+ ],
+ "group": "geely",
+ "series": "极氪009",
+ "tier": "T1"
+}

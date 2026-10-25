@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 2855,
+ "ah_key": "五菱荣光小卡",
+ "ah_name": "五菱荣光小卡",
+ "n_on": 22,
+ "n_off": 19,
+ "url": "https://car.autohome.com.cn/config/series/2855.html",
+ "dims": [
+  {
+   "spec": "2023款 1.5L单排LAR",
+   "len": 4535.0,
+   "wb": 3050.0,
+   "width": 1595.0,
+   "height": 1870.0
+  },
+  {
+   "spec": "2021款 1.5L翼开启售货车电动飞翼款单排L3C",
+   "len": 4550.0,
+   "wb": 3050.0,
+   "width": 1605.0,
+   "height": 2268.0
+  },
+  {
+   "spec": "2020款 1.2L基本型 国VI 单排LSI",
+   "len": 4535.0,
+   "wb": 3050.0,
+   "width": 1595.0,
+   "height": 1870.0
+  },
+  {
+   "spec": "2023款 1.5L单排加长型LAR",
+   "len": 4785.0,
+   "wb": 3050.0,
+   "width": 1595.0,
+   "height": 1870.0
+  },
+  {
+   "spec": "2024款 1.5L单排超长型LAR",
+   "len": 5055.0,
+   "wb": 3050.0,
+   "width": 1630.0,
+   "height": 1870.0
+  }
+ ],
+ "group": "saic",
+ "series": "荣光",
+ "tier": "T3"
+}

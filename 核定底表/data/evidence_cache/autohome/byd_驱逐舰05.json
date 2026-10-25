@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6337,
+ "ah_key": "驱逐舰05",
+ "ah_name": "驱逐舰05",
+ "n_on": 10,
+ "n_off": 11,
+ "url": "https://car.autohome.com.cn/config/series/6337.html",
+ "dims": [
+  {
+   "spec": "2024款 荣耀版 DM-i 55KM 豪华型",
+   "len": 4780.0,
+   "wb": 2718.0,
+   "width": 1837.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2023款 冠军版 DM-i 55KM 豪华型",
+   "len": 4780.0,
+   "wb": 2718.0,
+   "width": 1837.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2023款 冠军版 DM-i 55KM 尊贵型",
+   "len": 4780.0,
+   "wb": 2718.0,
+   "width": 1837.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2024款 荣耀版 DM-i 55KM 尊贵型",
+   "len": 4780.0,
+   "wb": 2718.0,
+   "width": 1837.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2024款 荣耀版 DM-i 120KM 豪华型",
+   "len": 4780.0,
+   "wb": 2718.0,
+   "width": 1837.0,
+   "height": 1495.0
+  }
+ ],
+ "group": "byd",
+ "series": "驱逐舰05",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5622,
+ "ah_key": "AION V",
+ "ah_name": "AION V",
+ "n_on": 7,
+ "n_off": 75,
+ "url": "https://car.autohome.com.cn/config/series/5622.html",
+ "dims": [
+  {
+   "spec": "2026款 埃安霸王龙 家庭版 520 智豪版",
+   "len": 4580.0,
+   "wb": 2775.0,
+   "width": 1854.0,
+   "height": 1639.0
+  },
+  {
+   "spec": "2025款 L4概念车",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 埃安霸王龙 家庭版 520 智尊版",
+   "len": 4580.0,
+   "wb": 2775.0,
+   "width": 1854.0,
+   "height": 1686.0
+  },
+  {
+   "spec": "2024款 埃安霸王龙 520 行政版",
+   "len": 4605.0,
+   "wb": 2775.0,
+   "width": 1854.0,
+   "height": 1686.0
+  }
+ ],
+ "group": "gac",
+ "series": "AION V",
+ "tier": "T2"
+}

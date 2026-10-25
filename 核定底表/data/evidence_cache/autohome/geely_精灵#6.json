@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8465,
+ "ah_key": "smart精灵#6",
+ "ah_name": "smart精灵#6",
+ "n_on": 3,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8465.html",
+ "dims": [
+  {
+   "spec": "2026款 1675 Pro",
+   "len": 4906.0,
+   "wb": 2926.0,
+   "width": 1922.0,
+   "height": 1508.0
+  },
+  {
+   "spec": "2026款 1810 Max",
+   "len": 4906.0,
+   "wb": 2926.0,
+   "width": 1922.0,
+   "height": 1508.0
+  },
+  {
+   "spec": "2026款 1810 Ultra",
+   "len": 4906.0,
+   "wb": 2926.0,
+   "width": 1922.0,
+   "height": 1508.0
+  }
+ ],
+ "group": "geely",
+ "series": "精灵#6",
+ "tier": "T3"
+}

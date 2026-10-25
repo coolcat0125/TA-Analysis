@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8758,
+ "ah_key": "腾势Z9S",
+ "ah_name": "腾势Z9S",
+ "n_on": 3,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8758.html",
+ "dims": [
+  {
+   "spec": "2026款 易三方闪充性能型",
+   "len": 5090.0,
+   "wb": 3025.0,
+   "width": 1980.0,
+   "height": 1490.0
+  },
+  {
+   "spec": "2026款 闪充尊荣型",
+   "len": 5090.0,
+   "wb": 3025.0,
+   "width": 1980.0,
+   "height": 1490.0
+  },
+  {
+   "spec": "2026款 闪充旗舰型",
+   "len": 5090.0,
+   "wb": 3025.0,
+   "width": 1980.0,
+   "height": 1490.0
+  }
+ ],
+ "group": "byd",
+ "series": "腾势Z9S",
+ "tier": "T3"
+}

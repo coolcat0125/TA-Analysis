@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8470,
+ "ah_key": "智己LS8",
+ "ah_name": "智己LS8",
+ "n_on": 4,
+ "n_off": 4,
+ "url": "https://car.autohome.com.cn/config/series/8470.html",
+ "dims": [
+  {
+   "spec": "2026款 52 Max+ 科技旗舰大五座",
+   "len": 5085.0,
+   "wb": 3060.0,
+   "width": 2000.0,
+   "height": 1807.0
+  },
+  {
+   "spec": "2026款 改装版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 52 Pro Max+",
+   "len": 5085.0,
+   "wb": 3060.0,
+   "width": 2000.0,
+   "height": 1807.0
+  },
+  {
+   "spec": "2026款 52 Max+ 奢享大六座",
+   "len": 5085.0,
+   "wb": 3060.0,
+   "width": 2000.0,
+   "height": 1807.0
+  },
+  {
+   "spec": "2026款 66 Ultra 科技旗舰大五座",
+   "len": 5085.0,
+   "wb": 3060.0,
+   "width": 2000.0,
+   "height": 1807.0
+  }
+ ],
+ "group": "saic",
+ "series": "智己LS8",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7853,
+ "ah_key": "风云A9",
+ "ah_name": "风云A9",
+ "n_on": 4,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/7853.html",
+ "dims": [
+  {
+   "spec": "2026款 655 PRO版",
+   "len": 4836.0,
+   "wb": 2900.0,
+   "width": 1896.0,
+   "height": 1489.0
+  },
+  {
+   "spec": "2026款 增程 基本型",
+   "len": 4836.0,
+   "wb": 2900.0,
+   "width": 1896.0,
+   "height": 1491.0
+  },
+  {
+   "spec": "2026款 WAGON",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 655 MAX版",
+   "len": 4836.0,
+   "wb": 2900.0,
+   "width": 1896.0,
+   "height": 1489.0
+  },
+  {
+   "spec": "2026款 655 MAX激光雷达版",
+   "len": 4836.0,
+   "wb": 2900.0,
+   "width": 1896.0,
+   "height": 1489.0
+  }
+ ],
+ "group": "chery",
+ "series": "风云A9",
+ "tier": "T1"
+}

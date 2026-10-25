@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7815,
+ "ah_key": "宋L DM-i",
+ "ah_name": "宋L DM-i",
+ "n_on": 8,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/7815.html",
+ "dims": [
+  {
+   "spec": "2025款 智驾版 75km 领先型",
+   "len": 4780.0,
+   "wb": 2782.0,
+   "width": 1898.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2024款 75km 领先型",
+   "len": 4780.0,
+   "wb": 2782.0,
+   "width": 1898.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2024款 112km 领先型",
+   "len": 4780.0,
+   "wb": 2782.0,
+   "width": 1898.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2026款 130KM超越型",
+   "len": 4780.0,
+   "wb": 2782.0,
+   "width": 1898.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2025款 智驾版 112km 领先型",
+   "len": 4780.0,
+   "wb": 2782.0,
+   "width": 1898.0,
+   "height": 1670.0
+  }
+ ],
+ "group": "byd",
+ "series": "宋L",
+ "tier": "T1"
+}

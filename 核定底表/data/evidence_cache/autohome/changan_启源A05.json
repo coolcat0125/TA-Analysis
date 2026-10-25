@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 7314,
+ "ah_key": "长安启源A05经典",
+ "ah_name": "长安启源A05经典",
+ "n_on": 0,
+ "n_off": 17,
+ "url": "https://car.autohome.com.cn/config/series/7314.html",
+ "dims": [
+  {
+   "spec": "2025款 真香版 70 领先型",
+   "len": 4785.0,
+   "wb": 2765.0,
+   "width": 1840.0,
+   "height": 1460.0
+  },
+  {
+   "spec": "2025款 真香版 70 超越型",
+   "len": 4785.0,
+   "wb": 2765.0,
+   "width": 1840.0,
+   "height": 1460.0
+  }
+ ],
+ "group": "changan",
+ "series": "启源A05",
+ "tier": "T2"
+}

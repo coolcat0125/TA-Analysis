@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 5096,
+ "ah_key": "瑞虎e",
+ "ah_name": "瑞虎e",
+ "n_on": 0,
+ "n_off": 14,
+ "url": "https://car.autohome.com.cn/config/series/5096.html",
+ "dims": [
+  {
+   "spec": "2021款 虎踞版 95kW",
+   "len": 4358.0,
+   "wb": 2630.0,
+   "width": 1830.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2021款 虎踞版 120kW",
+   "len": 4358.0,
+   "wb": 2630.0,
+   "width": 1830.0,
+   "height": 1670.0
+  }
+ ],
+ "group": "chery",
+ "series": "TIGGOE",
+ "tier": "T2"
+}

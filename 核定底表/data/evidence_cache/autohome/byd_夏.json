@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7851,
+ "ah_key": "夏",
+ "ah_name": "夏",
+ "n_on": 5,
+ "n_off": 5,
+ "url": "https://car.autohome.com.cn/config/series/7851.html",
+ "dims": [
+  {
+   "spec": "2026款 DM-i 1.5T 100KM 进取型",
+   "len": 5145.0,
+   "wb": 3045.0,
+   "width": 1970.0,
+   "height": 1805.0
+  },
+  {
+   "spec": "2026款 露营版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 DM-i 1.5T 100km 领先型",
+   "len": 5145.0,
+   "wb": 3045.0,
+   "width": 1970.0,
+   "height": 1805.0
+  },
+  {
+   "spec": "2026款 DM-i 1.5T 100KM 超越型",
+   "len": 5145.0,
+   "wb": 3045.0,
+   "width": 1970.0,
+   "height": 1805.0
+  },
+  {
+   "spec": "2026款 DM-i 1.5T 218KM 超越型",
+   "len": 5145.0,
+   "wb": 3045.0,
+   "width": 1970.0,
+   "height": 1805.0
+  }
+ ],
+ "group": "byd",
+ "series": "夏",
+ "tier": "T2"
+}

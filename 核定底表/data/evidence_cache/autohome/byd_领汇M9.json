@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8524,
+ "ah_key": "领汇M9",
+ "ah_name": "领汇M9",
+ "n_on": 4,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8524.html",
+ "dims": [
+  {
+   "spec": "2026款 1105豪华版",
+   "len": 5200.0,
+   "wb": 3045.0,
+   "width": 1970.0,
+   "height": 1805.0
+  },
+  {
+   "spec": "2026款 1105尊贵版",
+   "len": 5200.0,
+   "wb": 3045.0,
+   "width": 1970.0,
+   "height": 1805.0
+  },
+  {
+   "spec": "2026款 1105豪华领航版",
+   "len": 5200.0,
+   "wb": 3045.0,
+   "width": 1970.0,
+   "height": 1805.0
+  }
+ ],
+ "group": "byd",
+ "series": "领汇M9",
+ "tier": "T3"
+}

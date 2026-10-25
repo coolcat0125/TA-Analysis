@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8463,
+ "ah_key": "秦MAX",
+ "ah_name": "秦MAX",
+ "n_on": 10,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8463.html",
+ "dims": [
+  {
+   "spec": "2026款 DM-i 230KM领先型",
+   "len": 4866.0,
+   "wb": 2820.0,
+   "width": 1880.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2026款 DM-i 230KM超越型",
+   "len": 4866.0,
+   "wb": 2820.0,
+   "width": 1880.0,
+   "height": 1495.0
+  },
+  {
+   "spec": "2026款 DM-i 320KM超越型",
+   "len": 4866.0,
+   "wb": 2820.0,
+   "width": 1880.0,
+   "height": 1495.0
+  }
+ ],
+ "group": "byd",
+ "series": "秦MAX",
+ "tier": "T2"
+}

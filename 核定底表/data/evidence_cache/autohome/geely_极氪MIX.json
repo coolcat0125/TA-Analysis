@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 7631,
+ "ah_key": "极氪MIX",
+ "ah_name": "极氪MIX",
+ "n_on": 2,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/7631.html",
+ "dims": [
+  {
+   "spec": "2025款 智驾版",
+   "len": 4688.0,
+   "wb": 3008.0,
+   "width": 1995.0,
+   "height": 1755.0
+  },
+  {
+   "spec": "2025款 长续航智驾版",
+   "len": 4688.0,
+   "wb": 3008.0,
+   "width": 1995.0,
+   "height": 1755.0
+  }
+ ],
+ "group": "geely",
+ "series": "极氪MIX",
+ "tier": "T2"
+}

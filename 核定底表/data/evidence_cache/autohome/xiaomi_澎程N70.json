@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 8731,
+ "ah_key": "小米澎程N70",
+ "ah_name": "小米澎程N70",
+ "n_on": 2,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8731.html",
+ "dims": [
+  {
+   "spec": "2026款 Pro版",
+   "len": 4960.0,
+   "wb": 2950.0,
+   "width": 1998.0,
+   "height": 1785.0
+  },
+  {
+   "spec": "2026款 Max版",
+   "len": 4960.0,
+   "wb": 2950.0,
+   "width": 1998.0,
+   "height": 1765.0
+  }
+ ],
+ "group": "xiaomi",
+ "series": "澎程N70",
+ "tier": "T3"
+}

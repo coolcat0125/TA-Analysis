@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6095,
+ "ah_key": "小鹏P5",
+ "ah_name": "小鹏P5",
+ "n_on": 0,
+ "n_off": 21,
+ "url": "https://car.autohome.com.cn/config/series/6095.html",
+ "dims": [
+  {
+   "spec": "2024款 500Plus版",
+   "len": 4860.0,
+   "wb": 2768.0,
+   "width": 1840.0,
+   "height": 1520.0
+  },
+  {
+   "spec": "2024款 500智行版",
+   "len": 4860.0,
+   "wb": 2768.0,
+   "width": 1840.0,
+   "height": 1520.0
+  }
+ ],
+ "group": "xpeng",
+ "series": "小鹏P5",
+ "tier": "T2"
+}

@@ -1,0 +1,21 @@
+{
+ "status": "ok",
+ "seriesid": 8611,
+ "ah_key": "捷途环游者 EV",
+ "ah_name": "捷途环游者 EV",
+ "n_on": 0,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8611.html",
+ "dims": [
+  {
+   "spec": "2026款 基本型",
+   "len": 4605.0,
+   "wb": 2735.0,
+   "width": 1880.0,
+   "height": 1700.0
+  }
+ ],
+ "group": "chery",
+ "series": "环游者",
+ "tier": "T2"
+}

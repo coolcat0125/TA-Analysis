@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 8468,
+ "ah_key": "星光L",
+ "ah_name": "星光L",
+ "n_on": 3,
+ "n_off": 3,
+ "url": "https://car.autohome.com.cn/config/series/8468.html",
+ "dims": [
+  {
+   "spec": "2026款 260km 六座舒享型",
+   "len": 4980.0,
+   "wb": 2950.0,
+   "width": 1930.0,
+   "height": 1760.0
+  },
+  {
+   "spec": "2026款 1.5T 基本型",
+   "len": 4980.0,
+   "wb": 2950.0,
+   "width": 1930.0,
+   "height": 1760.0
+  },
+  {
+   "spec": "2026款 黑武士版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 260km 六座臻享型",
+   "len": 4980.0,
+   "wb": 2950.0,
+   "width": 1930.0,
+   "height": 1760.0
+  },
+  {
+   "spec": "2026款 260km 六座旗舰型",
+   "len": 4980.0,
+   "wb": 2950.0,
+   "width": 1930.0,
+   "height": 1760.0
+  }
+ ],
+ "group": "saic",
+ "series": "星光L",
+ "tier": "T2"
+}

@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8183,
+ "ah_key": "理想i6",
+ "ah_name": "理想i6",
+ "n_on": 2,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/8183.html",
+ "dims": [
+  {
+   "spec": "2025款 两驱标准版",
+   "len": 4950.0,
+   "wb": 3000.0,
+   "width": 1935.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2026款 两驱标准版",
+   "len": 4950.0,
+   "wb": 3000.0,
+   "width": 1935.0,
+   "height": 1655.0
+  },
+  {
+   "spec": "2026款 四驱标准版",
+   "len": 4950.0,
+   "wb": 3000.0,
+   "width": 1935.0,
+   "height": 1655.0
+  },
+  {
+   "spec": "2025款 四驱标准版",
+   "len": 4950.0,
+   "wb": 3000.0,
+   "width": 1935.0,
+   "height": 1670.0
+  }
+ ],
+ "group": "liauto",
+ "series": "理想I6",
+ "tier": "T2"
+}

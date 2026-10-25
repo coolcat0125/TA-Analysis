@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 7979,
+ "ah_key": "深蓝S09",
+ "ah_name": "深蓝S09",
+ "n_on": 8,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/7979.html",
+ "dims": [
+  {
+   "spec": "2025款 改款 后驱Max",
+   "len": 5205.0,
+   "wb": 3105.0,
+   "width": 1996.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2025款 后驱Max",
+   "len": 5205.0,
+   "wb": 3105.0,
+   "width": 1996.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2025款 后驱Ultra",
+   "len": 5205.0,
+   "wb": 3105.0,
+   "width": 1996.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 后驱Ultra 超长续航版",
+   "len": 5205.0,
+   "wb": 3105.0,
+   "width": 1996.0,
+   "height": 1800.0
+  }
+ ],
+ "group": "changan",
+ "series": "深蓝S09",
+ "tier": "T1"
+}

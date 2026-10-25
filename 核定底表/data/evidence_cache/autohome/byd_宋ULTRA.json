@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8511,
+ "ah_key": "宋Ultra",
+ "ah_name": "宋Ultra",
+ "n_on": 9,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8511.html",
+ "dims": [
+  {
+   "spec": "2026款 DM-i 205KM 领先型",
+   "len": 4850.0,
+   "wb": 2840.0,
+   "width": 1910.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2026款 DM-i 205KM 超越型",
+   "len": 4850.0,
+   "wb": 2840.0,
+   "width": 1910.0,
+   "height": 1670.0
+  },
+  {
+   "spec": "2026款 DM-i 310KM 领先型",
+   "len": 4850.0,
+   "wb": 2840.0,
+   "width": 1910.0,
+   "height": 1670.0
+  }
+ ],
+ "group": "byd",
+ "series": "宋ULTRA",
+ "tier": "T2"
+}

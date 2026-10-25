@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7154,
+ "ah_key": "风云A8",
+ "ah_name": "风云A8",
+ "n_on": 5,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/7154.html",
+ "dims": [
+  {
+   "spec": "2025款 70km 基本型",
+   "len": 4780.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1487.0
+  },
+  {
+   "spec": "2025款 145km 标准型",
+   "len": 4780.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1487.0
+  },
+  {
+   "spec": "2024款 127 远航版 标准型",
+   "len": 4780.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1487.0
+  },
+  {
+   "spec": "2025款 70km 标准型",
+   "len": 4780.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1487.0
+  },
+  {
+   "spec": "2025款 70km 舒适型",
+   "len": 4780.0,
+   "wb": 2790.0,
+   "width": 1843.0,
+   "height": 1487.0
+  }
+ ],
+ "group": "chery",
+ "series": "风云A8",
+ "tier": "T2"
+}

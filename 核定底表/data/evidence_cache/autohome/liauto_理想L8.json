@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 6910,
+ "ah_key": "理想L8",
+ "ah_name": "理想L8",
+ "n_on": 2,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/6910.html",
+ "dims": [
+  {
+   "spec": "2026款 Ultra",
+   "len": 5135.0,
+   "wb": 3045.0,
+   "width": 2000.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2025款 Pro 智能焕新版",
+   "len": 5080.0,
+   "wb": 3005.0,
+   "width": 1995.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2025款 Max 智能焕新版",
+   "len": 5080.0,
+   "wb": 3005.0,
+   "width": 1995.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 Livis",
+   "len": 5135.0,
+   "wb": 3045.0,
+   "width": 2000.0,
+   "height": 1800.0
+  }
+ ],
+ "group": "liauto",
+ "series": "理想L8",
+ "tier": "T2"
+}

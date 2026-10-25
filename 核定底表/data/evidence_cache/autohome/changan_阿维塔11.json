@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6354,
+ "ah_key": "阿维塔11",
+ "ah_name": "阿维塔11",
+ "n_on": 6,
+ "n_off": 35,
+ "url": "https://car.autohome.com.cn/config/series/6354.html",
+ "dims": [
+  {
+   "spec": "2025款 改款 Max 增程版",
+   "len": 4895.0,
+   "wb": 2975.0,
+   "width": 1970.0,
+   "height": 1601.0
+  },
+  {
+   "spec": "2025款 中国香港车展版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 Max 增程版",
+   "len": 4895.0,
+   "wb": 2975.0,
+   "width": 1970.0,
+   "height": 1601.0
+  },
+  {
+   "spec": "2025款 Max 纯电版",
+   "len": 4895.0,
+   "wb": 2975.0,
+   "width": 1970.0,
+   "height": 1601.0
+  },
+  {
+   "spec": "2025款 Max 纯电版四驱",
+   "len": 4895.0,
+   "wb": 2975.0,
+   "width": 1970.0,
+   "height": 1601.0
+  }
+ ],
+ "group": "changan",
+ "series": "阿维塔11",
+ "tier": "T2"
+}

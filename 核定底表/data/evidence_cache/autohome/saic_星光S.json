@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7671,
+ "ah_key": "五菱星光S",
+ "ah_name": "五菱星光S",
+ "n_on": 6,
+ "n_off": 7,
+ "url": "https://car.autohome.com.cn/config/series/7671.html",
+ "dims": [
+  {
+   "spec": "2025款 60km 进阶型",
+   "len": 4745.0,
+   "wb": 2800.0,
+   "width": 1890.0,
+   "height": 1685.0
+  },
+  {
+   "spec": "2026款 长续航 高配型",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 长续航 基础型",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 130km 领航型",
+   "len": 4745.0,
+   "wb": 2800.0,
+   "width": 1890.0,
+   "height": 1680.0
+  },
+  {
+   "spec": "2025款 130km 旗舰型",
+   "len": 4745.0,
+   "wb": 2800.0,
+   "width": 1890.0,
+   "height": 1680.0
+  }
+ ],
+ "group": "saic",
+ "series": "星光S",
+ "tier": "T2"
+}

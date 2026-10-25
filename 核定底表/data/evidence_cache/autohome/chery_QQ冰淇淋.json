@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 6309,
+ "ah_key": "QQ冰淇淋",
+ "ah_name": "QQ冰淇淋",
+ "n_on": 7,
+ "n_off": 35,
+ "url": "https://car.autohome.com.cn/config/series/6309.html",
+ "dims": [
+  {
+   "spec": "2025款 155km 圣代版",
+   "len": 3008.0,
+   "wb": 1960.0,
+   "width": 1496.0,
+   "height": 1637.0
+  },
+  {
+   "spec": "2026款 潮酷版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2026款 复古版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 205km 圣代版",
+   "len": 3008.0,
+   "wb": 1960.0,
+   "width": 1496.0,
+   "height": 1637.0
+  },
+  {
+   "spec": "2025款 205km 元气版",
+   "len": 3008.0,
+   "wb": 1960.0,
+   "width": 1496.0,
+   "height": 1637.0
+  }
+ ],
+ "group": "chery",
+ "series": "QQ冰淇淋",
+ "tier": "T2"
+}

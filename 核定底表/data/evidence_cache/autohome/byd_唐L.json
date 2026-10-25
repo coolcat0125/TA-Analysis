@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8005,
+ "ah_key": "唐L",
+ "ah_name": "唐L",
+ "n_on": 6,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8005.html",
+ "dims": [
+  {
+   "spec": "2025款 EV 600KM四驱激光雷达旗舰型",
+   "len": 5040.0,
+   "wb": 2950.0,
+   "width": 1996.0,
+   "height": 1760.0
+  },
+  {
+   "spec": "2025款 黑神话悟空特别版",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2025款 DM 215KM激光雷达旗舰型",
+   "len": 5040.0,
+   "wb": 2950.0,
+   "width": 1996.0,
+   "height": 1760.0
+  },
+  {
+   "spec": "2025款 DM 200KM四驱激光雷达旗舰型",
+   "len": 5040.0,
+   "wb": 2950.0,
+   "width": 1996.0,
+   "height": 1760.0
+  }
+ ],
+ "group": "byd",
+ "series": "唐L",
+ "tier": "T2"
+}

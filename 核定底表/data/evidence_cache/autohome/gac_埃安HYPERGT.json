@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 7084,
+ "ah_key": "昊铂GT",
+ "ah_name": "昊铂GT",
+ "n_on": 6,
+ "n_off": 19,
+ "url": "https://car.autohome.com.cn/config/series/7084.html",
+ "dims": [
+  {
+   "spec": "2025款 560 Lite版",
+   "len": 4886.0,
+   "wb": 2920.0,
+   "width": 1885.0,
+   "height": 1449.0
+  },
+  {
+   "spec": "2026款 攀登款 710 后驱特高压NDA版 三元锂",
+   "len": 4886.0,
+   "wb": 2920.0,
+   "width": 1917.0,
+   "height": 1449.0
+  },
+  {
+   "spec": "2026款 攀登款 710 后驱特高压NDA版",
+   "len": 4886.0,
+   "wb": 2920.0,
+   "width": 1917.0,
+   "height": 1449.0
+  },
+  {
+   "spec": "2025款 630 Lite版",
+   "len": 4886.0,
+   "wb": 2920.0,
+   "width": 1885.0,
+   "height": 1449.0
+  },
+  {
+   "spec": "2025款 改款 630 Max版",
+   "len": 4886.0,
+   "wb": 2920.0,
+   "width": 1885.0,
+   "height": 1449.0
+  }
+ ],
+ "group": "gac",
+ "series": "埃安HYPERGT",
+ "tier": "T2"
+}

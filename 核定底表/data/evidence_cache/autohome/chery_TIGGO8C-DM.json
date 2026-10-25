@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 4693,
+ "ah_key": "瑞虎8",
+ "ah_name": "瑞虎8",
+ "n_on": 12,
+ "n_off": 109,
+ "url": "https://car.autohome.com.cn/config/series/4693.html",
+ "dims": [
+  {
+   "spec": "2025款 卓越版 230TCI 手动舒适版 5座",
+   "len": 4722.0,
+   "wb": 2710.0,
+   "width": 1860.0,
+   "height": 1745.0
+  },
+  {
+   "spec": "2025款 290TGDI 自动畅行版 5座",
+   "len": 4700.0,
+   "wb": 2710.0,
+   "width": 1860.0,
+   "height": 1746.0
+  },
+  {
+   "spec": "2024款 荣耀版 230TCI 手动进阶版 5座",
+   "len": 4700.0,
+   "wb": 2710.0,
+   "width": 1860.0,
+   "height": 1746.0
+  },
+  {
+   "spec": "2025款 卓越版 230TCI 手动舒适版 7座",
+   "len": 4722.0,
+   "wb": 2710.0,
+   "width": 1860.0,
+   "height": 1745.0
+  },
+  {
+   "spec": "2025款 卓越版 230TCI 自动豪华版 5座",
+   "len": 4722.0,
+   "wb": 2710.0,
+   "width": 1860.0,
+   "height": 1745.0
+  }
+ ],
+ "group": "chery",
+ "series": "TIGGO8C-DM",
+ "tier": "T1"
+}

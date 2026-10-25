@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 6049,
+ "ah_key": "沃尔沃C40",
+ "ah_name": "沃尔沃C40",
+ "n_on": 0,
+ "n_off": 11,
+ "url": "https://car.autohome.com.cn/config/series/6049.html",
+ "dims": [
+  {
+   "spec": "2024款 长续航版",
+   "len": 4440.0,
+   "wb": 2702.0,
+   "width": 1873.0,
+   "height": 1596.0
+  },
+  {
+   "spec": "2024款 长续航版 PRO",
+   "len": 4440.0,
+   "wb": 2702.0,
+   "width": 1873.0,
+   "height": 1596.0
+  }
+ ],
+ "group": "geely",
+ "series": "沃尔沃C40",
+ "tier": "T2"
+}

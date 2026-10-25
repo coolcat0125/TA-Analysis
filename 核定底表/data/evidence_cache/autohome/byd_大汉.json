@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 8517,
+ "ah_key": "大汉",
+ "ah_name": "大汉",
+ "n_on": 3,
+ "n_off": 1,
+ "url": "https://car.autohome.com.cn/config/series/8517.html",
+ "dims": [
+  {
+   "spec": "2026款 纯电 1008KM 后驱激光雷达尊享型",
+   "len": 5256.0,
+   "wb": 3130.0,
+   "width": 1999.0,
+   "height": 1510.0
+  },
+  {
+   "spec": "2026款 插混 基本型",
+   "len": 5256.0,
+   "wb": 3130.0,
+   "width": 1999.0,
+   "height": 1510.0
+  },
+  {
+   "spec": "2026款 纯电 1008KM 后驱激光雷达旗舰型",
+   "len": 5256.0,
+   "wb": 3130.0,
+   "width": 1999.0,
+   "height": 1510.0
+  },
+  {
+   "spec": "2026款 纯电 880KM 四驱激光雷达旗舰型",
+   "len": 5256.0,
+   "wb": 3130.0,
+   "width": 1999.0,
+   "height": 1510.0
+  }
+ ],
+ "group": "byd",
+ "series": "大汉",
+ "tier": "T2"
+}

@@ -1,0 +1,49 @@
+{
+ "status": "ok",
+ "seriesid": 5927,
+ "ah_key": "长安UNI-K",
+ "ah_name": "长安UNI-K",
+ "n_on": 10,
+ "n_off": 9,
+ "url": "https://car.autohome.com.cn/config/series/5927.html",
+ "dims": [
+  {
+   "spec": "2023款 2.0T 两驱悦尚型",
+   "len": 4865.0,
+   "wb": 2890.0,
+   "width": 1948.0,
+   "height": 1690.0
+  },
+  {
+   "spec": "2021款 2.0T 豪华型",
+   "len": 4865.0,
+   "wb": 2890.0,
+   "width": 1948.0,
+   "height": 1690.0
+  },
+  {
+   "spec": "2021款 2.0T 卓越型",
+   "len": 4865.0,
+   "wb": 2890.0,
+   "width": 1948.0,
+   "height": 1690.0
+  },
+  {
+   "spec": "2024款 2.0T 两驱悦尚型",
+   "len": 4865.0,
+   "wb": 2890.0,
+   "width": 1948.0,
+   "height": 1690.0
+  },
+  {
+   "spec": "2024款 2.0T 两驱旅行升级版",
+   "len": 4865.0,
+   "wb": 2890.0,
+   "width": 1948.0,
+   "height": 1690.0
+  }
+ ],
+ "group": "changan",
+ "series": "UNI-K",
+ "tier": "T2"
+}

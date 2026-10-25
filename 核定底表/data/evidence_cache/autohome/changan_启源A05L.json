@@ -1,0 +1,28 @@
+{
+ "status": "ok",
+ "seriesid": 8732,
+ "ah_key": "长安启源A05L",
+ "ah_name": "长安启源A05L",
+ "n_on": 0,
+ "n_off": 2,
+ "url": "https://car.autohome.com.cn/config/series/8732.html",
+ "dims": [
+  {
+   "spec": "2026款 基本型",
+   "len": 4800.0,
+   "wb": 2825.0,
+   "width": 1870.0,
+   "height": 1505.0
+  },
+  {
+   "spec": "2026款 顶配版",
+   "len": 4800.0,
+   "wb": 2825.0,
+   "width": 1870.0,
+   "height": 1505.0
+  }
+ ],
+ "group": "changan",
+ "series": "启源A05L",
+ "tier": "T2"
+}

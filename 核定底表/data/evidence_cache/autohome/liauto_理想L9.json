@@ -1,0 +1,42 @@
+{
+ "status": "ok",
+ "seriesid": 6576,
+ "ah_key": "理想L9",
+ "ah_name": "理想L9",
+ "n_on": 2,
+ "n_off": 6,
+ "url": "https://car.autohome.com.cn/config/series/6576.html",
+ "dims": [
+  {
+   "spec": "2026款 Ultra",
+   "len": 5255.0,
+   "wb": 3125.0,
+   "width": 2000.0,
+   "height": 1810.0
+  },
+  {
+   "spec": "2025款 Pro 智能焕新版",
+   "len": 5218.0,
+   "wb": 3105.0,
+   "width": 1998.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2025款 Ultra 智能焕新版",
+   "len": 5218.0,
+   "wb": 3105.0,
+   "width": 1998.0,
+   "height": 1800.0
+  },
+  {
+   "spec": "2026款 Livis",
+   "len": 5255.0,
+   "wb": 3125.0,
+   "width": 2000.0,
+   "height": 1810.0
+  }
+ ],
+ "group": "liauto",
+ "series": "理想L9",
+ "tier": "T2"
+}

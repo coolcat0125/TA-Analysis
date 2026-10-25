@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 6012,
+ "ah_key": "智己L7",
+ "ah_name": "智己L7",
+ "n_on": 1,
+ "n_off": 12,
+ "url": "https://car.autohome.com.cn/config/series/6012.html",
+ "dims": [
+  {
+   "spec": "2024款 MAX 超长续航版",
+   "len": 5108.0,
+   "wb": 3100.0,
+   "width": 1960.0,
+   "height": 1485.0
+  },
+  {
+   "spec": "2024款 Robotaxi",
+   "len": null,
+   "wb": null,
+   "width": null,
+   "height": null
+  },
+  {
+   "spec": "2024款 公务版",
+   "len": 5108.0,
+   "wb": 3100.0,
+   "width": 1960.0,
+   "height": 1485.0
+  }
+ ],
+ "group": "saic",
+ "series": "智己L7",
+ "tier": "T2"
+}

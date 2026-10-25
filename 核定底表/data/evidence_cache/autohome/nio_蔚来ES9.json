@@ -1,0 +1,35 @@
+{
+ "status": "ok",
+ "seriesid": 8509,
+ "ah_key": "蔚来ES9",
+ "ah_name": "蔚来ES9",
+ "n_on": 6,
+ "n_off": 0,
+ "url": "https://car.autohome.com.cn/config/series/8509.html",
+ "dims": [
+  {
+   "spec": "2026款 102kWh 行政中岛豪华版",
+   "len": 5365.0,
+   "wb": 3250.0,
+   "width": 2029.0,
+   "height": 1870.0
+  },
+  {
+   "spec": "2026款 102kWh 行政通道豪华版",
+   "len": 5365.0,
+   "wb": 3250.0,
+   "width": 2029.0,
+   "height": 1870.0
+  },
+  {
+   "spec": "2026款 102kWh 行政中岛签名版",
+   "len": 5365.0,
+   "wb": 3250.0,
+   "width": 2029.0,
+   "height": 1870.0
+  }
+ ],
+ "group": "nio",
+ "series": "蔚来ES9",
+ "tier": "T3"
+}
