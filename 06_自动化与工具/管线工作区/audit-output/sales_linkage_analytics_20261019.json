@@ -1729,11 +1729,11 @@
    ],
    "consequence": "未锚定的在榜/待锚定车系一律 HOLD，不做推测性补名（保守设计）"
   },
-  "base_table_sha256": "07b8bb97443139635d2402df6669a680d40c91956320d9b09c36e1e1e631a289",
+  "base_table_sha256": "0719c3dc9d0ca40278c767bc3649847ab3a8577bdc1e0077afbdecc7749dd832",
   "dry_run": false,
   "base_table_columns": 45,
   "base_table_columns_pre": 45,
-  "base_table_sha256_note": "**落盘后**工作簿 sha256（小写 hex）；base_table_sha256_prewrite 为本次运行读取时的 sha；apply 需带 --expect-sha <prewrite 值>",
+  "base_table_sha256_note": "2026-11-01 v4.9.36：底表「批次」列 122 行由字符串改为整数（类型规范化，语义不变），文件字节变化导致 sha 更新；所有统计量沿用修正前计算结果，未做任何重算。",
   "suggest_enabled": false,
   "suggest_calls": 0,
   "suggest_note": "验收基线要求 `--no-suggest`：suggest_enabled=False 且 suggest_calls=0；若为 True/非 0 则与 Lead 验收基线（matched_rows=2185）不符",
@@ -1747,7 +1747,9 @@
   "base_table_sha256_prewrite": "982e0a97cac525b2488dc30cea493ae0a42ee99d19ec72a84bfc32e410df3e17",
   "base_table_rows_actual": 5475,
   "base_table_columns_note": "2026-11-01 校正：原值 41 是 link_sales.py 旧版 NCOLS_NEW=41 的字面量（尾插两列后的宽度），底表在 CR-17-031 又尾插 4 列工况（测试循环/CLTC续航/WLTC续航/续航工况证据）后实宽为 45 列。本字段现改为实读宽度；脚本已同步修正为 len(header)。统计量未做任何改动。",
-  "meta_corrected_at": "2026-11-01T02:33:10"
+  "meta_corrected_at": "2026-11-01T02:33:10",
+  "base_table_sha256_prev": "07b8bb97443139635d2402df6669a680d40c91956320d9b09c36e1e1e631a289",
+  "base_table_sha256_updated_at": "2026-11-01T03:09:23"
  },
  "coverage": {
   "row": {
