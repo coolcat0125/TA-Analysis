@@ -1,4 +1,4 @@
-# sync.ps1 — TA-Analysis 多终端一键同步（只快进，不自动 push）
+﻿# sync.ps1 — TA-Analysis 多终端一键同步（只快进，不自动 push）
 $OutputEncoding = [Text.Encoding]::UTF8
 [Console]::OutputEncoding = [Text.Encoding]::UTF8
 chcp 65001 | Out-Null

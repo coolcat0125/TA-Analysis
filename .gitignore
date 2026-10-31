@@ -31,3 +31,5 @@ _cache_sales_*.json
 !06_自动化与工具/_scripts/_sync_from_github.py
 # 会话期校验脚本与证据归档（2026-11-01 清理轮）
 _lead_workspace_*/
+# 构建目录内的自动备份（还原点，本地留存；内容可由 git 历史 + 重跑再生）
+06_自动化与工具/管线工作区/archive/
