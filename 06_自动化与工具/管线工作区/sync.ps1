@@ -1,4 +1,4 @@
-﻿# sync.ps1 — TA-Analysis 多终端一键同步（只快进，不自动 push）
+# sync.ps1 — TA-Analysis 多终端一键同步（只快进，不自动 push）
 $OutputEncoding = [Text.Encoding]::UTF8
 [Console]::OutputEncoding = [Text.Encoding]::UTF8
 chcp 65001 | Out-Null
@@ -47,6 +47,9 @@ try {
     Write-Host ("    记录数=" + $r.dataset.records + "  门禁=" + $verdict)
 } catch { Write-Host "    (审计报告读取跳过)" }
 
-$firstLine = (Get-Content "CHANGELOG.md" -Encoding UTF8 | Where-Object { $_ -match '^## \[(.+)\]' } | Select-Object -First 1)
+# 七层目录重组（2026-11-01 e650cba）后 CHANGELOG 已迁至 05_文档与流程/仓库文档/；
+# 兼容两种位置，避免版本号显示为空。
+$chlog = if (Test-Path "CHANGELOG.md") { "CHANGELOG.md" } else { Join-Path (Join-Path (Join-Path $PSScriptRoot "..") "..") "05_文档与流程/仓库文档/CHANGELOG.md" }
+$firstLine = (Get-Content $chlog -Encoding UTF8 | Where-Object { $_ -match '^## \[(.+)\]' } | Select-Object -First 1)
 $ver = $firstLine -replace '^## \[(.+?)\].*','$1'
 Write-Host ("==> 同步完成：当前版本 v" + $ver + " · HEAD " + (GitQ @("rev-parse","--short","HEAD") | Select-Object -First 1)) -ForegroundColor Green
