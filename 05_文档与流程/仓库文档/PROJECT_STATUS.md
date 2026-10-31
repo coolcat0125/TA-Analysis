@@ -86,7 +86,7 @@
 - **⑥全量排查**：45 列覆盖率画像 + 15 类问题清单（D1~D18）；新增《缺失值补缺台账》《缺失值排查说明》两表。
 - **⑦补缺执行**：只补空 193 格（P1 是否增程 152 / P2 电机总功率 41；P3 车长媒体推测 2,970 格全部拒写；P4 104 行已齐）；逐格登记行号/批次/型号/字段/旧值/新值/来源/判据，`变更记录` 65,451 → 65,658。
 - **⑧级联与校正**：`link_sales --dry-run --no-suggest` → `--apply`，+2 行锚定（411 批 eπ008 451 辆），`changed_cells=11`；`meta.base_table_columns` 41→45（旧值系 `NCOLS_NEW=41` 字面量，脚本改 `len(header)`），三份口径三处自动校正。
-- **⑨门禁**：`audit_data --strict` PASS（records 5,475 / columns 45 / failures []）；`verify_consistency` CRITICAL 0 / WARN 216。
+- **⑨门禁**：`audit_data --strict` PASS（records 5,475 / columns 45 / failures []）；`verify_consistency` CRITICAL 0 / WARN **212**（W2:1 / W4:25 / W5:27 / W6:159；另 W2 官方确证伪警抑制 31 条不计入）。较入库前基线 208 的 +4 全部来自 411/412 批新增行无通用名称、官方未采集油耗（集合差法证，与销量写入无关）。
 - **遗留**：报告 docx / 演示稿 pptx 的 `by_energy` 仍为补缺前口径（523,457/231,121/43,123 → 应 523,943/204,286/69,472）待重生成；底表「批次」列 122 行字符串型待修（JSON 侧已归一）。
 
 
