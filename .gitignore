@@ -26,3 +26,6 @@ node_modules/
 # 销量原始页归档与采集缓存（体积过大，仅本地留存；见 sales_source_qc_20261019.json meta.raw_archive_policy）
 audit-output/sales_autohome_raw_pages_*.json
 _cache_sales_*.json
+
+# 保留可复用的同步工具脚本（覆盖上方 _*.py 规则）
+!06_自动化与工具/_scripts/_sync_from_github.py
