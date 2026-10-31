@@ -9,12 +9,12 @@
   "source": "汽车之家·行业综合销量（车系级月度零售量，新能源榜 typeid=9&subranktypeid=2305）",
   "contract": "Update/销量联动JSON契约_20261019.md v1.1",
   "sales_source_kind": "official",
-  "sales_source_path": "D:\\#AI\\00 Project\\17 TA analysis\\01-主仓库\\TA-Analysis\\audit-output\\sales_autohome_series_monthly_20261019.json",
-  "base_table_path": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
+  "sales_source_path": "D:\\#AI\\00 Project\\17 TA analysis\\01-主仓库\\TA-Analysis\\06_自动化与工具\\管线工作区\\audit-output\\sales_autohome_series_monthly_20261019.json",
+  "base_table_path": "NEV公告参数汇总表_合并版（341~412批）.xlsx",
   "base_rows": 5475,
-  "base_table_sha256": "230dbb96378072902a932f111031ccc3be20d420ac158570b0680eb584d70e41",
+  "base_table_sha256": "07b8bb97443139635d2402df6669a680d40c91956320d9b09c36e1e1e631a289",
   "base_table_columns": 41,
-  "base_table_columns_pre": 41,
+  "base_table_columns_pre": 45,
   "dry_run": false,
   "batch_range": [
    341,
@@ -45,51 +45,51 @@
    "40": "销量覆盖状态"
   },
   "note": "多候选一律 HOLD（未匹配-命名待锚定），严禁硬填；占位符通用名称不参与匹配（无车系身份）；未匹配一律留空，禁止写 0",
-  "base_table_sha256_prewrite": "230dbb96378072902a932f111031ccc3be20d420ac158570b0680eb584d70e41",
+  "base_table_sha256_prewrite": "982e0a97cac525b2488dc30cea493ae0a42ee99d19ec72a84bfc32e410df3e17",
   "base_table_sha256_note": "**落盘后**工作簿 sha256（小写 hex）；base_table_sha256_prewrite 为本次运行读取时的 sha；apply 需带 --expect-sha <prewrite 值>"
  },
  "summary": {
   "total_rows": 5475,
-  "matched_rows": 2200,
+  "matched_rows": 2202,
   "matched_rows_channel": {
-   "unmatched": 2331,
-   "A_exact": 1192,
+   "unmatched": 2332,
+   "A_exact": 1194,
    "B_brand": 933,
    "placeholder": 317,
    "A2_split": 266,
    "C_substr": 227,
    "hold": 96,
-   "empty": 93,
+   "empty": 90,
    "multi_series_cell": 20
   },
   "distinct_generic": 1317,
   "distinct_seriesid_anchored": 348,
   "coverage": {
-   "row": 40.1826,
+   "row": 40.2192,
    "series": 26.6667,
    "current_board": 68.6131,
    "current_board_sales": 73.0453,
    "self_consistent_ratio": 91.3386
   },
   "status_counts": {
-   "在售-已匹配": 2200,
+   "在售-已匹配": 2202,
    "在售-零销量": 0,
    "未匹配-命名待锚定": 116,
-   "未匹配-已停产或未上量": 2749,
-   "无车系身份": 410,
+   "未匹配-已停产或未上量": 2750,
+   "无车系身份": 407,
    "未匹配-无车系ID": 0
   },
   "buckets": {
-   "无车系身份": 410,
-   "未匹配-已停产或未上量": 2749,
+   "无车系身份": 407,
+   "未匹配-已停产或未上量": 2750,
    "未匹配-命名待锚定": 116,
    "未匹配-无车系ID": 0
   },
   "status_rows_all": {
-   "未匹配-已停产或未上量": 2749,
-   "在售-已匹配": 2200,
+   "未匹配-已停产或未上量": 2750,
+   "在售-已匹配": 2202,
    "未匹配-命名待锚定": 116,
-   "无车系身份": 410
+   "无车系身份": 407
   },
   "match_channel_counts": {
    "unmatched": 724,
@@ -106,7 +106,7 @@
    "null": 110
   },
   "match_stats": {
-   "matched_rows": 2200,
+   "matched_rows": 2202,
    "channel_counts": {
     "unmatched": 724,
     "A_exact": 202,
@@ -119,14 +119,14 @@
     "empty": 2
    },
    "channel_counts_rows": {
-    "unmatched": 2331,
-    "A_exact": 1192,
+    "unmatched": 2332,
+    "A_exact": 1194,
     "B_brand": 933,
     "placeholder": 317,
     "A2_split": 266,
     "C_substr": 227,
     "hold": 96,
-    "empty": 93,
+    "empty": 90,
     "multi_series_cell": 20
    },
    "a2_base_channels": {
@@ -154,14 +154,14 @@
    "2026-09": 411
   },
   "union_series": 507,
-  "ledger_rows": 0,
-  "ledger_per_cell": 0,
-  "ledger_aggregate": 0,
-  "new_col_cells": 0,
-  "ledger_rows_canonical": 6608,
-  "ledger_per_cell_canonical": 6600,
+  "ledger_rows": 14,
+  "ledger_per_cell": 6,
+  "ledger_aggregate": 8,
+  "new_col_cells": 5,
+  "ledger_rows_canonical": 6614,
+  "ledger_per_cell_canonical": 6606,
   "ledger_aggregate_canonical": 8,
-  "new_col_cells_canonical": 8093,
+  "new_col_cells_canonical": 8095,
   "ledger_canonical_note": "状态无关口径：按 row_plan 应写入的格数/台账条数（首次 apply 时的值）；`changed_cells`/`ledger_rows` 是本次运行相对当前工作簿的增量，幂等重跑时为 0（Lead m01097 5 项 meta 对齐）",
   "ledger_rule": "列 35/36/37 逐格登记；列 39/40（新增列初始填充）按取值类别聚合登记，逐行取值见 per_generic（Lead m00878 裁决 4）"
  },
@@ -181,13 +181,13 @@
   },
   {
    "generic": "",
-   "rows": 90,
+   "rows": 87,
    "channel": "empty",
    "seriesid": null,
    "seriesname": null,
    "candidates": [],
    "candidate_sids": [],
-   "trademark": "东风牌",
+   "trademark": "极狐牌",
    "n_cands": 0,
    "chan_before": null,
    "note": "通用名称为空"
@@ -6034,6 +6034,23 @@
    "note": ""
   },
   {
+   "generic": "eπ008",
+   "rows": 4,
+   "channel": "A_exact",
+   "seriesid": "7456",
+   "seriesname": "eπ008",
+   "candidates": [
+    "eπ008"
+   ],
+   "candidate_sids": [
+    "7456"
+   ],
+   "trademark": "东风牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": ""
+  },
+  {
    "generic": "iA5",
    "rows": 4,
    "channel": "unmatched",
@@ -8715,6 +8732,19 @@
    "note": ""
   },
   {
+   "generic": "奕境X9",
+   "rows": 3,
+   "channel": "unmatched",
+   "seriesid": null,
+   "seriesname": null,
+   "candidates": [],
+   "candidate_sids": [],
+   "trademark": "奕境牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": "10 个月并集内无匹配"
+  },
+  {
    "generic": "奕派EP7",
    "rows": 3,
    "channel": "unmatched",
@@ -11073,7 +11103,7 @@
    "seriesname": null,
    "candidates": [],
    "candidate_sids": [],
-   "trademark": "",
+   "trademark": "凯迪拉克(CADILLAC)牌",
    "n_cands": 1,
    "chan_before": null,
    "note": "10 个月并集内无匹配"
@@ -11167,23 +11197,6 @@
    "n_cands": 1,
    "chan_before": null,
    "note": "10 个月并集内无匹配"
-  },
-  {
-   "generic": "eπ008",
-   "rows": 2,
-   "channel": "A_exact",
-   "seriesid": "7456",
-   "seriesname": "eπ008",
-   "candidates": [
-    "eπ008"
-   ],
-   "candidate_sids": [
-    "7456"
-   ],
-   "trademark": "东风牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": ""
   },
   {
    "generic": "e爱丽舍",
@@ -11878,19 +11891,6 @@
    "candidates": [],
    "candidate_sids": [],
    "trademark": "领途牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": "10 个月并集内无匹配"
-  },
-  {
-   "generic": "奕境X9",
-   "rows": 2,
-   "channel": "unmatched",
-   "seriesid": null,
-   "seriesname": null,
-   "candidates": [],
-   "candidate_sids": [],
-   "trademark": "",
    "n_cands": 1,
    "chan_before": null,
    "note": "10 个月并集内无匹配"
@@ -21899,23 +21899,6 @@
    }
   },
   {
-   "sheet_row": 1289,
-   "批次": 368,
-   "产品型号": "EQ6493AL5F2SHEV",
-   "通用名称": "岚图FREE",
-   "车型名称": "东风风神",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "5924",
-   "系列名": "岚图FREE",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 3,
-    "EREV": 7,
-    "PHEV": 9
-   }
-  },
-  {
    "sheet_row": 1402,
    "批次": 370,
    "产品型号": "SC7156AAC6HEV",
@@ -21947,23 +21930,6 @@
     "BEV": 6,
     "EREV": 2,
     "PHEV": 2
-   }
-  },
-  {
-   "sheet_row": 1579,
-   "批次": 373,
-   "产品型号": "EQ6494AL5F2SHEV",
-   "通用名称": "岚图FREE",
-   "车型名称": "东风风神",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "5924",
-   "系列名": "岚图FREE",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 3,
-    "EREV": 7,
-    "PHEV": 9
    }
   },
   {
@@ -22066,40 +22032,6 @@
    }
   },
   {
-   "sheet_row": 1760,
-   "批次": 375,
-   "产品型号": "SKE6520SSHEVAS",
-   "通用名称": "赛力斯问界M9",
-   "车型名称": "问界M9",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "7207",
-   "系列名": "问界M9",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 5,
-    "EREV": 5,
-    "PHEV": 6
-   }
-  },
-  {
-   "sheet_row": 1818,
-   "批次": 376,
-   "产品型号": "SKE6520SSHEVA1S",
-   "通用名称": "赛力斯问界M9",
-   "车型名称": "问界M9",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "7207",
-   "系列名": "问界M9",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 5,
-    "EREV": 5,
-    "PHEV": 6
-   }
-  },
-  {
    "sheet_row": 1874,
    "批次": 377,
    "产品型号": "FZ6470SHEVC10B",
@@ -22113,71 +22045,6 @@
    "行级标签计数": {
     "BEV": 11,
     "EREV": 4
-   }
-  },
-  {
-   "sheet_row": 2034,
-   "批次": 379,
-   "产品型号": "SC6502AAA6HEV",
-   "通用名称": "G318",
-   "车型名称": "长安",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "7569",
-   "系列名": "深蓝G318",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "EREV": 4,
-    "PHEV": 8
-   }
-  },
-  {
-   "sheet_row": 2035,
-   "批次": 379,
-   "产品型号": "SC6502ACA6HEV",
-   "通用名称": "G318",
-   "车型名称": "长安",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "7569",
-   "系列名": "深蓝G318",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "EREV": 4,
-    "PHEV": 8
-   }
-  },
-  {
-   "sheet_row": 2036,
-   "批次": 379,
-   "产品型号": "SC6502ADA6HEV",
-   "通用名称": "G318",
-   "车型名称": "长安",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "7569",
-   "系列名": "深蓝G318",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "EREV": 4,
-    "PHEV": 8
-   }
-  },
-  {
-   "sheet_row": 2041,
-   "批次": 379,
-   "产品型号": "SKE6520SSHEVA2S",
-   "通用名称": "赛力斯问界M9",
-   "车型名称": "问界M9",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "7207",
-   "系列名": "问界M9",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 5,
-    "EREV": 5,
-    "PHEV": 6
    }
   },
   {
@@ -22296,40 +22163,6 @@
    }
   },
   {
-   "sheet_row": 2240,
-   "批次": 382,
-   "产品型号": "EQ6495AL5F1SHEV",
-   "通用名称": "岚图FREE",
-   "车型名称": "东风风神",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "5924",
-   "系列名": "岚图FREE",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 3,
-    "EREV": 7,
-    "PHEV": 9
-   }
-  },
-  {
-   "sheet_row": 2241,
-   "批次": 382,
-   "产品型号": "EQ6495AL5F2SHEV",
-   "通用名称": "岚图FREE",
-   "车型名称": "东风风神",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "5924",
-   "系列名": "岚图FREE",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 3,
-    "EREV": 7,
-    "PHEV": 9
-   }
-  },
-  {
    "sheet_row": 2243,
    "批次": 382,
    "产品型号": "FZ6490SHEVC16B",
@@ -22344,22 +22177,6 @@
     "BEV": 11,
     "EREV": 5,
     "PHEV": 3
-   }
-  },
-  {
-   "sheet_row": 2246,
-   "批次": 382,
-   "产品型号": "SC6502ADB6HEV",
-   "通用名称": "G318",
-   "车型名称": "长安",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "7569",
-   "系列名": "深蓝G318",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "EREV": 4,
-    "PHEV": 8
    }
   },
   {
@@ -22429,74 +22246,6 @@
    }
   },
   {
-   "sheet_row": 2517,
-   "批次": 385,
-   "产品型号": "SKE6520SSHEVA3S",
-   "通用名称": "赛力斯问界M9",
-   "车型名称": "问界M9",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "7207",
-   "系列名": "问界M9",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 5,
-    "EREV": 5,
-    "PHEV": 6
-   }
-  },
-  {
-   "sheet_row": 2518,
-   "批次": 385,
-   "产品型号": "SKE6520SSHEVA4S",
-   "通用名称": "赛力斯问界M9",
-   "车型名称": "问界M9",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "7207",
-   "系列名": "问界M9",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 5,
-    "EREV": 5,
-    "PHEV": 6
-   }
-  },
-  {
-   "sheet_row": 2574,
-   "批次": 386,
-   "产品型号": "EQ6496AL5F1SHEV",
-   "通用名称": "岚图FREE",
-   "车型名称": "东风风神",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "5924",
-   "系列名": "岚图FREE",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 3,
-    "EREV": 7,
-    "PHEV": 9
-   }
-  },
-  {
-   "sheet_row": 2575,
-   "批次": 386,
-   "产品型号": "EQ6496AL5F2SHEV",
-   "通用名称": "岚图FREE",
-   "车型名称": "东风风神",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "5924",
-   "系列名": "岚图FREE",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 3,
-    "EREV": 7,
-    "PHEV": 9
-   }
-  },
-  {
    "sheet_row": 2578,
    "批次": 386,
    "产品型号": "LZ7150SB0REEV",
@@ -22562,6 +22311,220 @@
    }
   },
   {
+   "sheet_row": 3367,
+   "批次": 398,
+   "产品型号": "NHQ6530SHEVHA",
+   "通用名称": "小鹏X9",
+   "车型名称": "小鹏X9",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "7067",
+   "系列名": "小鹏X9",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 9,
+    "EREV": 2,
+    "PHEV": 1
+   }
+  },
+  {
+   "sheet_row": 3465,
+   "批次": 399,
+   "产品型号": "NHQ6490SHEVMA",
+   "通用名称": "小鹏G7",
+   "车型名称": "小鹏G7",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8014",
+   "系列名": "小鹏G7",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 2,
+    "EREV": 1
+   }
+  },
+  {
+   "sheet_row": 3467,
+   "批次": 399,
+   "产品型号": "NHQ6530SHEVHB",
+   "通用名称": "小鹏X9",
+   "车型名称": "小鹏X9",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "7067",
+   "系列名": "小鹏X9",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 9,
+    "EREV": 2,
+    "PHEV": 1
+   }
+  },
+  {
+   "sheet_row": 3539,
+   "批次": 400,
+   "产品型号": "NHQ6481SHEVFA",
+   "通用名称": "小鹏G6",
+   "车型名称": "小鹏G6",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "7162",
+   "系列名": "小鹏G6",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 8,
+    "EREV": 1,
+    "PHEV": 1
+   }
+  },
+  {
+   "sheet_row": 3540,
+   "批次": 400,
+   "产品型号": "NHQ7150SHEVKA",
+   "通用名称": "小鹏P7+",
+   "车型名称": "小鹏P7+",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "7554",
+   "系列名": "小鹏P7+",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 5,
+    "EREV": 2,
+    "PHEV": 1
+   }
+  },
+  {
+   "sheet_row": 3728,
+   "批次": 402,
+   "产品型号": "AHC6500SHEVH0C",
+   "通用名称": "昊铂S600",
+   "车型名称": "昊铂S600",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8498",
+   "系列名": "昊铂S600",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 2,
+    "EREV": 2
+   }
+  },
+  {
+   "sheet_row": 3729,
+   "批次": 402,
+   "产品型号": "AHC6500SHEVH0D",
+   "通用名称": "昊铂S600",
+   "车型名称": "昊铂S600",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8498",
+   "系列名": "昊铂S600",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 2,
+    "EREV": 2
+   }
+  },
+  {
+   "sheet_row": 3786,
+   "批次": 402,
+   "产品型号": "NHQ7150SHEVKA",
+   "通用名称": "小鹏P7+",
+   "车型名称": "小鹏P7+",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "7554",
+   "系列名": "小鹏P7+",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 5,
+    "EREV": 2,
+    "PHEV": 1
+   }
+  },
+  {
+   "sheet_row": 3898,
+   "批次": 403,
+   "产品型号": "FZ6530REEVWD19C",
+   "通用名称": "D19",
+   "车型名称": "零跑D19",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8273",
+   "系列名": "零跑D19",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 3,
+    "EREV": 3
+   }
+  },
+  {
+   "sheet_row": 3975,
+   "批次": 404,
+   "产品型号": "HFC7150DREEV12",
+   "通用名称": "尊界S800",
+   "车型名称": "尊界S800",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "7927",
+   "系列名": "尊界S800",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 3,
+    "EREV": 2,
+    "PHEV": 2
+   }
+  },
+  {
+   "sheet_row": 3986,
+   "批次": 404,
+   "产品型号": "NHQ6530REEVTA",
+   "通用名称": "小鹏GX",
+   "车型名称": "小鹏GX",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8224",
+   "系列名": "小鹏GX",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 3,
+    "EREV": 3
+   }
+  },
+  {
+   "sheet_row": 3987,
+   "批次": 404,
+   "产品型号": "NHQ6530REEVTB",
+   "通用名称": "小鹏GX",
+   "车型名称": "小鹏GX",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8224",
+   "系列名": "小鹏GX",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 3,
+    "EREV": 3
+   }
+  },
+  {
+   "sheet_row": 3988,
+   "批次": 404,
+   "产品型号": "NHQ6530REEVTC",
+   "通用名称": "小鹏GX",
+   "车型名称": "小鹏GX",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8224",
+   "系列名": "小鹏GX",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 3,
+    "EREV": 3
+   }
+  },
+  {
    "sheet_row": 3991,
    "批次": 404,
    "产品型号": "SKE6501DREEVA2F",
@@ -22578,20 +22541,19 @@
    }
   },
   {
-   "sheet_row": 3992,
-   "批次": 404,
-   "产品型号": "SKE6521DREEVR1",
-   "通用名称": "问界M8",
-   "车型名称": "问界M6",
+   "sheet_row": 4047,
+   "批次": 405,
+   "产品型号": "FZ6530REEVWD19D",
+   "通用名称": "D19",
+   "车型名称": "零跑D19",
    "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "8003",
-   "系列名": "问界M8",
-   "车系级标签": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8273",
+   "系列名": "零跑D19",
+   "车系级标签": "BEV",
    "行级标签计数": {
-    "BEV": 6,
-    "EREV": 5,
-    "PHEV": 11
+    "BEV": 3,
+    "EREV": 3
    }
   },
   {
@@ -22678,54 +22640,134 @@
    }
   },
   {
-   "sheet_row": 4373,
-   "批次": 410,
-   "产品型号": "SKE6522DREEVR1",
-   "通用名称": "问界M8",
-   "车型名称": "问界M8增程",
+   "sheet_row": 4213,
+   "批次": 407,
+   "产品型号": "CSA6492LFSHEV3",
+   "通用名称": "LS6",
+   "车型名称": "智己LS6",
    "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "8003",
-   "系列名": "问界M8",
-   "车系级标签": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "7305",
+   "系列名": "智己LS6",
+   "车系级标签": "BEV",
    "行级标签计数": {
-    "BEV": 6,
-    "EREV": 5,
-    "PHEV": 11
+    "BEV": 14,
+    "EREV": 2,
+    "PHEV": 5
    }
   },
   {
-   "sheet_row": 4374,
-   "批次": 410,
-   "产品型号": "SKE6522DREEVR2",
-   "通用名称": "问界M8",
-   "车型名称": "问界M8增程",
+   "sheet_row": 4214,
+   "批次": 407,
+   "产品型号": "CSA6492LFSHEV4",
+   "通用名称": "LS6",
+   "车型名称": "智己LS6",
    "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "8003",
-   "系列名": "问界M8",
-   "车系级标签": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "7305",
+   "系列名": "智己LS6",
+   "车系级标签": "BEV",
    "行级标签计数": {
-    "BEV": 6,
-    "EREV": 5,
-    "PHEV": 11
+    "BEV": 14,
+    "EREV": 2,
+    "PHEV": 5
    }
   },
   {
-   "sheet_row": 4437,
-   "批次": 409,
-   "产品型号": "SKE6522DREEVA1F",
-   "通用名称": "问界M8",
-   "车型名称": "问界M8",
+   "sheet_row": 4218,
+   "批次": 407,
+   "产品型号": "DFM6500S5F9REEV",
+   "通用名称": "奕派M8",
+   "车型名称": "东风奕派M8",
    "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "8003",
-   "系列名": "问界M8",
-   "车系级标签": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8609",
+   "系列名": "奕派M8",
+   "车系级标签": "BEV",
    "行级标签计数": {
-    "BEV": 6,
-    "EREV": 5,
-    "PHEV": 11
+    "BEV": 1,
+    "EREV": 1
+   }
+  },
+  {
+   "sheet_row": 4220,
+   "批次": 407,
+   "产品型号": "FZ6530REEVWD19F",
+   "通用名称": "D19",
+   "车型名称": "零跑D19",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8273",
+   "系列名": "零跑D19",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 3,
+    "EREV": 3
+   }
+  },
+  {
+   "sheet_row": 4225,
+   "批次": 407,
+   "产品型号": "HFC7150DREEV7",
+   "通用名称": "尊界S800",
+   "车型名称": "尊界S800",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "7927",
+   "系列名": "尊界S800",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 3,
+    "EREV": 2,
+    "PHEV": 2
+   }
+  },
+  {
+   "sheet_row": 4234,
+   "批次": 407,
+   "产品型号": "NHQ6510REEVRA",
+   "通用名称": "小鹏G9L",
+   "车型名称": "小鹏G9L",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8659",
+   "系列名": "小鹏G9L",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 4,
+    "EREV": 2
+   }
+  },
+  {
+   "sheet_row": 4235,
+   "批次": 407,
+   "产品型号": "NHQ6510REEVRB",
+   "通用名称": "小鹏G9L",
+   "车型名称": "小鹏G9L",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8659",
+   "系列名": "小鹏G9L",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 4,
+    "EREV": 2
+   }
+  },
+  {
+   "sheet_row": 4304,
+   "批次": 408,
+   "产品型号": "BJ6530K802RREEV",
+   "通用名称": "问道V9",
+   "车型名称": "极狐问道V9",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": "1",
+   "seriesid": "8440",
+   "系列名": "极狐问道V9",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 1,
+    "EREV": 1
    }
   },
   {
@@ -22761,23 +22803,6 @@
    }
   },
   {
-   "sheet_row": 4452,
-   "批次": 409,
-   "产品型号": "SKE6522DREEVA2F",
-   "通用名称": "问界M8",
-   "车型名称": "问界M8",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "8003",
-   "系列名": "问界M8",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 6,
-    "EREV": 5,
-    "PHEV": 11
-   }
-  },
-  {
    "sheet_row": 4561,
    "批次": 397,
    "产品型号": "DFM7151S1F5REEV",
@@ -22809,23 +22834,6 @@
     "BEV": 7,
     "EREV": 3,
     "PHEV": 5
-   }
-  },
-  {
-   "sheet_row": 4563,
-   "批次": 397,
-   "产品型号": "EQ6498AL5F1SHEV",
-   "通用名称": "岚图FREE",
-   "车型名称": "岚图FREE",
-   "动力类型": "PHEV",
-   "是否增程(EREV)": 1,
-   "seriesid": "5924",
-   "系列名": "岚图FREE",
-   "车系级标签": "PHEV",
-   "行级标签计数": {
-    "BEV": 3,
-    "EREV": 7,
-    "PHEV": 9
    }
   },
   {
@@ -22910,26 +22918,34 @@
   }
  ],
  "energy_flag_anomalies_summary": {
-  "rows": 64,
-  "distinct_series": 17,
+  "rows": 65,
+  "distinct_series": 25,
   "distinct_series_names": [
    "eπ007",
    "五菱宏光新能源",
    "享界S9T",
-   "岚图FREE",
+   "奕派M8",
+   "尊界S800",
+   "小鹏G6",
+   "小鹏G7",
+   "小鹏G9L",
+   "小鹏GX",
+   "小鹏P7+",
+   "小鹏X9",
+   "昊铂S600",
    "星海S7",
+   "智己LS6",
    "智界R7",
    "极氪7X",
-   "深蓝G318",
+   "极狐问道V9",
    "深蓝SL03",
    "锐胜M8新能源",
    "问界M6",
-   "问界M8",
-   "问界M9",
    "零跑C01",
    "零跑C10",
    "零跑C11",
-   "零跑C16"
+   "零跑C16",
+   "零跑D19"
   ],
   "rule": "`是否增程(EREV)=1` 的行，其所属车系按行级标签众数归类**不是** EREV → 单行标记与车系主身份矛盾（列级脏值嫌疑；也是 R2 会误判的集合）",
   "action": "本轮只登记，不清洗底表（Lead m00806④）"
@@ -22979,421 +22995,7 @@
  },
  "lead_prewrite_crosscheck": {
   "path": "audit-output/_lead_prewrite_fingerprint_20261019.json",
-  "available": true,
-  "lead_sha256": "224665e37744747e1f1f7e4506e5c6a59193fb281c5353e7116717830e48306a",
-  "sha_match": false,
-  "lead_n_rows": 5392,
-  "old_sales_checked": 806,
-  "old_sales_mismatch": [
-   {
-    "row": 5,
-    "lead": {
-     "batch": 341,
-     "code": "BYD7008BEVA10",
-     "generic": "比亚迪秦PLUS",
-     "v35": 11117,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 341,
-     "code": "BYD7008BEVA10",
-     "generic": "比亚迪秦PLUS",
-     "v35": 10652,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 10,
-    "lead": {
-     "batch": 341,
-     "code": "GAM7000BEVD0E",
-     "generic": "AION Y",
-     "v35": 1392,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 341,
-     "code": "GAM7000BEVD0E",
-     "generic": "AION Y",
-     "v35": 2648,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 11,
-    "lead": {
-     "batch": 341,
-     "code": "GAM7000BEVD0H",
-     "generic": "AION Y",
-     "v35": 1392,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 341,
-     "code": "GAM7000BEVD0H",
-     "generic": "AION Y",
-     "v35": 2648,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 12,
-    "lead": {
-     "batch": 341,
-     "code": "GAM7000BEVD0L",
-     "generic": "AION Y",
-     "v35": 1392,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 341,
-     "code": "GAM7000BEVD0L",
-     "generic": "AION Y",
-     "v35": 2648,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 13,
-    "lead": {
-     "batch": 341,
-     "code": "GAM7000BEVD0N",
-     "generic": "AION Y",
-     "v35": 1392,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 341,
-     "code": "GAM7000BEVD0N",
-     "generic": "AION Y",
-     "v35": 2648,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 26,
-    "lead": {
-     "batch": 341,
-     "code": "TSL7000BEVAR2",
-     "generic": "特斯拉 MODEL3",
-     "v35": 20787,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 341,
-     "code": "TSL7000BEVAR2",
-     "generic": "特斯拉 MODEL3",
-     "v35": 14478,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 43,
-    "lead": {
-     "batch": 342,
-     "code": "GAM7000BEVD0J",
-     "generic": "AION Y",
-     "v35": 1392,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 342,
-     "code": "GAM7000BEVD0J",
-     "generic": "AION Y",
-     "v35": 2648,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 44,
-    "lead": {
-     "batch": 342,
-     "code": "GAM7000BEVD0P",
-     "generic": "AION Y",
-     "v35": 1392,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 342,
-     "code": "GAM7000BEVD0P",
-     "generic": "AION Y",
-     "v35": 2648,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 71,
-    "lead": {
-     "batch": 342,
-     "code": "TSL6480BEVBA2",
-     "generic": "特斯拉 MODEL Y",
-     "v35": 29260,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 342,
-     "code": "TSL6480BEVBA2",
-     "generic": "特斯拉 MODEL Y",
-     "v35": 50359,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 72,
-    "lead": {
-     "batch": 342,
-     "code": "TSL7000BEVBA2",
-     "generic": "特斯拉 MODEL3",
-     "v35": 20787,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 342,
-     "code": "TSL7000BEVBA2",
-     "generic": "特斯拉 MODEL3",
-     "v35": 14478,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 91,
-    "lead": {
-     "batch": 343,
-     "code": "GAM7000BEVD0R",
-     "generic": "AION Y",
-     "v35": 1392,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 343,
-     "code": "GAM7000BEVD0R",
-     "generic": "AION Y",
-     "v35": 2648,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 92,
-    "lead": {
-     "batch": 343,
-     "code": "GAM7001BEVA0A",
-     "generic": "AION S",
-     "v35": 1574,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 343,
-     "code": "GAM7001BEVA0A",
-     "generic": "AION S",
-     "v35": 930,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 93,
-    "lead": {
-     "batch": 343,
-     "code": "GAM7001BEVA0D",
-     "generic": "AION S",
-     "v35": 1574,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 343,
-     "code": "GAM7001BEVA0D",
-     "generic": "AION S",
-     "v35": 930,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 101,
-    "lead": {
-     "batch": 343,
-     "code": "LZW7004EVJEAMA",
-     "generic": "宏光MINI EV",
-     "v35": 11033,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 343,
-     "code": "LZW7004EVJEAMA",
-     "generic": "宏光MINI EV",
-     "v35": 13630,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 102,
-    "lead": {
-     "batch": 343,
-     "code": "LZW7004EVJKAM",
-     "generic": "宏光MINI EV",
-     "v35": 11033,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 343,
-     "code": "LZW7004EVJKAM",
-     "generic": "宏光MINI EV",
-     "v35": 13630,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 153,
-    "lead": {
-     "batch": 344,
-     "code": "GAM7001BEVA0E",
-     "generic": "AION S Plus",
-     "v35": 1574,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 344,
-     "code": "GAM7001BEVA0E",
-     "generic": "AION S Plus",
-     "v35": 930,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 154,
-    "lead": {
-     "batch": 344,
-     "code": "GAM7001BEVA0F",
-     "generic": "AION S",
-     "v35": 1574,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 344,
-     "code": "GAM7001BEVA0F",
-     "generic": "AION S",
-     "v35": 930,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 161,
-    "lead": {
-     "batch": 344,
-     "code": "LZW7004EVB2DBD",
-     "generic": "宏光MINI EV",
-     "v35": 11033,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 344,
-     "code": "LZW7004EVB2DBD",
-     "generic": "宏光MINI EV",
-     "v35": 13630,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 162,
-    "lead": {
-     "batch": 344,
-     "code": "LZW7004EVJCBC",
-     "generic": "宏光MINI EV",
-     "v35": 11033,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 344,
-     "code": "LZW7004EVJCBC",
-     "generic": "宏光MINI EV",
-     "v35": 13630,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   },
-   {
-    "row": 225,
-    "lead": {
-     "batch": 345,
-     "code": "BYD6461ST6HEV5",
-     "generic": "比亚迪宋Pro",
-     "v35": 13954,
-     "v36": "2026-08",
-     "v37": "2026-09-16"
-    },
-    "mine": {
-     "batch": 345,
-     "code": "BYD6461ST6HEV5",
-     "generic": "比亚迪宋Pro",
-     "v35": 13472,
-     "v36": "2026-09",
-     "v37": "2026-10-19"
-    }
-   }
-  ],
-  "old_sales_mismatch_count": 806,
-  "old_sales_mine_count": 2200,
-  "old_sales_match": false,
-  "lead_dup_row_keys": [
-   "410|None"
-  ],
-  "my_dup_row_keys": [
-   "410|None"
-  ],
-  "dup_row_keys_match": true,
-  "dup_row_keys_note": "本表 `(批次,产品型号)` 非唯一键 → 行身份复核必须桶内出现序配对 + 整行内容指纹（Lead m00925②）",
-  "lead_dirty_generic": {
-   "'ID.6 X '": 1,
-   "12": 7,
-   "1": 7,
-   "'ARRIZO e '": 1,
-   "7": 9,
-   "9": 2,
-   "11": 3,
-   "'风云 A8 L,风云 A8 PLUS,风云 A8 '": 1,
-   "6": 4,
-   "' AION S'": 1
-  },
-  "lead_dirty_segment_whitespace": {
-   "'SUV-C '": 3,
-   "'Car-D '": 3,
-   "'SUV-B '": 3,
-   "' SUV-C'": 7
-  }
+  "available": false,
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\#AI\\\\00 Project\\\\17 TA analysis\\\\01-主仓库\\\\TA-Analysis\\\\06_自动化与工具\\\\管线工作区\\\\audit-output\\\\_lead_prewrite_fingerprint_20261019.json'"
  }
 }

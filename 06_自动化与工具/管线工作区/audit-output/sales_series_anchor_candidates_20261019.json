@@ -4,7 +4,7 @@
   "captured_at": "2026-10-19",
   "snapshot_month": "2026-09",
   "source": "汽车之家·行业综合销量（车系级月度零售量，新能源榜 typeid=9&subranktypeid=2305）",
-  "base_table_path": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
+  "base_table_path": "NEV公告参数汇总表_合并版（341~412批）.xlsx",
   "scope": "2026-09 新能源榜车系中未与底表建立 seriesid 关联者",
   "board_series": 411,
   "board_linked_series": 282,
@@ -21,7 +21,7 @@
    "无候选": "底表无痕迹，或痕迹候选品牌签名不通过（跨品牌误配风险）"
   },
   "base_rows": 5475,
-  "base_table_sha256": "230dbb96378072902a932f111031ccc3be20d420ac158570b0680eb584d70e41",
+  "base_table_sha256": "982e0a97cac525b2488dc30cea493ae0a42ee99d19ec72a84bfc32e410df3e17",
   "dry_run": false
  },
  "verdict_counts": {
@@ -4063,7 +4063,7 @@
      ],
      "企业名称": "长城汽车股份有限公司",
      "产品商标": "魏牌牌",
-     "细分市场": "",
+     "细分市场": "SUV-D",
      "动力类型": "BEV",
      "批次": 411,
      "公告年月": "2026-10",
@@ -4258,7 +4258,7 @@
       {
        "产品商标": "凯迪拉克(CADILLAC)牌",
        "企业名称": "上汽通用汽车有限公司",
-       "rows": 1,
+       "rows": 2,
        "brand_ok": true,
        "brand_alias_hit": [],
        "brand_tokens_base": [
@@ -4266,19 +4266,7 @@
         "凯迪拉克"
        ],
        "excel_rows": [
-        4244
-       ]
-      },
-      {
-       "产品商标": "",
-       "企业名称": "上汽通用汽车有限公司",
-       "rows": 1,
-       "brand_ok": false,
-       "brand_alias_hit": [],
-       "brand_tokens_base": [
-        "上汽"
-       ],
-       "excel_rows": [
+        4244,
         5393
        ]
       }

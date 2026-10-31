@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-10-28T05:47:20+00:00",
+  "generated_at_utc": "2026-10-31T18:07:41+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~412批）.xlsx",
-    "sha256": "cbc46e65dc3ddad78ddd9efb7af526b46b3e7bc952b7854440936c5a41a564b4",
+    "sha256": "982e0a97cac525b2488dc30cea493ae0a42ee99d19ec72a84bfc32e410df3e17",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
@@ -135,9 +135,9 @@
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 5005,
-      "coverage": 0.914155,
-      "missing": 470
+      "populated": 5021,
+      "coverage": 0.917078,
+      "missing": 454
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
@@ -183,9 +183,9 @@
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
-      "populated": 4979,
-      "coverage": 0.909406,
-      "missing": 496
+      "populated": 4981,
+      "coverage": 0.909772,
+      "missing": 494
     }
   },
   "range_checks": {
@@ -194,7 +194,7 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 5005,
+      "numeric_values": 5021,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -277,7 +277,7 @@
         300.0,
         8000.0
       ],
-      "numeric_values": 2261,
+      "numeric_values": 2263,
       "outliers": 0,
       "sample_outliers": []
     }

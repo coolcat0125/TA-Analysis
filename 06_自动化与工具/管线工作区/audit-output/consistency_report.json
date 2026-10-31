@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-25T16:36:10.725538+00:00",
- "input": "NEV公告参数汇总表_合并版（341~410批）.xlsx",
+ "generatedAt": "2026-10-31T18:07:45.337174+00:00",
+ "input": "NEV公告参数汇总表_合并版（341~412批）.xlsx",
  "records": 5475,
  "critical": {},
  "warn": {
   "W2": 1,
-  "W4": 28,
+  "W4": 25,
   "W5": 27,
   "W6": 159
  },
  "criticalTotal": 0,
- "warnTotal": 215,
+ "warnTotal": 212,
  "w2ConfirmedSuppressed": 31,
  "w2SuppressedDetail": [
   {
@@ -207,23 +207,11 @@
    },
    {
     "批次": "407",
-    "型号": "DFM6500S5F7REEV"
-   },
-   {
-    "批次": "407",
     "型号": "DFM6500S5F8REEV"
    },
    {
     "批次": "410",
-    "型号": "BYD7152BX6HEV2"
-   },
-   {
-    "批次": "410",
     "型号": "CC6481DE00HBBEV"
-   },
-   {
-    "批次": "410",
-    "型号": "NEQ6510REEVS5DL"
    },
    {
     "批次": "357",

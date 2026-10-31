@@ -22,6 +22,18 @@ YEARS = [2021, 2022, 2023, 2024, 2025, 2026]
 ECHARTS = 'echarts.min.js'
 VER = 'v4.9.24'
 ARCHIVE = 'archive'
+_NCOL_CACHE = {}
+
+
+def _base_ncols():
+    """权威底表实宽（列数一律实读；CR-17-031 已把 41 列扩到 45 列）。"""
+    if 'n' not in _NCOL_CACHE:
+        import openpyxl
+        _wb = openpyxl.load_workbook('NEV公告参数汇总表_合并版（341~412批）.xlsx', read_only=True)
+        _ws = _wb[_wb.sheetnames[0]]
+        _NCOL_CACHE['n'] = int(_ws.max_column)
+        _wb.close()
+    return _NCOL_CACHE['n']
 
 
 def btype(v):
@@ -164,6 +176,7 @@ def main():
         .replace('__TOTAL__', f'{total:,}') \
         .replace('__VER__', VER) \
         .replace('__BRANGE__', brange) \
+        .replace('__NCOL__', str(_base_ncols())) \
         .replace('__SDATE__', f'{S["meta"]["snapshot_month"]}（汽车之家·行业综合销量）')
     open(OUT, 'w', encoding='utf-8').write(html)
     print(f'手机版生成: {OUT}（{total} 条记录口径, KPI {len(kpis)} / 发现 {len(findings)} / '
@@ -211,7 +224,7 @@ footer{color:var(--sub);font-size:10.5px;text-align:center;margin-top:26px;line-
 <header>
   <h1>NEV 公告车型行业分析</h1>
   <div class="badge">移动版 · 核心前置</div>
-  <div class="sub">权威底表 __VER__ 口径 · __TOTAL__ 款 × 41 列 · __BRANGE__（2021–2026）<br>生成 __GEN__ · 数据同源：54 表分析底表</div>
+  <div class="sub">权威底表 __VER__ 口径 · __TOTAL__ 条记录 × __NCOL__ 列 · __BRANGE__（2021–2026）<br>生成 __GEN__ · 数据同源：54 表分析底表</div>
 </header>
 
 <h2>核心指标</h2>

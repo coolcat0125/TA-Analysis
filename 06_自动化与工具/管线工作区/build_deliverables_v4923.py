@@ -33,6 +33,19 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 
 HERE = '.'
 SRC = 'NEV公告参数汇总表_合并版（341~412批）.xlsx'
+
+_NCOL_CACHE = {}
+
+
+def _base_ncols():
+    """权威底表实宽（列数一律实读，禁止硬编码：CR-17-031 已把 41 列扩到 45 列）。"""
+    if 'n' not in _NCOL_CACHE:
+        _wb = openpyxl.load_workbook(SRC, read_only=True)
+        _ws = _wb[_wb.sheetnames[0]]
+        _NCOL_CACHE['n'] = int(_ws.max_column)
+        _NCOL_CACHE['hdr'] = [c.value for c in next(_ws.iter_rows(min_row=1, max_row=1))]
+        _wb.close()
+    return _NCOL_CACHE['n']
 OUT = 'NEV公告车型行业分析_数据底表.xlsx'
 VER = 'v4.9.23'
 
@@ -102,8 +115,9 @@ def _sales_assert(d, base_rows=None, expect_sha256=None):
     if meta.get('dry_run') is not False:
         raise ValueError(f'meta.dry_run={meta.get("dry_run")!r} 非 False —— '
                          '上游仍是 dry-run，底表尚未真写，拒绝生成')
-    if meta.get('base_table_columns') != 41:
-        raise ValueError(f'meta.base_table_columns={meta.get("base_table_columns")!r} != 41 —— '
+    _ncol = meta.get('base_table_columns')
+    if not isinstance(_ncol, int) or _ncol < 41:
+        raise ValueError(f'meta.base_table_columns={_ncol!r} < 41 —— '
                          '底表未完成规范 §2.2 尾插（车系ID / 销量覆盖状态）')
     if meta.get('suggest_enabled') is not False:
         raise ValueError(f'meta.suggest_enabled={meta.get("suggest_enabled")!r} 非 False'
@@ -393,7 +407,7 @@ def build(recs, S):
     ws = b.sheet('封面')
     ws['B2'] = 'NEV 公告车型行业分析 · 数据底表'
     ws['B2'].font = Font(bold=True, size=18, color='1F3864')
-    ws['B4'] = (f'口径版本 {VER} · {total:,} 条公告/公示记录 × 41 列'
+    ws['B4'] = (f'口径版本 {VER} · {total:,} 条公告/公示记录 × {_base_ncols()} 列'
                 f'（第 {bmin}~{bmax} 批{_pub_note} · 纯乘用车）')
     ws['B5'] = f'生成日期 {today} · 权威源 NEV公告参数汇总表_合并版（341~412批）.xlsx'
     ws['B6'] = (f'电耗/续航已与工信部能耗数据20260915 官方对齐 · '

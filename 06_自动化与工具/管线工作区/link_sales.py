@@ -2190,7 +2190,7 @@ def run(dry_run=True, source="auto", use_suggest=True, max_suggest=0, expect_sha
     analytics["meta"].update({
         "base_rows": len(rows), "base_table_sha256": wb_sha, "dry_run": bool(dry_run),
         # 写入后表宽 41（39 原列 + 车系ID + 销量覆盖状态）；dry-run 时为原始 39
-        "base_table_columns": (NCOLS_NEW if not dry_run else (len(header) if header else None)),
+        "base_table_columns": (len(header) if header else NCOLS_NEW),
         "base_table_columns_pre": (len(header) if header else None),
         "base_table_sha256_note": "本 JSON 所依据的工作簿 sha256（小写 hex）；apply 需带 --expect-sha 同值",
         "suggest_enabled": bool(use_suggest),
@@ -2289,7 +2289,7 @@ def run(dry_run=True, source="auto", use_suggest=True, max_suggest=0, expect_sha
                  "sales_source_path": src_meta.get("source_path"),
                  "base_table_path": os.path.basename(WB_PATH),
                  "base_rows": len(rows), "base_table_sha256": wb_sha,
-                 "base_table_columns": (NCOLS_NEW if not dry_run else (len(header) if header else None)),
+                 "base_table_columns": (len(header) if header else NCOLS_NEW),
                  "base_table_columns_pre": (len(header) if header else None),
                  "dry_run": bool(dry_run),
                  "batch_range": ([_batches[0], _batches[-1]] if _batches else []),

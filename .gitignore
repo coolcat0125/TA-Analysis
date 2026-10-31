@@ -29,3 +29,5 @@ _cache_sales_*.json
 
 # 保留可复用的同步工具脚本（覆盖上方 _*.py 规则）
 !06_自动化与工具/_scripts/_sync_from_github.py
+# 会话期校验脚本与证据归档（2026-11-01 清理轮）
+_lead_workspace_*/
