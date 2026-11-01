@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-01T11:23:45.006523+00:00",
+ "generatedAt": "2026-11-01T14:23:56.501222+00:00",
  "input": "NEV公告参数汇总表_合并版（341~412批）.xlsx",
  "records": 5475,
  "critical": {},
@@ -7,10 +7,11 @@
   "W2": 1,
   "W4": 25,
   "W5": 27,
+  "W7": 1,
   "W6": 159
  },
  "criticalTotal": 0,
- "warnTotal": 212,
+ "warnTotal": 213,
  "w2ConfirmedSuppressed": 31,
  "w2SuppressedDetail": [
   {
@@ -636,7 +637,15 @@
     ]
    }
   ],
-  "W7": [],
+  "W7": [
+   {
+    "批次": "369",
+    "型号": "SC7002BAABEV",
+    "比值": 0.18,
+    "整备": 823.0,
+    "车长": 4640.0
+   }
+  ],
   "W8": []
  },
  "pass": true

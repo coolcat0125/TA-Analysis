@@ -12,7 +12,7 @@
   "sales_source_path": "D:\\#AI\\00 Project\\17 TA analysis\\01-主仓库\\TA-Analysis\\06_自动化与工具\\管线工作区\\audit-output\\sales_autohome_series_monthly_20261019.json",
   "base_table_path": "NEV公告参数汇总表_合并版（341~412批）.xlsx",
   "base_rows": 5475,
-  "base_table_sha256": "d2d105a090e3bf64749252002a10a86f6d096faf3b24d12eca0e0c55caef25a6",
+  "base_table_sha256": "ae4d79ff5b8f1e18f7f8abe56ed90d92b002c4e8255c6b74b6dc5c92d9d86662",
   "base_table_columns": 45,
   "base_table_columns_pre": 45,
   "dry_run": false,
@@ -45,57 +45,57 @@
    "40": "销量覆盖状态"
   },
   "note": "多候选一律 HOLD（未匹配-命名待锚定），严禁硬填；占位符通用名称不参与匹配（无车系身份）；未匹配一律留空，禁止写 0",
-  "base_table_sha256_prewrite": "d2d105a090e3bf64749252002a10a86f6d096faf3b24d12eca0e0c55caef25a6",
+  "base_table_sha256_prewrite": "0f55aedb22201c156fd7fb87a4224a0d7bfa562e2c9b8f47b535cccfc7a46b24",
   "base_table_sha256_note": "**落盘后**工作簿 sha256（小写 hex）；base_table_sha256_prewrite 为本次运行读取时的 sha；apply 需带 --expect-sha <prewrite 值>"
  },
  "summary": {
   "total_rows": 5475,
-  "matched_rows": 2202,
+  "matched_rows": 2218,
   "matched_rows_channel": {
-   "unmatched": 2332,
-   "A_exact": 1194,
-   "B_brand": 933,
+   "unmatched": 2341,
+   "A_exact": 1203,
+   "B_brand": 936,
    "placeholder": 317,
-   "A2_split": 266,
-   "C_substr": 227,
+   "A2_split": 270,
+   "C_substr": 232,
    "hold": 96,
-   "empty": 90,
+   "empty": 60,
    "multi_series_cell": 20
   },
-  "distinct_generic": 1317,
+  "distinct_generic": 1322,
   "distinct_seriesid_anchored": 348,
   "coverage": {
-   "row": 40.2192,
-   "series": 26.6667,
+   "row": 40.5114,
+   "series": 26.5649,
    "current_board": 68.6131,
    "current_board_sales": 73.0453,
    "self_consistent_ratio": 91.3386
   },
   "status_counts": {
-   "在售-已匹配": 2202,
+   "在售-已匹配": 2218,
    "在售-零销量": 0,
    "未匹配-命名待锚定": 116,
-   "未匹配-已停产或未上量": 2750,
-   "无车系身份": 407,
+   "未匹配-已停产或未上量": 2764,
+   "无车系身份": 377,
    "未匹配-无车系ID": 0
   },
   "buckets": {
-   "无车系身份": 407,
-   "未匹配-已停产或未上量": 2750,
+   "无车系身份": 377,
+   "未匹配-已停产或未上量": 2764,
    "未匹配-命名待锚定": 116,
    "未匹配-无车系ID": 0
   },
   "status_rows_all": {
-   "未匹配-已停产或未上量": 2750,
-   "在售-已匹配": 2202,
+   "未匹配-已停产或未上量": 2764,
+   "在售-已匹配": 2218,
    "未匹配-命名待锚定": 116,
-   "无车系身份": 407
+   "无车系身份": 377
   },
   "match_channel_counts": {
-   "unmatched": 724,
+   "unmatched": 727,
    "A_exact": 202,
    "B_brand": 177,
-   "A2_split": 110,
+   "A2_split": 112,
    "C_substr": 59,
    "hold": 22,
    "multi_series_cell": 11,
@@ -103,15 +103,15 @@
    "empty": 2
   },
   "a2_base_channels": {
-   "null": 110
+   "null": 112
   },
   "match_stats": {
-   "matched_rows": 2202,
+   "matched_rows": 2218,
    "channel_counts": {
-    "unmatched": 724,
+    "unmatched": 727,
     "A_exact": 202,
     "B_brand": 177,
-    "A2_split": 110,
+    "A2_split": 112,
     "C_substr": 59,
     "hold": 22,
     "multi_series_cell": 11,
@@ -119,25 +119,25 @@
     "empty": 2
    },
    "channel_counts_rows": {
-    "unmatched": 2332,
-    "A_exact": 1194,
-    "B_brand": 933,
+    "unmatched": 2341,
+    "A_exact": 1203,
+    "B_brand": 936,
     "placeholder": 317,
-    "A2_split": 266,
-    "C_substr": 227,
+    "A2_split": 270,
+    "C_substr": 232,
     "hold": 96,
-    "empty": 90,
+    "empty": 60,
     "multi_series_cell": 20
    },
    "a2_base_channels": {
-    "null": 110
+    "null": 112
    },
-   "generic_all": 1317,
+   "generic_all": 1322,
    "generic_noident": 12,
-   "generic_denom": 1305,
-   "generic_anchored": 548,
+   "generic_denom": 1310,
+   "generic_anchored": 550,
    "generic_hold": 33,
-   "generic_unmatched": 724,
+   "generic_unmatched": 727,
    "distinct_seriesid_anchored": 348,
    "union_series": 507
   },
@@ -154,14 +154,14 @@
    "2026-09": 411
   },
   "union_series": 507,
-  "ledger_rows": 0,
-  "ledger_per_cell": 0,
-  "ledger_aggregate": 0,
-  "new_col_cells": 0,
-  "ledger_rows_canonical": 6614,
-  "ledger_per_cell_canonical": 6606,
+  "ledger_rows": 56,
+  "ledger_per_cell": 48,
+  "ledger_aggregate": 8,
+  "new_col_cells": 51,
+  "ledger_rows_canonical": 6662,
+  "ledger_per_cell_canonical": 6654,
   "ledger_aggregate_canonical": 8,
-  "new_col_cells_canonical": 8095,
+  "new_col_cells_canonical": 8116,
   "ledger_canonical_note": "状态无关口径：按 row_plan 应写入的格数/台账条数（首次 apply 时的值）；`changed_cells`/`ledger_rows` 是本次运行相对当前工作簿的增量，幂等重跑时为 0（Lead m01097 5 项 meta 对齐）",
   "ledger_rule": "列 35/36/37 逐格登记；列 39/40（新增列初始填充）按取值类别聚合登记，逐行取值见 per_generic（Lead m00878 裁决 4）"
  },
@@ -180,19 +180,6 @@
    "note": "整格为占位符/动力类型泄漏值"
   },
   {
-   "generic": "",
-   "rows": 87,
-   "channel": "empty",
-   "seriesid": null,
-   "seriesname": null,
-   "candidates": [],
-   "candidate_sids": [],
-   "trademark": "极狐牌",
-   "n_cands": 0,
-   "chan_before": null,
-   "note": "通用名称为空"
-  },
-  {
    "generic": "插电式混合动力多用途乘用车",
    "rows": 70,
    "channel": "placeholder",
@@ -204,6 +191,19 @@
    "n_cands": 1,
    "chan_before": null,
    "note": "整格为占位符/动力类型泄漏值"
+  },
+  {
+   "generic": "",
+   "rows": 57,
+   "channel": "empty",
+   "seriesid": null,
+   "seriesname": null,
+   "candidates": [],
+   "candidate_sids": [],
+   "trademark": "极狐牌",
+   "n_cands": 0,
+   "chan_before": null,
+   "note": "通用名称为空"
   },
   {
    "generic": "宏光MINIEV",
@@ -459,6 +459,23 @@
    "note": "10 个月并集内无匹配"
   },
   {
+   "generic": "享界S9",
+   "rows": 20,
+   "channel": "A_exact",
+   "seriesid": "7630",
+   "seriesname": "享界S9",
+   "candidates": [
+    "享界S9"
+   ],
+   "candidate_sids": [
+    "7630"
+   ],
+   "trademark": "华彰牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": ""
+  },
+  {
    "generic": "比亚迪秦PLUS",
    "rows": 20,
    "channel": "B_brand",
@@ -504,23 +521,6 @@
    "n_cands": 1,
    "chan_before": null,
    "note": "10 个月并集内无匹配"
-  },
-  {
-   "generic": "享界S9",
-   "rows": 19,
-   "channel": "A_exact",
-   "seriesid": "7630",
-   "seriesname": "享界S9",
-   "candidates": [
-    "享界S9"
-   ],
-   "candidate_sids": [
-    "7630"
-   ],
-   "trademark": "华彰牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": ""
   },
   {
    "generic": "创新纯电动BMW i5",
@@ -1595,6 +1595,23 @@
    "note": ""
   },
   {
+   "generic": "bZ4X",
+   "rows": 11,
+   "channel": "C_substr",
+   "seriesid": "6673",
+   "seriesname": "一汽丰田bZ4X",
+   "candidates": [
+    "一汽丰田bZ4X"
+   ],
+   "candidate_sids": [
+    "6673"
+   ],
+   "trademark": "丰田(TOYOTA)牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": ""
+  },
+  {
    "generic": "五菱星光",
    "rows": 11,
    "channel": "A_exact",
@@ -2131,6 +2148,23 @@
    "note": ""
   },
   {
+   "generic": "小米YU7",
+   "rows": 9,
+   "channel": "A_exact",
+   "seriesid": "7793",
+   "seriesname": "小米YU7",
+   "candidates": [
+    "小米YU7"
+   ],
+   "candidate_sids": [
+    "7793"
+   ],
+   "trademark": "小米牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": ""
+  },
+  {
    "generic": "小鹏G9",
    "rows": 9,
    "channel": "A_exact",
@@ -2325,6 +2359,23 @@
    "note": "10 个月并集内无匹配"
   },
   {
+   "generic": "银河星耀8",
+   "rows": 9,
+   "channel": "A_exact",
+   "seriesid": "8042",
+   "seriesname": "银河星耀8",
+   "candidates": [
+    "银河星耀8"
+   ],
+   "candidate_sids": [
+    "8042"
+   ],
+   "trademark": "吉利牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": ""
+  },
+  {
    "generic": "007GT",
    "rows": 8,
    "channel": "hold",
@@ -2475,23 +2526,6 @@
    "n_cands": 2,
    "chan_before": null,
    "note": "10 个月并集内无匹配"
-  },
-  {
-   "generic": "小米YU7",
-   "rows": 8,
-   "channel": "A_exact",
-   "seriesid": "7793",
-   "seriesname": "小米YU7",
-   "candidates": [
-    "小米YU7"
-   ],
-   "candidate_sids": [
-    "7793"
-   ],
-   "trademark": "小米牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": ""
   },
   {
    "generic": "小虎",
@@ -2765,23 +2799,6 @@
    ],
    "candidate_sids": [
     "7167"
-   ],
-   "trademark": "吉利牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": ""
-  },
-  {
-   "generic": "银河星耀8",
-   "rows": 8,
-   "channel": "A_exact",
-   "seriesid": "8042",
-   "seriesname": "银河星耀8",
-   "candidates": [
-    "银河星耀8"
-   ],
-   "candidate_sids": [
-    "8042"
    ],
    "trademark": "吉利牌",
    "n_cands": 1,
@@ -3617,23 +3634,6 @@
    "note": "10 个月并集内无匹配"
   },
   {
-   "generic": "bZ4X",
-   "rows": 6,
-   "channel": "C_substr",
-   "seriesid": "6673",
-   "seriesname": "一汽丰田bZ4X",
-   "candidates": [
-    "一汽丰田bZ4X"
-   ],
-   "candidate_sids": [
-    "6673"
-   ],
-   "trademark": "丰田(TOYOTA)牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": ""
-  },
-  {
    "generic": "eQ1",
    "rows": 6,
    "channel": "unmatched",
@@ -4006,6 +4006,23 @@
    "note": ""
   },
   {
+   "generic": "理想L9",
+   "rows": 6,
+   "channel": "A_exact",
+   "seriesid": "6576",
+   "seriesname": "理想L9",
+   "candidates": [
+    "理想L9"
+   ],
+   "candidate_sids": [
+    "6576"
+   ],
+   "trademark": "理想牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": ""
+  },
+  {
    "generic": "理想i6",
    "rows": 6,
    "channel": "A_exact",
@@ -4294,6 +4311,19 @@
    "note": ""
   },
   {
+   "generic": "BJ40e",
+   "rows": 5,
+   "channel": "unmatched",
+   "seriesid": null,
+   "seriesname": null,
+   "candidates": [],
+   "candidate_sids": [],
+   "trademark": "北京牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": "10 个月并集内无匹配"
+  },
+  {
    "generic": "E.5",
    "rows": 5,
    "channel": "unmatched",
@@ -4406,6 +4436,19 @@
    "note": ""
   },
   {
+   "generic": "EU8",
+   "rows": 5,
+   "channel": "unmatched",
+   "seriesid": null,
+   "seriesname": null,
+   "candidates": [],
+   "candidate_sids": [],
+   "trademark": "北京牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": "10 个月并集内无匹配"
+  },
+  {
    "generic": "FORD BRONCO BASECAMP",
    "rows": 5,
    "channel": "unmatched",
@@ -4464,6 +4507,23 @@
    "n_cands": 1,
    "chan_before": null,
    "note": "10 个月并集内无匹配"
+  },
+  {
+   "generic": "M817",
+   "rows": 5,
+   "channel": "B_brand",
+   "seriesid": "8091",
+   "seriesname": "猛士M817",
+   "candidates": [
+    "猛士M817"
+   ],
+   "candidate_sids": [
+    "8091"
+   ],
+   "trademark": "猛士牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": ""
   },
   {
    "generic": "MIX",
@@ -4786,6 +4846,19 @@
    "note": ""
   },
   {
+   "generic": "创新纯电动BMW iX1",
+   "rows": 5,
+   "channel": "unmatched",
+   "seriesid": null,
+   "seriesname": null,
+   "candidates": [],
+   "candidate_sids": [],
+   "trademark": "宝马(BMW)牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": "10 个月并集内无匹配"
+  },
+  {
    "generic": "哈弗大狗PLUS",
    "rows": 5,
    "channel": "A_exact",
@@ -4799,6 +4872,23 @@
    ],
    "trademark": "哈弗牌",
    "n_cands": 1,
+   "chan_before": null,
+   "note": ""
+  },
+  {
+   "generic": "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
+   "rows": 5,
+   "channel": "A2_split",
+   "seriesid": "7298",
+   "seriesname": "哈弗猛龙新能源",
+   "candidates": [
+    "哈弗猛龙新能源"
+   ],
+   "candidate_sids": [
+    "7298"
+   ],
+   "trademark": "哈弗牌",
+   "n_cands": 2,
    "chan_before": null,
    "note": ""
   },
@@ -5197,23 +5287,6 @@
    "note": ""
   },
   {
-   "generic": "理想L9",
-   "rows": 5,
-   "channel": "A_exact",
-   "seriesid": "6576",
-   "seriesname": "理想L9",
-   "candidates": [
-    "理想L9"
-   ],
-   "candidate_sids": [
-    "6576"
-   ],
-   "trademark": "理想牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": ""
-  },
-  {
    "generic": "理想i8",
    "rows": 5,
    "channel": "A_exact",
@@ -5528,19 +5601,6 @@
    "note": ""
   },
   {
-   "generic": "BJ40e",
-   "rows": 4,
-   "channel": "unmatched",
-   "seriesid": null,
-   "seriesname": null,
-   "candidates": [],
-   "candidate_sids": [],
-   "trademark": "北京牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": "10 个月并集内无匹配"
-  },
-  {
    "generic": "CS75 Plus",
    "rows": 4,
    "channel": "B_brand",
@@ -5602,19 +5662,6 @@
   },
   {
    "generic": "EU5 PLUS",
-   "rows": 4,
-   "channel": "unmatched",
-   "seriesid": null,
-   "seriesname": null,
-   "candidates": [],
-   "candidate_sids": [],
-   "trademark": "北京牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": "10 个月并集内无匹配"
-  },
-  {
-   "generic": "EU8",
    "rows": 4,
    "channel": "unmatched",
    "seriesid": null,
@@ -5752,6 +5799,23 @@
    "n_cands": 1,
    "chan_before": null,
    "note": "10 个月并集内无匹配"
+  },
+  {
+   "generic": "ID.ERA 9X",
+   "rows": 4,
+   "channel": "A_exact",
+   "seriesid": "8092",
+   "seriesname": "ID. ERA 9X",
+   "candidates": [
+    "ID. ERA 9X"
+   ],
+   "candidate_sids": [
+    "8092"
+   ],
+   "trademark": "大众汽车(VOLKSWAGEN)牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": ""
   },
   {
    "generic": "ID.UNYX 与众",
@@ -6329,23 +6393,6 @@
    "note": ""
   },
   {
-   "generic": "哈弗猛龙V7 PLUS;哈弗猛龙 PLUS",
-   "rows": 4,
-   "channel": "A2_split",
-   "seriesid": "7298",
-   "seriesname": "哈弗猛龙新能源",
-   "candidates": [
-    "哈弗猛龙新能源"
-   ],
-   "candidate_sids": [
-    "7298"
-   ],
-   "trademark": "哈弗牌",
-   "n_cands": 2,
-   "chan_before": null,
-   "note": ""
-  },
-  {
    "generic": "哪吒 Aya",
    "rows": 4,
    "channel": "unmatched",
@@ -6436,6 +6483,36 @@
     "6900"
    ],
    "trademark": "哈弗牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": ""
+  },
+  {
+   "generic": "奕境X9",
+   "rows": 4,
+   "channel": "unmatched",
+   "seriesid": null,
+   "seriesname": null,
+   "candidates": [],
+   "candidate_sids": [],
+   "trademark": "奕境牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": "10 个月并集内无匹配"
+  },
+  {
+   "generic": "奕派M8",
+   "rows": 4,
+   "channel": "A_exact",
+   "seriesid": "8609",
+   "seriesname": "奕派M8",
+   "candidates": [
+    "奕派M8"
+   ],
+   "candidate_sids": [
+    "8609"
+   ],
+   "trademark": "东风牌",
    "n_cands": 1,
    "chan_before": null,
    "note": ""
@@ -7116,6 +7193,23 @@
    "n_cands": 1,
    "chan_before": null,
    "note": "10 个月并集内无匹配"
+  },
+  {
+   "generic": "问界M6",
+   "rows": 4,
+   "channel": "A_exact",
+   "seriesid": "8529",
+   "seriesname": "问界M6",
+   "candidates": [
+    "问界M6"
+   ],
+   "candidate_sids": [
+    "8529"
+   ],
+   "trademark": "问界牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": ""
   },
   {
    "generic": "问界M6EV",
@@ -7910,23 +8004,6 @@
    "note": "10 个月并集内无匹配"
   },
   {
-   "generic": "ID.ERA 9X",
-   "rows": 3,
-   "channel": "A_exact",
-   "seriesid": "8092",
-   "seriesname": "ID. ERA 9X",
-   "candidates": [
-    "ID. ERA 9X"
-   ],
-   "candidate_sids": [
-    "8092"
-   ],
-   "trademark": "大众汽车(VOLKSWAGEN)牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": ""
-  },
-  {
    "generic": "ID.UNYX 与众08",
    "rows": 3,
    "channel": "C_substr",
@@ -8032,23 +8109,6 @@
    "n_cands": 1,
    "chan_before": null,
    "note": "10 个月并集内无匹配"
-  },
-  {
-   "generic": "M817",
-   "rows": 3,
-   "channel": "B_brand",
-   "seriesid": "8091",
-   "seriesname": "猛士M817",
-   "candidates": [
-    "猛士M817"
-   ],
-   "candidate_sids": [
-    "8091"
-   ],
-   "trademark": "猛士牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": ""
   },
   {
    "generic": "MG 07",
@@ -8500,6 +8560,19 @@
    "note": "10 个月并集内无匹配"
   },
   {
+   "generic": "传祺越7",
+   "rows": 3,
+   "channel": "unmatched",
+   "seriesid": null,
+   "seriesname": null,
+   "candidates": [],
+   "candidate_sids": [],
+   "trademark": "传祺(Trumpchi)牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": "10 个月并集内无匹配"
+  },
+  {
    "generic": "全顺EV",
    "rows": 3,
    "channel": "unmatched",
@@ -8541,19 +8614,6 @@
    "n_cands": 1,
    "chan_before": null,
    "note": ""
-  },
-  {
-   "generic": "创新纯电动BMW iX1",
-   "rows": 3,
-   "channel": "unmatched",
-   "seriesid": null,
-   "seriesname": null,
-   "candidates": [],
-   "candidate_sids": [],
-   "trademark": "宝马(BMW)牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": "10 个月并集内无匹配"
   },
   {
    "generic": "创维EV6Ⅱ",
@@ -8730,19 +8790,6 @@
    "n_cands": 1,
    "chan_before": null,
    "note": ""
-  },
-  {
-   "generic": "奕境X9",
-   "rows": 3,
-   "channel": "unmatched",
-   "seriesid": null,
-   "seriesname": null,
-   "candidates": [],
-   "candidate_sids": [],
-   "trademark": "奕境牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": "10 个月并集内无匹配"
   },
   {
    "generic": "奕派EP7",
@@ -9725,23 +9772,6 @@
     "8131"
    ],
    "trademark": "吉利牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": ""
-  },
-  {
-   "generic": "问界M6",
-   "rows": 3,
-   "channel": "A_exact",
-   "seriesid": "8529",
-   "seriesname": "问界M6",
-   "candidates": [
-    "问界M6"
-   ],
-   "candidate_sids": [
-    "8529"
-   ],
-   "trademark": "问界牌",
    "n_cands": 1,
    "chan_before": null,
    "note": ""
@@ -11031,6 +11061,23 @@
    "note": "10 个月并集内无匹配"
   },
   {
+   "generic": "V9,星海V9,游艇V9",
+   "rows": 2,
+   "channel": "A2_split",
+   "seriesid": "7400",
+   "seriesname": "星海V9",
+   "candidates": [
+    "星海V9"
+   ],
+   "candidate_sids": [
+    "7400"
+   ],
+   "trademark": "东风牌",
+   "n_cands": 3,
+   "chan_before": null,
+   "note": ""
+  },
+  {
    "generic": "V90",
    "rows": 2,
    "channel": "unmatched",
@@ -11471,19 +11518,6 @@
    "note": ""
   },
   {
-   "generic": "传祺越7",
-   "rows": 2,
-   "channel": "unmatched",
-   "seriesid": null,
-   "seriesname": null,
-   "candidates": [],
-   "candidate_sids": [],
-   "trademark": "传祺(Trumpchi)牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": "10 个月并集内无匹配"
-  },
-  {
    "generic": "元EV",
    "rows": 2,
    "channel": "unmatched",
@@ -11894,23 +11928,6 @@
    "n_cands": 1,
    "chan_before": null,
    "note": "10 个月并集内无匹配"
-  },
-  {
-   "generic": "奕派M8",
-   "rows": 2,
-   "channel": "A_exact",
-   "seriesid": "8609",
-   "seriesname": "奕派M8",
-   "candidates": [
-    "奕派M8"
-   ],
-   "candidate_sids": [
-    "8609"
-   ],
-   "trademark": "东风牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": ""
   },
   {
    "generic": "威兰达",
@@ -13355,6 +13372,23 @@
    "note": "10 个月并集内无匹配"
   },
   {
+   "generic": "银河A7EV",
+   "rows": 2,
+   "channel": "A_exact",
+   "seriesid": "8666",
+   "seriesname": "银河A7 EV",
+   "candidates": [
+    "银河A7 EV"
+   ],
+   "candidate_sids": [
+    "8666"
+   ],
+   "trademark": "吉利牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": ""
+  },
+  {
    "generic": "银河M8",
    "rows": 2,
    "channel": "unmatched",
@@ -13828,6 +13862,23 @@
    "note": ""
   },
   {
+   "generic": "魏牌高山7",
+   "rows": 2,
+   "channel": "B_brand",
+   "seriesid": "7076",
+   "seriesname": "魏牌 高山新能源",
+   "candidates": [
+    "魏牌 高山新能源"
+   ],
+   "candidate_sids": [
+    "7076"
+   ],
+   "trademark": "魏牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": ""
+  },
+  {
    "generic": "#1",
    "rows": 1,
    "channel": "unmatched",
@@ -14032,6 +14083,19 @@
    "n_cands": 1,
    "chan_before": null,
    "note": ""
+  },
+  {
+   "generic": "BJ60e",
+   "rows": 1,
+   "channel": "unmatched",
+   "seriesid": null,
+   "seriesname": null,
+   "candidates": [],
+   "candidate_sids": [],
+   "trademark": "",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": "10 个月并集内无匹配"
   },
   {
    "generic": "C 350 L 4MATIC,C 350 LL 4MATIC",
@@ -14474,6 +14538,19 @@
    "candidates": [],
    "candidate_sids": [],
    "trademark": "翼刻牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": "10 个月并集内无匹配"
+  },
+  {
+   "generic": "ELECTRA E7",
+   "rows": 1,
+   "channel": "unmatched",
+   "seriesid": null,
+   "seriesname": null,
+   "candidates": [],
+   "candidate_sids": [],
+   "trademark": "别克(BUICK)",
    "n_cands": 1,
    "chan_before": null,
    "note": "10 个月并集内无匹配"
@@ -16620,6 +16697,23 @@
    "note": "10 个月并集内无匹配"
   },
   {
+   "generic": "传祺S7;传祺向往S7",
+   "rows": 1,
+   "channel": "A2_split",
+   "seriesid": "7928",
+   "seriesname": "传祺向往S7",
+   "candidates": [
+    "传祺向往S7"
+   ],
+   "candidate_sids": [
+    "7928"
+   ],
+   "trademark": "传祺(Trumpchi)牌",
+   "n_cands": 2,
+   "chan_before": null,
+   "note": ""
+  },
+  {
    "generic": "传祺S9",
    "rows": 1,
    "channel": "unmatched",
@@ -17150,6 +17244,19 @@
    "candidates": [],
    "candidate_sids": [],
    "trademark": "奇瑞牌",
+   "n_cands": 1,
+   "chan_before": null,
+   "note": "10 个月并集内无匹配"
+  },
+  {
+   "generic": "大道",
+   "rows": 1,
+   "channel": "unmatched",
+   "seriesid": null,
+   "seriesname": null,
+   "candidates": [],
+   "candidate_sids": [],
+   "trademark": "江铃牌",
    "n_cands": 1,
    "chan_before": null,
    "note": "10 个月并集内无匹配"
@@ -19077,23 +19184,6 @@
    "note": "10 个月并集内无匹配"
   },
   {
-   "generic": "银河A7EV",
-   "rows": 1,
-   "channel": "A_exact",
-   "seriesid": "8666",
-   "seriesname": "银河A7 EV",
-   "candidates": [
-    "银河A7 EV"
-   ],
-   "candidate_sids": [
-    "8666"
-   ],
-   "trademark": "吉利牌",
-   "n_cands": 1,
-   "chan_before": null,
-   "note": ""
-  },
-  {
    "generic": "银河TT、TT、A8、银河A8",
    "rows": 1,
    "channel": "A2_split",
@@ -19669,23 +19759,6 @@
    ],
    "trademark": "魏牌",
    "n_cands": 4,
-   "chan_before": null,
-   "note": ""
-  },
-  {
-   "generic": "魏牌高山7",
-   "rows": 1,
-   "channel": "B_brand",
-   "seriesid": "7076",
-   "seriesname": "魏牌 高山新能源",
-   "candidates": [
-    "魏牌 高山新能源"
-   ],
-   "candidate_sids": [
-    "7076"
-   ],
-   "trademark": "魏牌",
-   "n_cands": 1,
    "chan_before": null,
    "note": ""
   }
@@ -21249,6 +21322,7 @@
   "ARRIZO5 e;ARRIZO e",
   "Airev",
   "BJ40e",
+  "BJ60e",
   "C 350 L 4MATIC,C 350 LL 4MATIC",
   "C 350 e L",
   "C-HR",
@@ -21294,6 +21368,7 @@
   "EHS7",
   "EK1",
   "ELECTRA E5",
+  "ELECTRA E7",
   "ELECTRA E7;ELECTRA X7",
   "ELECTRA L7",
   "ELETRE",
@@ -21514,9 +21589,7 @@
   "V9",
   "V90",
   "V919",
-  "V919,V919荣耀版",
-  "V919荣耀版",
-  "V9X"
+  "V919,V919荣耀版"
  ],
  "placeholder_list": [
   "",
@@ -21808,7 +21881,7 @@
    },
    {
     "by": "企业",
-    "buckets": 54,
+    "buckets": 55,
     "series_count_sum": 282,
     "distinct_series": 282,
     "linked_series": 282,
@@ -22767,6 +22840,22 @@
    }
   },
   {
+   "sheet_row": 3990,
+   "批次": 404,
+   "产品型号": "SKE6501DREEVA1F",
+   "通用名称": "问界M6",
+   "车型名称": "问界M6",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": 1,
+   "seriesid": "8529",
+   "系列名": "问界M6",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 4,
+    "EREV": 4
+   }
+  },
+  {
    "sheet_row": 3991,
    "批次": 404,
    "产品型号": "SKE6501DREEVA2F",
@@ -22779,7 +22868,7 @@
    "车系级标签": "BEV",
    "行级标签计数": {
     "BEV": 4,
-    "EREV": 3
+    "EREV": 4
    }
   },
   {
@@ -22913,6 +23002,22 @@
    }
   },
   {
+   "sheet_row": 4217,
+   "批次": 407,
+   "产品型号": "DFM6500S5F8REEV",
+   "通用名称": "奕派M8",
+   "车型名称": "东风奕派M8",
+   "动力类型": "PHEV",
+   "是否增程(EREV)": 1,
+   "seriesid": "8609",
+   "系列名": "奕派M8",
+   "车系级标签": "BEV",
+   "行级标签计数": {
+    "BEV": 2,
+    "EREV": 2
+   }
+  },
+  {
    "sheet_row": 4218,
    "批次": 407,
    "产品型号": "DFM6500S5F9REEV",
@@ -22924,8 +23029,8 @@
    "系列名": "奕派M8",
    "车系级标签": "BEV",
    "行级标签计数": {
-    "BEV": 1,
-    "EREV": 1
+    "BEV": 2,
+    "EREV": 2
    }
   },
   {
@@ -23005,7 +23110,7 @@
    "车系级标签": "BEV",
    "行级标签计数": {
     "BEV": 4,
-    "EREV": 3
+    "EREV": 4
    }
   },
   {
@@ -23021,7 +23126,7 @@
    "车系级标签": "BEV",
    "行级标签计数": {
     "BEV": 4,
-    "EREV": 3
+    "EREV": 4
    }
   },
   {
@@ -23140,7 +23245,7 @@
   }
  ],
  "energy_flag_anomalies_summary": {
-  "rows": 80,
+  "rows": 82,
   "distinct_series": 25,
   "distinct_series_names": [
    "eπ007",

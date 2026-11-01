@@ -21,7 +21,7 @@
    "无候选": "底表无痕迹，或痕迹候选品牌签名不通过（跨品牌误配风险）"
   },
   "base_rows": 5475,
-  "base_table_sha256": "d2d105a090e3bf64749252002a10a86f6d096faf3b24d12eca0e0c55caef25a6",
+  "base_table_sha256": "0f55aedb22201c156fd7fb87a4224a0d7bfa562e2c9b8f47b535cccfc7a46b24",
   "dry_run": false
  },
  "verdict_counts": {
@@ -2726,11 +2726,15 @@
       },
       {
        "产品商标": "",
-       "企业名称": "",
+       "企业名称": "东风汽车集团有限公司",
        "rows": 1,
-       "brand_ok": false,
-       "brand_alias_hit": [],
-       "brand_tokens_base": [],
+       "brand_ok": true,
+       "brand_alias_hit": [
+        "风神|东风"
+       ],
+       "brand_tokens_base": [
+        "东风"
+       ],
        "excel_rows": [
         3262
        ]
@@ -4103,11 +4107,14 @@
       },
       {
        "产品商标": "魏牌",
-       "企业名称": "",
+       "企业名称": "长城汽车股份有限公司",
        "rows": 2,
        "brand_ok": true,
-       "brand_alias_hit": [],
+       "brand_alias_hit": [
+        "魏牌|长城"
+       ],
        "brand_tokens_base": [
+        "长城",
         "魏牌"
        ],
        "excel_rows": [
@@ -6210,11 +6217,15 @@
       },
       {
        "产品商标": "",
-       "企业名称": "",
+       "企业名称": "东风汽车集团有限公司",
        "rows": 1,
-       "brand_ok": false,
-       "brand_alias_hit": [],
-       "brand_tokens_base": [],
+       "brand_ok": true,
+       "brand_alias_hit": [
+        "风神|东风"
+       ],
+       "brand_tokens_base": [
+        "东风"
+       ],
        "excel_rows": [
         3262
        ]
@@ -6625,6 +6636,61 @@
       "brand_state": "confirmed",
       "model_family_ok": false,
       "generation_hint": "底表名为纯数字/字母碎片（v9），非车系名 → 假锚定风险"
+     },
+     "family_note": "仅弱包含（v9），非后缀关系 → 假锚定风险（如 07⊂极氪007GT）"
+    },
+    {
+     "generic_name": "V9,星海V9,游艇V9",
+     "rows": 2,
+     "excel_rows": [
+      3775,
+      3776
+     ],
+     "企业名称": "东风汽车股份有限公司",
+     "产品商标": "东风牌",
+     "细分市场": "MPV-D",
+     "动力类型": "PHEV",
+     "批次": 402,
+     "公告年月": "2025-12",
+     "年份": 2025,
+     "整备质量": 2390,
+     "轴距": 3018,
+     "车长": 5070,
+     "纯电续航": 160,
+     "电池容量": 34.944,
+     "product_models": [
+      "LZ6520M15B3PHEV",
+      "LZ6520M15B4PHEV"
+     ],
+     "brand_ok": false,
+     "brand_state": "conflict",
+     "brand_groups": [
+      {
+       "产品商标": "东风牌",
+       "企业名称": "东风汽车股份有限公司",
+       "rows": 2,
+       "brand_ok": false,
+       "brand_alias_hit": [],
+       "brand_tokens_base": [
+        "东风"
+       ],
+       "excel_rows": [
+        3775,
+        3776
+       ]
+      }
+     ],
+     "suffix_of_board": [],
+     "weak_forms": [
+      "v9"
+     ],
+     "base_anchored_sid": "7400",
+     "base_anchored_elsewhere": true,
+     "signature_match": {
+      "brand_ok": false,
+      "brand_state": "conflict",
+      "model_family_ok": false,
+      "generation_hint": "数字片段不一致：底表「999」vs 榜名「9」→ 跨代/假锚定疑云（如 EZ-6 vs EZ-60）"
      },
      "family_note": "仅弱包含（v9），非后缀关系 → 假锚定风险（如 07⊂极氪007GT）"
     },
@@ -9601,6 +9667,7 @@
      "纯电续航": 460,
      "电池容量": "67.501/59.466",
      "product_models": [
+      "LZ6510NFD0EV",
       "LZ6510NKD0EV",
       "LZ6510NLD0EV",
       "LZ6510NPD0EV"
@@ -9611,7 +9678,7 @@
       {
        "产品商标": "东风牌",
        "企业名称": "东风柳州汽车有限公司",
-       "rows": 3,
+       "rows": 4,
        "brand_ok": false,
        "brand_alias_hit": [],
        "brand_tokens_base": [
@@ -9620,20 +9687,8 @@
        "excel_rows": [
         1420,
         2725,
+        2904,
         4273
-       ]
-      },
-      {
-       "产品商标": "东风牌",
-       "企业名称": "",
-       "rows": 1,
-       "brand_ok": false,
-       "brand_alias_hit": [],
-       "brand_tokens_base": [
-        "东风"
-       ],
-       "excel_rows": [
-        2904
        ]
       }
      ],

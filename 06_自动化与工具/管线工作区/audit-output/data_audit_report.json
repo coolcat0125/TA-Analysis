@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "copyright": "Copyright © 2026 David YE",
-  "generated_at_utc": "2026-11-01T11:23:42+00:00",
+  "generated_at_utc": "2026-11-01T14:23:53+00:00",
   "input": {
     "filename": "NEV公告参数汇总表_合并版（341~412批）.xlsx",
-    "sha256": "e88d749ad6204362ed6a296d65ef5bc15a2613b1b1ca0fe1b4537bf886782df5",
+    "sha256": "0f55aedb22201c156fd7fb87a4224a0d7bfa562e2c9b8f47b535cccfc7a46b24",
     "worksheet": "NEV公告参数汇总"
   },
   "dataset": {
@@ -135,21 +135,21 @@
   "coverage": {
     "整备质量": {
       "header": "整备质量(kg)",
-      "populated": 5021,
-      "coverage": 0.917078,
-      "missing": 454
+      "populated": 5113,
+      "coverage": 0.933881,
+      "missing": 362
     },
     "纯电续航": {
       "header": "纯电续航里程(km)",
-      "populated": 5286,
-      "coverage": 0.965479,
-      "missing": 189
+      "populated": 5306,
+      "coverage": 0.969132,
+      "missing": 169
     },
     "电池容量": {
       "header": "电池容量(kWh)",
-      "populated": 5014,
-      "coverage": 0.915799,
-      "missing": 461
+      "populated": 5094,
+      "coverage": 0.930411,
+      "missing": 381
     },
     "电池能量密度": {
       "header": "电池能量密度(Wh/kg)",
@@ -183,9 +183,9 @@
     },
     "发动机排量": {
       "header": "发动机排量(mL)",
-      "populated": 4981,
-      "coverage": 0.909772,
-      "missing": 494
+      "populated": 4984,
+      "coverage": 0.91032,
+      "missing": 491
     }
   },
   "range_checks": {
@@ -194,7 +194,7 @@
         300.0,
         10000.0
       ],
-      "numeric_values": 5021,
+      "numeric_values": 5113,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -203,7 +203,7 @@
         5.0,
         2000.0
       ],
-      "numeric_values": 5286,
+      "numeric_values": 5306,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -212,7 +212,7 @@
         1.0,
         300.0
       ],
-      "numeric_values": 5014,
+      "numeric_values": 5094,
       "outliers": 0,
       "sample_outliers": []
     },
@@ -277,7 +277,7 @@
         300.0,
         8000.0
       ],
-      "numeric_values": 1652,
+      "numeric_values": 1655,
       "outliers": 0,
       "sample_outliers": []
     }
