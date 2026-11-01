@@ -34,6 +34,15 @@ v4.9.42「以官方为准」批量订正时，有 5 条因**官方索引里同�
 - `官方复核差异台账`：对应行处置列改「已以官方为准写入（配置锚定）」，其余 3 条仍为「待仲裁·未改值」
 - 备份 `archive/底表_pre-官方多值锚定_20261102T011706.xlsx`
 
+### 附：403_big.doc 恢复通道（第 6 条路径，成功）
+LibreOffice 对该文件（30.8MB，OLE 内含 `WpsCustomData` 流 + `WordDocument` 18.5MB）的 5 条路径（`txt:Text (encoded):UTF8`、`html:HTML (StarWriter)`、`--infilter="MS Word 97"`、独立 profile、终止重试）**累计 >2,530 秒 CPU 均无产出**。
+
+改用 **OLE 直读**：`olefile` 取 `WordDocument` 流 → 依 FIB 的 `fcMin(0x18)/fcMac(0x1C)` 截取正文（2,048 ~ 2,178,818）→ `utf-16-le` 解码（CJK 165,303 字，显著优于 gb18030 的 55,624）→ 按 **0x07（Word 表格单元分隔符）** 切格。
+
+结果：**204,485 个单元格 / 2,574 条候选记录 / 2,249 个车辆型号**（403 批·车船税第八十二批）。与底表 403 批 84 行交集 15 个型号，而这 15 行的容量/续航/整备/排量**四项均无空格** → **本附件不新增可补格**；价值在于附件完整性从 167/172 推进到 **168/172**，且 403 批不再依赖替代路径。
+
+产出：`公告批次扫描_411-412_20261017/raw/txt/403_big_recovered.txt`（1,428,729 B）、`audit-output/_ak6_parse403.json`。
+
 ### 底表状态
 `sha  c1658dff58d19305777b1b4345ef074976975e1d7e25f414e0be98b71f3895ea` / 4,941,818 B / 5,475 行 × 45 列 / 17 sheets / `变更记录` 68,062 行
 门禁：`audit_data --strict` PASS；`verify_consistency` 记录 5,475 / CRITICAL 0 / WARN 213 / PASS
