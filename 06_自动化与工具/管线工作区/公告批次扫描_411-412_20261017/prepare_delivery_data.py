@@ -16,7 +16,7 @@ from openpyxl import load_workbook
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 REPO = ROOT.parent / "01-主仓库" / "TA-Analysis"
-MASTER = REPO / "NEV公告参数汇总表_合并版（341~410批）.xlsx"
+MASTER = REPO / "NEV公告参数汇总表_合并版（341~412批）.xlsx"
 B411_ARCHIVE = ROOT.parent / "02-数据底表" / "data" / "nev-announcements" / "raw" / "b411"
 
 

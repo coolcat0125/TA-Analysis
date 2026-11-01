@@ -20,7 +20,7 @@ BASE = os.path.dirname(HERE)                               # ...\核定底表
 DATA = os.path.join(BASE, 'data')
 
 SRC_XLSX = os.path.join(ROOT17, '01-主仓库', 'TA-Analysis',
-                        'NEV公告参数汇总表_合并版（341~410批）.xlsx')
+                        'NEV公告参数汇总表_合并版（341~412批）.xlsx')
 SCAN_DIR = os.path.join(ROOT17, '01-主仓库', 'TA-Analysis',
                         '公告批次扫描_411-412_20261017')
 SCAN_XLSX = os.path.join(SCAN_DIR, 'outputs',

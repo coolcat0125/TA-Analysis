@@ -47,7 +47,7 @@ def main():
         items = [dict(v, model_key=k) for k, v in items.items()]
 
     here = os.path.dirname(os.path.abspath(__file__))
-    wb_path = args.workbook or os.path.join(here, '..', '..', 'NEV公告参数汇总表_合并版（341~410批）.xlsx')
+    wb_path = args.workbook or os.path.join(here, '..', '..', 'NEV公告参数汇总表_合并版（341~412批）.xlsx')
     wb = openpyxl.load_workbook(wb_path, read_only=True, data_only=True)
     ws = wb['NEV公告参数汇总']
     hdr = [str(c.value or '').strip() for c in next(ws.iter_rows(min_row=1, max_row=1))]

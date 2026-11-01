@@ -15,7 +15,7 @@ import re
 # ---------------------------------------------------------------- 路径
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)                      # 仓库根(本目录的上一级)
-WB_NAME = 'NEV公告参数汇总表_合并版（341~410批）.xlsx'
+WB_NAME = 'NEV公告参数汇总表_合并版（341~412批）.xlsx'
 WB = os.path.join(REPO, WB_NAME)
 SHEET = 'NEV公告参数汇总'
 LEDGER = '变更记录'

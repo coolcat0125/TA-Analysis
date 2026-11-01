@@ -103,7 +103,7 @@ def main():
             saved = WB
             print('      已就地保存')
         except PermissionError:
-            tmp = WB.replace('（341~410批）', '（341~410批）v42tmp')
+            tmp = WB.replace('（341~412批）', '（341~412批）v42tmp')
             wb.save(tmp)
             for i in range(6):
                 time.sleep(20)
@@ -115,7 +115,7 @@ def main():
                 except PermissionError:
                     pass
             if not saved:
-                kept = WB.replace('（341~410批）', '（341~410批·CR17-002版）')
+                kept = WB.replace('（341~412批）', '（341~412批·CR17-002版）')
                 os.replace(tmp, kept)
                 saved = kept
         print(f'已写入：{len(plan)} 行；变更记录追加 {len(plan)} 条（末序号 {last}）')

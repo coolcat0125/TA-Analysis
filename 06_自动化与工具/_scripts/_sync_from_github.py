@@ -20,7 +20,7 @@ API_BASE = f'https://api.github.com/repos/{OWNER}/{REPO}/contents'
 
 # 需要下载的核心文件清单
 FILES_TO_DOWNLOAD = [
-    'NEV公告参数汇总表_合并版（341~410批）.xlsx',
+    'NEV公告参数汇总表_合并版（341~412批）.xlsx',
     'NEV公告数据看板.html',
     'NEV公告数据看板_发布版.html',
     'CHANGELOG.md',

@@ -292,7 +292,7 @@ def main():
         saved = SRC
         print('      已就地保存')
     except PermissionError:
-        tmp = SRC.replace('（341~410批）', '（341~410批）v41tmp')
+        tmp = SRC.replace('（341~412批）', '（341~412批）v41tmp')
         wb.save(tmp)
         print(f'      原文件被占用，先写 {os.path.basename(tmp)}，开始重试替换…')
         for i in range(6):
@@ -305,7 +305,7 @@ def main():
             except PermissionError:
                 pass
         if not saved:
-            kept = SRC.replace('（341~410批）', '（341~410批·v41共识版）')
+            kept = SRC.replace('（341~412批）', '（341~412批·v41共识版）')
             os.replace(tmp, kept)
             saved = kept
             print(f'      持续被占用，保留为 {os.path.basename(kept)}')

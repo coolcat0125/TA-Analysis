@@ -112,7 +112,7 @@ tr:nth-child(even) td {{ background: #F8FAFD; }}
 <div class="meta">数据源：status.json · 刷新时间 <span id="ts">{status['updated']}</span> · 工作流：dcd_batch_run.py</div>
 
 <div class="kpis">
-  <div class="kpi"><div class="v">{status['workbook_rows']:,}</div><div class="l">底表行数（341~410批）</div></div>
+  <div class="kpi"><div class="v">{status['workbook_rows']:,}</div><div class="l">底表行数（341~412批）</div></div>
   <div class="kpi ok"><div class="v">{status['dcd_ledger_cells']:,}</div><div class="l">DCD 台账累计格数</div></div>
   <div class="kpi warn"><div class="v">{gap_total:,}</div><div class="l">DCD 可补缺口（剩余）</div></div>
   <div class="kpi"><div class="v">{len(status['batches'])}</div><div class="l">计划批次数</div></div>

@@ -1,5 +1,13 @@
 # -*- coding: utf-8 -*-
 """build_pptx_enrich_v4930.py — 演示文稿充实美化（09-28 夜，宿主车道，可分段复跑）
+# OBSOLETE-20261101: 本源文件为 mojibake（双重编码损坏），且第 193 行把
+#   '公告车型总量 5,392 款（BEV 3,702 / PHEV 1,690）' 写死为演示稿首屏文案，
+#   与现行 5,475 条 / BEV 3,762 / PHEV 1,713 / 45 列 口径不符。
+#   演示稿改由 build_pptx_refresh_v4924.py + build_sales_pages_v4950.py 生成。
+import os as _os, sys as _sys
+if _os.environ.get('ALLOW_OBSOLETE_PPTX_ENRICH') != '1':
+    _sys.exit('[OBSOLETE] build_pptx_enrich_v4930.py 已停用（mojibake + 陈旧口径）；'
+             '如确需运行请设 ALLOW_OBSOLETE_PPTX_ENRICH=1，并先修正第 193 行文案。')
 
 用户指令：每页内容尽量充实（可合并页）、实事求是证据确凿。
 手段（全部数据同源=图表自身数值，杜绝臆造）：

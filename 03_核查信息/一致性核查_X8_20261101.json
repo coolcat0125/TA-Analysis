@@ -1,0 +1,294 @@
+{
+ "generated_at": "2026-11-01",
+ "workbook_sha256": "0ba3ebadba7bf51e7f034f5171f26e79031f6d1906bf43c77b1305a1f188abed",
+ "items": [
+  {
+   "lvl": "FAIL",
+   "item": "L1.1 表宽 45 列",
+   "ok": true,
+   "detail": "45 列"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L1.2 数据行 5,475",
+   "ok": true,
+   "detail": "5475 行"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L1.3 批次列全为 int",
+   "ok": true,
+   "detail": "{'int': 5475}"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L1.4 批次范围 341~412（72 批）",
+   "ok": true,
+   "detail": "72 批 [341, 342, 343]...[411, 412]"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L1.5 动力类型取值域",
+   "ok": true,
+   "detail": "{'BEV': 3762, 'PHEV': 1713}"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L1.6 是否增程取值域 {None,1}",
+   "ok": true,
+   "detail": "{None: 5030, 1: 445}"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L1.7 覆盖状态全行非空",
+   "ok": true,
+   "detail": "5475/5475"
+  },
+  {
+   "lvl": "PASS",
+   "item": "L1.8 车系ID 非空 ≥ 有销量行（差额=已锚定不在榜）",
+   "ok": true,
+   "detail": "col39 2620 − col35 2202 = 418"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L1.9 六类状态合计 == 行数",
+   "ok": true,
+   "detail": "5475 / 六类 4"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L1.10 状态↔销量 双向零违例",
+   "ok": true,
+   "detail": "匹配但空=0"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L1.11 销量月份/日期值域纯净",
+   "ok": true,
+   "detail": "{'2026-09'} / {'2026-10-19'}"
+  },
+  {
+   "lvl": "PASS",
+   "item": "L1.12 唯一键 (批次,产品型号) 无新增重复",
+   "ok": true,
+   "detail": "重复组 [((410, None), 3)]"
+  },
+  {
+   "lvl": "WARN",
+   "item": "L1.13 电机功率/扭矩 形态（P/T 与纯功率混存，属既有设计）",
+   "ok": false,
+   "detail": "纯功率 3802 例（取数值一律 split('/')[0]，不阻塞）['270', '270', '235', '200']"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L1.14 车系ID 全为纯数字串",
+   "ok": true,
+   "detail": "违例 0 例 []"
+  },
+  {
+   "lvl": "PASS",
+   "item": "L1.15 物理范围 纯电续航里程(km) ∈ [0,1500]",
+   "ok": true,
+   "detail": "n=5252 越界 0 例 []"
+  },
+  {
+   "lvl": "PASS",
+   "item": "L1.15 物理范围 电池容量(kWh) ∈ [0,250]",
+   "ok": true,
+   "detail": "n=4892 越界 0 例 []"
+  },
+  {
+   "lvl": "PASS",
+   "item": "L1.15 物理范围 车长(mm) ∈ [2000,7000]",
+   "ok": true,
+   "detail": "n=4709 越界 0 例 []"
+  },
+  {
+   "lvl": "PASS",
+   "item": "L1.15 物理范围 轴距(mm) ∈ [1500,4000]",
+   "ok": true,
+   "detail": "n=4746 越界 0 例 []"
+  },
+  {
+   "lvl": "PASS",
+   "item": "L1.15 物理范围 整备质量(kg) ∈ [400,3600]",
+   "ok": true,
+   "detail": "n=4160 越界 0 例 []"
+  },
+  {
+   "lvl": "PASS",
+   "item": "L1.15 物理范围 百公里电耗(kWh/100km) ∈ [0,60]",
+   "ok": true,
+   "detail": "n=5140 越界 0 例 []"
+  },
+  {
+   "lvl": "PASS",
+   "item": "L1.15 物理范围 综合油耗(L/100km) ∈ [0,40]",
+   "ok": true,
+   "detail": "n=1553 越界 0 例 []"
+  },
+  {
+   "lvl": "PASS",
+   "item": "L1.15 物理范围 发动机排量(mL) ∈ [0,8000]",
+   "ok": true,
+   "detail": "n=1652 越界 0 例 []"
+  },
+  {
+   "lvl": "PASS",
+   "item": "L1.15 物理范围 发动机功率(kW) ∈ [0,800]",
+   "ok": true,
+   "detail": "n=1383 越界 0 例 []"
+  },
+  {
+   "lvl": "WARN",
+   "item": "L1.15b 轴距 >3600mm（疑似轻客/非 M1 口径，待外部佐证）",
+   "ok": false,
+   "detail": "7 行：[(347, 'SH6591J2BEV-3', 'EV90', 3760, 5940), (359, 'SH6551J2BEV-4', 'EV90', 3760, 5940), (378, 'SH6552J1BEV-4', 'EV90', 3760, 5940), (386, 'SH6553J2BEV-5', 'EV90', 3760, 5940)]"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L1.16 BEV 发动机排量 ∈ {不适用(BEV), None}",
+   "ok": true,
+   "detail": "{'不适用(BEV)': 3328, 'None': 434}"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L1.17 BEV 发动机型号 ∈ {不适用(BEV), None}",
+   "ok": true,
+   "detail": "{'不适用(BEV)': 3368, 'None': 394}"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L2.1 meta.base_rows == 底表行数",
+   "ok": true,
+   "detail": "5475 vs 5475"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L2.2 meta.base_table_columns == 表宽",
+   "ok": true,
+   "detail": "45 vs 45"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L2.3 meta.base_table_sha256 == 磁盘 sha",
+   "ok": true,
+   "detail": "0ba3ebadba7bf51e vs 0ba3ebadba7bf51e"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L2.4 coverage.row.covered == col35 非空",
+   "ok": true,
+   "detail": "2202 vs 2202"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L2.5 anchored_not_on_board.rows == col39−col35",
+   "ok": true,
+   "detail": "418 vs 418"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L2.6 by_energy 三项和 == sales_total_dedup",
+   "ok": true,
+   "detail": "797701 vs 797701"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L2.7 trend.monthly 末行 == by_energy",
+   "ok": true,
+   "detail": "['2026-09', 797701, 523943, 204286, 69472] vs [['BEV', 523943], ['PHEV', 204286], ['EREV', 69472]]"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L2.8 六类状态 == 底表实测",
+   "ok": true,
+   "detail": "JSON {'在售-已匹配': 2202, '在售-零销量': 0, '未匹配-命名待锚定': 116, '未匹配-已停产或未上量': 2750, '无车系身份': 407, '未匹配-无车系ID': 0} / 底表 {'未匹配-已停产或未上量': 2750, '在售-已匹配': 2202, '未匹配-命名待锚定': 116, '无车系身份': 407}"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L3.1 54表封面含 5,475 与 45 列",
+   "ok": true,
+   "detail": "NEV 公告车型行业分析 · 数据底表 口径版本 v4.9.23 · 5,475 条公告/公示记录 × 45 列（第 341~412 批（412 批为公示口径·无正式发文字号） · 纯乘用车） 生成日期 2026-11-01 · 权威源 NEV公告参数汇总表_合并版（341~412批）.xlsx 电耗/续航已与工信部能耗数据20260915 官方对齐 · 销量=汽车之家·行业综合销量（车系级月零售"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L3.2 54 表表数",
+   "ok": true,
+   "detail": "54 表"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L3.3 NEV公告数据看板.html 含新数字且无 5,392 残留",
+   "ok": true,
+   "detail": "新数字=True 残留=False 3.66MB"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L3.3 NEV公告数据看板_发布版.html 含新数字且无 5,392 残留",
+   "ok": true,
+   "detail": "新数字=True 残留=False 3.66MB"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L3.3 NEV公告车型行业分析_移动版.html 含新数字且无 5,392 残留",
+   "ok": true,
+   "detail": "新数字=True 残留=False 1.34MB"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L3.5 NEV公告车型行业分析报告.docx 列数文案 == 45 且无 41 残留",
+   "ok": true,
+   "detail": "41列=0 45列=2"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L3.5 NEV公告车型行业分析_演示文稿.ppt 列数文案 == 45 且无 41 残留",
+   "ok": true,
+   "detail": "41列=0 45列=2"
+  },
+  {
+   "lvl": "FAIL",
+   "item": "L3.4 发布清单 sha 与实际文件一致",
+   "ok": true,
+   "detail": "8 件，异常 []"
+  },
+  {
+   "lvl": "WARN",
+   "item": "L4 陈旧值「旧行数 5,392」",
+   "ok": false,
+   "detail": "54 处 / 18 文件：['build_deliverables_v4923.py', 'build_pptx_enrich_v4930.py', 'build_pptx_refresh_v4924.py', 'build_report_v4925.py']"
+  },
+  {
+   "lvl": "WARN",
+   "item": "L4 陈旧值「旧 41 列文案」",
+   "ok": false,
+   "detail": "25 处 / 12 文件：['build_deliverables_v4923.py', 'build_mobile_v4935.py', 'build_report_v4925.py', 'cr17_012_rehearsal.py']"
+  },
+  {
+   "lvl": "WARN",
+   "item": "L4 陈旧值「旧 BEV 523,457」",
+   "ok": false,
+   "detail": "14 处 / 7 文件：['_w26_changelog.py', '_w27_project_status.py', '_w32_scan_docs.py', '_w33_refresh_docs_energy.py']"
+  },
+  {
+   "lvl": "WARN",
+   "item": "L4 陈旧值「旧 PHEV 231,121」",
+   "ok": false,
+   "detail": "14 处 / 7 文件：['_w26_changelog.py', '_w27_project_status.py', '_w32_scan_docs.py', '_w33_refresh_docs_energy.py']"
+  },
+  {
+   "lvl": "WARN",
+   "item": "L4 陈旧值「旧 EREV 43,123」",
+   "ok": false,
+   "detail": "15 处 / 7 文件：['_w26_changelog.py', '_w27_project_status.py', '_w32_scan_docs.py', '_w33_refresh_docs_energy.py']"
+  }
+ ],
+ "summary": {
+  "total": 47,
+  "pass": 40,
+  "fail": 0,
+  "warn": 7
+ }
+}

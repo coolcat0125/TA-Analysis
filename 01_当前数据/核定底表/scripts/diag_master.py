@@ -259,7 +259,7 @@ def main():
                         'n412': sum(1 for s in scan if s['sheet'] == '412公示车型')}},
               open(DIAG_JSON, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 
-    L = ['# 核定底表 · 诊断基线报告', f'', f'运行：{date.today()} · 源：合并版 xlsx（341~410）', '']
+    L = ['# 核定底表 · 诊断基线报告', f'', f'运行：{date.today()} · 源：合并版 xlsx（341~412）', '']
     L.append('## D1 车长错配率（同系极差>300mm，合资不计入）')
     L.append('| 集团 | 总行 | 有车长行 | 错配车系数 | 错配行 | 错配率 |')
     L.append('|---|---|---|---|---|---|')

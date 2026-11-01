@@ -203,7 +203,7 @@ def markdown(report: dict[str, Any]) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="TA-Analysis 数据质量与版本审计")
-    parser.add_argument("--input", help="源 Excel 文件；默认自动发现 341~410 批汇总表")
+    parser.add_argument("--input", help="源 Excel 文件；默认自动发现 341~412 批汇总表")
     parser.add_argument("--gates", help="质量门禁 JSON；默认使用脚本内置门槛")
     parser.add_argument("--output-dir", default="audit-output", help="报告输出目录")
     parser.add_argument("--strict", action="store_true", help="质量门禁未通过时返回非零状态码")

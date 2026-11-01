@@ -28,7 +28,7 @@ from openpyxl.styles import PatternFill
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
-WB = os.path.join(ROOT, 'NEV公告参数汇总表_合并版（341~410批）.xlsx')
+WB = os.path.join(ROOT, 'NEV公告参数汇总表_合并版（341~412批）.xlsx')
 REFILL = HERE
 STATE = os.path.join(REFILL, 'batch_state.json')
 FUEL = os.path.join(REFILL, 'dcd_fuel_form.json')
