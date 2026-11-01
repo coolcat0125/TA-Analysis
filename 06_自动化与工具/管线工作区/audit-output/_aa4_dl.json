@@ -1,0 +1,30 @@
+{
+ "352": {
+  "ok": true,
+  "url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/202112/3323c47370cd4ddb89b5880b81593282.doc",
+  "bytes": 16520704,
+  "want": 16520704,
+  "struct": "ole 6streams"
+ },
+ "378": {
+  "ok": true,
+  "url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20238/a602677a9c8d4ecf8c77638ad2615814.doc",
+  "bytes": 26161152,
+  "want": 26161152,
+  "struct": "ole 6streams"
+ },
+ "386": {
+  "ok": true,
+  "url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20249/d675b259fdd2421fbbf06443452f793e.doc",
+  "bytes": 28404224,
+  "want": 28404224,
+  "struct": "ole 6streams"
+ },
+ "403": {
+  "ok": true,
+  "url": "https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20262/b625890782724e19b900eede08511848.doc",
+  "bytes": 30846976,
+  "want": 30846976,
+  "struct": "ole 6streams"
+ }
+}

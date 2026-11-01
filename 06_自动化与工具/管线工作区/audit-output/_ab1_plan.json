@@ -1,0 +1,2854 @@
+{
+ "total": 164,
+ "stat": {
+  "write": 146,
+  "noop": 8,
+  "consistent_multi": 5,
+  "hold": 5
+ },
+ "rows": [
+  {
+   "batch": "341",
+   "code": "SVW6492BEV",
+   "field": "纯电续航里程(km)",
+   "current": 617,
+   "official": 588,
+   "official_candidates": {
+    "588": [
+     "341_tax2 第29行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 588,
+   "evidence": "341_tax2 第29行",
+   "ratio": 1.0493
+  },
+  {
+   "batch": "342",
+   "code": "CA7000H0EVC",
+   "field": "纯电续航里程(km)",
+   "current": 445,
+   "official": 431,
+   "official_candidates": {
+    "431": [
+     "343_tax2 第23行",
+     "402_doc4 第162行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 431,
+   "evidence": "343_tax2 第23行",
+   "ratio": 1.0325
+  },
+  {
+   "batch": "342",
+   "code": "FV6498BBBEV",
+   "field": "纯电续航里程(km)",
+   "current": 601,
+   "official": 565,
+   "official_candidates": {
+    "565": [
+     "342_tax2 第17行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 565,
+   "evidence": "342_tax2 第17行",
+   "ratio": 1.0637
+  },
+  {
+   "batch": "342",
+   "code": "QAC6452BEVBA",
+   "field": "纯电续航里程(km)",
+   "current": 558,
+   "official": 508,
+   "official_candidates": {
+    "508": [
+     "343_tax2 第43行",
+     "402_doc4 第290行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 508,
+   "evidence": "343_tax2 第43行",
+   "ratio": 1.0984
+  },
+  {
+   "batch": "345",
+   "code": "BYD7004BEV",
+   "field": "纯电续航里程(km)",
+   "current": 308,
+   "official": 301,
+   "official_candidates": {
+    "301": [
+     "345_tax2 第47行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 301,
+   "evidence": "345_tax2 第47行",
+   "ratio": 1.0233
+  },
+  {
+   "batch": "345",
+   "code": "BYD7004BEV1",
+   "field": "纯电续航里程(km)",
+   "current": 420,
+   "official": 405,
+   "official_candidates": {
+    "405": [
+     "345_tax2 第46行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 405,
+   "evidence": "345_tax2 第46行",
+   "ratio": 1.037
+  },
+  {
+   "batch": "345",
+   "code": "MR7001BEV03",
+   "field": "纯电续航里程(km)",
+   "current": 732,
+   "official": 712,
+   "official_candidates": {
+    "712": [
+     "346_tax2 第35行",
+     "402_doc4 第1326行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 712,
+   "evidence": "346_tax2 第35行",
+   "ratio": 1.0281
+  },
+  {
+   "batch": "345",
+   "code": "BYD6470ST6HEV3",
+   "field": "纯电续航里程(km)",
+   "current": 100,
+   "official": 81,
+   "official_candidates": {
+    "100": [
+     "345_tax2 第205行"
+    ]
+   },
+   "decision": "noop",
+   "why": "归一后与现值相同",
+   "target": 100,
+   "evidence": "345_tax2 第205行",
+   "ratio": 1.2346
+  },
+  {
+   "batch": "345",
+   "code": "FV7147FADEHEV",
+   "field": "纯电续航里程(km)",
+   "current": 63,
+   "official": 51,
+   "official_candidates": {
+    "63": [
+     "346_tax2 第259行",
+     "348_df2 第22行"
+    ],
+    "51": [
+     "382_tax2 第842行",
+     "383_tax2 第1357行"
+    ]
+   },
+   "decision": "consistent_multi",
+   "why": "现值即官方多值中的一档(63x2, 51x2)",
+   "target": 63,
+   "evidence": "346_tax2 第259行",
+   "ratio": 1.2353
+  },
+  {
+   "batch": "346",
+   "code": "BYD6490SBEV7",
+   "field": "纯电续航里程(km)",
+   "current": 730,
+   "official": 700,
+   "official_candidates": {
+    "700": [
+     "346_tax2 第51行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 700,
+   "evidence": "346_tax2 第51行",
+   "ratio": 1.0429
+  },
+  {
+   "batch": "346",
+   "code": "BYD6490SBEV9",
+   "field": "纯电续航里程(km)",
+   "current": 635,
+   "official": 615,
+   "official_candidates": {
+    "615": [
+     "346_tax2 第48行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 615,
+   "evidence": "346_tax2 第48行",
+   "ratio": 1.0325
+  },
+  {
+   "batch": "346",
+   "code": "BYD7002BEV10",
+   "field": "纯电续航里程(km)",
+   "current": 320,
+   "official": 301,
+   "official_candidates": {
+    "301": [
+     "346_tax2 第49行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 301,
+   "evidence": "346_tax2 第49行",
+   "ratio": 1.0631
+  },
+  {
+   "batch": "346",
+   "code": "HQ7002BEV84",
+   "field": "纯电续航里程(km)",
+   "current": 620,
+   "official": 600,
+   "official_candidates": {
+    "600": [
+     "346_tax2 第28行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 600,
+   "evidence": "346_tax2 第28行",
+   "ratio": 1.0333
+  },
+  {
+   "batch": "346",
+   "code": "MR7001BEV08",
+   "field": "纯电续航里程(km)",
+   "current": 741,
+   "official": 712,
+   "official_candidates": {
+    "712": [
+     "346_tax2 第31行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 712,
+   "evidence": "346_tax2 第31行",
+   "ratio": 1.0407
+  },
+  {
+   "batch": "347",
+   "code": "CA7000H0EVD",
+   "field": "纯电续航里程(km)",
+   "current": 445,
+   "official": 431,
+   "official_candidates": {
+    "431": [
+     "347_tax2 第20行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 431,
+   "evidence": "347_tax2 第20行",
+   "ratio": 1.0325
+  },
+  {
+   "batch": "347",
+   "code": "DFL7001NNY4BEV",
+   "field": "纯电续航里程(km)",
+   "current": 173,
+   "official": 206,
+   "official_candidates": {
+    "206": [
+     "347_tax2 第26行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 206,
+   "evidence": "347_tax2 第26行",
+   "ratio": 0.8398
+  },
+  {
+   "batch": "349",
+   "code": "BYD7003BEVA2",
+   "field": "纯电续航里程(km)",
+   "current": 430,
+   "official": 445,
+   "official_candidates": {
+    "445": [
+     "402_doc4 第231行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 445,
+   "evidence": "402_doc4 第231行",
+   "ratio": 0.9663
+  },
+  {
+   "batch": "349",
+   "code": "HXK7000BEVB00",
+   "field": "纯电续航里程(km)",
+   "current": 140,
+   "official": 121,
+   "official_candidates": {
+    "121": [
+     "387_tax2 第508行",
+     "402_doc4 第18009行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 121,
+   "evidence": "387_tax2 第508行",
+   "ratio": 1.157
+  },
+  {
+   "batch": "356",
+   "code": "SC7006AACBEV",
+   "field": "纯电续航里程(km)",
+   "current": 530,
+   "official": 515,
+   "official_candidates": {
+    "515": [
+     "357_tax2 第52行",
+     "402_doc4 第1875行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 515,
+   "evidence": "357_tax2 第52行",
+   "ratio": 1.0291
+  },
+  {
+   "batch": "357",
+   "code": "CSA7002XBEV2",
+   "field": "纯电续航里程(km)",
+   "current": 545,
+   "official": 520,
+   "official_candidates": {
+    "520": [
+     "357_tax2 第14行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 520,
+   "evidence": "357_tax2 第14行",
+   "ratio": 1.0481
+  },
+  {
+   "batch": "362",
+   "code": "CC7000BH01NBBEV",
+   "field": "纯电续航里程(km)",
+   "current": 555,
+   "official": 705,
+   "official_candidates": {
+    "705": [
+     "362_tax2 第28行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 705,
+   "evidence": "362_tax2 第28行",
+   "ratio": 0.7872
+  },
+  {
+   "batch": "362",
+   "code": "HXK7000BEVA16",
+   "field": "纯电续航里程(km)",
+   "current": 220,
+   "official": 201,
+   "official_candidates": {
+    "220": [
+     "362_tax2 第35行"
+    ]
+   },
+   "decision": "noop",
+   "why": "归一后与现值相同",
+   "target": 220,
+   "evidence": "362_tax2 第35行",
+   "ratio": 1.0945
+  },
+  {
+   "batch": "363",
+   "code": "DFL7001NA62BEV",
+   "field": "纯电续航里程(km)",
+   "current": 405,
+   "official": 420,
+   "official_candidates": {
+    "420": [
+     "363_tax2 第24行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 420,
+   "evidence": "363_tax2 第24行",
+   "ratio": 0.9643
+  },
+  {
+   "batch": "367",
+   "code": "LZ6510NEB0EV",
+   "field": "纯电续航里程(km)",
+   "current": 230,
+   "official": 246,
+   "official_candidates": {
+    "230": [
+     "368_tax2 第39行"
+    ],
+    "246": [
+     "390_doc3 第491行",
+     "390_tax2 第491行"
+    ]
+   },
+   "decision": "consistent_multi",
+   "why": "现值即官方多值中的一档(246x2, 230x1)",
+   "target": 230,
+   "evidence": "368_tax2 第39行",
+   "ratio": 0.935
+  },
+  {
+   "batch": "370",
+   "code": "JX6556T-M6BEV",
+   "field": "纯电续航里程(km)",
+   "current": 406,
+   "official": 465,
+   "official_candidates": {
+    "406": [
+     "372_tax2 第22行"
+    ],
+    "465": [
+     "381_tax2 第376行",
+     "383_tax2 第511行",
+     "402_doc4 第18065行"
+    ]
+   },
+   "decision": "consistent_multi",
+   "why": "现值即官方多值中的一档(465x3, 406x1)",
+   "target": 406,
+   "evidence": "372_tax2 第22行",
+   "ratio": 0.8731
+  },
+  {
+   "batch": "370",
+   "code": "JX6556TB-M6BEV",
+   "field": "纯电续航里程(km)",
+   "current": 406,
+   "official": 465,
+   "official_candidates": {
+    "406": [
+     "371_tax2 第21行"
+    ],
+    "465": [
+     "381_tax2 第374行",
+     "383_tax2 第509行",
+     "402_doc4 第18064行"
+    ]
+   },
+   "decision": "consistent_multi",
+   "why": "现值即官方多值中的一档(465x3, 406x1)",
+   "target": 406,
+   "evidence": "371_tax2 第21行",
+   "ratio": 0.8731
+  },
+  {
+   "batch": "372",
+   "code": "BAW6521MAJ1BEV",
+   "field": "纯电续航里程(km)",
+   "current": 330,
+   "official": 365,
+   "official_candidates": {
+    "330": [
+     "372_tax2 第12行"
+    ]
+   },
+   "decision": "noop",
+   "why": "归一后与现值相同",
+   "target": 330,
+   "evidence": "372_tax2 第12行",
+   "ratio": 0.9041
+  },
+  {
+   "batch": "372",
+   "code": "BAW6521MAJBEV",
+   "field": "纯电续航里程(km)",
+   "current": 251,
+   "official": 270,
+   "official_candidates": {
+    "251": [
+     "374_tax2 第18行"
+    ],
+    "270": [
+     "383_tax2 第556行"
+    ]
+   },
+   "decision": "consistent_multi",
+   "why": "现值即官方多值中的一档(251x1, 270x1)",
+   "target": 251,
+   "evidence": "374_tax2 第18行",
+   "ratio": 0.9296
+  },
+  {
+   "batch": "372",
+   "code": "SGM7008LLBEV",
+   "field": "纯电续航里程(km)",
+   "current": 450,
+   "official": 430,
+   "official_candidates": {
+    "430": [
+     "372_tax2 第11行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 430,
+   "evidence": "372_tax2 第11行",
+   "ratio": 1.0465
+  },
+  {
+   "batch": "373",
+   "code": "JX6526TA-L6BEV",
+   "field": "纯电续航里程(km)",
+   "current": 210,
+   "official": 262,
+   "official_candidates": {
+    "210": [
+     "373_tax2 第25行"
+    ]
+   },
+   "decision": "noop",
+   "why": "归一后与现值相同",
+   "target": 210,
+   "evidence": "373_tax2 第25行",
+   "ratio": 0.8015
+  },
+  {
+   "batch": "373",
+   "code": "JX6556TA-M6BEV",
+   "field": "纯电续航里程(km)",
+   "current": 306,
+   "official": 357,
+   "official_candidates": {
+    "306": [
+     "373_tax2 第26行"
+    ]
+   },
+   "decision": "noop",
+   "why": "归一后与现值相同",
+   "target": 306,
+   "evidence": "373_tax2 第26行",
+   "ratio": 0.8571
+  },
+  {
+   "batch": "373",
+   "code": "JX6556TC-M6BEV",
+   "field": "纯电续航里程(km)",
+   "current": 306,
+   "official": 357,
+   "official_candidates": {
+    "306": [
+     "373_tax2 第27行"
+    ]
+   },
+   "decision": "noop",
+   "why": "归一后与现值相同",
+   "target": 306,
+   "evidence": "373_tax2 第27行",
+   "ratio": 0.8571
+  },
+  {
+   "batch": "374",
+   "code": "JMV6550QRBEV",
+   "field": "纯电续航里程(km)",
+   "current": 345,
+   "official": 390,
+   "official_candidates": {
+    "345": [
+     "374_tax2 第48行"
+    ]
+   },
+   "decision": "noop",
+   "why": "归一后与现值相同",
+   "target": 345,
+   "evidence": "374_tax2 第48行",
+   "ratio": 0.8846
+  },
+  {
+   "batch": "374",
+   "code": "SGM6483BBBEV",
+   "field": "纯电续航里程(km)",
+   "current": 600,
+   "official": 615,
+   "official_candidates": {
+    "615": [
+     "374_tax2 第16行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 615,
+   "evidence": "374_tax2 第16行",
+   "ratio": 0.9756
+  },
+  {
+   "batch": "378",
+   "code": "SGM7008LMBEV",
+   "field": "纯电续航里程(km)",
+   "current": 450,
+   "official": 430,
+   "official_candidates": {
+    "430": [
+     "378_tax2 第19行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 430,
+   "evidence": "378_tax2 第19行",
+   "ratio": 1.0465
+  },
+  {
+   "batch": "380",
+   "code": "DFM6500S5F3REEV",
+   "field": "纯电续航里程(km)",
+   "current": 150,
+   "official": 154,
+   "official_candidates": {
+    "154": [
+     "380_tax2 第335行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 154,
+   "evidence": "380_tax2 第335行",
+   "ratio": 0.974
+  },
+  {
+   "batch": "382",
+   "code": "CSA6493YSEV3",
+   "field": "纯电续航里程(km)",
+   "current": 570,
+   "official": 500,
+   "official_candidates": {
+    "500": [
+     "382_tax2 第12行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 500,
+   "evidence": "382_tax2 第12行",
+   "ratio": 1.14
+  },
+  {
+   "batch": "382",
+   "code": "CSA6493YSEV4",
+   "field": "纯电续航里程(km)",
+   "current": 500,
+   "official": 570,
+   "official_candidates": {
+    "570": [
+     "382_tax2 第13行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 570,
+   "evidence": "382_tax2 第13行",
+   "ratio": 0.8772
+  },
+  {
+   "batch": "382",
+   "code": "SAL7000BH00ABEV",
+   "field": "纯电续航里程(km)",
+   "current": 555,
+   "official": 705,
+   "official_candidates": {
+    "705": [
+     "382_tax2 第73行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 705,
+   "evidence": "382_tax2 第73行",
+   "ratio": 0.7872
+  },
+  {
+   "batch": "382",
+   "code": "WHJ7000BEVGS11",
+   "field": "纯电续航里程(km)",
+   "current": 451,
+   "official": 420,
+   "official_candidates": {
+    "420": [
+     "383_tax2 第70行",
+     "402_doc4 第18000行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 420,
+   "evidence": "383_tax2 第70行",
+   "ratio": 1.0738
+  },
+  {
+   "batch": "382",
+   "code": "CSA6501ZFPHEV1",
+   "field": "纯电续航里程(km)",
+   "current": 100,
+   "official": 95,
+   "official_candidates": {
+    "95": [
+     "382_tax1 第29行",
+     "382_tax2 第406行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 95,
+   "evidence": "382_tax1 第29行",
+   "ratio": 1.0526
+  },
+  {
+   "batch": "384",
+   "code": "CSA6501LBEV6",
+   "field": "纯电续航里程(km)",
+   "current": 620,
+   "official": 640,
+   "official_candidates": {
+    "640": [
+     "384_tax2 第53行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 640,
+   "evidence": "384_tax2 第53行",
+   "ratio": 0.9688
+  },
+  {
+   "batch": "392",
+   "code": "CSA7002EBEV7",
+   "field": "纯电续航里程(km)",
+   "current": 645,
+   "official": 618,
+   "official_candidates": {
+    "618": [
+     "392_doc3 第38行",
+     "392_tax2 第38行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 618,
+   "evidence": "392_doc3 第38行",
+   "ratio": 1.0437
+  },
+  {
+   "batch": "402",
+   "code": "EQ6521AE5F2PHEV",
+   "field": "纯电续航里程(km)",
+   "current": 184,
+   "official": 190,
+   "official_candidates": {
+    "190": [
+     "402_doc2 第136行",
+     "402_doc3 第503行",
+     "402_doc4 第16278行",
+     "402_tax1 第136行",
+     "402_tax2 第503行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 5 条记录）",
+   "target": 190,
+   "evidence": "402_doc2 第136行",
+   "ratio": 0.9684
+  },
+  {
+   "batch": "403",
+   "code": "JX6480EUABEV",
+   "field": "纯电续航里程(km)",
+   "current": 420,
+   "official": 380,
+   "official_candidates": {},
+   "decision": "hold",
+   "why": "官方索引无该型号该字段有效值",
+   "target": null,
+   "evidence": "",
+   "ratio": 1.1053
+  },
+  {
+   "batch": "341",
+   "code": "DFM7001G1F3BEV",
+   "field": "纯电续航里程(km)",
+   "current": 347,
+   "official": 330,
+   "official_candidates": {
+    "330": [
+     "383_tax2 第547行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 330,
+   "evidence": "383_tax2 第547行",
+   "ratio": 1.0515
+  },
+  {
+   "batch": "342",
+   "code": "CA6520H0EVX",
+   "field": "纯电续航里程(km)",
+   "current": 510,
+   "official": 460,
+   "official_candidates": {
+    "460": [
+     "402_doc4 第131行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 460,
+   "evidence": "402_doc4 第131行",
+   "ratio": 1.1087
+  },
+  {
+   "batch": "342",
+   "code": "CA6520H0EVXA",
+   "field": "纯电续航里程(km)",
+   "current": 510,
+   "official": 460,
+   "official_candidates": {
+    "460": [
+     "402_doc4 第133行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 460,
+   "evidence": "402_doc4 第133行",
+   "ratio": 1.1087
+  },
+  {
+   "batch": "343",
+   "code": "CA7000H0EV",
+   "field": "纯电续航里程(km)",
+   "current": 445,
+   "official": 431,
+   "official_candidates": {
+    "431": [
+     "402_doc4 第143行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 431,
+   "evidence": "402_doc4 第143行",
+   "ratio": 1.0325
+  },
+  {
+   "batch": "343",
+   "code": "CA7000H0EVA",
+   "field": "纯电续航里程(km)",
+   "current": 445,
+   "official": 431,
+   "official_candidates": {
+    "431": [
+     "402_doc4 第150行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 431,
+   "evidence": "402_doc4 第150行",
+   "ratio": 1.0325
+  },
+  {
+   "batch": "344",
+   "code": "JX7001ERCBEV",
+   "field": "纯电续航里程(km)",
+   "current": 550,
+   "official": 501,
+   "official_candidates": {
+    "501": [
+     "402_doc4 第18014行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 501,
+   "evidence": "402_doc4 第18014行",
+   "ratio": 1.0978
+  },
+  {
+   "batch": "346",
+   "code": "EQ7000FD2F2BEV",
+   "field": "纯电续航里程(km)",
+   "current": 351,
+   "official": 321,
+   "official_candidates": {
+    "321": [
+     "402_doc4 第939行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 321,
+   "evidence": "402_doc4 第939行",
+   "ratio": 1.0935
+  },
+  {
+   "batch": "350",
+   "code": "BYD7002BEVA9",
+   "field": "纯电续航里程(km)",
+   "current": 420,
+   "official": 401,
+   "official_candidates": {},
+   "decision": "hold",
+   "why": "官方索引无该型号该字段有效值",
+   "target": null,
+   "evidence": "",
+   "ratio": 1.0474
+  },
+  {
+   "batch": "351",
+   "code": "BAW6451MA4BEV",
+   "field": "纯电续航里程(km)",
+   "current": 401,
+   "official": 301,
+   "official_candidates": {
+    "301": [
+     "402_doc4 第1746行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 301,
+   "evidence": "402_doc4 第1746行",
+   "ratio": 1.3322
+  },
+  {
+   "batch": "353",
+   "code": "EQ7000FR2F2BEV",
+   "field": "纯电续航里程(km)",
+   "current": 351,
+   "official": 321,
+   "official_candidates": {
+    "321": [
+     "402_doc4 第956行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 321,
+   "evidence": "402_doc4 第956行",
+   "ratio": 1.0935
+  },
+  {
+   "batch": "380",
+   "code": "BYD7002BEV5",
+   "field": "纯电续航里程(km)",
+   "current": 320,
+   "official": 305,
+   "official_candidates": {
+    "305": [
+     "402_doc4 第1525行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 305,
+   "evidence": "402_doc4 第1525行",
+   "ratio": 1.0492
+  },
+  {
+   "batch": "392",
+   "code": "BJ6521EVAA2",
+   "field": "纯电续航里程(km)",
+   "current": 450,
+   "official": 440,
+   "official_candidates": {
+    "440": [
+     "391_doc3 第27行",
+     "391_tax2 第27行"
+    ],
+    "420": [
+     "404_tax2 第60行"
+    ]
+   },
+   "decision": "hold",
+   "why": "官方多值且现值不在其中(440x2, 420x1)",
+   "target": null,
+   "evidence": "391_doc3 第27行",
+   "ratio": 1.0227
+  },
+  {
+   "batch": "397",
+   "code": "BYD7153WT6HEV5",
+   "field": "纯电续航里程(km)",
+   "current": 103,
+   "official": 60,
+   "official_candidates": {
+    "60": [
+     "397_tax1 第55行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 60,
+   "evidence": "397_tax1 第55行",
+   "ratio": 1.7167
+  },
+  {
+   "batch": "401",
+   "code": "SH6541U1SHEV-N50",
+   "field": "纯电续航里程(km)",
+   "current": 251,
+   "official": 240,
+   "official_candidates": {
+    "240": [
+     "401_doc3 第466行",
+     "401_tax2 第466行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 240,
+   "evidence": "401_doc3 第466行",
+   "ratio": 1.0458
+  },
+  {
+   "batch": "343",
+   "code": "SQJ7001A8BEV",
+   "field": "电池容量(kWh)",
+   "current": 17.28,
+   "official": 17.97,
+   "official_candidates": {
+    "17.28": [
+     "343_tax2 第47行"
+    ]
+   },
+   "decision": "noop",
+   "why": "归一后与现值相同",
+   "target": 17.28,
+   "evidence": "343_tax2 第47行",
+   "ratio": 0.9616
+  },
+  {
+   "batch": "355",
+   "code": "GTM6470BWBEV",
+   "field": "电池容量(kWh)",
+   "current": 60.7,
+   "official": 66.7,
+   "official_candidates": {},
+   "decision": "hold",
+   "why": "官方索引无该型号该字段有效值",
+   "target": null,
+   "evidence": "",
+   "ratio": 0.91
+  },
+  {
+   "batch": "402",
+   "code": "QCJ6460AHBEV5",
+   "field": "电池容量(kWh)",
+   "current": 75.62,
+   "official": 64.31,
+   "official_candidates": {
+    "64.31": [
+     "404_tax2 第11行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 64.31,
+   "evidence": "404_tax2 第11行",
+   "ratio": 1.1757
+  },
+  {
+   "batch": "402",
+   "code": "QCJ6460AHBEV8",
+   "field": "电池容量(kWh)",
+   "current": 75.62,
+   "official": 65.28,
+   "official_candidates": {
+    "65.28": [
+     "404_tax2 第12行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 65.28,
+   "evidence": "404_tax2 第12行",
+   "ratio": 1.1583
+  },
+  {
+   "batch": "402",
+   "code": "HQ7151DCHEV110",
+   "field": "电池容量(kWh)",
+   "current": 18.4,
+   "official": 18.99,
+   "official_candidates": {
+    "18.99": [
+     "402_doc4 第16320行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 18.99,
+   "evidence": "402_doc4 第16320行",
+   "ratio": 0.9689
+  },
+  {
+   "batch": "402",
+   "code": "HQ7151DCHEV111",
+   "field": "电池容量(kWh)",
+   "current": 18.4,
+   "official": 18.99,
+   "official_candidates": {
+    "18.99": [
+     "402_doc4 第16313行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 18.99,
+   "evidence": "402_doc4 第16313行",
+   "ratio": 0.9689
+  },
+  {
+   "batch": "402",
+   "code": "HQ7151DCHEV112",
+   "field": "电池容量(kWh)",
+   "current": 18.4,
+   "official": 28.3,
+   "official_candidates": {
+    "28.3": [
+     "402_doc4 第16325行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 28.3,
+   "evidence": "402_doc4 第16325行",
+   "ratio": 0.6502
+  },
+  {
+   "batch": "402",
+   "code": "HQ7151DCHEV113",
+   "field": "电池容量(kWh)",
+   "current": 18.4,
+   "official": 17.0,
+   "official_candidates": {
+    "17.0": [
+     "402_doc4 第16323行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 17.0,
+   "evidence": "402_doc4 第16323行",
+   "ratio": 1.0824
+  },
+  {
+   "batch": "402",
+   "code": "SC6520AAAA6HEV",
+   "field": "电池容量(kWh)",
+   "current": 40.18,
+   "official": 53.49,
+   "official_candidates": {
+    "53.49": [
+     "402_doc4 第16636行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 53.49,
+   "evidence": "402_doc4 第16636行",
+   "ratio": 0.7512
+  },
+  {
+   "batch": "402",
+   "code": "SC6520AAAB6HEV",
+   "field": "电池容量(kWh)",
+   "current": 40.18,
+   "official": 53.49,
+   "official_candidates": {
+    "53.49": [
+     "402_doc4 第16635行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 53.49,
+   "evidence": "402_doc4 第16635行",
+   "ratio": 0.7512
+  },
+  {
+   "batch": "402",
+   "code": "SC7150AAAU6HEV",
+   "field": "电池容量(kWh)",
+   "current": 35.07,
+   "official": 28.39,
+   "official_candidates": {
+    "28.39": [
+     "402_doc4 第16586行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 28.39,
+   "evidence": "402_doc4 第16586行",
+   "ratio": 1.2353
+  },
+  {
+   "batch": "411",
+   "code": "HQ6472DCHEV111",
+   "field": "电池容量(kWh)",
+   "current": 19.09,
+   "official": 40.06,
+   "official_candidates": {
+    "40.06": [
+     "411_doc3_purchase35 第213行",
+     "411_tax2 第213行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 4 条记录）",
+   "target": 40.06,
+   "evidence": "411_doc3_purchase35 第213行",
+   "ratio": 0.4765
+  },
+  {
+   "batch": "411",
+   "code": "MR7151DCHEV131",
+   "field": "电池容量(kWh)",
+   "current": 18.4,
+   "official": 29.37,
+   "official_candidates": {
+    "29.37": [
+     "411_doc3_purchase35 第214行",
+     "411_tax2 第214行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 4 条记录）",
+   "target": 29.37,
+   "evidence": "411_doc3_purchase35 第214行",
+   "ratio": 0.6265
+  },
+  {
+   "batch": "341",
+   "code": "BJ7001AUA1-BEV",
+   "field": "电池容量(kWh)",
+   "current": 94.5,
+   "official": 67.3,
+   "official_candidates": {
+    "67.3": [
+     "402_doc4 第1098行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 67.3,
+   "evidence": "402_doc4 第1098行",
+   "ratio": 1.4042
+  },
+  {
+   "batch": "341",
+   "code": "BJ7001AUA7-BEV",
+   "field": "电池容量(kWh)",
+   "current": 94.5,
+   "official": 67.3,
+   "official_candidates": {
+    "67.3": [
+     "402_doc4 第1096行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 67.3,
+   "evidence": "402_doc4 第1096行",
+   "ratio": 1.4042
+  },
+  {
+   "batch": "341",
+   "code": "GAH7000BEVN0A",
+   "field": "电池容量(kWh)",
+   "current": 46.76,
+   "official": 49.41,
+   "official_candidates": {
+    "49.41": [
+     "402_doc4 第1724行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 49.41,
+   "evidence": "402_doc4 第1724行",
+   "ratio": 0.9464
+  },
+  {
+   "batch": "341",
+   "code": "GAM7000BEVA0G",
+   "field": "电池容量(kWh)",
+   "current": 46.76,
+   "official": 49.41,
+   "official_candidates": {
+    "49.41": [
+     "402_doc4 第1691行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 49.41,
+   "evidence": "402_doc4 第1691行",
+   "ratio": 0.9464
+  },
+  {
+   "batch": "341",
+   "code": "GAM7000BEVA0H",
+   "field": "电池容量(kWh)",
+   "current": 46.76,
+   "official": 49.41,
+   "official_candidates": {
+    "49.41": [
+     "402_doc4 第1698行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 49.41,
+   "evidence": "402_doc4 第1698行",
+   "ratio": 0.9464
+  },
+  {
+   "batch": "341",
+   "code": "GAM7000BEVA0L",
+   "field": "电池容量(kWh)",
+   "current": 46.76,
+   "official": 58.81,
+   "official_candidates": {
+    "58.81": [
+     "402_doc4 第1637行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 58.81,
+   "evidence": "402_doc4 第1637行",
+   "ratio": 0.7952
+  },
+  {
+   "batch": "341",
+   "code": "GAM7000BEVA0M",
+   "field": "电池容量(kWh)",
+   "current": 46.76,
+   "official": 58.81,
+   "official_candidates": {
+    "58.81": [
+     "402_doc4 第1634行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 58.81,
+   "evidence": "402_doc4 第1634行",
+   "ratio": 0.7952
+  },
+  {
+   "batch": "341",
+   "code": "YQZ6520BEVHIPHI1C",
+   "field": "电池容量(kWh)",
+   "current": 94.3,
+   "official": 80.82,
+   "official_candidates": {
+    "80.82": [
+     "402_doc4 第1107行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 80.82,
+   "evidence": "402_doc4 第1107行",
+   "ratio": 1.1668
+  },
+  {
+   "batch": "342",
+   "code": "BH7000BEVDBA",
+   "field": "电池容量(kWh)",
+   "current": 53.5,
+   "official": 56.5,
+   "official_candidates": {
+    "56.5": [
+     "381_tax2 第371行",
+     "383_tax2 第506行",
+     "402_doc4 第17989行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 56.5,
+   "evidence": "381_tax2 第371行",
+   "ratio": 0.9469
+  },
+  {
+   "batch": "342",
+   "code": "BYD7002BEVA11",
+   "field": "电池容量(kWh)",
+   "current": 43.2,
+   "official": 38.02,
+   "official_candidates": {
+    "38.02": [
+     "402_doc4 第1515行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 38.02,
+   "evidence": "402_doc4 第1515行",
+   "ratio": 1.1364
+  },
+  {
+   "batch": "342",
+   "code": "CA6520H0EVX",
+   "field": "电池容量(kWh)",
+   "current": 120.0,
+   "official": 84.0,
+   "official_candidates": {
+    "84.0": [
+     "402_doc4 第131行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 84.0,
+   "evidence": "402_doc4 第131行",
+   "ratio": 1.4286
+  },
+  {
+   "batch": "342",
+   "code": "CA6520H0EVXA",
+   "field": "电池容量(kWh)",
+   "current": 120.0,
+   "official": 84.0,
+   "official_candidates": {
+    "84.0": [
+     "402_doc4 第133行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 84.0,
+   "evidence": "402_doc4 第133行",
+   "ratio": 1.4286
+  },
+  {
+   "batch": "342",
+   "code": "CA6520H0EVXC",
+   "field": "电池容量(kWh)",
+   "current": 120.0,
+   "official": 99.0,
+   "official_candidates": {
+    "99.0": [
+     "402_doc4 第157行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 99.0,
+   "evidence": "402_doc4 第157行",
+   "ratio": 1.2121
+  },
+  {
+   "batch": "342",
+   "code": "THZ6450BEVS303",
+   "field": "电池容量(kWh)",
+   "current": 54.34,
+   "official": 56.04,
+   "official_candidates": {
+    "56.04": [
+     "402_doc4 第617行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 56.04,
+   "evidence": "402_doc4 第617行",
+   "ratio": 0.9697
+  },
+  {
+   "batch": "342",
+   "code": "THZ6450BEVS309",
+   "field": "电池容量(kWh)",
+   "current": 54.34,
+   "official": 56.04,
+   "official_candidates": {
+    "56.04": [
+     "402_doc4 第591行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 56.04,
+   "evidence": "402_doc4 第591行",
+   "ratio": 0.9697
+  },
+  {
+   "batch": "343",
+   "code": "LZ7005SLAEV",
+   "field": "电池容量(kWh)",
+   "current": 44.51,
+   "official": 57.2,
+   "official_candidates": {
+    "57.2": [
+     "402_doc4 第1768行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 57.2,
+   "evidence": "402_doc4 第1768行",
+   "ratio": 0.7781
+  },
+  {
+   "batch": "343",
+   "code": "LZ7006SLAEV",
+   "field": "电池容量(kWh)",
+   "current": 44.51,
+   "official": 57.2,
+   "official_candidates": {
+    "57.2": [
+     "402_doc4 第1759行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 57.2,
+   "evidence": "402_doc4 第1759行",
+   "ratio": 0.7781
+  },
+  {
+   "batch": "343",
+   "code": "CA7000H0EVA",
+   "field": "电池容量(kWh)",
+   "current": 54.8,
+   "official": 56.0,
+   "official_candidates": {
+    "56.0": [
+     "402_doc4 第150行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 56.0,
+   "evidence": "402_doc4 第150行",
+   "ratio": 0.9786
+  },
+  {
+   "batch": "343",
+   "code": "BYD7002BEVA10",
+   "field": "电池容量(kWh)",
+   "current": 43.2,
+   "official": 38.02,
+   "official_candidates": {
+    "38.02": [
+     "402_doc4 第1516行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 38.02,
+   "evidence": "402_doc4 第1516行",
+   "ratio": 1.1364
+  },
+  {
+   "batch": "344",
+   "code": "GAH7000BEVN0D",
+   "field": "电池容量(kWh)",
+   "current": 46.76,
+   "official": 49.41,
+   "official_candidates": {
+    "49.41": [
+     "402_doc4 第1705行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 49.41,
+   "evidence": "402_doc4 第1705行",
+   "ratio": 0.9464
+  },
+  {
+   "batch": "344",
+   "code": "CC7000ZM00EBEV",
+   "field": "电池容量(kWh)",
+   "current": 33.0,
+   "official": 34.2,
+   "official_candidates": {
+    "34.2": [
+     "402_doc4 第531行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 34.2,
+   "evidence": "402_doc4 第531行",
+   "ratio": 0.9649
+  },
+  {
+   "batch": "344",
+   "code": "CC7000ZM05ABEV",
+   "field": "电池容量(kWh)",
+   "current": 37.0,
+   "official": 36.0,
+   "official_candidates": {
+    "36.0": [
+     "402_doc4 第541行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 36.0,
+   "evidence": "402_doc4 第541行",
+   "ratio": 1.0278
+  },
+  {
+   "batch": "350",
+   "code": "NHQ7000BEVEA",
+   "field": "电池容量(kWh)",
+   "current": 62.2,
+   "official": 70.8,
+   "official_candidates": {
+    "70.8": [
+     "402_doc4 第471行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 70.8,
+   "evidence": "402_doc4 第471行",
+   "ratio": 0.8785
+  },
+  {
+   "batch": "351",
+   "code": "NHQ7000BEVEB",
+   "field": "电池容量(kWh)",
+   "current": 62.2,
+   "official": 80.9,
+   "official_candidates": {
+    "80.9": [
+     "402_doc4 第474行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 80.9,
+   "evidence": "402_doc4 第474行",
+   "ratio": 0.7689
+  },
+  {
+   "batch": "351",
+   "code": "NHQ7000BEVEC",
+   "field": "电池容量(kWh)",
+   "current": 62.2,
+   "official": 80.9,
+   "official_candidates": {
+    "80.9": [
+     "402_doc4 第473行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 80.9,
+   "evidence": "402_doc4 第473行",
+   "ratio": 0.7689
+  },
+  {
+   "batch": "351",
+   "code": "NHQ7000BEVED",
+   "field": "电池容量(kWh)",
+   "current": 62.2,
+   "official": 80.9,
+   "official_candidates": {
+    "80.9": [
+     "402_doc4 第472行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 80.9,
+   "evidence": "402_doc4 第472行",
+   "ratio": 0.7689
+  },
+  {
+   "batch": "373",
+   "code": "DFL6470NA51BEV",
+   "field": "电池容量(kWh)",
+   "current": 111.0,
+   "official": 62.0,
+   "official_candidates": {
+    "62.0": [
+     "373_tax2 第9行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 62.0,
+   "evidence": "373_tax2 第9行",
+   "ratio": 1.7903
+  },
+  {
+   "batch": "376",
+   "code": "DFL6470NA52BEV",
+   "field": "电池容量(kWh)",
+   "current": 111.0,
+   "official": 62.0,
+   "official_candidates": {
+    "62.0": [
+     "376_tax2 第21行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 62.0,
+   "evidence": "376_tax2 第21行",
+   "ratio": 1.7903
+  },
+  {
+   "batch": "379",
+   "code": "LZW6402EVA1",
+   "field": "电池容量(kWh)",
+   "current": 111.0,
+   "official": 41.9,
+   "official_candidates": {
+    "41.9": [
+     "379_tax2 第57行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 41.9,
+   "evidence": "379_tax2 第57行",
+   "ratio": 2.6492
+  },
+  {
+   "batch": "379",
+   "code": "ZN6531HCPBEV",
+   "field": "电池容量(kWh)",
+   "current": 111.0,
+   "official": 77.28,
+   "official_candidates": {
+    "77.28": [
+     "379_tax2 第47行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 77.28,
+   "evidence": "379_tax2 第47行",
+   "ratio": 1.4363
+  },
+  {
+   "batch": "395",
+   "code": "SC6519AAAABEV",
+   "field": "电池容量(kWh)",
+   "current": 1.7,
+   "official": 41.86,
+   "official_candidates": {
+    "41.86": [
+     "395_doc3 第50行",
+     "395_tax2 第50行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 41.86,
+   "evidence": "395_doc3 第50行",
+   "ratio": 0.0406
+  },
+  {
+   "batch": "395",
+   "code": "SC6519AAACBEV",
+   "field": "电池容量(kWh)",
+   "current": 1.7,
+   "official": 50.23,
+   "official_candidates": {
+    "50.23": [
+     "395_doc3 第46行",
+     "395_tax2 第46行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 50.23,
+   "evidence": "395_doc3 第46行",
+   "ratio": 0.0338
+  },
+  {
+   "batch": "397",
+   "code": "JX6480EUBBEV",
+   "field": "电池容量(kWh)",
+   "current": 90.0,
+   "official": 76.5,
+   "official_candidates": {
+    "76.5": [
+     "398_tax2 第10行",
+     "402_doc4 第18010行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 76.5,
+   "evidence": "398_tax2 第10行",
+   "ratio": 1.1765
+  },
+  {
+   "batch": "397",
+   "code": "BYD7153WT6HEV5",
+   "field": "电池容量(kWh)",
+   "current": 44.2,
+   "official": 10.08,
+   "official_candidates": {},
+   "decision": "hold",
+   "why": "官方索引无该型号该字段有效值",
+   "target": null,
+   "evidence": "",
+   "ratio": 4.3849
+  },
+  {
+   "batch": "398",
+   "code": "MR7151DCHEV114",
+   "field": "电池容量(kWh)",
+   "current": 44.2,
+   "official": 28.3,
+   "official_candidates": {
+    "28.3": [
+     "398_tax2 第472行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 28.3,
+   "evidence": "398_tax2 第472行",
+   "ratio": 1.5618
+  },
+  {
+   "batch": "399",
+   "code": "SC6519AAAEBEV",
+   "field": "电池容量(kWh)",
+   "current": 1.7,
+   "official": 65.04,
+   "official_candidates": {
+    "65.04": [
+     "399_tax2 第61行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 65.04,
+   "evidence": "399_tax2 第61行",
+   "ratio": 0.0261
+  },
+  {
+   "batch": "399",
+   "code": "SC6519AAAFBEV",
+   "field": "电池容量(kWh)",
+   "current": 1.7,
+   "official": 51.52,
+   "official_candidates": {
+    "51.52": [
+     "399_tax2 第62行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 51.52,
+   "evidence": "399_tax2 第62行",
+   "ratio": 0.033
+  },
+  {
+   "batch": "400",
+   "code": "BAW6521MAM2BEV",
+   "field": "电池容量(kWh)",
+   "current": 65.32,
+   "official": 80.96,
+   "official_candidates": {
+    "80.96": [
+     "400_tax2 第63行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 80.96,
+   "evidence": "400_tax2 第63行",
+   "ratio": 0.8068
+  },
+  {
+   "batch": "400",
+   "code": "BAW6530MBM8BEV",
+   "field": "电池容量(kWh)",
+   "current": 65.32,
+   "official": 80.96,
+   "official_candidates": {
+    "80.96": [
+     "400_tax2 第64行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 80.96,
+   "evidence": "400_tax2 第64行",
+   "ratio": 0.8068
+  },
+  {
+   "batch": "400",
+   "code": "HMA6450AEBEV",
+   "field": "电池容量(kWh)",
+   "current": 90.0,
+   "official": 56.0,
+   "official_candidates": {
+    "56.0": [
+     "400_tax2 第10行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 56.0,
+   "evidence": "400_tax2 第10行",
+   "ratio": 1.6071
+  },
+  {
+   "batch": "400",
+   "code": "SC6519AAAGBEV",
+   "field": "电池容量(kWh)",
+   "current": 1.7,
+   "official": 41.86,
+   "official_candidates": {
+    "41.86": [
+     "400_tax2 第69行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 41.86,
+   "evidence": "400_tax2 第69行",
+   "ratio": 0.0406
+  },
+  {
+   "batch": "400",
+   "code": "SC6519AAAHBEV",
+   "field": "电池容量(kWh)",
+   "current": 1.7,
+   "official": 43.53,
+   "official_candidates": {
+    "43.53": [
+     "400_tax2 第68行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 43.53,
+   "evidence": "400_tax2 第68行",
+   "ratio": 0.0391
+  },
+  {
+   "batch": "400",
+   "code": "SC6519AAAJBEV",
+   "field": "电池容量(kWh)",
+   "current": 1.7,
+   "official": 50.23,
+   "official_candidates": {
+    "50.23": [
+     "400_tax2 第70行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 50.23,
+   "evidence": "400_tax2 第70行",
+   "ratio": 0.0338
+  },
+  {
+   "batch": "402",
+   "code": "LZW6500BEVA6",
+   "field": "电池容量(kWh)",
+   "current": 90.0,
+   "official": 41.9,
+   "official_candidates": {
+    "41.9": [
+     "402_doc3 第12行",
+     "402_doc4 第1772行",
+     "402_tax2 第12行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 3 条记录）",
+   "target": 41.9,
+   "evidence": "402_doc3 第12行",
+   "ratio": 2.148
+  },
+  {
+   "batch": "402",
+   "code": "BAW6521MAM7BEV",
+   "field": "电池容量(kWh)",
+   "current": 65.32,
+   "official": 80.96,
+   "official_candidates": {
+    "80.96": [
+     "402_doc3 第71行",
+     "402_doc4 第1749行",
+     "402_tax2 第71行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 3 条记录）",
+   "target": 80.96,
+   "evidence": "402_doc3 第71行",
+   "ratio": 0.8068
+  },
+  {
+   "batch": "402",
+   "code": "SVW715281BPV",
+   "field": "电池容量(kWh)",
+   "current": 44.2,
+   "official": 22.0,
+   "official_candidates": {
+    "22.0": [
+     "402_doc3 第504行",
+     "402_doc4 第16308行",
+     "402_tax2 第504行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 3 条记录）",
+   "target": 22.0,
+   "evidence": "402_doc3 第504行",
+   "ratio": 2.0091
+  },
+  {
+   "batch": "404",
+   "code": "HFC7150DREEV11",
+   "field": "电池容量(kWh)",
+   "current": 28.4,
+   "official": 63.26,
+   "official_candidates": {
+    "63.26": [
+     "404_tax2 第367行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 63.26,
+   "evidence": "404_tax2 第367行",
+   "ratio": 0.4489
+  },
+  {
+   "batch": "404",
+   "code": "SC7150AAAZ6HEV",
+   "field": "电池容量(kWh)",
+   "current": 28.4,
+   "official": 45.06,
+   "official_candidates": {
+    "45.06": [
+     "404_tax2 第371行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 45.06,
+   "evidence": "404_tax2 第371行",
+   "ratio": 0.6303
+  },
+  {
+   "batch": "407",
+   "code": "BAW6530MBM9BEV",
+   "field": "电池容量(kWh)",
+   "current": 65.32,
+   "official": 80.96,
+   "official_candidates": {
+    "80.96": [
+     "407_tax2 第69行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 80.96,
+   "evidence": "407_tax2 第69行",
+   "ratio": 0.8068
+  },
+  {
+   "batch": "408",
+   "code": "BJ6496VALBEV1",
+   "field": "电池容量(kWh)",
+   "current": 111.0,
+   "official": 89.0,
+   "official_candidates": {
+    "89.0": [
+     "408_tax2 第9行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 89.0,
+   "evidence": "408_tax2 第9行",
+   "ratio": 1.2472
+  },
+  {
+   "batch": "368",
+   "code": "MR7005BEV09",
+   "field": "整备质量(kg)",
+   "current": 2230,
+   "official": 1840,
+   "official_candidates": {
+    "1840": [
+     "368_tax2 第29行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1840,
+   "evidence": "368_tax2 第29行",
+   "ratio": 1.212
+  },
+  {
+   "batch": "369",
+   "code": "HFC7002EWEV1",
+   "field": "整备质量(kg)",
+   "current": 1160,
+   "official": 1365,
+   "official_candidates": {
+    "1365": [
+     "369_tax2 第30行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1365,
+   "evidence": "369_tax2 第30行",
+   "ratio": 0.8498
+  },
+  {
+   "batch": "369",
+   "code": "HFC7002EWEV2",
+   "field": "整备质量(kg)",
+   "current": 1160,
+   "official": 1445,
+   "official_candidates": {
+    "1445": [
+     "369_tax2 第31行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1445,
+   "evidence": "369_tax2 第31行",
+   "ratio": 0.8028
+  },
+  {
+   "batch": "370",
+   "code": "JX7001ERFBEV",
+   "field": "整备质量(kg)",
+   "current": 1080,
+   "official": 1535,
+   "official_candidates": {
+    "1535": [
+     "370_tax2 第51行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1535,
+   "evidence": "370_tax2 第51行",
+   "ratio": 0.7036
+  },
+  {
+   "batch": "370",
+   "code": "JX7004ESBBEV",
+   "field": "整备质量(kg)",
+   "current": 1080,
+   "official": 890,
+   "official_candidates": {
+    "890": [
+     "370_tax2 第52行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 890,
+   "evidence": "370_tax2 第52行",
+   "ratio": 1.2135
+  },
+  {
+   "batch": "370",
+   "code": "SC7156AAF6HEV",
+   "field": "整备质量(kg)",
+   "current": 1480,
+   "official": 1780,
+   "official_candidates": {
+    "1780": [
+     "370_tax2 第319行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1780,
+   "evidence": "370_tax2 第319行",
+   "ratio": 0.8315
+  },
+  {
+   "batch": "372",
+   "code": "FV7007ABBEV",
+   "field": "整备质量(kg)",
+   "current": 2700,
+   "official": 2232,
+   "official_candidates": {
+    "2232": [
+     "372_tax2 第9行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 2232,
+   "evidence": "372_tax2 第9行",
+   "ratio": 1.2097
+  },
+  {
+   "batch": "372",
+   "code": "THZ7000BEVS407",
+   "field": "整备质量(kg)",
+   "current": 2315,
+   "official": 1940,
+   "official_candidates": {
+    "1940": [
+     "372_tax2 第36行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1940,
+   "evidence": "372_tax2 第36行",
+   "ratio": 1.1933
+  },
+  {
+   "batch": "372",
+   "code": "VCC7002F25VBEV",
+   "field": "整备质量(kg)",
+   "current": 2450,
+   "official": 1967,
+   "official_candidates": {
+    "1967": [
+     "372_tax2 第20行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1967,
+   "evidence": "372_tax2 第20行",
+   "ratio": 1.2456
+  },
+  {
+   "batch": "372",
+   "code": "VCC7002F26VBEV",
+   "field": "整备质量(kg)",
+   "current": 2450,
+   "official": 1976,
+   "official_candidates": {
+    "1976": [
+     "372_tax2 第19行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1976,
+   "evidence": "372_tax2 第19行",
+   "ratio": 1.2399
+  },
+  {
+   "batch": "402",
+   "code": "SC6480AAAB6HEV",
+   "field": "整备质量(kg)",
+   "current": 2075,
+   "official": 2225,
+   "official_candidates": {
+    "2225": [
+     "402_doc4 第16644行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 2225,
+   "evidence": "402_doc4 第16644行",
+   "ratio": 0.9326
+  },
+  {
+   "batch": "402",
+   "code": "SC7150AAAU6HEV",
+   "field": "整备质量(kg)",
+   "current": 1875,
+   "official": 1825,
+   "official_candidates": {
+    "1825": [
+     "402_doc4 第16586行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1825,
+   "evidence": "402_doc4 第16586行",
+   "ratio": 1.0274
+  },
+  {
+   "batch": "406",
+   "code": "BJ6480A502RSHEV",
+   "field": "整备质量(kg)",
+   "current": 2965,
+   "official": 1950,
+   "official_candidates": {
+    "1950": [
+     "406_tax2 第387行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1950,
+   "evidence": "406_tax2 第387行",
+   "ratio": 1.5205
+  },
+  {
+   "batch": "397",
+   "code": "CSA6489YBEV2",
+   "field": "整备质量(kg)",
+   "current": 2000,
+   "official": 1960,
+   "official_candidates": {
+    "1960": [
+     "397_tax2 第68行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1960,
+   "evidence": "397_tax2 第68行",
+   "ratio": 1.0204
+  },
+  {
+   "batch": "397",
+   "code": "CA6482H0EVC",
+   "field": "整备质量(kg)",
+   "current": 2248,
+   "official": 2148,
+   "official_candidates": {
+    "2148": [
+     "397_tax2 第15行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 2148,
+   "evidence": "397_tax2 第15行",
+   "ratio": 1.0466
+  },
+  {
+   "batch": "397",
+   "code": "BJ7000K72BEV",
+   "field": "整备质量(kg)",
+   "current": 2437,
+   "official": 2302,
+   "official_candidates": {
+    "2302": [
+     "397_tax2 第23行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 2302,
+   "evidence": "397_tax2 第23行",
+   "ratio": 1.0586
+  },
+  {
+   "batch": "397",
+   "code": "SC6508AAADBEV",
+   "field": "整备质量(kg)",
+   "current": 1810,
+   "official": 1865,
+   "official_candidates": {
+    "1865": [
+     "397_tax2 第26行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1865,
+   "evidence": "397_tax2 第26行",
+   "ratio": 0.9705
+  },
+  {
+   "batch": "397",
+   "code": "SC6480AAAB6HEV",
+   "field": "整备质量(kg)",
+   "current": 2075,
+   "official": 2225,
+   "official_candidates": {
+    "2225": [
+     "397_tax1 第72行",
+     "397_tax2 第491行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 2225,
+   "evidence": "397_tax1 第72行",
+   "ratio": 0.9326
+  },
+  {
+   "batch": "397",
+   "code": "SC6480AAAD6HEV",
+   "field": "整备质量(kg)",
+   "current": 2075,
+   "official": 2285,
+   "official_candidates": {
+    "2285": [
+     "397_tax1 第73行",
+     "397_tax2 第490行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 2285,
+   "evidence": "397_tax1 第73行",
+   "ratio": 0.9081
+  },
+  {
+   "batch": "397",
+   "code": "SC6480AAAE6HEV",
+   "field": "整备质量(kg)",
+   "current": 2075,
+   "official": 2378,
+   "official_candidates": {
+    "2378": [
+     "397_tax1 第74行",
+     "397_tax2 第489行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 2378,
+   "evidence": "397_tax1 第74行",
+   "ratio": 0.8726
+  },
+  {
+   "batch": "397",
+   "code": "DFM6480M5F4PHEV",
+   "field": "整备质量(kg)",
+   "current": 1948,
+   "official": 1802,
+   "official_candidates": {
+    "1802": [
+     "397_tax1 第32行",
+     "397_tax2 第448行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 1802,
+   "evidence": "397_tax1 第32行",
+   "ratio": 1.081
+  },
+  {
+   "batch": "397",
+   "code": "MR6471DSHEV100",
+   "field": "整备质量(kg)",
+   "current": 1960,
+   "official": 1760,
+   "official_candidates": {
+    "1760": [
+     "397_tax1 第48行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1760,
+   "evidence": "397_tax1 第48行",
+   "ratio": 1.1136
+  },
+  {
+   "batch": "411",
+   "code": "CC2040BV23CPHEV",
+   "field": "整备质量(kg)",
+   "current": 3220,
+   "official": 3395,
+   "official_candidates": {
+    "3395": [
+     "411_doc3_purchase35 第204行",
+     "411_tax2 第204行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 4 条记录）",
+   "target": 3395,
+   "evidence": "411_doc3_purchase35 第204行",
+   "ratio": 0.9485
+  },
+  {
+   "batch": "411",
+   "code": "MR6521DCHEV117",
+   "field": "整备质量(kg)",
+   "current": 2620,
+   "official": 2470,
+   "official_candidates": {
+    "2470": [
+     "411_doc3_purchase35 第216行",
+     "411_tax2 第216行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 4 条记录）",
+   "target": 2470,
+   "evidence": "411_doc3_purchase35 第216行",
+   "ratio": 1.0607
+  },
+  {
+   "batch": "341",
+   "code": "BJ7001AUA1-BEV",
+   "field": "整备质量(kg)",
+   "current": 2020,
+   "official": 1940,
+   "official_candidates": {
+    "1940": [
+     "402_doc4 第1098行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 1940,
+   "evidence": "402_doc4 第1098行",
+   "ratio": 1.0412
+  },
+  {
+   "batch": "341",
+   "code": "BJ7001AUA3-BEV",
+   "field": "整备质量(kg)",
+   "current": 2020,
+   "official": 2078,
+   "official_candidates": {
+    "2078": [
+     "402_doc4 第1097行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 2078,
+   "evidence": "402_doc4 第1097行",
+   "ratio": 0.9721
+  },
+  {
+   "batch": "341",
+   "code": "BJ7001AUA7-BEV",
+   "field": "整备质量(kg)",
+   "current": 2020,
+   "official": 1930,
+   "official_candidates": {
+    "1930": [
+     "402_doc4 第1096行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 1930,
+   "evidence": "402_doc4 第1096行",
+   "ratio": 1.0466
+  },
+  {
+   "batch": "341",
+   "code": "BJ7001AUA8-BEV",
+   "field": "整备质量(kg)",
+   "current": 2020,
+   "official": 2068,
+   "official_candidates": {
+    "2068": [
+     "402_doc4 第1095行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 2068,
+   "evidence": "402_doc4 第1095行",
+   "ratio": 0.9768
+  },
+  {
+   "batch": "342",
+   "code": "BH7000BEVDBA",
+   "field": "整备质量(kg)",
+   "current": 1737,
+   "official": 1610,
+   "official_candidates": {
+    "1610": [
+     "381_tax2 第371行",
+     "383_tax2 第506行",
+     "402_doc4 第17989行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 1610,
+   "evidence": "381_tax2 第371行",
+   "ratio": 1.0789
+  },
+  {
+   "batch": "342",
+   "code": "BJ7000C5DEK-BEV",
+   "field": "整备质量(kg)",
+   "current": 1770,
+   "official": 1620,
+   "official_candidates": {
+    "1620": [
+     "383_tax2 第553行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 1620,
+   "evidence": "383_tax2 第553行",
+   "ratio": 1.0926
+  },
+  {
+   "batch": "346",
+   "code": "HFC7001AEV6",
+   "field": "整备质量(kg)",
+   "current": 1160,
+   "official": 1300,
+   "official_candidates": {
+    "1300": [
+     "402_doc4 第18062行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 1300,
+   "evidence": "402_doc4 第18062行",
+   "ratio": 0.8923
+  },
+  {
+   "batch": "351",
+   "code": "NHQ7000BEVED",
+   "field": "整备质量(kg)",
+   "current": 1739,
+   "official": 2060,
+   "official_candidates": {
+    "2060": [
+     "402_doc4 第472行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 2060,
+   "evidence": "402_doc4 第472行",
+   "ratio": 0.8442
+  },
+  {
+   "batch": "379",
+   "code": "ZN6531HCPBEV",
+   "field": "整备质量(kg)",
+   "current": 2200,
+   "official": 2320,
+   "official_candidates": {
+    "2320": [
+     "379_tax2 第47行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 2320,
+   "evidence": "379_tax2 第47行",
+   "ratio": 0.9483
+  },
+  {
+   "batch": "390",
+   "code": "DXK6510AC1BEV",
+   "field": "整备质量(kg)",
+   "current": 1785,
+   "official": 1930,
+   "official_candidates": {
+    "1930": [
+     "391_doc3 第70行",
+     "391_tax2 第70行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 1930,
+   "evidence": "391_doc3 第70行",
+   "ratio": 0.9249
+  },
+  {
+   "batch": "390",
+   "code": "DXK6510AC4BEV",
+   "field": "整备质量(kg)",
+   "current": 1785,
+   "official": 1920,
+   "official_candidates": {
+    "1920": [
+     "391_doc3 第71行",
+     "391_tax2 第71行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 0 条记录）",
+   "target": 1920,
+   "evidence": "391_doc3 第71行",
+   "ratio": 0.9297
+  },
+  {
+   "batch": "393",
+   "code": "SC6558AAAABEV",
+   "field": "整备质量(kg)",
+   "current": 2530,
+   "official": 2310,
+   "official_candidates": {
+    "2310": [
+     "393_doc3 第43行",
+     "393_tax2 第43行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 2310,
+   "evidence": "393_doc3 第43行",
+   "ratio": 1.0952
+  },
+  {
+   "batch": "397",
+   "code": "BYD7153WT6HEV5",
+   "field": "整备质量(kg)",
+   "current": 2075,
+   "official": 1660,
+   "official_candidates": {
+    "1660": [
+     "397_tax1 第55行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 1660,
+   "evidence": "397_tax1 第55行",
+   "ratio": 1.25
+  },
+  {
+   "batch": "398",
+   "code": "MR7151DCHEV114",
+   "field": "整备质量(kg)",
+   "current": 2075,
+   "official": 1895,
+   "official_candidates": {
+    "1895": [
+     "398_tax1 第61行",
+     "398_tax2 第472行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 1895,
+   "evidence": "398_tax1 第61行",
+   "ratio": 1.095
+  },
+  {
+   "batch": "402",
+   "code": "SVW715281BPV",
+   "field": "整备质量(kg)",
+   "current": 2075,
+   "official": 1825,
+   "official_candidates": {
+    "1825": [
+     "402_doc3 第504行",
+     "402_doc4 第16308行",
+     "402_tax2 第504行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 3 条记录）",
+   "target": 1825,
+   "evidence": "402_doc3 第504行",
+   "ratio": 1.137
+  },
+  {
+   "batch": "404",
+   "code": "SC7150AAAZ6HEV",
+   "field": "整备质量(kg)",
+   "current": 1830,
+   "official": 2255,
+   "official_candidates": {
+    "2255": [
+     "404_tax1 第55行",
+     "404_tax2 第371行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 2 条记录）",
+   "target": 2255,
+   "evidence": "404_tax1 第55行",
+   "ratio": 0.8115
+  },
+  {
+   "batch": "408",
+   "code": "SQR6500BEVEHX2",
+   "field": "整备质量(kg)",
+   "current": 2300,
+   "official": 2250,
+   "official_candidates": {
+    "2250": [
+     "408_tax2 第25行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 1 条记录）",
+   "target": 2250,
+   "evidence": "408_tax2 第25行",
+   "ratio": 1.0222
+  },
+  {
+   "batch": "402",
+   "code": "CA6475HA6PHEVTA",
+   "field": "发动机排量(mL)",
+   "current": 2000,
+   "official": 1499,
+   "official_candidates": {
+    "1499": [
+     "402_doc2 第90行",
+     "402_doc3 第459行",
+     "402_doc4 第15925行",
+     "402_tax1 第90行",
+     "402_tax2 第459行"
+    ]
+   },
+   "decision": "write",
+   "why": "官方唯一值（同批 5 条记录）",
+   "target": 1499,
+   "evidence": "402_doc2 第90行",
+   "ratio": 1.3342
+  }
+ ]
+}
