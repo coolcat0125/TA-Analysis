@@ -1,0 +1,92 @@
+[
+ {
+  "sheet_row": 685,
+  "batch": 355,
+  "code": "CSA6493YSEV1",
+  "field": "整备质量(kg)",
+  "before": null,
+  "after": 551.0,
+  "doc": "355_rep_085dc3c4d4d84057.txt",
+  "line": 22,
+  "raw": "    14 \t\tCSA6493YSEV1\tR7\t551/642\t2168/2210\t435/480\t77/90\t",
+  "ratio": 0.1165,
+  "reason": "整备/车长=0.116 出界[0.18,0.65]"
+ },
+ {
+  "sheet_row": 723,
+  "batch": 355,
+  "code": "NHQ7000BEVDH",
+  "field": "整备质量(kg)",
+  "before": null,
+  "after": 550.0,
+  "doc": "355_rep_085dc3c4d4d84057.txt",
+  "line": 24,
+  "raw": "    16 \t肇庆小鹏新能源投资有限公司\tNHQ7000BEVDH\tP5\t550/535\t1725/1724\t403\t67.3\t",
+  "ratio": 0.1155,
+  "reason": "整备/车长=0.116 出界[0.18,0.65]"
+ },
+ {
+  "sheet_row": 1074,
+  "batch": 365,
+  "code": "JL7007BEV02",
+  "field": "整备质量(kg)",
+  "before": null,
+  "after": 797.0,
+  "doc": "365_rep_7e0d5a0167cf496c.txt",
+  "line": 42,
+  "raw": "    34 \t\tJL7007BEV02\t熊猫mini\t200\t797/788\t145\t17.03\t",
+  "ratio": 0.1718,
+  "reason": "整备/车长=0.172 出界[0.18,0.65]"
+ },
+ {
+  "sheet_row": 1075,
+  "batch": 365,
+  "code": "JL7007BEV04",
+  "field": "整备质量(kg)",
+  "before": null,
+  "after": 797.0,
+  "doc": "365_rep_7e0d5a0167cf496c.txt",
+  "line": 43,
+  "raw": "    35 \t\tJL7007BEV04\t熊猫mini\t200\t797/807\t145\t17.03\t",
+  "ratio": 0.1718,
+  "reason": "整备/车长=0.172 出界[0.18,0.65]"
+ },
+ {
+  "sheet_row": 1095,
+  "batch": 365,
+  "code": "SH6531T1SEV-9",
+  "field": "整备质量(kg)",
+  "before": null,
+  "after": 540.0,
+  "doc": "365_rep_7e0d5a0167cf496c.txt",
+  "line": 32,
+  "raw": "    24 \t上汽大通汽车有限公司\tSH6531T1SEV-9\tMIFA 9\t540/480/560\t2570/2365/2265/2460/2410/2310\t435/480\t77/90\t",
+  "reason": "车长缺失且整备 540.0 出后备域[800,4000]"
+ },
+ {
+  "sheet_row": 3446,
+  "batch": 399,
+  "code": "EQ6520AD5F2PHEV",
+  "field": "整备质量(kg)",
+  "before": null,
+  "after": 305.0,
+  "doc": "399_rep_2b1f4f7bae0e479c.txt",
+  "line": 366,
+  "raw": "    19 \t\tEQ6520AD5F2PHEV\t岚图9L,岚图泰山\t插电式混合动力多用途乘用车\t305/290\t6.60/6.90\t1497\t2760/2852\t360/365\t65.1/64.8\t",
+  "ratio": 0.0579,
+  "reason": "整备/车长=0.058 出界[0.18,0.65]"
+ },
+ {
+  "sheet_row": 5258,
+  "batch": 399,
+  "code": "JX6521TB-L6BEV",
+  "field": "整备质量(kg)",
+  "before": null,
+  "after": 480.0,
+  "doc": "399_rep_2b1f4f7bae0e479c.txt",
+  "line": 51,
+  "raw": "    42 \t江铃汽车股份有限公司\tJX6521TB-L6BEV\t江铃 E福顺\t纯电动多用途乘用车\t480/430\t2150/2195/2165/2210\t510\t77.280\t",
+  "ratio": 0.0878,
+  "reason": "整备/车长=0.088 出界[0.18,0.65]"
+ }
+]

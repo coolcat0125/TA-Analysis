@@ -1,0 +1,19 @@
+{
+ "sha256": "2ca6e5791255491cf04e4019cf62b0fb4fb7b53adf3e377c18d37c5c9da07c67",
+ "written": 52,
+ "skipped": [
+  {
+   "sheet_row": 980,
+   "batch": 362,
+   "code": "NEQ7000BEVJH11J",
+   "field": "整备质量(kg)",
+   "before": null,
+   "after": 699.0,
+   "doc": "365_rep_7e0d5a0167cf496c.txt",
+   "line": 21,
+   "raw": "    13 \t\tNEQ7000BEVJH11J\tQQ冰淇淋\t120\t699/715\t95\t9.4208\t",
+   "reason": "域外 699.0"
+  }
+ ],
+ "backup": "底表_pre-整备补缺_20261102T003803.xlsx"
+}

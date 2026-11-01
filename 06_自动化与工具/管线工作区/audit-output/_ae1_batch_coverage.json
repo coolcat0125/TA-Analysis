@@ -1,0 +1,812 @@
+{
+ "meta": {
+  "generated_at": "2026-11-02T00:26:59",
+  "batches": 72,
+  "index_codes": 41541,
+  "note": "page=False 且 page_502=True 表示当时抓取到 502 空壳（349/353 已修复）；docs 含 doc1/doc2/doc3/tax*"
+ },
+ "rows": [
+  {
+   "batch": 341,
+   "page": true,
+   "page_502": false,
+   "docs": 4,
+   "converted": 4,
+   "pending": [],
+   "codes_indexed": 1233,
+   "codes_big": 0,
+   "codes_total": 1233
+  },
+  {
+   "batch": 342,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 217,
+   "codes_big": 0,
+   "codes_total": 217
+  },
+  {
+   "batch": 343,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 308,
+   "codes_big": 0,
+   "codes_total": 308
+  },
+  {
+   "batch": 344,
+   "page": true,
+   "page_502": false,
+   "docs": 1,
+   "converted": 1,
+   "pending": [],
+   "codes_indexed": 0,
+   "codes_big": 0,
+   "codes_total": 0
+  },
+  {
+   "batch": 345,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 276,
+   "codes_big": 0,
+   "codes_total": 276
+  },
+  {
+   "batch": 346,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 366,
+   "codes_big": 0,
+   "codes_total": 366
+  },
+  {
+   "batch": 347,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 405,
+   "codes_big": 0,
+   "codes_total": 405
+  },
+  {
+   "batch": 348,
+   "page": true,
+   "page_502": false,
+   "docs": 5,
+   "converted": 5,
+   "pending": [],
+   "codes_indexed": 1903,
+   "codes_big": 0,
+   "codes_total": 1903
+  },
+  {
+   "batch": 349,
+   "page": true,
+   "page_502": false,
+   "docs": 5,
+   "converted": 5,
+   "pending": [],
+   "codes_indexed": 0,
+   "codes_big": 0,
+   "codes_total": 0
+  },
+  {
+   "batch": 350,
+   "page": true,
+   "page_502": false,
+   "docs": 5,
+   "converted": 5,
+   "pending": [],
+   "codes_indexed": 1739,
+   "codes_big": 0,
+   "codes_total": 1739
+  },
+  {
+   "batch": 351,
+   "page": true,
+   "page_502": false,
+   "docs": 5,
+   "converted": 5,
+   "pending": [],
+   "codes_indexed": 1833,
+   "codes_big": 0,
+   "codes_total": 1833
+  },
+  {
+   "batch": 352,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 173,
+   "codes_big": 0,
+   "codes_total": 173
+  },
+  {
+   "batch": 353,
+   "page": true,
+   "page_502": false,
+   "docs": 5,
+   "converted": 5,
+   "pending": [],
+   "codes_indexed": 0,
+   "codes_big": 0,
+   "codes_total": 0
+  },
+  {
+   "batch": 354,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 299,
+   "codes_big": 0,
+   "codes_total": 299
+  },
+  {
+   "batch": 355,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 1,
+   "pending": [
+    "355_tax1.doc"
+   ],
+   "codes_indexed": 262,
+   "codes_big": 0,
+   "codes_total": 262
+  },
+  {
+   "batch": 356,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 251,
+   "codes_big": 0,
+   "codes_total": 251
+  },
+  {
+   "batch": 357,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 354,
+   "codes_big": 0,
+   "codes_total": 354
+  },
+  {
+   "batch": 358,
+   "page": true,
+   "page_502": false,
+   "docs": 1,
+   "converted": 1,
+   "pending": [],
+   "codes_indexed": 321,
+   "codes_big": 0,
+   "codes_total": 321
+  },
+  {
+   "batch": 359,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 375,
+   "codes_big": 0,
+   "codes_total": 375
+  },
+  {
+   "batch": 360,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 334,
+   "codes_big": 0,
+   "codes_total": 334
+  },
+  {
+   "batch": 361,
+   "page": true,
+   "page_502": false,
+   "docs": 0,
+   "converted": 0,
+   "pending": [],
+   "codes_indexed": 0,
+   "codes_big": 0,
+   "codes_total": 0
+  },
+  {
+   "batch": 362,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 397,
+   "codes_big": 0,
+   "codes_total": 397
+  },
+  {
+   "batch": 363,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 408,
+   "codes_big": 0,
+   "codes_total": 408
+  },
+  {
+   "batch": 364,
+   "page": true,
+   "page_502": false,
+   "docs": 1,
+   "converted": 1,
+   "pending": [],
+   "codes_indexed": 239,
+   "codes_big": 0,
+   "codes_total": 239
+  },
+  {
+   "batch": 365,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 1,
+   "pending": [
+    "365_tax1.doc"
+   ],
+   "codes_indexed": 356,
+   "codes_big": 0,
+   "codes_total": 356
+  },
+  {
+   "batch": 366,
+   "page": true,
+   "page_502": false,
+   "docs": 1,
+   "converted": 1,
+   "pending": [],
+   "codes_indexed": 809,
+   "codes_big": 0,
+   "codes_total": 809
+  },
+  {
+   "batch": 367,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 641,
+   "codes_big": 0,
+   "codes_total": 641
+  },
+  {
+   "batch": 368,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 304,
+   "codes_big": 0,
+   "codes_total": 304
+  },
+  {
+   "batch": 369,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 300,
+   "codes_big": 0,
+   "codes_total": 300
+  },
+  {
+   "batch": 370,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 410,
+   "codes_big": 0,
+   "codes_total": 410
+  },
+  {
+   "batch": 371,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 516,
+   "codes_big": 0,
+   "codes_total": 516
+  },
+  {
+   "batch": 372,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 514,
+   "codes_big": 0,
+   "codes_total": 514
+  },
+  {
+   "batch": 373,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 368,
+   "codes_big": 0,
+   "codes_total": 368
+  },
+  {
+   "batch": 374,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 482,
+   "codes_big": 0,
+   "codes_total": 482
+  },
+  {
+   "batch": 375,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 463,
+   "codes_big": 0,
+   "codes_total": 463
+  },
+  {
+   "batch": 376,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 406,
+   "codes_big": 0,
+   "codes_total": 406
+  },
+  {
+   "batch": 377,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 444,
+   "codes_big": 0,
+   "codes_total": 444
+  },
+  {
+   "batch": 378,
+   "page": true,
+   "page_502": false,
+   "docs": 3,
+   "converted": 3,
+   "pending": [],
+   "codes_indexed": 549,
+   "codes_big": 0,
+   "codes_total": 549
+  },
+  {
+   "batch": 379,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 290,
+   "codes_big": 0,
+   "codes_total": 290
+  },
+  {
+   "batch": 380,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 422,
+   "codes_big": 0,
+   "codes_total": 422
+  },
+  {
+   "batch": 381,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 723,
+   "codes_big": 0,
+   "codes_total": 723
+  },
+  {
+   "batch": 382,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 973,
+   "codes_big": 0,
+   "codes_total": 973
+  },
+  {
+   "batch": 383,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 4734,
+   "codes_big": 0,
+   "codes_total": 4734
+  },
+  {
+   "batch": 384,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 942,
+   "codes_big": 0,
+   "codes_total": 942
+  },
+  {
+   "batch": 385,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 681,
+   "codes_big": 0,
+   "codes_total": 681
+  },
+  {
+   "batch": 386,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 486,
+   "codes_big": 0,
+   "codes_total": 486
+  },
+  {
+   "batch": 387,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 917,
+   "codes_big": 0,
+   "codes_total": 917
+  },
+  {
+   "batch": 388,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 638,
+   "codes_big": 0,
+   "codes_total": 638
+  },
+  {
+   "batch": 389,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 503,
+   "codes_big": 0,
+   "codes_total": 503
+  },
+  {
+   "batch": 390,
+   "page": true,
+   "page_502": false,
+   "docs": 3,
+   "converted": 3,
+   "pending": [],
+   "codes_indexed": 1814,
+   "codes_big": 0,
+   "codes_total": 1814
+  },
+  {
+   "batch": 391,
+   "page": true,
+   "page_502": false,
+   "docs": 3,
+   "converted": 3,
+   "pending": [],
+   "codes_indexed": 1548,
+   "codes_big": 0,
+   "codes_total": 1548
+  },
+  {
+   "batch": 392,
+   "page": true,
+   "page_502": false,
+   "docs": 3,
+   "converted": 3,
+   "pending": [],
+   "codes_indexed": 1369,
+   "codes_big": 0,
+   "codes_total": 1369
+  },
+  {
+   "batch": 393,
+   "page": true,
+   "page_502": false,
+   "docs": 3,
+   "converted": 2,
+   "pending": [
+    "393_doc1.doc"
+   ],
+   "codes_indexed": 517,
+   "codes_big": 0,
+   "codes_total": 517
+  },
+  {
+   "batch": 394,
+   "page": true,
+   "page_502": false,
+   "docs": 3,
+   "converted": 3,
+   "pending": [],
+   "codes_indexed": 1685,
+   "codes_big": 0,
+   "codes_total": 1685
+  },
+  {
+   "batch": 395,
+   "page": true,
+   "page_502": false,
+   "docs": 3,
+   "converted": 3,
+   "pending": [],
+   "codes_indexed": 1809,
+   "codes_big": 0,
+   "codes_total": 1809
+  },
+  {
+   "batch": 396,
+   "page": true,
+   "page_502": false,
+   "docs": 3,
+   "converted": 3,
+   "pending": [],
+   "codes_indexed": 1628,
+   "codes_big": 0,
+   "codes_total": 1628
+  },
+  {
+   "batch": 397,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 691,
+   "codes_big": 0,
+   "codes_total": 691
+  },
+  {
+   "batch": 398,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 695,
+   "codes_big": 0,
+   "codes_total": 695
+  },
+  {
+   "batch": 399,
+   "page": true,
+   "page_502": false,
+   "docs": 4,
+   "converted": 3,
+   "pending": [
+    "399_doc3.doc"
+   ],
+   "codes_indexed": 1510,
+   "codes_big": 0,
+   "codes_total": 1510
+  },
+  {
+   "batch": 400,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 611,
+   "codes_big": 0,
+   "codes_total": 611
+  },
+  {
+   "batch": 401,
+   "page": true,
+   "page_502": false,
+   "docs": 3,
+   "converted": 3,
+   "pending": [],
+   "codes_indexed": 1844,
+   "codes_big": 0,
+   "codes_total": 1844
+  },
+  {
+   "batch": 402,
+   "page": true,
+   "page_502": false,
+   "docs": 6,
+   "converted": 6,
+   "pending": [],
+   "codes_indexed": 24603,
+   "codes_big": 0,
+   "codes_total": 24603
+  },
+  {
+   "batch": 403,
+   "page": true,
+   "page_502": false,
+   "docs": 3,
+   "converted": 2,
+   "pending": [
+    "403_big.doc"
+   ],
+   "codes_indexed": 1259,
+   "codes_big": 0,
+   "codes_total": 1259
+  },
+  {
+   "batch": 404,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 549,
+   "codes_big": 0,
+   "codes_total": 549
+  },
+  {
+   "batch": 405,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 460,
+   "codes_big": 0,
+   "codes_total": 460
+  },
+  {
+   "batch": 406,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 528,
+   "codes_big": 0,
+   "codes_total": 528
+  },
+  {
+   "batch": 407,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 712,
+   "codes_big": 0,
+   "codes_total": 712
+  },
+  {
+   "batch": 408,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 890,
+   "codes_big": 0,
+   "codes_total": 890
+  },
+  {
+   "batch": 409,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 914,
+   "codes_big": 0,
+   "codes_total": 914
+  },
+  {
+   "batch": 410,
+   "page": true,
+   "page_502": false,
+   "docs": 2,
+   "converted": 2,
+   "pending": [],
+   "codes_indexed": 558,
+   "codes_big": 0,
+   "codes_total": 558
+  },
+  {
+   "batch": 411,
+   "page": true,
+   "page_502": false,
+   "docs": 4,
+   "converted": 4,
+   "pending": [],
+   "codes_indexed": 414,
+   "codes_big": 0,
+   "codes_total": 414
+  },
+  {
+   "batch": 412,
+   "page": false,
+   "page_502": null,
+   "docs": 1,
+   "converted": 1,
+   "pending": [],
+   "codes_indexed": 170,
+   "codes_big": 0,
+   "codes_total": 170
+  }
+ ]
+}

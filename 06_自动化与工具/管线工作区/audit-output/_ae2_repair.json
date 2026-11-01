@@ -1,0 +1,189 @@
+{
+ "meta": {
+  "generated_at": "2026-11-02T00:27:43"
+ },
+ "batches": [
+  {
+   "batch": 355,
+   "candidates": 5,
+   "results": [
+    {
+     "file": "355_rep_01c5acc2ad2647b7.doc",
+     "bytes": 4271104,
+     "len_hdr": 4271104,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 197066,
+     "secs": 18
+    },
+    {
+     "file": "355_rep_84c53d17c7cc42b2.doc",
+     "bytes": 722432,
+     "len_hdr": 722432,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 40355,
+     "secs": 2
+    },
+    {
+     "file": "355_rep_0a19bef9a2794c16.doc",
+     "bytes": 1835520,
+     "len_hdr": 1835520,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 60434,
+     "secs": 6
+    },
+    {
+     "file": "355_rep_085dc3c4d4d84057.doc",
+     "bytes": 680448,
+     "len_hdr": 680448,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 27800,
+     "secs": 1
+    },
+    {
+     "file": "355_rep_c7ccd1f2b2174416.pdf",
+     "bytes": 9017794,
+     "len_hdr": 9017794,
+     "kind": "pdf",
+     "info": "110",
+     "converted": true,
+     "txt_bytes": 254146,
+     "pages": 110
+    }
+   ]
+  },
+  {
+   "batch": 365,
+   "candidates": 5,
+   "results": [
+    {
+     "file": "365_rep_de37938577414558.doc",
+     "bytes": 3458379,
+     "len_hdr": 3458379,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 145910,
+     "secs": 12
+    },
+    {
+     "file": "365_rep_39883b1ff5ca4d6c.doc",
+     "bytes": 1022478,
+     "len_hdr": 1022478,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 58690,
+     "secs": 2
+    },
+    {
+     "file": "365_rep_445d9f5aa5e5477e.doc",
+     "bytes": 409252,
+     "len_hdr": 730677,
+     "kind": "bad",
+     "info": "ole:incomplete OLE sector",
+     "converted": false
+    },
+    {
+     "file": "365_rep_7e0d5a0167cf496c.doc",
+     "bytes": 882046,
+     "len_hdr": 882046,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 37022,
+     "secs": 2
+    },
+    {
+     "file": "365_rep_03ddc1e5710547ad.pdf",
+     "bytes": 13268076,
+     "len_hdr": 13268076,
+     "kind": "pdf",
+     "info": "156",
+     "converted": true,
+     "txt_bytes": 376011,
+     "pages": 156
+    }
+   ]
+  },
+  {
+   "batch": 393,
+   "candidates": 3,
+   "results": [
+    {
+     "file": "393_rep_a6a828d40e0b4f6c.doc",
+     "bytes": 3946496,
+     "len_hdr": 3946496,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 204243,
+     "secs": 12
+    },
+    {
+     "file": "393_rep_2c3838d3783a452d.doc",
+     "bytes": 660992,
+     "len_hdr": 660992,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 40417,
+     "secs": 3
+    },
+    {
+     "file": "393_rep_7421c4b3ca864fc4.doc",
+     "bytes": 592384,
+     "len_hdr": 592384,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 42776,
+     "secs": 2
+    }
+   ]
+  },
+  {
+   "batch": 399,
+   "candidates": 3,
+   "results": [
+    {
+     "file": "399_rep_d61941d642984ca6.doc",
+     "bytes": 3633152,
+     "len_hdr": 3633152,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 188367,
+     "secs": 10
+    },
+    {
+     "file": "399_rep_9bf9198cf225487a.doc",
+     "bytes": 748544,
+     "len_hdr": 748544,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 42751,
+     "secs": 3
+    },
+    {
+     "file": "399_rep_2b1f4f7bae0e479c.doc",
+     "bytes": 800768,
+     "len_hdr": 800768,
+     "kind": "ole",
+     "info": "6",
+     "converted": true,
+     "txt_bytes": 49050,
+     "secs": 2
+    }
+   ]
+  }
+ ]
+}
