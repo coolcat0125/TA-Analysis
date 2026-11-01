@@ -1729,11 +1729,11 @@
    ],
    "consequence": "未锚定的在榜/待锚定车系一律 HOLD，不做推测性补名（保守设计）"
   },
-  "base_table_sha256": "d2d105a090e3bf64749252002a10a86f6d096faf3b24d12eca0e0c55caef25a6",
+  "base_table_sha256": "e88d749ad6204362ed6a296d65ef5bc15a2613b1b1ca0fe1b4537bf886782df5",
   "dry_run": false,
   "base_table_columns": 45,
   "base_table_columns_pre": 45,
-  "base_table_sha256_note": "**落盘后**工作簿 sha256（小写 hex）；base_table_sha256_prewrite 为本次运行读取时的 sha；apply 需带 --expect-sha <prewrite 值>",
+  "base_table_sha256_note": "v4.9.40：产品类型官方订正 124 格（工信部税目录逐型号证据）导致字节变化；统计量未重算（产品类型不参与任何聚合口径）。",
   "suggest_enabled": false,
   "suggest_calls": 0,
   "suggest_note": "验收基线要求 `--no-suggest`：suggest_enabled=False 且 suggest_calls=0；若为 True/非 0 则与 Lead 验收基线（matched_rows=2185）不符",
@@ -1744,7 +1744,8 @@
   ],
   "batch_count": 72,
   "batch_range_note": "末批 412 为**公示口径**（未正式公告）；交付物封面/说明页引用批次范围时须标注",
-  "base_table_sha256_prewrite": "d2d105a090e3bf64749252002a10a86f6d096faf3b24d12eca0e0c55caef25a6"
+  "base_table_sha256_prewrite": "d2d105a090e3bf64749252002a10a86f6d096faf3b24d12eca0e0c55caef25a6",
+  "base_table_sha256_prev": "d2d105a090e3bf64749252002a10a86f6d096faf3b24d12eca0e0c55caef25a6"
  },
  "coverage": {
   "row": {

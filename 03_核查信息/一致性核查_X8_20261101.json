@@ -1832,6 +1832,15 @@
    ],
    "结论": "三向证据指向 多用途乘用车+增程，但同族 403 NJL6553EV1Y 呈现同向偏差、全表 126 行同类，单独改此 1 行会造成与同类不一致；**保持原值并登记**，待整类仲裁"
   },
-  "generated_at": "2026-11-01T10:20:12"
+  "generated_at": "2026-11-01T10:20:12",
+  "resolution": {
+   "status": "已完全仲裁（v4.9.40）",
+   "method": "390~403 批车船税/购置税目录全文 → 完整车辆型号官方索引（12,590 型号）→ 逐行比对官方产品名称",
+   "corrected_rows": 124,
+   "no_evidence_rows": 1,
+   "evidence": "audit-output/_z6_arbitration.json",
+   "no_evidence_item": "401|SQR6520REEVE024（风云T11）",
+   "at": "2026-11-01"
+  }
  }
 }
