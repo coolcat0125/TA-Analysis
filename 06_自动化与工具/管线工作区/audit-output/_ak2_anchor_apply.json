@@ -1,0 +1,24 @@
+{
+ "sha_before": "2ca6e5791255491cf04e4019cf62b0fb4fb7b53adf3e377c18d37c5c9da07c67",
+ "sha_after": "c1658dff58d19305777b1b4345ef074976975e1d7e25f414e0be98b71f3895ea",
+ "backup": "底表_pre-官方多值锚定_20261102T011706.xlsx",
+ "written": [
+  {
+   "batch": "350",
+   "code": "BYD7002BEVA9",
+   "field": "纯电续航里程(km)",
+   "old": "420",
+   "new": 401.0,
+   "evidence": "402_doc4:1518"
+  },
+  {
+   "batch": "397",
+   "code": "BYD7153WT6HEV5",
+   "field": "电池容量(kWh)",
+   "old": "44.2",
+   "new": 10.08,
+   "evidence": "398_tax2:490"
+  }
+ ],
+ "skipped": []
+}

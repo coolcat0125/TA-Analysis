@@ -1729,7 +1729,7 @@
    ],
    "consequence": "未锚定的在榜/待锚定车系一律 HOLD，不做推测性补名（保守设计）"
   },
-  "base_table_sha256": "2ca6e5791255491cf04e4019cf62b0fb4fb7b53adf3e377c18d37c5c9da07c67",
+  "base_table_sha256": "c1658dff58d19305777b1b4345ef074976975e1d7e25f414e0be98b71f3895ea",
   "dry_run": false,
   "base_table_columns": 45,
   "base_table_columns_pre": 45,
@@ -1744,7 +1744,7 @@
   ],
   "batch_count": 72,
   "batch_range_note": "末批 412 为**公示口径**（未正式公告）；交付物封面/说明页引用批次范围时须标注",
-  "base_table_sha256_prewrite": "2ca6e5791255491cf04e4019cf62b0fb4fb7b53adf3e377c18d37c5c9da07c67"
+  "base_table_sha256_prewrite": "c1658dff58d19305777b1b4345ef074976975e1d7e25f414e0be98b71f3895ea"
  },
  "coverage": {
   "row": {

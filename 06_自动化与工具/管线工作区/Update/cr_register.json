@@ -384,6 +384,13 @@
     "audit-output/_ag3_apply.json",
     "audit-output/_af1_report_refresh.json"
    ]
+  },
+  {
+   "id": "CR-17-047",
+   "title": "官方多值 5 条配置锚定裁决（2 格写入 / 3 条留 hold）",
+   "status": "已完成",
+   "date": "2026-11-02",
+   "detail": "以官方整备为配置指纹分组锚定：350|BYD7002BEVA9 续航 420→401、397|BYD7153WT6HEV5 容量 44.2→10.08；403/355/392 三条因整备缺失或为区间串、官方工况空、官方值不含现值而维持 hold。tech_sales 零漂移。"
   }
  ]
 }

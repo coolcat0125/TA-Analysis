@@ -12,7 +12,7 @@
   "sales_source_path": "D:\\#AI\\00 Project\\17 TA analysis\\01-主仓库\\TA-Analysis\\06_自动化与工具\\管线工作区\\audit-output\\sales_autohome_series_monthly_20261019.json",
   "base_table_path": "NEV公告参数汇总表_合并版（341~412批）.xlsx",
   "base_rows": 5475,
-  "base_table_sha256": "2ca6e5791255491cf04e4019cf62b0fb4fb7b53adf3e377c18d37c5c9da07c67",
+  "base_table_sha256": "c1658dff58d19305777b1b4345ef074976975e1d7e25f414e0be98b71f3895ea",
   "base_table_columns": 45,
   "base_table_columns_pre": 45,
   "dry_run": false,
@@ -45,7 +45,7 @@
    "40": "销量覆盖状态"
   },
   "note": "多候选一律 HOLD（未匹配-命名待锚定），严禁硬填；占位符通用名称不参与匹配（无车系身份）；未匹配一律留空，禁止写 0",
-  "base_table_sha256_prewrite": "2ca6e5791255491cf04e4019cf62b0fb4fb7b53adf3e377c18d37c5c9da07c67",
+  "base_table_sha256_prewrite": "c1658dff58d19305777b1b4345ef074976975e1d7e25f414e0be98b71f3895ea",
   "base_table_sha256_note": "**落盘后**工作簿 sha256（小写 hex）；base_table_sha256_prewrite 为本次运行读取时的 sha；apply 需带 --expect-sha <prewrite 值>"
  },
  "summary": {
