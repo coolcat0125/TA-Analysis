@@ -1210,7 +1210,8 @@ def build(recs, S):
     ws = b.sheet('销量月度趋势', f'销量月度趋势（车系级去重 · {smeta["months"][0]}~{ssnap}）')
     ws.cell(3, 1, '已锚定车系口径与全榜口径并列；车系级已去重，底表行级值不可加总（规范 §4）。')
     _mo = smeta['months']
-    b.table(ws, 4, ['月份', '已锚定合计', 'BEV', 'PHEV+EREV', '全榜合计', '锚定占比%'],
+    # v4.9.39：原表头 'PHEV+EREV' 与取值不符（row[3] 实为 PHEV 单类，EREV 见下方「动力类型月度细分」）→ 更正
+    b.table(ws, 4, ['月份', '已锚定合计', 'BEV', 'PHEV', '全榜合计', '锚定占比%'],
             [[_mo[i], row[1], row[2], row[3], smon['monthly_board'][i][1],
               round(100.0 * row[1] / smon['monthly_board'][i][1], 2)]
              for i, row in enumerate(smon['monthly'])],

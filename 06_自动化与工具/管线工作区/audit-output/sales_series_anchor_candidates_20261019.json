@@ -21,7 +21,7 @@
    "无候选": "底表无痕迹，或痕迹候选品牌签名不通过（跨品牌误配风险）"
   },
   "base_rows": 5475,
-  "base_table_sha256": "982e0a97cac525b2488dc30cea493ae0a42ee99d19ec72a84bfc32e410df3e17",
+  "base_table_sha256": "d2d105a090e3bf64749252002a10a86f6d096faf3b24d12eca0e0c55caef25a6",
   "dry_run": false
  },
  "verdict_counts": {
