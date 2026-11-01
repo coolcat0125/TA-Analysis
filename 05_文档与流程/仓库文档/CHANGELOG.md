@@ -41,7 +41,11 @@ LibreOffice 对该文件（30.8MB，OLE 内含 `WpsCustomData` 流 + `WordDocume
 
 结果：**204,485 个单元格 / 2,574 条候选记录 / 2,249 个车辆型号**（403 批·车船税第八十二批）。与底表 403 批 84 行交集 15 个型号，而这 15 行的容量/续航/整备/排量**四项均无空格** → **本附件不新增可补格**；价值在于附件完整性从 167/172 推进到 **168/172**，且 403 批不再依赖替代路径。
 
-产出：`公告批次扫描_411-412_20261017/raw/txt/403_big_recovered.txt`（1,428,729 B）、`audit-output/_ak6_parse403.json`。
+**已把该通道沉淀为可复用工具**：`06_自动化与工具/管线工作区/tools/extract_wps_doc.py`（读 OLE → FIB 截正文 → 编码打分选 utf-16-le → 按 0x07 切格 → 可选按车型号重建记录），用法 `python tools/extract_wps_doc.py <input.doc> [--out DIR] [--records]`。实测输出：115,279 个非空单元格、49 个段落行、6,252 条结构化记录。
+
+产物落 `…/raw/txt/`（该目录按 `.gitignore:39` 不入库，可由工具随时重跑再生）：`403_big_cells.txt`、`403_big_text.txt`、`403_big_records.json`；结构化抽样另存 `audit-output/_ak6_parse403.json`（已入库）。
+
+> 会话内一次性脚本（`_ak*.py`）受 `.gitignore:18 _*.py` 约束不入库，故把方法固化到 `tools/` 下具名工具，保证云端可复现。
 
 ### 底表状态
 `sha  c1658dff58d19305777b1b4345ef074976975e1d7e25f414e0be98b71f3895ea` / 4,941,818 B / 5,475 行 × 45 列 / 17 sheets / `变更记录` 68,062 行
