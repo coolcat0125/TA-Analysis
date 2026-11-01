@@ -1,4 +1,4 @@
-# 内部工作目录（勿提交）
+﻿# 内部工作目录（勿提交）
 .uploads/
 .screenshots/
 .trae-html-share-packages/
@@ -41,3 +41,7 @@ _lead_workspace_*/
 # 工信部官方附件原始 .doc（体积大，可由 audit-output/_z3_manifest.json 记录的 URL 复抓）
 06_自动化与工具/管线工作区/公告批次扫描_411-412_20261017/raw/*.doc
 06_自动化与工具/管线工作区/公告批次扫描_411-412_20261017/raw/*_page.html
+# 官方富索引（43MB，可由 raw/txt + _z15_parse_rich.py 重建，不入库）
+**/audit-output/_z15_official_rich.json
+
+
