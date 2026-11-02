@@ -47,3 +47,7 @@ _lead_workspace_*/
 
 
 
+
+# 官方能耗平台分页缓存（可由 _yh3_pull.py 复抓，89.9MB）
+03_核查信息/_yh_pages*/
+03_核查信息/_yhg_*

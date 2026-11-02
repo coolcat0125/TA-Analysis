@@ -1,0 +1,54 @@
+[
+ {
+  "urbanConditions": "12.05",
+  "suburbanConditions": "8.02",
+  "comprehensiveConditions": "9.57",
+  "applyId": "1683331584d349ef8cf212d6b0722864",
+  "reportType": "1",
+  "oversrasName": "德国奥迪汽车股份有限公司",
+  "usualName": "奥迪 A8L",
+  "vehicleNumber": "A8L 55 T F8GCZSEQ6R1",
+  "vehicleType": "乘用车（M1类）",
+  "publicTime": "2024-06",
+  "abandonTime": null,
+  "displacement": "2995",
+  "transmissionType": "AT",
+  "ratedPower": "250",
+  "peakPower": null,
+  "workConditionVos": [
+   {
+    "workConditionType": "WLTC",
+    "urbanConditions": "12.05",
+    "suburbanConditions": "8.02",
+    "comprehensiveConditions": "9.57"
+   }
+  ],
+  "uniqId": "JC20240619085633816"
+ },
+ {
+  "urbanConditions": "9.06",
+  "suburbanConditions": "6.63",
+  "comprehensiveConditions": "7.9",
+  "applyId": "e45108e83f0c4a01887e8340cb756cda",
+  "reportType": "1",
+  "oversrasName": "德国奥迪汽车股份有限公司",
+  "usualName": "奥迪 A6",
+  "vehicleNumber": "A6 45 T F2ADMTAQ6R1",
+  "vehicleType": "乘用车（M1类）",
+  "publicTime": "2024-06",
+  "abandonTime": null,
+  "displacement": "1984",
+  "transmissionType": "AT",
+  "ratedPower": "195",
+  "peakPower": null,
+  "workConditionVos": [
+   {
+    "workConditionType": "WLTC",
+    "urbanConditions": "9.06",
+    "suburbanConditions": "6.63",
+    "comprehensiveConditions": "7.9"
+   }
+  ],
+  "uniqId": "JC20240619085704509"
+ }
+]

@@ -1,17 +1,17 @@
 {
- "generatedAt": "2026-11-01T17:21:47.490393+00:00",
+ "generatedAt": "2026-11-02T13:32:30.810902+00:00",
  "input": "NEV公告参数汇总表_合并版（341~412批）.xlsx",
  "records": 5475,
  "critical": {},
  "warn": {
   "W2": 1,
   "W4": 25,
+  "W7": 2,
   "W5": 27,
-  "W7": 1,
   "W6": 159
  },
  "criticalTotal": 0,
- "warnTotal": 213,
+ "warnTotal": 214,
  "w2ConfirmedSuppressed": 13,
  "w2SuppressedDetail": [
   {
@@ -548,6 +548,13 @@
    }
   ],
   "W7": [
+   {
+    "批次": "368",
+    "型号": "BAW7000UL48BEV",
+    "比值": 0.13,
+    "整备": 775.0,
+    "车长": 5850.0
+   },
    {
     "批次": "369",
     "型号": "SC7002BAABEV",
