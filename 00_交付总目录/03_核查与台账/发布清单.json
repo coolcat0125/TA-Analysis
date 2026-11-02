@@ -1,69 +1,69 @@
 {
- "generated_at": "2026-11-02T21:40:33",
+ "generated_at": "2026-11-02T23:16:20",
  "rule": "00_交付总目录 为唯一对外交付位置（数据总表 + 全部交付物）；本清单由 _y10_publish.py 单向发布后重算，逐件 sha256 可核。数据底表原件在 06_自动化与工具/管线工作区/，此处为发布副本，不得编辑。",
  "count": 9,
  "items": [
   {
    "name": "01_数据总表/NEV公告参数汇总表（341~412批）.xlsx",
-   "size": 5194515,
-   "sha256": "881238d70af56bc9d74b5397859dd5fa93255d7ac9cdad8aa5cecd86da656f8e",
-   "published_at": "2026-11-02T21:40:23",
+   "size": 5208123,
+   "sha256": "35bdcdc1fdb7c45d7b8b4cd239dd30d08fb5be4c68056d81abc7f2270f526e09",
+   "published_at": "2026-11-02T23:16:10",
    "source": "06_自动化与工具/管线工作区/NEV公告参数汇总表_合并版（341~412批）.xlsx（发布副本，勿在此编辑）"
   },
   {
    "name": "02_分析交付物/NEV公告车型行业分析_数据底表.xlsx",
-   "size": 91522,
-   "sha256": "011b5379dc7de2f2304d4c9f96680e7b621b619774b8d674b2022a3f3afade5a",
-   "published_at": "2026-11-02T21:40:23",
+   "size": 91517,
+   "sha256": "8b045dcb010aeb42e8d2b8c46a1db1105f66b5179d416cf5db839f5eae4fd3bd",
+   "published_at": "2026-11-02T23:16:10",
    "source": "06_自动化与工具/管线工作区/NEV公告车型行业分析_数据底表.xlsx"
   },
   {
    "name": "02_分析交付物/NEV公告数据看板.html",
-   "size": 4686933,
-   "sha256": "6660920b0576de65105665977125adbb395aae29d150f9cea8201951e01662fd",
-   "published_at": "2026-11-02T21:40:27",
+   "size": 4686934,
+   "sha256": "d2ed5ce514be4218ec3ba11c5b3c3072c7d771d2876c6fd8bc18e384d73b4ac5",
+   "published_at": "2026-11-02T23:16:13",
    "source": "06_自动化与工具/管线工作区/NEV公告数据看板.html"
   },
   {
    "name": "02_分析交付物/NEV公告数据看板_发布版.html",
    "size": 4685793,
    "sha256": "eb8aab8d46ac0b6897bd1895722f126a0a1993070e801396c30087ba1f7c5af9",
-   "published_at": "2026-11-02T21:40:30",
+   "published_at": "2026-11-02T23:16:17",
    "source": "06_自动化与工具/管线工作区/NEV公告数据看板_发布版.html"
   },
   {
    "name": "02_分析交付物/NEV公告车型行业分析_移动版.html",
    "size": 1593873,
-   "sha256": "ee8a4e52f28f151be15488f5d726ac1262ccac91562c861d7d3cf5767cd1dd25",
-   "published_at": "2026-11-02T21:40:33",
+   "sha256": "7960594946418803b133e1476a977ef6122c329ae980fec5a299dde9cf379414",
+   "published_at": "2026-11-02T23:16:20",
    "source": "06_自动化与工具/管线工作区/NEV公告车型行业分析_移动版.html"
   },
   {
    "name": "02_分析交付物/NEV公告车型行业分析报告.docx",
-   "size": 74265,
-   "sha256": "7831ed9b48ea8d49e08ff9fd0370a2bfce0b10603f7c69faf3f365b057474607",
-   "published_at": "2026-11-02T21:40:33",
+   "size": 74285,
+   "sha256": "b289b093c9773dce20c0b2183986e2afcb65545ce2e52056c627ee0315df7e2c",
+   "published_at": "2026-11-02T23:16:20",
    "source": "06_自动化与工具/管线工作区/NEV公告车型行业分析报告.docx"
   },
   {
    "name": "02_分析交付物/NEV公告车型行业分析_演示文稿.pptx",
-   "size": 622652,
-   "sha256": "5f8d07ba8abe946df4ae2f594c3da600e2436f5d23397f04fa169be866b900e2",
-   "published_at": "2026-11-02T21:40:33",
+   "size": 557045,
+   "sha256": "2f4119b05ab2ec1654490a8bac6ba9022f3d458d7443eadaa24edededf349b7c",
+   "published_at": "2026-11-02T23:16:20",
    "source": "06_自动化与工具/管线工作区/NEV公告车型行业分析_演示文稿.pptx"
   },
   {
    "name": "02_分析交付物/NEV公告车型行业分析_2026Q4.docx",
    "size": 42149,
    "sha256": "754cc6957e2d80ca8d8309460648e27ab2ed8920364bcc0218f1c68785db19ab",
-   "published_at": "2026-11-02T21:40:33",
+   "published_at": "2026-11-02T23:16:20",
    "source": "非本链生成，原样保留"
   },
   {
    "name": "02_分析交付物/NEV公告车型行业分析_2026Q4_v12.pptx",
    "size": 180164,
    "sha256": "935b973861231915d0ac5e7f9da9ee99c054a22d6d233f4c87217030e5d6040c",
-   "published_at": "2026-11-02T21:40:33",
+   "published_at": "2026-11-02T23:16:20",
    "source": "非本链生成，原样保留"
   }
  ]
